@@ -1,0 +1,605 @@
+<!DOCTYPE html>
+<html lang="id" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>US Beef Shortplate Slice 1.5mm - PRIME CUTS BUTCHER</title>
+    <meta name="description" content="Pesan US Beef Shortplate Slice 1.5mm kemasan vacuum 500g/1kg. Marbling juicy gurih, pilihan marinasi bulgogi/blackpepper, dan siap kirim instan cold-pack bergaransi.">
+    
+    <!-- Google Fonts: Plus Jakarta Sans -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    
+    <!-- Tailwind CSS CDN with Custom Config -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        flameorange: {
+                            500: '#f97316',
+                            600: '#ea580c',
+                            700: '#c2410c',
+                        },
+                        charcoal: {
+                            800: '#27272a',
+                            900: '#18181b',
+                            950: '#09090b',
+                        },
+                        meatred: {
+                            600: '#dc2626',
+                            700: '#b91c1c',
+                            800: '#991b1b',
+                        }
+                    },
+                    fontFamily: {
+                        sans: ['"Plus Jakarta Sans"', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-charcoal-950 text-zinc-100 font-sans antialiased selection:bg-flameorange-600 selection:text-white min-h-screen flex flex-col justify-between pb-28">
+
+    <!-- Header / Navbar -->
+    <header class="sticky top-0 z-40 bg-charcoal-950/95 backdrop-blur-md border-b border-zinc-800 shadow-xl transition-all">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-20">
+                
+                <!-- Brand Logo -->
+                <a href="index.html" class="flex items-center gap-3 group">
+                    <div class="w-11 h-11 rounded-2xl bg-flameorange-600 text-white flex items-center justify-center text-xl shadow-lg group-hover:scale-105 transition border border-flameorange-500/40">
+                        <i class="fa-solid fa-fire"></i>
+                    </div>
+                    <div>
+                        <span class="font-black text-2xl text-white tracking-tight block leading-none">
+                            PRIME<span class="text-flameorange-500">CUTS</span>
+                        </span>
+                        <span class="text-[10px] font-extrabold text-zinc-400 tracking-widest uppercase">Butcher & Home Grill</span>
+                    </div>
+                </a>
+
+                <!-- Desktop Nav -->
+                <nav class="hidden md:flex items-center gap-8 font-bold text-zinc-300 text-sm uppercase tracking-wider">
+                    <a href="index.html" class="hover:text-flameorange-500 transition">Beranda</a>
+                    <a href="katalog.html" class="text-flameorange-500 border-b-2 border-flameorange-500 pb-1">Katalog Daging</a>
+                    <a href="tentang.html" class="hover:text-flameorange-500 transition">Standar Kualitas</a>
+                    <a href="artikel.html" class="hover:text-flameorange-500 transition">Tips Grill</a>
+                    <a href="kontak.html" class="hover:text-flameorange-500 transition">Sewa Grill & Kirim</a>
+                </nav>
+
+                <!-- Desktop Action CTA -->
+                <div class="hidden lg:flex items-center gap-3">
+                    <a href="https://wa.me/6281234567890?text=Halo%20Prime%20Cuts,%20saya%20mau%20pesan%20paket%20daging%20BBQ%20grill." target="_blank" class="inline-flex items-center gap-2 bg-gradient-to-r from-flameorange-600 to-orange-500 hover:from-flameorange-700 hover:to-orange-600 text-white font-black text-xs px-5 py-3 rounded-2xl shadow-lg shadow-orange-600/20 hover:scale-105 transition border border-orange-400/30">
+                        <i class="fa-brands fa-whatsapp text-lg text-white"></i>
+                        <span>PESAN DAGING INSTAN</span>
+                    </a>
+                </div>
+
+                <!-- Mobile Menu Button -->
+                <button id="mobileMenuBtn" class="md:hidden text-zinc-100 p-2 rounded-xl bg-charcoal-800 border border-zinc-700" aria-label="Buka Menu">
+                    <i class="fa-solid fa-bars text-xl" id="menuIcon"></i>
+                </button>
+            </div>
+        </div>
+
+        <!-- Mobile Drawer -->
+        <div id="mobileMenu" class="hidden md:hidden bg-charcoal-900 border-b border-zinc-800 px-4 pt-3 pb-6 space-y-3 shadow-2xl">
+            <a href="index.html" class="block py-2.5 px-3 rounded-xl text-zinc-300 hover:bg-charcoal-800 font-semibold text-sm uppercase">Beranda</a>
+            <a href="katalog.html" class="block py-2.5 px-3 rounded-xl bg-charcoal-800 text-flameorange-500 font-bold text-sm uppercase">Katalog Daging</a>
+            <a href="tentang.html" class="block py-2.5 px-3 rounded-xl text-zinc-300 hover:bg-charcoal-800 font-semibold text-sm uppercase">Standar Kualitas</a>
+            <a href="artikel.html" class="block py-2.5 px-3 rounded-xl text-zinc-300 hover:bg-charcoal-800 font-semibold text-sm uppercase">Tips Grill</a>
+            <a href="kontak.html" class="block py-2.5 px-3 rounded-xl text-zinc-300 hover:bg-charcoal-800 font-semibold text-sm uppercase">Sewa Grill & Kirim</a>
+            <div class="pt-2">
+                <a href="https://wa.me/6281234567890?text=Halo%20Prime%20Cuts,%20mau%20order%20daging" target="_blank" class="w-full inline-flex justify-center items-center gap-2 bg-flameorange-600 text-white font-black py-3 rounded-xl text-xs uppercase shadow">
+                    <i class="fa-brands fa-whatsapp text-lg"></i>
+                    <span>Order via WhatsApp CS</span>
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Breadcrumb Bar -->
+    <div class="bg-charcoal-900 border-b border-zinc-800 py-3">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <nav class="flex items-center gap-2 text-xs font-bold text-zinc-500 uppercase overflow-x-auto whitespace-nowrap">
+                <a href="index.html" class="hover:text-flameorange-500">Beranda</a>
+                <i class="fa-solid fa-chevron-right text-[10px]"></i>
+                <a href="katalog.html" class="hover:text-flameorange-500">Katalog Daging</a>
+                <i class="fa-solid fa-chevron-right text-[10px]"></i>
+                <a href="katalog.html?kategori=beef" class="hover:text-flameorange-500">Beef Slice</a>
+                <i class="fa-solid fa-chevron-right text-[10px]"></i>
+                <span class="text-flameorange-500 truncate">US Shortplate Slice 1.5mm</span>
+            </nav>
+        </div>
+    </div>
+
+    <!-- Product Detail Container -->
+    <main class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10 w-full flex-1">
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-10">
+
+            <!-- Left: Interactive Gallery -->
+            <div class="lg:col-span-6 space-y-4">
+                <div class="relative rounded-3xl overflow-hidden bg-charcoal-900 border-2 border-zinc-800 shadow-2xl">
+                    <img id="mainProductImg" src="https://images.unsplash.com/photo-1544025162-d76694265947?auto=format&fit=crop&w=900&q=80" alt="US Shortplate Slice" class="w-full h-[360px] sm:h-[450px] object-cover transition-opacity duration-300">
+                    <span class="absolute top-4 left-4 bg-flameorange-600 text-white font-black text-xs px-3.5 py-1 rounded-full uppercase shadow">
+                        BEST SELLER #1
+                    </span>
+                    <span class="absolute top-4 right-4 bg-charcoal-950/90 text-white font-bold text-xs px-3 py-1 rounded-full border border-zinc-700 flex items-center gap-1.5 shadow-md">
+                        <i class="fa-solid fa-certificate text-flameorange-500"></i> Halal Certified
+                    </span>
+                </div>
+
+                <!-- Thumbnails -->
+                <div class="grid grid-cols-3 gap-3">
+                    <button class="thumb-btn active rounded-2xl overflow-hidden border-2 border-flameorange-500 shadow-md focus:outline-none transition" onclick="changeImage('https://images.unsplash.com/photo-1544025162-d76694265947?auto=format&fit=crop&w=900&q=80', this)">
+                        <img src="https://images.unsplash.com/photo-1544025162-d76694265947?auto=format&fit=crop&w=300&q=80" alt="Fresh Slice Kemasan Depan" class="w-full h-20 sm:h-24 object-cover">
+                    </button>
+                    <button class="thumb-btn rounded-2xl overflow-hidden border border-zinc-800 hover:border-flameorange-500 focus:outline-none transition" onclick="changeImage('https://images.unsplash.com/photo-1555939594-58d7cb561ad1?auto=format&fit=crop&w=900&q=80', this)">
+                        <img src="https://images.unsplash.com/photo-1555939594-58d7cb561ad1?auto=format&fit=crop&w=300&q=80" alt="Hasil Grill Panggang Juicy" class="w-full h-20 sm:h-24 object-cover">
+                    </button>
+                    <button class="thumb-btn rounded-2xl overflow-hidden border border-zinc-800 hover:border-flameorange-500 focus:outline-none transition" onclick="changeImage('https://images.unsplash.com/photo-1541696432-82c6da8ce7bf?auto=format&fit=crop&w=900&q=80', this)">
+                        <img src="https://images.unsplash.com/photo-1541696432-82c6da8ce7bf?auto=format&fit=crop&w=300&q=80" alt="Marbling Daging Sapi Segar" class="w-full h-20 sm:h-24 object-cover">
+                    </button>
+                </div>
+
+                <!-- Storage & Cooking Tip Strip -->
+                <div class="bg-charcoal-900 p-5 rounded-3xl border border-zinc-800 shadow-xl flex items-center gap-4">
+                    <div class="w-12 h-12 rounded-2xl bg-charcoal-950 text-flameorange-500 flex items-center justify-center text-2xl flex-shrink-0 border border-zinc-800">
+                        <i class="fa-solid fa-stopwatch"></i>
+                    </div>
+                    <div>
+                        <h4 class="font-bold text-xs text-white uppercase">TIPS MEMANGGANG JUICY</h4>
+                        <p class="text-xs text-zinc-400 mt-0.5">Panggang di atas pan panas selama <strong>30-45 detik</strong> per sisi. Jangan dibolak-balik terus-menerus agar sari daging (*juice*) tidak kering.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Right: Product Summary & Customization Selectors -->
+            <div class="lg:col-span-6 space-y-6">
+                
+                <div>
+                    <div class="flex items-center gap-2 mb-2">
+                        <span class="bg-flameorange-600/20 text-flameorange-400 text-xs font-black px-3 py-1 rounded-full uppercase border border-flameorange-500/30">100% US Beef Import</span>
+                        <span class="bg-zinc-800 text-zinc-300 text-xs font-bold px-3 py-1 rounded-full uppercase">Vacuum Sealed Pack</span>
+                    </div>
+
+                    <h1 class="text-3xl sm:text-4xl font-black text-white leading-tight uppercase">
+                        US Beef Shortplate Slice 1.5mm
+                    </h1>
+
+                    <div class="flex items-center gap-3 mt-2 text-xs font-medium text-zinc-400">
+                        <div class="flex items-center text-flameorange-500 gap-1 font-bold text-white">
+                            <i class="fa-solid fa-star"></i>
+                            <span>4.9 / 5.0</span>
+                            <span class="text-zinc-500 font-normal">(18.400+ Pack Terjual)</span>
+                        </div>
+                        <span>•</span>
+                        <span class="text-flameorange-500 font-bold uppercase">Ready Cold Delivery</span>
+                    </div>
+                </div>
+
+                <!-- Price Box -->
+                <div class="bg-charcoal-900 p-5 rounded-2xl border border-zinc-800 shadow-xl flex items-baseline justify-between">
+                    <div>
+                        <span class="text-[11px] text-zinc-500 font-bold block uppercase mb-0.5">Harga Varian Terpilih:</span>
+                        <div class="flex items-baseline gap-2">
+                            <span id="displayUnitPrice" class="text-3xl font-black text-flameorange-500">Rp68.000</span>
+                            <span class="text-zinc-500 text-xs line-through font-medium">Rp78.000</span>
+                            <span class="text-xs bg-flameorange-600/20 text-flameorange-400 font-bold px-2 py-0.5 rounded border border-flameorange-500/30">Hemat Rp10k</span>
+                        </div>
+                    </div>
+                    <span class="text-xs font-bold text-emerald-400 text-right uppercase">Stok Daging Fresh</span>
+                </div>
+
+                <!-- Customizer Box -->
+                <div class="bg-charcoal-900 p-6 rounded-3xl border border-zinc-800 shadow-xl space-y-5">
+                    
+                    <!-- 1. Pilihan Berat Kemasan / Bundling -->
+                    <div>
+                        <label class="block text-xs font-black text-zinc-300 mb-2 uppercase">1. Pilih Berat Pack / Bundling:</label>
+                        <div class="grid grid-cols-2 sm:grid-cols-4 gap-2">
+                            <button type="button" class="size-btn py-2.5 px-2 rounded-2xl border border-zinc-800 bg-charcoal-950 hover:border-zinc-600 text-center transition" data-price="38000" data-label="Pack 250g (Porsi 1 Orang)">
+                                <span class="block font-bold text-xs text-white">Pack 250g</span>
+                                <span class="text-[10px] text-zinc-400 font-medium">Rp38.000</span>
+                            </button>
+                            <button type="button" class="size-btn active py-2.5 px-2 rounded-2xl border-2 border-flameorange-500 bg-charcoal-800 text-center transition shadow-md" data-price="68000" data-label="Pack 500g (Porsi 2-3 Orang - Best Seller)">
+                                <span class="block font-bold text-xs text-white">Pack 500g</span>
+                                <span class="text-[10px] text-flameorange-400 font-bold">Rp68.000</span>
+                            </button>
+                            <button type="button" class="size-btn py-2.5 px-2 rounded-2xl border border-zinc-800 bg-charcoal-950 hover:border-zinc-600 text-center transition" data-price="130000" data-label="Pack Jumbo 1kg (Hemat Pesta)">
+                                <span class="block font-bold text-xs text-white">Pack 1kg</span>
+                                <span class="text-[10px] text-zinc-400 font-medium">Rp130.000</span>
+                            </button>
+                            <button type="button" class="size-btn py-2.5 px-2 rounded-2xl border border-zinc-800 bg-charcoal-950 hover:border-zinc-600 text-center transition" data-price="175000" data-label="Bundling 1kg + Sewa Alat Grill 24 Jam">
+                                <span class="block font-bold text-xs text-white">+Sewa Grill</span>
+                                <span class="text-[10px] text-zinc-400 font-medium">Rp175.000</span>
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- 2. Pilihan Bumbu Marinasi -->
+                    <div>
+                        <label class="block text-xs font-black text-zinc-300 mb-2 uppercase">2. Pilih Varian Bumbu Marinasi:</label>
+                        <div class="grid grid-cols-2 gap-2 text-xs">
+                            <button type="button" class="marinade-btn py-2.5 px-3 rounded-2xl border border-zinc-800 bg-charcoal-950 hover:border-zinc-600 font-bold text-zinc-300 text-left transition" data-extra="0" data-label="Original Tanpa Bumbu (Fresh Slice)">
+                                🥩 Original Fresh Slice
+                                <span class="block text-[10px] font-normal text-zinc-500">Daging polos murni tanpa saus</span>
+                            </button>
+                            <button type="button" class="marinade-btn active py-2.5 px-3 rounded-2xl border-2 border-flameorange-500 bg-charcoal-800 font-bold text-white text-left transition shadow-md" data-extra="0" data-label="Marinasi Korean Bulgogi (Manis Gurih Wijen)">
+                                🍯 Korean Bulgogi ⭐
+                                <span class="block text-[10px] font-normal text-flameorange-400">Manis gurih wijen (Favorit)</span>
+                            </button>
+                            <button type="button" class="marinade-btn py-2.5 px-3 rounded-2xl border border-zinc-800 bg-charcoal-950 hover:border-zinc-600 font-bold text-zinc-300 text-left transition" data-extra="5000" data-label="Marinasi Blackpepper Smokey (+5k)">
+                                🌶️ Blackpepper Smoke (+5k)
+                                <span class="block text-[10px] font-normal text-zinc-500">Lada hitam butir kasar aromatik</span>
+                            </button>
+                            <button type="button" class="marinade-btn py-2.5 px-3 rounded-2xl border border-zinc-800 bg-charcoal-950 hover:border-zinc-600 font-bold text-zinc-300 text-left transition" data-extra="5000" data-label="Marinasi Teriyaki Garlic Butter (+5k)">
+                                🧄 Garlic Butter (+5k)
+                                <span class="block text-[10px] font-normal text-zinc-500">Mentega wangi bawang putih gurih</span>
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- 3. Quantity Stepper -->
+                    <div class="pt-3 border-t border-zinc-800 flex items-center justify-between">
+                        <div>
+                            <span class="text-xs font-bold text-white block uppercase">Jumlah Pack / Porsi:</span>
+                            <span class="text-[11px] text-flameorange-400 font-medium">Bisa pesan banyak untuk acara kantor/gathering</span>
+                        </div>
+                        <div class="flex items-center border border-zinc-700 rounded-xl overflow-hidden bg-charcoal-950">
+                            <button type="button" id="btnMinus" class="px-3.5 py-1.5 text-zinc-300 hover:bg-charcoal-800 font-bold transition">-</button>
+                            <span id="qtyVal" class="px-5 py-1.5 font-black text-sm text-white bg-charcoal-900">1</span>
+                            <button type="button" id="btnPlus" class="px-3.5 py-1.5 text-zinc-300 hover:bg-charcoal-800 font-bold transition">+</button>
+                        </div>
+                    </div>
+
+                </div>
+
+                <!-- Total Price & WhatsApp Order Box -->
+                <div class="space-y-3 pt-2">
+                    
+                    <!-- Total Calculation Display -->
+                    <div class="bg-charcoal-900 text-white p-5 rounded-2xl shadow-xl flex items-center justify-between border border-zinc-800">
+                        <div>
+                            <span class="text-[10px] font-bold uppercase text-zinc-400">TOTAL ESTIMASI (<span id="totalPackLabel">1</span> PACK):</span>
+                            <h3 id="displayTotalPrice" class="text-2xl sm:text-3xl font-black text-flameorange-500">Rp68.000</h3>
+                        </div>
+                        <span class="text-xs font-bold bg-flameorange-600/20 text-flameorange-400 px-3 py-1.5 rounded-xl border border-flameorange-500/30 uppercase">Ice Pack Included</span>
+                    </div>
+
+                    <!-- WhatsApp CTA -->
+                    <a id="btnOrderWa" href="https://wa.me/6281234567890?text=Halo%20Prime%20Cuts,%20saya%20mau%20pesan%20daging%20US%20Shortplate." target="_blank" class="w-full flex items-center justify-center gap-3 bg-gradient-to-r from-flameorange-600 to-orange-500 hover:from-flameorange-700 hover:to-orange-600 text-white font-black text-sm py-4 px-6 rounded-2xl shadow-xl shadow-orange-600/20 transition uppercase tracking-wider">
+                        <i class="fa-brands fa-whatsapp text-2xl text-white"></i>
+                        <span>PESAN DAGING SEKARANG VIA WHATSAPP</span>
+                    </a>
+
+                    <!-- Marketplace Buttons -->
+                    <div class="grid grid-cols-3 gap-2 pt-1">
+                        <a href="https://shopee.co.id" target="_blank" class="py-2.5 rounded-xl bg-charcoal-900 border border-zinc-800 hover:border-zinc-700 text-zinc-300 text-xs font-bold text-center transition flex items-center justify-center gap-1.5 uppercase">
+                            <i class="fa-solid fa-store text-orange-500"></i> Shopee
+                        </a>
+                        <a href="https://tokopedia.com" target="_blank" class="py-2.5 rounded-xl bg-charcoal-900 border border-zinc-800 hover:border-zinc-700 text-zinc-300 text-xs font-bold text-center transition flex items-center justify-center gap-1.5 uppercase">
+                            <i class="fa-solid fa-bag-shopping text-emerald-500"></i> Tokopedia
+                        </a>
+                        <a href="https://tiktok.com" target="_blank" class="py-2.5 rounded-xl bg-charcoal-900 border border-zinc-800 hover:border-zinc-700 text-zinc-300 text-xs font-bold text-center transition flex items-center justify-center gap-1.5 uppercase">
+                            <i class="fa-brands fa-tiktok text-white"></i> TikTok Shop
+                        </a>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+
+        <!-- Spesifikasi Daging & Petunjuk Penyimpanan -->
+        <div class="mt-14 bg-charcoal-900 rounded-3xl border border-zinc-800 p-8 sm:p-12 shadow-xl space-y-6">
+            <div>
+                <span class="text-flameorange-500 text-xs font-black uppercase tracking-wider">BUTCHER SPECIFICATION & DEFROST GUIDE</span>
+                <h2 class="text-2xl sm:text-3xl font-black text-white mt-1 uppercase">
+                    Kualitas Daging Sapi Standar Restoran Bintang Lima
+                </h2>
+            </div>
+            
+            <div class="text-zinc-400 text-sm leading-relaxed space-y-4 font-normal">
+                <p>
+                    <strong>US Shortplate Slice Prime Cuts</strong> berasal dari potongan bagian perut sapi impor Amerika Serikat (*belly/plate*) yang terkenal memiliki lapisan marbling lemak gurih alami. Dipotong dengan mesin slicer otomatis higienis bersuhu dingin konstan untuk menghasilkan ketebalan 1.5mm yang presisi tanpa robek.
+                </p>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-4 pt-2">
+                    <div class="p-4 rounded-2xl bg-charcoal-950 border border-zinc-800">
+                        <h4 class="font-bold text-xs text-white uppercase mb-1">❄️ Cara Thawing (Mencairkan)</h4>
+                        <p class="text-xs text-zinc-400">Pindahkan dari freezer ke chiller kulkas 3-4 jam sebelum dipanggang, atau rendam pack tertutup di air dingin selama 15 menit.</p>
+                    </div>
+                    <div class="p-4 rounded-2xl bg-charcoal-950 border border-zinc-800">
+                        <h4 class="font-bold text-xs text-white uppercase mb-1">🔥 Waktu Panggang Terbaik</h4>
+                        <p class="text-xs text-zinc-400">Panggang di atas pan grill bersuhu tinggi selama 30-45 detik per sisi hingga lemak meleleh karamel keemasan.</p>
+                    </div>
+                    <div class="p-4 rounded-2xl bg-charcoal-950 border border-zinc-800">
+                        <h4 class="font-bold text-xs text-white uppercase mb-1">📦 Penyimpanan Beku</h4>
+                        <p class="text-xs text-zinc-400">Tahan hingga 6 bulan di freezer bersuhu -18°C dalam kondisi kemasan vacuum pack belum terbuka.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Related Meat Cuts -->
+        <div class="mt-14">
+            <div class="flex items-center justify-between mb-8">
+                <div>
+                    <span class="text-flameorange-500 text-xs font-black uppercase tracking-wider">REKOMENDASI LAINNYA</span>
+                    <h2 class="text-2xl font-black text-white mt-0.5 uppercase">Lengkapi Pesta BBQ Anda</h2>
+                </div>
+                <a href="katalog.html" class="text-xs font-bold text-flameorange-500 hover:underline uppercase">Lihat Semua &rarr;</a>
+            </div>
+
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+                <!-- Card 1 -->
+                <div class="bg-charcoal-900 rounded-3xl overflow-hidden border border-zinc-800 p-5 shadow-xl hover:border-flameorange-500 transition">
+                    <img src="https://images.unsplash.com/photo-1546069901-ba9599a7e63c?auto=format&fit=crop&w=500&q=80" alt="Wagyu Saikoro" class="w-full h-44 object-cover rounded-2xl mb-4">
+                    <span class="text-xs font-bold text-flameorange-500 uppercase">Pack Dadu 500g</span>
+                    <h4 class="font-black text-lg text-white mt-0.5 uppercase"><a href="detail.html">Wagyu Saikoro Meltique</a></h4>
+                    <div class="flex items-center justify-between mt-3 pt-3 border-t border-zinc-800">
+                        <span class="font-black text-flameorange-500 text-lg">Rp89.000</span>
+                        <a href="detail.html" class="text-xs font-bold text-zinc-300 hover:text-white uppercase">PILIH &rarr;</a>
+                    </div>
+                </div>
+
+                <!-- Card 2 -->
+                <div class="bg-charcoal-900 rounded-3xl overflow-hidden border border-zinc-800 p-5 shadow-xl hover:border-flameorange-500 transition">
+                    <img src="https://images.unsplash.com/photo-1555939594-58d7cb561ad1?auto=format&fit=crop&w=500&q=80" alt="Paket Family Feast" class="w-full h-44 object-cover rounded-2xl mb-4">
+                    <span class="text-xs font-bold text-flameorange-500 uppercase">Komplit 1.2kg</span>
+                    <h4 class="font-black text-lg text-white mt-0.5 uppercase"><a href="detail.html">Paket Family BBQ Feast</a></h4>
+                    <div class="flex items-center justify-between mt-3 pt-3 border-t border-zinc-800">
+                        <span class="font-black text-flameorange-500 text-lg">Rp235.000</span>
+                        <a href="detail.html" class="text-xs font-bold text-zinc-300 hover:text-white uppercase">PILIH &rarr;</a>
+                    </div>
+                </div>
+
+                <!-- Card 3 -->
+                <div class="bg-charcoal-900 rounded-3xl overflow-hidden border border-zinc-800 p-5 shadow-xl hover:border-flameorange-500 transition">
+                    <img src="https://images.unsplash.com/photo-1541696432-82c6da8ce7bf?auto=format&fit=crop&w=500&q=80" alt="Wagyu Karubi Slice" class="w-full h-44 object-cover rounded-2xl mb-4">
+                    <span class="text-xs font-bold text-flameorange-500 uppercase">Grade MB5+ 500g</span>
+                    <h4 class="font-black text-lg text-white mt-0.5 uppercase"><a href="detail.html">Wagyu Karubi Slice MB5+</a></h4>
+                    <div class="flex items-center justify-between mt-3 pt-3 border-t border-zinc-800">
+                        <span class="font-black text-flameorange-500 text-lg">Rp125.000</span>
+                        <a href="detail.html" class="text-xs font-bold text-zinc-300 hover:text-white uppercase">PILIH &rarr;</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-charcoal-950 text-zinc-400 pt-16 pb-12 border-t border-zinc-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-10 pb-12 border-b border-zinc-800">
+                <div class="lg:col-span-2 space-y-4">
+                    <a href="index.html" class="flex items-center gap-3">
+                        <div class="w-10 h-10 rounded-xl bg-flameorange-600 text-white flex items-center justify-center text-lg">
+                            <i class="fa-solid fa-fire"></i>
+                        </div>
+                        <span class="font-black text-2xl text-white">PRIME<span class="text-flameorange-500">CUTS</span></span>
+                    </a>
+                    <p class="text-xs text-zinc-400 leading-relaxed pr-6 font-normal">
+                        Modern Butcher & Home Grill Provider. Menyediakan beef slice US import, Wagyu meltique, ayam marinasi, saus autentik, dan sewa alat BBQ lengkap siap kirim instan area Jabodetabek.
+                    </p>
+                </div>
+                <div>
+                    <h4 class="text-white font-black text-xs tracking-wider uppercase mb-4">Navigasi</h4>
+                    <ul class="space-y-2.5 text-xs font-bold">
+                        <li><a href="index.html" class="hover:text-flameorange-500 transition">Beranda</a></li>
+                        <li><a href="katalog.html" class="hover:text-flameorange-500 transition">Katalog Daging & BBQ</a></li>
+                        <li><a href="tentang.html" class="hover:text-flameorange-500 transition">Standar Kualitas Halal</a></li>
+                        <li><a href="artikel.html" class="hover:text-flameorange-500 transition">Tips Grill Juicy</a></li>
+                        <li><a href="kontak.html" class="hover:text-flameorange-500 transition">Sewa Alat & Pengiriman</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-white font-black text-xs tracking-wider uppercase mb-4">Koleksi Daging</h4>
+                    <ul class="space-y-2.5 text-xs font-medium">
+                        <li><a href="katalog.html" class="hover:text-flameorange-500 transition">US Shortplate Slice 1.5mm</a></li>
+                        <li><a href="katalog.html" class="hover:text-flameorange-500 transition">Wagyu Saikoro Meltique</a></li>
+                        <li><a href="katalog.html" class="hover:text-flameorange-500 transition">Paket Family BBQ Feast</a></li>
+                        <li><a href="katalog.html" class="hover:text-flameorange-500 transition">Saus Bulgogi & Blackpepper</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-white font-black text-xs tracking-wider uppercase mb-4">Butcher Shop</h4>
+                    <div class="text-xs space-y-2 text-zinc-400 font-normal">
+                        <p class="text-white font-bold">Jam Layanan Butcher:</p>
+                        <p>Setiap Hari: 08.00 - 21.00 WIB</p>
+                        <p class="text-white font-bold pt-1">Central Meat Shop:</p>
+                        <p>Jl. Boulevard Raya Blok QJ No. 18, Kelapa Gading, Jakarta Utara</p>
+                        <p class="text-flameorange-500 font-bold pt-1"><i class="fa-brands fa-whatsapp"></i> +62 812-3456-7890</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="pt-8 flex flex-col md:flex-row items-center justify-between text-xs text-zinc-500 gap-4">
+                <p>&copy; 2026 Prime Cuts Butcher Indonesia. Hak Cipta Dilindungi.</p>
+                <div class="flex items-center gap-2">
+                    <span>Etalase Resmi UMKM didukung oleh</span>
+                    <a href="https://lenterapasar.com" target="_blank" class="text-flameorange-500 font-bold hover:underline">Lentera Pasar</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Floating WhatsApp Conversion Button (Offset to bottom-24) -->
+    <a href="https://wa.me/6281234567890?text=Halo%20Prime%20Cuts,%20saya%20mau%20order%20daging%20BBQ." target="_blank" class="fixed bottom-24 right-6 z-40 group flex items-center gap-3 bg-flameorange-600 hover:bg-flameorange-700 text-white px-4 py-3.5 rounded-2xl shadow-2xl hover:shadow-orange-600/50 transition-all duration-300 transform hover:scale-105 border border-orange-400/40" aria-label="Order via WhatsApp">
+        <i class="fa-brands fa-whatsapp text-2xl text-white"></i>
+        <span class="hidden sm:inline font-black text-xs tracking-wider uppercase">Order Daging WA</span>
+    </a>
+
+    <!-- ========================================================================= -->
+    <!-- LENTERA PASAR - STICKY DEMO & SALES BAR                                   -->
+    <!-- ========================================================================= -->
+    <div class="fixed bottom-4 left-1/2 -translate-x-1/2 z-50 w-[95%] max-w-4xl bg-slate-900/95 backdrop-blur-md text-white p-3.5 md:p-4 rounded-2xl shadow-2xl border border-slate-700/80 transition-all duration-300">
+      <div class="flex flex-col md:flex-row items-center justify-between gap-3 md:gap-4">
+        
+        <!-- Info Template & Value Proposition -->
+        <div class="flex items-center gap-3 w-full md:w-auto">
+          <div class="w-10 h-10 rounded-xl bg-amber-500/20 border border-amber-500/40 flex items-center justify-center shrink-0">
+            <svg class="w-5 h-5 text-amber-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z" />
+            </svg>
+          </div>
+          <div>
+            <div class="flex items-center gap-2">
+              <span class="font-bold text-sm text-white">Lentera Pasar Engine</span>
+              <span class="text-[10px] bg-emerald-500/20 text-emerald-300 border border-emerald-500/30 px-2 py-0.5 rounded-full font-medium">Free Admin Panel + Ads Support</span>
+            </div>
+            <p class="text-xs text-slate-300 hidden sm:block">
+              Terima beres: Website responsif + Panel input produk sendiri + Dikelola tim iklan profesional.
+            </p>
+          </div>
+        </div>
+
+        <!-- Poin Keunggulan & Tombol Action -->
+        <div class="flex items-center justify-between md:justify-end gap-3 w-full md:w-auto">
+          <div class="hidden lg:flex items-center gap-2 text-xs text-slate-400 border-r border-slate-700 pr-4">
+            <div class="flex items-center gap-1 text-slate-200">
+              <svg class="w-4 h-4 text-emerald-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" /></svg>
+              <span>Chat WA Instan</span>
+            </div>
+            <span class="text-slate-600">•</span>
+            <div class="flex items-center gap-1 text-slate-200">
+              <svg class="w-4 h-4 text-emerald-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" /></svg>
+              <span>Ready Meta Pixel</span>
+            </div>
+          </div>
+
+          <a href="https://wa.me/6281234567890?text=Halo%20Tim%20Lentera%20Pasar,%20saya%20tertarik%20menggunakan%20template%20website%20ini%20lengkap%20dengan%20Admin%20Panel%20dan%20Jasa%20Iklannya." 
+             target="_blank"
+             class="w-full md:w-auto inline-flex items-center justify-center gap-2 bg-gradient-to-r from-amber-500 to-orange-600 hover:from-amber-600 hover:to-orange-700 text-white text-xs md:text-sm font-semibold px-5 py-2.5 rounded-xl shadow-lg shadow-orange-500/20 transition-all hover:scale-105 shrink-0">
+            <span>Gunakan Template Ini</span>
+            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3" />
+            </svg>
+          </a>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- Detail Customizer Script -->
+    <script>
+        const mobileMenuBtn = document.getElementById('mobileMenuBtn');
+        const mobileMenu = document.getElementById('mobileMenu');
+        const menuIcon = document.getElementById('menuIcon');
+
+        mobileMenuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+            if (mobileMenu.classList.contains('hidden')) {
+                menuIcon.classList.remove('fa-xmark');
+                menuIcon.classList.add('fa-bars');
+            } else {
+                menuIcon.classList.remove('fa-bars');
+                menuIcon.classList.add('fa-xmark');
+            }
+        });
+
+        function changeImage(src, btn) {
+            const mainImg = document.getElementById('mainProductImg');
+            mainImg.style.opacity = '0.3';
+            setTimeout(() => {
+                mainImg.src = src;
+                mainImg.style.opacity = '1';
+            }, 150);
+
+            document.querySelectorAll('.thumb-btn').forEach(t => {
+                t.classList.remove('border-2', 'border-flameorange-500', 'active');
+                t.classList.add('border', 'border-zinc-800');
+            });
+            btn.classList.remove('border', 'border-zinc-800');
+            btn.classList.add('border-2', 'border-flameorange-500', 'active');
+        }
+
+        // Customizer State
+        let baseSizePrice = 68000;
+        let marinadeExtra = 0;
+        let selectedSize = 'Pack 500g (Porsi 2-3 Orang - Best Seller)';
+        let selectedMarinade = 'Marinasi Korean Bulgogi (Manis Gurih Wijen)';
+        let quantity = 1;
+
+        const displayUnitPrice = document.getElementById('displayUnitPrice');
+        const displayTotalPrice = document.getElementById('displayTotalPrice');
+        const totalPackLabel = document.getElementById('totalPackLabel');
+        const qtyVal = document.getElementById('qtyVal');
+        const btnMinus = document.getElementById('btnMinus');
+        const btnPlus = document.getElementById('btnPlus');
+        const btnOrderWa = document.getElementById('btnOrderWa');
+
+        function updateWaLink() {
+            const currentUnitPrice = baseSizePrice + marinadeExtra;
+            const totalPrice = currentUnitPrice * quantity;
+
+            displayUnitPrice.textContent = 'Rp' + currentUnitPrice.toLocaleString('id-ID');
+            displayTotalPrice.textContent = 'Rp' + totalPrice.toLocaleString('id-ID');
+            totalPackLabel.textContent = quantity;
+
+            const text = `Halo Prime Cuts Butcher,\n\nSaya ingin memesan daging BBQ:\n- *Produk:* US Beef Shortplate Slice 1.5mm\n- *Pilihan Berat/Paket:* ${selectedSize}\n- *Pilihan Marinasi:* ${selectedMarinade}\n- *Jumlah:* ${quantity} Pack\n- *Estimasi Total:* Rp${totalPrice.toLocaleString('id-ID')}\n\nMohon info ketersediaan stok & ongkir kirim instan ice pack ke alamat saya. Terima kasih!`;
+
+            btnOrderWa.href = `https://wa.me/6281234567890?text=${encodeURIComponent(text)}`;
+        }
+
+        // Size Buttons
+        const sizeBtns = document.querySelectorAll('.size-btn');
+        sizeBtns.forEach(btn => {
+            btn.addEventListener('click', () => {
+                sizeBtns.forEach(b => {
+                    b.classList.remove('border-2', 'border-flameorange-500', 'bg-charcoal-800', 'active');
+                    b.classList.add('border', 'border-zinc-800', 'bg-charcoal-950');
+                });
+                btn.classList.add('border-2', 'border-flameorange-500', 'bg-charcoal-800', 'active');
+                btn.classList.remove('border', 'border-zinc-800', 'bg-charcoal-950');
+
+                baseSizePrice = parseInt(btn.dataset.price);
+                selectedSize = btn.dataset.label;
+                updateWaLink();
+            });
+        });
+
+        // Marinade Buttons
+        const marinadeBtns = document.querySelectorAll('.marinade-btn');
+        marinadeBtns.forEach(btn => {
+            btn.addEventListener('click', () => {
+                marinadeBtns.forEach(b => {
+                    b.classList.remove('border-2', 'border-flameorange-500', 'bg-charcoal-800', 'active');
+                    b.classList.add('border', 'border-zinc-800', 'bg-charcoal-950');
+                });
+                btn.classList.add('border-2', 'border-flameorange-500', 'bg-charcoal-800', 'active');
+                btn.classList.remove('border', 'border-zinc-800', 'bg-charcoal-950');
+
+                marinadeExtra = parseInt(btn.dataset.extra);
+                selectedMarinade = btn.dataset.label;
+                updateWaLink();
+            });
+        });
+
+        // Quantity controls
+        btnPlus.addEventListener('click', () => {
+            quantity += 1;
+            qtyVal.textContent = quantity;
+            updateWaLink();
+        });
+
+        btnMinus.addEventListener('click', () => {
+            if (quantity > 1) {
+                quantity -= 1;
+                qtyVal.textContent = quantity;
+                updateWaLink();
+            }
+        });
+
+        updateWaLink();
+    </script>
+</body>
+</html>

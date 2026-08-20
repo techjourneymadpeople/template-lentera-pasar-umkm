@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="id" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>5 Kreasi Masakan Praktis dengan 1 Sendok Sambal Bawang - SAMBAL WARISAN OMA</title>
+    <meta name="description" content="Kumpulan 5 resep masakan rumahan praktis dan nikmat hanya dengan menggunakan 1 sendok Sambal Warisan Oma. Dari nasi goreng cumi sampai tumis kangkung terasi.">
+    
+    <!-- Google Fonts: Playfair Display & Plus Jakarta Sans -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;0,700;0,800;0,900;1,600;1,700&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    
+    <!-- Tailwind CSS CDN with Custom Config -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        terracotta: {
+                            50: '#fdf4f3',
+                            100: '#fbe8e6',
+                            200: '#f7d5d1',
+                            600: '#b91c1c',
+                            700: '#991b1b',
+                            800: '#7f1d1d',
+                            900: '#5c1414',
+                        },
+                        warmstone: {
+                            50: '#fbf9f5',
+                            100: '#f5f0e8',
+                            200: '#e7dfd5',
+                            300: '#d5c8b8',
+                            800: '#292524',
+                            900: '#1c1917',
+                        },
+                        amberheritage: {
+                            500: '#d97706',
+                            600: '#b45309',
+                        }
+                    },
+                    fontFamily: {
+                        sans: ['"Plus Jakarta Sans"', 'sans-serif'],
+                        serif: ['"Playfair Display"', 'Georgia', 'serif'],
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-warmstone-50 text-warmstone-900 font-sans antialiased selection:bg-terracotta-700 selection:text-white min-h-screen flex flex-col justify-between pb-28">
+
+    <!-- Header / Navbar -->
+    <header class="sticky top-0 z-40 bg-warmstone-50/95 backdrop-blur-md border-b border-warmstone-200 shadow-sm transition-all">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-20">
+                
+                <!-- Brand Logo -->
+                <a href="index.html" class="flex items-center gap-3 group">
+                    <div class="w-11 h-11 rounded-2xl bg-terracotta-800 text-amber-400 flex items-center justify-center text-xl shadow-md group-hover:scale-105 transition border border-amber-600/30">
+                        <i class="fa-solid fa-pepper-hot"></i>
+                    </div>
+                    <div>
+                        <span class="font-serif font-bold text-2xl text-warmstone-900 tracking-tight block leading-none">
+                            WARISAN<span class="text-terracotta-700">OMA</span>
+                        </span>
+                        <span class="text-[10px] font-bold text-amberheritage-600 tracking-widest uppercase">Sambal Artisan Nusantara</span>
+                    </div>
+                </a>
+
+                <!-- Desktop Nav -->
+                <nav class="hidden md:flex items-center gap-8 font-bold text-stone-700 text-sm">
+                    <a href="index.html" class="hover:text-terracotta-700 transition">Beranda</a>
+                    <a href="katalog.html" class="hover:text-terracotta-700 transition">Koleksi Sambal</a>
+                    <a href="tentang.html" class="hover:text-terracotta-700 transition">Rahasia Rempah</a>
+                    <a href="artikel.html" class="text-terracotta-700 border-b-2 border-terracotta-700 pb-1">Resep Masakan</a>
+                    <a href="kontak.html" class="hover:text-terracotta-700 transition">Pemesanan & Kirim</a>
+                </nav>
+
+                <!-- Desktop Action CTA -->
+                <div class="hidden lg:flex items-center gap-3">
+                    <a href="https://wa.me/6281234567890?text=Halo%20Sambal%20Warisan%20Oma,%20saya%20mau%20pesan%20sambal%20botol." target="_blank" class="inline-flex items-center gap-2 bg-terracotta-800 hover:bg-terracotta-900 text-white font-bold text-xs px-5 py-3 rounded-2xl shadow-sm hover:shadow transition border border-terracotta-700">
+                        <i class="fa-brands fa-whatsapp text-base text-emerald-400"></i>
+                        <span>Pesan Botol WA</span>
+                    </a>
+                </div>
+
+                <!-- Mobile Menu Button -->
+                <button id="mobileMenuBtn" class="md:hidden text-stone-800 p-2 rounded-xl bg-warmstone-200" aria-label="Buka Menu">
+                    <i class="fa-solid fa-bars text-xl" id="menuIcon"></i>
+                </button>
+            </div>
+        </div>
+
+        <!-- Mobile Drawer -->
+        <div id="mobileMenu" class="hidden md:hidden bg-warmstone-50 border-b border-warmstone-200 px-4 pt-3 pb-6 space-y-3 shadow-lg">
+            <a href="index.html" class="block py-2.5 px-3 rounded-xl text-stone-700 hover:bg-warmstone-100 font-semibold text-sm">Beranda</a>
+            <a href="katalog.html" class="block py-2.5 px-3 rounded-xl text-stone-700 hover:bg-warmstone-100 font-semibold text-sm">Koleksi Sambal</a>
+            <a href="tentang.html" class="block py-2.5 px-3 rounded-xl text-stone-700 hover:bg-warmstone-100 font-semibold text-sm">Rahasia Rempah</a>
+            <a href="artikel.html" class="block py-2.5 px-3 rounded-xl bg-terracotta-100 text-terracotta-900 font-bold text-sm">Resep Masakan</a>
+            <a href="kontak.html" class="block py-2.5 px-3 rounded-xl text-stone-700 hover:bg-warmstone-100 font-semibold text-sm">Pemesanan & Kirim</a>
+            <div class="pt-2">
+                <a href="https://wa.me/6281234567890?text=Halo%20Sambal%20Warisan%20Oma,%20mau%20order%20sambal" target="_blank" class="w-full inline-flex justify-center items-center gap-2 bg-terracotta-800 text-white font-bold py-3 rounded-xl text-xs shadow">
+                    <i class="fa-brands fa-whatsapp text-lg"></i>
+                    <span>Hubungi WhatsApp CS</span>
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Breadcrumb Bar -->
+    <div class="py-4 pt-6 max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 w-full">
+        <nav class="flex items-center gap-2 text-xs font-bold text-stone-400 uppercase overflow-x-auto whitespace-nowrap">
+            <a href="index.html" class="hover:text-terracotta-700">Beranda</a>
+            <i class="fa-solid fa-chevron-right text-[10px]"></i>
+            <a href="artikel.html" class="hover:text-terracotta-700">Resep Masakan</a>
+            <i class="fa-solid fa-chevron-right text-[10px]"></i>
+            <span class="text-terracotta-700 truncate">5 Kreasi Masakan Praktis</span>
+        </nav>
+    </div>
+
+    <!-- Article Detail Container -->
+    <main class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-4 pb-16 w-full flex-1 space-y-8">
+
+        <div class="space-y-4">
+            <div class="flex flex-wrap items-center gap-3 text-xs font-bold text-stone-500 uppercase">
+                <span class="bg-terracotta-50 text-terracotta-800 px-3.5 py-0.5 rounded-full border border-terracotta-200">RESEP PRAKTIS</span>
+                <span>•</span>
+                <span>20 Agustus 2026</span>
+                <span>•</span>
+                <span>Waktu Baca: 3 Menit</span>
+            </div>
+
+            <h1 class="text-3xl sm:text-4xl lg:text-5xl font-serif font-bold text-warmstone-900 leading-tight">
+                5 Kreasi Masakan Praktis dengan 1 Sendok Sambal Bawang Warisan Oma
+            </h1>
+
+            <div class="flex items-center justify-between py-4 border-y border-warmstone-200">
+                <div class="flex items-center gap-3">
+                    <div class="w-11 h-11 rounded-2xl bg-terracotta-800 text-amber-400 font-serif font-bold flex items-center justify-center text-sm shadow-sm">
+                        WO
+                    </div>
+                    <div>
+                        <h4 class="font-bold text-xs sm:text-sm text-warmstone-900">Dapur Uji Rasa Oma</h4>
+                        <p class="text-[11px] text-terracotta-700 font-medium">Resep Masakan Rumahan</p>
+                    </div>
+                </div>
+
+                <div class="flex items-center gap-2">
+                    <a href="https://wa.me/?text=Resep%20Kreasi%20Masak%20Sambal%20Warisan%20Oma" target="_blank" class="w-9 h-9 rounded-xl bg-white text-stone-700 border border-warmstone-300 hover:bg-emerald-500 hover:text-white flex items-center justify-center text-sm transition" title="Share WA">
+                        <i class="fa-brands fa-whatsapp"></i>
+                    </a>
+                    <a href="https://www.facebook.com/sharer/sharer.php" target="_blank" class="w-9 h-9 rounded-xl bg-white text-stone-700 border border-warmstone-300 hover:bg-blue-600 hover:text-white flex items-center justify-center text-sm transition" title="Share Facebook">
+                        <i class="fa-brands fa-facebook-f"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Featured Image -->
+        <div class="rounded-3xl overflow-hidden shadow-md border border-warmstone-200 bg-white">
+            <img src="https://images.unsplash.com/photo-1546069901-ba9599a7e63c?auto=format&fit=crop&w=1200&q=80" alt="Masakan Sambal Bawang Cumi" class="w-full h-[320px] sm:h-[450px] object-cover">
+            <p class="text-center font-medium text-xs text-stone-500 py-3 bg-white border-t border-warmstone-100">
+                Satu Sendok Sambal Warisan Oma yang Kaya Bumbu Bawang dan Minyak Kelapa Gurih.
+            </p>
+        </div>
+
+        <!-- Article Content -->
+        <article class="prose prose-stone max-w-none text-stone-700 text-sm sm:text-base leading-relaxed space-y-6 font-normal">
+            <p class="text-base sm:text-lg font-medium text-warmstone-900 leading-relaxed">
+                Punya sebotol sambal ulek di kulkas bukan hanya sekadar untuk teman cocolan, melainkan rahasia dapur cepat saji para ibu cerdas. Karena sambal kami sudah dimasak matang dengan minyak kelapa murni dan bawang merah melimpah, Anda tidak perlu lagi mengupas bawang dan mengulek cabai dari nol!
+            </p>
+
+            <h2 class="text-2xl font-serif font-bold text-warmstone-900 pt-2">1. Nasi Goreng Cumi Kilat (Hanya 5 Menit!)</h2>
+            <p>
+                Panaskan 1 sendok makan minyak di wajan, masukkan 1 piring nasi dingin sisa semalam, lalu tambahkan 1,5 sendok makan <strong>Sambal Cumi Asin Bawang</strong>. Aduk rata dengan api besar selama 3 menit hingga harum smokey tercium. Taburi daun bawang, nasi goreng cumi gurih ala resto siap dinikmati!
+            </p>
+
+            <h2 class="text-2xl font-serif font-bold text-warmstone-900 pt-2">2. Tumis Kangkung Belacan Terasi Bakar</h2>
+            <p>
+                Cukup tumis 1 sendok makan <strong>Sambal Terasi Bakar Juara</strong> di wajan panas, masukkan potongan kangkung segar, beri sedikit air dan garam. Masak cepat 2 menit agar kangkung tetap renyah kehijauan.
+            </p>
+
+            <h2 class="text-2xl font-serif font-bold text-warmstone-900 pt-2">3. Telur Dadar Krispi Bumbu Klotok</h2>
+            <p>
+                Kocok 2 butir telur ayam bersama 1 sendok teh <strong>Sambal Bawang Ikan Klotok</strong> dan sedikit daun bawang. Goreng di minyak panas hingga pinggirannya krispi bersarang. Sensasi suwiran ikan asin klotok di dalam telur dadar bikin nambah nasi terus!
+            </p>
+
+            <div class="p-5 rounded-2xl bg-terracotta-50 border border-terracotta-200 text-terracotta-900 text-xs sm:text-sm font-medium">
+                💡 <strong>Tips Dapur Oma:</strong> Karena sambal sudah mengandung garam dan gurih rempah alami, saat memasak masakan di atas Anda tidak perlu menambahkan banyak penyedap rasa buatan lagi.
+            </div>
+
+            <h2 class="text-2xl font-serif font-bold text-warmstone-900 pt-2">4. Tempe & Tahu Penyet Sambal Bawang</h2>
+            <p>
+                Goreng tempe dan tahu hingga kuning keemasan. Letakkan di atas piring saji, lalu siramkan 2 sendok <strong>Sambal Bawang Ulek</strong> panas di atasnya. Tekan sedikit dengan ulekan (*penyet*) agar bumbu meresap ke dalam kedelai gurih.
+            </p>
+
+            <h2 class="text-2xl font-serif font-bold text-warmstone-900 pt-2">5. Cocolan Ayam Goreng & Ikan Bakar</h2>
+            <p>
+                Untuk cocolan otentik Bali, gunakan <strong>Sambal Matah Kecombrang</strong> dingin langsung dari kulkas di atas ikan bakar atau ayam goreng lengkuas yang masih panas mengepul.
+            </p>
+        </article>
+
+        <!-- Inline WhatsApp Order CTA Box -->
+        <div class="bg-gradient-to-r from-terracotta-800 to-warmstone-900 text-white rounded-3xl p-8 sm:p-10 shadow-xl flex flex-col sm:flex-row items-center justify-between gap-6 my-10 border border-terracotta-700">
+            <div class="space-y-2 text-center sm:text-left">
+                <span class="bg-amberheritage-500 text-white text-[10px] font-bold px-3 py-1 rounded-full uppercase">STOK DI DAPUR ANDA</span>
+                <h3 class="text-2xl sm:text-3xl font-serif font-bold">Mau Coba Praktisnya Masak dengan Sambal Oma?</h3>
+                <p class="text-xs sm:text-sm text-stone-300 font-normal max-w-md leading-relaxed">
+                    Pesan botol sambal cumi atau paket trio hemat sekarang, siap kami packing bubble wrap tebal langsung dari dapur Surabaya.
+                </p>
+            </div>
+            <a href="https://wa.me/6281234567890?text=Halo%20Sambal%20Warisan%20Oma,%20saya%20mau%20order%20sambal%20botol%20untuk%20stok%20masak." target="_blank" class="px-7 py-4 bg-terracotta-700 hover:bg-terracotta-600 text-white font-bold text-xs sm:text-sm rounded-2xl border border-terracotta-500 flex-shrink-0 flex items-center gap-2 transition uppercase shadow">
+                <i class="fa-brands fa-whatsapp text-xl text-emerald-400"></i>
+                <span>PESAN SAMBAL SEKARANG</span>
+            </a>
+        </div>
+
+        <!-- Related Articles -->
+        <div class="pt-8 border-t border-warmstone-200">
+            <h3 class="text-xl font-serif font-bold text-warmstone-900 mb-6">Artikel Tips Dapur Lainnya</h3>
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+                <a href="baca-artikel.html" class="p-5 rounded-3xl bg-white border border-warmstone-200 hover:shadow-md transition flex items-center gap-4 group">
+                    <img src="https://images.unsplash.com/photo-1541696432-82c6da8ce7bf?auto=format&fit=crop&w=200&q=80" alt="Simpan Sambal" class="w-20 h-20 rounded-2xl object-cover">
+                    <div>
+                        <span class="text-[10px] font-bold text-terracotta-700 uppercase">TIPS PENYIMPANAN</span>
+                        <h4 class="font-serif font-bold text-xs sm:text-sm text-warmstone-900 group-hover:text-terracotta-700 line-clamp-2 mt-0.5">
+                            Cara Menyimpan Sambal Botol Agar Tahan 1 Bulan Tanpa Jamur & Gumpal
+                        </h4>
+                    </div>
+                </a>
+
+                <a href="baca-artikel.html" class="p-5 rounded-3xl bg-white border border-warmstone-200 hover:shadow-md transition flex items-center gap-4 group">
+                    <img src="https://images.unsplash.com/photo-1555396273-367ea4eb4db5?auto=format&fit=crop&w=200&q=80" alt="Bekal Rantau" class="w-20 h-20 rounded-2xl object-cover">
+                    <div>
+                        <span class="text-[10px] font-bold text-emerald-800 uppercase">BEKAL RANTAU</span>
+                        <h4 class="font-serif font-bold text-xs sm:text-sm text-warmstone-900 group-hover:text-terracotta-700 line-clamp-2 mt-0.5">
+                            Tips Packing Sambal Botol Kaca untuk Bekal Dinas & Studi ke Luar Negeri
+                        </h4>
+                    </div>
+                </a>
+            </div>
+        </div>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-warmstone-900 text-stone-400 pt-16 pb-12 border-t border-stone-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-10 pb-12 border-b border-stone-800">
+                <div class="lg:col-span-2 space-y-4">
+                    <a href="index.html" class="flex items-center gap-3">
+                        <div class="w-10 h-10 rounded-xl bg-terracotta-800 text-amber-400 flex items-center justify-center text-lg">
+                            <i class="fa-solid fa-pepper-hot"></i>
+                        </div>
+                        <span class="font-serif font-bold text-2xl text-white">WARISAN<span class="text-amberheritage-500">OMA</span></span>
+                    </a>
+                    <p class="text-xs text-stone-400 leading-relaxed pr-6 font-normal">
+                        Produsen sambal kemasan botol kaca premium dengan resep otentik nusantara. 100% rempah segar petani lokal, dimasak perlahan dengan minyak kelapa murni tanpa pengawet buatan.
+                    </p>
+                </div>
+                <div>
+                    <h4 class="text-white font-bold text-xs tracking-wider uppercase mb-4">Navigasi</h4>
+                    <ul class="space-y-2.5 text-xs font-semibold">
+                        <li><a href="index.html" class="hover:text-amber-400 transition">Beranda</a></li>
+                        <li><a href="katalog.html" class="hover:text-amber-400 transition">Koleksi Sambal</a></li>
+                        <li><a href="tentang.html" class="hover:text-amber-400 transition">Rahasia Rempah Oma</a></li>
+                        <li><a href="artikel.html" class="hover:text-amber-400 transition">Resep Masakan Rumahan</a></li>
+                        <li><a href="kontak.html" class="hover:text-amber-400 transition">Pemesanan & Grosir</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-white font-bold text-xs tracking-wider uppercase mb-4">Koleksi Terfavorit</h4>
+                    <ul class="space-y-2.5 text-xs font-medium">
+                        <li><a href="katalog.html" class="hover:text-amber-400 transition">Sambal Cumi Asin Bawang</a></li>
+                        <li><a href="katalog.html" class="hover:text-amber-400 transition">Sambal Bawang Ikan Klotok</a></li>
+                        <li><a href="katalog.html" class="hover:text-amber-400 transition">Sambal Roa Manado Asap</a></li>
+                        <li><a href="katalog.html" class="hover:text-amber-400 transition">Paket Trio Sambal Hampers</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-white font-bold text-xs tracking-wider uppercase mb-4">Dapur Produksi</h4>
+                    <div class="text-xs space-y-2 text-stone-400 font-normal">
+                        <p class="text-white font-bold">Jam Layanan CS:</p>
+                        <p>Senin - Minggu: 08.00 - 20.00 WIB</p>
+                        <p class="text-white font-bold pt-1">Dapur Sambal Pusat:</p>
+                        <p>Jl. Kutai Raya No. 42, Wonokromo, Surabaya, Jawa Timur</p>
+                        <p class="text-amber-400 font-bold pt-1"><i class="fa-brands fa-whatsapp"></i> +62 812-3456-7890</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="pt-8 flex flex-col md:flex-row items-center justify-between text-xs text-stone-500 gap-4">
+                <p>&copy; 2026 Sambal Warisan Oma. Hak Cipta Dilindungi.</p>
+                <div class="flex items-center gap-2">
+                    <span>Etalase Resmi UMKM didukung oleh</span>
+                    <a href="https://lenterapasar.com" target="_blank" class="text-amber-400 font-bold hover:underline">Lentera Pasar</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Floating WhatsApp Conversion Button (Offset to bottom-24) -->
+    <a href="https://wa.me/6281234567890?text=Halo%20Sambal%20Warisan%20Oma,%20saya%20mau%20pesan%20sambal." target="_blank" class="fixed bottom-24 right-6 z-40 group flex items-center gap-3 bg-terracotta-800 hover:bg-terracotta-900 text-white px-4 py-3.5 rounded-2xl shadow-xl hover:shadow-2xl transition-all duration-300 transform hover:scale-105 border border-terracotta-700" aria-label="Order via WhatsApp">
+        <i class="fa-brands fa-whatsapp text-2xl text-emerald-400"></i>
+        <span class="hidden sm:inline font-bold text-xs tracking-wider uppercase">Order Sambal WA</span>
+    </a>
+
+    <!-- ========================================================================= -->
+    <!-- LENTERA PASAR - STICKY DEMO & SALES BAR                                   -->
+    <!-- ========================================================================= -->
+    <div class="fixed bottom-4 left-1/2 -translate-x-1/2 z-50 w-[95%] max-w-4xl bg-slate-900/95 backdrop-blur-md text-white p-3.5 md:p-4 rounded-2xl shadow-2xl border border-slate-700/80 transition-all duration-300">
+      <div class="flex flex-col md:flex-row items-center justify-between gap-3 md:gap-4">
+        
+        <!-- Info Template & Value Proposition -->
+        <div class="flex items-center gap-3 w-full md:w-auto">
+          <div class="w-10 h-10 rounded-xl bg-amber-500/20 border border-amber-500/40 flex items-center justify-center shrink-0">
+            <svg class="w-5 h-5 text-amber-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z" />
+            </svg>
+          </div>
+          <div>
+            <div class="flex items-center gap-2">
+              <span class="font-bold text-sm text-white">Lentera Pasar Engine</span>
+              <span class="text-[10px] bg-emerald-500/20 text-emerald-300 border border-emerald-500/30 px-2 py-0.5 rounded-full font-medium">Free Admin Panel + Ads Support</span>
+            </div>
+            <p class="text-xs text-slate-300 hidden sm:block">
+              Terima beres: Website responsif + Panel input produk sendiri + Dikelola tim iklan profesional.
+            </p>
+          </div>
+        </div>
+
+        <!-- Poin Keunggulan & Tombol Action -->
+        <div class="flex items-center justify-between md:justify-end gap-3 w-full md:w-auto">
+          <div class="hidden lg:flex items-center gap-2 text-xs text-slate-400 border-r border-slate-700 pr-4">
+            <div class="flex items-center gap-1 text-slate-200">
+              <svg class="w-4 h-4 text-emerald-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" /></svg>
+              <span>Chat WA Instan</span>
+            </div>
+            <span class="text-slate-600">•</span>
+            <div class="flex items-center gap-1 text-slate-200">
+              <svg class="w-4 h-4 text-emerald-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" /></svg>
+              <span>Ready Meta Pixel</span>
+            </div>
+          </div>
+
+          <a href="https://wa.me/6281234567890?text=Halo%20Tim%20Lentera%20Pasar,%20saya%20tertarik%20menggunakan%20template%20website%20ini%20lengkap%20dengan%20Admin%20Panel%20dan%20Jasa%20Iklannya." 
+             target="_blank"
+             class="w-full md:w-auto inline-flex items-center justify-center gap-2 bg-gradient-to-r from-amber-500 to-orange-600 hover:from-amber-600 hover:to-orange-700 text-white text-xs md:text-sm font-semibold px-5 py-2.5 rounded-xl shadow-lg shadow-orange-500/20 transition-all hover:scale-105 shrink-0">
+            <span>Gunakan Template Ini</span>
+            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3" />
+            </svg>
+          </a>
+        </div>
+
+      </div>
+    </div>
+
+    <script>
+        const mobileMenuBtn = document.getElementById('mobileMenuBtn');
+        const mobileMenu = document.getElementById('mobileMenu');
+        const menuIcon = document.getElementById('menuIcon');
+
+        mobileMenuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+            if (mobileMenu.classList.contains('hidden')) {
+                menuIcon.classList.remove('fa-xmark');
+                menuIcon.classList.add('fa-bars');
+            } else {
+                menuIcon.classList.remove('fa-bars');
+                menuIcon.classList.add('fa-xmark');
+            }
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="id" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cerita Dapur & Resep Nusantara - KRIUK JUARA</title>
+    <meta name="description" content="Kisah di balik kerenyahan Kriuk Juara: bahan baku petani lokal, racikan rempah daun jeruk asli, teknik penirisan minyak modern, dan standar higienis dapur Bandung.">
+    
+    <!-- Google Fonts: Plus Jakarta Sans ExtraBold -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    
+    <!-- Tailwind CSS CDN with Custom Config -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        snackred: {
+                            500: '#ef4444',
+                            600: '#dc2626',
+                            700: '#b91c1c',
+                            800: '#991b1b',
+                        },
+                        mustardyellow: {
+                            300: '#fde047',
+                            400: '#facc15',
+                            500: '#eab308',
+                            600: '#ca8a04',
+                        },
+                        darkslate: {
+                            900: '#0f172a',
+                            950: '#020617',
+                        }
+                    },
+                    fontFamily: {
+                        sans: ['"Plus Jakarta Sans"', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-amber-50/50 text-slate-900 font-sans antialiased selection:bg-snackred-600 selection:text-white min-h-screen flex flex-col justify-between pb-28">
+
+    <!-- Header / Navbar -->
+    <header class="sticky top-0 z-40 bg-white/95 backdrop-blur-md border-b-2 border-slate-900 shadow-md transition-all">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-20">
+                
+                <!-- Brand Logo -->
+                <a href="index.html" class="flex items-center gap-3 group">
+                    <div class="w-12 h-12 rounded-2xl bg-snackred-600 text-yellow-300 border-2 border-slate-900 flex items-center justify-center text-2xl shadow-[3px_3px_0px_0px_rgba(15,23,42,1)] group-hover:rotate-6 transition transform">
+                        <i class="fa-solid fa-pepper-hot"></i>
+                    </div>
+                    <div>
+                        <span class="text-2xl sm:text-3xl font-black tracking-tight text-slate-900 block leading-none">
+                            KRIUK<span class="text-snackred-600">JUARA!</span>
+                        </span>
+                        <span class="text-[10px] font-black text-amber-600 tracking-widest uppercase">Pedas Gurih Bikin Nagih</span>
+                    </div>
+                </a>
+
+                <!-- Desktop Nav -->
+                <nav class="hidden md:flex items-center gap-7 font-black text-slate-800 text-sm uppercase tracking-wide">
+                    <a href="index.html" class="hover:text-snackred-600 transition">Beranda</a>
+                    <a href="katalog.html" class="hover:text-snackred-600 transition">Katalog Camilan</a>
+                    <a href="tentang.html" class="text-snackred-600 border-b-2 border-snackred-600 pb-1">Cerita Dapur</a>
+                    <a href="artikel.html" class="hover:text-snackred-600 transition">Tips Nyemil</a>
+                    <a href="kontak.html" class="hover:text-snackred-600 transition">Toko & Reseller</a>
+                </nav>
+
+                <!-- Desktop Action CTA -->
+                <div class="hidden lg:flex items-center gap-3">
+                    <a href="https://wa.me/6281234567890?text=Halo%20Kriuk%20Juara,%20saya%20mau%20pesan%20camilan%20renyah." target="_blank" class="inline-flex items-center gap-2 bg-mustardyellow-400 hover:bg-mustardyellow-500 text-slate-950 font-black text-xs px-5 py-3 rounded-2xl border-2 border-slate-900 shadow-[3px_3px_0px_0px_rgba(15,23,42,1)] hover:translate-y-0.5 hover:shadow-none transition">
+                        <i class="fa-brands fa-whatsapp text-lg text-emerald-700"></i>
+                        <span>ORDER WA KILAT</span>
+                    </a>
+                </div>
+
+                <!-- Mobile Menu Button -->
+                <button id="mobileMenuBtn" class="md:hidden text-slate-900 p-2 rounded-xl bg-amber-100 border-2 border-slate-900" aria-label="Buka Menu">
+                    <i class="fa-solid fa-bars text-xl" id="menuIcon"></i>
+                </button>
+            </div>
+        </div>
+
+        <!-- Mobile Drawer -->
+        <div id="mobileMenu" class="hidden md:hidden bg-white border-b-2 border-slate-900 px-4 pt-3 pb-6 space-y-3 shadow-xl">
+            <a href="index.html" class="block py-2.5 px-3 rounded-xl text-slate-900 hover:bg-amber-50 font-black text-sm uppercase">Beranda</a>
+            <a href="katalog.html" class="block py-2.5 px-3 rounded-xl text-slate-900 hover:bg-amber-50 font-black text-sm uppercase">Katalog Camilan</a>
+            <a href="tentang.html" class="block py-2.5 px-3 rounded-xl bg-snackred-50 text-snackred-600 font-black text-sm uppercase">Cerita Dapur</a>
+            <a href="artikel.html" class="block py-2.5 px-3 rounded-xl text-slate-900 hover:bg-amber-50 font-black text-sm uppercase">Tips Nyemil</a>
+            <a href="kontak.html" class="block py-2.5 px-3 rounded-xl text-slate-900 hover:bg-amber-50 font-black text-sm uppercase">Toko & Reseller</a>
+            <div class="pt-2">
+                <a href="https://wa.me/6281234567890?text=Halo%20Kriuk%20Juara,%20mau%20order%20snack" target="_blank" class="w-full inline-flex justify-center items-center gap-2 bg-snackred-600 text-white font-black py-3 rounded-xl text-xs uppercase border-2 border-slate-900 shadow-[2px_2px_0px_0px_rgba(15,23,42,1)]">
+                    <i class="fa-brands fa-whatsapp text-lg"></i>
+                    <span>Order via WhatsApp CS</span>
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Page Banner -->
+    <section class="bg-white py-14 border-b-2 border-slate-900 text-center">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+            <span class="text-snackred-600 text-xs font-black uppercase tracking-wider block mb-2">CERITA DI BALIK KRENYESNYA RASA</span>
+            <h1 class="text-3xl sm:text-4xl md:text-5xl font-black text-slate-900 uppercase">
+                Menghidupkan Camilan Tradisional Nusantara
+            </h1>
+            <p class="text-slate-600 text-sm sm:text-base font-semibold max-w-2xl mx-auto mt-3 leading-relaxed">
+                Dari dapur sederhana di Bandung, kami meracik resep keripik warisan leluhur dengan sentuhan modern: bumbu rempah daun jeruk segar berlimpah dan penirisan minyak mutakhir.
+            </p>
+        </div>
+    </section>
+
+    <!-- Main Content -->
+    <main class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 w-full flex-1 space-y-20">
+
+        <!-- Story Section -->
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+            <div class="space-y-5">
+                <span class="text-snackred-600 text-xs font-black uppercase tracking-wider bg-mustardyellow-300 text-slate-950 px-3.5 py-1 rounded-full border border-slate-900 shadow-[2px_2px_0px_0px_rgba(15,23,42,1)]">
+                    BERMULA DARI KOTA BANDUNG (2018)
+                </span>
+                <h2 class="text-3xl font-black text-slate-900 leading-tight uppercase">
+                    Petani Lokal, Cabai Segar, & Mesin Spinner Minyak
+                </h2>
+                <p class="text-slate-600 text-sm leading-relaxed font-semibold">
+                    Kami percaya bahwa camilan enak bermula dari bahan baku yang jujur. Singkong mentega dan pisang kepok kami dipanen langsung dari perkebunan petani lokal di Jawa Barat.
+                </p>
+                <p class="text-slate-600 text-sm leading-relaxed font-semibold">
+                    Setelah digoreng keemasan, setiap batch keripik dan basreng dimasukkan ke dalam <em>mesin sentrifugasi spinner</em> untuk memisahkan kelebihan minyak hingga 95%. Hasilnya? Camilan menjadi sangat renyah, tahan alot, dan nyaman di tenggorokan tanpa rasa serik!
+                </p>
+            </div>
+            <div class="relative">
+                <div class="rounded-3xl overflow-hidden bg-white border-2 border-slate-900 shadow-[8px_8px_0px_0px_rgba(15,23,42,1)] p-4">
+                    <img src="https://images.unsplash.com/photo-1563379091339-03b21ab4a4f8?auto=format&fit=crop&w=800&q=80" alt="Dapur Penggorengan Kriuk Juara" class="w-full h-[380px] object-cover rounded-2xl">
+                </div>
+            </div>
+        </div>
+
+        <!-- 4 Pilar Kualitas Kriuk Juara -->
+        <div>
+            <div class="text-center max-w-2xl mx-auto mb-12">
+                <span class="text-snackred-600 text-xs font-black uppercase tracking-wider">STANDAR PRODUKSI KAMI</span>
+                <h2 class="text-3xl font-black text-slate-900 mt-1 uppercase">4 Keunggulan Kriuk Juara</h2>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+                <!-- Pillar 1 -->
+                <div class="bg-white p-6 rounded-3xl border-2 border-slate-900 shadow-[4px_4px_0px_0px_rgba(15,23,42,1)] space-y-3">
+                    <div class="w-12 h-12 rounded-2xl bg-snackred-50 text-snackred-600 flex items-center justify-center text-2xl border border-slate-900">
+                        <i class="fa-solid fa-leaf"></i>
+                    </div>
+                    <h3 class="font-black text-base text-slate-900 uppercase">Daun Jeruk Purut Asli</h3>
+                    <p class="text-xs text-slate-600 font-semibold leading-relaxed">
+                        Harum segar alami dari daun jeruk asli yang dicincang halus, bukan aroma kimia buatan.
+                    </p>
+                </div>
+
+                <!-- Pillar 2 -->
+                <div class="bg-white p-6 rounded-3xl border-2 border-slate-900 shadow-[4px_4px_0px_0px_rgba(15,23,42,1)] space-y-3">
+                    <div class="w-12 h-12 rounded-2xl bg-snackred-50 text-snackred-600 flex items-center justify-center text-2xl border border-slate-900">
+                        <i class="fa-solid fa-droplet-slash"></i>
+                    </div>
+                    <h3 class="font-black text-base text-slate-900 uppercase">Tiris Minyak Maksimal</h3>
+                    <p class="text-xs text-slate-600 font-semibold leading-relaxed">
+                        Diproses dengan mesin spinner modern sehingga kering bebas minyak berlebih dan renyah lebih awet.
+                    </p>
+                </div>
+
+                <!-- Pillar 3 -->
+                <div class="bg-white p-6 rounded-3xl border-2 border-slate-900 shadow-[4px_4px_0px_0px_rgba(15,23,42,1)] space-y-3">
+                    <div class="w-12 h-12 rounded-2xl bg-snackred-50 text-snackred-600 flex items-center justify-center text-2xl border border-slate-900">
+                        <i class="fa-solid fa-box-archive"></i>
+                    </div>
+                    <h3 class="font-black text-base text-slate-900 uppercase">Kemasan Foil Ziplock</h3>
+                    <p class="text-xs text-slate-600 font-semibold leading-relaxed">
+                        Aluminium foil kedap udara tebal yang menjaga kriuk tahan renyah hingga 6 bulan penyimpanan.
+                    </p>
+                </div>
+
+                <!-- Pillar 4 -->
+                <div class="bg-white p-6 rounded-3xl border-2 border-slate-900 shadow-[4px_4px_0px_0px_rgba(15,23,42,1)] space-y-3">
+                    <div class="w-12 h-12 rounded-2xl bg-snackred-50 text-snackred-600 flex items-center justify-center text-2xl border border-slate-900">
+                        <i class="fa-solid fa-shield-halved"></i>
+                    </div>
+                    <h3 class="font-black text-base text-slate-900 uppercase">P-IRT & Halal Resmi</h3>
+                    <p class="text-xs text-slate-600 font-semibold leading-relaxed">
+                        Telah lolos uji dinas kesehatan dan sertifikasi halal MUI sehingga aman dikonsumsi seluruh keluarga.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Partnership CTA Card -->
+        <div class="bg-gradient-to-r from-snackred-600 to-amber-600 text-white rounded-3xl p-8 sm:p-12 border-2 border-slate-900 shadow-[8px_8px_0px_0px_rgba(15,23,42,1)]">
+            <div class="text-center max-w-2xl mx-auto space-y-4">
+                <span class="bg-yellow-400 text-slate-950 font-black text-xs px-3 py-1 rounded-full uppercase border border-slate-900">PELUANG BISNIS RESELLER</span>
+                <h2 class="text-3xl font-black uppercase">Mau Jualan Camilan Renyah Beromzet Jutaan?</h2>
+                <p class="text-xs sm:text-sm text-yellow-100 font-semibold leading-relaxed">
+                    Bergabunglah bersama 450+ mitra agen dan reseller di seluruh Indonesia. Dapatkan margin keuntungan hingga 35%, foto konten medsos harian, dan bonus gratis ongkir kargo.
+                </p>
+                <div class="pt-4 flex flex-wrap items-center justify-center gap-4">
+                    <a href="https://wa.me/6281234567890?text=Halo%20Kriuk%20Juara,%20saya%20tertarik%20jadi%20Reseller%20Camilan." target="_blank" class="px-7 py-3.5 bg-slate-950 hover:bg-slate-900 text-yellow-300 font-black text-xs rounded-2xl uppercase border-2 border-yellow-400 transition transform hover:scale-105 shadow-md">
+                        Daftar Reseller via WhatsApp
+                    </a>
+                    <a href="katalog.html" class="px-7 py-3.5 bg-white/20 hover:bg-white/30 text-white font-black text-xs rounded-2xl border-2 border-white transition uppercase">
+                        Lihat Katalog Produk
+                    </a>
+                </div>
+            </div>
+        </div>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-slate-950 text-slate-400 pt-16 pb-12 border-t-2 border-slate-900">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-10 pb-12 border-b border-slate-800">
+                <div class="lg:col-span-2 space-y-4">
+                    <a href="index.html" class="flex items-center gap-3">
+                        <div class="w-10 h-10 rounded-xl bg-snackred-600 text-yellow-300 flex items-center justify-center text-xl">
+                            <i class="fa-solid fa-pepper-hot"></i>
+                        </div>
+                        <span class="text-2xl font-black text-white">KRIUK<span class="text-snackred-500">JUARA!</span></span>
+                    </a>
+                    <p class="text-xs text-slate-400 leading-relaxed pr-6 font-medium">
+                        Produsen camilan kering, keripik pedas daun jeruk, dan aneka snack oleh-oleh nusantara. Gurih renyah tanpa pengawet buatan, siap kirim ke seluruh pelosok Indonesia.
+                    </p>
+                </div>
+                <div>
+                    <h4 class="text-white font-black text-xs tracking-wider uppercase mb-4">Navigasi</h4>
+                    <ul class="space-y-2.5 text-xs font-bold">
+                        <li><a href="index.html" class="hover:text-yellow-400 transition">Beranda</a></li>
+                        <li><a href="katalog.html" class="hover:text-yellow-400 transition">Katalog Camilan</a></li>
+                        <li><a href="tentang.html" class="hover:text-yellow-400 transition">Cerita Dapur Resep</a></li>
+                        <li><a href="artikel.html" class="hover:text-yellow-400 transition">Tips & Rekomendasi</a></li>
+                        <li><a href="kontak.html" class="hover:text-yellow-400 transition">Toko & Kargo</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-white font-black text-xs tracking-wider uppercase mb-4">Varian Juara</h4>
+                    <ul class="space-y-2.5 text-xs font-medium">
+                        <li><a href="katalog.html" class="hover:text-yellow-400 transition">Basreng Stik Daun Jeruk</a></li>
+                        <li><a href="katalog.html" class="hover:text-yellow-400 transition">Keripik Kaca Pedas Beling</a></li>
+                        <li><a href="katalog.html" class="hover:text-yellow-400 transition">Keripik Pisang Cokelat Lumer</a></li>
+                        <li><a href="katalog.html" class="hover:text-yellow-400 transition">Paket Dus Oleh-Oleh</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-white font-black text-xs tracking-wider uppercase mb-4">Dapur & Pengiriman</h4>
+                    <div class="text-xs space-y-2 text-slate-400 font-normal">
+                        <p class="text-white font-bold">Jam Layanan CS:</p>
+                        <p>Setiap Hari: 08.00 - 21.00 WIB</p>
+                        <p class="text-white font-bold pt-1">Dapur Produksi:</p>
+                        <p>Sentra Keripik Nusantara, Jl. Terusan Pasirkoja No. 88, Bandung, Jawa Barat</p>
+                        <p class="text-yellow-400 font-bold pt-1"><i class="fa-brands fa-whatsapp"></i> +62 812-3456-7890</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="pt-8 flex flex-col md:flex-row items-center justify-between text-xs text-slate-500 gap-4">
+                <p>&copy; 2026 Kriuk Juara Nusantara. Hak Cipta Dilindungi.</p>
+                <div class="flex items-center gap-2">
+                    <span>Etalase Resmi UMKM didukung oleh</span>
+                    <a href="https://lenterapasar.com" target="_blank" class="text-yellow-400 font-bold hover:underline">Lentera Pasar</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Floating WhatsApp Conversion Button (Offset to bottom-24) -->
+    <a href="https://wa.me/6281234567890?text=Halo%20Kriuk%20Juara,%20saya%20mau%20order%20camilan." target="_blank" class="fixed bottom-24 right-6 z-40 group flex items-center gap-3 bg-snackred-600 hover:bg-snackred-700 text-white px-4 py-3.5 rounded-2xl border-2 border-slate-900 shadow-[4px_4px_0px_0px_rgba(15,23,42,1)] hover:shadow-none transition-all duration-300 transform hover:scale-105" aria-label="Order via WhatsApp">
+        <i class="fa-brands fa-whatsapp text-2xl text-yellow-300"></i>
+        <span class="hidden sm:inline font-black text-xs tracking-wider uppercase">Order Snack WA</span>
+    </a>
+
+    <!-- ========================================================================= -->
+    <!-- LENTERA PASAR - STICKY DEMO & SALES BAR                                   -->
+    <!-- ========================================================================= -->
+    <div class="fixed bottom-4 left-1/2 -translate-x-1/2 z-50 w-[95%] max-w-4xl bg-slate-900/95 backdrop-blur-md text-white p-3.5 md:p-4 rounded-2xl shadow-2xl border border-slate-700/80 transition-all duration-300">
+      <div class="flex flex-col md:flex-row items-center justify-between gap-3 md:gap-4">
+        
+        <!-- Info Template & Value Proposition -->
+        <div class="flex items-center gap-3 w-full md:w-auto">
+          <div class="w-10 h-10 rounded-xl bg-amber-500/20 border border-amber-500/40 flex items-center justify-center shrink-0">
+            <svg class="w-5 h-5 text-amber-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z" />
+            </svg>
+          </div>
+          <div>
+            <div class="flex items-center gap-2">
+              <span class="font-bold text-sm text-white">Lentera Pasar Engine</span>
+              <span class="text-[10px] bg-emerald-500/20 text-emerald-300 border border-emerald-500/30 px-2 py-0.5 rounded-full font-medium">Free Admin Panel + Ads Support</span>
+            </div>
+            <p class="text-xs text-slate-300 hidden sm:block">
+              Terima beres: Website responsif + Panel input produk sendiri + Dikelola tim iklan profesional.
+            </p>
+          </div>
+        </div>
+
+        <!-- Poin Keunggulan & Tombol Action -->
+        <div class="flex items-center justify-between md:justify-end gap-3 w-full md:w-auto">
+          <div class="hidden lg:flex items-center gap-2 text-xs text-slate-400 border-r border-slate-700 pr-4">
+            <div class="flex items-center gap-1 text-slate-200">
+              <svg class="w-4 h-4 text-emerald-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" /></svg>
+              <span>Chat WA Instan</span>
+            </div>
+            <span class="text-slate-600">•</span>
+            <div class="flex items-center gap-1 text-slate-200">
+              <svg class="w-4 h-4 text-emerald-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" /></svg>
+              <span>Ready Meta Pixel</span>
+            </div>
+          </div>
+
+          <a href="https://wa.me/6281234567890?text=Halo%20Tim%20Lentera%20Pasar,%20saya%20tertarik%20menggunakan%20template%20website%20ini%20lengkap%20dengan%20Admin%20Panel%20dan%20Jasa%20Iklannya." 
+             target="_blank"
+             class="w-full md:w-auto inline-flex items-center justify-center gap-2 bg-gradient-to-r from-amber-500 to-orange-600 hover:from-amber-600 hover:to-orange-700 text-white text-xs md:text-sm font-semibold px-5 py-2.5 rounded-xl shadow-lg shadow-orange-500/20 transition-all hover:scale-105 shrink-0">
+            <span>Gunakan Template Ini</span>
+            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3" />
+            </svg>
+          </a>
+        </div>
+
+      </div>
+    </div>
+
+    <script>
+        const mobileMenuBtn = document.getElementById('mobileMenuBtn');
+        const mobileMenu = document.getElementById('mobileMenu');
+        const menuIcon = document.getElementById('menuIcon');
+
+        mobileMenuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+            if (mobileMenu.classList.contains('hidden')) {
+                menuIcon.classList.remove('fa-xmark');
+                menuIcon.classList.add('fa-bars');
+            } else {
+                menuIcon.classList.remove('fa-bars');
+                menuIcon.classList.add('fa-xmark');
+            }
+        });
+    </script>
+</body>
+</html>

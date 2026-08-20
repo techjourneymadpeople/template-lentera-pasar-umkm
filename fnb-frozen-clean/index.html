@@ -1,0 +1,642 @@
+<!DOCTYPE html>
+<html lang="id" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SEDAP BEKU - Frozen Food Siap Masak Higienis & Praktis Keluarga</title>
+    <meta name="description" content="Pilihan frozen food siap masak keluarga: dimsum ayam udang, olahan daging sapi, camilan beku, dan paket hemat bundling. 100% Halal, tanpa pengawet buatan, kemasan vacuum pack rapat.">
+    
+    <!-- Google Fonts: Plus Jakarta Sans -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    
+    <!-- Tailwind CSS CDN with Custom Config -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        frozenteal: {
+                            50: '#f0fdfa',
+                            100: '#ccfbf1',
+                            200: '#99f6e4',
+                            500: '#14b8a6',
+                            600: '#0d9488',
+                            700: '#0f766e',
+                            800: '#115e59',
+                            900: '#134e4a',
+                        },
+                        amberfresh: {
+                            500: '#f59e0b',
+                            600: '#d97706',
+                        },
+                        cleanbg: '#f8fafc',
+                    },
+                    fontFamily: {
+                        sans: ['"Plus Jakarta Sans"', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-cleanbg text-slate-800 font-sans antialiased selection:bg-frozenteal-600 selection:text-white pb-28">
+
+    <!-- Top Trust Bar -->
+    <div class="bg-frozenteal-900 text-teal-100 text-xs py-2 px-4 font-medium border-b border-frozenteal-800">
+        <div class="max-w-7xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-2 text-center sm:text-left">
+            <div class="flex items-center gap-4 text-[11px] sm:text-xs">
+                <span class="flex items-center gap-1.5"><i class="fa-solid fa-snowflake text-teal-300"></i> Suhu Beku Standar -18°C</span>
+                <span class="hidden md:inline text-frozenteal-700">•</span>
+                <span class="hidden md:flex items-center gap-1.5"><i class="fa-solid fa-shield-halved text-teal-300"></i> Sertifikasi Halal MUI & Uji P-IRT</span>
+                <span class="hidden md:inline text-frozenteal-700">•</span>
+                <span class="hidden md:flex items-center gap-1.5"><i class="fa-solid fa-box-tissue text-teal-300"></i> Kemasan Food-Grade Vacuum Sealed</span>
+            </div>
+            <div class="flex items-center gap-3 text-xs">
+                <a href="kontak.html" class="hover:text-white underline font-semibold flex items-center gap-1">
+                    <i class="fa-solid fa-handshake"></i>
+                    <span>Peluang Kemitraan Reseller</span>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Header / Navbar: Clean Minimalist & Homey Fresh -->
+    <header class="sticky top-0 z-40 bg-white/95 backdrop-blur-md border-b border-slate-200 shadow-sm transition-all">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-20">
+                
+                <!-- Brand Logo -->
+                <a href="index.html" class="flex items-center gap-3 group">
+                    <div class="w-11 h-11 rounded-2xl bg-gradient-to-br from-frozenteal-600 to-teal-500 text-white flex items-center justify-center text-xl shadow-md group-hover:scale-105 transition">
+                        <i class="fa-solid fa-cube"></i>
+                    </div>
+                    <div>
+                        <span class="text-xl sm:text-2xl font-extrabold tracking-tight text-slate-900 block leading-none">
+                            SEDAP<span class="text-frozenteal-600">BEKU</span>
+                        </span>
+                        <span class="text-[10px] font-bold text-slate-500 tracking-wider uppercase">Fresh Frozen Delights</span>
+                    </div>
+                </a>
+
+                <!-- Desktop Nav -->
+                <nav class="hidden md:flex items-center gap-8 font-bold text-slate-700 text-sm">
+                    <a href="index.html" class="text-frozenteal-600 border-b-2 border-frozenteal-600 pb-1">Beranda</a>
+                    <a href="katalog.html" class="hover:text-frozenteal-600 transition">Katalog Menu Beku</a>
+                    <a href="tentang.html" class="hover:text-frozenteal-600 transition">Dapur Higienis</a>
+                    <a href="artikel.html" class="hover:text-frozenteal-600 transition">Tips Masak Cepat</a>
+                    <a href="kontak.html" class="hover:text-frozenteal-600 transition">Reseller & Kirim Instan</a>
+                </nav>
+
+                <!-- Desktop Action Button -->
+                <div class="hidden lg:flex items-center gap-3">
+                    <a href="https://wa.me/6281234567890?text=Halo%20Sedap%20Beku,%20saya%20mau%20order%20frozen%20food." target="_blank" class="inline-flex items-center gap-2 bg-frozenteal-600 hover:bg-frozenteal-700 text-white text-xs font-bold px-5 py-3 rounded-2xl shadow-sm hover:shadow transition">
+                        <i class="fa-brands fa-whatsapp text-base"></i>
+                        <span>Pesan WhatsApp Instan</span>
+                    </a>
+                </div>
+
+                <!-- Mobile Menu Button -->
+                <button id="mobileMenuBtn" class="md:hidden text-slate-700 hover:text-frozenteal-600 p-2 rounded-xl bg-slate-100" aria-label="Buka Menu">
+                    <i class="fa-solid fa-bars text-xl" id="menuIcon"></i>
+                </button>
+            </div>
+        </div>
+
+        <!-- Mobile Drawer -->
+        <div id="mobileMenu" class="hidden md:hidden bg-white border-b border-slate-200 px-4 pt-3 pb-6 space-y-3 shadow-lg">
+            <a href="index.html" class="block py-2.5 px-3 rounded-xl bg-frozenteal-50 text-frozenteal-700 font-bold text-sm">Beranda</a>
+            <a href="katalog.html" class="block py-2.5 px-3 rounded-xl text-slate-700 hover:bg-slate-50 font-semibold text-sm">Katalog Menu Beku</a>
+            <a href="tentang.html" class="block py-2.5 px-3 rounded-xl text-slate-700 hover:bg-slate-50 font-semibold text-sm">Dapur Higienis</a>
+            <a href="artikel.html" class="block py-2.5 px-3 rounded-xl text-slate-700 hover:bg-slate-50 font-semibold text-sm">Tips Masak Cepat</a>
+            <a href="kontak.html" class="block py-2.5 px-3 rounded-xl text-slate-700 hover:bg-slate-50 font-semibold text-sm">Reseller & Kirim Instan</a>
+            <div class="pt-2">
+                <a href="https://wa.me/6281234567890?text=Halo%20Sedap%20Beku,%20saya%20mau%20order" target="_blank" class="w-full inline-flex justify-center items-center gap-2 bg-frozenteal-600 text-white font-bold py-3 rounded-xl text-xs">
+                    <i class="fa-brands fa-whatsapp text-lg"></i>
+                    <span>Hubungi CS Sedap Beku</span>
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- HERO SECTION: Split Text & Fresh Homey Cooking Visual -->
+    <section class="py-12 md:py-20 bg-white border-b border-slate-200 relative overflow-hidden">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+                
+                <!-- Left Text Content -->
+                <div class="lg:col-span-6 space-y-6 text-center lg:text-left">
+                    <div class="inline-flex items-center gap-2 bg-frozenteal-50 text-frozenteal-700 text-xs font-extrabold px-4 py-1.5 rounded-full border border-frozenteal-200">
+                        <i class="fa-solid fa-clock text-amberfresh-500"></i>
+                        <span>MASAK PRAKTIS HANYA 5-7 MENIT DI RUMAH</span>
+                    </div>
+
+                    <h1 class="text-4xl sm:text-5xl md:text-5xl lg:text-6xl font-extrabold text-slate-900 tracking-tight leading-[1.15]">
+                        Stok Lauk Lezat, <br>
+                        <span class="text-frozenteal-600">Selalu Siap Santap Hangat.</span>
+                    </h1>
+
+                    <p class="text-base sm:text-lg text-slate-600 font-normal leading-relaxed max-w-xl mx-auto lg:mx-0">
+                        Pilihan dimsum gurih, daging ungkep bumbu meresap, dan camilan beku higienis tanpa pengawet buatan. Kemasan <em>vacuum seal</em> kedap udara, aman simpan di freezer hingga 3 bulan.
+                    </p>
+
+                    <!-- CTA Buttons -->
+                    <div class="flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-3.5 pt-2">
+                        <a href="katalog.html" class="w-full sm:w-auto inline-flex items-center justify-center gap-2 bg-frozenteal-600 hover:bg-frozenteal-700 text-white font-bold text-sm px-8 py-4 rounded-2xl shadow-md hover:shadow-lg transition transform hover:-translate-y-0.5">
+                            <i class="fa-solid fa-bag-shopping"></i>
+                            <span>Lihat Semua Menu Beku</span>
+                        </a>
+                        <a href="https://wa.me/6281234567890?text=Halo%20Sedap%20Beku,%20saya%20mau%20tanya%20ongkir%20pengiriman%20instan." target="_blank" class="w-full sm:w-auto inline-flex items-center justify-center gap-2 bg-cleanbg hover:bg-slate-100 text-slate-800 border border-slate-300 font-bold text-sm px-7 py-4 rounded-2xl shadow-sm transition">
+                            <i class="fa-brands fa-whatsapp text-emerald-600 text-lg"></i>
+                            <span>Pesan Instan (Sameday)</span>
+                        </a>
+                    </div>
+
+                    <!-- Fast Trust Stats -->
+                    <div class="pt-4 flex flex-wrap items-center justify-center lg:justify-start gap-4 text-xs font-bold text-slate-600">
+                        <span class="flex items-center gap-1.5"><i class="fa-solid fa-check text-frozenteal-600"></i> 100% Daging Asli Pilihan</span>
+                        <span class="flex items-center gap-1.5"><i class="fa-solid fa-check text-frozenteal-600"></i> Tanpa Pengawet Buatan</span>
+                        <span class="flex items-center gap-1.5"><i class="fa-solid fa-check text-frozenteal-600"></i> Halal MUI Certified</span>
+                    </div>
+                </div>
+
+                <!-- Right Visual: Split Photo Matang & Vacuum Pack -->
+                <div class="lg:col-span-6 relative">
+                    <div class="relative mx-auto max-w-lg">
+                        
+                        <!-- Main Cooking Photo -->
+                        <div class="rounded-3xl overflow-hidden shadow-2xl border border-slate-200 bg-white">
+                            <img src="https://images.unsplash.com/photo-1541696432-82c6da8ce7bf?auto=format&fit=crop&w=900&q=80" alt="Dimsum & Frozen Food Sedap Beku" class="w-full h-[380px] sm:h-[450px] object-cover">
+                        </div>
+
+                        <!-- Floating Vacuum Pack Card -->
+                        <div class="absolute -bottom-6 -left-6 bg-white p-4 rounded-2xl shadow-xl border border-slate-200 flex items-center gap-3.5 max-w-xs">
+                            <div class="w-12 h-12 rounded-xl bg-frozenteal-50 text-frozenteal-600 flex items-center justify-center text-xl flex-shrink-0">
+                                <i class="fa-solid fa-snowflake"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-xs text-slate-900">Vacuum Sealed Pack</h4>
+                                <p class="text-[11px] text-slate-500">Kedap udara, higienis & tahan lama</p>
+                            </div>
+                        </div>
+
+                        <!-- Floating Review Badge -->
+                        <div class="absolute -top-4 -right-4 bg-white/95 backdrop-blur-md px-4 py-2 rounded-2xl shadow-lg border border-slate-200 flex items-center gap-2">
+                            <i class="fa-solid fa-star text-amberfresh-500 text-sm"></i>
+                            <span class="font-extrabold text-xs text-slate-900">4.9 / 5.0</span>
+                            <span class="text-[10px] text-slate-500 font-medium">(1.850+ Ulasan)</span>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION: 3 Langkah Mudah Penyajian (Thawing -> Masak -> Siap Santap) -->
+    <section class="py-16 bg-cleanbg border-b border-slate-200">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            
+            <div class="text-center max-w-2xl mx-auto mb-12">
+                <span class="text-frozenteal-600 text-xs font-extrabold uppercase tracking-wider">CARA PENYAJIAN CEPAT</span>
+                <h2 class="text-3xl sm:text-4xl font-extrabold text-slate-900 mt-1">3 Langkah Mudah Menyiapkan Makanan</h2>
+                <p class="text-slate-600 text-sm mt-2">Tanpa repot potong bumbu, siapa pun bisa menyajikan masakan lezat seperti di restoran.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                
+                <!-- Step 1 -->
+                <div class="bg-white p-8 rounded-3xl border border-slate-200 shadow-sm text-center space-y-4 relative group hover:border-frozenteal-500 transition">
+                    <div class="w-16 h-16 rounded-2xl bg-frozenteal-50 text-frozenteal-700 flex items-center justify-center text-2xl mx-auto font-extrabold border border-frozenteal-200">
+                        1
+                    </div>
+                    <h3 class="font-bold text-lg text-slate-900">Thawing / Cairkan</h3>
+                    <p class="text-xs text-slate-600 leading-relaxed font-normal">
+                        Keluarkan kemasan dari freezer, rendam kemasan vacuum pack di air suhu ruang selama 10-15 menit hingga melunak.
+                    </p>
+                    <span class="inline-block text-[11px] font-bold text-frozenteal-700 bg-frozenteal-50 px-3 py-1 rounded-full">
+                        ⏱️ 10-15 Menit
+                    </span>
+                </div>
+
+                <!-- Step 2 -->
+                <div class="bg-white p-8 rounded-3xl border-2 border-frozenteal-600 shadow-md text-center space-y-4 relative group">
+                    <div class="w-16 h-16 rounded-2xl bg-frozenteal-600 text-white flex items-center justify-center text-2xl mx-auto font-extrabold shadow">
+                        2
+                    </div>
+                    <h3 class="font-bold text-lg text-slate-900">Goreng, Kukus, atau Air-Fry</h3>
+                    <p class="text-xs text-slate-600 leading-relaxed font-normal">
+                        Goreng dengan minyak panas api sedang, kukus dengan kukusan beruap banyak, atau panggang di air fryer 180°C.
+                    </p>
+                    <span class="inline-block text-[11px] font-bold text-frozenteal-700 bg-frozenteal-50 px-3 py-1 rounded-full">
+                        🔥 Hanya 5-7 Menit
+                    </span>
+                </div>
+
+                <!-- Step 3 -->
+                <div class="bg-white p-8 rounded-3xl border border-slate-200 shadow-sm text-center space-y-4 relative group hover:border-frozenteal-500 transition">
+                    <div class="w-16 h-16 rounded-2xl bg-frozenteal-50 text-frozenteal-700 flex items-center justify-center text-2xl mx-auto font-extrabold border border-frozenteal-200">
+                        3
+                    </div>
+                    <h3 class="font-bold text-lg text-slate-900">Siap Disantap Hangat</h3>
+                    <p class="text-xs text-slate-600 leading-relaxed font-normal">
+                        Sajikan dengan cocolan saus sambal racikan spesial Sedap Beku yang sudah termasuk di dalam setiap paket.
+                    </p>
+                    <span class="inline-block text-[11px] font-bold text-emerald-700 bg-emerald-50 px-3 py-1 rounded-full">
+                        😋 Langsung Enak!
+                    </span>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+    <!-- SECTION: Produk Unggulan (Grid 4 Kolom Produk Beku) -->
+    <section class="py-16 bg-white border-b border-slate-200">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            
+            <div class="flex flex-col md:flex-row md:items-end justify-between mb-12 gap-4">
+                <div>
+                    <span class="text-frozenteal-600 text-xs font-extrabold uppercase tracking-wider">PRODUK TERLARIS DI DAPUR KELUARGA</span>
+                    <h2 class="text-3xl sm:text-4xl font-extrabold text-slate-900 mt-1">Pilihan Menu Beku Favorit</h2>
+                </div>
+                <a href="katalog.html" class="inline-flex items-center gap-2 text-frozenteal-600 hover:text-frozenteal-700 font-bold text-sm">
+                    <span>Lihat Semua Katalog Menu (16 Varian) &rarr;</span>
+                </a>
+            </div>
+
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+                
+                <!-- Product 1: Dimsum Siomay Ayam Udang -->
+                <div class="bg-cleanbg rounded-3xl p-5 border border-slate-200 hover:border-frozenteal-500 transition flex flex-col justify-between group shadow-sm">
+                    <div>
+                        <div class="relative h-48 rounded-2xl overflow-hidden mb-4 bg-slate-100">
+                            <img src="https://images.unsplash.com/photo-1541696432-82c6da8ce7bf?auto=format&fit=crop&w=600&q=80" alt="Dimsum Ayam Udang" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+                            <span class="absolute top-3 left-3 bg-frozenteal-600 text-white text-[10px] font-bold px-2.5 py-0.5 rounded-full uppercase">
+                                BEST SELLER #1
+                            </span>
+                            <span class="absolute bottom-3 right-3 bg-white/95 text-slate-800 text-[10px] font-bold px-2 py-0.5 rounded-md border border-slate-200">
+                                Isi 15 Pcs (350g)
+                            </span>
+                        </div>
+
+                        <div class="flex items-center gap-2 text-[11px] font-bold text-frozenteal-700 mb-1.5">
+                            <span><i class="fa-solid fa-fire-burner"></i> Kukus 7 Menit / Goreng</span>
+                        </div>
+
+                        <h3 class="font-bold text-base text-slate-900 group-hover:text-frozenteal-600 transition">
+                            <a href="detail.html">Dimsum Siomay Ayam Udang</a>
+                        </h3>
+                        <p class="text-slate-600 text-xs mt-1 line-clamp-2">
+                            Daging ayam cincang gurih berpadu potongan udang utuh renyah, lengkap dengan chili oil khas.
+                        </p>
+                    </div>
+
+                    <div class="pt-4 border-t border-slate-200 mt-4 flex items-center justify-between">
+                        <div>
+                            <span class="text-[10px] text-slate-400 block font-semibold">Harga Pack:</span>
+                            <span class="text-lg font-extrabold text-frozenteal-600">Rp45.000</span>
+                        </div>
+                        <a href="detail.html" class="px-3.5 py-2 rounded-xl bg-frozenteal-600 hover:bg-frozenteal-700 text-white text-xs font-bold transition">
+                            Detail &rarr;
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Product 2: Ayam Ungkep Bumbu Kuning Lengkuas -->
+                <div class="bg-cleanbg rounded-3xl p-5 border-2 border-frozenteal-600 shadow-sm flex flex-col justify-between group">
+                    <div>
+                        <div class="relative h-48 rounded-2xl overflow-hidden mb-4 bg-slate-100">
+                            <img src="https://images.unsplash.com/photo-1598515214211-89d3c73ae83b?auto=format&fit=crop&w=600&q=80" alt="Ayam Ungkep" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+                            <span class="absolute top-3 left-3 bg-amberfresh-500 text-slate-950 text-[10px] font-bold px-2.5 py-0.5 rounded-full uppercase">
+                                FAVORIT IBU
+                            </span>
+                            <span class="absolute bottom-3 right-3 bg-white/95 text-slate-800 text-[10px] font-bold px-2 py-0.5 rounded-md border border-slate-200">
+                                1 Ekor Potong 4 (650g)
+                            </span>
+                        </div>
+
+                        <div class="flex items-center gap-2 text-[11px] font-bold text-frozenteal-700 mb-1.5">
+                            <span><i class="fa-solid fa-fire-burner"></i> Goreng / Air-Fry 5 Mnt</span>
+                        </div>
+
+                        <h3 class="font-bold text-base text-slate-900 group-hover:text-frozenteal-600 transition">
+                            <a href="detail.html">Ayam Ungkep Bumbu Lengkuas</a>
+                        </h3>
+                        <p class="text-slate-600 text-xs mt-1 line-clamp-2">
+                            Ayam pejantan bumbu rempah kuning meresap empuk dengan taburan serundeng lengkuas gurih.
+                        </p>
+                    </div>
+
+                    <div class="pt-4 border-t border-slate-200 mt-4 flex items-center justify-between">
+                        <div>
+                            <span class="text-[10px] text-slate-400 block font-semibold">Harga Pack:</span>
+                            <span class="text-lg font-extrabold text-frozenteal-600">Rp58.000</span>
+                        </div>
+                        <a href="detail.html" class="px-3.5 py-2 rounded-xl bg-frozenteal-600 hover:bg-frozenteal-700 text-white text-xs font-bold transition">
+                            Detail &rarr;
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Product 3: Beef Yakiniku Marinated Slice -->
+                <div class="bg-cleanbg rounded-3xl p-5 border border-slate-200 hover:border-frozenteal-500 transition flex flex-col justify-between group shadow-sm">
+                    <div>
+                        <div class="relative h-48 rounded-2xl overflow-hidden mb-4 bg-slate-100">
+                            <img src="https://images.unsplash.com/photo-1544025162-d76694265947?auto=format&fit=crop&w=600&q=80" alt="Beef Yakiniku" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+                            <span class="absolute bottom-3 right-3 bg-white/95 text-slate-800 text-[10px] font-bold px-2 py-0.5 rounded-md border border-slate-200">
+                                Netto 500g
+                            </span>
+                        </div>
+
+                        <div class="flex items-center gap-2 text-[11px] font-bold text-frozenteal-700 mb-1.5">
+                            <span><i class="fa-solid fa-fire-burner"></i> Tumis Teflon 3 Menit</span>
+                        </div>
+
+                        <h3 class="font-bold text-base text-slate-900 group-hover:text-frozenteal-600 transition">
+                            <a href="detail.html">Beef Slice Marinasi Yakiniku</a>
+                        </h3>
+                        <p class="text-slate-600 text-xs mt-1 line-clamp-2">
+                            Irisan daging sapi US shortplate empuk berselimut saus yakiniku manis gurih siap oseng.
+                        </p>
+                    </div>
+
+                    <div class="pt-4 border-t border-slate-200 mt-4 flex items-center justify-between">
+                        <div>
+                            <span class="text-[10px] text-slate-400 block font-semibold">Harga Pack:</span>
+                            <span class="text-lg font-extrabold text-frozenteal-600">Rp72.000</span>
+                        </div>
+                        <a href="detail.html" class="px-3.5 py-2 rounded-xl bg-frozenteal-600 hover:bg-frozenteal-700 text-white text-xs font-bold transition">
+                            Detail &rarr;
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Product 4: Cireng Salju Bumbu Rujak -->
+                <div class="bg-cleanbg rounded-3xl p-5 border border-slate-200 hover:border-frozenteal-500 transition flex flex-col justify-between group shadow-sm">
+                    <div>
+                        <div class="relative h-48 rounded-2xl overflow-hidden mb-4 bg-slate-100">
+                            <img src="https://images.unsplash.com/photo-1563379091339-03b21ab4a4f8?auto=format&fit=crop&w=600&q=80" alt="Cireng Salju" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+                            <span class="absolute top-3 left-3 bg-slate-900 text-white text-[10px] font-bold px-2.5 py-0.5 rounded-full uppercase">
+                                CAMILAN SORE
+                            </span>
+                            <span class="absolute bottom-3 right-3 bg-white/95 text-slate-800 text-[10px] font-bold px-2 py-0.5 rounded-md border border-slate-200">
+                                Isi 20 Pcs (400g)
+                            </span>
+                        </div>
+
+                        <div class="flex items-center gap-2 text-[11px] font-bold text-frozenteal-700 mb-1.5">
+                            <span><i class="fa-solid fa-fire-burner"></i> Goreng Renyah 4 Mnt</span>
+                        </div>
+
+                        <h3 class="font-bold text-base text-slate-900 group-hover:text-frozenteal-600 transition">
+                            <a href="detail.html">Cireng Salju Crispy + Rujak</a>
+                        </h3>
+                        <p class="text-slate-600 text-xs mt-1 line-clamp-2">
+                            Cireng renyah di luar kenyal lembut di dalam, lengkap sambal rujak gula aren pedas segar.
+                        </p>
+                    </div>
+
+                    <div class="pt-4 border-t border-slate-200 mt-4 flex items-center justify-between">
+                        <div>
+                            <span class="text-[10px] text-slate-400 block font-semibold">Harga Pack:</span>
+                            <span class="text-lg font-extrabold text-frozenteal-600">Rp22.000</span>
+                        </div>
+                        <a href="detail.html" class="px-3.5 py-2 rounded-xl bg-frozenteal-600 hover:bg-frozenteal-700 text-white text-xs font-bold transition">
+                            Detail &rarr;
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+    <!-- SECTION: Review Pelanggan & Ibu Rumah Tangga (Social Proof) -->
+    <section class="py-16 bg-cleanbg border-b border-slate-200">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            
+            <div class="text-center max-w-2xl mx-auto mb-12">
+                <span class="text-frozenteal-600 text-xs font-extrabold uppercase tracking-wider">ULASAN IBU RUMAH TANGGA & KELUARGA</span>
+                <h2 class="text-3xl sm:text-4xl font-extrabold text-slate-900 mt-1">Dipercaya Lebih dari 12.000+ Keluarga</h2>
+                <p class="text-slate-600 text-sm mt-2">Dengarkan cerita kepraktisan memasak sehari-hari dari para pelanggan setia Sedap Beku.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                
+                <!-- Review 1 -->
+                <div class="bg-white p-6 rounded-3xl border border-slate-200 shadow-sm space-y-3">
+                    <div class="flex text-amberfresh-500 gap-1 text-sm">
+                        <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                    </div>
+                    <p class="text-xs sm:text-sm text-slate-700 leading-relaxed font-normal">
+                        "Sebagai ibu bekerja, stok Sedap Beku di freezer beneran penyelamat waktu sarapan anak-anak! Tinggal kukus siomay ayam udang 7 menit, langsung jadi bekal sekolah yang higienis."
+                    </p>
+                    <div class="pt-3 border-t border-slate-100 flex items-center gap-3">
+                        <div class="w-10 h-10 rounded-full bg-frozenteal-100 text-frozenteal-700 font-bold flex items-center justify-center text-xs">
+                            DR
+                        </div>
+                        <div>
+                            <h4 class="font-bold text-xs text-slate-900">dr. Ratih Puspasari</h4>
+                            <p class="text-[11px] text-slate-500">Ibu 2 Anak & Dokter • Jakarta Barat</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Review 2 -->
+                <div class="bg-white p-6 rounded-3xl border border-slate-200 shadow-sm space-y-3">
+                    <div class="flex text-amberfresh-500 gap-1 text-sm">
+                        <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                    </div>
+                    <p class="text-xs sm:text-sm text-slate-700 leading-relaxed font-normal">
+                        "Ayam bumbu lengkuasnya bumbunya meresap sampai ke tulang, pas digoreng serundengnya melimpah banget wangi. Suami dan anak doyan banget."
+                    </p>
+                    <div class="pt-3 border-t border-slate-100 flex items-center gap-3">
+                        <div class="w-10 h-10 rounded-full bg-frozenteal-100 text-frozenteal-700 font-bold flex items-center justify-center text-xs">
+                            NA
+                        </div>
+                        <div>
+                            <h4 class="font-bold text-xs text-slate-900">Nurul Anggraini</h4>
+                            <p class="text-[11px] text-slate-500">Pelanggan Setia • Tangerang Selatan</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Review 3 -->
+                <div class="bg-white p-6 rounded-3xl border border-slate-200 shadow-sm space-y-3">
+                    <div class="flex text-amberfresh-500 gap-1 text-sm">
+                        <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                    </div>
+                    <p class="text-xs sm:text-sm text-slate-700 leading-relaxed font-normal">
+                        "Pengiriman instan sangat rapi, kemasan vacuum pack rapat dan masih beku keras pas sampai. Praktis banget buat anak kos yang mau makan enak hemat."
+                    </p>
+                    <div class="pt-3 border-t border-slate-100 flex items-center gap-3">
+                        <div class="w-10 h-10 rounded-full bg-frozenteal-100 text-frozenteal-700 font-bold flex items-center justify-center text-xs">
+                            FA
+                        </div>
+                        <div>
+                            <h4 class="font-bold text-xs text-slate-900">Farhan Alamsyah</h4>
+                            <p class="text-[11px] text-slate-500">Karyawan Swasta • Depok</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-slate-900 text-slate-400 pt-16 pb-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-10 pb-12 border-b border-slate-800">
+                
+                <!-- Brand Info -->
+                <div class="lg:col-span-2 space-y-4">
+                    <a href="index.html" class="flex items-center gap-3">
+                        <div class="w-10 h-10 rounded-xl bg-frozenteal-600 text-white flex items-center justify-center text-lg">
+                            <i class="fa-solid fa-cube"></i>
+                        </div>
+                        <span class="text-2xl font-extrabold text-white">SEDAP<span class="text-frozenteal-400">BEKU</span></span>
+                    </a>
+                    <p class="text-xs text-slate-400 leading-relaxed pr-6 font-normal">
+                        Produsen frozen food siap masak berkualitas premium bersertifikasi Halal MUI. Menghadirkan kepraktisan makan enak, higienis, dan sehat untuk seluruh keluarga Indonesia.
+                    </p>
+                    <div class="flex items-center gap-3 pt-2">
+                        <a href="#" class="w-9 h-9 rounded-xl bg-slate-800 hover:bg-frozenteal-600 text-slate-400 hover:text-white flex items-center justify-center transition"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="#" class="w-9 h-9 rounded-xl bg-slate-800 hover:bg-frozenteal-600 text-slate-400 hover:text-white flex items-center justify-center transition"><i class="fa-brands fa-tiktok"></i></a>
+                        <a href="#" class="w-9 h-9 rounded-xl bg-slate-800 hover:bg-frozenteal-600 text-slate-400 hover:text-white flex items-center justify-center transition"><i class="fa-brands fa-whatsapp"></i></a>
+                    </div>
+                </div>
+
+                <!-- Navigasi -->
+                <div>
+                    <h4 class="text-white font-bold text-xs tracking-wider uppercase mb-4">Navigasi Utama</h4>
+                    <ul class="space-y-2.5 text-xs font-medium">
+                        <li><a href="index.html" class="hover:text-frozenteal-400 transition">Beranda</a></li>
+                        <li><a href="katalog.html" class="hover:text-frozenteal-400 transition">Katalog Menu Beku</a></li>
+                        <li><a href="tentang.html" class="hover:text-frozenteal-400 transition">Standar Dapur Higienis</a></li>
+                        <li><a href="artikel.html" class="hover:text-frozenteal-400 transition">Tips Masak Cepat</a></li>
+                        <li><a href="kontak.html" class="hover:text-frozenteal-400 transition">Info Reseller & Kirim</a></li>
+                    </ul>
+                </div>
+
+                <!-- Kategori Menu -->
+                <div>
+                    <h4 class="text-white font-bold text-xs tracking-wider uppercase mb-4">Kategori Produk</h4>
+                    <ul class="space-y-2.5 text-xs font-medium">
+                        <li><a href="katalog.html?kategori=dimsum" class="hover:text-frozenteal-400 transition">Dimsum & Siomay</a></li>
+                        <li><a href="katalog.html?kategori=daging" class="hover:text-frozenteal-400 transition">Olahan Ayam & Sapi</a></li>
+                        <li><a href="katalog.html?kategori=camilan" class="hover:text-frozenteal-400 transition">Camilan Goreng Beku</a></li>
+                        <li><a href="katalog.html?kategori=bundling" class="hover:text-frozenteal-400 transition">Paket Hemat Bundling</a></li>
+                    </ul>
+                </div>
+
+                <!-- Dapur & Jam Layanan -->
+                <div>
+                    <h4 class="text-white font-bold text-xs tracking-wider uppercase mb-4">Dapur Produksi</h4>
+                    <div class="text-xs space-y-2 text-slate-400 font-normal">
+                        <p class="text-white font-bold">Pengiriman Instan & Sameday:</p>
+                        <p>Senin - Minggu: 08.00 - 18.00 WIB</p>
+                        <p class="text-white font-bold pt-1">Lokasi Pusat:</p>
+                        <p>Kawasan Industri Kuliner Bersih Bintaro Sektor 9, Tangerang Selatan</p>
+                        <p class="text-frozenteal-400 font-bold pt-1"><i class="fa-solid fa-phone"></i> +62 812-3456-7890</p>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="pt-8 flex flex-col md:flex-row items-center justify-between text-xs text-slate-500 gap-4">
+                <p>&copy; 2026 Sedap Beku Nusantara. Hak Cipta Dilindungi.</p>
+                <div class="flex items-center gap-2">
+                    <span>Etalase Resmi UMKM didukung oleh</span>
+                    <a href="https://lenterapasar.com" target="_blank" class="text-frozenteal-400 font-bold hover:underline">Lentera Pasar</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Floating WhatsApp Conversion Button (Offset to bottom-24) -->
+    <a href="https://wa.me/6281234567890?text=Halo%20Sedap%20Beku,%20saya%20mau%20order%20frozen%20food." target="_blank" class="fixed bottom-24 right-6 z-40 group flex items-center gap-3 bg-frozenteal-600 hover:bg-frozenteal-700 text-white px-4 py-3.5 rounded-2xl shadow-xl hover:shadow-2xl transition-all duration-300 transform hover:scale-105" aria-label="Order via WhatsApp">
+        <i class="fa-brands fa-whatsapp text-2xl text-emerald-300"></i>
+        <span class="hidden sm:inline font-bold text-xs tracking-wider uppercase">Order WA</span>
+    </a>
+
+    <!-- ========================================================================= -->
+    <!-- LENTERA PASAR - STICKY DEMO & SALES BAR                                   -->
+    <!-- ========================================================================= -->
+    <div class="fixed bottom-4 left-1/2 -translate-x-1/2 z-50 w-[95%] max-w-4xl bg-slate-900/95 backdrop-blur-md text-white p-3.5 md:p-4 rounded-2xl shadow-2xl border border-slate-700/80 transition-all duration-300">
+      <div class="flex flex-col md:flex-row items-center justify-between gap-3 md:gap-4">
+        
+        <!-- Info Template & Value Proposition -->
+        <div class="flex items-center gap-3 w-full md:w-auto">
+          <div class="w-10 h-10 rounded-xl bg-amber-500/20 border border-amber-500/40 flex items-center justify-center shrink-0">
+            <svg class="w-5 h-5 text-amber-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z" />
+            </svg>
+          </div>
+          <div>
+            <div class="flex items-center gap-2">
+              <span class="font-bold text-sm text-white">Lentera Pasar Engine</span>
+              <span class="text-[10px] bg-emerald-500/20 text-emerald-300 border border-emerald-500/30 px-2 py-0.5 rounded-full font-medium">Free Admin Panel + Ads Support</span>
+            </div>
+            <p class="text-xs text-slate-300 hidden sm:block">
+              Terima beres: Website responsif + Panel input produk sendiri + Dikelola tim iklan profesional.
+            </p>
+          </div>
+        </div>
+
+        <!-- Poin Keunggulan & Tombol Action -->
+        <div class="flex items-center justify-between md:justify-end gap-3 w-full md:w-auto">
+          <div class="hidden lg:flex items-center gap-2 text-xs text-slate-400 border-r border-slate-700 pr-4">
+            <div class="flex items-center gap-1 text-slate-200">
+              <svg class="w-4 h-4 text-emerald-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" /></svg>
+              <span>Chat WA Instan</span>
+            </div>
+            <span class="text-slate-600">•</span>
+            <div class="flex items-center gap-1 text-slate-200">
+              <svg class="w-4 h-4 text-emerald-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" /></svg>
+              <span>Ready Meta Pixel</span>
+            </div>
+          </div>
+
+          <a href="https://wa.me/6281234567890?text=Halo%20Tim%20Lentera%20Pasar,%20saya%20tertarik%20menggunakan%20template%20website%20ini%20lengkap%20dengan%20Admin%20Panel%20dan%20Jasa%20Iklannya." 
+             target="_blank"
+             class="w-full md:w-auto inline-flex items-center justify-center gap-2 bg-gradient-to-r from-amber-500 to-orange-600 hover:from-amber-600 hover:to-orange-700 text-white text-xs md:text-sm font-semibold px-5 py-2.5 rounded-xl shadow-lg shadow-orange-500/20 transition-all hover:scale-105 shrink-0">
+            <span>Gunakan Template Ini</span>
+            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3" />
+            </svg>
+          </a>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- Script -->
+    <script>
+        const mobileMenuBtn = document.getElementById('mobileMenuBtn');
+        const mobileMenu = document.getElementById('mobileMenu');
+        const menuIcon = document.getElementById('menuIcon');
+
+        mobileMenuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+            if (mobileMenu.classList.contains('hidden')) {
+                menuIcon.classList.remove('fa-xmark');
+                menuIcon.classList.add('fa-bars');
+            } else {
+                menuIcon.classList.remove('fa-bars');
+                menuIcon.classList.add('fa-xmark');
+            }
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,699 @@
+<!DOCTYPE html>
+<html lang="id" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bowl Ayam Sambal Matah Bali - Detail Menu | MANGKOK JUARA</title>
+    <meta name="description" content="Pesan Bowl Ayam Sambal Matah Bali dengan nasi daun jeruk pulen dan telur ceplok. Custom porsi reguler/jumbo dan level pedas 0-5 via WhatsApp!">
+    
+    <!-- Google Fonts: Plus Jakarta Sans (Extrabold / Black) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    
+    <!-- Tailwind CSS CDN with Custom Config -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        flameamber: {
+                            400: '#fbbf24',
+                            500: '#f59e0b',
+                            600: '#d97706',
+                        },
+                        poporange: {
+                            500: '#f97316',
+                            600: '#ea580c',
+                            700: '#c2410c',
+                        },
+                        spicyred: {
+                            500: '#ef4444',
+                            600: '#dc2626',
+                            700: '#b91c1c',
+                        },
+                        darkslate: '#1c1917',
+                        warmcream: '#fffbeb',
+                        warmsurface: '#fff8eb',
+                    },
+                    fontFamily: {
+                        sans: ['"Plus Jakarta Sans"', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-warmsurface text-stone-900 font-sans antialiased selection:bg-poporange-600 selection:text-white min-h-screen flex flex-col justify-between">
+
+    <!-- Header / Navbar: Bold Pop Fast-Casual Style -->
+    <header class="sticky top-0 z-40 bg-white/95 backdrop-blur-md border-b-2 border-stone-900 shadow-sm transition-all duration-300">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-20">
+                
+                <!-- Brand Logo -->
+                <a href="index.html" class="flex items-center gap-3 group">
+                    <div class="w-12 h-12 rounded-2xl bg-poporange-600 border-2 border-stone-900 text-white flex items-center justify-center text-2xl shadow-[3px_3px_0px_0px_rgba(28,25,23,1)] group-hover:translate-x-0.5 group-hover:translate-y-0.5 group-hover:shadow-none transition-all">
+                        <i class="fa-solid fa-bowl-food"></i>
+                    </div>
+                    <div>
+                        <span class="text-2xl md:text-3xl font-black tracking-tight text-darkslate block leading-none uppercase">
+                            MANGKOK<span class="text-poporange-600">JUARA</span>
+                        </span>
+                        <span class="text-[10px] font-extrabold text-stone-500 tracking-widest uppercase">Rice Bowl & Sambal Nampol</span>
+                    </div>
+                </a>
+
+                <!-- Desktop Nav -->
+                <nav class="hidden md:flex items-center gap-8 font-black text-stone-800 text-sm tracking-wide">
+                    <a href="index.html" class="hover:text-poporange-600 transition">Beranda</a>
+                    <a href="katalog.html" class="text-poporange-600 underline decoration-poporange-600 decoration-2 underline-offset-4">Katalog Bowl</a>
+                    <a href="tentang.html" class="hover:text-poporange-600 transition">Cerita Rasa</a>
+                    <a href="artikel.html" class="hover:text-poporange-600 transition">Info & Promo</a>
+                    <a href="kontak.html" class="hover:text-poporange-600 transition">Outlet & Lokasi</a>
+                </nav>
+
+                <!-- Desktop Action Button -->
+                <div class="hidden lg:flex items-center gap-3">
+                    <a href="https://wa.me/6281234567890?text=Halo%20Mangkok%20Juara,%20saya%20mau%20pesan%20rice%20bowl%20sekarang!" target="_blank" class="inline-flex items-center gap-2 bg-emerald-600 hover:bg-emerald-700 text-white text-xs font-black px-5 py-3 rounded-2xl border-2 border-stone-900 shadow-[3px_3px_0px_0px_rgba(28,25,23,1)] hover:translate-x-0.5 hover:translate-y-0.5 hover:shadow-none transition-all uppercase">
+                        <i class="fa-brands fa-whatsapp text-lg"></i>
+                        <span>Order Cepat WA</span>
+                    </a>
+                </div>
+
+                <!-- Mobile Menu Button -->
+                <button id="mobileMenuBtn" class="md:hidden text-stone-900 hover:text-poporange-600 p-2 rounded-xl border-2 border-stone-900 bg-amber-100 shadow-[2px_2px_0px_0px_rgba(28,25,23,1)]" aria-label="Buka Menu">
+                    <i class="fa-solid fa-bars text-xl" id="menuIcon"></i>
+                </button>
+            </div>
+        </div>
+
+        <!-- Mobile Drawer -->
+        <div id="mobileMenu" class="hidden md:hidden bg-white border-b-2 border-stone-900 px-4 pt-3 pb-6 space-y-3 shadow-xl">
+            <a href="index.html" class="block py-2.5 px-3 rounded-xl text-stone-800 hover:bg-stone-100 font-bold text-sm">Beranda</a>
+            <a href="katalog.html" class="block py-2.5 px-3 rounded-xl bg-orange-100 text-poporange-600 font-black text-sm border-2 border-stone-900">Katalog Bowl</a>
+            <a href="tentang.html" class="block py-2.5 px-3 rounded-xl text-stone-800 hover:bg-stone-100 font-bold text-sm">Cerita Rasa</a>
+            <a href="artikel.html" class="block py-2.5 px-3 rounded-xl text-stone-800 hover:bg-stone-100 font-bold text-sm">Info & Promo</a>
+            <a href="kontak.html" class="block py-2.5 px-3 rounded-xl text-stone-800 hover:bg-stone-100 font-bold text-sm">Outlet & Lokasi</a>
+            <div class="pt-2">
+                <a href="https://wa.me/6281234567890?text=Halo%20Mangkok%20Juara,%20saya%20mau%20order" target="_blank" class="w-full inline-flex justify-center items-center gap-2 bg-emerald-600 text-white font-black py-3 rounded-xl border-2 border-stone-900 shadow-[3px_3px_0px_0px_rgba(28,25,23,1)] text-xs uppercase">
+                    <i class="fa-brands fa-whatsapp text-lg"></i>
+                    <span>Pesan Langsung via WhatsApp</span>
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Breadcrumb Bar -->
+    <div class="bg-amber-100/70 border-b-2 border-stone-900 py-3">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <nav class="flex items-center gap-2 text-xs font-black text-stone-600 uppercase overflow-x-auto whitespace-nowrap">
+                <a href="index.html" class="hover:text-poporange-600">Beranda</a>
+                <i class="fa-solid fa-chevron-right text-[10px]"></i>
+                <a href="katalog.html" class="hover:text-poporange-600">Katalog</a>
+                <i class="fa-solid fa-chevron-right text-[10px]"></i>
+                <a href="katalog.html?kategori=paketbowl" class="hover:text-poporange-600">Paket Bowl</a>
+                <i class="fa-solid fa-chevron-right text-[10px]"></i>
+                <span class="text-poporange-600 font-black truncate">Bowl Ayam Sambal Matah</span>
+            </nav>
+        </div>
+    </div>
+
+    <!-- Product Detail Container -->
+    <main class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10 w-full flex-1">
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-10">
+
+            <!-- Left: Interactive Gallery -->
+            <div class="lg:col-span-6 space-y-4">
+                <div class="relative rounded-3xl overflow-hidden bg-white border-4 border-stone-900 shadow-[6px_6px_0px_0px_rgba(28,25,23,1)]">
+                    <img id="mainProductImg" src="https://images.unsplash.com/photo-1546069901-ba9599a7e63c?auto=format&fit=crop&w=900&q=80" alt="Bowl Ayam Sambal Matah" class="w-full h-[360px] sm:h-[460px] object-cover transition-opacity duration-300">
+                    <span class="absolute top-4 left-4 bg-spicyred-600 text-white font-black text-xs px-3 py-1 rounded-xl border-2 border-stone-900 shadow uppercase">
+                        👑 MENU FAVORIT #1
+                    </span>
+                    <span class="absolute top-4 right-4 bg-white/95 backdrop-blur text-darkslate font-black text-xs px-3 py-1 rounded-xl border-2 border-stone-900 flex items-center gap-1.5 shadow">
+                        <i class="fa-solid fa-pepper-hot text-spicyred-600"></i> Uleg Dadakan
+                    </span>
+                </div>
+
+                <!-- Thumbnails -->
+                <div class="grid grid-cols-3 gap-3">
+                    <button class="thumb-btn active rounded-2xl overflow-hidden border-3 border-poporange-600 shadow-[3px_3px_0px_0px_rgba(28,25,23,1)] focus:outline-none transition" onclick="changeImage('https://images.unsplash.com/photo-1546069901-ba9599a7e63c?auto=format&fit=crop&w=900&q=80', this)">
+                        <img src="https://images.unsplash.com/photo-1546069901-ba9599a7e63c?auto=format&fit=crop&w=300&q=80" alt="Mangkok Komplit" class="w-full h-20 sm:h-24 object-cover">
+                    </button>
+                    <button class="thumb-btn rounded-2xl overflow-hidden border-2 border-stone-900 hover:border-poporange-600 focus:outline-none transition" onclick="changeImage('https://images.unsplash.com/photo-1555396273-367ea4eb4db5?auto=format&fit=crop&w=900&q=80', this)">
+                        <img src="https://images.unsplash.com/photo-1555396273-367ea4eb4db5?auto=format&fit=crop&w=300&q=80" alt="Ayam Krispi Potong" class="w-full h-20 sm:h-24 object-cover">
+                    </button>
+                    <button class="thumb-btn rounded-2xl overflow-hidden border-2 border-stone-900 hover:border-poporange-600 focus:outline-none transition" onclick="changeImage('https://images.unsplash.com/photo-1569058242253-92a9c755a0ec?auto=format&fit=crop&w=900&q=80', this)">
+                        <img src="https://images.unsplash.com/photo-1569058242253-92a9c755a0ec?auto=format&fit=crop&w=300&q=80" alt="Porsi Jumbo Bowl" class="w-full h-20 sm:h-24 object-cover">
+                    </button>
+                </div>
+
+                <!-- Kitchen Badge -->
+                <div class="bg-amber-100 p-4 rounded-2xl border-2 border-stone-900 shadow-[3px_3px_0px_0px_rgba(28,25,23,1)] flex items-center gap-3">
+                    <span class="text-3xl">🛵</span>
+                    <div>
+                        <h4 class="font-black text-xs text-darkslate uppercase">GARANSI MASAK PANAS & CEPAT SAMPAI</h4>
+                        <p class="text-xs text-stone-700 font-medium">Dikemas dalam bowl food-grade bersekat anti tumpah dengan segel higienis.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Right: Product Summary & Customization Selectors -->
+            <div class="lg:col-span-6 space-y-6">
+                
+                <div>
+                    <div class="flex items-center gap-2 mb-2">
+                        <span class="bg-orange-100 text-poporange-700 text-xs font-black px-3 py-1 rounded-full border border-orange-300 uppercase">Kategori: Paket Rice Bowl</span>
+                        <span class="bg-emerald-100 text-emerald-800 text-xs font-black px-3 py-1 rounded-full border border-emerald-300 uppercase">100% Halal MUI</span>
+                    </div>
+
+                    <h1 class="text-3xl sm:text-4xl lg:text-5xl font-black text-darkslate uppercase leading-none tracking-tight">
+                        Bowl Ayam Krispi Sambal Matah
+                    </h1>
+
+                    <div class="flex items-center gap-4 mt-3 text-sm">
+                        <div class="flex items-center text-flameamber-500 gap-1 font-black text-darkslate">
+                            <i class="fa-solid fa-star"></i>
+                            <span>4.9 / 5.0</span>
+                            <span class="text-stone-400 font-medium text-xs">(1.850+ Ulasan)</span>
+                        </div>
+                        <span class="text-stone-300">|</span>
+                        <span class="text-stone-600 font-black text-xs">Terjual 32.000+ Mangkok</span>
+                    </div>
+                </div>
+
+                <!-- Price Box -->
+                <div class="bg-white p-5 rounded-2xl border-2 border-stone-900 shadow-[4px_4px_0px_0px_rgba(28,25,23,1)] flex items-baseline justify-between">
+                    <div>
+                        <span class="text-xs text-stone-500 font-black block uppercase mb-0.5">Harga Sesuai Porsi Terpilih:</span>
+                        <div class="flex items-baseline gap-3">
+                            <span id="displayUnitPrice" class="text-3xl font-black text-poporange-600">Rp26.000</span>
+                            <span class="text-stone-400 text-sm font-bold line-through">Rp32.000</span>
+                            <span class="bg-red-100 text-spicyred-700 text-xs font-black px-2 py-0.5 rounded border border-red-300">-18%</span>
+                        </div>
+                    </div>
+                    <span class="text-xs font-black text-emerald-800 text-right hidden sm:block">Sudah Termasuk Telur Ceplok</span>
+                </div>
+
+                <!-- Dynamic Customization Selectors -->
+                <div class="space-y-4 bg-white p-5 rounded-2xl border-2 border-stone-900 shadow-[4px_4px_0px_0px_rgba(28,25,23,1)]">
+                    
+                    <!-- 1. Pilihan Porsi -->
+                    <div>
+                        <label class="block text-xs font-black text-darkslate mb-2 uppercase">1. Pilih Ukuran Porsi:</label>
+                        <div class="grid grid-cols-2 gap-3">
+                            <button type="button" class="portion-btn active py-3 px-3 rounded-xl border-2 border-poporange-600 bg-orange-50 text-left transition" data-price="26000" data-label="Porsi Reguler (250g)">
+                                <span class="block font-black text-xs text-darkslate uppercase">Porsi Reguler</span>
+                                <span class="text-[11px] text-stone-600 font-medium">Rp26.000 (Pas Kenyang)</span>
+                            </button>
+                            <button type="button" class="portion-btn py-3 px-3 rounded-xl border-2 border-stone-300 hover:border-stone-900 text-left transition" data-price="32000" data-label="Porsi Jumbo (350g Ekstra Ayam & Nasi)">
+                                <span class="block font-black text-xs text-darkslate uppercase">Porsi Jumbo 👑</span>
+                                <span class="text-[11px] text-poporange-600 font-bold">Rp32.000 (+100g Porsi)</span>
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- 2. Pilihan Nasi -->
+                    <div>
+                        <label class="block text-xs font-black text-darkslate mb-2 uppercase">2. Pilih Jenis Nasi:</label>
+                        <div class="grid grid-cols-2 gap-3">
+                            <button type="button" class="rice-btn active py-2.5 px-3 rounded-xl border-2 border-poporange-600 bg-orange-50 text-center text-xs font-black text-darkslate transition" data-label="Nasi Daun Jeruk (Wangi Gurih)">
+                                🍃 Nasi Daun Jeruk <span class="block text-[10px] font-normal text-poporange-700">Favorit Juara</span>
+                            </button>
+                            <button type="button" class="rice-btn py-2.5 px-3 rounded-xl border-2 border-stone-300 hover:border-stone-900 text-center text-xs font-black text-stone-700 transition" data-label="Nasi Putih Pulen Hangat">
+                                🍚 Nasi Putih Pulen <span class="block text-[10px] font-normal text-stone-500">Standar</span>
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- 3. Pilihan Level Pedas (Level 0 - 5) -->
+                    <div>
+                        <label class="block text-xs font-black text-darkslate mb-2 uppercase">3. Pilih Level Pedas Sambal:</label>
+                        <div class="grid grid-cols-3 sm:grid-cols-6 gap-2 text-xs font-black">
+                            <button type="button" class="spice-btn py-2 px-1 rounded-xl border-2 border-stone-300 text-center transition" data-extra="0" data-label="Level 0 (Manis Kalem / Nol Cabe)">
+                                Lvl 0 <span class="block text-[9px] font-normal text-stone-500">Nol Cabe</span>
+                            </button>
+                            <button type="button" class="spice-btn py-2 px-1 rounded-xl border-2 border-stone-300 text-center transition" data-extra="0" data-label="Level 1 (Pedas Sopan)">
+                                Lvl 1 <span class="block text-[9px] font-normal text-stone-500">Sopan</span>
+                            </button>
+                            <button type="button" class="spice-btn active py-2 px-1 rounded-xl border-2 border-poporange-600 bg-orange-50 text-center text-poporange-700 transition" data-extra="0" data-label="Level 2 (Pedas Nampol / Favorit)">
+                                Lvl 2 <span class="block text-[9px] font-normal text-poporange-700">Nampol</span>
+                            </button>
+                            <button type="button" class="spice-btn py-2 px-1 rounded-xl border-2 border-stone-300 text-center transition" data-extra="0" data-label="Level 3 (Pedas Mercon)">
+                                Lvl 3 <span class="block text-[9px] font-normal text-stone-500">Mercon</span>
+                            </button>
+                            <button type="button" class="spice-btn py-2 px-1 rounded-xl border-2 border-stone-300 text-center transition" data-extra="2000" data-label="Level 4 (Sambal Judes +2k)">
+                                Lvl 4 <span class="block text-[9px] font-normal text-spicyred-600">+2k</span>
+                            </button>
+                            <button type="button" class="spice-btn py-2 px-1 rounded-xl border-2 border-stone-300 text-center transition" data-extra="4000" data-label="Level 5 (Neraka Domba +4k)">
+                                Lvl 5 <span class="block text-[9px] font-normal text-spicyred-700">+4k</span>
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- 4. Pilihan Extra Topping -->
+                    <div>
+                        <label class="block text-xs font-black text-darkslate mb-2 uppercase">4. Tambah Topping Ekstra (Opsional):</label>
+                        <div class="grid grid-cols-3 gap-2 text-xs">
+                            <button type="button" class="topping-btn py-2 px-2 rounded-xl border-2 border-stone-300 text-left transition" data-extra="5000" data-label="Extra Telur Ceplok Setengah Matang (+5k)">
+                                <span class="block font-black text-darkslate">Telur Ceplok</span>
+                                <span class="text-[10px] text-poporange-600">+Rp5.000</span>
+                            </button>
+                            <button type="button" class="topping-btn py-2 px-2 rounded-xl border-2 border-stone-300 text-left transition" data-extra="5000" data-label="Extra Telur Dadar Krispi (+5k)">
+                                <span class="block font-black text-darkslate">Dadar Krispi</span>
+                                <span class="text-[10px] text-poporange-600">+Rp5.000</span>
+                            </button>
+                            <button type="button" class="topping-btn py-2 px-2 rounded-xl border-2 border-stone-300 text-left transition" data-extra="8000" data-label="Extra Kulit Ayam Krispi (+8k)">
+                                <span class="block font-black text-darkslate">Kulit Krispi</span>
+                                <span class="text-[10px] text-poporange-600">+Rp8.000</span>
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- 5. Quantity Counter -->
+                    <div class="pt-2 border-t-2 border-stone-100 flex items-center justify-between">
+                        <div>
+                            <span class="text-xs font-black text-darkslate block uppercase">Jumlah Mangkok:</span>
+                            <span class="text-[10px] text-stone-500 font-bold">Bisa pesan satuan atau banyak</span>
+                        </div>
+                        <div class="flex items-center border-2 border-stone-900 rounded-xl overflow-hidden">
+                            <button type="button" id="btnMinus" class="px-3.5 py-1.5 bg-stone-100 hover:bg-stone-200 font-black text-stone-800 transition">-</button>
+                            <span id="qtyVal" class="px-5 py-1.5 font-black text-sm text-darkslate bg-white">1</span>
+                            <button type="button" id="btnPlus" class="px-3.5 py-1.5 bg-stone-100 hover:bg-stone-200 font-black text-stone-800 transition">+</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Multi-CTA Order Box -->
+                <div class="space-y-3 pt-2">
+                    
+                    <!-- Total Price Display Card -->
+                    <div class="bg-stone-900 text-white p-4 rounded-2xl border-2 border-stone-900 shadow-[4px_4px_0px_0px_rgba(234,88,12,1)] flex items-center justify-between">
+                        <div>
+                            <span class="text-[10px] font-black uppercase text-stone-400">TOTAL ESTIMASI (<span id="totalBowlLabel">1</span> MANGKOK):</span>
+                            <h3 id="displayTotalPrice" class="text-2xl font-black text-flameamber-400">Rp26.000</h3>
+                        </div>
+                        <span class="text-xs font-black bg-emerald-600 text-white px-3 py-1.5 rounded-xl border border-white">Siap Masak Dadakan</span>
+                    </div>
+
+                    <!-- Primary WhatsApp Direct Button -->
+                    <a id="btnOrderWa" href="https://wa.me/6281234567890?text=Halo%20Mangkok%20Juara,%20saya%20mau%20order%20Bowl%20Ayam%20Sambal%20Matah" target="_blank" class="w-full flex items-center justify-center gap-3 bg-emerald-600 hover:bg-emerald-700 text-white font-black text-base py-4 px-6 rounded-2xl border-2 border-stone-900 shadow-[4px_4px_0px_0px_rgba(28,25,23,1)] hover:translate-x-0.5 hover:translate-y-0.5 hover:shadow-none transition-all uppercase">
+                        <i class="fa-brands fa-whatsapp text-2xl"></i>
+                        <span>PESAN LANGSUNG VIA WHATSAPP</span>
+                    </a>
+
+                    <!-- Secondary Delivery Platforms -->
+                    <div class="grid grid-cols-2 sm:grid-cols-4 gap-2 text-xs font-black">
+                        <a href="https://gofood.co.id" target="_blank" class="py-2.5 px-2 rounded-xl bg-white border-2 border-stone-900 hover:bg-stone-100 text-darkslate flex items-center justify-center gap-1.5 transition">
+                            <i class="fa-solid fa-motorcycle text-emerald-600"></i> GoFood
+                        </a>
+                        <a href="https://food.grab.com" target="_blank" class="py-2.5 px-2 rounded-xl bg-white border-2 border-stone-900 hover:bg-stone-100 text-darkslate flex items-center justify-center gap-1.5 transition">
+                            <i class="fa-solid fa-burger text-green-600"></i> GrabFood
+                        </a>
+                        <a href="https://shopee.co.id" target="_blank" class="py-2.5 px-2 rounded-xl bg-white border-2 border-stone-900 hover:bg-stone-100 text-darkslate flex items-center justify-center gap-1.5 transition">
+                            <i class="fa-solid fa-bag-shopping text-orange-600"></i> ShopeeFood
+                        </a>
+                        <a href="https://tiktok.com" target="_blank" class="py-2.5 px-2 rounded-xl bg-white border-2 border-stone-900 hover:bg-stone-100 text-darkslate flex items-center justify-center gap-1.5 transition">
+                            <i class="fa-brands fa-tiktok"></i> TikTok Shop
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Attributes Specification Table -->
+                <div class="bg-white rounded-2xl border-2 border-stone-900 p-5 shadow-[4px_4px_0px_0px_rgba(28,25,23,1)]">
+                    <h3 class="font-black text-sm text-darkslate uppercase mb-3 flex items-center gap-2">
+                        <i class="fa-solid fa-circle-info text-poporange-600"></i> Spesifikasi Porsi & Bahan
+                    </h3>
+                    <div class="divide-y-2 divide-stone-100 text-xs font-bold">
+                        <div class="py-2 flex justify-between">
+                            <span class="text-stone-500">Komposisi Mangkok</span>
+                            <span class="text-darkslate text-right">Paha Ayam Krispi, Nasi Daun Jeruk, Sambal Matah, Telur Ceplok, Timun</span>
+                        </div>
+                        <div class="py-2 flex justify-between">
+                            <span class="text-stone-500">Bobot Porsi</span>
+                            <span class="text-darkslate">250g (Reguler) / 350g (Jumbo)</span>
+                        </div>
+                        <div class="py-2 flex justify-between">
+                            <span class="text-stone-500">Minyak Sambal</span>
+                            <span class="text-darkslate">Minyak Kelapa Asli Segar Hangat</span>
+                        </div>
+                        <div class="py-2 flex justify-between">
+                            <span class="text-stone-500">Kemasan Kirim</span>
+                            <span class="text-darkslate">Paper Bowl Tebal Food-Grade + Sendok Steril</span>
+                        </div>
+                        <div class="py-2 flex justify-between">
+                            <span class="text-stone-500">Kehalalan</span>
+                            <span class="text-emerald-700">100% Halal Tanpa Minyak Babi / Angciu</span>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <!-- Detailed Description & Serving Guide -->
+        <div class="mt-14 bg-white rounded-3xl border-2 border-stone-900 p-6 sm:p-10 shadow-[6px_6px_0px_0px_rgba(28,25,23,1)] space-y-6">
+            <div>
+                <span class="text-poporange-600 font-black uppercase tracking-wider text-xs">CERITA RASA & RESEP RAHASIA</span>
+                <h2 class="text-2xl sm:text-3xl font-black text-darkslate uppercase mt-1">
+                    Kenikmatan Otentik Ayam Sambal Matah Mangkok Juara
+                </h2>
+            </div>
+            
+            <div class="prose prose-stone max-w-none text-stone-700 text-sm sm:text-base leading-relaxed space-y-4 font-medium">
+                <p>
+                    <strong>Bowl Ayam Sambal Matah</strong> diracik menggunakan daging paha ayam segar tanpa tulang yang dimarinasi bumbu bawang putih dan ketumbar selama 4 jam, lalu digoreng tepung garing keemasan.
+                </p>
+                <p>
+                    Sambal matahnya diiris dadakan dari bawang merah segar Brebes, cabai rawit merah pedas, batang serai muda aromatik, perasan jeruk limau, dan disiram minyak kelapa mendidih. Disajikan di atas nasi daun jeruk wangi pulen yang dimasak dengan kaldu ayam gurih.
+                </p>
+
+                <h3 class="text-base font-black text-darkslate uppercase pt-2">Cara Menikmati Paling Nikmat:</h3>
+                <ul class="list-disc pl-5 space-y-1 text-stone-600 text-xs sm:text-sm">
+                    <li>Pecahkan kuning telur ceplok setengah matang agar meleleh bercampur dengan minyak sambal matah dan nasi daun jeruk.</li>
+                    <li>Aduk sedikit bagian atasnya, ambil potongan ayam krispi bersama sambal dan suap selagi masih hangat.</li>
+                    <li>Sediakan Es Jeruk Nipis Madu Mint dingin untuk meredakan sengatan pedas sambal matah yang membakar lidah!</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Related Items -->
+        <div class="mt-14">
+            <div class="flex items-center justify-between mb-8">
+                <div>
+                    <span class="text-poporange-600 font-black uppercase tracking-wider text-xs">COBA MENU LAINNYA</span>
+                    <h2 class="text-2xl font-black text-darkslate uppercase mt-0.5">Rekomendasi Rice Bowl Lain</h2>
+                </div>
+                <a href="katalog.html" class="text-xs sm:text-sm font-black text-poporange-600 hover:underline uppercase">Lihat Semua &rarr;</a>
+            </div>
+
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+                <!-- Card 1 -->
+                <div class="bg-white rounded-3xl overflow-hidden border-2 border-stone-900 p-4 shadow-[4px_4px_0px_0px_rgba(28,25,23,1)] hover:shadow-[6px_6px_0px_0px_rgba(28,25,23,1)] transition">
+                    <img src="https://images.unsplash.com/photo-1547496502-affa22d38842?auto=format&fit=crop&w=500&q=80" alt="Se'i Sapi Lu'at" class="w-full h-44 object-cover rounded-2xl border border-stone-900 mb-4">
+                    <span class="text-xs font-black text-poporange-600 uppercase">Daging Sapi Asap</span>
+                    <h4 class="font-black text-base text-darkslate uppercase mt-0.5"><a href="detail.html">Bowl Se'i Sapi Sambal Lu'at</a></h4>
+                    <div class="flex items-center justify-between mt-3 pt-3 border-t border-stone-100">
+                        <span class="font-black text-poporange-600 text-lg">Rp34.000</span>
+                        <a href="detail.html" class="text-xs font-black text-darkslate hover:underline">PILIH &rarr;</a>
+                    </div>
+                </div>
+
+                <!-- Card 2 -->
+                <div class="bg-white rounded-3xl overflow-hidden border-2 border-stone-900 p-4 shadow-[4px_4px_0px_0px_rgba(28,25,23,1)] hover:shadow-[6px_6px_0px_0px_rgba(28,25,23,1)] transition">
+                    <img src="https://images.unsplash.com/photo-1512058564366-18510be2db19?auto=format&fit=crop&w=500&q=80" alt="Cumi Cabe Ijo" class="w-full h-44 object-cover rounded-2xl border border-stone-900 mb-4">
+                    <span class="text-xs font-black text-emerald-700 uppercase">Seafood Pedas</span>
+                    <h4 class="font-black text-base text-darkslate uppercase mt-0.5"><a href="detail.html">Bowl Cumi Asin Cabe Ijo</a></h4>
+                    <div class="flex items-center justify-between mt-3 pt-3 border-t border-stone-100">
+                        <span class="font-black text-poporange-600 text-lg">Rp30.000</span>
+                        <a href="detail.html" class="text-xs font-black text-darkslate hover:underline">PILIH &rarr;</a>
+                    </div>
+                </div>
+
+                <!-- Card 3 -->
+                <div class="bg-white rounded-3xl overflow-hidden border-2 border-stone-900 p-4 shadow-[4px_4px_0px_0px_rgba(28,25,23,1)] hover:shadow-[6px_6px_0px_0px_rgba(28,25,23,1)] transition">
+                    <img src="https://images.unsplash.com/photo-1569058242253-92a9c755a0ec?auto=format&fit=crop&w=500&q=80" alt="Katsu Mentai" class="w-full h-44 object-cover rounded-2xl border border-stone-900 mb-4">
+                    <span class="text-xs font-black text-flameamber-600 uppercase">Torch Mentai</span>
+                    <h4 class="font-black text-base text-darkslate uppercase mt-0.5"><a href="detail.html">Bowl Katsu Saus Mentai</a></h4>
+                    <div class="flex items-center justify-between mt-3 pt-3 border-t border-stone-100">
+                        <span class="font-black text-poporange-600 text-lg">Rp27.000</span>
+                        <a href="detail.html" class="text-xs font-black text-darkslate hover:underline">PILIH &rarr;</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-darkslate text-stone-300 pt-16 pb-12 border-t-2 border-stone-900">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-10 pb-12 border-b border-stone-800">
+                <div class="lg:col-span-2 space-y-4">
+                    <a href="index.html" class="flex items-center gap-3">
+                        <div class="w-10 h-10 rounded-2xl bg-poporange-600 text-white flex items-center justify-center text-xl font-black">
+                            <i class="fa-solid fa-bowl-food"></i>
+                        </div>
+                        <span class="text-2xl font-black text-white uppercase">MANGKOK<span class="text-poporange-600">JUARA</span></span>
+                    </a>
+                    <p class="text-xs text-stone-400 leading-relaxed pr-6">
+                        Pelopor rice bowl modern dengan wangi khas nasi daun jeruk, aneka olahan daging empuk juicy, dan 5 level sambal racikan segar uleg dadakan.
+                    </p>
+                </div>
+                <div>
+                    <h4 class="text-white font-black text-xs tracking-widest uppercase mb-4">Navigasi</h4>
+                    <ul class="space-y-2.5 text-xs font-bold">
+                        <li><a href="index.html" class="hover:text-flameamber-400 transition">Beranda</a></li>
+                        <li><a href="katalog.html" class="hover:text-flameamber-400 transition">Katalog Rice Bowl</a></li>
+                        <li><a href="tentang.html" class="hover:text-flameamber-400 transition">Cerita Rasa</a></li>
+                        <li><a href="artikel.html" class="hover:text-flameamber-400 transition">Info & Promo</a></li>
+                        <li><a href="kontak.html" class="hover:text-flameamber-400 transition">Outlet & Lokasi</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-white font-black text-xs tracking-widest uppercase mb-4">Menu Juara</h4>
+                    <ul class="space-y-2.5 text-xs font-bold">
+                        <li><a href="katalog.html" class="hover:text-flameamber-400 transition">Ayam Sambal Matah</a></li>
+                        <li><a href="katalog.html" class="hover:text-flameamber-400 transition">Se'i Sapi Asap Lu'at</a></li>
+                        <li><a href="katalog.html" class="hover:text-flameamber-400 transition">Cumi Asin Cabe Ijo</a></li>
+                        <li><a href="katalog.html" class="hover:text-flameamber-400 transition">Katsu Saus Mentai</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-white font-black text-xs tracking-widest uppercase mb-4">Dapur & Outlet</h4>
+                    <div class="text-xs space-y-2 text-stone-400">
+                        <p class="text-white font-black">Jam Buka Dapur:</p>
+                        <p>10.00 - 21.30 WIB (Setiap Hari)</p>
+                        <p class="text-white font-black pt-1">Lokasi Outlet:</p>
+                        <p>Jl. Tebet Timur Dalam Raya No. 58, Jakarta Selatan</p>
+                        <p class="text-flameamber-400 font-black pt-1"><i class="fa-solid fa-phone"></i> +62 812-3456-7890</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="pt-8 flex flex-col md:flex-row items-center justify-between text-xs text-stone-500 font-bold gap-4">
+                <p>&copy; 2026 Mangkok Juara Indonesia. Hak Cipta Dilindungi.</p>
+                <div class="flex items-center gap-2">
+                    <span>Etalase Resmi didukung oleh</span>
+                    <a href="https://lenterapasar.com" target="_blank" class="text-flameamber-400 font-black hover:underline">Lentera Pasar</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Floating WhatsApp Conversion Button -->
+    <a href="https://wa.me/6281234567890?text=Halo%20Mangkok%20Juara,%20saya%20mau%20order%20Bowl%20Ayam%20Sambal%20Matah." target="_blank" class="fixed bottom-24 right-6 z-50 group flex items-center gap-3 bg-emerald-600 hover:bg-emerald-700 text-white px-4 py-3.5 rounded-2xl border-2 border-stone-900 shadow-[4px_4px_0px_0px_rgba(28,25,23,1)] hover:translate-x-0.5 hover:translate-y-0.5 hover:shadow-none transition-all duration-300" aria-label="Order via WhatsApp">
+        <i class="fa-brands fa-whatsapp text-2xl"></i>
+        <span class="hidden sm:inline font-black text-xs tracking-wider uppercase">Pesan Cepat WA</span>
+    </a>
+
+    <!-- Detail Dynamic Script -->
+    <script>
+        const mobileMenuBtn = document.getElementById('mobileMenuBtn');
+        const mobileMenu = document.getElementById('mobileMenu');
+        const menuIcon = document.getElementById('menuIcon');
+
+        mobileMenuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+            if (mobileMenu.classList.contains('hidden')) {
+                menuIcon.classList.remove('fa-xmark');
+                menuIcon.classList.add('fa-bars');
+            } else {
+                menuIcon.classList.remove('fa-bars');
+                menuIcon.classList.add('fa-xmark');
+            }
+        });
+
+        function changeImage(src, btn) {
+            const mainImg = document.getElementById('mainProductImg');
+            mainImg.style.opacity = '0.3';
+            setTimeout(() => {
+                mainImg.src = src;
+                mainImg.style.opacity = '1';
+            }, 150);
+
+            document.querySelectorAll('.thumb-btn').forEach(t => {
+                t.classList.remove('border-3', 'border-poporange-600', 'active');
+                t.classList.add('border-2', 'border-stone-900');
+            });
+            btn.classList.remove('border-2', 'border-stone-900');
+            btn.classList.add('border-3', 'border-poporange-600', 'active');
+        }
+
+        // Customizer State
+        let basePortionPrice = 26000;
+        let selectedPortion = 'Porsi Reguler (250g)';
+        let selectedRice = 'Nasi Daun Jeruk (Wangi Gurih)';
+        let spiceExtra = 0;
+        let selectedSpice = 'Level 2 (Pedas Nampol / Favorit)';
+        let toppingExtra = 0;
+        let selectedTopping = 'Tanpa Topping Tambahan';
+        let quantity = 1;
+
+        const displayUnitPrice = document.getElementById('displayUnitPrice');
+        const displayTotalPrice = document.getElementById('displayTotalPrice');
+        const totalBowlLabel = document.getElementById('totalBowlLabel');
+        const qtyVal = document.getElementById('qtyVal');
+        const btnMinus = document.getElementById('btnMinus');
+        const btnPlus = document.getElementById('btnPlus');
+        const btnOrderWa = document.getElementById('btnOrderWa');
+
+        function updateWaLink() {
+            const currentUnitPrice = basePortionPrice + spiceExtra + toppingExtra;
+            const totalPrice = currentUnitPrice * quantity;
+
+            displayUnitPrice.textContent = 'Rp' + currentUnitPrice.toLocaleString('id-ID');
+            displayTotalPrice.textContent = 'Rp' + totalPrice.toLocaleString('id-ID');
+            totalBowlLabel.textContent = quantity;
+
+            const text = `Halo Mangkok Juara, saya mau pesan rice bowl:\n- *Menu:* Bowl Ayam Krispi Sambal Matah\n- *Porsi:* ${selectedPortion}\n- *Pilihan Nasi:* ${selectedRice}\n- *Level Pedas:* ${selectedSpice}\n- *Extra Topping:* ${selectedTopping}\n- *Jumlah:* ${quantity} Mangkok\n- *Estimasi Total:* Rp${totalPrice.toLocaleString('id-ID')}\n\nMohon info perkiraan waktu antar ke alamat saya ya min! Terima kasih.`;
+
+            btnOrderWa.href = `https://wa.me/6281234567890?text=${encodeURIComponent(text)}`;
+        }
+
+        // Portion Buttons
+        const portionBtns = document.querySelectorAll('.portion-btn');
+        portionBtns.forEach(btn => {
+            btn.addEventListener('click', () => {
+                portionBtns.forEach(b => {
+                    b.classList.remove('border-2', 'border-poporange-600', 'bg-orange-50', 'active');
+                    b.classList.add('border-2', 'border-stone-300');
+                });
+                btn.classList.add('border-2', 'border-poporange-600', 'bg-orange-50', 'active');
+                btn.classList.remove('border-stone-300');
+
+                basePortionPrice = parseInt(btn.dataset.price);
+                selectedPortion = btn.dataset.label;
+                updateWaLink();
+            });
+        });
+
+        // Rice Buttons
+        const riceBtns = document.querySelectorAll('.rice-btn');
+        riceBtns.forEach(btn => {
+            btn.addEventListener('click', () => {
+                riceBtns.forEach(b => {
+                    b.classList.remove('border-2', 'border-poporange-600', 'bg-orange-50', 'active');
+                    b.classList.add('border-2', 'border-stone-300');
+                });
+                btn.classList.add('border-2', 'border-poporange-600', 'bg-orange-50', 'active');
+                btn.classList.remove('border-stone-300');
+
+                selectedRice = btn.dataset.label;
+                updateWaLink();
+            });
+        });
+
+        // Spice Level Buttons
+        const spiceBtns = document.querySelectorAll('.spice-btn');
+        spiceBtns.forEach(btn => {
+            btn.addEventListener('click', () => {
+                spiceBtns.forEach(b => {
+                    b.classList.remove('border-2', 'border-poporange-600', 'bg-orange-50', 'text-poporange-700', 'active');
+                    b.classList.add('border-2', 'border-stone-300');
+                });
+                btn.classList.add('border-2', 'border-poporange-600', 'bg-orange-50', 'text-poporange-700', 'active');
+                btn.classList.remove('border-stone-300');
+
+                spiceExtra = parseInt(btn.dataset.extra);
+                selectedSpice = btn.dataset.label;
+                updateWaLink();
+            });
+        });
+
+        // Topping Buttons (Toggle)
+        const toppingBtns = document.querySelectorAll('.topping-btn');
+        toppingBtns.forEach(btn => {
+            btn.addEventListener('click', () => {
+                if (btn.classList.contains('active')) {
+                    btn.classList.remove('border-2', 'border-poporange-600', 'bg-orange-50', 'active');
+                    btn.classList.add('border-2', 'border-stone-300');
+                    toppingExtra = 0;
+                    selectedTopping = 'Tanpa Topping Tambahan';
+                } else {
+                    toppingBtns.forEach(b => {
+                        b.classList.remove('border-2', 'border-poporange-600', 'bg-orange-50', 'active');
+                        b.classList.add('border-2', 'border-stone-300');
+                    });
+                    btn.classList.add('border-2', 'border-poporange-600', 'bg-orange-50', 'active');
+                    btn.classList.remove('border-stone-300');
+                    toppingExtra = parseInt(btn.dataset.extra);
+                    selectedTopping = btn.dataset.label;
+                }
+                updateWaLink();
+            });
+        });
+
+        // Quantity controls
+        btnPlus.addEventListener('click', () => {
+            quantity++;
+            qtyVal.textContent = quantity;
+            updateWaLink();
+        });
+
+        btnMinus.addEventListener('click', () => {
+            if (quantity > 1) {
+                quantity--;
+                qtyVal.textContent = quantity;
+                updateWaLink();
+            }
+        });
+
+        updateWaLink();
+    </script>
+<!-- ========================================================================= -->
+<!-- LENTERA PASAR - STICKY DEMO & SALES BAR                                   -->
+<!-- ========================================================================= -->
+<div class="fixed bottom-4 left-1/2 -translate-x-1/2 z-50 w-[95%] max-w-4xl bg-slate-900/95 backdrop-blur-md text-white p-3.5 md:p-4 rounded-2xl shadow-2xl border border-slate-700/80 transition-all duration-300">
+  <div class="flex flex-col md:flex-row items-center justify-between gap-3 md:gap-4">
+    
+    <!-- Info Template & Value Proposition -->
+    <div class="flex items-center gap-3 w-full md:w-auto">
+      <div class="w-10 h-10 rounded-xl bg-amber-500/20 border border-amber-500/40 flex items-center justify-center shrink-0">
+        <svg class="w-5 h-5 text-amber-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z" />
+        </svg>
+      </div>
+      <div>
+        <div class="flex items-center gap-2">
+          <span class="font-bold text-sm text-white">Lentera Pasar Engine</span>
+          <span class="text-[10px] bg-emerald-500/20 text-emerald-300 border border-emerald-500/30 px-2 py-0.5 rounded-full font-medium">Free Admin Panel + Ads Support</span>
+        </div>
+        <p class="text-xs text-slate-300 hidden sm:block">
+          Terima beres: Website responsif + Panel input produk sendiri + Dikelola tim iklan profesional.
+        </p>
+      </div>
+    </div>
+
+    <!-- Poin Keunggulan & Tombol Action -->
+    <div class="flex items-center justify-between md:justify-end gap-3 w-full md:w-auto">
+      <div class="hidden lg:flex items-center gap-2 text-xs text-slate-400 border-r border-slate-700 pr-4">
+        <div class="flex items-center gap-1 text-slate-200">
+          <svg class="w-4 h-4 text-emerald-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" /></svg>
+          <span>Chat WA Instan</span>
+        </div>
+        <span class="text-slate-600">•</span>
+        <div class="flex items-center gap-1 text-slate-200">
+          <svg class="w-4 h-4 text-emerald-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" /></svg>
+          <span>Ready Meta Pixel</span>
+        </div>
+      </div>
+
+      <a href="https://wa.me/6281234567890?text=Halo%20Tim%20Lentera%20Pasar,%20saya%20tertarik%20menggunakan%20template%20website%20ini%20lengkap%20dengan%20Admin%20Panel%20dan%20Jasa%20Iklannya." 
+         target="_blank"
+         class="w-full md:w-auto inline-flex items-center justify-center gap-2 bg-gradient-to-r from-amber-500 to-orange-600 hover:from-amber-600 hover:to-orange-700 text-white text-xs md:text-sm font-semibold px-5 py-2.5 rounded-xl shadow-lg shadow-orange-500/20 transition-all hover:scale-105 shrink-0">
+        <span>Gunakan Template Ini</span>
+        <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3" />
+        </svg>
+      </a>
+    </div>
+
+  </div>
+</div>
+
+</body>
+</html>

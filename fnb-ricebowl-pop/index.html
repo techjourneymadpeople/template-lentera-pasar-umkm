@@ -1,0 +1,724 @@
+<!DOCTYPE html>
+<html lang="id" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MANGKOK JUARA - Pop Fast-Casual Rice Bowl & Sambal Nampol</title>
+    <meta name="description" content="Rice bowl kekinian dengan nasi daun jeruk pulen wangi, ayam krispi juicy, sei sapi asap, dan 5 level sambal racikan segar. Pesan makan siang praktis via WhatsApp!">
+    
+    <!-- Google Fonts: Plus Jakarta Sans (Extrabold / Black) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    
+    <!-- Tailwind CSS CDN with Custom Config -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        flameamber: {
+                            400: '#fbbf24',
+                            500: '#f59e0b',
+                            600: '#d97706',
+                        },
+                        poporange: {
+                            500: '#f97316',
+                            600: '#ea580c',
+                            700: '#c2410c',
+                        },
+                        spicyred: {
+                            500: '#ef4444',
+                            600: '#dc2626',
+                            700: '#b91c1c',
+                        },
+                        darkslate: '#1c1917',
+                        warmcream: '#fffbeb',
+                        warmsurface: '#fff8eb',
+                    },
+                    fontFamily: {
+                        sans: ['"Plus Jakarta Sans"', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        @keyframes rotate-badge {
+            from { transform: rotate(0deg); }
+            to { transform: rotate(360deg); }
+        }
+        .animate-spin-slow {
+            animation: rotate-badge 12s linear infinite;
+        }
+        @keyframes float-slow {
+            0%, 100% { transform: translateY(0px) rotate(0deg); }
+            50% { transform: translateY(-10px) rotate(4deg); }
+        }
+        .animate-float {
+            animation: float-slow 4s ease-in-out infinite;
+        }
+    </style>
+</head>
+<body class="bg-warmsurface text-stone-900 font-sans antialiased selection:bg-poporange-600 selection:text-white">
+
+    <!-- Top Energetic Urgency Strip -->
+    <div class="bg-gradient-to-r from-poporange-600 via-spicyred-600 to-flameamber-500 text-white text-xs md:text-sm py-2.5 px-4 font-black text-center tracking-wide shadow-sm flex items-center justify-center gap-2">
+        <span class="bg-black/20 text-white px-2.5 py-0.5 rounded-full text-[10px] uppercase font-bold tracking-wider">🔥 PROMO MAKAN SIANG</span>
+        <span>Beli 2 Mangkok Jumbo GRATIS 2 Cup Es Lemon Tea Segar!</span>
+        <a href="https://wa.me/6281234567890?text=Halo%20Mangkok%20Juara,%20saya%20mau%20klaim%20promo%20Beli%202%20Jumbo%20Free%20Lemon%20Tea!" target="_blank" class="underline hover:text-amber-200 ml-1">Klaim Promo WA</a>
+    </div>
+
+    <!-- Header / Navbar: Bold Pop Fast-Casual Style -->
+    <header class="sticky top-0 z-40 bg-white/95 backdrop-blur-md border-b-2 border-stone-900 shadow-sm transition-all duration-300">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-20">
+                
+                <!-- Brand Logo: Energetic & Chunky -->
+                <a href="index.html" class="flex items-center gap-3 group">
+                    <div class="w-12 h-12 rounded-2xl bg-poporange-600 border-2 border-stone-900 text-white flex items-center justify-center text-2xl shadow-[3px_3px_0px_0px_rgba(28,25,23,1)] group-hover:translate-x-0.5 group-hover:translate-y-0.5 group-hover:shadow-none transition-all">
+                        <i class="fa-solid fa-bowl-food"></i>
+                    </div>
+                    <div>
+                        <span class="text-2xl md:text-3xl font-black tracking-tight text-darkslate block leading-none uppercase">
+                            MANGKOK<span class="text-poporange-600">JUARA</span>
+                        </span>
+                        <span class="text-[10px] font-extrabold text-stone-500 tracking-widest uppercase">Rice Bowl & Sambal Nampol</span>
+                    </div>
+                </a>
+
+                <!-- Desktop Nav -->
+                <nav class="hidden md:flex items-center gap-8 font-black text-stone-800 text-sm tracking-wide">
+                    <a href="index.html" class="text-poporange-600 underline decoration-poporange-600 decoration-2 underline-offset-4">Beranda</a>
+                    <a href="katalog.html" class="hover:text-poporange-600 transition">Katalog Bowl</a>
+                    <a href="tentang.html" class="hover:text-poporange-600 transition">Cerita Rasa</a>
+                    <a href="artikel.html" class="hover:text-poporange-600 transition">Info & Promo</a>
+                    <a href="kontak.html" class="hover:text-poporange-600 transition">Outlet & Lokasi</a>
+                </nav>
+
+                <!-- Desktop Action Button -->
+                <div class="hidden lg:flex items-center gap-3">
+                    <a href="https://wa.me/6281234567890?text=Halo%20Mangkok%20Juara,%20saya%20mau%20pesan%20rice%20bowl%20sekarang!" target="_blank" class="inline-flex items-center gap-2 bg-emerald-600 hover:bg-emerald-700 text-white text-xs font-black px-5 py-3 rounded-2xl border-2 border-stone-900 shadow-[3px_3px_0px_0px_rgba(28,25,23,1)] hover:translate-x-0.5 hover:translate-y-0.5 hover:shadow-none transition-all uppercase">
+                        <i class="fa-brands fa-whatsapp text-lg"></i>
+                        <span>Order Cepat WA</span>
+                    </a>
+                </div>
+
+                <!-- Mobile Menu Button -->
+                <button id="mobileMenuBtn" class="md:hidden text-stone-900 hover:text-poporange-600 p-2 rounded-xl border-2 border-stone-900 bg-amber-100 shadow-[2px_2px_0px_0px_rgba(28,25,23,1)]" aria-label="Buka Menu">
+                    <i class="fa-solid fa-bars text-xl" id="menuIcon"></i>
+                </button>
+            </div>
+        </div>
+
+        <!-- Mobile Drawer -->
+        <div id="mobileMenu" class="hidden md:hidden bg-white border-b-2 border-stone-900 px-4 pt-3 pb-6 space-y-3 shadow-xl">
+            <a href="index.html" class="block py-2.5 px-3 rounded-xl bg-orange-100 text-poporange-600 font-black text-sm border-2 border-stone-900">Beranda</a>
+            <a href="katalog.html" class="block py-2.5 px-3 rounded-xl text-stone-800 hover:bg-stone-100 font-bold text-sm">Katalog Bowl</a>
+            <a href="tentang.html" class="block py-2.5 px-3 rounded-xl text-stone-800 hover:bg-stone-100 font-bold text-sm">Cerita Rasa</a>
+            <a href="artikel.html" class="block py-2.5 px-3 rounded-xl text-stone-800 hover:bg-stone-100 font-bold text-sm">Info & Promo</a>
+            <a href="kontak.html" class="block py-2.5 px-3 rounded-xl text-stone-800 hover:bg-stone-100 font-bold text-sm">Outlet & Lokasi</a>
+            <div class="pt-2">
+                <a href="https://wa.me/6281234567890?text=Halo%20Mangkok%20Juara,%20saya%20mau%20order" target="_blank" class="w-full inline-flex justify-center items-center gap-2 bg-emerald-600 text-white font-black py-3 rounded-xl border-2 border-stone-900 shadow-[3px_3px_0px_0px_rgba(28,25,23,1)] text-xs uppercase">
+                    <i class="fa-brands fa-whatsapp text-lg"></i>
+                    <span>Pesan Langsung via WhatsApp</span>
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- HERO SECTION: Split 50:50 Bold & Vibrant (Pop Fast-Casual) -->
+    <section class="relative overflow-hidden pt-8 pb-16 md:pt-14 md:pb-24 bg-gradient-to-b from-amber-100/80 via-warmsurface to-white border-b-2 border-stone-900">
+        
+        <!-- Energetic Dot Patterns Background -->
+        <div class="absolute inset-0 bg-[radial-gradient(#ea580c_1px,transparent_1px)] [background-size:24px_24px] opacity-10 pointer-events-none"></div>
+
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+                
+                <!-- Left: 50% Bold Copy & Rotating Promo Badge -->
+                <div class="lg:col-span-6 space-y-6 text-center lg:text-left">
+                    
+                    <!-- Top Pill Tag -->
+                    <div class="inline-flex items-center gap-2 bg-white border-2 border-stone-900 text-poporange-600 text-xs md:text-sm font-black px-4 py-1.5 rounded-full shadow-[3px_3px_0px_0px_rgba(28,25,23,1)]">
+                        <i class="fa-solid fa-pepper-hot text-spicyred-600 animate-bounce"></i>
+                        <span>PEDAS GURIHNYA JUARA DI LIDAH!</span>
+                    </div>
+
+                    <!-- Main Chunky Headline -->
+                    <h1 class="text-4xl sm:text-5xl md:text-6xl font-black text-darkslate tracking-tight leading-[1.05] uppercase">
+                        Nasi Pulen Hangat, <br>
+                        <span class="text-transparent bg-clip-text bg-gradient-to-r from-poporange-600 via-spicyred-600 to-flameamber-500 underline decoration-stone-900 decoration-4">
+                            Lauk Nampol Melimpah!
+                        </span>
+                    </h1>
+
+                    <p class="text-base sm:text-lg text-stone-700 max-w-xl mx-auto lg:mx-0 font-medium leading-relaxed">
+                        Nikmati sensasi wangi harum <strong>Nasi Daun Jeruk</strong> berpadu dengan ayam krispi saus lava, cumi sambal judes, dan sei sapi asap legit. Praktis, kenyang, dan bikin melek!
+                    </p>
+
+                    <!-- CTAs -->
+                    <div class="flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-4 pt-2">
+                        <a href="katalog.html" class="w-full sm:w-auto inline-flex items-center justify-center gap-3 bg-poporange-600 hover:bg-poporange-700 text-white font-black text-base px-8 py-4 rounded-2xl border-2 border-stone-900 shadow-[4px_4px_0px_0px_rgba(28,25,23,1)] hover:translate-x-0.5 hover:translate-y-0.5 hover:shadow-none transition-all uppercase">
+                            <i class="fa-solid fa-utensils"></i>
+                            <span>LIHAT MENU RICE BOWL</span>
+                        </a>
+                        <a href="https://wa.me/6281234567890?text=Halo%20Mangkok%20Juara,%20saya%20mau%20pesan%20banyak%20untuk%20makan%20siang%20kantor" target="_blank" class="w-full sm:w-auto inline-flex items-center justify-center gap-2 bg-white hover:bg-amber-50 text-darkslate border-2 border-stone-900 font-black text-base px-7 py-4 rounded-2xl shadow-[4px_4px_0px_0px_rgba(28,25,23,1)] hover:translate-x-0.5 hover:translate-y-0.5 hover:shadow-none transition-all">
+                            <i class="fa-brands fa-whatsapp text-emerald-600 text-xl"></i>
+                            <span>PESAN BANYAK (KANTOR)</span>
+                        </a>
+                    </div>
+
+                    <!-- Highlight Highlights Points -->
+                    <div class="pt-4 grid grid-cols-3 gap-3 max-w-md mx-auto lg:mx-0 text-left">
+                        <div class="p-3 bg-white rounded-xl border-2 border-stone-900 shadow-[2px_2px_0px_0px_rgba(28,25,23,1)]">
+                            <p class="text-xs font-black text-darkslate">100% Halal</p>
+                            <p class="text-[10px] text-stone-500 font-bold">Bahan Segar Pilihan</p>
+                        </div>
+                        <div class="p-3 bg-white rounded-xl border-2 border-stone-900 shadow-[2px_2px_0px_0px_rgba(28,25,23,1)]">
+                            <p class="text-xs font-black text-poporange-600">Level 0 - 5</p>
+                            <p class="text-[10px] text-stone-500 font-bold">Bebas Pilih Pedas</p>
+                        </div>
+                        <div class="p-3 bg-white rounded-xl border-2 border-stone-900 shadow-[2px_2px_0px_0px_rgba(28,25,23,1)]">
+                            <p class="text-xs font-black text-emerald-700">15 Menit</p>
+                            <p class="text-[10px] text-stone-500 font-bold">Siap Antar Hangat</p>
+                        </div>
+                    </div>
+
+                </div>
+
+                <!-- Right: 50% Bowl Showcase + Floating Ornaments & Rotating Badge -->
+                <div class="lg:col-span-6 relative">
+                    <div class="relative mx-auto max-w-md lg:max-w-none">
+                        
+                        <!-- Rotating Circular Promo Badge -->
+                        <div class="absolute -top-6 -left-6 z-20 w-28 h-28 rounded-full bg-flameamber-400 border-2 border-stone-900 shadow-[4px_4px_0px_0px_rgba(28,25,23,1)] flex items-center justify-center p-2 text-center animate-spin-slow">
+                            <span class="text-[9px] font-black uppercase tracking-widest text-darkslate">
+                                • DISKON 20% HARI INI • JUMBO SIZE • DISKON 20% •
+                            </span>
+                        </div>
+                        <div class="absolute -top-3 -left-3 z-30 w-22 h-22 rounded-full bg-spicyred-600 text-white flex flex-col items-center justify-center font-black pointer-events-none p-4">
+                            <span class="text-xs uppercase">BEST</span>
+                            <span class="text-base leading-none">SELLER</span>
+                        </div>
+
+                        <!-- Main Big Rice Bowl Image Card -->
+                        <div class="relative rounded-3xl overflow-hidden border-4 border-stone-900 bg-white shadow-[8px_8px_0px_0px_rgba(28,25,23,1)]">
+                            <img src="https://images.unsplash.com/photo-1546069901-ba9599a7e63c?auto=format&fit=crop&w=900&q=80" alt="Rice Bowl Ayam Sambal Matah Juara" class="w-full h-[380px] sm:h-[450px] object-cover">
+                            
+                            <!-- Bottom Overlay Details -->
+                            <div class="absolute bottom-4 left-4 right-4 bg-white/95 backdrop-blur-md p-4 rounded-2xl border-2 border-stone-900 shadow-[3px_3px_0px_0px_rgba(28,25,23,1)] flex items-center justify-between">
+                                <div>
+                                    <span class="bg-poporange-100 text-poporange-700 text-[10px] font-black uppercase px-2 py-0.5 rounded">PILIHAN PALING FAVORIT</span>
+                                    <h3 class="font-black text-lg text-darkslate">Bowl Ayam Sambal Matah</h3>
+                                    <p class="text-xs text-stone-600 font-medium">Nasi Daun Jeruk + Telur Mata Sapi Setengah Matang</p>
+                                </div>
+                                <div class="text-right">
+                                    <span class="text-2xl font-black text-poporange-600">Rp26.000</span>
+                                    <span class="text-[10px] block font-bold text-stone-400 line-through">Rp32.000</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Floating Food Element: Chili & Lime Icons -->
+                        <div class="absolute -bottom-4 -right-4 z-20 bg-darkslate text-white px-4 py-2.5 rounded-2xl border-2 border-white shadow-xl flex items-center gap-2 animate-float">
+                            <span class="text-2xl">🌶️</span>
+                            <div>
+                                <p class="text-xs font-black text-flameamber-400">Sambal Diuleg Segar</p>
+                                <p class="text-[10px] text-stone-300">Bukan Sambal Kemasan Botol</p>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION KHUSUS 1 & 2: Status Jam Buka Dapur & Penjelasan Level Pedas (0 - 5) -->
+    <section class="py-12 bg-white border-b-2 border-stone-900">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-12">
+            
+            <!-- 1. Status Jam Buka Dapur (Live Kitchen Open Bar) -->
+            <div class="bg-stone-900 text-white rounded-3xl p-6 sm:p-8 border-2 border-stone-900 shadow-[6px_6px_0px_0px_rgba(234,88,12,1)] flex flex-col md:flex-row items-center justify-between gap-6">
+                <div class="flex items-center gap-4 text-center md:text-left">
+                    <div class="w-14 h-14 rounded-2xl bg-emerald-500 text-white flex items-center justify-center text-2xl flex-shrink-0 shadow-md">
+                        <i class="fa-solid fa-fire-burner animate-pulse"></i>
+                    </div>
+                    <div>
+                        <div class="inline-flex items-center gap-2 bg-emerald-950 text-emerald-400 text-xs font-black px-3 py-1 rounded-full border border-emerald-700 uppercase mb-1">
+                            <span class="w-2.5 h-2.5 rounded-full bg-emerald-400 animate-ping"></span>
+                            <span>DAPUR SEDANG MENGEBUL (LIVE OPEN)</span>
+                        </div>
+                        <h3 class="text-xl sm:text-2xl font-black text-white">Wajan Menyala! Siap Masak Pesananmu</h3>
+                        <p class="text-xs sm:text-sm text-stone-300">Jam Operasional: Setiap Hari (10.00 - 21.30 WIB) • Estimasi Masak: 8-12 Menit</p>
+                    </div>
+                </div>
+                <a href="https://wa.me/6281234567890?text=Halo%20Mangkok%20Juara,%20saya%20mau%20order%20makan%20siang%20sekarang!" target="_blank" class="px-6 py-3.5 bg-flameamber-400 hover:bg-flameamber-500 text-stone-950 font-black text-xs sm:text-sm rounded-2xl border-2 border-white flex-shrink-0 transition-all uppercase">
+                    <i class="fa-brands fa-whatsapp text-base mr-1.5"></i> Order Selagi Hangat
+                </a>
+            </div>
+
+            <!-- 2. Penjelasan Level Pedas (Level 0 s/d Level 5) -->
+            <div>
+                <div class="text-center max-w-2xl mx-auto mb-10">
+                    <span class="bg-red-100 text-spicyred-600 text-xs font-black px-3 py-1 rounded-full border border-red-300 uppercase">
+                        CHALLENGE PEDAS RACIKAN ASLI
+                    </span>
+                    <h2 class="text-3xl sm:text-4xl font-black text-darkslate uppercase tracking-tight mt-2">
+                        Pilih Nyalimu di Meter Level Pedas
+                    </h2>
+                    <p class="text-stone-600 text-xs sm:text-sm mt-1">
+                        Dari yang manis gurih tanpa cabe sampai pedas brutal cabe rawit domba merah petik segar!
+                    </p>
+                </div>
+
+                <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-3">
+                    
+                    <!-- Level 0 -->
+                    <div class="p-4 rounded-2xl bg-amber-50 border-2 border-stone-900 shadow-[3px_3px_0px_0px_rgba(28,25,23,1)] text-center">
+                        <span class="text-2xl block mb-1">🐣</span>
+                        <span class="bg-amber-200 text-stone-900 text-[10px] font-black px-2 py-0.5 rounded uppercase">LVL 0</span>
+                        <h4 class="font-black text-xs text-darkslate mt-2">Manis Gurih</h4>
+                        <p class="text-[11px] text-stone-600 mt-1">Nol cabe, ramah anak & lambung aman.</p>
+                    </div>
+
+                    <!-- Level 1 -->
+                    <div class="p-4 rounded-2xl bg-orange-50 border-2 border-stone-900 shadow-[3px_3px_0px_0px_rgba(28,25,23,1)] text-center">
+                        <span class="text-2xl block mb-1">🌶️</span>
+                        <span class="bg-orange-200 text-stone-900 text-[10px] font-black px-2 py-0.5 rounded uppercase">LVL 1</span>
+                        <h4 class="font-black text-xs text-darkslate mt-2">Pedas Sopan</h4>
+                        <p class="text-[11px] text-stone-600 mt-1">Sentuhan cabai tipis menggugah selera.</p>
+                    </div>
+
+                    <!-- Level 2 -->
+                    <div class="p-4 rounded-2xl bg-orange-100 border-2 border-stone-900 shadow-[3px_3px_0px_0px_rgba(28,25,23,1)] text-center">
+                        <span class="text-2xl block mb-1">🌶️🌶️</span>
+                        <span class="bg-poporange-500 text-white text-[10px] font-black px-2 py-0.5 rounded uppercase">LVL 2</span>
+                        <h4 class="font-black text-xs text-darkslate mt-2">Pedas Nampol</h4>
+                        <p class="text-[11px] text-stone-600 mt-1">Level favorit! Keringat mulai netes tipis.</p>
+                    </div>
+
+                    <!-- Level 3 -->
+                    <div class="p-4 rounded-2xl bg-red-100 border-2 border-stone-900 shadow-[3px_3px_0px_0px_rgba(28,25,23,1)] text-center">
+                        <span class="text-2xl block mb-1">🔥🌶️</span>
+                        <span class="bg-spicyred-600 text-white text-[10px] font-black px-2 py-0.5 rounded uppercase">LVL 3</span>
+                        <h4 class="font-black text-xs text-darkslate mt-2">Pedas Mercon</h4>
+                        <p class="text-[11px] text-stone-600 mt-1">Cabe rawit merah berlimpah meledak.</p>
+                    </div>
+
+                    <!-- Level 4 -->
+                    <div class="p-4 rounded-2xl bg-red-200 border-2 border-stone-900 shadow-[3px_3px_0px_0px_rgba(28,25,23,1)] text-center">
+                        <span class="text-2xl block mb-1">🔥🔥</span>
+                        <span class="bg-spicyred-700 text-white text-[10px] font-black px-2 py-0.5 rounded uppercase">LVL 4</span>
+                        <h4 class="font-black text-xs text-darkslate mt-2">Sambal Judes</h4>
+                        <p class="text-[11px] text-stone-600 mt-1">Bibir kebas, rasa pedasnya non-stop.</p>
+                    </div>
+
+                    <!-- Level 5 -->
+                    <div class="p-4 rounded-2xl bg-stone-900 text-white border-2 border-stone-900 shadow-[3px_3px_0px_0px_rgba(234,88,12,1)] text-center">
+                        <span class="text-2xl block mb-1">☠️🔥</span>
+                        <span class="bg-spicyred-600 text-white text-[10px] font-black px-2 py-0.5 rounded uppercase">LVL 5</span>
+                        <h4 class="font-black text-xs text-flameamber-400 mt-2">Neraka Domba</h4>
+                        <p class="text-[11px] text-stone-300 mt-1">Khusus jawara pedas pemberani!</p>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- PRODUK UNGGULAN: 1 Menu Juara Jumbo di Kiri + 3 Menu Favorit di Kanan -->
+    <section class="py-16 bg-warmsurface border-b-2 border-stone-900">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            
+            <div class="flex flex-col md:flex-row md:items-end justify-between mb-10 gap-4">
+                <div>
+                    <span class="text-poporange-600 font-black uppercase tracking-wider text-xs">Paling Sering Bikin Antre</span>
+                    <h2 class="text-3xl sm:text-4xl font-black text-darkslate uppercase tracking-tight mt-1">Menu Juara Mangkok Populer</h2>
+                </div>
+                <a href="katalog.html" class="inline-flex items-center gap-2 text-poporange-600 hover:text-poporange-700 font-black group text-sm">
+                    <span>Lihat Semua Menu Rice Bowl &rarr;</span>
+                </a>
+            </div>
+
+            <!-- Asymmetric Pop Layout: 1 Big Card Left + 3 Stacked Cards Right -->
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-stretch">
+                
+                <!-- Left: 1 Menu Juara Jumbo (7 Columns) -->
+                <div class="lg:col-span-7 bg-white rounded-3xl border-4 border-stone-900 shadow-[6px_6px_0px_0px_rgba(28,25,23,1)] p-6 sm:p-8 flex flex-col justify-between group">
+                    <div>
+                        <div class="relative overflow-hidden rounded-2xl h-72 sm:h-80 border-2 border-stone-900 mb-6">
+                            <img src="https://images.unsplash.com/photo-1546069901-ba9599a7e63c?auto=format&fit=crop&w=900&q=80" alt="Rice Bowl Ayam Sambal Matah" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                            <span class="absolute top-3 left-3 bg-spicyred-600 text-white font-black text-xs px-3 py-1 rounded-xl border border-stone-900 uppercase shadow">
+                                👑 MENU JUARA JUMBO #1
+                            </span>
+                            <div class="absolute bottom-3 right-3 bg-white/90 backdrop-blur-md px-3 py-1 rounded-xl border border-stone-900 font-black text-xs text-darkslate">
+                                Pilihan Nasi: Nasi Daun Jeruk / Putih
+                            </div>
+                        </div>
+
+                        <div class="flex flex-wrap items-center gap-2 mb-2">
+                            <span class="bg-amber-100 text-amber-900 font-black text-xs px-2.5 py-0.5 rounded border border-amber-300">Porsi Jumbo 350g</span>
+                            <span class="bg-red-100 text-spicyred-700 font-black text-xs px-2.5 py-0.5 rounded border border-red-300">Bisa Level 0 - 5</span>
+                            <span class="bg-emerald-100 text-emerald-800 font-black text-xs px-2.5 py-0.5 rounded border border-emerald-300">Free Telur Ceplok</span>
+                        </div>
+
+                        <h3 class="text-2xl sm:text-3xl font-black text-darkslate uppercase group-hover:text-poporange-600 transition">
+                            <a href="detail.html">Jumbo Bowl Ayam Krispi Sambal Matah Bali</a>
+                        </h3>
+                        
+                        <p class="text-stone-600 text-sm mt-2 leading-relaxed">
+                            Potongan paha ayam krispi juicy tanpa tulang yang gurih renyah, diguyur irisan bawang merah, serai, daun jeruk, dan cabai rawit minyak kelapa asli yang wangi segar nendang.
+                        </p>
+                    </div>
+
+                    <div class="mt-6 pt-4 border-t-2 border-stone-100 flex flex-col sm:flex-row items-center justify-between gap-4">
+                        <div class="flex items-baseline gap-3">
+                            <span class="text-3xl font-black text-poporange-600">Rp28.000</span>
+                            <span class="text-sm text-stone-400 font-bold line-through">Rp35.000</span>
+                            <span class="text-xs bg-red-100 text-spicyred-700 font-black px-2 py-0.5 rounded">-20%</span>
+                        </div>
+                        <div class="flex items-center gap-2 w-full sm:w-auto">
+                            <a href="detail.html" class="flex-1 sm:flex-none text-center px-4 py-3 rounded-xl border-2 border-stone-900 font-black text-xs text-darkslate hover:bg-stone-100 transition">
+                                Rincian Porsi
+                            </a>
+                            <a href="https://wa.me/6281234567890?text=Halo%20Mangkok%20Juara,%20saya%20mau%20pesan%20Jumbo%20Bowl%20Ayam%20Sambal%20Matah" target="_blank" class="flex-1 sm:flex-none text-center px-5 py-3 rounded-xl bg-emerald-600 hover:bg-emerald-700 text-white font-black text-xs border-2 border-stone-900 shadow-[2px_2px_0px_0px_rgba(28,25,23,1)] transition">
+                                <i class="fa-brands fa-whatsapp mr-1"></i> Pesan WA
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Right: 3 Menu Favorit Stack (5 Columns) -->
+                <div class="lg:col-span-5 flex flex-col justify-between gap-4">
+                    
+                    <!-- Favorite 1: Se'i Sapi Sambal Lu'at -->
+                    <div class="bg-white p-4 rounded-2xl border-2 border-stone-900 shadow-[4px_4px_0px_0px_rgba(28,25,23,1)] flex gap-4 items-center group">
+                        <img src="https://images.unsplash.com/photo-1547496502-affa22d38842?auto=format&fit=crop&w=300&q=80" alt="Se'i Sapi Bowl" class="w-24 h-24 rounded-xl object-cover border border-stone-900 flex-shrink-0 group-hover:scale-105 transition">
+                        <div class="flex-1">
+                            <div class="flex items-center justify-between text-[10px] font-black text-poporange-600 uppercase">
+                                <span>Smoky Daging Sapi</span>
+                                <span>Lvl 0 - 5</span>
+                            </div>
+                            <h4 class="font-black text-base text-darkslate group-hover:text-poporange-600 transition">
+                                <a href="detail.html">Bowl Se'i Sapi Asap Sambal Lu'at</a>
+                            </h4>
+                            <div class="flex items-center justify-between mt-2">
+                                <span class="font-black text-base text-darkslate">Rp34.000</span>
+                                <a href="detail.html" class="text-xs font-black text-poporange-600 hover:underline">Pilih Porsi &rarr;</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Favorite 2: Cumi Cabe Ijo Mercon -->
+                    <div class="bg-white p-4 rounded-2xl border-2 border-stone-900 shadow-[4px_4px_0px_0px_rgba(28,25,23,1)] flex gap-4 items-center group">
+                        <img src="https://images.unsplash.com/photo-1512058564366-18510be2db19?auto=format&fit=crop&w=300&q=80" alt="Cumi Cabe Ijo Bowl" class="w-24 h-24 rounded-xl object-cover border border-stone-900 flex-shrink-0 group-hover:scale-105 transition">
+                        <div class="flex-1">
+                            <div class="flex items-center justify-between text-[10px] font-black text-emerald-700 uppercase">
+                                <span>Seafood Kenyal Gurih</span>
+                                <span>Lvl 1 - 5</span>
+                            </div>
+                            <h4 class="font-black text-base text-darkslate group-hover:text-poporange-600 transition">
+                                <a href="detail.html">Bowl Cumi Asin Cabe Ijo Mercon</a>
+                            </h4>
+                            <div class="flex items-center justify-between mt-2">
+                                <span class="font-black text-base text-darkslate">Rp30.000</span>
+                                <a href="detail.html" class="text-xs font-black text-poporange-600 hover:underline">Pilih Porsi &rarr;</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Favorite 3: Chicken Katsu Lava Saus Mentai -->
+                    <div class="bg-white p-4 rounded-2xl border-2 border-stone-900 shadow-[4px_4px_0px_0px_rgba(28,25,23,1)] flex gap-4 items-center group">
+                        <img src="https://images.unsplash.com/photo-1569058242253-92a9c755a0ec?auto=format&fit=crop&w=300&q=80" alt="Chicken Katsu Mentai" class="w-24 h-24 rounded-xl object-cover border border-stone-900 flex-shrink-0 group-hover:scale-105 transition">
+                        <div class="flex-1">
+                            <div class="flex items-center justify-between text-[10px] font-black text-flameamber-600 uppercase">
+                                <span>Creamy Torch Mentai</span>
+                                <span>Lvl 0 - 3</span>
+                            </div>
+                            <h4 class="font-black text-base text-darkslate group-hover:text-poporange-600 transition">
+                                <a href="detail.html">Bowl Katsu Lava Saus Mentai</a>
+                            </h4>
+                            <div class="flex items-center justify-between mt-2">
+                                <span class="font-black text-base text-darkslate">Rp27.000</span>
+                                <a href="detail.html" class="text-xs font-black text-poporange-600 hover:underline">Pilih Porsi &rarr;</a>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+    <!-- TESTIMONI: WhatsApp Chat Bubble Review Style (Gelembung Hijau Chat Puas) -->
+    <section class="py-16 bg-stone-900 text-white border-b-2 border-stone-900">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            
+            <div class="text-center max-w-2xl mx-auto mb-12">
+                <span class="bg-emerald-950 text-emerald-400 text-xs font-black px-3 py-1 rounded-full border border-emerald-700 uppercase">
+                    REAL CHAT SCREENSHOT
+                </span>
+                <h2 class="text-3xl sm:text-4xl font-black text-white uppercase tracking-tight mt-2">
+                    Review Jujur Pelanggan di WhatsApp
+                </h2>
+                <p class="text-stone-400 text-xs sm:text-sm mt-1">
+                    Bukan testimoni rekayasa! Ini tanggapan asli para pejuang kantor & anak kos sehabis santap Mangkok Juara.
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                
+                <!-- Chat Bubble 1 -->
+                <div class="bg-stone-800/90 rounded-3xl p-5 border-2 border-stone-700 shadow-xl space-y-4">
+                    <!-- User Header -->
+                    <div class="flex items-center gap-3 border-b border-stone-700 pb-3">
+                        <div class="w-10 h-10 rounded-full bg-poporange-600 text-white font-black flex items-center justify-center text-sm border border-white">
+                            DA
+                        </div>
+                        <div>
+                            <h4 class="font-black text-sm text-white">Dimas Anggara (Kuningan)</h4>
+                            <p class="text-[10px] text-emerald-400 font-bold">● Online • Order 8 Bowl Kantor</p>
+                        </div>
+                    </div>
+
+                    <!-- Green WhatsApp Message Bubble -->
+                    <div class="bg-emerald-900/90 border border-emerald-700 text-emerald-50 p-4 rounded-2xl rounded-tl-none text-xs leading-relaxed space-y-2">
+                        <p>
+                            "Min, makasih bgt yaa ayam sambal matahnya ludes tak tersisa sama anak-anak divisi marketing! Nasi daun jeruknya wangi parah, sambel level 3-nya pas bgt nendang di lidah. Besok kita re-order lagi buat lunch meeting 🔥"
+                        </p>
+                        <div class="flex items-center justify-end gap-1 text-[10px] text-emerald-300">
+                            <span>12:42 WIB</span>
+                            <i class="fa-solid fa-check-double text-sky-400"></i>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Chat Bubble 2 -->
+                <div class="bg-stone-800/90 rounded-3xl p-5 border-2 border-stone-700 shadow-xl space-y-4">
+                    <!-- User Header -->
+                    <div class="flex items-center gap-3 border-b border-stone-700 pb-3">
+                        <div class="w-10 h-10 rounded-full bg-spicyred-600 text-white font-black flex items-center justify-center text-sm border border-white">
+                            SN
+                        </div>
+                        <div>
+                            <h4 class="font-black text-sm text-white">Siti Nurhaliza (SCBD)</h4>
+                            <p class="text-[10px] text-emerald-400 font-bold">● Online • Klien Langganan</p>
+                        </div>
+                    </div>
+
+                    <!-- Green WhatsApp Message Bubble -->
+                    <div class="bg-emerald-900/90 border border-emerald-700 text-emerald-50 p-4 rounded-2xl rounded-tl-none text-xs leading-relaxed space-y-2">
+                        <p>
+                            "Se'i sapinya beneran berasa aroma asap kayu kosambinya, lembut ga alot sama sekali. Sambal lu'atnya asem pedas seger bgt! Porsi jumbo beneran bikin kenyang bego sampe sore 🤤👍"
+                        </p>
+                        <div class="flex items-center justify-end gap-1 text-[10px] text-emerald-300">
+                            <span>13:15 WIB</span>
+                            <i class="fa-solid fa-check-double text-sky-400"></i>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Chat Bubble 3 -->
+                <div class="bg-stone-800/90 rounded-3xl p-5 border-2 border-stone-700 shadow-xl space-y-4">
+                    <!-- User Header -->
+                    <div class="flex items-center gap-3 border-b border-stone-700 pb-3">
+                        <div class="w-10 h-10 rounded-full bg-flameamber-500 text-stone-950 font-black flex items-center justify-center text-sm border border-white">
+                            RF
+                        </div>
+                        <div>
+                            <h4 class="font-black text-sm text-white">Rizky Febrian (Tebet)</h4>
+                            <p class="text-[10px] text-emerald-400 font-bold">● Online • Pembeli Dine-in & Takeaway</p>
+                        </div>
+                    </div>
+
+                    <!-- Green WhatsApp Message Bubble -->
+                    <div class="bg-emerald-900/90 border border-emerald-700 text-emerald-50 p-4 rounded-2xl rounded-tl-none text-xs leading-relaxed space-y-2">
+                        <p>
+                            "Pertama kali nyoba level 4 sambal judes cumi asinnya langsung melek ngerjain deadline skripsi! Telur ceploknya setengah matang leleh sempurna nyampur ke nasi. Mantap min!"
+                        </p>
+                        <div class="flex items-center justify-end gap-1 text-[10px] text-emerald-300">
+                            <span>19:08 WIB</span>
+                            <i class="fa-solid fa-check-double text-sky-400"></i>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Delivery Channels Strip -->
+    <section class="py-10 bg-amber-100 border-b-2 border-stone-900">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <p class="text-xs font-black uppercase text-stone-700 tracking-widest mb-6">Tersedia Pengiriman Cepat di Aplikasi Favoritmu</p>
+            <div class="flex flex-wrap items-center justify-center gap-8 md:gap-14 font-black text-darkslate">
+                <span class="flex items-center gap-2 text-base"><i class="fa-solid fa-motorcycle text-emerald-600 text-xl"></i> GoFood</span>
+                <span class="flex items-center gap-2 text-base"><i class="fa-solid fa-burger text-green-600 text-xl"></i> GrabFood</span>
+                <span class="flex items-center gap-2 text-base"><i class="fa-solid fa-bag-shopping text-orange-600 text-xl"></i> ShopeeFood</span>
+                <span class="flex items-center gap-2 text-base"><i class="fa-brands fa-tiktok text-darkslate text-xl"></i> TikTok Shop</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer: Bold & Pop Fast-Casual -->
+    <footer class="bg-darkslate text-stone-300 pt-16 pb-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-10 pb-12 border-b border-stone-800">
+                
+                <!-- Brand Info -->
+                <div class="lg:col-span-2 space-y-4">
+                    <a href="index.html" class="flex items-center gap-3">
+                        <div class="w-10 h-10 rounded-2xl bg-poporange-600 text-white flex items-center justify-center text-xl font-black">
+                            <i class="fa-solid fa-bowl-food"></i>
+                        </div>
+                        <span class="text-2xl font-black text-white uppercase">MANGKOK<span class="text-poporange-600">JUARA</span></span>
+                    </a>
+                    <p class="text-xs text-stone-400 leading-relaxed pr-6">
+                        Pelopor rice bowl modern dengan wangi khas nasi daun jeruk, aneka olahan daging empuk juicy, dan 5 level sambal racikan segar uleg dadakan.
+                    </p>
+                    <div class="flex items-center gap-3 pt-2">
+                        <a href="#" class="w-9 h-9 rounded-xl bg-stone-800 hover:bg-poporange-600 text-stone-300 hover:text-white flex items-center justify-center transition"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="#" class="w-9 h-9 rounded-xl bg-stone-800 hover:bg-poporange-600 text-stone-300 hover:text-white flex items-center justify-center transition"><i class="fa-brands fa-tiktok"></i></a>
+                        <a href="#" class="w-9 h-9 rounded-xl bg-stone-800 hover:bg-emerald-600 text-stone-300 hover:text-white flex items-center justify-center transition"><i class="fa-brands fa-whatsapp"></i></a>
+                    </div>
+                </div>
+
+                <!-- Navigasi -->
+                <div>
+                    <h4 class="text-white font-black text-xs tracking-widest uppercase mb-4">Navigasi</h4>
+                    <ul class="space-y-2.5 text-xs font-bold">
+                        <li><a href="index.html" class="hover:text-flameamber-400 transition">Beranda</a></li>
+                        <li><a href="katalog.html" class="hover:text-flameamber-400 transition">Katalog Rice Bowl</a></li>
+                        <li><a href="tentang.html" class="hover:text-flameamber-400 transition">Cerita Rasa</a></li>
+                        <li><a href="artikel.html" class="hover:text-flameamber-400 transition">Info & Promo</a></li>
+                        <li><a href="kontak.html" class="hover:text-flameamber-400 transition">Outlet & Lokasi</a></li>
+                    </ul>
+                </div>
+
+                <!-- Menu Pilihan -->
+                <div>
+                    <h4 class="text-white font-black text-xs tracking-widest uppercase mb-4">Menu Juara</h4>
+                    <ul class="space-y-2.5 text-xs font-bold">
+                        <li><a href="katalog.html" class="hover:text-flameamber-400 transition">Ayam Sambal Matah</a></li>
+                        <li><a href="katalog.html" class="hover:text-flameamber-400 transition">Se'i Sapi Asap Lu'at</a></li>
+                        <li><a href="katalog.html" class="hover:text-flameamber-400 transition">Cumi Asin Cabe Ijo</a></li>
+                        <li><a href="katalog.html" class="hover:text-flameamber-400 transition">Katsu Saus Mentai</a></li>
+                    </ul>
+                </div>
+
+                <!-- Info Dapur -->
+                <div>
+                    <h4 class="text-white font-black text-xs tracking-widest uppercase mb-4">Dapur & Outlet</h4>
+                    <div class="text-xs space-y-2 text-stone-400">
+                        <p class="text-white font-black">Jam Buka Dapur:</p>
+                        <p>10.00 - 21.30 WIB (Setiap Hari)</p>
+                        <p class="text-white font-black pt-1">Lokasi Outlet:</p>
+                        <p>Jl. Tebet Timur Dalam Raya No. 58, Jakarta Selatan</p>
+                        <p class="text-flameamber-400 font-black pt-1"><i class="fa-solid fa-phone"></i> +62 812-3456-7890</p>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- Bottom Attribution -->
+            <div class="pt-8 flex flex-col md:flex-row items-center justify-between text-xs text-stone-500 font-bold gap-4">
+                <p>&copy; 2026 Mangkok Juara Indonesia. Hak Cipta Dilindungi.</p>
+                <div class="flex items-center gap-2">
+                    <span>Etalase Resmi didukung oleh</span>
+                    <a href="https://lenterapasar.com" target="_blank" class="text-flameamber-400 font-black hover:underline">Lentera Pasar</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Floating WhatsApp Conversion Button -->
+    <a href="https://wa.me/6281234567890?text=Halo%20Mangkok%20Juara,%20saya%20mau%20pesan%20rice%20bowl%20sekarang." target="_blank" class="fixed bottom-24 right-6 z-50 group flex items-center gap-3 bg-emerald-600 hover:bg-emerald-700 text-white px-4 py-3.5 rounded-2xl border-2 border-stone-900 shadow-[4px_4px_0px_0px_rgba(28,25,23,1)] hover:translate-x-0.5 hover:translate-y-0.5 hover:shadow-none transition-all duration-300" aria-label="Order via WhatsApp">
+        <span class="relative flex h-3 w-3">
+            <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-emerald-300 opacity-75"></span>
+            <span class="relative inline-flex rounded-full h-3 w-3 bg-emerald-100"></span>
+        </span>
+        <i class="fa-brands fa-whatsapp text-2xl"></i>
+        <span class="hidden sm:inline font-black text-xs tracking-wider uppercase">Pesan Cepat WA</span>
+    </a>
+
+    <!-- Mobile Menu Script -->
+    <script>
+        const mobileMenuBtn = document.getElementById('mobileMenuBtn');
+        const mobileMenu = document.getElementById('mobileMenu');
+        const menuIcon = document.getElementById('menuIcon');
+
+        mobileMenuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+            if (mobileMenu.classList.contains('hidden')) {
+                menuIcon.classList.remove('fa-xmark');
+                menuIcon.classList.add('fa-bars');
+            } else {
+                menuIcon.classList.remove('fa-bars');
+                menuIcon.classList.add('fa-xmark');
+            }
+        });
+    </script>
+<!-- ========================================================================= -->
+<!-- LENTERA PASAR - STICKY DEMO & SALES BAR                                   -->
+<!-- ========================================================================= -->
+<div class="fixed bottom-4 left-1/2 -translate-x-1/2 z-50 w-[95%] max-w-4xl bg-slate-900/95 backdrop-blur-md text-white p-3.5 md:p-4 rounded-2xl shadow-2xl border border-slate-700/80 transition-all duration-300">
+  <div class="flex flex-col md:flex-row items-center justify-between gap-3 md:gap-4">
+    
+    <!-- Info Template & Value Proposition -->
+    <div class="flex items-center gap-3 w-full md:w-auto">
+      <div class="w-10 h-10 rounded-xl bg-amber-500/20 border border-amber-500/40 flex items-center justify-center shrink-0">
+        <svg class="w-5 h-5 text-amber-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z" />
+        </svg>
+      </div>
+      <div>
+        <div class="flex items-center gap-2">
+          <span class="font-bold text-sm text-white">Lentera Pasar Engine</span>
+          <span class="text-[10px] bg-emerald-500/20 text-emerald-300 border border-emerald-500/30 px-2 py-0.5 rounded-full font-medium">Free Admin Panel + Ads Support</span>
+        </div>
+        <p class="text-xs text-slate-300 hidden sm:block">
+          Terima beres: Website responsif + Panel input produk sendiri + Dikelola tim iklan profesional.
+        </p>
+      </div>
+    </div>
+
+    <!-- Poin Keunggulan & Tombol Action -->
+    <div class="flex items-center justify-between md:justify-end gap-3 w-full md:w-auto">
+      <div class="hidden lg:flex items-center gap-2 text-xs text-slate-400 border-r border-slate-700 pr-4">
+        <div class="flex items-center gap-1 text-slate-200">
+          <svg class="w-4 h-4 text-emerald-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" /></svg>
+          <span>Chat WA Instan</span>
+        </div>
+        <span class="text-slate-600">•</span>
+        <div class="flex items-center gap-1 text-slate-200">
+          <svg class="w-4 h-4 text-emerald-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" /></svg>
+          <span>Ready Meta Pixel</span>
+        </div>
+      </div>
+
+      <a href="https://wa.me/6281234567890?text=Halo%20Tim%20Lentera%20Pasar,%20saya%20tertarik%20menggunakan%20template%20website%20ini%20lengkap%20dengan%20Admin%20Panel%20dan%20Jasa%20Iklannya." 
+         target="_blank"
+         class="w-full md:w-auto inline-flex items-center justify-center gap-2 bg-gradient-to-r from-amber-500 to-orange-600 hover:from-amber-600 hover:to-orange-700 text-white text-xs md:text-sm font-semibold px-5 py-2.5 rounded-xl shadow-lg shadow-orange-500/20 transition-all hover:scale-105 shrink-0">
+        <span>Gunakan Template Ini</span>
+        <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3" />
+        </svg>
+      </a>
+    </div>
+
+  </div>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,470 @@
+<!DOCTYPE html>
+<html lang="id" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sewa Alat Grill, Pengiriman & Lokasi - PRIME CUTS BUTCHER</title>
+    <meta name="description" content="Layanan pesan antar daging BBQ instan Jabodetabek, sewa alat kompor grill portable 24 jam, pemesanan partai resto, dan informasi toko butcher Prime Cuts.">
+    
+    <!-- Google Fonts: Plus Jakarta Sans -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    
+    <!-- Tailwind CSS CDN with Custom Config -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        flameorange: {
+                            500: '#f97316',
+                            600: '#ea580c',
+                            700: '#c2410c',
+                        },
+                        charcoal: {
+                            800: '#27272a',
+                            900: '#18181b',
+                            950: '#09090b',
+                        },
+                        meatred: {
+                            600: '#dc2626',
+                            700: '#b91c1c',
+                            800: '#991b1b',
+                        }
+                    },
+                    fontFamily: {
+                        sans: ['"Plus Jakarta Sans"', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-charcoal-950 text-zinc-100 font-sans antialiased selection:bg-flameorange-600 selection:text-white min-h-screen flex flex-col justify-between pb-28">
+
+    <!-- Header / Navbar -->
+    <header class="sticky top-0 z-40 bg-charcoal-950/95 backdrop-blur-md border-b border-zinc-800 shadow-xl transition-all">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-20">
+                
+                <!-- Brand Logo -->
+                <a href="index.html" class="flex items-center gap-3 group">
+                    <div class="w-11 h-11 rounded-2xl bg-flameorange-600 text-white flex items-center justify-center text-xl shadow-lg group-hover:scale-105 transition border border-flameorange-500/40">
+                        <i class="fa-solid fa-fire"></i>
+                    </div>
+                    <div>
+                        <span class="font-black text-2xl text-white tracking-tight block leading-none">
+                            PRIME<span class="text-flameorange-500">CUTS</span>
+                        </span>
+                        <span class="text-[10px] font-extrabold text-zinc-400 tracking-widest uppercase">Butcher & Home Grill</span>
+                    </div>
+                </a>
+
+                <!-- Desktop Nav -->
+                <nav class="hidden md:flex items-center gap-8 font-bold text-zinc-300 text-sm uppercase tracking-wider">
+                    <a href="index.html" class="hover:text-flameorange-500 transition">Beranda</a>
+                    <a href="katalog.html" class="hover:text-flameorange-500 transition">Katalog Daging</a>
+                    <a href="tentang.html" class="hover:text-flameorange-500 transition">Standar Kualitas</a>
+                    <a href="artikel.html" class="hover:text-flameorange-500 transition">Tips Grill</a>
+                    <a href="kontak.html" class="text-flameorange-500 border-b-2 border-flameorange-500 pb-1">Sewa Grill & Kirim</a>
+                </nav>
+
+                <!-- Desktop Action CTA -->
+                <div class="hidden lg:flex items-center gap-3">
+                    <a href="https://wa.me/6281234567890?text=Halo%20Prime%20Cuts,%20saya%20mau%20pesan%20paket%20daging%20BBQ%20grill." target="_blank" class="inline-flex items-center gap-2 bg-gradient-to-r from-flameorange-600 to-orange-500 hover:from-flameorange-700 hover:to-orange-600 text-white font-black text-xs px-5 py-3 rounded-2xl shadow-lg shadow-orange-600/20 hover:scale-105 transition border border-orange-400/30">
+                        <i class="fa-brands fa-whatsapp text-lg text-white"></i>
+                        <span>PESAN DAGING INSTAN</span>
+                    </a>
+                </div>
+
+                <!-- Mobile Menu Button -->
+                <button id="mobileMenuBtn" class="md:hidden text-zinc-100 p-2 rounded-xl bg-charcoal-800 border border-zinc-700" aria-label="Buka Menu">
+                    <i class="fa-solid fa-bars text-xl" id="menuIcon"></i>
+                </button>
+            </div>
+        </div>
+
+        <!-- Mobile Drawer -->
+        <div id="mobileMenu" class="hidden md:hidden bg-charcoal-900 border-b border-zinc-800 px-4 pt-3 pb-6 space-y-3 shadow-2xl">
+            <a href="index.html" class="block py-2.5 px-3 rounded-xl text-zinc-300 hover:bg-charcoal-800 font-semibold text-sm uppercase">Beranda</a>
+            <a href="katalog.html" class="block py-2.5 px-3 rounded-xl text-zinc-300 hover:bg-charcoal-800 font-semibold text-sm uppercase">Katalog Daging</a>
+            <a href="tentang.html" class="block py-2.5 px-3 rounded-xl text-zinc-300 hover:bg-charcoal-800 font-semibold text-sm uppercase">Standar Kualitas</a>
+            <a href="artikel.html" class="block py-2.5 px-3 rounded-xl text-zinc-300 hover:bg-charcoal-800 font-semibold text-sm uppercase">Tips Grill</a>
+            <a href="kontak.html" class="block py-2.5 px-3 rounded-xl bg-charcoal-800 text-flameorange-500 font-bold text-sm uppercase">Sewa Grill & Kirim</a>
+            <div class="pt-2">
+                <a href="https://wa.me/6281234567890?text=Halo%20Prime%20Cuts,%20mau%20order%20daging" target="_blank" class="w-full inline-flex justify-center items-center gap-2 bg-flameorange-600 text-white font-black py-3 rounded-xl text-xs uppercase shadow">
+                    <i class="fa-brands fa-whatsapp text-lg"></i>
+                    <span>Order via WhatsApp CS</span>
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Page Banner -->
+    <section class="bg-charcoal-900 py-12 border-b border-zinc-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <nav class="flex items-center gap-2 text-xs font-bold text-zinc-500 uppercase mb-3">
+                <a href="index.html" class="hover:text-flameorange-500">Beranda</a>
+                <i class="fa-solid fa-chevron-right text-[10px]"></i>
+                <span class="text-flameorange-500">Sewa Alat & Pengiriman</span>
+            </nav>
+            <h1 class="text-3xl sm:text-4xl font-black text-white uppercase">Sewa Alat Grill & Kirim Instan</h1>
+            <p class="text-zinc-400 text-sm mt-1 max-w-2xl font-normal">
+                Pesan paket BBQ lengkap dengan kompor panggangan siap pakai, diantar cepat 1-2 jam via kurir instan berpendingin se-Jabodetabek.
+            </p>
+        </div>
+    </section>
+
+    <!-- Main Content -->
+    <main class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 w-full flex-1 space-y-12">
+
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-10">
+            
+            <!-- Left: Info Toko & Syarat Sewa -->
+            <div class="lg:col-span-5 space-y-6">
+                <div class="bg-charcoal-900 p-6 sm:p-8 rounded-3xl border border-zinc-800 shadow-xl space-y-6">
+                    <h3 class="font-black text-xl text-white flex items-center gap-2 uppercase">
+                        <i class="fa-solid fa-store text-flameorange-500"></i> Meat Shop & Pickup Point
+                    </h3>
+
+                    <div class="space-y-4 text-xs sm:text-sm font-medium text-zinc-300">
+                        <div class="flex items-start gap-3">
+                            <div class="w-8 h-8 rounded-xl bg-charcoal-950 text-flameorange-500 flex items-center justify-center flex-shrink-0 mt-0.5 border border-zinc-700">
+                                <i class="fa-solid fa-map-pin"></i>
+                            </div>
+                            <div>
+                                <span class="text-white font-bold block uppercase text-xs">Alamat Toko Pusat:</span>
+                                <p class="text-zinc-400 font-normal mt-0.5 leading-relaxed text-xs">
+                                    Jl. Boulevard Raya Blok QJ No. 18, Kelapa Gading Barat, Jakarta Utara 14240
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="flex items-start gap-3">
+                            <div class="w-8 h-8 rounded-xl bg-charcoal-950 text-flameorange-500 flex items-center justify-center flex-shrink-0 mt-0.5 border border-zinc-700">
+                                <i class="fa-solid fa-clock"></i>
+                            </div>
+                            <div>
+                                <span class="text-white font-bold block uppercase text-xs">Jam Operasional Toko:</span>
+                                <p class="text-zinc-400 font-normal mt-0.5 text-xs">
+                                    Setiap Hari: 08.00 - 21.00 WIB<br>
+                                    <span class="text-emerald-400 font-bold">Layanan Kirim Instan Sampai Jam 20.00 WIB</span>
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="flex items-start gap-3">
+                            <div class="w-8 h-8 rounded-xl bg-charcoal-950 text-flameorange-500 flex items-center justify-center flex-shrink-0 mt-0.5 border border-zinc-700">
+                                <i class="fa-brands fa-whatsapp"></i>
+                            </div>
+                            <div>
+                                <span class="text-white font-bold block uppercase text-xs">Hotline Order & Sewa:</span>
+                                <p class="text-zinc-400 font-normal mt-0.5 text-xs">
+                                    +62 812-3456-7890 (Respon Cepat)
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Ekspedisi & Radius Kirim -->
+                    <div class="pt-4 border-t border-zinc-800 space-y-2">
+                        <span class="text-xs font-bold text-white uppercase block">Layanan Pengiriman:</span>
+                        <div class="grid grid-cols-2 gap-2 text-xs text-zinc-400 font-normal">
+                            <span class="flex items-center gap-1.5"><i class="fa-solid fa-motorcycle text-flameorange-500 text-[10px]"></i> GoSend Instant (1-2 Jam)</span>
+                            <span class="flex items-center gap-1.5"><i class="fa-solid fa-motorcycle text-flameorange-500 text-[10px]"></i> GrabExpress Instant</span>
+                            <span class="flex items-center gap-1.5"><i class="fa-solid fa-truck-fast text-flameorange-500 text-[10px]"></i> Lalamove (Party Set)</span>
+                            <span class="flex items-center gap-1.5"><i class="fa-solid fa-snowflake text-flameorange-500 text-[10px]"></i> Paxel Cold (Luar Kota)</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Syarat Sewa Alat Grill -->
+                <div class="bg-charcoal-900 p-6 sm:p-8 rounded-3xl border-2 border-flameorange-500 shadow-2xl space-y-3">
+                    <span class="bg-flameorange-600 text-white text-[10px] font-black px-3 py-1 rounded-full uppercase">PANDUAN SEWA ALAT</span>
+                    <h3 class="font-black text-lg text-white uppercase">Sewa Kompor Grill Portable (Rp50.000 / 24 Jam)</h3>
+                    <ul class="text-xs text-zinc-300 space-y-2 font-normal">
+                        <li class="flex items-start gap-2">
+                            <i class="fa-solid fa-check text-flameorange-500 mt-0.5"></i>
+                            <span>Termasuk kompor portable, pan grill teflon, capitan daging stainless steel.</span>
+                        </li>
+                        <li class="flex items-start gap-2">
+                            <i class="fa-solid fa-check text-flameorange-500 mt-0.5"></i>
+                            <span>Bonus <strong>1 kaleng gas butane baru</strong> siap nyala.</span>
+                        </li>
+                        <li class="flex items-start gap-2">
+                            <i class="fa-solid fa-check text-flameorange-500 mt-0.5"></i>
+                            <span>Deposit jaminan Rp100.000 (dikembalikan utuh saat alat dijemput kurir).</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Right: Interactive Order Form -->
+            <div class="lg:col-span-7 space-y-6">
+                <div class="bg-charcoal-900 p-6 sm:p-8 rounded-3xl border border-zinc-800 shadow-xl">
+                    <div class="mb-6">
+                        <span class="text-flameorange-500 font-black uppercase tracking-wider text-xs">DIRECT BUTCHER ORDER</span>
+                        <h2 class="text-2xl sm:text-3xl font-black text-white mt-1 uppercase">Form Pemesanan Daging & Sewa Grill</h2>
+                        <p class="text-xs text-zinc-400 mt-1">Lengkapi data pesanan di bawah ini, admin butcher kami akan langsung menyiapkan total estimasi via WhatsApp.</p>
+                    </div>
+
+                    <form id="contactForm" class="space-y-4">
+                        <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                            <div>
+                                <label class="block text-xs font-bold text-zinc-300 mb-1.5 uppercase">Nama Pemesan *</label>
+                                <input type="text" id="custName" required placeholder="Contoh: Pak Dennis" class="w-full px-4 py-3 rounded-2xl bg-charcoal-950 border border-zinc-700 text-xs sm:text-sm font-medium text-white focus:outline-none focus:border-flameorange-500 transition">
+                            </div>
+                            <div>
+                                <label class="block text-xs font-bold text-zinc-300 mb-1.5 uppercase">Nomor WhatsApp *</label>
+                                <input type="tel" id="custPhone" required placeholder="0812xxxxxxx" class="w-full px-4 py-3 rounded-2xl bg-charcoal-950 border border-zinc-700 text-xs sm:text-sm font-medium text-white focus:outline-none focus:border-flameorange-500 transition">
+                            </div>
+                        </div>
+
+                        <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                            <div>
+                                <label class="block text-xs font-bold text-zinc-300 mb-1.5 uppercase">Kategori Pesanan</label>
+                                <select id="orderType" class="w-full px-4 py-3 rounded-2xl bg-charcoal-950 border border-zinc-700 text-xs sm:text-sm font-bold text-zinc-300 focus:outline-none focus:border-flameorange-500">
+                                    <option value="Daging Saja (Tanpa Sewa Alat)">Daging Saja (Tanpa Sewa Alat)</option>
+                                    <option value="Paket BBQ Komplit + Sewa Kompor Grill">Paket BBQ Komplit + Sewa Kompor Grill</option>
+                                    <option value="Sewa Kompor & Alat Grill Saja">Sewa Kompor & Alat Grill Saja</option>
+                                    <option value="Suplai Daging Resto / Kafe B2B">Suplai Daging Resto / Kafe B2B</option>
+                                </select>
+                            </div>
+                            <div>
+                                <label class="block text-xs font-bold text-zinc-300 mb-1.5 uppercase">Varian Daging & Jumlah Pack</label>
+                                <input type="text" id="meatItems" placeholder="Contoh: 2x Shortplate 500g, 1x Saikoro 500g" class="w-full px-4 py-3 rounded-2xl bg-charcoal-950 border border-zinc-700 text-xs sm:text-sm font-medium text-white focus:outline-none focus:border-flameorange-500 transition">
+                            </div>
+                        </div>
+
+                        <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                            <div>
+                                <label class="block text-xs font-bold text-zinc-300 mb-1.5 uppercase">Pilihan Bumbu Marinasi</label>
+                                <select id="marinadeChoice" class="w-full px-4 py-3 rounded-2xl bg-charcoal-950 border border-zinc-700 text-xs sm:text-sm font-bold text-zinc-300 focus:outline-none focus:border-flameorange-500">
+                                    <option value="Korean Bulgogi (Manis Gurih Wijen)">Korean Bulgogi (Manis Gurih Wijen)</option>
+                                    <option value="Blackpepper Smokey (Pedas Hangat)">Blackpepper Smokey (Pedas Hangat)</option>
+                                    <option value="Teriyaki Garlic Butter">Teriyaki Garlic Butter</option>
+                                    <option value="Original Fresh Slice (Tanpa Bumbu)">Original Fresh Slice (Tanpa Bumbu)</option>
+                                </select>
+                            </div>
+                            <div>
+                                <label class="block text-xs font-bold text-zinc-300 mb-1.5 uppercase">Kurir & Jam Kirim Diinginkan</label>
+                                <input type="text" id="deliveryTime" placeholder="Contoh: GoSend Instant jam 16.00 sore" class="w-full px-4 py-3 rounded-2xl bg-charcoal-950 border border-zinc-700 text-xs sm:text-sm font-medium text-white focus:outline-none focus:border-flameorange-500 transition">
+                            </div>
+                        </div>
+
+                        <div>
+                            <label class="block text-xs font-bold text-zinc-300 mb-1.5 uppercase">Alamat Lengkap Pengiriman</label>
+                            <textarea id="deliveryAddress" rows="3" placeholder="Contoh: Apartemen Mediterania Tower A Lt. 12, Jl. Tanjung Duren Raya..." class="w-full px-4 py-3 rounded-2xl bg-charcoal-950 border border-zinc-700 text-xs sm:text-sm font-medium text-white focus:outline-none focus:border-flameorange-500 transition"></textarea>
+                        </div>
+
+                        <button type="submit" class="w-full flex items-center justify-center gap-2.5 bg-gradient-to-r from-flameorange-600 to-orange-500 hover:from-flameorange-700 hover:to-orange-600 text-white font-black text-xs sm:text-sm py-4 px-6 rounded-2xl shadow-xl shadow-orange-600/30 transition uppercase tracking-wider">
+                            <i class="fa-brands fa-whatsapp text-xl text-white"></i>
+                            <span>KIRIM PESANAN KE WHATSAPP ADMIN BUTCHER</span>
+                        </button>
+                    </form>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- FAQ Section -->
+        <div class="bg-charcoal-900 rounded-3xl border border-zinc-800 p-8 sm:p-12 shadow-xl">
+            <div class="text-center max-w-2xl mx-auto mb-10">
+                <span class="text-flameorange-500 text-xs font-black uppercase tracking-wider">TANYA JAWAB PENGIRIMAN & SEWA</span>
+                <h2 class="text-2xl sm:text-3xl font-black text-white mt-1 uppercase">FAQ Home Grill Prime Cuts</h2>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6 text-xs sm:text-sm font-normal">
+                <div class="p-5 rounded-2xl bg-charcoal-950 border border-zinc-800">
+                    <h4 class="font-bold text-white uppercase mb-1.5 flex items-center gap-2 text-xs">
+                        <i class="fa-solid fa-bag-shopping text-flameorange-500"></i> Apakah daging tetap beku selama pengiriman motor?
+                    </h4>
+                    <p class="text-zinc-400 leading-relaxed text-xs">
+                        Pasti! Seluruh pesanan daging dibungkus thermal bag aluminium dan dilengkapi ice-gel beku yang mampu menjaga suhu dingin konstan hingga 4 jam perjalanan.
+                    </p>
+                </div>
+
+                <div class="p-5 rounded-2xl bg-charcoal-950 border border-zinc-800">
+                    <h4 class="font-bold text-white uppercase mb-1.5 flex items-center gap-2 text-xs">
+                        <i class="fa-solid fa-utensils text-flameorange-500"></i> Bagaimana proses pengembalian alat sewa grill?
+                    </h4>
+                    <p class="text-zinc-400 leading-relaxed text-xs">
+                        Setelah selesai digunakan, alat tidak perlu dicuci bersih. Tim kurir kami atau kurir instan akan mengambil kembali alat di alamat Anda, lalu deposit jaminan langsung ditransfer kembali.
+                    </p>
+                </div>
+
+                <div class="p-5 rounded-2xl bg-charcoal-950 border border-zinc-800">
+                    <h4 class="font-bold text-white uppercase mb-1.5 flex items-center gap-2 text-xs">
+                        <i class="fa-solid fa-clock-rotate-left text-flameorange-500"></i> Berapa lama daging marinasi tahan di kulkas?
+                    </h4>
+                    <p class="text-zinc-400 leading-relaxed text-xs">
+                        Daging yang sudah dimarinasi sebaiknya dipanggang dalam 48 jam jika disimpan di chiller, atau tahan hingga 3 bulan jika langsung disimpan kembali di freezer.
+                    </p>
+                </div>
+
+                <div class="p-5 rounded-2xl bg-charcoal-950 border border-zinc-800">
+                    <h4 class="font-bold text-white uppercase mb-1.5 flex items-center gap-2 text-xs">
+                        <i class="fa-solid fa-people-group text-flameorange-500"></i> Berapa estimasi porsi daging per orang?
+                    </h4>
+                    <p class="text-zinc-400 leading-relaxed text-xs">
+                        Standar porsi makan kenyang adalah 200g - 250g daging per orang dewasa. Untuk acara 4 orang, paket 1kg daging adalah pilihan paling ideal.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-charcoal-950 text-zinc-400 pt-16 pb-12 border-t border-zinc-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-10 pb-12 border-b border-zinc-800">
+                <div class="lg:col-span-2 space-y-4">
+                    <a href="index.html" class="flex items-center gap-3">
+                        <div class="w-10 h-10 rounded-xl bg-flameorange-600 text-white flex items-center justify-center text-lg">
+                            <i class="fa-solid fa-fire"></i>
+                        </div>
+                        <span class="font-black text-2xl text-white">PRIME<span class="text-flameorange-500">CUTS</span></span>
+                    </a>
+                    <p class="text-xs text-zinc-400 leading-relaxed pr-6 font-normal">
+                        Modern Butcher & Home Grill Provider. Menyediakan beef slice US import, Wagyu meltique, ayam marinasi, saus autentik, dan sewa alat BBQ lengkap siap kirim instan area Jabodetabek.
+                    </p>
+                </div>
+                <div>
+                    <h4 class="text-white font-black text-xs tracking-wider uppercase mb-4">Navigasi</h4>
+                    <ul class="space-y-2.5 text-xs font-bold">
+                        <li><a href="index.html" class="hover:text-flameorange-500 transition">Beranda</a></li>
+                        <li><a href="katalog.html" class="hover:text-flameorange-500 transition">Katalog Daging & BBQ</a></li>
+                        <li><a href="tentang.html" class="hover:text-flameorange-500 transition">Standar Kualitas Halal</a></li>
+                        <li><a href="artikel.html" class="hover:text-flameorange-500 transition">Tips Grill Juicy</a></li>
+                        <li><a href="kontak.html" class="hover:text-flameorange-500 transition">Sewa Alat & Pengiriman</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-white font-black text-xs tracking-wider uppercase mb-4">Koleksi Daging</h4>
+                    <ul class="space-y-2.5 text-xs font-medium">
+                        <li><a href="katalog.html" class="hover:text-flameorange-500 transition">US Shortplate Slice 1.5mm</a></li>
+                        <li><a href="katalog.html" class="hover:text-flameorange-500 transition">Wagyu Saikoro Meltique</a></li>
+                        <li><a href="katalog.html" class="hover:text-flameorange-500 transition">Paket Family BBQ Feast</a></li>
+                        <li><a href="katalog.html" class="hover:text-flameorange-500 transition">Saus Bulgogi & Blackpepper</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-white font-black text-xs tracking-wider uppercase mb-4">Butcher Shop</h4>
+                    <div class="text-xs space-y-2 text-zinc-400 font-normal">
+                        <p class="text-white font-bold">Jam Layanan Butcher:</p>
+                        <p>Setiap Hari: 08.00 - 21.00 WIB</p>
+                        <p class="text-white font-bold pt-1">Central Meat Shop:</p>
+                        <p>Jl. Boulevard Raya Blok QJ No. 18, Kelapa Gading, Jakarta Utara</p>
+                        <p class="text-flameorange-500 font-bold pt-1"><i class="fa-brands fa-whatsapp"></i> +62 812-3456-7890</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="pt-8 flex flex-col md:flex-row items-center justify-between text-xs text-zinc-500 gap-4">
+                <p>&copy; 2026 Prime Cuts Butcher Indonesia. Hak Cipta Dilindungi.</p>
+                <div class="flex items-center gap-2">
+                    <span>Etalase Resmi UMKM didukung oleh</span>
+                    <a href="https://lenterapasar.com" target="_blank" class="text-flameorange-500 font-bold hover:underline">Lentera Pasar</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Floating WhatsApp Conversion Button (Offset to bottom-24) -->
+    <a href="https://wa.me/6281234567890?text=Halo%20Prime%20Cuts,%20saya%20mau%20order%20daging%20BBQ." target="_blank" class="fixed bottom-24 right-6 z-40 group flex items-center gap-3 bg-flameorange-600 hover:bg-flameorange-700 text-white px-4 py-3.5 rounded-2xl shadow-2xl hover:shadow-orange-600/50 transition-all duration-300 transform hover:scale-105 border border-orange-400/40" aria-label="Order via WhatsApp">
+        <i class="fa-brands fa-whatsapp text-2xl text-white"></i>
+        <span class="hidden sm:inline font-black text-xs tracking-wider uppercase">Order Daging WA</span>
+    </a>
+
+    <!-- ========================================================================= -->
+    <!-- LENTERA PASAR - STICKY DEMO & SALES BAR                                   -->
+    <!-- ========================================================================= -->
+    <div class="fixed bottom-4 left-1/2 -translate-x-1/2 z-50 w-[95%] max-w-4xl bg-slate-900/95 backdrop-blur-md text-white p-3.5 md:p-4 rounded-2xl shadow-2xl border border-slate-700/80 transition-all duration-300">
+      <div class="flex flex-col md:flex-row items-center justify-between gap-3 md:gap-4">
+        
+        <!-- Info Template & Value Proposition -->
+        <div class="flex items-center gap-3 w-full md:w-auto">
+          <div class="w-10 h-10 rounded-xl bg-amber-500/20 border border-amber-500/40 flex items-center justify-center shrink-0">
+            <svg class="w-5 h-5 text-amber-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z" />
+            </svg>
+          </div>
+          <div>
+            <div class="flex items-center gap-2">
+              <span class="font-bold text-sm text-white">Lentera Pasar Engine</span>
+              <span class="text-[10px] bg-emerald-500/20 text-emerald-300 border border-emerald-500/30 px-2 py-0.5 rounded-full font-medium">Free Admin Panel + Ads Support</span>
+            </div>
+            <p class="text-xs text-slate-300 hidden sm:block">
+              Terima beres: Website responsif + Panel input produk sendiri + Dikelola tim iklan profesional.
+            </p>
+          </div>
+        </div>
+
+        <!-- Poin Keunggulan & Tombol Action -->
+        <div class="flex items-center justify-between md:justify-end gap-3 w-full md:w-auto">
+          <div class="hidden lg:flex items-center gap-2 text-xs text-slate-400 border-r border-slate-700 pr-4">
+            <div class="flex items-center gap-1 text-slate-200">
+              <svg class="w-4 h-4 text-emerald-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" /></svg>
+              <span>Chat WA Instan</span>
+            </div>
+            <span class="text-slate-600">•</span>
+            <div class="flex items-center gap-1 text-slate-200">
+              <svg class="w-4 h-4 text-emerald-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" /></svg>
+              <span>Ready Meta Pixel</span>
+            </div>
+          </div>
+
+          <a href="https://wa.me/6281234567890?text=Halo%20Tim%20Lentera%20Pasar,%20saya%20tertarik%20menggunakan%20template%20website%20ini%20lengkap%20dengan%20Admin%20Panel%20dan%20Jasa%20Iklannya." 
+             target="_blank"
+             class="w-full md:w-auto inline-flex items-center justify-center gap-2 bg-gradient-to-r from-amber-500 to-orange-600 hover:from-amber-600 hover:to-orange-700 text-white text-xs md:text-sm font-semibold px-5 py-2.5 rounded-xl shadow-lg shadow-orange-500/20 transition-all hover:scale-105 shrink-0">
+            <span>Gunakan Template Ini</span>
+            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3" />
+            </svg>
+          </a>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- Form Script -->
+    <script>
+        const mobileMenuBtn = document.getElementById('mobileMenuBtn');
+        const mobileMenu = document.getElementById('mobileMenu');
+        const menuIcon = document.getElementById('menuIcon');
+
+        mobileMenuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+            if (mobileMenu.classList.contains('hidden')) {
+                menuIcon.classList.remove('fa-xmark');
+                menuIcon.classList.add('fa-bars');
+            } else {
+                menuIcon.classList.remove('fa-bars');
+                menuIcon.classList.add('fa-xmark');
+            }
+        });
+
+        const contactForm = document.getElementById('contactForm');
+        contactForm.addEventListener('submit', (e) => {
+            e.preventDefault();
+            const name = document.getElementById('custName').value;
+            const phone = document.getElementById('custPhone').value;
+            const type = document.getElementById('orderType').value;
+            const items = document.getElementById('meatItems').value;
+            const marinade = document.getElementById('marinadeChoice').value;
+            const time = document.getElementById('deliveryTime').value;
+            const address = document.getElementById('deliveryAddress').value;
+
+            const text = `Halo Admin Prime Cuts Butcher,\n\nSaya ingin memesan daging / sewa grill:\n- *Nama:* ${name}\n- *No. WhatsApp:* ${phone}\n- *Kategori:* ${type}\n- *Pilihan Daging:* ${items}\n- *Bumbu Marinasi:* ${marinade}\n- *Jadwal Pengiriman:* ${time}\n- *Alamat Pengiriman:* ${address}\n\nMohon info ketersediaan stok & total tagihannya ya. Terima kasih!`;
+
+            window.open(`https://wa.me/6281234567890?text=${encodeURIComponent(text)}`, '_blank');
+        });
+    </script>
+</body>
+</html>

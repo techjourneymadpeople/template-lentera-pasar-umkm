@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="id" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tips Grill Daging Juicy & Panduan Butcher - PRIME CUTS</title>
+    <meta name="description" content="Kumpulan tips memanggang daging steak dan beef slice di rumah: cara agar daging tidak alot, panduan waktu panggang pan grill, dan trik marinasi meresap sempurna.">
+    
+    <!-- Google Fonts: Plus Jakarta Sans -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    
+    <!-- Tailwind CSS CDN with Custom Config -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        flameorange: {
+                            500: '#f97316',
+                            600: '#ea580c',
+                            700: '#c2410c',
+                        },
+                        charcoal: {
+                            800: '#27272a',
+                            900: '#18181b',
+                            950: '#09090b',
+                        },
+                        meatred: {
+                            600: '#dc2626',
+                            700: '#b91c1c',
+                            800: '#991b1b',
+                        }
+                    },
+                    fontFamily: {
+                        sans: ['"Plus Jakarta Sans"', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-charcoal-950 text-zinc-100 font-sans antialiased selection:bg-flameorange-600 selection:text-white min-h-screen flex flex-col justify-between pb-28">
+
+    <!-- Header / Navbar -->
+    <header class="sticky top-0 z-40 bg-charcoal-950/95 backdrop-blur-md border-b border-zinc-800 shadow-xl transition-all">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-20">
+                
+                <!-- Brand Logo -->
+                <a href="index.html" class="flex items-center gap-3 group">
+                    <div class="w-11 h-11 rounded-2xl bg-flameorange-600 text-white flex items-center justify-center text-xl shadow-lg group-hover:scale-105 transition border border-flameorange-500/40">
+                        <i class="fa-solid fa-fire"></i>
+                    </div>
+                    <div>
+                        <span class="font-black text-2xl text-white tracking-tight block leading-none">
+                            PRIME<span class="text-flameorange-500">CUTS</span>
+                        </span>
+                        <span class="text-[10px] font-extrabold text-zinc-400 tracking-widest uppercase">Butcher & Home Grill</span>
+                    </div>
+                </a>
+
+                <!-- Desktop Nav -->
+                <nav class="hidden md:flex items-center gap-8 font-bold text-zinc-300 text-sm uppercase tracking-wider">
+                    <a href="index.html" class="hover:text-flameorange-500 transition">Beranda</a>
+                    <a href="katalog.html" class="hover:text-flameorange-500 transition">Katalog Daging</a>
+                    <a href="tentang.html" class="hover:text-flameorange-500 transition">Standar Kualitas</a>
+                    <a href="artikel.html" class="text-flameorange-500 border-b-2 border-flameorange-500 pb-1">Tips Grill</a>
+                    <a href="kontak.html" class="hover:text-flameorange-500 transition">Sewa Grill & Kirim</a>
+                </nav>
+
+                <!-- Desktop Action CTA -->
+                <div class="hidden lg:flex items-center gap-3">
+                    <a href="https://wa.me/6281234567890?text=Halo%20Prime%20Cuts,%20saya%20mau%20pesan%20paket%20daging%20BBQ%20grill." target="_blank" class="inline-flex items-center gap-2 bg-gradient-to-r from-flameorange-600 to-orange-500 hover:from-flameorange-700 hover:to-orange-600 text-white font-black text-xs px-5 py-3 rounded-2xl shadow-lg shadow-orange-600/20 hover:scale-105 transition border border-orange-400/30">
+                        <i class="fa-brands fa-whatsapp text-lg text-white"></i>
+                        <span>PESAN DAGING INSTAN</span>
+                    </a>
+                </div>
+
+                <!-- Mobile Menu Button -->
+                <button id="mobileMenuBtn" class="md:hidden text-zinc-100 p-2 rounded-xl bg-charcoal-800 border border-zinc-700" aria-label="Buka Menu">
+                    <i class="fa-solid fa-bars text-xl" id="menuIcon"></i>
+                </button>
+            </div>
+        </div>
+
+        <!-- Mobile Drawer -->
+        <div id="mobileMenu" class="hidden md:hidden bg-charcoal-900 border-b border-zinc-800 px-4 pt-3 pb-6 space-y-3 shadow-2xl">
+            <a href="index.html" class="block py-2.5 px-3 rounded-xl text-zinc-300 hover:bg-charcoal-800 font-semibold text-sm uppercase">Beranda</a>
+            <a href="katalog.html" class="block py-2.5 px-3 rounded-xl text-zinc-300 hover:bg-charcoal-800 font-semibold text-sm uppercase">Katalog Daging</a>
+            <a href="tentang.html" class="block py-2.5 px-3 rounded-xl text-zinc-300 hover:bg-charcoal-800 font-semibold text-sm uppercase">Standar Kualitas</a>
+            <a href="artikel.html" class="block py-2.5 px-3 rounded-xl bg-charcoal-800 text-flameorange-500 font-bold text-sm uppercase">Tips Grill</a>
+            <a href="kontak.html" class="block py-2.5 px-3 rounded-xl text-zinc-300 hover:bg-charcoal-800 font-semibold text-sm uppercase">Sewa Grill & Kirim</a>
+            <div class="pt-2">
+                <a href="https://wa.me/6281234567890?text=Halo%20Prime%20Cuts,%20mau%20order%20daging" target="_blank" class="w-full inline-flex justify-center items-center gap-2 bg-flameorange-600 text-white font-black py-3 rounded-xl text-xs uppercase shadow">
+                    <i class="fa-brands fa-whatsapp text-lg"></i>
+                    <span>Order via WhatsApp CS</span>
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Page Banner -->
+    <section class="bg-charcoal-900 py-12 border-b border-zinc-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <nav class="flex items-center gap-2 text-xs font-bold text-zinc-500 uppercase mb-3">
+                <a href="index.html" class="hover:text-flameorange-500">Beranda</a>
+                <i class="fa-solid fa-chevron-right text-[10px]"></i>
+                <span class="text-flameorange-500">Tips Grill & Resep</span>
+            </nav>
+            <h1 class="text-3xl sm:text-4xl font-black text-white uppercase">Tips Grill Daging Juicy & Panduan Butcher</h1>
+            <p class="text-zinc-400 text-xs sm:text-sm mt-1 max-w-xl font-normal">
+                Trik memanggang daging agar empuk berair, cara membedakan potongan marbling, dan panduan menyimpan daging beku.
+            </p>
+        </div>
+    </section>
+
+    <!-- Main Content -->
+    <main class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 w-full flex-1 space-y-12">
+
+        <!-- Featured Big Article -->
+        <div class="bg-charcoal-900 rounded-3xl overflow-hidden border border-zinc-800 shadow-xl grid grid-cols-1 lg:grid-cols-12 group">
+            <div class="lg:col-span-7 relative h-72 lg:h-auto overflow-hidden bg-charcoal-950">
+                <img src="https://images.unsplash.com/photo-1544025162-d76694265947?auto=format&fit=crop&w=1000&q=80" alt="Tips Grill Daging Juicy" class="w-full h-full object-cover group-hover:scale-105 transition duration-700">
+                <span class="absolute top-4 left-4 bg-flameorange-600 text-white font-black text-xs px-3.5 py-1 rounded-full uppercase shadow">
+                    PANDUAN UTAMA
+                </span>
+            </div>
+            <div class="lg:col-span-5 p-8 sm:p-10 flex flex-col justify-between">
+                <div class="space-y-3">
+                    <div class="flex items-center gap-3 text-xs font-bold text-zinc-500 uppercase">
+                        <span class="text-flameorange-500">Grill Master</span>
+                        <span>•</span>
+                        <span>3 Menit Baca</span>
+                    </div>
+                    <h2 class="text-2xl sm:text-3xl font-black text-white group-hover:text-flameorange-500 transition leading-tight uppercase">
+                        <a href="baca-artikel.html">5 Rahasia Memanggang Beef Slice agar Tetap Juicy & Tidak Kering Alot</a>
+                    </h2>
+                    <p class="text-zinc-400 text-xs sm:text-sm font-normal leading-relaxed line-clamp-3">
+                        Ketahui suhu panas pan yang ideal, waktu membalik daging yang tepat, dan trik mengunci saripati daging (*meat juices*) ala koki resto Jepang.
+                    </p>
+                </div>
+                <div class="mt-6 pt-4 border-t border-zinc-800 flex items-center justify-between">
+                    <span class="text-xs text-zinc-500 font-bold">Tim Butcher Prime Cuts</span>
+                    <a href="baca-artikel.html" class="text-xs font-black text-flameorange-500 hover:text-orange-400 flex items-center gap-1 uppercase">
+                        Baca Selengkapnya &rarr;
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <!-- 3 Regular Article Cards -->
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+            <!-- Article 1 -->
+            <div class="bg-charcoal-900 rounded-3xl overflow-hidden border border-zinc-800 shadow-xl hover:border-flameorange-500 transition flex flex-col justify-between group">
+                <div>
+                    <div class="h-48 overflow-hidden bg-charcoal-950">
+                        <img src="https://images.unsplash.com/photo-1546069901-ba9599a7e63c?auto=format&fit=crop&w=600&q=80" alt="Shortplate vs Saikoro" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+                    </div>
+                    <div class="p-6">
+                        <div class="flex items-center gap-2 text-[10px] font-bold text-flameorange-500 mb-2 uppercase">
+                            <span>MEAT GUIDE</span>
+                            <span>•</span>
+                            <span>3 Menit</span>
+                        </div>
+                        <h3 class="font-black text-base text-white group-hover:text-flameorange-500 transition uppercase">
+                            <a href="baca-artikel.html">Panduan Membedakan US Shortplate vs Wagyu Saikoro Meltique</a>
+                        </h3>
+                        <p class="text-zinc-400 text-xs font-normal mt-2 line-clamp-3 leading-relaxed">
+                            Pahami profil rasa, tingkat keempukan, dan kecocokan jenis bumbu marinasi untuk kedua potongan populer ini.
+                        </p>
+                    </div>
+                </div>
+                <div class="p-6 pt-0 text-xs font-bold">
+                    <a href="baca-artikel.html" class="text-flameorange-500 hover:underline uppercase">Baca Post &rarr;</a>
+                </div>
+            </div>
+
+            <!-- Article 2 -->
+            <div class="bg-charcoal-900 rounded-3xl overflow-hidden border border-zinc-800 shadow-xl hover:border-flameorange-500 transition flex flex-col justify-between group">
+                <div>
+                    <div class="h-48 overflow-hidden bg-charcoal-950">
+                        <img src="https://images.unsplash.com/photo-1555939594-58d7cb561ad1?auto=format&fit=crop&w=600&q=80" alt="Marinasi Daging" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+                    </div>
+                    <div class="p-6">
+                        <div class="flex items-center gap-2 text-[10px] font-bold text-amber-400 mb-2 uppercase">
+                            <span>RESEP SAUS</span>
+                            <span>•</span>
+                            <span>4 Menit</span>
+                        </div>
+                        <h3 class="font-black text-base text-white group-hover:text-flameorange-500 transition uppercase">
+                            <a href="baca-artikel.html">Berapa Lama Waktu Marinasi Daging yang Pas agar Bumbu Meresap?</a>
+                        </h3>
+                        <p class="text-zinc-400 text-xs font-normal mt-2 line-clamp-3 leading-relaxed">
+                            Tips waktu perendaman saus bulgogi dan blackpepper agar serat daging tetap lembut dan tidak terlalu asin.
+                        </p>
+                    </div>
+                </div>
+                <div class="p-6 pt-0 text-xs font-bold">
+                    <a href="baca-artikel.html" class="text-flameorange-500 hover:underline uppercase">Baca Post &rarr;</a>
+                </div>
+            </div>
+
+            <!-- Article 3 -->
+            <div class="bg-charcoal-900 rounded-3xl overflow-hidden border border-zinc-800 shadow-xl hover:border-flameorange-500 transition flex flex-col justify-between group">
+                <div>
+                    <div class="h-48 overflow-hidden bg-charcoal-950">
+                        <img src="https://images.unsplash.com/photo-1541696432-82c6da8ce7bf?auto=format&fit=crop&w=600&q=80" alt="Simpan Daging Beku" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+                    </div>
+                    <div class="p-6">
+                        <div class="flex items-center gap-2 text-[10px] font-bold text-emerald-400 mb-2 uppercase">
+                            <span>STORAGE TIPS</span>
+                            <span>•</span>
+                            <span>3 Menit</span>
+                        </div>
+                        <h3 class="font-black text-base text-white group-hover:text-flameorange-500 transition uppercase">
+                            <a href="baca-artikel.html">Cara Menyimpan Daging Beku di Freezer Tanpa Takut Freezer Burn</a>
+                        </h3>
+                        <p class="text-zinc-400 text-xs font-normal mt-2 line-clamp-3 leading-relaxed">
+                            Kunci menjaga kelembapan daging dan trik teknik thawing yang aman dari kontaminasi bakteri.
+                        </p>
+                    </div>
+                </div>
+                <div class="p-6 pt-0 text-xs font-bold">
+                    <a href="baca-artikel.html" class="text-flameorange-500 hover:underline uppercase">Baca Post &rarr;</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Newsletter Card -->
+        <div class="bg-gradient-to-r from-flameorange-600 via-orange-600 to-amber-600 text-white rounded-3xl p-8 sm:p-12 text-center max-w-3xl mx-auto space-y-4 border-2 border-orange-400/40 shadow-2xl">
+            <span class="bg-charcoal-950 text-flameorange-400 font-black text-xs px-3.5 py-1 rounded-full uppercase border border-zinc-700">WEEKEND BBQ FLASH SALE</span>
+            <h3 class="text-2xl sm:text-3xl font-black uppercase">Mau Promo Diskon Paket Daging Akhir Pekan?</h3>
+            <p class="text-zinc-100 text-xs sm:text-sm font-medium max-w-lg mx-auto leading-relaxed">
+                Daftarkan nomor WhatsApp-mu untuk menerima info flash sale paket daging BBQ dan gratis ongkir kurir instan setiap hari Jumat.
+            </p>
+            <div class="pt-2 flex flex-col sm:flex-row gap-3 max-w-md mx-auto">
+                <input type="text" placeholder="Nomor WhatsApp aktif Anda" class="px-5 py-3 rounded-2xl bg-white text-zinc-900 placeholder-zinc-500 text-xs font-bold focus:outline-none flex-1">
+                <a href="https://wa.me/6281234567890?text=Halo%20Prime%20Cuts,%20saya%20mau%20gabung%20Broadcast%20Promo%20BBQ%20Weekend!" target="_blank" class="px-6 py-3 bg-charcoal-950 hover:bg-black text-white font-black text-xs rounded-2xl uppercase tracking-wider transition flex items-center justify-center border border-zinc-700 shadow-xl">
+                    <span>Gabung VIP WA</span>
+                </a>
+            </div>
+        </div>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-charcoal-950 text-zinc-400 pt-16 pb-12 border-t border-zinc-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-10 pb-12 border-b border-zinc-800">
+                <div class="lg:col-span-2 space-y-4">
+                    <a href="index.html" class="flex items-center gap-3">
+                        <div class="w-10 h-10 rounded-xl bg-flameorange-600 text-white flex items-center justify-center text-lg">
+                            <i class="fa-solid fa-fire"></i>
+                        </div>
+                        <span class="font-black text-2xl text-white">PRIME<span class="text-flameorange-500">CUTS</span></span>
+                    </a>
+                    <p class="text-xs text-zinc-400 leading-relaxed pr-6 font-normal">
+                        Modern Butcher & Home Grill Provider. Menyediakan beef slice US import, Wagyu meltique, ayam marinasi, saus autentik, dan sewa alat BBQ lengkap siap kirim instan area Jabodetabek.
+                    </p>
+                </div>
+                <div>
+                    <h4 class="text-white font-black text-xs tracking-wider uppercase mb-4">Navigasi</h4>
+                    <ul class="space-y-2.5 text-xs font-bold">
+                        <li><a href="index.html" class="hover:text-flameorange-500 transition">Beranda</a></li>
+                        <li><a href="katalog.html" class="hover:text-flameorange-500 transition">Katalog Daging & BBQ</a></li>
+                        <li><a href="tentang.html" class="hover:text-flameorange-500 transition">Standar Kualitas Halal</a></li>
+                        <li><a href="artikel.html" class="hover:text-flameorange-500 transition">Tips Grill Juicy</a></li>
+                        <li><a href="kontak.html" class="hover:text-flameorange-500 transition">Sewa Alat & Pengiriman</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-white font-black text-xs tracking-wider uppercase mb-4">Koleksi Daging</h4>
+                    <ul class="space-y-2.5 text-xs font-medium">
+                        <li><a href="katalog.html" class="hover:text-flameorange-500 transition">US Shortplate Slice 1.5mm</a></li>
+                        <li><a href="katalog.html" class="hover:text-flameorange-500 transition">Wagyu Saikoro Meltique</a></li>
+                        <li><a href="katalog.html" class="hover:text-flameorange-500 transition">Paket Family BBQ Feast</a></li>
+                        <li><a href="katalog.html" class="hover:text-flameorange-500 transition">Saus Bulgogi & Blackpepper</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-white font-black text-xs tracking-wider uppercase mb-4">Butcher Shop</h4>
+                    <div class="text-xs space-y-2 text-zinc-400 font-normal">
+                        <p class="text-white font-bold">Jam Layanan Butcher:</p>
+                        <p>Setiap Hari: 08.00 - 21.00 WIB</p>
+                        <p class="text-white font-bold pt-1">Central Meat Shop:</p>
+                        <p>Jl. Boulevard Raya Blok QJ No. 18, Kelapa Gading, Jakarta Utara</p>
+                        <p class="text-flameorange-500 font-bold pt-1"><i class="fa-brands fa-whatsapp"></i> +62 812-3456-7890</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="pt-8 flex flex-col md:flex-row items-center justify-between text-xs text-zinc-500 gap-4">
+                <p>&copy; 2026 Prime Cuts Butcher Indonesia. Hak Cipta Dilindungi.</p>
+                <div class="flex items-center gap-2">
+                    <span>Etalase Resmi UMKM didukung oleh</span>
+                    <a href="https://lenterapasar.com" target="_blank" class="text-flameorange-500 font-bold hover:underline">Lentera Pasar</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Floating WhatsApp Conversion Button (Offset to bottom-24) -->
+    <a href="https://wa.me/6281234567890?text=Halo%20Prime%20Cuts,%20saya%20mau%20order%20daging%20BBQ." target="_blank" class="fixed bottom-24 right-6 z-40 group flex items-center gap-3 bg-flameorange-600 hover:bg-flameorange-700 text-white px-4 py-3.5 rounded-2xl shadow-2xl hover:shadow-orange-600/50 transition-all duration-300 transform hover:scale-105 border border-orange-400/40" aria-label="Order via WhatsApp">
+        <i class="fa-brands fa-whatsapp text-2xl text-white"></i>
+        <span class="hidden sm:inline font-black text-xs tracking-wider uppercase">Order Daging WA</span>
+    </a>
+
+    <!-- ========================================================================= -->
+    <!-- LENTERA PASAR - STICKY DEMO & SALES BAR                                   -->
+    <!-- ========================================================================= -->
+    <div class="fixed bottom-4 left-1/2 -translate-x-1/2 z-50 w-[95%] max-w-4xl bg-slate-900/95 backdrop-blur-md text-white p-3.5 md:p-4 rounded-2xl shadow-2xl border border-slate-700/80 transition-all duration-300">
+      <div class="flex flex-col md:flex-row items-center justify-between gap-3 md:gap-4">
+        
+        <!-- Info Template & Value Proposition -->
+        <div class="flex items-center gap-3 w-full md:w-auto">
+          <div class="w-10 h-10 rounded-xl bg-amber-500/20 border border-amber-500/40 flex items-center justify-center shrink-0">
+            <svg class="w-5 h-5 text-amber-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z" />
+            </svg>
+          </div>
+          <div>
+            <div class="flex items-center gap-2">
+              <span class="font-bold text-sm text-white">Lentera Pasar Engine</span>
+              <span class="text-[10px] bg-emerald-500/20 text-emerald-300 border border-emerald-500/30 px-2 py-0.5 rounded-full font-medium">Free Admin Panel + Ads Support</span>
+            </div>
+            <p class="text-xs text-slate-300 hidden sm:block">
+              Terima beres: Website responsif + Panel input produk sendiri + Dikelola tim iklan profesional.
+            </p>
+          </div>
+        </div>
+
+        <!-- Poin Keunggulan & Tombol Action -->
+        <div class="flex items-center justify-between md:justify-end gap-3 w-full md:w-auto">
+          <div class="hidden lg:flex items-center gap-2 text-xs text-slate-400 border-r border-slate-700 pr-4">
+            <div class="flex items-center gap-1 text-slate-200">
+              <svg class="w-4 h-4 text-emerald-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" /></svg>
+              <span>Chat WA Instan</span>
+            </div>
+            <span class="text-slate-600">•</span>
+            <div class="flex items-center gap-1 text-slate-200">
+              <svg class="w-4 h-4 text-emerald-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" /></svg>
+              <span>Ready Meta Pixel</span>
+            </div>
+          </div>
+
+          <a href="https://wa.me/6281234567890?text=Halo%20Tim%20Lentera%20Pasar,%20saya%20tertarik%20menggunakan%20template%20website%20ini%20lengkap%20dengan%20Admin%20Panel%20dan%20Jasa%20Iklannya." 
+             target="_blank"
+             class="w-full md:w-auto inline-flex items-center justify-center gap-2 bg-gradient-to-r from-amber-500 to-orange-600 hover:from-amber-600 hover:to-orange-700 text-white text-xs md:text-sm font-semibold px-5 py-2.5 rounded-xl shadow-lg shadow-orange-500/20 transition-all hover:scale-105 shrink-0">
+            <span>Gunakan Template Ini</span>
+            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3" />
+            </svg>
+          </a>
+        </div>
+
+      </div>
+    </div>
+
+    <script>
+        const mobileMenuBtn = document.getElementById('mobileMenuBtn');
+        const mobileMenu = document.getElementById('mobileMenu');
+        const menuIcon = document.getElementById('menuIcon');
+
+        mobileMenuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+            if (mobileMenu.classList.contains('hidden')) {
+                menuIcon.classList.remove('fa-xmark');
+                menuIcon.classList.add('fa-bars');
+            } else {
+                menuIcon.classList.remove('fa-bars');
+                menuIcon.classList.add('fa-xmark');
+            }
+        });
+    </script>
+</body>
+</html>

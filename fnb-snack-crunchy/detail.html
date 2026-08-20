@@ -1,0 +1,602 @@
+<!DOCTYPE html>
+<html lang="id" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Basreng Stik Renyah Pedas Daun Jeruk - KRIUK JUARA</title>
+    <meta name="description" content="Pesan Basreng Stik Renyah Pedas Daun Jeruk ukuran 120g, 250g, atau toples 400g. Ikan tenggiri asli, bumbu cabai rawit berlimpah, wangi daun jeruk segar, izin P-IRT resmi.">
+    
+    <!-- Google Fonts: Plus Jakarta Sans ExtraBold -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    
+    <!-- Tailwind CSS CDN with Custom Config -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        snackred: {
+                            500: '#ef4444',
+                            600: '#dc2626',
+                            700: '#b91c1c',
+                            800: '#991b1b',
+                        },
+                        mustardyellow: {
+                            300: '#fde047',
+                            400: '#facc15',
+                            500: '#eab308',
+                            600: '#ca8a04',
+                        },
+                        darkslate: {
+                            900: '#0f172a',
+                            950: '#020617',
+                        }
+                    },
+                    fontFamily: {
+                        sans: ['"Plus Jakarta Sans"', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-amber-50/50 text-slate-900 font-sans antialiased selection:bg-snackred-600 selection:text-white min-h-screen flex flex-col justify-between pb-28">
+
+    <!-- Header / Navbar -->
+    <header class="sticky top-0 z-40 bg-white/95 backdrop-blur-md border-b-2 border-slate-900 shadow-md transition-all">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-20">
+                
+                <!-- Brand Logo -->
+                <a href="index.html" class="flex items-center gap-3 group">
+                    <div class="w-12 h-12 rounded-2xl bg-snackred-600 text-yellow-300 border-2 border-slate-900 flex items-center justify-center text-2xl shadow-[3px_3px_0px_0px_rgba(15,23,42,1)] group-hover:rotate-6 transition transform">
+                        <i class="fa-solid fa-pepper-hot"></i>
+                    </div>
+                    <div>
+                        <span class="text-2xl sm:text-3xl font-black tracking-tight text-slate-900 block leading-none">
+                            KRIUK<span class="text-snackred-600">JUARA!</span>
+                        </span>
+                        <span class="text-[10px] font-black text-amber-600 tracking-widest uppercase">Pedas Gurih Bikin Nagih</span>
+                    </div>
+                </a>
+
+                <!-- Desktop Nav -->
+                <nav class="hidden md:flex items-center gap-7 font-black text-slate-800 text-sm uppercase tracking-wide">
+                    <a href="index.html" class="hover:text-snackred-600 transition">Beranda</a>
+                    <a href="katalog.html" class="text-snackred-600 border-b-2 border-snackred-600 pb-1">Katalog Camilan</a>
+                    <a href="tentang.html" class="hover:text-snackred-600 transition">Cerita Dapur</a>
+                    <a href="artikel.html" class="hover:text-snackred-600 transition">Tips Nyemil</a>
+                    <a href="kontak.html" class="hover:text-snackred-600 transition">Toko & Reseller</a>
+                </nav>
+
+                <!-- Desktop Action CTA -->
+                <div class="hidden lg:flex items-center gap-3">
+                    <a href="https://wa.me/6281234567890?text=Halo%20Kriuk%20Juara,%20saya%20mau%20pesan%20camilan%20renyah." target="_blank" class="inline-flex items-center gap-2 bg-mustardyellow-400 hover:bg-mustardyellow-500 text-slate-950 font-black text-xs px-5 py-3 rounded-2xl border-2 border-slate-900 shadow-[3px_3px_0px_0px_rgba(15,23,42,1)] hover:translate-y-0.5 hover:shadow-none transition">
+                        <i class="fa-brands fa-whatsapp text-lg text-emerald-700"></i>
+                        <span>ORDER WA KILAT</span>
+                    </a>
+                </div>
+
+                <!-- Mobile Menu Button -->
+                <button id="mobileMenuBtn" class="md:hidden text-slate-900 p-2 rounded-xl bg-amber-100 border-2 border-slate-900" aria-label="Buka Menu">
+                    <i class="fa-solid fa-bars text-xl" id="menuIcon"></i>
+                </button>
+            </div>
+        </div>
+
+        <!-- Mobile Drawer -->
+        <div id="mobileMenu" class="hidden md:hidden bg-white border-b-2 border-slate-900 px-4 pt-3 pb-6 space-y-3 shadow-xl">
+            <a href="index.html" class="block py-2.5 px-3 rounded-xl text-slate-900 hover:bg-amber-50 font-black text-sm uppercase">Beranda</a>
+            <a href="katalog.html" class="block py-2.5 px-3 rounded-xl bg-snackred-50 text-snackred-600 font-black text-sm uppercase">Katalog Camilan</a>
+            <a href="tentang.html" class="block py-2.5 px-3 rounded-xl text-slate-900 hover:bg-amber-50 font-black text-sm uppercase">Cerita Dapur</a>
+            <a href="artikel.html" class="block py-2.5 px-3 rounded-xl text-slate-900 hover:bg-amber-50 font-black text-sm uppercase">Tips Nyemil</a>
+            <a href="kontak.html" class="block py-2.5 px-3 rounded-xl text-slate-900 hover:bg-amber-50 font-black text-sm uppercase">Toko & Reseller</a>
+            <div class="pt-2">
+                <a href="https://wa.me/6281234567890?text=Halo%20Kriuk%20Juara,%20mau%20order%20snack" target="_blank" class="w-full inline-flex justify-center items-center gap-2 bg-snackred-600 text-white font-black py-3 rounded-xl text-xs uppercase border-2 border-slate-900 shadow-[2px_2px_0px_0px_rgba(15,23,42,1)]">
+                    <i class="fa-brands fa-whatsapp text-lg"></i>
+                    <span>Order via WhatsApp CS</span>
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Breadcrumb Bar -->
+    <div class="bg-white border-b-2 border-slate-900 py-3">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <nav class="flex items-center gap-2 text-xs font-black text-slate-400 uppercase overflow-x-auto whitespace-nowrap">
+                <a href="index.html" class="hover:text-snackred-600">Beranda</a>
+                <i class="fa-solid fa-chevron-right text-[10px]"></i>
+                <a href="katalog.html" class="hover:text-snackred-600">Katalog Camilan</a>
+                <i class="fa-solid fa-chevron-right text-[10px]"></i>
+                <a href="katalog.html?kategori=basreng" class="hover:text-snackred-600">Basreng</a>
+                <i class="fa-solid fa-chevron-right text-[10px]"></i>
+                <span class="text-snackred-600 truncate">Basreng Stik Daun Jeruk</span>
+            </nav>
+        </div>
+    </div>
+
+    <!-- Product Detail Container -->
+    <main class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10 w-full flex-1">
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-10">
+
+            <!-- Left: Interactive Gallery -->
+            <div class="lg:col-span-6 space-y-4">
+                <div class="relative rounded-3xl overflow-hidden bg-white border-2 border-slate-900 shadow-[6px_6px_0px_0px_rgba(15,23,42,1)]">
+                    <img id="mainProductImg" src="https://images.unsplash.com/photo-1566478989037-eec170784d0b?auto=format&fit=crop&w=900&q=80" alt="Basreng Stik Daun Jeruk" class="w-full h-[360px] sm:h-[450px] object-cover transition-opacity duration-300">
+                    <span class="absolute top-4 left-4 bg-snackred-600 text-yellow-300 font-black text-xs px-3.5 py-1 rounded-full uppercase border border-slate-900 shadow">
+                        BEST SELLER #1
+                    </span>
+                    <span class="absolute top-4 right-4 bg-mustardyellow-300 text-slate-950 font-black text-xs px-3 py-1 rounded-full border border-slate-900 flex items-center gap-1.5 shadow-sm">
+                        <i class="fa-solid fa-certificate text-snackred-600"></i> P-IRT 5053273010982-28
+                    </span>
+                </div>
+
+                <!-- Thumbnails -->
+                <div class="grid grid-cols-3 gap-3">
+                    <button class="thumb-btn active rounded-2xl overflow-hidden border-2 border-snackred-600 shadow-[2px_2px_0px_0px_rgba(15,23,42,1)] focus:outline-none transition" onclick="changeImage('https://images.unsplash.com/photo-1566478989037-eec170784d0b?auto=format&fit=crop&w=900&q=80', this)">
+                        <img src="https://images.unsplash.com/photo-1566478989037-eec170784d0b?auto=format&fit=crop&w=300&q=80" alt="Kemasan Pouch Depan" class="w-full h-20 sm:h-24 object-cover">
+                    </button>
+                    <button class="thumb-btn rounded-2xl overflow-hidden border-2 border-slate-200 hover:border-slate-900 focus:outline-none transition" onclick="changeImage('https://images.unsplash.com/photo-1563379091339-03b21ab4a4f8?auto=format&fit=crop&w=900&q=80', this)">
+                        <img src="https://images.unsplash.com/photo-1563379091339-03b21ab4a4f8?auto=format&fit=crop&w=300&q=80" alt="Zoom Tekstur Stik Renyah" class="w-full h-20 sm:h-24 object-cover">
+                    </button>
+                    <button class="thumb-btn rounded-2xl overflow-hidden border-2 border-slate-200 hover:border-slate-900 focus:outline-none transition" onclick="changeImage('https://images.unsplash.com/photo-1546069901-ba9599a7e63c?auto=format&fit=crop&w=900&q=80', this)">
+                        <img src="https://images.unsplash.com/photo-1546069901-ba9599a7e63c?auto=format&fit=crop&w=300&q=80" alt="Toples & Kemasan Dus" class="w-full h-20 sm:h-24 object-cover">
+                    </button>
+                </div>
+
+                <!-- Crunch & Storage Badge Strip -->
+                <div class="bg-white p-5 rounded-3xl border-2 border-slate-900 shadow-[4px_4px_0px_0px_rgba(15,23,42,1)] flex items-center gap-4">
+                    <div class="w-12 h-12 rounded-2xl bg-amber-100 text-snackred-600 flex items-center justify-center text-2xl flex-shrink-0 border border-slate-900">
+                        <i class="fa-solid fa-bowl-food"></i>
+                    </div>
+                    <div>
+                        <h4 class="font-black text-xs text-slate-900 uppercase">JAMINAN GURIH RENYAH TIDAK KERAS</h4>
+                        <p class="text-xs text-slate-600 font-semibold mt-0.5">Dibuat dari ikan tenggiri segar dengan teknik penggorengan ganda (*double fry*) bersuhu presisi.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Right: Product Summary & Customization Selectors -->
+            <div class="lg:col-span-6 space-y-6">
+                
+                <div>
+                    <div class="flex items-center gap-2 mb-2">
+                        <span class="bg-snackred-600 text-yellow-300 text-xs font-black px-3 py-1 rounded-full uppercase border border-slate-900">Snack Pedas Viral</span>
+                        <span class="bg-mustardyellow-300 text-slate-950 text-xs font-black px-3 py-1 rounded-full uppercase border border-slate-900">100% Halal MUI</span>
+                    </div>
+
+                    <h1 class="text-3xl sm:text-4xl lg:text-5xl font-black text-slate-900 leading-tight uppercase">
+                        Basreng Stik Daun Jeruk
+                    </h1>
+
+                    <div class="flex items-center gap-3 mt-2 text-xs font-bold text-slate-700">
+                        <div class="flex items-center text-amber-500 gap-1 font-black">
+                            <i class="fa-solid fa-star"></i>
+                            <span class="text-slate-900">4.9 / 5.0</span>
+                            <span class="text-slate-500 font-semibold">(58.400+ Pouch Terjual)</span>
+                        </div>
+                        <span>•</span>
+                        <span class="text-snackred-600 font-black">Ziplock Foil Segel Rapat</span>
+                    </div>
+                </div>
+
+                <!-- Price Box -->
+                <div class="bg-white p-5 rounded-2xl border-2 border-slate-900 shadow-[4px_4px_0px_0px_rgba(15,23,42,1)] flex items-baseline justify-between">
+                    <div>
+                        <span class="text-[11px] text-slate-500 font-bold block uppercase mb-0.5">Harga Varian Terpilih:</span>
+                        <div class="flex items-baseline gap-2">
+                            <span id="displayUnitPrice" class="text-3xl sm:text-4xl font-black text-snackred-600">Rp28.000</span>
+                            <span class="text-slate-400 text-xs line-through font-bold">Rp32.000</span>
+                            <span class="text-xs bg-mustardyellow-300 text-slate-950 font-black px-2 py-0.5 rounded border border-slate-900 uppercase">Promo Hemat</span>
+                        </div>
+                    </div>
+                    <span class="text-xs font-black text-emerald-700 text-right uppercase">Ready Stock Bandung</span>
+                </div>
+
+                <!-- Customizer Box -->
+                <div class="bg-white p-6 rounded-3xl border-2 border-slate-900 shadow-[4px_4px_0px_0px_rgba(15,23,42,1)] space-y-5">
+                    
+                    <!-- 1. Pilihan Ukuran Kemasan -->
+                    <div>
+                        <label class="block text-xs font-black text-slate-900 mb-2 uppercase">1. Pilih Ukuran Kemasan:</label>
+                        <div class="grid grid-cols-2 sm:grid-cols-4 gap-2">
+                            <button type="button" class="size-btn py-2.5 px-2 rounded-2xl border-2 border-slate-300 hover:border-slate-900 text-center transition" data-price="15000" data-label="Pouch Reguler 120g">
+                                <span class="block font-black text-xs text-slate-900">Pouch 120g</span>
+                                <span class="text-[10px] text-slate-500 font-bold">Rp15.000</span>
+                            </button>
+                            <button type="button" class="size-btn active py-2.5 px-2 rounded-2xl border-2 border-slate-900 bg-mustardyellow-300 text-center transition shadow-[2px_2px_0px_0px_rgba(15,23,42,1)]" data-price="28000" data-label="Pouch Jumbo 250g (Best Seller)">
+                                <span class="block font-black text-xs text-slate-900">Jumbo 250g</span>
+                                <span class="text-[10px] text-snackred-700 font-black">Rp28.000</span>
+                            </button>
+                            <button type="button" class="size-btn py-2.5 px-2 rounded-2xl border-2 border-slate-300 hover:border-slate-900 text-center transition" data-price="45000" data-label="Toples Segel 400g">
+                                <span class="block font-black text-xs text-slate-900">Toples 400g</span>
+                                <span class="text-[10px] text-slate-500 font-bold">Rp45.000</span>
+                            </button>
+                            <button type="button" class="size-btn py-2.5 px-2 rounded-2xl border-2 border-slate-300 hover:border-slate-900 text-center transition" data-price="250000" data-label="Dus Kartonan (10 Pouch)">
+                                <span class="block font-black text-xs text-slate-900">Dus 10 Pouch</span>
+                                <span class="text-[10px] text-slate-500 font-bold">Rp250.000</span>
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- 2. Pilihan Level Pedas -->
+                    <div>
+                        <label class="block text-xs font-black text-slate-900 mb-2 uppercase">2. Pilih Level Pedas & Sensasi:</label>
+                        <div class="grid grid-cols-2 sm:grid-cols-4 gap-2 text-xs">
+                            <button type="button" class="spicy-btn py-2 px-2 rounded-2xl border-2 border-slate-300 hover:border-slate-900 font-black text-slate-800 text-center transition" data-extra="0" data-label="Level 0 (Original Gurih)">
+                                Level 0 <span class="block text-[10px] font-bold text-emerald-700">Original Gurih</span>
+                            </button>
+                            <button type="button" class="spicy-btn py-2 px-2 rounded-2xl border-2 border-slate-300 hover:border-slate-900 font-black text-slate-800 text-center transition" data-extra="0" data-label="Level 1 (Balado Manis)">
+                                Level 1 <span class="block text-[10px] font-bold text-amber-700">Balado Manis</span>
+                            </button>
+                            <button type="button" class="spicy-btn active py-2 px-2 rounded-2xl border-2 border-slate-900 bg-snackred-600 text-white font-black text-center transition shadow-[2px_2px_0px_0px_rgba(15,23,42,1)]" data-extra="0" data-label="Level 3 (Pedas Daun Jeruk)">
+                                Level 3 <span class="block text-[10px] font-bold text-yellow-300">Pedas Jeruk ⭐</span>
+                            </button>
+                            <button type="button" class="spicy-btn py-2 px-2 rounded-2xl border-2 border-slate-300 hover:border-slate-900 font-black text-slate-800 text-center transition" data-extra="2000" data-label="Level 5 (Pedas Mampus Juara +2k)">
+                                Level 5 <span class="block text-[10px] font-bold text-snackred-600">Pedas Mampus (+2k)</span>
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- 3. Quantity Stepper -->
+                    <div class="pt-3 border-t-2 border-slate-100 flex items-center justify-between">
+                        <div>
+                            <span class="text-xs font-black text-slate-900 block uppercase">Jumlah Pesanan:</span>
+                            <span class="text-[11px] text-snackred-600 font-bold">Kemasan ziplock kedap udara</span>
+                        </div>
+                        <div class="flex items-center border-2 border-slate-900 rounded-xl overflow-hidden bg-slate-50">
+                            <button type="button" id="btnMinus" class="px-3.5 py-1.5 text-slate-900 hover:bg-slate-200 font-black transition">-</button>
+                            <span id="qtyVal" class="px-5 py-1.5 font-black text-sm text-slate-900 bg-white">1</span>
+                            <button type="button" id="btnPlus" class="px-3.5 py-1.5 text-slate-900 hover:bg-slate-200 font-black transition">+</button>
+                        </div>
+                    </div>
+
+                </div>
+
+                <!-- Total Price & WhatsApp Order Box -->
+                <div class="space-y-3 pt-2">
+                    
+                    <!-- Total Calculation Display -->
+                    <div class="bg-slate-950 text-white p-5 rounded-2xl border-2 border-slate-900 shadow-[4px_4px_0px_0px_rgba(15,23,42,1)] flex items-center justify-between">
+                        <div>
+                            <span class="text-[10px] font-black uppercase text-slate-400">TOTAL HARGA (<span id="totalPackLabel">1</span> ITEM):</span>
+                            <h3 id="displayTotalPrice" class="text-3xl font-black text-yellow-400">Rp28.000</h3>
+                        </div>
+                        <span class="text-xs font-black bg-snackred-600 text-white px-3 py-1.5 rounded-xl border border-slate-900 uppercase">Segel Fresh</span>
+                    </div>
+
+                    <!-- WhatsApp CTA -->
+                    <a id="btnOrderWa" href="https://wa.me/6281234567890?text=Halo%20Kriuk%20Juara,%20saya%20mau%20pesan%20Basreng%20Stik" target="_blank" class="w-full flex items-center justify-center gap-3 bg-snackred-600 hover:bg-snackred-700 text-white font-black text-sm py-4 px-6 rounded-2xl border-2 border-slate-900 shadow-[4px_4px_0px_0px_rgba(15,23,42,1)] hover:shadow-none hover:translate-y-0.5 transition uppercase tracking-wider">
+                        <i class="fa-brands fa-whatsapp text-2xl text-yellow-300"></i>
+                        <span>PESAN SEKARANG VIA WHATSAPP</span>
+                    </a>
+
+                    <!-- Marketplace Buttons -->
+                    <div class="grid grid-cols-3 gap-2 pt-1">
+                        <a href="https://shopee.co.id" target="_blank" class="py-2.5 rounded-xl bg-white border-2 border-slate-900 hover:bg-amber-50 text-slate-900 text-xs font-black text-center transition flex items-center justify-center gap-1.5 uppercase">
+                            <i class="fa-solid fa-store text-snackred-600"></i> Shopee
+                        </a>
+                        <a href="https://tokopedia.com" target="_blank" class="py-2.5 rounded-xl bg-white border-2 border-slate-900 hover:bg-amber-50 text-slate-900 text-xs font-black text-center transition flex items-center justify-center gap-1.5 uppercase">
+                            <i class="fa-solid fa-bag-shopping text-emerald-600"></i> Tokopedia
+                        </a>
+                        <a href="https://tiktok.com" target="_blank" class="py-2.5 rounded-xl bg-white border-2 border-slate-900 hover:bg-amber-50 text-slate-900 text-xs font-black text-center transition flex items-center justify-center gap-1.5 uppercase">
+                            <i class="fa-brands fa-tiktok text-slate-900"></i> TikTok Shop
+                        </a>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+
+        <!-- Detail Bahan & Izin Resmi -->
+        <div class="mt-14 bg-white rounded-3xl border-2 border-slate-900 p-8 sm:p-12 shadow-[6px_6px_0px_0px_rgba(15,23,42,1)] space-y-6">
+            <div>
+                <span class="text-snackred-600 text-xs font-black uppercase tracking-wider">KOMPOSISI ALAMI & LEGALITAS</span>
+                <h2 class="text-2xl sm:text-3xl font-black text-slate-900 mt-1 uppercase">
+                    Kualitas Bahan Baku Pilihan Dapur Juara
+                </h2>
+            </div>
+            
+            <div class="text-slate-700 text-sm leading-relaxed space-y-4 font-semibold">
+                <p>
+                    <strong>Basreng Stik Daun Jeruk Kriuk Juara</strong> diproduksi dari adonan bakso ikan tenggiri segar yang diolah secara higienis tanpa pemutih sintetis. Digoreng dengan minyak kelapa sawit bermutu tinggi yang selalu diganti berkala untuk memastikan hasil renyah bebas rasa tengik dan bebas minyak berlebih.
+                </p>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-4 pt-2">
+                    <div class="p-4 rounded-2xl bg-amber-50 border-2 border-slate-900">
+                        <h4 class="font-black text-xs text-slate-900 uppercase mb-1">🌿 Daun Jeruk Purut Asli</h4>
+                        <p class="text-xs text-slate-600 font-medium">Bukan perisa daun jeruk kimia, melainkan daun jeruk purut segar yang disangrai dan dicincang halus menghasilkan aroma harum semerbak.</p>
+                    </div>
+                    <div class="p-4 rounded-2xl bg-amber-50 border-2 border-slate-900">
+                        <h4 class="font-black text-xs text-slate-900 uppercase mb-1">🌶️ Cabai Rawit Merah Asli</h4>
+                        <p class="text-xs text-slate-600 font-medium">Menggunakan bubuk cabai merah kering dan cabai rawit domba asli yang digiling higienis tanpa pewarna tekstil merah berbahaya.</p>
+                    </div>
+                    <div class="p-4 rounded-2xl bg-amber-50 border-2 border-slate-900">
+                        <h4 class="font-black text-xs text-slate-900 uppercase mb-1">📜 Izin Edar Resmi</h4>
+                        <p class="text-xs text-slate-600 font-medium">Nomor P-IRT: 5053273010982-28 dan Halal ID32110000492810223. Aman dikonsumsi dan siap kirim ke seluruh Indonesia.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Related Snacks -->
+        <div class="mt-14">
+            <div class="flex items-center justify-between mb-8">
+                <div>
+                    <span class="text-snackred-600 text-xs font-black uppercase tracking-wider">CAMILAN SERU LAINNYA</span>
+                    <h2 class="text-2xl font-black text-slate-900 mt-0.5 uppercase">Jangan Lewatkan Varian Favorit Ini</h2>
+                </div>
+                <a href="katalog.html" class="text-xs font-black text-snackred-600 hover:underline uppercase">Lihat Semua &rarr;</a>
+            </div>
+
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+                <!-- Card 1 -->
+                <div class="bg-white rounded-3xl border-2 border-slate-900 p-5 shadow-[4px_4px_0px_0px_rgba(15,23,42,1)] hover:shadow-none hover:translate-y-1 transition">
+                    <img src="https://images.unsplash.com/photo-1563379091339-03b21ab4a4f8?auto=format&fit=crop&w=500&q=80" alt="Keripik Kaca" class="w-full h-44 object-cover rounded-2xl mb-4 border border-slate-200">
+                    <span class="text-xs font-black text-snackred-600 uppercase">Pouch 150g</span>
+                    <h4 class="font-black text-base text-slate-900 mt-0.5 uppercase"><a href="detail.html">Keripik Kaca Beling Pedas</a></h4>
+                    <div class="flex items-center justify-between mt-3 pt-3 border-t-2 border-slate-100">
+                        <span class="font-black text-snackred-600 text-lg">Rp18.000</span>
+                        <a href="detail.html" class="text-xs font-black text-slate-900 hover:text-snackred-600 uppercase">PILIH &rarr;</a>
+                    </div>
+                </div>
+
+                <!-- Card 2 -->
+                <div class="bg-white rounded-3xl border-2 border-slate-900 p-5 shadow-[4px_4px_0px_0px_rgba(15,23,42,1)] hover:shadow-none hover:translate-y-1 transition">
+                    <img src="https://images.unsplash.com/photo-1546069901-ba9599a7e63c?auto=format&fit=crop&w=500&q=80" alt="Keripik Pisang" class="w-full h-44 object-cover rounded-2xl mb-4 border border-slate-200">
+                    <span class="text-xs font-black text-amber-700 uppercase">Pouch 200g</span>
+                    <h4 class="font-black text-base text-slate-900 mt-0.5 uppercase"><a href="detail.html">Keripik Pisang Cokelat Lumer</a></h4>
+                    <div class="flex items-center justify-between mt-3 pt-3 border-t-2 border-slate-100">
+                        <span class="font-black text-amber-700 text-lg">Rp25.000</span>
+                        <a href="detail.html" class="text-xs font-black text-slate-900 hover:text-snackred-600 uppercase">PILIH &rarr;</a>
+                    </div>
+                </div>
+
+                <!-- Card 3 -->
+                <div class="bg-white rounded-3xl border-2 border-slate-900 p-5 shadow-[4px_4px_0px_0px_rgba(15,23,42,1)] hover:shadow-none hover:translate-y-1 transition">
+                    <img src="https://images.unsplash.com/photo-1555396273-367ea4eb4db5?auto=format&fit=crop&w=500&q=80" alt="Paket Dus Oleh Oleh" class="w-full h-44 object-cover rounded-2xl mb-4 border border-slate-200">
+                    <span class="text-xs font-black text-snackred-600 uppercase">Dus 6 Pouch</span>
+                    <h4 class="font-black text-base text-slate-900 mt-0.5 uppercase"><a href="detail.html">Paket Dus Oleh-Oleh Juara</a></h4>
+                    <div class="flex items-center justify-between mt-3 pt-3 border-t-2 border-slate-100">
+                        <span class="font-black text-snackred-600 text-lg">Rp110.000</span>
+                        <a href="detail.html" class="text-xs font-black text-slate-900 hover:text-snackred-600 uppercase">PILIH &rarr;</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-slate-950 text-slate-400 pt-16 pb-12 border-t-2 border-slate-900">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-10 pb-12 border-b border-slate-800">
+                <div class="lg:col-span-2 space-y-4">
+                    <a href="index.html" class="flex items-center gap-3">
+                        <div class="w-10 h-10 rounded-xl bg-snackred-600 text-yellow-300 flex items-center justify-center text-xl">
+                            <i class="fa-solid fa-pepper-hot"></i>
+                        </div>
+                        <span class="text-2xl font-black text-white">KRIUK<span class="text-snackred-500">JUARA!</span></span>
+                    </a>
+                    <p class="text-xs text-slate-400 leading-relaxed pr-6 font-medium">
+                        Produsen camilan kering, keripik pedas daun jeruk, dan aneka snack oleh-oleh nusantara. Gurih renyah tanpa pengawet buatan, siap kirim ke seluruh pelosok Indonesia.
+                    </p>
+                </div>
+                <div>
+                    <h4 class="text-white font-black text-xs tracking-wider uppercase mb-4">Navigasi</h4>
+                    <ul class="space-y-2.5 text-xs font-bold">
+                        <li><a href="index.html" class="hover:text-yellow-400 transition">Beranda</a></li>
+                        <li><a href="katalog.html" class="hover:text-yellow-400 transition">Katalog Camilan</a></li>
+                        <li><a href="tentang.html" class="hover:text-yellow-400 transition">Cerita Dapur Resep</a></li>
+                        <li><a href="artikel.html" class="hover:text-yellow-400 transition">Tips & Rekomendasi</a></li>
+                        <li><a href="kontak.html" class="hover:text-yellow-400 transition">Toko & Kargo</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-white font-black text-xs tracking-wider uppercase mb-4">Varian Juara</h4>
+                    <ul class="space-y-2.5 text-xs font-medium">
+                        <li><a href="katalog.html" class="hover:text-yellow-400 transition">Basreng Stik Daun Jeruk</a></li>
+                        <li><a href="katalog.html" class="hover:text-yellow-400 transition">Keripik Kaca Pedas Beling</a></li>
+                        <li><a href="katalog.html" class="hover:text-yellow-400 transition">Keripik Pisang Cokelat Lumer</a></li>
+                        <li><a href="katalog.html" class="hover:text-yellow-400 transition">Paket Dus Oleh-Oleh</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-white font-black text-xs tracking-wider uppercase mb-4">Dapur & Pengiriman</h4>
+                    <div class="text-xs space-y-2 text-slate-400 font-normal">
+                        <p class="text-white font-bold">Jam Layanan CS:</p>
+                        <p>Setiap Hari: 08.00 - 21.00 WIB</p>
+                        <p class="text-white font-bold pt-1">Dapur Produksi:</p>
+                        <p>Sentra Keripik Nusantara, Jl. Terusan Pasirkoja No. 88, Bandung, Jawa Barat</p>
+                        <p class="text-yellow-400 font-bold pt-1"><i class="fa-brands fa-whatsapp"></i> +62 812-3456-7890</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="pt-8 flex flex-col md:flex-row items-center justify-between text-xs text-slate-500 gap-4">
+                <p>&copy; 2026 Kriuk Juara Nusantara. Hak Cipta Dilindungi.</p>
+                <div class="flex items-center gap-2">
+                    <span>Etalase Resmi UMKM didukung oleh</span>
+                    <a href="https://lenterapasar.com" target="_blank" class="text-yellow-400 font-bold hover:underline">Lentera Pasar</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Floating WhatsApp Conversion Button (Offset to bottom-24) -->
+    <a href="https://wa.me/6281234567890?text=Halo%20Kriuk%20Juara,%20saya%20mau%20order%20camilan." target="_blank" class="fixed bottom-24 right-6 z-40 group flex items-center gap-3 bg-snackred-600 hover:bg-snackred-700 text-white px-4 py-3.5 rounded-2xl border-2 border-slate-900 shadow-[4px_4px_0px_0px_rgba(15,23,42,1)] hover:shadow-none transition-all duration-300 transform hover:scale-105" aria-label="Order via WhatsApp">
+        <i class="fa-brands fa-whatsapp text-2xl text-yellow-300"></i>
+        <span class="hidden sm:inline font-black text-xs tracking-wider uppercase">Order Snack WA</span>
+    </a>
+
+    <!-- ========================================================================= -->
+    <!-- LENTERA PASAR - STICKY DEMO & SALES BAR                                   -->
+    <!-- ========================================================================= -->
+    <div class="fixed bottom-4 left-1/2 -translate-x-1/2 z-50 w-[95%] max-w-4xl bg-slate-900/95 backdrop-blur-md text-white p-3.5 md:p-4 rounded-2xl shadow-2xl border border-slate-700/80 transition-all duration-300">
+      <div class="flex flex-col md:flex-row items-center justify-between gap-3 md:gap-4">
+        
+        <!-- Info Template & Value Proposition -->
+        <div class="flex items-center gap-3 w-full md:w-auto">
+          <div class="w-10 h-10 rounded-xl bg-amber-500/20 border border-amber-500/40 flex items-center justify-center shrink-0">
+            <svg class="w-5 h-5 text-amber-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z" />
+            </svg>
+          </div>
+          <div>
+            <div class="flex items-center gap-2">
+              <span class="font-bold text-sm text-white">Lentera Pasar Engine</span>
+              <span class="text-[10px] bg-emerald-500/20 text-emerald-300 border border-emerald-500/30 px-2 py-0.5 rounded-full font-medium">Free Admin Panel + Ads Support</span>
+            </div>
+            <p class="text-xs text-slate-300 hidden sm:block">
+              Terima beres: Website responsif + Panel input produk sendiri + Dikelola tim iklan profesional.
+            </p>
+          </div>
+        </div>
+
+        <!-- Poin Keunggulan & Tombol Action -->
+        <div class="flex items-center justify-between md:justify-end gap-3 w-full md:w-auto">
+          <div class="hidden lg:flex items-center gap-2 text-xs text-slate-400 border-r border-slate-700 pr-4">
+            <div class="flex items-center gap-1 text-slate-200">
+              <svg class="w-4 h-4 text-emerald-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" /></svg>
+              <span>Chat WA Instan</span>
+            </div>
+            <span class="text-slate-600">•</span>
+            <div class="flex items-center gap-1 text-slate-200">
+              <svg class="w-4 h-4 text-emerald-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" /></svg>
+              <span>Ready Meta Pixel</span>
+            </div>
+          </div>
+
+          <a href="https://wa.me/6281234567890?text=Halo%20Tim%20Lentera%20Pasar,%20saya%20tertarik%20menggunakan%20template%20website%20ini%20lengkap%20dengan%20Admin%20Panel%20dan%20Jasa%20Iklannya." 
+             target="_blank"
+             class="w-full md:w-auto inline-flex items-center justify-center gap-2 bg-gradient-to-r from-amber-500 to-orange-600 hover:from-amber-600 hover:to-orange-700 text-white text-xs md:text-sm font-semibold px-5 py-2.5 rounded-xl shadow-lg shadow-orange-500/20 transition-all hover:scale-105 shrink-0">
+            <span>Gunakan Template Ini</span>
+            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3" />
+            </svg>
+          </a>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- Dynamic Customizer Script -->
+    <script>
+        const mobileMenuBtn = document.getElementById('mobileMenuBtn');
+        const mobileMenu = document.getElementById('mobileMenu');
+        const menuIcon = document.getElementById('menuIcon');
+
+        mobileMenuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+            if (mobileMenu.classList.contains('hidden')) {
+                menuIcon.classList.remove('fa-xmark');
+                menuIcon.classList.add('fa-bars');
+            } else {
+                menuIcon.classList.remove('fa-bars');
+                menuIcon.classList.add('fa-xmark');
+            }
+        });
+
+        function changeImage(src, btn) {
+            const mainImg = document.getElementById('mainProductImg');
+            mainImg.style.opacity = '0.3';
+            setTimeout(() => {
+                mainImg.src = src;
+                mainImg.style.opacity = '1';
+            }, 150);
+
+            document.querySelectorAll('.thumb-btn').forEach(t => {
+                t.classList.remove('border-2', 'border-snackred-600', 'shadow-[2px_2px_0px_0px_rgba(15,23,42,1)]', 'active');
+                t.classList.add('border-2', 'border-slate-200');
+            });
+            btn.classList.remove('border-2', 'border-slate-200');
+            btn.classList.add('border-2', 'border-snackred-600', 'shadow-[2px_2px_0px_0px_rgba(15,23,42,1)]', 'active');
+        }
+
+        // Customizer State
+        let baseSizePrice = 28000;
+        let spicyExtra = 0;
+        let selectedSize = 'Pouch Jumbo 250g (Best Seller)';
+        let selectedSpicy = 'Level 3 (Pedas Daun Jeruk)';
+        let quantity = 1;
+
+        const displayUnitPrice = document.getElementById('displayUnitPrice');
+        const displayTotalPrice = document.getElementById('displayTotalPrice');
+        const totalPackLabel = document.getElementById('totalPackLabel');
+        const qtyVal = document.getElementById('qtyVal');
+        const btnMinus = document.getElementById('btnMinus');
+        const btnPlus = document.getElementById('btnPlus');
+        const btnOrderWa = document.getElementById('btnOrderWa');
+
+        function updateWaLink() {
+            const currentUnitPrice = baseSizePrice + spicyExtra;
+            const totalPrice = currentUnitPrice * quantity;
+
+            displayUnitPrice.textContent = 'Rp' + currentUnitPrice.toLocaleString('id-ID');
+            displayTotalPrice.textContent = 'Rp' + totalPrice.toLocaleString('id-ID');
+            totalPackLabel.textContent = quantity;
+
+            const text = `Halo Kriuk Juara,\n\nSaya ingin memesan camilan:\n- *Produk:* Basreng Stik Renyah Daun Jeruk\n- *Ukuran Kemasan:* ${selectedSize}\n- *Level Pedas:* ${selectedSpicy}\n- *Jumlah Pesanan:* ${quantity} Item\n- *Estimasi Total:* Rp${totalPrice.toLocaleString('id-ID')}\n\nMohon info ketersediaan stok & ongkir kargo/ekspedisi. Terima kasih!`;
+
+            btnOrderWa.href = `https://wa.me/6281234567890?text=${encodeURIComponent(text)}`;
+        }
+
+        // Size Buttons
+        const sizeBtns = document.querySelectorAll('.size-btn');
+        sizeBtns.forEach(btn => {
+            btn.addEventListener('click', () => {
+                sizeBtns.forEach(b => {
+                    b.classList.remove('border-2', 'border-slate-900', 'bg-mustardyellow-300', 'shadow-[2px_2px_0px_0px_rgba(15,23,42,1)]', 'active');
+                    b.classList.add('border-2', 'border-slate-300');
+                });
+                btn.classList.add('border-2', 'border-slate-900', 'bg-mustardyellow-300', 'shadow-[2px_2px_0px_0px_rgba(15,23,42,1)]', 'active');
+                btn.classList.remove('border-2', 'border-slate-300');
+
+                baseSizePrice = parseInt(btn.dataset.price);
+                selectedSize = btn.dataset.label;
+                updateWaLink();
+            });
+        });
+
+        // Spicy Buttons
+        const spicyBtns = document.querySelectorAll('.spicy-btn');
+        spicyBtns.forEach(btn => {
+            btn.addEventListener('click', () => {
+                spicyBtns.forEach(b => {
+                    b.classList.remove('border-2', 'border-slate-900', 'bg-snackred-600', 'text-white', 'shadow-[2px_2px_0px_0px_rgba(15,23,42,1)]', 'active');
+                    b.classList.add('border-2', 'border-slate-300');
+                });
+                btn.classList.add('border-2', 'border-slate-900', 'bg-snackred-600', 'text-white', 'shadow-[2px_2px_0px_0px_rgba(15,23,42,1)]', 'active');
+                btn.classList.remove('border-2', 'border-slate-300');
+
+                spicyExtra = parseInt(btn.dataset.extra);
+                selectedSpicy = btn.dataset.label;
+                updateWaLink();
+            });
+        });
+
+        // Quantity controls
+        btnPlus.addEventListener('click', () => {
+            quantity += 1;
+            qtyVal.textContent = quantity;
+            updateWaLink();
+        });
+
+        btnMinus.addEventListener('click', () => {
+            if (quantity > 1) {
+                quantity -= 1;
+                qtyVal.textContent = quantity;
+                updateWaLink();
+            }
+        });
+
+        updateWaLink();
+    </script>
+</body>
+</html>

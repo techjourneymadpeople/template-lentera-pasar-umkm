@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="id" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Standar Dapur Higienis & Profil Kami - SEDAP LARAS</title>
+    <meta name="description" content="Mengenal dapur pusat Sedap Laras. Standar higienis ISO/HACCP, sertifikasi Halal MUI, kapasitas 2.500 box/hari, dan komitmen katering tepat waktu.">
+    
+    <!-- Google Fonts: Plus Jakarta Sans -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    
+    <!-- Tailwind CSS CDN with Custom Config -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        emeraldcorp: {
+                            50: '#ecfdf5',
+                            100: '#d1fae5',
+                            500: '#10b981',
+                            600: '#059669',
+                            700: '#047857',
+                            800: '#065f46',
+                            900: '#064e3b',
+                        },
+                        amberaccent: {
+                            500: '#f59e0b',
+                            600: '#d97706',
+                        },
+                        cleanbg: '#f8fafc',
+                    },
+                    fontFamily: {
+                        sans: ['"Plus Jakarta Sans"', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-cleanbg text-slate-800 font-sans antialiased selection:bg-emeraldcorp-600 selection:text-white min-h-screen flex flex-col justify-between">
+
+    <!-- Header / Navbar -->
+    <header class="sticky top-0 z-40 bg-white/95 backdrop-blur-md border-b border-slate-200 shadow-sm transition-all">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-20">
+                
+                <!-- Brand Logo -->
+                <a href="index.html" class="flex items-center gap-3 group">
+                    <div class="w-11 h-11 rounded-xl bg-emeraldcorp-600 text-white flex items-center justify-center text-xl shadow-md group-hover:bg-emeraldcorp-700 transition">
+                        <i class="fa-solid fa-utensils"></i>
+                    </div>
+                    <div>
+                        <span class="text-xl sm:text-2xl font-bold tracking-tight text-slate-900 block leading-none">
+                            SEDAP<span class="text-emeraldcorp-600">LARAS</span>
+                        </span>
+                        <span class="text-[10px] font-semibold text-slate-500 tracking-wider uppercase">Catering & Bento Services</span>
+                    </div>
+                </a>
+
+                <!-- Desktop Nav -->
+                <nav class="hidden md:flex items-center gap-8 font-semibold text-slate-700 text-sm">
+                    <a href="index.html" class="hover:text-emeraldcorp-600 transition">Beranda</a>
+                    <a href="katalog.html" class="hover:text-emeraldcorp-600 transition">Paket Katering</a>
+                    <a href="tentang.html" class="text-emeraldcorp-600 border-b-2 border-emeraldcorp-600 pb-1">Standar Higienis</a>
+                    <a href="artikel.html" class="hover:text-emeraldcorp-600 transition">Panduan Porsi</a>
+                    <a href="kontak.html" class="hover:text-emeraldcorp-600 transition">Area Kirim & Kontak</a>
+                </nav>
+
+                <!-- Action Button -->
+                <div class="hidden lg:flex items-center gap-3">
+                    <a href="https://wa.me/6281234567890?text=Halo%20Sedap%20Laras,%20saya%20ingin%20minta%20pricelist%20katering." target="_blank" class="inline-flex items-center gap-2 bg-emeraldcorp-600 hover:bg-emeraldcorp-700 text-white text-xs font-bold px-5 py-3 rounded-xl shadow-sm hover:shadow transition">
+                        <i class="fa-brands fa-whatsapp text-base"></i>
+                        <span>Minta Penawaran (RFP)</span>
+                    </a>
+                </div>
+
+                <!-- Mobile Menu Button -->
+                <button id="mobileMenuBtn" class="md:hidden text-slate-700 hover:text-emeraldcorp-600 p-2 rounded-lg bg-slate-100" aria-label="Buka Menu">
+                    <i class="fa-solid fa-bars text-xl" id="menuIcon"></i>
+                </button>
+            </div>
+        </div>
+
+        <!-- Mobile Drawer -->
+        <div id="mobileMenu" class="hidden md:hidden bg-white border-b border-slate-200 px-4 pt-3 pb-6 space-y-3 shadow-lg">
+            <a href="index.html" class="block py-2.5 px-3 rounded-lg text-slate-700 hover:bg-slate-50 font-medium text-sm">Beranda</a>
+            <a href="katalog.html" class="block py-2.5 px-3 rounded-lg text-slate-700 hover:bg-slate-50 font-medium text-sm">Paket Katering</a>
+            <a href="tentang.html" class="block py-2.5 px-3 rounded-lg bg-emeraldcorp-50 text-emeraldcorp-700 font-bold text-sm">Standar Higienis</a>
+            <a href="artikel.html" class="block py-2.5 px-3 rounded-lg text-slate-700 hover:bg-slate-50 font-medium text-sm">Panduan Porsi</a>
+            <a href="kontak.html" class="block py-2.5 px-3 rounded-lg text-slate-700 hover:bg-slate-50 font-medium text-sm">Area Kirim & Kontak</a>
+            <div class="pt-2">
+                <a href="https://wa.me/6281234567890?text=Halo%20Sedap%20Laras,%20saya%20mau%20order%20katering" target="_blank" class="w-full inline-flex justify-center items-center gap-2 bg-emeraldcorp-600 text-white font-bold py-3 rounded-xl text-xs">
+                    <i class="fa-brands fa-whatsapp text-lg"></i>
+                    <span>Hubungi CS Katering via WhatsApp</span>
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Page Banner -->
+    <section class="bg-white py-14 border-b border-slate-200 text-center">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+            <span class="text-emeraldcorp-600 text-xs font-bold uppercase tracking-wider block mb-2">STANDAR HIGIENIS & KONTROL MUTU</span>
+            <h1 class="text-3xl sm:text-4xl md:text-5xl font-extrabold text-slate-900">
+                Dedikasi Menghadirkan Makanan Bersih, Sehat & Halal
+            </h1>
+            <p class="text-slate-600 text-sm sm:text-base font-normal max-w-2xl mx-auto mt-3 leading-relaxed">
+                Di Sedap Laras, kami memadukan kekayaan resep tradisional nusantara dengan protokol dapur komersial modern berstandar higienis tinggi.
+            </p>
+        </div>
+    </section>
+
+    <!-- Main Content -->
+    <main class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 w-full flex-1 space-y-20">
+
+        <!-- Story & Capacity Section -->
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+            <div class="space-y-5">
+                <span class="text-emeraldcorp-600 text-xs font-bold uppercase tracking-wider bg-emeraldcorp-50 px-3 py-1 rounded-full border border-emeraldcorp-200">
+                    SEJAK 2018 DI JAKARTA SELATAN
+                </span>
+                <h2 class="text-3xl font-extrabold text-slate-900 leading-tight">
+                    Mitra Terpercaya Jamuan Formal & Syukuran Keluarga
+                </h2>
+                <p class="text-slate-600 text-sm leading-relaxed">
+                    Berawal dari dapur keluarga yang melayani katering rapat skala kecil, Sedap Laras kini berkembang menjadi salah satu penyedia katering komersial terkemuka di Jabodetabek dengan kapasitas produksi hingga <strong>2.500 box makanan per hari</strong>.
+                </p>
+                <p class="text-slate-600 text-sm leading-relaxed">
+                    Kami memahami bahwa bagi perusahaan dan keluarga, keterlambatan pengiriman atau kualitas makanan yang buruk adalah risiko besar. Oleh karena itu, kami menerapkan sistem kontrol waktu keberangkatan kurir yang ketat serta armada berinsulasi suhu panas agar hidangan tiba tepat waktu dalam kondisi hangat.
+                </p>
+            </div>
+            <div class="relative">
+                <div class="rounded-3xl overflow-hidden shadow-xl border border-slate-200 bg-white">
+                    <img src="https://images.unsplash.com/photo-1555244162-803834f70033?auto=format&fit=crop&w=800&q=80" alt="Dapur Pusat Sedap Laras" class="w-full h-[380px] object-cover">
+                </div>
+            </div>
+        </div>
+
+        <!-- 4 Standar Higienis Dapur Kami -->
+        <div>
+            <div class="text-center max-w-2xl mx-auto mb-12">
+                <span class="text-emeraldcorp-600 text-xs font-bold uppercase tracking-wider">PROTOKOL HIGIENITAS KAMI</span>
+                <h2 class="text-3xl font-extrabold text-slate-900 mt-1">4 Pilar Jaminan Mutu Sedap Laras</h2>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+                <!-- Pillar 1 -->
+                <div class="bg-white p-6 rounded-3xl border border-slate-200 shadow-sm hover:shadow-md transition">
+                    <div class="w-12 h-12 rounded-2xl bg-emeraldcorp-100 text-emeraldcorp-700 flex items-center justify-center text-xl mb-4">
+                        <i class="fa-solid fa-certificate"></i>
+                    </div>
+                    <h3 class="font-bold text-base text-slate-900 mb-2">100% Halal MUI & BPOM</h3>
+                    <p class="text-xs text-slate-600 leading-relaxed">
+                        Semua daging ayam, sapi, dan bumbu dapur dipasok dari rumah potong hewan bersertifikasi halal resmi tanpa MSG berlebih.
+                    </p>
+                </div>
+
+                <!-- Pillar 2 -->
+                <div class="bg-white p-6 rounded-3xl border border-slate-200 shadow-sm hover:shadow-md transition">
+                    <div class="w-12 h-12 rounded-2xl bg-emeraldcorp-100 text-emeraldcorp-700 flex items-center justify-center text-xl mb-4">
+                        <i class="fa-solid fa-sink"></i>
+                    </div>
+                    <h3 class="font-bold text-base text-slate-900 mb-2">Air Filter RO Steril</h3>
+                    <p class="text-xs text-slate-600 leading-relaxed">
+                        Pencucian sayuran, beras, dan proses memasak menggunakan air filtrasi Reverse Osmosis berstandar minum bebas bakteri.
+                    </p>
+                </div>
+
+                <!-- Pillar 3 -->
+                <div class="bg-white p-6 rounded-3xl border border-slate-200 shadow-sm hover:shadow-md transition">
+                    <div class="w-12 h-12 rounded-2xl bg-emeraldcorp-100 text-emeraldcorp-700 flex items-center justify-center text-xl mb-4">
+                        <i class="fa-solid fa-user-doctor"></i>
+                    </div>
+                    <h3 class="font-bold text-base text-slate-900 mb-2">APD Koki & Sterilisasi</h3>
+                    <p class="text-xs text-slate-600 leading-relaxed">
+                        Seluruh koki dan staf packaging wajib mengenakan hairnet, sarung tangan steril sekali pakai, dan masker saat bekerja.
+                    </p>
+                </div>
+
+                <!-- Pillar 4 -->
+                <div class="bg-white p-6 rounded-3xl border border-slate-200 shadow-sm hover:shadow-md transition">
+                    <div class="w-12 h-12 rounded-2xl bg-emeraldcorp-100 text-emeraldcorp-700 flex items-center justify-center text-xl mb-4">
+                        <i class="fa-solid fa-box"></i>
+                    </div>
+                    <h3 class="font-bold text-base text-slate-900 mb-2">Kemasan Food Grade Segel</h3>
+                    <p class="text-xs text-slate-600 leading-relaxed">
+                        Wadah bento 5 sekat bersertifikasi BPA Free dengan segel stiker anti-tamper untuk menjamin higienitas sampai di tangan konsumen.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Corporate Clients Banner -->
+        <div class="bg-slate-900 text-white rounded-3xl p-8 sm:p-12">
+            <div class="text-center max-w-2xl mx-auto space-y-4">
+                <span class="text-emeraldcorp-400 text-xs font-bold uppercase tracking-wider">PORTOFOLIO KLIEN TERPERCAYA</span>
+                <h2 class="text-3xl font-extrabold text-white">Melayani Berbagai Sektor Korporat & BUMN</h2>
+                <p class="text-xs sm:text-sm text-slate-400 leading-relaxed">
+                    Mulai dari kementerian, BUMN perbankan, perusahaan teknologi multinasional, hingga ribuan acara keluarga di Jabodetabek.
+                </p>
+                <div class="pt-4 flex flex-wrap items-center justify-center gap-4">
+                    <a href="katalog.html" class="px-7 py-3.5 bg-emeraldcorp-600 hover:bg-emeraldcorp-700 text-white font-bold text-xs rounded-xl transition uppercase">
+                        Lihat Pilihan Paket Katering
+                    </a>
+                    <a href="kontak.html" class="px-7 py-3.5 bg-slate-800 hover:bg-slate-700 text-white font-bold text-xs rounded-xl border border-slate-700 transition uppercase">
+                        Ajukan Proposal Kerjasama
+                    </a>
+                </div>
+            </div>
+        </div>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-slate-900 text-slate-400 pt-16 pb-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-10 pb-12 border-b border-slate-800">
+                <div class="lg:col-span-2 space-y-4">
+                    <a href="index.html" class="flex items-center gap-3">
+                        <div class="w-10 h-10 rounded-xl bg-emeraldcorp-600 text-white flex items-center justify-center text-lg">
+                            <i class="fa-solid fa-utensils"></i>
+                        </div>
+                        <span class="text-2xl font-bold text-white">SEDAP<span class="text-emeraldcorp-500">LARAS</span></span>
+                    </a>
+                    <p class="text-xs text-slate-400 leading-relaxed pr-6">
+                        Penyedia jasa katering profesional bersertifikasi Halal MUI untuk perkantoran, perumahan, dan event di seluruh kawasan Jabodetabek dengan jaminan tepat waktu.
+                    </p>
+                </div>
+                <div>
+                    <h4 class="text-white font-bold text-xs tracking-wider uppercase mb-4">Navigasi Utama</h4>
+                    <ul class="space-y-2.5 text-xs">
+                        <li><a href="index.html" class="hover:text-emeraldcorp-400 transition">Beranda</a></li>
+                        <li><a href="katalog.html" class="hover:text-emeraldcorp-400 transition">Paket Katering & Tumpeng</a></li>
+                        <li><a href="tentang.html" class="hover:text-emeraldcorp-400 transition">Standar Higienis Dapur</a></li>
+                        <li><a href="artikel.html" class="hover:text-emeraldcorp-400 transition">Panduan Porsi Konsumsi</a></li>
+                        <li><a href="kontak.html" class="hover:text-emeraldcorp-400 transition">Area Kirim & Kontak</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-white font-bold text-xs tracking-wider uppercase mb-4">Kategori Menu</h4>
+                    <ul class="space-y-2.5 text-xs">
+                        <li><a href="katalog.html?kategori=harian" class="hover:text-emeraldcorp-400 transition">Katering Harian Kantor</a></li>
+                        <li><a href="katalog.html?kategori=bento" class="hover:text-emeraldcorp-400 transition">Premium Bento Box</a></li>
+                        <li><a href="katalog.html?kategori=tumpeng" class="hover:text-emeraldcorp-400 transition">Tumpeng Mini & Besek</a></li>
+                        <li><a href="katalog.html?kategori=prasmanan" class="hover:text-emeraldcorp-400 transition">Prasmanan Buffet Event</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-white font-bold text-xs tracking-wider uppercase mb-4">Dapur Pusat</h4>
+                    <div class="text-xs space-y-2 text-slate-400">
+                        <p class="text-white font-bold">Jam Layanan CS:</p>
+                        <p>Senin - Minggu: 07.00 - 21.00 WIB</p>
+                        <p class="text-white font-bold pt-1">Lokasi Dapur Utama:</p>
+                        <p>Kawasan Dapur Kuliner Tebet Barat No. 88, Jakarta Selatan</p>
+                        <p class="text-emeraldcorp-400 font-bold pt-1"><i class="fa-solid fa-phone"></i> +62 812-3456-7890</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="pt-8 flex flex-col md:flex-row items-center justify-between text-xs text-slate-500 gap-4">
+                <p>&copy; 2026 Sedap Laras Katering Nusantara. Hak Cipta Dilindungi.</p>
+                <div class="flex items-center gap-2">
+                    <span>Etalase Resmi UMKM didukung oleh</span>
+                    <a href="https://lenterapasar.com" target="_blank" class="text-emeraldcorp-400 font-bold hover:underline">Lentera Pasar</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Floating WhatsApp Conversion Button -->
+    <a href="https://wa.me/6281234567890?text=Halo%20Sedap%20Laras,%20saya%20mau%20konsultasi%20paket%20katering." target="_blank" class="fixed bottom-24 right-6 z-50 group flex items-center gap-3 bg-emeraldcorp-600 hover:bg-emeraldcorp-700 text-white px-4 py-3.5 rounded-full shadow-xl hover:shadow-2xl transition-all duration-300" aria-label="Order via WhatsApp">
+        <i class="fa-brands fa-whatsapp text-2xl"></i>
+        <span class="hidden sm:inline font-bold text-xs tracking-wider uppercase">Konsultasi WA</span>
+    </a>
+
+    <script>
+        const mobileMenuBtn = document.getElementById('mobileMenuBtn');
+        const mobileMenu = document.getElementById('mobileMenu');
+        const menuIcon = document.getElementById('menuIcon');
+
+        mobileMenuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+            if (mobileMenu.classList.contains('hidden')) {
+                menuIcon.classList.remove('fa-xmark');
+                menuIcon.classList.add('fa-bars');
+            } else {
+                menuIcon.classList.remove('fa-bars');
+                menuIcon.classList.add('fa-xmark');
+            }
+        });
+    </script>
+<!-- ========================================================================= -->
+<!-- LENTERA PASAR - STICKY DEMO & SALES BAR                                   -->
+<!-- ========================================================================= -->
+<div class="fixed bottom-4 left-1/2 -translate-x-1/2 z-50 w-[95%] max-w-4xl bg-slate-900/95 backdrop-blur-md text-white p-3.5 md:p-4 rounded-2xl shadow-2xl border border-slate-700/80 transition-all duration-300">
+  <div class="flex flex-col md:flex-row items-center justify-between gap-3 md:gap-4">
+    
+    <!-- Info Template & Value Proposition -->
+    <div class="flex items-center gap-3 w-full md:w-auto">
+      <div class="w-10 h-10 rounded-xl bg-amber-500/20 border border-amber-500/40 flex items-center justify-center shrink-0">
+        <svg class="w-5 h-5 text-amber-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z" />
+        </svg>
+      </div>
+      <div>
+        <div class="flex items-center gap-2">
+          <span class="font-bold text-sm text-white">Lentera Pasar Engine</span>
+          <span class="text-[10px] bg-emerald-500/20 text-emerald-300 border border-emerald-500/30 px-2 py-0.5 rounded-full font-medium">Free Admin Panel + Ads Support</span>
+        </div>
+        <p class="text-xs text-slate-300 hidden sm:block">
+          Terima beres: Website responsif + Panel input produk sendiri + Dikelola tim iklan profesional.
+        </p>
+      </div>
+    </div>
+
+    <!-- Poin Keunggulan & Tombol Action -->
+    <div class="flex items-center justify-between md:justify-end gap-3 w-full md:w-auto">
+      <div class="hidden lg:flex items-center gap-2 text-xs text-slate-400 border-r border-slate-700 pr-4">
+        <div class="flex items-center gap-1 text-slate-200">
+          <svg class="w-4 h-4 text-emerald-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" /></svg>
+          <span>Chat WA Instan</span>
+        </div>
+        <span class="text-slate-600">•</span>
+        <div class="flex items-center gap-1 text-slate-200">
+          <svg class="w-4 h-4 text-emerald-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" /></svg>
+          <span>Ready Meta Pixel</span>
+        </div>
+      </div>
+
+      <a href="https://wa.me/6281234567890?text=Halo%20Tim%20Lentera%20Pasar,%20saya%20tertarik%20menggunakan%20template%20website%20ini%20lengkap%20dengan%20Admin%20Panel%20dan%20Jasa%20Iklannya." 
+         target="_blank"
+         class="w-full md:w-auto inline-flex items-center justify-center gap-2 bg-gradient-to-r from-amber-500 to-orange-600 hover:from-amber-600 hover:to-orange-700 text-white text-xs md:text-sm font-semibold px-5 py-2.5 rounded-xl shadow-lg shadow-orange-500/20 transition-all hover:scale-105 shrink-0">
+        <span>Gunakan Template Ini</span>
+        <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3" />
+        </svg>
+      </a>
+    </div>
+
+  </div>
+</div>
+
+</body>
+</html>

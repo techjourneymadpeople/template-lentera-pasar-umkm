@@ -1,0 +1,461 @@
+<!DOCTYPE html>
+<html lang="id" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lokasi Parlour & Pesan Delivery Dingin - GELATO VELVETO</title>
+    <meta name="description" content="Kunjungi parlour Gelato Velveto di Dharmawangsa Jakarta Selatan atau pesan pengiriman dingin instan berinsulasi ice pack via WhatsApp.">
+    
+    <!-- Google Fonts: Plus Jakarta Sans & Quicksand -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Quicksand:wght@500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    
+    <!-- Tailwind CSS CDN with Custom Config -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        pastelpink: {
+                            50: '#fff1f2',
+                            100: '#ffe4e6',
+                            200: '#fecdd3',
+                            300: '#fda4af',
+                            500: '#f43f5e',
+                            600: '#e11d48',
+                            700: '#be123c',
+                        },
+                        vanillacream: {
+                            50: '#fffbeb',
+                            100: '#fef3c7',
+                            200: '#fde68a',
+                            300: '#fcd34d',
+                        },
+                        skysoft: {
+                            50: '#f0f9ff',
+                            100: '#e0f2fe',
+                            200: '#bae6fd',
+                            400: '#38bdf8',
+                        },
+                        mintsoft: {
+                            50: '#f0fdf4',
+                            100: '#dcfce7',
+                            300: '#86efac',
+                        },
+                    },
+                    fontFamily: {
+                        sans: ['"Plus Jakarta Sans"', 'sans-serif'],
+                        display: ['"Quicksand"', '"Plus Jakarta Sans"', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-pastelpink-50 text-slate-800 font-sans antialiased selection:bg-pastelpink-500 selection:text-white min-h-screen flex flex-col justify-between">
+
+    <!-- Floating Pill Header / Navbar -->
+    <div class="sticky top-4 z-40 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto w-full">
+        <header class="bg-white/90 backdrop-blur-md rounded-full px-5 sm:px-8 py-3.5 border border-pastelpink-200 shadow-[0_8px_30px_rgb(244,63,94,0.08)] flex items-center justify-between transition-all">
+            
+            <!-- Brand Logo -->
+            <a href="index.html" class="flex items-center gap-2.5 group">
+                <div class="w-10 h-10 rounded-full bg-gradient-to-br from-pastelpink-500 to-rose-400 text-white flex items-center justify-center text-lg shadow-md group-hover:scale-105 transition">
+                    <i class="fa-solid fa-ice-cream"></i>
+                </div>
+                <div>
+                    <span class="font-display font-extrabold text-xl text-slate-900 tracking-tight block leading-none">
+                        VELVETO<span class="text-pastelpink-500">.</span>
+                    </span>
+                    <span class="text-[9px] font-bold text-pastelpink-500 uppercase tracking-widest block mt-0.5">Artisan Gelato</span>
+                </div>
+            </a>
+
+            <!-- Desktop Nav Pills -->
+            <nav class="hidden md:flex items-center gap-1.5 bg-pastelpink-100/70 p-1.5 rounded-full text-xs font-bold text-slate-700">
+                <a href="index.html" class="hover:text-pastelpink-600 px-4 py-2 rounded-full transition">Beranda</a>
+                <a href="katalog.html" class="hover:text-pastelpink-600 px-4 py-2 rounded-full transition">Varian Gelato</a>
+                <a href="tentang.html" class="hover:text-pastelpink-600 px-4 py-2 rounded-full transition">Cerita Kami</a>
+                <a href="artikel.html" class="hover:text-pastelpink-600 px-4 py-2 rounded-full transition">Tips Dessert</a>
+                <a href="kontak.html" class="bg-white text-pastelpink-600 shadow-sm px-4 py-2 rounded-full">Kedai & Lokasi</a>
+            </nav>
+
+            <!-- Action Button -->
+            <div class="hidden lg:flex items-center gap-3">
+                <a href="https://wa.me/6281234567890?text=Halo%20Gelato%20Velveto,%20saya%20mau%20pesan%20gelato%20tub%20dingin." target="_blank" class="inline-flex items-center gap-2 bg-gradient-to-r from-pastelpink-500 to-rose-500 hover:from-pastelpink-600 hover:to-rose-600 text-white text-xs font-bold px-5 py-2.5 rounded-full shadow-md hover:shadow-lg transition">
+                    <i class="fa-brands fa-whatsapp text-base"></i>
+                    <span>Order Cepat WA</span>
+                </a>
+            </div>
+
+            <!-- Mobile Menu Toggle -->
+            <button id="mobileMenuBtn" class="md:hidden text-slate-700 hover:text-pastelpink-600 p-2 rounded-full bg-pastelpink-100" aria-label="Buka Menu">
+                <i class="fa-solid fa-bars text-lg" id="menuIcon"></i>
+            </button>
+        </header>
+
+        <!-- Mobile Drawer -->
+        <div id="mobileMenu" class="hidden md:hidden bg-white/95 backdrop-blur-md rounded-3xl mt-2 p-5 border border-pastelpink-200 shadow-xl space-y-2 text-xs font-bold text-slate-700">
+            <a href="index.html" class="block py-2.5 px-4 rounded-full hover:bg-pastelpink-50">Beranda</a>
+            <a href="katalog.html" class="block py-2.5 px-4 rounded-full hover:bg-pastelpink-50">Varian Gelato</a>
+            <a href="tentang.html" class="block py-2.5 px-4 rounded-full hover:bg-pastelpink-50">Cerita Dapur Manis</a>
+            <a href="artikel.html" class="block py-2.5 px-4 rounded-full hover:bg-pastelpink-50">Tips Dessert</a>
+            <a href="kontak.html" class="block py-2.5 px-4 rounded-full bg-pastelpink-100 text-pastelpink-700">Kedai & Lokasi</a>
+            <div class="pt-2">
+                <a href="https://wa.me/6281234567890?text=Halo%20Gelato%20Velveto,%20mau%20pesan%20gelato" target="_blank" class="w-full inline-flex justify-center items-center gap-2 bg-pastelpink-500 text-white font-bold py-3 rounded-full text-xs shadow-md">
+                    <i class="fa-brands fa-whatsapp text-base"></i>
+                    <span>Order WhatsApp via CS</span>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Page Header Banner -->
+    <section class="py-10 text-center">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+            <span class="text-pastelpink-600 text-xs font-bold uppercase tracking-wider block mb-2">LOKASI & DELIVERY DINGIN</span>
+            <h1 class="text-3xl sm:text-4xl md:text-5xl font-display font-extrabold text-slate-900">
+                Kunjungi Parlour Kami atau Pesan Antar ke Rumah
+            </h1>
+            <p class="text-slate-600 text-xs sm:text-sm max-w-xl mx-auto mt-2 font-normal">
+                Nikmati dine-in dengan suasana pastel manis di Dharmawangsa atau pesan delivery instan dengan tas pendingin berinsulasi es.
+            </p>
+        </div>
+    </section>
+
+    <!-- Main Content -->
+    <main class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4 pb-20 w-full flex-1 space-y-12">
+
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-10">
+            
+            <!-- Left: Info Parlour & Delivery -->
+            <div class="lg:col-span-5 space-y-6">
+                <div class="bg-white p-6 sm:p-8 rounded-[36px] border border-pastelpink-200 shadow-sm space-y-6">
+                    <h3 class="font-display font-extrabold text-xl text-slate-900 flex items-center gap-2">
+                        <i class="fa-solid fa-store text-pastelpink-500"></i> Parlour Dharmawangsa
+                    </h3>
+
+                    <div class="space-y-4 text-xs font-medium text-slate-700">
+                        <div class="flex items-start gap-3">
+                            <div class="w-8 h-8 rounded-full bg-pastelpink-100 text-pastelpink-600 flex items-center justify-center flex-shrink-0 mt-0.5">
+                                <i class="fa-solid fa-map-pin"></i>
+                            </div>
+                            <div>
+                                <span class="text-slate-900 font-bold block uppercase text-[11px]">Alamat Lengkap:</span>
+                                <p class="text-slate-500 font-normal mt-0.5 leading-relaxed">
+                                    Jl. Dharmawangsa Raya No. 16, RT.02/RW.01, Pulo, Kebayoran Baru, Jakarta Selatan, DKI Jakarta 12160
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="flex items-start gap-3">
+                            <div class="w-8 h-8 rounded-full bg-pastelpink-100 text-pastelpink-600 flex items-center justify-center flex-shrink-0 mt-0.5">
+                                <i class="fa-solid fa-clock"></i>
+                            </div>
+                            <div>
+                                <span class="text-slate-900 font-bold block uppercase text-[11px]">Jam Buka Gelato Bar:</span>
+                                <p class="text-slate-500 font-normal mt-0.5">
+                                    Senin - Minggu: 10.00 - 22.00 WIB<br>
+                                    <span class="text-pastelpink-600 font-bold">Dine-in, Takeaway & Delivery Ready</span>
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="flex items-start gap-3">
+                            <div class="w-8 h-8 rounded-full bg-pastelpink-100 text-pastelpink-600 flex items-center justify-center flex-shrink-0 mt-0.5">
+                                <i class="fa-brands fa-whatsapp"></i>
+                            </div>
+                            <div>
+                                <span class="text-slate-900 font-bold block uppercase text-[11px]">WhatsApp Hotline:</span>
+                                <p class="text-slate-500 font-normal mt-0.5">
+                                    +62 812-3456-7890 (Order Cepat & Sewa Cart)
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="pt-3 border-t border-pastelpink-100">
+                        <a href="https://maps.google.com" target="_blank" class="w-full inline-flex items-center justify-center gap-2 bg-pastelpink-50 hover:bg-pastelpink-100 text-pastelpink-700 font-bold text-xs py-3 rounded-full border border-pastelpink-200 transition">
+                            <i class="fa-solid fa-location-arrow text-pastelpink-500"></i>
+                            <span>Buka di Google Maps</span>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Ice Cream Cart Rental Box -->
+                <div class="bg-gradient-to-br from-pastelpink-500 to-rose-500 text-white p-7 rounded-[36px] shadow-lg space-y-3">
+                    <span class="bg-white/20 backdrop-blur text-white text-[10px] font-bold px-3 py-1 rounded-full uppercase">EVENT & BIRTHDAY</span>
+                    <h3 class="font-display font-extrabold text-xl">Sewa Gelato Cart untuk Pestamu!</h3>
+                    <p class="text-xs text-rose-100 leading-relaxed font-normal">
+                        Hadirkan gerobak gelato pastel estetik dengan scooper profesional untuk pesta ulang tahun, gathering kantor, atau wedding.
+                    </p>
+                    <a href="https://wa.me/6281234567890?text=Halo%20Gelato%20Velveto,%20saya%20mau%20tanya%20paket%20sewa%20gelato%20cart%20untuk%20event." target="_blank" class="inline-flex items-center gap-2 text-xs font-bold text-vanillacream-100 hover:text-white uppercase tracking-wider pt-1">
+                        <span>Konsultasi Paket Event WA &rarr;</span>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Right: Interactive WhatsApp Order Form -->
+            <div class="lg:col-span-7 space-y-6">
+                <div class="bg-white p-6 sm:p-8 rounded-[36px] border border-pastelpink-200 shadow-sm">
+                    <div class="mb-6">
+                        <span class="text-pastelpink-600 font-bold uppercase tracking-wider text-xs">DIRECT ORDER / RESERVASI</span>
+                        <h2 class="text-2xl font-display font-extrabold text-slate-900 mt-1">Form Pemesanan Cepat Gelato</h2>
+                        <p class="text-xs text-slate-500 mt-1">Isi formulir ini, data akan langsung tersusun rapi ke chat WhatsApp CS Velveto.</p>
+                    </div>
+
+                    <form id="contactForm" class="space-y-4">
+                        <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                            <div>
+                                <label class="block text-xs font-bold text-slate-700 mb-1.5 uppercase">Nama Pemesan *</label>
+                                <input type="text" id="custName" required placeholder="Contoh: Clarissa" class="w-full px-4 py-3 rounded-2xl bg-pastelpink-50/50 border border-pastelpink-200 text-xs sm:text-sm font-medium focus:outline-none focus:border-pastelpink-500 focus:bg-white transition">
+                            </div>
+                            <div>
+                                <label class="block text-xs font-bold text-slate-700 mb-1.5 uppercase">Nomor WhatsApp *</label>
+                                <input type="tel" id="custPhone" required placeholder="0812xxxxxxx" class="w-full px-4 py-3 rounded-2xl bg-pastelpink-50/50 border border-pastelpink-200 text-xs sm:text-sm font-medium focus:outline-none focus:border-pastelpink-500 focus:bg-white transition">
+                            </div>
+                        </div>
+
+                        <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                            <div>
+                                <label class="block text-xs font-bold text-slate-700 mb-1.5 uppercase">Jenis Pesanan</label>
+                                <select id="orderType" class="w-full px-4 py-3 rounded-2xl bg-pastelpink-50/50 border border-pastelpink-200 text-xs sm:text-sm font-bold text-slate-700 focus:outline-none focus:border-pastelpink-500">
+                                    <option value="Delivery Instan (Tub 500ml / Cup)">Delivery Instan (Tub 500ml / Cup)</option>
+                                    <option value="Hampers Kado Ulang Tahun / Gift">Hampers Kado Ulang Tahun / Gift</option>
+                                    <option value="Sewa Gelato Cart untuk Event">Sewa Gelato Cart untuk Event</option>
+                                    <option value="Pick-up Takeaway di Parlour">Pick-up Takeaway di Parlour</option>
+                                </select>
+                            </div>
+                            <div>
+                                <label class="block text-xs font-bold text-slate-700 mb-1.5 uppercase">Pilihan Rasa & Ukuran</label>
+                                <input type="text" id="flavorChoice" placeholder="Contoh: 1x Pistachio Tub, 1x Choco Cup" class="w-full px-4 py-3 rounded-2xl bg-pastelpink-50/50 border border-pastelpink-200 text-xs sm:text-sm font-medium focus:outline-none focus:border-pastelpink-500 focus:bg-white transition">
+                            </div>
+                        </div>
+
+                        <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                            <div>
+                                <label class="block text-xs font-bold text-slate-700 mb-1.5 uppercase">Tanggal Pengantaran</label>
+                                <input type="date" id="targetDate" class="w-full px-4 py-3 rounded-2xl bg-pastelpink-50/50 border border-pastelpink-200 text-xs sm:text-sm font-bold text-slate-700 focus:outline-none focus:border-pastelpink-500">
+                            </div>
+                            <div>
+                                <label class="block text-xs font-bold text-slate-700 mb-1.5 uppercase">Jam Pengiriman yang Diinginkan</label>
+                                <input type="time" id="targetTime" value="14:00" class="w-full px-4 py-3 rounded-2xl bg-pastelpink-50/50 border border-pastelpink-200 text-xs sm:text-sm font-bold text-slate-700 focus:outline-none focus:border-pastelpink-500">
+                            </div>
+                        </div>
+
+                        <div>
+                            <label class="block text-xs font-bold text-slate-700 mb-1.5 uppercase">Alamat Pengantaran / Pesan di Kartu Ucapan</label>
+                            <textarea id="orderNotes" rows="3" placeholder="Contoh: Kirim ke Dharmawangsa Residence Tower A, tolong tulis kartu ucapan: Happy Birthday Sarah!..." class="w-full px-4 py-3 rounded-2xl bg-pastelpink-50/50 border border-pastelpink-200 text-xs sm:text-sm font-medium focus:outline-none focus:border-pastelpink-500 focus:bg-white transition"></textarea>
+                        </div>
+
+                        <button type="submit" class="w-full flex items-center justify-center gap-2.5 bg-pastelpink-500 hover:bg-pastelpink-600 text-white font-bold text-xs sm:text-sm py-4 px-6 rounded-full shadow-lg shadow-pastelpink-500/25 hover:shadow-xl transition uppercase tracking-wider">
+                            <i class="fa-brands fa-whatsapp text-xl"></i>
+                            <span>KIRIM PESANAN KE CS VELVETO</span>
+                        </button>
+                    </form>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- FAQ Section -->
+        <div class="bg-white rounded-[36px] border border-pastelpink-200 p-8 sm:p-12 shadow-sm">
+            <div class="text-center max-w-2xl mx-auto mb-10">
+                <span class="text-pastelpink-600 text-xs font-bold uppercase tracking-wider">PERTANYAAN UMUM</span>
+                <h2 class="text-2xl sm:text-3xl font-display font-extrabold text-slate-900 mt-1">Seputar Pengiriman & Penyimpanan</h2>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6 text-xs sm:text-sm font-normal">
+                <div class="p-5 rounded-3xl bg-pastelpink-50 border border-pastelpink-200">
+                    <h4 class="font-display font-bold text-slate-900 uppercase mb-1.5 flex items-center gap-2 text-xs">
+                        <i class="fa-solid fa-snowflake text-sky-500"></i> Apakah gelato akan meleleh di perjalanan kurir?
+                    </h4>
+                    <p class="text-slate-600 leading-relaxed text-xs">
+                        Tidak! Kami menggunakan tas pendingin berinsulasi khusus yang diisi <em>ice gel pack beku</em> yang mampu menjaga suhu beku selama hingga 3 jam perjalanan di jalan raya Jabodetabek.
+                    </p>
+                </div>
+
+                <div class="p-5 rounded-3xl bg-pastelpink-50 border border-pastelpink-200">
+                    <h4 class="font-display font-bold text-slate-900 uppercase mb-1.5 flex items-center gap-2 text-xs">
+                        <i class="fa-solid fa-cake-candles text-pastelpink-500"></i> Bisakah request custom ucapan untuk hampers?
+                    </h4>
+                    <p class="text-slate-600 leading-relaxed text-xs">
+                        Bisa banget! Setiap pembelian paket hampers sudah termasuk kartu ucapan (*gift card*) kustom berpita pastel tanpa biaya tambahan.
+                    </p>
+                </div>
+
+                <div class="p-5 rounded-3xl bg-pastelpink-50 border border-pastelpink-200">
+                    <h4 class="font-display font-bold text-slate-900 uppercase mb-1.5 flex items-center gap-2 text-xs">
+                        <i class="fa-solid fa-leaf text-emerald-500"></i> Apakah tersedia varian rasa vegan (tanpa susu)?
+                    </h4>
+                    <p class="text-slate-600 leading-relaxed text-xs">
+                        Ya! Seluruh varian kategori Sorbet kami (Mango Passion Sorbet & Wild Strawberry) dibuat murni 100% dari buah asli tanpa susu (*dairy-free & vegan-friendly*).
+                    </p>
+                </div>
+
+                <div class="p-5 rounded-3xl bg-pastelpink-50 border border-pastelpink-200">
+                    <h4 class="font-display font-bold text-slate-900 uppercase mb-1.5 flex items-center gap-2 text-xs">
+                        <i class="fa-solid fa-truck-fast text-pastelpink-500"></i> Berapa lama waktu pengiriman instan?
+                    </h4>
+                    <p class="text-slate-600 leading-relaxed text-xs">
+                        Pesanan diproses dalam 10-15 menit setelah konfirmasi WhatsApp dan dikirim via GoSend/GrabExpress Instan langsung dari parlour Dharmawangsa.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-white text-slate-600 pt-16 pb-12 border-t border-pastelpink-200">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-10 pb-12 border-b border-pastelpink-100">
+                <div class="lg:col-span-2 space-y-4">
+                    <a href="index.html" class="flex items-center gap-2.5">
+                        <div class="w-10 h-10 rounded-full bg-pastelpink-500 text-white flex items-center justify-center text-lg">
+                            <i class="fa-solid fa-ice-cream"></i>
+                        </div>
+                        <span class="font-display font-extrabold text-2xl text-slate-900">VELVETO<span class="text-pastelpink-500">.</span></span>
+                    </a>
+                    <p class="text-xs text-slate-500 leading-relaxed pr-6 font-normal">
+                        Artisan gelato & dessert parlour dengan resep otentik Italia dan bahan segar alami Indonesia. Rendah lemak, tanpa pengawet buatan, dan penuh keceriaan manis.
+                    </p>
+                </div>
+                <div>
+                    <h4 class="text-slate-900 font-extrabold text-xs tracking-wider uppercase mb-4">Eksplorasi</h4>
+                    <ul class="space-y-2.5 text-xs font-semibold">
+                        <li><a href="index.html" class="hover:text-pastelpink-600 transition">Beranda</a></li>
+                        <li><a href="katalog.html" class="hover:text-pastelpink-600 transition">Katalog Varian Gelato</a></li>
+                        <li><a href="tentang.html" class="hover:text-pastelpink-600 transition">Cerita Dapur Manis</a></li>
+                        <li><a href="artikel.html" class="hover:text-pastelpink-600 transition">Tips Dessert & Pairing</a></li>
+                        <li><a href="kontak.html" class="hover:text-pastelpink-600 transition">Kedai & Lokasi</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-slate-900 font-extrabold text-xs tracking-wider uppercase mb-4">Rasa Favorit</h4>
+                    <ul class="space-y-2.5 text-xs font-medium">
+                        <li><a href="katalog.html" class="hover:text-pastelpink-600 transition">Sicilian Pistachio</a></li>
+                        <li><a href="katalog.html" class="hover:text-pastelpink-600 transition">Wild Berry Cheesecake</a></li>
+                        <li><a href="katalog.html" class="hover:text-pastelpink-600 transition">70% Belgian Dark Choco</a></li>
+                        <li><a href="katalog.html" class="hover:text-pastelpink-600 transition">Mango Passion Sorbet</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-slate-900 font-extrabold text-xs tracking-wider uppercase mb-4">Parlour Kami</h4>
+                    <div class="text-xs space-y-2 text-slate-500 font-normal">
+                        <p class="text-slate-900 font-bold">Jam Operasional:</p>
+                        <p>Setiap Hari: 10.00 - 22.00 WIB</p>
+                        <p class="text-slate-900 font-bold pt-1">Lokasi:</p>
+                        <p>Jl. Dharmawangsa Raya No. 16, Kebayoran Baru, Jakarta Selatan</p>
+                        <p class="text-pastelpink-600 font-bold pt-1"><i class="fa-brands fa-whatsapp"></i> +62 812-3456-7890</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="pt-8 flex flex-col md:flex-row items-center justify-between text-xs text-slate-400 gap-4">
+                <p>&copy; 2026 Gelato Velveto Artisan Parlour. Hak Cipta Dilindungi.</p>
+                <div class="flex items-center gap-2">
+                    <span>Etalase Resmi UMKM didukung oleh</span>
+                    <a href="https://lenterapasar.com" target="_blank" class="text-pastelpink-600 font-bold hover:underline">Lentera Pasar</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Floating WhatsApp Conversion Button -->
+    <a href="https://wa.me/6281234567890?text=Halo%20Gelato%20Velveto,%20saya%20mau%20order%20gelato." target="_blank" class="fixed bottom-24 right-6 z-50 group flex items-center gap-2.5 bg-gradient-to-r from-pastelpink-500 to-rose-500 hover:from-pastelpink-600 hover:to-rose-600 text-white px-4 py-3.5 rounded-full shadow-xl hover:shadow-2xl transition-all duration-300 transform hover:scale-105" aria-label="Order via WhatsApp">
+        <i class="fa-brands fa-whatsapp text-2xl"></i>
+        <span class="hidden sm:inline font-bold text-xs tracking-wider uppercase">Pesan Gelato WA</span>
+    </a>
+
+    <!-- Form Script -->
+    <script>
+        const mobileMenuBtn = document.getElementById('mobileMenuBtn');
+        const mobileMenu = document.getElementById('mobileMenu');
+        const menuIcon = document.getElementById('menuIcon');
+
+        mobileMenuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+            if (mobileMenu.classList.contains('hidden')) {
+                menuIcon.classList.remove('fa-xmark');
+                menuIcon.classList.add('fa-bars');
+            } else {
+                menuIcon.classList.remove('fa-bars');
+                menuIcon.classList.add('fa-xmark');
+            }
+        });
+
+        const contactForm = document.getElementById('contactForm');
+        contactForm.addEventListener('submit', (e) => {
+            e.preventDefault();
+            const name = document.getElementById('custName').value;
+            const phone = document.getElementById('custPhone').value;
+            const type = document.getElementById('orderType').value;
+            const flavor = document.getElementById('flavorChoice').value;
+            const date = document.getElementById('targetDate').value;
+            const time = document.getElementById('targetTime').value;
+            const notes = document.getElementById('orderNotes').value;
+
+            const text = `Halo CS Gelato Velveto,\n\nSaya ingin memesan gelato:\n- *Nama:* ${name}\n- *No. WA:* ${phone}\n- *Jenis Pesanan:* ${type}\n- *Pilihan Rasa & Ukuran:* ${flavor}\n- *Tanggal Kirim:* ${date}\n- *Jam Pengiriman:* ${time} WIB\n- *Alamat / Catatan:* ${notes}\n\nMohon info total ongkir dan konfirmasi pengiriman. Terima kasih!`;
+
+            window.open(`https://wa.me/6281234567890?text=${encodeURIComponent(text)}`, '_blank');
+        });
+    </script>
+<!-- ========================================================================= -->
+<!-- LENTERA PASAR - STICKY DEMO & SALES BAR                                   -->
+<!-- ========================================================================= -->
+<div class="fixed bottom-4 left-1/2 -translate-x-1/2 z-50 w-[95%] max-w-4xl bg-slate-900/95 backdrop-blur-md text-white p-3.5 md:p-4 rounded-2xl shadow-2xl border border-slate-700/80 transition-all duration-300">
+  <div class="flex flex-col md:flex-row items-center justify-between gap-3 md:gap-4">
+    
+    <!-- Info Template & Value Proposition -->
+    <div class="flex items-center gap-3 w-full md:w-auto">
+      <div class="w-10 h-10 rounded-xl bg-amber-500/20 border border-amber-500/40 flex items-center justify-center shrink-0">
+        <svg class="w-5 h-5 text-amber-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z" />
+        </svg>
+      </div>
+      <div>
+        <div class="flex items-center gap-2">
+          <span class="font-bold text-sm text-white">Lentera Pasar Engine</span>
+          <span class="text-[10px] bg-emerald-500/20 text-emerald-300 border border-emerald-500/30 px-2 py-0.5 rounded-full font-medium">Free Admin Panel + Ads Support</span>
+        </div>
+        <p class="text-xs text-slate-300 hidden sm:block">
+          Terima beres: Website responsif + Panel input produk sendiri + Dikelola tim iklan profesional.
+        </p>
+      </div>
+    </div>
+
+    <!-- Poin Keunggulan & Tombol Action -->
+    <div class="flex items-center justify-between md:justify-end gap-3 w-full md:w-auto">
+      <div class="hidden lg:flex items-center gap-2 text-xs text-slate-400 border-r border-slate-700 pr-4">
+        <div class="flex items-center gap-1 text-slate-200">
+          <svg class="w-4 h-4 text-emerald-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" /></svg>
+          <span>Chat WA Instan</span>
+        </div>
+        <span class="text-slate-600">•</span>
+        <div class="flex items-center gap-1 text-slate-200">
+          <svg class="w-4 h-4 text-emerald-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" /></svg>
+          <span>Ready Meta Pixel</span>
+        </div>
+      </div>
+
+      <a href="https://wa.me/6281234567890?text=Halo%20Tim%20Lentera%20Pasar,%20saya%20tertarik%20menggunakan%20template%20website%20ini%20lengkap%20dengan%20Admin%20Panel%20dan%20Jasa%20Iklannya." 
+         target="_blank"
+         class="w-full md:w-auto inline-flex items-center justify-center gap-2 bg-gradient-to-r from-amber-500 to-orange-600 hover:from-amber-600 hover:to-orange-700 text-white text-xs md:text-sm font-semibold px-5 py-2.5 rounded-xl shadow-lg shadow-orange-500/20 transition-all hover:scale-105 shrink-0">
+        <span>Gunakan Template Ini</span>
+        <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3" />
+        </svg>
+      </a>
+    </div>
+
+  </div>
+</div>
+
+</body>
+</html>

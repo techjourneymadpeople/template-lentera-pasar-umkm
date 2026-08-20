@@ -1,0 +1,701 @@
+<!DOCTYPE html>
+<html lang="id" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Obsidian Smoked Aren Latte - Detail Menu | OBSIDIAN Coffee</title>
+    <meta name="description" content="Custom cup Obsidian Smoked Aren Latte: pilih Ice/Hot, ukuran Reguler/Large/1L, susu oat/dairy, dan level gula. Pesan langsung via WhatsApp.">
+    
+    <!-- Google Fonts: Inter + Cormorant Garamond -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;0,700;1,400;1,600&family=Inter:wght@300;400;500;600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    
+    <!-- Tailwind CSS CDN with Custom Config -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        obsidian: {
+                            950: '#0a0a0c',
+                            900: '#121216',
+                            850: '#18181f',
+                            800: '#22222b',
+                            700: '#32323e',
+                        },
+                        ambercaramel: {
+                            300: '#fde68a',
+                            400: '#fbbf24',
+                            500: '#f59e0b',
+                            600: '#d97706',
+                        },
+                        subtleborder: '#272733',
+                    },
+                    fontFamily: {
+                        sans: ['"Inter"', '"Plus Jakarta Sans"', 'sans-serif'],
+                        serif: ['"Cormorant Garamond"', 'serif'],
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-obsidian-950 text-stone-200 font-sans antialiased selection:bg-ambercaramel-500 selection:text-obsidian-950 min-h-screen flex flex-col justify-between">
+
+    <!-- Header / Navbar: Minimalist Dark Elegance -->
+    <header class="sticky top-0 z-40 bg-obsidian-950/90 backdrop-blur-lg border-b border-subtleborder transition-all">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-20">
+                
+                <!-- Brand Logo -->
+                <a href="index.html" class="flex items-center gap-3 group">
+                    <div class="w-10 h-10 rounded-full bg-obsidian-900 border border-ambercaramel-500/40 text-ambercaramel-400 flex items-center justify-center text-lg group-hover:border-ambercaramel-400 transition-all shadow-[0_0_15px_rgba(251,191,36,0.15)]">
+                        <i class="fa-solid fa-mug-hot"></i>
+                    </div>
+                    <div>
+                        <span class="text-xl sm:text-2xl font-serif font-bold tracking-wider text-stone-100 block leading-none uppercase">
+                            OBSIDIAN
+                        </span>
+                        <span class="text-[9px] font-sans font-semibold tracking-[0.25em] text-ambercaramel-400 uppercase">Coffee Roasters</span>
+                    </div>
+                </a>
+
+                <!-- Desktop Nav -->
+                <nav class="hidden md:flex items-center gap-8 font-medium text-stone-300 text-xs tracking-widest uppercase">
+                    <a href="index.html" class="hover:text-ambercaramel-400 transition">Beranda</a>
+                    <a href="katalog.html" class="text-ambercaramel-400 font-semibold border-b border-ambercaramel-400 pb-1">Katalog Kopi</a>
+                    <a href="tentang.html" class="hover:text-ambercaramel-400 transition">Filosofi & Roastery</a>
+                    <a href="artikel.html" class="hover:text-ambercaramel-400 transition">Jurnal Seduh</a>
+                    <a href="kontak.html" class="hover:text-ambercaramel-400 transition">Kedai & Lokasi</a>
+                </nav>
+
+                <!-- Action Button -->
+                <div class="hidden lg:flex items-center gap-4">
+                    <a href="https://wa.me/6281234567890?text=Halo%20Obsidian%20Coffee,%20saya%20mau%20order%20kopi." target="_blank" class="inline-flex items-center gap-2 bg-gradient-to-r from-ambercaramel-500 to-ambercaramel-600 hover:from-ambercaramel-400 hover:to-ambercaramel-500 text-obsidian-950 text-xs font-bold px-5 py-2.5 rounded-full shadow-[0_0_20px_rgba(245,158,11,0.25)] transition-all uppercase tracking-wider">
+                        <i class="fa-brands fa-whatsapp text-sm"></i>
+                        <span>Order via WhatsApp</span>
+                    </a>
+                </div>
+
+                <!-- Mobile Menu Button -->
+                <button id="mobileMenuBtn" class="md:hidden text-stone-300 hover:text-white p-2 rounded-lg bg-obsidian-900 border border-subtleborder" aria-label="Buka Menu">
+                    <i class="fa-solid fa-bars text-lg" id="menuIcon"></i>
+                </button>
+            </div>
+        </div>
+
+        <!-- Mobile Drawer -->
+        <div id="mobileMenu" class="hidden md:hidden bg-obsidian-900 border-b border-subtleborder px-6 pt-4 pb-6 space-y-4">
+            <a href="index.html" class="block py-2 text-stone-300 hover:text-white text-xs uppercase tracking-widest">Beranda</a>
+            <a href="katalog.html" class="block py-2 text-ambercaramel-400 font-bold text-xs uppercase tracking-widest">Katalog Kopi</a>
+            <a href="tentang.html" class="block py-2 text-stone-300 hover:text-white text-xs uppercase tracking-widest">Filosofi & Roastery</a>
+            <a href="artikel.html" class="block py-2 text-stone-300 hover:text-white text-xs uppercase tracking-widest">Jurnal Seduh</a>
+            <a href="kontak.html" class="block py-2 text-stone-300 hover:text-white text-xs uppercase tracking-widest">Kedai & Lokasi</a>
+            <div class="pt-2">
+                <a href="https://wa.me/6281234567890?text=Halo%20Obsidian%20Coffee,%20saya%20mau%20order" target="_blank" class="w-full inline-flex justify-center items-center gap-2 bg-ambercaramel-500 text-obsidian-950 font-bold py-3 rounded-full text-xs uppercase tracking-wider">
+                    <i class="fa-brands fa-whatsapp text-base"></i>
+                    <span>Order Cepat via WhatsApp</span>
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Breadcrumb Bar -->
+    <div class="bg-obsidian-900 border-b border-subtleborder py-3">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <nav class="flex items-center gap-2 text-xs font-mono text-stone-500 uppercase overflow-x-auto whitespace-nowrap">
+                <a href="index.html" class="hover:text-ambercaramel-400">Beranda</a>
+                <i class="fa-solid fa-chevron-right text-[10px]"></i>
+                <a href="katalog.html" class="hover:text-ambercaramel-400">Katalog</a>
+                <i class="fa-solid fa-chevron-right text-[10px]"></i>
+                <a href="katalog.html?kategori=signature" class="hover:text-ambercaramel-400">Signature Espresso</a>
+                <i class="fa-solid fa-chevron-right text-[10px]"></i>
+                <span class="text-ambercaramel-400 font-bold truncate">Obsidian Smoked Aren Latte</span>
+            </nav>
+        </div>
+    </div>
+
+    <!-- Product Detail Container -->
+    <main class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 w-full flex-1">
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-12">
+
+            <!-- Left: High-End Visual Gallery -->
+            <div class="lg:col-span-6 space-y-4">
+                <div class="relative rounded-3xl overflow-hidden bg-obsidian-900 border border-subtleborder shadow-2xl">
+                    <img id="mainProductImg" src="https://images.unsplash.com/photo-1517701550927-30cf4ba1dba5?auto=format&fit=crop&w=900&q=80" alt="Obsidian Smoked Aren Latte" class="w-full h-[380px] sm:h-[480px] object-cover transition-opacity duration-300">
+                    <span class="absolute top-4 left-4 bg-ambercaramel-500 text-obsidian-950 font-bold text-xs px-3.5 py-1 rounded-full uppercase tracking-wider shadow">
+                        SIGNATURE ROAST
+                    </span>
+                    <span class="absolute top-4 right-4 bg-obsidian-950/90 backdrop-blur text-stone-300 text-xs font-mono px-3 py-1 rounded-full border border-subtleborder flex items-center gap-1.5">
+                        <i class="fa-solid fa-fire text-ambercaramel-400"></i> Double Ristretto
+                    </span>
+                </div>
+
+                <!-- Thumbnails -->
+                <div class="grid grid-cols-3 gap-3">
+                    <button class="thumb-btn active rounded-2xl overflow-hidden border-2 border-ambercaramel-500 shadow-md focus:outline-none transition" onclick="changeImage('https://images.unsplash.com/photo-1517701550927-30cf4ba1dba5?auto=format&fit=crop&w=900&q=80', this)">
+                        <img src="https://images.unsplash.com/photo-1517701550927-30cf4ba1dba5?auto=format&fit=crop&w=300&q=80" alt="Iced Smoked Aren" class="w-full h-20 sm:h-24 object-cover">
+                    </button>
+                    <button class="thumb-btn rounded-2xl overflow-hidden border border-subtleborder hover:border-ambercaramel-500/60 focus:outline-none transition" onclick="changeImage('https://images.unsplash.com/photo-1541167760496-1628856ab772?auto=format&fit=crop&w=900&q=80', this)">
+                        <img src="https://images.unsplash.com/photo-1541167760496-1628856ab772?auto=format&fit=crop&w=300&q=80" alt="Hot Latte Art" class="w-full h-20 sm:h-24 object-cover">
+                    </button>
+                    <button class="thumb-btn rounded-2xl overflow-hidden border border-subtleborder hover:border-ambercaramel-500/60 focus:outline-none transition" onclick="changeImage('https://images.unsplash.com/photo-1514432324607-a09d9b4aefdd?auto=format&fit=crop&w=900&q=80', this)">
+                        <img src="https://images.unsplash.com/photo-1514432324607-a09d9b4aefdd?auto=format&fit=crop&w=300&q=80" alt="1L Bottle Edition" class="w-full h-20 sm:h-24 object-cover">
+                    </button>
+                </div>
+
+                <!-- Tasting Notes Badge Strip -->
+                <div class="bg-obsidian-900/90 p-5 rounded-2xl border border-subtleborder flex items-center justify-between">
+                    <div>
+                        <span class="text-[10px] font-mono text-stone-500 uppercase tracking-widest block">TASTING NOTES</span>
+                        <p class="text-xs font-serif text-stone-200 text-base mt-0.5">Smoky Caramel, Toasted Hazelnut, Velvet Cocoa</p>
+                    </div>
+                    <div class="text-right">
+                        <span class="text-[10px] font-mono text-stone-500 uppercase tracking-widest block">ROAST LEVEL</span>
+                        <span class="text-xs font-mono text-ambercaramel-400 font-bold">Medium-Dark</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Right: Product Information & Custom Cup Configurator -->
+            <div class="lg:col-span-6 space-y-6">
+                
+                <div>
+                    <div class="flex items-center gap-2 mb-2">
+                        <span class="bg-ambercaramel-500/10 text-ambercaramel-400 text-xs font-mono px-3 py-1 rounded-full border border-ambercaramel-500/30 uppercase">Signature House Blend</span>
+                        <span class="bg-obsidian-900 text-stone-400 text-xs font-mono px-3 py-1 rounded-full border border-subtleborder">Arabika 100%</span>
+                    </div>
+
+                    <h1 class="text-3xl sm:text-4xl lg:text-5xl font-serif text-stone-100 font-normal leading-tight">
+                        Obsidian Smoked Aren Latte
+                    </h1>
+
+                    <div class="flex items-center gap-4 mt-3 text-xs font-mono text-stone-400">
+                        <div class="flex items-center text-ambercaramel-400 gap-1 font-bold">
+                            <i class="fa-solid fa-star"></i>
+                            <span>4.9 / 5.0</span>
+                            <span class="text-stone-500 font-normal">(1.420+ Review)</span>
+                        </div>
+                        <span>•</span>
+                        <span>Terjual 28.000+ Cup</span>
+                    </div>
+                </div>
+
+                <!-- Price Box -->
+                <div class="bg-obsidian-900 p-5 rounded-2xl border border-subtleborder flex items-baseline justify-between">
+                    <div>
+                        <span class="text-[10px] font-mono text-stone-500 uppercase block mb-1">HARGA CUP / BOTOL TERPILIH:</span>
+                        <div class="flex items-baseline gap-3">
+                            <span id="displayUnitPrice" class="text-3xl font-serif font-bold text-ambercaramel-400">Rp28.000</span>
+                            <span class="text-stone-500 text-xs font-mono line-through">Rp34.000</span>
+                        </div>
+                    </div>
+                    <span class="text-xs font-mono text-emerald-400">Tersedia Fresh Barista Seduh</span>
+                </div>
+
+                <!-- Customizer Box -->
+                <div class="bg-obsidian-900 p-6 rounded-3xl border border-subtleborder space-y-5">
+                    
+                    <!-- 1. Suhu Penyajian (Ice / Hot) -->
+                    <div>
+                        <label class="block text-xs font-mono uppercase text-stone-300 mb-2">1. Suhu Penyajian:</label>
+                        <div class="grid grid-cols-2 gap-3">
+                            <button type="button" class="temp-btn active py-2.5 px-4 rounded-xl border border-ambercaramel-500 bg-ambercaramel-500/10 text-ambercaramel-300 font-mono text-xs font-bold transition flex items-center justify-center gap-2" data-label="Iced (Dingin Segar)">
+                                <i class="fa-solid fa-snowflake"></i>
+                                <span>Iced (Dingin Segar)</span>
+                            </button>
+                            <button type="button" class="temp-btn py-2.5 px-4 rounded-xl border border-subtleborder bg-obsidian-950 text-stone-400 font-mono text-xs font-bold transition flex items-center justify-center gap-2" data-label="Hot (Hangat Nikmat)">
+                                <i class="fa-solid fa-mug-hot"></i>
+                                <span>Hot (Hangat Nikmat)</span>
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- 2. Ukuran Cup & Kemasan Literan -->
+                    <div>
+                        <label class="block text-xs font-mono uppercase text-stone-300 mb-2">2. Ukuran Cup / Kemasan:</label>
+                        <div class="grid grid-cols-3 gap-2">
+                            <button type="button" class="size-btn active py-3 px-2 rounded-xl border border-ambercaramel-500 bg-ambercaramel-500/10 text-left transition" data-price="28000" data-label="Reguler 12oz (Rp28.000)">
+                                <span class="block font-serif text-sm text-stone-100">Reguler 12oz</span>
+                                <span class="text-[10px] font-mono text-ambercaramel-400">Rp28.000</span>
+                            </button>
+                            <button type="button" class="size-btn py-3 px-2 rounded-xl border border-subtleborder bg-obsidian-950 text-left transition" data-price="34000" data-label="Large 16oz (Rp34.000)">
+                                <span class="block font-serif text-sm text-stone-100">Large 16oz</span>
+                                <span class="text-[10px] font-mono text-stone-400">Rp34.000 (+6k)</span>
+                            </button>
+                            <button type="button" class="size-btn py-3 px-2 rounded-xl border border-subtleborder bg-obsidian-950 text-left transition" data-price="88000" data-label="Botol 1 Liter (Rp88.000)">
+                                <span class="block font-serif text-sm text-stone-100">Botol 1 Liter 🍾</span>
+                                <span class="text-[10px] font-mono text-ambercaramel-400">Rp88.000</span>
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- 3. Level Gula Aren -->
+                    <div>
+                        <label class="block text-xs font-mono uppercase text-stone-300 mb-2">3. Tingkat Manis Gula Aren:</label>
+                        <div class="grid grid-cols-3 gap-2">
+                            <button type="button" class="sugar-btn active py-2 px-2 rounded-xl border border-ambercaramel-500 bg-ambercaramel-500/10 text-center font-mono text-xs text-ambercaramel-300 font-bold transition" data-label="Normal Sweet (100% Aren)">
+                                100% Normal
+                            </button>
+                            <button type="button" class="sugar-btn py-2 px-2 rounded-xl border border-subtleborder bg-obsidian-950 text-center font-mono text-xs text-stone-400 transition" data-label="Less Sweet (50% Aren)">
+                                50% Less Sugar
+                            </button>
+                            <button type="button" class="sugar-btn py-2 px-2 rounded-xl border border-subtleborder bg-obsidian-950 text-center font-mono text-xs text-stone-400 transition" data-label="No Sugar (0% Pure Coffee & Milk)">
+                                0% No Sugar
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- 4. Pilihan Susu -->
+                    <div>
+                        <label class="block text-xs font-mono uppercase text-stone-300 mb-2">4. Pilihan Susu:</label>
+                        <div class="grid grid-cols-2 gap-3">
+                            <button type="button" class="milk-btn active py-2.5 px-3 rounded-xl border border-ambercaramel-500 bg-ambercaramel-500/10 text-left text-xs font-mono text-stone-200 transition" data-extra="0" data-label="Fresh Dairy Milk (Standard)">
+                                <span class="block font-bold text-stone-100">Fresh Milk</span>
+                                <span class="text-[10px] text-stone-400">Susu Sapi Segar (Free)</span>
+                            </button>
+                            <button type="button" class="milk-btn py-2.5 px-3 rounded-xl border border-subtleborder bg-obsidian-950 text-left text-xs font-mono text-stone-400 transition" data-extra="8000" data-label="Oat Milk Oatside (+8k)">
+                                <span class="block font-bold text-stone-100">Oat Milk (Plant-Based)</span>
+                                <span class="text-[10px] text-ambercaramel-400">+Rp8.000 (Oatside)</span>
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- 5. Extra Add-on -->
+                    <div>
+                        <label class="block text-xs font-mono uppercase text-stone-300 mb-2">5. Extra Add-on (Opsional):</label>
+                        <div class="grid grid-cols-3 gap-2 text-xs font-mono">
+                            <button type="button" class="addon-btn py-2 px-2 rounded-xl border border-subtleborder bg-obsidian-950 text-left transition" data-extra="6000" data-label="Extra Espresso Shot (+6k)">
+                                <span class="block font-bold text-stone-200">+Extra Shot</span>
+                                <span class="text-[10px] text-ambercaramel-400">+Rp6.000</span>
+                            </button>
+                            <button type="button" class="addon-btn py-2 px-2 rounded-xl border border-subtleborder bg-obsidian-950 text-left transition" data-extra="6000" data-label="Sea Salt Foam Cloud (+6k)">
+                                <span class="block font-bold text-stone-200">+Sea Salt Foam</span>
+                                <span class="text-[10px] text-ambercaramel-400">+Rp6.000</span>
+                            </button>
+                            <button type="button" class="addon-btn py-2 px-2 rounded-xl border border-subtleborder bg-obsidian-950 text-left transition" data-extra="4000" data-label="Grass Jelly (+4k)">
+                                <span class="block font-bold text-stone-200">+Grass Jelly</span>
+                                <span class="text-[10px] text-ambercaramel-400">+Rp4.000</span>
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- Quantity Counter -->
+                    <div class="pt-3 border-t border-subtleborder flex items-center justify-between">
+                        <div>
+                            <span class="text-xs font-mono uppercase text-stone-300 block">Jumlah Pesanan:</span>
+                            <span class="text-[10px] text-stone-500 font-mono">Bisa pesan cup satuan / botol banyak</span>
+                        </div>
+                        <div class="flex items-center border border-subtleborder rounded-xl overflow-hidden bg-obsidian-950">
+                            <button type="button" id="btnMinus" class="px-3.5 py-1.5 text-stone-300 hover:bg-obsidian-800 font-bold transition">-</button>
+                            <span id="qtyVal" class="px-5 py-1.5 font-mono text-sm text-stone-100 font-bold">1</span>
+                            <button type="button" id="btnPlus" class="px-3.5 py-1.5 text-stone-300 hover:bg-obsidian-800 font-bold transition">+</button>
+                        </div>
+                    </div>
+
+                </div>
+
+                <!-- Order Action Container -->
+                <div class="space-y-4 pt-2">
+                    
+                    <!-- Total Price Display -->
+                    <div class="bg-obsidian-900 p-5 rounded-2xl border border-ambercaramel-500/30 flex items-center justify-between">
+                        <div>
+                            <span class="text-[10px] font-mono uppercase text-stone-500">ESTIMASI TOTAL (<span id="totalCupLabel">1</span> ITEM):</span>
+                            <h3 id="displayTotalPrice" class="text-2xl sm:text-3xl font-serif font-bold text-ambercaramel-400">Rp28.000</h3>
+                        </div>
+                        <span class="text-xs font-mono bg-ambercaramel-500/10 text-ambercaramel-300 px-3 py-1 rounded-full border border-ambercaramel-500/30">Direct Barista Process</span>
+                    </div>
+
+                    <!-- WhatsApp CTA -->
+                    <a id="btnOrderWa" href="https://wa.me/6281234567890?text=Halo%20Obsidian%20Coffee,%20saya%20mau%20order%20Smoked%20Aren%20Latte" target="_blank" class="w-full flex items-center justify-center gap-3 bg-gradient-to-r from-ambercaramel-500 to-ambercaramel-600 hover:from-ambercaramel-400 hover:to-ambercaramel-500 text-obsidian-950 font-bold text-xs sm:text-sm py-4 px-6 rounded-full shadow-[0_0_25px_rgba(245,158,11,0.25)] transition-all uppercase tracking-widest">
+                        <i class="fa-brands fa-whatsapp text-lg"></i>
+                        <span>PESAN SEKARANG VIA WHATSAPP</span>
+                    </a>
+
+                    <!-- Secondary Delivery Platforms -->
+                    <div class="grid grid-cols-2 sm:grid-cols-4 gap-2 text-xs font-mono">
+                        <a href="https://gofood.co.id" target="_blank" class="py-2.5 px-2 rounded-xl bg-obsidian-900 border border-subtleborder hover:border-emerald-500 text-stone-300 flex items-center justify-center gap-1.5 transition">
+                            <i class="fa-solid fa-motorcycle text-emerald-400"></i> GoFood
+                        </a>
+                        <a href="https://food.grab.com" target="_blank" class="py-2.5 px-2 rounded-xl bg-obsidian-900 border border-subtleborder hover:border-green-500 text-stone-300 flex items-center justify-center gap-1.5 transition">
+                            <i class="fa-solid fa-burger text-green-400"></i> GrabFood
+                        </a>
+                        <a href="https://shopee.co.id" target="_blank" class="py-2.5 px-2 rounded-xl bg-obsidian-900 border border-subtleborder hover:border-orange-500 text-stone-300 flex items-center justify-center gap-1.5 transition">
+                            <i class="fa-solid fa-bag-shopping text-orange-400"></i> ShopeeFood
+                        </a>
+                        <a href="https://tiktok.com" target="_blank" class="py-2.5 px-2 rounded-xl bg-obsidian-900 border border-subtleborder hover:border-stone-400 text-stone-300 flex items-center justify-center gap-1.5 transition">
+                            <i class="fa-brands fa-tiktok text-stone-300"></i> TikTok
+                        </a>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+
+        <!-- Flavor Philosophy & Story -->
+        <div class="mt-16 bg-obsidian-900 rounded-3xl border border-subtleborder p-8 sm:p-12 space-y-6">
+            <div>
+                <span class="text-ambercaramel-400 text-xs font-mono tracking-widest uppercase">ANATOMI RASA & METODE</span>
+                <h2 class="text-2xl sm:text-3xl font-serif text-stone-100 mt-1">
+                    Filosofi di Balik Obsidian Smoked Aren Latte
+                </h2>
+            </div>
+            
+            <div class="text-stone-300 text-xs sm:text-sm font-light leading-relaxed space-y-4">
+                <p>
+                    <strong>Obsidian Smoked Aren Latte</strong> diciptakan untuk kamu yang menginginkan kopi susu gula aren dengan karakter rasa yang jauh lebih kompleks dan berkelas. Kami tidak menggunakan sirup artifisial, melainkan nira kelapa murni yang dimasak perlahan di atas kayu bakar hingga memiliki aroma <em>smoky</em> yang memikat.
+                </p>
+                <p>
+                    Basis espressonya diekstraksi dalam rasio ristretto dari biji kopi <strong>Obsidian Dark Roast House Blend</strong> (kombinasi Arabika Gayo & Flores Bajawa) untuk menghasilkan profil rasa cokelat pekat tanpa keasaman berlebih yang mengganggu.
+                </p>
+
+                <h4 class="font-serif text-base text-stone-100 pt-2 font-normal uppercase">Saran Penyimpanan Seri Botol 1 Liter:</h4>
+                <ul class="list-disc pl-5 space-y-1 text-stone-400 text-xs font-mono">
+                    <li>Simpan di dalam chiller kulkas dengan suhu 2°C - 4°C.</li>
+                    <li>Kocok perlahan sebelum dituang ke dalam gelas berisi es batu kristal.</li>
+                    <li>Dapat dinikmati optimal hingga 7 hari sejak tanggal pembuatan.</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Related Items -->
+        <div class="mt-16">
+            <div class="flex items-center justify-between mb-8">
+                <div>
+                    <span class="text-ambercaramel-400 text-xs font-mono tracking-widest uppercase">REKOMENDASI LAIN</span>
+                    <h2 class="text-2xl font-serif text-stone-100 mt-0.5">Pilihan Seduhan Serupa</h2>
+                </div>
+                <a href="katalog.html" class="text-xs font-mono text-ambercaramel-400 hover:underline uppercase">Lihat Semua &rarr;</a>
+            </div>
+
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+                <!-- Card 1 -->
+                <div class="bg-obsidian-900 rounded-3xl overflow-hidden border border-subtleborder p-4 hover:border-ambercaramel-500/40 transition">
+                    <img src="https://images.unsplash.com/photo-1514432324607-a09d9b4aefdd?auto=format&fit=crop&w=500&q=80" alt="1L Cold Brew" class="w-full h-44 object-cover rounded-2xl mb-4">
+                    <span class="text-[10px] font-mono text-ambercaramel-400 uppercase">1000ml Bottle</span>
+                    <h4 class="font-serif text-lg text-stone-100 mt-0.5"><a href="detail.html">1L Cold Brew Black Velvet</a></h4>
+                    <div class="flex items-center justify-between mt-3 pt-3 border-t border-subtleborder">
+                        <span class="font-serif font-bold text-ambercaramel-400 text-lg">Rp95.000</span>
+                        <a href="detail.html" class="text-xs font-mono text-stone-300 hover:text-ambercaramel-400">PILIH &rarr;</a>
+                    </div>
+                </div>
+
+                <!-- Card 2 -->
+                <div class="bg-obsidian-900 rounded-3xl overflow-hidden border border-subtleborder p-4 hover:border-ambercaramel-500/40 transition">
+                    <img src="https://images.unsplash.com/photo-1572442388796-11668a67e53d?auto=format&fit=crop&w=500&q=80" alt="Sea Salt Cloud" class="w-full h-44 object-cover rounded-2xl mb-4">
+                    <span class="text-[10px] font-mono text-ambercaramel-400 uppercase">Specialty Drink</span>
+                    <h4 class="font-serif text-lg text-stone-100 mt-0.5"><a href="detail.html">Sea Salt Caramel Cloud Brew</a></h4>
+                    <div class="flex items-center justify-between mt-3 pt-3 border-t border-subtleborder">
+                        <span class="font-serif font-bold text-ambercaramel-400 text-lg">Rp34.000</span>
+                        <a href="detail.html" class="text-xs font-mono text-stone-300 hover:text-ambercaramel-400">PILIH &rarr;</a>
+                    </div>
+                </div>
+
+                <!-- Card 3 -->
+                <div class="bg-obsidian-900 rounded-3xl overflow-hidden border border-subtleborder p-4 hover:border-ambercaramel-500/40 transition">
+                    <img src="https://images.unsplash.com/photo-1536256263959-770b48d82b0a?auto=format&fit=crop&w=500&q=80" alt="Kyoto Matcha Oat" class="w-full h-44 object-cover rounded-2xl mb-4">
+                    <span class="text-[10px] font-mono text-emerald-400 uppercase">Plant-Based</span>
+                    <h4 class="font-serif text-lg text-stone-100 mt-0.5"><a href="detail.html">Kyoto Ceremonial Matcha Oat</a></h4>
+                    <div class="flex items-center justify-between mt-3 pt-3 border-t border-subtleborder">
+                        <span class="font-serif font-bold text-ambercaramel-400 text-lg">Rp36.000</span>
+                        <a href="detail.html" class="text-xs font-mono text-stone-300 hover:text-ambercaramel-400">PILIH &rarr;</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-obsidian-950 text-stone-400 pt-16 pb-12 border-t border-subtleborder">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-10 pb-12 border-b border-subtleborder">
+                <div class="lg:col-span-2 space-y-4">
+                    <a href="index.html" class="flex items-center gap-3">
+                        <div class="w-9 h-9 rounded-full bg-obsidian-900 border border-ambercaramel-500/40 text-ambercaramel-400 flex items-center justify-center text-sm">
+                            <i class="fa-solid fa-mug-hot"></i>
+                        </div>
+                        <span class="text-xl font-serif text-stone-100 tracking-wider uppercase">OBSIDIAN <span class="text-ambercaramel-400 text-xs font-sans">ROASTERS</span></span>
+                    </a>
+                    <p class="text-xs text-stone-400 font-light leading-relaxed pr-6">
+                        Micro-roastery & dark ambient coffee lab yang didedikasikan untuk mengangkat cita rasa single origin arabika nusantara ke panggung specialty coffee dunia.
+                    </p>
+                </div>
+                <div>
+                    <h4 class="text-stone-200 font-bold text-xs tracking-widest uppercase mb-4">Navigasi</h4>
+                    <ul class="space-y-2.5 text-xs font-light">
+                        <li><a href="index.html" class="hover:text-ambercaramel-400 transition">Beranda</a></li>
+                        <li><a href="katalog.html" class="hover:text-ambercaramel-400 transition">Katalog Kopi & Literan</a></li>
+                        <li><a href="tentang.html" class="hover:text-ambercaramel-400 transition">Filosofi & Roastery</a></li>
+                        <li><a href="artikel.html" class="hover:text-ambercaramel-400 transition">Jurnal Seduh</a></li>
+                        <li><a href="kontak.html" class="hover:text-ambercaramel-400 transition">Kedai & Lokasi</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-stone-200 font-bold text-xs tracking-widest uppercase mb-4">Menu Pilihan</h4>
+                    <ul class="space-y-2.5 text-xs font-light">
+                        <li><a href="katalog.html" class="hover:text-ambercaramel-400 transition">Smoked Aren Latte</a></li>
+                        <li><a href="katalog.html" class="hover:text-ambercaramel-400 transition">1L Cold Brew Velvet</a></li>
+                        <li><a href="katalog.html" class="hover:text-ambercaramel-400 transition">Sea Salt Cloud Brew</a></li>
+                        <li><a href="katalog.html" class="hover:text-ambercaramel-400 transition">Kyoto Matcha Oat</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-stone-200 font-bold text-xs tracking-widest uppercase mb-4">Slow Bar & Kedai</h4>
+                    <div class="text-xs space-y-2 text-stone-400 font-light">
+                        <p class="text-stone-200 font-medium">Jam Seduh Barista:</p>
+                        <p>Setiap Hari: 08.00 - 23.00 WIB</p>
+                        <p class="text-stone-200 font-medium pt-1">Lokasi:</p>
+                        <p>Jl. Senopati No. 42, Kebayoran Baru, Jakarta Selatan</p>
+                        <p class="text-ambercaramel-400 font-mono pt-1"><i class="fa-brands fa-whatsapp"></i> +62 812-3456-7890</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="pt-8 flex flex-col md:flex-row items-center justify-between text-xs text-stone-500 font-light gap-4">
+                <p>&copy; 2026 Obsidian Coffee Roasters. All rights reserved.</p>
+                <div class="flex items-center gap-2">
+                    <span>Etalase Resmi UMKM didukung oleh</span>
+                    <a href="https://lenterapasar.com" target="_blank" class="text-ambercaramel-400 font-medium hover:underline">Lentera Pasar</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Floating WhatsApp Conversion Button -->
+    <a href="https://wa.me/6281234567890?text=Halo%20Obsidian%20Coffee,%20saya%20mau%20order%20Smoked%20Aren%20Latte." target="_blank" class="fixed bottom-24 right-6 z-50 group flex items-center gap-3 bg-obsidian-900 hover:bg-obsidian-850 text-ambercaramel-400 px-4 py-3.5 rounded-full border border-ambercaramel-500/40 shadow-[0_0_20px_rgba(251,191,36,0.2)] hover:border-ambercaramel-400 transition-all duration-300" aria-label="Order via WhatsApp">
+        <i class="fa-brands fa-whatsapp text-2xl text-emerald-400"></i>
+        <span class="hidden sm:inline font-sans font-bold text-xs tracking-wider uppercase text-stone-100">Order WhatsApp</span>
+    </a>
+
+    <!-- Detail Dynamic Script -->
+    <script>
+        const mobileMenuBtn = document.getElementById('mobileMenuBtn');
+        const mobileMenu = document.getElementById('mobileMenu');
+        const menuIcon = document.getElementById('menuIcon');
+
+        mobileMenuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+            if (mobileMenu.classList.contains('hidden')) {
+                menuIcon.classList.remove('fa-xmark');
+                menuIcon.classList.add('fa-bars');
+            } else {
+                menuIcon.classList.remove('fa-bars');
+                menuIcon.classList.add('fa-xmark');
+            }
+        });
+
+        function changeImage(src, btn) {
+            const mainImg = document.getElementById('mainProductImg');
+            mainImg.style.opacity = '0.3';
+            setTimeout(() => {
+                mainImg.src = src;
+                mainImg.style.opacity = '1';
+            }, 150);
+
+            document.querySelectorAll('.thumb-btn').forEach(t => {
+                t.classList.remove('border-2', 'border-ambercaramel-500', 'active');
+                t.classList.add('border', 'border-subtleborder');
+            });
+            btn.classList.remove('border', 'border-subtleborder');
+            btn.classList.add('border-2', 'border-ambercaramel-500', 'active');
+        }
+
+        // Customizer State
+        let baseSizePrice = 28000;
+        let selectedSize = 'Reguler 12oz (Rp28.000)';
+        let selectedTemp = 'Iced (Dingin Segar)';
+        let selectedSugar = '100% Normal';
+        let milkExtra = 0;
+        let selectedMilk = 'Fresh Dairy Milk (Standard)';
+        let addonExtra = 0;
+        let selectedAddon = 'Tanpa Add-on Tambahan';
+        let quantity = 1;
+
+        const displayUnitPrice = document.getElementById('displayUnitPrice');
+        const displayTotalPrice = document.getElementById('displayTotalPrice');
+        const totalCupLabel = document.getElementById('totalCupLabel');
+        const qtyVal = document.getElementById('qtyVal');
+        const btnMinus = document.getElementById('btnMinus');
+        const btnPlus = document.getElementById('btnPlus');
+        const btnOrderWa = document.getElementById('btnOrderWa');
+
+        function updateWaLink() {
+            const currentUnitPrice = baseSizePrice + milkExtra + addonExtra;
+            const totalPrice = currentUnitPrice * quantity;
+
+            displayUnitPrice.textContent = 'Rp' + currentUnitPrice.toLocaleString('id-ID');
+            displayTotalPrice.textContent = 'Rp' + totalPrice.toLocaleString('id-ID');
+            totalCupLabel.textContent = quantity;
+
+            const text = `Halo Barista Obsidian Coffee, saya mau pesan kopi:\n- *Menu:* Obsidian Smoked Aren Latte\n- *Suhu:* ${selectedTemp}\n- *Ukuran/Kemasan:* ${selectedSize}\n- *Tingkat Manis:* ${selectedSugar}\n- *Pilihan Susu:* ${selectedMilk}\n- *Extra Add-on:* ${selectedAddon}\n- *Jumlah:* ${quantity} Item\n- *Estimasi Total:* Rp${totalPrice.toLocaleString('id-ID')}\n\nMohon konfirmasi ketersediaan dan estimasi waktu siapnya. Terima kasih.`;
+
+            btnOrderWa.href = `https://wa.me/6281234567890?text=${encodeURIComponent(text)}`;
+        }
+
+        // Temperature Buttons
+        const tempBtns = document.querySelectorAll('.temp-btn');
+        tempBtns.forEach(btn => {
+            btn.addEventListener('click', () => {
+                tempBtns.forEach(b => {
+                    b.classList.remove('border-ambercaramel-500', 'bg-ambercaramel-500/10', 'text-ambercaramel-300', 'active');
+                    b.classList.add('border-subtleborder', 'bg-obsidian-950', 'text-stone-400');
+                });
+                btn.classList.add('border-ambercaramel-500', 'bg-ambercaramel-500/10', 'text-ambercaramel-300', 'active');
+                btn.classList.remove('border-subtleborder', 'bg-obsidian-950', 'text-stone-400');
+
+                selectedTemp = btn.dataset.label;
+                updateWaLink();
+            });
+        });
+
+        // Size Buttons
+        const sizeBtns = document.querySelectorAll('.size-btn');
+        sizeBtns.forEach(btn => {
+            btn.addEventListener('click', () => {
+                sizeBtns.forEach(b => {
+                    b.classList.remove('border-ambercaramel-500', 'bg-ambercaramel-500/10', 'active');
+                    b.classList.add('border-subtleborder', 'bg-obsidian-950');
+                });
+                btn.classList.add('border-ambercaramel-500', 'bg-ambercaramel-500/10', 'active');
+                btn.classList.remove('border-subtleborder', 'bg-obsidian-950');
+
+                baseSizePrice = parseInt(btn.dataset.price);
+                selectedSize = btn.dataset.label;
+                updateWaLink();
+            });
+        });
+
+        // Sugar Buttons
+        const sugarBtns = document.querySelectorAll('.sugar-btn');
+        sugarBtns.forEach(btn => {
+            btn.addEventListener('click', () => {
+                sugarBtns.forEach(b => {
+                    b.classList.remove('border-ambercaramel-500', 'bg-ambercaramel-500/10', 'text-ambercaramel-300', 'font-bold', 'active');
+                    b.classList.add('border-subtleborder', 'bg-obsidian-950', 'text-stone-400');
+                });
+                btn.classList.add('border-ambercaramel-500', 'bg-ambercaramel-500/10', 'text-ambercaramel-300', 'font-bold', 'active');
+                btn.classList.remove('border-subtleborder', 'bg-obsidian-950', 'text-stone-400');
+
+                selectedSugar = btn.dataset.label;
+                updateWaLink();
+            });
+        });
+
+        // Milk Buttons
+        const milkBtns = document.querySelectorAll('.milk-btn');
+        milkBtns.forEach(btn => {
+            btn.addEventListener('click', () => {
+                milkBtns.forEach(b => {
+                    b.classList.remove('border-ambercaramel-500', 'bg-ambercaramel-500/10', 'active');
+                    b.classList.add('border-subtleborder', 'bg-obsidian-950');
+                });
+                btn.classList.add('border-ambercaramel-500', 'bg-ambercaramel-500/10', 'active');
+                btn.classList.remove('border-subtleborder', 'bg-obsidian-950');
+
+                milkExtra = parseInt(btn.dataset.extra);
+                selectedMilk = btn.dataset.label;
+                updateWaLink();
+            });
+        });
+
+        // Add-on Buttons (Toggle)
+        const addonBtns = document.querySelectorAll('.addon-btn');
+        addonBtns.forEach(btn => {
+            btn.addEventListener('click', () => {
+                if (btn.classList.contains('active')) {
+                    btn.classList.remove('border-ambercaramel-500', 'bg-ambercaramel-500/10', 'active');
+                    btn.classList.add('border-subtleborder', 'bg-obsidian-950');
+                    addonExtra = 0;
+                    selectedAddon = 'Tanpa Add-on Tambahan';
+                } else {
+                    addonBtns.forEach(b => {
+                        b.classList.remove('border-ambercaramel-500', 'bg-ambercaramel-500/10', 'active');
+                        b.classList.add('border-subtleborder', 'bg-obsidian-950');
+                    });
+                    btn.classList.add('border-ambercaramel-500', 'bg-ambercaramel-500/10', 'active');
+                    btn.classList.remove('border-subtleborder', 'bg-obsidian-950');
+                    addonExtra = parseInt(btn.dataset.extra);
+                    selectedAddon = btn.dataset.label;
+                }
+                updateWaLink();
+            });
+        });
+
+        // Quantity controls
+        btnPlus.addEventListener('click', () => {
+            quantity++;
+            qtyVal.textContent = quantity;
+            updateWaLink();
+        });
+
+        btnMinus.addEventListener('click', () => {
+            if (quantity > 1) {
+                quantity--;
+                qtyVal.textContent = quantity;
+                updateWaLink();
+            }
+        });
+
+        updateWaLink();
+    </script>
+<!-- ========================================================================= -->
+<!-- LENTERA PASAR - STICKY DEMO & SALES BAR                                   -->
+<!-- ========================================================================= -->
+<div class="fixed bottom-4 left-1/2 -translate-x-1/2 z-50 w-[95%] max-w-4xl bg-slate-900/95 backdrop-blur-md text-white p-3.5 md:p-4 rounded-2xl shadow-2xl border border-slate-700/80 transition-all duration-300">
+  <div class="flex flex-col md:flex-row items-center justify-between gap-3 md:gap-4">
+    
+    <!-- Info Template & Value Proposition -->
+    <div class="flex items-center gap-3 w-full md:w-auto">
+      <div class="w-10 h-10 rounded-xl bg-amber-500/20 border border-amber-500/40 flex items-center justify-center shrink-0">
+        <svg class="w-5 h-5 text-amber-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z" />
+        </svg>
+      </div>
+      <div>
+        <div class="flex items-center gap-2">
+          <span class="font-bold text-sm text-white">Lentera Pasar Engine</span>
+          <span class="text-[10px] bg-emerald-500/20 text-emerald-300 border border-emerald-500/30 px-2 py-0.5 rounded-full font-medium">Free Admin Panel + Ads Support</span>
+        </div>
+        <p class="text-xs text-slate-300 hidden sm:block">
+          Terima beres: Website responsif + Panel input produk sendiri + Dikelola tim iklan profesional.
+        </p>
+      </div>
+    </div>
+
+    <!-- Poin Keunggulan & Tombol Action -->
+    <div class="flex items-center justify-between md:justify-end gap-3 w-full md:w-auto">
+      <div class="hidden lg:flex items-center gap-2 text-xs text-slate-400 border-r border-slate-700 pr-4">
+        <div class="flex items-center gap-1 text-slate-200">
+          <svg class="w-4 h-4 text-emerald-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" /></svg>
+          <span>Chat WA Instan</span>
+        </div>
+        <span class="text-slate-600">•</span>
+        <div class="flex items-center gap-1 text-slate-200">
+          <svg class="w-4 h-4 text-emerald-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" /></svg>
+          <span>Ready Meta Pixel</span>
+        </div>
+      </div>
+
+      <a href="https://wa.me/6281234567890?text=Halo%20Tim%20Lentera%20Pasar,%20saya%20tertarik%20menggunakan%20template%20website%20ini%20lengkap%20dengan%20Admin%20Panel%20dan%20Jasa%20Iklannya." 
+         target="_blank"
+         class="w-full md:w-auto inline-flex items-center justify-center gap-2 bg-gradient-to-r from-amber-500 to-orange-600 hover:from-amber-600 hover:to-orange-700 text-white text-xs md:text-sm font-semibold px-5 py-2.5 rounded-xl shadow-lg shadow-orange-500/20 transition-all hover:scale-105 shrink-0">
+        <span>Gunakan Template Ini</span>
+        <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3" />
+        </svg>
+      </a>
+    </div>
+
+  </div>
+</div>
+
+</body>
+</html>

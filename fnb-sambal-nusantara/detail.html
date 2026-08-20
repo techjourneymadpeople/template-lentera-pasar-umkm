@@ -1,0 +1,605 @@
+<!DOCTYPE html>
+<html lang="id" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sambal Cumi Asin Bawang Rawit Merah - SAMBAL WARISAN OMA</title>
+    <meta name="description" content="Pesan Sambal Cumi Asin Bawang kemasan jar kaca 150g/200g. Potongan cumi utuh melimpah, cabai rawit segar ulekan tangan, minyak kelapa murni, izin P-IRT resmi.">
+    
+    <!-- Google Fonts: Playfair Display & Plus Jakarta Sans -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;0,700;0,800;0,900;1,600;1,700&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    
+    <!-- Tailwind CSS CDN with Custom Config -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        terracotta: {
+                            50: '#fdf4f3',
+                            100: '#fbe8e6',
+                            200: '#f7d5d1',
+                            600: '#b91c1c',
+                            700: '#991b1b',
+                            800: '#7f1d1d',
+                            900: '#5c1414',
+                        },
+                        warmstone: {
+                            50: '#fbf9f5',
+                            100: '#f5f0e8',
+                            200: '#e7dfd5',
+                            300: '#d5c8b8',
+                            800: '#292524',
+                            900: '#1c1917',
+                        },
+                        amberheritage: {
+                            500: '#d97706',
+                            600: '#b45309',
+                        }
+                    },
+                    fontFamily: {
+                        sans: ['"Plus Jakarta Sans"', 'sans-serif'],
+                        serif: ['"Playfair Display"', 'Georgia', 'serif'],
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-warmstone-50 text-warmstone-900 font-sans antialiased selection:bg-terracotta-700 selection:text-white min-h-screen flex flex-col justify-between pb-28">
+
+    <!-- Header / Navbar -->
+    <header class="sticky top-0 z-40 bg-warmstone-50/95 backdrop-blur-md border-b border-warmstone-200 shadow-sm transition-all">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-20">
+                
+                <!-- Brand Logo -->
+                <a href="index.html" class="flex items-center gap-3 group">
+                    <div class="w-11 h-11 rounded-2xl bg-terracotta-800 text-amber-400 flex items-center justify-center text-xl shadow-md group-hover:scale-105 transition border border-amber-600/30">
+                        <i class="fa-solid fa-pepper-hot"></i>
+                    </div>
+                    <div>
+                        <span class="font-serif font-bold text-2xl text-warmstone-900 tracking-tight block leading-none">
+                            WARISAN<span class="text-terracotta-700">OMA</span>
+                        </span>
+                        <span class="text-[10px] font-bold text-amberheritage-600 tracking-widest uppercase">Sambal Artisan Nusantara</span>
+                    </div>
+                </a>
+
+                <!-- Desktop Nav -->
+                <nav class="hidden md:flex items-center gap-8 font-bold text-stone-700 text-sm">
+                    <a href="index.html" class="hover:text-terracotta-700 transition">Beranda</a>
+                    <a href="katalog.html" class="text-terracotta-700 border-b-2 border-terracotta-700 pb-1">Koleksi Sambal</a>
+                    <a href="tentang.html" class="hover:text-terracotta-700 transition">Rahasia Rempah</a>
+                    <a href="artikel.html" class="hover:text-terracotta-700 transition">Resep Masakan</a>
+                    <a href="kontak.html" class="hover:text-terracotta-700 transition">Pemesanan & Kirim</a>
+                </nav>
+
+                <!-- Desktop Action CTA -->
+                <div class="hidden lg:flex items-center gap-3">
+                    <a href="https://wa.me/6281234567890?text=Halo%20Sambal%20Warisan%20Oma,%20saya%20mau%20pesan%20sambal%20botol." target="_blank" class="inline-flex items-center gap-2 bg-terracotta-800 hover:bg-terracotta-900 text-white font-bold text-xs px-5 py-3 rounded-2xl shadow-sm hover:shadow transition border border-terracotta-700">
+                        <i class="fa-brands fa-whatsapp text-base text-emerald-400"></i>
+                        <span>Pesan Botol WA</span>
+                    </a>
+                </div>
+
+                <!-- Mobile Menu Button -->
+                <button id="mobileMenuBtn" class="md:hidden text-stone-800 p-2 rounded-xl bg-warmstone-200" aria-label="Buka Menu">
+                    <i class="fa-solid fa-bars text-xl" id="menuIcon"></i>
+                </button>
+            </div>
+        </div>
+
+        <!-- Mobile Drawer -->
+        <div id="mobileMenu" class="hidden md:hidden bg-warmstone-50 border-b border-warmstone-200 px-4 pt-3 pb-6 space-y-3 shadow-lg">
+            <a href="index.html" class="block py-2.5 px-3 rounded-xl text-stone-700 hover:bg-warmstone-100 font-semibold text-sm">Beranda</a>
+            <a href="katalog.html" class="block py-2.5 px-3 rounded-xl bg-terracotta-100 text-terracotta-900 font-bold text-sm">Koleksi Sambal</a>
+            <a href="tentang.html" class="block py-2.5 px-3 rounded-xl text-stone-700 hover:bg-warmstone-100 font-semibold text-sm">Rahasia Rempah</a>
+            <a href="artikel.html" class="block py-2.5 px-3 rounded-xl text-stone-700 hover:bg-warmstone-100 font-semibold text-sm">Resep Masakan</a>
+            <a href="kontak.html" class="block py-2.5 px-3 rounded-xl text-stone-700 hover:bg-warmstone-100 font-semibold text-sm">Pemesanan & Kirim</a>
+            <div class="pt-2">
+                <a href="https://wa.me/6281234567890?text=Halo%20Sambal%20Warisan%20Oma,%20mau%20order%20sambal" target="_blank" class="w-full inline-flex justify-center items-center gap-2 bg-terracotta-800 text-white font-bold py-3 rounded-xl text-xs shadow">
+                    <i class="fa-brands fa-whatsapp text-lg"></i>
+                    <span>Hubungi WhatsApp CS</span>
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Breadcrumb Bar -->
+    <div class="bg-white border-b border-warmstone-200 py-3">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <nav class="flex items-center gap-2 text-xs font-bold text-stone-400 uppercase overflow-x-auto whitespace-nowrap">
+                <a href="index.html" class="hover:text-terracotta-700">Beranda</a>
+                <i class="fa-solid fa-chevron-right text-[10px]"></i>
+                <a href="katalog.html" class="hover:text-terracotta-700">Koleksi Sambal</a>
+                <i class="fa-solid fa-chevron-right text-[10px]"></i>
+                <a href="katalog.html?kategori=lauk" class="hover:text-terracotta-700">Sambal Lauk</a>
+                <i class="fa-solid fa-chevron-right text-[10px]"></i>
+                <span class="text-terracotta-700 truncate">Sambal Cumi Asin Bawang</span>
+            </nav>
+        </div>
+    </div>
+
+    <!-- Product Detail Container -->
+    <main class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10 w-full flex-1">
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-10">
+
+            <!-- Left: Interactive Gallery -->
+            <div class="lg:col-span-6 space-y-4">
+                <div class="relative rounded-3xl overflow-hidden bg-white border border-warmstone-200 shadow-md">
+                    <img id="mainProductImg" src="https://images.unsplash.com/photo-1546069901-ba9599a7e63c?auto=format&fit=crop&w=900&q=80" alt="Sambal Cumi Asin Bawang" class="w-full h-[360px] sm:h-[450px] object-cover transition-opacity duration-300">
+                    <span class="absolute top-4 left-4 bg-terracotta-700 text-white font-bold text-xs px-3.5 py-1 rounded-full uppercase shadow">
+                        BEST SELLER #1
+                    </span>
+                    <span class="absolute top-4 right-4 bg-white/95 text-stone-900 font-bold text-xs px-3 py-1 rounded-full border border-warmstone-200 flex items-center gap-1.5 shadow-sm">
+                        <i class="fa-solid fa-certificate text-amberheritage-500"></i> P-IRT 2093578010892-28
+                    </span>
+                </div>
+
+                <!-- Thumbnails -->
+                <div class="grid grid-cols-3 gap-3">
+                    <button class="thumb-btn active rounded-2xl overflow-hidden border-2 border-terracotta-700 shadow-sm focus:outline-none transition" onclick="changeImage('https://images.unsplash.com/photo-1546069901-ba9599a7e63c?auto=format&fit=crop&w=900&q=80', this)">
+                        <img src="https://images.unsplash.com/photo-1546069901-ba9599a7e63c?auto=format&fit=crop&w=300&q=80" alt="Botol Kaca Jar Depan" class="w-full h-20 sm:h-24 object-cover">
+                    </button>
+                    <button class="thumb-btn rounded-2xl overflow-hidden border border-warmstone-200 hover:border-terracotta-700 focus:outline-none transition" onclick="changeImage('https://images.unsplash.com/photo-1541696432-82c6da8ce7bf?auto=format&fit=crop&w=900&q=80', this)">
+                        <img src="https://images.unsplash.com/photo-1541696432-82c6da8ce7bf?auto=format&fit=crop&w=300&q=80" alt="Tekstur Cumi Ulek" class="w-full h-20 sm:h-24 object-cover">
+                    </button>
+                    <button class="thumb-btn rounded-2xl overflow-hidden border border-warmstone-200 hover:border-terracotta-700 focus:outline-none transition" onclick="changeImage('https://images.unsplash.com/photo-1555396273-367ea4eb4db5?auto=format&fit=crop&w=900&q=80', this)">
+                        <img src="https://images.unsplash.com/photo-1555396273-367ea4eb4db5?auto=format&fit=crop&w=300&q=80" alt="Sajian Nasi Hangat" class="w-full h-20 sm:h-24 object-cover">
+                    </button>
+                </div>
+
+                <!-- Storage & Shelf Life Strip -->
+                <div class="bg-white p-5 rounded-3xl border border-warmstone-200 shadow-sm flex items-center gap-4">
+                    <div class="w-12 h-12 rounded-2xl bg-terracotta-50 text-terracotta-700 flex items-center justify-center text-2xl flex-shrink-0">
+                        <i class="fa-solid fa-temperature-arrow-down"></i>
+                    </div>
+                    <div>
+                        <h4 class="font-bold text-xs text-warmstone-900 uppercase">PETUNJUK SIMPAN & DAYA TAHAN</h4>
+                        <p class="text-xs text-stone-600 mt-0.5">Suhu ruang tahan <strong>3 bulan</strong> (segel rapat). Setelah dibuka tahan <strong>1 bulan</strong> di kulkas/chiller. Selalu gunakan sendok bersih.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Right: Product Summary & Customization Selectors -->
+            <div class="lg:col-span-6 space-y-6">
+                
+                <div>
+                    <div class="flex items-center gap-2 mb-2">
+                        <span class="bg-terracotta-50 text-terracotta-800 text-xs font-bold px-3 py-1 rounded-full uppercase border border-terracotta-200">Sambal Lauk Otentik</span>
+                        <span class="bg-stone-100 text-stone-700 text-xs font-bold px-3 py-1 rounded-full uppercase">100% Halal MUI</span>
+                    </div>
+
+                    <h1 class="text-3xl sm:text-4xl font-serif font-bold text-warmstone-900 leading-tight">
+                        Sambal Cumi Asin Bawang
+                    </h1>
+
+                    <div class="flex items-center gap-3 mt-2 text-xs font-medium text-stone-600">
+                        <div class="flex items-center text-amberheritage-500 gap-1 font-bold text-warmstone-900">
+                            <i class="fa-solid fa-star"></i>
+                            <span>4.9 / 5.0</span>
+                            <span class="text-stone-400 font-normal">(8.900+ Botol Terjual)</span>
+                        </div>
+                        <span>•</span>
+                        <span class="text-terracotta-700 font-bold">Botol Kaca Sterilisasi Segel</span>
+                    </div>
+                </div>
+
+                <!-- Price Box -->
+                <div class="bg-white p-5 rounded-2xl border border-warmstone-200 shadow-sm flex items-baseline justify-between">
+                    <div>
+                        <span class="text-[11px] text-stone-500 font-bold block uppercase mb-0.5">Harga Varian Terpilih:</span>
+                        <div class="flex items-baseline gap-2">
+                            <span id="displayUnitPrice" class="text-3xl font-serif font-bold text-terracotta-800">Rp38.000</span>
+                            <span class="text-stone-400 text-xs line-through font-medium">Rp42.000</span>
+                            <span class="text-xs bg-terracotta-50 text-terracotta-800 font-bold px-2 py-0.5 rounded border border-terracotta-200">Hemat Rp4k</span>
+                        </div>
+                    </div>
+                    <span class="text-xs font-bold text-emerald-700 text-right uppercase">Stok Dapur Segar</span>
+                </div>
+
+                <!-- Customizer Box -->
+                <div class="bg-white p-6 rounded-3xl border border-warmstone-200 shadow-sm space-y-5">
+                    
+                    <!-- 1. Pilihan Ukuran Jar / Paket -->
+                    <div>
+                        <label class="block text-xs font-bold text-stone-800 mb-2 uppercase">1. Pilih Kemasan / Ukuran Jar:</label>
+                        <div class="grid grid-cols-2 sm:grid-cols-4 gap-2">
+                            <button type="button" class="size-btn py-2.5 px-2 rounded-2xl border border-warmstone-200 hover:border-stone-400 text-center transition" data-price="29000" data-label="Jar Kaca 150g">
+                                <span class="block font-bold text-xs text-warmstone-900">Jar 150g</span>
+                                <span class="text-[10px] text-stone-500 font-medium">Rp29.000</span>
+                            </button>
+                            <button type="button" class="size-btn active py-2.5 px-2 rounded-2xl border-2 border-terracotta-700 bg-terracotta-50 text-center transition shadow-sm" data-price="38000" data-label="Jar Kaca 200g (Best Seller)">
+                                <span class="block font-bold text-xs text-warmstone-900">Jar 200g</span>
+                                <span class="text-[10px] text-terracotta-800 font-bold">Rp38.000</span>
+                            </button>
+                            <button type="button" class="size-btn py-2.5 px-2 rounded-2xl border border-warmstone-200 hover:border-stone-400 text-center transition" data-price="105000" data-label="Paket Hemat (3 Botol)">
+                                <span class="block font-bold text-xs text-warmstone-900">Paket 3 Botol</span>
+                                <span class="text-[10px] text-stone-500 font-medium">Rp105.000</span>
+                            </button>
+                            <button type="button" class="size-btn py-2.5 px-2 rounded-2xl border border-warmstone-200 hover:border-stone-400 text-center transition" data-price="390000" data-label="Paket Karton (12 Botol)">
+                                <span class="block font-bold text-xs text-warmstone-900">Dus 12 Botol</span>
+                                <span class="text-[10px] text-stone-500 font-medium">Rp390.000</span>
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- 2. Pilihan Level Pedas -->
+                    <div>
+                        <label class="block text-xs font-bold text-stone-800 mb-2 uppercase">2. Pilih Tingkat Kepedasan:</label>
+                        <div class="grid grid-cols-3 gap-2 text-xs">
+                            <button type="button" class="spicy-btn py-2 px-2 rounded-2xl border border-warmstone-200 hover:border-stone-400 font-bold text-stone-700 text-center transition" data-extra="0" data-label="Level 1 (Pedas Sedang - Gurih)">
+                                Level 1 <span class="block text-[10px] font-normal text-stone-500">Pedas Sedang</span>
+                            </button>
+                            <button type="button" class="spicy-btn active py-2 px-2 rounded-2xl border-2 border-terracotta-700 bg-terracotta-50 font-bold text-warmstone-900 text-center transition shadow-sm" data-extra="0" data-label="Level 3 (Pedas Mantap - Rekomendasi)">
+                                Level 3 <span class="block text-[10px] font-normal text-terracotta-700">Pedas Mantap ⭐</span>
+                            </button>
+                            <button type="button" class="spicy-btn py-2 px-2 rounded-2xl border border-warmstone-200 hover:border-stone-400 font-bold text-stone-700 text-center transition" data-extra="2000" data-label="Level 5 (Pedas Gila Rawit Domba +2k)">
+                                Level 5 <span class="block text-[10px] font-normal text-terracotta-700">Pedas Gila (+2k)</span>
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- 3. Quantity Stepper -->
+                    <div class="pt-3 border-t border-warmstone-100 flex items-center justify-between">
+                        <div>
+                            <span class="text-xs font-bold text-warmstone-900 block uppercase">Jumlah Botol:</span>
+                            <span class="text-[11px] text-terracotta-700 font-medium">Bebas campur varian rasa lain</span>
+                        </div>
+                        <div class="flex items-center border border-warmstone-300 rounded-xl overflow-hidden bg-warmstone-50">
+                            <button type="button" id="btnMinus" class="px-3.5 py-1.5 text-stone-800 hover:bg-warmstone-200 font-bold transition">-</button>
+                            <span id="qtyVal" class="px-5 py-1.5 font-bold text-sm text-warmstone-900 bg-white">1</span>
+                            <button type="button" id="btnPlus" class="px-3.5 py-1.5 text-stone-800 hover:bg-warmstone-200 font-bold transition">+</button>
+                        </div>
+                    </div>
+
+                </div>
+
+                <!-- Total Price & WhatsApp Order Box -->
+                <div class="space-y-3 pt-2">
+                    
+                    <!-- Total Calculation Display -->
+                    <div class="bg-warmstone-900 text-white p-5 rounded-2xl shadow-md flex items-center justify-between">
+                        <div>
+                            <span class="text-[10px] font-bold uppercase text-stone-400">TOTAL HARGA (<span id="totalPackLabel">1</span> BOTOL):</span>
+                            <h3 id="displayTotalPrice" class="text-2xl sm:text-3xl font-serif font-bold text-amber-400">Rp38.000</h3>
+                        </div>
+                        <span class="text-xs font-bold bg-terracotta-800 text-white px-3 py-1.5 rounded-xl border border-terracotta-700">Segel Alami</span>
+                    </div>
+
+                    <!-- WhatsApp CTA -->
+                    <a id="btnOrderWa" href="https://wa.me/6281234567890?text=Halo%20Sambal%20Warisan%20Oma,%20saya%20mau%20pesan%20Sambal%20Cumi%20Asin" target="_blank" class="w-full flex items-center justify-center gap-3 bg-terracotta-800 hover:bg-terracotta-900 text-white font-bold text-sm py-4 px-6 rounded-2xl shadow-md hover:shadow-lg transition uppercase tracking-wider">
+                        <i class="fa-brands fa-whatsapp text-2xl text-emerald-400"></i>
+                        <span>PESAN SEKARANG VIA WHATSAPP</span>
+                    </a>
+
+                    <!-- Marketplace Buttons -->
+                    <div class="grid grid-cols-3 gap-2 pt-1">
+                        <a href="https://shopee.co.id" target="_blank" class="py-2.5 rounded-xl bg-white border border-warmstone-300 hover:bg-warmstone-50 text-stone-700 text-xs font-bold text-center transition flex items-center justify-center gap-1.5 uppercase">
+                            <i class="fa-solid fa-store text-amberheritage-600"></i> Shopee
+                        </a>
+                        <a href="https://tokopedia.com" target="_blank" class="py-2.5 rounded-xl bg-white border border-warmstone-300 hover:bg-warmstone-50 text-stone-700 text-xs font-bold text-center transition flex items-center justify-center gap-1.5 uppercase">
+                            <i class="fa-solid fa-bag-shopping text-emerald-600"></i> Tokopedia
+                        </a>
+                        <a href="https://tiktok.com" target="_blank" class="py-2.5 rounded-xl bg-white border border-warmstone-300 hover:bg-warmstone-50 text-stone-700 text-xs font-bold text-center transition flex items-center justify-center gap-1.5 uppercase">
+                            <i class="fa-brands fa-tiktok text-stone-900"></i> TikTok Shop
+                        </a>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+
+        <!-- Detail Komposisi & Saran Kreasi Menu -->
+        <div class="mt-14 bg-white rounded-3xl border border-warmstone-200 p-8 sm:p-12 shadow-sm space-y-6">
+            <div>
+                <span class="text-terracotta-700 text-xs font-bold uppercase tracking-wider">KOMPOSISI REMPAH ALAMI & SARAN PENYAJIAN</span>
+                <h2 class="text-2xl sm:text-3xl font-serif font-bold text-warmstone-900 mt-1">
+                    Cita Rasa Asli Ulekan Dapur Warisan Oma
+                </h2>
+            </div>
+            
+            <div class="text-stone-700 text-sm leading-relaxed space-y-4 font-normal">
+                <p>
+                    <strong>Sambal Cumi Asin Bawang Warisan Oma</strong> menggunakan cumi asin pilihan yang dicuci berulang kali untuk menghilangkan rasa asin berlebih dan direbus empuk sebelum ditumis. Dimasak perlahan (*slow cooked*) menggunakan minyak kelapa murni dan ulekan kasar cabai rawit merah serta bawang merah Brebes segar.
+                </p>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-4 pt-2">
+                    <div class="p-4 rounded-2xl bg-warmstone-50 border border-warmstone-200">
+                        <h4 class="font-bold text-xs text-warmstone-900 uppercase mb-1">🍚 Teman Nasi Hangat</h4>
+                        <p class="text-xs text-stone-600">Cukup sendokkan langsung di atas sepiring nasi pulen panas dengan pendamping telur ceplok atau tahu tempe goreng gurih.</p>
+                    </div>
+                    <div class="p-4 rounded-2xl bg-warmstone-50 border border-warmstone-200">
+                        <h4 class="font-bold text-xs text-warmstone-900 uppercase mb-1">🍳 Bumbu Nasi Goreng Kilat</h4>
+                        <p class="text-xs text-stone-600">Tambahkan 1-2 sendok makan sambal cumi ke wajan untuk membuat nasi goreng cumi pedas gurih tanpa perlu tambahan bumbu ulek lain.</p>
+                    </div>
+                    <div class="p-4 rounded-2xl bg-warmstone-50 border border-warmstone-200">
+                        <h4 class="font-bold text-xs text-warmstone-900 uppercase mb-1">🥬 Tumis Kangkung & Sayur</h4>
+                        <p class="text-xs text-stone-600">Gunakan sebagai bumbu dasar tumisan kangkung, buncis, atau tauge untuk menghasilkan aroma harum rempah yang menggugah selera.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Related Sambal Jars -->
+        <div class="mt-14">
+            <div class="flex items-center justify-between mb-8">
+                <div>
+                    <span class="text-terracotta-700 text-xs font-bold uppercase tracking-wider">KOLEKSI SAMBAL LAINNYA</span>
+                    <h2 class="text-2xl font-serif font-bold text-warmstone-900 mt-0.5">Lengkapi Meja Makan Anda</h2>
+                </div>
+                <a href="katalog.html" class="text-xs font-bold text-terracotta-700 hover:underline uppercase">Lihat Semua &rarr;</a>
+            </div>
+
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+                <!-- Card 1 -->
+                <div class="bg-white rounded-3xl overflow-hidden border border-warmstone-200 p-5 shadow-sm hover:shadow-md transition">
+                    <img src="https://images.unsplash.com/photo-1541696432-82c6da8ce7bf?auto=format&fit=crop&w=500&q=80" alt="Sambal Bawang Klotok" class="w-full h-44 object-cover rounded-2xl mb-4">
+                    <span class="text-xs font-bold text-terracotta-700 uppercase">Jar Kaca 200g</span>
+                    <h4 class="font-serif font-bold text-lg text-warmstone-900 mt-0.5"><a href="detail.html">Sambal Bawang Ikan Klotok</a></h4>
+                    <div class="flex items-center justify-between mt-3 pt-3 border-t border-warmstone-100">
+                        <span class="font-bold text-terracotta-800 text-lg">Rp35.000</span>
+                        <a href="detail.html" class="text-xs font-bold text-stone-800 hover:text-terracotta-700">PILIH &rarr;</a>
+                    </div>
+                </div>
+
+                <!-- Card 2 -->
+                <div class="bg-white rounded-3xl overflow-hidden border border-warmstone-200 p-5 shadow-sm hover:shadow-md transition">
+                    <img src="https://images.unsplash.com/photo-1544025162-d76694265947?auto=format&fit=crop&w=500&q=80" alt="Sambal Roa Asap" class="w-full h-44 object-cover rounded-2xl mb-4">
+                    <span class="text-xs font-bold text-terracotta-700 uppercase">Jar Kaca 200g</span>
+                    <h4 class="font-serif font-bold text-lg text-warmstone-900 mt-0.5"><a href="detail.html">Sambal Roa Cakalang Asap</a></h4>
+                    <div class="flex items-center justify-between mt-3 pt-3 border-t border-warmstone-100">
+                        <span class="font-bold text-terracotta-800 text-lg">Rp42.000</span>
+                        <a href="detail.html" class="text-xs font-bold text-stone-800 hover:text-terracotta-700">PILIH &rarr;</a>
+                    </div>
+                </div>
+
+                <!-- Card 3 -->
+                <div class="bg-white rounded-3xl overflow-hidden border border-warmstone-200 p-5 shadow-sm hover:shadow-md transition">
+                    <img src="https://images.unsplash.com/photo-1555396273-367ea4eb4db5?auto=format&fit=crop&w=500&q=80" alt="Paket Trio Sambal" class="w-full h-44 object-cover rounded-2xl mb-4">
+                    <span class="text-xs font-bold text-terracotta-700 uppercase">3x Jar (600g)</span>
+                    <h4 class="font-serif font-bold text-lg text-warmstone-900 mt-0.5"><a href="detail.html">Paket Trio Sambal Nusantara</a></h4>
+                    <div class="flex items-center justify-between mt-3 pt-3 border-t border-warmstone-100">
+                        <span class="font-bold text-terracotta-800 text-lg">Rp99.000</span>
+                        <a href="detail.html" class="text-xs font-bold text-stone-800 hover:text-terracotta-700">PILIH &rarr;</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-warmstone-900 text-stone-400 pt-16 pb-12 border-t border-stone-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-10 pb-12 border-b border-stone-800">
+                <div class="lg:col-span-2 space-y-4">
+                    <a href="index.html" class="flex items-center gap-3">
+                        <div class="w-10 h-10 rounded-xl bg-terracotta-800 text-amber-400 flex items-center justify-center text-lg">
+                            <i class="fa-solid fa-pepper-hot"></i>
+                        </div>
+                        <span class="font-serif font-bold text-2xl text-white">WARISAN<span class="text-amberheritage-500">OMA</span></span>
+                    </a>
+                    <p class="text-xs text-stone-400 leading-relaxed pr-6 font-normal">
+                        Produsen sambal kemasan botol kaca premium dengan resep otentik nusantara. 100% rempah segar petani lokal, dimasak perlahan dengan minyak kelapa murni tanpa pengawet buatan.
+                    </p>
+                </div>
+                <div>
+                    <h4 class="text-white font-bold text-xs tracking-wider uppercase mb-4">Navigasi</h4>
+                    <ul class="space-y-2.5 text-xs font-semibold">
+                        <li><a href="index.html" class="hover:text-amber-400 transition">Beranda</a></li>
+                        <li><a href="katalog.html" class="hover:text-amber-400 transition">Koleksi Sambal</a></li>
+                        <li><a href="tentang.html" class="hover:text-amber-400 transition">Rahasia Rempah Oma</a></li>
+                        <li><a href="artikel.html" class="hover:text-amber-400 transition">Resep Masakan Rumahan</a></li>
+                        <li><a href="kontak.html" class="hover:text-amber-400 transition">Pemesanan & Grosir</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-white font-bold text-xs tracking-wider uppercase mb-4">Koleksi Terfavorit</h4>
+                    <ul class="space-y-2.5 text-xs font-medium">
+                        <li><a href="katalog.html" class="hover:text-amber-400 transition">Sambal Cumi Asin Bawang</a></li>
+                        <li><a href="katalog.html" class="hover:text-amber-400 transition">Sambal Bawang Ikan Klotok</a></li>
+                        <li><a href="katalog.html" class="hover:text-amber-400 transition">Sambal Roa Manado Asap</a></li>
+                        <li><a href="katalog.html" class="hover:text-amber-400 transition">Paket Trio Sambal Hampers</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-white font-bold text-xs tracking-wider uppercase mb-4">Dapur Produksi</h4>
+                    <div class="text-xs space-y-2 text-stone-400 font-normal">
+                        <p class="text-white font-bold">Jam Layanan CS:</p>
+                        <p>Senin - Minggu: 08.00 - 20.00 WIB</p>
+                        <p class="text-white font-bold pt-1">Dapur Sambal Pusat:</p>
+                        <p>Jl. Kutai Raya No. 42, Wonokromo, Surabaya, Jawa Timur</p>
+                        <p class="text-amber-400 font-bold pt-1"><i class="fa-brands fa-whatsapp"></i> +62 812-3456-7890</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="pt-8 flex flex-col md:flex-row items-center justify-between text-xs text-stone-500 gap-4">
+                <p>&copy; 2026 Sambal Warisan Oma. Hak Cipta Dilindungi.</p>
+                <div class="flex items-center gap-2">
+                    <span>Etalase Resmi UMKM didukung oleh</span>
+                    <a href="https://lenterapasar.com" target="_blank" class="text-amber-400 font-bold hover:underline">Lentera Pasar</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Floating WhatsApp Conversion Button (Offset to bottom-24) -->
+    <a href="https://wa.me/6281234567890?text=Halo%20Sambal%20Warisan%20Oma,%20saya%20mau%20pesan%20sambal." target="_blank" class="fixed bottom-24 right-6 z-40 group flex items-center gap-3 bg-terracotta-800 hover:bg-terracotta-900 text-white px-4 py-3.5 rounded-2xl shadow-xl hover:shadow-2xl transition-all duration-300 transform hover:scale-105 border border-terracotta-700" aria-label="Order via WhatsApp">
+        <i class="fa-brands fa-whatsapp text-2xl text-emerald-400"></i>
+        <span class="hidden sm:inline font-bold text-xs tracking-wider uppercase">Order Sambal WA</span>
+    </a>
+
+    <!-- ========================================================================= -->
+    <!-- LENTERA PASAR - STICKY DEMO & SALES BAR                                   -->
+    <!-- ========================================================================= -->
+    <div class="fixed bottom-4 left-1/2 -translate-x-1/2 z-50 w-[95%] max-w-4xl bg-slate-900/95 backdrop-blur-md text-white p-3.5 md:p-4 rounded-2xl shadow-2xl border border-slate-700/80 transition-all duration-300">
+      <div class="flex flex-col md:flex-row items-center justify-between gap-3 md:gap-4">
+        
+        <!-- Info Template & Value Proposition -->
+        <div class="flex items-center gap-3 w-full md:w-auto">
+          <div class="w-10 h-10 rounded-xl bg-amber-500/20 border border-amber-500/40 flex items-center justify-center shrink-0">
+            <svg class="w-5 h-5 text-amber-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z" />
+            </svg>
+          </div>
+          <div>
+            <div class="flex items-center gap-2">
+              <span class="font-bold text-sm text-white">Lentera Pasar Engine</span>
+              <span class="text-[10px] bg-emerald-500/20 text-emerald-300 border border-emerald-500/30 px-2 py-0.5 rounded-full font-medium">Free Admin Panel + Ads Support</span>
+            </div>
+            <p class="text-xs text-slate-300 hidden sm:block">
+              Terima beres: Website responsif + Panel input produk sendiri + Dikelola tim iklan profesional.
+            </p>
+          </div>
+        </div>
+
+        <!-- Poin Keunggulan & Tombol Action -->
+        <div class="flex items-center justify-between md:justify-end gap-3 w-full md:w-auto">
+          <div class="hidden lg:flex items-center gap-2 text-xs text-slate-400 border-r border-slate-700 pr-4">
+            <div class="flex items-center gap-1 text-slate-200">
+              <svg class="w-4 h-4 text-emerald-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" /></svg>
+              <span>Chat WA Instan</span>
+            </div>
+            <span class="text-slate-600">•</span>
+            <div class="flex items-center gap-1 text-slate-200">
+              <svg class="w-4 h-4 text-emerald-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" /></svg>
+              <span>Ready Meta Pixel</span>
+            </div>
+          </div>
+
+          <a href="https://wa.me/6281234567890?text=Halo%20Tim%20Lentera%20Pasar,%20saya%20tertarik%20menggunakan%20template%20website%20ini%20lengkap%20dengan%20Admin%20Panel%20dan%20Jasa%20Iklannya." 
+             target="_blank"
+             class="w-full md:w-auto inline-flex items-center justify-center gap-2 bg-gradient-to-r from-amber-500 to-orange-600 hover:from-amber-600 hover:to-orange-700 text-white text-xs md:text-sm font-semibold px-5 py-2.5 rounded-xl shadow-lg shadow-orange-500/20 transition-all hover:scale-105 shrink-0">
+            <span>Gunakan Template Ini</span>
+            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3" />
+            </svg>
+          </a>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- Detail Customizer Script -->
+    <script>
+        const mobileMenuBtn = document.getElementById('mobileMenuBtn');
+        const mobileMenu = document.getElementById('mobileMenu');
+        const menuIcon = document.getElementById('menuIcon');
+
+        mobileMenuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+            if (mobileMenu.classList.contains('hidden')) {
+                menuIcon.classList.remove('fa-xmark');
+                menuIcon.classList.add('fa-bars');
+            } else {
+                menuIcon.classList.remove('fa-bars');
+                menuIcon.classList.add('fa-xmark');
+            }
+        });
+
+        function changeImage(src, btn) {
+            const mainImg = document.getElementById('mainProductImg');
+            mainImg.style.opacity = '0.3';
+            setTimeout(() => {
+                mainImg.src = src;
+                mainImg.style.opacity = '1';
+            }, 150);
+
+            document.querySelectorAll('.thumb-btn').forEach(t => {
+                t.classList.remove('border-2', 'border-terracotta-700', 'active');
+                t.classList.add('border', 'border-warmstone-200');
+            });
+            btn.classList.remove('border', 'border-warmstone-200');
+            btn.classList.add('border-2', 'border-terracotta-700', 'active');
+        }
+
+        // Customizer State
+        let baseSizePrice = 38000;
+        let spicyExtra = 0;
+        let selectedSize = 'Jar Kaca 200g (Best Seller)';
+        let selectedSpicy = 'Level 3 (Pedas Mantap - Rekomendasi)';
+        let quantity = 1;
+
+        const displayUnitPrice = document.getElementById('displayUnitPrice');
+        const displayTotalPrice = document.getElementById('displayTotalPrice');
+        const totalPackLabel = document.getElementById('totalPackLabel');
+        const qtyVal = document.getElementById('qtyVal');
+        const btnMinus = document.getElementById('btnMinus');
+        const btnPlus = document.getElementById('btnPlus');
+        const btnOrderWa = document.getElementById('btnOrderWa');
+
+        function updateWaLink() {
+            const currentUnitPrice = baseSizePrice + spicyExtra;
+            const totalPrice = currentUnitPrice * quantity;
+
+            displayUnitPrice.textContent = 'Rp' + currentUnitPrice.toLocaleString('id-ID');
+            displayTotalPrice.textContent = 'Rp' + totalPrice.toLocaleString('id-ID');
+            totalPackLabel.textContent = quantity;
+
+            const text = `Halo Sambal Warisan Oma,\n\nSaya ingin memesan sambal botol:\n- *Produk:* Sambal Cumi Asin Bawang\n- *Ukuran Jar:* ${selectedSize}\n- *Level Pedas:* ${selectedSpicy}\n- *Jumlah:* ${quantity} Botol\n- *Estimasi Total:* Rp${totalPrice.toLocaleString('id-ID')}\n\nMohon info ketersediaan stok & ongkir pengiriman aman bubble wrap. Terima kasih!`;
+
+            btnOrderWa.href = `https://wa.me/6281234567890?text=${encodeURIComponent(text)}`;
+        }
+
+        // Size Buttons
+        const sizeBtns = document.querySelectorAll('.size-btn');
+        sizeBtns.forEach(btn => {
+            btn.addEventListener('click', () => {
+                sizeBtns.forEach(b => {
+                    b.classList.remove('border-2', 'border-terracotta-700', 'bg-terracotta-50', 'active');
+                    b.classList.add('border', 'border-warmstone-200');
+                });
+                btn.classList.add('border-2', 'border-terracotta-700', 'bg-terracotta-50', 'active');
+                btn.classList.remove('border', 'border-warmstone-200');
+
+                baseSizePrice = parseInt(btn.dataset.price);
+                selectedSize = btn.dataset.label;
+                updateWaLink();
+            });
+        });
+
+        // Spicy Buttons
+        const spicyBtns = document.querySelectorAll('.spicy-btn');
+        spicyBtns.forEach(btn => {
+            btn.addEventListener('click', () => {
+                spicyBtns.forEach(b => {
+                    b.classList.remove('border-2', 'border-terracotta-700', 'bg-terracotta-50', 'active');
+                    b.classList.add('border', 'border-warmstone-200');
+                });
+                btn.classList.add('border-2', 'border-terracotta-700', 'bg-terracotta-50', 'active');
+                btn.classList.remove('border', 'border-warmstone-200');
+
+                spicyExtra = parseInt(btn.dataset.extra);
+                selectedSpicy = btn.dataset.label;
+                updateWaLink();
+            });
+        });
+
+        // Quantity controls
+        btnPlus.addEventListener('click', () => {
+            quantity += 1;
+            qtyVal.textContent = quantity;
+            updateWaLink();
+        });
+
+        btnMinus.addEventListener('click', () => {
+            if (quantity > 1) {
+                quantity -= 1;
+                qtyVal.textContent = quantity;
+                updateWaLink();
+            }
+        });
+
+        updateWaLink();
+    </script>
+</body>
+</html>

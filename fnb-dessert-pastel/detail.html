@@ -1,0 +1,610 @@
+<!DOCTYPE html>
+<html lang="id" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sicilian Pistachio Bronte Gelato - GELATO VELVETO</title>
+    <meta name="description" content="Pesan Sicilian Pistachio Bronte Gelato segar. Pilihan cup 100ml, pint, tub 500ml dengan butter waffle cone dan kalkulator pemesanan WhatsApp instan.">
+    
+    <!-- Google Fonts: Plus Jakarta Sans & Quicksand -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Quicksand:wght@500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    
+    <!-- Tailwind CSS CDN with Custom Config -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        pastelpink: {
+                            50: '#fff1f2',
+                            100: '#ffe4e6',
+                            200: '#fecdd3',
+                            300: '#fda4af',
+                            500: '#f43f5e',
+                            600: '#e11d48',
+                            700: '#be123c',
+                        },
+                        vanillacream: {
+                            50: '#fffbeb',
+                            100: '#fef3c7',
+                            200: '#fde68a',
+                            300: '#fcd34d',
+                        },
+                        skysoft: {
+                            50: '#f0f9ff',
+                            100: '#e0f2fe',
+                            200: '#bae6fd',
+                            400: '#38bdf8',
+                        },
+                        mintsoft: {
+                            50: '#f0fdf4',
+                            100: '#dcfce7',
+                            300: '#86efac',
+                        },
+                    },
+                    fontFamily: {
+                        sans: ['"Plus Jakarta Sans"', 'sans-serif'],
+                        display: ['"Quicksand"', '"Plus Jakarta Sans"', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-pastelpink-50 text-slate-800 font-sans antialiased selection:bg-pastelpink-500 selection:text-white min-h-screen flex flex-col justify-between">
+
+    <!-- Floating Pill Header / Navbar -->
+    <div class="sticky top-4 z-40 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto w-full">
+        <header class="bg-white/90 backdrop-blur-md rounded-full px-5 sm:px-8 py-3.5 border border-pastelpink-200 shadow-[0_8px_30px_rgb(244,63,94,0.08)] flex items-center justify-between transition-all">
+            
+            <!-- Brand Logo -->
+            <a href="index.html" class="flex items-center gap-2.5 group">
+                <div class="w-10 h-10 rounded-full bg-gradient-to-br from-pastelpink-500 to-rose-400 text-white flex items-center justify-center text-lg shadow-md group-hover:scale-105 transition">
+                    <i class="fa-solid fa-ice-cream"></i>
+                </div>
+                <div>
+                    <span class="font-display font-extrabold text-xl text-slate-900 tracking-tight block leading-none">
+                        VELVETO<span class="text-pastelpink-500">.</span>
+                    </span>
+                    <span class="text-[9px] font-bold text-pastelpink-500 uppercase tracking-widest block mt-0.5">Artisan Gelato</span>
+                </div>
+            </a>
+
+            <!-- Desktop Nav Pills -->
+            <nav class="hidden md:flex items-center gap-1.5 bg-pastelpink-100/70 p-1.5 rounded-full text-xs font-bold text-slate-700">
+                <a href="index.html" class="hover:text-pastelpink-600 px-4 py-2 rounded-full transition">Beranda</a>
+                <a href="katalog.html" class="bg-white text-pastelpink-600 shadow-sm px-4 py-2 rounded-full">Varian Gelato</a>
+                <a href="tentang.html" class="hover:text-pastelpink-600 px-4 py-2 rounded-full transition">Cerita Kami</a>
+                <a href="artikel.html" class="hover:text-pastelpink-600 px-4 py-2 rounded-full transition">Tips Dessert</a>
+                <a href="kontak.html" class="hover:text-pastelpink-600 px-4 py-2 rounded-full transition">Kedai & Lokasi</a>
+            </nav>
+
+            <!-- Action Button -->
+            <div class="hidden lg:flex items-center gap-3">
+                <a href="https://wa.me/6281234567890?text=Halo%20Gelato%20Velveto,%20saya%20mau%20pesan%20gelato%20tub%20dingin." target="_blank" class="inline-flex items-center gap-2 bg-gradient-to-r from-pastelpink-500 to-rose-500 hover:from-pastelpink-600 hover:to-rose-600 text-white text-xs font-bold px-5 py-2.5 rounded-full shadow-md hover:shadow-lg transition">
+                    <i class="fa-brands fa-whatsapp text-base"></i>
+                    <span>Order Cepat WA</span>
+                </a>
+            </div>
+
+            <!-- Mobile Menu Toggle -->
+            <button id="mobileMenuBtn" class="md:hidden text-slate-700 hover:text-pastelpink-600 p-2 rounded-full bg-pastelpink-100" aria-label="Buka Menu">
+                <i class="fa-solid fa-bars text-lg" id="menuIcon"></i>
+            </button>
+        </header>
+
+        <!-- Mobile Drawer -->
+        <div id="mobileMenu" class="hidden md:hidden bg-white/95 backdrop-blur-md rounded-3xl mt-2 p-5 border border-pastelpink-200 shadow-xl space-y-2 text-xs font-bold text-slate-700">
+            <a href="index.html" class="block py-2.5 px-4 rounded-full hover:bg-pastelpink-50">Beranda</a>
+            <a href="katalog.html" class="block py-2.5 px-4 rounded-full bg-pastelpink-100 text-pastelpink-700">Varian Gelato</a>
+            <a href="tentang.html" class="block py-2.5 px-4 rounded-full hover:bg-pastelpink-50">Cerita Dapur Manis</a>
+            <a href="artikel.html" class="block py-2.5 px-4 rounded-full hover:bg-pastelpink-50">Tips Dessert</a>
+            <a href="kontak.html" class="block py-2.5 px-4 rounded-full hover:bg-pastelpink-50">Kedai & Lokasi</a>
+            <div class="pt-2">
+                <a href="https://wa.me/6281234567890?text=Halo%20Gelato%20Velveto,%20mau%20pesan%20gelato" target="_blank" class="w-full inline-flex justify-center items-center gap-2 bg-pastelpink-500 text-white font-bold py-3 rounded-full text-xs shadow-md">
+                    <i class="fa-brands fa-whatsapp text-base"></i>
+                    <span>Order WhatsApp via CS</span>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Breadcrumb -->
+    <div class="py-4 pt-6 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full">
+        <nav class="flex items-center gap-2 text-xs font-bold text-slate-400 uppercase overflow-x-auto whitespace-nowrap">
+            <a href="index.html" class="hover:text-pastelpink-600">Beranda</a>
+            <i class="fa-solid fa-chevron-right text-[10px]"></i>
+            <a href="katalog.html" class="hover:text-pastelpink-600">Varian Gelato</a>
+            <i class="fa-solid fa-chevron-right text-[10px]"></i>
+            <span class="text-pastelpink-600 truncate">Sicilian Pistachio Bronte</span>
+        </nav>
+    </div>
+
+    <!-- Product Detail Container -->
+    <main class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4 pb-16 w-full flex-1">
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-10">
+
+            <!-- Left: Interactive Gallery -->
+            <div class="lg:col-span-6 space-y-4">
+                <div class="relative rounded-[36px] overflow-hidden bg-white border border-pastelpink-200 shadow-md">
+                    <img id="mainProductImg" src="https://images.unsplash.com/photo-1560008511-11c63416e52d?auto=format&fit=crop&w=900&q=80" alt="Sicilian Pistachio Gelato" class="w-full h-[360px] sm:h-[450px] object-cover transition-opacity duration-300">
+                    <span class="absolute top-4 left-4 bg-pastelpink-500 text-white font-bold text-xs px-3.5 py-1 rounded-full uppercase shadow">
+                        BEST SELLER #1
+                    </span>
+                    <span class="absolute top-4 right-4 bg-white/95 text-slate-900 font-bold text-xs px-3 py-1 rounded-full border border-pastelpink-100 flex items-center gap-1.5 shadow-sm">
+                        <i class="fa-solid fa-certificate text-emerald-500"></i> D.O.P Bronte Certified
+                    </span>
+                </div>
+
+                <!-- Thumbnails -->
+                <div class="grid grid-cols-3 gap-3">
+                    <button class="thumb-btn active rounded-2xl overflow-hidden border-2 border-pastelpink-500 shadow-sm focus:outline-none transition" onclick="changeImage('https://images.unsplash.com/photo-1560008511-11c63416e52d?auto=format&fit=crop&w=900&q=80', this)">
+                        <img src="https://images.unsplash.com/photo-1560008511-11c63416e52d?auto=format&fit=crop&w=300&q=80" alt="Gelato Scoop" class="w-full h-20 sm:h-24 object-cover">
+                    </button>
+                    <button class="thumb-btn rounded-2xl overflow-hidden border border-pastelpink-200 hover:border-pastelpink-500 focus:outline-none transition" onclick="changeImage('https://images.unsplash.com/photo-1501443762994-82bd5dace89a?auto=format&fit=crop&w=900&q=80', this)">
+                        <img src="https://images.unsplash.com/photo-1501443762994-82bd5dace89a?auto=format&fit=crop&w=300&q=80" alt="Gelato Tub Kemasan" class="w-full h-20 sm:h-24 object-cover">
+                    </button>
+                    <button class="thumb-btn rounded-2xl overflow-hidden border border-pastelpink-200 hover:border-pastelpink-500 focus:outline-none transition" onclick="changeImage('https://images.unsplash.com/photo-1557142046-c704a3adf364?auto=format&fit=crop&w=900&q=80" alt="Hampers Box" class="w-full h-20 sm:h-24 object-cover">
+                        <img src="https://images.unsplash.com/photo-1557142046-c704a3adf364?auto=format&fit=crop&w=300&q=80" alt="Hampers Gelato" class="w-full h-20 sm:h-24 object-cover">
+                    </button>
+                </div>
+
+                <!-- Temperature & Ice Pack Info Box -->
+                <div class="bg-white p-5 rounded-3xl border border-pastelpink-200 shadow-sm flex items-center gap-4">
+                    <div class="w-12 h-12 rounded-2xl bg-skysoft-100 text-sky-500 flex items-center justify-center text-2xl flex-shrink-0">
+                        <i class="fa-solid fa-temperature-arrow-down"></i>
+                    </div>
+                    <div>
+                        <h4 class="font-display font-bold text-xs text-slate-900 uppercase">PANDUAN SUHU SIMPAN & PENGIRIMAN</h4>
+                        <p class="text-xs text-slate-500 mt-0.5">Simpan di freezer suhu <strong>-18°C</strong> (tahan 30 hari). Setiap pesanan kurir instan otomatis dilengkapi <em>ice gel pack</em> & tas pendingin berinsulasi.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Right: Product Summary & Customization Selectors -->
+            <div class="lg:col-span-6 space-y-6">
+                
+                <div>
+                    <div class="flex items-center gap-2 mb-2">
+                        <span class="bg-mintsoft-100 text-emerald-800 text-xs font-bold px-3 py-1 rounded-full uppercase">Nutty & Creamy</span>
+                        <span class="bg-vanillacream-100 text-amber-800 text-xs font-bold px-3 py-1 rounded-full uppercase">100% Real Pistachio</span>
+                    </div>
+
+                    <h1 class="text-2xl sm:text-3xl lg:text-4xl font-display font-extrabold text-slate-900 leading-tight">
+                        Sicilian Pistachio Bronte Gelato
+                    </h1>
+
+                    <div class="flex items-center gap-3 mt-2 text-xs font-medium text-slate-600">
+                        <div class="flex items-center text-amber-400 gap-1 font-bold text-slate-800">
+                            <i class="fa-solid fa-star"></i>
+                            <span>4.9 / 5.0</span>
+                            <span class="text-slate-400 font-normal">(1.240+ Cup Terjual)</span>
+                        </div>
+                        <span>•</span>
+                        <span class="text-pastelpink-600 font-bold">Ready Stock Fresh Churned</span>
+                    </div>
+                </div>
+
+                <!-- Price Box -->
+                <div class="bg-white p-5 rounded-3xl border border-pastelpink-200 shadow-sm flex items-baseline justify-between">
+                    <div>
+                        <span class="text-[11px] text-slate-400 font-bold block uppercase mb-0.5">Harga Varian Terpilih:</span>
+                        <div class="flex items-baseline gap-2">
+                            <span id="displayUnitPrice" class="text-3xl font-display font-extrabold text-pastelpink-600">Rp32.000</span>
+                            <span class="text-xs bg-pastelpink-100 text-pastelpink-700 font-bold px-2 py-0.5 rounded-full">Susu Murni Segar</span>
+                        </div>
+                    </div>
+                    <span class="text-xs font-bold text-emerald-600 text-right">Free Sendok Kayu Higienis</span>
+                </div>
+
+                <!-- Customizer Box -->
+                <div class="bg-white p-6 rounded-[32px] border border-pastelpink-200 shadow-sm space-y-5">
+                    
+                    <!-- 1. Pilihan Ukuran Kemasan -->
+                    <div>
+                        <label class="block text-xs font-bold text-slate-800 mb-2 uppercase">1. Pilih Ukuran Kemasan:</label>
+                        <div class="grid grid-cols-2 sm:grid-cols-4 gap-2">
+                            <button type="button" class="size-btn active py-2.5 px-2 rounded-2xl border-2 border-pastelpink-500 bg-pastelpink-50 text-center transition" data-price="32000" data-label="Single Cup 100ml">
+                                <span class="block font-bold text-xs text-slate-900">Cup 100ml</span>
+                                <span class="text-[10px] text-pastelpink-600 font-bold">Rp32.000</span>
+                            </button>
+                            <button type="button" class="size-btn py-2.5 px-2 rounded-2xl border border-slate-200 hover:border-pastelpink-300 text-center transition" data-price="48000" data-label="Double Scoop Cup 160ml">
+                                <span class="block font-bold text-xs text-slate-900">Double 160ml</span>
+                                <span class="text-[10px] text-slate-500 font-semibold">Rp48.000</span>
+                            </button>
+                            <button type="button" class="size-btn py-2.5 px-2 rounded-2xl border border-slate-200 hover:border-pastelpink-300 text-center transition" data-price="68000" data-label="Medium Pint Tub 350ml">
+                                <span class="block font-bold text-xs text-slate-900">Pint 350ml</span>
+                                <span class="text-[10px] text-slate-500 font-semibold">Rp68.000</span>
+                            </button>
+                            <button type="button" class="size-btn py-2.5 px-2 rounded-2xl border border-slate-200 hover:border-pastelpink-300 text-center transition" data-price="95000" data-label="Big Family Tub 500ml">
+                                <span class="block font-bold text-xs text-slate-900">Tub 500ml</span>
+                                <span class="text-[10px] text-slate-500 font-semibold">Rp95.000</span>
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- 2. Pilihan Waffle Cone / Extra Topping -->
+                    <div>
+                        <label class="block text-xs font-bold text-slate-800 mb-2 uppercase">2. Tambahan Topping / Cone:</label>
+                        <div class="grid grid-cols-2 gap-2 text-xs">
+                            <button type="button" class="top-btn active py-2 px-3 rounded-2xl border-2 border-pastelpink-500 bg-pastelpink-50 font-bold text-slate-900 text-left transition" data-extra="0" data-label="Cup Standard Saja (Free)">
+                                🍨 Cup Standard <span class="block text-[10px] font-normal text-pastelpink-600">Free / Default</span>
+                            </button>
+                            <button type="button" class="top-btn py-2 px-3 rounded-2xl border border-slate-200 hover:border-pastelpink-300 font-bold text-slate-700 text-left transition" data-extra="5000" data-label="Handmade Butter Waffle Cone (+5k)">
+                                🍦 Butter Waffle Cone <span class="block text-[10px] font-normal text-pastelpink-600">+Rp5.000</span>
+                            </button>
+                            <button type="button" class="top-btn py-2 px-3 rounded-2xl border border-slate-200 hover:border-pastelpink-300 font-bold text-slate-700 text-left transition" data-extra="6000" data-label="Extra Roasted Pistachio Crumb (+6k)">
+                                🥜 Extra Pistachio Crumb <span class="block text-[10px] font-normal text-pastelpink-600">+Rp6.000</span>
+                            </button>
+                            <button type="button" class="top-btn py-2 px-3 rounded-2xl border border-slate-200 hover:border-pastelpink-300 font-bold text-slate-700 text-left transition" data-extra="5000" data-label="Melted Dark Choco Drizzle (+5k)">
+                                🍫 Melted Choco Drizzle <span class="block text-[10px] font-normal text-pastelpink-600">+Rp5.000</span>
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- 3. Quantity Stepper -->
+                    <div class="pt-3 border-t border-pastelpink-100 flex items-center justify-between">
+                        <div>
+                            <span class="text-xs font-bold text-slate-900 block uppercase">Jumlah Pesanan:</span>
+                            <span class="text-[11px] text-pastelpink-600 font-medium">Bisa mix varian lain di chat WhatsApp</span>
+                        </div>
+                        <div class="flex items-center border border-pastelpink-200 rounded-full overflow-hidden bg-white shadow-sm">
+                            <button type="button" id="btnMinus" class="px-3.5 py-1.5 text-slate-700 hover:bg-pastelpink-100 font-bold transition">-</button>
+                            <span id="qtyVal" class="px-5 py-1.5 font-bold text-sm text-slate-900">1</span>
+                            <button type="button" id="btnPlus" class="px-3.5 py-1.5 text-slate-700 hover:bg-pastelpink-100 font-bold transition">+</button>
+                        </div>
+                    </div>
+
+                </div>
+
+                <!-- Total Price & WhatsApp Order Box -->
+                <div class="space-y-3 pt-2">
+                    
+                    <!-- Total Calculation Display -->
+                    <div class="bg-gradient-to-r from-pastelpink-600 to-rose-500 text-white p-5 rounded-3xl shadow-lg flex items-center justify-between">
+                        <div>
+                            <span class="text-[10px] font-bold uppercase text-rose-100">TOTAL HARGA (<span id="totalItemLabel">1</span> ITEM):</span>
+                            <h3 id="displayTotalPrice" class="text-2xl sm:text-3xl font-display font-extrabold text-white">Rp32.000</h3>
+                        </div>
+                        <span class="text-xs font-bold bg-white/20 backdrop-blur text-white px-3 py-1.5 rounded-full">Free Ice Gel</span>
+                    </div>
+
+                    <!-- WhatsApp CTA -->
+                    <a id="btnOrderWa" href="https://wa.me/6281234567890?text=Halo%20Gelato%20Velveto,%20saya%20mau%20pesan%20Sicilian%20Pistachio%20Gelato" target="_blank" class="w-full flex items-center justify-center gap-2.5 bg-pastelpink-500 hover:bg-pastelpink-600 text-white font-bold text-xs sm:text-sm py-4 px-6 rounded-full shadow-lg shadow-pastelpink-500/25 hover:shadow-xl transition uppercase tracking-wider">
+                        <i class="fa-brands fa-whatsapp text-2xl"></i>
+                        <span>PESAN DINGIN VIA WHATSAPP</span>
+                    </a>
+
+                    <!-- Marketplace Buttons -->
+                    <div class="grid grid-cols-3 gap-2 pt-1">
+                        <a href="https://gofood.co.id" target="_blank" class="py-2.5 rounded-2xl bg-white border border-pastelpink-200 hover:bg-pastelpink-50 text-slate-700 text-xs font-bold text-center transition flex items-center justify-center gap-1.5">
+                            <i class="fa-solid fa-motorcycle text-emerald-500"></i> GoFood
+                        </a>
+                        <a href="https://grab.com" target="_blank" class="py-2.5 rounded-2xl bg-white border border-pastelpink-200 hover:bg-pastelpink-50 text-slate-700 text-xs font-bold text-center transition flex items-center justify-center gap-1.5">
+                            <i class="fa-solid fa-bag-shopping text-emerald-600"></i> GrabFood
+                        </a>
+                        <a href="https://shopee.co.id" target="_blank" class="py-2.5 rounded-2xl bg-white border border-pastelpink-200 hover:bg-pastelpink-50 text-slate-700 text-xs font-bold text-center transition flex items-center justify-center gap-1.5">
+                            <i class="fa-solid fa-store text-amber-600"></i> ShopeeFood
+                        </a>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+
+        <!-- Flavour Profile & Texture Details -->
+        <div class="mt-14 bg-white rounded-[36px] border border-pastelpink-200 p-8 sm:p-12 shadow-sm space-y-6">
+            <div>
+                <span class="text-pastelpink-600 text-xs font-bold uppercase tracking-wider">PROFIL RASA & TEKSTUR</span>
+                <h2 class="text-2xl sm:text-3xl font-display font-extrabold text-slate-900 mt-1">
+                    Sains di Balik Kelezatan Sicilian Pistachio Bronte
+                </h2>
+            </div>
+            
+            <div class="text-slate-600 text-sm leading-relaxed space-y-4 font-normal">
+                <p>
+                    Kacang pistachio dari kota Bronte di lereng gunung berapi Etna, Sisilia, terkenal sebagai <em>"Green Gold of Sicily"</em> karena kandungan minyak alaminya yang tinggi dan rasa gurih yang sangat pekat. Kami memanggangnya secara perlahan sebelum digiling halus menjadi pasta murni tanpa perisa sintetik.
+                </p>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-4 pt-2">
+                    <div class="p-4 rounded-2xl bg-pastelpink-50 border border-pastelpink-200">
+                        <h4 class="font-bold text-xs text-slate-900 uppercase mb-1">1. Tekstur Super Kental</h4>
+                        <p class="text-xs text-slate-500">Dengan overrun udara rendah khas tradisi Italia, gelato ini terasa padat namun meleleh lumer seketika di lidah.</p>
+                    </div>
+                    <div class="p-4 rounded-2xl bg-pastelpink-50 border border-pastelpink-200">
+                        <h4 class="font-bold text-xs text-slate-900 uppercase mb-1">2. Rendah Lemak Jenuh</h4>
+                        <p class="text-xs text-slate-500">Menggunakan susu murni segar tanpa tambahan whipped cream berat buatan pabrik sehingga lebih ringan di perut.</p>
+                    </div>
+                    <div class="p-4 rounded-2xl bg-pastelpink-50 border border-pastelpink-200">
+                        <h4 class="font-bold text-xs text-slate-900 uppercase mb-1">3. Bebas Pengawet</h4>
+                        <p class="text-xs text-slate-500">Diproduksi harian dalam batch kecil (*small batch churning*) untuk menjamin kesegaran rasa optimal.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Related Items -->
+        <div class="mt-14">
+            <div class="flex items-center justify-between mb-8">
+                <div>
+                    <span class="text-pastelpink-600 text-xs font-bold uppercase tracking-wider">REKOMENDASI MANIS LAINNYA</span>
+                    <h2 class="text-2xl font-display font-extrabold text-slate-900 mt-0.5">Sempurna Dipadukan Bersama</h2>
+                </div>
+                <a href="katalog.html" class="text-xs font-bold text-pastelpink-600 hover:underline uppercase">Lihat Semua &rarr;</a>
+            </div>
+
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+                <!-- Card 1 -->
+                <div class="bg-white rounded-[32px] overflow-hidden border border-pastelpink-200 p-5 shadow-sm hover:shadow-md transition">
+                    <img src="https://images.unsplash.com/photo-1501443762994-82bd5dace89a?auto=format&fit=crop&w=500&q=80" alt="Wild Berry" class="w-full h-44 object-cover rounded-2xl mb-4">
+                    <span class="text-xs font-bold text-rose-600 uppercase">Tub 500ml</span>
+                    <h4 class="font-display font-bold text-base text-slate-900 mt-0.5"><a href="detail.html">Wild Berry Cream Cheese</a></h4>
+                    <div class="flex items-center justify-between mt-3 pt-3 border-t border-pastelpink-100">
+                        <span class="font-extrabold text-pastelpink-600 text-lg">Rp95.000</span>
+                        <a href="detail.html" class="text-xs font-bold text-slate-700 hover:text-pastelpink-600">PILIH &rarr;</a>
+                    </div>
+                </div>
+
+                <!-- Card 2 -->
+                <div class="bg-white rounded-[32px] overflow-hidden border border-pastelpink-200 p-5 shadow-sm hover:shadow-md transition">
+                    <img src="https://images.unsplash.com/photo-1563805042-7684c019e1cb?auto=format&fit=crop&w=500&q=80" alt="Dark Choco" class="w-full h-44 object-cover rounded-2xl mb-4">
+                    <span class="text-xs font-bold text-amber-800 uppercase">Cup 100ml</span>
+                    <h4 class="font-display font-bold text-base text-slate-900 mt-0.5"><a href="detail.html">70% Belgian Dark Choco</a></h4>
+                    <div class="flex items-center justify-between mt-3 pt-3 border-t border-pastelpink-100">
+                        <span class="font-extrabold text-pastelpink-600 text-lg">Rp30.000</span>
+                        <a href="detail.html" class="text-xs font-bold text-slate-700 hover:text-pastelpink-600">PILIH &rarr;</a>
+                    </div>
+                </div>
+
+                <!-- Card 3 -->
+                <div class="bg-white rounded-[32px] overflow-hidden border border-pastelpink-200 p-5 shadow-sm hover:shadow-md transition">
+                    <img src="https://images.unsplash.com/photo-1557142046-c704a3adf364?auto=format&fit=crop&w=500&q=80" alt="Hampers" class="w-full h-44 object-cover rounded-2xl mb-4">
+                    <span class="text-xs font-bold text-pastelpink-600 uppercase">Gift Box</span>
+                    <h4 class="font-display font-bold text-base text-slate-900 mt-0.5"><a href="detail.html">Pastel Sweet Gift Hampers</a></h4>
+                    <div class="flex items-center justify-between mt-3 pt-3 border-t border-pastelpink-100">
+                        <span class="font-extrabold text-pastelpink-600 text-lg">Rp250.000</span>
+                        <a href="detail.html" class="text-xs font-bold text-slate-700 hover:text-pastelpink-600">PILIH &rarr;</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-white text-slate-600 pt-16 pb-12 border-t border-pastelpink-200">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-10 pb-12 border-b border-pastelpink-100">
+                <div class="lg:col-span-2 space-y-4">
+                    <a href="index.html" class="flex items-center gap-2.5">
+                        <div class="w-10 h-10 rounded-full bg-pastelpink-500 text-white flex items-center justify-center text-lg">
+                            <i class="fa-solid fa-ice-cream"></i>
+                        </div>
+                        <span class="font-display font-extrabold text-2xl text-slate-900">VELVETO<span class="text-pastelpink-500">.</span></span>
+                    </a>
+                    <p class="text-xs text-slate-500 leading-relaxed pr-6 font-normal">
+                        Artisan gelato & dessert parlour dengan resep otentik Italia dan bahan segar alami Indonesia. Rendah lemak, tanpa pengawet buatan, dan penuh keceriaan manis.
+                    </p>
+                </div>
+                <div>
+                    <h4 class="text-slate-900 font-extrabold text-xs tracking-wider uppercase mb-4">Eksplorasi</h4>
+                    <ul class="space-y-2.5 text-xs font-semibold">
+                        <li><a href="index.html" class="hover:text-pastelpink-600 transition">Beranda</a></li>
+                        <li><a href="katalog.html" class="hover:text-pastelpink-600 transition">Katalog Varian Gelato</a></li>
+                        <li><a href="tentang.html" class="hover:text-pastelpink-600 transition">Cerita Dapur Manis</a></li>
+                        <li><a href="artikel.html" class="hover:text-pastelpink-600 transition">Tips Dessert & Pairing</a></li>
+                        <li><a href="kontak.html" class="hover:text-pastelpink-600 transition">Kedai & Lokasi</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-slate-900 font-extrabold text-xs tracking-wider uppercase mb-4">Rasa Favorit</h4>
+                    <ul class="space-y-2.5 text-xs font-medium">
+                        <li><a href="katalog.html" class="hover:text-pastelpink-600 transition">Sicilian Pistachio</a></li>
+                        <li><a href="katalog.html" class="hover:text-pastelpink-600 transition">Wild Berry Cheesecake</a></li>
+                        <li><a href="katalog.html" class="hover:text-pastelpink-600 transition">70% Belgian Dark Choco</a></li>
+                        <li><a href="katalog.html" class="hover:text-pastelpink-600 transition">Mango Passion Sorbet</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-slate-900 font-extrabold text-xs tracking-wider uppercase mb-4">Parlour Kami</h4>
+                    <div class="text-xs space-y-2 text-slate-500 font-normal">
+                        <p class="text-slate-900 font-bold">Jam Operasional:</p>
+                        <p>Setiap Hari: 10.00 - 22.00 WIB</p>
+                        <p class="text-slate-900 font-bold pt-1">Lokasi:</p>
+                        <p>Jl. Dharmawangsa Raya No. 16, Kebayoran Baru, Jakarta Selatan</p>
+                        <p class="text-pastelpink-600 font-bold pt-1"><i class="fa-brands fa-whatsapp"></i> +62 812-3456-7890</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="pt-8 flex flex-col md:flex-row items-center justify-between text-xs text-slate-400 gap-4">
+                <p>&copy; 2026 Gelato Velveto Artisan Parlour. Hak Cipta Dilindungi.</p>
+                <div class="flex items-center gap-2">
+                    <span>Etalase Resmi UMKM didukung oleh</span>
+                    <a href="https://lenterapasar.com" target="_blank" class="text-pastelpink-600 font-bold hover:underline">Lentera Pasar</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Floating WhatsApp Conversion Button -->
+    <a href="https://wa.me/6281234567890?text=Halo%20Gelato%20Velveto,%20saya%20mau%20order%20gelato." target="_blank" class="fixed bottom-24 right-6 z-50 group flex items-center gap-2.5 bg-gradient-to-r from-pastelpink-500 to-rose-500 hover:from-pastelpink-600 hover:to-rose-600 text-white px-4 py-3.5 rounded-full shadow-xl hover:shadow-2xl transition-all duration-300 transform hover:scale-105" aria-label="Order via WhatsApp">
+        <i class="fa-brands fa-whatsapp text-2xl"></i>
+        <span class="hidden sm:inline font-bold text-xs tracking-wider uppercase">Pesan Gelato WA</span>
+    </a>
+
+    <!-- Detail Dynamic Script -->
+    <script>
+        const mobileMenuBtn = document.getElementById('mobileMenuBtn');
+        const mobileMenu = document.getElementById('mobileMenu');
+        const menuIcon = document.getElementById('menuIcon');
+
+        mobileMenuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+            if (mobileMenu.classList.contains('hidden')) {
+                menuIcon.classList.remove('fa-xmark');
+                menuIcon.classList.add('fa-bars');
+            } else {
+                menuIcon.classList.remove('fa-bars');
+                menuIcon.classList.add('fa-xmark');
+            }
+        });
+
+        function changeImage(src, btn) {
+            const mainImg = document.getElementById('mainProductImg');
+            mainImg.style.opacity = '0.3';
+            setTimeout(() => {
+                mainImg.src = src;
+                mainImg.style.opacity = '1';
+            }, 150);
+
+            document.querySelectorAll('.thumb-btn').forEach(t => {
+                t.classList.remove('border-2', 'border-pastelpink-500', 'active');
+                t.classList.add('border', 'border-pastelpink-200');
+            });
+            btn.classList.remove('border', 'border-pastelpink-200');
+            btn.classList.add('border-2', 'border-pastelpink-500', 'active');
+        }
+
+        // Customizer State
+        let baseSizePrice = 32000;
+        let toppingExtra = 0;
+        let selectedSize = 'Single Cup 100ml';
+        let selectedTopping = 'Cup Standard Saja (Free)';
+        let quantity = 1;
+
+        const displayUnitPrice = document.getElementById('displayUnitPrice');
+        const displayTotalPrice = document.getElementById('displayTotalPrice');
+        const totalItemLabel = document.getElementById('totalItemLabel');
+        const qtyVal = document.getElementById('qtyVal');
+        const btnMinus = document.getElementById('btnMinus');
+        const btnPlus = document.getElementById('btnPlus');
+        const btnOrderWa = document.getElementById('btnOrderWa');
+
+        function updateWaLink() {
+            const currentUnitPrice = baseSizePrice + toppingExtra;
+            const totalPrice = currentUnitPrice * quantity;
+
+            displayUnitPrice.textContent = 'Rp' + currentUnitPrice.toLocaleString('id-ID');
+            displayTotalPrice.textContent = 'Rp' + totalPrice.toLocaleString('id-ID');
+            totalItemLabel.textContent = quantity;
+
+            const text = `Halo Gelato Velveto,\n\nSaya ingin memesan:\n- *Varian Rasa:* Sicilian Pistachio Bronte\n- *Ukuran Kemasan:* ${selectedSize}\n- *Tambahan Topping/Cone:* ${selectedTopping}\n- *Jumlah:* ${quantity} Porsi\n- *Estimasi Total:* Rp${totalPrice.toLocaleString('id-ID')}\n\nMohon info ketersediaan kurir delivery instan & estimasi ongkir. Terima kasih!`;
+
+            btnOrderWa.href = `https://wa.me/6281234567890?text=${encodeURIComponent(text)}`;
+        }
+
+        // Size Buttons
+        const sizeBtns = document.querySelectorAll('.size-btn');
+        sizeBtns.forEach(btn => {
+            btn.addEventListener('click', () => {
+                sizeBtns.forEach(b => {
+                    b.classList.remove('border-2', 'border-pastelpink-500', 'bg-pastelpink-50', 'active');
+                    b.classList.add('border', 'border-slate-200');
+                    b.querySelector('span:last-child').classList.remove('text-pastelpink-600', 'font-bold');
+                    b.querySelector('span:last-child').classList.add('text-slate-500', 'font-semibold');
+                });
+                btn.classList.add('border-2', 'border-pastelpink-500', 'bg-pastelpink-50', 'active');
+                btn.classList.remove('border', 'border-slate-200');
+                btn.querySelector('span:last-child').classList.add('text-pastelpink-600', 'font-bold');
+                btn.querySelector('span:last-child').classList.remove('text-slate-500', 'font-semibold');
+
+                baseSizePrice = parseInt(btn.dataset.price);
+                selectedSize = btn.dataset.label;
+                updateWaLink();
+            });
+        });
+
+        // Topping Buttons
+        const topBtns = document.querySelectorAll('.top-btn');
+        topBtns.forEach(btn => {
+            btn.addEventListener('click', () => {
+                topBtns.forEach(b => {
+                    b.classList.remove('border-2', 'border-pastelpink-500', 'bg-pastelpink-50', 'active');
+                    b.classList.add('border', 'border-slate-200');
+                });
+                btn.classList.add('border-2', 'border-pastelpink-500', 'bg-pastelpink-50', 'active');
+                btn.classList.remove('border', 'border-slate-200');
+
+                toppingExtra = parseInt(btn.dataset.extra);
+                selectedTopping = btn.dataset.label;
+                updateWaLink();
+            });
+        });
+
+        // Quantity controls
+        btnPlus.addEventListener('click', () => {
+            quantity += 1;
+            qtyVal.textContent = quantity;
+            updateWaLink();
+        });
+
+        btnMinus.addEventListener('click', () => {
+            if (quantity > 1) {
+                quantity -= 1;
+                qtyVal.textContent = quantity;
+                updateWaLink();
+            }
+        });
+
+        updateWaLink();
+    </script>
+<!-- ========================================================================= -->
+<!-- LENTERA PASAR - STICKY DEMO & SALES BAR                                   -->
+<!-- ========================================================================= -->
+<div class="fixed bottom-4 left-1/2 -translate-x-1/2 z-50 w-[95%] max-w-4xl bg-slate-900/95 backdrop-blur-md text-white p-3.5 md:p-4 rounded-2xl shadow-2xl border border-slate-700/80 transition-all duration-300">
+  <div class="flex flex-col md:flex-row items-center justify-between gap-3 md:gap-4">
+    
+    <!-- Info Template & Value Proposition -->
+    <div class="flex items-center gap-3 w-full md:w-auto">
+      <div class="w-10 h-10 rounded-xl bg-amber-500/20 border border-amber-500/40 flex items-center justify-center shrink-0">
+        <svg class="w-5 h-5 text-amber-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z" />
+        </svg>
+      </div>
+      <div>
+        <div class="flex items-center gap-2">
+          <span class="font-bold text-sm text-white">Lentera Pasar Engine</span>
+          <span class="text-[10px] bg-emerald-500/20 text-emerald-300 border border-emerald-500/30 px-2 py-0.5 rounded-full font-medium">Free Admin Panel + Ads Support</span>
+        </div>
+        <p class="text-xs text-slate-300 hidden sm:block">
+          Terima beres: Website responsif + Panel input produk sendiri + Dikelola tim iklan profesional.
+        </p>
+      </div>
+    </div>
+
+    <!-- Poin Keunggulan & Tombol Action -->
+    <div class="flex items-center justify-between md:justify-end gap-3 w-full md:w-auto">
+      <div class="hidden lg:flex items-center gap-2 text-xs text-slate-400 border-r border-slate-700 pr-4">
+        <div class="flex items-center gap-1 text-slate-200">
+          <svg class="w-4 h-4 text-emerald-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" /></svg>
+          <span>Chat WA Instan</span>
+        </div>
+        <span class="text-slate-600">•</span>
+        <div class="flex items-center gap-1 text-slate-200">
+          <svg class="w-4 h-4 text-emerald-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" /></svg>
+          <span>Ready Meta Pixel</span>
+        </div>
+      </div>
+
+      <a href="https://wa.me/6281234567890?text=Halo%20Tim%20Lentera%20Pasar,%20saya%20tertarik%20menggunakan%20template%20website%20ini%20lengkap%20dengan%20Admin%20Panel%20dan%20Jasa%20Iklannya." 
+         target="_blank"
+         class="w-full md:w-auto inline-flex items-center justify-center gap-2 bg-gradient-to-r from-amber-500 to-orange-600 hover:from-amber-600 hover:to-orange-700 text-white text-xs md:text-sm font-semibold px-5 py-2.5 rounded-xl shadow-lg shadow-orange-500/20 transition-all hover:scale-105 shrink-0">
+        <span>Gunakan Template Ini</span>
+        <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3" />
+        </svg>
+      </a>
+    </div>
+
+  </div>
+</div>
+
+</body>
+</html>

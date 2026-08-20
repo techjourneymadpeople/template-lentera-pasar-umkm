@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="id" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Panduan Seduh Manual V60 di Rumah - OBSIDIAN Coffee Roasters</title>
+    <meta name="description" content="Pelajari rasio gramatur, suhu air ideal, dan teknik tuang 4:6 pour method untuk mengekstraksi cita rasa maksimal biji kopi arabika di rumah.">
+    
+    <!-- Google Fonts: Inter + Cormorant Garamond -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;0,700;1,400;1,600&family=Inter:wght@300;400;500;600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    
+    <!-- Tailwind CSS CDN with Custom Config -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        obsidian: {
+                            950: '#0a0a0c',
+                            900: '#121216',
+                            850: '#18181f',
+                            800: '#22222b',
+                            700: '#32323e',
+                        },
+                        ambercaramel: {
+                            300: '#fde68a',
+                            400: '#fbbf24',
+                            500: '#f59e0b',
+                            600: '#d97706',
+                        },
+                        subtleborder: '#272733',
+                    },
+                    fontFamily: {
+                        sans: ['"Inter"', '"Plus Jakarta Sans"', 'sans-serif'],
+                        serif: ['"Cormorant Garamond"', 'serif'],
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-obsidian-950 text-stone-200 font-sans antialiased selection:bg-ambercaramel-500 selection:text-obsidian-950 min-h-screen flex flex-col justify-between">
+
+    <!-- Header / Navbar -->
+    <header class="sticky top-0 z-40 bg-obsidian-950/90 backdrop-blur-lg border-b border-subtleborder transition-all">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-20">
+                
+                <!-- Brand Logo -->
+                <a href="index.html" class="flex items-center gap-3 group">
+                    <div class="w-10 h-10 rounded-full bg-obsidian-900 border border-ambercaramel-500/40 text-ambercaramel-400 flex items-center justify-center text-lg group-hover:border-ambercaramel-400 transition-all shadow-[0_0_15px_rgba(251,191,36,0.15)]">
+                        <i class="fa-solid fa-mug-hot"></i>
+                    </div>
+                    <div>
+                        <span class="text-xl sm:text-2xl font-serif font-bold tracking-wider text-stone-100 block leading-none uppercase">
+                            OBSIDIAN
+                        </span>
+                        <span class="text-[9px] font-sans font-semibold tracking-[0.25em] text-ambercaramel-400 uppercase">Coffee Roasters</span>
+                    </div>
+                </a>
+
+                <!-- Desktop Nav -->
+                <nav class="hidden md:flex items-center gap-8 font-medium text-stone-300 text-xs tracking-widest uppercase">
+                    <a href="index.html" class="hover:text-ambercaramel-400 transition">Beranda</a>
+                    <a href="katalog.html" class="hover:text-ambercaramel-400 transition">Katalog Kopi</a>
+                    <a href="tentang.html" class="hover:text-ambercaramel-400 transition">Filosofi & Roastery</a>
+                    <a href="artikel.html" class="text-ambercaramel-400 font-semibold border-b border-ambercaramel-400 pb-1">Jurnal Seduh</a>
+                    <a href="kontak.html" class="hover:text-ambercaramel-400 transition">Kedai & Lokasi</a>
+                </nav>
+
+                <!-- Action Button -->
+                <div class="hidden lg:flex items-center gap-4">
+                    <a href="https://wa.me/6281234567890?text=Halo%20Obsidian%20Coffee,%20saya%20mau%20order%20kopi." target="_blank" class="inline-flex items-center gap-2 bg-gradient-to-r from-ambercaramel-500 to-ambercaramel-600 hover:from-ambercaramel-400 hover:to-ambercaramel-500 text-obsidian-950 text-xs font-bold px-5 py-2.5 rounded-full shadow-[0_0_20px_rgba(245,158,11,0.25)] transition-all uppercase tracking-wider">
+                        <i class="fa-brands fa-whatsapp text-sm"></i>
+                        <span>Order via WhatsApp</span>
+                    </a>
+                </div>
+
+                <!-- Mobile Menu Button -->
+                <button id="mobileMenuBtn" class="md:hidden text-stone-300 hover:text-white p-2 rounded-lg bg-obsidian-900 border border-subtleborder" aria-label="Buka Menu">
+                    <i class="fa-solid fa-bars text-lg" id="menuIcon"></i>
+                </button>
+            </div>
+        </div>
+
+        <!-- Mobile Drawer -->
+        <div id="mobileMenu" class="hidden md:hidden bg-obsidian-900 border-b border-subtleborder px-6 pt-4 pb-6 space-y-4">
+            <a href="index.html" class="block py-2 text-stone-300 hover:text-white text-xs uppercase tracking-widest">Beranda</a>
+            <a href="katalog.html" class="block py-2 text-stone-300 hover:text-white text-xs uppercase tracking-widest">Katalog Kopi</a>
+            <a href="tentang.html" class="block py-2 text-stone-300 hover:text-white text-xs uppercase tracking-widest">Filosofi & Roastery</a>
+            <a href="artikel.html" class="block py-2 text-ambercaramel-400 font-bold text-xs uppercase tracking-widest">Jurnal Seduh</a>
+            <a href="kontak.html" class="block py-2 text-stone-300 hover:text-white text-xs uppercase tracking-widest">Kedai & Lokasi</a>
+            <div class="pt-2">
+                <a href="https://wa.me/6281234567890?text=Halo%20Obsidian%20Coffee,%20saya%20mau%20order" target="_blank" class="w-full inline-flex justify-center items-center gap-2 bg-ambercaramel-500 text-obsidian-950 font-bold py-3 rounded-full text-xs uppercase tracking-wider">
+                    <i class="fa-brands fa-whatsapp text-base"></i>
+                    <span>Order Cepat via WhatsApp</span>
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Breadcrumb -->
+    <div class="bg-obsidian-900 border-b border-subtleborder py-3">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+            <nav class="flex items-center gap-2 text-xs font-mono text-stone-500 uppercase overflow-x-auto whitespace-nowrap">
+                <a href="index.html" class="hover:text-ambercaramel-400">Beranda</a>
+                <i class="fa-solid fa-chevron-right text-[10px]"></i>
+                <a href="artikel.html" class="hover:text-ambercaramel-400">Jurnal Seduh</a>
+                <i class="fa-solid fa-chevron-right text-[10px]"></i>
+                <span class="text-ambercaramel-400 font-bold truncate">Panduan Seduh V60 Presisi</span>
+            </nav>
+        </div>
+    </div>
+
+    <!-- Article Detail Container -->
+    <main class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-12 w-full flex-1 space-y-10">
+
+        <div class="space-y-4">
+            <div class="flex flex-wrap items-center gap-3 text-xs font-mono text-stone-400 uppercase">
+                <span class="bg-ambercaramel-500/10 text-ambercaramel-300 border border-ambercaramel-500/30 px-3 py-0.5 rounded-full">MANUAL BREW GUIDE</span>
+                <span>•</span>
+                <span>20 Agustus 2026</span>
+                <span>•</span>
+                <span>Waktu Baca: 5 Menit</span>
+            </div>
+
+            <h1 class="text-3xl sm:text-4xl lg:text-5xl font-serif text-stone-100 font-normal leading-tight">
+                Panduan Seduh Manual V60 di Rumah: Rasio, Suhu Air, dan Teknik Pouring Presisi
+            </h1>
+
+            <div class="flex items-center justify-between py-4 border-y border-subtleborder">
+                <div class="flex items-center gap-3">
+                    <div class="w-11 h-11 rounded-full bg-obsidian-900 border border-ambercaramel-500/50 text-ambercaramel-400 flex items-center justify-center text-sm font-serif font-bold">
+                        OB
+                    </div>
+                    <div>
+                        <h4 class="font-serif text-base text-stone-200">Dimas Pratama</h4>
+                        <p class="text-[11px] font-mono text-ambercaramel-400 uppercase tracking-widest">Head Barista & Q-Grader Obsidian</p>
+                    </div>
+                </div>
+
+                <div class="flex items-center gap-2">
+                    <a href="https://wa.me/?text=Panduan%20Seduh%20V60%20Obsidian%20Coffee" target="_blank" class="w-9 h-9 rounded-full bg-obsidian-900 border border-subtleborder hover:border-emerald-400 text-stone-300 hover:text-emerald-400 flex items-center justify-center text-sm transition" title="Share WA">
+                        <i class="fa-brands fa-whatsapp"></i>
+                    </a>
+                    <a href="https://www.facebook.com/sharer/sharer.php" target="_blank" class="w-9 h-9 rounded-full bg-obsidian-900 border border-subtleborder hover:border-blue-400 text-stone-300 hover:text-blue-400 flex items-center justify-center text-sm transition" title="Share Facebook">
+                        <i class="fa-brands fa-facebook-f"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Featured Image -->
+        <div class="rounded-3xl overflow-hidden border border-subtleborder shadow-2xl bg-obsidian-900">
+            <img src="https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?auto=format&fit=crop&w=1200&q=80" alt="V60 Pouring Art" class="w-full h-[340px] sm:h-[480px] object-cover">
+            <p class="text-center font-mono text-xs text-stone-400 py-3 bg-obsidian-950 border-t border-subtleborder">
+                Ekstraksi V60 Menggunakan Biji Single Origin Gayo Wine 15 Gram.
+            </p>
+        </div>
+
+        <!-- Article Content -->
+        <article class="prose prose-invert max-w-none text-stone-300 text-sm sm:text-base font-light leading-relaxed space-y-6">
+            <p class="text-base sm:text-lg font-normal text-stone-100 leading-relaxed">
+                Menyeduh kopi dengan dripper kerucut V60 sering kali dianggap rumit, padahal dengan memahami variabel dasar seperti rasio, suhu air, dan pembagian waktu tuang (*pour method*), kamu bisa menghasilkan seduhan beraroma kompleks layaknya barista kedai profesional.
+            </p>
+
+            <h2 class="font-serif text-2xl text-stone-100 pt-2 font-normal">1. Menentukan Rasio Seduh yang Seimbang (1:15)</h2>
+            <p>
+                Untuk biji kopi arabika berkarakter *light to medium roast* (seperti Gayo Wine atau Flores Bajawa), kami merekomendasikan rasio <strong>1:15</strong>. Artinya, setiap <strong>15 gram bubuk kopi</strong> akan diseduh dengan total <strong>225 gram air panas</strong>. Rasio ini menghasilkan kepekatan (*Total Dissolved Solids*) yang seimbang tanpa rasa pahit berlebih (*over-extraction*).
+            </p>
+
+            <!-- Callout Quote -->
+            <div class="bg-obsidian-900 border-l-2 border-ambercaramel-400 p-6 rounded-r-2xl my-6 space-y-2">
+                <p class="italic text-stone-200 font-serif text-lg">
+                    “Kunci utama V60 adalah konsistensi gilingan bubuk kopi. Hindari gilingan yang terlalu halus seperti espresso karena akan menyumbat filter dan memicu rasa pahit getir.”
+                </p>
+                <span class="block text-xs font-mono text-ambercaramel-400 uppercase tracking-widest">— Dimas Pratama, Head Barista</span>
+            </div>
+
+            <h2 class="font-serif text-2xl text-stone-100 pt-2 font-normal">2. Suhu Air Ideal & Tahap Blooming (Pelepasan CO2)</h2>
+            <p>
+                Gunakan air panas dengan suhu berkisar antara <strong>91°C - 93°C</strong>. Tuangan pertama sebesar 45 gram air difokuskan untuk membasahi seluruh permukaan bubuk kopi. Diamkan selama <strong>35-40 detik</strong>. Tahap *blooming* ini krusial untuk membuang gas karbon dioksida sisa proses sangrai agar air dapat mengekstrak senyawa manis dan asam buah secara merata.
+            </p>
+
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 my-6">
+                <img src="https://images.unsplash.com/photo-1447933601403-0c6688de566e?auto=format&fit=crop&w=500&q=80" alt="Coffee beans" class="rounded-2xl h-48 w-full object-cover border border-subtleborder">
+                <img src="https://images.unsplash.com/photo-1517701550927-30cf4ba1dba5?auto=format&fit=crop&w=500&q=80" alt="Iced Pour" class="rounded-2xl h-48 w-full object-cover border border-subtleborder">
+            </div>
+
+            <h2 class="font-serif text-2xl text-stone-100 pt-2 font-normal">3. Teknik Tuang 4:6 Method untuk Mengatur Manis & Keasaman</h2>
+            <p>
+                Bagi total 225 gram air menjadi beberapa tahap tuangan melingkar perlahan dari bagian tengah menuju ke luar (tanpa menyentuh kertas filter):
+            </p>
+            <ul class="list-disc pl-5 space-y-1.5 text-stone-400 text-xs font-mono">
+                <li><strong>Tuangan 1 (0:00 - 0:40):</strong> 45 gram (Blooming fase)</li>
+                <li><strong>Tuangan 2 (0:40 - 1:15):</strong> 45 gram (Membentuk keasaman & sweetness)</li>
+                <li><strong>Tuangan 3 (1:15 - 1:50):</strong> 45 gram (Membangun body)</li>
+                <li><strong>Tuangan 4 (1:50 - 2:30):</strong> 90 gram (Finishing)</li>
+            </ul>
+        </article>
+
+        <!-- Inline WhatsApp Order CTA Box -->
+        <div class="bg-obsidian-900 rounded-3xl p-8 sm:p-10 border border-ambercaramel-500/40 shadow-2xl flex flex-col sm:flex-row items-center justify-between gap-6 my-10">
+            <div class="space-y-2 text-center sm:text-left">
+                <span class="bg-ambercaramel-500/10 text-ambercaramel-300 border border-ambercaramel-500/30 text-[10px] font-mono px-3 py-1 rounded-full uppercase">ORDER BEANS VIA WA</span>
+                <h3 class="font-serif text-2xl sm:text-3xl text-stone-100">Mau Coba Biji Single Origin Kami di Rumah?</h3>
+                <p class="text-xs font-light text-stone-400 max-w-md leading-relaxed">
+                    Pesan fresh roasted beans (Gayo Wine / Flores Bajawa / Ijen Anaerobic) dengan request tingkat gilingan bubuk langsung dari barista kami.
+                </p>
+            </div>
+            <a href="https://wa.me/6281234567890?text=Halo%20Obsidian%20Coffee,%20saya%20membaca%20panduan%20V60%20dan%20ingin%20pesan%20biji%20kopi%20single%20origin." target="_blank" class="px-8 py-4 bg-gradient-to-r from-ambercaramel-500 to-ambercaramel-600 hover:from-ambercaramel-400 hover:to-ambercaramel-500 text-obsidian-950 font-bold text-xs rounded-full uppercase tracking-wider flex-shrink-0 flex items-center gap-2 transition shadow">
+                <i class="fa-brands fa-whatsapp text-lg"></i>
+                <span>PESAN BEANS VIA WA</span>
+            </a>
+        </div>
+
+        <!-- Related Articles -->
+        <div class="pt-8 border-t border-subtleborder">
+            <h3 class="font-serif text-2xl text-stone-100 mb-6">Jurnal Seduh Lainnya</h3>
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+                <a href="baca-artikel.html" class="p-5 rounded-2xl bg-obsidian-900 border border-subtleborder hover:border-ambercaramel-500/40 transition flex items-center gap-4 group">
+                    <img src="https://images.unsplash.com/photo-1514432324607-a09d9b4aefdd?auto=format&fit=crop&w=200&q=80" alt="Cold brew" class="w-20 h-20 rounded-xl object-cover">
+                    <div>
+                        <span class="text-[10px] font-mono text-ambercaramel-400 uppercase">COLD BREW</span>
+                        <h4 class="font-serif text-sm text-stone-200 group-hover:text-ambercaramel-300 line-clamp-2 mt-0.5">
+                            Cara Menyimpan Kopi Botol 1 Liter Agar Rasa Tetap Optimal Hingga 7 Hari
+                        </h4>
+                    </div>
+                </a>
+
+                <a href="baca-artikel.html" class="p-5 rounded-2xl bg-obsidian-900 border border-subtleborder hover:border-ambercaramel-500/40 transition flex items-center gap-4 group">
+                    <img src="https://images.unsplash.com/photo-1447933601403-0c6688de566e?auto=format&fit=crop&w=200&q=80" alt="Fermentasi" class="w-20 h-20 rounded-xl object-cover">
+                    <div>
+                        <span class="text-[10px] font-mono text-emerald-400 uppercase">KNOWLEDGE</span>
+                        <h4 class="font-serif text-sm text-stone-200 group-hover:text-ambercaramel-300 line-clamp-2 mt-0.5">
+                            Mengenal Proses Fermentasi Anaerobik: Mengapa Kopi Bisa Beraroma Buah Berry?
+                        </h4>
+                    </div>
+                </a>
+            </div>
+        </div>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-obsidian-950 text-stone-400 pt-16 pb-12 border-t border-subtleborder">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-10 pb-12 border-b border-subtleborder">
+                <div class="lg:col-span-2 space-y-4">
+                    <a href="index.html" class="flex items-center gap-3">
+                        <div class="w-9 h-9 rounded-full bg-obsidian-900 border border-ambercaramel-500/40 text-ambercaramel-400 flex items-center justify-center text-sm">
+                            <i class="fa-solid fa-mug-hot"></i>
+                        </div>
+                        <span class="text-xl font-serif text-stone-100 tracking-wider uppercase">OBSIDIAN <span class="text-ambercaramel-400 text-xs font-sans">ROASTERS</span></span>
+                    </a>
+                    <p class="text-xs text-stone-400 font-light leading-relaxed pr-6">
+                        Micro-roastery & dark ambient coffee lab yang didedikasikan untuk mengangkat cita rasa single origin arabika nusantara ke panggung specialty coffee dunia.
+                    </p>
+                </div>
+                <div>
+                    <h4 class="text-stone-200 font-bold text-xs tracking-widest uppercase mb-4">Navigasi</h4>
+                    <ul class="space-y-2.5 text-xs font-light">
+                        <li><a href="index.html" class="hover:text-ambercaramel-400 transition">Beranda</a></li>
+                        <li><a href="katalog.html" class="hover:text-ambercaramel-400 transition">Katalog Kopi & Literan</a></li>
+                        <li><a href="tentang.html" class="hover:text-ambercaramel-400 transition">Filosofi & Roastery</a></li>
+                        <li><a href="artikel.html" class="hover:text-ambercaramel-400 transition">Jurnal Seduh</a></li>
+                        <li><a href="kontak.html" class="hover:text-ambercaramel-400 transition">Kedai & Lokasi</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-stone-200 font-bold text-xs tracking-widest uppercase mb-4">Menu Pilihan</h4>
+                    <ul class="space-y-2.5 text-xs font-light">
+                        <li><a href="katalog.html" class="hover:text-ambercaramel-400 transition">Smoked Aren Latte</a></li>
+                        <li><a href="katalog.html" class="hover:text-ambercaramel-400 transition">1L Cold Brew Velvet</a></li>
+                        <li><a href="katalog.html" class="hover:text-ambercaramel-400 transition">Sea Salt Cloud Brew</a></li>
+                        <li><a href="katalog.html" class="hover:text-ambercaramel-400 transition">Kyoto Matcha Oat</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-stone-200 font-bold text-xs tracking-widest uppercase mb-4">Slow Bar & Kedai</h4>
+                    <div class="text-xs space-y-2 text-stone-400 font-light">
+                        <p class="text-stone-200 font-medium">Jam Seduh Barista:</p>
+                        <p>Setiap Hari: 08.00 - 23.00 WIB</p>
+                        <p class="text-stone-200 font-medium pt-1">Lokasi:</p>
+                        <p>Jl. Senopati No. 42, Kebayoran Baru, Jakarta Selatan</p>
+                        <p class="text-ambercaramel-400 font-mono pt-1"><i class="fa-brands fa-whatsapp"></i> +62 812-3456-7890</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="pt-8 flex flex-col md:flex-row items-center justify-between text-xs text-stone-500 font-light gap-4">
+                <p>&copy; 2026 Obsidian Coffee Roasters. All rights reserved.</p>
+                <div class="flex items-center gap-2">
+                    <span>Etalase Resmi UMKM didukung oleh</span>
+                    <a href="https://lenterapasar.com" target="_blank" class="text-ambercaramel-400 font-medium hover:underline">Lentera Pasar</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Floating WhatsApp Conversion Button -->
+    <a href="https://wa.me/6281234567890?text=Halo%20Obsidian%20Coffee,%20saya%20mau%20order%20biji%20kopi." target="_blank" class="fixed bottom-24 right-6 z-50 group flex items-center gap-3 bg-obsidian-900 hover:bg-obsidian-850 text-ambercaramel-400 px-4 py-3.5 rounded-full border border-ambercaramel-500/40 shadow-[0_0_20px_rgba(251,191,36,0.2)] hover:border-ambercaramel-400 transition-all duration-300" aria-label="Order via WhatsApp">
+        <i class="fa-brands fa-whatsapp text-2xl text-emerald-400"></i>
+        <span class="hidden sm:inline font-sans font-bold text-xs tracking-wider uppercase text-stone-100">Order WhatsApp</span>
+    </a>
+
+    <script>
+        const mobileMenuBtn = document.getElementById('mobileMenuBtn');
+        const mobileMenu = document.getElementById('mobileMenu');
+        const menuIcon = document.getElementById('menuIcon');
+
+        mobileMenuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+            if (mobileMenu.classList.contains('hidden')) {
+                menuIcon.classList.remove('fa-xmark');
+                menuIcon.classList.add('fa-bars');
+            } else {
+                menuIcon.classList.remove('fa-bars');
+                menuIcon.classList.add('fa-xmark');
+            }
+        });
+    </script>
+<!-- ========================================================================= -->
+<!-- LENTERA PASAR - STICKY DEMO & SALES BAR                                   -->
+<!-- ========================================================================= -->
+<div class="fixed bottom-4 left-1/2 -translate-x-1/2 z-50 w-[95%] max-w-4xl bg-slate-900/95 backdrop-blur-md text-white p-3.5 md:p-4 rounded-2xl shadow-2xl border border-slate-700/80 transition-all duration-300">
+  <div class="flex flex-col md:flex-row items-center justify-between gap-3 md:gap-4">
+    
+    <!-- Info Template & Value Proposition -->
+    <div class="flex items-center gap-3 w-full md:w-auto">
+      <div class="w-10 h-10 rounded-xl bg-amber-500/20 border border-amber-500/40 flex items-center justify-center shrink-0">
+        <svg class="w-5 h-5 text-amber-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z" />
+        </svg>
+      </div>
+      <div>
+        <div class="flex items-center gap-2">
+          <span class="font-bold text-sm text-white">Lentera Pasar Engine</span>
+          <span class="text-[10px] bg-emerald-500/20 text-emerald-300 border border-emerald-500/30 px-2 py-0.5 rounded-full font-medium">Free Admin Panel + Ads Support</span>
+        </div>
+        <p class="text-xs text-slate-300 hidden sm:block">
+          Terima beres: Website responsif + Panel input produk sendiri + Dikelola tim iklan profesional.
+        </p>
+      </div>
+    </div>
+
+    <!-- Poin Keunggulan & Tombol Action -->
+    <div class="flex items-center justify-between md:justify-end gap-3 w-full md:w-auto">
+      <div class="hidden lg:flex items-center gap-2 text-xs text-slate-400 border-r border-slate-700 pr-4">
+        <div class="flex items-center gap-1 text-slate-200">
+          <svg class="w-4 h-4 text-emerald-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" /></svg>
+          <span>Chat WA Instan</span>
+        </div>
+        <span class="text-slate-600">•</span>
+        <div class="flex items-center gap-1 text-slate-200">
+          <svg class="w-4 h-4 text-emerald-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" /></svg>
+          <span>Ready Meta Pixel</span>
+        </div>
+      </div>
+
+      <a href="https://wa.me/6281234567890?text=Halo%20Tim%20Lentera%20Pasar,%20saya%20tertarik%20menggunakan%20template%20website%20ini%20lengkap%20dengan%20Admin%20Panel%20dan%20Jasa%20Iklannya." 
+         target="_blank"
+         class="w-full md:w-auto inline-flex items-center justify-center gap-2 bg-gradient-to-r from-amber-500 to-orange-600 hover:from-amber-600 hover:to-orange-700 text-white text-xs md:text-sm font-semibold px-5 py-2.5 rounded-xl shadow-lg shadow-orange-500/20 transition-all hover:scale-105 shrink-0">
+        <span>Gunakan Template Ini</span>
+        <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3" />
+        </svg>
+      </a>
+    </div>
+
+  </div>
+</div>
+
+</body>
+</html>
