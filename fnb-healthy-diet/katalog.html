@@ -1,0 +1,882 @@
+<!DOCTYPE html>
+<html lang="id" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Katalog Menu Sehat & Makronutrisi - Verdant Health Lab</title>
+    <meta name="description" content="Katalog lengkap salad bowl organik, warm protein bowl, raw cold-pressed juice, dan snack gluten-free dengan takaran kalori akurat. Pesan instan via WhatsApp.">
+    
+    <!-- Google Fonts: Plus Jakarta Sans + Inter -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    
+    <!-- Tailwind CSS CDN with Custom Config -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        sage: {
+                            50: '#F4F7F5',
+                            100: '#E9F0EC',
+                            200: '#D5E3DA',
+                            300: '#B8CFC1',
+                            400: '#8FB49D',
+                            500: '#5C9072',
+                            600: '#3D7154',
+                            700: '#2E5A44',
+                            800: '#234635',
+                            900: '#1C3A2B',
+                            950: '#102219'
+                        },
+                        health: {
+                            bg: '#F8FAF9',
+                            surface: '#E9F0EC',
+                            card: '#FFFFFF',
+                            border: '#DCE7E1',
+                            borderdark: '#C8D9D0',
+                            text: '#1C3A2B',
+                            muted: '#5A7566'
+                        }
+                    },
+                    fontFamily: {
+                        sans: ['"Plus Jakarta Sans"', '"Inter"', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        .clean-shadow {
+            box-shadow: 0 10px 30px -10px rgba(46, 90, 68, 0.08);
+        }
+        .emerald-glow {
+            box-shadow: 0 10px 25px -5px rgba(46, 90, 68, 0.25);
+        }
+        .no-scrollbar::-webkit-scrollbar {
+            display: none;
+        }
+        .no-scrollbar {
+            -ms-overflow-style: none;
+            scrollbar-width: none;
+        }
+    </style>
+</head>
+<body class="bg-health-bg text-health-text font-sans antialiased selection:bg-sage-700 selection:text-white">
+
+    <!-- Top Notification Bar -->
+    <div class="bg-sage-900 text-sage-100 text-xs py-2 px-4 font-medium border-b border-sage-800">
+        <div class="max-w-7xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-2 text-center sm:text-left">
+            <div class="flex items-center justify-center gap-2">
+                <span class="w-2 h-2 rounded-full bg-emerald-400 animate-pulse"></span>
+                <span>Katalog Menu Diet: <strong>Lengkap dengan Kalori & Gramasi Makronutrisi</strong></span>
+            </div>
+            <div class="text-[11px] text-sage-300">
+                <span>Pesan sebelum jam 09.00 untuk pengiriman makan siang kantor.</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- Header / Navbar -->
+    <header class="sticky top-0 z-40 bg-white/95 backdrop-blur-md border-b border-health-border transition-all">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-20">
+                
+                <a href="index.html" class="flex items-center gap-3 group">
+                    <div class="w-10 h-10 rounded-xl bg-sage-700 text-white flex items-center justify-center text-lg group-hover:scale-105 transition-all shadow-sm">
+                        <i class="fa-solid fa-leaf text-emerald-300"></i>
+                    </div>
+                    <div>
+                        <span class="text-xl font-bold tracking-tight text-sage-900 block leading-none">
+                            VERDANT
+                        </span>
+                        <span class="text-[10px] font-semibold tracking-[0.2em] text-sage-600 uppercase block mt-1">
+                            Organic Meal & Health Lab
+                        </span>
+                    </div>
+                </a>
+
+                <nav class="hidden lg:flex items-center gap-8 font-medium text-sage-900 text-xs tracking-wider uppercase">
+                    <a href="index.html" class="hover:text-sage-700 transition">Beranda</a>
+                    <a href="katalog.html" class="text-sage-700 font-bold border-b-2 border-sage-700 pb-1">Katalog Menu & Salad</a>
+                    <a href="detail.html" class="hover:text-sage-700 transition">Info Makronutrisi</a>
+                    <a href="tentang.html" class="hover:text-sage-700 transition">Petani & Standar Organik</a>
+                    <a href="artikel.html" class="hover:text-sage-700 transition">Jurnal Gizi</a>
+                    <a href="kontak.html" class="hover:text-sage-700 transition">Langganan Katering</a>
+                </nav>
+
+                <div class="hidden sm:flex items-center gap-3">
+                    <a href="https://wa.me/6281234567890?text=Halo%20Verdant,%20saya%20mau%20order%20menu%20katering." target="_blank" class="inline-flex items-center gap-2 bg-sage-700 hover:bg-sage-800 text-white text-xs font-semibold px-5 py-2.5 rounded-xl emerald-glow transition-all hover:scale-105 tracking-wider uppercase">
+                        <i class="fa-brands fa-whatsapp text-emerald-300 text-sm"></i>
+                        <span>Order via WhatsApp</span>
+                    </a>
+                </div>
+
+                <button id="mobileMenuBtn" class="lg:hidden text-sage-900 hover:text-sage-700 p-2 rounded-xl bg-sage-100 border border-health-border transition" aria-label="Buka Menu">
+                    <i class="fa-solid fa-bars-staggered text-lg" id="menuIcon"></i>
+                </button>
+            </div>
+        </div>
+
+        <div id="mobileMenu" class="hidden lg:hidden bg-white border-b border-health-border px-6 pt-4 pb-6 space-y-3">
+            <a href="index.html" class="block py-2 text-sage-900 hover:text-sage-700 text-xs uppercase tracking-widest">Beranda</a>
+            <a href="katalog.html" class="block py-2 text-sage-700 font-bold text-xs uppercase tracking-widest">Katalog Menu & Salad</a>
+            <a href="detail.html" class="block py-2 text-sage-900 hover:text-sage-700 text-xs uppercase tracking-widest">Detail Kalori & Makronutrisi</a>
+            <a href="tentang.html" class="block py-2 text-sage-900 hover:text-sage-700 text-xs uppercase tracking-widest">Petani & Dapur Higienis</a>
+            <a href="artikel.html" class="block py-2 text-sage-900 hover:text-sage-700 text-xs uppercase tracking-widest">Panduan Gizi Seimbang</a>
+            <a href="kontak.html" class="block py-2 text-sage-900 hover:text-sage-700 text-xs uppercase tracking-widest">Langganan Katering Mingguan</a>
+        </div>
+    </header>
+
+    <!-- PAGE TITLE -->
+    <section class="pt-12 pb-8 bg-sage-100/50 border-b border-health-border">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center max-w-3xl">
+            <span class="text-xs font-bold text-sage-700 uppercase tracking-widest block mb-2">
+                Nutrient-Dense Menu
+            </span>
+            <h1 class="text-3xl sm:text-4xl font-extrabold text-sage-900 mb-3">
+                Katalog Menu Makanan Sehat & Diet
+            </h1>
+            <p class="text-xs sm:text-sm text-health-muted leading-relaxed">
+                Seluruh menu dimasak tanpa MSG sintetik, menggunakan minyak zaitun murni extra virgin (*cold-pressed EVOO*), dan garam laut alami.
+            </p>
+        </div>
+    </section>
+
+    <!-- FILTER & SEARCH BAR -->
+    <section class="py-5 bg-white sticky top-20 z-30 border-b border-health-border backdrop-blur-md">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex flex-col md:flex-row items-center justify-between gap-4">
+                
+                <!-- Category Buttons -->
+                <div class="flex items-center gap-2 overflow-x-auto w-full md:w-auto pb-2 md:pb-0 no-scrollbar" id="categoryContainer">
+                    <button data-category="all" class="category-btn active px-4 py-2 rounded-full text-xs font-bold whitespace-nowrap bg-sage-700 text-white tracking-wider uppercase transition shadow-sm">
+                        Semua Menu (10)
+                    </button>
+                    <button data-category="salad" class="category-btn px-4 py-2 rounded-full text-xs font-bold whitespace-nowrap bg-sage-50 text-sage-800 hover:bg-sage-100 border border-health-border tracking-wider uppercase transition">
+                        Salad Bowl (3)
+                    </button>
+                    <button data-category="warm-bowl" class="category-btn px-4 py-2 rounded-full text-xs font-bold whitespace-nowrap bg-sage-50 text-sage-800 hover:bg-sage-100 border border-health-border tracking-wider uppercase transition">
+                        Warm Protein Bowl (3)
+                    </button>
+                    <button data-category="juice" class="category-btn px-4 py-2 rounded-full text-xs font-bold whitespace-nowrap bg-sage-50 text-sage-800 hover:bg-sage-100 border border-health-border tracking-wider uppercase transition">
+                        Cold-Pressed Juice (2)
+                    </button>
+                    <button data-category="package" class="category-btn px-4 py-2 rounded-full text-xs font-bold whitespace-nowrap bg-sage-50 text-sage-800 hover:bg-sage-100 border border-health-border tracking-wider uppercase transition">
+                        Paket Katering (2)
+                    </button>
+                </div>
+
+                <!-- Search Input -->
+                <div class="relative w-full md:w-72">
+                    <input type="text" id="dietSearch" placeholder="Cari salmon, shirataki, jus, keto..." 
+                           class="w-full bg-sage-50 border border-health-border rounded-full pl-10 pr-4 py-2 text-xs text-sage-900 placeholder-health-muted focus:outline-none focus:border-sage-700">
+                    <i class="fa-solid fa-magnifying-glass absolute left-3.5 top-1/2 -translate-y-1/2 text-health-muted text-xs"></i>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- GRID KATALOG PRODUK -->
+    <main class="py-12 md:py-20 bg-health-bg">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            
+            <div id="productGrid" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6 sm:gap-8">
+                
+                <!-- 1. Salmon Quinoa Superbowl -->
+                <div class="product-card bg-white rounded-3xl border border-health-border overflow-hidden clean-shadow hover:-translate-y-1.5 transition duration-300 group flex flex-col justify-between" data-category="warm-bowl" data-title="salmon rainbow quinoa superbowl ikan bakar omega protein">
+                    <div>
+                        <div class="relative h-52 overflow-hidden bg-sage-100">
+                            <img src="https://images.unsplash.com/photo-1540420773420-3366772f4999?q=80&w=600&auto=format&fit=crop" 
+                                 alt="Salmon Quinoa Bowl" 
+                                 class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+                            <span class="absolute top-3 left-3 bg-sage-900 text-white text-[10px] font-bold px-2.5 py-1 rounded-full uppercase tracking-wider">
+                                High Omega-3
+                            </span>
+                            <span class="absolute top-3 right-3 bg-white text-sage-800 text-[10px] font-bold px-2.5 py-1 rounded-full shadow-sm">
+                                415 Kcal
+                            </span>
+                        </div>
+                        <div class="p-5">
+                            <div class="flex items-center gap-1.5 mb-1.5">
+                                <span class="text-[10px] font-bold text-emerald-800 bg-emerald-100 px-2 py-0.5 rounded">Gluten-Free</span>
+                                <span class="text-[10px] font-bold text-sage-700 bg-sage-100 px-2 py-0.5 rounded">Dairy-Free</span>
+                            </div>
+                            <h3 class="font-bold text-base text-sage-900 group-hover:text-sage-700 transition mb-1">
+                                Wild Salmon Rainbow Quinoa Bowl
+                            </h3>
+                            <p class="text-xs text-health-muted line-clamp-2 mb-3">
+                                Salmon liar panggang, quinoa tri-color, alpukat mentega, edamame, dan lemon tahini dressing.
+                            </p>
+                            
+                            <div class="grid grid-cols-3 gap-1 bg-sage-50 p-2 rounded-xl text-center text-[11px] mb-2 font-medium">
+                                <div><span class="text-health-muted block text-[9px]">P</span> <strong>36g</strong></div>
+                                <div><span class="text-health-muted block text-[9px]">C</span> <strong>28g</strong></div>
+                                <div><span class="text-health-muted block text-[9px]">F</span> <strong>14g</strong></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="px-5 pb-5 pt-2 border-t border-health-border flex items-center justify-between">
+                        <div>
+                            <span class="text-[10px] text-health-muted block">Harga Single</span>
+                            <span class="font-bold text-base text-sage-900">Rp 68.000</span>
+                        </div>
+                        <div class="flex items-center gap-1.5">
+                            <a href="detail.html" class="p-2 rounded-xl bg-sage-50 text-sage-800 hover:bg-sage-100 transition">
+                                <i class="fa-solid fa-chart-pie text-xs"></i>
+                            </a>
+                            <a href="https://wa.me/6281234567890?text=Halo,%20saya%20mau%20pesan%20Salmon%20Quinoa%20Bowl." target="_blank" class="px-3 py-2 rounded-xl bg-sage-700 hover:bg-sage-800 text-white text-xs font-bold transition flex items-center gap-1">
+                                <i class="fa-brands fa-whatsapp text-emerald-300"></i>
+                                <span>Pesan</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 2. Herb Grilled Chicken Shirataki -->
+                <div class="product-card bg-white rounded-3xl border border-health-border overflow-hidden clean-shadow hover:-translate-y-1.5 transition duration-300 group flex flex-col justify-between" data-category="warm-bowl" data-title="herb grilled chicken shirataki ayam dada rendah kalori diet">
+                    <div>
+                        <div class="relative h-52 overflow-hidden bg-sage-100">
+                            <img src="https://images.unsplash.com/photo-1546069901-ba9599a7e63c?q=80&w=600&auto=format&fit=crop" 
+                                 alt="Chicken Shirataki Bowl" 
+                                 class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+                            <span class="absolute top-3 left-3 bg-amber-700 text-white text-[10px] font-bold px-2.5 py-1 rounded-full uppercase tracking-wider">
+                                Lean Deficit
+                            </span>
+                            <span class="absolute top-3 right-3 bg-white text-sage-800 text-[10px] font-bold px-2.5 py-1 rounded-full shadow-sm">
+                                340 Kcal
+                            </span>
+                        </div>
+                        <div class="p-5">
+                            <div class="flex items-center gap-1.5 mb-1.5">
+                                <span class="text-[10px] font-bold text-emerald-800 bg-emerald-100 px-2 py-0.5 rounded">Low Carb</span>
+                                <span class="text-[10px] font-bold text-sage-700 bg-sage-100 px-2 py-0.5 rounded">High Protein</span>
+                            </div>
+                            <h3 class="font-bold text-base text-sage-900 group-hover:text-sage-700 transition mb-1">
+                                Herb Chicken Shirataki Rice
+                            </h3>
+                            <p class="text-xs text-health-muted line-clamp-2 mb-3">
+                                Dada ayam fillet bumbu herba Mediterania, nasi shirataki berserat, baby buncis, dan saus jamur truffle.
+                            </p>
+                            
+                            <div class="grid grid-cols-3 gap-1 bg-sage-50 p-2 rounded-xl text-center text-[11px] mb-2 font-medium">
+                                <div><span class="text-health-muted block text-[9px]">P</span> <strong>42g</strong></div>
+                                <div><span class="text-health-muted block text-[9px]">C</span> <strong>12g</strong></div>
+                                <div><span class="text-health-muted block text-[9px]">F</span> <strong>8g</strong></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="px-5 pb-5 pt-2 border-t border-health-border flex items-center justify-between">
+                        <div>
+                            <span class="text-[10px] text-health-muted block">Harga Single</span>
+                            <span class="font-bold text-base text-sage-900">Rp 52.000</span>
+                        </div>
+                        <div class="flex items-center gap-1.5">
+                            <a href="detail.html" class="p-2 rounded-xl bg-sage-50 text-sage-800 hover:bg-sage-100 transition">
+                                <i class="fa-solid fa-chart-pie text-xs"></i>
+                            </a>
+                            <a href="https://wa.me/6281234567890?text=Halo,%20saya%20mau%20pesan%20Chicken%20Shirataki." target="_blank" class="px-3 py-2 rounded-xl bg-sage-700 hover:bg-sage-800 text-white text-xs font-bold transition flex items-center gap-1">
+                                <i class="fa-brands fa-whatsapp text-emerald-300"></i>
+                                <span>Pesan</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 3. Scandinavian Smoked Beef & Kale Salad -->
+                <div class="product-card bg-white rounded-3xl border border-health-border overflow-hidden clean-shadow hover:-translate-y-1.5 transition duration-300 group flex flex-col justify-between" data-category="salad" data-title="scandinavian smoked beef kale salad sayur organik telur omega">
+                    <div>
+                        <div class="relative h-52 overflow-hidden bg-sage-100">
+                            <img src="https://images.unsplash.com/photo-1512621776951-a57141f2eefd?q=80&w=600&auto=format&fit=crop" 
+                                 alt="Smoked Beef Kale Salad" 
+                                 class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+                            <span class="absolute top-3 left-3 bg-emerald-800 text-white text-[10px] font-bold px-2.5 py-1 rounded-full uppercase tracking-wider">
+                                Raw Greens
+                            </span>
+                            <span class="absolute top-3 right-3 bg-white text-sage-800 text-[10px] font-bold px-2.5 py-1 rounded-full shadow-sm">
+                                310 Kcal
+                            </span>
+                        </div>
+                        <div class="p-5">
+                            <div class="flex items-center gap-1.5 mb-1.5">
+                                <span class="text-[10px] font-bold text-emerald-800 bg-emerald-100 px-2 py-0.5 rounded">High Fiber</span>
+                                <span class="text-[10px] font-bold text-sage-700 bg-sage-100 px-2 py-0.5 rounded">Keto Friendly</span>
+                            </div>
+                            <h3 class="font-bold text-base text-sage-900 group-hover:text-sage-700 transition mb-1">
+                                Nordic Smoked Beef & Kale Salad
+                            </h3>
+                            <p class="text-xs text-health-muted line-clamp-2 mb-3">
+                                Daun kale keriting hidroponik, smoked lean beef, telur rebus omega-3, almond sangrai, dan honey mustard lemon.
+                            </p>
+                            
+                            <div class="grid grid-cols-3 gap-1 bg-sage-50 p-2 rounded-xl text-center text-[11px] mb-2 font-medium">
+                                <div><span class="text-health-muted block text-[9px]">P</span> <strong>28g</strong></div>
+                                <div><span class="text-health-muted block text-[9px]">C</span> <strong>14g</strong></div>
+                                <div><span class="text-health-muted block text-[9px]">F</span> <strong>16g</strong></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="px-5 pb-5 pt-2 border-t border-health-border flex items-center justify-between">
+                        <div>
+                            <span class="text-[10px] text-health-muted block">Harga Single</span>
+                            <span class="font-bold text-base text-sage-900">Rp 58.000</span>
+                        </div>
+                        <div class="flex items-center gap-1.5">
+                            <a href="detail.html" class="p-2 rounded-xl bg-sage-50 text-sage-800 hover:bg-sage-100 transition">
+                                <i class="fa-solid fa-chart-pie text-xs"></i>
+                            </a>
+                            <a href="https://wa.me/6281234567890?text=Halo,%20saya%20mau%20pesan%20Nordic%20Kale%20Salad." target="_blank" class="px-3 py-2 rounded-xl bg-sage-700 hover:bg-sage-800 text-white text-xs font-bold transition flex items-center gap-1">
+                                <i class="fa-brands fa-whatsapp text-emerald-300"></i>
+                                <span>Pesan</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 4. Roasted Tempeh & Avocado Vegan Bowl -->
+                <div class="product-card bg-white rounded-3xl border border-health-border overflow-hidden clean-shadow hover:-translate-y-1.5 transition duration-300 group flex flex-col justify-between" data-category="salad" data-title="roasted tempeh avocado vegan bowl nabati tempe alpukat">
+                    <div>
+                        <div class="relative h-52 overflow-hidden bg-sage-100">
+                            <img src="https://images.unsplash.com/photo-1540420773420-3366772f4999?q=80&w=600&auto=format&fit=crop" 
+                                 alt="Vegan Tempeh Avocado Bowl" 
+                                 class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+                            <span class="absolute top-3 left-3 bg-emerald-700 text-white text-[10px] font-bold px-2.5 py-1 rounded-full uppercase tracking-wider">
+                                100% Plant-Based
+                            </span>
+                            <span class="absolute top-3 right-3 bg-white text-sage-800 text-[10px] font-bold px-2.5 py-1 rounded-full shadow-sm">
+                                380 Kcal
+                            </span>
+                        </div>
+                        <div class="p-5">
+                            <div class="flex items-center gap-1.5 mb-1.5">
+                                <span class="text-[10px] font-bold text-emerald-800 bg-emerald-100 px-2 py-0.5 rounded">Vegan</span>
+                                <span class="text-[10px] font-bold text-sage-700 bg-sage-100 px-2 py-0.5 rounded">Dairy-Free</span>
+                            </div>
+                            <h3 class="font-bold text-base text-sage-900 group-hover:text-sage-700 transition mb-1">
+                                Roasted Tempeh & Avocado Bowl
+                            </h3>
+                            <p class="text-xs text-health-muted line-clamp-2 mb-3">
+                                Tempe kedelai non-GMO panggang lengkuas, alpukat mentega, jagung manis pipil, romaine lettuce, dan saus kacang wijen.
+                            </p>
+                            
+                            <div class="grid grid-cols-3 gap-1 bg-sage-50 p-2 rounded-xl text-center text-[11px] mb-2 font-medium">
+                                <div><span class="text-health-muted block text-[9px]">P</span> <strong>24g</strong></div>
+                                <div><span class="text-health-muted block text-[9px]">C</span> <strong>32g</strong></div>
+                                <div><span class="text-health-muted block text-[9px]">F</span> <strong>18g</strong></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="px-5 pb-5 pt-2 border-t border-health-border flex items-center justify-between">
+                        <div>
+                            <span class="text-[10px] text-health-muted block">Harga Single</span>
+                            <span class="font-bold text-base text-sage-900">Rp 45.000</span>
+                        </div>
+                        <div class="flex items-center gap-1.5">
+                            <a href="detail.html" class="p-2 rounded-xl bg-sage-50 text-sage-800 hover:bg-sage-100 transition">
+                                <i class="fa-solid fa-chart-pie text-xs"></i>
+                            </a>
+                            <a href="https://wa.me/6281234567890?text=Halo,%20saya%20mau%20pesan%20Vegan%20Tempeh%20Bowl." target="_blank" class="px-3 py-2 rounded-xl bg-sage-700 hover:bg-sage-800 text-white text-xs font-bold transition flex items-center gap-1">
+                                <i class="fa-brands fa-whatsapp text-emerald-300"></i>
+                                <span>Pesan</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 5. Garlic Butter Barramundi Cauliflower Rice -->
+                <div class="product-card bg-white rounded-3xl border border-health-border overflow-hidden clean-shadow hover:-translate-y-1.5 transition duration-300 group flex flex-col justify-between" data-category="warm-bowl" data-title="garlic butter barramundi cauliflower rice kembang kol ikan kakap putih keto">
+                    <div>
+                        <div class="relative h-52 overflow-hidden bg-sage-100">
+                            <img src="https://images.unsplash.com/photo-1546069901-ba9599a7e63c?q=80&w=600&auto=format&fit=crop" 
+                                 alt="Barramundi Cauliflower Bowl" 
+                                 class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+                            <span class="absolute top-3 left-3 bg-sage-900 text-white text-[10px] font-bold px-2.5 py-1 rounded-full uppercase tracking-wider">
+                                Keto Signature
+                            </span>
+                            <span class="absolute top-3 right-3 bg-white text-sage-800 text-[10px] font-bold px-2.5 py-1 rounded-full shadow-sm">
+                                360 Kcal
+                            </span>
+                        </div>
+                        <div class="p-5">
+                            <div class="flex items-center gap-1.5 mb-1.5">
+                                <span class="text-[10px] font-bold text-emerald-800 bg-emerald-100 px-2 py-0.5 rounded">Zero Grains</span>
+                                <span class="text-[10px] font-bold text-sage-700 bg-sage-100 px-2 py-0.5 rounded">High Protein</span>
+                            </div>
+                            <h3 class="font-bold text-base text-sage-900 group-hover:text-sage-700 transition mb-1">
+                                Barramundi Garlic Cauliflower Rice
+                            </h3>
+                            <p class="text-xs text-health-muted line-clamp-2 mb-3">
+                                Fillet ikan kakap putih segar, nasi kembang kol serut, tumis bayam jepang (horenzo), dan perasan lemon garlic murni.
+                            </p>
+                            
+                            <div class="grid grid-cols-3 gap-1 bg-sage-50 p-2 rounded-xl text-center text-[11px] mb-2 font-medium">
+                                <div><span class="text-health-muted block text-[9px]">P</span> <strong>38g</strong></div>
+                                <div><span class="text-health-muted block text-[9px]">C</span> <strong>9g</strong></div>
+                                <div><span class="text-health-muted block text-[9px]">F</span> <strong>16g</strong></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="px-5 pb-5 pt-2 border-t border-health-border flex items-center justify-between">
+                        <div>
+                            <span class="text-[10px] text-health-muted block">Harga Single</span>
+                            <span class="font-bold text-base text-sage-900">Rp 65.000</span>
+                        </div>
+                        <div class="flex items-center gap-1.5">
+                            <a href="detail.html" class="p-2 rounded-xl bg-sage-50 text-sage-800 hover:bg-sage-100 transition">
+                                <i class="fa-solid fa-chart-pie text-xs"></i>
+                            </a>
+                            <a href="https://wa.me/6281234567890?text=Halo,%20saya%20mau%20pesan%20Barramundi%20Cauliflower." target="_blank" class="px-3 py-2 rounded-xl bg-sage-700 hover:bg-sage-800 text-white text-xs font-bold transition flex items-center gap-1">
+                                <i class="fa-brands fa-whatsapp text-emerald-300"></i>
+                                <span>Pesan</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 6. Green Vitality Cold-Pressed Juice -->
+                <div class="product-card bg-white rounded-3xl border border-health-border overflow-hidden clean-shadow hover:-translate-y-1.5 transition duration-300 group flex flex-col justify-between" data-category="juice" data-title="green vitality cold pressed juice jus kale apel seledri detox alkali">
+                    <div>
+                        <div class="relative h-52 overflow-hidden bg-sage-100">
+                            <img src="https://images.unsplash.com/photo-1613478223719-2ab802602423?q=80&w=600&auto=format&fit=crop" 
+                                 alt="Green Vitality Juice" 
+                                 class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+                            <span class="absolute top-3 left-3 bg-emerald-800 text-white text-[10px] font-bold px-2.5 py-1 rounded-full uppercase tracking-wider">
+                                Pure Cleanse
+                            </span>
+                            <span class="absolute top-3 right-3 bg-white text-sage-800 text-[10px] font-bold px-2.5 py-1 rounded-full shadow-sm">
+                                110 Kcal
+                            </span>
+                        </div>
+                        <div class="p-5">
+                            <div class="flex items-center gap-1.5 mb-1.5">
+                                <span class="text-[10px] font-bold text-emerald-800 bg-emerald-100 px-2 py-0.5 rounded">Raw Cold-Pressed</span>
+                                <span class="text-[10px] font-bold text-sage-700 bg-sage-100 px-2 py-0.5 rounded">350ml</span>
+                            </div>
+                            <h3 class="font-bold text-base text-sage-900 group-hover:text-sage-700 transition mb-1">
+                                Green Vitality Alkali Cleanse
+                            </h3>
+                            <p class="text-xs text-health-muted line-clamp-2 mb-3">
+                                Kale keriting organik, seledri stik, apel hijau, lemon, dan daun mint tanpa air dan tanpa gula.
+                            </p>
+                            
+                            <div class="grid grid-cols-3 gap-1 bg-sage-50 p-2 rounded-xl text-center text-[11px] mb-2 font-medium">
+                                <div><span class="text-health-muted block text-[9px]">Gula Alami</span> <strong>14g</strong></div>
+                                <div><span class="text-health-muted block text-[9px]">Vitamin C</span> <strong>180%</strong></div>
+                                <div><span class="text-health-muted block text-[9px]">Air</span> <strong>0%</strong></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="px-5 pb-5 pt-2 border-t border-health-border flex items-center justify-between">
+                        <div>
+                            <span class="text-[10px] text-health-muted block">Botol 350ml</span>
+                            <span class="font-bold text-base text-sage-900">Rp 38.000</span>
+                        </div>
+                        <div class="flex items-center gap-1.5">
+                            <a href="detail.html" class="p-2 rounded-xl bg-sage-50 text-sage-800 hover:bg-sage-100 transition">
+                                <i class="fa-solid fa-chart-pie text-xs"></i>
+                            </a>
+                            <a href="https://wa.me/6281234567890?text=Halo,%20saya%20mau%20pesan%20Green%20Vitality." target="_blank" class="px-3 py-2 rounded-xl bg-sage-700 hover:bg-sage-800 text-white text-xs font-bold transition flex items-center gap-1">
+                                <i class="fa-brands fa-whatsapp text-emerald-300"></i>
+                                <span>Pesan</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 7. Golden Glow Turmeric Ginger Cleanse -->
+                <div class="product-card bg-white rounded-3xl border border-health-border overflow-hidden clean-shadow hover:-translate-y-1.5 transition duration-300 group flex flex-col justify-between" data-category="juice" data-title="golden glow turmeric ginger juice kunyit jahe wortel imun stamina">
+                    <div>
+                        <div class="relative h-52 overflow-hidden bg-sage-100">
+                            <img src="https://images.unsplash.com/photo-1613478223719-2ab802602423?q=80&w=600&auto=format&fit=crop" 
+                                 alt="Golden Glow Turmeric Juice" 
+                                 class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+                            <span class="absolute top-3 left-3 bg-amber-600 text-white text-[10px] font-bold px-2.5 py-1 rounded-full uppercase tracking-wider">
+                                Immunity Booster
+                            </span>
+                            <span class="absolute top-3 right-3 bg-white text-sage-800 text-[10px] font-bold px-2.5 py-1 rounded-full shadow-sm">
+                                95 Kcal
+                            </span>
+                        </div>
+                        <div class="p-5">
+                            <div class="flex items-center gap-1.5 mb-1.5">
+                                <span class="text-[10px] font-bold text-amber-800 bg-amber-100 px-2 py-0.5 rounded">Anti-Inflamasi</span>
+                                <span class="text-[10px] font-bold text-sage-700 bg-sage-100 px-2 py-0.5 rounded">350ml</span>
+                            </div>
+                            <h3 class="font-bold text-base text-sage-900 group-hover:text-sage-700 transition mb-1">
+                                Golden Glow Turmeric Immunity
+                            </h3>
+                            <p class="text-xs text-health-muted line-clamp-2 mb-3">
+                                Sari wortel organik, kunyit asam segar, jahe emprit bakar, apel fuji, dan perasan jeruk nipis lokal.
+                            </p>
+                            
+                            <div class="grid grid-cols-3 gap-1 bg-sage-50 p-2 rounded-xl text-center text-[11px] mb-2 font-medium">
+                                <div><span class="text-health-muted block text-[9px]">Gula Alami</span> <strong>12g</strong></div>
+                                <div><span class="text-health-muted block text-[9px]">Vitamin A</span> <strong>240%</strong></div>
+                                <div><span class="text-health-muted block text-[9px]">Kurkumin</span> <strong>Tinggi</strong></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="px-5 pb-5 pt-2 border-t border-health-border flex items-center justify-between">
+                        <div>
+                            <span class="text-[10px] text-health-muted block">Botol 350ml</span>
+                            <span class="font-bold text-base text-sage-900">Rp 38.000</span>
+                        </div>
+                        <div class="flex items-center gap-1.5">
+                            <a href="detail.html" class="p-2 rounded-xl bg-sage-50 text-sage-800 hover:bg-sage-100 transition">
+                                <i class="fa-solid fa-chart-pie text-xs"></i>
+                            </a>
+                            <a href="https://wa.me/6281234567890?text=Halo,%20saya%20mau%20pesan%20Golden%20Glow." target="_blank" class="px-3 py-2 rounded-xl bg-sage-700 hover:bg-sage-800 text-white text-xs font-bold transition flex items-center gap-1">
+                                <i class="fa-brands fa-whatsapp text-emerald-300"></i>
+                                <span>Pesan</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 8. Classic Caesar with Omega Egg Salad -->
+                <div class="product-card bg-white rounded-3xl border border-health-border overflow-hidden clean-shadow hover:-translate-y-1.5 transition duration-300 group flex flex-col justify-between" data-category="salad" data-title="classic caesar salad omega egg sayur renyah parmesan rendah kalori">
+                    <div>
+                        <div class="relative h-52 overflow-hidden bg-sage-100">
+                            <img src="https://images.unsplash.com/photo-1512621776951-a57141f2eefd?q=80&w=600&auto=format&fit=crop" 
+                                 alt="Classic Caesar Salad" 
+                                 class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+                            <span class="absolute top-3 left-3 bg-sage-700 text-white text-[10px] font-bold px-2.5 py-1 rounded-full uppercase tracking-wider">
+                                All-Time Favorite
+                            </span>
+                            <span class="absolute top-3 right-3 bg-white text-sage-800 text-[10px] font-bold px-2.5 py-1 rounded-full shadow-sm">
+                                290 Kcal
+                            </span>
+                        </div>
+                        <div class="p-5">
+                            <div class="flex items-center gap-1.5 mb-1.5">
+                                <span class="text-[10px] font-bold text-emerald-800 bg-emerald-100 px-2 py-0.5 rounded">High Fiber</span>
+                                <span class="text-[10px] font-bold text-sage-700 bg-sage-100 px-2 py-0.5 rounded">Greek Yogurt Dressing</span>
+                            </div>
+                            <h3 class="font-bold text-base text-sage-900 group-hover:text-sage-700 transition mb-1">
+                                Healthy Greek Yogurt Caesar Salad
+                            </h3>
+                            <p class="text-xs text-health-muted line-clamp-2 mb-3">
+                                Romaine lettuce renyah, 2 butir telur rebus omega-3, taburan biji labu (pumpkin seed), dan dressing caesar greek yogurt rendah lemak.
+                            </p>
+                            
+                            <div class="grid grid-cols-3 gap-1 bg-sage-50 p-2 rounded-xl text-center text-[11px] mb-2 font-medium">
+                                <div><span class="text-health-muted block text-[9px]">P</span> <strong>18g</strong></div>
+                                <div><span class="text-health-muted block text-[9px]">C</span> <strong>12g</strong></div>
+                                <div><span class="text-health-muted block text-[9px]">F</span> <strong>14g</strong></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="px-5 pb-5 pt-2 border-t border-health-border flex items-center justify-between">
+                        <div>
+                            <span class="text-[10px] text-health-muted block">Harga Single</span>
+                            <span class="font-bold text-base text-sage-900">Rp 48.000</span>
+                        </div>
+                        <div class="flex items-center gap-1.5">
+                            <a href="detail.html" class="p-2 rounded-xl bg-sage-50 text-sage-800 hover:bg-sage-100 transition">
+                                <i class="fa-solid fa-chart-pie text-xs"></i>
+                            </a>
+                            <a href="https://wa.me/6281234567890?text=Halo,%20saya%20mau%20pesan%20Caesar%20Salad." target="_blank" class="px-3 py-2 rounded-xl bg-sage-700 hover:bg-sage-800 text-white text-xs font-bold transition flex items-center gap-1">
+                                <i class="fa-brands fa-whatsapp text-emerald-300"></i>
+                                <span>Pesan</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 9. Paket Katering 5 Hari Kerja (Lunch Only) -->
+                <div class="product-card bg-white rounded-3xl border-2 border-sage-700 overflow-hidden clean-shadow hover:-translate-y-1.5 transition duration-300 group flex flex-col justify-between" data-category="package" data-title="paket katering 5 hari kerja lunch makan siang diet mingguan">
+                    <div>
+                        <div class="relative h-52 overflow-hidden bg-sage-900 text-white p-5 flex flex-col justify-between">
+                            <div class="flex items-center justify-between">
+                                <span class="bg-emerald-500 text-sage-950 text-[10px] font-bold px-2.5 py-1 rounded-full uppercase tracking-wider">
+                                    Weekly Meal Plan
+                                </span>
+                                <span class="text-xs font-bold text-emerald-300">
+                                    5x Pengiriman
+                                </span>
+                            </div>
+                            <div>
+                                <div class="text-xs text-sage-300 uppercase font-semibold">Senin s/d Jumat</div>
+                                <h4 class="text-lg font-bold text-white">5-Day Office Lean Lunch</h4>
+                            </div>
+                        </div>
+                        <div class="p-5">
+                            <div class="flex items-center gap-1.5 mb-1.5">
+                                <span class="text-[10px] font-bold text-emerald-800 bg-emerald-100 px-2 py-0.5 rounded">Free Delivery</span>
+                                <span class="text-[10px] font-bold text-sage-700 bg-sage-100 px-2 py-0.5 rounded">Custom Makro</span>
+                            </div>
+                            <h3 class="font-bold text-base text-sage-900 mb-1">
+                                Paket Katering Siang 5 Hari
+                            </h3>
+                            <p class="text-xs text-health-muted line-clamp-2 mb-3">
+                                5 porsi makan siang berbeda setiap hari + 2 botol Cold-Pressed Juice gratis. Menu variatif anti bosan.
+                            </p>
+                            <div class="text-[11px] text-emerald-800 bg-emerald-50 p-2 rounded-xl font-medium mb-2">
+                                <i class="fa-solid fa-truck text-emerald-600 mr-1"></i> Diantar tiap pagi pukul 09.30 - 11.00 WIB
+                            </div>
+                        </div>
+                    </div>
+                    <div class="px-5 pb-5 pt-2 border-t border-health-border flex items-center justify-between">
+                        <div>
+                            <span class="text-[10px] text-health-muted block">Total 5 Hari</span>
+                            <span class="font-bold text-base text-emerald-700">Rp 265.000</span>
+                        </div>
+                        <a href="https://wa.me/6281234567890?text=Halo,%20saya%20mau%20langganan%20Paket%20Katering%205%20Hari." target="_blank" class="px-4 py-2 rounded-xl bg-sage-700 hover:bg-sage-800 text-white text-xs font-bold transition flex items-center gap-1">
+                            <i class="fa-brands fa-whatsapp text-emerald-300"></i>
+                            <span>Langganan</span>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- 10. Paket Katering 5 Hari Penuh (Lunch + Dinner) -->
+                <div class="product-card bg-white rounded-3xl border-2 border-sage-700 overflow-hidden clean-shadow hover:-translate-y-1.5 transition duration-300 group flex flex-col justify-between" data-category="package" data-title="paket katering 5 hari penuh lunch dinner siang malam total reset diet">
+                    <div>
+                        <div class="relative h-52 overflow-hidden bg-sage-950 text-white p-5 flex flex-col justify-between">
+                            <div class="flex items-center justify-between">
+                                <span class="bg-amber-400 text-sage-950 text-[10px] font-bold px-2.5 py-1 rounded-full uppercase tracking-wider">
+                                    Total Body Reset
+                                </span>
+                                <span class="text-xs font-bold text-amber-300">
+                                    10 Porsi Makan
+                                </span>
+                            </div>
+                            <div>
+                                <div class="text-xs text-sage-300 uppercase font-semibold">Lunch + Dinner</div>
+                                <h4 class="text-lg font-bold text-white">Full Day Transformation Plan</h4>
+                            </div>
+                        </div>
+                        <div class="p-5">
+                            <div class="flex items-center gap-1.5 mb-1.5">
+                                <span class="text-[10px] font-bold text-emerald-800 bg-emerald-100 px-2 py-0.5 rounded">Garansi Defisit</span>
+                                <span class="text-[10px] font-bold text-sage-700 bg-sage-100 px-2 py-0.5 rounded">Konsul Nutritionist</span>
+                            </div>
+                            <h3 class="font-bold text-base text-sage-900 mb-1">
+                                Paket Katering Lengkap (Siang + Malam)
+                            </h3>
+                            <p class="text-xs text-health-muted line-clamp-2 mb-3">
+                                10 porsi sehat (5 Lunch + 5 Dinner) dengan kontrol kalori harian 850 - 1.000 Kcal untuk penurunan berat badan efektif.
+                            </p>
+                            <div class="text-[11px] text-emerald-800 bg-emerald-50 p-2 rounded-xl font-medium mb-2">
+                                <i class="fa-solid fa-user-doctor text-emerald-600 mr-1"></i> Termasuk panduan & monitoring mingguan
+                            </div>
+                        </div>
+                    </div>
+                    <div class="px-5 pb-5 pt-2 border-t border-health-border flex items-center justify-between">
+                        <div>
+                            <span class="text-[10px] text-health-muted block">Total 10 Porsi</span>
+                            <span class="font-bold text-base text-emerald-700">Rp 495.000</span>
+                        </div>
+                        <a href="https://wa.me/6281234567890?text=Halo,%20saya%20mau%20langganan%20Paket%20Katering%20Full%20Day%20(Lunch%20+%20Dinner)." target="_blank" class="px-4 py-2 rounded-xl bg-sage-700 hover:bg-sage-800 text-white text-xs font-bold transition flex items-center gap-1">
+                            <i class="fa-brands fa-whatsapp text-emerald-300"></i>
+                            <span>Langganan</span>
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- Empty Search State -->
+            <div id="emptySearchState" class="hidden text-center py-16">
+                <div class="w-16 h-16 rounded-full bg-sage-100 border border-health-border flex items-center justify-center text-sage-700 text-2xl mx-auto mb-4">
+                    <i class="fa-solid fa-leaf"></i>
+                </div>
+                <h3 class="font-bold text-xl text-sage-900 mb-2">Menu Sehat Tidak Ditemukan</h3>
+                <p class="text-xs text-health-muted max-w-md mx-auto mb-6">
+                    Punya pantangan alergi spesifik atau kebutuhan gizi khusus? Ahli gizi kami siap membuatkan paket katering custom untuk Anda.
+                </p>
+                <a href="https://wa.me/6281234567890?text=Halo%20Verdant,%20saya%20mau%20request%20menu%20diet%20custom." target="_blank" class="inline-flex items-center gap-2 px-6 py-3 rounded-full bg-sage-700 text-white text-xs font-bold uppercase tracking-wider shadow-md hover:bg-sage-800 transition">
+                    <i class="fa-brands fa-whatsapp text-emerald-300"></i>
+                    <span>Konsultasi Menu Custom via WA</span>
+                </a>
+            </div>
+
+        </div>
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="bg-sage-950 text-sage-300 pt-16 pb-32 text-xs border-t border-sage-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-10 pb-12 border-b border-sage-800/80">
+                <div class="lg:col-span-2 space-y-4">
+                    <div class="flex items-center gap-3">
+                        <div class="w-9 h-9 rounded-xl bg-emerald-500/20 border border-emerald-500/40 flex items-center justify-center text-emerald-400 text-lg">
+                            <i class="fa-solid fa-leaf"></i>
+                        </div>
+                        <div>
+                            <span class="font-bold text-base text-white block leading-none tracking-tight">VERDANT</span>
+                            <span class="text-[9px] text-emerald-400 uppercase font-semibold tracking-widest">Organic Meal & Health Lab</span>
+                        </div>
+                    </div>
+                    <p class="text-xs text-sage-400 leading-relaxed max-w-sm font-light">
+                        Mendefinisikan ulang pola makan sehat Indonesia dengan transparansi nutrisi 100%, sayuran organik bebas pestisida, dan rasa lezat seimbang.
+                    </p>
+                </div>
+                <div class="space-y-3">
+                    <h4 class="font-bold text-sm text-white uppercase tracking-wider text-emerald-400">Navigasi</h4>
+                    <ul class="space-y-2 text-sage-400">
+                        <li><a href="index.html" class="hover:text-white transition">Beranda</a></li>
+                        <li><a href="katalog.html" class="hover:text-white transition">Katalog Menu</a></li>
+                        <li><a href="detail.html" class="hover:text-white transition">Tabel Makronutrisi</a></li>
+                        <li><a href="tentang.html" class="hover:text-white transition">Petani Organik</a></li>
+                        <li><a href="kontak.html" class="hover:text-white transition">Daftar Langganan</a></li>
+                    </ul>
+                </div>
+                <div class="space-y-3">
+                    <h4 class="font-bold text-sm text-white uppercase tracking-wider text-emerald-400">Kategori</h4>
+                    <ul class="space-y-2 text-sage-400">
+                        <li><a href="katalog.html" class="hover:text-white transition">Organic Salad Bowl</a></li>
+                        <li><a href="katalog.html" class="hover:text-white transition">Warm Protein Shirataki</a></li>
+                        <li><a href="katalog.html" class="hover:text-white transition">Raw Cold-Pressed Juice</a></li>
+                    </ul>
+                </div>
+                <div class="space-y-3">
+                    <h4 class="font-bold text-sm text-white uppercase tracking-wider text-emerald-400">Central Kitchen</h4>
+                    <p class="text-xs text-sage-400 leading-relaxed">
+                        Verdant Central Kitchen, Jl. Kebun Hijau No. 12, Jakarta Selatan.
+                    </p>
+                    <p class="text-xs text-sage-300">Pengiriman Setiap Hari (Senin - Sabtu)</p>
+                </div>
+            </div>
+            <div class="pt-8 text-center text-xs text-sage-500">
+                &copy; 2026 Verdant Health Lab. All Rights Reserved. Pure Nutrition, Real Energy.
+            </div>
+        </div>
+    </footer>
+
+    <!-- FLOATING WHATSAPP BUTTON (bottom-24) -->
+    <a href="https://wa.me/6281234567890?text=Halo%20Verdant%20Health%20Lab,%20saya%20mau%20tanya%20menu%20diet." 
+       target="_blank" 
+       class="fixed bottom-24 right-6 z-50 group flex items-center gap-3 bg-sage-900 hover:bg-sage-800 text-white px-4 py-3.5 rounded-full border border-emerald-500/40 shadow-xl transition-all duration-300" 
+       aria-label="Order via WhatsApp">
+        <span class="relative flex h-3 w-3">
+            <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-emerald-400 opacity-75"></span>
+            <span class="relative inline-flex rounded-full h-3 w-3 bg-emerald-400"></span>
+        </span>
+        <i class="fa-brands fa-whatsapp text-2xl text-emerald-400"></i>
+        <div class="text-left hidden sm:block pr-1">
+            <div class="text-[9px] text-emerald-300 font-bold uppercase tracking-wider leading-none">Nutritionist Chat</div>
+            <span class="font-bold text-xs text-white">Konsultasi Diet WA</span>
+        </div>
+    </a>
+
+    <!-- SCRIPTS -->
+    <script>
+        const mobileMenuBtn = document.getElementById('mobileMenuBtn');
+        const mobileMenu = document.getElementById('mobileMenu');
+        const menuIcon = document.getElementById('menuIcon');
+
+        mobileMenuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+            if (mobileMenu.classList.contains('hidden')) {
+                menuIcon.classList.remove('fa-xmark');
+                menuIcon.classList.add('fa-bars-staggered');
+            } else {
+                menuIcon.classList.remove('fa-bars-staggered');
+                menuIcon.classList.add('fa-xmark');
+            }
+        });
+
+        // Category Filter & Search Logic
+        const categoryButtons = document.querySelectorAll('.category-btn');
+        const productCards = document.querySelectorAll('.product-card');
+        const searchInput = document.getElementById('dietSearch');
+        const emptyState = document.getElementById('emptySearchState');
+
+        let currentCategory = 'all';
+
+        function filterProducts() {
+            const query = searchInput.value.toLowerCase().trim();
+            let count = 0;
+
+            productCards.forEach(card => {
+                const category = card.getAttribute('data-category');
+                const title = card.getAttribute('data-title');
+
+                const matchCategory = (currentCategory === 'all' || category === currentCategory);
+                const matchQuery = (!query || title.includes(query));
+
+                if (matchCategory && matchQuery) {
+                    card.style.display = 'flex';
+                    count++;
+                } else {
+                    card.style.display = 'none';
+                }
+            });
+
+            if (count === 0) {
+                emptyState.classList.remove('hidden');
+            } else {
+                emptyState.classList.add('hidden');
+            }
+        }
+
+        categoryButtons.forEach(btn => {
+            btn.addEventListener('click', () => {
+                categoryButtons.forEach(b => {
+                    b.classList.remove('active', 'bg-sage-700', 'text-white');
+                    b.classList.add('bg-sage-50', 'text-sage-800');
+                });
+                btn.classList.add('active', 'bg-sage-700', 'text-white');
+                btn.classList.remove('bg-sage-50', 'text-sage-800');
+
+                currentCategory = btn.getAttribute('data-category');
+                filterProducts();
+            });
+        });
+
+        searchInput.addEventListener('input', filterProducts);
+    </script>
+
+    <!-- ========================================================================= -->
+    <!-- LENTERA PASAR - STICKY DEMO & SALES BAR (fixed bottom-4)                 -->
+    <!-- ========================================================================= -->
+    <div class="fixed bottom-4 left-1/2 -translate-x-1/2 z-50 w-[95%] max-w-4xl bg-slate-900/95 backdrop-blur-md text-white p-3.5 md:p-4 rounded-2xl shadow-2xl border border-slate-700/80 transition-all duration-300">
+      <div class="flex flex-col md:flex-row items-center justify-between gap-3 md:gap-4">
+        <div class="flex items-center gap-3 w-full md:w-auto">
+          <div class="w-10 h-10 rounded-xl bg-amber-500/20 border border-amber-500/40 flex items-center justify-center shrink-0">
+            <svg class="w-5 h-5 text-amber-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z" />
+            </svg>
+          </div>
+          <div>
+            <div class="flex items-center gap-2">
+              <span class="font-bold text-sm text-white">Lentera Pasar Engine</span>
+              <span class="text-[10px] bg-emerald-500/20 text-emerald-300 border border-emerald-500/30 px-2 py-0.5 rounded-full font-medium">Free Admin Panel + Ads Support</span>
+            </div>
+            <p class="text-xs text-slate-300 hidden sm:block">
+              Terima beres: Website responsif + Panel input produk sendiri + Dikelola tim iklan profesional.
+            </p>
+          </div>
+        </div>
+        <div class="flex items-center justify-between md:justify-end gap-3 w-full md:w-auto">
+          <div class="hidden lg:flex items-center gap-2 text-xs text-slate-400 border-r border-slate-700 pr-4">
+            <div class="flex items-center gap-1 text-slate-200">
+              <svg class="w-4 h-4 text-emerald-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" /></svg>
+              <span>Chat WA Instan</span>
+            </div>
+            <span class="text-slate-600">•</span>
+            <div class="flex items-center gap-1 text-slate-200">
+              <svg class="w-4 h-4 text-emerald-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" /></svg>
+              <span>Ready Meta Pixel</span>
+            </div>
+          </div>
+          <a href="https://wa.me/6281234567890?text=Halo%20Tim%20Lentera%20Pasar,%20saya%20tertarik%20menggunakan%20template%20website%20ini%20lengkap%20dengan%20Admin%20Panel%20dan%20Jasa%20Iklannya." 
+             target="_blank"
+             class="w-full md:w-auto inline-flex items-center justify-center gap-2 bg-gradient-to-r from-amber-500 to-orange-600 hover:from-amber-600 hover:to-orange-700 text-white text-xs md:text-sm font-semibold px-5 py-2.5 rounded-xl shadow-lg shadow-orange-500/20 transition-all hover:scale-105 shrink-0">
+            <span>Gunakan Template Ini</span>
+            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3" />
+            </svg>
+          </a>
+        </div>
+      </div>
+    </div>
+
+</body>
+</html>

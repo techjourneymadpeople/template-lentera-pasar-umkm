@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html lang="id" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Petani Organik Lokal & Standar Bebas Kimia - Verdant Health Lab</title>
+    <meta name="description" content="Cerita kemitraan petani hidroponik lokal, standar dapur higienis bersertifikasi, dan komitmen nol bahan kimia di balik setiap porsi makanan sehat Verdant.">
+    
+    <!-- Google Fonts: Plus Jakarta Sans + Inter -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    
+    <!-- Tailwind CSS CDN with Custom Config -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        sage: {
+                            50: '#F4F7F5',
+                            100: '#E9F0EC',
+                            200: '#D5E3DA',
+                            300: '#B8CFC1',
+                            400: '#8FB49D',
+                            500: '#5C9072',
+                            600: '#3D7154',
+                            700: '#2E5A44',
+                            800: '#234635',
+                            900: '#1C3A2B',
+                            950: '#102219'
+                        },
+                        health: {
+                            bg: '#F8FAF9',
+                            surface: '#E9F0EC',
+                            card: '#FFFFFF',
+                            border: '#DCE7E1',
+                            borderdark: '#C8D9D0',
+                            text: '#1C3A2B',
+                            muted: '#5A7566'
+                        }
+                    },
+                    fontFamily: {
+                        sans: ['"Plus Jakarta Sans"', '"Inter"', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        .clean-shadow {
+            box-shadow: 0 10px 30px -10px rgba(46, 90, 68, 0.08);
+        }
+        .emerald-glow {
+            box-shadow: 0 10px 25px -5px rgba(46, 90, 68, 0.25);
+        }
+    </style>
+</head>
+<body class="bg-health-bg text-health-text font-sans antialiased selection:bg-sage-700 selection:text-white">
+
+    <!-- Top Notification Bar -->
+    <div class="bg-sage-900 text-sage-100 text-xs py-2 px-4 font-medium border-b border-sage-800">
+        <div class="max-w-7xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-2 text-center sm:text-left">
+            <div class="flex items-center justify-center gap-2">
+                <span class="w-1.5 h-1.5 rounded-full bg-emerald-400 animate-ping"></span>
+                <span>Farm-to-Table Standard: <strong>Sayuran Dipanen & Dikirim H-0 dari Kebun Lembang</strong></span>
+            </div>
+            <div class="text-[11px] text-sage-300">
+                <a href="katalog.html" class="text-emerald-300 hover:underline">Lihat Menu Segar Hari Ini &rarr;</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Header / Navbar -->
+    <header class="sticky top-0 z-40 bg-white/95 backdrop-blur-md border-b border-health-border transition-all">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-20">
+                
+                <a href="index.html" class="flex items-center gap-3 group">
+                    <div class="w-10 h-10 rounded-xl bg-sage-700 text-white flex items-center justify-center text-lg group-hover:scale-105 transition-all shadow-sm">
+                        <i class="fa-solid fa-leaf text-emerald-300"></i>
+                    </div>
+                    <div>
+                        <span class="text-xl font-bold tracking-tight text-sage-900 block leading-none">
+                            VERDANT
+                        </span>
+                        <span class="text-[10px] font-semibold tracking-[0.2em] text-sage-600 uppercase block mt-1">
+                            Organic Meal & Health Lab
+                        </span>
+                    </div>
+                </a>
+
+                <nav class="hidden lg:flex items-center gap-8 font-medium text-sage-900 text-xs tracking-wider uppercase">
+                    <a href="index.html" class="hover:text-sage-700 transition">Beranda</a>
+                    <a href="katalog.html" class="hover:text-sage-700 transition">Katalog Menu & Salad</a>
+                    <a href="detail.html" class="hover:text-sage-700 transition">Info Makronutrisi</a>
+                    <a href="tentang.html" class="text-sage-700 font-bold border-b-2 border-sage-700 pb-1">Petani & Standar Organik</a>
+                    <a href="artikel.html" class="hover:text-sage-700 transition">Jurnal Gizi</a>
+                    <a href="kontak.html" class="hover:text-sage-700 transition">Langganan Katering</a>
+                </nav>
+
+                <div class="hidden sm:flex items-center gap-3">
+                    <a href="https://wa.me/6281234567890?text=Halo%20Verdant,%20saya%20mau%20konsultasi%20makanan%20sehat." target="_blank" class="inline-flex items-center gap-2 bg-sage-700 hover:bg-sage-800 text-white text-xs font-semibold px-5 py-2.5 rounded-xl emerald-glow transition-all hover:scale-105 tracking-wider uppercase">
+                        <i class="fa-brands fa-whatsapp text-emerald-300 text-sm"></i>
+                        <span>Hubungi Dapur</span>
+                    </a>
+                </div>
+
+                <button id="mobileMenuBtn" class="lg:hidden text-sage-900 hover:text-sage-700 p-2 rounded-xl bg-sage-100 border border-health-border transition" aria-label="Buka Menu">
+                    <i class="fa-solid fa-bars-staggered text-lg" id="menuIcon"></i>
+                </button>
+            </div>
+        </div>
+
+        <div id="mobileMenu" class="hidden lg:hidden bg-white border-b border-health-border px-6 pt-4 pb-6 space-y-3">
+            <a href="index.html" class="block py-2 text-sage-900 hover:text-sage-700 text-xs uppercase tracking-widest">Beranda</a>
+            <a href="katalog.html" class="block py-2 text-sage-900 hover:text-sage-700 text-xs uppercase tracking-widest">Katalog Menu & Salad</a>
+            <a href="detail.html" class="block py-2 text-sage-900 hover:text-sage-700 text-xs uppercase tracking-widest">Detail Kalori & Makronutrisi</a>
+            <a href="tentang.html" class="block py-2 text-sage-700 font-bold text-xs uppercase tracking-widest">Petani & Dapur Higienis</a>
+            <a href="artikel.html" class="block py-2 text-sage-900 hover:text-sage-700 text-xs uppercase tracking-widest">Panduan Gizi Seimbang</a>
+            <a href="kontak.html" class="block py-2 text-sage-900 hover:text-sage-700 text-xs uppercase tracking-widest">Langganan Katering Mingguan</a>
+        </div>
+    </header>
+
+    <!-- HERO TENTANG -->
+    <section class="pt-16 pb-12 bg-sage-100/50 border-b border-health-border">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <span class="text-xs font-bold text-sage-700 uppercase tracking-widest block mb-2">
+                Honest Source, Real Wellbeing
+            </span>
+            <h1 class="text-3xl sm:text-4xl md:text-5xl font-extrabold text-sage-900 mb-4 leading-tight">
+                Kemitraan Petani Lokal & Standar Makanan Bebas Kimia
+            </h1>
+            <p class="text-sm sm:text-base text-health-muted font-normal leading-relaxed max-w-2xl mx-auto">
+                Kami percaya bahwa kesehatan sejati dimulai dari tanah yang subur, petani yang dihargai dengan adil, dan dapur yang menjaga kemurnian nutrisi tanpa bahan kimia buatan.
+            </p>
+        </div>
+    </section>
+
+    <!-- SECTION KISAH KEMITRAAN PETANI -->
+    <section class="py-16 md:py-24 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+                
+                <!-- Left Image Showcase -->
+                <div class="lg:col-span-5 relative">
+                    <div class="rounded-3xl overflow-hidden border-4 border-white shadow-xl bg-sage-100">
+                        <img src="https://images.unsplash.com/photo-1595974482597-4b8da8879bc5?q=80&w=800&auto=format&fit=crop" 
+                             alt="Local hydroponic farmer harvesting fresh organic greens" 
+                             class="w-full h-[420px] sm:h-[480px] object-cover">
+                    </div>
+                    <div class="absolute -bottom-5 -right-5 bg-sage-900 text-white p-5 rounded-2xl border border-emerald-500/40 shadow-xl max-w-xs hidden sm:block">
+                        <div class="text-base font-bold text-emerald-400">100% Mitra Lokal</div>
+                        <div class="text-xs text-sage-300">Petani Hidroponik Lembang & Pangalengan</div>
+                    </div>
+                </div>
+
+                <!-- Right Story Text -->
+                <div class="lg:col-span-7 space-y-6">
+                    <span class="text-xs font-bold text-sage-700 uppercase tracking-widest block">
+                        Our Transparent Supply Chain
+                    </span>
+                    <h2 class="text-2xl sm:text-3xl md:text-4xl font-extrabold text-sage-900 leading-tight">
+                        Dari Benih Non-GMO Hingga Meja Santap Anda Tanpa Rantai Distribusi Panjang.
+                    </h2>
+                    <div class="space-y-4 text-xs sm:text-sm text-health-muted leading-relaxed">
+                        <p>
+                            Di Verdant, kami bekerja sama langsung dengan kelompok tani hidroponik di dataran tinggi Jawa Barat. Seluruh sayuran seperti kale keriting, romaine lettuce, bayam jepang horenzo, dan tomat ceri ditanam menggunakan air sumber pegunungan alami tanpa semprotan pestisida kimia sintetis.
+                        </p>
+                        <p>
+                            Sayuran dipanen pada dini hari pukul 04.00 WIB dan langsung dikirim ke dapur pusat kami dalam hitungan jam. Ini menjaga kadar vitamin, klorofil, dan kerenyahan daun tetap maksimal saat dinikmati.
+                        </p>
+                    </div>
+
+                    <!-- 4 Pillars Grid -->
+                    <div class="grid grid-cols-2 gap-4 pt-4 border-t border-health-border">
+                        <div>
+                            <div class="text-2xl font-extrabold text-sage-800">0% Kimia</div>
+                            <div class="text-xs text-health-muted mt-0.5">Bebas Pestisida & Insektisida</div>
+                        </div>
+                        <div>
+                            <div class="text-2xl font-extrabold text-sage-800">H-0 Panen</div>
+                            <div class="text-xs text-health-muted mt-0.5">Dipetik Subuh Hari yang Sama</div>
+                        </div>
+                        <div>
+                            <div class="text-2xl font-extrabold text-sage-800">Non-GMO</div>
+                            <div class="text-xs text-health-muted mt-0.5">Benih Alami Bersertifikasi</div>
+                        </div>
+                        <div>
+                            <div class="text-2xl font-extrabold text-sage-800">Fair Trade</div>
+                            <div class="text-xs text-health-muted mt-0.5">Mendukung Ekonomi Petani Lokal</div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION STANDAR DAPUR BERSIH & TIM NUTRITIONIST -->
+    <section class="py-16 md:py-24 bg-sage-50 border-y border-health-border">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            
+            <div class="text-center max-w-2xl mx-auto mb-16">
+                <span class="text-xs font-bold text-sage-700 uppercase tracking-widest block mb-2">
+                    Hygiene & Clinical Standards
+                </span>
+                <h2 class="text-2xl sm:text-3xl md:text-4xl font-extrabold text-sage-900 mb-3">
+                    Protokol Dapur Bersih & Pengawasan Ahli Gizi
+                </h2>
+                <p class="text-xs sm:text-sm text-health-muted leading-relaxed">
+                    Setiap menu melalui proses quality control ketat untuk menjamin keamanan pangan dan keakuratan data gizi.
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                
+                <!-- Protocol 1 -->
+                <div class="bg-white p-6 rounded-3xl border border-health-border clean-shadow flex flex-col justify-between">
+                    <div>
+                        <div class="w-12 h-12 rounded-2xl bg-sage-100 text-sage-700 flex items-center justify-center text-xl mb-4">
+                            <i class="fa-solid fa-scale-balanced"></i>
+                        </div>
+                        <h3 class="font-bold text-base text-sage-900 mb-2">Penimbangan Gramasi Presisi</h3>
+                        <p class="text-xs text-health-muted leading-relaxed font-light">
+                            Protein dan karbohidrat ditimbang secara individual dengan timbangan digital medis berskala gram sebelum disajikan ke dalam kemasan.
+                        </p>
+                    </div>
+                    <div class="text-[11px] font-bold text-emerald-800 pt-4 border-t border-health-border mt-4">
+                        Toleransi Deviasi Kalori &lt; 3%
+                    </div>
+                </div>
+
+                <!-- Protocol 2 -->
+                <div class="bg-white p-6 rounded-3xl border border-health-border clean-shadow flex flex-col justify-between">
+                    <div>
+                        <div class="w-12 h-12 rounded-2xl bg-sage-100 text-sage-700 flex items-center justify-center text-xl mb-4">
+                            <i class="fa-solid fa-temperature-arrow-down"></i>
+                        </div>
+                        <h3 class="font-bold text-base text-sage-900 mb-2">Ozonized Water Wash</h3>
+                        <p class="text-xs text-health-muted leading-relaxed font-light">
+                            Seluruh sayur dan buah dicuci menggunakan air ber-ozon food-grade untuk membunuh 99.9% bakteri e-coli dan residu debu tanpa zat kimia pemutih.
+                        </p>
+                    </div>
+                    <div class="text-[11px] font-bold text-emerald-800 pt-4 border-t border-health-border mt-4">
+                        Standar Bebas Kontaminasi Bakteri
+                    </div>
+                </div>
+
+                <!-- Protocol 3 -->
+                <div class="bg-white p-6 rounded-3xl border border-health-border clean-shadow flex flex-col justify-between">
+                    <div>
+                        <div class="w-12 h-12 rounded-2xl bg-sage-100 text-sage-700 flex items-center justify-center text-xl mb-4">
+                            <i class="fa-solid fa-box-open"></i>
+                        </div>
+                        <h3 class="font-bold text-base text-sage-900 mb-2">Eco Sugarcane Bagasse</h3>
+                        <p class="text-xs text-health-muted leading-relaxed font-light">
+                            Kotak kemasan terbuat dari 100% ampas tebu alami yang dapat terurai tanah dalam 90 hari, tahan panas, dan bebas racun BPA / PFAS.
+                        </p>
+                    </div>
+                    <div class="text-[11px] font-bold text-emerald-800 pt-4 border-t border-health-border mt-4">
+                        Zero Microplastic Guarantee
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="bg-sage-950 text-sage-300 pt-16 pb-32 text-xs border-t border-sage-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-10 pb-12 border-b border-sage-800/80">
+                <div class="lg:col-span-2 space-y-4">
+                    <div class="flex items-center gap-3">
+                        <div class="w-9 h-9 rounded-xl bg-emerald-500/20 border border-emerald-500/40 flex items-center justify-center text-emerald-400 text-lg">
+                            <i class="fa-solid fa-leaf"></i>
+                        </div>
+                        <div>
+                            <span class="font-bold text-base text-white block leading-none tracking-tight">VERDANT</span>
+                            <span class="text-[9px] text-emerald-400 uppercase font-semibold tracking-widest">Organic Meal & Health Lab</span>
+                        </div>
+                    </div>
+                    <p class="text-xs text-sage-400 leading-relaxed max-w-sm font-light">
+                        Mendefinisikan ulang pola makan sehat Indonesia dengan transparansi nutrisi 100%, sayuran organik bebas pestisida, dan rasa lezat seimbang.
+                    </p>
+                </div>
+                <div class="space-y-3">
+                    <h4 class="font-bold text-sm text-white uppercase tracking-wider text-emerald-400">Navigasi</h4>
+                    <ul class="space-y-2 text-sage-400">
+                        <li><a href="index.html" class="hover:text-white transition">Beranda</a></li>
+                        <li><a href="katalog.html" class="hover:text-white transition">Katalog Menu</a></li>
+                        <li><a href="detail.html" class="hover:text-white transition">Tabel Makronutrisi</a></li>
+                        <li><a href="tentang.html" class="hover:text-white transition">Petani Organik</a></li>
+                        <li><a href="kontak.html" class="hover:text-white transition">Daftar Langganan</a></li>
+                    </ul>
+                </div>
+                <div class="space-y-3">
+                    <h4 class="font-bold text-sm text-white uppercase tracking-wider text-emerald-400">Komitmen</h4>
+                    <ul class="space-y-2 text-sage-400">
+                        <li><a href="tentang.html" class="hover:text-white transition">0% Pestisida Kimia</a></li>
+                        <li><a href="tentang.html" class="hover:text-white transition">Kemasan Serat Tebu</a></li>
+                        <li><a href="detail.html" class="hover:text-white transition">Dihitung Nutritionist</a></li>
+                    </ul>
+                </div>
+                <div class="space-y-3">
+                    <h4 class="font-bold text-sm text-white uppercase tracking-wider text-emerald-400">Central Kitchen</h4>
+                    <p class="text-xs text-sage-400 leading-relaxed">
+                        Verdant Central Kitchen, Jl. Kebun Hijau No. 12, Jakarta Selatan.
+                    </p>
+                    <p class="text-xs text-sage-300">Pengiriman Setiap Hari (Senin - Sabtu)</p>
+                </div>
+            </div>
+            <div class="pt-8 text-center text-xs text-sage-500">
+                &copy; 2026 Verdant Health Lab. All Rights Reserved. Pure Nutrition, Real Energy.
+            </div>
+        </div>
+    </footer>
+
+    <!-- FLOATING WHATSAPP BUTTON (bottom-24) -->
+    <a href="https://wa.me/6281234567890?text=Halo%20Verdant%20Health%20Lab,%20saya%20mau%20tanya%20menu%20diet." 
+       target="_blank" 
+       class="fixed bottom-24 right-6 z-50 group flex items-center gap-3 bg-sage-900 hover:bg-sage-800 text-white px-4 py-3.5 rounded-full border border-emerald-500/40 shadow-xl transition-all duration-300" 
+       aria-label="Order via WhatsApp">
+        <span class="relative flex h-3 w-3">
+            <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-emerald-400 opacity-75"></span>
+            <span class="relative inline-flex rounded-full h-3 w-3 bg-emerald-400"></span>
+        </span>
+        <i class="fa-brands fa-whatsapp text-2xl text-emerald-400"></i>
+        <div class="text-left hidden sm:block pr-1">
+            <div class="text-[9px] text-emerald-300 font-bold uppercase tracking-wider leading-none">Nutritionist Chat</div>
+            <span class="font-bold text-xs text-white">Konsultasi Diet WA</span>
+        </div>
+    </a>
+
+    <!-- SCRIPTS -->
+    <script>
+        const mobileMenuBtn = document.getElementById('mobileMenuBtn');
+        const mobileMenu = document.getElementById('mobileMenu');
+        const menuIcon = document.getElementById('menuIcon');
+
+        mobileMenuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+            if (mobileMenu.classList.contains('hidden')) {
+                menuIcon.classList.remove('fa-xmark');
+                menuIcon.classList.add('fa-bars-staggered');
+            } else {
+                menuIcon.classList.remove('fa-bars-staggered');
+                menuIcon.classList.add('fa-xmark');
+            }
+        });
+    </script>
+
+    <!-- ========================================================================= -->
+    <!-- LENTERA PASAR - STICKY DEMO & SALES BAR (fixed bottom-4)                 -->
+    <!-- ========================================================================= -->
+    <div class="fixed bottom-4 left-1/2 -translate-x-1/2 z-50 w-[95%] max-w-4xl bg-slate-900/95 backdrop-blur-md text-white p-3.5 md:p-4 rounded-2xl shadow-2xl border border-slate-700/80 transition-all duration-300">
+      <div class="flex flex-col md:flex-row items-center justify-between gap-3 md:gap-4">
+        <div class="flex items-center gap-3 w-full md:w-auto">
+          <div class="w-10 h-10 rounded-xl bg-amber-500/20 border border-amber-500/40 flex items-center justify-center shrink-0">
+            <svg class="w-5 h-5 text-amber-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z" />
+            </svg>
+          </div>
+          <div>
+            <div class="flex items-center gap-2">
+              <span class="font-bold text-sm text-white">Lentera Pasar Engine</span>
+              <span class="text-[10px] bg-emerald-500/20 text-emerald-300 border border-emerald-500/30 px-2 py-0.5 rounded-full font-medium">Free Admin Panel + Ads Support</span>
+            </div>
+            <p class="text-xs text-slate-300 hidden sm:block">
+              Terima beres: Website responsif + Panel input produk sendiri + Dikelola tim iklan profesional.
+            </p>
+          </div>
+        </div>
+        <div class="flex items-center justify-between md:justify-end gap-3 w-full md:w-auto">
+          <div class="hidden lg:flex items-center gap-2 text-xs text-slate-400 border-r border-slate-700 pr-4">
+            <div class="flex items-center gap-1 text-slate-200">
+              <svg class="w-4 h-4 text-emerald-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" /></svg>
+              <span>Chat WA Instan</span>
+            </div>
+            <span class="text-slate-600">•</span>
+            <div class="flex items-center gap-1 text-slate-200">
+              <svg class="w-4 h-4 text-emerald-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" /></svg>
+              <span>Ready Meta Pixel</span>
+            </div>
+          </div>
+          <a href="https://wa.me/6281234567890?text=Halo%20Tim%20Lentera%20Pasar,%20saya%20tertarik%20menggunakan%20template%20website%20ini%20lengkap%20dengan%20Admin%20Panel%20dan%20Jasa%20Iklannya." 
+             target="_blank"
+             class="w-full md:w-auto inline-flex items-center justify-center gap-2 bg-gradient-to-r from-amber-500 to-orange-600 hover:from-amber-600 hover:to-orange-700 text-white text-xs md:text-sm font-semibold px-5 py-2.5 rounded-xl shadow-lg shadow-orange-500/20 transition-all hover:scale-105 shrink-0">
+            <span>Gunakan Template Ini</span>
+            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3" />
+            </svg>
+          </a>
+        </div>
+      </div>
+    </div>
+
+</body>
+</html>
