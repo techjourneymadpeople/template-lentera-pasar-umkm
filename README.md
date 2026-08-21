@@ -1,8 +1,62 @@
 # 🏮 Lentera Pasar — Template Website Etalase Publik UMKM
 
-Repository ini berisi kumpulan kode sumber **Template Website Etalase Publik (Multi-Page)** siap pakai yang dirancang khusus untuk pelaku UMKM di ekosistem platform **Lentera Pasar**.
+Repository ini berisi kumpulan kode sumber **Template Website Etalase Publik (Multi-Page)** siap pakai yang dirancang khusus untuk 5 bidang utama pelaku UMKM di ekosistem platform **Lentera Pasar**.
 
-Setiap template dibuat dengan standar **UI/UX Modern, Mobile-First, Fast-Loading, dan Conversion-Focused**, terintegrasi langsung dengan fitur pemesanan instan WhatsApp (*Direct WhatsApp Booking*) serta siap dihubungkan ke Admin Panel & Meta Ads Engine Lentera Pasar.
+Setiap template dibangun dengan standar **UI/UX Modern, Mobile-First, Fast-Loading, dan Conversion-Focused**, terintegrasi langsung dengan fitur pemesanan instan WhatsApp (*Direct WhatsApp Booking*) serta siap dihubungkan ke Admin Panel & Meta Ads Engine Lentera Pasar.
+
+---
+
+## 🏛️ Arsitektur 5 Bidang Utama UMKM
+
+```text
+template-website-umkm/
+│
+├── 📁 01-fnb-kuliner/                   # [SELESAI - 12 Sub-Bidang Lengkap]
+│   ├── fnb-ricebowl-pop/               # Makanan Berat / Rice Bowl / Dine-in (Mangkok Juara)
+│   ├── fnb-coffee-dark/                # Kopi & Specialty Coffee Roastery (Obsidian Coffee)
+│   ├── fnb-catering-clean/             # Katering Harian, Bento & Tumpeng (Sedap Laras)
+│   ├── fnb-dessert-pastel/             # Dessert, Es Krim & Gelato (Gelato Velveto)
+│   ├── fnb-frozen-clean/               # Frozen Food Siap Masak & Dimsum (Sedap Beku Nusantara)
+│   ├── fnb-snack-crunchy/              # Snack Kering & Keripik Oleh-Oleh (Kriuk Juara)
+│   ├── fnb-sambal-nusantara/           # Sambal Kemasan & Bumbu Masak (Sambal Warisan Oma)
+│   ├── fnb-meat-butcher/               # Daging / Seafood Olahan & BBQ Grill (Prime Cuts Artisan)
+│   ├── fnb-bakery-artisan/             # Bakery, Roti Sobek & Sourdough Pastry (Le Levain Bakery)
+│   ├── fnb-cake-celebration/           # Cake, Tart & Kue Ulang Tahun Mewah (Aurélia Cake Atelier)
+│   ├── fnb-healthy-diet/               # Makanan Sehat, Diet & Salad Organik (Verdant Health Lab)
+│   └── fnb-tradisional-tampah/         # Jajanan Pasar & Kue Tampah Basah (Tampah Ayu Nusantara)
+│
+├── 📁 02-fashion-skincare/             # [BIDANG 2 - Segera Hadir]
+│   ├── fashion-muslim-gamis/           # Hijab, Gamis Syar'i & Abaya Modern
+│   ├── fashion-streetwear-apparel/     # Kaos Distro, Hoodie & Urban Oversize
+│   ├── fashion-batik-etnik/            # Batik Tulis/Cap, Tenun & Kebaya Modern
+│   ├── fashion-kids-baby/              # Pakaian Anak, Bayi & Perlengkapan Ibu
+│   ├── fashion-footwear-shoes/         # Sepatu Lokal Kulit, Sneakers & Sandal
+│   ├── beauty-skincare-serum/          # Skincare Glowing, Serum & Sunscreen BPOM
+│   ├── beauty-bodycare-herbal/         # Sabun Organik, Body Scrub & Lulur Alami
+│   └── beauty-fragrance-parfume/       # Parfum Artisan Lokal & Reed Diffuser
+│
+├── 📁 03-ritel-gadget-hobi/            # [BIDANG 3 - Segera Hadir]
+│   ├── gadget-phone-accessories/       # Case Hp, TWS, Charger & Gadget Acc
+│   ├── hobby-plant-monstera/           # Tanaman Hias, Pot Keramik & Pupuk Urban
+│   ├── hobby-aquatic-aquascape/        # Ikan Hias, Aquascape & Pakan Hewan
+│   ├── hobby-diecast-actionfigure/     # Komunitas Diecast, Model Kit & Mainan Hobi
+│   ├── auto-care-motorcycle/           # Perawatan Motor/Mobil & Detailing Kit
+│   └── sport-active-gym/               # Jersey Olahraga, Botol Tumbler & Matras Yoga
+│
+├── 📁 04-kriya-dekorasi/               # [BIDANG 4 - Segera Hadir]
+│   ├── kriya-rotan-anyaman/            # Furniture Rotan, Keranjang & Tas Anyam
+│   ├── kriya-keramik-pottery/          # Mug Keramik Handmade, Piring & Vas Estetik
+│   ├── kriya-leather-goods/            # Dompet Kulit Nabati, Sabuk & Pouch Custom
+│   ├── decor-wooden-home/              # Talenan Kayu Jati, Hiasan Dinding & Rak
+│   └── decor-candle-scented/           # Lilin Aromaterapi Soywax & Home Fragrance
+│
+└── 📁 05-supplier-grosir-b2b/          # [BIDANG 5 - Segera Hadir]
+    ├── b2b-packaging-box/              # Dus Box Makanan, Paper Bag & Kemasan Sablon
+    ├── b2b-bahan-kue-resto/            # Supplier Tepung, Mentega, Cokelat & Syrup
+    ├── b2b-konveksi-kaos-polos/        # Grosir Kaos Polos Combed, Bordir & Sablon
+    ├── b2b-frozen-horeca/              # Supplier Frozen Daging Resto, Hotel & Kafe
+    └── b2b-sembako-distributor/        # Distributor Beras, Minyak Goreng & Gula Pasir
+```
 
 ---
 
@@ -19,28 +73,28 @@ Setiap template dibuat dengan standar **UI/UX Modern, Mobile-First, Fast-Loading
 
 ---
 
-## 📂 Daftar Template Sub-Bidang F&B (12 Niche Lengkap)
+## 📂 Bidang 1: F&B / Kuliner (12 Niche Lengkap)
 
-| No | Folder Target | Niche / Sub-Bidang F&B | Brand Demo | Visual Archetype & Style |
+| No | Folder Path | Niche / Sub-Bidang | Brand Demo | Visual Archetype & Style |
 |:---:|:---|:---|:---|:---|
-| 1 | `fnb-ricebowl-pop/` | Makanan Berat / Rice Bowl / Dine-in | **Mangkok Juara** | *Bold & Vibrant Food Pop* (Kuning, Merah, Charcoal) |
-| 2 | `fnb-coffee-dark/` | Kopi & Specialty Coffee Roastery | **Obsidian Coffee** | *Dark Industrial & Modern Coffee* (Dark Slate, Warm Gold) |
-| 3 | `fnb-catering-clean/` | Katering Harian, Bento & Tumpeng | **Sedap Laras** | *Clean Minimalist & Trustworthy* (Fresh Green, Clean White) |
-| 4 | `fnb-dessert-pastel/` | Dessert, Es Krim & Gelato | **Gelato Velveto** | *Soft Pastel & Playful Elegance* (Pastel Pink, Cream Berry) |
-| 5 | `fnb-frozen-clean/` | Frozen Food Siap Masak & Dimsum | **Sedap Beku Nusantara** | *Clean Frozen & Fresh Trust* (Frost Cyan, Clean White) |
-| 6 | `fnb-snack-crunchy/` | Snack Kering & Keripik Oleh-Oleh | **Kriuk Juara** | *Energetic Crunchy & Snack Delight* (Golden Yellow, Fiery Orange) |
-| 7 | `fnb-sambal-nusantara/` | Sambal & Bumbu Masak Kemasan | **Sambal Warisan Oma** | *Fiery Red & Heritage Nusantara* (Chili Red, Warm Terracotta) |
-| 8 | `fnb-meat-butcher/` | Daging / Seafood Olahan & BBQ Grill | **Prime Cuts Artisan** | *Dark Butcher & Premium Steakhouse* (Charcoal, Ruby Red) |
-| 9 | `fnb-bakery-artisan/` | Bakery, Roti Sobek & Sourdough Pastry | **Le Levain Bakery** | *Warm Earthy & French Artisan* (Warm Butter, Toasted Crust) |
-| 10 | `fnb-cake-celebration/` | Cake, Tart & Kue Ulang Tahun Mewah | **Aurélia Cake Atelier** | *Editorial Magazine & Luxury Boutique* (Champagne, Plum Velvet, Gold) |
-| 11 | `fnb-healthy-diet/` | Makanan Sehat, Diet & Salad Organik | **Verdant Health Lab** | *Clean Scandinavian Health* (Sage Green, Leaf Emerald, Pure Snow) |
-| 12 | `fnb-tradisional-tampah/` | Jajanan Pasar & Kue Tampah Basah | **Tampah Ayu Nusantara** | *Warm Heritage & Festive Nusantara* (Banana Leaf Green, Bamboo Wood) |
+| 1 | `01-fnb-kuliner/fnb-ricebowl-pop/` | Makanan Berat / Rice Bowl / Dine-in | **Mangkok Juara** | *Bold & Vibrant Food Pop* (Kuning, Merah, Charcoal) |
+| 2 | `01-fnb-kuliner/fnb-coffee-dark/` | Kopi & Specialty Coffee Roastery | **Obsidian Coffee** | *Dark Industrial & Modern Coffee* (Dark Slate, Warm Gold) |
+| 3 | `01-fnb-kuliner/fnb-catering-clean/` | Katering Harian, Bento & Tumpeng | **Sedap Laras** | *Clean Minimalist & Trustworthy* (Fresh Green, Clean White) |
+| 4 | `01-fnb-kuliner/fnb-dessert-pastel/` | Dessert, Es Krim & Gelato | **Gelato Velveto** | *Soft Pastel & Playful Elegance* (Pastel Pink, Cream Berry) |
+| 5 | `01-fnb-kuliner/fnb-frozen-clean/` | Frozen Food Siap Masak & Dimsum | **Sedap Beku Nusantara** | *Clean Frozen & Fresh Trust* (Frost Cyan, Clean White) |
+| 6 | `01-fnb-kuliner/fnb-snack-crunchy/` | Snack Kering & Keripik Oleh-Oleh | **Kriuk Juara** | *Energetic Crunchy & Snack Delight* (Golden Yellow, Fiery Orange) |
+| 7 | `01-fnb-kuliner/fnb-sambal-nusantara/` | Sambal & Bumbu Masak Kemasan | **Sambal Warisan Oma** | *Fiery Red & Heritage Nusantara* (Chili Red, Warm Terracotta) |
+| 8 | `01-fnb-kuliner/fnb-meat-butcher/` | Daging / Seafood Olahan & BBQ Grill | **Prime Cuts Artisan** | *Dark Butcher & Premium Steakhouse* (Charcoal, Ruby Red) |
+| 9 | `01-fnb-kuliner/fnb-bakery-artisan/` | Bakery, Roti Sobek & Sourdough Pastry | **Le Levain Bakery** | *Warm Earthy & French Artisan* (Warm Butter, Toasted Crust) |
+| 10 | `01-fnb-kuliner/fnb-cake-celebration/` | Cake, Tart & Kue Ulang Tahun Mewah | **Aurélia Cake Atelier** | *Editorial Magazine & Luxury Boutique* (Champagne, Plum Velvet, Gold) |
+| 11 | `01-fnb-kuliner/fnb-healthy-diet/` | Makanan Sehat, Diet & Salad Organik | **Verdant Health Lab** | *Clean Scandinavian Health* (Sage Green, Leaf Emerald, Pure Snow) |
+| 12 | `01-fnb-kuliner/fnb-tradisional-tampah/` | Jajanan Pasar & Kue Tampah Basah | **Tampah Ayu Nusantara** | *Warm Heritage & Festive Nusantara* (Banana Leaf Green, Bamboo Wood) |
 
 ---
 
 ## 📑 Struktur Halaman Multi-Page per Template
 
-Setiap template memiliki struktur file standar:
+Setiap template memiliki 6 file HTML mandiri:
 
 1. `index.html` — **Beranda Utama**: Hero section spesifik niche, Value proposition strip, Highlight produk terlaris, Peta rasa/kategori, Testimoni pelanggan, Footer, Floating WhatsApp (`bottom-24`), dan Sticky Demo Bar (`bottom-4`).
 2. `katalog.html` — **Katalog Lengkap**: Daftar seluruh menu/produk dengan *live search*, filter kategori tombol dinamis, badge atribut, dan tombol pesan instan WA.
@@ -66,7 +120,7 @@ Setiap template memiliki struktur file standar:
 
 1. **Buka folder template pilihan di workspace**:
    ```bash
-   cd template-website-umkm/fnb-tradisional-tampah
+   cd 01-fnb-kuliner/fnb-tradisional-tampah
    ```
 
 2. **Jalankan via Live Server (VS Code / Browser)**:
