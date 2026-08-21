@@ -1,0 +1,709 @@
+<!DOCTYPE html>
+<html lang="id" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Katalog Activewear & Apparel Olahraga — KINETIX LAB</title>
+    <meta name="description" content="Katalog jersey running marathon, compression leggings, windbreaker lipat, dan sports bra berteknologi Quick-Dry dan 4-Way HyperStretch.">
+    
+    <!-- Google Fonts: Plus Jakarta Sans & Chakra Petch / Teko -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:ital,wght@0,500;0,700;1,700&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Teko:wght@500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        kinetic: {
+                            black: '#070B11',
+                            dark: '#0B0F19',
+                            card: '#111827',
+                            cardhover: '#182234',
+                            border: '#1F2937',
+                            borderlight: '#374151',
+                            volt: '#84CC16',
+                            voltlight: '#A3E635',
+                            voltdark: '#4D7C0F',
+                            cyan: '#06B6D4',
+                            orange: '#F97316',
+                            silver: '#94A3B8',
+                            muted: '#64748B'
+                        }
+                    },
+                    fontFamily: {
+                        sans: ['"Plus Jakarta Sans"', 'sans-serif'],
+                        tech: ['"Chakra Petch"', '"Plus Jakarta Sans"', 'sans-serif'],
+                        display: ['"Teko"', 'sans-serif']
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        .no-scrollbar::-webkit-scrollbar { display: none; }
+        .no-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
+        
+        .kinetic-card {
+            transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+        }
+        .kinetic-card:hover {
+            transform: translateY(-4px);
+            border-color: #84CC16;
+            box-shadow: 0 20px 30px -10px rgba(132, 204, 22, 0.15);
+        }
+    </style>
+</head>
+<body class="bg-kinetic-black text-slate-100 font-sans antialiased selection:bg-kinetic-volt selection:text-black">
+
+    <!-- 1. TOP BAR -->
+    <div class="bg-kinetic-dark border-b border-kinetic-border text-[11px] py-2.5 px-4 font-mono font-medium tracking-wider text-slate-300">
+        <div class="max-w-7xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-2 text-center sm:text-left">
+            <div class="flex items-center justify-center gap-2">
+                <span class="inline-flex items-center gap-1.5 px-2.5 py-0.5 rounded-sm bg-kinetic-volt/10 text-kinetic-volt border border-kinetic-volt/30 text-[9px] font-bold tracking-widest uppercase">
+                    <span class="w-1.5 h-1.5 rounded-full bg-kinetic-volt animate-ping"></span>
+                    READY STOCK & CUSTOM CLUB
+                </span>
+                <span class="text-slate-300">Tersedia Ukuran S, M, L, XL, XXL dengan Garansi Jahitan 30 Hari</span>
+            </div>
+            <div class="flex items-center gap-4 text-[10px] text-slate-400">
+                <a href="kontak.html" class="text-kinetic-volt hover:text-white font-bold transition">Pesan Jersey Custom Klub &rarr;</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- 2. NAVBAR -->
+    <header class="sticky top-0 z-40 bg-kinetic-dark/95 backdrop-blur-md border-b border-kinetic-border transition-all">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-20 sm:h-24">
+                
+                <a href="index.html" class="flex items-center gap-3 group">
+                    <div class="w-11 h-11 bg-kinetic-card border border-kinetic-border group-hover:border-kinetic-volt flex items-center justify-center text-xl text-kinetic-volt transform -skew-x-12 transition duration-300">
+                        <i class="fa-solid fa-bolt-lightning transform skew-x-12"></i>
+                    </div>
+                    <div class="flex flex-col">
+                        <span class="text-2xl sm:text-3xl font-display font-bold tracking-wider text-white uppercase leading-none group-hover:text-kinetic-volt transition">
+                            KINETIX<span class="text-kinetic-volt">.</span>LAB
+                        </span>
+                        <span class="text-[9px] font-mono tracking-widest text-kinetic-silver uppercase">
+                            APEX PERFORMANCE WEAR
+                        </span>
+                    </div>
+                </a>
+
+                <nav class="hidden lg:flex items-center gap-8 text-xs font-bold tracking-widest uppercase text-slate-300 font-tech">
+                    <a href="index.html" class="hover:text-kinetic-volt transition">Beranda</a>
+                    <a href="katalog.html" class="text-kinetic-volt border-b-2 border-kinetic-volt pb-1">Katalog Activewear</a>
+                    <a href="detail.html" class="hover:text-kinetic-volt transition">Teknologi Quick-Dry</a>
+                    <a href="tentang.html" class="hover:text-kinetic-volt transition">Standar Lab Atlet</a>
+                    <a href="artikel.html" class="hover:text-kinetic-volt transition">Panduan Workout</a>
+                    <a href="kontak.html" class="hover:text-kinetic-volt transition">Jersey Custom WA</a>
+                </nav>
+
+                <div class="hidden sm:flex items-center gap-3">
+                    <a href="https://wa.me/6281234567890?text=Halo%20Kinetix%20Lab,%20saya%20mau%20pesan%20activewear%20dari%20katalog." target="_blank" class="inline-flex items-center gap-2 bg-kinetic-volt hover:bg-kinetic-voltlight text-black text-xs font-bold font-tech tracking-wider px-5 py-2.5 transition-all shadow-lg shadow-kinetic-volt/20">
+                        <i class="fa-brands fa-whatsapp text-black text-sm"></i>
+                        <span class="uppercase">Pesan via WA</span>
+                    </a>
+                </div>
+
+                <button id="mobileMenuBtn" class="lg:hidden p-2 text-slate-300 hover:text-kinetic-volt focus:outline-none" aria-label="Toggle Menu">
+                    <i id="menuIcon" class="fa-solid fa-bars-staggered text-xl"></i>
+                </button>
+            </div>
+        </div>
+
+        <!-- Mobile Drawer -->
+        <div id="mobileMenu" class="hidden lg:hidden bg-kinetic-dark border-b border-kinetic-border px-4 py-5 space-y-3 font-tech">
+            <a href="index.html" class="block text-xs font-bold uppercase tracking-wider text-slate-300 hover:text-kinetic-volt py-2 border-b border-kinetic-border">Beranda Utama</a>
+            <a href="katalog.html" class="block text-xs font-bold uppercase tracking-wider text-kinetic-volt py-2 border-b border-kinetic-border">Katalog Jersey & Legging</a>
+            <a href="detail.html" class="block text-xs font-bold uppercase tracking-wider text-slate-300 hover:text-kinetic-volt py-2 border-b border-kinetic-border">Teknologi Quick-Dry & 4-Way Stretch</a>
+            <a href="tentang.html" class="block text-xs font-bold uppercase tracking-wider text-slate-300 hover:text-kinetic-volt py-2 border-b border-kinetic-border">Standar Ketahanan Lab Atlet</a>
+            <a href="artikel.html" class="block text-xs font-bold uppercase tracking-wider text-slate-300 hover:text-kinetic-volt py-2 border-b border-kinetic-border">Tips Workout & Panduan Lari</a>
+            <a href="kontak.html" class="block text-xs font-bold uppercase tracking-wider text-slate-300 hover:text-kinetic-volt py-2">Jersey Custom Komunitas</a>
+        </div>
+    </header>
+
+    <!-- 3. PAGE HEADER & FILTER HUD -->
+    <section class="py-12 bg-kinetic-dark border-b border-kinetic-border">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="max-w-3xl">
+                <div class="inline-flex items-center gap-2 px-3 py-1 bg-kinetic-volt/10 border border-kinetic-volt/30 text-kinetic-volt text-xs font-mono font-bold tracking-widest uppercase mb-3">
+                    <span class="w-2 h-2 bg-kinetic-volt"></span>
+                    <span>ALL ATHLETIC GEAR LINEUP</span>
+                </div>
+                <h1 class="text-3xl sm:text-5xl font-display font-bold text-white tracking-tight uppercase">
+                    Koleksi Activewear Kinetix Lab
+                </h1>
+                <p class="text-xs sm:text-sm text-slate-400 mt-2 leading-relaxed font-normal">
+                    Pilihan jersey lari micro-mesh berventilasi aktif, celana kompresi penstabil otot paha, dan windbreaker tahan angin ringan.
+                </p>
+            </div>
+
+            <!-- Search & Filter Controls -->
+            <div class="mt-8 grid grid-cols-1 md:grid-cols-12 gap-4">
+                <!-- Search Box -->
+                <div class="md:col-span-6 relative">
+                    <i class="fa-solid fa-magnifying-glass absolute left-4 top-1/2 -translate-y-1/2 text-slate-500 text-xs"></i>
+                    <input type="text" id="searchInput" placeholder="Cari gear (misal: Jersey, Legging, Windbreaker, Singlet, Bra, Shorts)..." 
+                           class="w-full pl-10 pr-4 py-3 bg-kinetic-card border border-kinetic-border text-xs text-white focus:outline-none focus:border-kinetic-volt transition font-tech">
+                </div>
+
+                <!-- Discipline Filter Dropdown -->
+                <div class="md:col-span-3">
+                    <select id="sportFilter" onchange="applyAllFilters()" class="w-full py-3 px-4 bg-kinetic-card border border-kinetic-border text-xs font-bold text-slate-300 focus:outline-none focus:border-kinetic-volt transition font-tech uppercase">
+                        <option value="all">Semua Cabang Olahraga</option>
+                        <option value="running">Marathon & Road Running</option>
+                        <option value="gym">Gym, Crossfit & Fitness</option>
+                        <option value="cycling">Outdoor Road Cycling</option>
+                        <option value="yoga">Yoga, Pilates & Training</option>
+                    </select>
+                </div>
+
+                <!-- Fast WhatsApp Inquiry -->
+                <div class="md:col-span-3">
+                    <a href="https://wa.me/6281234567890?text=Halo%20Kinetix%20Lab,%20saya%20mau%20tanya%20stok%20dan%20rekomendasi%20ukuran%20activewear." target="_blank" class="w-full h-full py-3 px-4 bg-kinetic-card hover:bg-kinetic-cardhover border border-kinetic-border hover:border-kinetic-volt text-xs font-bold text-slate-200 flex items-center justify-center gap-2 transition font-tech uppercase">
+                        <i class="fa-brands fa-whatsapp text-emerald-400"></i>
+                        <span>Konsultasi Ukuran via WA</span>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Category Pills -->
+            <div class="mt-6 flex items-center gap-2 overflow-x-auto no-scrollbar pb-2 font-tech">
+                <span class="text-xs font-bold text-kinetic-volt shrink-0 mr-1 uppercase font-mono">KATEGORI:</span>
+                <button onclick="filterCategory('all')" class="cat-pill active px-4 py-2 text-xs font-bold tracking-wider transition bg-kinetic-volt text-black" data-cat="all">
+                    SEMUA APPAREL
+                </button>
+                <button onclick="filterCategory('jersey')" class="cat-pill px-4 py-2 text-xs font-bold tracking-wider transition bg-kinetic-card text-slate-300 hover:text-kinetic-volt border border-kinetic-border" data-cat="jersey">
+                    JERSEY & SINGLET RUNNING
+                </button>
+                <button onclick="filterCategory('compression')" class="cat-pill px-4 py-2 text-xs font-bold tracking-wider transition bg-kinetic-card text-slate-300 hover:text-kinetic-volt border border-kinetic-border" data-cat="compression">
+                    COMPRESSION TIGHTS & SHORTS
+                </button>
+                <button onclick="filterCategory('windbreaker')" class="cat-pill px-4 py-2 text-xs font-bold tracking-wider transition bg-kinetic-card text-slate-300 hover:text-kinetic-volt border border-kinetic-border" data-cat="windbreaker">
+                    JAKET WINDBREAKER LIPAT
+                </button>
+                <button onclick="filterCategory('bra')" class="cat-pill px-4 py-2 text-xs font-bold tracking-wider transition bg-kinetic-card text-slate-300 hover:text-kinetic-volt border border-kinetic-border" data-cat="bra">
+                    SPORTS BRA & CROP TANK
+                </button>
+                <button onclick="filterCategory('acc')" class="cat-pill px-4 py-2 text-xs font-bold tracking-wider transition bg-kinetic-card text-slate-300 hover:text-kinetic-volt border border-kinetic-border" data-cat="acc">
+                    AKSESORIS & RUNNING CAP
+                </button>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- 4. PRODUCT GRID (3:4 RATIO) -->
+    <section class="py-16 bg-kinetic-black">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            
+            <div class="flex items-center justify-between mb-8">
+                <div class="text-xs text-slate-400 font-mono">
+                    MENAMPILKAN <span id="productCount" class="font-bold text-kinetic-volt">8</span> PRODUK ACTIVEWEAR HIGH-PERFORMANCE
+                </div>
+                <div class="text-xs text-kinetic-volt flex items-center gap-1.5 font-mono font-bold">
+                    <i class="fa-solid fa-microchip"></i>
+                    <span>ISO 13934-1 High Tensile Certified</span>
+                </div>
+            </div>
+
+            <!-- Grid Items -->
+            <div id="productsGrid" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+
+                <!-- ITEM 1: Apex Carbon Pro Running Jersey -->
+                <div class="product-item bg-kinetic-card border border-kinetic-border p-4 flex flex-col justify-between kinetic-card" 
+                     data-cat="jersey" data-sport="running,gym" data-title="Apex Carbon Pro Running Jersey Baju Lari Marathon Breathable">
+                    <div>
+                        <div class="aspect-[3/4] bg-kinetic-black overflow-hidden mb-3 relative group">
+                            <img src="https://images.unsplash.com/photo-1517838277536-f5f99be501cd?auto=format&fit=crop&w=600&q=80" alt="Apex Carbon Jersey" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+                            <span class="absolute top-2.5 left-2.5 bg-kinetic-volt text-black text-[8px] font-mono font-bold px-2 py-0.5 uppercase">
+                                RUNNING // RACER
+                            </span>
+                        </div>
+
+                        <div class="flex items-center gap-1.5 mb-1.5 text-[10px] text-kinetic-volt font-mono font-bold">
+                            <i class="fa-solid fa-bolt"></i>
+                            <span>Quick-Dry V-Mesh (108g)</span>
+                        </div>
+
+                        <h3 class="font-tech font-bold text-sm text-white uppercase leading-snug">Apex Carbon Pro Running Jersey</h3>
+                        <p class="text-xs text-slate-400 mt-1 line-clamp-1">Jersey lari marathon micro-mesh dengan sirkulasi udara sarang lebah.</p>
+                        
+                        <div class="mt-2 text-[11px] text-slate-500 font-mono">
+                            <span>Warna: Stealth Black • Volt Lime</span>
+                        </div>
+                    </div>
+
+                    <div class="mt-4 pt-3 border-t border-kinetic-border flex items-center justify-between">
+                        <div>
+                            <span class="text-[10px] text-slate-500 block font-mono">HARGA</span>
+                            <span class="font-bold text-sm text-white font-mono">Rp 189.000</span>
+                        </div>
+                        <div class="flex items-center gap-1">
+                            <a href="detail.html" class="p-2 bg-kinetic-dark hover:bg-kinetic-border text-white text-xs transition" title="Lihat Detail">
+                                <i class="fa-solid fa-eye"></i>
+                            </a>
+                            <a href="https://wa.me/6281234567890?text=Halo%20Kinetix%20Lab,%20saya%20mau%20pesan%20Apex%20Carbon%20Pro%20Jersey%20(Rp%20189.000)." target="_blank" class="px-3 py-1.5 bg-kinetic-volt hover:bg-kinetic-voltlight text-black text-xs font-tech font-bold transition">
+                                Pesan WA
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- ITEM 2: Kinetic HyperCompression Tights -->
+                <div class="product-item bg-kinetic-card border border-kinetic-border p-4 flex flex-col justify-between kinetic-card" 
+                     data-cat="compression" data-sport="gym,running" data-title="Kinetic HyperCompression Tights Celana Legging Olahraga Pria Wanita">
+                    <div>
+                        <div class="aspect-[3/4] bg-kinetic-black overflow-hidden mb-3 relative group">
+                            <img src="https://images.unsplash.com/photo-1506126613408-eca07ce68773?auto=format&fit=crop&w=600&q=80" alt="Compression Tights" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+                            <span class="absolute top-2.5 left-2.5 bg-kinetic-cyan text-black text-[8px] font-mono font-bold px-2 py-0.5 uppercase">
+                                COMPRESSION // GYM
+                            </span>
+                        </div>
+
+                        <div class="flex items-center gap-1.5 mb-1.5 text-[10px] text-kinetic-cyan font-mono font-bold">
+                            <i class="fa-solid fa-arrows-up-down-left-right"></i>
+                            <span>4-Way HyperStretch (350%)</span>
+                        </div>
+
+                        <h3 class="font-tech font-bold text-sm text-white uppercase leading-snug">Kinetic HyperCompression Tights</h3>
+                        <p class="text-xs text-slate-400 mt-1 line-clamp-1">Celana compression penstabil otot paha dengan saku ponsel anti-goyang.</p>
+                        
+                        <div class="mt-2 text-[11px] text-slate-500 font-mono">
+                            <span>Warna: Matte Charcoal • Deep Navy</span>
+                        </div>
+                    </div>
+
+                    <div class="mt-4 pt-3 border-t border-kinetic-border flex items-center justify-between">
+                        <div>
+                            <span class="text-[10px] text-slate-500 block font-mono">HARGA</span>
+                            <span class="font-bold text-sm text-white font-mono">Rp 219.000</span>
+                        </div>
+                        <div class="flex items-center gap-1">
+                            <a href="detail.html" class="p-2 bg-kinetic-dark hover:bg-kinetic-border text-white text-xs transition">
+                                <i class="fa-solid fa-eye"></i>
+                            </a>
+                            <a href="https://wa.me/6281234567890?text=Halo%20Kinetix%20Lab,%20saya%20mau%20pesan%20Kinetic%20Compression%20Tights%20(Rp%20219.000)." target="_blank" class="px-3 py-1.5 bg-kinetic-volt hover:bg-kinetic-voltlight text-black text-xs font-tech font-bold transition">
+                                Pesan WA
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- ITEM 3: Veloce Packable Aero Windbreaker -->
+                <div class="product-item bg-kinetic-card border border-kinetic-border p-4 flex flex-col justify-between kinetic-card" 
+                     data-cat="windbreaker" data-sport="running,cycling" data-title="Veloce Packable Aero Windbreaker Jaket Parasut Lari Sepeda Lipat">
+                    <div>
+                        <div class="aspect-[3/4] bg-kinetic-black overflow-hidden mb-3 relative group">
+                            <img src="https://images.unsplash.com/photo-1544367567-0f2fcb009e0b?auto=format&fit=crop&w=600&q=80" alt="Windbreaker" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+                            <span class="absolute top-2.5 left-2.5 bg-kinetic-orange text-black text-[8px] font-mono font-bold px-2 py-0.5 uppercase">
+                                OUTDOOR // WINDPROOF
+                            </span>
+                        </div>
+
+                        <div class="flex items-center gap-1.5 mb-1.5 text-[10px] text-kinetic-orange font-mono font-bold">
+                            <i class="fa-solid fa-wind"></i>
+                            <span>DWR Water-Repellent</span>
+                        </div>
+
+                        <h3 class="font-tech font-bold text-sm text-white uppercase leading-snug">Veloce Packable Aero Windbreaker</h3>
+                        <p class="text-xs text-slate-400 mt-1 line-clamp-1">Jaket lari & sepeda tahan angin yang bisa dilipat seukuran telapak tangan.</p>
+                        
+                        <div class="mt-2 text-[11px] text-slate-500 font-mono">
+                            <span>Warna: Electric Volt • Lunar Gray</span>
+                        </div>
+                    </div>
+
+                    <div class="mt-4 pt-3 border-t border-kinetic-border flex items-center justify-between">
+                        <div>
+                            <span class="text-[10px] text-slate-500 block font-mono">HARGA</span>
+                            <span class="font-bold text-sm text-white font-mono">Rp 289.000</span>
+                        </div>
+                        <div class="flex items-center gap-1">
+                            <a href="detail.html" class="p-2 bg-kinetic-dark hover:bg-kinetic-border text-white text-xs transition">
+                                <i class="fa-solid fa-eye"></i>
+                            </a>
+                            <a href="https://wa.me/6281234567890?text=Halo%20Kinetix%20Lab,%20saya%20mau%20pesan%20Veloce%20Windbreaker%20(Rp%20289.000)." target="_blank" class="px-3 py-1.5 bg-kinetic-volt hover:bg-kinetic-voltlight text-black text-xs font-tech font-bold transition">
+                                Pesan WA
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- ITEM 4: Valkyrie High-Impact Sports Bra -->
+                <div class="product-item bg-kinetic-card border border-kinetic-border p-4 flex flex-col justify-between kinetic-card" 
+                     data-cat="bra" data-sport="running,yoga" data-title="Valkyrie High-Impact Sports Bra Zero Bounce Wanita">
+                    <div>
+                        <div class="aspect-[3/4] bg-kinetic-black overflow-hidden mb-3 relative group">
+                            <img src="https://images.unsplash.com/photo-1518611012118-696072aa579a?auto=format&fit=crop&w=600&q=80" alt="Sports Bra" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+                            <span class="absolute top-2.5 left-2.5 bg-kinetic-volt text-black text-[8px] font-mono font-bold px-2 py-0.5 uppercase">
+                                HIGH SUPPORT // FIT
+                            </span>
+                        </div>
+
+                        <div class="flex items-center gap-1.5 mb-1.5 text-[10px] text-kinetic-volt font-mono font-bold">
+                            <i class="fa-solid fa-shield-halved"></i>
+                            <span>Zero-Bounce Support</span>
+                        </div>
+
+                        <h3 class="font-tech font-bold text-sm text-white uppercase leading-snug">Valkyrie High-Impact Sports Bra</h3>
+                        <p class="text-xs text-slate-400 mt-1 line-clamp-1">Sports bra penopang aktivitas lari dan jumping rope tanpa rasa sesak.</p>
+                        
+                        <div class="mt-2 text-[11px] text-slate-500 font-mono">
+                            <span>Warna: Obsidian Black • Berry Rose</span>
+                        </div>
+                    </div>
+
+                    <div class="mt-4 pt-3 border-t border-kinetic-border flex items-center justify-between">
+                        <div>
+                            <span class="text-[10px] text-slate-500 block font-mono">HARGA</span>
+                            <span class="font-bold text-sm text-white font-mono">Rp 169.000</span>
+                        </div>
+                        <div class="flex items-center gap-1">
+                            <a href="detail.html" class="p-2 bg-kinetic-dark hover:bg-kinetic-border text-white text-xs transition">
+                                <i class="fa-solid fa-eye"></i>
+                            </a>
+                            <a href="https://wa.me/6281234567890?text=Halo%20Kinetix%20Lab,%20saya%20mau%20pesan%20Valkyrie%20Sports%20Bra%20(Rp%20169.000)." target="_blank" class="px-3 py-1.5 bg-kinetic-volt hover:bg-kinetic-voltlight text-black text-xs font-tech font-bold transition">
+                                Pesan WA
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- ITEM 5: Aeroflow Marathon Singlet -->
+                <div class="product-item bg-kinetic-card border border-kinetic-border p-4 flex flex-col justify-between kinetic-card" 
+                     data-cat="jersey" data-sport="running" data-title="Aeroflow Marathon Singlet Kaos Tanpa Lengan Lari Ekstra Ringan">
+                    <div>
+                        <div class="aspect-[3/4] bg-kinetic-black overflow-hidden mb-3 relative group">
+                            <img src="https://images.unsplash.com/photo-1517838277536-f5f99be501cd?auto=format&fit=crop&w=600&q=80" alt="Marathon Singlet" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+                            <span class="absolute top-2.5 left-2.5 bg-kinetic-volt text-black text-[8px] font-mono font-bold px-2 py-0.5 uppercase">
+                                RACE DAY // SINGLET
+                            </span>
+                        </div>
+
+                        <div class="flex items-center gap-1.5 mb-1.5 text-[10px] text-kinetic-volt font-mono font-bold">
+                            <i class="fa-solid fa-feather"></i>
+                            <span>Ultralight (89 Gram)</span>
+                        </div>
+
+                        <h3 class="font-tech font-bold text-sm text-white uppercase leading-snug">Aeroflow Marathon Race Singlet</h3>
+                        <p class="text-xs text-slate-400 mt-1 line-clamp-1">Singlet potongan atletis tanpa gesekan di ketiak (*anti-chafing*).</p>
+                        
+                        <div class="mt-2 text-[11px] text-slate-500 font-mono">
+                            <span>Warna: Acid Lime • White Pure</span>
+                        </div>
+                    </div>
+
+                    <div class="mt-4 pt-3 border-t border-kinetic-border flex items-center justify-between">
+                        <div>
+                            <span class="text-[10px] text-slate-500 block font-mono">HARGA</span>
+                            <span class="font-bold text-sm text-white font-mono">Rp 149.000</span>
+                        </div>
+                        <div class="flex items-center gap-1">
+                            <a href="detail.html" class="p-2 bg-kinetic-dark hover:bg-kinetic-border text-white text-xs transition">
+                                <i class="fa-solid fa-eye"></i>
+                            </a>
+                            <a href="https://wa.me/6281234567890?text=Halo%20Kinetix%20Lab,%20saya%20mau%20pesan%20Aeroflow%20Singlet%20(Rp%20149.000)." target="_blank" class="px-3 py-1.5 bg-kinetic-volt hover:bg-kinetic-voltlight text-black text-xs font-tech font-bold transition">
+                                Pesan WA
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- ITEM 6: 2-in-1 Pace Running Shorts -->
+                <div class="product-item bg-kinetic-card border border-kinetic-border p-4 flex flex-col justify-between kinetic-card" 
+                     data-cat="compression" data-sport="running,gym" data-title="2-in-1 Pace Running Shorts Celana Pendek Lari dengan Inner Compression">
+                    <div>
+                        <div class="aspect-[3/4] bg-kinetic-black overflow-hidden mb-3 relative group">
+                            <img src="https://images.unsplash.com/photo-1506126613408-eca07ce68773?auto=format&fit=crop&w=600&q=80" alt="Running Shorts" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+                            <span class="absolute top-2.5 left-2.5 bg-kinetic-cyan text-black text-[8px] font-mono font-bold px-2 py-0.5 uppercase">
+                                2-IN-1 LINED
+                            </span>
+                        </div>
+
+                        <div class="flex items-center gap-1.5 mb-1.5 text-[10px] text-kinetic-cyan font-mono font-bold">
+                            <i class="fa-solid fa-mobile-screen"></i>
+                            <span>Phone Pocket & Gel Loops</span>
+                        </div>
+
+                        <h3 class="font-tech font-bold text-sm text-white uppercase leading-snug">Pace 2-in-1 Speed Shorts</h3>
+                        <p class="text-xs text-slate-400 mt-1 line-clamp-1">Celana lari luar ringan dengan lapisan dalam compression anti-gesek paha.</p>
+                        
+                        <div class="mt-2 text-[11px] text-slate-500 font-mono">
+                            <span>Warna: Stealth Black • Gunmetal</span>
+                        </div>
+                    </div>
+
+                    <div class="mt-4 pt-3 border-t border-kinetic-border flex items-center justify-between">
+                        <div>
+                            <span class="text-[10px] text-slate-500 block font-mono">HARGA</span>
+                            <span class="font-bold text-sm text-white font-mono">Rp 179.000</span>
+                        </div>
+                        <div class="flex items-center gap-1">
+                            <a href="detail.html" class="p-2 bg-kinetic-dark hover:bg-kinetic-border text-white text-xs transition">
+                                <i class="fa-solid fa-eye"></i>
+                            </a>
+                            <a href="https://wa.me/6281234567890?text=Halo%20Kinetix%20Lab,%20saya%20mau%20pesan%20Pace%202-in-1%20Shorts%20(Rp%20179.000)." target="_blank" class="px-3 py-1.5 bg-kinetic-volt hover:bg-kinetic-voltlight text-black text-xs font-tech font-bold transition">
+                                Pesan WA
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- ITEM 7: Kinetic Reflective Running Cap -->
+                <div class="product-item bg-kinetic-card border border-kinetic-border p-4 flex flex-col justify-between kinetic-card" 
+                     data-cat="acc" data-sport="running,cycling" data-title="Kinetic Reflective Running Cap Topi Lari Ringan Cepat Kering">
+                    <div>
+                        <div class="aspect-[3/4] bg-kinetic-black overflow-hidden mb-3 relative group">
+                            <img src="https://images.unsplash.com/photo-1544367567-0f2fcb009e0b?auto=format&fit=crop&w=600&q=80" alt="Running Cap" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+                            <span class="absolute top-2.5 left-2.5 bg-kinetic-volt text-black text-[8px] font-mono font-bold px-2 py-0.5 uppercase">
+                                3M REFLECTIVE
+                            </span>
+                        </div>
+
+                        <div class="flex items-center gap-1.5 mb-1.5 text-[10px] text-kinetic-volt font-mono font-bold">
+                            <i class="fa-solid fa-sun"></i>
+                            <span>UPF 50+ UV Protection</span>
+                        </div>
+
+                        <h3 class="font-tech font-bold text-sm text-white uppercase leading-snug">AeroLite Reflective Running Cap</h3>
+                        <p class="text-xs text-slate-400 mt-1 line-clamp-1">Topi lari lipat dengan sweatband penahan keringat agar tidak masuk mata.</p>
+                        
+                        <div class="mt-2 text-[11px] text-slate-500 font-mono">
+                            <span>Warna: All Black • Neon Volt</span>
+                        </div>
+                    </div>
+
+                    <div class="mt-4 pt-3 border-t border-kinetic-border flex items-center justify-between">
+                        <div>
+                            <span class="text-[10px] text-slate-500 block font-mono">HARGA</span>
+                            <span class="font-bold text-sm text-white font-mono">Rp 99.000</span>
+                        </div>
+                        <div class="flex items-center gap-1">
+                            <a href="detail.html" class="p-2 bg-kinetic-dark hover:bg-kinetic-border text-white text-xs transition">
+                                <i class="fa-solid fa-eye"></i>
+                            </a>
+                            <a href="https://wa.me/6281234567890?text=Halo%20Kinetix%20Lab,%20saya%20mau%20pesan%20AeroLite%20Running%20Cap%20(Rp%2099.000)." target="_blank" class="px-3 py-1.5 bg-kinetic-volt hover:bg-kinetic-voltlight text-black text-xs font-tech font-bold transition">
+                                Pesan WA
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- ITEM 8: ZenFlow High-Waist Seamless Legging -->
+                <div class="product-item bg-kinetic-card border border-kinetic-border p-4 flex flex-col justify-between kinetic-card" 
+                     data-cat="compression" data-sport="yoga,gym" data-title="ZenFlow High-Waist Seamless Legging Yoga Pilates Squat-Proof">
+                    <div>
+                        <div class="aspect-[3/4] bg-kinetic-black overflow-hidden mb-3 relative group">
+                            <img src="https://images.unsplash.com/photo-1518611012118-696072aa579a?auto=format&fit=crop&w=600&q=80" alt="Yoga Legging" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+                            <span class="absolute top-2.5 left-2.5 bg-kinetic-volt text-black text-[8px] font-mono font-bold px-2 py-0.5 uppercase">
+                                YOGA // SQUAT-PROOF
+                            </span>
+                        </div>
+
+                        <div class="flex items-center gap-1.5 mb-1.5 text-[10px] text-kinetic-volt font-mono font-bold">
+                            <i class="fa-solid fa-check-double"></i>
+                            <span>100% Anti-Tembus Pandang</span>
+                        </div>
+
+                        <h3 class="font-tech font-bold text-sm text-white uppercase leading-snug">ZenFlow High-Waist Tights</h3>
+                        <p class="text-xs text-slate-400 mt-1 line-clamp-1">Legging yoga rajut seamless dengan elastisitas mentega halus (*butter-soft*).</p>
+                        
+                        <div class="mt-2 text-[11px] text-slate-500 font-mono">
+                            <span>Warna: Slate Gray • Olive Moss</span>
+                        </div>
+                    </div>
+
+                    <div class="mt-4 pt-3 border-t border-kinetic-border flex items-center justify-between">
+                        <div>
+                            <span class="text-[10px] text-slate-500 block font-mono">HARGA</span>
+                            <span class="font-bold text-sm text-white font-mono">Rp 199.000</span>
+                        </div>
+                        <div class="flex items-center gap-1">
+                            <a href="detail.html" class="p-2 bg-kinetic-dark hover:bg-kinetic-border text-white text-xs transition">
+                                <i class="fa-solid fa-eye"></i>
+                            </a>
+                            <a href="https://wa.me/6281234567890?text=Halo%20Kinetix%20Lab,%20saya%20mau%20pesan%20ZenFlow%20Leggings%20(Rp%20199.000)." target="_blank" class="px-3 py-1.5 bg-kinetic-volt hover:bg-kinetic-voltlight text-black text-xs font-tech font-bold transition">
+                                Pesan WA
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- Empty State -->
+            <div id="noResults" class="hidden text-center py-16 bg-kinetic-card border border-kinetic-border mt-8">
+                <i class="fa-solid fa-bolt-lightning text-3xl text-kinetic-volt mb-3"></i>
+                <h4 class="text-base font-tech font-bold text-white uppercase">Activewear Tidak Ditemukan</h4>
+                <p class="text-xs text-slate-400 mt-1 max-w-sm mx-auto font-normal">
+                    Coba ganti kata kunci pencarian atau klik tombol reset filter untuk melihat seluruh katalog perlengkapan olahraga.
+                </p>
+                <button onclick="resetFilters()" class="mt-4 px-6 py-2.5 bg-kinetic-volt text-black text-xs font-tech font-bold uppercase tracking-wider hover:bg-kinetic-voltlight transition">
+                    Reset Filter
+                </button>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- 5. FOOTER -->
+    <footer class="bg-kinetic-black text-slate-400 border-t border-kinetic-border pt-14 pb-28">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex flex-col md:flex-row items-center justify-between gap-6 border-b border-kinetic-border pb-8">
+                <div class="flex items-center gap-3">
+                    <div class="w-9 h-9 bg-kinetic-card border border-kinetic-volt flex items-center justify-center text-lg text-kinetic-volt transform -skew-x-12">
+                        <i class="fa-solid fa-bolt-lightning transform skew-x-12"></i>
+                    </div>
+                    <span class="text-2xl font-display font-bold text-white uppercase tracking-wider">
+                        KINETIX<span class="text-kinetic-volt">.</span>LAB
+                    </span>
+                </div>
+                <div class="flex flex-wrap gap-6 text-xs text-slate-400 font-bold uppercase tracking-wider font-tech">
+                    <a href="index.html" class="hover:text-kinetic-volt">Beranda</a>
+                    <a href="katalog.html" class="text-kinetic-volt">Katalog</a>
+                    <a href="detail.html" class="hover:text-kinetic-volt">Teknologi</a>
+                    <a href="tentang.html" class="hover:text-kinetic-volt">Standar Lab</a>
+                    <a href="artikel.html" class="hover:text-kinetic-volt">Panduan</a>
+                    <a href="kontak.html" class="hover:text-kinetic-volt">Custom Club</a>
+                </div>
+            </div>
+            <div class="mt-6 flex flex-col sm:flex-row items-center justify-between text-xs text-slate-500 font-mono">
+                <p>&copy; 2026 KINETIX LAB ACTIVEWEAR. All Rights Reserved.</p>
+                <p class="text-[11px] mt-2 sm:mt-0">Lentera Pasar Production Template — High-Performance Athletic</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- FLOATING WHATSAPP BUTTON (bottom-24) -->
+    <a href="https://wa.me/6281234567890?text=Halo%20Kinetix%20Lab,%20saya%20ingin%20konsultasi%20pakaian%20olahraga." 
+       target="_blank" 
+       class="fixed bottom-24 right-6 z-50 group flex items-center gap-3 bg-kinetic-dark hover:bg-kinetic-card text-white px-4 py-3 border border-kinetic-border shadow-2xl hover:border-kinetic-volt transition-all duration-300">
+        <span class="relative flex h-3 w-3">
+            <span class="animate-ping absolute inline-flex h-full w-full bg-kinetic-volt opacity-75"></span>
+            <span class="relative inline-flex rounded-full h-3 w-3 bg-kinetic-volt"></span>
+        </span>
+        <i class="fa-brands fa-whatsapp text-2xl text-emerald-400"></i>
+        <div class="text-left hidden sm:block pr-1 font-tech">
+            <div class="text-[10px] text-kinetic-volt font-bold uppercase tracking-wider leading-none">Athletic Stylist</div>
+            <span class="font-bold text-xs text-white">Konsultasi Activewear WA</span>
+        </div>
+    </a>
+
+    <!-- LENTERA PASAR - STICKY DEMO & SALES BAR (fixed bottom-4) -->
+    <div class="fixed bottom-4 left-1/2 -translate-x-1/2 z-50 w-[95%] max-w-4xl bg-slate-900/95 backdrop-blur-md text-white p-3.5 md:p-4 rounded-2xl shadow-2xl border border-slate-700/80 transition-all duration-300">
+      <div class="flex flex-col md:flex-row items-center justify-between gap-3 md:gap-4">
+        <div class="flex items-center gap-3 w-full md:w-auto">
+          <div class="w-10 h-10 rounded-xl bg-lime-500/20 border border-lime-500/40 flex items-center justify-center shrink-0">
+            <svg class="w-5 h-5 text-lime-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z" />
+            </svg>
+          </div>
+          <div>
+            <div class="flex items-center gap-2">
+              <span class="font-bold text-sm text-white">Lentera Pasar Engine</span>
+              <span class="text-[10px] bg-lime-500/20 text-lime-300 border border-lime-500/30 px-2 py-0.5 rounded-full font-medium">Kinetic Activewear Template</span>
+            </div>
+            <p class="text-xs text-slate-300 hidden sm:block">
+              Terima beres: Website responsif + Panel input produk sendiri + Dikelola tim iklan profesional.
+            </p>
+          </div>
+        </div>
+
+        <div class="flex items-center justify-between md:justify-end gap-3 w-full md:w-auto">
+          <a href="https://wa.me/6281234567890?text=Halo%20Tim%20Lentera%20Pasar,%20saya%20tertarik%20menggunakan%20template%20website%20Kinetic%20Activewear%20ini%20lengkap%20dengan%20Admin%20Panel%20dan%20Jasa%20Iklannya." 
+             target="_blank"
+             class="w-full md:w-auto inline-flex items-center justify-center gap-2 bg-gradient-to-r from-lime-500 to-emerald-600 hover:from-lime-400 hover:to-emerald-500 text-black text-xs md:text-sm font-bold px-5 py-2.5 rounded-xl shadow-lg transition-all hover:scale-105 shrink-0">
+            <span>Gunakan Template Ini</span>
+            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3" />
+            </svg>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <!-- JAVASCRIPT FILTER LOGIC -->
+    <script>
+        let currentCat = 'all';
+
+        function filterCategory(cat) {
+            currentCat = cat;
+            document.querySelectorAll('.cat-pill').forEach(btn => {
+                if (btn.dataset.cat === cat) {
+                    btn.classList.remove('bg-kinetic-card', 'text-slate-300', 'border');
+                    btn.classList.add('bg-kinetic-volt', 'text-black');
+                } else {
+                    btn.classList.remove('bg-kinetic-volt', 'text-black');
+                    btn.classList.add('bg-kinetic-card', 'text-slate-300', 'border');
+                }
+            });
+            applyAllFilters();
+        }
+
+        document.getElementById('searchInput').addEventListener('input', applyAllFilters);
+
+        function applyAllFilters() {
+            const query = document.getElementById('searchInput').value.toLowerCase().trim();
+            const sport = document.getElementById('sportFilter').value;
+            const items = document.querySelectorAll('.product-item');
+            let visibleCount = 0;
+
+            items.forEach(item => {
+                const itemCat = item.dataset.cat;
+                const itemSports = (item.dataset.sport || '').split(',');
+                const itemTitle = (item.dataset.title || '').toLowerCase();
+
+                const matchCat = (currentCat === 'all' || itemCat === currentCat);
+                const matchSport = (sport === 'all' || itemSports.includes(sport));
+                const matchQuery = (!query || itemTitle.includes(query));
+
+                if (matchCat && matchSport && matchQuery) {
+                    item.classList.remove('hidden');
+                    visibleCount++;
+                } else {
+                    item.classList.add('hidden');
+                }
+            });
+
+            document.getElementById('productCount').innerText = visibleCount;
+            const noRes = document.getElementById('noResults');
+            if (visibleCount === 0) {
+                noRes.classList.remove('hidden');
+            } else {
+                noRes.classList.add('hidden');
+            }
+        }
+
+        function resetFilters() {
+            document.getElementById('searchInput').value = '';
+            document.getElementById('sportFilter').value = 'all';
+            filterCategory('all');
+        }
+
+        // Mobile menu toggle
+        const mobileMenuBtn = document.getElementById('mobileMenuBtn');
+        const mobileMenu = document.getElementById('mobileMenu');
+        const menuIcon = document.getElementById('menuIcon');
+
+        mobileMenuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+            if (mobileMenu.classList.contains('hidden')) {
+                menuIcon.classList.remove('fa-xmark');
+                menuIcon.classList.add('fa-bars-staggered');
+            } else {
+                menuIcon.classList.remove('fa-bars-staggered');
+                menuIcon.classList.add('fa-xmark');
+            }
+        });
+    </script>
+</body>
+</html>

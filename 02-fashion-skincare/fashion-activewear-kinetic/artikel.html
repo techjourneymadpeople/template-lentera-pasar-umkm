@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+<html lang="id" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jurnal Sains Olahraga & Panduan Workout — KINETIX LAB</title>
+    <meta name="description" content="Koleksi artikel sains olahraga: panduan memilih pakaian marathon, manfaat celana compression untuk pemulihan otot, dan cara merawat activewear spandex.">
+    
+    <!-- Google Fonts: Plus Jakarta Sans & Chakra Petch / Teko -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:ital,wght@0,500;0,700;1,700&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Teko:wght@500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        kinetic: {
+                            black: '#070B11',
+                            dark: '#0B0F19',
+                            card: '#111827',
+                            cardhover: '#182234',
+                            border: '#1F2937',
+                            borderlight: '#374151',
+                            volt: '#84CC16',
+                            voltlight: '#A3E635',
+                            voltdark: '#4D7C0F',
+                            cyan: '#06B6D4',
+                            orange: '#F97316',
+                            silver: '#94A3B8',
+                            muted: '#64748B'
+                        }
+                    },
+                    fontFamily: {
+                        sans: ['"Plus Jakarta Sans"', 'sans-serif'],
+                        tech: ['"Chakra Petch"', '"Plus Jakarta Sans"', 'sans-serif'],
+                        display: ['"Teko"', 'sans-serif']
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        .no-scrollbar::-webkit-scrollbar { display: none; }
+        .no-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
+        
+        .kinetic-card {
+            transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+        }
+        .kinetic-card:hover {
+            transform: translateY(-4px);
+            border-color: #84CC16;
+            box-shadow: 0 20px 30px -10px rgba(132, 204, 22, 0.15);
+        }
+    </style>
+</head>
+<body class="bg-kinetic-black text-slate-100 font-sans antialiased selection:bg-kinetic-volt selection:text-black">
+
+    <!-- 1. TOP BAR -->
+    <div class="bg-kinetic-dark border-b border-kinetic-border text-[11px] py-2.5 px-4 font-mono font-medium tracking-wider text-slate-300">
+        <div class="max-w-7xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-2 text-center sm:text-left">
+            <div class="flex items-center justify-center gap-2">
+                <span class="inline-flex items-center gap-1.5 px-2.5 py-0.5 rounded-sm bg-kinetic-volt/10 text-kinetic-volt border border-kinetic-volt/30 text-[9px] font-bold tracking-widest uppercase">
+                    <span class="w-1.5 h-1.5 rounded-full bg-kinetic-volt animate-ping"></span>
+                    ATHLETIC SCIENCE JOURNAL
+                </span>
+                <span class="text-slate-300">Riset Biomekanika & Panduan Nutrisi Tekstil Olahraga</span>
+            </div>
+            <div class="flex items-center gap-4 text-[10px] text-slate-400">
+                <a href="katalog.html" class="text-kinetic-volt hover:text-white font-bold transition">Katalog Activewear &rarr;</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- 2. NAVBAR -->
+    <header class="sticky top-0 z-40 bg-kinetic-dark/95 backdrop-blur-md border-b border-kinetic-border transition-all">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-20 sm:h-24">
+                
+                <a href="index.html" class="flex items-center gap-3 group">
+                    <div class="w-11 h-11 bg-kinetic-card border border-kinetic-border group-hover:border-kinetic-volt flex items-center justify-center text-xl text-kinetic-volt transform -skew-x-12 transition duration-300">
+                        <i class="fa-solid fa-bolt-lightning transform skew-x-12"></i>
+                    </div>
+                    <div class="flex flex-col">
+                        <span class="text-2xl sm:text-3xl font-display font-bold tracking-wider text-white uppercase leading-none group-hover:text-kinetic-volt transition">
+                            KINETIX<span class="text-kinetic-volt">.</span>LAB
+                        </span>
+                        <span class="text-[9px] font-mono tracking-widest text-kinetic-silver uppercase">
+                            APEX PERFORMANCE WEAR
+                        </span>
+                    </div>
+                </a>
+
+                <nav class="hidden lg:flex items-center gap-8 text-xs font-bold tracking-widest uppercase text-slate-300 font-tech">
+                    <a href="index.html" class="hover:text-kinetic-volt transition">Beranda</a>
+                    <a href="katalog.html" class="hover:text-kinetic-volt transition">Katalog Activewear</a>
+                    <a href="detail.html" class="hover:text-kinetic-volt transition">Teknologi Quick-Dry</a>
+                    <a href="tentang.html" class="hover:text-kinetic-volt transition">Standar Lab Atlet</a>
+                    <a href="artikel.html" class="text-kinetic-volt border-b-2 border-kinetic-volt pb-1">Panduan Workout</a>
+                    <a href="kontak.html" class="hover:text-kinetic-volt transition">Jersey Custom WA</a>
+                </nav>
+
+                <div class="hidden sm:flex items-center gap-3">
+                    <a href="https://wa.me/6281234567890?text=Halo%20Kinetix%20Lab,%20saya%20mau%20tanya%20seputar%20tips%20workout%20dan%20pakaian%20olahraga." target="_blank" class="inline-flex items-center gap-2 bg-kinetic-volt hover:bg-kinetic-voltlight text-black text-xs font-bold font-tech tracking-wider px-5 py-2.5 transition-all shadow-lg shadow-kinetic-volt/20">
+                        <i class="fa-brands fa-whatsapp text-black text-sm"></i>
+                        <span class="uppercase">Tanya Coach WA</span>
+                    </a>
+                </div>
+
+                <button id="mobileMenuBtn" class="lg:hidden p-2 text-slate-300 hover:text-kinetic-volt focus:outline-none" aria-label="Toggle Menu">
+                    <i id="menuIcon" class="fa-solid fa-bars-staggered text-xl"></i>
+                </button>
+            </div>
+        </div>
+
+        <!-- Mobile Drawer -->
+        <div id="mobileMenu" class="hidden lg:hidden bg-kinetic-dark border-b border-kinetic-border px-4 py-5 space-y-3 font-tech">
+            <a href="index.html" class="block text-xs font-bold uppercase tracking-wider text-slate-300 hover:text-kinetic-volt py-2 border-b border-kinetic-border">Beranda Utama</a>
+            <a href="katalog.html" class="block text-xs font-bold uppercase tracking-wider text-slate-300 hover:text-kinetic-volt py-2 border-b border-kinetic-border">Katalog Jersey & Legging</a>
+            <a href="detail.html" class="block text-xs font-bold uppercase tracking-wider text-slate-300 hover:text-kinetic-volt py-2 border-b border-kinetic-border">Teknologi Quick-Dry & 4-Way Stretch</a>
+            <a href="tentang.html" class="block text-xs font-bold uppercase tracking-wider text-slate-300 hover:text-kinetic-volt py-2 border-b border-kinetic-border">Standar Ketahanan Lab Atlet</a>
+            <a href="artikel.html" class="block text-xs font-bold uppercase tracking-wider text-kinetic-volt py-2 border-b border-kinetic-border">Tips Workout & Panduan Lari</a>
+            <a href="kontak.html" class="block text-xs font-bold uppercase tracking-wider text-slate-300 hover:text-kinetic-volt py-2">Jersey Custom Komunitas</a>
+        </div>
+    </header>
+
+    <!-- 3. PAGE HEADER & FEATURED ATHLETIC ESSAY -->
+    <section class="py-12 bg-kinetic-dark border-b border-kinetic-border">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            
+            <div class="max-w-3xl mb-10">
+                <div class="inline-flex items-center gap-2 px-3 py-1 bg-kinetic-volt/10 border border-kinetic-volt/30 text-kinetic-volt text-xs font-mono font-bold tracking-widest uppercase mb-3">
+                    <span class="w-2 h-2 bg-kinetic-volt"></span>
+                    <span>SPORTS SCIENCE ESSAY</span>
+                </div>
+                <h1 class="text-3xl sm:text-5xl font-display font-bold text-white tracking-tight uppercase">
+                    Jurnal Edukasi & Sains Activewear
+                </h1>
+                <p class="text-xs sm:text-sm text-slate-400 mt-2 font-normal">
+                    Panduan pemilihan apparel berbasis riset untuk mengoptimalkan output kardiovaskular dan mempercepat pemulihan asam laktat.
+                </p>
+            </div>
+
+            <!-- Featured Story Card -->
+            <div class="bg-kinetic-card border border-kinetic-border p-6 sm:p-10">
+                <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
+                    <div class="lg:col-span-6">
+                        <div class="aspect-[16/10] bg-kinetic-black overflow-hidden relative group">
+                            <img src="https://images.unsplash.com/photo-1517838277536-f5f99be501cd?auto=format&fit=crop&w=800&q=80" alt="Marathon Running Apparel Science" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700">
+                            <span class="absolute top-3 left-3 bg-kinetic-volt text-black text-[9px] font-mono font-bold px-3 py-1 uppercase">
+                                COVER STORY
+                            </span>
+                        </div>
+                    </div>
+                    <div class="lg:col-span-6 space-y-4">
+                        <div class="flex items-center gap-3 text-xs text-slate-400 font-mono">
+                            <span>By Sports Scientist Kinetix</span>
+                            <span>•</span>
+                            <span>6 Min Read</span>
+                            <span>•</span>
+                            <span class="text-kinetic-volt font-bold">Marathon Gear</span>
+                        </div>
+                        <h2 class="text-2xl sm:text-3xl font-display font-bold text-white uppercase leading-tight">
+                            Anatomi Pakaian Lari Jarak Jauh: Mengapa Bahan Katun Terlarang untuk 21K & 42K
+                        </h2>
+                        <p class="text-xs sm:text-sm text-slate-300 leading-relaxed font-normal">
+                            Bahan katun menyerap keringat tanpa mampu menguapkannya (*hydrophilic trap*), menambah beban ekstra hingga 400 gram dan memicu gesekan luka lecet ketiak (*chafing*). Pelajari bagaimana micro-mesh hydrophobic sintetis bekerja menjaga tubuh tetap kering.
+                        </p>
+                        <div class="pt-2 font-tech">
+                            <a href="detail.html" class="inline-flex items-center gap-2 px-6 py-3 bg-kinetic-volt text-black text-xs font-bold tracking-wider uppercase hover:bg-kinetic-voltlight transition shadow-sm">
+                                <span>Lihat Apex Carbon Jersey</span>
+                                <i class="fa-solid fa-arrow-right text-[10px]"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- 4. GRID ARTIKEL PANDUAN WORKOUT & TRAINING -->
+    <section class="py-16 bg-kinetic-black">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            
+            <h3 class="text-2xl font-display font-bold text-white uppercase mb-8 flex items-center gap-2">
+                <i class="fa-solid fa-dumbbell text-kinetic-volt"></i>
+                <span>Semua Panduan Training & Activewear Care</span>
+            </h3>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 font-tech">
+                
+                <!-- Article 1 -->
+                <div class="bg-kinetic-card border border-kinetic-border p-6 flex flex-col justify-between kinetic-card">
+                    <div>
+                        <div class="aspect-[16/10] bg-kinetic-black overflow-hidden mb-4">
+                            <img src="https://images.unsplash.com/photo-1506126613408-eca07ce68773?auto=format&fit=crop&w=500&q=80" alt="Compression Muscle Recovery" class="w-full h-full object-cover">
+                        </div>
+                        <div class="flex items-center gap-2 text-[10px] font-mono font-bold text-slate-400 mb-2">
+                            <span class="text-kinetic-cyan">MUSCLE RECOVERY</span>
+                            <span>•</span>
+                            <span>5 Min Read</span>
+                        </div>
+                        <h4 class="font-bold text-base text-white uppercase leading-snug">
+                            Manfaat Graduated Compression Tights untuk Mencegah DOMS Pasca Sesi Squat Berat
+                        </h4>
+                        <p class="text-xs text-slate-400 mt-2 leading-relaxed font-normal font-sans">
+                            Bagaimana tekanan elastis membantu sirkulasi darah vena kembali ke jantung dan mengurangi getaran osilasi otot.
+                        </p>
+                    </div>
+                    <div class="mt-6 pt-4 border-t border-kinetic-border flex items-center justify-between text-xs font-mono">
+                        <span class="text-slate-500">Gym Tips</span>
+                        <a href="katalog.html" class="text-kinetic-volt font-bold hover:underline">Koleksi Tights &rarr;</a>
+                    </div>
+                </div>
+
+                <!-- Article 2 -->
+                <div class="bg-kinetic-card border border-kinetic-border p-6 flex flex-col justify-between kinetic-card">
+                    <div>
+                        <div class="aspect-[16/10] bg-kinetic-black overflow-hidden mb-4">
+                            <img src="https://images.unsplash.com/photo-1544367567-0f2fcb009e0b?auto=format&fit=crop&w=500&q=80" alt="Activewear Spandex Care" class="w-full h-full object-cover">
+                        </div>
+                        <div class="flex items-center gap-2 text-[10px] font-mono font-bold text-slate-400 mb-2">
+                            <span class="text-kinetic-volt">APPAREL CARE</span>
+                            <span>•</span>
+                            <span>4 Min Read</span>
+                        </div>
+                        <h4 class="font-bold text-base text-white uppercase leading-snug">
+                            Panduan Mencuci Jersey Lari Agar Elastisitas Spandex & Reflektif 3M Awet Bertahun-tahun
+                        </h4>
+                        <p class="text-xs text-slate-400 mt-2 leading-relaxed font-normal font-sans">
+                            Kesalahan fatal memakai pelembut cucian (*fabric softener*) yang merusak lapisan teknologi wicking kain.
+                        </p>
+                    </div>
+                    <div class="mt-6 pt-4 border-t border-kinetic-border flex items-center justify-between text-xs font-mono">
+                        <span class="text-slate-500">Care Guide</span>
+                        <a href="katalog.html" class="text-kinetic-volt font-bold hover:underline">Koleksi Jersey &rarr;</a>
+                    </div>
+                </div>
+
+                <!-- Article 3 -->
+                <div class="bg-kinetic-card border border-kinetic-border p-6 flex flex-col justify-between kinetic-card">
+                    <div>
+                        <div class="aspect-[16/10] bg-kinetic-black overflow-hidden mb-4">
+                            <img src="https://images.unsplash.com/photo-1518611012118-696072aa579a?auto=format&fit=crop&w=500&q=80" alt="Rainy Running Layering" class="w-full h-full object-cover">
+                        </div>
+                        <div class="flex items-center gap-2 text-[10px] font-mono font-bold text-slate-400 mb-2">
+                            <span class="text-kinetic-orange">WEATHER TACTICS</span>
+                            <span>•</span>
+                            <span>5 Min Read</span>
+                        </div>
+                        <h4 class="font-bold text-base text-white uppercase leading-snug">
+                            Layering System: Strategi Berpakaian Saat Lari di Musim Hujan Tanpa Menggigil
+                        </h4>
+                        <p class="text-xs text-slate-400 mt-2 leading-relaxed font-normal font-sans">
+                            Kombinasi jaket windbreaker DWR water-repellent dengan base layer cepat kering untuk menjaga suhu tubuh konstan.
+                        </p>
+                    </div>
+                    <div class="mt-6 pt-4 border-t border-kinetic-border flex items-center justify-between text-xs font-mono">
+                        <span class="text-slate-500">Outdoor Tips</span>
+                        <a href="katalog.html" class="text-kinetic-volt font-bold hover:underline">Koleksi Windbreaker &rarr;</a>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+    <!-- 5. GLOSARIUM TEKNOLOGI ACTIVEWEAR -->
+    <section class="py-16 bg-kinetic-dark border-t border-b border-kinetic-border">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            
+            <div class="text-center max-w-2xl mx-auto mb-12">
+                <span class="text-xs font-mono uppercase tracking-[0.25em] text-kinetic-volt font-bold block mb-1">
+                    // TEKSTIL PERFORMANCE GLOSSARY
+                </span>
+                <h3 class="text-3xl font-display font-bold text-white uppercase">
+                    Glosarium Terminologi Sportswear
+                </h3>
+                <p class="text-xs text-slate-400 mt-1 font-normal">
+                    Mengenal standar dan fitur material pakaian olahraga profesional.
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 text-xs font-tech">
+                
+                <div class="p-5 bg-kinetic-card border border-kinetic-border">
+                    <strong class="text-sm font-bold text-white uppercase block">4-Way HyperStretch</strong>
+                    <p class="text-slate-400 mt-1 text-[11px] leading-relaxed font-normal font-sans">
+                        Kain yang dapat meregang secara horizontal dan vertikal sekaligus untuk kebebasan gerak dinamis.
+                    </p>
+                </div>
+
+                <div class="p-5 bg-kinetic-card border border-kinetic-border">
+                    <strong class="text-sm font-bold text-white uppercase block">Flatlock Seams</strong>
+                    <p class="text-slate-400 mt-1 text-[11px] leading-relaxed font-normal font-sans">
+                        Teknik jahitan 4 jarum 6 benang rata yang tidak menimbulkan gesekan lecet pada kulit saat basah keringat.
+                    </p>
+                </div>
+
+                <div class="p-5 bg-kinetic-card border border-kinetic-border">
+                    <strong class="text-sm font-bold text-white uppercase block">Silver Ion Anti-Odor</strong>
+                    <p class="text-slate-400 mt-1 text-[11px] leading-relaxed font-normal font-sans">
+                        Perlakuan ion perak pada serat kain yang menghancurkan membran sel bakteri penyebab bau apek.
+                    </p>
+                </div>
+
+                <div class="p-5 bg-kinetic-card border border-kinetic-border">
+                    <strong class="text-sm font-bold text-white uppercase block">DWR Water-Repellent</strong>
+                    <p class="text-slate-400 mt-1 text-[11px] leading-relaxed font-normal font-sans">
+                        Lapisan hidrofobik yang membuat butiran air hujan meluncur jatuh tanpa meresap ke dalam jaket windbreaker.
+                    </p>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+    <!-- 6. FOOTER -->
+    <footer class="bg-kinetic-black text-slate-400 border-t border-kinetic-border pt-14 pb-28">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex flex-col md:flex-row items-center justify-between gap-6 border-b border-kinetic-border pb-8">
+                <div class="flex items-center gap-3">
+                    <div class="w-9 h-9 bg-kinetic-card border border-kinetic-volt flex items-center justify-center text-lg text-kinetic-volt transform -skew-x-12">
+                        <i class="fa-solid fa-bolt-lightning transform skew-x-12"></i>
+                    </div>
+                    <span class="text-2xl font-display font-bold text-white uppercase tracking-wider">
+                        KINETIX<span class="text-kinetic-volt">.</span>LAB
+                    </span>
+                </div>
+                <div class="flex flex-wrap gap-6 text-xs text-slate-400 font-bold uppercase tracking-wider font-tech">
+                    <a href="index.html" class="hover:text-kinetic-volt">Beranda</a>
+                    <a href="katalog.html" class="hover:text-kinetic-volt">Katalog</a>
+                    <a href="detail.html" class="hover:text-kinetic-volt">Teknologi</a>
+                    <a href="tentang.html" class="hover:text-kinetic-volt">Standar Lab</a>
+                    <a href="artikel.html" class="text-kinetic-volt">Panduan</a>
+                    <a href="kontak.html" class="hover:text-kinetic-volt">Custom Club</a>
+                </div>
+            </div>
+            <div class="mt-6 flex flex-col sm:flex-row items-center justify-between text-xs text-slate-500 font-mono">
+                <p>&copy; 2026 KINETIX LAB ACTIVEWEAR. All Rights Reserved.</p>
+                <p class="text-[11px] mt-2 sm:mt-0">Lentera Pasar Production Template — High-Performance Athletic</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- FLOATING WHATSAPP BUTTON (bottom-24) -->
+    <a href="https://wa.me/6281234567890?text=Halo%20Kinetix%20Lab,%20saya%20mau%20konsultasi%20artikel%20activewear." 
+       target="_blank" 
+       class="fixed bottom-24 right-6 z-50 group flex items-center gap-3 bg-kinetic-dark hover:bg-kinetic-card text-white px-4 py-3 border border-kinetic-border shadow-2xl hover:border-kinetic-volt transition-all duration-300">
+        <span class="relative flex h-3 w-3">
+            <span class="animate-ping absolute inline-flex h-full w-full bg-kinetic-volt opacity-75"></span>
+            <span class="relative inline-flex rounded-full h-3 w-3 bg-kinetic-volt"></span>
+        </span>
+        <i class="fa-brands fa-whatsapp text-2xl text-emerald-400"></i>
+        <div class="text-left hidden sm:block pr-1 font-tech">
+            <div class="text-[10px] text-kinetic-volt font-bold uppercase tracking-wider leading-none">Athletic Stylist</div>
+            <span class="font-bold text-xs text-white">Konsultasi Activewear WA</span>
+        </div>
+    </a>
+
+    <!-- LENTERA PASAR - STICKY DEMO & SALES BAR (fixed bottom-4) -->
+    <div class="fixed bottom-4 left-1/2 -translate-x-1/2 z-50 w-[95%] max-w-4xl bg-slate-900/95 backdrop-blur-md text-white p-3.5 md:p-4 rounded-2xl shadow-2xl border border-slate-700/80 transition-all duration-300">
+      <div class="flex flex-col md:flex-row items-center justify-between gap-3 md:gap-4">
+        <div class="flex items-center gap-3 w-full md:w-auto">
+          <div class="w-10 h-10 rounded-xl bg-lime-500/20 border border-lime-500/40 flex items-center justify-center shrink-0">
+            <svg class="w-5 h-5 text-lime-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z" />
+            </svg>
+          </div>
+          <div>
+            <div class="flex items-center gap-2">
+              <span class="font-bold text-sm text-white">Lentera Pasar Engine</span>
+              <span class="text-[10px] bg-lime-500/20 text-lime-300 border border-lime-500/30 px-2 py-0.5 rounded-full font-medium">Kinetic Activewear Template</span>
+            </div>
+            <p class="text-xs text-slate-300 hidden sm:block">
+              Terima beres: Website responsif + Panel input produk sendiri + Dikelola tim iklan profesional.
+            </p>
+          </div>
+        </div>
+
+        <div class="flex items-center justify-between md:justify-end gap-3 w-full md:w-auto">
+          <a href="https://wa.me/6281234567890?text=Halo%20Tim%20Lentera%20Pasar,%20saya%20tertarik%20menggunakan%20template%20website%20Kinetic%20Activewear%20ini%20lengkap%20dengan%20Admin%20Panel%20dan%20Jasa%20Iklannya." 
+             target="_blank"
+             class="w-full md:w-auto inline-flex items-center justify-center gap-2 bg-gradient-to-r from-lime-500 to-emerald-600 hover:from-lime-400 hover:to-emerald-500 text-black text-xs md:text-sm font-bold px-5 py-2.5 rounded-xl shadow-lg transition-all hover:scale-105 shrink-0">
+            <span>Gunakan Template Ini</span>
+            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3" />
+            </svg>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <!-- SCRIPT -->
+    <script>
+        const mobileMenuBtn = document.getElementById('mobileMenuBtn');
+        const mobileMenu = document.getElementById('mobileMenu');
+        const menuIcon = document.getElementById('menuIcon');
+
+        mobileMenuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+            if (mobileMenu.classList.contains('hidden')) {
+                menuIcon.classList.remove('fa-xmark');
+                menuIcon.classList.add('fa-bars-staggered');
+            } else {
+                menuIcon.classList.remove('fa-bars-staggered');
+                menuIcon.classList.add('fa-xmark');
+            }
+        });
+    </script>
+</body>
+</html>
