@@ -1,0 +1,785 @@
+<!DOCTYPE html>
+<html lang="id" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ESSĒNS STUDIO — Everyday Contemporary Casual Wear</title>
+    <meta name="description" content="Pakaian kasual minimalis berbahan 100% Breathable Cotton & Premium Linen. Desain modern, potongan versatile, dan nyaman dipakai seharian untuk pria & wanita.">
+    
+    <!-- Google Fonts: Plus Jakarta Sans & Inter -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        studio: {
+                            white: '#FFFFFF',
+                            stone: '#F9F9F8',
+                            warmstone: '#F2F2EE',
+                            border: '#E5E5E3',
+                            borderdark: '#D1D1CD',
+                            pitch: '#141414',
+                            charcoal: '#262626',
+                            muted: '#737373',
+                            oat: '#D6CEBE',
+                            sage: '#8F9E8B',
+                            terracotta: '#A85D47',
+                            navy: '#2C3E50'
+                        }
+                    },
+                    fontFamily: {
+                        sans: ['"Plus Jakarta Sans"', '"Inter"', 'sans-serif']
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        .no-scrollbar::-webkit-scrollbar { display: none; }
+        .no-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
+        
+        .studio-card {
+            transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+        }
+        .studio-card:hover {
+            transform: translateY(-3px);
+            border-color: #141414;
+        }
+    </style>
+</head>
+<body class="bg-studio-white text-studio-pitch font-sans antialiased selection:bg-studio-pitch selection:text-white">
+
+    <!-- 1. TOP ANNOUNCEMENT BAR -->
+    <div class="bg-studio-pitch text-white text-[11px] py-2 px-4 tracking-widest uppercase font-medium border-b border-studio-charcoal">
+        <div class="max-w-7xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-2 text-center sm:text-left">
+            <div class="flex items-center justify-center gap-2">
+                <span class="inline-flex items-center gap-1.5 px-2 py-0.5 rounded-full bg-white/20 text-white text-[9px] font-bold">
+                    <span class="w-1.5 h-1.5 rounded-full bg-emerald-400 animate-ping"></span>
+                    NEW DROP 2026
+                </span>
+                <span class="text-stone-300">100% Breathable Cotton • Garansi Anti-Susut Pre-Washed</span>
+            </div>
+            <div class="flex items-center gap-4 text-[10px] text-stone-300">
+                <span class="hidden md:inline"><i class="fa-solid fa-truck-fast mr-1"></i> Pengiriman Seluruh Indonesia</span>
+                <span class="hidden md:inline text-stone-600">|</span>
+                <a href="katalog.html" class="text-white underline hover:text-stone-300 transition">Katalog Lengkap &rarr;</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- 2. ULTRA-CLEAN MINIMALIST NAVBAR -->
+    <header class="sticky top-0 z-40 bg-white/95 backdrop-blur-md border-b border-studio-border transition-all">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-20">
+                
+                <!-- Brand Signature -->
+                <a href="index.html" class="flex flex-col group">
+                    <span class="text-2xl font-extrabold tracking-[0.2em] text-studio-pitch uppercase leading-none group-hover:opacity-75 transition">
+                        ESSĒNS
+                    </span>
+                    <span class="text-[8px] tracking-[0.4em] text-studio-muted uppercase mt-1 font-semibold">
+                        Contemporary Studio
+                    </span>
+                </a>
+
+                <!-- Desktop Nav Links -->
+                <nav class="hidden lg:flex items-center gap-8 text-xs font-semibold tracking-widest uppercase text-stone-700">
+                    <a href="index.html" class="text-studio-pitch font-bold border-b border-studio-pitch pb-0.5">Beranda</a>
+                    <a href="katalog.html" class="hover:text-studio-pitch transition">Katalog Kasual</a>
+                    <a href="detail.html" class="hover:text-studio-pitch transition">Detail Produk</a>
+                    <a href="tentang.html" class="hover:text-studio-pitch transition">Filosofi & Bahan</a>
+                    <a href="artikel.html" class="hover:text-studio-pitch transition">Lookbook OOTD</a>
+                    <a href="kontak.html" class="hover:text-studio-pitch transition">Studio & Toko</a>
+                </nav>
+
+                <!-- Action Button & Fit Finder -->
+                <div class="hidden sm:flex items-center gap-3">
+                    <button onclick="openFitGuideModal()" class="inline-flex items-center gap-2 px-4 py-2 rounded-full border border-studio-border hover:border-studio-pitch text-xs font-semibold tracking-wider text-studio-pitch transition">
+                        <i class="fa-solid fa-ruler-horizontal text-stone-500"></i>
+                        <span>Cari Ukuranmu</span>
+                    </button>
+                    <a href="https://wa.me/6281234567890?text=Halo%20Essens%20Studio,%20saya%20ingin%20konsultasi%20ukuran%20dan%20pemesanan%20pakaian." target="_blank" class="inline-flex items-center gap-2 bg-studio-pitch hover:bg-black text-white text-xs font-semibold tracking-wider px-5 py-2 rounded-full transition-all shadow-sm">
+                        <i class="fa-brands fa-whatsapp text-emerald-400"></i>
+                        <span>Pesan WA</span>
+                    </a>
+                </div>
+
+                <!-- Mobile Menu Button -->
+                <button id="mobileMenuBtn" class="lg:hidden p-2 text-studio-pitch hover:opacity-75 focus:outline-none" aria-label="Toggle Menu">
+                    <i id="menuIcon" class="fa-solid fa-bars-staggered text-xl"></i>
+                </button>
+            </div>
+        </div>
+
+        <!-- Mobile Drawer -->
+        <div id="mobileMenu" class="hidden lg:hidden bg-white border-b border-studio-border px-4 py-5 space-y-3">
+            <a href="index.html" class="block text-xs font-bold uppercase tracking-widest text-studio-pitch py-2 border-b border-studio-stone">Beranda Utama</a>
+            <a href="katalog.html" class="block text-xs font-semibold uppercase tracking-widest text-stone-700 hover:text-studio-pitch py-2 border-b border-studio-stone">Katalog Pakaian Pria & Wanita</a>
+            <a href="detail.html" class="block text-xs font-semibold uppercase tracking-widest text-stone-700 hover:text-studio-pitch py-2 border-b border-studio-stone">Detail Produk & Size Chart</a>
+            <a href="tentang.html" class="block text-xs font-semibold uppercase tracking-widest text-stone-700 hover:text-studio-pitch py-2 border-b border-studio-stone">Filosofi Bahan Katun Combed</a>
+            <a href="artikel.html" class="block text-xs font-semibold uppercase tracking-widest text-stone-700 hover:text-studio-pitch py-2 border-b border-studio-stone">Inspirasi OOTD & Rawat Kain</a>
+            <a href="kontak.html" class="block text-xs font-semibold uppercase tracking-widest text-stone-700 hover:text-studio-pitch py-2">Studio Offline & Store</a>
+            <div class="pt-2 flex flex-col gap-2">
+                <button onclick="openFitGuideModal()" class="w-full py-3 rounded-full bg-studio-stone text-studio-pitch border border-studio-border text-xs font-bold uppercase tracking-wider flex items-center justify-center gap-2">
+                    <i class="fa-solid fa-ruler-horizontal"></i> Panduan Ukuran & Fit
+                </button>
+                <a href="https://wa.me/6281234567890?text=Halo%20Essens%20Studio,%20saya%20ingin%20konsultasi%20baju." target="_blank" class="w-full py-3 rounded-full bg-studio-pitch text-white text-xs font-bold uppercase tracking-wider text-center flex items-center justify-center gap-2">
+                    <i class="fa-brands fa-whatsapp"></i> Chat Customer Service
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- 3. HERO: CENTERED MINIMALIST LAYOUT & LARGE 16:9 STUDIO BANNER -->
+    <section class="py-12 sm:py-16 border-b border-studio-border bg-studio-stone/40">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            
+            <div class="max-w-3xl mx-auto space-y-4 mb-8">
+                <span class="inline-block text-[11px] font-semibold uppercase tracking-[0.3em] text-studio-muted">
+                    // SEASONAL ESSENTIALS 2026
+                </span>
+                <h1 class="text-4xl sm:text-6xl font-extrabold text-studio-pitch tracking-tight leading-[1.1]">
+                    Daily Essentials for Everyday Wear.
+                </h1>
+                <p class="text-xs sm:text-sm text-studio-muted max-w-lg mx-auto leading-relaxed font-normal">
+                    Pakaian kasual dengan siluet bersih, fleksibel dipadupadankan, dan dirancang untuk memberikan kenyamanan maksimal di iklim tropis.
+                </p>
+                <div class="pt-2 flex items-center justify-center gap-3">
+                    <a href="katalog.html" class="inline-flex items-center gap-2 px-8 py-3.5 rounded-full bg-studio-pitch hover:bg-black text-white text-xs font-bold tracking-widest uppercase transition-all shadow-md">
+                        <span>EKSPLORASI KOLEKSI</span>
+                        <i class="fa-solid fa-arrow-right text-[10px]"></i>
+                    </a>
+                    <a href="artikel.html" class="inline-flex items-center gap-2 px-7 py-3.5 rounded-full bg-white hover:bg-studio-stone border border-studio-border text-studio-pitch text-xs font-bold tracking-widest uppercase transition">
+                        <span>LOOKBOOK OOTD</span>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Wide Cinematic Studio Photo Banner (16:9) -->
+            <div class="rounded-3xl overflow-hidden border border-studio-border shadow-sm max-w-5xl mx-auto bg-studio-stone relative group">
+                <div class="aspect-[16/9] w-full overflow-hidden">
+                    <img src="https://images.unsplash.com/photo-1489987707025-afc232f7ea0f?auto=format&fit=crop&w=1600&q=80" alt="Casual Minimalist Lookbook Studio" class="w-full h-full object-cover group-hover:scale-102 transition-transform duration-700">
+                </div>
+            </div>
+
+            <!-- Value Strip -->
+            <div class="mt-12 max-w-4xl mx-auto grid grid-cols-1 sm:grid-cols-3 gap-6 text-left border-t border-studio-border pt-8 text-xs">
+                <div class="flex items-start gap-3">
+                    <div class="w-8 h-8 rounded-full bg-studio-stone border border-studio-border flex items-center justify-center shrink-0 text-studio-pitch">
+                        <i class="fa-solid fa-feather"></i>
+                    </div>
+                    <div>
+                        <strong class="text-studio-pitch font-bold block">100% Breathable Cotton</strong>
+                        <span class="text-studio-muted leading-relaxed">Katun Combed 24s berpori lembut, sejuk menyerap keringat.</span>
+                    </div>
+                </div>
+                <div class="flex items-start gap-3">
+                    <div class="w-8 h-8 rounded-full bg-studio-stone border border-studio-border flex items-center justify-center shrink-0 text-studio-pitch">
+                        <i class="fa-solid fa-shield-halved"></i>
+                    </div>
+                    <div>
+                        <strong class="text-studio-pitch font-bold block">Pre-Washed Anti-Shrink</strong>
+                        <span class="text-studio-muted leading-relaxed">Melewati pencucian awal sehingga ukuran tidak menyusut saat dicuci.</span>
+                    </div>
+                </div>
+                <div class="flex items-start gap-3">
+                    <div class="w-8 h-8 rounded-full bg-studio-stone border border-studio-border flex items-center justify-center shrink-0 text-studio-pitch">
+                        <i class="fa-solid fa-gem"></i>
+                    </div>
+                    <div>
+                        <strong class="text-studio-pitch font-bold block">Jahitan Rantai Ekspor</strong>
+                        <span class="text-studio-muted leading-relaxed">Konstruksi leher & bahu kokoh tidak mudah melar bertahun-tahun.</span>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- 4. PRODUK UNGGULAN: GRID 4 KOLOM FOTO VERTIKAL (3:4) DENGAN QUICK COLOR SWATCHES -->
+    <section class="py-16 border-b border-studio-border">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            
+            <div class="flex flex-col md:flex-row md:items-end justify-between mb-12">
+                <div>
+                    <span class="text-xs uppercase tracking-[0.25em] text-studio-muted font-bold block mb-1">
+                        // ESSENTIALS CAPSULE
+                    </span>
+                    <h2 class="text-2xl sm:text-3xl font-extrabold text-studio-pitch">
+                        Pilihan Terfavorit Pekan Ini
+                    </h2>
+                    <p class="text-xs sm:text-sm text-studio-muted mt-1">
+                        Potongan serbaguna yang wajib ada di lemari pakaian setiap hari.
+                    </p>
+                </div>
+                <a href="katalog.html" class="mt-4 md:mt-0 text-xs font-bold text-studio-pitch border-b border-studio-pitch pb-0.5 hover:opacity-75 transition uppercase tracking-wider">
+                    Lihat Semua Pilihan &rarr;
+                </a>
+            </div>
+
+            <!-- 4 Column Product Grid -->
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+                
+                <!-- Product Card 1: Oversized Heavyweight Tee -->
+                <div class="bg-white rounded-2xl border border-studio-border p-4 flex flex-col justify-between studio-card">
+                    <div>
+                        <!-- Vertical Photo (3:4) -->
+                        <div class="aspect-[3/4] rounded-xl bg-studio-stone overflow-hidden mb-3 relative group flex items-center justify-center">
+                            <img id="cardImg-1" src="https://images.unsplash.com/photo-1521572267360-ee0c2909d518?auto=format&fit=crop&w=600&q=80" alt="Heavyweight Oversized Tee" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                            <span class="absolute top-2.5 right-2.5 bg-white/90 backdrop-blur-sm text-studio-pitch text-[9px] font-bold px-2 py-0.5 rounded-full border border-studio-border">
+                                BEST SELLER
+                            </span>
+                        </div>
+
+                        <!-- Color Swatches Circles -->
+                        <div class="flex items-center gap-1.5 mb-2.5">
+                            <button onclick="changeCardColor(1, 'Pure White', 'https://images.unsplash.com/photo-1521572267360-ee0c2909d518?auto=format&fit=crop&w=600&q=80', this)" class="w-4 h-4 rounded-full bg-white border-2 border-studio-pitch shadow-xs" title="Pure White"></button>
+                            <button onclick="changeCardColor(1, 'Jet Black', 'https://images.unsplash.com/photo-1503342217505-b0a15ec3261c?auto=format&fit=crop&w=600&q=80', this)" class="w-4 h-4 rounded-full bg-[#1A1A1A] border border-studio-border hover:scale-110 transition" title="Jet Black"></button>
+                            <button onclick="changeCardColor(1, 'Oatmeal Beige', 'https://images.unsplash.com/photo-1583743814966-8936f5b7be1a?auto=format&fit=crop&w=600&q=80', this)" class="w-4 h-4 rounded-full bg-[#D6CEBE] border border-studio-border hover:scale-110 transition" title="Oatmeal Beige"></button>
+                            <button onclick="changeCardColor(1, 'Sage Green', 'https://images.unsplash.com/photo-1562157873-818bc0726f68?auto=format&fit=crop&w=600&q=80', this)" class="w-4 h-4 rounded-full bg-[#8F9E8B] border border-studio-border hover:scale-110 transition" title="Sage Green"></button>
+                            <span id="colorName-1" class="text-[10px] text-studio-muted font-medium ml-1">Pure White</span>
+                        </div>
+
+                        <h3 class="font-bold text-sm text-studio-pitch leading-snug">Heavyweight Oversized Tee 24s</h3>
+                        <p class="text-xs text-studio-muted mt-1 line-clamp-1">Katun Combed 24s tebal tidak tembus pandang, potongan boxy.</p>
+                        
+                        <div class="mt-2 text-[11px] text-studio-muted flex items-center gap-1.5">
+                            <span>Ukuran: S • M • L • XL • XXL</span>
+                        </div>
+                    </div>
+
+                    <div class="mt-4 pt-3 border-t border-studio-border flex items-center justify-between">
+                        <div>
+                            <span class="text-[10px] text-studio-muted block">Harga</span>
+                            <span class="font-bold text-sm text-studio-pitch">Rp 129.000</span>
+                        </div>
+                        <a href="detail.html" class="px-3.5 py-1.5 rounded-full bg-studio-stone hover:bg-studio-pitch hover:text-white text-studio-pitch text-xs font-bold transition">
+                            Detail &rarr;
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Product Card 2: Linen Relaxed Shirt -->
+                <div class="bg-white rounded-2xl border border-studio-border p-4 flex flex-col justify-between studio-card">
+                    <div>
+                        <div class="aspect-[3/4] rounded-xl bg-studio-stone overflow-hidden mb-3 relative group flex items-center justify-center">
+                            <img id="cardImg-2" src="https://images.unsplash.com/photo-1596755094514-f87e34085b2c?auto=format&fit=crop&w=600&q=80" alt="Linen Relaxed Shirt" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                        </div>
+
+                        <div class="flex items-center gap-1.5 mb-2.5">
+                            <button onclick="changeCardColor(2, 'Natural Sand', 'https://images.unsplash.com/photo-1596755094514-f87e34085b2c?auto=format&fit=crop&w=600&q=80', this)" class="w-4 h-4 rounded-full bg-[#E3DAC9] border-2 border-studio-pitch" title="Natural Sand"></button>
+                            <button onclick="changeCardColor(2, 'Sky Blue', 'https://images.unsplash.com/photo-1602810318383-e386cc2a3ccf?auto=format&fit=crop&w=600&q=80', this)" class="w-4 h-4 rounded-full bg-[#A0C4DF] border border-studio-border hover:scale-110 transition" title="Sky Blue"></button>
+                            <button onclick="changeCardColor(2, 'Olive Earth', 'https://images.unsplash.com/photo-1603252109303-2751441dd157?auto=format&fit=crop&w=600&q=80', this)" class="w-4 h-4 rounded-full bg-[#6B705C] border border-studio-border hover:scale-110 transition" title="Olive Earth"></button>
+                            <span id="colorName-2" class="text-[10px] text-studio-muted font-medium ml-1">Natural Sand</span>
+                        </div>
+
+                        <h3 class="font-bold text-sm text-studio-pitch leading-snug">Relaxed French Linen Shirt</h3>
+                        <p class="text-xs text-studio-muted mt-1 line-clamp-1">Kemeja linen murni bertekstur sejuk dengan kerah terbuka.</p>
+                        
+                        <div class="mt-2 text-[11px] text-studio-muted flex items-center gap-1.5">
+                            <span>Ukuran: M • L • XL</span>
+                        </div>
+                    </div>
+
+                    <div class="mt-4 pt-3 border-t border-studio-border flex items-center justify-between">
+                        <div>
+                            <span class="text-[10px] text-studio-muted block">Harga</span>
+                            <span class="font-bold text-sm text-studio-pitch">Rp 249.000</span>
+                        </div>
+                        <a href="detail.html" class="px-3.5 py-1.5 rounded-full bg-studio-stone hover:bg-studio-pitch hover:text-white text-studio-pitch text-xs font-bold transition">
+                            Detail &rarr;
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Product Card 3: Casual Pleated Trousers -->
+                <div class="bg-white rounded-2xl border border-studio-border p-4 flex flex-col justify-between studio-card">
+                    <div>
+                        <div class="aspect-[3/4] rounded-xl bg-studio-stone overflow-hidden mb-3 relative group flex items-center justify-center">
+                            <img id="cardImg-3" src="https://images.unsplash.com/photo-1624378439575-d8705ad7ae80?auto=format&fit=crop&w=600&q=80" alt="Pleated Wide Trousers" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                        </div>
+
+                        <div class="flex items-center gap-1.5 mb-2.5">
+                            <button onclick="changeCardColor(3, 'Dark Charcoal', 'https://images.unsplash.com/photo-1624378439575-d8705ad7ae80?auto=format&fit=crop&w=600&q=80', this)" class="w-4 h-4 rounded-full bg-[#2C3E50] border-2 border-studio-pitch" title="Dark Charcoal"></button>
+                            <button onclick="changeCardColor(3, 'Khaki Tan', 'https://images.unsplash.com/photo-1473966968600-fa801b869a1a?auto=format&fit=crop&w=600&q=80', this)" class="w-4 h-4 rounded-full bg-[#C2B280] border border-studio-border hover:scale-110 transition" title="Khaki Tan"></button>
+                            <span id="colorName-3" class="text-[10px] text-studio-muted font-medium ml-1">Dark Charcoal</span>
+                        </div>
+
+                        <h3 class="font-bold text-sm text-studio-pitch leading-snug">Relaxed Pleated Wide Trousers</h3>
+                        <p class="text-xs text-studio-muted mt-1 line-clamp-1">Celana panjang bahan twill katun stretch dengan pinggang karet.</p>
+                        
+                        <div class="mt-2 text-[11px] text-studio-muted flex items-center gap-1.5">
+                            <span>Ukuran: 28 • 30 • 32 • 34 • 36</span>
+                        </div>
+                    </div>
+
+                    <div class="mt-4 pt-3 border-t border-studio-border flex items-center justify-between">
+                        <div>
+                            <span class="text-[10px] text-studio-muted block">Harga</span>
+                            <span class="font-bold text-sm text-studio-pitch">Rp 219.000</span>
+                        </div>
+                        <a href="detail.html" class="px-3.5 py-1.5 rounded-full bg-studio-stone hover:bg-studio-pitch hover:text-white text-studio-pitch text-xs font-bold transition">
+                            Detail &rarr;
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Product Card 4: Minimalist Workwear Jacket -->
+                <div class="bg-white rounded-2xl border border-studio-border p-4 flex flex-col justify-between studio-card">
+                    <div>
+                        <div class="aspect-[3/4] rounded-xl bg-studio-stone overflow-hidden mb-3 relative group flex items-center justify-center">
+                            <img id="cardImg-4" src="https://images.unsplash.com/photo-1551028719-00167b16eac5?auto=format&fit=crop&w=600&q=80" alt="Workwear Jacket" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                            <span class="absolute top-2.5 right-2.5 bg-studio-pitch text-white text-[9px] font-bold px-2 py-0.5 rounded-full">
+                                ESSENTIAL
+                            </span>
+                        </div>
+
+                        <div class="flex items-center gap-1.5 mb-2.5">
+                            <button onclick="changeCardColor(4, 'Washed Black', 'https://images.unsplash.com/photo-1551028719-00167b16eac5?auto=format&fit=crop&w=600&q=80', this)" class="w-4 h-4 rounded-full bg-[#1F2421] border-2 border-studio-pitch" title="Washed Black"></button>
+                            <button onclick="changeCardColor(4, 'Terracotta', 'https://images.unsplash.com/photo-1548883354-7622d03aca27?auto=format&fit=crop&w=600&q=80', this)" class="w-4 h-4 rounded-full bg-[#A85D47] border border-studio-border hover:scale-110 transition" title="Terracotta"></button>
+                            <span id="colorName-4" class="text-[10px] text-studio-muted font-medium ml-1">Washed Black</span>
+                        </div>
+
+                        <h3 class="font-bold text-sm text-studio-pitch leading-snug">Canvas Minimalist Chore Jacket</h3>
+                        <p class="text-xs text-studio-muted mt-1 line-clamp-1">Jaket kanvas katun serbaguna dengan saku dalam tersembunyi.</p>
+                        
+                        <div class="mt-2 text-[11px] text-studio-muted flex items-center gap-1.5">
+                            <span>Ukuran: S • M • L • XL</span>
+                        </div>
+                    </div>
+
+                    <div class="mt-4 pt-3 border-t border-studio-border flex items-center justify-between">
+                        <div>
+                            <span class="text-[10px] text-studio-muted block">Harga</span>
+                            <span class="font-bold text-sm text-studio-pitch">Rp 299.000</span>
+                        </div>
+                        <a href="detail.html" class="px-3.5 py-1.5 rounded-full bg-studio-stone hover:bg-studio-pitch hover:text-white text-studio-pitch text-xs font-bold transition">
+                            Detail &rarr;
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+    <!-- 5. SECTION KHUSUS: CURATED OOTD LOOKBOOK -->
+    <section class="py-16 bg-studio-stone border-b border-studio-border">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            
+            <div class="text-center max-w-2xl mx-auto mb-12">
+                <span class="text-xs uppercase tracking-[0.25em] text-studio-muted font-bold block mb-1">
+                    // INSPIRASI GAYA HARIAN
+                </span>
+                <h2 class="text-2xl sm:text-3xl font-extrabold text-studio-pitch">
+                    Curated OOTD Lookbook
+                </h2>
+                <p class="text-xs sm:text-sm text-studio-muted mt-1">
+                    Padu padan outfit kasual dari kepala hingga kaki untuk berbagai suasana santai maupun semi-formal.
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                
+                <!-- Look 1 -->
+                <div class="bg-white rounded-2xl border border-studio-border overflow-hidden group">
+                    <div class="aspect-[3/4] bg-stone-100 overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?auto=format&fit=crop&w=700&q=80" alt="Look 01 Clean Minimalist" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+                    </div>
+                    <div class="p-5 space-y-2">
+                        <span class="text-[10px] font-bold uppercase tracking-wider text-studio-muted block">LOOK 01 • MONOCHROME WEEKEND</span>
+                        <h4 class="font-bold text-sm text-studio-pitch">Heavyweight White Tee + Black Wide Trousers</h4>
+                        <p class="text-xs text-studio-muted">Kombinasi klasik hitam-putih yang bersih untuk bekerja di kafe atau jalan sore santai.</p>
+                        <div class="pt-2">
+                            <a href="katalog.html" class="text-xs font-bold text-studio-pitch hover:underline">Lihat Item Look Ini &rarr;</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Look 2 -->
+                <div class="bg-white rounded-2xl border border-studio-border overflow-hidden group">
+                    <div class="aspect-[3/4] bg-stone-100 overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1509631179647-0177331693ae?auto=format&fit=crop&w=700&q=80" alt="Look 02 Casual Smart" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+                    </div>
+                    <div class="p-5 space-y-2">
+                        <span class="text-[10px] font-bold uppercase tracking-wider text-studio-muted block">LOOK 02 • RESORT CASUAL</span>
+                        <h4 class="font-bold text-sm text-studio-pitch">Sand Linen Shirt + Khaki Pleated Shorts</h4>
+                        <p class="text-xs text-studio-muted">Sentuhan tekstur serat linen alami yang adem untuk liburan akhir pekan di cuaca cerah.</p>
+                        <div class="pt-2">
+                            <a href="katalog.html" class="text-xs font-bold text-studio-pitch hover:underline">Lihat Item Look Ini &rarr;</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Look 3 -->
+                <div class="bg-white rounded-2xl border border-studio-border overflow-hidden group">
+                    <div class="aspect-[3/4] bg-stone-100 overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1529139574466-a303027c1d8b?auto=format&fit=crop&w=700&q=80" alt="Look 03 City Layering" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+                    </div>
+                    <div class="p-5 space-y-2">
+                        <span class="text-[10px] font-bold uppercase tracking-wider text-studio-muted block">LOOK 03 • CITY LAYERING</span>
+                        <h4 class="font-bold text-sm text-studio-pitch">Oversized Tee + Chore Canvas Jacket</h4>
+                        <p class="text-xs text-studio-muted">Layering jaket kanvas minimalis untuk aktivitas mobilitas tinggi di ruang ber-AC.</p>
+                        <div class="pt-2">
+                            <a href="katalog.html" class="text-xs font-bold text-studio-pitch hover:underline">Lihat Item Look Ini &rarr;</a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+    <!-- 6. TESTIMONI PELANGGAN GAYA HIDUP SANTAI -->
+    <section class="py-16 border-b border-studio-border bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            
+            <div class="text-center max-w-2xl mx-auto mb-12">
+                <span class="text-xs uppercase tracking-[0.25em] text-studio-muted font-bold block mb-1">
+                    // ULASAN PELANGGAN
+                </span>
+                <h2 class="text-2xl sm:text-3xl font-extrabold text-studio-pitch">
+                    Kesan Mereka yang Memakainya
+                </h2>
+                <p class="text-xs sm:text-sm text-studio-muted mt-1">
+                    Cerita nyata tentang kenyamanan dan ketahanan bahan setelah dicuci berulang kali.
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                
+                <div class="bg-studio-stone p-6 rounded-2xl border border-studio-border flex flex-col justify-between">
+                    <div>
+                        <div class="flex items-center gap-1 text-amber-500 text-xs mb-3">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                        <p class="text-xs text-stone-700 leading-relaxed">
+                            "Kaos heavyweight 24s-nya beneran tebal dan tidak terawang sama sekali. Sudah dicuci 5 kali tidak ada kerut aneh atau kerah yang melar. Cutting boxy-nya pas banget di badan!"
+                        </p>
+                    </div>
+                    <div class="mt-6 pt-3 border-t border-studio-border/60 flex items-center justify-between text-xs">
+                        <span class="font-bold text-studio-pitch">Arya Wicaksono</span>
+                        <span class="text-[10px] text-studio-muted">Jakarta Selatan</span>
+                    </div>
+                </div>
+
+                <div class="bg-studio-stone p-6 rounded-2xl border border-studio-border flex flex-col justify-between">
+                    <div>
+                        <div class="flex items-center gap-1 text-amber-500 text-xs mb-3">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                        <p class="text-xs text-stone-700 leading-relaxed">
+                            "Kemeja linen-nya super adem buat iklim Jakarta. Jahitannya rapi banget standar butik luar negeri. Bakal repeat order warna lain buat outfit ngantor santai."
+                        </p>
+                    </div>
+                    <div class="mt-6 pt-3 border-t border-studio-border/60 flex items-center justify-between text-xs">
+                        <span class="font-bold text-studio-pitch">Clara Salsabila</span>
+                        <span class="text-[10px] text-studio-muted">Tangerang</span>
+                    </div>
+                </div>
+
+                <div class="bg-studio-stone p-6 rounded-2xl border border-studio-border flex flex-col justify-between">
+                    <div>
+                        <div class="flex items-center gap-1 text-amber-500 text-xs mb-3">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                        <p class="text-xs text-stone-700 leading-relaxed">
+                            "Suka banget sama konsep minimalisnya yang tanpa logo-logo besar norak. Celana pleated-nya nyaman dipakai seharian tanpa bikin begah."
+                        </p>
+                    </div>
+                    <div class="mt-6 pt-3 border-t border-studio-border/60 flex items-center justify-between text-xs">
+                        <span class="font-bold text-studio-pitch">Bintang Pratama</span>
+                        <span class="text-[10px] text-studio-muted">Bandung</span>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+    <!-- 7. FOOTER -->
+    <footer class="bg-white text-stone-700 border-t border-studio-border pt-14 pb-28">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-10">
+                
+                <div class="lg:col-span-2 space-y-4">
+                    <a href="index.html" class="flex flex-col">
+                        <span class="text-xl font-extrabold tracking-[0.2em] text-studio-pitch uppercase">
+                            ESSĒNS
+                        </span>
+                        <span class="text-[8px] tracking-[0.4em] text-studio-muted uppercase mt-0.5 font-semibold">
+                            Contemporary Studio
+                        </span>
+                    </a>
+                    <p class="text-xs text-studio-muted leading-relaxed max-w-sm">
+                        Lentera Pasar Fashion & Casual Apparel Template. Koleksi busana kasual minimalis berkualitas tinggi berbahan katun alami untuk kenyamanan hidup sehari-hari.
+                    </p>
+                    <div class="pt-2 text-xs text-stone-700 space-y-1">
+                        <div><i class="fa-solid fa-location-dot text-studio-pitch mr-2"></i> Jl. Kemang Timur No. 42, Mampang Prapatan, Jakarta Selatan</div>
+                        <div><i class="fa-brands fa-whatsapp text-emerald-600 mr-2"></i> +62 812-3456-7890 (Customer Care WhatsApp)</div>
+                    </div>
+                </div>
+
+                <div>
+                    <h4 class="text-xs font-bold uppercase tracking-wider text-studio-pitch mb-4">Navigasi Utama</h4>
+                    <ul class="space-y-2.5 text-xs text-studio-muted font-medium">
+                        <li><a href="index.html" class="hover:text-studio-pitch transition">Beranda Utama</a></li>
+                        <li><a href="katalog.html" class="hover:text-studio-pitch transition">Katalog Pakaian</a></li>
+                        <li><a href="detail.html" class="hover:text-studio-pitch transition">Detail & Size Chart</a></li>
+                        <li><a href="tentang.html" class="hover:text-studio-pitch transition">Filosofi & Bahan</a></li>
+                        <li><a href="artikel.html" class="hover:text-studio-pitch transition">Inspirasi OOTD</a></li>
+                        <li><a href="kontak.html" class="hover:text-studio-pitch transition">Studio & Toko</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h4 class="text-xs font-bold uppercase tracking-wider text-studio-pitch mb-4">Kategori Esensial</h4>
+                    <ul class="space-y-2.5 text-xs text-studio-muted">
+                        <li><a href="katalog.html" class="hover:text-studio-pitch transition">Oversized T-Shirt 24s</a></li>
+                        <li><a href="katalog.html" class="hover:text-studio-pitch transition">Relaxed Linen Shirts</a></li>
+                        <li><a href="katalog.html" class="hover:text-studio-pitch transition">Casual Pleated Trousers</a></li>
+                        <li><a href="katalog.html" class="hover:text-studio-pitch transition">Chore Canvas Jackets</a></li>
+                        <li><a href="katalog.html" class="hover:text-studio-pitch transition">Minimalist Totebags</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h4 class="text-xs font-bold uppercase tracking-wider text-studio-pitch mb-4">Standar Kualitas</h4>
+                    <div class="space-y-2 text-xs text-stone-700">
+                        <div class="p-2.5 rounded-xl bg-studio-stone border border-studio-border">
+                            <span class="text-[10px] text-stone-500 block uppercase font-bold">Karakter Bahan:</span>
+                            <span class="font-bold text-studio-pitch text-[11px]">100% Combed Cotton 24s</span>
+                        </div>
+                        <div class="p-2.5 rounded-xl bg-studio-stone border border-studio-border">
+                            <span class="text-[10px] text-stone-500 block uppercase font-bold">Jaminan Jahitan:</span>
+                            <span class="font-bold text-studio-pitch text-[11px]">Double Chainstitch Export</span>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="mt-12 pt-8 border-t border-studio-border flex flex-col sm:flex-row items-center justify-between text-xs text-stone-500">
+                <p>&copy; 2026 ESSĒNS CONTEMPORARY STUDIO. All Rights Reserved.</p>
+                <p class="text-[11px] mt-2 sm:mt-0">Lentera Pasar Production Template — Casual Minimalist</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- ========================================================================= -->
+    <!-- FIT & SIZE GUIDE DIAGNOSTIC MODAL                                         -->
+    <!-- ========================================================================= -->
+    <div id="fitGuideModal" class="fixed inset-0 z-50 bg-black/60 backdrop-blur-sm hidden flex items-center justify-center p-4">
+        <div class="bg-white rounded-3xl border border-studio-border max-w-lg w-full p-6 sm:p-8 shadow-2xl relative text-studio-pitch">
+            <button onclick="closeFitGuideModal()" class="absolute top-5 right-5 text-stone-400 hover:text-studio-pitch text-lg p-1">
+                <i class="fa-solid fa-xmark"></i>
+            </button>
+            <div class="flex items-center gap-3 mb-6">
+                <div class="w-10 h-10 rounded-full bg-studio-stone text-studio-pitch flex items-center justify-center text-lg border border-studio-border">
+                    <i class="fa-solid fa-ruler-combined"></i>
+                </div>
+                <div>
+                    <h3 class="text-lg font-bold text-studio-pitch">Kalkulator Ukuran Presisi (Fit Guide)</h3>
+                    <p class="text-xs text-studio-muted">Masukkan tinggi dan berat badanmu untuk rekomendasi ukuran terbaik.</p>
+                </div>
+            </div>
+
+            <div class="space-y-4 text-xs">
+                <div class="grid grid-cols-2 gap-3">
+                    <div>
+                        <label class="block font-bold text-studio-pitch mb-1.5 uppercase">Tinggi Badan (cm):</label>
+                        <input type="number" id="fitHeight" placeholder="Contoh: 170" class="w-full p-3 rounded-xl border border-studio-border bg-studio-stone text-studio-pitch focus:outline-none focus:border-studio-pitch text-xs">
+                    </div>
+                    <div>
+                        <label class="block font-bold text-studio-pitch mb-1.5 uppercase">Berat Badan (kg):</label>
+                        <input type="number" id="fitWeight" placeholder="Contoh: 65" class="w-full p-3 rounded-xl border border-studio-border bg-studio-stone text-studio-pitch focus:outline-none focus:border-studio-pitch text-xs">
+                    </div>
+                </div>
+
+                <div>
+                    <label class="block font-bold text-studio-pitch mb-1.5 uppercase">Preferensi Potongan (Fit Style):</label>
+                    <select id="fitStyle" class="w-full p-3 rounded-xl border border-studio-border bg-studio-stone text-studio-pitch focus:outline-none focus:border-studio-pitch text-xs">
+                        <option value="oversized">Oversized / Boxy Relaxed (Gaya Kasual Longgar)</option>
+                        <option value="regular">Regular Fit (Pas Badan Nyaman Standar)</option>
+                    </select>
+                </div>
+
+                <div id="fitResultBox" class="p-4 rounded-2xl bg-studio-stone border border-studio-border hidden space-y-2">
+                    <span class="text-[10px] font-bold text-studio-muted uppercase block">Rekomendasi Ukuran Anda:</span>
+                    <h5 id="fitSizeDisplay" class="font-extrabold text-studio-pitch text-base">Ukuran: L (Large)</h5>
+                    <p id="fitDetailText" class="text-xs text-studio-muted leading-relaxed">Panjang Baju: 73 cm • Lingkar Dada: 116 cm (Boxy Fit Nyaman).</p>
+                </div>
+
+                <div class="pt-2 flex items-center justify-between gap-3">
+                    <button onclick="calculateFit()" class="w-1/2 py-3 rounded-full bg-studio-stone hover:bg-studio-border text-studio-pitch font-bold text-xs uppercase tracking-wider transition">
+                        Hitung Ukuran
+                    </button>
+                    <a id="fitWaLink" href="https://wa.me/6281234567890?text=Halo%20Essens%20Studio,%20rekomendasi%20ukuran%20saya%20adalah%20L." target="_blank" class="w-1/2 py-3 rounded-full bg-studio-pitch hover:bg-black text-white font-bold text-xs uppercase tracking-wider text-center transition">
+                        Pesan via WA &rarr;
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ========================================================================= -->
+    <!-- FLOATING WHATSAPP BUTTON (bottom-24)                                      -->
+    <!-- ========================================================================= -->
+    <a href="https://wa.me/6281234567890?text=Halo%20Essens%20Studio,%20saya%20ingin%20konsultasi%20pakaian." 
+       target="_blank" 
+       class="fixed bottom-24 right-6 z-50 group flex items-center gap-3 bg-white hover:bg-studio-stone text-studio-pitch px-4 py-3 rounded-full border border-studio-border shadow-2xl hover:border-studio-pitch transition-all duration-300" 
+       aria-label="Konsultasi Baju via WhatsApp">
+        <span class="relative flex h-3 w-3">
+            <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-emerald-400 opacity-75"></span>
+            <span class="relative inline-flex rounded-full h-3 w-3 bg-emerald-500"></span>
+        </span>
+        <i class="fa-brands fa-whatsapp text-2xl text-emerald-600"></i>
+        <div class="text-left hidden sm:block pr-1">
+            <div class="text-[10px] text-studio-muted font-bold uppercase tracking-wider leading-none">Styling Assistant</div>
+            <span class="font-bold text-xs text-studio-pitch">Konsultasi Ukuran WA</span>
+        </div>
+    </a>
+
+    <!-- ========================================================================= -->
+    <!-- LENTERA PASAR - STICKY DEMO & SALES BAR (fixed bottom-4)                 -->
+    <!-- ========================================================================= -->
+    <div class="fixed bottom-4 left-1/2 -translate-x-1/2 z-50 w-[95%] max-w-4xl bg-slate-900/95 backdrop-blur-md text-white p-3.5 md:p-4 rounded-2xl shadow-2xl border border-slate-700/80 transition-all duration-300">
+      <div class="flex flex-col md:flex-row items-center justify-between gap-3 md:gap-4">
+        
+        <div class="flex items-center gap-3 w-full md:w-auto">
+          <div class="w-10 h-10 rounded-xl bg-stone-700/60 border border-stone-600 flex items-center justify-center shrink-0">
+            <svg class="w-5 h-5 text-stone-200" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 11V7a4 4 0 00-8 0v4M5 9h14l1 12H4L5 9z" />
+            </svg>
+          </div>
+          <div>
+            <div class="flex items-center gap-2">
+              <span class="font-bold text-sm text-white">Lentera Pasar Engine</span>
+              <span class="text-[10px] bg-stone-700 text-stone-200 border border-stone-600 px-2 py-0.5 rounded-full font-medium">Casual Minimalist Apparel Template</span>
+            </div>
+            <p class="text-xs text-slate-300 hidden sm:block">
+              Terima beres: Website responsif + Panel input produk sendiri + Dikelola tim iklan profesional.
+            </p>
+          </div>
+        </div>
+
+        <div class="flex items-center justify-between md:justify-end gap-3 w-full md:w-auto">
+          <div class="hidden lg:flex items-center gap-2 text-xs text-slate-400 border-r border-slate-700 pr-4">
+            <div class="flex items-center gap-1 text-slate-200">
+              <svg class="w-4 h-4 text-emerald-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" /></svg>
+              <span>Color Swatches</span>
+            </div>
+            <span class="text-slate-600">•</span>
+            <div class="flex items-center gap-1 text-slate-200">
+              <svg class="w-4 h-4 text-emerald-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" /></svg>
+              <span>Fit Guide Calculator</span>
+            </div>
+          </div>
+
+          <a href="https://wa.me/6281234567890?text=Halo%20Tim%20Lentera%20Pasar,%20saya%20tertarik%20menggunakan%20template%20website%20Casual%20Minimalist%20Apparel%20ini%20lengkap%20dengan%20Admin%20Panel%20dan%20Jasa%20Iklannya." 
+             target="_blank"
+             class="w-full md:w-auto inline-flex items-center justify-center gap-2 bg-gradient-to-r from-stone-700 to-black hover:from-black hover:to-stone-800 text-white text-xs md:text-sm font-semibold px-5 py-2.5 rounded-xl shadow-lg transition-all hover:scale-105 shrink-0">
+            <span>Gunakan Template Ini</span>
+            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3" />
+            </svg>
+          </a>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- SCRIPT LOGIC -->
+    <script>
+        // Change Product Card Color & Photo
+        function changeCardColor(cardId, colorName, imgSrc, buttonEl) {
+            document.getElementById('cardImg-' + cardId).src = imgSrc;
+            document.getElementById('colorName-' + cardId).innerText = colorName;
+            
+            const parent = buttonEl.parentElement;
+            parent.querySelectorAll('button').forEach(btn => {
+                btn.classList.remove('border-2', 'border-studio-pitch');
+                btn.classList.add('border', 'border-studio-border');
+            });
+            buttonEl.classList.add('border-2', 'border-studio-pitch');
+            buttonEl.classList.remove('border-studio-border');
+        }
+
+        // Fit Guide Modal
+        const fitModal = document.getElementById('fitGuideModal');
+        function openFitGuideModal() {
+            fitModal.classList.remove('hidden');
+        }
+        function closeFitGuideModal() {
+            fitModal.classList.add('hidden');
+        }
+
+        function calculateFit() {
+            const h = parseFloat(document.getElementById('fitHeight').value) || 170;
+            const w = parseFloat(document.getElementById('fitWeight').value) || 65;
+            const style = document.getElementById('fitStyle').value;
+            const resBox = document.getElementById('fitResultBox');
+            const sizeDisp = document.getElementById('fitSizeDisplay');
+            const detailText = document.getElementById('fitDetailText');
+            const waLink = document.getElementById('fitWaLink');
+
+            resBox.classList.remove('hidden');
+
+            let size = "M";
+            if (w < 55) {
+                size = style === "oversized" ? "M" : "S";
+            } else if (w >= 55 && w < 68) {
+                size = style === "oversized" ? "L" : "M";
+            } else if (w >= 68 && w < 80) {
+                size = style === "oversized" ? "XL" : "L";
+            } else {
+                size = style === "oversized" ? "XXL" : "XL";
+            }
+
+            sizeDisp.innerText = `Ukuran: ${size}`;
+            detailText.innerText = `Berdasarkan TB ${h} cm & BB ${w} kg (${style === 'oversized' ? 'Oversized Boxy Fit' : 'Regular Fit'}).`;
+            waLink.href = `https://wa.me/6281234567890?text=Halo%20Essens%20Studio,%20hasil%20Fit%20Guide%20saya%20adalah%20ukuran%20${size}.`;
+        }
+
+        // Mobile menu toggle
+        const mobileMenuBtn = document.getElementById('mobileMenuBtn');
+        const mobileMenu = document.getElementById('mobileMenu');
+        const menuIcon = document.getElementById('menuIcon');
+
+        mobileMenuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+            if (mobileMenu.classList.contains('hidden')) {
+                menuIcon.classList.remove('fa-xmark');
+                menuIcon.classList.add('fa-bars-staggered');
+            } else {
+                menuIcon.classList.remove('fa-bars-staggered');
+                menuIcon.classList.add('fa-xmark');
+            }
+        });
+    </script>
+</body>
+</html>
