@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html lang="id" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jurnal Syar'i & Tutorial Hijab Anggun — MALIKA MODEST ATELIER</title>
+    <meta name="description" content="Koleksi artikel inspirasi modest wear: panduan memilih gamis sesuai bentuk tubuh, tutorial styling pashmina silk clean, dan cara merawat kain ceruty babydoll.">
+    
+    <!-- Google Fonts: Playfair Display, Cormorant Garamond & Plus Jakarta Sans -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,600&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,600&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        modest: {
+                            sand: '#FAF7F2',
+                            warmpaper: '#F5EFEB',
+                            card: '#FFFFFF',
+                            border: '#E8DFD3',
+                            borderdark: '#D1B89D',
+                            mauve: '#7A4B58',
+                            mauvedark: '#5C3440',
+                            mauvelight: '#F2E8EB',
+                            gold: '#B89775',
+                            goldlight: '#EAD8C7',
+                            earth: '#2D2426',
+                            muted: '#7C6F72'
+                        }
+                    },
+                    fontFamily: {
+                        sans: ['"Plus Jakarta Sans"', 'sans-serif'],
+                        serif: ['"Playfair Display"', '"Cormorant Garamond"', 'Georgia', 'serif']
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        .no-scrollbar::-webkit-scrollbar { display: none; }
+        .no-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
+        
+        .modest-card {
+            transition: all 0.35s cubic-bezier(0.16, 1, 0.3, 1);
+        }
+        .modest-card:hover {
+            transform: translateY(-4px);
+            border-color: #B89775;
+            box-shadow: 0 20px 35px -10px rgba(122, 75, 88, 0.08);
+        }
+    </style>
+</head>
+<body class="bg-modest-sand text-modest-earth font-sans antialiased selection:bg-modest-mauve selection:text-white">
+
+    <!-- 1. TOP BAR -->
+    <div class="bg-modest-mauvedark text-amber-100 text-[11px] py-2.5 px-4 tracking-wider font-medium border-b border-modest-gold/30">
+        <div class="max-w-7xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-2 text-center sm:text-left">
+            <div class="flex items-center justify-center gap-2">
+                <span class="inline-flex items-center gap-1.5 px-2.5 py-0.5 rounded-full bg-amber-200/20 text-amber-200 text-[9px] font-bold tracking-widest uppercase">
+                    <span class="w-1.5 h-1.5 rounded-full bg-amber-300 animate-ping"></span>
+                    MODEST EDITORIAL
+                </span>
+                <span class="text-stone-200">Panduan Edukasi Menutup Aurat dengan Nyaman & Berkelas</span>
+            </div>
+            <div class="flex items-center gap-4 text-[10px] text-stone-200">
+                <a href="katalog.html" class="text-amber-200 hover:text-white underline transition">Katalog Gamis & Pashmina &rarr;</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- 2. NAVBAR -->
+    <header class="sticky top-0 z-40 bg-modest-sand/95 backdrop-blur-md border-b border-modest-border transition-all">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-20 sm:h-24">
+                
+                <a href="index.html" class="flex flex-col group">
+                    <span class="text-2xl sm:text-3xl font-serif font-bold tracking-[0.12em] text-modest-mauvedark uppercase leading-none group-hover:text-modest-gold transition duration-300">
+                        MALIKA
+                    </span>
+                    <span class="text-[8px] tracking-[0.35em] text-modest-gold uppercase mt-1 font-semibold">
+                        Modest Atelier & Couture
+                    </span>
+                </a>
+
+                <nav class="hidden lg:flex items-center gap-8 text-xs font-semibold tracking-widest uppercase text-stone-700">
+                    <a href="index.html" class="hover:text-modest-mauve transition">Beranda</a>
+                    <a href="katalog.html" class="hover:text-modest-mauve transition">Katalog Gamis & Abaya</a>
+                    <a href="detail.html" class="hover:text-modest-mauve transition">Detail Bahan</a>
+                    <a href="tentang.html" class="hover:text-modest-mauve transition">Kisah Butik</a>
+                    <a href="artikel.html" class="text-modest-mauvedark font-bold border-b-2 border-modest-mauvedark pb-1">Jurnal Syar'i</a>
+                    <a href="kontak.html" class="hover:text-modest-mauve transition">Butik Offline</a>
+                </nav>
+
+                <div class="hidden sm:flex items-center gap-3">
+                    <a href="https://wa.me/6281234567890?text=Assalamu'alaikum%20Malika%20Modest,%20saya%20ingin%20tanya%20seputar%20artikel%20dan%20styling%20hijab." target="_blank" class="inline-flex items-center gap-2 bg-modest-mauve hover:bg-modest-mauvedark text-white text-xs font-semibold tracking-wider px-5 py-2.5 rounded-full transition-all shadow-sm">
+                        <i class="fa-brands fa-whatsapp text-emerald-300"></i>
+                        <span>Tanya Stylist WA</span>
+                    </a>
+                </div>
+
+                <button id="mobileMenuBtn" class="lg:hidden p-2 text-modest-mauvedark hover:text-modest-gold focus:outline-none" aria-label="Toggle Menu">
+                    <i id="menuIcon" class="fa-solid fa-bars-staggered text-xl"></i>
+                </button>
+            </div>
+        </div>
+
+        <!-- Mobile Drawer -->
+        <div id="mobileMenu" class="hidden lg:hidden bg-modest-sand border-b border-modest-border px-4 py-5 space-y-3">
+            <a href="index.html" class="block text-xs font-semibold uppercase tracking-widest text-stone-700 hover:text-modest-mauve py-2 border-b border-modest-warmpaper">Beranda Utama</a>
+            <a href="katalog.html" class="block text-xs font-semibold uppercase tracking-widest text-stone-700 hover:text-modest-mauve py-2 border-b border-modest-warmpaper">Katalog Gamis & Abaya</a>
+            <a href="detail.html" class="block text-xs font-semibold uppercase tracking-widest text-stone-700 hover:text-modest-mauve py-2 border-b border-modest-warmpaper">Detail Bahan & Resleting Busui</a>
+            <a href="tentang.html" class="block text-xs font-semibold uppercase tracking-widest text-stone-700 hover:text-modest-mauve py-2 border-b border-modest-warmpaper">Filosofi Menutup Aurat Anggun</a>
+            <a href="artikel.html" class="block text-xs font-bold uppercase tracking-widest text-modest-mauvedark py-2 border-b border-modest-warmpaper">Tutorial Pashmina Silk & OOTD</a>
+            <a href="kontak.html" class="block text-xs font-semibold uppercase tracking-widest text-stone-700 hover:text-modest-mauve py-2">Butik Offline & Fitting</a>
+        </div>
+    </header>
+
+    <!-- 3. PAGE HEADER & FEATURED MODEST ESSAY -->
+    <section class="py-12 bg-modest-warmpaper border-b border-modest-border">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            
+            <div class="max-w-3xl mb-10">
+                <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-white border border-modest-borderdark text-modest-mauvedark text-xs font-semibold tracking-wider mb-3">
+                    <span class="w-2 h-2 rounded-full bg-modest-gold"></span>
+                    <span class="uppercase tracking-widest text-[10px]">THE SYAR'I EDITORIAL</span>
+                </div>
+                <h1 class="text-3xl sm:text-5xl font-serif font-bold text-modest-mauvedark tracking-tight">
+                    Jurnal Edukasi & Inspirasi Syar'i
+                </h1>
+                <p class="text-xs sm:text-sm text-modest-muted mt-2 font-light">
+                    Kumpulan panduan berbusana muslimah dari tim desainer butik kami untuk menemani langkah hijrah Anda dengan anggun, santun, dan percaya diri.
+                </p>
+            </div>
+
+            <!-- Featured Story Card -->
+            <div class="bg-white rounded-3xl border border-modest-border p-6 sm:p-10 shadow-sm">
+                <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
+                    <div class="lg:col-span-6">
+                        <div class="aspect-[16/10] rounded-2xl bg-modest-sand overflow-hidden relative group">
+                            <img src="https://images.unsplash.com/photo-1585487000160-6ebcfceb0d03?auto=format&fit=crop&w=800&q=80" alt="Gamis Syar'i Sesuai Bentuk Tubuh" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700">
+                            <span class="absolute top-3 left-3 bg-modest-mauvedark text-white text-[9px] font-bold px-3 py-1 rounded-full uppercase tracking-wider">
+                                COVER STORY
+                            </span>
+                        </div>
+                    </div>
+                    <div class="lg:col-span-6 space-y-4">
+                        <div class="flex items-center gap-3 text-xs text-modest-muted">
+                            <span>Oleh Desainer Malika Syahira</span>
+                            <span>•</span>
+                            <span>6 Min Read</span>
+                            <span>•</span>
+                            <span class="text-modest-gold font-bold">Modest Styling</span>
+                        </div>
+                        <h2 class="text-2xl sm:text-3xl font-serif font-bold text-modest-mauvedark leading-tight">
+                            Seni Menutup Aurat dengan Anggun: Panduan Memilih Gamis Syar'i Sesuai Bentuk Tubuh
+                        </h2>
+                        <p class="text-xs sm:text-sm text-modest-muted leading-relaxed font-light">
+                            Menutup aurat secara sempurna tidak berarti harus terlihat tenggelam dalam pakaian yang terlalu berat. Pelajari bagaimana potongan *A-Line Flounce* dan pemilihan furing katun rayon yang tepat dapat memberikan efek jenjang yang anggun tanpa memperlihatkan lekuk tubuh.
+                        </p>
+                        <div class="pt-2">
+                            <a href="detail.html" class="inline-flex items-center gap-2 px-6 py-3 rounded-full bg-modest-mauve text-white text-xs font-bold tracking-wider uppercase hover:bg-modest-mauvedark transition">
+                                <span>Lihat Gamis Terkait</span>
+                                <i class="fa-solid fa-arrow-right text-[10px]"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- 4. GRID ARTIKEL PANDUAN & EDUKASI -->
+    <section class="py-16">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            
+            <h3 class="text-xl font-serif font-bold text-modest-mauvedark mb-8 flex items-center gap-2">
+                <i class="fa-solid fa-feather-pointed text-modest-gold"></i>
+                <span>Semua Panduan Busana Muslimah</span>
+            </h3>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                
+                <!-- Article 1 -->
+                <div class="bg-white rounded-3xl border border-modest-border p-6 flex flex-col justify-between modest-card">
+                    <div>
+                        <div class="aspect-[16/10] rounded-2xl bg-modest-sand overflow-hidden mb-4">
+                            <img src="https://images.unsplash.com/photo-1596704017254-9b121068fb31?auto=format&fit=crop&w=500&q=80" alt="Tutorial Pashmina Silk" class="w-full h-full object-cover">
+                        </div>
+                        <div class="flex items-center gap-2 text-[10px] font-bold text-modest-muted mb-2">
+                            <span class="text-modest-gold">HIJAB TUTORIAL</span>
+                            <span>•</span>
+                            <span>4 Min Read</span>
+                        </div>
+                        <h4 class="font-serif font-bold text-base text-modest-mauvedark leading-snug">
+                            Tutorial 3 Gaya Pashmina Silk Clean & Flowing Menutup Dada Tanpa Jarum Berlebih
+                        </h4>
+                        <p class="text-xs text-modest-muted mt-2 leading-relaxed font-light">
+                            Trik memakai pashmina silk armani yang licin agar tetap tegak di dahi dan rapi seharian.
+                        </p>
+                    </div>
+                    <div class="mt-6 pt-4 border-t border-modest-border flex items-center justify-between text-xs">
+                        <span class="text-stone-500">Hijab Tips</span>
+                        <a href="katalog.html" class="text-modest-mauvedark font-bold hover:underline">Koleksi Pashmina &rarr;</a>
+                    </div>
+                </div>
+
+                <!-- Article 2 -->
+                <div class="bg-white rounded-3xl border border-modest-border p-6 flex flex-col justify-between modest-card">
+                    <div>
+                        <div class="aspect-[16/10] rounded-2xl bg-modest-sand overflow-hidden mb-4">
+                            <img src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?auto=format&fit=crop&w=500&q=80" alt="Merawat Kain Ceruty" class="w-full h-full object-cover">
+                        </div>
+                        <div class="flex items-center gap-2 text-[10px] font-bold text-modest-muted mb-2">
+                            <span class="text-modest-gold">FABRIC CARE</span>
+                            <span>•</span>
+                            <span>5 Min Read</span>
+                        </div>
+                        <h4 class="font-serif font-bold text-base text-modest-mauvedark leading-snug">
+                            Cara Merawat Kain Ceruty & Silk Mewah Agar Serat Tidak Kasar dan Tidak Mudah Kusut
+                        </h4>
+                        <p class="text-xs text-modest-muted mt-2 leading-relaxed font-light">
+                            Panduan mencuci dengan deterjen khusus sutra dan trik setrika uap agar kelim gamis tetap lurus.
+                        </p>
+                    </div>
+                    <div class="mt-6 pt-4 border-t border-modest-border flex items-center justify-between text-xs">
+                        <span class="text-stone-500">Care Tips</span>
+                        <a href="katalog.html" class="text-modest-mauvedark font-bold hover:underline">Koleksi Gamis &rarr;</a>
+                    </div>
+                </div>
+
+                <!-- Article 3 -->
+                <div class="bg-white rounded-3xl border border-modest-border p-6 flex flex-col justify-between modest-card">
+                    <div>
+                        <div class="aspect-[16/10] rounded-2xl bg-modest-sand overflow-hidden mb-4">
+                            <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=500&q=80" alt="Sarimbit Lebaran" class="w-full h-full object-cover">
+                        </div>
+                        <div class="flex items-center gap-2 text-[10px] font-bold text-modest-muted mb-2">
+                            <span class="text-modest-gold">FAMILY HARMONY</span>
+                            <span>•</span>
+                            <span>6 Min Read</span>
+                        </div>
+                        <h4 class="font-serif font-bold text-base text-modest-mauvedark leading-snug">
+                            Panduan Memilih Warna Gamis Sarimbit Keluarga Sesuai Undertone Kulit
+                        </h4>
+                        <p class="text-xs text-modest-muted mt-2 leading-relaxed font-light">
+                            Kombinasi warna sage olive dan champagne yang cocok untuk semua anggota keluarga berkulit sawo matang.
+                        </p>
+                    </div>
+                    <div class="mt-6 pt-4 border-t border-modest-border flex items-center justify-between text-xs">
+                        <span class="text-stone-500">Family Tips</span>
+                        <a href="katalog.html" class="text-modest-mauvedark font-bold hover:underline">Koleksi Sarimbit &rarr;</a>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+    <!-- 5. GLOSARIUM TEKSTIL MODEST -->
+    <section class="py-16 bg-modest-warmpaper border-t border-b border-modest-border">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            
+            <div class="text-center max-w-2xl mx-auto mb-12">
+                <span class="text-xs uppercase tracking-[0.25em] text-modest-gold font-bold block mb-1">
+                    // KAMUS BUSANA MUSLIMAH
+                </span>
+                <h3 class="text-2xl font-serif font-bold text-modest-mauvedark">
+                    Glosarium Terminologi Modest Wear
+                </h3>
+                <p class="text-xs text-modest-muted mt-1 font-light">
+                    Mengenal ragam bahan dan istilah jahitan pada gamis syar'i butik.
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 text-xs">
+                
+                <div class="p-5 rounded-2xl bg-white border border-modest-border">
+                    <strong class="text-sm font-serif font-bold text-modest-mauvedark block">Ceruty Babydoll Armani</strong>
+                    <p class="text-modest-muted mt-1 text-[11px] leading-relaxed font-light">
+                        Kain bertekstur butiran pasir lembut, berkarakter jatuh melayang dan tidak mudah kusut.
+                    </p>
+                </div>
+
+                <div class="p-5 rounded-2xl bg-white border border-modest-border">
+                    <strong class="text-sm font-serif font-bold text-modest-mauvedark block">Silk Armani</strong>
+                    <p class="text-modest-muted mt-1 text-[11px] leading-relaxed font-light">
+                        Sutra sintetis berkualitas tinggi dengan kilap lembut berkelas yang tidak licin berlebihan di kepala.
+                    </p>
+                </div>
+
+                <div class="p-5 rounded-2xl bg-white border border-modest-border">
+                    <strong class="text-sm font-serif font-bold text-modest-mauvedark block">Furing Rayon Katun</strong>
+                    <p class="text-modest-muted mt-1 text-[11px] leading-relaxed font-light">
+                        Lapisan dalam penyerap keringat yang menjamin pakaian 100% anti-menerawang di bawah terik matahari.
+                    </p>
+                </div>
+
+                <div class="p-5 rounded-2xl bg-white border border-modest-border">
+                    <strong class="text-sm font-serif font-bold text-modest-mauvedark block">Resleting Jepang</strong>
+                    <p class="text-modest-muted mt-1 text-[11px] leading-relaxed font-light">
+                        Resleting tak kasat mata di bagian dada depan untuk kenyamanan menyusui (*busui friendly*).
+                    </p>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+    <!-- 6. FOOTER -->
+    <footer class="bg-modest-sand text-stone-700 border-t border-modest-border pt-14 pb-28">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex flex-col md:flex-row items-center justify-between gap-6 border-b border-modest-border pb-8">
+                <div class="flex flex-col">
+                    <span class="text-lg font-serif font-bold tracking-[0.12em] text-modest-mauvedark uppercase">
+                        MALIKA
+                    </span>
+                    <span class="text-[8px] tracking-[0.35em] text-modest-gold uppercase mt-0.5 font-semibold">
+                        Modest Atelier & Couture
+                    </span>
+                </div>
+                <div class="flex flex-wrap gap-6 text-xs text-stone-700 font-semibold uppercase tracking-wider">
+                    <a href="index.html" class="hover:text-modest-mauve">Beranda</a>
+                    <a href="katalog.html" class="hover:text-modest-mauve">Katalog</a>
+                    <a href="detail.html" class="hover:text-modest-mauve">Detail</a>
+                    <a href="tentang.html" class="hover:text-modest-mauve">Filosofi</a>
+                    <a href="artikel.html" class="text-modest-mauvedark font-bold">Jurnal</a>
+                    <a href="kontak.html" class="hover:text-modest-mauve">Butik</a>
+                </div>
+            </div>
+            <div class="mt-6 flex flex-col sm:flex-row items-center justify-between text-xs text-stone-500">
+                <p>&copy; 2026 MALIKA MODEST ATELIER. All Rights Reserved.</p>
+                <p class="text-[11px] mt-2 sm:mt-0">Lentera Pasar Production Template — Editorial Modest Wear</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- FLOATING WHATSAPP BUTTON (bottom-24) -->
+    <a href="https://wa.me/6281234567890?text=Assalamu'alaikum%20Malika%20Modest,%20saya%20mau%20konsultasi%20artikel%20gamis." 
+       target="_blank" 
+       class="fixed bottom-24 right-6 z-50 group flex items-center gap-3 bg-white hover:bg-modest-warmpaper text-modest-earth px-4 py-3 rounded-full border border-modest-border shadow-2xl hover:border-modest-mauve transition-all duration-300">
+        <span class="relative flex h-3 w-3">
+            <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-emerald-400 opacity-75"></span>
+            <span class="relative inline-flex rounded-full h-3 w-3 bg-emerald-500"></span>
+        </span>
+        <i class="fa-brands fa-whatsapp text-2xl text-emerald-600"></i>
+        <div class="text-left hidden sm:block pr-1">
+            <div class="text-[10px] text-modest-gold font-bold uppercase tracking-wider leading-none">Boutique Stylist</div>
+            <span class="font-bold text-xs text-modest-mauvedark">Konsultasi Syar'i WA</span>
+        </div>
+    </a>
+
+    <!-- LENTERA PASAR - STICKY DEMO & SALES BAR (fixed bottom-4) -->
+    <div class="fixed bottom-4 left-1/2 -translate-x-1/2 z-50 w-[95%] max-w-4xl bg-slate-900/95 backdrop-blur-md text-white p-3.5 md:p-4 rounded-2xl shadow-2xl border border-slate-700/80 transition-all duration-300">
+      <div class="flex flex-col md:flex-row items-center justify-between gap-3 md:gap-4">
+        <div class="flex items-center gap-3 w-full md:w-auto">
+          <div class="w-10 h-10 rounded-xl bg-rose-900/40 border border-rose-500/40 flex items-center justify-center shrink-0">
+            <svg class="w-5 h-5 text-rose-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4.354a4 4 0 110 5.292M15 21H3v-1a6 6 0 0112 0v1zm0 0h6v-1a6 6 0 00-9-5.197M13 7a4 4 0 11-8 0 4 4 0 018 0z" />
+            </svg>
+          </div>
+          <div>
+            <div class="flex items-center gap-2">
+              <span class="font-bold text-sm text-white">Lentera Pasar Engine</span>
+              <span class="text-[10px] bg-rose-500/20 text-rose-200 border border-rose-500/30 px-2 py-0.5 rounded-full font-medium">Modest Wear & Hijab Template</span>
+            </div>
+            <p class="text-xs text-slate-300 hidden sm:block">
+              Terima beres: Website responsif + Panel input produk sendiri + Dikelola tim iklan profesional.
+            </p>
+          </div>
+        </div>
+
+        <div class="flex items-center justify-between md:justify-end gap-3 w-full md:w-auto">
+          <a href="https://wa.me/6281234567890?text=Halo%20Tim%20Lentera%20Pasar,%20saya%20tertarik%20menggunakan%20template%20website%20Modest%20Wear%20Editorial%20ini%20lengkap%20dengan%20Admin%20Panel%20dan%20Jasa%20Iklannya." 
+             target="_blank"
+             class="w-full md:w-auto inline-flex items-center justify-center gap-2 bg-gradient-to-r from-rose-800 to-amber-800 hover:from-rose-700 hover:to-amber-700 text-white text-xs md:text-sm font-semibold px-5 py-2.5 rounded-xl shadow-lg transition-all hover:scale-105 shrink-0">
+            <span>Gunakan Template Ini</span>
+            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3" />
+            </svg>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <!-- SCRIPT -->
+    <script>
+        const mobileMenuBtn = document.getElementById('mobileMenuBtn');
+        const mobileMenu = document.getElementById('mobileMenu');
+        const menuIcon = document.getElementById('menuIcon');
+
+        mobileMenuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+            if (mobileMenu.classList.contains('hidden')) {
+                menuIcon.classList.remove('fa-xmark');
+                menuIcon.classList.add('fa-bars-staggered');
+            } else {
+                menuIcon.classList.remove('fa-bars-staggered');
+                menuIcon.classList.add('fa-xmark');
+            }
+        });
+    </script>
+</body>
+</html>

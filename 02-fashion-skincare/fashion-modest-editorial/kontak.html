@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="id" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Butik Offline & Layanan Fitting — MALIKA MODEST ATELIER</title>
+    <meta name="description" content="Kunjungi Flagship Boutique Malika Modest di Kebayoran Baru Jakarta Selatan untuk fitting gamis syar'i atau reservasi pesanan seragam sarimbit via WhatsApp.">
+    
+    <!-- Google Fonts: Playfair Display, Cormorant Garamond & Plus Jakarta Sans -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,600&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,600&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        modest: {
+                            sand: '#FAF7F2',
+                            warmpaper: '#F5EFEB',
+                            card: '#FFFFFF',
+                            border: '#E8DFD3',
+                            borderdark: '#D1B89D',
+                            mauve: '#7A4B58',
+                            mauvedark: '#5C3440',
+                            mauvelight: '#F2E8EB',
+                            gold: '#B89775',
+                            goldlight: '#EAD8C7',
+                            earth: '#2D2426',
+                            muted: '#7C6F72'
+                        }
+                    },
+                    fontFamily: {
+                        sans: ['"Plus Jakarta Sans"', 'sans-serif'],
+                        serif: ['"Playfair Display"', '"Cormorant Garamond"', 'Georgia', 'serif']
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        .no-scrollbar::-webkit-scrollbar { display: none; }
+        .no-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
+    </style>
+</head>
+<body class="bg-modest-sand text-modest-earth font-sans antialiased selection:bg-modest-mauve selection:text-white">
+
+    <!-- 1. TOP BAR -->
+    <div class="bg-modest-mauvedark text-amber-100 text-[11px] py-2.5 px-4 tracking-wider font-medium border-b border-modest-gold/30">
+        <div class="max-w-7xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-2 text-center sm:text-left">
+            <div class="flex items-center justify-center gap-2">
+                <span class="inline-flex items-center gap-1.5 px-2.5 py-0.5 rounded-full bg-amber-200/20 text-amber-200 text-[9px] font-bold tracking-widest uppercase">
+                    <span class="w-1.5 h-1.5 rounded-full bg-amber-300 animate-ping"></span>
+                    BUTIK BUKA
+                </span>
+                <span class="text-stone-200">Fitting Room Eksklusif & Konsultasi Seragam Pengantin / Keluarga</span>
+            </div>
+            <div class="flex items-center gap-4 text-[10px] text-stone-200">
+                <span>Setiap Hari: 09.30 — 20.30 WIB</span>
+                <span class="text-modest-border">|</span>
+                <a href="katalog.html" class="text-amber-200 hover:text-white underline transition">Katalog Gamis &rarr;</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- 2. NAVBAR -->
+    <header class="sticky top-0 z-40 bg-modest-sand/95 backdrop-blur-md border-b border-modest-border transition-all">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-20 sm:h-24">
+                
+                <a href="index.html" class="flex flex-col group">
+                    <span class="text-2xl sm:text-3xl font-serif font-bold tracking-[0.12em] text-modest-mauvedark uppercase leading-none group-hover:text-modest-gold transition duration-300">
+                        MALIKA
+                    </span>
+                    <span class="text-[8px] tracking-[0.35em] text-modest-gold uppercase mt-1 font-semibold">
+                        Modest Atelier & Couture
+                    </span>
+                </a>
+
+                <nav class="hidden lg:flex items-center gap-8 text-xs font-semibold tracking-widest uppercase text-stone-700">
+                    <a href="index.html" class="hover:text-modest-mauve transition">Beranda</a>
+                    <a href="katalog.html" class="hover:text-modest-mauve transition">Katalog Gamis & Abaya</a>
+                    <a href="detail.html" class="hover:text-modest-mauve transition">Detail Bahan</a>
+                    <a href="tentang.html" class="hover:text-modest-mauve transition">Kisah Butik</a>
+                    <a href="artikel.html" class="hover:text-modest-mauve transition">Jurnal Syar'i</a>
+                    <a href="kontak.html" class="text-modest-mauvedark font-bold border-b-2 border-modest-mauvedark pb-1">Butik Offline</a>
+                </nav>
+
+                <div class="hidden sm:flex items-center gap-3">
+                    <a href="https://wa.me/6281234567890?text=Assalamu'alaikum%20Malika%20Modest,%20saya%20mau%20tanya%20jadwal%20fitting%20butik." target="_blank" class="inline-flex items-center gap-2 bg-modest-mauve hover:bg-modest-mauvedark text-white text-xs font-semibold tracking-wider px-5 py-2.5 rounded-full transition-all shadow-sm">
+                        <i class="fa-brands fa-whatsapp text-emerald-300"></i>
+                        <span>Chat Butik WA</span>
+                    </a>
+                </div>
+
+                <button id="mobileMenuBtn" class="lg:hidden p-2 text-modest-mauvedark hover:text-modest-gold focus:outline-none" aria-label="Toggle Menu">
+                    <i id="menuIcon" class="fa-solid fa-bars-staggered text-xl"></i>
+                </button>
+            </div>
+        </div>
+
+        <!-- Mobile Drawer -->
+        <div id="mobileMenu" class="hidden lg:hidden bg-modest-sand border-b border-modest-border px-4 py-5 space-y-3">
+            <a href="index.html" class="block text-xs font-semibold uppercase tracking-widest text-stone-700 hover:text-modest-mauve py-2 border-b border-modest-warmpaper">Beranda Utama</a>
+            <a href="katalog.html" class="block text-xs font-semibold uppercase tracking-widest text-stone-700 hover:text-modest-mauve py-2 border-b border-modest-warmpaper">Katalog Gamis & Abaya</a>
+            <a href="detail.html" class="block text-xs font-semibold uppercase tracking-widest text-stone-700 hover:text-modest-mauve py-2 border-b border-modest-warmpaper">Detail Bahan & Resleting Busui</a>
+            <a href="tentang.html" class="block text-xs font-semibold uppercase tracking-widest text-stone-700 hover:text-modest-mauve py-2 border-b border-modest-warmpaper">Filosofi Menutup Aurat Anggun</a>
+            <a href="artikel.html" class="block text-xs font-semibold uppercase tracking-widest text-stone-700 hover:text-modest-mauve py-2 border-b border-modest-warmpaper">Tutorial Pashmina Silk & OOTD</a>
+            <a href="kontak.html" class="block text-xs font-bold uppercase tracking-widest text-modest-mauvedark py-2">Butik Offline & Fitting</a>
+        </div>
+    </header>
+
+    <!-- 3. PAGE HEADER -->
+    <section class="py-12 bg-modest-warmpaper border-b border-modest-border">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="max-w-3xl">
+                <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-white border border-modest-borderdark text-modest-mauvedark text-xs font-semibold tracking-wider mb-3">
+                    <span class="w-2 h-2 rounded-full bg-modest-gold"></span>
+                    <span class="uppercase tracking-widest text-[10px]">FLAGSHIP BUTIK & FITTING</span>
+                </div>
+                <h1 class="text-3xl sm:text-5xl font-serif font-bold text-modest-mauvedark tracking-tight">
+                    Butik Offline & Konsultasi Fitting
+                </h1>
+                <p class="text-xs sm:text-sm text-modest-muted mt-2 leading-relaxed font-light">
+                    Rasakan langsung kelembutan kain Ceruty Babydoll Armani dan kenyamanan fitting room kami di Kebayoran Baru Jakarta Selatan, atau hubungi konsultan kami untuk pesanan seragam sarimbit keluarga.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- 4. SPLIT LAYOUT: FORM KONSULTASI WA + INFO BUTIK & GOOGLE MAPS -->
+    <section class="py-14">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-10">
+                
+                <!-- LEFT: INTAKE & FITTING FORM (7 Cols) -->
+                <div class="lg:col-span-7">
+                    <div class="bg-white rounded-3xl border border-modest-border p-6 sm:p-8 shadow-sm space-y-6">
+                        <div class="flex items-center gap-3 pb-4 border-b border-modest-border">
+                            <div class="w-10 h-10 rounded-full bg-modest-sand text-modest-mauvedark flex items-center justify-center text-lg border border-modest-border">
+                                <i class="fa-solid fa-calendar-check text-modest-gold"></i>
+                            </div>
+                            <div>
+                                <h3 class="text-base font-serif font-bold text-modest-mauvedark">Formulir Fitting & Pesanan Seragam Keluarga</h3>
+                                <p class="text-xs text-modest-muted font-light">Rincian pesanan akan otomatis terhubung ke WhatsApp Customer Service kami.</p>
+                            </div>
+                        </div>
+
+                        <form onsubmit="handleModestInquiry(event)" class="space-y-4 text-xs">
+                            
+                            <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                                <div>
+                                    <label class="block font-bold text-modest-mauvedark mb-1.5 uppercase">Nama Pemesan:</label>
+                                    <input type="text" id="custName" required placeholder="Contoh: Ukhti Fatimah Zahra" class="w-full p-3 rounded-2xl border border-modest-border bg-modest-sand text-modest-earth focus:outline-none focus:border-modest-mauve text-xs">
+                                </div>
+                                <div>
+                                    <label class="block font-bold text-modest-mauvedark mb-1.5 uppercase">Nomor WhatsApp:</label>
+                                    <input type="tel" id="custPhone" required placeholder="Contoh: 081234567890" class="w-full p-3 rounded-2xl border border-modest-border bg-modest-sand text-modest-earth focus:outline-none focus:border-modest-mauve text-xs">
+                                </div>
+                            </div>
+
+                            <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                                <div>
+                                    <label class="block font-bold text-modest-mauvedark mb-1.5 uppercase">Jenis Keperluan:</label>
+                                    <select id="custTopic" class="w-full p-3 rounded-2xl border border-modest-border bg-modest-sand text-modest-earth focus:outline-none focus:border-modest-mauve text-xs">
+                                        <option value="Pemesanan Gamis / Abaya Satuan">Pemesanan Gamis / Abaya Satuan</option>
+                                        <option value="Paket Sarimbit Keluarga Lebaran (Min. 3 pcs)">Paket Sarimbit Keluarga Lebaran</option>
+                                        <option value="Seragam Pengajian / Bridesmaid Syar'i (Min. 6 pcs)">Seragam Bridesmaid Syar'i / Pengajian</option>
+                                        <option value="Reservasi Fitting Room Butik Offline">Reservasi Fitting Room Butik Offline</option>
+                                    </select>
+                                </div>
+                                <div>
+                                    <label class="block font-bold text-modest-mauvedark mb-1.5 uppercase">Perkiraan Jumlah & Tanggal Acara:</label>
+                                    <input type="text" id="custQtyDate" placeholder="Contoh: 5 pcs, Acara 12 November 2026" class="w-full p-3 rounded-2xl border border-modest-border bg-modest-sand text-modest-earth focus:outline-none focus:border-modest-mauve text-xs">
+                                </div>
+                            </div>
+
+                            <div>
+                                <label class="block font-bold text-modest-mauvedark mb-1.5 uppercase">Pilihan Warna / Pertanyaan Khusus:</label>
+                                <textarea id="custNotes" rows="3" placeholder="Sebutkan varian yang diinginkan (misal: Malika Abaya warna Dusty Rose, PB 140cm, LD M)..." class="w-full p-3 rounded-2xl border border-modest-border bg-modest-sand text-modest-earth focus:outline-none focus:border-modest-mauve text-xs"></textarea>
+                            </div>
+
+                            <div class="pt-2">
+                                <button type="submit" class="w-full py-4 px-6 rounded-full bg-modest-mauve hover:bg-modest-mauvedark text-white text-xs font-bold tracking-widest uppercase flex items-center justify-center gap-2 shadow-lg shadow-modest-mauve/20 transition-all duration-300">
+                                    <i class="fa-brands fa-whatsapp text-lg text-emerald-300"></i>
+                                    <span>Kirim Permintaan ke WhatsApp Butik</span>
+                                </button>
+                            </div>
+
+                        </form>
+                    </div>
+                </div>
+
+                <!-- RIGHT: STORE LOCATION, HOURS & GOOGLE MAPS (5 Cols) -->
+                <div class="lg:col-span-5 space-y-6">
+                    
+                    <div class="bg-white rounded-3xl border border-modest-border p-6 sm:p-7 shadow-sm space-y-4">
+                        <div class="font-bold text-xs uppercase tracking-wider text-modest-mauvedark flex items-center gap-2">
+                            <i class="fa-solid fa-clock text-modest-gold"></i> Jam Operasional Butik
+                        </div>
+                        <div class="p-4 rounded-2xl bg-modest-sand border border-modest-border text-xs space-y-2">
+                            <div class="flex justify-between text-stone-600">
+                                <span>Senin — Jumat:</span> <strong class="text-modest-mauvedark">09.30 — 20.30 WIB</strong>
+                            </div>
+                            <div class="flex justify-between text-stone-600">
+                                <span>Sabtu & Minggu:</span> <strong class="text-modest-mauvedark">09.00 — 21.00 WIB</strong>
+                            </div>
+                            <div class="flex justify-between text-stone-600">
+                                <span>CS WhatsApp Online:</span> <strong class="text-emerald-700">Setiap Hari 24 Jam</strong>
+                            </div>
+                        </div>
+
+                        <div class="space-y-2 text-xs text-stone-700">
+                            <div class="flex items-center gap-3 p-3 rounded-xl bg-modest-sand/60 border border-modest-border">
+                                <i class="fa-brands fa-whatsapp text-lg text-emerald-600"></i>
+                                <div>
+                                    <span class="block text-[10px] text-modest-muted uppercase">Hotline WhatsApp Butik</span>
+                                    <strong class="text-modest-mauvedark text-xs font-sans">+62 812-3456-7890</strong>
+                                </div>
+                            </div>
+                            <div class="flex items-center gap-3 p-3 rounded-xl bg-modest-sand/60 border border-modest-border">
+                                <i class="fa-solid fa-envelope text-lg text-modest-gold"></i>
+                                <div>
+                                    <span class="block text-[10px] text-modest-muted uppercase">Email Layanan Seragam</span>
+                                    <strong class="text-modest-mauvedark text-xs font-sans">boutique@malikamodest.id</strong>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Location & Google Maps Embed -->
+                    <div class="bg-white rounded-3xl border border-modest-border p-6 sm:p-7 shadow-sm space-y-3">
+                        <div class="font-bold text-xs uppercase tracking-wider text-modest-mauvedark flex items-center gap-2">
+                            <i class="fa-solid fa-location-dot text-modest-gold"></i> Lokasi Butik Kebayoran Baru
+                        </div>
+                        <p class="text-xs text-stone-600 leading-relaxed font-light">
+                            <strong class="text-modest-mauvedark font-serif">Malika Modest Atelier Flagship</strong><br>
+                            Jl. Bumi No. 28, Gunung, Kebayoran Baru, Jakarta Selatan 12120
+                        </p>
+                        
+                        <div class="h-44 rounded-2xl bg-modest-sand border border-modest-border overflow-hidden relative">
+                            <iframe 
+                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3966.248369408456!2d106.7925!3d-6.2378!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNsKwMTQnMTYuMSJTIDEwNsKwNDcnMzMuMCJF!5e0!3m2!1sen!2sid!4v1600000000000!5m2!1sen!2sid" 
+                                width="100%" 
+                                height="100%" 
+                                style="border:0;" 
+                                allowfullscreen="" 
+                                loading="lazy" 
+                                class="grayscale hover:grayscale-0 transition-all duration-500">
+                            </iframe>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- 5. FOOTER -->
+    <footer class="bg-modest-sand text-stone-700 border-t border-modest-border pt-14 pb-28">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex flex-col md:flex-row items-center justify-between gap-6 border-b border-modest-border pb-8">
+                <div class="flex flex-col">
+                    <span class="text-lg font-serif font-bold tracking-[0.12em] text-modest-mauvedark uppercase">
+                        MALIKA
+                    </span>
+                    <span class="text-[8px] tracking-[0.35em] text-modest-gold uppercase mt-0.5 font-semibold">
+                        Modest Atelier & Couture
+                    </span>
+                </div>
+                <div class="flex flex-wrap gap-6 text-xs text-stone-700 font-semibold uppercase tracking-wider">
+                    <a href="index.html" class="hover:text-modest-mauve">Beranda</a>
+                    <a href="katalog.html" class="hover:text-modest-mauve">Katalog</a>
+                    <a href="detail.html" class="hover:text-modest-mauve">Detail</a>
+                    <a href="tentang.html" class="hover:text-modest-mauve">Filosofi</a>
+                    <a href="artikel.html" class="hover:text-modest-mauve">Jurnal</a>
+                    <a href="kontak.html" class="text-modest-mauvedark font-bold">Butik</a>
+                </div>
+            </div>
+            <div class="mt-6 flex flex-col sm:flex-row items-center justify-between text-xs text-stone-500">
+                <p>&copy; 2026 MALIKA MODEST ATELIER. All Rights Reserved.</p>
+                <p class="text-[11px] mt-2 sm:mt-0">Lentera Pasar Production Template — Editorial Modest Wear</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- FLOATING WHATSAPP BUTTON (bottom-24) -->
+    <a href="https://wa.me/6281234567890?text=Assalamu'alaikum%20Malika%20Modest,%20saya%20ingin%20konsultasi%20gamis%20dan%20sarimbit." 
+       target="_blank" 
+       class="fixed bottom-24 right-6 z-50 group flex items-center gap-3 bg-white hover:bg-modest-warmpaper text-modest-earth px-4 py-3 rounded-full border border-modest-border shadow-2xl hover:border-modest-mauve transition-all duration-300">
+        <span class="relative flex h-3 w-3">
+            <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-emerald-400 opacity-75"></span>
+            <span class="relative inline-flex rounded-full h-3 w-3 bg-emerald-500"></span>
+        </span>
+        <i class="fa-brands fa-whatsapp text-2xl text-emerald-600"></i>
+        <div class="text-left hidden sm:block pr-1">
+            <div class="text-[10px] text-modest-gold font-bold uppercase tracking-wider leading-none">Boutique Stylist</div>
+            <span class="font-bold text-xs text-modest-mauvedark">Konsultasi Syar'i WA</span>
+        </div>
+    </a>
+
+    <!-- LENTERA PASAR - STICKY DEMO & SALES BAR (fixed bottom-4) -->
+    <div class="fixed bottom-4 left-1/2 -translate-x-1/2 z-50 w-[95%] max-w-4xl bg-slate-900/95 backdrop-blur-md text-white p-3.5 md:p-4 rounded-2xl shadow-2xl border border-slate-700/80 transition-all duration-300">
+      <div class="flex flex-col md:flex-row items-center justify-between gap-3 md:gap-4">
+        <div class="flex items-center gap-3 w-full md:w-auto">
+          <div class="w-10 h-10 rounded-xl bg-rose-900/40 border border-rose-500/40 flex items-center justify-center shrink-0">
+            <svg class="w-5 h-5 text-rose-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4.354a4 4 0 110 5.292M15 21H3v-1a6 6 0 0112 0v1zm0 0h6v-1a6 6 0 00-9-5.197M13 7a4 4 0 11-8 0 4 4 0 018 0z" />
+            </svg>
+          </div>
+          <div>
+            <div class="flex items-center gap-2">
+              <span class="font-bold text-sm text-white">Lentera Pasar Engine</span>
+              <span class="text-[10px] bg-rose-500/20 text-rose-200 border border-rose-500/30 px-2 py-0.5 rounded-full font-medium">Modest Wear & Hijab Template</span>
+            </div>
+            <p class="text-xs text-slate-300 hidden sm:block">
+              Terima beres: Website responsif + Panel input produk sendiri + Dikelola tim iklan profesional.
+            </p>
+          </div>
+        </div>
+
+        <div class="flex items-center justify-between md:justify-end gap-3 w-full md:w-auto">
+          <a href="https://wa.me/6281234567890?text=Halo%20Tim%20Lentera%20Pasar,%20saya%20tertarik%20menggunakan%20template%20website%20Modest%20Wear%20Editorial%20ini%20lengkap%20dengan%20Admin%20Panel%20dan%20Jasa%20Iklannya." 
+             target="_blank"
+             class="w-full md:w-auto inline-flex items-center justify-center gap-2 bg-gradient-to-r from-rose-800 to-amber-800 hover:from-rose-700 hover:to-amber-700 text-white text-xs md:text-sm font-semibold px-5 py-2.5 rounded-xl shadow-lg transition-all hover:scale-105 shrink-0">
+            <span>Gunakan Template Ini</span>
+            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3" />
+            </svg>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <!-- SCRIPT LOGIC -->
+    <script>
+        function handleModestInquiry(e) {
+            e.preventDefault();
+            const name = document.getElementById('custName').value;
+            const phone = document.getElementById('custPhone').value;
+            const topic = document.getElementById('custTopic').value;
+            const qtyDate = document.getElementById('custQtyDate').value || '-';
+            const notes = document.getElementById('custNotes').value || '-';
+
+            const text = `Assalamu'alaikum Malika Modest Boutique,%0A%0ASaya ingin konsultasi dengan data berikut:%0A- Nama: ${encodeURIComponent(name)}%0A- No. HP: ${encodeURIComponent(phone)}%0A- Keperluan: ${encodeURIComponent(topic)}%0A- Jumlah & Tanggal: ${encodeURIComponent(qtyDate)}%0A- Catatan / Pilihan Varian: ${encodeURIComponent(notes)}%0A%0AMohon info penawaran dan jadwal fitting. Terima kasih!`;
+
+            window.open(`https://wa.me/6281234567890?text=${text}`, '_blank');
+        }
+
+        // Mobile menu toggle
+        const mobileMenuBtn = document.getElementById('mobileMenuBtn');
+        const mobileMenu = document.getElementById('mobileMenu');
+        const menuIcon = document.getElementById('menuIcon');
+
+        mobileMenuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+            if (mobileMenu.classList.contains('hidden')) {
+                menuIcon.classList.remove('fa-xmark');
+                menuIcon.classList.add('fa-bars-staggered');
+            } else {
+                menuIcon.classList.remove('fa-bars-staggered');
+                menuIcon.classList.add('fa-xmark');
+            }
+        });
+    </script>
+</body>
+</html>

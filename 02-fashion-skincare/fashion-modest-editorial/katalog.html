@@ -1,0 +1,702 @@
+<!DOCTYPE html>
+<html lang="id" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Katalog Gamis, Abaya, Hijab & Sarimbit — MALIKA MODEST ATELIER</title>
+    <meta name="description" content="Koleksi lengkap gamis syar'i ceruty babydoll, abaya mewah, pashmina silk armani, koko kurta pria, dan set sarimbit keluarga berstandar butik.">
+    
+    <!-- Google Fonts: Playfair Display, Cormorant Garamond & Plus Jakarta Sans -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,600&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,600&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        modest: {
+                            sand: '#FAF7F2',
+                            warmpaper: '#F5EFEB',
+                            card: '#FFFFFF',
+                            border: '#E8DFD3',
+                            borderdark: '#D1B89D',
+                            mauve: '#7A4B58',
+                            mauvedark: '#5C3440',
+                            mauvelight: '#F2E8EB',
+                            gold: '#B89775',
+                            goldlight: '#EAD8C7',
+                            earth: '#2D2426',
+                            muted: '#7C6F72'
+                        }
+                    },
+                    fontFamily: {
+                        sans: ['"Plus Jakarta Sans"', 'sans-serif'],
+                        serif: ['"Playfair Display"', '"Cormorant Garamond"', 'Georgia', 'serif']
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        .no-scrollbar::-webkit-scrollbar { display: none; }
+        .no-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
+        
+        .modest-card {
+            transition: all 0.35s cubic-bezier(0.16, 1, 0.3, 1);
+        }
+        .modest-card:hover {
+            transform: translateY(-4px);
+            border-color: #B89775;
+            box-shadow: 0 20px 35px -10px rgba(122, 75, 88, 0.08);
+        }
+    </style>
+</head>
+<body class="bg-modest-sand text-modest-earth font-sans antialiased selection:bg-modest-mauve selection:text-white">
+
+    <!-- 1. TOP BAR -->
+    <div class="bg-modest-mauvedark text-amber-100 text-[11px] py-2.5 px-4 tracking-wider font-medium border-b border-modest-gold/30">
+        <div class="max-w-7xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-2 text-center sm:text-left">
+            <div class="flex items-center justify-center gap-2">
+                <span class="inline-flex items-center gap-1.5 px-2.5 py-0.5 rounded-full bg-amber-200/20 text-amber-200 text-[9px] font-bold tracking-widest uppercase">
+                    <span class="w-1.5 h-1.5 rounded-full bg-amber-300 animate-ping"></span>
+                    READY STOCK & CUSTOM SIZE
+                </span>
+                <span class="text-stone-200">Panjang Baju Tersedia: 135cm, 138cm, 140cm, 142cm</span>
+            </div>
+            <div class="flex items-center gap-4 text-[10px] text-stone-200">
+                <a href="kontak.html" class="text-amber-200 hover:text-white underline transition">Kunjungi Butik Offline &rarr;</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- 2. NAVBAR -->
+    <header class="sticky top-0 z-40 bg-modest-sand/95 backdrop-blur-md border-b border-modest-border transition-all">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-20 sm:h-24">
+                
+                <a href="index.html" class="flex flex-col group">
+                    <span class="text-2xl sm:text-3xl font-serif font-bold tracking-[0.12em] text-modest-mauvedark uppercase leading-none group-hover:text-modest-gold transition duration-300">
+                        MALIKA
+                    </span>
+                    <span class="text-[8px] tracking-[0.35em] text-modest-gold uppercase mt-1 font-semibold">
+                        Modest Atelier & Couture
+                    </span>
+                </a>
+
+                <nav class="hidden lg:flex items-center gap-8 text-xs font-semibold tracking-widest uppercase text-stone-700">
+                    <a href="index.html" class="hover:text-modest-mauve transition">Beranda</a>
+                    <a href="katalog.html" class="text-modest-mauvedark font-bold border-b-2 border-modest-mauvedark pb-1">Katalog Gamis & Abaya</a>
+                    <a href="detail.html" class="hover:text-modest-mauve transition">Detail Bahan</a>
+                    <a href="tentang.html" class="hover:text-modest-mauve transition">Kisah Butik</a>
+                    <a href="artikel.html" class="hover:text-modest-mauve transition">Jurnal Syar'i</a>
+                    <a href="kontak.html" class="hover:text-modest-mauve transition">Butik Offline</a>
+                </nav>
+
+                <div class="hidden sm:flex items-center gap-3">
+                    <a href="https://wa.me/6281234567890?text=Assalamu'alaikum%20Malika%20Modest,%20saya%20ingin%20memesan%20busana%20dari%20katalog." target="_blank" class="inline-flex items-center gap-2 bg-modest-mauve hover:bg-modest-mauvedark text-white text-xs font-semibold tracking-wider px-5 py-2.5 rounded-full transition-all shadow-sm">
+                        <i class="fa-brands fa-whatsapp text-emerald-300"></i>
+                        <span>Pesan via WA</span>
+                    </a>
+                </div>
+
+                <button id="mobileMenuBtn" class="lg:hidden p-2 text-modest-mauvedark hover:text-modest-gold focus:outline-none" aria-label="Toggle Menu">
+                    <i id="menuIcon" class="fa-solid fa-bars-staggered text-xl"></i>
+                </button>
+            </div>
+        </div>
+
+        <!-- Mobile Drawer -->
+        <div id="mobileMenu" class="hidden lg:hidden bg-modest-sand border-b border-modest-border px-4 py-5 space-y-3">
+            <a href="index.html" class="block text-xs font-semibold uppercase tracking-widest text-stone-700 hover:text-modest-mauve py-2 border-b border-modest-warmpaper">Beranda Utama</a>
+            <a href="katalog.html" class="block text-xs font-bold uppercase tracking-widest text-modest-mauvedark py-2 border-b border-modest-warmpaper">Katalog Gamis & Abaya</a>
+            <a href="detail.html" class="block text-xs font-semibold uppercase tracking-widest text-stone-700 hover:text-modest-mauve py-2 border-b border-modest-warmpaper">Detail Bahan & Resleting Busui</a>
+            <a href="tentang.html" class="block text-xs font-semibold uppercase tracking-widest text-stone-700 hover:text-modest-mauve py-2 border-b border-modest-warmpaper">Filosofi Menutup Aurat Anggun</a>
+            <a href="artikel.html" class="block text-xs font-semibold uppercase tracking-widest text-stone-700 hover:text-modest-mauve py-2 border-b border-modest-warmpaper">Tutorial Pashmina Silk & OOTD</a>
+            <a href="kontak.html" class="block text-xs font-semibold uppercase tracking-widest text-stone-700 hover:text-modest-mauve py-2">Butik Offline & Fitting</a>
+        </div>
+    </header>
+
+    <!-- 3. PAGE HEADER & FILTER CONTROLS -->
+    <section class="py-12 bg-modest-warmpaper border-b border-modest-border">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="max-w-3xl">
+                <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-white border border-modest-borderdark text-modest-mauvedark text-xs font-semibold tracking-wider mb-3">
+                    <span class="w-2 h-2 rounded-full bg-modest-gold"></span>
+                    <span class="uppercase tracking-widest text-[10px]">ALL MODEST PIECES</span>
+                </div>
+                <h1 class="text-3xl sm:text-5xl font-serif font-bold text-modest-mauvedark tracking-tight">
+                    Katalog Busana Muslimah & Sarimbit
+                </h1>
+                <p class="text-xs sm:text-sm text-modest-muted mt-2 leading-relaxed font-light">
+                    Koleksi abaya ceruty babydoll, kaftan sutra, koko kurta pria, dan hijab pashmina silk dengan potongan anggun dan adem.
+                </p>
+            </div>
+
+            <!-- Search & Feature Filter -->
+            <div class="mt-8 grid grid-cols-1 md:grid-cols-12 gap-4">
+                <!-- Search Box -->
+                <div class="md:col-span-6 relative">
+                    <i class="fa-solid fa-magnifying-glass absolute left-4 top-1/2 -translate-y-1/2 text-stone-400 text-xs"></i>
+                    <input type="text" id="searchInput" placeholder="Cari busana (misal: Abaya, Sarimbit, Kaftan, Khimar, Koko, Silk)..." 
+                           class="w-full pl-10 pr-4 py-3 bg-white border border-modest-border rounded-full text-xs text-modest-earth focus:outline-none focus:border-modest-mauve transition">
+                </div>
+
+                <!-- Feature Filter Dropdown -->
+                <div class="md:col-span-3">
+                    <select id="featureFilter" onchange="applyAllFilters()" class="w-full py-3 px-4 bg-white border border-modest-border rounded-full text-xs font-semibold text-stone-700 focus:outline-none focus:border-modest-mauve transition">
+                        <option value="all">Semua Fitur Busana</option>
+                        <option value="busui">Busui Friendly (Resleting Depan)</option>
+                        <option value="wudhu">Wudhu Friendly (Manset Kancing/Smok)</option>
+                        <option value="set">Paket Set Lengkap Khimar</option>
+                    </select>
+                </div>
+
+                <!-- Consultation WA -->
+                <div class="md:col-span-3">
+                    <a href="https://wa.me/6281234567890?text=Assalamu'alaikum%20Malika%20Modest,%20saya%20mau%20konsultasi%20stok%20dan%20panjang%20baju." target="_blank" class="w-full h-full py-3 px-4 bg-white hover:bg-modest-sand border border-modest-borderdark rounded-full text-xs font-bold text-modest-mauvedark flex items-center justify-center gap-2 transition shadow-xs">
+                        <i class="fa-solid fa-tape text-modest-gold"></i>
+                        <span>Konsultasi Ukuran via WA</span>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Category Pills -->
+            <div class="mt-6 flex items-center gap-2 overflow-x-auto no-scrollbar pb-2">
+                <span class="text-xs font-bold text-modest-gold shrink-0 mr-1 uppercase">Koleksi:</span>
+                <button onclick="filterCategory('all')" class="cat-pill active px-4 py-2 rounded-full text-xs font-bold tracking-wider transition bg-modest-mauvedark text-white" data-cat="all">
+                    SEMUA KOLEKSI
+                </button>
+                <button onclick="filterCategory('gamis')" class="cat-pill px-4 py-2 rounded-full text-xs font-bold tracking-wider transition bg-white text-stone-700 hover:text-modest-mauve border border-modest-border" data-cat="gamis">
+                    GAMIS & ABAYA SYAR'I
+                </button>
+                <button onclick="filterCategory('sarimbit')" class="cat-pill px-4 py-2 rounded-full text-xs font-bold tracking-wider transition bg-white text-stone-700 hover:text-modest-mauve border border-modest-border" data-cat="sarimbit">
+                    SARIMBIT KELUARGA
+                </button>
+                <button onclick="filterCategory('hijab')" class="cat-pill px-4 py-2 rounded-full text-xs font-bold tracking-wider transition bg-white text-stone-700 hover:text-modest-mauve border border-modest-border" data-cat="hijab">
+                    PASHMINA & KHIMAR SILK
+                </button>
+                <button onclick="filterCategory('koko')" class="cat-pill px-4 py-2 rounded-full text-xs font-bold tracking-wider transition bg-white text-stone-700 hover:text-modest-mauve border border-modest-border" data-cat="koko">
+                    KOKO & KURTA PRIA
+                </button>
+                <button onclick="filterCategory('mukena')" class="cat-pill px-4 py-2 rounded-full text-xs font-bold tracking-wider transition bg-white text-stone-700 hover:text-modest-mauve border border-modest-border" data-cat="mukena">
+                    MUKENA SUTRA RENDA
+                </button>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- 4. PRODUCT GRID (3:4 VERTICAL RATIO) -->
+    <section class="py-16">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            
+            <div class="flex items-center justify-between mb-8">
+                <div class="text-xs text-stone-600">
+                    Menampilkan <span id="productCount" class="font-bold text-modest-mauvedark">8</span> Pilihan Busana Modest & Sarimbit
+                </div>
+                <div class="text-xs text-modest-gold flex items-center gap-1.5 font-semibold">
+                    <i class="fa-solid fa-gem"></i>
+                    <span>Kualitas Butik • 100% Anti-Menerawang</span>
+                </div>
+            </div>
+
+            <!-- Grid Items -->
+            <div id="productsGrid" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+
+                <!-- ITEM 1: Malika Tiered Flounce Abaya -->
+                <div class="product-item bg-white rounded-3xl border border-modest-border p-4 flex flex-col justify-between modest-card" 
+                     data-cat="gamis" data-feature="busui,wudhu,set" data-title="Malika Tiered Flounce Abaya Gamis Syar'i Ceruty Babydoll Armani">
+                    <div>
+                        <div class="aspect-[3/4] rounded-2xl bg-modest-sand overflow-hidden mb-3 relative group">
+                            <img src="https://images.unsplash.com/photo-1585487000160-6ebcfceb0d03?auto=format&fit=crop&w=600&q=80" alt="Tiered Flounce Abaya" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+                            <div class="absolute top-2.5 left-2.5 flex flex-col gap-1">
+                                <span class="bg-modest-mauvedark text-white text-[8px] font-bold px-2 py-0.5 rounded-full uppercase">
+                                    BUSUI + WUDHU
+                                </span>
+                            </div>
+                        </div>
+
+                        <div class="flex items-center gap-2 mb-1.5 text-[10px] text-modest-gold font-bold uppercase">
+                            <span>Ceruty Armani 3-Layer</span>
+                            <span>•</span>
+                            <span>PB: 140 cm</span>
+                        </div>
+
+                        <h3 class="font-serif font-bold text-sm text-modest-mauvedark leading-snug">Malika Tiered Flounce Abaya</h3>
+                        <p class="text-xs text-modest-muted mt-1 line-clamp-1">Gamis berjenjang melayang dengan furing sutra katun dingin.</p>
+                        
+                        <div class="mt-2 text-[11px] text-stone-500">
+                            <span>Warna: Dusty Rose • Pearl Sand • Sage</span>
+                        </div>
+                    </div>
+
+                    <div class="mt-4 pt-3 border-t border-modest-border flex items-center justify-between">
+                        <div>
+                            <span class="text-[10px] text-modest-muted block">Harga Gamis Set</span>
+                            <span class="font-bold text-sm text-modest-mauvedark font-sans">Rp 379.000</span>
+                        </div>
+                        <div class="flex items-center gap-1">
+                            <a href="detail.html" class="p-2 rounded-full bg-modest-sand hover:bg-modest-warmpaper text-modest-mauvedark text-xs transition" title="Lihat Detail">
+                                <i class="fa-solid fa-eye"></i>
+                            </a>
+                            <a href="https://wa.me/6281234567890?text=Assalamu'alaikum%20Malika%20Modest,%20saya%20mau%20pesan%20Malika%20Tiered%20Abaya%20(Rp%20379.000)." target="_blank" class="px-3 py-1.5 rounded-full bg-modest-mauve hover:bg-modest-mauvedark text-white text-xs font-bold transition">
+                                Pesan WA
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- ITEM 2: Ayana Silk Jacquard Kaftan -->
+                <div class="product-item bg-white rounded-3xl border border-modest-border p-4 flex flex-col justify-between modest-card" 
+                     data-cat="gamis" data-feature="busui" data-title="Ayana Silk Jacquard Kaftan Baju Pesta Muslimah Sutra Kilap">
+                    <div>
+                        <div class="aspect-[3/4] rounded-2xl bg-modest-sand overflow-hidden mb-3 relative group">
+                            <img src="https://images.unsplash.com/photo-1596704017254-9b121068fb31?auto=format&fit=crop&w=600&q=80" alt="Silk Kaftan" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+                            <span class="absolute top-2.5 right-2.5 bg-modest-gold text-white text-[8px] font-bold px-2 py-0.5 rounded-full uppercase">
+                                MEWAH
+                            </span>
+                        </div>
+
+                        <div class="flex items-center gap-2 mb-1.5 text-[10px] text-modest-gold font-bold uppercase">
+                            <span>Silk Jacquard Emboss</span>
+                            <span>•</span>
+                            <span>PB: 138 cm</span>
+                        </div>
+
+                        <h3 class="font-serif font-bold text-sm text-modest-mauvedark leading-snug">Ayana Silk Jacquard Kaftan</h3>
+                        <p class="text-xs text-modest-muted mt-1 line-clamp-1">Kaftan mewah bertekstur tenun kilap lembut dengan tali serut dalam.</p>
+                        
+                        <div class="mt-2 text-[11px] text-stone-500">
+                            <span>Warna: Champagne Gold • Midnight Navy</span>
+                        </div>
+                    </div>
+
+                    <div class="mt-4 pt-3 border-t border-modest-border flex items-center justify-between">
+                        <div>
+                            <span class="text-[10px] text-modest-muted block">Harga Kaftan</span>
+                            <span class="font-bold text-sm text-modest-mauvedark font-sans">Rp 429.000</span>
+                        </div>
+                        <div class="flex items-center gap-1">
+                            <a href="detail.html" class="p-2 rounded-full bg-modest-sand hover:bg-modest-warmpaper text-modest-mauvedark text-xs transition">
+                                <i class="fa-solid fa-eye"></i>
+                            </a>
+                            <a href="https://wa.me/6281234567890?text=Assalamu'alaikum%20Malika%20Modest,%20saya%20mau%20pesan%20Ayana%20Silk%20Kaftan%20(Rp%20429.000)." target="_blank" class="px-3 py-1.5 rounded-full bg-modest-mauve hover:bg-modest-mauvedark text-white text-xs font-bold transition">
+                                Pesan WA
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- ITEM 3: Sarimbit Malika & Mini Malika Kids -->
+                <div class="product-item bg-white rounded-3xl border border-modest-border p-4 flex flex-col justify-between modest-card" 
+                     data-cat="sarimbit" data-feature="busui,wudhu,set" data-title="Sarimbit Malika Ibu dan Anak Perempuan Baju Lebaran Keluarga">
+                    <div>
+                        <div class="aspect-[3/4] rounded-2xl bg-modest-sand overflow-hidden mb-3 relative group">
+                            <img src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?auto=format&fit=crop&w=600&q=80" alt="Sarimbit Ibu Anak" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+                            <span class="absolute top-2.5 left-2.5 bg-modest-mauvedark text-white text-[8px] font-bold px-2 py-0.5 rounded-full uppercase">
+                                SET IBU & ANAK
+                            </span>
+                        </div>
+
+                        <div class="flex items-center gap-2 mb-1.5 text-[10px] text-modest-gold font-bold uppercase">
+                            <span>Paket Couple Raya</span>
+                            <span>•</span>
+                            <span>Free Hijab</span>
+                        </div>
+
+                        <h3 class="font-serif font-bold text-sm text-modest-mauvedark leading-snug">Gamis Malika & Mini Malika Kids</h3>
+                        <p class="text-xs text-modest-muted mt-1 line-clamp-1">Paket gamis ibu busui friendly dan putri cilik dengan motif senada.</p>
+                        
+                        <div class="mt-2 text-[11px] text-stone-500">
+                            <span>Shade: Dust Rose & Champagne</span>
+                        </div>
+                    </div>
+
+                    <div class="mt-4 pt-3 border-t border-modest-border flex items-center justify-between">
+                        <div>
+                            <span class="text-[10px] text-modest-muted block">Paket Sarimbit (2 Pcs)</span>
+                            <span class="font-bold text-sm text-modest-mauvedark font-sans">Rp 649.000</span>
+                        </div>
+                        <div class="flex items-center gap-1">
+                            <a href="detail.html" class="p-2 rounded-full bg-modest-sand hover:bg-modest-warmpaper text-modest-mauvedark text-xs transition">
+                                <i class="fa-solid fa-eye"></i>
+                            </a>
+                            <a href="https://wa.me/6281234567890?text=Assalamu'alaikum%20Malika%20Modest,%20saya%20mau%20pesan%20Sarimbit%20Ibu%20Anak%20(Rp%20649.000)." target="_blank" class="px-3 py-1.5 rounded-full bg-modest-mauve hover:bg-modest-mauvedark text-white text-xs font-bold transition">
+                                Pesan WA
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- ITEM 4: Kurta Koko Al-Fatih -->
+                <div class="product-item bg-white rounded-3xl border border-modest-border p-4 flex flex-col justify-between modest-card" 
+                     data-cat="koko" data-feature="wudhu" data-title="Kurta Koko Al-Fatih Pria Dewasa Baju Muslim Lengan Panjang Katun">
+                    <div>
+                        <div class="aspect-[3/4] rounded-2xl bg-modest-sand overflow-hidden mb-3 relative group">
+                            <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=600&q=80" alt="Koko Kurta Pria" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+                        </div>
+
+                        <div class="flex items-center gap-2 mb-1.5 text-[10px] text-modest-gold font-bold uppercase">
+                            <span>Katun Linen Toyobo</span>
+                            <span>•</span>
+                            <span>Kerah Shanghai</span>
+                        </div>
+
+                        <h3 class="font-serif font-bold text-sm text-modest-mauvedark leading-snug">Kurta Koko Al-Fatih Pria</h3>
+                        <p class="text-xs text-modest-muted mt-1 line-clamp-1">Koko pria katun toyobo sejuk dengan aksen bordir geometris halus.</p>
+                        
+                        <div class="mt-2 text-[11px] text-stone-500">
+                            <span>Warna: Sage Olive • Soft Cream • Navy</span>
+                        </div>
+                    </div>
+
+                    <div class="mt-4 pt-3 border-t border-modest-border flex items-center justify-between">
+                        <div>
+                            <span class="text-[10px] text-modest-muted block">Harga Koko</span>
+                            <span class="font-bold text-sm text-modest-mauvedark font-sans">Rp 239.000</span>
+                        </div>
+                        <div class="flex items-center gap-1">
+                            <a href="detail.html" class="p-2 rounded-full bg-modest-sand hover:bg-modest-warmpaper text-modest-mauvedark text-xs transition">
+                                <i class="fa-solid fa-eye"></i>
+                            </a>
+                            <a href="https://wa.me/6281234567890?text=Assalamu'alaikum%20Malika%20Modest,%20saya%20mau%20pesan%20Koko%20Al-Fatih%20(Rp%20239.000)." target="_blank" class="px-3 py-1.5 rounded-full bg-modest-mauve hover:bg-modest-mauvedark text-white text-xs font-bold transition">
+                                Pesan WA
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- ITEM 5: Pashmina Silk Armani Premium -->
+                <div class="product-item bg-white rounded-3xl border border-modest-border p-4 flex flex-col justify-between modest-card" 
+                     data-cat="hijab" data-feature="set" data-title="Pashmina Silk Armani Premium Hijab Kerudung Sutra Mengkilap">
+                    <div>
+                        <div class="aspect-[3/4] rounded-2xl bg-modest-sand overflow-hidden mb-3 relative group">
+                            <img src="https://images.unsplash.com/photo-1596704017254-9b121068fb31?auto=format&fit=crop&w=600&q=80" alt="Pashmina Silk" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+                            <span class="absolute top-2.5 right-2.5 bg-modest-mauvedark text-white text-[8px] font-bold px-2 py-0.5 rounded-full uppercase">
+                                JATUH & LEMBUT
+                            </span>
+                        </div>
+
+                        <div class="flex items-center gap-2 mb-1.5 text-[10px] text-modest-gold font-bold uppercase">
+                            <span>100% Silk Armani</span>
+                            <span>•</span>
+                            <span>180 x 75 cm</span>
+                        </div>
+
+                        <h3 class="font-serif font-bold text-sm text-modest-mauvedark leading-snug">Pashmina Silk Armani Halus</h3>
+                        <p class="text-xs text-modest-muted mt-1 line-clamp-1">Pashmina sutra mewah bertekstur lembut, mudah dibentuk tanpa letoy.</p>
+                        
+                        <div class="mt-2 text-[11px] text-stone-500">
+                            <span>Warna: Rose Mauve • Champagne • Taupe</span>
+                        </div>
+                    </div>
+
+                    <div class="mt-4 pt-3 border-t border-modest-border flex items-center justify-between">
+                        <div>
+                            <span class="text-[10px] text-modest-muted block">Harga Pashmina</span>
+                            <span class="font-bold text-sm text-modest-mauvedark font-sans">Rp 99.000</span>
+                        </div>
+                        <div class="flex items-center gap-1">
+                            <a href="detail.html" class="p-2 rounded-full bg-modest-sand hover:bg-modest-warmpaper text-modest-mauvedark text-xs transition">
+                                <i class="fa-solid fa-eye"></i>
+                            </a>
+                            <a href="https://wa.me/6281234567890?text=Assalamu'alaikum%20Malika%20Modest,%20saya%20mau%20pesan%20Pashmina%20Silk%20(Rp%2099.000)." target="_blank" class="px-3 py-1.5 rounded-full bg-modest-mauve hover:bg-modest-mauvedark text-white text-xs font-bold transition">
+                                Pesan WA
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- ITEM 6: Zahra French Khimar 2-in-1 -->
+                <div class="product-item bg-white rounded-3xl border border-modest-border p-4 flex flex-col justify-between modest-card" 
+                     data-cat="gamis" data-feature="wudhu,set" data-title="Zahra French Khimar 2-in-1 Set Gamis Cadar Bandana">
+                    <div>
+                        <div class="aspect-[3/4] rounded-2xl bg-modest-sand overflow-hidden mb-3 relative group">
+                            <img src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?auto=format&fit=crop&w=600&q=80" alt="French Khimar" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+                        </div>
+
+                        <div class="flex items-center gap-2 mb-1.5 text-[10px] text-modest-gold font-bold uppercase">
+                            <span>Airflow Crinkle</span>
+                            <span>•</span>
+                            <span>PB: 142 cm</span>
+                        </div>
+
+                        <h3 class="font-serif font-bold text-sm text-modest-mauvedark leading-snug">Zahra French Khimar 2-in-1</h3>
+                        <p class="text-xs text-modest-muted mt-1 line-clamp-1">Setelan gamis dan khimar perancis tanpa setrika dengan cadar fleksibel.</p>
+                        
+                        <div class="mt-2 text-[11px] text-stone-500">
+                            <span>Warna: Jet Black • Mocca Earth</span>
+                        </div>
+                    </div>
+
+                    <div class="mt-4 pt-3 border-t border-modest-border flex items-center justify-between">
+                        <div>
+                            <span class="text-[10px] text-modest-muted block">Harga Set Gamis</span>
+                            <span class="font-bold text-sm text-modest-mauvedark font-sans">Rp 349.000</span>
+                        </div>
+                        <div class="flex items-center gap-1">
+                            <a href="detail.html" class="p-2 rounded-full bg-modest-sand hover:bg-modest-warmpaper text-modest-mauvedark text-xs transition">
+                                <i class="fa-solid fa-eye"></i>
+                            </a>
+                            <a href="https://wa.me/6281234567890?text=Assalamu'alaikum%20Malika%20Modest,%20saya%20mau%20pesan%20Zahra%20French%20Khimar%20(Rp%20349.000)." target="_blank" class="px-3 py-1.5 rounded-full bg-modest-mauve hover:bg-modest-mauvedark text-white text-xs font-bold transition">
+                                Pesan WA
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- ITEM 7: Mukena Sutra Velvet Renda Perancis -->
+                <div class="product-item bg-white rounded-3xl border border-modest-border p-4 flex flex-col justify-between modest-card" 
+                     data-cat="mukena" data-feature="set" data-title="Mukena Sutra Velvet Renda Perancis Perlengkapan Sholat Mahar Hantaran">
+                    <div>
+                        <div class="aspect-[3/4] rounded-2xl bg-modest-sand overflow-hidden mb-3 relative group">
+                            <img src="https://images.unsplash.com/photo-1585487000160-6ebcfceb0d03?auto=format&fit=crop&w=600&q=80" alt="Mukena Sutra Renda" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+                            <span class="absolute top-2.5 right-2.5 bg-modest-gold text-white text-[8px] font-bold px-2 py-0.5 rounded-full uppercase">
+                                MAHAR READY
+                            </span>
+                        </div>
+
+                        <div class="flex items-center gap-2 mb-1.5 text-[10px] text-modest-gold font-bold uppercase">
+                            <span>Sutra Velvet + Renda</span>
+                            <span>•</span>
+                            <span>Free Tas Pouch</span>
+                        </div>
+
+                        <h3 class="font-serif font-bold text-sm text-modest-mauvedark leading-snug">Mukena Sutra Renda Perancis</h3>
+                        <p class="text-xs text-modest-muted mt-1 line-clamp-1">Mukena dingin berenda katun impor untuk sholat harian atau mahar.</p>
+                        
+                        <div class="mt-2 text-[11px] text-stone-500">
+                            <span>Warna: Pure White • Champagne Sand</span>
+                        </div>
+                    </div>
+
+                    <div class="mt-4 pt-3 border-t border-modest-border flex items-center justify-between">
+                        <div>
+                            <span class="text-[10px] text-modest-muted block">Harga Mukena Set</span>
+                            <span class="font-bold text-sm text-modest-mauvedark font-sans">Rp 399.000</span>
+                        </div>
+                        <div class="flex items-center gap-1">
+                            <a href="detail.html" class="p-2 rounded-full bg-modest-sand hover:bg-modest-warmpaper text-modest-mauvedark text-xs transition">
+                                <i class="fa-solid fa-eye"></i>
+                            </a>
+                            <a href="https://wa.me/6281234567890?text=Assalamu'alaikum%20Malika%20Modest,%20saya%20mau%20pesan%20Mukena%20Sutra%20(Rp%20399.000)." target="_blank" class="px-3 py-1.5 rounded-full bg-modest-mauve hover:bg-modest-mauvedark text-white text-xs font-bold transition">
+                                Pesan WA
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- ITEM 8: Sarimbit Couple Koko & Abaya -->
+                <div class="product-item bg-white rounded-3xl border border-modest-border p-4 flex flex-col justify-between modest-card" 
+                     data-cat="sarimbit" data-feature="busui,wudhu,set" data-title="Sarimbit Couple Suami Istri Gamis Abaya Koko Kurta">
+                    <div>
+                        <div class="aspect-[3/4] rounded-2xl bg-modest-sand overflow-hidden mb-3 relative group">
+                            <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=600&q=80" alt="Couple Set" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+                        </div>
+
+                        <div class="flex items-center gap-2 mb-1.5 text-[10px] text-modest-gold font-bold uppercase">
+                            <span>Paket Couple Suami-Istri</span>
+                            <span>•</span>
+                            <span>2 Pcs</span>
+                        </div>
+
+                        <h3 class="font-serif font-bold text-sm text-modest-mauvedark leading-snug">Kurta Al-Fatih & Gamis Syahira</h3>
+                        <p class="text-xs text-modest-muted mt-1 line-clamp-1">Paket sepasang busana muslimah dan pria dengan palet sage olive senada.</p>
+                        
+                        <div class="mt-2 text-[11px] text-stone-500">
+                            <span>Shade: Sage Olive & Soft Cream</span>
+                        </div>
+                    </div>
+
+                    <div class="mt-4 pt-3 border-t border-modest-border flex items-center justify-between">
+                        <div>
+                            <span class="text-[10px] text-modest-muted block">Paket Couple (2 Pcs)</span>
+                            <span class="font-bold text-sm text-modest-mauvedark font-sans">Rp 589.000</span>
+                        </div>
+                        <div class="flex items-center gap-1">
+                            <a href="detail.html" class="p-2 rounded-full bg-modest-sand hover:bg-modest-warmpaper text-modest-mauvedark text-xs transition">
+                                <i class="fa-solid fa-eye"></i>
+                            </a>
+                            <a href="https://wa.me/6281234567890?text=Assalamu'alaikum%20Malika%20Modest,%20saya%20mau%20pesan%20Sarimbit%20Couple%20(Rp%20589.000)." target="_blank" class="px-3 py-1.5 rounded-full bg-modest-mauve hover:bg-modest-mauvedark text-white text-xs font-bold transition">
+                                Pesan WA
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- Empty State -->
+            <div id="noResults" class="hidden text-center py-16 bg-white rounded-3xl border border-modest-border mt-8">
+                <i class="fa-solid fa-magnifying-glass text-3xl text-modest-gold mb-3"></i>
+                <h4 class="text-base font-serif font-bold text-modest-mauvedark">Busana Tidak Ditemukan</h4>
+                <p class="text-xs text-modest-muted mt-1 max-w-sm mx-auto font-light">
+                    Coba ganti kata kunci pencarian atau klik tombol reset filter untuk melihat semua koleksi gamis kami.
+                </p>
+                <button onclick="resetFilters()" class="mt-4 px-6 py-2.5 bg-modest-mauve text-white text-xs font-bold uppercase tracking-wider rounded-full hover:bg-modest-mauvedark transition">
+                    Reset Filter
+                </button>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- 5. FOOTER -->
+    <footer class="bg-modest-sand text-stone-700 border-t border-modest-border pt-14 pb-28">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex flex-col md:flex-row items-center justify-between gap-6 border-b border-modest-border pb-8">
+                <div class="flex flex-col">
+                    <span class="text-lg font-serif font-bold tracking-[0.12em] text-modest-mauvedark uppercase">
+                        MALIKA
+                    </span>
+                    <span class="text-[8px] tracking-[0.35em] text-modest-gold uppercase mt-0.5 font-semibold">
+                        Modest Atelier & Couture
+                    </span>
+                </div>
+                <div class="flex flex-wrap gap-6 text-xs text-stone-700 font-semibold uppercase tracking-wider">
+                    <a href="index.html" class="hover:text-modest-mauve">Beranda</a>
+                    <a href="katalog.html" class="text-modest-mauvedark font-bold">Katalog</a>
+                    <a href="detail.html" class="hover:text-modest-mauve">Detail</a>
+                    <a href="tentang.html" class="hover:text-modest-mauve">Filosofi</a>
+                    <a href="artikel.html" class="hover:text-modest-mauve">Jurnal</a>
+                    <a href="kontak.html" class="hover:text-modest-mauve">Butik</a>
+                </div>
+            </div>
+            <div class="mt-6 flex flex-col sm:flex-row items-center justify-between text-xs text-stone-500">
+                <p>&copy; 2026 MALIKA MODEST ATELIER. All Rights Reserved.</p>
+                <p class="text-[11px] mt-2 sm:mt-0">Lentera Pasar Production Template — Editorial Modest Wear</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- FLOATING WHATSAPP BUTTON (bottom-24) -->
+    <a href="https://wa.me/6281234567890?text=Assalamu'alaikum%20Malika%20Modest,%20saya%20ingin%20konsultasi%20gamis%20dan%20sarimbit." 
+       target="_blank" 
+       class="fixed bottom-24 right-6 z-50 group flex items-center gap-3 bg-white hover:bg-modest-warmpaper text-modest-earth px-4 py-3 rounded-full border border-modest-border shadow-2xl hover:border-modest-mauve transition-all duration-300">
+        <span class="relative flex h-3 w-3">
+            <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-emerald-400 opacity-75"></span>
+            <span class="relative inline-flex rounded-full h-3 w-3 bg-emerald-500"></span>
+        </span>
+        <i class="fa-brands fa-whatsapp text-2xl text-emerald-600"></i>
+        <div class="text-left hidden sm:block pr-1">
+            <div class="text-[10px] text-modest-gold font-bold uppercase tracking-wider leading-none">Boutique Stylist</div>
+            <span class="font-bold text-xs text-modest-mauvedark">Konsultasi Syar'i WA</span>
+        </div>
+    </a>
+
+    <!-- LENTERA PASAR - STICKY DEMO & SALES BAR (fixed bottom-4) -->
+    <div class="fixed bottom-4 left-1/2 -translate-x-1/2 z-50 w-[95%] max-w-4xl bg-slate-900/95 backdrop-blur-md text-white p-3.5 md:p-4 rounded-2xl shadow-2xl border border-slate-700/80 transition-all duration-300">
+      <div class="flex flex-col md:flex-row items-center justify-between gap-3 md:gap-4">
+        <div class="flex items-center gap-3 w-full md:w-auto">
+          <div class="w-10 h-10 rounded-xl bg-rose-900/40 border border-rose-500/40 flex items-center justify-center shrink-0">
+            <svg class="w-5 h-5 text-rose-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4.354a4 4 0 110 5.292M15 21H3v-1a6 6 0 0112 0v1zm0 0h6v-1a6 6 0 00-9-5.197M13 7a4 4 0 11-8 0 4 4 0 018 0z" />
+            </svg>
+          </div>
+          <div>
+            <div class="flex items-center gap-2">
+              <span class="font-bold text-sm text-white">Lentera Pasar Engine</span>
+              <span class="text-[10px] bg-rose-500/20 text-rose-200 border border-rose-500/30 px-2 py-0.5 rounded-full font-medium">Modest Wear & Hijab Template</span>
+            </div>
+            <p class="text-xs text-slate-300 hidden sm:block">
+              Terima beres: Website responsif + Panel input produk sendiri + Dikelola tim iklan profesional.
+            </p>
+          </div>
+        </div>
+
+        <div class="flex items-center justify-between md:justify-end gap-3 w-full md:w-auto">
+          <a href="https://wa.me/6281234567890?text=Halo%20Tim%20Lentera%20Pasar,%20saya%20tertarik%20menggunakan%20template%20website%20Modest%20Wear%20Editorial%20ini%20lengkap%20dengan%20Admin%20Panel%20dan%20Jasa%20Iklannya." 
+             target="_blank"
+             class="w-full md:w-auto inline-flex items-center justify-center gap-2 bg-gradient-to-r from-rose-800 to-amber-800 hover:from-rose-700 hover:to-amber-700 text-white text-xs md:text-sm font-semibold px-5 py-2.5 rounded-xl shadow-lg transition-all hover:scale-105 shrink-0">
+            <span>Gunakan Template Ini</span>
+            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3" />
+            </svg>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <!-- JAVASCRIPT FILTER LOGIC -->
+    <script>
+        let currentCat = 'all';
+
+        function filterCategory(cat) {
+            currentCat = cat;
+            document.querySelectorAll('.cat-pill').forEach(btn => {
+                if (btn.dataset.cat === cat) {
+                    btn.classList.remove('bg-white', 'text-stone-700', 'border');
+                    btn.classList.add('bg-modest-mauvedark', 'text-white');
+                } else {
+                    btn.classList.remove('bg-modest-mauvedark', 'text-white');
+                    btn.classList.add('bg-white', 'text-stone-700', 'border');
+                }
+            });
+            applyAllFilters();
+        }
+
+        document.getElementById('searchInput').addEventListener('input', applyAllFilters);
+
+        function applyAllFilters() {
+            const query = document.getElementById('searchInput').value.toLowerCase().trim();
+            const feature = document.getElementById('featureFilter').value;
+            const items = document.querySelectorAll('.product-item');
+            let visibleCount = 0;
+
+            items.forEach(item => {
+                const itemCat = item.dataset.cat;
+                const itemFeatures = (item.dataset.feature || '').split(',');
+                const itemTitle = (item.dataset.title || '').toLowerCase();
+
+                const matchCat = (currentCat === 'all' || itemCat === currentCat);
+                const matchFeature = (feature === 'all' || itemFeatures.includes(feature));
+                const matchQuery = (!query || itemTitle.includes(query));
+
+                if (matchCat && matchFeature && matchQuery) {
+                    item.classList.remove('hidden');
+                    visibleCount++;
+                } else {
+                    item.classList.add('hidden');
+                }
+            });
+
+            document.getElementById('productCount').innerText = visibleCount;
+            const noRes = document.getElementById('noResults');
+            if (visibleCount === 0) {
+                noRes.classList.remove('hidden');
+            } else {
+                noRes.classList.add('hidden');
+            }
+        }
+
+        function resetFilters() {
+            document.getElementById('searchInput').value = '';
+            document.getElementById('featureFilter').value = 'all';
+            filterCategory('all');
+        }
+
+        // Mobile menu toggle
+        const mobileMenuBtn = document.getElementById('mobileMenuBtn');
+        const mobileMenu = document.getElementById('mobileMenu');
+        const menuIcon = document.getElementById('menuIcon');
+
+        mobileMenuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+            if (mobileMenu.classList.contains('hidden')) {
+                menuIcon.classList.remove('fa-xmark');
+                menuIcon.classList.add('fa-bars-staggered');
+            } else {
+                menuIcon.classList.remove('fa-bars-staggered');
+                menuIcon.classList.add('fa-xmark');
+            }
+        });
+    </script>
+</body>
+</html>

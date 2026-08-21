@@ -31,6 +31,7 @@ template-website-umkm/
 │   ├── perfume-luxury-atelier/         # Parfum, Wewangian & Extrait Dark Luxury (Noir Sillage)
 │   ├── bodycare-botanical-spa/         # Sabun Organik Cold-Process & Body Care Alami (Alunan Botanika)
 │   ├── fashion-casual-minimal/         # Pakaian Kasual Minimalis Pria & Wanita (Essēns Studio)
+│   ├── fashion-modest-editorial/       # Modest Wear, Gamis Syar'i & Sarimbit Raya (Malika Modest)
 │   ├── fashion-muslim-gamis/           # Hijab, Gamis Syar'i & Abaya Modern
 │   ├── fashion-streetwear-apparel/     # Kaos Distro, Hoodie & Urban Oversize
 │   ├── fashion-batik-etnik/            # Batik Tulis/Cap, Tenun & Kebaya Modern
