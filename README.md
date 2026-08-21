@@ -35,6 +35,7 @@ template-website-umkm/
 │   ├── fashion-kids-pastel/            # Pakaian Anak, Balita & Bayi SNI Organik (Moomi Kids)
 │   ├── fashion-activewear-kinetic/     # Pakaian Olahraga, Activewear & Jersey Club (Kinetix Lab)
 │   ├── fashion-loungewear-cozy/        # Piyama Sutra, Daster Modern & Loungewear (Serena Lounge)
+│   ├── footwear-sneakers-street/       # Sneakers Urban Streetwear, Loafers & Sandal (Stride Vault)
 │   ├── fashion-muslim-gamis/           # Hijab, Gamis Syar'i & Abaya Modern
 │   ├── fashion-streetwear-apparel/     # Kaos Distro, Hoodie & Urban Oversize
 │   ├── fashion-batik-etnik/            # Batik Tulis/Cap, Tenun & Kebaya Modern

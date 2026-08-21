@@ -1,0 +1,905 @@
+<!DOCTYPE html>
+<html lang="id" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>STRIDE VAULT — Urban Sneakers & Footwear Lab</title>
+    <meta name="description" content="Koleksi sneakers urban streetwear, slip-on, sandal slide, dan loafers lokal dengan konstruksi sol phylon empuk, insole memory foam, dan garansi bebas tukar ukuran 7 hari.">
+    
+    <!-- Google Fonts: Plus Jakarta Sans & Syne / Teko -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Syne:wght@700;800&family=Teko:wght@600;700&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        stride: {
+                            black: '#0F1115',
+                            dark: '#181A20',
+                            card: '#22252D',
+                            cardlight: '#FFFFFF',
+                            border: '#2E323D',
+                            borderlight: '#E4E4E7',
+                            orange: '#EA580C',
+                            orangelight: '#F97316',
+                            orangedark: '#C2410C',
+                            concrete: '#F4F4F5',
+                            silver: '#A1A1AA',
+                            muted: '#71717A'
+                        }
+                    },
+                    fontFamily: {
+                        sans: ['"Plus Jakarta Sans"', 'sans-serif'],
+                        display: ['"Syne"', '"Plus Jakarta Sans"', 'sans-serif'],
+                        condensed: ['"Teko"', 'sans-serif']
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        .no-scrollbar::-webkit-scrollbar { display: none; }
+        .no-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
+        
+        .floating-kick {
+            transform: translateY(0px) rotate(-6deg);
+            transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+            filter: drop-shadow(0 25px 25px rgba(0, 0, 0, 0.45));
+        }
+        .floating-kick:hover {
+            transform: translateY(-8px) rotate(-3deg) scale(1.03);
+            filter: drop-shadow(0 35px 35px rgba(234, 88, 12, 0.3));
+        }
+        
+        .vault-card {
+            transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+        }
+        .vault-card:hover {
+            transform: translateY(-4px);
+            border-color: #EA580C;
+            box-shadow: 0 16px 30px -10px rgba(234, 88, 12, 0.15);
+        }
+    </style>
+</head>
+<body class="bg-stride-black text-slate-100 font-sans antialiased selection:bg-stride-orange selection:text-white">
+
+    <!-- 1. TOP ANNOUNCEMENT BAR -->
+    <div class="bg-stride-orange text-white text-[11px] py-2 px-4 font-bold tracking-wider uppercase border-b border-stride-orangedark">
+        <div class="max-w-7xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-2 text-center sm:text-left font-mono">
+            <div class="flex items-center justify-center gap-2">
+                <span class="inline-flex items-center gap-1.5 px-2 py-0.5 rounded-sm bg-black/30 text-white text-[9px] font-bold">
+                    <span class="w-1.5 h-1.5 rounded-full bg-white animate-ping"></span>
+                    SIZE EXCHANGE GUARANTEE
+                </span>
+                <span>Garansi Bebas Tukar Ukuran 7 Hari • 100% Sol Phylon Ultra-Light Anti-Slip</span>
+            </div>
+            <div class="flex items-center gap-4 text-[10px]">
+                <span class="hidden md:inline">Ready Stock EU 39 — 44</span>
+                <span class="hidden md:inline">|</span>
+                <a href="katalog.html" class="text-white hover:text-black underline font-bold transition">Buka Sneaker Vault &rarr;</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- 2. NAVBAR -->
+    <header class="sticky top-0 z-40 bg-stride-black/95 backdrop-blur-md border-b border-stride-border transition-all">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-20 sm:h-24">
+                
+                <!-- Brand Logo -->
+                <a href="index.html" class="flex items-center gap-3 group">
+                    <div class="w-11 h-11 bg-stride-orange text-black font-display font-black flex items-center justify-center text-xl transform -skew-x-12 group-hover:scale-105 transition">
+                        <span class="transform skew-x-12">S</span>
+                    </div>
+                    <div class="flex flex-col">
+                        <span class="text-2xl sm:text-3xl font-display font-black tracking-tight text-white uppercase leading-none group-hover:text-stride-orange transition">
+                            STRIDE<span class="text-stride-orange">.</span>VAULT
+                        </span>
+                        <span class="text-[9px] font-mono tracking-[0.25em] text-stride-silver uppercase">
+                            URBAN FOOTWEAR LAB
+                        </span>
+                    </div>
+                </a>
+
+                <!-- Desktop Navigation Links -->
+                <nav class="hidden lg:flex items-center gap-8 text-xs font-bold tracking-widest uppercase text-slate-300 font-mono">
+                    <a href="index.html" class="text-stride-orange border-b-2 border-stride-orange pb-1">Beranda</a>
+                    <a href="katalog.html" class="hover:text-stride-orange transition">Katalog Sepatu</a>
+                    <a href="detail.html" class="hover:text-stride-orange transition">Detail Sol & Insole</a>
+                    <a href="tentang.html" class="hover:text-stride-orange transition">Craftsmanship Lab</a>
+                    <a href="artikel.html" class="hover:text-stride-orange transition">Perawatan Sneakers</a>
+                    <a href="kontak.html" class="hover:text-stride-orange transition">Tukar Ukuran & Toko</a>
+                </nav>
+
+                <!-- Action Button & Foot Measurer Modal -->
+                <div class="hidden sm:flex items-center gap-3">
+                    <button onclick="openSizeCalcModal()" class="inline-flex items-center gap-2 px-4 py-2.5 rounded-sm border border-stride-border hover:border-stride-orange text-xs font-mono font-bold text-slate-300 hover:text-white transition bg-stride-dark shadow-xs">
+                        <i class="fa-solid fa-ruler-horizontal text-stride-orange"></i>
+                        <span>Cek Insole CM</span>
+                    </button>
+                    <a href="https://wa.me/6281234567890?text=Halo%20Stride%20Vault,%20saya%20mau%20pesan%20sneakers." target="_blank" class="inline-flex items-center gap-2 bg-stride-orange hover:bg-stride-orangelight text-white text-xs font-bold font-mono tracking-wider px-5 py-2.5 rounded-sm transition-all shadow-lg shadow-stride-orange/20">
+                        <i class="fa-brands fa-whatsapp text-black text-sm"></i>
+                        <span>Pesan via WA</span>
+                    </a>
+                </div>
+
+                <!-- Mobile Hamburger Button -->
+                <button id="mobileMenuBtn" class="lg:hidden p-2 text-slate-300 hover:text-stride-orange focus:outline-none" aria-label="Toggle Menu">
+                    <i id="menuIcon" class="fa-solid fa-bars-staggered text-xl"></i>
+                </button>
+            </div>
+        </div>
+
+        <!-- Mobile Drawer -->
+        <div id="mobileMenu" class="hidden lg:hidden bg-stride-dark border-b border-stride-border px-4 py-5 space-y-3 font-mono">
+            <a href="index.html" class="block text-xs font-bold uppercase tracking-wider text-stride-orange py-2 border-b border-stride-border">Beranda Utama</a>
+            <a href="katalog.html" class="block text-xs font-bold uppercase tracking-wider text-slate-300 hover:text-stride-orange py-2 border-b border-stride-border">Katalog Sneakers & Sandal</a>
+            <a href="detail.html" class="block text-xs font-bold uppercase tracking-wider text-slate-300 hover:text-stride-orange py-2 border-b border-stride-border">Detail Sol Phylon & Insole CM</a>
+            <a href="tentang.html" class="block text-xs font-bold uppercase tracking-wider text-slate-300 hover:text-stride-orange py-2 border-b border-stride-border">Standar Uji Bending 50.000 Langkah</a>
+            <a href="artikel.html" class="block text-xs font-bold uppercase tracking-wider text-slate-300 hover:text-stride-orange py-2 border-b border-stride-border">Tips Merawat Sneakers Putih</a>
+            <a href="kontak.html" class="block text-xs font-bold uppercase tracking-wider text-slate-300 hover:text-stride-orange py-2">Toko Offline & Tukar Ukuran</a>
+            <div class="pt-2 flex flex-col gap-2">
+                <button onclick="openSizeCalcModal()" class="w-full py-3 rounded-sm bg-stride-card text-slate-200 border border-stride-border text-xs font-bold uppercase tracking-wider flex items-center justify-center gap-2">
+                    <i class="fa-solid fa-ruler-horizontal text-stride-orange"></i> Hitung Ukuran Kaki (Insole CM)
+                </button>
+                <a href="https://wa.me/6281234567890?text=Halo%20Stride%20Vault,%20saya%20mau%20konsultasi%20ukuran%20sepatu." target="_blank" class="w-full py-3 rounded-sm bg-stride-orange text-white text-xs font-bold uppercase tracking-wider text-center flex items-center justify-center gap-2 shadow-sm">
+                    <i class="fa-brands fa-whatsapp text-black"></i> Chat CS WhatsApp
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- 3. HIGH-IMPACT SNEAKER HERO (45° FLOATING PROFILE) -->
+    <section class="py-14 sm:py-24 border-b border-stride-border bg-gradient-to-b from-stride-black via-stride-dark to-stride-black relative overflow-hidden">
+        
+        <!-- Subtle Grid Pattern Background -->
+        <div class="absolute inset-0 opacity-10 bg-[radial-gradient(#EA580C_1px,transparent_1px)] [background-size:24px_24px] pointer-events-none"></div>
+
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+                
+                <!-- Left Urban Copy (6 Cols) -->
+                <div class="lg:col-span-6 space-y-6">
+                    <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-sm bg-stride-card border border-stride-border text-stride-orange text-xs font-mono font-bold tracking-wider">
+                        <span class="w-2 h-2 rounded-full bg-stride-orange animate-ping"></span>
+                        <span class="uppercase tracking-widest text-[10px]">NEW DROP: PHYLON RUNNER 2.0</span>
+                    </div>
+
+                    <h1 class="text-4xl sm:text-6xl lg:text-7xl font-display font-black text-white tracking-tight uppercase leading-[0.95]">
+                        ENGINEERED <br>
+                        FOR EVERY <br>
+                        <span class="text-stride-orange">URBAN STEP.</span>
+                    </h1>
+
+                    <p class="text-xs sm:text-sm text-stride-silver leading-relaxed max-w-lg font-normal">
+                        Sneakers jalanan dengan perpaduan *Action Leather* tahan gesekan, insole *Memory Foam* peredam pegal, dan sol *Phylon Gum* anti-licin seringan 280 gram. Siap temani 15.000 langkah harian Anda tanpa rasa lelah.
+                    </p>
+
+                    <div class="pt-2 flex flex-wrap items-center gap-4 font-mono">
+                        <a href="katalog.html" class="inline-flex items-center gap-2.5 px-8 py-4 bg-stride-orange hover:bg-stride-orangelight text-white text-xs font-bold tracking-widest uppercase transition-all shadow-lg shadow-stride-orange/30">
+                            <span>JELAJAHI KOLEKSI SEPATU</span>
+                            <i class="fa-solid fa-arrow-right text-[10px]"></i>
+                        </a>
+                        <a href="detail.html" class="inline-flex items-center gap-2 px-7 py-4 bg-stride-dark hover:bg-stride-card border border-stride-border text-white text-xs font-bold tracking-widest uppercase transition">
+                            <span>LIHAT SPEK DETAIL</span>
+                        </a>
+                    </div>
+
+                    <!-- Quick Specs HUD Strip -->
+                    <div class="pt-4 grid grid-cols-3 gap-4 border-t border-stride-border font-mono">
+                        <div>
+                            <span class="text-[10px] text-stride-muted uppercase block font-bold">BOBOT SEPATU</span>
+                            <strong class="text-lg font-bold text-white">280 Gram</strong>
+                            <span class="text-[10px] text-stride-orange block">Ultra-Lightweight</span>
+                        </div>
+                        <div>
+                            <span class="text-[10px] text-stride-muted uppercase block font-bold">MATERIAL SOLE</span>
+                            <strong class="text-lg font-bold text-white">Phylon Gum</strong>
+                            <span class="text-[10px] text-emerald-400 block">Anti-Slip Grip</span>
+                        </div>
+                        <div>
+                            <span class="text-[10px] text-stride-muted uppercase block font-bold">KETEBALAN INSOLE</span>
+                            <strong class="text-lg font-bold text-white">8.5 mm</strong>
+                            <span class="text-[10px] text-stride-silver block">Memory Foam</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Right Floating Shoe Hero (6 Cols) -->
+                <div class="lg:col-span-6 relative flex items-center justify-center">
+                    
+                    <!-- Glow Behind Sneaker -->
+                    <div class="absolute w-72 h-72 rounded-full bg-stride-orange/20 filter blur-3xl pointer-events-none"></div>
+
+                    <!-- Floating Sneaker 45° Angle Container -->
+                    <div class="relative w-full max-w-lg aspect-[4/3] flex items-center justify-center">
+                        <img src="https://images.unsplash.com/photo-1552346154-21d32810aba3?auto=format&fit=crop&w=1000&q=80" 
+                             alt="Stride Vault Apex Runner 2.0" 
+                             class="w-4/5 h-auto object-contain floating-kick select-none cursor-pointer">
+                        
+                        <!-- Floating Spec Badge 1 -->
+                        <div class="absolute top-4 left-4 bg-stride-dark/95 backdrop-blur-md border border-stride-border p-3 rounded-sm text-xs font-mono shadow-xl hidden sm:block">
+                            <span class="text-stride-orange text-[9px] font-bold block uppercase">// UPPER MATERIAL</span>
+                            <strong class="text-white text-xs">Action Leather + Micro-Mesh</strong>
+                        </div>
+
+                        <!-- Floating Spec Badge 2 -->
+                        <div class="absolute bottom-4 right-4 bg-stride-dark/95 backdrop-blur-md border border-stride-border p-3 rounded-sm text-xs font-mono shadow-xl hidden sm:block">
+                            <span class="text-emerald-400 text-[9px] font-bold block uppercase">// OUTSOLE TECH</span>
+                            <strong class="text-white text-xs">High-Traction Waffle Tread</strong>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+
+            <!-- Value Strip Bar -->
+            <div class="mt-16 max-w-5xl mx-auto grid grid-cols-1 sm:grid-cols-3 gap-6 bg-stride-dark p-6 rounded-sm border border-stride-border text-xs font-mono">
+                <div class="flex items-start gap-3.5">
+                    <div class="w-10 h-10 bg-stride-black text-stride-orange flex items-center justify-center shrink-0 text-base border border-stride-border">
+                        <i class="fa-solid fa-shoe-prints"></i>
+                    </div>
+                    <div>
+                        <strong class="text-white font-bold block text-sm uppercase">Insole Memory Foam 8.5mm</strong>
+                        <span class="text-stride-silver leading-relaxed font-sans text-xs">Bantalan kenyal meredam benturan tumit saat berjalan jauh di aspal beton.</span>
+                    </div>
+                </div>
+                <div class="flex items-start gap-3.5">
+                    <div class="w-10 h-10 bg-stride-black text-emerald-400 flex items-center justify-center shrink-0 text-base border border-stride-border">
+                        <i class="fa-solid fa-arrows-rotate"></i>
+                    </div>
+                    <div>
+                        <strong class="text-white font-bold block text-sm uppercase">Bebas Tukar Ukuran 7 Hari</strong>
+                        <span class="text-stride-silver leading-relaxed font-sans text-xs">Kekecilan atau kebesaran? Kami ganti ukuran baru tanpa ribet biaya retur.</span>
+                    </div>
+                </div>
+                <div class="flex items-start gap-3.5">
+                    <div class="w-10 h-10 bg-stride-black text-stride-orange flex items-center justify-center shrink-0 text-base border border-stride-border">
+                        <i class="fa-solid fa-shield-halved"></i>
+                    </div>
+                    <div>
+                        <strong class="text-white font-bold block text-sm uppercase">Double Stitching Durability</strong>
+                        <span class="text-stride-silver leading-relaxed font-sans text-xs">Jahitan rangkap strobel 4 jarum anti-jebol tahan 50.000 siklus bending.</span>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- 4. SECTION KHUSUS: PILIH SESUAI AKTIVITAS -->
+    <section class="py-16 bg-stride-dark border-b border-stride-border">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            
+            <div class="flex flex-col sm:flex-row sm:items-end justify-between mb-12">
+                <div>
+                    <span class="text-xs font-mono uppercase tracking-[0.25em] text-stride-orange font-bold block mb-1">
+                        // URBAN CATEGORY VAULT
+                    </span>
+                    <h2 class="text-2xl sm:text-4xl font-display font-black text-white uppercase">
+                        Pilih Sesuai Aktivitas Harian
+                    </h2>
+                </div>
+                <p class="text-xs text-stride-silver mt-2 sm:mt-0 max-w-xs font-sans">
+                    Rancangan siluet sepatu yang dioptimalkan untuk performa jalanan kota, kantor, dan santai.
+                </p>
+            </div>
+
+            <!-- 4 Activity Cards -->
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 font-mono">
+                
+                <!-- Activity 1: Daily Commute -->
+                <div class="bg-stride-card border border-stride-border p-5 flex flex-col justify-between vault-card">
+                    <div>
+                        <div class="aspect-[4/3] bg-stride-black overflow-hidden mb-4 relative group">
+                            <img src="https://images.unsplash.com/photo-1542291026-7eec264c27ff?auto=format&fit=crop&w=500&q=80" alt="Daily Commute Sneakers" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+                            <span class="absolute top-2 left-2 bg-stride-orange text-white text-[8px] font-bold px-2 py-0.5 uppercase">
+                                DAILY RUNNER
+                            </span>
+                        </div>
+                        <h3 class="text-base font-bold text-white uppercase">Sneakers Daily Commute</h3>
+                        <p class="text-xs text-stride-silver mt-1.5 font-sans leading-relaxed">
+                            Kombinasi mesh sejuk dan sol phylon ringan untuk mobilitas tinggi MRT, KRL, & jalan kaki.
+                        </p>
+                    </div>
+                    <div class="mt-6 pt-3 border-t border-stride-border">
+                        <a href="katalog.html" class="text-xs text-stride-orange hover:text-white font-bold flex items-center justify-between">
+                            <span>Lihat Seri Runner</span>
+                            <span>&rarr;</span>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Activity 2: Casual Weekend Streetwear -->
+                <div class="bg-stride-card border border-stride-border p-5 flex flex-col justify-between vault-card">
+                    <div>
+                        <div class="aspect-[4/3] bg-stride-black overflow-hidden mb-4 relative group">
+                            <img src="https://images.unsplash.com/photo-1525966222134-fcfa99b8ae77?auto=format&fit=crop&w=500&q=80" alt="Casual Streetwear" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+                            <span class="absolute top-2 left-2 bg-white text-black text-[8px] font-bold px-2 py-0.5 uppercase">
+                                STREET CLASSIC
+                            </span>
+                        </div>
+                        <h3 class="text-base font-bold text-white uppercase">Casual Low-Top Classic</h3>
+                        <p class="text-xs text-stride-silver mt-1.5 font-sans leading-relaxed">
+                            Siluet skate klasik dengan upper canvas 12oz tebal dan sol karet vulkanisir anti-licin.
+                        </p>
+                    </div>
+                    <div class="mt-6 pt-3 border-t border-stride-border">
+                        <a href="katalog.html" class="text-xs text-stride-orange hover:text-white font-bold flex items-center justify-between">
+                            <span>Lihat Seri Classic</span>
+                            <span>&rarr;</span>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Activity 3: Formal Loafers Work -->
+                <div class="bg-stride-card border border-stride-border p-5 flex flex-col justify-between vault-card">
+                    <div>
+                        <div class="aspect-[4/3] bg-stride-black overflow-hidden mb-4 relative group">
+                            <img src="https://images.unsplash.com/photo-1533867617858-e7b97e060509?auto=format&fit=crop&w=500&q=80" alt="Urban Loafers" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+                            <span class="absolute top-2 left-2 bg-stride-border text-slate-200 text-[8px] font-bold px-2 py-0.5 uppercase">
+                                SMART CASUAL
+                            </span>
+                        </div>
+                        <h3 class="text-base font-bold text-white uppercase">Urban Penny Loafers</h3>
+                        <p class="text-xs text-stride-silver mt-1.5 font-sans leading-relaxed">
+                            Sepatu slip-on kulit sintetis matte yang formal di ruang rapat dan fleksibel saat nongkrong.
+                        </p>
+                    </div>
+                    <div class="mt-6 pt-3 border-t border-stride-border">
+                        <a href="katalog.html" class="text-xs text-stride-orange hover:text-white font-bold flex items-center justify-between">
+                            <span>Lihat Seri Loafers</span>
+                            <span>&rarr;</span>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Activity 4: Slide Sandals -->
+                <div class="bg-stride-card border border-stride-border p-5 flex flex-col justify-between vault-card">
+                    <div>
+                        <div class="aspect-[4/3] bg-stride-black overflow-hidden mb-4 relative group">
+                            <img src="https://images.unsplash.com/photo-1603808033192-082d6919d3e1?auto=format&fit=crop&w=500&q=80" alt="Slide Sandals" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+                            <span class="absolute top-2 left-2 bg-emerald-600 text-white text-[8px] font-bold px-2 py-0.5 uppercase">
+                                COMFY SLIDES
+                            </span>
+                        </div>
+                        <h3 class="text-base font-bold text-white uppercase">Ergonomic Slide Sandal</h3>
+                        <p class="text-xs text-stride-silver mt-1.5 font-sans leading-relaxed">
+                            Sandal selop dengan footbed berkontur empuk dan strap velcro yang dapat disesuaikan.
+                        </p>
+                    </div>
+                    <div class="mt-6 pt-3 border-t border-stride-border">
+                        <a href="katalog.html" class="text-xs text-stride-orange hover:text-white font-bold flex items-center justify-between">
+                            <span>Lihat Seri Sandal</span>
+                            <span>&rarr;</span>
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+    <!-- 5. PRODUK UNGGULAN: GRID 4 KOLOM VAULT -->
+    <section class="py-16 bg-stride-black border-b border-stride-border">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            
+            <div class="flex flex-col md:flex-row md:items-end justify-between mb-12">
+                <div>
+                    <span class="text-xs font-mono uppercase tracking-[0.25em] text-stride-orange font-bold block mb-1">
+                        // SNEAKER VAULT SELECTION
+                    </span>
+                    <h2 class="text-2xl sm:text-4xl font-display font-black text-white uppercase">
+                        Koleksi Terpopuler & Siap Kirim
+                    </h2>
+                    <p class="text-xs sm:text-sm text-stride-silver mt-1 font-sans">
+                        Pilihan sneakers tangguh dengan indikator insole centimeter dan opsi ukuran lengkap EU 39–44.
+                    </p>
+                </div>
+                <a href="katalog.html" class="mt-4 md:mt-0 text-xs font-mono font-bold text-stride-orange border-b border-stride-orange pb-0.5 hover:text-white transition uppercase tracking-wider">
+                    Buka Semua 12 Model Sepatu &rarr;
+                </a>
+            </div>
+
+            <!-- 4 Column Product Grid -->
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 font-mono">
+                
+                <!-- Product 1: Apex Phylon Runner 2.0 -->
+                <div class="bg-stride-card border border-stride-border p-4 flex flex-col justify-between vault-card">
+                    <div>
+                        <div class="aspect-square bg-stride-black overflow-hidden mb-3 relative group">
+                            <img src="https://images.unsplash.com/photo-1552346154-21d32810aba3?auto=format&fit=crop&w=500&q=80" alt="Apex Phylon Runner" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+                            <span class="absolute top-2 left-2 bg-stride-orange text-white text-[8px] font-bold px-2 py-0.5 uppercase">
+                                BEST SELLER
+                            </span>
+                        </div>
+
+                        <div class="flex items-center gap-1.5 mb-1.5 text-[10px] text-stride-orange font-bold">
+                            <i class="fa-solid fa-bolt"></i>
+                            <span>PHYLON SOLE (280g)</span>
+                        </div>
+
+                        <h3 class="font-display font-bold text-base text-white uppercase leading-tight">Apex Phylon Runner 2.0</h3>
+                        <p class="text-xs text-stride-silver mt-1 font-sans line-clamp-1">Sneakers lari kasual dengan upper breathable mesh dan insole memory foam.</p>
+                        
+                        <div class="mt-2.5 flex items-center gap-1 text-[10px] text-slate-400 font-mono">
+                            <span class="px-1.5 py-0.5 bg-stride-black border border-stride-border">EU 39</span>
+                            <span class="px-1.5 py-0.5 bg-stride-black border border-stride-border">EU 40</span>
+                            <span class="px-1.5 py-0.5 bg-stride-black border border-stride-border">EU 41</span>
+                            <span class="px-1.5 py-0.5 bg-stride-black border border-stride-border">EU 42</span>
+                            <span class="px-1.5 py-0.5 bg-stride-black border border-stride-border">EU 43</span>
+                        </div>
+                    </div>
+
+                    <div class="mt-4 pt-3 border-t border-stride-border flex items-center justify-between">
+                        <div>
+                            <span class="text-[9px] text-stride-muted block uppercase">Harga Resmi</span>
+                            <span class="font-bold text-base text-white">Rp 289.000</span>
+                        </div>
+                        <a href="detail.html" class="px-3.5 py-2 bg-stride-orange hover:bg-stride-orangelight text-white text-xs font-bold uppercase transition">
+                            Detail &rarr;
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Product 2: Street Phantom Triple Black -->
+                <div class="bg-stride-card border border-stride-border p-4 flex flex-col justify-between vault-card">
+                    <div>
+                        <div class="aspect-square bg-stride-black overflow-hidden mb-3 relative group">
+                            <img src="https://images.unsplash.com/photo-1542291026-7eec264c27ff?auto=format&fit=crop&w=500&q=80" alt="Street Phantom Black" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+                            <span class="absolute top-2 left-2 bg-black text-white text-[8px] font-bold px-2 py-0.5 uppercase border border-stride-border">
+                                TRIPLE BLACK
+                            </span>
+                        </div>
+
+                        <div class="flex items-center gap-1.5 mb-1.5 text-[10px] text-slate-300 font-bold">
+                            <i class="fa-solid fa-shield-halved"></i>
+                            <span>ACTION LEATHER</span>
+                        </div>
+
+                        <h3 class="font-display font-bold text-base text-white uppercase leading-tight">Street Phantom Stealth</h3>
+                        <p class="text-xs text-stride-silver mt-1 font-sans line-clamp-1">Sepatu serba hitam tahan percikan air untuk kerja lapangan dan touring motor.</p>
+                        
+                        <div class="mt-2.5 flex items-center gap-1 text-[10px] text-slate-400 font-mono">
+                            <span class="px-1.5 py-0.5 bg-stride-black border border-stride-border">EU 40</span>
+                            <span class="px-1.5 py-0.5 bg-stride-black border border-stride-border">EU 41</span>
+                            <span class="px-1.5 py-0.5 bg-stride-black border border-stride-border">EU 42</span>
+                            <span class="px-1.5 py-0.5 bg-stride-black border border-stride-border">EU 44</span>
+                        </div>
+                    </div>
+
+                    <div class="mt-4 pt-3 border-t border-stride-border flex items-center justify-between">
+                        <div>
+                            <span class="text-[9px] text-stride-muted block uppercase">Harga Resmi</span>
+                            <span class="font-bold text-base text-white">Rp 319.000</span>
+                        </div>
+                        <a href="detail.html" class="px-3.5 py-2 bg-stride-orange hover:bg-stride-orangelight text-white text-xs font-bold uppercase transition">
+                            Detail &rarr;
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Product 3: Vanguard Canvas Vulkanisir Low -->
+                <div class="bg-stride-card border border-stride-border p-4 flex flex-col justify-between vault-card">
+                    <div>
+                        <div class="aspect-square bg-stride-black overflow-hidden mb-3 relative group">
+                            <img src="https://images.unsplash.com/photo-1525966222134-fcfa99b8ae77?auto=format&fit=crop&w=500&q=80" alt="Vanguard Canvas Low" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+                            <span class="absolute top-2 left-2 bg-emerald-600 text-white text-[8px] font-bold px-2 py-0.5 uppercase">
+                                VULCANIZED
+                            </span>
+                        </div>
+
+                        <div class="flex items-center gap-1.5 mb-1.5 text-[10px] text-emerald-400 font-bold">
+                            <i class="fa-solid fa-fire-flame-curved"></i>
+                            <span>12oz HEAVY CANVAS</span>
+                        </div>
+
+                        <h3 class="font-display font-bold text-base text-white uppercase leading-tight">Vanguard Canvas Low-Top</h3>
+                        <p class="text-xs text-stride-silver mt-1 font-sans line-clamp-1">Sepatu kanvas klasik dengan sol karet oven vulkanisir anti-lepas dan foxing tebal.</p>
+                        
+                        <div class="mt-2.5 flex items-center gap-1 text-[10px] text-slate-400 font-mono">
+                            <span class="px-1.5 py-0.5 bg-stride-black border border-stride-border">EU 39</span>
+                            <span class="px-1.5 py-0.5 bg-stride-black border border-stride-border">EU 40</span>
+                            <span class="px-1.5 py-0.5 bg-stride-black border border-stride-border">EU 41</span>
+                            <span class="px-1.5 py-0.5 bg-stride-black border border-stride-border">EU 42</span>
+                            <span class="px-1.5 py-0.5 bg-stride-black border border-stride-border">EU 43</span>
+                        </div>
+                    </div>
+
+                    <div class="mt-4 pt-3 border-t border-stride-border flex items-center justify-between">
+                        <div>
+                            <span class="text-[9px] text-stride-muted block uppercase">Harga Resmi</span>
+                            <span class="font-bold text-base text-white">Rp 239.000</span>
+                        </div>
+                        <a href="detail.html" class="px-3.5 py-2 bg-stride-orange hover:bg-stride-orangelight text-white text-xs font-bold uppercase transition">
+                            Detail &rarr;
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Product 4: Nomad Commuter Slide Sandal -->
+                <div class="bg-stride-card border border-stride-border p-4 flex flex-col justify-between vault-card">
+                    <div>
+                        <div class="aspect-square bg-stride-black overflow-hidden mb-3 relative group">
+                            <img src="https://images.unsplash.com/photo-1603808033192-082d6919d3e1?auto=format&fit=crop&w=500&q=80" alt="Nomad Commuter Slide" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+                            <span class="absolute top-2 left-2 bg-stride-orange text-white text-[8px] font-bold px-2 py-0.5 uppercase">
+                                ERGONOMIC
+                            </span>
+                        </div>
+
+                        <div class="flex items-center gap-1.5 mb-1.5 text-[10px] text-stride-orange font-bold">
+                            <i class="fa-solid fa-couch"></i>
+                            <span>CONTOURED FOOTBED</span>
+                        </div>
+
+                        <h3 class="font-display font-bold text-base text-white uppercase leading-tight">Nomad Tactical Slide Sandal</h3>
+                        <p class="text-xs text-stride-silver mt-1 font-sans line-clamp-1">Sandal santai outdoor dengan strap velcro tebal dan sol anti-licin di lantai basah.</p>
+                        
+                        <div class="mt-2.5 flex items-center gap-1 text-[10px] text-slate-400 font-mono">
+                            <span class="px-1.5 py-0.5 bg-stride-black border border-stride-border">EU 39</span>
+                            <span class="px-1.5 py-0.5 bg-stride-black border border-stride-border">EU 40</span>
+                            <span class="px-1.5 py-0.5 bg-stride-black border border-stride-border">EU 41</span>
+                            <span class="px-1.5 py-0.5 bg-stride-black border border-stride-border">EU 42</span>
+                            <span class="px-1.5 py-0.5 bg-stride-black border border-stride-border">EU 43</span>
+                        </div>
+                    </div>
+
+                    <div class="mt-4 pt-3 border-t border-stride-border flex items-center justify-between">
+                        <div>
+                            <span class="text-[9px] text-stride-muted block uppercase">Harga Resmi</span>
+                            <span class="font-bold text-base text-white">Rp 179.000</span>
+                        </div>
+                        <a href="detail.html" class="px-3.5 py-2 bg-stride-orange hover:bg-stride-orangelight text-white text-xs font-bold uppercase transition">
+                            Detail &rarr;
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+    <!-- 6. TESTIMONI SNEAKERHEAD & PEKERJA LAPANGAN -->
+    <section class="py-16 bg-stride-dark border-b border-stride-border">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            
+            <div class="text-center max-w-2xl mx-auto mb-12">
+                <span class="text-xs font-mono uppercase tracking-[0.25em] text-stride-orange font-bold block mb-1">
+                    // STREET COMMUNITY REVIEW
+                </span>
+                <h2 class="text-2xl sm:text-4xl font-display font-black text-white uppercase">
+                    Teruji di Aspal & Beton Kota
+                </h2>
+                <p class="text-xs sm:text-sm text-stride-silver mt-1 font-sans">
+                    Pengalaman nyata dari komuter harian, fotografer jalanan, dan komunitas sneakerhead lokal.
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6 font-mono">
+                
+                <div class="bg-stride-card p-6 border border-stride-border flex flex-col justify-between">
+                    <div>
+                        <div class="flex items-center gap-1 text-stride-orange text-xs mb-3">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                        <p class="text-xs text-slate-200 leading-relaxed font-sans italic">
+                            "Saya pakai Apex Phylon Runner buat liputan foto jalanan dari pagi sampai malam tembus 18.000 langkah. Insole memory foam-nya beneran nyerap beban tumit, kaki nggak berasa pegal sama sekali."
+                        </p>
+                    </div>
+                    <div class="mt-6 pt-3 border-t border-stride-border flex items-center justify-between text-xs">
+                        <strong class="text-white font-bold">Rian Satria (Street Photographer)</strong>
+                        <span class="text-[10px] text-stride-orange">Jakarta</span>
+                    </div>
+                </div>
+
+                <div class="bg-stride-card p-6 border border-stride-border flex flex-col justify-between">
+                    <div>
+                        <div class="flex items-center gap-1 text-stride-orange text-xs mb-3">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                        <p class="text-xs text-slate-200 leading-relaxed font-sans italic">
+                            "Awalnya ragu beli sepatu online karena takut ukuran nggak pas. Ternyata layanan tukar size Stride Vault cepet banget! Dalam 2 hari sepatu ukuran 42 saya sudah diganti 43 tanpa ribet ongkir."
+                        </p>
+                    </div>
+                    <div class="mt-6 pt-3 border-t border-stride-border flex items-center justify-between text-xs">
+                        <strong class="text-white font-bold">Dimas Anggara (Komuter KRL)</strong>
+                        <span class="text-[10px] text-stride-orange">Tangerang</span>
+                    </div>
+                </div>
+
+                <div class="bg-stride-card p-6 border border-stride-border flex flex-col justify-between">
+                    <div>
+                        <div class="flex items-center gap-1 text-stride-orange text-xs mb-3">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                        <p class="text-xs text-slate-200 leading-relaxed font-sans italic">
+                            "Kualitas sol vulkanisir seri Vanguard-nya mantap, foxing tebal dan nggak gampang lepas meski kena hujan berkali-kali. Build quality brand lokal yang sangat layak diacungi jempol."
+                        </p>
+                    </div>
+                    <div class="mt-6 pt-3 border-t border-stride-border flex items-center justify-between text-xs">
+                        <strong class="text-white font-bold">Bagus Pradipta (Sneakerhead)</strong>
+                        <span class="text-[10px] text-stride-orange">Bandung</span>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+    <!-- 7. FOOTER -->
+    <footer class="bg-stride-black text-slate-400 border-t border-stride-border pt-14 pb-28 font-mono">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-10">
+                
+                <div class="lg:col-span-2 space-y-4">
+                    <div class="flex items-center gap-3">
+                        <div class="w-9 h-9 bg-stride-orange text-black font-display font-black flex items-center justify-center text-lg transform -skew-x-12">
+                            <span class="transform skew-x-12">S</span>
+                        </div>
+                        <span class="text-2xl font-display font-black text-white uppercase tracking-tight">
+                            STRIDE<span class="text-stride-orange">.</span>VAULT
+                        </span>
+                    </div>
+                    <p class="text-xs text-stride-silver leading-relaxed max-w-sm font-sans">
+                        Lentera Pasar Footwear & Sneakers Template. Menghadirkan lini sneakers urban streetwear, slip-on formal, dan sandal ergonomis yang menggabungkan konstruksi kokoh, insole memory foam empuk, dan sol anti-slip.
+                    </p>
+                    <div class="pt-2 text-xs text-slate-300 space-y-1 font-sans">
+                        <div><i class="fa-solid fa-location-dot text-stride-orange mr-2"></i> Stride Showroom, Jl. Kemang Raya No. 42, Jakarta Selatan 12730</div>
+                        <div><i class="fa-brands fa-whatsapp text-emerald-400 mr-2"></i> +62 812-3456-7890 (Customer Care WhatsApp)</div>
+                    </div>
+                </div>
+
+                <div>
+                    <h4 class="text-xs font-bold uppercase tracking-wider text-white mb-4">Navigasi Utama</h4>
+                    <ul class="space-y-2.5 text-xs text-stride-silver">
+                        <li><a href="index.html" class="hover:text-stride-orange transition">Beranda Utama</a></li>
+                        <li><a href="katalog.html" class="hover:text-stride-orange transition">Katalog Sepatu</a></li>
+                        <li><a href="detail.html" class="hover:text-stride-orange transition">Detail Sol & Insole CM</a></li>
+                        <li><a href="tentang.html" class="hover:text-stride-orange transition">Craftsmanship Lab</a></li>
+                        <li><a href="artikel.html" class="hover:text-stride-orange transition">Perawatan Sneakers</a></li>
+                        <li><a href="kontak.html" class="hover:text-stride-orange transition">Tukar Ukuran 7 Hari</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h4 class="text-xs font-bold uppercase tracking-wider text-white mb-4">Kategori Footwear</h4>
+                    <ul class="space-y-2.5 text-xs text-stride-silver">
+                        <li><a href="katalog.html" class="hover:text-stride-orange transition">Sneakers Phylon Runner</a></li>
+                        <li><a href="katalog.html" class="hover:text-stride-orange transition">Sneakers Kanvas Vulkanisir</a></li>
+                        <li><a href="katalog.html" class="hover:text-stride-orange transition">Urban Penny Loafers</a></li>
+                        <li><a href="katalog.html" class="hover:text-stride-orange transition">Tactical Slide Sandals</a></li>
+                        <li><a href="katalog.html" class="hover:text-stride-orange transition">Shoe Cleaner & Insole Pad</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h4 class="text-xs font-bold uppercase tracking-wider text-white mb-4">Jaminan Kualitas</h4>
+                    <div class="space-y-2 text-xs">
+                        <div class="p-3 bg-stride-dark border border-stride-border">
+                            <span class="text-[10px] text-stride-orange block uppercase font-bold">SIZE EXCHANGE:</span>
+                            <span class="font-bold text-white text-[11px]">Bebas Tukar Size 7 Hari</span>
+                        </div>
+                        <div class="p-3 bg-stride-dark border border-stride-border">
+                            <span class="text-[10px] text-emerald-400 block uppercase font-bold">SOLE WARRANTY:</span>
+                            <span class="font-bold text-white text-[11px]">Garansi Sol Jebol 30 Hari</span>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="mt-12 pt-8 border-t border-stride-border flex flex-col sm:flex-row items-center justify-between text-xs text-stride-muted">
+                <p>&copy; 2026 STRIDE VAULT FOOTWEAR LAB. All Rights Reserved.</p>
+                <p class="text-[11px] mt-2 sm:mt-0 font-sans">Lentera Pasar Production Template — Urban Footwear</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- ========================================================================= -->
+    <!-- INTERACTIVE INSOLE FOOT MEASURER CALCULATOR MODAL                         -->
+    <!-- ========================================================================= -->
+    <div id="sizeCalcModal" class="fixed inset-0 z-50 bg-black/80 backdrop-blur-sm hidden flex items-center justify-center p-4 font-mono">
+        <div class="bg-stride-dark border border-stride-border max-w-lg w-full p-6 sm:p-8 shadow-2xl relative text-slate-100">
+            <button onclick="closeSizeCalcModal()" class="absolute top-5 right-5 text-slate-400 hover:text-white text-lg p-1">
+                <i class="fa-solid fa-xmark"></i>
+            </button>
+            
+            <div class="flex items-center gap-3 mb-6">
+                <div class="w-10 h-10 bg-stride-black text-stride-orange flex items-center justify-center text-lg border border-stride-border">
+                    <i class="fa-solid fa-ruler-horizontal"></i>
+                </div>
+                <div>
+                    <h3 class="text-lg font-display font-bold text-white uppercase">Kalkulator Insole Kaki (CM &rarr; EU)</h3>
+                    <p class="text-xs text-stride-silver font-sans">Masukkan panjang telapak kaki dari ujung tumit ke jempol.</p>
+                </div>
+            </div>
+
+            <div class="space-y-4 text-xs">
+                <div>
+                    <label class="block font-bold text-white mb-1.5 uppercase">Panjang Kaki Anda (Centimeter):</label>
+                    <div class="flex items-center gap-3">
+                        <input type="number" id="calcCmInput" step="0.1" min="23" max="30" value="26.0" class="w-full p-3 border border-stride-border bg-stride-black text-white focus:outline-none focus:border-stride-orange text-sm font-bold">
+                        <span class="text-xs text-stride-silver font-bold">CM</span>
+                    </div>
+                </div>
+
+                <div id="calcResultBox" class="p-4 bg-stride-card border border-stride-border space-y-2">
+                    <span class="text-[10px] font-bold text-stride-orange uppercase block">// REKOMENDASI UKURAN SEPATU:</span>
+                    <div class="flex items-baseline gap-3">
+                        <h5 id="calcSizeDisplay" class="font-display font-bold text-white text-2xl">UKURAN EU 41</h5>
+                        <span id="calcInsoleDisplay" class="text-xs text-stride-silver">(Panjang Insole: 26.0 cm)</span>
+                    </div>
+                    <p id="calcNoteDisplay" class="text-[11px] text-slate-300 font-sans leading-relaxed">
+                        Cocok untuk tipe kaki standar. Jika memiliki punggung kaki tebal atau telapak lebar (*wide foot*), kami sarankan memilih ukuran EU 42 (*upsize 1 nomor*).
+                    </p>
+                </div>
+
+                <div class="pt-2 flex items-center justify-between gap-3">
+                    <button onclick="computeShoeSize()" class="w-1/2 py-3 bg-stride-card hover:bg-stride-border text-white font-bold text-xs uppercase tracking-wider transition border border-stride-border">
+                        Hitung Ulang
+                    </button>
+                    <a id="calcWaLink" href="https://wa.me/6281234567890?text=Halo%20Stride%20Vault,%20panjang%20kaki%20saya%2026cm%20(rekomendasi%20EU%2041)." target="_blank" class="w-1/2 py-3 bg-stride-orange hover:bg-stride-orangelight text-white font-bold text-xs uppercase tracking-wider text-center transition shadow-md shadow-stride-orange/20">
+                        Order Ukuran WA &rarr;
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ========================================================================= -->
+    <!-- FLOATING WHATSAPP BUTTON (bottom-24)                                      -->
+    <!-- ========================================================================= -->
+    <a href="https://wa.me/6281234567890?text=Halo%20Stride%20Vault,%20saya%20ingin%20konsultasi%20ukuran%20sepatu." 
+       target="_blank" 
+       class="fixed bottom-24 right-6 z-50 group flex items-center gap-3 bg-stride-dark hover:bg-stride-card text-white px-4 py-3 border border-stride-border shadow-2xl hover:border-stride-orange transition-all duration-300 font-mono" 
+       aria-label="Konsultasi Sepatu via WhatsApp">
+        <span class="relative flex h-3 w-3">
+            <span class="animate-ping absolute inline-flex h-full w-full bg-stride-orange opacity-75"></span>
+            <span class="relative inline-flex rounded-full h-3 w-3 bg-stride-orange"></span>
+        </span>
+        <i class="fa-brands fa-whatsapp text-2xl text-emerald-400"></i>
+        <div class="text-left hidden sm:block pr-1">
+            <div class="text-[10px] text-stride-orange font-bold uppercase tracking-wider leading-none">Size Specialist</div>
+            <span class="font-bold text-xs text-white">Konsultasi Insole WA</span>
+        </div>
+    </a>
+
+    <!-- ========================================================================= -->
+    <!-- LENTERA PASAR - STICKY DEMO & SALES BAR (fixed bottom-4)                 -->
+    <!-- ========================================================================= -->
+    <div class="fixed bottom-4 left-1/2 -translate-x-1/2 z-50 w-[95%] max-w-4xl bg-slate-900/95 backdrop-blur-md text-white p-3.5 md:p-4 rounded-2xl shadow-2xl border border-slate-700/80 transition-all duration-300">
+      <div class="flex flex-col md:flex-row items-center justify-between gap-3 md:gap-4">
+        
+        <div class="flex items-center gap-3 w-full md:w-auto">
+          <div class="w-10 h-10 rounded-xl bg-orange-500/20 border border-orange-500/40 flex items-center justify-center shrink-0">
+            <svg class="w-5 h-5 text-orange-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z" />
+            </svg>
+          </div>
+          <div>
+            <div class="flex items-center gap-2">
+              <span class="font-bold text-sm text-white">Lentera Pasar Engine</span>
+              <span class="text-[10px] bg-orange-500/20 text-orange-300 border border-orange-500/30 px-2 py-0.5 rounded-full font-medium">Urban Footwear Template</span>
+            </div>
+            <p class="text-xs text-slate-300 hidden sm:block">
+              Terima beres: Website responsif + Panel input produk sendiri + Dikelola tim iklan profesional.
+            </p>
+          </div>
+        </div>
+
+        <div class="flex items-center justify-between md:justify-end gap-3 w-full md:w-auto">
+          <div class="hidden lg:flex items-center gap-2 text-xs text-slate-400 border-r border-slate-700 pr-4">
+            <div class="flex items-center gap-1 text-slate-200">
+              <svg class="w-4 h-4 text-emerald-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" /></svg>
+              <span>Floating Kicks</span>
+            </div>
+            <span class="text-slate-600">•</span>
+            <div class="flex items-center gap-1 text-slate-200">
+              <svg class="w-4 h-4 text-emerald-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" /></svg>
+              <span>Insole CM Calc</span>
+            </div>
+          </div>
+
+          <a href="https://wa.me/6281234567890?text=Halo%20Tim%20Lentera%20Pasar,%20saya%20tertarik%20menggunakan%20template%20website%20Footwear%20Urban%20ini%20lengkap%20dengan%20Admin%20Panel%20dan%20Jasa%20Iklannya." 
+             target="_blank"
+             class="w-full md:w-auto inline-flex items-center justify-center gap-2 bg-gradient-to-r from-orange-600 to-amber-600 hover:from-orange-500 hover:to-amber-500 text-white text-xs md:text-sm font-bold px-5 py-2.5 rounded-xl shadow-lg transition-all hover:scale-105 shrink-0">
+            <span>Gunakan Template Ini</span>
+            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3" />
+            </svg>
+          </a>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- SCRIPT LOGIC -->
+    <script>
+        // Insole Calculator Logic
+        const sizeCalcModal = document.getElementById('sizeCalcModal');
+        function openSizeCalcModal() {
+            sizeCalcModal.classList.remove('hidden');
+            computeShoeSize();
+        }
+        function closeSizeCalcModal() {
+            sizeCalcModal.classList.add('hidden');
+        }
+
+        function computeShoeSize() {
+            const cm = parseFloat(document.getElementById('calcCmInput').value) || 26.0;
+            const sizeDisp = document.getElementById('calcSizeDisplay');
+            const insoleDisp = document.getElementById('calcInsoleDisplay');
+            const noteDisp = document.getElementById('calcNoteDisplay');
+            const waLink = document.getElementById('calcWaLink');
+
+            let eu = 41;
+            let insole = "26.0 cm";
+
+            if (cm <= 24.5) {
+                eu = 39;
+                insole = "25.0 cm";
+            } else if (cm <= 25.2) {
+                eu = 40;
+                insole = "25.5 cm";
+            } else if (cm <= 26.0) {
+                eu = 41;
+                insole = "26.0 cm";
+            } else if (cm <= 26.8) {
+                eu = 42;
+                insole = "26.5 cm";
+            } else if (cm <= 27.5) {
+                eu = 43;
+                insole = "27.5 cm";
+            } else {
+                eu = 44;
+                insole = "28.0 cm";
+            }
+
+            sizeDisp.innerText = `UKURAN EU ${eu}`;
+            insoleDisp.innerText = `(Panjang Insole: ${insole})`;
+            noteDisp.innerText = `Panjang kaki ${cm} cm pas memakai ukuran EU ${eu}. Untuk kenyamanan kaos kaki tebal atau kaki lebar, pertimbangkan naik 1 ukuran jika berada di batas atas.`;
+            waLink.href = `https://wa.me/6281234567890?text=Halo%20Stride%20Vault,%20panjang%20kaki%20saya%20${cm}cm%20(rekomendasi%20EU%20${eu}).%20Apakah%20stok%20tersedia?`;
+        }
+
+        // Mobile menu toggle
+        const mobileMenuBtn = document.getElementById('mobileMenuBtn');
+        const mobileMenu = document.getElementById('mobileMenu');
+        const menuIcon = document.getElementById('menuIcon');
+
+        mobileMenuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+            if (mobileMenu.classList.contains('hidden')) {
+                menuIcon.classList.remove('fa-xmark');
+                menuIcon.classList.add('fa-bars-staggered');
+            } else {
+                menuIcon.classList.remove('fa-bars-staggered');
+                menuIcon.classList.add('fa-xmark');
+            }
+        });
+    </script>
+</body>
+</html>
