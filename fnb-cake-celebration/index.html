@@ -1,0 +1,791 @@
+<!DOCTYPE html>
+<html lang="id" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aurélia Cake Atelier - Luxury Celebration Cakes, Wedding Tarts & Custom Patisserie</title>
+    <meta name="description" content="Kue ulang tahun mewah, custom wedding cake bertingkat dengan bunga segar, dan korean bento cake premium. Dibuat dengan French Valrhona Chocolate & Pure European Butter.">
+    
+    <!-- Google Fonts: Cormorant Garamond + Playfair Display + Plus Jakarta Sans / Inter -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400;1,600&family=Playfair+Display:ital,wght@0,500;0,600;0,700;0,800;1,400;1,600&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    
+    <!-- Tailwind CSS CDN with Custom Luxury Celebration Palette -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        cake: {
+                            champagne: '#FDF6F0',
+                            surface: '#F8EEE5',
+                            card: '#F2E2D4',
+                            velvet: '#4A2240',
+                            velvethover: '#381630',
+                            darkplum: '#2D1527',
+                            deepdark: '#1F0B1A',
+                            gold: '#D4AF37',
+                            goldhover: '#B89425',
+                            softgold: '#E5C368',
+                            blush: '#E8C5B8',
+                            rosecream: '#F4DDD4',
+                            border: '#EAD7C8',
+                            borderdark: '#D8BFAC',
+                            muted: '#8D7080',
+                            charcoal: '#241B20'
+                        }
+                    },
+                    fontFamily: {
+                        sans: ['"Plus Jakarta Sans"', 'sans-serif'],
+                        serif: ['"Cormorant Garamond"', 'Georgia', 'serif'],
+                        display: ['"Playfair Display"', 'serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        .editorial-shadow {
+            box-shadow: 0 25px 50px -12px rgba(45, 21, 39, 0.12);
+        }
+        .gold-glow {
+            box-shadow: 0 10px 30px -5px rgba(212, 175, 55, 0.35);
+        }
+        .velvet-glow {
+            box-shadow: 0 15px 35px -5px rgba(74, 34, 64, 0.4);
+        }
+        @keyframes float-gentle {
+            0%, 100% { transform: translateY(0px) rotate(0deg); }
+            50% { transform: translateY(-8px) rotate(1deg); }
+        }
+        .animate-float {
+            animation: float-gentle 5s ease-in-out infinite;
+        }
+    </style>
+</head>
+<body class="bg-cake-champagne text-cake-darkplum font-sans antialiased selection:bg-cake-gold selection:text-cake-deepdark">
+
+    <!-- Top Luxury Celebration Notification Bar -->
+    <div class="bg-cake-darkplum text-cake-champagne text-xs py-2.5 px-4 tracking-widest uppercase font-medium border-b border-cake-velvet">
+        <div class="max-w-7xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-2 text-center sm:text-left">
+            <div class="flex items-center justify-center gap-2">
+                <span class="w-1.5 h-1.5 rounded-full bg-cake-gold animate-ping"></span>
+                <span class="tracking-widest">Atelier Slot Booking: <strong class="text-cake-gold font-semibold">Slot Weekend Terbatas</strong> • H-3 Acara</span>
+            </div>
+            <div class="flex items-center gap-4 text-[11px] text-cake-blush tracking-wider">
+                <span class="hidden md:inline"><i class="fa-solid fa-truck text-cake-gold mr-1"></i> Pengiriman Mobil Berpendingin (Car Chill Delivery)</span>
+                <span class="hidden md:inline text-cake-velvet">•</span>
+                <a href="kontak.html" class="text-cake-gold hover:text-white underline font-semibold transition">Booking Tanggal &rarr;</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Header / Navbar Anggun Luxury Boutique -->
+    <header class="sticky top-0 z-40 bg-cake-champagne/95 backdrop-blur-md border-b border-cake-border transition-all">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-20 sm:h-24">
+                
+                <!-- Brand Logo: Luxury Monogram & Serif Typography -->
+                <a href="index.html" class="flex items-center gap-3.5 group">
+                    <div class="w-11 h-11 sm:w-12 sm:h-12 rounded-full bg-cake-velvet text-cake-gold border border-cake-gold/40 flex items-center justify-center text-xl group-hover:scale-105 transition-all shadow-md">
+                        <i class="fa-solid fa-crown text-base"></i>
+                    </div>
+                    <div>
+                        <span class="text-xl sm:text-2xl font-serif font-bold tracking-wider text-cake-darkplum block leading-none uppercase">
+                            Aurélia
+                        </span>
+                        <span class="text-[9px] font-sans font-semibold tracking-[0.3em] text-cake-gold uppercase block mt-1">
+                            Cake Atelier & Patisserie
+                        </span>
+                    </div>
+                </a>
+
+                <!-- Desktop Navigation Menu -->
+                <nav class="hidden lg:flex items-center gap-8 font-medium text-cake-darkplum text-xs tracking-[0.18em] uppercase">
+                    <a href="index.html" class="text-cake-gold font-bold border-b-2 border-cake-gold pb-1">Beranda</a>
+                    <a href="katalog.html" class="hover:text-cake-gold transition">Katalog Kue & Tart</a>
+                    <a href="detail.html" class="hover:text-cake-gold transition">Kustom Desain</a>
+                    <a href="tentang.html" class="hover:text-cake-gold transition">Pastry Chef & Bahan</a>
+                    <a href="artikel.html" class="hover:text-cake-gold transition">Inspirasi Pesta</a>
+                    <a href="kontak.html" class="hover:text-cake-gold transition">Booking Acara</a>
+                </nav>
+
+                <!-- Action Button & WhatsApp CTA -->
+                <div class="hidden sm:flex items-center gap-3">
+                    <a href="https://wa.me/6281234567890?text=Halo%20Aurelia%20Cake%20Atelier,%20saya%20ingin%20konsultasi%20desain%20kue%20custom." target="_blank" class="inline-flex items-center gap-2 bg-cake-velvet hover:bg-cake-velvethover text-white text-xs font-semibold px-6 py-3 rounded-full velvet-glow transition-all hover:scale-105 tracking-wider uppercase">
+                        <i class="fa-brands fa-whatsapp text-cake-gold text-sm"></i>
+                        <span>Custom via WA</span>
+                    </a>
+                </div>
+
+                <!-- Mobile Menu Button -->
+                <button id="mobileMenuBtn" class="lg:hidden text-cake-darkplum hover:text-cake-gold p-2.5 rounded-xl bg-cake-surface border border-cake-border transition" aria-label="Buka Menu">
+                    <i class="fa-solid fa-bars text-lg" id="menuIcon"></i>
+                </button>
+            </div>
+        </div>
+
+        <!-- Mobile Drawer Menu -->
+        <div id="mobileMenu" class="hidden lg:hidden bg-cake-surface border-b border-cake-border px-6 pt-4 pb-6 space-y-3">
+            <div class="flex items-center justify-between pb-3 border-b border-cake-border">
+                <span class="text-xs font-bold text-cake-muted uppercase tracking-wider">Atelier Navigation</span>
+                <span class="text-[11px] text-cake-gold bg-cake-velvet font-semibold px-2.5 py-0.5 rounded-full">Booking H-3 Ready</span>
+            </div>
+            <a href="index.html" class="block py-2 text-cake-gold font-bold text-xs uppercase tracking-widest">Beranda</a>
+            <a href="katalog.html" class="block py-2 text-cake-darkplum hover:text-cake-gold text-xs uppercase tracking-widest">Katalog Kue & Tart</a>
+            <a href="detail.html" class="block py-2 text-cake-darkplum hover:text-cake-gold text-xs uppercase tracking-widest">Kustom Diameter & Tulisan</a>
+            <a href="tentang.html" class="block py-2 text-cake-darkplum hover:text-cake-gold text-xs uppercase tracking-widest">Pastry Chef & Bahan Premium</a>
+            <a href="artikel.html" class="block py-2 text-cake-darkplum hover:text-cake-gold text-xs uppercase tracking-widest">Inspirasi Desain Kue Ultah</a>
+            <a href="kontak.html" class="block py-2 text-cake-darkplum hover:text-cake-gold text-xs uppercase tracking-widest">Booking Tanggal & Studio</a>
+            <div class="pt-3">
+                <a href="https://wa.me/6281234567890?text=Halo%20Aurelia%20Cake%20Atelier,%20saya%20mau%20order%20kue%20custom." target="_blank" class="w-full flex items-center justify-center gap-2 bg-cake-velvet hover:bg-cake-velvethover text-white text-xs font-semibold py-3.5 rounded-full shadow-md uppercase tracking-wider">
+                    <i class="fa-brands fa-whatsapp text-cake-gold text-base"></i>
+                    <span>Konsultasi Cepat via WhatsApp</span>
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- HERO SECTION: Asymmetric Overlapping Editorial Layout -->
+    <section class="relative pt-12 pb-20 md:pt-20 md:pb-32 overflow-hidden bg-gradient-to-b from-cake-champagne via-cake-surface to-cake-champagne">
+        <!-- Luxury Ambient Light Glows -->
+        <div class="absolute top-1/4 -left-20 w-96 h-96 bg-rose-200/40 rounded-full blur-3xl pointer-events-none -z-10"></div>
+        <div class="absolute top-1/3 -right-20 w-96 h-96 bg-amber-100/50 rounded-full blur-3xl pointer-events-none -z-10"></div>
+
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-8 items-center">
+                
+                <!-- Left: Overlapping Luxury Editorial Text Box (Col 1-7) -->
+                <div class="lg:col-span-7 z-20 space-y-6 sm:space-y-8">
+                    <div class="inline-flex items-center gap-2.5 px-4 py-1.5 rounded-full bg-cake-surface border border-cake-border text-cake-velvet text-xs font-semibold tracking-widest uppercase shadow-sm">
+                        <i class="fa-solid fa-sparkles text-cake-gold"></i>
+                        <span>Haute Pâtisserie for Unforgettable Moments</span>
+                    </div>
+
+                    <h1 class="text-4xl sm:text-5xl md:text-6xl xl:text-7xl font-serif font-bold text-cake-darkplum tracking-tight leading-[1.08]">
+                        Karya Seni Manis untuk Rayakan Momen Paling Berharga.
+                    </h1>
+
+                    <p class="text-base sm:text-lg text-cake-muted font-light leading-relaxed max-w-xl">
+                        Setiap kue dirancang khusus layaknya mahakarya busana haute couture. Menggunakan cokelat murni Valrhona Prancis, butter Eropa 82% fat, dan bunga segar pilihan yang aman bersentuhan dengan makanan (*food-safe edible grade*).
+                    </p>
+
+                    <!-- Dual CTAs -->
+                    <div class="flex flex-col sm:flex-row items-stretch sm:items-center gap-4 pt-2">
+                        <a href="katalog.html" class="inline-flex items-center justify-center gap-3 bg-cake-velvet hover:bg-cake-velvethover text-white text-xs font-semibold px-8 py-4 rounded-full velvet-glow transition-all hover:scale-105 uppercase tracking-widest">
+                            <i class="fa-solid fa-crown text-cake-gold"></i>
+                            <span>Jelajahi Koleksi Tart</span>
+                        </a>
+                        <a href="https://wa.me/6281234567890?text=Halo%20Aurelia%20Cake,%20saya%20ingin%20konsultasi%20custom%20cake." target="_blank" class="inline-flex items-center justify-center gap-2 bg-white hover:bg-cake-surface text-cake-darkplum border border-cake-border text-xs font-semibold px-7 py-4 rounded-full transition-all tracking-wider uppercase">
+                            <i class="fa-brands fa-whatsapp text-emerald-600 text-sm"></i>
+                            <span>Konsultasi Sketsa Desain</span>
+                        </a>
+                    </div>
+
+                    <!-- Trust Stats Bar -->
+                    <div class="grid grid-cols-3 gap-6 pt-6 border-t border-cake-border/80 max-w-lg">
+                        <div>
+                            <div class="text-2xl sm:text-3xl font-serif font-bold text-cake-velvet">1,200+</div>
+                            <div class="text-[11px] text-cake-muted uppercase tracking-wider mt-0.5">Pesta Dirayakan</div>
+                        </div>
+                        <div>
+                            <div class="text-2xl sm:text-3xl font-serif font-bold text-cake-velvet">100%</div>
+                            <div class="text-[11px] text-cake-muted uppercase tracking-wider mt-0.5">French Butter</div>
+                        </div>
+                        <div>
+                            <div class="text-2xl sm:text-3xl font-serif font-bold text-cake-gold">4.9 / 5.0</div>
+                            <div class="text-[11px] text-cake-muted uppercase tracking-wider mt-0.5">Klien Bahagia</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Right: High-End Tiered Cake Showcase with Floating Accents (Col 8-12) -->
+                <div class="lg:col-span-5 relative mt-6 lg:mt-0">
+                    
+                    <!-- Main Masterpiece Cake Image -->
+                    <div class="relative rounded-[2.5rem] overflow-hidden border-8 border-white shadow-2xl bg-cake-card group">
+                        <img src="https://images.unsplash.com/photo-1535141192574-5d4897c13136?q=80&w=900&auto=format&fit=crop" 
+                             alt="Luxury tiered birthday cake with fresh flowers and gold leaf" 
+                             class="w-full h-[420px] sm:h-[540px] object-cover group-hover:scale-105 transition-transform duration-700">
+                        
+                        <div class="absolute inset-0 bg-gradient-to-t from-cake-deepdark/70 via-transparent to-transparent"></div>
+
+                        <div class="absolute bottom-6 left-6 right-6 text-white">
+                            <span class="text-[10px] font-bold uppercase tracking-[0.25em] text-cake-gold bg-cake-deepdark/80 px-3 py-1 rounded-full backdrop-blur-md inline-block mb-1.5">
+                                Signature Masterpiece
+                            </span>
+                            <h2 class="text-xl sm:text-2xl font-serif font-bold text-white">
+                                The Golden Peony & Velvet Rose 2-Tier
+                            </h2>
+                            <p class="text-xs text-stone-300 font-light mt-1">
+                                Lembaran emas murni 24K edible, bunga peony organik, & base Dark Valrhona.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Floating Feature Card Top Left -->
+                    <div class="hidden sm:flex absolute -left-8 top-12 bg-white/95 backdrop-blur-md p-4 rounded-2xl border border-cake-border shadow-xl items-center gap-3 animate-float">
+                        <div class="w-10 h-10 rounded-full bg-cake-surface text-cake-gold border border-cake-gold/30 flex items-center justify-center text-lg">
+                            <i class="fa-solid fa-gem"></i>
+                        </div>
+                        <div>
+                            <div class="text-xs font-bold text-cake-darkplum">Custom Cake Topper</div>
+                            <div class="text-[10px] text-cake-muted">Plat Cokelat & Akrilik Gold</div>
+                        </div>
+                    </div>
+
+                    <!-- Floating Feature Card Bottom Right -->
+                    <div class="hidden sm:flex absolute -right-6 bottom-16 bg-white/95 backdrop-blur-md p-4 rounded-2xl border border-cake-border shadow-xl items-center gap-3 animate-float" style="animation-delay: 2.5s;">
+                        <div class="w-10 h-10 rounded-full bg-emerald-50 text-emerald-600 flex items-center justify-center text-lg">
+                            <i class="fa-solid fa-snowflake"></i>
+                        </div>
+                        <div>
+                            <div class="text-xs font-bold text-cake-darkplum">Car Chill Delivery</div>
+                            <div class="text-[10px] text-cake-muted">Mobil Ber-AC Aman Tanpa Lumer</div>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION KHUSUS: PILIH SESUAI MOMEN SPESIAL -->
+    <section class="py-16 md:py-24 bg-cake-champagne">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            
+            <div class="text-center max-w-2xl mx-auto mb-14">
+                <span class="text-xs font-bold text-cake-gold uppercase tracking-[0.25em] block mb-2">
+                    Curated Collections
+                </span>
+                <h2 class="text-3xl sm:text-4xl font-serif font-bold text-cake-darkplum mb-3">
+                    Pilih Sesuai Momen Spesial Anda
+                </h2>
+                <p class="text-xs sm:text-sm text-cake-muted font-light leading-relaxed">
+                    Setiap perayaan memiliki cerita yang unik. Temukan siluet kue yang sempurna untuk melengkapi kebahagiaan hari istimewa Anda.
+                </p>
+            </div>
+
+            <!-- 4 Moments Grid -->
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 sm:gap-8">
+                
+                <!-- Moment 1: Ulang Tahun & Milestones -->
+                <a href="katalog.html" class="bg-white rounded-3xl border border-cake-border p-6 editorial-shadow hover:-translate-y-2 transition-all duration-300 group flex flex-col justify-between">
+                    <div>
+                        <div class="w-14 h-14 rounded-2xl bg-cake-surface border border-cake-border text-cake-velvet flex items-center justify-center text-2xl mb-6 group-hover:scale-110 group-hover:bg-cake-velvet group-hover:text-cake-gold transition-all shadow-sm">
+                            <i class="fa-solid fa-cake-candles"></i>
+                        </div>
+                        <span class="text-[10px] font-bold text-cake-gold uppercase tracking-wider block mb-1">Sweet Milestones</span>
+                        <h3 class="font-serif font-bold text-xl text-cake-darkplum mb-2 group-hover:text-cake-gold transition">
+                            Birthday Celebration
+                        </h3>
+                        <p class="text-xs text-cake-muted leading-relaxed mb-6 font-light">
+                            Desain tematik elegan dengan pilihan diameter 16cm hingga 24cm, lengkap dengan lilin spiral dan plat nama cokelat.
+                        </p>
+                    </div>
+                    <div class="text-xs font-bold text-cake-velvet flex items-center gap-1 group-hover:text-cake-gold transition">
+                        <span>Lihat Koleksi Ulang Tahun</span>
+                        <i class="fa-solid fa-arrow-right text-[10px]"></i>
+                    </div>
+                </a>
+
+                <!-- Moment 2: Wedding & Engagement -->
+                <a href="katalog.html" class="bg-white rounded-3xl border border-cake-border p-6 editorial-shadow hover:-translate-y-2 transition-all duration-300 group flex flex-col justify-between">
+                    <div>
+                        <div class="w-14 h-14 rounded-2xl bg-cake-surface border border-cake-border text-cake-velvet flex items-center justify-center text-2xl mb-6 group-hover:scale-110 group-hover:bg-cake-velvet group-hover:text-cake-gold transition-all shadow-sm">
+                            <i class="fa-solid fa-rings-wedding"></i>
+                        </div>
+                        <span class="text-[10px] font-bold text-cake-gold uppercase tracking-wider block mb-1">Grand Wedding</span>
+                        <h3 class="font-serif font-bold text-xl text-cake-darkplum mb-2 group-hover:text-cake-gold transition">
+                            Wedding & Engagement
+                        </h3>
+                        <p class="text-xs text-cake-muted leading-relaxed mb-6 font-light">
+                            Kue bertingkat megah berhias bunga segar, detail renda gula halus, dan edible gold leaf untuk resepsi pernikahan impian.
+                        </p>
+                    </div>
+                    <div class="text-xs font-bold text-cake-velvet flex items-center gap-1 group-hover:text-cake-gold transition">
+                        <span>Lihat Koleksi Pernikahan</span>
+                        <i class="fa-solid fa-arrow-right text-[10px]"></i>
+                    </div>
+                </a>
+
+                <!-- Moment 3: Anniversary & Romantic Dinner -->
+                <a href="katalog.html" class="bg-white rounded-3xl border border-cake-border p-6 editorial-shadow hover:-translate-y-2 transition-all duration-300 group flex flex-col justify-between">
+                    <div>
+                        <div class="w-14 h-14 rounded-2xl bg-cake-surface border border-cake-border text-cake-velvet flex items-center justify-center text-2xl mb-6 group-hover:scale-110 group-hover:bg-cake-velvet group-hover:text-cake-gold transition-all shadow-sm">
+                            <i class="fa-solid fa-heart"></i>
+                        </div>
+                        <span class="text-[10px] font-bold text-cake-gold uppercase tracking-wider block mb-1">Intimate Romance</span>
+                        <h3 class="font-serif font-bold text-xl text-cake-darkplum mb-2 group-hover:text-cake-gold transition">
+                            Anniversary Romance
+                        </h3>
+                        <p class="text-xs text-cake-muted leading-relaxed mb-6 font-light">
+                            Kue hati vintage bergaya Lambeth piping klasik dengan warna pastel lembut dan ucapan cinta yang menyentuh hati.
+                        </p>
+                    </div>
+                    <div class="text-xs font-bold text-cake-velvet flex items-center gap-1 group-hover:text-cake-gold transition">
+                        <span>Lihat Koleksi Anniversary</span>
+                        <i class="fa-solid fa-arrow-right text-[10px]"></i>
+                    </div>
+                </a>
+
+                <!-- Moment 4: Bento Cake Mini & Petite Treats -->
+                <a href="katalog.html" class="bg-white rounded-3xl border border-cake-border p-6 editorial-shadow hover:-translate-y-2 transition-all duration-300 group flex flex-col justify-between">
+                    <div>
+                        <div class="w-14 h-14 rounded-2xl bg-cake-surface border border-cake-border text-cake-velvet flex items-center justify-center text-2xl mb-6 group-hover:scale-110 group-hover:bg-cake-velvet group-hover:text-cake-gold transition-all shadow-sm">
+                            <i class="fa-solid fa-box-open"></i>
+                        </div>
+                        <span class="text-[10px] font-bold text-cake-gold uppercase tracking-wider block mb-1">Mini Petite (D: 10cm)</span>
+                        <h3 class="font-serif font-bold text-xl text-cake-darkplum mb-2 group-hover:text-cake-gold transition">
+                            Korean Bento Lunchbox
+                        </h3>
+                        <p class="text-xs text-cake-muted leading-relaxed mb-6 font-light">
+                            Kue mini personal yang manis dan praktis, pas untuk kejutan sahabat, kelulusan, atau perayaan kecil yang hangat berdua.
+                        </p>
+                    </div>
+                    <div class="text-xs font-bold text-cake-velvet flex items-center gap-1 group-hover:text-cake-gold transition">
+                        <span>Lihat Koleksi Bento</span>
+                        <i class="fa-solid fa-arrow-right text-[10px]"></i>
+                    </div>
+                </a>
+
+            </div>
+
+        </div>
+    </section>
+
+    <!-- PRODUK UNGGULAN: 1 Masterpiece Showcase di Tengah + 4 Pilihan di Sekelilingnya -->
+    <section class="py-16 md:py-24 bg-cake-surface border-y border-cake-border">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            
+            <div class="flex flex-col md:flex-row md:items-end justify-between gap-6 mb-12">
+                <div>
+                    <span class="text-xs font-bold text-cake-gold uppercase tracking-[0.25em] block mb-2">
+                        Atelier Bestsellers
+                    </span>
+                    <h2 class="text-3xl sm:text-4xl font-serif font-bold text-cake-darkplum">
+                        Koleksi Masterpiece Paling Dicintai
+                    </h2>
+                </div>
+                <a href="katalog.html" class="inline-flex items-center gap-2 text-xs font-bold text-cake-velvet hover:text-cake-gold uppercase tracking-wider transition">
+                    <span>Lihat Seluruh 20+ Menu</span>
+                    <i class="fa-solid fa-arrow-right"></i>
+                </a>
+            </div>
+
+            <!-- Masterpiece Showcase Layout (Center Big Highlight + 4 Surrounding Cards) -->
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
+                
+                <!-- Left 2 Cards (Col 1-3) -->
+                <div class="lg:col-span-3 space-y-6">
+                    <!-- Slice 1: Valrhona Dark Choco Tart -->
+                    <div class="bg-white p-5 rounded-3xl border border-cake-border editorial-shadow hover:-translate-y-1 transition group">
+                        <div class="h-40 rounded-2xl overflow-hidden mb-4 bg-cake-card">
+                            <img src="https://images.unsplash.com/photo-1578985545062-69928b1d9587?q=80&w=500&auto=format&fit=crop" 
+                                 alt="Dark Chocolate Ganache Tart" 
+                                 class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+                        </div>
+                        <span class="text-[10px] font-bold text-cake-gold uppercase tracking-wider">70% Valrhona Dark</span>
+                        <h4 class="font-serif font-bold text-base text-cake-darkplum mb-1">Opéra Noir Ganache</h4>
+                        <div class="flex items-center justify-between mt-2 pt-2 border-t border-cake-border">
+                            <span class="font-serif font-bold text-sm text-cake-velvet">Rp 385.000</span>
+                            <a href="detail.html" class="text-xs font-bold text-cake-gold hover:underline">Detail &rarr;</a>
+                        </div>
+                    </div>
+
+                    <!-- Slice 2: Earl Grey Lavender Chiffon -->
+                    <div class="bg-white p-5 rounded-3xl border border-cake-border editorial-shadow hover:-translate-y-1 transition group">
+                        <div class="h-40 rounded-2xl overflow-hidden mb-4 bg-cake-card">
+                            <img src="https://images.unsplash.com/photo-1588195538326-c5b1e9f80a1b?q=80&w=500&auto=format&fit=crop" 
+                                 alt="Earl Grey Lavender Cake" 
+                                 class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+                        </div>
+                        <span class="text-[10px] font-bold text-cake-gold uppercase tracking-wider">Floral Tea Infusion</span>
+                        <h4 class="font-serif font-bold text-base text-cake-darkplum mb-1">Earl Grey Blossom</h4>
+                        <div class="flex items-center justify-between mt-2 pt-2 border-t border-cake-border">
+                            <span class="font-serif font-bold text-sm text-cake-velvet">Rp 360.000</span>
+                            <a href="detail.html" class="text-xs font-bold text-cake-gold hover:underline">Detail &rarr;</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Center Big Masterpiece Card (Col 4-9) -->
+                <div class="lg:col-span-6 bg-cake-velvet text-white rounded-[2.5rem] p-6 sm:p-8 relative overflow-hidden velvet-glow border-2 border-cake-gold/30">
+                    <div class="relative h-[300px] sm:h-[380px] rounded-3xl overflow-hidden mb-6 bg-cake-deepdark">
+                        <img src="https://images.unsplash.com/photo-1535141192574-5d4897c13136?q=80&w=900&auto=format&fit=crop" 
+                             alt="The Royal Peony Wedding Tart" 
+                             class="w-full h-full object-cover hover:scale-105 transition duration-700">
+                        <div class="absolute top-4 left-4 bg-cake-gold text-cake-deepdark text-xs font-bold px-3 py-1 rounded-full uppercase tracking-wider shadow-md">
+                            Atelier Crown Piece
+                        </div>
+                    </div>
+                    
+                    <div class="space-y-3 text-center sm:text-left">
+                        <div class="flex flex-col sm:flex-row items-center justify-between gap-2">
+                            <span class="text-xs text-cake-blush uppercase tracking-widest font-semibold">Tiered Wedding / Big Milestone</span>
+                            <span class="text-2xl font-serif font-bold text-cake-gold">Mulai Rp 650.000</span>
+                        </div>
+                        <h3 class="text-2xl sm:text-3xl font-serif font-bold text-white">
+                            The Royal Peony & Champagne Velvet
+                        </h3>
+                        <p class="text-xs sm:text-sm text-stone-300 font-light leading-relaxed">
+                            Kue signature bertabur edible gold leaf 24K, aksen pita sutra Prancis, dan hiasan bunga peony segar yang anggun. Dilengkapi pisau pemotong emas dan lilin luxury.
+                        </p>
+                        <div class="pt-4 flex flex-col sm:flex-row items-center gap-3">
+                            <a href="detail.html" class="w-full sm:w-auto inline-flex items-center justify-center gap-2 bg-cake-gold hover:bg-cake-goldhover text-cake-deepdark text-xs font-bold px-6 py-3.5 rounded-full transition uppercase tracking-wider">
+                                <span>Kustomisasi Diameter & Rasa</span>
+                                <i class="fa-solid fa-sliders"></i>
+                            </a>
+                            <a href="https://wa.me/6281234567890?text=Halo%20Aurelia%20Cake,%20saya%20tertarik%20dengan%20The%20Royal%20Peony." target="_blank" class="w-full sm:w-auto inline-flex items-center justify-center gap-2 bg-white/10 hover:bg-white/20 text-white text-xs font-bold px-5 py-3.5 rounded-full border border-white/20 transition uppercase tracking-wider">
+                                <i class="fa-brands fa-whatsapp text-emerald-400"></i>
+                                <span>Pesan via WhatsApp</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Right 2 Cards (Col 10-12) -->
+                <div class="lg:col-span-3 space-y-6">
+                    <!-- Slice 3: Red Velvet Cream Cheese Heritage -->
+                    <div class="bg-white p-5 rounded-3xl border border-cake-border editorial-shadow hover:-translate-y-1 transition group">
+                        <div class="h-40 rounded-2xl overflow-hidden mb-4 bg-cake-card">
+                            <img src="https://images.unsplash.com/photo-1586985289688-ca3cf47d3e6e?q=80&w=500&auto=format&fit=crop" 
+                                 alt="Red Velvet Cake" 
+                                 class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+                        </div>
+                        <span class="text-[10px] font-bold text-cake-gold uppercase tracking-wider">Classic Philadelphia</span>
+                        <h4 class="font-serif font-bold text-base text-cake-darkplum mb-1">Velvet Rouge Royale</h4>
+                        <div class="flex items-center justify-between mt-2 pt-2 border-t border-cake-border">
+                            <span class="font-serif font-bold text-sm text-cake-velvet">Rp 375.000</span>
+                            <a href="detail.html" class="text-xs font-bold text-cake-gold hover:underline">Detail &rarr;</a>
+                        </div>
+                    </div>
+
+                    <!-- Slice 4: Korean Vintage Lambeth Heart -->
+                    <div class="bg-white p-5 rounded-3xl border border-cake-border editorial-shadow hover:-translate-y-1 transition group">
+                        <div class="h-40 rounded-2xl overflow-hidden mb-4 bg-cake-card">
+                            <img src="https://images.unsplash.com/photo-1562440499-64c9a111f713?q=80&w=500&auto=format&fit=crop" 
+                                 alt="Vintage Korean Lambeth Heart Cake" 
+                                 class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+                        </div>
+                        <span class="text-[10px] font-bold text-cake-gold uppercase tracking-wider">Vintage Lambeth Piping</span>
+                        <h4 class="font-serif font-bold text-base text-cake-darkplum mb-1">Coquette Heart Tart</h4>
+                        <div class="flex items-center justify-between mt-2 pt-2 border-t border-cake-border">
+                            <span class="font-serif font-bold text-sm text-cake-velvet">Rp 320.000</span>
+                            <a href="detail.html" class="text-xs font-bold text-cake-gold hover:underline">Detail &rarr;</a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+    <!-- TESTIMONI: Galeri Foto Kue di Acara Pesta Nyata + Kutipan Klien -->
+    <section class="py-16 md:py-24 bg-cake-champagne">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            
+            <div class="text-center max-w-2xl mx-auto mb-14">
+                <span class="text-xs font-bold text-cake-gold uppercase tracking-[0.25em] block mb-2">
+                    Real Celebration Moments
+                </span>
+                <h2 class="text-3xl sm:text-4xl font-serif font-bold text-cake-darkplum mb-3">
+                    Cerita Manis dari Meja Pesta Klien Kami
+                </h2>
+                <p class="text-xs sm:text-sm text-cake-muted font-light leading-relaxed">
+                    Setiap senyuman di hari ulang tahun dan resepsi pernikahan adalah kebanggaan terbesar dapur kami.
+                </p>
+            </div>
+
+            <!-- Grid 3 Testimoni & Real Event Photo -->
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                
+                <!-- Testimonial 1 -->
+                <div class="bg-white rounded-3xl border border-cake-border p-6 editorial-shadow flex flex-col justify-between">
+                    <div class="space-y-4">
+                        <div class="h-48 rounded-2xl overflow-hidden bg-cake-card">
+                            <img src="https://images.unsplash.com/photo-1519741497674-611481863552?q=80&w=600&auto=format&fit=crop" 
+                                 alt="Wedding cake at garden reception" 
+                                 class="w-full h-full object-cover">
+                        </div>
+                        <div class="flex items-center gap-1 text-cake-gold text-xs">
+                            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                        </div>
+                        <p class="text-xs text-cake-darkplum leading-relaxed italic font-serif text-sm">
+                            “Kue pernikahan 2 tingkat dari Aurélia bener-bener jadi pusat perhatian tamu di ballroom. Bunganya masih segar banget, dan rasa cokelat Valrhona-nya nggak enek sama sekali. Pengiriman mobil AC-nya sangat aman!”
+                        </p>
+                    </div>
+                    <div class="pt-4 border-t border-cake-border mt-4 flex items-center justify-between">
+                        <div>
+                            <div class="font-serif font-bold text-sm text-cake-darkplum">Clarissa & David</div>
+                            <div class="text-[10px] text-cake-muted uppercase tracking-wider">Wedding at The Dharmawangsa</div>
+                        </div>
+                        <span class="text-xs text-cake-gold"><i class="fa-solid fa-circle-check"></i></span>
+                    </div>
+                </div>
+
+                <!-- Testimonial 2 -->
+                <div class="bg-white rounded-3xl border border-cake-border p-6 editorial-shadow flex flex-col justify-between">
+                    <div class="space-y-4">
+                        <div class="h-48 rounded-2xl overflow-hidden bg-cake-card">
+                            <img src="https://images.unsplash.com/photo-1513151233558-d860c5398176?q=80&w=600&auto=format&fit=crop" 
+                                 alt="17th Birthday celebration with custom cake" 
+                                 class="w-full h-full object-cover">
+                        </div>
+                        <div class="flex items-center gap-1 text-cake-gold text-xs">
+                            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                        </div>
+                        <p class="text-xs text-cake-darkplum leading-relaxed italic font-serif text-sm">
+                            “Custom cake untuk Sweet 17 anak saya sangat presisi sesuai sketsa yang saya kirim. Tulisan plat cokelat kaligrafinya rapi sekali. Anak saya terharu waktu tiup lilin!”
+                        </p>
+                    </div>
+                    <div class="pt-4 border-t border-cake-border mt-4 flex items-center justify-between">
+                        <div>
+                            <div class="font-serif font-bold text-sm text-cake-darkplum">dr. Natasya Wardhana</div>
+                            <div class="text-[10px] text-cake-muted uppercase tracking-wider">Sweet 17 Milestone Party</div>
+                        </div>
+                        <span class="text-xs text-cake-gold"><i class="fa-solid fa-circle-check"></i></span>
+                    </div>
+                </div>
+
+                <!-- Testimonial 3 -->
+                <div class="bg-white rounded-3xl border border-cake-border p-6 editorial-shadow flex flex-col justify-between">
+                    <div class="space-y-4">
+                        <div class="h-48 rounded-2xl overflow-hidden bg-cake-card">
+                            <img src="https://images.unsplash.com/photo-1562440499-64c9a111f713?q=80&w=600&auto=format&fit=crop" 
+                                 alt="Anniversary dinner with vintage heart cake" 
+                                 class="w-full h-full object-cover">
+                        </div>
+                        <div class="flex items-center gap-1 text-cake-gold text-xs">
+                            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                        </div>
+                        <p class="text-xs text-cake-darkplum leading-relaxed italic font-serif text-sm">
+                            “Pesan Bento Cake dan Slice Box untuk surprise anniversary istri di restoran. Desain Lambeth piping-nya super estetik buat difoto, krim kejunya lembut dan creamy banget.”
+                        </p>
+                    </div>
+                    <div class="pt-4 border-t border-cake-border mt-4 flex items-center justify-between">
+                        <div>
+                            <div class="font-serif font-bold text-sm text-cake-darkplum">Reza Pramudya</div>
+                            <div class="text-[10px] text-cake-muted uppercase tracking-wider">5th Wedding Anniversary</div>
+                        </div>
+                        <span class="text-xs text-cake-gold"><i class="fa-solid fa-circle-check"></i></span>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+    <!-- SECTION BOOKING H-3 CTA BANNER -->
+    <section class="py-16 md:py-20 bg-cake-surface">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="bg-gradient-to-r from-cake-deepdark via-cake-velvet to-cake-darkplum text-white rounded-[2.5rem] p-8 sm:p-12 md:p-14 relative overflow-hidden shadow-2xl border border-cake-gold/30">
+                
+                <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center relative z-10">
+                    <div class="lg:col-span-8 space-y-3">
+                        <span class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-white/10 text-cake-gold text-xs font-semibold uppercase tracking-widest border border-white/15">
+                            <i class="fa-solid fa-calendar-check"></i> Slot Booking Notice
+                        </span>
+                        <h2 class="text-2xl sm:text-3xl md:text-4xl font-serif font-bold text-white leading-tight">
+                            Punya Tanggal Pesta Spesial yang Ingin Dipesan?
+                        </h2>
+                        <p class="text-xs sm:text-sm text-stone-300 font-light leading-relaxed max-w-xl">
+                            Untuk menjaga ketelitian detail dekorasi bunga dan piping tangan, kami membatasi <strong>maksimal 8 custom cake per hari</strong>. Amankan slot tanggal Anda sekarang.
+                        </p>
+                    </div>
+
+                    <div class="lg:col-span-4 flex flex-col sm:flex-row lg:flex-col gap-3 justify-end">
+                        <a href="https://wa.me/6281234567890?text=Halo%20Aurelia%20Cake,%20saya%20mau%20booking%20tanggal%20acara%20saya." target="_blank" class="inline-flex items-center justify-center gap-2 bg-cake-gold hover:bg-cake-goldhover text-cake-deepdark text-xs font-bold px-6 py-4 rounded-full shadow-lg transition-all hover:scale-105 uppercase tracking-wider">
+                            <i class="fa-brands fa-whatsapp text-lg"></i>
+                            <span>Booking Tanggal via WA</span>
+                        </a>
+                        <a href="katalog.html" class="inline-flex items-center justify-center gap-2 bg-white/10 hover:bg-white/20 text-white text-xs font-semibold px-6 py-3.5 rounded-full border border-white/20 transition tracking-wider uppercase">
+                            <span>Lihat Katalog Lengkap</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER: Luxury Editorial Layout -->
+    <footer class="bg-cake-deepdark text-stone-300 pt-16 pb-32 text-xs border-t border-cake-velvet">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-10 pb-12 border-b border-cake-velvet/60">
+                
+                <!-- Col 1: Brand & Monogram -->
+                <div class="lg:col-span-2 space-y-4">
+                    <div class="flex items-center gap-3">
+                        <div class="w-10 h-10 rounded-full bg-cake-velvet text-cake-gold border border-cake-gold/40 flex items-center justify-center text-lg">
+                            <i class="fa-solid fa-crown text-sm"></i>
+                        </div>
+                        <div>
+                            <span class="font-serif font-bold text-lg text-white block leading-none uppercase">Aurélia</span>
+                            <span class="text-[9px] text-cake-gold uppercase font-semibold tracking-[0.25em]">Cake Atelier & Patisserie</span>
+                        </div>
+                    </div>
+                    <p class="text-xs text-stone-400 leading-relaxed max-w-sm font-light">
+                        Mewujudkan perayaan impian dengan kue tart bertingkat, custom birthday cake bertema mewah, dan slice box pilihan. Dibuat tangan dengan bahan terbaik dunia.
+                    </p>
+                    <div class="flex items-center gap-3 pt-2">
+                        <a href="#" class="w-8 h-8 rounded-full bg-cake-velvet border border-cake-gold/30 flex items-center justify-center text-cake-gold hover:text-white transition" aria-label="Instagram">
+                            <i class="fa-brands fa-instagram text-xs"></i>
+                        </a>
+                        <a href="#" class="w-8 h-8 rounded-full bg-cake-velvet border border-cake-gold/30 flex items-center justify-center text-cake-gold hover:text-white transition" aria-label="Pinterest">
+                            <i class="fa-brands fa-pinterest text-xs"></i>
+                        </a>
+                        <a href="https://wa.me/6281234567890" target="_blank" class="w-8 h-8 rounded-full bg-cake-velvet border border-cake-gold/30 flex items-center justify-center text-cake-gold hover:text-emerald-400 transition" aria-label="WhatsApp">
+                            <i class="fa-brands fa-whatsapp text-xs"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Col 2: Koleksi Kue -->
+                <div class="space-y-3">
+                    <h4 class="font-serif font-bold text-sm text-white uppercase tracking-widest text-cake-gold">Koleksi Kue</h4>
+                    <ul class="space-y-2 text-stone-400">
+                        <li><a href="katalog.html" class="hover:text-cake-gold transition">Custom Birthday Tart</a></li>
+                        <li><a href="katalog.html" class="hover:text-cake-gold transition">Wedding Tiered Cake</a></li>
+                        <li><a href="katalog.html" class="hover:text-cake-gold transition">Korean Bento Lunchbox</a></li>
+                        <li><a href="katalog.html" class="hover:text-cake-gold transition">Vintage Lambeth Heart</a></li>
+                        <li><a href="katalog.html" class="hover:text-cake-gold transition">Slice Cake Gifting Box</a></li>
+                    </ul>
+                </div>
+
+                <!-- Col 3: Layanan & Kustom -->
+                <div class="space-y-3">
+                    <h4 class="font-serif font-bold text-sm text-white uppercase tracking-widest text-cake-gold">Kustomisasi</h4>
+                    <ul class="space-y-2 text-stone-400">
+                        <li><a href="detail.html" class="hover:text-cake-gold transition">Pilihan Base Sponge</a></li>
+                        <li><a href="detail.html" class="hover:text-cake-gold transition">Plat Cokelat Kaligrafi</a></li>
+                        <li><a href="tentang.html" class="hover:text-cake-gold transition">Profil Pastry Chef</a></li>
+                        <li><a href="artikel.html" class="hover:text-cake-gold transition">Panduan Simpan Fondant</a></li>
+                        <li><a href="kontak.html" class="hover:text-cake-gold transition">Pengiriman Mobil AC</a></li>
+                    </ul>
+                </div>
+
+                <!-- Col 4: Studio Atelier -->
+                <div class="space-y-3">
+                    <h4 class="font-serif font-bold text-sm text-white uppercase tracking-widest text-cake-gold">Atelier Studio</h4>
+                    <p class="text-xs text-stone-400 leading-relaxed">
+                        Jl. Mahkota Bunga No. 88, Kebayoran Baru, Jakarta Selatan.
+                    </p>
+                    <div class="pt-1 text-[11px] text-stone-300 space-y-1">
+                        <div><i class="fa-solid fa-clock text-cake-gold mr-1"></i> Konsultasi: 09.00 - 18.00 WIB</div>
+                        <div><i class="fa-solid fa-car text-cake-gold mr-1"></i> Car Delivery Jabodetabek</div>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- Bottom Copyright -->
+            <div class="pt-8 flex flex-col sm:flex-row items-center justify-between gap-4 text-center sm:text-left text-xs text-stone-500">
+                <div>
+                    &copy; 2026 Aurélia Cake Atelier. All Rights Reserved. Celebrate Every Moment.
+                </div>
+                <div class="flex items-center gap-4 text-[11px] text-stone-400">
+                    <a href="tentang.html" class="hover:underline">Tentang Atelier</a>
+                    <span>•</span>
+                    <a href="kontak.html" class="hover:underline">Studio & Lokasi</a>
+                    <span>•</span>
+                    <a href="artikel.html" class="hover:underline">Inspirasi Kue</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- FLOATING WHATSAPP BUTTON (bottom-24) -->
+    <a href="https://wa.me/6281234567890?text=Halo%20Aurelia%20Cake%20Atelier,%20saya%20mau%20order%20kue%20custom." 
+       target="_blank" 
+       class="fixed bottom-24 right-6 z-50 group flex items-center gap-3 bg-cake-velvet hover:bg-cake-velvethover text-white px-4 py-3.5 rounded-full border border-cake-gold/40 shadow-2xl transition-all duration-300" 
+       aria-label="Order via WhatsApp">
+        <span class="relative flex h-3 w-3">
+            <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-cake-gold opacity-75"></span>
+            <span class="relative inline-flex rounded-full h-3 w-3 bg-cake-gold"></span>
+        </span>
+        <i class="fa-brands fa-whatsapp text-2xl text-emerald-400"></i>
+        <div class="text-left hidden sm:block pr-1">
+            <div class="text-[9px] text-cake-gold font-bold uppercase tracking-wider leading-none">WhatsApp Atelier</div>
+            <span class="font-sans font-bold text-xs text-white">Custom Cake Order</span>
+        </div>
+    </a>
+
+    <!-- Mobile Menu Toggle Script -->
+    <script>
+        const mobileMenuBtn = document.getElementById('mobileMenuBtn');
+        const mobileMenu = document.getElementById('mobileMenu');
+        const menuIcon = document.getElementById('menuIcon');
+
+        mobileMenuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+            if (mobileMenu.classList.contains('hidden')) {
+                menuIcon.classList.remove('fa-xmark');
+                menuIcon.classList.add('fa-bars');
+            } else {
+                menuIcon.classList.remove('fa-bars');
+                menuIcon.classList.add('fa-xmark');
+            }
+        });
+    </script>
+
+    <!-- ========================================================================= -->
+    <!-- LENTERA PASAR - STICKY DEMO & SALES BAR (fixed bottom-4)                 -->
+    <!-- ========================================================================= -->
+    <div class="fixed bottom-4 left-1/2 -translate-x-1/2 z-50 w-[95%] max-w-4xl bg-slate-900/95 backdrop-blur-md text-white p-3.5 md:p-4 rounded-2xl shadow-2xl border border-slate-700/80 transition-all duration-300">
+      <div class="flex flex-col md:flex-row items-center justify-between gap-3 md:gap-4">
+        
+        <!-- Info Template & Value Proposition -->
+        <div class="flex items-center gap-3 w-full md:w-auto">
+          <div class="w-10 h-10 rounded-xl bg-amber-500/20 border border-amber-500/40 flex items-center justify-center shrink-0">
+            <svg class="w-5 h-5 text-amber-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z" />
+            </svg>
+          </div>
+          <div>
+            <div class="flex items-center gap-2">
+              <span class="font-bold text-sm text-white">Lentera Pasar Engine</span>
+              <span class="text-[10px] bg-emerald-500/20 text-emerald-300 border border-emerald-500/30 px-2 py-0.5 rounded-full font-medium">Free Admin Panel + Ads Support</span>
+            </div>
+            <p class="text-xs text-slate-300 hidden sm:block">
+              Terima beres: Website responsif + Panel input produk sendiri + Dikelola tim iklan profesional.
+            </p>
+          </div>
+        </div>
+
+        <!-- Poin Keunggulan & Tombol Action -->
+        <div class="flex items-center justify-between md:justify-end gap-3 w-full md:w-auto">
+          <div class="hidden lg:flex items-center gap-2 text-xs text-slate-400 border-r border-slate-700 pr-4">
+            <div class="flex items-center gap-1 text-slate-200">
+              <svg class="w-4 h-4 text-emerald-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" /></svg>
+              <span>Chat WA Instan</span>
+            </div>
+            <span class="text-slate-600">•</span>
+            <div class="flex items-center gap-1 text-slate-200">
+              <svg class="w-4 h-4 text-emerald-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" /></svg>
+              <span>Ready Meta Pixel</span>
+            </div>
+          </div>
+
+          <a href="https://wa.me/6281234567890?text=Halo%20Tim%20Lentera%20Pasar,%20saya%20tertarik%20menggunakan%20template%20website%20ini%20lengkap%20dengan%20Admin%20Panel%20dan%20Jasa%20Iklannya." 
+             target="_blank"
+             class="w-full md:w-auto inline-flex items-center justify-center gap-2 bg-gradient-to-r from-amber-500 to-orange-600 hover:from-amber-600 hover:to-orange-700 text-white text-xs md:text-sm font-semibold px-5 py-2.5 rounded-xl shadow-lg shadow-orange-500/20 transition-all hover:scale-105 shrink-0">
+            <span>Gunakan Template Ini</span>
+            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3" />
+            </svg>
+          </a>
+        </div>
+
+      </div>
+    </div>
+
+</body>
+</html>

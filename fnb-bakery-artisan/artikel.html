@@ -1,0 +1,435 @@
+<!DOCTYPE html>
+<html lang="id" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jurnal Roti, Cara Reheat & Resep Sarapan - Maison du Levain</title>
+    <meta name="description" content="Panduan menghangatkan croissant renyah, resep French Toast Brioche karamel mewah di rumah, dan tips menyimpan sourdough alami agar tahan lama.">
+    
+    <!-- Google Fonts: Playfair Display + Plus Jakarta Sans -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;0,700;1,400;1,600&family=Playfair+Display:ital,wght@0,500;0,600;0,700;0,800;1,400;1,600&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    
+    <!-- Tailwind CSS CDN with Custom Config -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        bakery: {
+                            cream: '#FDFBF7',
+                            surface: '#FAF6EE',
+                            card: '#F4ECE1',
+                            butter: '#C59B27',
+                            butterhover: '#B0881E',
+                            crust: '#5C3D2E',
+                            darkcrust: '#382216',
+                            charcoal: '#211714',
+                            border: '#EBDBC8',
+                            borderdark: '#DFC9B2',
+                            warmgray: '#786253',
+                            muted: '#9E8674',
+                            amberlight: '#FEF3C7',
+                            croissant: '#D49B4B'
+                        }
+                    },
+                    fontFamily: {
+                        sans: ['"Plus Jakarta Sans"', 'sans-serif'],
+                        serif: ['"Playfair Display"', 'Georgia', 'serif'],
+                        display: ['"Cormorant Garamond"', 'serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        .editorial-shadow {
+            box-shadow: 0 20px 40px -15px rgba(92, 61, 46, 0.08);
+        }
+        .gold-glow {
+            box-shadow: 0 10px 30px -5px rgba(197, 155, 39, 0.25);
+        }
+    </style>
+</head>
+<body class="bg-bakery-cream text-bakery-darkcrust font-sans antialiased selection:bg-bakery-butter selection:text-white">
+
+    <!-- Top Schedule Notification Bar -->
+    <div class="bg-bakery-darkcrust text-bakery-card text-xs py-2 px-4 tracking-wider font-medium border-b border-bakery-crust/30">
+        <div class="max-w-7xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-2 text-center sm:text-left">
+            <div class="flex items-center justify-center gap-2">
+                <span class="w-2 h-2 rounded-full bg-amber-400 animate-pulse"></span>
+                <span>Jurnal Bakehouse: <strong>Tips Menghangatkan & Menikmati Roti Artisan</strong></span>
+            </div>
+            <div class="text-[11px] text-stone-300">
+                <a href="katalog.html" class="text-bakery-butter hover:underline">Pesan Menu Roti Pagi &rarr;</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Header / Navbar Vintage Minimalis -->
+    <header class="sticky top-0 z-40 bg-bakery-cream/95 backdrop-blur-md border-b border-bakery-border transition-all">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-20 sm:h-24">
+                <a href="index.html" class="flex items-center gap-3.5 group">
+                    <div class="w-12 h-12 rounded-2xl bg-bakery-surface border border-bakery-border flex items-center justify-center text-bakery-butter text-2xl group-hover:scale-105 group-hover:border-bakery-butter transition-all shadow-sm">
+                        <i class="fa-solid fa-wheat-awn"></i>
+                    </div>
+                    <div>
+                        <span class="text-xl sm:text-2xl font-serif font-bold tracking-tight text-bakery-darkcrust block leading-none">
+                            Maison du Levain
+                        </span>
+                        <span class="text-[10px] font-sans font-semibold tracking-[0.25em] text-bakery-butter uppercase block mt-1">
+                            Artisan Bakehouse & Pastry
+                        </span>
+                    </div>
+                </a>
+
+                <nav class="hidden lg:flex items-center gap-8 font-medium text-bakery-crust text-sm tracking-wide">
+                    <a href="index.html" class="hover:text-bakery-butter transition">Beranda</a>
+                    <a href="katalog.html" class="hover:text-bakery-butter transition">Katalog Roti & Pastry</a>
+                    <a href="detail.html" class="hover:text-bakery-butter transition">Varian & Tekstur</a>
+                    <a href="tentang.html" class="hover:text-bakery-butter transition">Filosofi Ragi Alami</a>
+                    <a href="artikel.html" class="text-bakery-butter font-bold border-b-2 border-bakery-butter pb-1">Jurnal & Reheat</a>
+                    <a href="kontak.html" class="hover:text-bakery-butter transition">Lokasi & Jam Oven</a>
+                </nav>
+
+                <div class="hidden sm:flex items-center gap-3">
+                    <a href="https://wa.me/6281234567890?text=Halo%20Maison%20du%20Levain,%20saya%20mau%20order%20roti." target="_blank" class="inline-flex items-center gap-2 bg-bakery-crust hover:bg-bakery-darkcrust text-white text-xs font-semibold px-5 py-3 rounded-full gold-glow transition-all hover:scale-105">
+                        <i class="fa-brands fa-whatsapp text-emerald-400 text-sm"></i>
+                        <span>Order via WhatsApp</span>
+                    </a>
+                </div>
+
+                <button id="mobileMenuBtn" class="lg:hidden text-bakery-darkcrust hover:text-bakery-butter p-2.5 rounded-xl bg-bakery-surface border border-bakery-border transition" aria-label="Buka Menu">
+                    <i class="fa-solid fa-bars-staggered text-lg" id="menuIcon"></i>
+                </button>
+            </div>
+        </div>
+
+        <div id="mobileMenu" class="hidden lg:hidden bg-bakery-surface border-b border-bakery-border px-6 pt-4 pb-6 space-y-3">
+            <a href="index.html" class="block py-2 text-bakery-darkcrust hover:text-bakery-butter text-sm font-medium">Beranda</a>
+            <a href="katalog.html" class="block py-2 text-bakery-darkcrust hover:text-bakery-butter text-sm font-medium">Katalog Roti & Pastry</a>
+            <a href="detail.html" class="block py-2 text-bakery-darkcrust hover:text-bakery-butter text-sm font-medium">Detail Isian & Tekstur</a>
+            <a href="tentang.html" class="block py-2 text-bakery-darkcrust hover:text-bakery-butter text-sm font-medium">Filosofi Ragi Alami & Dapur Subuh</a>
+            <a href="artikel.html" class="block py-2 text-bakery-butter font-bold text-sm">Cara Menghangatkan (Reheating Guide)</a>
+            <a href="kontak.html" class="block py-2 text-bakery-darkcrust hover:text-bakery-butter text-sm font-medium">Lokasi & Jadwal Fresh Oven</a>
+        </div>
+    </header>
+
+    <!-- HERO SECTION ARTIKEL -->
+    <section class="pt-16 pb-12 bg-bakery-surface border-b border-bakery-border">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <span class="text-xs font-bold text-bakery-butter uppercase tracking-widest block mb-2">
+                Baker's Journal & Morning Kitchen Guide
+            </span>
+            <h1 class="text-3xl sm:text-4xl md:text-5xl font-serif font-bold text-bakery-darkcrust mb-4">
+                Panduan Menghangatkan, Resep & Inspirasi Sarapan
+            </h1>
+            <p class="text-sm sm:text-base text-bakery-warmgray font-light leading-relaxed">
+                Pelajari cara menghidupkan kembali kerenyahan croissant, menyimpan ragi alami, dan menciptakan sarapan ala kafe Paris langsung di meja makan Anda.
+            </p>
+        </div>
+    </section>
+
+    <!-- MAIN ARTICLES & GUIDES GRID -->
+    <main class="py-12 md:py-20 bg-bakery-cream">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                
+                <!-- Artikel 1: Reheat Croissant & Pastry -->
+                <article class="bg-white rounded-3xl border border-bakery-border overflow-hidden editorial-shadow flex flex-col justify-between group hover:-translate-y-1.5 transition-all duration-300">
+                    <div>
+                        <div class="relative h-56 overflow-hidden bg-bakery-card">
+                            <img src="https://images.unsplash.com/photo-1555507036-ab1f4038808a?q=80&w=600&auto=format&fit=crop" 
+                                 alt="Reheating butter croissant" 
+                                 class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                            <span class="absolute top-3 left-3 bg-bakery-darkcrust text-white text-[10px] font-bold px-2.5 py-1 rounded-full uppercase tracking-wider">
+                                Essential Guide
+                            </span>
+                        </div>
+                        <div class="p-6">
+                            <div class="text-[11px] text-bakery-muted mb-2 flex items-center gap-2">
+                                <span><i class="fa-regular fa-clock"></i> 4 Menit Baca</span>
+                                <span>•</span>
+                                <span>Teknik Reheat</span>
+                            </div>
+                            <h2 class="font-serif font-bold text-xl text-bakery-darkcrust mb-3 group-hover:text-bakery-butter transition leading-snug">
+                                Cara Menghangatkan Croissant Agar Renyah Sempurna Seperti Baru Keluar Oven
+                            </h2>
+                            <p class="text-xs text-bakery-warmgray leading-relaxed mb-4">
+                                Jangan pernah memasukkan croissant langsung ke microwave karena akan membuatnya lembek dan alot. Gunakan suhu oven 180°C selama 3-4 menit untuk melelehkan kembali butter Normandy tanpa membakar lapisan luarnya.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="px-6 pb-6 pt-2 border-t border-bakery-border flex items-center justify-between">
+                        <span class="text-xs font-bold text-bakery-butter">Panduan Oven & Air Fryer</span>
+                        <a href="detail.html" class="text-xs font-bold text-bakery-crust hover:text-bakery-butter transition flex items-center gap-1">
+                            Pesan Roti <i class="fa-solid fa-arrow-right text-[10px]"></i>
+                        </a>
+                    </div>
+                </article>
+
+                <!-- Artikel 2: Resep Brioche French Toast -->
+                <article class="bg-white rounded-3xl border border-bakery-border overflow-hidden editorial-shadow flex flex-col justify-between group hover:-translate-y-1.5 transition-all duration-300">
+                    <div>
+                        <div class="relative h-56 overflow-hidden bg-bakery-card">
+                            <img src="https://images.unsplash.com/photo-1549931319-a545dcf3bc73?q=80&w=600&auto=format&fit=crop" 
+                                 alt="Brioche french toast recipe with maple syrup and berries" 
+                                 class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                            <span class="absolute top-3 left-3 bg-amber-800 text-white text-[10px] font-bold px-2.5 py-1 rounded-full uppercase tracking-wider">
+                                Weekend Recipe
+                            </span>
+                        </div>
+                        <div class="p-6">
+                            <div class="text-[11px] text-bakery-muted mb-2 flex items-center gap-2">
+                                <span><i class="fa-regular fa-clock"></i> 6 Menit Baca</span>
+                                <span>•</span>
+                                <span>Resep Sarapan</span>
+                            </div>
+                            <h2 class="font-serif font-bold text-xl text-bakery-darkcrust mb-3 group-hover:text-bakery-butter transition leading-snug">
+                                Resep Golden French Toast Menggunakan Roti Sobek Hokkaido & Selai Earl Grey
+                            </h2>
+                            <p class="text-xs text-bakery-warmgray leading-relaxed mb-4">
+                                Potong tebal roti sobek, celupkan sebentar ke dalam campuran telur organik, susu segar, kayu manis, dan vanila murni. Panggang di wajan dengan sedikit French Butter hingga terkaramelisasi keemasan.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="px-6 pb-6 pt-2 border-t border-bakery-border flex items-center justify-between">
+                        <span class="text-xs font-bold text-bakery-butter">Mudah Dibuat 15 Menit</span>
+                        <a href="katalog.html" class="text-xs font-bold text-bakery-crust hover:text-bakery-butter transition flex items-center gap-1">
+                            Beli Bahannya <i class="fa-solid fa-arrow-right text-[10px]"></i>
+                        </a>
+                    </div>
+                </article>
+
+                <!-- Artikel 3: Cara Simpan Sourdough Seminggu -->
+                <article class="bg-white rounded-3xl border border-bakery-border overflow-hidden editorial-shadow flex flex-col justify-between group hover:-translate-y-1.5 transition-all duration-300">
+                    <div>
+                        <div class="relative h-56 overflow-hidden bg-bakery-card">
+                            <img src="https://images.unsplash.com/photo-1589367920969-ab8e050bbb04?q=80&w=600&auto=format&fit=crop" 
+                                 alt="Storing rustic sourdough loaf in linen bread bag" 
+                                 class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                            <span class="absolute top-3 left-3 bg-bakery-butter text-white text-[10px] font-bold px-2.5 py-1 rounded-full uppercase tracking-wider">
+                                Storage Tips
+                            </span>
+                        </div>
+                        <div class="p-6">
+                            <div class="text-[11px] text-bakery-muted mb-2 flex items-center gap-2">
+                                <span><i class="fa-regular fa-clock"></i> 5 Menit Baca</span>
+                                <span>•</span>
+                                <span>Penyimpanan Roti</span>
+                            </div>
+                            <h2 class="font-serif font-bold text-xl text-bakery-darkcrust mb-3 group-hover:text-bakery-butter transition leading-snug">
+                                Rahasia Menyimpan Sourdough Ragi Alami Tetap Segar & Renyah Hingga 14 Hari
+                            </h2>
+                            <p class="text-xs text-bakery-warmgray leading-relaxed mb-4">
+                                Roti sourdough tanpa pengawet paling baik disimpan dalam kantong kain linen atau dipotong-potong lalu dimasukkan ke dalam wadah kedap udara di freezer. Cukup panggang irisan beku langsung di toaster!
+                            </p>
+                        </div>
+                    </div>
+                    <div class="px-6 pb-6 pt-2 border-t border-bakery-border flex items-center justify-between">
+                        <span class="text-xs font-bold text-bakery-butter">Bebas Jamur Alami</span>
+                        <a href="katalog.html" class="text-xs font-bold text-bakery-crust hover:text-bakery-butter transition flex items-center gap-1">
+                            Pesan Sourdough <i class="fa-solid fa-arrow-right text-[10px]"></i>
+                        </a>
+                    </div>
+                </article>
+
+            </div>
+
+            <!-- Detailed Visual Step-by-Step Reheating Infographic Box -->
+            <div class="mt-16 bg-white rounded-3xl border border-bakery-border p-6 sm:p-10 editorial-shadow">
+                <div class="text-center max-w-2xl mx-auto mb-10">
+                    <span class="text-xs font-bold text-bakery-butter uppercase tracking-widest block mb-1">
+                        Quick Reference Card
+                    </span>
+                    <h3 class="text-2xl sm:text-3xl font-serif font-bold text-bakery-darkcrust">
+                        Panduan Waktu & Suhu Ideal Menghangatkan Produk Kami
+                    </h3>
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                    <div class="p-5 rounded-2xl bg-bakery-surface border border-bakery-border text-center">
+                        <div class="w-12 h-12 rounded-2xl bg-white border border-bakery-border text-bakery-butter flex items-center justify-center text-xl mx-auto mb-3">
+                            <i class="fa-solid fa-croissant"></i>
+                        </div>
+                        <h4 class="font-serif font-bold text-base text-bakery-darkcrust mb-1">Croissant & Pastry</h4>
+                        <div class="text-xs font-bold text-amber-800 bg-amber-100/60 py-1 px-2.5 rounded-lg inline-block mb-2">
+                            Oven 180°C • 3-4 Menit
+                        </div>
+                        <p class="text-xs text-bakery-warmgray">Diamkan 1 menit setelah keluar oven agar lapisan pastry mengeras renyah kembali.</p>
+                    </div>
+
+                    <div class="p-5 rounded-2xl bg-bakery-surface border border-bakery-border text-center">
+                        <div class="w-12 h-12 rounded-2xl bg-white border border-bakery-border text-bakery-butter flex items-center justify-center text-xl mx-auto mb-3">
+                            <i class="fa-solid fa-bread-slice"></i>
+                        </div>
+                        <h4 class="font-serif font-bold text-base text-bakery-darkcrust mb-1">Roti Sobek Lembut</h4>
+                        <div class="text-xs font-bold text-amber-800 bg-amber-100/60 py-1 px-2.5 rounded-lg inline-block mb-2">
+                            Air Fryer 160°C • 3 Menit
+                        </div>
+                        <p class="text-xs text-bakery-warmgray">Isian cokelat atau keju akan lumer kembali dengan tekstur roti yang super empuk.</p>
+                    </div>
+
+                    <div class="p-5 rounded-2xl bg-bakery-surface border border-bakery-border text-center">
+                        <div class="w-12 h-12 rounded-2xl bg-white border border-bakery-border text-bakery-butter flex items-center justify-center text-xl mx-auto mb-3">
+                            <i class="fa-solid fa-fire"></i>
+                        </div>
+                        <h4 class="font-serif font-bold text-base text-bakery-darkcrust mb-1">Artisan Sourdough</h4>
+                        <div class="text-xs font-bold text-amber-800 bg-amber-100/60 py-1 px-2.5 rounded-lg inline-block mb-2">
+                            Toaster / Pan Panggang • 2 Menit
+                        </div>
+                        <p class="text-xs text-bakery-warmgray">Oleskan salted butter tebal di atas irisan hangat untuk cita rasa maksimal.</p>
+                    </div>
+                </div>
+
+                <div class="mt-8 pt-6 border-t border-bakery-border text-center">
+                    <a href="https://wa.me/6281234567890?text=Halo%20Maison%20du%20Levain,%20saya%20mau%20order%20roti%20fresh%20hari%20ini." target="_blank" class="inline-flex items-center gap-2 bg-bakery-butter hover:bg-bakery-butterhover text-white text-xs font-bold px-6 py-3.5 rounded-full shadow-md transition">
+                        <i class="fa-brands fa-whatsapp text-base"></i>
+                        <span>Pesan Roti Segar Sekarang via WhatsApp</span>
+                    </a>
+                </div>
+            </div>
+
+        </div>
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="bg-bakery-surface border-t border-bakery-border pt-16 pb-32 text-bakery-warmgray text-xs">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-10 pb-12 border-b border-bakery-border">
+                <div class="lg:col-span-2 space-y-4">
+                    <div class="flex items-center gap-3">
+                        <div class="w-10 h-10 rounded-xl bg-white border border-bakery-border flex items-center justify-center text-bakery-butter text-xl shadow-sm">
+                            <i class="fa-solid fa-wheat-awn"></i>
+                        </div>
+                        <div>
+                            <span class="font-serif font-bold text-lg text-bakery-darkcrust block leading-none">Maison du Levain</span>
+                            <span class="text-[10px] text-bakery-butter uppercase font-semibold tracking-wider">Artisan Bakehouse & Pastry</span>
+                        </div>
+                    </div>
+                    <p class="text-xs text-bakery-warmgray leading-relaxed max-w-sm">
+                        Menghadirkan tradisi pembuatan roti artisan Eropa dengan kelembutan yang disesuaikan untuk lidah keluarga Indonesia. Dipanggang segar setiap pagi tanpa bahan kimia buatan.
+                    </p>
+                </div>
+                <div class="space-y-3">
+                    <h4 class="font-serif font-bold text-sm text-bakery-darkcrust uppercase tracking-wider">Navigasi</h4>
+                    <ul class="space-y-2">
+                        <li><a href="index.html" class="hover:text-bakery-butter transition">Beranda</a></li>
+                        <li><a href="katalog.html" class="hover:text-bakery-butter transition">Katalog Menu</a></li>
+                        <li><a href="detail.html" class="hover:text-bakery-butter transition">Detail Tekstur</a></li>
+                        <li><a href="tentang.html" class="hover:text-bakery-butter transition">Tentang Kami</a></li>
+                        <li><a href="kontak.html" class="hover:text-bakery-butter transition">Lokasi Dapur</a></li>
+                    </ul>
+                </div>
+                <div class="space-y-3">
+                    <h4 class="font-serif font-bold text-sm text-bakery-darkcrust uppercase tracking-wider">Layanan</h4>
+                    <ul class="space-y-2">
+                        <li><a href="kontak.html" class="hover:text-bakery-butter transition">Pesan Antar Subuh</a></li>
+                        <li><a href="index.html" class="hover:text-bakery-butter transition">Custom Gift Box</a></li>
+                        <li><a href="artikel.html" class="hover:text-bakery-butter transition">Jurnal Reheat</a></li>
+                    </ul>
+                </div>
+                <div class="space-y-3">
+                    <h4 class="font-serif font-bold text-sm text-bakery-darkcrust uppercase tracking-wider">Bakehouse & Dapur</h4>
+                    <p class="text-xs text-bakery-warmgray leading-relaxed">
+                        Jl. Ragi Kencana No. 42, Senopati / Menteng, Jakarta Selatan.
+                    </p>
+                    <div class="pt-1 text-[11px] text-bakery-darkcrust space-y-1 font-medium">
+                        <div><i class="fa-solid fa-clock text-bakery-butter mr-1"></i> Buka: 07.00 - 20.00 WIB</div>
+                    </div>
+                </div>
+            </div>
+            <div class="pt-8 text-center text-xs text-bakery-muted">
+                &copy; 2026 Maison du Levain Artisan Bakehouse. Seluruh Hak Cipta Dilindungi.
+            </div>
+        </div>
+    </footer>
+
+    <!-- FLOATING WHATSAPP BUTTON (bottom-24) -->
+    <a href="https://wa.me/6281234567890?text=Halo%20Maison%20du%20Levain,%20saya%20mau%20order%20roti." 
+       target="_blank" 
+       class="fixed bottom-24 right-6 z-50 group flex items-center gap-3 bg-white hover:bg-bakery-surface text-bakery-darkcrust px-4 py-3.5 rounded-full border border-bakery-border shadow-xl hover:border-bakery-butter transition-all duration-300" 
+       aria-label="Order via WhatsApp">
+        <span class="relative flex h-3 w-3">
+            <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-emerald-400 opacity-75"></span>
+            <span class="relative inline-flex rounded-full h-3 w-3 bg-emerald-500"></span>
+        </span>
+        <i class="fa-brands fa-whatsapp text-2xl text-emerald-600"></i>
+        <div class="text-left hidden sm:block pr-1">
+            <div class="text-[10px] text-bakery-muted font-bold uppercase tracking-wider leading-none">Chat Admin</div>
+            <span class="font-sans font-bold text-xs text-bakery-darkcrust">Order Fresh Oven</span>
+        </div>
+    </a>
+
+    <!-- Mobile Menu Toggle Script -->
+    <script>
+        const mobileMenuBtn = document.getElementById('mobileMenuBtn');
+        const mobileMenu = document.getElementById('mobileMenu');
+        const menuIcon = document.getElementById('menuIcon');
+
+        mobileMenuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+            if (mobileMenu.classList.contains('hidden')) {
+                menuIcon.classList.remove('fa-xmark');
+                menuIcon.classList.add('fa-bars-staggered');
+            } else {
+                menuIcon.classList.remove('fa-bars-staggered');
+                menuIcon.classList.add('fa-xmark');
+            }
+        });
+    </script>
+
+    <!-- ========================================================================= -->
+    <!-- LENTERA PASAR - STICKY DEMO & SALES BAR (fixed bottom-4)                 -->
+    <!-- ========================================================================= -->
+    <div class="fixed bottom-4 left-1/2 -translate-x-1/2 z-50 w-[95%] max-w-4xl bg-slate-900/95 backdrop-blur-md text-white p-3.5 md:p-4 rounded-2xl shadow-2xl border border-slate-700/80 transition-all duration-300">
+      <div class="flex flex-col md:flex-row items-center justify-between gap-3 md:gap-4">
+        <div class="flex items-center gap-3 w-full md:w-auto">
+          <div class="w-10 h-10 rounded-xl bg-amber-500/20 border border-amber-500/40 flex items-center justify-center shrink-0">
+            <svg class="w-5 h-5 text-amber-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z" />
+            </svg>
+          </div>
+          <div>
+            <div class="flex items-center gap-2">
+              <span class="font-bold text-sm text-white">Lentera Pasar Engine</span>
+              <span class="text-[10px] bg-emerald-500/20 text-emerald-300 border border-emerald-500/30 px-2 py-0.5 rounded-full font-medium">Free Admin Panel + Ads Support</span>
+            </div>
+            <p class="text-xs text-slate-300 hidden sm:block">
+              Terima beres: Website responsif + Panel input produk sendiri + Dikelola tim iklan profesional.
+            </p>
+          </div>
+        </div>
+        <div class="flex items-center justify-between md:justify-end gap-3 w-full md:w-auto">
+          <div class="hidden lg:flex items-center gap-2 text-xs text-slate-400 border-r border-slate-700 pr-4">
+            <div class="flex items-center gap-1 text-slate-200">
+              <svg class="w-4 h-4 text-emerald-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" /></svg>
+              <span>Chat WA Instan</span>
+            </div>
+            <span class="text-slate-600">•</span>
+            <div class="flex items-center gap-1 text-slate-200">
+              <svg class="w-4 h-4 text-emerald-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" /></svg>
+              <span>Ready Meta Pixel</span>
+            </div>
+          </div>
+          <a href="https://wa.me/6281234567890?text=Halo%20Tim%20Lentera%20Pasar,%20saya%20tertarik%20menggunakan%20template%20website%20ini%20lengkap%20dengan%20Admin%20Panel%20dan%20Jasa%20Iklannya." 
+             target="_blank"
+             class="w-full md:w-auto inline-flex items-center justify-center gap-2 bg-gradient-to-r from-amber-500 to-orange-600 hover:from-amber-600 hover:to-orange-700 text-white text-xs md:text-sm font-semibold px-5 py-2.5 rounded-xl shadow-lg shadow-orange-500/20 transition-all hover:scale-105 shrink-0">
+            <span>Gunakan Template Ini</span>
+            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3" />
+            </svg>
+          </a>
+        </div>
+      </div>
+    </div>
+
+</body>
+</html>

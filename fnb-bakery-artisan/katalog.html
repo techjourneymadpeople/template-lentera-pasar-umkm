@@ -1,0 +1,931 @@
+<!DOCTYPE html>
+<html lang="id" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Katalog Menu Roti, Pastry & Artisan Spreads - Maison du Levain</title>
+    <meta name="description" content="Daftar lengkap roti sobek lembut, French croissant, artisan sourdough, dan selai buatan tangan yang dipanggang segar setiap pagi dengan French Butter.">
+    
+    <!-- Google Fonts: Playfair Display + Plus Jakarta Sans -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;0,700;1,400;1,600&family=Playfair+Display:ital,wght@0,500;0,600;0,700;0,800;1,400;1,600&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    
+    <!-- Tailwind CSS CDN with Custom Config -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        bakery: {
+                            cream: '#FDFBF7',
+                            surface: '#FAF6EE',
+                            card: '#F4ECE1',
+                            butter: '#C59B27',
+                            butterhover: '#B0881E',
+                            crust: '#5C3D2E',
+                            darkcrust: '#382216',
+                            charcoal: '#211714',
+                            border: '#EBDBC8',
+                            borderdark: '#DFC9B2',
+                            warmgray: '#786253',
+                            muted: '#9E8674',
+                            amberlight: '#FEF3C7',
+                            croissant: '#D49B4B'
+                        }
+                    },
+                    fontFamily: {
+                        sans: ['"Plus Jakarta Sans"', 'sans-serif'],
+                        serif: ['"Playfair Display"', 'Georgia', 'serif'],
+                        display: ['"Cormorant Garamond"', 'serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        .editorial-shadow {
+            box-shadow: 0 20px 40px -15px rgba(92, 61, 46, 0.08);
+        }
+        .gold-glow {
+            box-shadow: 0 10px 30px -5px rgba(197, 155, 39, 0.25);
+        }
+    </style>
+</head>
+<body class="bg-bakery-cream text-bakery-darkcrust font-sans antialiased selection:bg-bakery-butter selection:text-white">
+
+    <!-- Top Schedule Notification Bar -->
+    <div class="bg-bakery-darkcrust text-bakery-card text-xs py-2 px-4 tracking-wider font-medium border-b border-bakery-crust/30">
+        <div class="max-w-7xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-2 text-center sm:text-left">
+            <div class="flex items-center justify-center gap-2">
+                <span class="w-2 h-2 rounded-full bg-emerald-400 animate-pulse"></span>
+                <span>Batch Pagi: <strong>07.00 WIB</strong> • Batch Sore: <strong>14.00 WIB</strong></span>
+            </div>
+            <div class="text-[11px] text-stone-300">
+                <span>Pesan sebelum pukul 10.00 untuk pengiriman hari yang sama.</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- Header / Navbar Vintage Minimalis -->
+    <header class="sticky top-0 z-40 bg-bakery-cream/95 backdrop-blur-md border-b border-bakery-border transition-all">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-20 sm:h-24">
+                
+                <!-- Brand Logo -->
+                <a href="index.html" class="flex items-center gap-3.5 group">
+                    <div class="w-12 h-12 rounded-2xl bg-bakery-surface border border-bakery-border flex items-center justify-center text-bakery-butter text-2xl group-hover:scale-105 group-hover:border-bakery-butter transition-all shadow-sm">
+                        <i class="fa-solid fa-wheat-awn"></i>
+                    </div>
+                    <div>
+                        <span class="text-xl sm:text-2xl font-serif font-bold tracking-tight text-bakery-darkcrust block leading-none">
+                            Maison du Levain
+                        </span>
+                        <span class="text-[10px] font-sans font-semibold tracking-[0.25em] text-bakery-butter uppercase block mt-1">
+                            Artisan Bakehouse & Pastry
+                        </span>
+                    </div>
+                </a>
+
+                <!-- Desktop Navigation Menu -->
+                <nav class="hidden lg:flex items-center gap-8 font-medium text-bakery-crust text-sm tracking-wide">
+                    <a href="index.html" class="hover:text-bakery-butter transition">Beranda</a>
+                    <a href="katalog.html" class="text-bakery-butter font-bold border-b-2 border-bakery-butter pb-1">Katalog Roti & Pastry</a>
+                    <a href="detail.html" class="hover:text-bakery-butter transition">Varian & Tekstur</a>
+                    <a href="tentang.html" class="hover:text-bakery-butter transition">Filosofi Ragi Alami</a>
+                    <a href="artikel.html" class="hover:text-bakery-butter transition">Jurnal & Reheat</a>
+                    <a href="kontak.html" class="hover:text-bakery-butter transition">Lokasi & Jam Oven</a>
+                </nav>
+
+                <!-- Action Button -->
+                <div class="hidden sm:flex items-center gap-3">
+                    <a href="https://wa.me/6281234567890?text=Halo%20Maison%20du%20Levain,%20saya%20mau%20order%20menu%20dari%20katalog." target="_blank" class="inline-flex items-center gap-2 bg-bakery-crust hover:bg-bakery-darkcrust text-white text-xs font-semibold px-5 py-3 rounded-full gold-glow transition-all hover:scale-105">
+                        <i class="fa-brands fa-whatsapp text-emerald-400 text-sm"></i>
+                        <span>Pesan via WhatsApp</span>
+                    </a>
+                </div>
+
+                <!-- Mobile Menu Button -->
+                <button id="mobileMenuBtn" class="lg:hidden text-bakery-darkcrust hover:text-bakery-butter p-2.5 rounded-xl bg-bakery-surface border border-bakery-border transition" aria-label="Buka Menu">
+                    <i class="fa-solid fa-bars-staggered text-lg" id="menuIcon"></i>
+                </button>
+            </div>
+        </div>
+
+        <!-- Mobile Drawer Menu -->
+        <div id="mobileMenu" class="hidden lg:hidden bg-bakery-surface border-b border-bakery-border px-6 pt-4 pb-6 space-y-3">
+            <a href="index.html" class="block py-2 text-bakery-darkcrust hover:text-bakery-butter text-sm font-medium">Beranda</a>
+            <a href="katalog.html" class="block py-2 text-bakery-butter font-bold text-sm">Katalog Roti & Pastry</a>
+            <a href="detail.html" class="block py-2 text-bakery-darkcrust hover:text-bakery-butter text-sm font-medium">Detail Isian & Tekstur</a>
+            <a href="tentang.html" class="block py-2 text-bakery-darkcrust hover:text-bakery-butter text-sm font-medium">Filosofi Ragi Alami & Dapur Subuh</a>
+            <a href="artikel.html" class="block py-2 text-bakery-darkcrust hover:text-bakery-butter text-sm font-medium">Cara Menghangatkan (Reheating Guide)</a>
+            <a href="kontak.html" class="block py-2 text-bakery-darkcrust hover:text-bakery-butter text-sm font-medium">Lokasi & Jadwal Fresh Oven</a>
+        </div>
+    </header>
+
+    <!-- PAGE TITLE & HERO INTRO -->
+    <section class="pt-12 pb-10 bg-bakery-surface border-b border-bakery-border">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center max-w-3xl">
+            <span class="text-xs font-bold text-bakery-butter uppercase tracking-widest block mb-2">
+                Daily Fresh Baked Catalogue
+            </span>
+            <h1 class="text-3xl sm:text-4xl md:text-5xl font-serif font-bold text-bakery-darkcrust mb-4">
+                Koleksi Roti, Pastry & Selai Artisan
+            </h1>
+            <p class="text-sm sm:text-base text-bakery-warmgray font-light leading-relaxed">
+                Setiap varian dibuat dengan ragi alami fermentasi lambat, mentega Prancis murni, dan tanpa bahan pengawet. Pilih menu favoritmu untuk sarapan berkelas di rumah.
+            </p>
+        </div>
+    </section>
+
+    <!-- FILTER & SEARCH CONTROLS -->
+    <section class="py-8 bg-bakery-cream sticky top-20 sm:top-24 z-30 border-b border-bakery-border backdrop-blur-md bg-bakery-cream/95">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex flex-col md:flex-row items-center justify-between gap-4">
+                
+                <!-- Category Filter Buttons -->
+                <div class="flex items-center gap-2 overflow-x-auto w-full md:w-auto pb-2 md:pb-0 no-scrollbar" id="categoryFilterContainer">
+                    <button data-category="all" class="category-btn active px-4 py-2 rounded-full text-xs font-semibold whitespace-nowrap bg-bakery-butter text-white transition shadow-sm">
+                        Semua Menu (12)
+                    </button>
+                    <button data-category="sobek" class="category-btn px-4 py-2 rounded-full text-xs font-semibold whitespace-nowrap bg-bakery-surface text-bakery-darkcrust hover:bg-bakery-card border border-bakery-border transition">
+                        Roti Sobek Lembut (4)
+                    </button>
+                    <button data-category="croissant" class="category-btn px-4 py-2 rounded-full text-xs font-semibold whitespace-nowrap bg-bakery-surface text-bakery-darkcrust hover:bg-bakery-card border border-bakery-border transition">
+                        French Croissant & Danish (4)
+                    </button>
+                    <button data-category="sourdough" class="category-btn px-4 py-2 rounded-full text-xs font-semibold whitespace-nowrap bg-bakery-surface text-bakery-darkcrust hover:bg-bakery-card border border-bakery-border transition">
+                        Artisan Sourdough & Loaf (2)
+                    </button>
+                    <button data-category="spreads" class="category-btn px-4 py-2 rounded-full text-xs font-semibold whitespace-nowrap bg-bakery-surface text-bakery-darkcrust hover:bg-bakery-card border border-bakery-border transition">
+                        Artisan Spreads & Selai (2)
+                    </button>
+                </div>
+
+                <!-- Live Search Box -->
+                <div class="relative w-full md:w-72">
+                    <input type="text" id="menuSearchInput" placeholder="Cari cokelat, croissant, gouda..." 
+                           class="w-full bg-white border border-bakery-border rounded-full pl-10 pr-4 py-2 text-xs text-bakery-darkcrust placeholder-bakery-muted focus:outline-none focus:border-bakery-butter focus:ring-1 focus:ring-bakery-butter transition">
+                    <i class="fa-solid fa-magnifying-glass absolute left-3.5 top-1/2 -translate-y-1/2 text-bakery-muted text-xs"></i>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- KATALOG GRID PRODUK -->
+    <section class="py-12 md:py-20 bg-bakery-cream">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            
+            <div id="productGrid" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6 sm:gap-8">
+                
+                <!-- 1. Roti Sobek Belgian Choco Swirl -->
+                <div class="product-card bg-white rounded-3xl border border-bakery-border overflow-hidden editorial-shadow hover:-translate-y-1.5 transition-all duration-300 group flex flex-col justify-between" data-category="sobek" data-title="roti sobek belgian chocolate ganache swirl cokelat lumer">
+                    <div>
+                        <div class="relative overflow-hidden h-52 bg-bakery-card">
+                            <img src="https://images.unsplash.com/photo-1509440159596-0249088772ff?q=80&w=600&auto=format&fit=crop" 
+                                 alt="Roti Sobek Belgian Chocolate Swirl" 
+                                 class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                            <span class="absolute top-3 left-3 bg-bakery-darkcrust text-white text-[10px] font-bold px-2.5 py-1 rounded-full uppercase tracking-wider">
+                                Best Seller
+                            </span>
+                            <span class="absolute top-3 right-3 bg-emerald-100 text-emerald-800 text-[10px] font-bold px-2.5 py-1 rounded-full border border-emerald-300">
+                                Baked Today
+                            </span>
+                        </div>
+                        <div class="p-5">
+                            <div class="flex items-center justify-between text-xs text-bakery-muted mb-1">
+                                <span>Soft Tear Bread</span>
+                                <span><i class="fa-regular fa-clock"></i> Tahan 4 Hari</span>
+                            </div>
+                            <h3 class="font-serif font-bold text-lg text-bakery-darkcrust group-hover:text-bakery-butter transition mb-1.5">
+                                Roti Sobek Belgian Choco Swirl
+                            </h3>
+                            <p class="text-xs text-bakery-warmgray line-clamp-2 mb-3">
+                                Roti sobek selembut sutra dengan lumeran dark chocolate ganache 70% Belgia yang pekat dan legit.
+                            </p>
+                            <div class="text-[11px] text-amber-700 bg-amber-50 rounded-lg p-2 mb-2 font-medium">
+                                <i class="fa-solid fa-sparkles mr-1"></i> Tekstur Cloud-Soft & Pillowy
+                            </div>
+                        </div>
+                    </div>
+                    <div class="px-5 pb-5 pt-2 border-t border-bakery-border flex items-center justify-between">
+                        <div>
+                            <span class="text-[10px] text-bakery-muted block">Harga Satuan</span>
+                            <span class="font-serif font-bold text-base text-bakery-darkcrust">Rp 48.000</span>
+                        </div>
+                        <div class="flex items-center gap-1.5">
+                            <a href="detail.html" class="p-2 rounded-xl bg-bakery-surface text-bakery-crust hover:bg-bakery-card transition" title="Lihat Detail">
+                                <i class="fa-solid fa-eye text-xs"></i>
+                            </a>
+                            <a href="https://wa.me/6281234567890?text=Halo,%20saya%20mau%20pesan%20Roti%20Sobek%20Belgian%20Choco%20Swirl." target="_blank" class="px-3 py-2 rounded-xl bg-bakery-butter hover:bg-bakery-butterhover text-white text-xs font-bold transition flex items-center gap-1">
+                                <i class="fa-brands fa-whatsapp"></i>
+                                <span>Pesan</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 2. Roti Sobek Smoked Beef & Melted Gouda -->
+                <div class="product-card bg-white rounded-3xl border border-bakery-border overflow-hidden editorial-shadow hover:-translate-y-1.5 transition-all duration-300 group flex flex-col justify-between" data-category="sobek" data-title="roti sobek smoked beef gouda cheese keju sapi gurih">
+                    <div>
+                        <div class="relative overflow-hidden h-52 bg-bakery-card">
+                            <img src="https://images.unsplash.com/photo-1586444248902-2f64eddc13df?q=80&w=600&auto=format&fit=crop" 
+                                 alt="Roti Sobek Smoked Beef & Aged Gouda" 
+                                 class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                            <span class="absolute top-3 left-3 bg-amber-800 text-white text-[10px] font-bold px-2.5 py-1 rounded-full uppercase tracking-wider">
+                                Savory Top Pick
+                            </span>
+                            <span class="absolute top-3 right-3 bg-emerald-100 text-emerald-800 text-[10px] font-bold px-2.5 py-1 rounded-full border border-emerald-300">
+                                Baked Today
+                            </span>
+                        </div>
+                        <div class="p-5">
+                            <div class="flex items-center justify-between text-xs text-bakery-muted mb-1">
+                                <span>Savory Tear Bun</span>
+                                <span><i class="fa-regular fa-clock"></i> Tahan 3 Hari</span>
+                            </div>
+                            <h3 class="font-serif font-bold text-lg text-bakery-darkcrust group-hover:text-bakery-butter transition mb-1.5">
+                                Smoked Beef & Gouda Sobek
+                            </h3>
+                            <p class="text-xs text-bakery-warmgray line-clamp-2 mb-3">
+                                Daging sapi asap gurih, keju Gouda Belanda lumer, dan garlic parsley butter yang harum menggoda.
+                            </p>
+                            <div class="text-[11px] text-amber-700 bg-amber-50 rounded-lg p-2 mb-2 font-medium">
+                                <i class="fa-solid fa-sparkles mr-1"></i> Keju Lumer saat Dihangatkan
+                            </div>
+                        </div>
+                    </div>
+                    <div class="px-5 pb-5 pt-2 border-t border-bakery-border flex items-center justify-between">
+                        <div>
+                            <span class="text-[10px] text-bakery-muted block">Harga Satuan</span>
+                            <span class="font-serif font-bold text-base text-bakery-darkcrust">Rp 52.000</span>
+                        </div>
+                        <div class="flex items-center gap-1.5">
+                            <a href="detail.html" class="p-2 rounded-xl bg-bakery-surface text-bakery-crust hover:bg-bakery-card transition">
+                                <i class="fa-solid fa-eye text-xs"></i>
+                            </a>
+                            <a href="https://wa.me/6281234567890?text=Halo,%20saya%20mau%20pesan%20Smoked%20Beef%20Gouda%20Sobek." target="_blank" class="px-3 py-2 rounded-xl bg-bakery-butter hover:bg-bakery-butterhover text-white text-xs font-bold transition flex items-center gap-1">
+                                <i class="fa-brands fa-whatsapp"></i>
+                                <span>Pesan</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 3. Roti Sobek Hokkaido Pure Milk Cream -->
+                <div class="product-card bg-white rounded-3xl border border-bakery-border overflow-hidden editorial-shadow hover:-translate-y-1.5 transition-all duration-300 group flex flex-col justify-between" data-category="sobek" data-title="roti sobek hokkaido pure milk cream susu lembut vanila">
+                    <div>
+                        <div class="relative overflow-hidden h-52 bg-bakery-card">
+                            <img src="https://images.unsplash.com/photo-1549931319-a545dcf3bc73?q=80&w=600&auto=format&fit=crop" 
+                                 alt="Roti Sobek Hokkaido Milk" 
+                                 class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                            <span class="absolute top-3 left-3 bg-bakery-butter text-white text-[10px] font-bold px-2.5 py-1 rounded-full uppercase tracking-wider">
+                                Kids Favorite
+                            </span>
+                        </div>
+                        <div class="p-5">
+                            <div class="flex items-center justify-between text-xs text-bakery-muted mb-1">
+                                <span>Sweet Milk Bun</span>
+                                <span><i class="fa-regular fa-clock"></i> Tahan 4 Hari</span>
+                            </div>
+                            <h3 class="font-serif font-bold text-lg text-bakery-darkcrust group-hover:text-bakery-butter transition mb-1.5">
+                                Hokkaido Milk Butter Sobek
+                            </h3>
+                            <p class="text-xs text-bakery-warmgray line-clamp-2 mb-3">
+                                Adonan biang susu segar murni dengan isian butter cream vanila Madagaskar yang meleleh lembut di lidah.
+                            </p>
+                            <div class="text-[11px] text-amber-700 bg-amber-50 rounded-lg p-2 mb-2 font-medium">
+                                <i class="fa-solid fa-sparkles mr-1"></i> Rasa Manis Lembut & Gurih Susu
+                            </div>
+                        </div>
+                    </div>
+                    <div class="px-5 pb-5 pt-2 border-t border-bakery-border flex items-center justify-between">
+                        <div>
+                            <span class="text-[10px] text-bakery-muted block">Harga Satuan</span>
+                            <span class="font-serif font-bold text-base text-bakery-darkcrust">Rp 45.000</span>
+                        </div>
+                        <div class="flex items-center gap-1.5">
+                            <a href="detail.html" class="p-2 rounded-xl bg-bakery-surface text-bakery-crust hover:bg-bakery-card transition">
+                                <i class="fa-solid fa-eye text-xs"></i>
+                            </a>
+                            <a href="https://wa.me/6281234567890?text=Halo,%20saya%20mau%20pesan%20Hokkaido%20Milk%20Sobek." target="_blank" class="px-3 py-2 rounded-xl bg-bakery-butter hover:bg-bakery-butterhover text-white text-xs font-bold transition flex items-center gap-1">
+                                <i class="fa-brands fa-whatsapp"></i>
+                                <span>Pesan</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 4. Roti Sobek Salted Egg Custard Swirl -->
+                <div class="product-card bg-white rounded-3xl border border-bakery-border overflow-hidden editorial-shadow hover:-translate-y-1.5 transition-all duration-300 group flex flex-col justify-between" data-category="sobek" data-title="roti sobek salted egg kuning telur asin lava lumer">
+                    <div>
+                        <div class="relative overflow-hidden h-52 bg-bakery-card">
+                            <img src="https://images.unsplash.com/photo-1509440159596-0249088772ff?q=80&w=600&auto=format&fit=crop" 
+                                 alt="Roti Sobek Salted Egg" 
+                                 class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                            <span class="absolute top-3 left-3 bg-stone-800 text-white text-[10px] font-bold px-2.5 py-1 rounded-full uppercase tracking-wider">
+                                Limited 20 Box
+                            </span>
+                        </div>
+                        <div class="p-5">
+                            <div class="flex items-center justify-between text-xs text-bakery-muted mb-1">
+                                <span>Lava Custard Bun</span>
+                                <span><i class="fa-regular fa-clock"></i> Tahan 3 Hari</span>
+                            </div>
+                            <h3 class="font-serif font-bold text-lg text-bakery-darkcrust group-hover:text-bakery-butter transition mb-1.5">
+                                Golden Salted Egg Lava Sobek
+                            </h3>
+                            <p class="text-xs text-bakery-warmgray line-clamp-2 mb-3">
+                                Isian lava custard kuning telur asin premium bertekstur creamy gurih manis dengan aroma daun kari lembut.
+                            </p>
+                            <div class="text-[11px] text-amber-700 bg-amber-50 rounded-lg p-2 mb-2 font-medium">
+                                <i class="fa-solid fa-sparkles mr-1"></i> Lava Meleleh saat Hangat
+                            </div>
+                        </div>
+                    </div>
+                    <div class="px-5 pb-5 pt-2 border-t border-bakery-border flex items-center justify-between">
+                        <div>
+                            <span class="text-[10px] text-bakery-muted block">Harga Satuan</span>
+                            <span class="font-serif font-bold text-base text-bakery-darkcrust">Rp 50.000</span>
+                        </div>
+                        <div class="flex items-center gap-1.5">
+                            <a href="detail.html" class="p-2 rounded-xl bg-bakery-surface text-bakery-crust hover:bg-bakery-card transition">
+                                <i class="fa-solid fa-eye text-xs"></i>
+                            </a>
+                            <a href="https://wa.me/6281234567890?text=Halo,%20saya%20mau%20pesan%20Salted%20Egg%20Lava%20Sobek." target="_blank" class="px-3 py-2 rounded-xl bg-bakery-butter hover:bg-bakery-butterhover text-white text-xs font-bold transition flex items-center gap-1">
+                                <i class="fa-brands fa-whatsapp"></i>
+                                <span>Pesan</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 5. Classic French Butter Croissant -->
+                <div class="product-card bg-white rounded-3xl border border-bakery-border overflow-hidden editorial-shadow hover:-translate-y-1.5 transition-all duration-300 group flex flex-col justify-between" data-category="croissant" data-title="classic french butter croissant pastry renyah flaky">
+                    <div>
+                        <div class="relative overflow-hidden h-52 bg-bakery-card">
+                            <img src="https://images.unsplash.com/photo-1555507036-ab1f4038808a?q=80&w=600&auto=format&fit=crop" 
+                                 alt="Classic French Butter Croissant" 
+                                 class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                            <span class="absolute top-3 left-3 bg-bakery-butter text-white text-[10px] font-bold px-2.5 py-1 rounded-full uppercase tracking-wider">
+                                100% French Butter
+                            </span>
+                            <span class="absolute top-3 right-3 bg-emerald-100 text-emerald-800 text-[10px] font-bold px-2.5 py-1 rounded-full border border-emerald-300">
+                                Ready 07.00
+                            </span>
+                        </div>
+                        <div class="p-5">
+                            <div class="flex items-center justify-between text-xs text-bakery-muted mb-1">
+                                <span>Pure Viennoiserie</span>
+                                <span><i class="fa-regular fa-clock"></i> Tahan 3 Hari</span>
+                            </div>
+                            <h3 class="font-serif font-bold text-lg text-bakery-darkcrust group-hover:text-bakery-butter transition mb-1.5">
+                                Classic Normandy Butter Croissant
+                            </h3>
+                            <p class="text-xs text-bakery-warmgray line-clamp-2 mb-3">
+                                81 lapisan laminasi mentega Prancis murni. Renyah rekah di luar, rongga sarang lebah lembut di dalam.
+                            </p>
+                            <div class="text-[11px] text-amber-700 bg-amber-50 rounded-lg p-2 mb-2 font-medium">
+                                <i class="fa-solid fa-sparkles mr-1"></i> Renyah Berderak saat Digigit
+                            </div>
+                        </div>
+                    </div>
+                    <div class="px-5 pb-5 pt-2 border-t border-bakery-border flex items-center justify-between">
+                        <div>
+                            <span class="text-[10px] text-bakery-muted block">Harga Satuan</span>
+                            <span class="font-serif font-bold text-base text-bakery-darkcrust">Rp 28.000</span>
+                        </div>
+                        <div class="flex items-center gap-1.5">
+                            <a href="detail.html" class="p-2 rounded-xl bg-bakery-surface text-bakery-crust hover:bg-bakery-card transition">
+                                <i class="fa-solid fa-eye text-xs"></i>
+                            </a>
+                            <a href="https://wa.me/6281234567890?text=Halo,%20saya%20mau%20pesan%20Classic%20Croissant." target="_blank" class="px-3 py-2 rounded-xl bg-bakery-butter hover:bg-bakery-butterhover text-white text-xs font-bold transition flex items-center gap-1">
+                                <i class="fa-brands fa-whatsapp"></i>
+                                <span>Pesan</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 6. Pain au Chocolat Valrhona -->
+                <div class="product-card bg-white rounded-3xl border border-bakery-border overflow-hidden editorial-shadow hover:-translate-y-1.5 transition-all duration-300 group flex flex-col justify-between" data-category="croissant" data-title="pain au chocolat valrhona cokelat pastry prancis">
+                    <div>
+                        <div class="relative overflow-hidden h-52 bg-bakery-card">
+                            <img src="https://images.unsplash.com/photo-1530610476181-d83430b64dcd?q=80&w=600&auto=format&fit=crop" 
+                                 alt="Pain au Chocolat" 
+                                 class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                            <span class="absolute top-3 left-3 bg-bakery-darkcrust text-white text-[10px] font-bold px-2.5 py-1 rounded-full uppercase tracking-wider">
+                                Double Chocolate
+                            </span>
+                        </div>
+                        <div class="p-5">
+                            <div class="flex items-center justify-between text-xs text-bakery-muted mb-1">
+                                <span>Viennoiserie Choco</span>
+                                <span><i class="fa-regular fa-clock"></i> Tahan 3 Hari</span>
+                            </div>
+                            <h3 class="font-serif font-bold text-lg text-bakery-darkcrust group-hover:text-bakery-butter transition mb-1.5">
+                                Pain au Chocolat Royale
+                            </h3>
+                            <p class="text-xs text-bakery-warmgray line-clamp-2 mb-3">
+                                Dua batang cokelat hitam Valrhona Prancis dalam gulungan puff pastry mentega berlapis renyah.
+                            </p>
+                            <div class="text-[11px] text-amber-700 bg-amber-50 rounded-lg p-2 mb-2 font-medium">
+                                <i class="fa-solid fa-sparkles mr-1"></i> Rasa Cokelat Gelap Mewah
+                            </div>
+                        </div>
+                    </div>
+                    <div class="px-5 pb-5 pt-2 border-t border-bakery-border flex items-center justify-between">
+                        <div>
+                            <span class="text-[10px] text-bakery-muted block">Harga Satuan</span>
+                            <span class="font-serif font-bold text-base text-bakery-darkcrust">Rp 32.000</span>
+                        </div>
+                        <div class="flex items-center gap-1.5">
+                            <a href="detail.html" class="p-2 rounded-xl bg-bakery-surface text-bakery-crust hover:bg-bakery-card transition">
+                                <i class="fa-solid fa-eye text-xs"></i>
+                            </a>
+                            <a href="https://wa.me/6281234567890?text=Halo,%20saya%20mau%20pesan%20Pain%20au%20Chocolat." target="_blank" class="px-3 py-2 rounded-xl bg-bakery-butter hover:bg-bakery-butterhover text-white text-xs font-bold transition flex items-center gap-1">
+                                <i class="fa-brands fa-whatsapp"></i>
+                                <span>Pesan</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 7. Almond Frangipane Twice-Baked Croissant -->
+                <div class="product-card bg-white rounded-3xl border border-bakery-border overflow-hidden editorial-shadow hover:-translate-y-1.5 transition-all duration-300 group flex flex-col justify-between" data-category="croissant" data-title="almond croissant frangipane kacang krim renyah">
+                    <div>
+                        <div class="relative overflow-hidden h-52 bg-bakery-card">
+                            <img src="https://images.unsplash.com/photo-1555507036-ab1f4038808a?q=80&w=600&auto=format&fit=crop" 
+                                 alt="Almond Croissant" 
+                                 class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                            <span class="absolute top-3 left-3 bg-amber-700 text-white text-[10px] font-bold px-2.5 py-1 rounded-full uppercase tracking-wider">
+                                Rich Almond
+                            </span>
+                        </div>
+                        <div class="p-5">
+                            <div class="flex items-center justify-between text-xs text-bakery-muted mb-1">
+                                <span>Twice-Baked Pastry</span>
+                                <span><i class="fa-regular fa-clock"></i> Tahan 3 Hari</span>
+                            </div>
+                            <h3 class="font-serif font-bold text-lg text-bakery-darkcrust group-hover:text-bakery-butter transition mb-1.5">
+                                Almond Frangipane Croissant
+                            </h3>
+                            <p class="text-xs text-bakery-warmgray line-clamp-2 mb-3">
+                                Diisi pasta almond krim harum, dicelup sirup vanila, dan ditaburi potongan roasted almond melimpah.
+                            </p>
+                            <div class="text-[11px] text-amber-700 bg-amber-50 rounded-lg p-2 mb-2 font-medium">
+                                <i class="fa-solid fa-sparkles mr-1"></i> Sangat Renyah & Nutty
+                            </div>
+                        </div>
+                    </div>
+                    <div class="px-5 pb-5 pt-2 border-t border-bakery-border flex items-center justify-between">
+                        <div>
+                            <span class="text-[10px] text-bakery-muted block">Harga Satuan</span>
+                            <span class="font-serif font-bold text-base text-bakery-darkcrust">Rp 38.000</span>
+                        </div>
+                        <div class="flex items-center gap-1.5">
+                            <a href="detail.html" class="p-2 rounded-xl bg-bakery-surface text-bakery-crust hover:bg-bakery-card transition">
+                                <i class="fa-solid fa-eye text-xs"></i>
+                            </a>
+                            <a href="https://wa.me/6281234567890?text=Halo,%20saya%20mau%20pesan%20Almond%20Croissant." target="_blank" class="px-3 py-2 rounded-xl bg-bakery-butter hover:bg-bakery-butterhover text-white text-xs font-bold transition flex items-center gap-1">
+                                <i class="fa-brands fa-whatsapp"></i>
+                                <span>Pesan</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 8. Salted Caramel Kouign-Amann -->
+                <div class="product-card bg-white rounded-3xl border border-bakery-border overflow-hidden editorial-shadow hover:-translate-y-1.5 transition-all duration-300 group flex flex-col justify-between" data-category="croissant" data-title="kouign amann salted caramel gula karamel mentega">
+                    <div>
+                        <div class="relative overflow-hidden h-52 bg-bakery-card">
+                            <img src="https://images.unsplash.com/photo-1517433670267-08bbd4be890f?q=80&w=600&auto=format&fit=crop" 
+                                 alt="Kouign-Amann Pastry" 
+                                 class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                            <span class="absolute top-3 left-3 bg-amber-900 text-white text-[10px] font-bold px-2.5 py-1 rounded-full uppercase tracking-wider">
+                                Brittany Classic
+                            </span>
+                        </div>
+                        <div class="p-5">
+                            <div class="flex items-center justify-between text-xs text-bakery-muted mb-1">
+                                <span>Caramelized Pastry</span>
+                                <span><i class="fa-regular fa-clock"></i> Tahan 3 Hari</span>
+                            </div>
+                            <h3 class="font-serif font-bold text-lg text-bakery-darkcrust group-hover:text-bakery-butter transition mb-1.5">
+                                Fleur de Sel Kouign-Amann
+                            </h3>
+                            <p class="text-xs text-bakery-warmgray line-clamp-2 mb-3">
+                                Lapisan pastry mentega berlapis karamel gula garing mengkilap dengan taburan garam laut Prancis.
+                            </p>
+                            <div class="text-[11px] text-amber-700 bg-amber-50 rounded-lg p-2 mb-2 font-medium">
+                                <i class="fa-solid fa-sparkles mr-1"></i> Karamel Garing Mengkilap
+                            </div>
+                        </div>
+                    </div>
+                    <div class="px-5 pb-5 pt-2 border-t border-bakery-border flex items-center justify-between">
+                        <div>
+                            <span class="text-[10px] text-bakery-muted block">Harga Satuan</span>
+                            <span class="font-serif font-bold text-base text-bakery-darkcrust">Rp 30.000</span>
+                        </div>
+                        <div class="flex items-center gap-1.5">
+                            <a href="detail.html" class="p-2 rounded-xl bg-bakery-surface text-bakery-crust hover:bg-bakery-card transition">
+                                <i class="fa-solid fa-eye text-xs"></i>
+                            </a>
+                            <a href="https://wa.me/6281234567890?text=Halo,%20saya%20mau%20pesan%20Kouign%20Amann." target="_blank" class="px-3 py-2 rounded-xl bg-bakery-butter hover:bg-bakery-butterhover text-white text-xs font-bold transition flex items-center gap-1">
+                                <i class="fa-brands fa-whatsapp"></i>
+                                <span>Pesan</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 9. Country White Sourdough Loaf -->
+                <div class="product-card bg-white rounded-3xl border border-bakery-border overflow-hidden editorial-shadow hover:-translate-y-1.5 transition-all duration-300 group flex flex-col justify-between" data-category="sourdough" data-title="country white sourdough ragi alami loaf roti artisan">
+                    <div>
+                        <div class="relative overflow-hidden h-52 bg-bakery-card">
+                            <img src="https://images.unsplash.com/photo-1589367920969-ab8e050bbb04?q=80&w=600&auto=format&fit=crop" 
+                                 alt="Country Sourdough Loaf" 
+                                 class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                            <span class="absolute top-3 left-3 bg-bakery-darkcrust text-white text-[10px] font-bold px-2.5 py-1 rounded-full uppercase tracking-wider">
+                                24H Fermented
+                            </span>
+                        </div>
+                        <div class="p-5">
+                            <div class="flex items-center justify-between text-xs text-bakery-muted mb-1">
+                                <span>Artisan Wild Starter</span>
+                                <span><i class="fa-regular fa-clock"></i> Tahan 5 Hari</span>
+                            </div>
+                            <h3 class="font-serif font-bold text-lg text-bakery-darkcrust group-hover:text-bakery-butter transition mb-1.5">
+                                Country White Sourdough Loaf
+                            </h3>
+                            <p class="text-xs text-bakery-warmgray line-clamp-2 mb-3">
+                                Kulit tebal berkerak renyah (dark crust) dengan daging roti berongga kenyal lembut serta asam segar alami.
+                            </p>
+                            <div class="text-[11px] text-amber-700 bg-amber-50 rounded-lg p-2 mb-2 font-medium">
+                                <i class="fa-solid fa-sparkles mr-1"></i> Ramah Lambung & Low GI
+                            </div>
+                        </div>
+                    </div>
+                    <div class="px-5 pb-5 pt-2 border-t border-bakery-border flex items-center justify-between">
+                        <div>
+                            <span class="text-[10px] text-bakery-muted block">Harga Satuan (750g)</span>
+                            <span class="font-serif font-bold text-base text-bakery-darkcrust">Rp 65.000</span>
+                        </div>
+                        <div class="flex items-center gap-1.5">
+                            <a href="detail.html" class="p-2 rounded-xl bg-bakery-surface text-bakery-crust hover:bg-bakery-card transition">
+                                <i class="fa-solid fa-eye text-xs"></i>
+                            </a>
+                            <a href="https://wa.me/6281234567890?text=Halo,%20saya%20mau%20pesan%20Country%20Sourdough." target="_blank" class="px-3 py-2 rounded-xl bg-bakery-butter hover:bg-bakery-butterhover text-white text-xs font-bold transition flex items-center gap-1">
+                                <i class="fa-brands fa-whatsapp"></i>
+                                <span>Pesan</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 10. Cranberry Walnut Sourdough Batard -->
+                <div class="product-card bg-white rounded-3xl border border-bakery-border overflow-hidden editorial-shadow hover:-translate-y-1.5 transition-all duration-300 group flex flex-col justify-between" data-category="sourdough" data-title="cranberry walnut sourdough batard kacang buah kering">
+                    <div>
+                        <div class="relative overflow-hidden h-52 bg-bakery-card">
+                            <img src="https://images.unsplash.com/photo-1509440159596-0249088772ff?q=80&w=600&auto=format&fit=crop" 
+                                 alt="Cranberry Walnut Sourdough" 
+                                 class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                            <span class="absolute top-3 left-3 bg-amber-800 text-white text-[10px] font-bold px-2.5 py-1 rounded-full uppercase tracking-wider">
+                                Specialty Loaf
+                            </span>
+                        </div>
+                        <div class="p-5">
+                            <div class="flex items-center justify-between text-xs text-bakery-muted mb-1">
+                                <span>Artisan Batard</span>
+                                <span><i class="fa-regular fa-clock"></i> Tahan 5 Hari</span>
+                            </div>
+                            <h3 class="font-serif font-bold text-lg text-bakery-darkcrust group-hover:text-bakery-butter transition mb-1.5">
+                                Cranberry & Roasted Walnut Batard
+                            </h3>
+                            <p class="text-xs text-bakery-warmgray line-clamp-2 mb-3">
+                                Roti ragi alami dengan campuran buah cranberry kering asam manis dan kacang walnut panggang gurih.
+                            </p>
+                            <div class="text-[11px] text-amber-700 bg-amber-50 rounded-lg p-2 mb-2 font-medium">
+                                <i class="fa-solid fa-sparkles mr-1"></i> Pas dengan Keju Brie & Butter
+                            </div>
+                        </div>
+                    </div>
+                    <div class="px-5 pb-5 pt-2 border-t border-bakery-border flex items-center justify-between">
+                        <div>
+                            <span class="text-[10px] text-bakery-muted block">Harga Satuan (650g)</span>
+                            <span class="font-serif font-bold text-base text-bakery-darkcrust">Rp 72.000</span>
+                        </div>
+                        <div class="flex items-center gap-1.5">
+                            <a href="detail.html" class="p-2 rounded-xl bg-bakery-surface text-bakery-crust hover:bg-bakery-card transition">
+                                <i class="fa-solid fa-eye text-xs"></i>
+                            </a>
+                            <a href="https://wa.me/6281234567890?text=Halo,%20saya%20mau%20pesan%20Cranberry%20Walnut%20Sourdough." target="_blank" class="px-3 py-2 rounded-xl bg-bakery-butter hover:bg-bakery-butterhover text-white text-xs font-bold transition flex items-center gap-1">
+                                <i class="fa-brands fa-whatsapp"></i>
+                                <span>Pesan</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 11. Homemade Earl Grey Milk Jam (Spread) -->
+                <div class="product-card bg-white rounded-3xl border border-bakery-border overflow-hidden editorial-shadow hover:-translate-y-1.5 transition-all duration-300 group flex flex-col justify-between" data-category="spreads" data-title="earl grey milk jam selai susu teh artisan spread olesan">
+                    <div>
+                        <div class="relative overflow-hidden h-52 bg-bakery-card">
+                            <img src="https://images.unsplash.com/photo-1589367920969-ab8e050bbb04?q=80&w=600&auto=format&fit=crop" 
+                                 alt="Earl Grey Milk Jam" 
+                                 class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                            <span class="absolute top-3 left-3 bg-bakery-butter text-white text-[10px] font-bold px-2.5 py-1 rounded-full uppercase tracking-wider">
+                                House Specialty
+                            </span>
+                        </div>
+                        <div class="p-5">
+                            <div class="flex items-center justify-between text-xs text-bakery-muted mb-1">
+                                <span>Jar 200ml</span>
+                                <span><i class="fa-regular fa-clock"></i> Tahan 30 Hari</span>
+                            </div>
+                            <h3 class="font-serif font-bold text-lg text-bakery-darkcrust group-hover:text-bakery-butter transition mb-1.5">
+                                Earl Grey Tea Milk Spread
+                            </h3>
+                            <p class="text-xs text-bakery-warmgray line-clamp-2 mb-3">
+                                Selai susu kental karamel lembut yang dimasak lambat 3 jam dengan infusi teh hitam bergamot aromatik.
+                            </p>
+                            <div class="text-[11px] text-amber-700 bg-amber-50 rounded-lg p-2 mb-2 font-medium">
+                                <i class="fa-solid fa-sparkles mr-1"></i> Pas Dioles di Brioche Toast
+                            </div>
+                        </div>
+                    </div>
+                    <div class="px-5 pb-5 pt-2 border-t border-bakery-border flex items-center justify-between">
+                        <div>
+                            <span class="text-[10px] text-bakery-muted block">Harga Jar (200ml)</span>
+                            <span class="font-serif font-bold text-base text-bakery-darkcrust">Rp 55.000</span>
+                        </div>
+                        <div class="flex items-center gap-1.5">
+                            <a href="detail.html" class="p-2 rounded-xl bg-bakery-surface text-bakery-crust hover:bg-bakery-card transition">
+                                <i class="fa-solid fa-eye text-xs"></i>
+                            </a>
+                            <a href="https://wa.me/6281234567890?text=Halo,%20saya%20mau%20pesan%20Earl%20Grey%20Milk%20Jam." target="_blank" class="px-3 py-2 rounded-xl bg-bakery-butter hover:bg-bakery-butterhover text-white text-xs font-bold transition flex items-center gap-1">
+                                <i class="fa-brands fa-whatsapp"></i>
+                                <span>Pesan</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 12. Roasted Pistachio Cream Spread -->
+                <div class="product-card bg-white rounded-3xl border border-bakery-border overflow-hidden editorial-shadow hover:-translate-y-1.5 transition-all duration-300 group flex flex-col justify-between" data-category="spreads" data-title="roasted pistachio cream spread selai kacang pistachio hijau">
+                    <div>
+                        <div class="relative overflow-hidden h-52 bg-bakery-card">
+                            <img src="https://images.unsplash.com/photo-1549931319-a545dcf3bc73?q=80&w=600&auto=format&fit=crop" 
+                                 alt="Roasted Pistachio Spread" 
+                                 class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                            <span class="absolute top-3 left-3 bg-emerald-800 text-white text-[10px] font-bold px-2.5 py-1 rounded-full uppercase tracking-wider">
+                                Premium Nut Spread
+                            </span>
+                        </div>
+                        <div class="p-5">
+                            <div class="flex items-center justify-between text-xs text-bakery-muted mb-1">
+                                <span>Jar 200ml</span>
+                                <span><i class="fa-regular fa-clock"></i> Tahan 45 Hari</span>
+                            </div>
+                            <h3 class="font-serif font-bold text-lg text-bakery-darkcrust group-hover:text-bakery-butter transition mb-1.5">
+                                Sicilian Roasted Pistachio Spread
+                            </h3>
+                            <p class="text-xs text-bakery-warmgray line-clamp-2 mb-3">
+                                100% kacang pistachio Sisilia panggang asli tanpa pewarna hijau buatan, tekstur creamy legit mewah.
+                            </p>
+                            <div class="text-[11px] text-amber-700 bg-amber-50 rounded-lg p-2 mb-2 font-medium">
+                                <i class="fa-solid fa-sparkles mr-1"></i> Rasa Nutty Gurih Alami
+                            </div>
+                        </div>
+                    </div>
+                    <div class="px-5 pb-5 pt-2 border-t border-bakery-border flex items-center justify-between">
+                        <div>
+                            <span class="text-[10px] text-bakery-muted block">Harga Jar (200ml)</span>
+                            <span class="font-serif font-bold text-base text-bakery-darkcrust">Rp 78.000</span>
+                        </div>
+                        <div class="flex items-center gap-1.5">
+                            <a href="detail.html" class="p-2 rounded-xl bg-bakery-surface text-bakery-crust hover:bg-bakery-card transition">
+                                <i class="fa-solid fa-eye text-xs"></i>
+                            </a>
+                            <a href="https://wa.me/6281234567890?text=Halo,%20saya%20mau%20pesan%20Pistachio%20Spread." target="_blank" class="px-3 py-2 rounded-xl bg-bakery-butter hover:bg-bakery-butterhover text-white text-xs font-bold transition flex items-center gap-1">
+                                <i class="fa-brands fa-whatsapp"></i>
+                                <span>Pesan</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- Empty State if no search matches -->
+            <div id="emptySearchState" class="hidden text-center py-16">
+                <div class="w-16 h-16 rounded-full bg-bakery-surface border border-bakery-border flex items-center justify-center text-bakery-butter text-2xl mx-auto mb-4">
+                    <i class="fa-solid fa-wheat-awn-circle-exclamation"></i>
+                </div>
+                <h3 class="font-serif font-bold text-xl text-bakery-darkcrust mb-2">Menu Tidak Ditemukan</h3>
+                <p class="text-xs text-bakery-warmgray max-w-md mx-auto mb-6">
+                    Maaf, menu atau varian yang Anda cari tidak tersedia. Coba kata kunci lain atau hubungi barista dapur kami via WhatsApp.
+                </p>
+                <button id="resetSearchBtn" class="px-5 py-2.5 rounded-full bg-bakery-butter text-white text-xs font-semibold shadow-sm hover:bg-bakery-butterhover transition">
+                    Tampilkan Semua Menu
+                </button>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="bg-bakery-surface border-t border-bakery-border pt-16 pb-32 text-bakery-warmgray text-xs">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-10 pb-12 border-b border-bakery-border">
+                <div class="lg:col-span-2 space-y-4">
+                    <div class="flex items-center gap-3">
+                        <div class="w-10 h-10 rounded-xl bg-white border border-bakery-border flex items-center justify-center text-bakery-butter text-xl shadow-sm">
+                            <i class="fa-solid fa-wheat-awn"></i>
+                        </div>
+                        <div>
+                            <span class="font-serif font-bold text-lg text-bakery-darkcrust block leading-none">Maison du Levain</span>
+                            <span class="text-[10px] text-bakery-butter uppercase font-semibold tracking-wider">Artisan Bakehouse & Pastry</span>
+                        </div>
+                    </div>
+                    <p class="text-xs text-bakery-warmgray leading-relaxed max-w-sm">
+                        Menghadirkan tradisi pembuatan roti artisan Eropa dengan kelembutan yang disesuaikan untuk lidah keluarga Indonesia. Dipanggang segar setiap pagi tanpa bahan kimia buatan.
+                    </p>
+                </div>
+                <div class="space-y-3">
+                    <h4 class="font-serif font-bold text-sm text-bakery-darkcrust uppercase tracking-wider">Navigasi</h4>
+                    <ul class="space-y-2">
+                        <li><a href="index.html" class="hover:text-bakery-butter transition">Beranda</a></li>
+                        <li><a href="katalog.html" class="hover:text-bakery-butter transition">Katalog Menu</a></li>
+                        <li><a href="detail.html" class="hover:text-bakery-butter transition">Detail Tekstur</a></li>
+                        <li><a href="tentang.html" class="hover:text-bakery-butter transition">Tentang Kami</a></li>
+                        <li><a href="kontak.html" class="hover:text-bakery-butter transition">Lokasi Dapur</a></li>
+                    </ul>
+                </div>
+                <div class="space-y-3">
+                    <h4 class="font-serif font-bold text-sm text-bakery-darkcrust uppercase tracking-wider">Layanan</h4>
+                    <ul class="space-y-2">
+                        <li><a href="kontak.html" class="hover:text-bakery-butter transition">Pesan Antar Instant</a></li>
+                        <li><a href="index.html" class="hover:text-bakery-butter transition">Custom Gift Box</a></li>
+                        <li><a href="artikel.html" class="hover:text-bakery-butter transition">Petunjuk Menghangatkan</a></li>
+                    </ul>
+                </div>
+                <div class="space-y-3">
+                    <h4 class="font-serif font-bold text-sm text-bakery-darkcrust uppercase tracking-wider">Dapur Pagi</h4>
+                    <p class="text-xs text-bakery-warmgray">Batch Pertama: 07.00 WIB</p>
+                    <p class="text-xs text-bakery-warmgray">Batch Kedua: 14.00 WIB</p>
+                    <p class="text-xs font-semibold text-emerald-700 mt-2">Dine-in & Takeaway Ready</p>
+                </div>
+            </div>
+            <div class="pt-8 text-center text-xs text-bakery-muted">
+                &copy; 2026 Maison du Levain Artisan Bakehouse. Seluruh Hak Cipta Dilindungi.
+            </div>
+        </div>
+    </footer>
+
+    <!-- FLOATING WHATSAPP BUTTON (bottom-24) -->
+    <a href="https://wa.me/6281234567890?text=Halo%20Maison%20du%20Levain,%20saya%20mau%20order%20menu%20dari%20katalog." 
+       target="_blank" 
+       class="fixed bottom-24 right-6 z-50 group flex items-center gap-3 bg-white hover:bg-bakery-surface text-bakery-darkcrust px-4 py-3.5 rounded-full border border-bakery-border shadow-xl hover:border-bakery-butter transition-all duration-300" 
+       aria-label="Order via WhatsApp">
+        <span class="relative flex h-3 w-3">
+            <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-emerald-400 opacity-75"></span>
+            <span class="relative inline-flex rounded-full h-3 w-3 bg-emerald-500"></span>
+        </span>
+        <i class="fa-brands fa-whatsapp text-2xl text-emerald-600"></i>
+        <div class="text-left hidden sm:block pr-1">
+            <div class="text-[10px] text-bakery-muted font-bold uppercase tracking-wider leading-none">Chat Admin</div>
+            <span class="font-sans font-bold text-xs text-bakery-darkcrust">Order Fresh Oven</span>
+        </div>
+    </a>
+
+    <!-- JAVASCRIPT FILTER & SEARCH LOGIC -->
+    <script>
+        // Mobile Menu Toggle
+        const mobileMenuBtn = document.getElementById('mobileMenuBtn');
+        const mobileMenu = document.getElementById('mobileMenu');
+        const menuIcon = document.getElementById('menuIcon');
+
+        mobileMenuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+            if (mobileMenu.classList.contains('hidden')) {
+                menuIcon.classList.remove('fa-xmark');
+                menuIcon.classList.add('fa-bars-staggered');
+            } else {
+                menuIcon.classList.remove('fa-bars-staggered');
+                menuIcon.classList.add('fa-xmark');
+            }
+        });
+
+        // Filter by Category and Search
+        const categoryButtons = document.querySelectorAll('.category-btn');
+        const productCards = document.querySelectorAll('.product-card');
+        const searchInput = document.getElementById('menuSearchInput');
+        const emptyState = document.getElementById('emptySearchState');
+        const resetSearchBtn = document.getElementById('resetSearchBtn');
+
+        let currentCategory = 'all';
+
+        function filterProducts() {
+            const query = searchInput.value.toLowerCase().trim();
+            let visibleCount = 0;
+
+            productCards.forEach(card => {
+                const category = card.getAttribute('data-category');
+                const title = card.getAttribute('data-title');
+
+                const matchesCategory = (currentCategory === 'all' || category === currentCategory);
+                const matchesSearch = (!query || title.includes(query));
+
+                if (matchesCategory && matchesSearch) {
+                    card.style.display = 'flex';
+                    visibleCount++;
+                } else {
+                    card.style.display = 'none';
+                }
+            });
+
+            if (visibleCount === 0) {
+                emptyState.classList.remove('hidden');
+            } else {
+                emptyState.classList.add('hidden');
+            }
+        }
+
+        categoryButtons.forEach(btn => {
+            btn.addEventListener('click', () => {
+                categoryButtons.forEach(b => {
+                    b.classList.remove('active', 'bg-bakery-butter', 'text-white');
+                    b.classList.add('bg-bakery-surface', 'text-bakery-darkcrust');
+                });
+                btn.classList.add('active', 'bg-bakery-butter', 'text-white');
+                btn.classList.remove('bg-bakery-surface', 'text-bakery-darkcrust');
+
+                currentCategory = btn.getAttribute('data-category');
+                filterProducts();
+            });
+        });
+
+        searchInput.addEventListener('input', filterProducts);
+
+        if (resetSearchBtn) {
+            resetSearchBtn.addEventListener('click', () => {
+                searchInput.value = '';
+                currentCategory = 'all';
+                categoryButtons[0].click();
+            });
+        }
+    </script>
+
+    <!-- ========================================================================= -->
+    <!-- LENTERA PASAR - STICKY DEMO & SALES BAR (fixed bottom-4)                 -->
+    <!-- ========================================================================= -->
+    <div class="fixed bottom-4 left-1/2 -translate-x-1/2 z-50 w-[95%] max-w-4xl bg-slate-900/95 backdrop-blur-md text-white p-3.5 md:p-4 rounded-2xl shadow-2xl border border-slate-700/80 transition-all duration-300">
+      <div class="flex flex-col md:flex-row items-center justify-between gap-3 md:gap-4">
+        <div class="flex items-center gap-3 w-full md:w-auto">
+          <div class="w-10 h-10 rounded-xl bg-amber-500/20 border border-amber-500/40 flex items-center justify-center shrink-0">
+            <svg class="w-5 h-5 text-amber-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z" />
+            </svg>
+          </div>
+          <div>
+            <div class="flex items-center gap-2">
+              <span class="font-bold text-sm text-white">Lentera Pasar Engine</span>
+              <span class="text-[10px] bg-emerald-500/20 text-emerald-300 border border-emerald-500/30 px-2 py-0.5 rounded-full font-medium">Free Admin Panel + Ads Support</span>
+            </div>
+            <p class="text-xs text-slate-300 hidden sm:block">
+              Terima beres: Website responsif + Panel input produk sendiri + Dikelola tim iklan profesional.
+            </p>
+          </div>
+        </div>
+        <div class="flex items-center justify-between md:justify-end gap-3 w-full md:w-auto">
+          <div class="hidden lg:flex items-center gap-2 text-xs text-slate-400 border-r border-slate-700 pr-4">
+            <div class="flex items-center gap-1 text-slate-200">
+              <svg class="w-4 h-4 text-emerald-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" /></svg>
+              <span>Chat WA Instan</span>
+            </div>
+            <span class="text-slate-600">•</span>
+            <div class="flex items-center gap-1 text-slate-200">
+              <svg class="w-4 h-4 text-emerald-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" /></svg>
+              <span>Ready Meta Pixel</span>
+            </div>
+          </div>
+          <a href="https://wa.me/6281234567890?text=Halo%20Tim%20Lentera%20Pasar,%20saya%20tertarik%20menggunakan%20template%20website%20ini%20lengkap%20dengan%20Admin%20Panel%20dan%20Jasa%20Iklannya." 
+             target="_blank"
+             class="w-full md:w-auto inline-flex items-center justify-center gap-2 bg-gradient-to-r from-amber-500 to-orange-600 hover:from-amber-600 hover:to-orange-700 text-white text-xs md:text-sm font-semibold px-5 py-2.5 rounded-xl shadow-lg shadow-orange-500/20 transition-all hover:scale-105 shrink-0">
+            <span>Gunakan Template Ini</span>
+            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3" />
+            </svg>
+          </a>
+        </div>
+      </div>
+    </div>
+
+</body>
+</html>
