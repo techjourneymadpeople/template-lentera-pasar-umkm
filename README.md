@@ -34,6 +34,7 @@ template-website-umkm/
 │   ├── fashion-modest-editorial/       # Modest Wear, Gamis Syar'i & Sarimbit Raya (Malika Modest)
 │   ├── fashion-kids-pastel/            # Pakaian Anak, Balita & Bayi SNI Organik (Moomi Kids)
 │   ├── fashion-activewear-kinetic/     # Pakaian Olahraga, Activewear & Jersey Club (Kinetix Lab)
+│   ├── fashion-loungewear-cozy/        # Piyama Sutra, Daster Modern & Loungewear (Serena Lounge)
 │   ├── fashion-muslim-gamis/           # Hijab, Gamis Syar'i & Abaya Modern
 │   ├── fashion-streetwear-apparel/     # Kaos Distro, Hoodie & Urban Oversize
 │   ├── fashion-batik-etnik/            # Batik Tulis/Cap, Tenun & Kebaya Modern

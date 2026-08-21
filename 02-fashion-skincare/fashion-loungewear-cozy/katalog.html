@@ -1,0 +1,703 @@
+<!DOCTYPE html>
+<html lang="id" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Katalog Piyama, Daster & Loungewear — SERENA LOUNGE</title>
+    <meta name="description" content="Katalog piyama sutra satin, daster rayon twill modern, kimono robe, dan pakaian rumah nyaman berestetika Scandinavian yang adem dan lembut di kulit.">
+    
+    <!-- Google Fonts: Cormorant Garamond & Plus Jakarta Sans -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,600&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        serena: {
+                            sand: '#F7F3EE',
+                            warm: '#F2ECE4',
+                            card: '#FFFFFF',
+                            border: '#E8DFD5',
+                            borderdark: '#D5C8BB',
+                            mocha: '#6E5D53',
+                            mochadark: '#51433B',
+                            mochalight: '#8C776A',
+                            blush: '#C48B8B',
+                            blushlight: '#F9EBEA',
+                            sage: '#7C8A7B',
+                            sagelight: '#EEF2EE',
+                            text: '#423833',
+                            muted: '#7A6E68'
+                        }
+                    },
+                    fontFamily: {
+                        sans: ['"Plus Jakarta Sans"', 'sans-serif'],
+                        serif: ['"Cormorant Garamond"', 'Georgia', 'serif']
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        .no-scrollbar::-webkit-scrollbar { display: none; }
+        .no-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
+        
+        .cozy-card {
+            transition: all 0.35s cubic-bezier(0.16, 1, 0.3, 1);
+        }
+        .cozy-card:hover {
+            transform: translateY(-4px);
+            border-color: #D5C8BB;
+            box-shadow: 0 20px 35px -10px rgba(110, 93, 83, 0.08);
+        }
+    </style>
+</head>
+<body class="bg-serena-sand text-serena-text font-sans antialiased selection:bg-serena-mocha selection:text-white">
+
+    <!-- 1. TOP BAR -->
+    <div class="bg-serena-warm text-serena-mocha text-[11px] py-2.5 px-4 font-medium border-b border-serena-border">
+        <div class="max-w-7xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-2 text-center sm:text-left">
+            <div class="flex items-center justify-center gap-2">
+                <span class="inline-flex items-center gap-1.5 px-2.5 py-0.5 rounded-full bg-white text-serena-mocha text-[9px] font-bold tracking-wider uppercase shadow-xs">
+                    <span class="w-1.5 h-1.5 rounded-full bg-emerald-500 animate-ping"></span>
+                    READY STOCK ALL SIZES & JUMBO
+                </span>
+                <span class="text-stone-700">Garansi Tukar Ukuran Gratis 7 Hari Jika Kekecilan/Kebesaran</span>
+            </div>
+            <div class="flex items-center gap-4 text-[10px] text-stone-600">
+                <a href="kontak.html" class="text-serena-mocha hover:text-serena-mochadark underline font-bold transition">Paket Kado Bridesmaid & Reseller &rarr;</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- 2. NAVBAR -->
+    <header class="sticky top-0 z-40 bg-serena-sand/95 backdrop-blur-md border-b border-serena-border transition-all">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-20 sm:h-24">
+                
+                <a href="index.html" class="flex flex-col group">
+                    <span class="text-2xl sm:text-3xl font-serif font-bold tracking-[0.14em] text-serena-mochadark uppercase leading-none group-hover:text-serena-blush transition duration-300">
+                        SERENA
+                    </span>
+                    <span class="text-[8px] tracking-[0.35em] text-serena-mochalight uppercase mt-1 font-semibold">
+                        Lounge & Cozy Sleepwear
+                    </span>
+                </a>
+
+                <nav class="hidden lg:flex items-center gap-8 text-xs font-semibold tracking-widest uppercase text-stone-700">
+                    <a href="index.html" class="hover:text-serena-mocha transition">Beranda</a>
+                    <a href="katalog.html" class="text-serena-mochadark border-b-2 border-serena-mochadark pb-1">Katalog Piyama</a>
+                    <a href="detail.html" class="hover:text-serena-mocha transition">Sensasi Dingin</a>
+                    <a href="tentang.html" class="hover:text-serena-mocha transition">Kenyamanan Tidur</a>
+                    <a href="artikel.html" class="hover:text-serena-mocha transition">Jurnal Santai</a>
+                    <a href="kontak.html" class="hover:text-serena-mocha transition">Kado & Reseller</a>
+                </nav>
+
+                <div class="hidden sm:flex items-center gap-3">
+                    <a href="https://wa.me/6281234567890?text=Halo%20Serena%20Lounge,%20saya%20mau%20pesan%20piyama%20dari%20katalog." target="_blank" class="inline-flex items-center gap-2 bg-serena-mocha hover:bg-serena-mochadark text-white text-xs font-semibold tracking-wider px-5 py-2.5 rounded-full transition-all shadow-sm">
+                        <i class="fa-brands fa-whatsapp text-emerald-300"></i>
+                        <span>Pesan via WA</span>
+                    </a>
+                </div>
+
+                <button id="mobileMenuBtn" class="lg:hidden p-2 text-serena-mochadark hover:text-serena-blush focus:outline-none" aria-label="Toggle Menu">
+                    <i id="menuIcon" class="fa-solid fa-bars-staggered text-xl"></i>
+                </button>
+            </div>
+        </div>
+
+        <!-- Mobile Drawer -->
+        <div id="mobileMenu" class="hidden lg:hidden bg-serena-sand border-b border-serena-border px-4 py-5 space-y-3">
+            <a href="index.html" class="block text-xs font-semibold uppercase tracking-widest text-stone-700 hover:text-serena-mocha py-2 border-b border-serena-warm">Beranda Utama</a>
+            <a href="katalog.html" class="block text-xs font-bold uppercase tracking-widest text-serena-mochadark py-2 border-b border-serena-warm">Katalog Piyama & Daster</a>
+            <a href="detail.html" class="block text-xs font-semibold uppercase tracking-widest text-stone-700 hover:text-serena-mocha py-2 border-b border-serena-warm">Sensasi Dingin Rayon & Silk</a>
+            <a href="tentang.html" class="block text-xs font-semibold uppercase tracking-widest text-stone-700 hover:text-serena-mocha py-2 border-b border-serena-warm">Filosofi Istirahat Nyenyak</a>
+            <a href="artikel.html" class="block text-xs font-semibold uppercase tracking-widest text-stone-700 hover:text-serena-mocha py-2 border-b border-serena-warm">Tips Kualitas Tidur Nyenyak</a>
+            <a href="kontak.html" class="block text-xs font-semibold uppercase tracking-widest text-stone-700 hover:text-serena-mocha py-2">Kado Bridesmaid & Reseller</a>
+        </div>
+    </header>
+
+    <!-- 3. PAGE HEADER & FILTER CONTROLS -->
+    <section class="py-12 bg-serena-warm border-b border-serena-border">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="max-w-3xl">
+                <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-white border border-serena-borderdark text-serena-mocha text-xs font-semibold tracking-wider mb-3">
+                    <span class="w-2 h-2 rounded-full bg-serena-mocha"></span>
+                    <span class="uppercase tracking-widest text-[10px]">ALL LOUNGEWEAR ESSENTIALS</span>
+                </div>
+                <h1 class="text-3xl sm:text-5xl font-serif font-bold text-serena-mochadark tracking-tight">
+                    Koleksi Piyama & Busana Santai
+                </h1>
+                <p class="text-xs sm:text-sm text-serena-muted mt-2 leading-relaxed font-light">
+                    Pilihan piyama sutra satin lembut, daster rayon dingin, kimono robe anggun, dan pakaian dalam seamless tanpa kawat menekan.
+                </p>
+            </div>
+
+            <!-- Search & Filter Controls -->
+            <div class="mt-8 grid grid-cols-1 md:grid-cols-12 gap-4">
+                <!-- Search Box -->
+                <div class="md:col-span-6 relative">
+                    <i class="fa-solid fa-magnifying-glass absolute left-4 top-1/2 -translate-y-1/2 text-stone-400 text-xs"></i>
+                    <input type="text" id="searchInput" placeholder="Cari loungewear (misal: Piyama Silk, Daster Rayon, Kimono, Boxer, Bra)..." 
+                           class="w-full pl-10 pr-4 py-3 bg-white border border-serena-border rounded-full text-xs text-serena-text focus:outline-none focus:border-serena-mocha transition">
+                </div>
+
+                <!-- Size / Feature Filter Dropdown -->
+                <div class="md:col-span-3">
+                    <select id="sizeFilter" onchange="applyAllFilters()" class="w-full py-3 px-4 bg-white border border-serena-border rounded-full text-xs font-semibold text-stone-700 focus:outline-none focus:border-serena-mocha transition">
+                        <option value="all">Semua Ukuran / Fitur</option>
+                        <option value="allsize">All Size (LD 105–108 cm)</option>
+                        <option value="jumbo">Jumbo Size (LD 120–130 cm)</option>
+                        <option value="busui">Busui Friendly (Kancing Depan)</option>
+                    </select>
+                </div>
+
+                <!-- Fast WhatsApp Inquiry -->
+                <div class="md:col-span-3">
+                    <a href="https://wa.me/6281234567890?text=Halo%20Serena%20Lounge,%20saya%20mau%20tanya%20stok%20dan%20ukuran%20piyama." target="_blank" class="w-full h-full py-3 px-4 bg-white hover:bg-serena-warm border border-serena-borderdark rounded-full text-xs font-semibold text-serena-mochadark flex items-center justify-center gap-2 transition shadow-xs">
+                        <i class="fa-solid fa-moon text-serena-mocha"></i>
+                        <span>Konsultasi Ukuran via WA</span>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Category Pills -->
+            <div class="mt-6 flex items-center gap-2 overflow-x-auto no-scrollbar pb-2">
+                <span class="text-xs font-semibold text-serena-mocha shrink-0 mr-1 uppercase tracking-wider">Kategori:</span>
+                <button onclick="filterCategory('all')" class="cat-pill active px-4 py-2 rounded-full text-xs font-semibold tracking-wider transition bg-serena-mocha text-white" data-cat="all">
+                    SEMUA KOLEKSI
+                </button>
+                <button onclick="filterCategory('piyama')" class="cat-pill px-4 py-2 rounded-full text-xs font-semibold tracking-wider transition bg-white text-stone-700 hover:text-serena-mocha border border-serena-border" data-cat="piyama">
+                    PIYAMA SATIN SILK
+                </button>
+                <button onclick="filterCategory('daster')" class="cat-pill px-4 py-2 rounded-full text-xs font-semibold tracking-wider transition bg-white text-stone-700 hover:text-serena-mocha border border-serena-border" data-cat="daster">
+                    DASTER RAYON MODERN
+                </button>
+                <button onclick="filterCategory('robe')" class="cat-pill px-4 py-2 rounded-full text-xs font-semibold tracking-wider transition bg-white text-stone-700 hover:text-serena-mocha border border-serena-border" data-cat="robe">
+                    KIMONO ROBE SET
+                </button>
+                <button onclick="filterCategory('oneset')" class="cat-pill px-4 py-2 rounded-full text-xs font-semibold tracking-wider transition bg-white text-stone-700 hover:text-serena-mocha border border-serena-border" data-cat="oneset">
+                    ONE SET LOUNGEWEAR
+                </button>
+                <button onclick="filterCategory('underwear')" class="cat-pill px-4 py-2 rounded-full text-xs font-semibold tracking-wider transition bg-white text-stone-700 hover:text-serena-mocha border border-serena-border" data-cat="underwear">
+                    BRA TANPA KAWAT
+                </button>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- 4. PRODUCT GRID (3:4 VERTICAL RATIO) -->
+    <section class="py-16">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            
+            <div class="flex items-center justify-between mb-8">
+                <div class="text-xs text-stone-600">
+                    Menampilkan <span id="productCount" class="font-bold text-serena-mochadark">8</span> Pilihan Loungewear & Piyama Nyaman
+                </div>
+                <div class="text-xs text-serena-mocha flex items-center gap-1.5 font-semibold">
+                    <i class="fa-solid fa-snowflake text-serena-blush"></i>
+                    <span>100% Sensasi Dingin & Lembut di Kulit</span>
+                </div>
+            </div>
+
+            <!-- Grid Items -->
+            <div id="productsGrid" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+
+                <!-- ITEM 1: Serena Silk Satin Long Pajamas -->
+                <div class="product-item bg-white rounded-3xl border border-serena-border p-4 flex flex-col justify-between cozy-card" 
+                     data-cat="piyama" data-size="allsize,jumbo,busui" data-title="Serena Silk Satin Long Pajamas Setelan Piyama Sutra Panjang Busui">
+                    <div>
+                        <div class="aspect-[3/4] rounded-2xl bg-serena-sand overflow-hidden mb-3 relative group">
+                            <img src="https://images.unsplash.com/photo-1512436991641-6745cdb1723f?auto=format&fit=crop&w=600&q=80" alt="Silk Satin Pajamas" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+                            <span class="absolute top-2.5 left-2.5 bg-serena-mocha text-white text-[8px] font-bold px-2 py-0.5 rounded-full uppercase">
+                                SATIN SILK
+                            </span>
+                        </div>
+
+                        <div class="flex items-center gap-1.5 mb-1.5 text-[10px] text-serena-blush font-bold uppercase">
+                            <i class="fa-solid fa-snowflake"></i>
+                            <span>Cool-Touch Effect</span>
+                        </div>
+
+                        <h3 class="font-serif font-bold text-base text-serena-mochadark leading-snug">Serena Silk Satin Long Pajamas</h3>
+                        <p class="text-xs text-serena-muted mt-1 line-clamp-1 font-light">Setelan piyama lengan panjang berkilau mewah dengan kancing depan.</p>
+                        
+                        <div class="mt-2 text-[11px] text-stone-500">
+                            <span>Warna: Oat Cream • Rose Blush</span>
+                        </div>
+                    </div>
+
+                    <div class="mt-4 pt-3 border-t border-serena-border flex items-center justify-between">
+                        <div>
+                            <span class="text-[10px] text-serena-muted block font-light">Harga</span>
+                            <span class="font-serif font-bold text-sm text-serena-mochadark">Rp 169.000</span>
+                        </div>
+                        <div class="flex items-center gap-1">
+                            <a href="detail.html" class="p-2 rounded-full bg-serena-sand hover:bg-serena-border text-stone-800 text-xs transition" title="Lihat Detail">
+                                <i class="fa-solid fa-eye"></i>
+                            </a>
+                            <a href="https://wa.me/6281234567890?text=Halo%20Serena%20Lounge,%20saya%20mau%20pesan%20Serena%20Silk%20Satin%20Pajamas%20(Rp%20169.000)." target="_blank" class="px-3 py-1.5 rounded-full bg-serena-mocha hover:bg-serena-mochadark text-white text-xs font-semibold transition">
+                                Pesan WA
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- ITEM 2: Astrid Flare Rayon Home Dress -->
+                <div class="product-item bg-white rounded-3xl border border-serena-border p-4 flex flex-col justify-between cozy-card" 
+                     data-cat="daster" data-size="allsize,jumbo,busui" data-title="Astrid Modern Flare Rayon Home Dress Daster Adem Kekinian">
+                    <div>
+                        <div class="aspect-[3/4] rounded-2xl bg-serena-sand overflow-hidden mb-3 relative group">
+                            <img src="https://images.unsplash.com/photo-1540555700478-4be289fbecef?auto=format&fit=crop&w=600&q=80" alt="Rayon Home Dress" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+                            <span class="absolute top-2.5 left-2.5 bg-serena-sage text-white text-[8px] font-bold px-2 py-0.5 rounded-full uppercase">
+                                RAYON TWILL
+                            </span>
+                        </div>
+
+                        <div class="flex items-center gap-1.5 mb-1.5 text-[10px] text-serena-sage font-bold uppercase">
+                            <i class="fa-solid fa-leaf"></i>
+                            <span>100% Breathable</span>
+                        </div>
+
+                        <h3 class="font-serif font-bold text-base text-serena-mochadark leading-snug">Astrid Flare Rayon Home Dress</h3>
+                        <p class="text-xs text-serena-muted mt-1 line-clamp-1 font-light">Daster modern potongan midi anggun dengan saku samping tersembunyi.</p>
+                        
+                        <div class="mt-2 text-[11px] text-stone-500">
+                            <span>Warna: Sage Olive • Terrazzo Cream</span>
+                        </div>
+                    </div>
+
+                    <div class="mt-4 pt-3 border-t border-serena-border flex items-center justify-between">
+                        <div>
+                            <span class="text-[10px] text-serena-muted block font-light">Harga</span>
+                            <span class="font-serif font-bold text-sm text-serena-mochadark">Rp 129.000</span>
+                        </div>
+                        <div class="flex items-center gap-1">
+                            <a href="detail.html" class="p-2 rounded-full bg-serena-sand hover:bg-serena-border text-stone-800 text-xs transition">
+                                <i class="fa-solid fa-eye"></i>
+                            </a>
+                            <a href="https://wa.me/6281234567890?text=Halo%20Serena%20Lounge,%20saya%20mau%20pesan%20Astrid%20Home%20Dress%20(Rp%20129.000)." target="_blank" class="px-3 py-1.5 rounded-full bg-serena-mocha hover:bg-serena-mochadark text-white text-xs font-semibold transition">
+                                Pesan WA
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- ITEM 3: Freya Silk Kimono Robe Set -->
+                <div class="product-item bg-white rounded-3xl border border-serena-border p-4 flex flex-col justify-between cozy-card" 
+                     data-cat="robe" data-size="allsize" data-title="Freya Silk Kimono Robe Set Jubah Tidur Daster Satin Mewah">
+                    <div>
+                        <div class="aspect-[3/4] rounded-2xl bg-serena-sand overflow-hidden mb-3 relative group">
+                            <img src="https://images.unsplash.com/photo-1518611012118-696072aa579a?auto=format&fit=crop&w=600&q=80" alt="Kimono Robe" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+                            <span class="absolute top-2.5 left-2.5 bg-serena-blush text-white text-[8px] font-bold px-2 py-0.5 rounded-full uppercase">
+                                2-IN-1 ROBE
+                            </span>
+                        </div>
+
+                        <div class="flex items-center gap-1.5 mb-1.5 text-[10px] text-serena-blush font-bold uppercase">
+                            <i class="fa-solid fa-spa"></i>
+                            <span>Intimate Luxury</span>
+                        </div>
+
+                        <h3 class="font-serif font-bold text-base text-serena-mochadark leading-snug">Freya Silk Kimono Robe & Slip</h3>
+                        <p class="text-xs text-serena-muted mt-1 line-clamp-1 font-light">Paket daster tali spaghetti dengan outer jubah kimono satin feminin.</p>
+                        
+                        <div class="mt-2 text-[11px] text-stone-500">
+                            <span>Warna: Champagne • Dusty Mauve</span>
+                        </div>
+                    </div>
+
+                    <div class="mt-4 pt-3 border-t border-serena-border flex items-center justify-between">
+                        <div>
+                            <span class="text-[10px] text-serena-muted block font-light">Harga Paket</span>
+                            <span class="font-serif font-bold text-sm text-serena-mochadark">Rp 199.000</span>
+                        </div>
+                        <div class="flex items-center gap-1">
+                            <a href="detail.html" class="p-2 rounded-full bg-serena-sand hover:bg-serena-border text-stone-800 text-xs transition">
+                                <i class="fa-solid fa-eye"></i>
+                            </a>
+                            <a href="https://wa.me/6281234567890?text=Halo%20Serena%20Lounge,%20saya%20mau%20pesan%20Freya%20Kimono%20Set%20(Rp%20199.000)." target="_blank" class="px-3 py-1.5 rounded-full bg-serena-mocha hover:bg-serena-mochadark text-white text-xs font-semibold transition">
+                                Pesan WA
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- ITEM 4: Nordic Cotton Waffle One Set -->
+                <div class="product-item bg-white rounded-3xl border border-serena-border p-4 flex flex-col justify-between cozy-card" 
+                     data-cat="oneset" data-size="allsize,jumbo" data-title="Nordic Cotton Waffle One Set Setelan Santai Rumah Katun Wafel">
+                    <div>
+                        <div class="aspect-[3/4] rounded-2xl bg-serena-sand overflow-hidden mb-3 relative group">
+                            <img src="https://images.unsplash.com/photo-1515488042361-ee00e0ddd4e4?auto=format&fit=crop&w=600&q=80" alt="Waffle One Set" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+                            <span class="absolute top-2.5 left-2.5 bg-serena-mocha text-white text-[8px] font-bold px-2 py-0.5 rounded-full uppercase">
+                                WAFFLE COTTON
+                            </span>
+                        </div>
+
+                        <div class="flex items-center gap-1.5 mb-1.5 text-[10px] text-serena-mocha font-bold uppercase">
+                            <i class="fa-solid fa-mug-saucer"></i>
+                            <span>All-Day Casual</span>
+                        </div>
+
+                        <h3 class="font-serif font-bold text-base text-serena-mochadark leading-snug">Nordic Waffle Loungewear Set</h3>
+                        <p class="text-xs text-serena-muted mt-1 line-clamp-1 font-light">Setelan kaos lengan pendek bertekstur wafel dengan celana pendek santai.</p>
+                        
+                        <div class="mt-2 text-[11px] text-stone-500">
+                            <span>Warna: Warm Latte • Charcoal</span>
+                        </div>
+                    </div>
+
+                    <div class="mt-4 pt-3 border-t border-serena-border flex items-center justify-between">
+                        <div>
+                            <span class="text-[10px] text-serena-muted block font-light">Harga</span>
+                            <span class="font-serif font-bold text-sm text-serena-mochadark">Rp 149.000</span>
+                        </div>
+                        <div class="flex items-center gap-1">
+                            <a href="detail.html" class="p-2 rounded-full bg-serena-sand hover:bg-serena-border text-stone-800 text-xs transition">
+                                <i class="fa-solid fa-eye"></i>
+                            </a>
+                            <a href="https://wa.me/6281234567890?text=Halo%20Serena%20Lounge,%20saya%20mau%20pesan%20Nordic%20Waffle%20Set%20(Rp%20149.000)." target="_blank" class="px-3 py-1.5 rounded-full bg-serena-mocha hover:bg-serena-mochadark text-white text-xs font-semibold transition">
+                                Pesan WA
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- ITEM 5: Serena Short-Sleeve Pajamas Set -->
+                <div class="product-item bg-white rounded-3xl border border-serena-border p-4 flex flex-col justify-between cozy-card" 
+                     data-cat="piyama" data-size="allsize,busui" data-title="Serena Short Sleeve Satin Pajamas Setelan Piyama Lengan Pendek Celana Pendek">
+                    <div>
+                        <div class="aspect-[3/4] rounded-2xl bg-serena-sand overflow-hidden mb-3 relative group">
+                            <img src="https://images.unsplash.com/photo-1512436991641-6745cdb1723f?auto=format&fit=crop&w=600&q=80" alt="Short Sleeve Pajamas" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+                            <span class="absolute top-2.5 left-2.5 bg-serena-mocha text-white text-[8px] font-bold px-2 py-0.5 rounded-full uppercase">
+                                SHORT SET
+                            </span>
+                        </div>
+
+                        <div class="flex items-center gap-1.5 mb-1.5 text-[10px] text-serena-blush font-bold uppercase">
+                            <i class="fa-solid fa-snowflake"></i>
+                            <span>Ekstra Sejuk</span>
+                        </div>
+
+                        <h3 class="font-serif font-bold text-base text-serena-mochadark leading-snug">Serena Silk Short Pajamas Set</h3>
+                        <p class="text-xs text-serena-muted mt-1 line-clamp-1 font-light">Setelan piyama lengan pendek dan celana pendek satin silk untuk tidur sejuk.</p>
+                        
+                        <div class="mt-2 text-[11px] text-stone-500">
+                            <span>Warna: Midnight Navy • Pearl White</span>
+                        </div>
+                    </div>
+
+                    <div class="mt-4 pt-3 border-t border-serena-border flex items-center justify-between">
+                        <div>
+                            <span class="text-[10px] text-serena-muted block font-light">Harga</span>
+                            <span class="font-serif font-bold text-sm text-serena-mochadark">Rp 145.000</span>
+                        </div>
+                        <div class="flex items-center gap-1">
+                            <a href="detail.html" class="p-2 rounded-full bg-serena-sand hover:bg-serena-border text-stone-800 text-xs transition">
+                                <i class="fa-solid fa-eye"></i>
+                            </a>
+                            <a href="https://wa.me/6281234567890?text=Halo%20Serena%20Lounge,%20saya%20mau%20pesan%20Serena%20Short%20Pajamas%20(Rp%20145.000)." target="_blank" class="px-3 py-1.5 rounded-full bg-serena-mocha hover:bg-serena-mochadark text-white text-xs font-semibold transition">
+                                Pesan WA
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- ITEM 6: CloudFeel Seamless Wireless Bra -->
+                <div class="product-item bg-white rounded-3xl border border-serena-border p-4 flex flex-col justify-between cozy-card" 
+                     data-cat="underwear" data-size="allsize" data-title="CloudFeel Seamless Wireless Bra Bh Tanpa Kawat Busa Lembut">
+                    <div>
+                        <div class="aspect-[3/4] rounded-2xl bg-serena-sand overflow-hidden mb-3 relative group">
+                            <img src="https://images.unsplash.com/photo-1518611012118-696072aa579a?auto=format&fit=crop&w=600&q=80" alt="Wireless Bra" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+                            <span class="absolute top-2.5 left-2.5 bg-serena-blush text-white text-[8px] font-bold px-2 py-0.5 rounded-full uppercase">
+                                WIRELESS BRA
+                            </span>
+                        </div>
+
+                        <div class="flex items-center gap-1.5 mb-1.5 text-[10px] text-serena-blush font-bold uppercase">
+                            <i class="fa-solid fa-feather"></i>
+                            <span>Zero Pressure</span>
+                        </div>
+
+                        <h3 class="font-serif font-bold text-base text-serena-mochadark leading-snug">CloudFeel Seamless Wireless Bra</h3>
+                        <p class="text-xs text-serena-muted mt-1 line-clamp-1 font-light">Bra tanpa kawat dengan busa latex berpori yang nyaman dipakai tidur.</p>
+                        
+                        <div class="mt-2 text-[11px] text-stone-500">
+                            <span>Warna: Nude Beige • Dusty Rose</span>
+                        </div>
+                    </div>
+
+                    <div class="mt-4 pt-3 border-t border-serena-border flex items-center justify-between">
+                        <div>
+                            <span class="text-[10px] text-serena-muted block font-light">Harga</span>
+                            <span class="font-serif font-bold text-sm text-serena-mochadark">Rp 89.000</span>
+                        </div>
+                        <div class="flex items-center gap-1">
+                            <a href="detail.html" class="p-2 rounded-full bg-serena-sand hover:bg-serena-border text-stone-800 text-xs transition">
+                                <i class="fa-solid fa-eye"></i>
+                            </a>
+                            <a href="https://wa.me/6281234567890?text=Halo%20Serena%20Lounge,%20saya%20mau%20pesan%20CloudFeel%20Bra%20(Rp%2089.000)." target="_blank" class="px-3 py-1.5 rounded-full bg-serena-mocha hover:bg-serena-mochadark text-white text-xs font-semibold transition">
+                                Pesan WA
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- ITEM 7: Modal Silk Relaxed Boxer Shorts -->
+                <div class="product-item bg-white rounded-3xl border border-serena-border p-4 flex flex-col justify-between cozy-card" 
+                     data-cat="underwear" data-size="allsize,jumbo" data-title="Modal Silk Relaxed Boxer Shorts Celana Pendek Santai Rumah">
+                    <div>
+                        <div class="aspect-[3/4] rounded-2xl bg-serena-sand overflow-hidden mb-3 relative group">
+                            <img src="https://images.unsplash.com/photo-1540555700478-4be289fbecef?auto=format&fit=crop&w=600&q=80" alt="Boxer Shorts" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+                            <span class="absolute top-2.5 left-2.5 bg-serena-sage text-white text-[8px] font-bold px-2 py-0.5 rounded-full uppercase">
+                                TENCEL MODAL
+                            </span>
+                        </div>
+
+                        <div class="flex items-center gap-1.5 mb-1.5 text-[10px] text-serena-sage font-bold uppercase">
+                            <i class="fa-solid fa-snowflake"></i>
+                            <span>Super Lentur</span>
+                        </div>
+
+                        <h3 class="font-serif font-bold text-base text-serena-mochadark leading-snug">Modal Silk Cozy Boxer Shorts</h3>
+                        <p class="text-xs text-serena-muted mt-1 line-clamp-1 font-light">Celana boxer santai berbahan tencel modal super lentur anti-sesak di pinggang.</p>
+                        
+                        <div class="mt-2 text-[11px] text-stone-500">
+                            <span>Warna: Sage Green • Sand Beige</span>
+                        </div>
+                    </div>
+
+                    <div class="mt-4 pt-3 border-t border-serena-border flex items-center justify-between">
+                        <div>
+                            <span class="text-[10px] text-serena-muted block font-light">Harga</span>
+                            <span class="font-serif font-bold text-sm text-serena-mochadark">Rp 69.000</span>
+                        </div>
+                        <div class="flex items-center gap-1">
+                            <a href="detail.html" class="p-2 rounded-full bg-serena-sand hover:bg-serena-border text-stone-800 text-xs transition">
+                                <i class="fa-solid fa-eye"></i>
+                            </a>
+                            <a href="https://wa.me/6281234567890?text=Halo%20Serena%20Lounge,%20saya%20mau%20pesan%20Modal%20Boxer%20Shorts%20(Rp%2069.000)." target="_blank" class="px-3 py-1.5 rounded-full bg-serena-mocha hover:bg-serena-mochadark text-white text-xs font-semibold transition">
+                                Pesan WA
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- ITEM 8: Luxury Bridesmaid Gift Box Set -->
+                <div class="product-item bg-white rounded-3xl border border-serena-border p-4 flex flex-col justify-between cozy-card" 
+                     data-cat="piyama" data-size="allsize,busui" data-title="Luxury Bridesmaid Gift Box Set Paket Piyama Kado Hantaran Hardbox">
+                    <div>
+                        <div class="aspect-[3/4] rounded-2xl bg-serena-sand overflow-hidden mb-3 relative group">
+                            <img src="https://images.unsplash.com/photo-1512436991641-6745cdb1723f?auto=format&fit=crop&w=600&q=80" alt="Gift Box Set" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+                            <span class="absolute top-2.5 left-2.5 bg-serena-blush text-white text-[8px] font-bold px-2 py-0.5 rounded-full uppercase">
+                                HARDBOX SET
+                            </span>
+                        </div>
+
+                        <div class="flex items-center gap-1.5 mb-1.5 text-[10px] text-serena-blush font-bold uppercase">
+                            <i class="fa-solid fa-gift"></i>
+                            <span>Free Custom Card</span>
+                        </div>
+
+                        <h3 class="font-serif font-bold text-base text-serena-mochadark leading-snug">Luxury Bridesmaid Gift Box Set</h3>
+                        <p class="text-xs text-serena-muted mt-1 line-clamp-1 font-light">Paket piyama satin dalam hardbox berpita mewah dan kartu ucapan kustom.</p>
+                        
+                        <div class="mt-2 text-[11px] text-stone-500">
+                            <span>Isi: Piyama Satin + Scrunchie Sutra + Box</span>
+                        </div>
+                    </div>
+
+                    <div class="mt-4 pt-3 border-t border-serena-border flex items-center justify-between">
+                        <div>
+                            <span class="text-[10px] text-serena-muted block font-light">Harga Paket</span>
+                            <span class="font-serif font-bold text-sm text-serena-mochadark">Rp 195.000</span>
+                        </div>
+                        <div class="flex items-center gap-1">
+                            <a href="detail.html" class="p-2 rounded-full bg-serena-sand hover:bg-serena-border text-stone-800 text-xs transition">
+                                <i class="fa-solid fa-eye"></i>
+                            </a>
+                            <a href="https://wa.me/6281234567890?text=Halo%20Serena%20Lounge,%20saya%20mau%20pesan%20Bridesmaid%20Gift%20Box%20(Rp%20195.000)." target="_blank" class="px-3 py-1.5 rounded-full bg-serena-mocha hover:bg-serena-mochadark text-white text-xs font-semibold transition">
+                                Pesan WA
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- Empty State -->
+            <div id="noResults" class="hidden text-center py-16 bg-white rounded-3xl border border-serena-border mt-8">
+                <i class="fa-solid fa-moon text-3xl text-serena-mocha mb-3"></i>
+                <h4 class="text-base font-serif font-bold text-serena-mochadark">Pakaian Loungewear Tidak Ditemukan</h4>
+                <p class="text-xs text-serena-muted mt-1 max-w-sm mx-auto font-light">
+                    Coba ganti kata kunci pencarian atau klik tombol reset filter untuk melihat seluruh koleksi piyama kami.
+                </p>
+                <button onclick="resetFilters()" class="mt-4 px-6 py-2.5 bg-serena-mocha text-white text-xs font-semibold uppercase tracking-wider rounded-full hover:bg-serena-mochadark transition">
+                    Reset Filter
+                </button>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- 5. FOOTER -->
+    <footer class="bg-serena-sand text-stone-700 border-t border-serena-border pt-14 pb-28">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex flex-col md:flex-row items-center justify-between gap-6 border-b border-serena-border pb-8">
+                <div class="flex flex-col">
+                    <span class="text-lg font-serif font-bold tracking-[0.14em] text-serena-mochadark uppercase">
+                        SERENA
+                    </span>
+                    <span class="text-[8px] tracking-[0.35em] text-serena-mochalight uppercase mt-0.5 font-semibold">
+                        Lounge & Cozy Sleepwear
+                    </span>
+                </div>
+                <div class="flex flex-wrap gap-6 text-xs text-stone-700 font-semibold uppercase tracking-wider">
+                    <a href="index.html" class="hover:text-serena-mocha">Beranda</a>
+                    <a href="katalog.html" class="text-serena-mochadark font-bold">Katalog</a>
+                    <a href="detail.html" class="hover:text-serena-mocha">Detail</a>
+                    <a href="tentang.html" class="hover:text-serena-mocha">Kenyamanan</a>
+                    <a href="artikel.html" class="hover:text-serena-mocha">Jurnal</a>
+                    <a href="kontak.html" class="hover:text-serena-mocha">Kado</a>
+                </div>
+            </div>
+            <div class="mt-6 flex flex-col sm:flex-row items-center justify-between text-xs text-stone-500">
+                <p>&copy; 2026 SERENA LOUNGE & COZY SLEEPWEAR. All Rights Reserved.</p>
+                <p class="text-[11px] mt-2 sm:mt-0">Lentera Pasar Production Template — Scandinavian Loungewear</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- FLOATING WHATSAPP BUTTON (bottom-24) -->
+    <a href="https://wa.me/6281234567890?text=Halo%20Serena%20Lounge,%20saya%20ingin%20konsultasi%20piyama." 
+       target="_blank" 
+       class="fixed bottom-24 right-6 z-50 group flex items-center gap-3 bg-white hover:bg-serena-warm text-serena-text px-4 py-3 rounded-full border border-serena-border shadow-2xl hover:border-serena-mocha transition-all duration-300">
+        <span class="relative flex h-3 w-3">
+            <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-emerald-400 opacity-75"></span>
+            <span class="relative inline-flex rounded-full h-3 w-3 bg-emerald-500"></span>
+        </span>
+        <i class="fa-brands fa-whatsapp text-2xl text-emerald-600"></i>
+        <div class="text-left hidden sm:block pr-1">
+            <div class="text-[10px] text-serena-blush font-bold uppercase tracking-wider leading-none">Comfort Stylist</div>
+            <span class="font-bold text-xs text-serena-mochadark">Konsultasi Piyama WA</span>
+        </div>
+    </a>
+
+    <!-- LENTERA PASAR - STICKY DEMO & SALES BAR (fixed bottom-4) -->
+    <div class="fixed bottom-4 left-1/2 -translate-x-1/2 z-50 w-[95%] max-w-4xl bg-slate-900/95 backdrop-blur-md text-white p-3.5 md:p-4 rounded-2xl shadow-2xl border border-slate-700/80 transition-all duration-300">
+      <div class="flex flex-col md:flex-row items-center justify-between gap-3 md:gap-4">
+        <div class="flex items-center gap-3 w-full md:w-auto">
+          <div class="w-10 h-10 rounded-xl bg-amber-500/20 border border-amber-500/40 flex items-center justify-center shrink-0">
+            <svg class="w-5 h-5 text-amber-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z" />
+            </svg>
+          </div>
+          <div>
+            <div class="flex items-center gap-2">
+              <span class="font-bold text-sm text-white">Lentera Pasar Engine</span>
+              <span class="text-[10px] bg-amber-500/20 text-amber-200 border border-amber-500/30 px-2 py-0.5 rounded-full font-medium">Scandinavian Loungewear Template</span>
+            </div>
+            <p class="text-xs text-slate-300 hidden sm:block">
+              Terima beres: Website responsif + Panel input produk sendiri + Dikelola tim iklan profesional.
+            </p>
+          </div>
+        </div>
+
+        <div class="flex items-center justify-between md:justify-end gap-3 w-full md:w-auto">
+          <a href="https://wa.me/6281234567890?text=Halo%20Tim%20Lentera%20Pasar,%20saya%20tertarik%20menggunakan%20template%20website%20Loungewear%20Scandinavian%20ini%20lengkap%20dengan%20Admin%20Panel%20dan%20Jasa%20Iklannya." 
+             target="_blank"
+             class="w-full md:w-auto inline-flex items-center justify-center gap-2 bg-gradient-to-r from-amber-700 to-rose-700 hover:from-amber-600 hover:to-rose-600 text-white text-xs md:text-sm font-semibold px-5 py-2.5 rounded-xl shadow-lg transition-all hover:scale-105 shrink-0">
+            <span>Gunakan Template Ini</span>
+            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3" />
+            </svg>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <!-- JAVASCRIPT FILTER LOGIC -->
+    <script>
+        let currentCat = 'all';
+
+        function filterCategory(cat) {
+            currentCat = cat;
+            document.querySelectorAll('.cat-pill').forEach(btn => {
+                if (btn.dataset.cat === cat) {
+                    btn.classList.remove('bg-white', 'text-stone-700', 'border');
+                    btn.classList.add('bg-serena-mocha', 'text-white');
+                } else {
+                    btn.classList.remove('bg-serena-mocha', 'text-white');
+                    btn.classList.add('bg-white', 'text-stone-700', 'border');
+                }
+            });
+            applyAllFilters();
+        }
+
+        document.getElementById('searchInput').addEventListener('input', applyAllFilters);
+
+        function applyAllFilters() {
+            const query = document.getElementById('searchInput').value.toLowerCase().trim();
+            const size = document.getElementById('sizeFilter').value;
+            const items = document.querySelectorAll('.product-item');
+            let visibleCount = 0;
+
+            items.forEach(item => {
+                const itemCat = item.dataset.cat;
+                const itemSizes = (item.dataset.size || '').split(',');
+                const itemTitle = (item.dataset.title || '').toLowerCase();
+
+                const matchCat = (currentCat === 'all' || itemCat === currentCat);
+                const matchSize = (size === 'all' || itemSizes.includes(size));
+                const matchQuery = (!query || itemTitle.includes(query));
+
+                if (matchCat && matchSize && matchQuery) {
+                    item.classList.remove('hidden');
+                    visibleCount++;
+                } else {
+                    item.classList.add('hidden');
+                }
+            });
+
+            document.getElementById('productCount').innerText = visibleCount;
+            const noRes = document.getElementById('noResults');
+            if (visibleCount === 0) {
+                noRes.classList.remove('hidden');
+            } else {
+                noRes.classList.add('hidden');
+            }
+        }
+
+        function resetFilters() {
+            document.getElementById('searchInput').value = '';
+            document.getElementById('sizeFilter').value = 'all';
+            filterCategory('all');
+        }
+
+        // Mobile menu toggle
+        const mobileMenuBtn = document.getElementById('mobileMenuBtn');
+        const mobileMenu = document.getElementById('mobileMenu');
+        const menuIcon = document.getElementById('menuIcon');
+
+        mobileMenuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+            if (mobileMenu.classList.contains('hidden')) {
+                menuIcon.classList.remove('fa-xmark');
+                menuIcon.classList.add('fa-bars-staggered');
+            } else {
+                menuIcon.classList.remove('fa-bars-staggered');
+                menuIcon.classList.add('fa-xmark');
+            }
+        });
+    </script>
+</body>
+</html>
