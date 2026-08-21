@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html lang="id" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Konsultasi Dermatologi & Layanan Pasien — AETHERIA CLINICAL LAB</title>
+    <meta name="description" content="Layanan konsultasi pemilihan formula skincare langsung dengan Beauty Advisor & Tim Dermatologi Aetheria Lab via WhatsApp. Respon cepat di bawah 5 menit.">
+    
+    <!-- Google Fonts: Inter & JetBrains Mono -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        lab: {
+                            pure: '#FFFFFF',
+                            cold: '#F8FAFC',
+                            surface: '#F1F5F9',
+                            muted: '#E2E8F0',
+                            border: '#CBD5E1',
+                            subtle: '#94A3B8',
+                            slate: '#64748B',
+                            navy: '#0F172A',
+                            deep: '#0B1120',
+                            cyan: '#0284C7',
+                            cyanlight: '#E0F2FE',
+                            cyanglow: '#38BDF8',
+                            emerald: '#10B981',
+                            amber: '#F59E0B'
+                        }
+                    },
+                    fontFamily: {
+                        sans: ['"Inter"', 'sans-serif'],
+                        mono: ['"JetBrains Mono"', 'monospace'],
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        .no-scrollbar::-webkit-scrollbar { display: none; }
+        .no-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
+        
+        .lab-grid-bg {
+            background-image: linear-gradient(to right, rgba(203, 213, 225, 0.25) 1px, transparent 1px),
+                              linear-gradient(to bottom, rgba(203, 213, 225, 0.25) 1px, transparent 1px);
+            background-size: 32px 32px;
+        }
+
+        .clinical-glass {
+            background: rgba(255, 255, 255, 0.9);
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+        }
+    </style>
+</head>
+<body class="bg-lab-cold text-lab-navy font-sans antialiased selection:bg-lab-cyan selection:text-white">
+
+    <!-- 1. TOP BAR -->
+    <div class="bg-lab-navy text-white text-xs py-2 px-4 border-b border-lab-slate/20">
+        <div class="max-w-7xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-2 text-center sm:text-left font-mono">
+            <div class="flex items-center justify-center gap-2">
+                <span class="inline-flex items-center gap-1.5 px-2 py-0.5 rounded-full bg-emerald-500/20 text-emerald-400 text-[10px] font-semibold border border-emerald-500/40">
+                    <span class="w-1.5 h-1.5 rounded-full bg-emerald-400 animate-ping"></span>
+                    DERM CS ONLINE LIVE
+                </span>
+                <span class="text-slate-300 font-sans text-xs">Konsultasi Resep Dosis Skincare & Tata Cara Layering Gratis</span>
+            </div>
+            <div class="flex items-center gap-4 text-[11px] text-slate-300">
+                <span>Jam Layanan: 08.00 - 21.00 WIB</span>
+                <span class="text-slate-600">|</span>
+                <a href="katalog.html" class="text-lab-cyanglow hover:text-white underline font-sans transition">Katalog Produk &rarr;</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- 2. NAVBAR -->
+    <header class="sticky top-0 z-40 bg-white/95 clinical-glass border-b border-lab-border">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-20">
+                
+                <a href="index.html" class="flex items-center gap-3.5 group">
+                    <div class="w-11 h-11 rounded-lg bg-lab-navy flex items-center justify-center text-white text-xl group-hover:bg-lab-cyan transition-colors shadow-sm">
+                        <i class="fa-solid fa-microscope text-lab-cyanglow"></i>
+                    </div>
+                    <div>
+                        <span class="text-lg sm:text-xl font-bold tracking-tight text-lab-navy flex items-center gap-1.5 leading-none">
+                            AETHERIA <span class="text-xs font-mono font-semibold px-1.5 py-0.5 bg-lab-surface text-lab-cyan rounded border border-lab-border">LAB</span>
+                        </span>
+                        <span class="text-[10px] font-mono tracking-widest text-lab-slate uppercase block mt-1">
+                            Scientific Derm-Cosmetics
+                        </span>
+                    </div>
+                </a>
+
+                <nav class="hidden lg:flex items-center gap-7 text-xs font-semibold tracking-wider uppercase text-lab-slate">
+                    <a href="index.html" class="hover:text-lab-navy transition">Beranda</a>
+                    <a href="katalog.html" class="hover:text-lab-navy transition">Katalog Formula</a>
+                    <a href="detail.html" class="hover:text-lab-navy transition">Data Sheet Produk</a>
+                    <a href="tentang.html" class="hover:text-lab-navy transition">Standar Lab & BPOM</a>
+                    <a href="artikel.html" class="hover:text-lab-navy transition">Jurnal Kulit</a>
+                    <a href="kontak.html" class="text-lab-cyan border-b-2 border-lab-cyan pb-1">Konsultasi Derm</a>
+                </nav>
+
+                <div class="hidden sm:flex items-center gap-3">
+                    <a href="https://wa.me/6281234567890?text=Halo%20Aetheria%20Clinical%20Lab,%20saya%20ingin%20konsultasi%20masalah%20kulit." target="_blank" class="inline-flex items-center gap-2 bg-lab-navy hover:bg-lab-cyan text-white text-xs font-semibold px-4 py-2.5 rounded-lg shadow-sm transition">
+                        <i class="fa-brands fa-whatsapp text-sm text-emerald-400"></i>
+                        <span>Chat CS Medis</span>
+                    </a>
+                </div>
+
+                <button id="mobileMenuBtn" class="lg:hidden p-2 text-lab-navy hover:text-lab-cyan focus:outline-none" aria-label="Toggle Menu">
+                    <i id="menuIcon" class="fa-solid fa-bars text-xl"></i>
+                </button>
+            </div>
+        </div>
+
+        <!-- Mobile Drawer -->
+        <div id="mobileMenu" class="hidden lg:hidden bg-white border-b border-lab-border px-4 py-4 space-y-3">
+            <a href="index.html" class="block text-sm font-medium text-lab-slate hover:text-lab-navy py-2 border-b border-lab-surface">Beranda</a>
+            <a href="katalog.html" class="block text-sm font-medium text-lab-slate hover:text-lab-navy py-2 border-b border-lab-surface">Katalog Formula & Masalah Kulit</a>
+            <a href="detail.html" class="block text-sm font-medium text-lab-slate hover:text-lab-navy py-2 border-b border-lab-surface">Data Sheet & Cara Layering</a>
+            <a href="tentang.html" class="block text-sm font-medium text-lab-slate hover:text-lab-navy py-2 border-b border-lab-surface">Standar Lab & Sertifikasi BPOM</a>
+            <a href="artikel.html" class="block text-sm font-medium text-lab-slate hover:text-lab-navy py-2 border-b border-lab-surface">Jurnal & Panduan Skin Barrier</a>
+            <a href="kontak.html" class="block text-sm font-semibold text-lab-cyan py-2">Konsultasi Masalah Kulit (WA)</a>
+        </div>
+    </header>
+
+    <!-- 3. PAGE TITLE & HEADER -->
+    <section class="py-12 bg-white border-b border-lab-border lab-grid-bg">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="max-w-3xl">
+                <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-lab-surface border border-lab-border text-lab-slate text-xs font-mono mb-3">
+                    <span class="w-2 h-2 rounded-full bg-emerald-500"></span>
+                    <span>DIAGNOSIS & KONSULTASI ONLINE</span>
+                </div>
+                <h1 class="text-3xl sm:text-4xl font-extrabold text-lab-navy tracking-tight">
+                    Pusat Konsultasi Kulit & Bantuan Dosis
+                </h1>
+                <p class="text-sm text-lab-slate mt-2 leading-relaxed">
+                    Setiap tipe kulit memiliki toleransi molekuler yang berbeda. Sampaikan kondisi kulit Anda saat ini dan dapatkan arahan protokol layering yang tepat dari Beauty Advisor bersertifikasi kami.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- 4. SPLIT LAYOUT: FORM INTAKE KONSULTASI WA + INFO OPERASIONAL MEDIS -->
+    <section class="py-14">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-10">
+                
+                <!-- LEFT COLUMN: SKIN INTAKE FORM (7 Cols) -->
+                <div class="lg:col-span-7">
+                    <div class="bg-white rounded-2xl border border-lab-border p-6 sm:p-8 shadow-sm">
+                        <div class="flex items-center gap-3 mb-6 pb-4 border-b border-lab-surface">
+                            <div class="w-10 h-10 rounded-xl bg-sky-100 text-lab-cyan flex items-center justify-center text-lg">
+                                <i class="fa-solid fa-clipboard-user"></i>
+                            </div>
+                            <div>
+                                <h3 class="text-base font-bold text-lab-navy">Formulir Asesmen Masalah Kulit</h3>
+                                <p class="text-xs text-lab-slate">Isi data singkat berikut untuk menghubungkan langsung ke WhatsApp Tim Medis.</p>
+                            </div>
+                        </div>
+
+                        <!-- Interactive Form -->
+                        <form id="consultationForm" onsubmit="handleConsultationSubmit(event)" class="space-y-4 text-xs">
+                            
+                            <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                                <div>
+                                    <label class="block font-bold text-lab-navy mb-1.5 font-mono">Nama Lengkap / Panggilan:</label>
+                                    <input type="text" id="consultName" required placeholder="Contoh: Sarah Anindya" class="w-full p-3 rounded-xl border border-lab-border bg-lab-cold text-lab-navy focus:outline-none focus:border-lab-cyan font-sans text-xs">
+                                </div>
+                                <div>
+                                    <label class="block font-bold text-lab-navy mb-1.5 font-mono">Rentang Usia:</label>
+                                    <select id="consultAge" class="w-full p-3 rounded-xl border border-lab-border bg-lab-cold text-lab-navy focus:outline-none focus:border-lab-cyan font-mono text-xs">
+                                        <option value="18-24 tahun">18 - 24 Tahun (Acne & Oil Balance)</option>
+                                        <option value="25-34 tahun">25 - 34 Tahun (Early Aging & Barrier)</option>
+                                        <option value="35-44 tahun">35 - 44 Tahun (Firming & Dark Spots)</option>
+                                        <option value="45+ tahun">45+ Tahun (Cellular Deep Renewal)</option>
+                                    </select>
+                                </div>
+                            </div>
+
+                            <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                                <div>
+                                    <label class="block font-bold text-lab-navy mb-1.5 font-mono">Tipe Kulit Saat Ini:</label>
+                                    <select id="consultSkinType" class="w-full p-3 rounded-xl border border-lab-border bg-lab-cold text-lab-navy focus:outline-none focus:border-lab-cyan font-mono text-xs">
+                                        <option value="Berminyak & Acne-Prone">Berminyak & Acne-Prone</option>
+                                        <option value="Kering & Dehidrasi">Kering & Dehidrasi</option>
+                                        <option value="Sensitif & Kemerahan">Sensitif & Kemerahan (Perih)</option>
+                                        <option value="Kombinasi T-Zone">Kombinasi (T-Zone Berminyak)</option>
+                                        <option value="Normal">Normal</option>
+                                    </select>
+                                </div>
+                                <div>
+                                    <label class="block font-bold text-lab-navy mb-1.5 font-mono">Masalah Utama yang Dikeluhkan:</label>
+                                    <select id="consultConcern" class="w-full p-3 rounded-xl border border-lab-border bg-lab-cold text-lab-navy focus:outline-none focus:border-lab-cyan font-mono text-xs">
+                                        <option value="Skin barrier rusak akibat over-exfoliasi">Skin barrier rusak / perih bersisik</option>
+                                        <option value="Jerawat aktif & komedo pori tersumbat">Jerawat aktif & komedo menumpuk</option>
+                                        <option value="Noda bekas jerawat hitam/merah (PIE/PIH)">Noda bekas jerawat (PIE/PIH membandel)</option>
+                                        <option value="Garis halus & kulit kendur kurang kencang">Garis halus & hilangnya elastisitas</option>
+                                        <option value="Kulit kusam & hiperpigmentasi sinar matahari">Kulit kusam terbakar sinar matahari</option>
+                                    </select>
+                                </div>
+                            </div>
+
+                            <div>
+                                <label class="block font-bold text-lab-navy mb-1.5 font-mono">Produk Aktif yang Sedang Dipakai Saat Ini (Jika Ada):</label>
+                                <input type="text" id="consultCurrentRoutine" placeholder="Contoh: Baru memakai Retinol 0.5% dari brand lain, ingin ganti ke Ceramide Serum..." class="w-full p-3 rounded-xl border border-lab-border bg-lab-cold text-lab-navy focus:outline-none focus:border-lab-cyan font-sans text-xs">
+                            </div>
+
+                            <div>
+                                <label class="block font-bold text-lab-navy mb-1.5 font-mono">Pertanyaan / Pesan Tambahan:</label>
+                                <textarea id="consultNotes" rows="3" placeholder="Tuliskan keluhan reaksi kulit, riwayat alergi, atau permintaan rekomendasi dosis..." class="w-full p-3 rounded-xl border border-lab-border bg-lab-cold text-lab-navy focus:outline-none focus:border-lab-cyan font-sans text-xs"></textarea>
+                            </div>
+
+                            <div class="pt-2">
+                                <button type="submit" class="w-full py-4 px-6 rounded-xl bg-lab-navy hover:bg-lab-cyan text-white text-sm font-bold flex items-center justify-center gap-2 shadow-md transition-all">
+                                    <i class="fa-brands fa-whatsapp text-lg text-emerald-400"></i>
+                                    <span>Kirim Data ke Konsultan Dermatologi via WhatsApp</span>
+                                </button>
+                                <span class="text-[10px] font-mono text-lab-slate text-center block mt-2">
+                                    *Data privasi kesehatan kulit Anda dijamin kerahasiaannya 100%.
+                                </span>
+                            </div>
+
+                        </form>
+                    </div>
+                </div>
+
+                <!-- RIGHT COLUMN: CS SCHEDULE, CLINIC LOCATION & INFO (5 Cols) -->
+                <div class="lg:col-span-5 space-y-6">
+                    
+                    <!-- Operating Hours & Contact Channels -->
+                    <div class="bg-white rounded-2xl border border-lab-border p-6 shadow-sm space-y-4">
+                        <div class="flex items-center gap-2 font-mono text-xs font-bold text-lab-navy uppercase">
+                            <i class="fa-solid fa-clock text-lab-cyan"></i> Jadwal Layanan CS Medis
+                        </div>
+                        <div class="p-4 rounded-xl bg-lab-cold border border-lab-border text-xs font-mono space-y-2">
+                            <div class="flex justify-between text-lab-slate">
+                                <span>Senin — Jumat:</span> <strong class="text-lab-navy">08.00 — 21.00 WIB</strong>
+                            </div>
+                            <div class="flex justify-between text-lab-slate">
+                                <span>Sabtu & Minggu:</span> <strong class="text-lab-navy">09.00 — 18.00 WIB</strong>
+                            </div>
+                            <div class="flex justify-between text-lab-slate">
+                                <span>Respon Rata-rata:</span> <strong class="text-emerald-600">&lt; 5 Menit (Fast CS)</strong>
+                            </div>
+                        </div>
+
+                        <div class="space-y-2 text-xs font-mono text-lab-slate">
+                            <div class="flex items-center gap-3 p-3 rounded-lg bg-lab-surface">
+                                <i class="fa-brands fa-whatsapp text-lg text-emerald-600"></i>
+                                <div>
+                                    <span class="block text-[10px] text-lab-slate">WhatsApp Hotline Resmi</span>
+                                    <strong class="text-lab-navy">+62 812-3456-7890</strong>
+                                </div>
+                            </div>
+                            <div class="flex items-center gap-3 p-3 rounded-lg bg-lab-surface">
+                                <i class="fa-solid fa-envelope text-lg text-lab-cyan"></i>
+                                <div>
+                                    <span class="block text-[10px] text-lab-slate">Email Konsultasi Klinis</span>
+                                    <strong class="text-lab-navy">consultation@aetherialab.co.id</strong>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Flagship Lab Experience & Clinic Map -->
+                    <div class="bg-white rounded-2xl border border-lab-border p-6 shadow-sm space-y-4">
+                        <div class="flex items-center gap-2 font-mono text-xs font-bold text-lab-navy uppercase">
+                            <i class="fa-solid fa-map-location-dot text-lab-cyan"></i> Experience Center & Lab Flagship
+                        </div>
+                        <p class="text-xs text-lab-slate leading-relaxed">
+                            Kunjungi Lab Experience Center kami untuk melakukan analisis Corneometer kulit secara gratis dengan Skin Analyzer 3D.
+                        </p>
+                        <div class="text-xs font-mono text-lab-slate">
+                            <strong>Aetheria Lab Center</strong><br>
+                            Bio-Tech Innovation Tower Lt. 8<br>
+                            Jl. Mega Kuningan Barat Kav. E4, Jakarta Selatan 12950
+                        </div>
+                        <!-- Maps Simulation Box -->
+                        <div class="h-44 rounded-xl bg-slate-100 border border-lab-muted overflow-hidden relative group">
+                            <iframe 
+                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3966.2736184501744!2d106.8242!3d-6.2276!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNsKwMTMnMzkuNCJTIDEwNsKwNDknMjcuMSJF!5e0!3m2!1sen!2sid!4v1600000000000!5m2!1sen!2sid" 
+                                width="100%" 
+                                height="100%" 
+                                style="border:0;" 
+                                allowfullscreen="" 
+                                loading="lazy" 
+                                class="grayscale hover:grayscale-0 transition-all duration-500">
+                            </iframe>
+                        </div>
+                    </div>
+
+                    <!-- Shipping Guarantee -->
+                    <div class="p-4 rounded-xl bg-emerald-50 border border-emerald-200 text-xs flex items-start gap-3">
+                        <i class="fa-solid fa-box-open text-emerald-700 text-base mt-0.5"></i>
+                        <div>
+                            <strong class="text-emerald-900 block font-mono">Pengiriman Anti-Oksidasi & Termal Terjaga</strong>
+                            <span class="text-emerald-800 text-[11px]">Semua pesanan dibungkus foil termal isolator dan bubble wrap tebal agar bahan aktif tidak terpapar suhu panas saat transit ekspedisi.</span>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- 5. FOOTER -->
+    <footer class="bg-white text-lab-navy border-t border-lab-border pt-14 pb-28">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex flex-col md:flex-row items-center justify-between gap-6 border-b border-lab-surface pb-8">
+                <div class="flex items-center gap-3">
+                    <div class="w-9 h-9 rounded-lg bg-lab-navy flex items-center justify-center text-white">
+                        <i class="fa-solid fa-microscope text-lab-cyanglow text-sm"></i>
+                    </div>
+                    <span class="font-bold text-sm text-lab-navy">AETHERIA CLINICAL LAB</span>
+                </div>
+                <div class="flex flex-wrap gap-6 text-xs text-lab-slate font-medium">
+                    <a href="index.html" class="hover:text-lab-navy">Beranda</a>
+                    <a href="katalog.html" class="hover:text-lab-navy">Katalog Formula</a>
+                    <a href="detail.html" class="hover:text-lab-navy">Data Sheet</a>
+                    <a href="tentang.html" class="hover:text-lab-navy">Standar Lab</a>
+                    <a href="artikel.html" class="hover:text-lab-navy">Jurnal Kulit</a>
+                    <a href="kontak.html" class="text-lab-cyan font-bold">Konsultasi WA</a>
+                </div>
+            </div>
+            <div class="mt-6 flex flex-col sm:flex-row items-center justify-between text-xs text-lab-slate">
+                <p>&copy; 2026 AETHERIA CLINICAL LAB. Cleanroom ISO 14644-1 Certified.</p>
+                <p class="font-mono text-[11px] mt-2 sm:mt-0">Lentera Pasar Production Template</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- FLOATING WHATSAPP BUTTON (bottom-24) -->
+    <a href="https://wa.me/6281234567890?text=Halo%20Aetheria%20Clinical%20Lab,%20saya%20ingin%20konsultasi%20masalah%20kulit." 
+       target="_blank" 
+       class="fixed bottom-24 right-6 z-50 group flex items-center gap-3 bg-white hover:bg-lab-cold text-lab-navy px-4 py-3 rounded-full border border-lab-border shadow-xl hover:border-lab-cyan transition-all duration-300">
+        <span class="relative flex h-3 w-3">
+            <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-emerald-400 opacity-75"></span>
+            <span class="relative inline-flex rounded-full h-3 w-3 bg-emerald-500"></span>
+        </span>
+        <i class="fa-brands fa-whatsapp text-2xl text-emerald-600"></i>
+        <div class="text-left hidden sm:block pr-1">
+            <div class="text-[10px] text-lab-slate font-bold uppercase tracking-wider leading-none">Derm Advisor Online</div>
+            <span class="font-mono font-bold text-xs text-lab-navy">Konsultasi Kulit WA</span>
+        </div>
+    </a>
+
+    <!-- LENTERA PASAR - STICKY DEMO & SALES BAR (fixed bottom-4) -->
+    <div class="fixed bottom-4 left-1/2 -translate-x-1/2 z-50 w-[95%] max-w-4xl bg-slate-900/95 backdrop-blur-md text-white p-3.5 md:p-4 rounded-2xl shadow-2xl border border-slate-700/80 transition-all duration-300">
+      <div class="flex flex-col md:flex-row items-center justify-between gap-3 md:gap-4">
+        <div class="flex items-center gap-3 w-full md:w-auto">
+          <div class="w-10 h-10 rounded-xl bg-lab-cyan/20 border border-lab-cyan/40 flex items-center justify-center shrink-0">
+            <svg class="w-5 h-5 text-lab-cyanglow" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19.428 15.428a2 2 0 00-1.022-.547l-2.387-.477a6 6 0 00-3.86.517l-.318.158a6 6 0 01-3.86.517L6.05 15.21a2 2 0 00-1.806.547M8 4h8l-1 1v5.172a2 2 0 00.586 1.414l5 5c1.26 1.26.367 3.414-1.415 3.414H4.828c-1.782 0-2.674-2.154-1.414-3.414l5-5A2 2 0 009 10.172V5L8 4z" />
+            </svg>
+          </div>
+          <div>
+            <div class="flex items-center gap-2">
+              <span class="font-bold text-sm text-white">Lentera Pasar Engine</span>
+              <span class="text-[10px] bg-lab-cyan/30 text-lab-cyanglow border border-lab-cyan/50 px-2 py-0.5 rounded-full font-mono">Skincare Clinical Lab Template</span>
+            </div>
+            <p class="text-xs text-slate-300 hidden sm:block">
+              Terima beres: Website responsif + Panel input produk sendiri + Dikelola tim iklan profesional.
+            </p>
+          </div>
+        </div>
+
+        <div class="flex items-center justify-between md:justify-end gap-3 w-full md:w-auto">
+          <a href="https://wa.me/6281234567890?text=Halo%20Tim%20Lentera%20Pasar,%20saya%20tertarik%20menggunakan%20template%20website%20Skincare%20Clinical%20Lab%20ini%20lengkap%20dengan%20Admin%20Panel%20dan%20Jasa%20Iklannya." 
+             target="_blank"
+             class="w-full md:w-auto inline-flex items-center justify-center gap-2 bg-gradient-to-r from-lab-cyan to-blue-600 hover:from-blue-600 hover:to-blue-700 text-white text-xs md:text-sm font-semibold px-5 py-2.5 rounded-xl shadow-lg shadow-blue-500/20 transition-all hover:scale-105 shrink-0 font-sans">
+            <span>Gunakan Template Ini</span>
+            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3" />
+            </svg>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <!-- SCRIPT LOGIC -->
+    <script>
+        function handleConsultationSubmit(e) {
+            e.preventDefault();
+            const name = document.getElementById('consultName').value;
+            const age = document.getElementById('consultAge').value;
+            const skinType = document.getElementById('consultSkinType').value;
+            const concern = document.getElementById('consultConcern').value;
+            const routine = document.getElementById('consultCurrentRoutine').value || '-';
+            const notes = document.getElementById('consultNotes').value || '-';
+
+            const message = `Halo Tim Dermatologi Aetheria Lab,%0A%0ASaya ingin konsultasi kulit dengan data berikut:%0A- Nama: ${encodeURIComponent(name)}%0A- Usia: ${encodeURIComponent(age)}%0A- Tipe Kulit: ${encodeURIComponent(skinType)}%0A- Masalah Utama: ${encodeURIComponent(concern)}%0A- Skincare Saat Ini: ${encodeURIComponent(routine)}%0A- Keluhan/Pesan: ${encodeURIComponent(notes)}%0A%0AMohon rekomendasi formula dan aturan layering yang tepat. Terima kasih!`;
+
+            window.open(`https://wa.me/6281234567890?text=${message}`, '_blank');
+        }
+
+        // Mobile menu toggle
+        const mobileMenuBtn = document.getElementById('mobileMenuBtn');
+        const mobileMenu = document.getElementById('mobileMenu');
+        const menuIcon = document.getElementById('menuIcon');
+
+        mobileMenuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+            if (mobileMenu.classList.contains('hidden')) {
+                menuIcon.classList.remove('fa-xmark');
+                menuIcon.classList.add('fa-bars');
+            } else {
+                menuIcon.classList.remove('fa-bars');
+                menuIcon.classList.add('fa-xmark');
+            }
+        });
+    </script>
+</body>
+</html>

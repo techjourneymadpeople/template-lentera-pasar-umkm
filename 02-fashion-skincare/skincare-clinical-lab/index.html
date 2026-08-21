@@ -1,0 +1,1074 @@
+<!DOCTYPE html>
+<html lang="id" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AETHERIA CLINICAL LAB — Formulated by Science, Proven by Results</title>
+    <meta name="description" content="Derm-cosmetics berbasis riset laboratorium klinis. Transparansi persentase bahan aktif, sertifikasi resmi BPOM, dan uji efikasi dermatologis 14 hari.">
+    
+    <!-- Google Fonts: Inter & JetBrains Mono for Clinical Lab Aesthetics -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        lab: {
+                            pure: '#FFFFFF',
+                            cold: '#F8FAFC',
+                            surface: '#F1F5F9',
+                            muted: '#E2E8F0',
+                            border: '#CBD5E1',
+                            subtle: '#94A3B8',
+                            slate: '#64748B',
+                            navy: '#0F172A',
+                            deep: '#0B1120',
+                            cyan: '#0284C7',
+                            cyanlight: '#E0F2FE',
+                            cyanglow: '#38BDF8',
+                            emerald: '#10B981',
+                            amber: '#F59E0B'
+                        }
+                    },
+                    fontFamily: {
+                        sans: ['"Inter"', 'sans-serif'],
+                        mono: ['"JetBrains Mono"', 'monospace'],
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        .no-scrollbar::-webkit-scrollbar { display: none; }
+        .no-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
+        
+        .lab-grid-bg {
+            background-image: linear-gradient(to right, rgba(203, 213, 225, 0.25) 1px, transparent 1px),
+                              linear-gradient(to bottom, rgba(203, 213, 225, 0.25) 1px, transparent 1px);
+            background-size: 32px 32px;
+        }
+        
+        .clinical-glass {
+            background: rgba(255, 255, 255, 0.85);
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+        }
+
+        .lab-card-hover {
+            transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+        }
+        .lab-card-hover:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 16px 32px -8px rgba(15, 23, 42, 0.08), 0 0 0 1px #0284C7;
+        }
+
+        .pulse-subtle {
+            animation: pulse-ring 2.5s infinite;
+        }
+        @keyframes pulse-ring {
+            0% { box-shadow: 0 0 0 0 rgba(2, 132, 199, 0.35); }
+            70% { box-shadow: 0 0 0 10px rgba(2, 132, 199, 0); }
+            100% { box-shadow: 0 0 0 0 rgba(2, 132, 199, 0); }
+        }
+    </style>
+</head>
+<body class="bg-lab-pure text-lab-navy font-sans antialiased selection:bg-lab-cyan selection:text-white">
+
+    <!-- 1. TOP CLINICAL ALERT BAR -->
+    <div class="bg-lab-navy text-white text-xs py-2 px-4 border-b border-lab-slate/20">
+        <div class="max-w-7xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-2 text-center sm:text-left">
+            <div class="flex items-center justify-center gap-2">
+                <span class="inline-flex items-center gap-1.5 px-2 py-0.5 rounded-full bg-lab-cyan/20 text-lab-cyanglow text-[10px] font-mono font-semibold border border-lab-cyan/40">
+                    <span class="w-1.5 h-1.5 rounded-full bg-emerald-400 animate-ping"></span>
+                    CLINICAL GRADE
+                </span>
+                <span class="text-slate-300 font-normal">Semua Produk Lulus Uji Dermatologis & Terdaftar <strong class="text-white font-mono">BPOM RI Resmi</strong></span>
+            </div>
+            <div class="flex items-center gap-4 text-[11px] text-slate-300 font-mono">
+                <span class="hidden md:inline"><i class="fa-solid fa-flask-vial text-lab-cyan mr-1"></i> 0% Paraben & Alcohol</span>
+                <span class="hidden md:inline text-slate-600">|</span>
+                <span class="hidden md:inline"><i class="fa-solid fa-paw text-emerald-400 mr-1"></i> Cruelty-Free 100%</span>
+                <span class="hidden md:inline text-slate-600">|</span>
+                <a href="tentang.html" class="text-lab-cyanglow hover:text-white underline transition">Lab Report & Efficacy &rarr;</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- 2. NAVBAR MINIMALIST MEDIS -->
+    <header class="sticky top-0 z-40 bg-white/95 clinical-glass border-b border-lab-border">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-20">
+                
+                <!-- Brand Logo: Clinical Lab Signature -->
+                <a href="index.html" class="flex items-center gap-3.5 group">
+                    <div class="w-11 h-11 rounded-lg bg-lab-navy flex items-center justify-center text-white text-xl group-hover:bg-lab-cyan transition-colors shadow-sm">
+                        <i class="fa-solid fa-microscope text-lab-cyanglow"></i>
+                    </div>
+                    <div>
+                        <span class="text-lg sm:text-xl font-bold tracking-tight text-lab-navy flex items-center gap-1.5 leading-none">
+                            AETHERIA <span class="text-xs font-mono font-semibold px-1.5 py-0.5 bg-lab-surface text-lab-cyan rounded border border-lab-border">LAB</span>
+                        </span>
+                        <span class="text-[10px] font-mono tracking-widest text-lab-slate uppercase block mt-1">
+                            Scientific Derm-Cosmetics
+                        </span>
+                    </div>
+                </a>
+
+                <!-- Desktop Navigation Links -->
+                <nav class="hidden lg:flex items-center gap-7 text-xs font-semibold tracking-wider uppercase text-lab-slate">
+                    <a href="index.html" class="text-lab-cyan border-b-2 border-lab-cyan pb-1">Beranda</a>
+                    <a href="katalog.html" class="hover:text-lab-navy transition">Katalog Formula</a>
+                    <a href="detail.html" class="hover:text-lab-navy transition">Data Sheet Produk</a>
+                    <a href="tentang.html" class="hover:text-lab-navy transition">Standar Lab & BPOM</a>
+                    <a href="artikel.html" class="hover:text-lab-navy transition">Jurnal Kulit</a>
+                    <a href="kontak.html" class="hover:text-lab-navy transition">Konsultasi Derm</a>
+                </nav>
+
+                <!-- Action Button & Concern Diagnostic Modal Trigger -->
+                <div class="hidden sm:flex items-center gap-3">
+                    <button onclick="openSkinFinderModal()" class="inline-flex items-center gap-2 bg-lab-surface hover:bg-lab-cold text-lab-navy text-xs font-semibold px-3.5 py-2.5 rounded-lg border border-lab-border transition hover:border-lab-cyan">
+                        <i class="fa-solid fa-dna text-lab-cyan"></i>
+                        <span>Skin Concern Finder</span>
+                    </button>
+                    <a href="https://wa.me/6281234567890?text=Halo%20Aetheria%20Clinical%20Lab,%20saya%20ingin%20konsultasi%20analisis%20formula%20kulit." target="_blank" class="inline-flex items-center gap-2 bg-lab-navy hover:bg-lab-cyan text-white text-xs font-semibold px-4 py-2.5 rounded-lg shadow-sm transition">
+                        <i class="fa-brands fa-whatsapp text-sm text-emerald-400"></i>
+                        <span>Konsultasi WA</span>
+                    </a>
+                </div>
+
+                <!-- Mobile Menu Button -->
+                <button id="mobileMenuBtn" class="lg:hidden p-2 text-lab-navy hover:text-lab-cyan focus:outline-none" aria-label="Toggle Menu">
+                    <i id="menuIcon" class="fa-solid fa-bars text-xl"></i>
+                </button>
+            </div>
+        </div>
+
+        <!-- Mobile Drawer -->
+        <div id="mobileMenu" class="hidden lg:hidden bg-white border-b border-lab-border px-4 py-4 space-y-3">
+            <a href="index.html" class="block text-sm font-semibold text-lab-cyan py-2 border-b border-lab-surface">Beranda</a>
+            <a href="katalog.html" class="block text-sm font-medium text-lab-slate hover:text-lab-navy py-2 border-b border-lab-surface">Katalog Formula & Masalah Kulit</a>
+            <a href="detail.html" class="block text-sm font-medium text-lab-slate hover:text-lab-navy py-2 border-b border-lab-surface">Data Sheet & Cara Layering</a>
+            <a href="tentang.html" class="block text-sm font-medium text-lab-slate hover:text-lab-navy py-2 border-b border-lab-surface">Standar Lab & Sertifikasi BPOM</a>
+            <a href="artikel.html" class="block text-sm font-medium text-lab-slate hover:text-lab-navy py-2 border-b border-lab-surface">Jurnal & Panduan Skin Barrier</a>
+            <a href="kontak.html" class="block text-sm font-medium text-lab-slate hover:text-lab-navy py-2">Konsultasi Masalah Kulit (WA)</a>
+            <div class="pt-2 flex flex-col gap-2">
+                <button onclick="openSkinFinderModal()" class="w-full py-2.5 px-3 rounded-lg bg-lab-surface text-lab-navy text-xs font-semibold border border-lab-border flex items-center justify-center gap-2">
+                    <i class="fa-solid fa-dna text-lab-cyan"></i> Skin Concern Finder
+                </button>
+                <a href="https://wa.me/6281234567890?text=Halo%20Aetheria%20Clinical%20Lab,%20saya%20ingin%20konsultasi." target="_blank" class="w-full py-2.5 px-3 rounded-lg bg-lab-navy text-white text-xs font-semibold text-center flex items-center justify-center gap-2">
+                    <i class="fa-brands fa-whatsapp text-emerald-400"></i> Chat Dermatologist Advisor
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- 3. HERO: CLINICAL CENTERED STATEMENT WITH 3-COLUMN MACRO GLASS DROPLET GRID -->
+    <section class="relative pt-12 pb-20 bg-lab-cold lab-grid-bg border-b border-lab-border overflow-hidden">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            
+            <!-- Badge & Centered Headline -->
+            <div class="text-center max-w-3xl mx-auto mb-14">
+                <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-white border border-lab-border text-lab-slate text-xs font-mono mb-4 shadow-sm">
+                    <span class="w-2 h-2 rounded-full bg-lab-cyan"></span>
+                    <span class="text-lab-navy font-semibold">FORMULATION RATIO 100% TRANSPARENT</span>
+                    <span class="text-lab-slate">|</span>
+                    <span>DERMATOLOGIST TESTED</span>
+                </div>
+                <h1 class="text-3xl sm:text-5xl lg:text-6xl font-extrabold text-lab-navy tracking-tight leading-tight">
+                    Formulated by Science, <br>
+                    <span class="text-transparent bg-clip-text bg-gradient-to-r from-lab-cyan to-blue-700">Proven by Results.</span>
+                </h1>
+                <p class="mt-5 text-base sm:text-lg text-lab-slate leading-relaxed font-normal">
+                    Formulasi molekuler dermatologis dengan konsentrasi bahan aktif teruji klinis. Tanpa klaim berlebihan, tanpa filler berbahaya—hanya data efikasi nyata untuk transformasi kulit Anda.
+                </p>
+                <div class="mt-8 flex flex-wrap items-center justify-center gap-4">
+                    <a href="katalog.html" class="inline-flex items-center gap-2.5 bg-lab-navy hover:bg-lab-cyan text-white text-sm font-semibold px-6 py-3.5 rounded-xl shadow-md transition-all">
+                        <i class="fa-solid fa-magnifying-glass-chart"></i>
+                        <span>Eksplorasi Formula Aktif</span>
+                    </a>
+                    <button onclick="openSkinFinderModal()" class="inline-flex items-center gap-2 bg-white hover:bg-lab-surface text-lab-navy text-sm font-semibold px-6 py-3.5 rounded-xl border border-lab-border shadow-sm transition">
+                        <i class="fa-solid fa-stethoscope text-lab-cyan"></i>
+                        <span>Diagnosa Masalah Kulit</span>
+                    </button>
+                </div>
+            </div>
+
+            <!-- Grid 3 Kolom: Serum Bottles & Macro Texture Liquid Droplets -->
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                
+                <!-- Card 1: Barrier Recovery Serum -->
+                <div class="bg-white rounded-2xl border border-lab-border p-6 lab-card-hover flex flex-col justify-between">
+                    <div>
+                        <div class="flex items-center justify-between mb-4">
+                            <span class="font-mono text-[11px] font-bold px-2 py-0.5 bg-sky-50 text-lab-cyan rounded border border-sky-100">SERUM-01</span>
+                            <span class="font-mono text-[11px] text-lab-slate">pH 5.5 ± 0.2</span>
+                        </div>
+                        <div class="relative h-48 rounded-xl bg-gradient-to-b from-slate-50 to-sky-50/50 border border-lab-muted flex items-center justify-center overflow-hidden mb-4 group">
+                            <img src="https://images.unsplash.com/photo-1620916566398-39f1143ab7be?auto=format&fit=crop&w=600&q=80" alt="10% Ceramide Barrier Serum Droplet" class="w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-500">
+                            <div class="absolute bottom-2 left-2 bg-black/70 backdrop-blur-sm text-white text-[10px] font-mono px-2 py-1 rounded">
+                                MACRO 50X: Viscous Lipid Matrix
+                            </div>
+                        </div>
+                        <div class="flex items-baseline gap-2 mb-1">
+                            <span class="text-xs font-mono font-bold text-lab-cyan">10% PURE CERAMIDE COMPLEX</span>
+                        </div>
+                        <h3 class="text-base font-bold text-lab-navy leading-snug">Barrier Matrix Cellular Repair Serum</h3>
+                        <p class="text-xs text-lab-slate mt-2 leading-relaxed">
+                            Mengikat kembali lipid interselular stratum korneum yang rusak akibat eksfoliasi berlebih atau polusi ekstrem.
+                        </p>
+                    </div>
+                    <div class="mt-5 pt-4 border-t border-lab-surface flex items-center justify-between font-mono text-xs">
+                        <span class="text-lab-slate">BPOM: NA18230109921</span>
+                        <a href="detail.html" class="text-lab-cyan font-bold hover:underline">Data Sheet &rarr;</a>
+                    </div>
+                </div>
+
+                <!-- Card 2: Blemish & Sebum Regulating Serum -->
+                <div class="bg-white rounded-2xl border-2 border-lab-cyan/40 p-6 lab-card-hover flex flex-col justify-between relative shadow-sm">
+                    <div class="absolute -top-3 left-1/2 -translate-x-1/2 bg-lab-cyan text-white text-[10px] font-mono font-bold px-3 py-0.5 rounded-full uppercase tracking-wider">
+                        ★ Most Prescribed Formula
+                    </div>
+                    <div>
+                        <div class="flex items-center justify-between mb-4">
+                            <span class="font-mono text-[11px] font-bold px-2 py-0.5 bg-sky-50 text-lab-cyan rounded border border-sky-100">SERUM-02</span>
+                            <span class="font-mono text-[11px] text-lab-slate">pH 4.8 ± 0.2</span>
+                        </div>
+                        <div class="relative h-48 rounded-xl bg-gradient-to-b from-slate-50 to-sky-50/50 border border-lab-muted flex items-center justify-center overflow-hidden mb-4 group">
+                            <img src="https://images.unsplash.com/photo-1608248597359-001099351052?auto=format&fit=crop&w=600&q=80" alt="5% Niacinamide + 2% Zinc PCA Active Droplet" class="w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-500">
+                            <div class="absolute bottom-2 left-2 bg-black/70 backdrop-blur-sm text-white text-[10px] font-mono px-2 py-1 rounded">
+                                MACRO 50X: Ultra-Clear Sebum Blocker
+                            </div>
+                        </div>
+                        <div class="flex items-baseline gap-2 mb-1">
+                            <span class="text-xs font-mono font-bold text-lab-cyan">5% NIACINAMIDE + 2% ZINC PCA</span>
+                        </div>
+                        <h3 class="text-base font-bold text-lab-navy leading-snug">Clarifying Sebum & Pore Refining Elixir</h3>
+                        <p class="text-xs text-lab-slate mt-2 leading-relaxed">
+                            Meredakan inflamasi jerawat aktif, menekan over-sebum hingga 46%, serta memudarkan noda PIE/PIH membandel.
+                        </p>
+                    </div>
+                    <div class="mt-5 pt-4 border-t border-lab-surface flex items-center justify-between font-mono text-xs">
+                        <span class="text-lab-slate">BPOM: NA18230107742</span>
+                        <a href="detail.html" class="text-lab-cyan font-bold hover:underline">Data Sheet &rarr;</a>
+                    </div>
+                </div>
+
+                <!-- Card 3: Deep Photoprotection Sunscreen -->
+                <div class="bg-white rounded-2xl border border-lab-border p-6 lab-card-hover flex flex-col justify-between">
+                    <div>
+                        <div class="flex items-center justify-between mb-4">
+                            <span class="font-mono text-[11px] font-bold px-2 py-0.5 bg-sky-50 text-lab-cyan rounded border border-sky-100">SUN-03</span>
+                            <span class="font-mono text-[11px] text-lab-slate">SPF 50+ PA++++</span>
+                        </div>
+                        <div class="relative h-48 rounded-xl bg-gradient-to-b from-slate-50 to-sky-50/50 border border-lab-muted flex items-center justify-center overflow-hidden mb-4 group">
+                            <img src="https://images.unsplash.com/photo-1598440947619-2c35fc9aa908?auto=format&fit=crop&w=600&q=80" alt="Broad Spectrum Physical UV Filter Fluid" class="w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-500">
+                            <div class="absolute bottom-2 left-2 bg-black/70 backdrop-blur-sm text-white text-[10px] font-mono px-2 py-1 rounded">
+                                MACRO 50X: Micro-Encapsulated Filter
+                            </div>
+                        </div>
+                        <div class="flex items-baseline gap-2 mb-1">
+                            <span class="text-xs font-mono font-bold text-lab-cyan">TINOSORB S + ECTOIN 2%</span>
+                        </div>
+                        <h3 class="text-base font-bold text-lab-navy leading-snug">Cellular DNA Shielding Fluid UV</h3>
+                        <p class="text-xs text-lab-slate mt-2 leading-relaxed">
+                            Perlindungan spektrum luas UVA/UVB/HEV Blue Light tanpa rasa lengket, tanpa whitecast, dan tidak menyumbat pori.
+                        </p>
+                    </div>
+                    <div class="mt-5 pt-4 border-t border-lab-surface flex items-center justify-between font-mono text-xs">
+                        <span class="text-lab-slate">BPOM: NA18231700511</span>
+                        <a href="detail.html" class="text-lab-cyan font-bold hover:underline">Data Sheet &rarr;</a>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+    <!-- 4. SECTION KHUSUS INTERAKTIF: 3-STEP DAILY ROUTINE BUILDER -->
+    <section class="py-20 bg-white border-b border-lab-border">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            
+            <div class="flex flex-col md:flex-row md:items-end justify-between mb-12">
+                <div>
+                    <span class="text-xs font-mono uppercase tracking-widest text-lab-cyan font-semibold block mb-1">
+                        // PROTOKOL REJIMEN DERMATOLOGI
+                    </span>
+                    <h2 class="text-2xl sm:text-4xl font-extrabold text-lab-navy tracking-tight">
+                        3-Step Daily Routine Builder
+                    </h2>
+                    <p class="text-sm text-lab-slate mt-2 max-w-xl">
+                        Kombinasi formula tepat tanpa konflik bahan aktif. Pilih siklus waktu untuk melihat urutan aplikasi molekuler yang disarankan dokter spesialis kulit.
+                    </p>
+                </div>
+                
+                <!-- Toggle Pagi vs Malam -->
+                <div class="mt-6 md:mt-0 flex items-center p-1 bg-lab-surface rounded-xl border border-lab-border">
+                    <button id="tabMorningBtn" onclick="switchRoutine('morning')" class="px-5 py-2.5 rounded-lg text-xs font-bold font-mono transition bg-white text-lab-navy shadow-sm flex items-center gap-2">
+                        <i class="fa-solid fa-sun text-amber-500"></i> PROTOKOL PAGI (AM)
+                    </button>
+                    <button id="tabNightBtn" onclick="switchRoutine('night')" class="px-5 py-2.5 rounded-lg text-xs font-bold font-mono transition text-lab-slate hover:text-lab-navy flex items-center gap-2">
+                        <i class="fa-solid fa-moon text-indigo-500"></i> PROTOKOL MALAM (PM)
+                    </button>
+                </div>
+            </div>
+
+            <!-- Routine Flow Cards (Morning Container) -->
+            <div id="routineMorning" class="grid grid-cols-1 lg:grid-cols-3 gap-6">
+                <!-- Step 1 Morning -->
+                <div class="bg-lab-cold rounded-2xl border border-lab-border p-6 relative">
+                    <div class="flex items-center justify-between mb-4">
+                        <span class="w-8 h-8 rounded-full bg-lab-navy text-white font-mono text-xs font-bold flex items-center justify-center">01</span>
+                        <span class="text-[11px] font-mono text-emerald-600 bg-emerald-50 px-2 py-0.5 rounded border border-emerald-200">LANGKAH: CLEANSE</span>
+                    </div>
+                    <h4 class="text-base font-bold text-lab-navy">Gentle Amino-Acid Barrier Cleanser</h4>
+                    <p class="text-xs text-lab-slate mt-2 leading-relaxed">
+                        Membersihkan sisa sebum tidur tanpa merusak natural moisture factor (NMF). Mempertahankan pH netral mantel asam kulit.
+                    </p>
+                    <div class="mt-6 p-3 rounded-lg bg-white border border-lab-muted font-mono text-[11px] space-y-1">
+                        <div class="flex justify-between text-lab-slate"><span>Konsentrasi:</span> <strong class="text-lab-navy">Sodium Cocoyl Glycinate 8%</strong></div>
+                        <div class="flex justify-between text-lab-slate"><span>Durasi Pijat:</span> <strong class="text-lab-navy">60 Detik Bilas Air Suam</strong></div>
+                    </div>
+                </div>
+
+                <!-- Step 2 Morning -->
+                <div class="bg-lab-cold rounded-2xl border border-lab-border p-6 relative">
+                    <div class="flex items-center justify-between mb-4">
+                        <span class="w-8 h-8 rounded-full bg-lab-navy text-white font-mono text-xs font-bold flex items-center justify-center">02</span>
+                        <span class="text-[11px] font-mono text-lab-cyan bg-sky-50 px-2 py-0.5 rounded border border-sky-200">LANGKAH: TARGET SERUM</span>
+                    </div>
+                    <h4 class="text-base font-bold text-lab-navy">5% Niacinamide + 2% Zinc PCA Active</h4>
+                    <p class="text-xs text-lab-slate mt-2 leading-relaxed">
+                        Mengontrol produksi kelenjar minyak saat aktivitas siang hari dan mencegah inflamasi bakteri p.acnes di bawah sinar matahari.
+                    </p>
+                    <div class="mt-6 p-3 rounded-lg bg-white border border-lab-muted font-mono text-[11px] space-y-1">
+                        <div class="flex justify-between text-lab-slate"><span>Dosis:</span> <strong class="text-lab-navy">3-4 Tetes Pipet</strong></div>
+                        <div class="flex justify-between text-lab-slate"><span>Penyerapan:</span> <strong class="text-lab-navy">Tepuk 30 Detik Sampai Kering</strong></div>
+                    </div>
+                </div>
+
+                <!-- Step 3 Morning -->
+                <div class="bg-lab-cold rounded-2xl border-2 border-lab-cyan/40 p-6 relative bg-gradient-to-b from-white to-sky-50/30">
+                    <div class="flex items-center justify-between mb-4">
+                        <span class="w-8 h-8 rounded-full bg-lab-cyan text-white font-mono text-xs font-bold flex items-center justify-center">03</span>
+                        <span class="text-[11px] font-mono text-amber-600 bg-amber-50 px-2 py-0.5 rounded border border-amber-200">LANGKAH: PROTECT (MANDATORY)</span>
+                    </div>
+                    <h4 class="text-base font-bold text-lab-navy">SPF 50+ PA++++ Cellular DNA Shield</h4>
+                    <p class="text-xs text-lab-slate mt-2 leading-relaxed">
+                        Kunci perlindungan seluruh zat aktif dari degradasi fotooksidatif. Tahan keringat dan tidak memicu fungal acne.
+                    </p>
+                    <div class="mt-6 p-3 rounded-lg bg-white border border-lab-muted font-mono text-[11px] space-y-1">
+                        <div class="flex justify-between text-lab-slate"><span>Takaran:</span> <strong class="text-lab-navy">2 Ruas Jari Penuh</strong></div>
+                        <div class="flex justify-between text-lab-slate"><span>Reaplikasi:</span> <strong class="text-lab-navy">Tiap 3-4 Jam Sekali</strong></div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Routine Flow Cards (Night Container - Hidden by default) -->
+            <div id="routineNight" class="hidden grid grid-cols-1 lg:grid-cols-3 gap-6">
+                <!-- Step 1 Night -->
+                <div class="bg-slate-900 text-white rounded-2xl border border-slate-800 p-6 relative">
+                    <div class="flex items-center justify-between mb-4">
+                        <span class="w-8 h-8 rounded-full bg-indigo-600 text-white font-mono text-xs font-bold flex items-center justify-center">01</span>
+                        <span class="text-[11px] font-mono text-indigo-300 bg-indigo-950 px-2 py-0.5 rounded border border-indigo-800">DOUBLE CLEANSE</span>
+                    </div>
+                    <h4 class="text-base font-bold text-white">Micellar Bi-Phase + Amino Wash</h4>
+                    <p class="text-xs text-slate-400 mt-2 leading-relaxed">
+                        Melarutkan polutan hidrokarbon, sisa tabir surya tahan air, dan residu debu mikroskopis tanpa mengikis lipid alami.
+                    </p>
+                    <div class="mt-6 p-3 rounded-lg bg-slate-950 border border-slate-800 font-mono text-[11px] space-y-1">
+                        <div class="flex justify-between text-slate-400"><span>Metode:</span> <strong class="text-slate-200">Kapas Lembut + Water Rinse</strong></div>
+                        <div class="flex justify-between text-slate-400"><span>Target:</span> <strong class="text-slate-200">100% Pori Bersih</strong></div>
+                    </div>
+                </div>
+
+                <!-- Step 2 Night -->
+                <div class="bg-slate-900 text-white rounded-2xl border border-slate-800 p-6 relative">
+                    <div class="flex items-center justify-between mb-4">
+                        <span class="w-8 h-8 rounded-full bg-indigo-600 text-white font-mono text-xs font-bold flex items-center justify-center">02</span>
+                        <span class="text-[11px] font-mono text-lab-cyanglow bg-sky-950 px-2 py-0.5 rounded border border-sky-800">MICRO-EXFOLIATION / RENEWAL</span>
+                    </div>
+                    <h4 class="text-base font-bold text-white">2% BHA Salicylic + Ectoin Exfoliating Toner</h4>
+                    <p class="text-xs text-slate-400 mt-2 leading-relaxed">
+                        Menembus sumbatan minyak di dalam pori, melunakkan komedo tertutup, dan mempercepat deskuamasi sel kulit mati.
+                    </p>
+                    <div class="mt-6 p-3 rounded-lg bg-slate-950 border border-slate-800 font-mono text-[11px] space-y-1">
+                        <div class="flex justify-between text-slate-400"><span>Frekuensi:</span> <strong class="text-slate-200">3x Seminggu (Malam)</strong></div>
+                        <div class="flex justify-between text-slate-400"><span>pH Optimal:</span> <strong class="text-slate-200">3.6 - 4.0 Max Penetration</strong></div>
+                    </div>
+                </div>
+
+                <!-- Step 3 Night -->
+                <div class="bg-slate-900 text-white rounded-2xl border-2 border-indigo-500/50 p-6 relative">
+                    <div class="flex items-center justify-between mb-4">
+                        <span class="w-8 h-8 rounded-full bg-indigo-500 text-white font-mono text-xs font-bold flex items-center justify-center">03</span>
+                        <span class="text-[11px] font-mono text-emerald-400 bg-emerald-950 px-2 py-0.5 rounded border border-emerald-800">BARRIER REPAIR SEAL</span>
+                    </div>
+                    <h4 class="text-base font-bold text-white">Multi-Ceramide 5X Deep Barrier Cream</h4>
+                    <p class="text-xs text-slate-400 mt-2 leading-relaxed">
+                        Mengunci hidrasi molekuler selama fase regenerasi tidur (Circadian Sleep Phase). Mengurangi Transepidermal Water Loss (TEWL).
+                    </p>
+                    <div class="mt-6 p-3 rounded-lg bg-slate-950 border border-slate-800 font-mono text-[11px] space-y-1">
+                        <div class="flex justify-between text-slate-400"><span>Lapisan:</span> <strong class="text-slate-200">Oklusif Lembut Tipis Rata</strong></div>
+                        <div class="flex justify-between text-slate-400"><span>Hasil 8 Jam:</span> <strong class="text-emerald-400">+58% Kelembapan Terkunci</strong></div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Routine Action Box -->
+            <div class="mt-8 p-4 rounded-xl bg-lab-surface border border-lab-border flex flex-col sm:flex-row items-center justify-between gap-4">
+                <div class="flex items-center gap-3">
+                    <i class="fa-solid fa-circle-question text-lab-cyan text-lg"></i>
+                    <p class="text-xs text-lab-slate">
+                        Bingung cara mencocokkan persentase bahan aktif dengan kondisi kulit sensitif Anda saat ini?
+                    </p>
+                </div>
+                <a href="https://wa.me/6281234567890?text=Halo%20Dokter%20Lab%20Aetheria,%20saya%20mau%20konsultasi%20tata%20cara%20layering%20skincare%20untuk%20kulit%20saya." target="_blank" class="shrink-0 text-xs font-bold font-mono text-lab-navy bg-white hover:bg-lab-cyan hover:text-white px-4 py-2 rounded-lg border border-lab-border transition">
+                    KONSULTASI DOSIS LAYERING VIA WA &rarr;
+                </a>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- 5. PRODUK UNGGULAN: HORIZONTAL SCIENTIFIC TABLE CARD -->
+    <section class="py-20 bg-lab-cold border-b border-lab-border">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            
+            <div class="text-center max-w-3xl mx-auto mb-14">
+                <span class="text-xs font-mono uppercase tracking-widest text-lab-cyan font-semibold block mb-1">
+                    // SCIENTIFIC INVENTORY DATA SHEET
+                </span>
+                <h2 class="text-2xl sm:text-4xl font-extrabold text-lab-navy tracking-tight">
+                    Tabel Formulasi & Spesifikasi Produk
+                </h2>
+                <p class="text-sm text-lab-slate mt-2">
+                    Transparansi penuh konsentrasi bahan aktif, kompatibilitas jenis kulit, nomor registrasi resmi BPOM, serta pH laboratorium.
+                </p>
+            </div>
+
+            <!-- Scientific Table Card Layout -->
+            <div class="bg-white rounded-2xl border border-lab-border shadow-sm overflow-hidden">
+                <div class="overflow-x-auto">
+                    <table class="w-full text-left border-collapse">
+                        <thead>
+                            <tr class="bg-lab-surface text-[11px] font-mono uppercase text-lab-slate border-b border-lab-border">
+                                <th class="py-3.5 px-6 font-semibold">Kode & Produk</th>
+                                <th class="py-3.5 px-6 font-semibold">Bahan Aktif Primer (%)</th>
+                                <th class="py-3.5 px-6 font-semibold">pH Level</th>
+                                <th class="py-3.5 px-6 font-semibold">Target Masalah Kulit</th>
+                                <th class="py-3.5 px-6 font-semibold">Nomor BPOM RI</th>
+                                <th class="py-3.5 px-6 font-semibold text-right">Aksi Formula</th>
+                            </tr>
+                        </thead>
+                        <tbody class="divide-y divide-lab-surface text-xs font-sans">
+                            
+                            <!-- Row 1 -->
+                            <tr class="hover:bg-sky-50/40 transition">
+                                <td class="py-4 px-6">
+                                    <div class="flex items-center gap-3">
+                                        <div class="w-10 h-10 rounded-lg bg-lab-surface border border-lab-muted flex items-center justify-center font-mono font-bold text-lab-cyan text-xs">
+                                            SR-01
+                                        </div>
+                                        <div>
+                                            <div class="font-bold text-lab-navy">Barrier Matrix Repair Serum</div>
+                                            <span class="text-[11px] text-lab-slate font-mono">Vol. 30 ml (Pipette Glass)</span>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td class="py-4 px-6 font-mono">
+                                    <span class="inline-flex items-center gap-1 font-bold text-sky-700 bg-sky-100/70 px-2 py-0.5 rounded text-[11px]">
+                                        10% Ceramide NP/AP/EOP + 2% Panthenol
+                                    </span>
+                                </td>
+                                <td class="py-4 px-6 font-mono font-semibold text-lab-navy">
+                                    pH 5.5 ± 0.2
+                                </td>
+                                <td class="py-4 px-6">
+                                    <span class="text-[11px] px-2 py-0.5 rounded-full bg-emerald-50 text-emerald-700 border border-emerald-200">
+                                        Skin Barrier Rusak, Kering, Kemerahan
+                                    </span>
+                                </td>
+                                <td class="py-4 px-6 font-mono text-[11px] text-lab-slate">
+                                    NA18230109921
+                                </td>
+                                <td class="py-4 px-6 text-right">
+                                    <a href="detail.html" class="inline-flex items-center gap-1 bg-lab-navy hover:bg-lab-cyan text-white text-xs font-semibold px-3 py-1.5 rounded-lg transition">
+                                        <span>Detail</span>
+                                        <i class="fa-solid fa-arrow-right text-[10px]"></i>
+                                    </a>
+                                </td>
+                            </tr>
+
+                            <!-- Row 2 -->
+                            <tr class="hover:bg-sky-50/40 transition">
+                                <td class="py-4 px-6">
+                                    <div class="flex items-center gap-3">
+                                        <div class="w-10 h-10 rounded-lg bg-lab-surface border border-lab-muted flex items-center justify-center font-mono font-bold text-lab-cyan text-xs">
+                                            SR-02
+                                        </div>
+                                        <div>
+                                            <div class="font-bold text-lab-navy">Clarifying Niacinamide Elixir</div>
+                                            <span class="text-[11px] text-lab-slate font-mono">Vol. 30 ml (Pipette Glass)</span>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td class="py-4 px-6 font-mono">
+                                    <span class="inline-flex items-center gap-1 font-bold text-indigo-700 bg-indigo-100/70 px-2 py-0.5 rounded text-[11px]">
+                                        5% Pure Niacinamide + 2% Zinc PCA
+                                    </span>
+                                </td>
+                                <td class="py-4 px-6 font-mono font-semibold text-lab-navy">
+                                    pH 4.8 ± 0.2
+                                </td>
+                                <td class="py-4 px-6">
+                                    <span class="text-[11px] px-2 py-0.5 rounded-full bg-amber-50 text-amber-700 border border-amber-200">
+                                        Jerawat Aktif, Pori Besar & PIE/PIH
+                                    </span>
+                                </td>
+                                <td class="py-4 px-6 font-mono text-[11px] text-lab-slate">
+                                    NA18230107742
+                                </td>
+                                <td class="py-4 px-6 text-right">
+                                    <a href="detail.html" class="inline-flex items-center gap-1 bg-lab-navy hover:bg-lab-cyan text-white text-xs font-semibold px-3 py-1.5 rounded-lg transition">
+                                        <span>Detail</span>
+                                        <i class="fa-solid fa-arrow-right text-[10px]"></i>
+                                    </a>
+                                </td>
+                            </tr>
+
+                            <!-- Row 3 -->
+                            <tr class="hover:bg-sky-50/40 transition">
+                                <td class="py-4 px-6">
+                                    <div class="flex items-center gap-3">
+                                        <div class="w-10 h-10 rounded-lg bg-lab-surface border border-lab-muted flex items-center justify-center font-mono font-bold text-lab-cyan text-xs">
+                                            TN-01
+                                        </div>
+                                        <div>
+                                            <div class="font-bold text-lab-navy">2% BHA Salicylic Exfoliating Toner</div>
+                                            <span class="text-[11px] text-lab-slate font-mono">Vol. 100 ml (Apothecary Bottle)</span>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td class="py-4 px-6 font-mono">
+                                    <span class="inline-flex items-center gap-1 font-bold text-cyan-800 bg-cyan-100/70 px-2 py-0.5 rounded text-[11px]">
+                                        2% Liposomal Salicylic + 1% Ectoin
+                                    </span>
+                                </td>
+                                <td class="py-4 px-6 font-mono font-semibold text-lab-navy">
+                                    pH 3.8 ± 0.1
+                                </td>
+                                <td class="py-4 px-6">
+                                    <span class="text-[11px] px-2 py-0.5 rounded-full bg-rose-50 text-rose-700 border border-rose-200">
+                                        Komedo Blackhead/Whitehead & Tekstur Kasar
+                                    </span>
+                                </td>
+                                <td class="py-4 px-6 font-mono text-[11px] text-lab-slate">
+                                    NA18231204891
+                                </td>
+                                <td class="py-4 px-6 text-right">
+                                    <a href="detail.html" class="inline-flex items-center gap-1 bg-lab-navy hover:bg-lab-cyan text-white text-xs font-semibold px-3 py-1.5 rounded-lg transition">
+                                        <span>Detail</span>
+                                        <i class="fa-solid fa-arrow-right text-[10px]"></i>
+                                    </a>
+                                </td>
+                            </tr>
+
+                            <!-- Row 4 -->
+                            <tr class="hover:bg-sky-50/40 transition">
+                                <td class="py-4 px-6">
+                                    <div class="flex items-center gap-3">
+                                        <div class="w-10 h-10 rounded-lg bg-lab-surface border border-lab-muted flex items-center justify-center font-mono font-bold text-lab-cyan text-xs">
+                                            UV-01
+                                        </div>
+                                        <div>
+                                            <div class="font-bold text-lab-navy">DNA Shield Hybrid UV Fluid</div>
+                                            <span class="text-[11px] text-lab-slate font-mono">Vol. 50 ml (Airless Pump)</span>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td class="py-4 px-6 font-mono">
+                                    <span class="inline-flex items-center gap-1 font-bold text-amber-800 bg-amber-100/70 px-2 py-0.5 rounded text-[11px]">
+                                        Tinosorb S/M + 4x Hyaluronic Acid
+                                    </span>
+                                </td>
+                                <td class="py-4 px-6 font-mono font-semibold text-lab-navy">
+                                    pH 6.0 ± 0.2
+                                </td>
+                                <td class="py-4 px-6">
+                                    <span class="text-[11px] px-2 py-0.5 rounded-full bg-blue-50 text-blue-700 border border-blue-200">
+                                        Semua Tipe Kulit, Pencegah Photo-Aging
+                                    </span>
+                                </td>
+                                <td class="py-4 px-6 font-mono text-[11px] text-lab-slate">
+                                    NA18231700511
+                                </td>
+                                <td class="py-4 px-6 text-right">
+                                    <a href="detail.html" class="inline-flex items-center gap-1 bg-lab-navy hover:bg-lab-cyan text-white text-xs font-semibold px-3 py-1.5 rounded-lg transition">
+                                        <span>Detail</span>
+                                        <i class="fa-solid fa-arrow-right text-[10px]"></i>
+                                    </a>
+                                </td>
+                            </tr>
+
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+            <!-- Table Sub-note -->
+            <div class="mt-4 flex flex-col sm:flex-row items-center justify-between text-xs text-lab-slate font-mono">
+                <div>*Data diperoleh dari uji batch laboratorium independen terakreditasi ISO 17025.</div>
+                <a href="katalog.html" class="text-lab-cyan font-bold hover:underline mt-2 sm:mt-0">Lihat Semua 12 Formula di Katalog &rarr;</a>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- 6. SOCIAL PROOF: CLINICAL TRIAL RESULTS GRAPHIC (14-28 HARI) -->
+    <section class="py-20 bg-white border-b border-lab-border">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+                
+                <!-- Left Column: Clinical Narrative -->
+                <div class="lg:col-span-5">
+                    <span class="text-xs font-mono uppercase tracking-widest text-lab-cyan font-semibold block mb-1">
+                        // UJI VALIDASI DERMATOLOGIS
+                    </span>
+                    <h2 class="text-2xl sm:text-4xl font-extrabold text-lab-navy tracking-tight leading-tight">
+                        Efikasi Klinis Nyata dalam 14 Hari Pemakaian Terkontrol
+                    </h2>
+                    <p class="text-sm text-lab-slate mt-4 leading-relaxed">
+                        Pengujian dilakukan pada 120 subjek sukarelawan Indonesia dengan berbagai masalah kulit (acne-prone, skin barrier terganggu, hiperpigmentasi) di bawah supervisi dokter spesialis dermatologi.
+                    </p>
+
+                    <div class="mt-6 space-y-3 font-mono text-xs text-lab-slate">
+                        <div class="flex items-center gap-2">
+                            <i class="fa-solid fa-check-double text-emerald-500"></i>
+                            <span>Double-blind clinical study protocol</span>
+                        </div>
+                        <div class="flex items-center gap-2">
+                            <i class="fa-solid fa-check-double text-emerald-500"></i>
+                            <span>Instrumental Corneometer & Sebumeter verification</span>
+                        </div>
+                        <div class="flex items-center gap-2">
+                            <i class="fa-solid fa-check-double text-emerald-500"></i>
+                            <span>0% kasus dermatitis kontak atau reaksi fotosensitivitas</span>
+                        </div>
+                    </div>
+
+                    <div class="mt-8">
+                        <a href="tentang.html" class="inline-flex items-center gap-2 text-xs font-mono font-bold text-lab-navy border-b-2 border-lab-navy pb-1 hover:text-lab-cyan hover:border-lab-cyan transition">
+                            <span>BACA DOKUMEN PROTOKOL UJI LENGKAP</span>
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Right Column: Visual Metrics & Progress Bars -->
+                <div class="lg:col-span-7 bg-lab-cold rounded-2xl border border-lab-border p-8">
+                    
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-6 mb-8">
+                        <!-- Stat Card 1 -->
+                        <div class="bg-white p-5 rounded-xl border border-lab-border shadow-sm">
+                            <div class="text-3xl font-extrabold text-lab-cyan font-mono">96.8%</div>
+                            <div class="text-xs font-bold text-lab-navy mt-1">Penurunan Transepidermal Water Loss</div>
+                            <p class="text-[11px] text-lab-slate mt-1">Barrier kulit pulih lebih cepat setelah 14 hari pemakaian Ceramide Serum.</p>
+                            <!-- Progress Bar -->
+                            <div class="w-full bg-lab-surface h-2 rounded-full mt-3 overflow-hidden">
+                                <div class="bg-lab-cyan h-full rounded-full" style="width: 96.8%"></div>
+                            </div>
+                        </div>
+
+                        <!-- Stat Card 2 -->
+                        <div class="bg-white p-5 rounded-xl border border-lab-border shadow-sm">
+                            <div class="text-3xl font-extrabold text-emerald-600 font-mono">92.4%</div>
+                            <div class="text-xs font-bold text-lab-navy mt-1">Reduksi Kemerahan & Lesi Jerawat</div>
+                            <p class="text-[11px] text-lab-slate mt-1">Inflamasi papul dan pustul berkurang drastis pada subjek berjerawat aktif.</p>
+                            <!-- Progress Bar -->
+                            <div class="w-full bg-lab-surface h-2 rounded-full mt-3 overflow-hidden">
+                                <div class="bg-emerald-500 h-full rounded-full" style="width: 92.4%"></div>
+                            </div>
+                        </div>
+
+                        <!-- Stat Card 3 -->
+                        <div class="bg-white p-5 rounded-xl border border-lab-border shadow-sm">
+                            <div class="text-3xl font-extrabold text-indigo-600 font-mono">88.5%</div>
+                            <div class="text-xs font-bold text-lab-navy mt-1">Peningkatan Kecerahan & Fade PIE/PIH</div>
+                            <p class="text-[11px] text-lab-slate mt-1">Noda bekas jerawat merah dan kecokelatan memudar secara objektif mexameter.</p>
+                            <!-- Progress Bar -->
+                            <div class="w-full bg-lab-surface h-2 rounded-full mt-3 overflow-hidden">
+                                <div class="bg-indigo-500 h-full rounded-full" style="width: 88.5%"></div>
+                            </div>
+                        </div>
+
+                        <!-- Stat Card 4 -->
+                        <div class="bg-white p-5 rounded-xl border border-lab-border shadow-sm">
+                            <div class="text-3xl font-extrabold text-amber-500 font-mono">100%</div>
+                            <div class="text-xs font-bold text-lab-navy mt-1">Non-Comedogenic & Non-Irritating</div>
+                            <p class="text-[11px] text-lab-slate mt-1">Lulus uji HRIPT (Human Repeat Insult Patch Test) tanpa reaksi iritasi.</p>
+                            <!-- Progress Bar -->
+                            <div class="w-full bg-lab-surface h-2 rounded-full mt-3 overflow-hidden">
+                                <div class="bg-amber-500 h-full rounded-full" style="width: 100%"></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Testimonial Quote -->
+                    <div class="p-4 rounded-xl bg-white border border-lab-muted flex items-start gap-4">
+                        <div class="w-10 h-10 rounded-full bg-lab-navy text-white flex items-center justify-center font-bold text-xs shrink-0">
+                            Dr.
+                        </div>
+                        <div>
+                            <p class="text-xs text-lab-navy italic">
+                                "Stabilitas molekuler formulasi Aetheria Lab menjaga persentase bahan aktif tetap murni tanpa degradasi akibat oksidasi, memberikan hasil yang konsisten pada pasien klinis kami."
+                            </p>
+                            <span class="text-[11px] font-mono text-lab-slate block mt-1">
+                                — dr. Alanna W., Sp.D.V.E (Board-Certified Dermatologist Advisory)
+                            </span>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+    <!-- 7. CLINICAL CERTIFICATIONS & SCIENTIFIC PILLARS -->
+    <section class="py-16 bg-lab-navy text-white border-b border-slate-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-2xl mx-auto mb-10">
+                <span class="text-xs font-mono text-lab-cyanglow uppercase tracking-widest block mb-1">
+                    // STANDARDISASI MUTU LABORATORIUM
+                </span>
+                <h3 class="text-xl sm:text-2xl font-bold tracking-tight">
+                    Jaminan Keamanan & Kemurnian Formula
+                </h3>
+            </div>
+
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-6 text-center">
+                <div class="p-5 rounded-xl bg-slate-900/60 border border-slate-800">
+                    <div class="w-12 h-12 rounded-lg bg-lab-cyan/20 text-lab-cyanglow mx-auto flex items-center justify-center text-xl mb-3">
+                        <i class="fa-solid fa-certificate"></i>
+                    </div>
+                    <h5 class="text-sm font-bold">100% Terdaftar BPOM</h5>
+                    <p class="text-[11px] text-slate-400 mt-1 font-mono">Notifikasi Resmi RI</p>
+                </div>
+                <div class="p-5 rounded-xl bg-slate-900/60 border border-slate-800">
+                    <div class="w-12 h-12 rounded-lg bg-emerald-500/20 text-emerald-400 mx-auto flex items-center justify-center text-xl mb-3">
+                        <i class="fa-solid fa-ban"></i>
+                    </div>
+                    <h5 class="text-sm font-bold">0% Added Alcohol</h5>
+                    <p class="text-[11px] text-slate-400 mt-1 font-mono">Aman Barrier Sensitif</p>
+                </div>
+                <div class="p-5 rounded-xl bg-slate-900/60 border border-slate-800">
+                    <div class="w-12 h-12 rounded-lg bg-indigo-500/20 text-indigo-400 mx-auto flex items-center justify-center text-xl mb-3">
+                        <i class="fa-solid fa-droplet-slash"></i>
+                    </div>
+                    <h5 class="text-sm font-bold">Fragrance-Free</h5>
+                    <p class="text-[11px] text-slate-400 mt-1 font-mono">Tanpa Parfum Sintetis</p>
+                </div>
+                <div class="p-5 rounded-xl bg-slate-900/60 border border-slate-800">
+                    <div class="w-12 h-12 rounded-lg bg-amber-500/20 text-amber-400 mx-auto flex items-center justify-center text-xl mb-3">
+                        <i class="fa-solid fa-shield-virus"></i>
+                    </div>
+                    <h5 class="text-sm font-bold">Hypoallergenic</h5>
+                    <p class="text-[11px] text-slate-400 mt-1 font-mono">HRIPT Lab Verified</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 8. FOOTER CLINICAL LAB -->
+    <footer class="bg-white text-lab-navy border-t border-lab-border pt-16 pb-28">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-10">
+                
+                <!-- Col 1: Brand & Identity -->
+                <div class="lg:col-span-2 space-y-4">
+                    <a href="index.html" class="flex items-center gap-3">
+                        <div class="w-10 h-10 rounded-lg bg-lab-navy flex items-center justify-center text-white text-lg">
+                            <i class="fa-solid fa-microscope text-lab-cyanglow"></i>
+                        </div>
+                        <span class="text-lg font-bold tracking-tight text-lab-navy">
+                            AETHERIA <span class="text-xs font-mono font-semibold px-1.5 py-0.5 bg-lab-surface text-lab-cyan rounded border border-lab-border">LAB</span>
+                        </span>
+                    </a>
+                    <p class="text-xs text-lab-slate leading-relaxed">
+                        Lentera Pasar Derm-Cosmetics Research Unit. Berdedikasi menghadirkan transparansi molekuler perawatan kulit berbasis bukti klinis dan sertifikasi BPOM resmi.
+                    </p>
+                    <div class="pt-2 font-mono text-xs text-lab-slate space-y-1">
+                        <div><i class="fa-solid fa-location-dot text-lab-cyan mr-2"></i> Bio-Tech Tower Lt. 8, Mega Kuningan, Jakarta Selatan</div>
+                        <div><i class="fa-solid fa-envelope text-lab-cyan mr-2"></i> scientific@aetherialab.co.id</div>
+                        <div><i class="fa-brands fa-whatsapp text-emerald-600 mr-2"></i> +62 812-3456-7890 (Derm CS Konsultasi)</div>
+                    </div>
+                </div>
+
+                <!-- Col 2: Navigasi Cepat -->
+                <div>
+                    <h4 class="text-xs font-mono font-bold uppercase tracking-wider text-lab-navy mb-4">Navigasi Utama</h4>
+                    <ul class="space-y-2.5 text-xs text-lab-slate font-medium">
+                        <li><a href="index.html" class="hover:text-lab-cyan transition">Beranda Utama</a></li>
+                        <li><a href="katalog.html" class="hover:text-lab-cyan transition">Katalog Masalah Kulit</a></li>
+                        <li><a href="detail.html" class="hover:text-lab-cyan transition">Data Sheet & Komposisi</a></li>
+                        <li><a href="tentang.html" class="hover:text-lab-cyan transition">Standar Lab & BPOM</a></li>
+                        <li><a href="artikel.html" class="hover:text-lab-cyan transition">Jurnal Basic Skincare</a></li>
+                        <li><a href="kontak.html" class="hover:text-lab-cyan transition">Konsultasi Resep Kulit</a></li>
+                    </ul>
+                </div>
+
+                <!-- Col 3: Kategori Formula -->
+                <div>
+                    <h4 class="text-xs font-mono font-bold uppercase tracking-wider text-lab-navy mb-4">Klasifikasi Formula</h4>
+                    <ul class="space-y-2.5 text-xs text-lab-slate font-mono">
+                        <li><a href="katalog.html" class="hover:text-lab-cyan transition">Barrier Matrix (Ceramide)</a></li>
+                        <li><a href="katalog.html" class="hover:text-lab-cyan transition">Sebum & Blemish (Niacinamide)</a></li>
+                        <li><a href="katalog.html" class="hover:text-lab-cyan transition">Chemical Peeling (2% BHA)</a></li>
+                        <li><a href="katalog.html" class="hover:text-lab-cyan transition">Photoprotection (SPF 50+)</a></li>
+                        <li><a href="katalog.html" class="hover:text-lab-cyan transition">Hydration Multi-HA Matrix</a></li>
+                    </ul>
+                </div>
+
+                <!-- Col 4: Keamanan & Registrasi -->
+                <div>
+                    <h4 class="text-xs font-mono font-bold uppercase tracking-wider text-lab-navy mb-4">Verifikasi Resmi</h4>
+                    <div class="space-y-2 text-xs text-lab-slate font-mono">
+                        <div class="p-2 rounded bg-lab-cold border border-lab-border">
+                            <span class="text-[10px] text-lab-slate block">BPOM Official Registry:</span>
+                            <span class="font-bold text-lab-navy text-[11px]">NA18230109921 / NA18230107742</span>
+                        </div>
+                        <div class="p-2 rounded bg-lab-cold border border-lab-border">
+                            <span class="text-[10px] text-lab-slate block">Lab Akreditasi:</span>
+                            <span class="font-bold text-lab-navy text-[11px]">ISO 22716 GMP Cosmetics</span>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="mt-12 pt-8 border-t border-lab-surface flex flex-col sm:flex-row items-center justify-between text-xs text-lab-slate">
+                <p>&copy; 2026 AETHERIA CLINICAL LAB. Hak Cipta Dilindungi Undang-Undang.</p>
+                <p class="mt-2 sm:mt-0 font-mono text-[11px]">Lentera Pasar Production Template — Clinical Lab Skincare</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- ========================================================================= -->
+    <!-- SKIN CONCERN FINDER MODAL (DIAGNOSTIC POPUP)                              -->
+    <!-- ========================================================================= -->
+    <div id="skinFinderModal" class="fixed inset-0 z-50 bg-slate-900/60 backdrop-blur-sm hidden flex items-center justify-center p-4">
+        <div class="bg-white rounded-2xl border border-lab-border max-w-lg w-full p-6 shadow-2xl relative animate-in fade-in zoom-in duration-200">
+            <button onclick="closeSkinFinderModal()" class="absolute top-4 right-4 text-lab-slate hover:text-lab-navy text-lg p-1">
+                <i class="fa-solid fa-xmark"></i>
+            </button>
+            <div class="flex items-center gap-3 mb-4">
+                <div class="w-10 h-10 rounded-lg bg-sky-100 text-lab-cyan flex items-center justify-center text-lg">
+                    <i class="fa-solid fa-dna"></i>
+                </div>
+                <div>
+                    <h3 class="text-base font-bold text-lab-navy">Skin Concern Diagnostic Finder</h3>
+                    <p class="text-xs text-lab-slate">Dapatkan rekomendasi formula berdasarkan kondisi kulit Anda.</p>
+                </div>
+            </div>
+
+            <!-- Step Form Inside Modal -->
+            <div class="space-y-4 text-xs">
+                <div>
+                    <label class="block font-bold text-lab-navy mb-1.5 font-mono">1. Pilih Tipe Kulit Utama:</label>
+                    <select id="modalSkinType" class="w-full p-2.5 rounded-lg border border-lab-border bg-lab-cold text-lab-navy focus:outline-none focus:border-lab-cyan font-mono text-xs">
+                        <option value="oily">Berminyak & Acne-Prone (Cenderung Berjerawat)</option>
+                        <option value="dry">Kering, Dehidrasi & Mengelupas</option>
+                        <option value="sensitive">Sensitif, Kemerahan & Mudah Perih</option>
+                        <option value="combination">Kombinasi (Berminyak Area T-Zone, Kering di Pipi)</option>
+                    </select>
+                </div>
+
+                <div>
+                    <label class="block font-bold text-lab-navy mb-1.5 font-mono">2. Masalah Utama yang Ingin Diatasi:</label>
+                    <select id="modalConcern" class="w-full p-2.5 rounded-lg border border-lab-border bg-lab-cold text-lab-navy focus:outline-none focus:border-lab-cyan font-mono text-xs">
+                        <option value="barrier">Skin Barrier Rusak / Iritasi / Kering Perih</option>
+                        <option value="acne">Jerawat Aktif, Komedo & Pori Tersumbat</option>
+                        <option value="darkspots">Bekas Jerawat Kehitaman (PIH) / Kulit Kusam</option>
+                        <option value="antiaging">Garis Halus & Penuaan Dini (Kehilangan Elastisitas)</option>
+                    </select>
+                </div>
+
+                <div id="modalResultBox" class="p-3.5 rounded-xl bg-sky-50 border border-sky-200 hidden">
+                    <span class="text-[10px] font-mono font-bold text-lab-cyan uppercase block">Rekomendasi Formula Lab:</span>
+                    <h5 id="modalResultTitle" class="font-bold text-lab-navy text-xs mt-0.5">Barrier Matrix Cellular Repair Serum</h5>
+                    <p id="modalResultDesc" class="text-[11px] text-lab-slate mt-1">Formula 10% Ceramide + 2% Panthenol mengunci pemulihan lapisan stratum korneum.</p>
+                </div>
+
+                <div class="pt-2 flex items-center justify-between gap-3">
+                    <button onclick="calculateSkinConcern()" class="w-1/2 py-2.5 rounded-lg bg-lab-surface hover:bg-slate-200 text-lab-navy font-bold text-xs transition">
+                        Analisis Formula
+                    </button>
+                    <a id="modalWaLink" href="https://wa.me/6281234567890?text=Halo%20Aetheria%20Lab,%20saya%20sudah%20mencoba%20Skin%20Concern%20Finder%20dan%20ingin%20konsultasi%20resep." target="_blank" class="w-1/2 py-2.5 rounded-lg bg-lab-navy hover:bg-lab-cyan text-white font-bold text-xs text-center transition">
+                        Pesan via WA &rarr;
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ========================================================================= -->
+    <!-- FLOATING WHATSAPP BUTTON (fixed bottom-24)                                -->
+    <!-- ========================================================================= -->
+    <a href="https://wa.me/6281234567890?text=Halo%20Aetheria%20Clinical%20Lab,%20saya%20ingin%20konsultasi%20masalah%20kulit%20dan%20rekomendasi%20formula." 
+       target="_blank" 
+       class="fixed bottom-24 right-6 z-50 group flex items-center gap-3 bg-white hover:bg-lab-cold text-lab-navy px-4 py-3 rounded-full border border-lab-border shadow-xl hover:border-lab-cyan transition-all duration-300" 
+       aria-label="Konsultasi Kulit via WhatsApp">
+        <span class="relative flex h-3 w-3">
+            <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-emerald-400 opacity-75"></span>
+            <span class="relative inline-flex rounded-full h-3 w-3 bg-emerald-500"></span>
+        </span>
+        <i class="fa-brands fa-whatsapp text-2xl text-emerald-600"></i>
+        <div class="text-left hidden sm:block pr-1">
+            <div class="text-[10px] text-lab-slate font-bold uppercase tracking-wider leading-none">Derm Advisor Online</div>
+            <span class="font-mono font-bold text-xs text-lab-navy">Konsultasi Kulit WA</span>
+        </div>
+    </a>
+
+    <!-- ========================================================================= -->
+    <!-- LENTERA PASAR - STICKY DEMO & SALES BAR (fixed bottom-4)                 -->
+    <!-- ========================================================================= -->
+    <div class="fixed bottom-4 left-1/2 -translate-x-1/2 z-50 w-[95%] max-w-4xl bg-slate-900/95 backdrop-blur-md text-white p-3.5 md:p-4 rounded-2xl shadow-2xl border border-slate-700/80 transition-all duration-300">
+      <div class="flex flex-col md:flex-row items-center justify-between gap-3 md:gap-4">
+        
+        <!-- Info Template & Value Proposition -->
+        <div class="flex items-center gap-3 w-full md:w-auto">
+          <div class="w-10 h-10 rounded-xl bg-lab-cyan/20 border border-lab-cyan/40 flex items-center justify-center shrink-0">
+            <svg class="w-5 h-5 text-lab-cyanglow" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19.428 15.428a2 2 0 00-1.022-.547l-2.387-.477a6 6 0 00-3.86.517l-.318.158a6 6 0 01-3.86.517L6.05 15.21a2 2 0 00-1.806.547M8 4h8l-1 1v5.172a2 2 0 00.586 1.414l5 5c1.26 1.26.367 3.414-1.415 3.414H4.828c-1.782 0-2.674-2.154-1.414-3.414l5-5A2 2 0 009 10.172V5L8 4z" />
+            </svg>
+          </div>
+          <div>
+            <div class="flex items-center gap-2">
+              <span class="font-bold text-sm text-white">Lentera Pasar Engine</span>
+              <span class="text-[10px] bg-lab-cyan/30 text-lab-cyanglow border border-lab-cyan/50 px-2 py-0.5 rounded-full font-mono">Skincare Clinical Lab Template</span>
+            </div>
+            <p class="text-xs text-slate-300 hidden sm:block">
+              Terima beres: Website responsif + Panel input produk sendiri + Dikelola tim iklan profesional.
+            </p>
+          </div>
+        </div>
+
+        <!-- Poin Keunggulan & Tombol Action -->
+        <div class="flex items-center justify-between md:justify-end gap-3 w-full md:w-auto">
+          <div class="hidden lg:flex items-center gap-2 text-xs text-slate-400 border-r border-slate-700 pr-4 font-mono">
+            <div class="flex items-center gap-1 text-slate-200">
+              <svg class="w-4 h-4 text-emerald-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" /></svg>
+              <span>BPOM Badges</span>
+            </div>
+            <span class="text-slate-600">•</span>
+            <div class="flex items-center gap-1 text-slate-200">
+              <svg class="w-4 h-4 text-emerald-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" /></svg>
+              <span>Meta Pixel Ready</span>
+            </div>
+          </div>
+
+          <a href="https://wa.me/6281234567890?text=Halo%20Tim%20Lentera%20Pasar,%20saya%20tertarik%20menggunakan%20template%20website%20Skincare%20Clinical%20Lab%20ini%20lengkap%20dengan%20Admin%20Panel%20dan%20Jasa%20Iklannya." 
+             target="_blank"
+             class="w-full md:w-auto inline-flex items-center justify-center gap-2 bg-gradient-to-r from-lab-cyan to-blue-600 hover:from-blue-600 hover:to-blue-700 text-white text-xs md:text-sm font-semibold px-5 py-2.5 rounded-xl shadow-lg shadow-blue-500/20 transition-all hover:scale-105 shrink-0 font-sans">
+            <span>Gunakan Template Ini</span>
+            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3" />
+            </svg>
+          </a>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- SCRIPT LOGIC -->
+    <script>
+        // Mobile menu toggle
+        const mobileMenuBtn = document.getElementById('mobileMenuBtn');
+        const mobileMenu = document.getElementById('mobileMenu');
+        const menuIcon = document.getElementById('menuIcon');
+
+        mobileMenuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+            if (mobileMenu.classList.contains('hidden')) {
+                menuIcon.classList.remove('fa-xmark');
+                menuIcon.classList.add('fa-bars');
+            } else {
+                menuIcon.classList.remove('fa-bars');
+                menuIcon.classList.add('fa-xmark');
+            }
+        });
+
+        // 3-Step Routine Switcher
+        function switchRoutine(type) {
+            const morningCont = document.getElementById('routineMorning');
+            const nightCont = document.getElementById('routineNight');
+            const btnMorning = document.getElementById('tabMorningBtn');
+            const btnNight = document.getElementById('tabNightBtn');
+
+            if (type === 'morning') {
+                morningCont.classList.remove('hidden');
+                nightCont.classList.add('hidden');
+                btnMorning.classList.add('bg-white', 'text-lab-navy', 'shadow-sm');
+                btnMorning.classList.remove('text-lab-slate');
+                btnNight.classList.remove('bg-white', 'text-lab-navy', 'shadow-sm');
+                btnNight.classList.add('text-lab-slate');
+            } else {
+                morningCont.classList.add('hidden');
+                nightCont.classList.remove('hidden');
+                btnNight.classList.add('bg-slate-900', 'text-white', 'shadow-sm');
+                btnNight.classList.remove('text-lab-slate');
+                btnMorning.classList.remove('bg-white', 'text-lab-navy', 'shadow-sm');
+                btnMorning.classList.add('text-lab-slate');
+            }
+        }
+
+        // Skin Concern Modal Logic
+        const modal = document.getElementById('skinFinderModal');
+        function openSkinFinderModal() {
+            modal.classList.remove('hidden');
+        }
+        function closeSkinFinderModal() {
+            modal.classList.add('hidden');
+        }
+
+        function calculateSkinConcern() {
+            const concern = document.getElementById('modalConcern').value;
+            const resultBox = document.getElementById('modalResultBox');
+            const resultTitle = document.getElementById('modalResultTitle');
+            const resultDesc = document.getElementById('modalResultDesc');
+            const waLink = document.getElementById('modalWaLink');
+
+            resultBox.classList.remove('hidden');
+
+            if (concern === 'barrier') {
+                resultTitle.innerText = "Barrier Matrix Repair Serum (10% Ceramide + 2% Panthenol)";
+                resultDesc.innerText = "Mengunci hidrasi stratum korneum dan memperbaiki tekstur mengelupas dalam 7-14 hari.";
+                waLink.href = "https://wa.me/6281234567890?text=Halo%20Aetheria%20Lab,%20rekomendasi%20Skin%20Finder%20saya%20adalah%20Barrier%20Matrix%20Repair%20Serum.";
+            } else if (concern === 'acne') {
+                resultTitle.innerText = "Clarifying Sebum Elixir (5% Niacinamide + 2% Zinc PCA) & 2% BHA Toner";
+                resultDesc.innerText = "Kombinasi melarutkan sebum pori-pori dan menenangkan jerawat aktif tanpa iritasi.";
+                waLink.href = "https://wa.me/6281234567890?text=Halo%20Aetheria%20Lab,%20rekomendasi%20Skin%20Finder%20saya%20adalah%20Clarifying%20Niacinamide%20dan%202%25%20BHA%20Toner.";
+            } else if (concern === 'darkspots') {
+                resultTitle.innerText = "Radiance Correction Complex (3% Tranexamic Acid + 5% Niacinamide)";
+                resultDesc.innerText = "Menghambat enzim tirosinase dan memudarkan noda pasca inflamasi hiperpigmentasi (PIH).";
+                waLink.href = "https://wa.me/6281234567890?text=Halo%20Aetheria%20Lab,%20rekomendasi%20Skin%20Finder%20saya%20adalah%20Radiance%20Correction%20Complex.";
+            } else {
+                resultTitle.innerText = "Cellular Renewal Retinaldehyde 0.1% & DNA UV Shield SPF 50+";
+                resultDesc.innerText = "Stimulasi kolagen dermal tipe I & III serta pencegahan photodamage spektrum penuh.";
+                waLink.href = "https://wa.me/6281234567890?text=Halo%20Aetheria%20Lab,%20rekomendasi%20Skin%20Finder%20saya%20adalah%20Cellular%20Renewal%20dan%20Sunscreen.";
+            }
+        }
+    </script>
+</body>
+</html>

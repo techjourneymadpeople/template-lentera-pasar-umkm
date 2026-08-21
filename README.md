@@ -25,7 +25,8 @@ template-website-umkm/
 │   ├── fnb-healthy-diet/               # Makanan Sehat, Diet & Salad Organik (Verdant Health Lab)
 │   └── fnb-tradisional-tampah/         # Jajanan Pasar & Kue Tampah Basah (Tampah Ayu Nusantara)
 │
-├── 📁 02-fashion-skincare/             # [BIDANG 2 - Segera Hadir]
+├── 📁 02-fashion-skincare/             # [BIDANG 2 - Fashion & Skincare]
+│   ├── skincare-clinical-lab/          # Skincare Clinical Lab & Derm-Cosmetics BPOM (Aetheria Lab)
 │   ├── fashion-muslim-gamis/           # Hijab, Gamis Syar'i & Abaya Modern
 │   ├── fashion-streetwear-apparel/     # Kaos Distro, Hoodie & Urban Oversize
 │   ├── fashion-batik-etnik/            # Batik Tulis/Cap, Tenun & Kebaya Modern
