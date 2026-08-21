@@ -32,6 +32,7 @@ template-website-umkm/
 │   ├── bodycare-botanical-spa/         # Sabun Organik Cold-Process & Body Care Alami (Alunan Botanika)
 │   ├── fashion-casual-minimal/         # Pakaian Kasual Minimalis Pria & Wanita (Essēns Studio)
 │   ├── fashion-modest-editorial/       # Modest Wear, Gamis Syar'i & Sarimbit Raya (Malika Modest)
+│   ├── fashion-kids-pastel/            # Pakaian Anak, Balita & Bayi SNI Organik (Moomi Kids)
 │   ├── fashion-muslim-gamis/           # Hijab, Gamis Syar'i & Abaya Modern
 │   ├── fashion-streetwear-apparel/     # Kaos Distro, Hoodie & Urban Oversize
 │   ├── fashion-batik-etnik/            # Batik Tulis/Cap, Tenun & Kebaya Modern
