@@ -29,13 +29,13 @@ template-website-umkm/
 │   ├── skincare-clinical-lab/          # Skincare Clinical Lab & Derm-Cosmetics BPOM (Aetheria Lab)
 │   ├── makeup-glam-studio/             # Kosmetik & Make-up Dekoratif Runway Glam (Velvet Runway)
 │   ├── perfume-luxury-atelier/         # Parfum, Wewangian & Extrait Dark Luxury (Noir Sillage)
+│   ├── bodycare-botanical-spa/         # Sabun Organik Cold-Process & Body Care Alami (Alunan Botanika)
 │   ├── fashion-muslim-gamis/           # Hijab, Gamis Syar'i & Abaya Modern
 │   ├── fashion-streetwear-apparel/     # Kaos Distro, Hoodie & Urban Oversize
 │   ├── fashion-batik-etnik/            # Batik Tulis/Cap, Tenun & Kebaya Modern
 │   ├── fashion-kids-baby/              # Pakaian Anak, Bayi & Perlengkapan Ibu
 │   ├── fashion-footwear-shoes/         # Sepatu Lokal Kulit, Sneakers & Sandal
-│   ├── beauty-skincare-serum/          # Skincare Glowing, Serum & Sunscreen BPOM
-│   └── beauty-bodycare-herbal/         # Sabun Organik, Body Scrub & Lulur Alami
+│   └── beauty-skincare-serum/          # Skincare Glowing, Serum & Sunscreen BPOM
 │
 ├── 📁 03-ritel-gadget-hobi/            # [BIDANG 3 - Segera Hadir]
 │   ├── gadget-phone-accessories/       # Case Hp, TWS, Charger & Gadget Acc

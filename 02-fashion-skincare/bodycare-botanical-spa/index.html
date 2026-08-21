@@ -1,0 +1,825 @@
+<!DOCTYPE html>
+<html lang="id" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ALUNAN BOTANIKA — Sabun Batang Organik & Perawatan Tubuh Alami</title>
+    <meta name="description" content="Atelier sabun batang alami metode cold-process, body scrub rempah, dan lotion nabati murni. 100% bebas SLS, paraben, dan minyak sawit perusak hutan.">
+    
+    <!-- Google Fonts: Cormorant Garamond & Plus Jakarta Sans -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,600&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        botanica: {
+                            linen: '#F8F5F0',
+                            warmpaper: '#F1ECE1',
+                            card: '#FFFFFF',
+                            border: '#E3DAC9',
+                            borderdark: '#D0C3AE',
+                            moss: '#344E41',
+                            mosshover: '#283618',
+                            mosslight: '#E7EDE8',
+                            sage: '#588157',
+                            clay: '#A35D43',
+                            claylight: '#F5EBE6',
+                            sand: '#DDBEA9',
+                            earth: '#3D312A',
+                            muted: '#7A7268'
+                        }
+                    },
+                    fontFamily: {
+                        sans: ['"Plus Jakarta Sans"', 'sans-serif'],
+                        serif: ['"Cormorant Garamond"', 'Georgia', 'serif']
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        .no-scrollbar::-webkit-scrollbar { display: none; }
+        .no-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
+        
+        .zen-card {
+            transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+        }
+        .zen-card:hover {
+            transform: translateY(-4px);
+            border-color: #A35D43;
+            box-shadow: 0 20px 35px -10px rgba(52, 78, 65, 0.08);
+        }
+    </style>
+</head>
+<body class="bg-botanica-linen text-botanica-earth font-sans antialiased selection:bg-botanica-moss selection:text-white">
+
+    <!-- 1. TOP ANNOUNCEMENT BAR -->
+    <div class="bg-botanica-moss text-botanica-linen text-[11px] py-2 px-4 tracking-wider uppercase border-b border-botanica-moss/20">
+        <div class="max-w-7xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-2 text-center sm:text-left">
+            <div class="flex items-center justify-center gap-2">
+                <span class="inline-flex items-center gap-1.5 px-2 py-0.5 rounded-full bg-botanica-sage/30 text-white text-[9px] font-bold">
+                    <span class="w-1.5 h-1.5 rounded-full bg-emerald-300 animate-ping"></span>
+                    100% BEBAS SLS & PARABEN
+                </span>
+                <span class="text-stone-200">Metode Cold-Process 28 Hari • Aman untuk Eksim & Kulit Sensitif</span>
+            </div>
+            <div class="flex items-center gap-4 text-[10px] text-stone-200">
+                <span class="hidden md:inline"><i class="fa-solid fa-leaf text-emerald-300 mr-1"></i> Zero Plastic Waste Packaging</span>
+                <span class="hidden md:inline text-botanica-sage">|</span>
+                <a href="katalog.html" class="text-amber-200 hover:text-white underline transition">Katalog Produk Herbal &rarr;</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- 2. NAVBAR -->
+    <header class="sticky top-0 z-40 bg-botanica-linen/95 backdrop-blur-md border-b border-botanica-border transition-all">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-20 sm:h-24">
+                
+                <!-- Logo Brand -->
+                <a href="index.html" class="flex flex-col group">
+                    <span class="text-xl sm:text-2xl font-serif font-bold tracking-[0.15em] text-botanica-moss uppercase leading-none group-hover:text-botanica-clay transition duration-300">
+                        ALUNAN BOTANIKA
+                    </span>
+                    <span class="text-[9px] tracking-[0.35em] text-botanica-clay uppercase mt-1 font-semibold">
+                        Holistic Soap & Botanical Spa
+                    </span>
+                </a>
+
+                <!-- Nav Links Desktop -->
+                <nav class="hidden lg:flex items-center gap-8 text-xs font-semibold tracking-wider uppercase text-stone-700">
+                    <a href="index.html" class="text-botanica-moss font-bold border-b-2 border-botanica-moss pb-1">Beranda</a>
+                    <a href="katalog.html" class="hover:text-botanica-clay transition">Katalog Alami</a>
+                    <a href="detail.html" class="hover:text-botanica-clay transition">Bahan Nabati</a>
+                    <a href="tentang.html" class="hover:text-botanica-clay transition">Metode Cold-Process</a>
+                    <a href="artikel.html" class="hover:text-botanica-clay transition">Jurnal Kulit Sehat</a>
+                    <a href="kontak.html" class="hover:text-botanica-clay transition">Studio & Souvenir</a>
+                </nav>
+
+                <!-- Action Button -->
+                <div class="hidden sm:flex items-center gap-3">
+                    <button onclick="openSkinMatchModal()" class="inline-flex items-center gap-2 px-4 py-2.5 rounded-full border border-botanica-border hover:border-botanica-moss bg-botanica-card text-xs font-semibold tracking-wide text-botanica-earth hover:text-botanica-moss transition">
+                        <i class="fa-solid fa-seedling text-botanica-sage"></i>
+                        <span>Cek Jenis Kulit</span>
+                    </button>
+                    <a href="https://wa.me/6281234567890?text=Halo%20Alunan%20Botanika,%20saya%20ingin%20konsultasi%20sabun%20organik%20untuk%20kulit%20saya." target="_blank" class="inline-flex items-center gap-2 bg-botanica-moss hover:bg-botanica-mosshover text-white text-xs font-semibold tracking-wide px-5 py-2.5 rounded-full shadow-sm transition-all">
+                        <i class="fa-brands fa-whatsapp text-sm text-emerald-300"></i>
+                        <span>Konsultasi WA</span>
+                    </a>
+                </div>
+
+                <!-- Mobile Menu Button -->
+                <button id="mobileMenuBtn" class="lg:hidden p-2 text-botanica-moss hover:text-botanica-clay focus:outline-none" aria-label="Toggle Menu">
+                    <i id="menuIcon" class="fa-solid fa-bars-staggered text-xl"></i>
+                </button>
+            </div>
+        </div>
+
+        <!-- Mobile Drawer -->
+        <div id="mobileMenu" class="hidden lg:hidden bg-botanica-linen border-b border-botanica-border px-4 py-5 space-y-3">
+            <a href="index.html" class="block text-xs font-bold uppercase tracking-widest text-botanica-moss py-2 border-b border-botanica-warmpaper">Beranda Utama</a>
+            <a href="katalog.html" class="block text-xs font-semibold uppercase tracking-widest text-stone-700 hover:text-botanica-moss py-2 border-b border-botanica-warmpaper">Katalog Sabun & Scrub</a>
+            <a href="detail.html" class="block text-xs font-semibold uppercase tracking-widest text-stone-700 hover:text-botanica-moss py-2 border-b border-botanica-warmpaper">Detail Bahan Nabati</a>
+            <a href="tentang.html" class="block text-xs font-semibold uppercase tracking-widest text-stone-700 hover:text-botanica-moss py-2 border-b border-botanica-warmpaper">Filosofi Cold-Process</a>
+            <a href="artikel.html" class="block text-xs font-semibold uppercase tracking-widest text-stone-700 hover:text-botanica-moss py-2 border-b border-botanica-warmpaper">Manfaat Bebas SLS & Eksfoliasi</a>
+            <a href="kontak.html" class="block text-xs font-semibold uppercase tracking-widest text-stone-700 hover:text-botanica-moss py-2">Studio & Souvenir Pernikahan</a>
+            <div class="pt-2 flex flex-col gap-2">
+                <button onclick="openSkinMatchModal()" class="w-full py-3 rounded-full bg-botanica-card text-botanica-moss border border-botanica-border text-xs font-bold uppercase tracking-wider flex items-center justify-center gap-2">
+                    <i class="fa-solid fa-seedling text-botanica-sage"></i> Rekomendasi Sabun Kulit
+                </button>
+                <a href="https://wa.me/6281234567890?text=Halo%20Alunan%20Botanika,%20saya%20ingin%20konsultasi." target="_blank" class="w-full py-3 rounded-full bg-botanica-moss text-white text-xs font-bold uppercase tracking-wider text-center flex items-center justify-center gap-2">
+                    <i class="fa-brands fa-whatsapp"></i> Chat Herbalist WA
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- 3. HERO: ZEN ASYMMETRIC BOTANICAL CANVAS -->
+    <section class="py-16 sm:py-24 border-b border-botanica-border relative overflow-hidden">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+                
+                <!-- Left Narrative (7 Cols) -->
+                <div class="lg:col-span-7 space-y-6 text-center lg:text-left">
+                    <div class="inline-flex items-center gap-2 px-3.5 py-1 rounded-full bg-botanica-warmpaper border border-botanica-border text-botanica-moss text-xs font-semibold tracking-wider shadow-inner">
+                        <span class="w-2 h-2 rounded-full bg-botanica-sage"></span>
+                        <span>ARTISAN COLD-PROCESS SOAP ATELIER</span>
+                    </div>
+
+                    <h1 class="text-4xl sm:text-6xl lg:text-7xl font-serif font-bold text-botanica-moss tracking-tight leading-[1.1]">
+                        Nourish Your Skin <br>
+                        <span class="italic font-normal text-botanica-clay">with Pure Earth's</span> <br>
+                        Gentle Touch.
+                    </h1>
+
+                    <p class="text-botanica-muted text-sm sm:text-base max-w-xl mx-auto lg:mx-0 leading-relaxed font-light">
+                        Kembalikan kesehatan alami kulitmu dengan nutrisi minyak nabati murni, susu kambing etawa segar, dan rempah Nusantara. Dibuat secara tradisional tanpa deterjen sintetik, busa buatan, atau pengawet kimia.
+                    </p>
+
+                    <!-- Botanical Badges Strip -->
+                    <div class="pt-2 flex flex-wrap items-center justify-center lg:justify-start gap-2 text-xs">
+                        <span class="px-3.5 py-1.5 rounded-full bg-botanica-card border border-botanica-border text-botanica-moss font-medium">
+                            <i class="fa-solid fa-droplet text-botanica-clay mr-1"></i> Extra Virgin Olive Oil
+                        </span>
+                        <span class="px-3.5 py-1.5 rounded-full bg-botanica-card border border-botanica-border text-botanica-moss font-medium">
+                            <i class="fa-solid fa-shield-heart text-botanica-sage mr-1"></i> Raw Shea Butter
+                        </span>
+                        <span class="px-3.5 py-1.5 rounded-full bg-botanica-card border border-botanica-border text-botanica-moss font-medium">
+                            <i class="fa-solid fa-seedling text-emerald-600 mr-1"></i> Oat & Honey
+                        </span>
+                    </div>
+
+                    <!-- CTA Group -->
+                    <div class="pt-6 flex flex-wrap items-center justify-center lg:justify-start gap-4">
+                        <a href="katalog.html" class="inline-flex items-center gap-3 bg-botanica-moss hover:bg-botanica-mosshover text-white text-xs font-bold tracking-widest uppercase px-8 py-4 rounded-full shadow-lg transition-all duration-300">
+                            <span>LIHAT KOLEKSI SABUN ALAMI</span>
+                            <i class="fa-solid fa-arrow-right text-[10px]"></i>
+                        </a>
+                        <button onclick="openSkinMatchModal()" class="inline-flex items-center gap-2 bg-botanica-card hover:bg-botanica-warmpaper text-botanica-earth text-xs font-bold tracking-widest uppercase px-7 py-4 rounded-full border border-botanica-border transition">
+                            <i class="fa-solid fa-spa text-botanica-clay"></i>
+                            <span>PILIH SESUAI KULIT</span>
+                        </button>
+                    </div>
+
+                    <!-- Value Points Strip -->
+                    <div class="pt-8 border-t border-botanica-border/80 grid grid-cols-3 gap-4 text-left">
+                        <div>
+                            <span class="text-xl sm:text-2xl font-serif font-bold text-botanica-moss block">28 Hari</span>
+                            <span class="text-[11px] text-botanica-muted leading-tight block">Masa Curing Alami</span>
+                        </div>
+                        <div>
+                            <span class="text-xl sm:text-2xl font-serif font-bold text-botanica-moss block">0% SLS</span>
+                            <span class="text-[11px] text-botanica-muted leading-tight block">Tanpa Busa Kimia</span>
+                        </div>
+                        <div>
+                            <span class="text-xl sm:text-2xl font-serif font-bold text-botanica-moss block">100% Eco</span>
+                            <span class="text-[11px] text-botanica-muted leading-tight block">Kertas Daur Ulang</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Right Visual: Artisanal Soap Bar on Stone Plate (5 Cols) -->
+                <div class="lg:col-span-5 relative">
+                    <div class="relative rounded-3xl overflow-hidden border border-botanica-border bg-botanica-card p-4 shadow-xl group">
+                        <div class="h-[480px] sm:h-[520px] rounded-2xl overflow-hidden bg-botanica-warmpaper relative flex items-center justify-center">
+                            <img src="https://images.unsplash.com/photo-1607006314591-6287e076612d?auto=format&fit=crop&w=1000&q=80" alt="Potongan Sabun Organik Alami" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700">
+                            
+                            <!-- Floating Botanical Spec Tag -->
+                            <div class="absolute bottom-6 left-6 right-6 p-4 rounded-2xl bg-white/95 backdrop-blur-md border border-botanica-border text-botanica-earth shadow-lg">
+                                <div class="flex items-center justify-between text-[10px] font-bold text-botanica-clay uppercase mb-1">
+                                    <span>ARTISAN BATCH NO. 24</span>
+                                    <span>BERAT BERSIH: 100 GRAM</span>
+                                </div>
+                                <div class="font-serif font-bold text-base text-botanica-moss">Kastil Murni & Susu Kambing Madu</div>
+                                <p class="text-[11px] text-stone-600 mt-1 line-clamp-2">Diperkaya minyak zaitun murni dan madu hutan untuk menjaga kelembapan kulit eksim.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- 4. SECTION KHUSUS: KEBAIKAN 4 MINYAK NABATI MURNI -->
+    <section class="py-20 bg-botanica-warmpaper border-b border-botanica-border">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            
+            <div class="text-center max-w-2xl mx-auto mb-16">
+                <span class="text-xs uppercase tracking-[0.25em] text-botanica-clay font-bold block mb-1">
+                    // KEBAIKAN BOTANIKAL MURNI
+                </span>
+                <h2 class="text-3xl sm:text-4xl font-serif font-bold text-botanica-moss">
+                    Empat Pilar Nutrisi Minyak Alami
+                </h2>
+                <p class="text-xs sm:text-sm text-botanica-muted mt-2 leading-relaxed">
+                    Setiap batang sabun kami mengandung gliserin alami hasil proses saponifikasi murni yang menjaga lapisan pelindung kulit (*skin barrier*) tetap lembap.
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+                
+                <!-- Ingredient 1 -->
+                <div class="p-6 rounded-3xl bg-white border border-botanica-border flex flex-col justify-between zen-card">
+                    <div>
+                        <div class="w-12 h-12 rounded-2xl bg-botanica-linen text-botanica-moss flex items-center justify-center text-xl mb-4 border border-botanica-border">
+                            <i class="fa-solid fa-droplet"></i>
+                        </div>
+                        <h4 class="text-base font-serif font-bold text-botanica-moss">Extra Virgin Olive Oil</h4>
+                        <p class="text-xs text-botanica-muted mt-2 leading-relaxed font-light">
+                            Kaya akan squalene alami dan vitamin E untuk melembutkan kulit yang sangat kering dan bersisik.
+                        </p>
+                    </div>
+                    <div class="mt-6 pt-3 border-t border-botanica-border text-[11px] font-bold text-botanica-clay uppercase">
+                        Kadar Formula: 45% Base
+                    </div>
+                </div>
+
+                <!-- Ingredient 2 -->
+                <div class="p-6 rounded-3xl bg-white border border-botanica-border flex flex-col justify-between zen-card">
+                    <div>
+                        <div class="w-12 h-12 rounded-2xl bg-botanica-linen text-botanica-clay flex items-center justify-center text-xl mb-4 border border-botanica-border">
+                            <i class="fa-solid fa-shield-heart"></i>
+                        </div>
+                        <h4 class="text-base font-serif font-bold text-botanica-moss">Raw Shea Butter Afrika</h4>
+                        <p class="text-xs text-botanica-muted mt-2 leading-relaxed font-light">
+                            Lemak nabati mentah yang membentuk lapisan pelindung kelembapan alami dari iritasi cuaca tropis.
+                        </p>
+                    </div>
+                    <div class="mt-6 pt-3 border-t border-botanica-border text-[11px] font-bold text-botanica-clay uppercase">
+                        Unrefined Shea 15%
+                    </div>
+                </div>
+
+                <!-- Ingredient 3 -->
+                <div class="p-6 rounded-3xl bg-white border border-botanica-border flex flex-col justify-between zen-card">
+                    <div>
+                        <div class="w-12 h-12 rounded-2xl bg-botanica-linen text-botanica-sage flex items-center justify-center text-xl mb-4 border border-botanica-border">
+                            <i class="fa-solid fa-spa"></i>
+                        </div>
+                        <h4 class="text-base font-serif font-bold text-botanica-moss">Virgin Coconut Oil (VCO)</h4>
+                        <p class="text-xs text-botanica-muted mt-2 leading-relaxed font-light">
+                            Menghasilkan busa lembut alami berlimpah dengan kandungan asam laurat sebagai antibakteri alami.
+                        </p>
+                    </div>
+                    <div class="mt-6 pt-3 border-t border-botanica-border text-[11px] font-bold text-botanica-clay uppercase">
+                        Cold-Pressed Lokal
+                    </div>
+                </div>
+
+                <!-- Ingredient 4 -->
+                <div class="p-6 rounded-3xl bg-white border border-botanica-border flex flex-col justify-between zen-card">
+                    <div>
+                        <div class="w-12 h-12 rounded-2xl bg-botanica-linen text-indigo-800 flex items-center justify-center text-xl mb-4 border border-botanica-border">
+                            <i class="fa-solid fa-wind"></i>
+                        </div>
+                        <h4 class="text-base font-serif font-bold text-botanica-moss">Lavender & Peppermint Oil</h4>
+                        <p class="text-xs text-botanica-muted mt-2 leading-relaxed font-light">
+                            Minyak esensial murni (*pure essential oil*) untuk aroma terapeutik relaksasi pikiran tanpa wewangian kimia sintetis.
+                        </p>
+                    </div>
+                    <div class="mt-6 pt-3 border-t border-botanica-border text-[11px] font-bold text-botanica-clay uppercase">
+                        100% Pure Essential Oil
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+    <!-- 5. PRODUK UNGGULAN: GRID 3 KOLOM SABUN BATANG & SCRUB ORGANIK -->
+    <section class="py-20 border-b border-botanica-border">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            
+            <div class="flex flex-col md:flex-row md:items-end justify-between mb-14">
+                <div>
+                    <span class="text-xs uppercase tracking-[0.25em] text-botanica-clay font-bold block mb-1">
+                        // PILIHAN FAVORIT HOLISTIC SPA
+                    </span>
+                    <h2 class="text-3xl sm:text-4xl font-serif font-bold text-botanica-moss">
+                        Sabun Batang & Perawatan Tubuh Alami
+                    </h2>
+                    <p class="text-xs sm:text-sm text-botanica-muted mt-2 max-w-xl">
+                        Setiap potongan dipotong tangan (*hand-cut*) dengan motif marmer alami yang unik dan dibalut kertas ramah lingkungan.
+                    </p>
+                </div>
+                <a href="katalog.html" class="mt-4 md:mt-0 text-xs font-bold text-botanica-moss border-b border-botanica-moss pb-1 hover:text-botanica-clay transition uppercase tracking-wider">
+                    Lihat Semua 8 Produk &rarr;
+                </a>
+            </div>
+
+            <!-- 3 Columns Products -->
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                
+                <!-- Product 1: Goat Milk Honey -->
+                <div class="bg-white rounded-3xl border border-botanica-border p-6 flex flex-col justify-between zen-card">
+                    <div>
+                        <div class="flex items-center justify-between text-[10px] font-bold text-stone-500 uppercase mb-3">
+                            <span class="text-botanica-clay">SABUN BATANG COLD-PROCESS</span>
+                            <span class="px-2 py-0.5 rounded-full bg-botanica-warmpaper text-botanica-moss">100 GRAM</span>
+                        </div>
+
+                        <div class="h-64 rounded-2xl bg-botanica-warmpaper overflow-hidden mb-4 relative group flex items-center justify-center">
+                            <img src="https://images.unsplash.com/photo-1607006314591-6287e076612d?auto=format&fit=crop&w=700&q=80" alt="Goat Milk Honey Soap" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                            <span class="absolute top-3 right-3 bg-white/90 backdrop-blur-sm text-botanica-moss text-[9px] font-bold px-2.5 py-1 rounded-full border border-botanica-border">
+                                COCOK UNTUK EKSIM
+                            </span>
+                        </div>
+
+                        <div class="text-[11px] font-semibold text-botanica-clay tracking-wide mb-1">
+                            SUSU KAMBING • MADU HUTAN • OAT
+                        </div>
+                        <h3 class="text-lg font-serif font-bold text-botanica-moss">Kastil Susu Kambing & Madu</h3>
+                        <p class="text-xs text-botanica-muted mt-2 leading-relaxed font-light">
+                            Formula paling lembut tanpa pewangi buatan. Sangat aman untuk kulit bayi, eksim, dermatitis, dan psoriasis.
+                        </p>
+
+                        <div class="mt-4 p-3 rounded-xl bg-botanica-linen border border-botanica-border text-[11px] space-y-1 text-botanica-earth">
+                            <div class="flex justify-between"><span>Tingkat Busa:</span> <strong class="text-botanica-moss">Krem Lembut (Creamy)</strong></div>
+                            <div class="flex justify-between"><span>Aroma Alami:</span> <strong class="text-botanica-moss">Manis Madu Lembut Alami</strong></div>
+                            <div class="flex justify-between"><span>BPOM RI:</span> <strong class="text-stone-600 font-mono">NA18230501842</strong></div>
+                        </div>
+                    </div>
+
+                    <div class="mt-6 pt-4 border-t border-botanica-border flex items-center justify-between">
+                        <div>
+                            <span class="text-[10px] text-stone-500 block uppercase">Harga Batang</span>
+                            <span class="text-lg font-serif font-bold text-botanica-moss">Rp 48.000</span>
+                        </div>
+                        <a href="detail.html" class="px-4 py-2 rounded-full bg-botanica-moss text-white text-xs font-bold tracking-wider hover:bg-botanica-mosshover transition">
+                            DETAIL BAHAN &rarr;
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Product 2: Coffee Scrub & Cinnamon -->
+                <div class="bg-white rounded-3xl border-2 border-botanica-clay/40 p-6 flex flex-col justify-between zen-card relative shadow-sm">
+                    <div class="absolute -top-3 left-1/2 -translate-x-1/2 bg-botanica-clay text-white text-[9px] font-bold px-4 py-1 rounded-full uppercase tracking-widest shadow">
+                        ★ BEST SELLER SCRUB
+                    </div>
+                    <div>
+                        <div class="flex items-center justify-between text-[10px] font-bold text-stone-500 uppercase mb-3">
+                            <span class="text-botanica-clay">EXFOLIATING SOAP BAR</span>
+                            <span class="px-2 py-0.5 rounded-full bg-botanica-warmpaper text-botanica-moss">100 GRAM</span>
+                        </div>
+
+                        <div class="h-64 rounded-2xl bg-botanica-warmpaper overflow-hidden mb-4 relative group flex items-center justify-center">
+                            <img src="https://images.unsplash.com/photo-1546554137-f86b9593a222?auto=format&fit=crop&w=700&q=80" alt="Coffee Cinnamon Soap" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                            <span class="absolute top-3 right-3 bg-white/90 backdrop-blur-sm text-botanica-clay text-[9px] font-bold px-2.5 py-1 rounded-full border border-botanica-border">
+                                PENGANGKAT SEL KULIT MATI
+                            </span>
+                        </div>
+
+                        <div class="text-[11px] font-semibold text-botanica-clay tracking-wide mb-1">
+                            KOPI ROBUSTA • KAYU MANIS • VCO
+                        </div>
+                        <h3 class="text-lg font-serif font-bold text-botanica-moss">Kopi Robusta & Rempah Kayu Manis</h3>
+                        <p class="text-xs text-botanica-muted mt-2 leading-relaxed font-light">
+                            Butiran bubuk kopi robusta asli mengangkat daki dan sel kulit mati, melancarkan sirkulasi darah serta menyamarkan selulit.
+                        </p>
+
+                        <div class="mt-4 p-3 rounded-xl bg-botanica-linen border border-botanica-border text-[11px] space-y-1 text-botanica-earth">
+                            <div class="flex justify-between"><span>Tingkat Busa:</span> <strong class="text-botanica-moss">Melimpah & Bertekstur</strong></div>
+                            <div class="flex justify-between"><span>Aroma Alami:</span> <strong class="text-botanica-moss">Kopi Hangat & Rempah Spa</strong></div>
+                            <div class="flex justify-between"><span>BPOM RI:</span> <strong class="text-stone-600 font-mono">NA18230502190</strong></div>
+                        </div>
+                    </div>
+
+                    <div class="mt-6 pt-4 border-t border-botanica-border flex items-center justify-between">
+                        <div>
+                            <span class="text-[10px] text-stone-500 block uppercase">Harga Batang</span>
+                            <span class="text-lg font-serif font-bold text-botanica-moss">Rp 52.000</span>
+                        </div>
+                        <a href="detail.html" class="px-4 py-2 rounded-full bg-botanica-clay text-white text-xs font-bold tracking-wider hover:bg-stone-700 transition">
+                            DETAIL BAHAN &rarr;
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Product 3: French Lavender Clay -->
+                <div class="bg-white rounded-3xl border border-botanica-border p-6 flex flex-col justify-between zen-card">
+                    <div>
+                        <div class="flex items-center justify-between text-[10px] font-bold text-stone-500 uppercase mb-3">
+                            <span class="text-botanica-clay">CALMING SPA SOAP BAR</span>
+                            <span class="px-2 py-0.5 rounded-full bg-botanica-warmpaper text-botanica-moss">100 GRAM</span>
+                        </div>
+
+                        <div class="h-64 rounded-2xl bg-botanica-warmpaper overflow-hidden mb-4 relative group flex items-center justify-center">
+                            <img src="https://images.unsplash.com/photo-1590439471364-192aa70c0b53?auto=format&fit=crop&w=700&q=80" alt="French Lavender Clay Soap" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                            <span class="absolute top-3 right-3 bg-white/90 backdrop-blur-sm text-indigo-900 text-[9px] font-bold px-2.5 py-1 rounded-full border border-botanica-border">
+                                RELAKSASI TIDUR
+                            </span>
+                        </div>
+
+                        <div class="text-[11px] font-semibold text-botanica-clay tracking-wide mb-1">
+                            LAVENDER ESSENTIAL • FRENCH CLAY
+                        </div>
+                        <h3 class="text-lg font-serif font-bold text-botanica-moss">French Lavender & Purple Clay</h3>
+                        <p class="text-xs text-botanica-muted mt-2 leading-relaxed font-light">
+                            Perpaduan minyak esensial lavender Prancis dan lempung mineral ungu untuk detoksifikasi pori-pori dan meredakan jerawat punggung.
+                        </p>
+
+                        <div class="mt-4 p-3 rounded-xl bg-botanica-linen border border-botanica-border text-[11px] space-y-1 text-botanica-earth">
+                            <div class="flex justify-between"><span>Tingkat Busa:</span> <strong class="text-botanica-moss">Busa Sutra Halus</strong></div>
+                            <div class="flex justify-between"><span>Aroma Alami:</span> <strong class="text-botanica-moss">Bunga Lavender Menenangkan</strong></div>
+                            <div class="flex justify-between"><span>BPOM RI:</span> <strong class="text-stone-600 font-mono">NA18230503011</strong></div>
+                        </div>
+                    </div>
+
+                    <div class="mt-6 pt-4 border-t border-botanica-border flex items-center justify-between">
+                        <div>
+                            <span class="text-[10px] text-stone-500 block uppercase">Harga Batang</span>
+                            <span class="text-lg font-serif font-bold text-botanica-moss">Rp 55.000</span>
+                        </div>
+                        <a href="detail.html" class="px-4 py-2 rounded-full bg-botanica-moss text-white text-xs font-bold tracking-wider hover:bg-botanica-mosshover transition">
+                            DETAIL BAHAN &rarr;
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+    <!-- 6. TESTIMONI: PELANGGAN KULIT SENSITIF & ZERO-WASTE COMMUNITY -->
+    <section class="py-20 bg-botanica-warmpaper border-b border-botanica-border">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            
+            <div class="text-center max-w-2xl mx-auto mb-16">
+                <span class="text-xs uppercase tracking-[0.25em] text-botanica-clay font-bold block mb-1">
+                    // CERITA DARI PENGGUNA ALAMI
+                </span>
+                <h2 class="text-3xl sm:text-4xl font-serif font-bold text-botanica-moss">
+                    Kesan Sahabat Kulit Sehat
+                </h2>
+                <p class="text-xs sm:text-sm text-botanica-muted mt-2">
+                    Kisah nyata dari mereka yang berhasil meredakan gatal eksim dan beralih ke gaya hidup bebas sampah plastik.
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                
+                <!-- Review 1 -->
+                <div class="bg-white rounded-3xl p-8 border border-botanica-border flex flex-col justify-between zen-card">
+                    <div>
+                        <div class="flex items-center gap-1 text-amber-500 text-xs mb-4">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                        <p class="text-xs sm:text-sm text-stone-700 italic leading-relaxed font-light">
+                            "Sudah 3 tahun berjuang dengan eksim di lipatan tangan. Setelah ganti sabun mandi biasa dengan Varian Susu Kambing Alunan Botanika, kulit tidak lagi terasa perih atau tertarik setelah mandi. Sangat melembapkan!"
+                        </p>
+                    </div>
+                    <div class="mt-6 pt-4 border-t border-botanica-border flex items-center gap-3">
+                        <div class="w-10 h-10 rounded-full bg-botanica-moss text-white font-serif font-bold flex items-center justify-center text-sm">
+                            AN
+                        </div>
+                        <div>
+                            <div class="text-xs font-bold text-botanica-moss">Anindya Nirmala</div>
+                            <span class="text-[10px] text-stone-500">Ibu Rumah Tangga & Pejuang Eksim</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Review 2 -->
+                <div class="bg-white rounded-3xl p-8 border-2 border-botanica-clay/40 flex flex-col justify-between zen-card shadow-sm">
+                    <div>
+                        <div class="flex items-center gap-1 text-amber-500 text-xs mb-4">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                        <p class="text-xs sm:text-sm text-stone-700 italic leading-relaxed font-light">
+                            "Saya pesan 200 batang sabun custom kopi dan lavender untuk souvenir pernikahan. Tamu-tamu sangat terkesan karena kemasannya dari daun pisang kering dan kertas daur ulang tanpa ada plastik sedikit pun!"
+                        </p>
+                    </div>
+                    <div class="mt-6 pt-4 border-t border-botanica-border flex items-center gap-3">
+                        <div class="w-10 h-10 rounded-full bg-botanica-clay text-white font-serif font-bold flex items-center justify-center text-sm">
+                            RD
+                        </div>
+                        <div>
+                            <div class="text-xs font-bold text-botanica-moss">Rangga & Dania</div>
+                            <span class="text-[10px] text-stone-500">Eco-Wedding Couple</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Review 3 -->
+                <div class="bg-white rounded-3xl p-8 border border-botanica-border flex flex-col justify-between zen-card">
+                    <div>
+                        <div class="flex items-center gap-1 text-amber-500 text-xs mb-4">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                        <p class="text-xs sm:text-sm text-stone-700 italic leading-relaxed font-light">
+                            "Sabun kopi robustanya juara untuk eksfoliasi punggung. Tekstur scrub-nya pas di kulit dan aroma kopinya bikin mandi pagi berasa spa di Ubud. Kulit jadi halus lembut tanpa rasa kering."
+                        </p>
+                    </div>
+                    <div class="mt-6 pt-4 border-t border-botanica-border flex items-center gap-3">
+                        <div class="w-10 h-10 rounded-full bg-botanica-sage text-white font-serif font-bold flex items-center justify-center text-sm">
+                            BK
+                        </div>
+                        <div>
+                            <div class="text-xs font-bold text-botanica-moss">Bagas Kuncoro</div>
+                            <span class="text-[10px] text-stone-500">Zero Waste Enthusiast</span>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+    <!-- 7. FOOTER BOTANICAL SPA -->
+    <footer class="bg-botanica-linen text-stone-700 border-t border-botanica-border pt-16 pb-28">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-10">
+                
+                <!-- Col 1: Brand -->
+                <div class="lg:col-span-2 space-y-4">
+                    <a href="index.html" class="flex flex-col">
+                        <span class="text-xl font-serif font-bold tracking-[0.15em] text-botanica-moss uppercase">
+                            ALUNAN BOTANIKA
+                        </span>
+                        <span class="text-[9px] tracking-[0.35em] text-botanica-clay uppercase font-semibold">
+                            Holistic Soap & Botanical Spa
+                        </span>
+                    </a>
+                    <p class="text-xs text-botanica-muted leading-relaxed max-w-sm">
+                        Lentera Pasar Bodycare & Organic Soap Template. Kerajinan sabun batang alami metode tradisional cold-process menggunakan minyak zaitun, shea butter, dan rempah Nusantara tanpa limbah kimia berbahaya.
+                    </p>
+                    <div class="pt-2 text-xs text-stone-700 space-y-1">
+                        <div><i class="fa-solid fa-location-dot text-botanica-clay mr-2"></i> Jl. Raya Tegalalang No. 88, Ubud, Gianyar, Bali 80561</div>
+                        <div><i class="fa-brands fa-whatsapp text-emerald-600 mr-2"></i> +62 812-3456-7890 (Layanan Konsultasi Kulit)</div>
+                    </div>
+                </div>
+
+                <!-- Col 2: Navigasi -->
+                <div>
+                    <h4 class="text-xs font-bold uppercase tracking-wider text-botanica-moss mb-4">Navigasi Utama</h4>
+                    <ul class="space-y-2.5 text-xs text-botanica-muted font-medium">
+                        <li><a href="index.html" class="hover:text-botanica-clay transition">Beranda Utama</a></li>
+                        <li><a href="katalog.html" class="hover:text-botanica-clay transition">Katalog Sabun & Scrub</a></li>
+                        <li><a href="detail.html" class="hover:text-botanica-clay transition">Bahan Nabati Alami</a></li>
+                        <li><a href="tentang.html" class="hover:text-botanica-clay transition">Kisah Cold-Process</a></li>
+                        <li><a href="artikel.html" class="hover:text-botanica-clay transition">Jurnal Kulit Sehat</a></li>
+                        <li><a href="kontak.html" class="hover:text-botanica-clay transition">Studio & Souvenir</a></li>
+                    </ul>
+                </div>
+
+                <!-- Col 3: Kategori Produk -->
+                <div>
+                    <h4 class="text-xs font-bold uppercase tracking-wider text-botanica-moss mb-4">Koleksi Herbal</h4>
+                    <ul class="space-y-2.5 text-xs text-botanica-muted">
+                        <li><a href="katalog.html" class="hover:text-botanica-clay transition">Sabun Kastil Susu Kambing</a></li>
+                        <li><a href="katalog.html" class="hover:text-botanica-clay transition">Sabun Scrub Kopi & Rempah</a></li>
+                        <li><a href="katalog.html" class="hover:text-botanica-clay transition">Sabun Lavender & Clay</a></li>
+                        <li><a href="katalog.html" class="hover:text-botanica-clay transition">Lulur Mandi Organik</a></li>
+                        <li><a href="kontak.html" class="hover:text-botanica-clay transition">Paket Souvenir Custom</a></li>
+                    </ul>
+                </div>
+
+                <!-- Col 4: Keamanan & Izin Resmi -->
+                <div>
+                    <h4 class="text-xs font-bold uppercase tracking-wider text-botanica-moss mb-4">Legalitas & Sertifikasi</h4>
+                    <div class="space-y-2 text-xs text-stone-700">
+                        <div class="p-2.5 rounded-xl bg-botanica-warmpaper border border-botanica-border">
+                            <span class="text-[10px] text-stone-500 block uppercase font-bold">BPOM RI Terdaftar:</span>
+                            <span class="font-bold text-botanica-moss font-mono text-[11px]">NA18230501842 / NA18230502190</span>
+                        </div>
+                        <div class="p-2.5 rounded-xl bg-botanica-warmpaper border border-botanica-border">
+                            <span class="text-[10px] text-stone-500 block uppercase font-bold">Standar Lingkungan:</span>
+                            <span class="font-bold text-botanica-moss text-[11px]">100% Zero-Waste & Palm-Oil Free</span>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="mt-12 pt-8 border-t border-botanica-border flex flex-col sm:flex-row items-center justify-between text-xs text-stone-500">
+                <p>&copy; 2026 ALUNAN BOTANIKA ATELIER. All Rights Reserved.</p>
+                <p class="text-[11px] mt-2 sm:mt-0">Lentera Pasar Production Template — Botanical Spa</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- ========================================================================= -->
+    <!-- SKIN MATCHER DIAGNOSTIC MODAL                                             -->
+    <!-- ========================================================================= -->
+    <div id="skinMatchModal" class="fixed inset-0 z-50 bg-black/60 backdrop-blur-sm hidden flex items-center justify-center p-4">
+        <div class="bg-white rounded-3xl border border-botanica-border max-w-lg w-full p-6 sm:p-8 shadow-2xl relative text-botanica-earth">
+            <button onclick="closeSkinMatchModal()" class="absolute top-5 right-5 text-stone-400 hover:text-botanica-moss text-lg p-1">
+                <i class="fa-solid fa-xmark"></i>
+            </button>
+            <div class="flex items-center gap-3 mb-6">
+                <div class="w-10 h-10 rounded-full bg-botanica-warmpaper text-botanica-clay flex items-center justify-center text-lg border border-botanica-border">
+                    <i class="fa-solid fa-seedling"></i>
+                </div>
+                <div>
+                    <h3 class="text-lg font-serif font-bold text-botanica-moss">Pencocok Sabun Herbal Alami</h3>
+                    <p class="text-xs text-stone-500">Temukan formula sabun nabati yang paling selaras dengan kulitmu.</p>
+                </div>
+            </div>
+
+            <div class="space-y-4 text-xs">
+                <div>
+                    <label class="block font-bold text-botanica-moss mb-1.5 uppercase">1. Kondisi & Masalah Kulit Utama:</label>
+                    <select id="modalSkinCondition" class="w-full p-3 rounded-xl border border-botanica-border bg-botanica-linen text-botanica-earth focus:outline-none focus:border-botanica-moss text-xs font-sans">
+                        <option value="ecsema">Sangat Kering, Gatal Eksim, Mengelupas, atau Sensitif</option>
+                        <option value="dull">Kusam, Bersisik, Membutuhkan Eksfoliasi Pengangkat Daki</option>
+                        <option value="acne">Jerawat Punggung / Pori-Pori Tersumbat / Butuh Relaksasi</option>
+                        <option value="normal">Normal, Ingin Sabun Mandi Alami Sehat Bebas Kimia</option>
+                    </select>
+                </div>
+
+                <div>
+                    <label class="block font-bold text-botanica-moss mb-1.5 uppercase">2. Preferensi Sensasi Aroma:</label>
+                    <select id="modalAroma" class="w-full p-3 rounded-xl border border-botanica-border bg-botanica-linen text-botanica-earth focus:outline-none focus:border-botanica-moss text-xs font-sans">
+                        <option value="mild">Tanpa Pewangi / Sangat Lembut Alami Madu</option>
+                        <option value="coffee">Segar & Berenergi (Kopi & Rempah Hangat)</option>
+                        <option value="lavender">Menenangkan Pikiran (Lavender Aromaterapi)</option>
+                    </select>
+                </div>
+
+                <div id="modalSkinResult" class="p-4 rounded-2xl bg-botanica-warmpaper border border-botanica-border hidden space-y-2">
+                    <span class="text-[10px] font-bold text-botanica-clay uppercase block">Rekomendasi Sabun Batang:</span>
+                    <h5 id="modalSkinTitle" class="font-serif font-bold text-botanica-moss text-sm">Kastil Susu Kambing & Madu Hutan (100g)</h5>
+                    <p id="modalSkinDesc" class="text-xs text-botanica-muted leading-relaxed">Minyak zaitun murni dan susu kambing etawa untuk menenangkan kulit eksim.</p>
+                </div>
+
+                <div class="pt-2 flex items-center justify-between gap-3">
+                    <button onclick="calculateSkinMatch()" class="w-1/2 py-3 rounded-full bg-botanica-warmpaper hover:bg-botanica-border text-botanica-moss font-bold text-xs uppercase tracking-wider transition">
+                        Analisis Kulit
+                    </button>
+                    <a id="modalSkinWaLink" href="https://wa.me/6281234567890?text=Halo%20Alunan%20Botanika,%20saya%20sudah%20mencoba%20Skin%20Matcher%20dan%20ingin%20memesan." target="_blank" class="w-1/2 py-3 rounded-full bg-botanica-moss hover:bg-botanica-mosshover text-white font-bold text-xs uppercase tracking-wider text-center transition">
+                        Pesan via WA &rarr;
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ========================================================================= -->
+    <!-- FLOATING WHATSAPP BUTTON (bottom-24)                                      -->
+    <!-- ========================================================================= -->
+    <a href="https://wa.me/6281234567890?text=Halo%20Alunan%20Botanika,%20saya%20ingin%20konsultasi%20sabun%20organik." 
+       target="_blank" 
+       class="fixed bottom-24 right-6 z-50 group flex items-center gap-3 bg-white hover:bg-botanica-linen text-botanica-earth px-4 py-3 rounded-full border border-botanica-border shadow-2xl hover:border-botanica-moss transition-all duration-300" 
+       aria-label="Konsultasi Herbal via WhatsApp">
+        <span class="relative flex h-3 w-3">
+            <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-emerald-400 opacity-75"></span>
+            <span class="relative inline-flex rounded-full h-3 w-3 bg-emerald-500"></span>
+        </span>
+        <i class="fa-brands fa-whatsapp text-2xl text-emerald-600"></i>
+        <div class="text-left hidden sm:block pr-1">
+            <div class="text-[10px] text-stone-500 font-bold uppercase tracking-wider leading-none">Herbal Advisor</div>
+            <span class="font-bold text-xs text-botanica-moss">Konsultasi Sabun WA</span>
+        </div>
+    </a>
+
+    <!-- ========================================================================= -->
+    <!-- LENTERA PASAR - STICKY DEMO & SALES BAR (fixed bottom-4)                 -->
+    <!-- ========================================================================= -->
+    <div class="fixed bottom-4 left-1/2 -translate-x-1/2 z-50 w-[95%] max-w-4xl bg-slate-900/95 backdrop-blur-md text-white p-3.5 md:p-4 rounded-2xl shadow-2xl border border-slate-700/80 transition-all duration-300">
+      <div class="flex flex-col md:flex-row items-center justify-between gap-3 md:gap-4">
+        
+        <div class="flex items-center gap-3 w-full md:w-auto">
+          <div class="w-10 h-10 rounded-xl bg-emerald-500/20 border border-emerald-500/40 flex items-center justify-center shrink-0">
+            <svg class="w-5 h-5 text-emerald-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 3v4M3 5h4M6 17v4m-2-2h4m5-16l2.286 6.857L21 12l-5.714 2.143L13 21l-2.286-6.857L5 12l5.714-2.143L13 3z" />
+            </svg>
+          </div>
+          <div>
+            <div class="flex items-center gap-2">
+              <span class="font-bold text-sm text-white">Lentera Pasar Engine</span>
+              <span class="text-[10px] bg-emerald-500/20 text-emerald-300 border border-emerald-500/30 px-2 py-0.5 rounded-full font-medium">Botanical Spa & Soap Template</span>
+            </div>
+            <p class="text-xs text-slate-300 hidden sm:block">
+              Terima beres: Website responsif + Panel input produk sendiri + Dikelola tim iklan profesional.
+            </p>
+          </div>
+        </div>
+
+        <div class="flex items-center justify-between md:justify-end gap-3 w-full md:w-auto">
+          <div class="hidden lg:flex items-center gap-2 text-xs text-slate-400 border-r border-slate-700 pr-4">
+            <div class="flex items-center gap-1 text-slate-200">
+              <svg class="w-4 h-4 text-emerald-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" /></svg>
+              <span>Cold-Process Specs</span>
+            </div>
+            <span class="text-slate-600">•</span>
+            <div class="flex items-center gap-1 text-slate-200">
+              <svg class="w-4 h-4 text-emerald-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" /></svg>
+              <span>Wedding Souvenir WA</span>
+            </div>
+          </div>
+
+          <a href="https://wa.me/6281234567890?text=Halo%20Tim%20Lentera%20Pasar,%20saya%20tertarik%20menggunakan%20template%20website%20Botanical%20Soap%20Bodycare%20ini%20lengkap%20dengan%20Admin%20Panel%20dan%20Jasa%20Iklannya." 
+             target="_blank"
+             class="w-full md:w-auto inline-flex items-center justify-center gap-2 bg-gradient-to-r from-emerald-600 to-teal-700 hover:from-emerald-500 hover:to-teal-600 text-white text-xs md:text-sm font-semibold px-5 py-2.5 rounded-xl shadow-lg shadow-emerald-500/20 transition-all hover:scale-105 shrink-0">
+            <span>Gunakan Template Ini</span>
+            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3" />
+            </svg>
+          </a>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- SCRIPT LOGIC -->
+    <script>
+        // Skin Matcher Diagnostic Modal
+        const matchModal = document.getElementById('skinMatchModal');
+        function openSkinMatchModal() {
+            matchModal.classList.remove('hidden');
+        }
+        function closeSkinMatchModal() {
+            matchModal.classList.add('hidden');
+        }
+
+        function calculateSkinMatch() {
+            const cond = document.getElementById('modalSkinCondition').value;
+            const resBox = document.getElementById('modalSkinResult');
+            const resTitle = document.getElementById('modalSkinTitle');
+            const resDesc = document.getElementById('modalSkinDesc');
+            const waLink = document.getElementById('modalSkinWaLink');
+
+            resBox.classList.remove('hidden');
+
+            if (cond === 'ecsema') {
+                resTitle.innerText = "Kastil Susu Kambing & Madu Hutan (100g)";
+                resDesc.innerText = "Minyak zaitun murni 45% dan susu kambing etawa segar tanpa essential oil untuk menenangkan kulit eksim & alergi.";
+                waLink.href = "https://wa.me/6281234567890?text=Halo%20Alunan%20Botanika,%20rekomendasi%20Skin%20Matcher%20saya%20adalah%20Kastil%20Susu%20Kambing.";
+            } else if (cond === 'dull') {
+                resTitle.innerText = "Kopi Robusta & Rempah Kayu Manis (100g)";
+                resDesc.innerText = "Eksfoliasi butiran bubuk kopi robusta dan minyak kelapa murni untuk mengangkat sel kulit mati.";
+                waLink.href = "https://wa.me/6281234567890?text=Halo%20Alunan%20Botanika,%20rekomendasi%20Skin%20Matcher%20saya%20adalah%20Sabun%20Kopi%20Robusta.";
+            } else if (cond === 'acne') {
+                resTitle.innerText = "French Lavender & Purple Clay (100g)";
+                resDesc.innerText = "Lempung mineral ungu dan minyak esensial lavender murni untuk detoksifikasi pori dan meredakan jerawat tubuh.";
+                waLink.href = "https://wa.me/6281234567890?text=Halo%20Alunan%20Botanika,%20rekomendasi%20Skin%20Matcher%20saya%20adalah%20French%20Lavender.";
+            } else {
+                resTitle.innerText = "Calendula Petals & Chamomile Oil (100g)";
+                resDesc.innerText = "Kelopak bunga calendula kering dan minyak chamomile untuk menjaga kelembapan harian kulit seluruh keluarga.";
+                waLink.href = "https://wa.me/6281234567890?text=Halo%20Alunan%20Botanika,%20rekomendasi%20Skin%20Matcher%20saya%20adalah%20Calendula%20Soap.";
+            }
+        }
+
+        // Mobile menu toggle
+        const mobileMenuBtn = document.getElementById('mobileMenuBtn');
+        const mobileMenu = document.getElementById('mobileMenu');
+        const menuIcon = document.getElementById('menuIcon');
+
+        mobileMenuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+            if (mobileMenu.classList.contains('hidden')) {
+                menuIcon.classList.remove('fa-xmark');
+                menuIcon.classList.add('fa-bars-staggered');
+            } else {
+                menuIcon.classList.remove('fa-bars-staggered');
+                menuIcon.classList.add('fa-xmark');
+            }
+        });
+    </script>
+</body>
+</html>

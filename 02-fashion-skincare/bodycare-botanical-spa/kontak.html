@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="id" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Studio Workshop & Souvenir Pernikahan Organik — ALUNAN BOTANIKA</title>
+    <meta name="description" content="Pemesanan souvenir sabun pernikahan alami custom, hampers spa zero-waste, dan kunjungan workshop pembuatan sabun di Ubud Bali.">
+    
+    <!-- Google Fonts: Cormorant Garamond & Plus Jakarta Sans -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,600&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        botanica: {
+                            linen: '#F8F5F0',
+                            warmpaper: '#F1ECE1',
+                            card: '#FFFFFF',
+                            border: '#E3DAC9',
+                            borderdark: '#D0C3AE',
+                            moss: '#344E41',
+                            mosshover: '#283618',
+                            mosslight: '#E7EDE8',
+                            sage: '#588157',
+                            clay: '#A35D43',
+                            claylight: '#F5EBE6',
+                            sand: '#DDBEA9',
+                            earth: '#3D312A',
+                            muted: '#7A7268'
+                        }
+                    },
+                    fontFamily: {
+                        sans: ['"Plus Jakarta Sans"', 'sans-serif'],
+                        serif: ['"Cormorant Garamond"', 'Georgia', 'serif']
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        .no-scrollbar::-webkit-scrollbar { display: none; }
+        .no-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
+    </style>
+</head>
+<body class="bg-botanica-linen text-botanica-earth font-sans antialiased selection:bg-botanica-moss selection:text-white">
+
+    <!-- 1. TOP BAR -->
+    <div class="bg-botanica-moss text-botanica-linen text-[11px] py-2 px-4 tracking-wider uppercase border-b border-botanica-moss/20">
+        <div class="max-w-7xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-2 text-center sm:text-left">
+            <div class="flex items-center justify-center gap-2">
+                <span class="inline-flex items-center gap-1.5 px-2 py-0.5 rounded-full bg-botanica-sage/30 text-white text-[9px] font-bold">
+                    <span class="w-1.5 h-1.5 rounded-full bg-emerald-300 animate-ping"></span>
+                    STUDIO OPEN
+                </span>
+                <span class="text-stone-200">Kunjungan Workshop & Konsultasi Souvenir Pernikahan Ramah Lingkungan</span>
+            </div>
+            <div class="flex items-center gap-4 text-[10px] text-stone-200">
+                <span>Senin — Sabtu: 09.00 — 18.00 WITA</span>
+                <span class="text-botanica-sage">|</span>
+                <a href="katalog.html" class="text-amber-200 hover:text-white underline transition">Katalog Produk &rarr;</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- 2. NAVBAR -->
+    <header class="sticky top-0 z-40 bg-botanica-linen/95 backdrop-blur-md border-b border-botanica-border transition-all">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-20 sm:h-24">
+                
+                <a href="index.html" class="flex flex-col group">
+                    <span class="text-xl sm:text-2xl font-serif font-bold tracking-[0.15em] text-botanica-moss uppercase leading-none group-hover:text-botanica-clay transition duration-300">
+                        ALUNAN BOTANIKA
+                    </span>
+                    <span class="text-[9px] tracking-[0.35em] text-botanica-clay uppercase mt-1 font-semibold">
+                        Holistic Soap & Botanical Spa
+                    </span>
+                </a>
+
+                <nav class="hidden lg:flex items-center gap-8 text-xs font-semibold tracking-wider uppercase text-stone-700">
+                    <a href="index.html" class="hover:text-botanica-clay transition">Beranda</a>
+                    <a href="katalog.html" class="hover:text-botanica-clay transition">Katalog Alami</a>
+                    <a href="detail.html" class="hover:text-botanica-clay transition">Bahan Nabati</a>
+                    <a href="tentang.html" class="hover:text-botanica-clay transition">Metode Cold-Process</a>
+                    <a href="artikel.html" class="hover:text-botanica-clay transition">Jurnal Kulit Sehat</a>
+                    <a href="kontak.html" class="text-botanica-moss font-bold border-b-2 border-botanica-moss pb-1">Studio & Souvenir</a>
+                </nav>
+
+                <div class="hidden sm:flex items-center gap-3">
+                    <a href="https://wa.me/6281234567890?text=Halo%20Alunan%20Botanika,%20saya%20mau%20konsultasi%20souvenir%20pernikahan." target="_blank" class="inline-flex items-center gap-2 bg-botanica-moss hover:bg-botanica-mosshover text-white text-xs font-semibold tracking-wide px-5 py-2.5 rounded-full shadow-sm transition-all">
+                        <i class="fa-brands fa-whatsapp text-sm text-emerald-300"></i>
+                        <span>Chat Studio WA</span>
+                    </a>
+                </div>
+
+                <button id="mobileMenuBtn" class="lg:hidden p-2 text-botanica-moss hover:text-botanica-clay focus:outline-none" aria-label="Toggle Menu">
+                    <i id="menuIcon" class="fa-solid fa-bars-staggered text-xl"></i>
+                </button>
+            </div>
+        </div>
+
+        <!-- Mobile Drawer -->
+        <div id="mobileMenu" class="hidden lg:hidden bg-botanica-linen border-b border-botanica-border px-4 py-5 space-y-3">
+            <a href="index.html" class="block text-xs font-semibold uppercase tracking-widest text-stone-700 hover:text-botanica-moss py-2 border-b border-botanica-warmpaper">Beranda Utama</a>
+            <a href="katalog.html" class="block text-xs font-semibold uppercase tracking-widest text-stone-700 hover:text-botanica-moss py-2 border-b border-botanica-warmpaper">Katalog Sabun & Scrub</a>
+            <a href="detail.html" class="block text-xs font-semibold uppercase tracking-widest text-stone-700 hover:text-botanica-moss py-2 border-b border-botanica-warmpaper">Detail Bahan Nabati</a>
+            <a href="tentang.html" class="block text-xs font-semibold uppercase tracking-widest text-stone-700 hover:text-botanica-moss py-2 border-b border-botanica-warmpaper">Filosofi Cold-Process</a>
+            <a href="artikel.html" class="block text-xs font-semibold uppercase tracking-widest text-stone-700 hover:text-botanica-moss py-2 border-b border-botanica-warmpaper">Manfaat Bebas SLS & Eksfoliasi</a>
+            <a href="kontak.html" class="block text-xs font-bold uppercase tracking-widest text-botanica-moss py-2">Studio & Souvenir Pernikahan</a>
+        </div>
+    </header>
+
+    <!-- 3. PAGE HEADER -->
+    <section class="py-12 bg-botanica-warmpaper border-b border-botanica-border">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="max-w-3xl">
+                <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-white border border-botanica-border text-botanica-moss text-xs font-semibold tracking-wider mb-3">
+                    <span class="w-2 h-2 rounded-full bg-botanica-sage"></span>
+                    <span>CUSTOM WEDDING & ZERO-WASTE GIFTS</span>
+                </div>
+                <h1 class="text-3xl sm:text-5xl font-serif font-bold text-botanica-moss tracking-tight">
+                    Studio & Pemesanan Souvenir
+                </h1>
+                <p class="text-xs sm:text-sm text-botanica-muted mt-2 leading-relaxed font-light">
+                    Hadirkan kenangan bermakna bagi tamu pernikahan atau mitra perusahaan dengan kado sabun organik kustom. Hubungi pengrajin kami untuk pilihan aroma, cap stempel nama, dan kemasan ramah lingkungan.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- 4. SPLIT LAYOUT: FORM SOUVENIR WA + INFO STUDIO & GOOGLE MAPS -->
+    <section class="py-14">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-10">
+                
+                <!-- LEFT: SOUVENIR & HAMPERS INTAKE FORM (7 Cols) -->
+                <div class="lg:col-span-7">
+                    <div class="bg-white rounded-3xl border border-botanica-border p-6 sm:p-8 shadow-sm space-y-6">
+                        <div class="flex items-center gap-3 pb-4 border-b border-botanica-border">
+                            <div class="w-10 h-10 rounded-full bg-botanica-linen text-botanica-moss flex items-center justify-center text-lg border border-botanica-border">
+                                <i class="fa-solid fa-gift"></i>
+                            </div>
+                            <div>
+                                <h3 class="text-base font-serif font-bold text-botanica-moss">Formulir Pesanan Souvenir & Hampers Custom</h3>
+                                <p class="text-xs text-stone-500">Rincian pesanan akan langsung terhubung ke WhatsApp pengrajin kami.</p>
+                            </div>
+                        </div>
+
+                        <form onsubmit="handleSouvenirInquiry(event)" class="space-y-4 text-xs">
+                            
+                            <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                                <div>
+                                    <label class="block font-bold text-botanica-moss mb-1.5 uppercase">Nama Pemesan / Pengantin:</label>
+                                    <input type="text" id="souvenirName" required placeholder="Contoh: Dania & Rangga" class="w-full p-3 rounded-2xl border border-botanica-border bg-botanica-linen text-botanica-earth focus:outline-none focus:border-botanica-moss font-sans text-xs">
+                                </div>
+                                <div>
+                                    <label class="block font-bold text-botanica-moss mb-1.5 uppercase">Nomor WhatsApp:</label>
+                                    <input type="tel" id="souvenirPhone" required placeholder="Contoh: 081234567890" class="w-full p-3 rounded-2xl border border-botanica-border bg-botanica-linen text-botanica-earth focus:outline-none focus:border-botanica-moss font-sans text-xs">
+                                </div>
+                            </div>
+
+                            <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                                <div>
+                                    <label class="block font-bold text-botanica-moss mb-1.5 uppercase">Keperluan Pesanan:</label>
+                                    <select id="souvenirType" class="w-full p-3 rounded-2xl border border-botanica-border bg-botanica-linen text-botanica-earth focus:outline-none focus:border-botanica-moss font-sans text-xs">
+                                        <option value="Souvenir Pernikahan Custom (Min. 50 pcs)">Souvenir Pernikahan Custom (Min. 50 pcs)</option>
+                                        <option value="Hampers Hari Raya / Corporate Gift">Hampers Hari Raya / Corporate Gift</option>
+                                        <option value="Paket Spa Hotel & Resort Boutique">Paket Amenities Hotel & Resort Boutique</option>
+                                        <option value="Kunjungan Workshop & Private Class">Kunjungan Workshop Pembuatan Sabun</option>
+                                    </select>
+                                </div>
+                                <div>
+                                    <label class="block font-bold text-botanica-moss mb-1.5 uppercase">Perkiraan Jumlah (Pcs) & Tanggal Acara:</label>
+                                    <input type="text" id="souvenirQtyDate" placeholder="Contoh: 150 pcs, Acara 24 Oktober 2026" class="w-full p-3 rounded-2xl border border-botanica-border bg-botanica-linen text-botanica-earth focus:outline-none focus:border-botanica-moss font-sans text-xs">
+                                </div>
+                            </div>
+
+                            <div>
+                                <label class="block font-bold text-botanica-moss mb-1.5 uppercase">Pilihan Aroma / Konsep Kemasan:</label>
+                                <textarea id="souvenirNotes" rows="3" placeholder="Sebutkan varian yang diinginkan (misal: Kopi & Lavender, kemasan kertas kraft daur ulang dengan tali rami)..." class="w-full p-3 rounded-2xl border border-botanica-border bg-botanica-linen text-botanica-earth focus:outline-none focus:border-botanica-moss font-sans text-xs"></textarea>
+                            </div>
+
+                            <div class="pt-2">
+                                <button type="submit" class="w-full py-4 px-6 rounded-full bg-botanica-moss hover:bg-botanica-mosshover text-white text-xs font-bold tracking-widest uppercase flex items-center justify-center gap-2 shadow-lg transition-all duration-300">
+                                    <i class="fa-brands fa-whatsapp text-lg text-emerald-300"></i>
+                                    <span>Kirim Konsultasi Souvenir ke WhatsApp</span>
+                                </button>
+                            </div>
+
+                        </form>
+                    </div>
+                </div>
+
+                <!-- RIGHT: STUDIO LOCATION, HOURS & GOOGLE MAPS (5 Cols) -->
+                <div class="lg:col-span-5 space-y-6">
+                    
+                    <div class="bg-white rounded-3xl border border-botanica-border p-6 sm:p-7 shadow-sm space-y-4">
+                        <div class="font-bold text-xs uppercase tracking-wider text-botanica-moss flex items-center gap-2">
+                            <i class="fa-solid fa-clock text-botanica-clay"></i> Jam Operasional Workshop
+                        </div>
+                        <div class="p-4 rounded-2xl bg-botanica-linen border border-botanica-border text-xs space-y-2">
+                            <div class="flex justify-between text-stone-600">
+                                <span>Senin — Jumat:</span> <strong class="text-botanica-moss">09.00 — 18.00 WITA</strong>
+                            </div>
+                            <div class="flex justify-between text-stone-600">
+                                <span>Sabtu:</span> <strong class="text-botanica-moss">09.00 — 16.00 WITA</strong>
+                            </div>
+                            <div class="flex justify-between text-stone-600">
+                                <span>Minggu:</span> <strong class="text-botanica-clay">Khusus Private Workshop</strong>
+                            </div>
+                        </div>
+
+                        <div class="space-y-2 text-xs text-stone-700">
+                            <div class="flex items-center gap-3 p-3 rounded-xl bg-botanica-linen/60 border border-botanica-border">
+                                <i class="fa-brands fa-whatsapp text-lg text-emerald-600"></i>
+                                <div>
+                                    <span class="block text-[10px] text-stone-500 uppercase">WhatsApp Studio Manager</span>
+                                    <strong class="text-botanica-moss text-xs font-sans">+62 812-3456-7890</strong>
+                                </div>
+                            </div>
+                            <div class="flex items-center gap-3 p-3 rounded-xl bg-botanica-linen/60 border border-botanica-border">
+                                <i class="fa-solid fa-envelope text-lg text-botanica-clay"></i>
+                                <div>
+                                    <span class="block text-[10px] text-stone-500 uppercase">Email Souvenir & Kerjasama</span>
+                                    <strong class="text-botanica-moss text-xs font-sans">atelier@alunanbotanika.id</strong>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Location & Maps -->
+                    <div class="bg-white rounded-3xl border border-botanica-border p-6 sm:p-7 shadow-sm space-y-3">
+                        <div class="font-bold text-xs uppercase tracking-wider text-botanica-moss flex items-center gap-2">
+                            <i class="fa-solid fa-location-dot text-botanica-clay"></i> Lokasi Studio Ubud
+                        </div>
+                        <p class="text-xs text-stone-600 leading-relaxed font-light">
+                            <strong class="text-botanica-moss">Alunan Botanika Studio & Soaphouse</strong><br>
+                            Jl. Raya Tegalalang No. 88, Banjar Kelabang Moding, Ubud, Gianyar, Bali 80561
+                        </p>
+                        
+                        <div class="h-44 rounded-2xl bg-botanica-warmpaper border border-botanica-border overflow-hidden relative">
+                            <iframe 
+                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3946.068369408456!2d115.2625!3d-8.4878!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zOMKwMjknMTYuMSJTIDExNcKwMTUnNDUuMCJF!5e0!3m2!1sen!2sid!4v1600000000000!5m2!1sen!2sid" 
+                                width="100%" 
+                                height="100%" 
+                                style="border:0;" 
+                                allowfullscreen="" 
+                                loading="lazy" 
+                                class="grayscale hover:grayscale-0 transition-all duration-500">
+                            </iframe>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- 5. FOOTER -->
+    <footer class="bg-botanica-linen text-stone-700 border-t border-botanica-border pt-14 pb-28">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex flex-col md:flex-row items-center justify-between gap-6 border-b border-botanica-border pb-8">
+                <div class="flex flex-col">
+                    <span class="text-lg font-serif font-bold tracking-[0.15em] text-botanica-moss uppercase">
+                        ALUNAN BOTANIKA
+                    </span>
+                    <span class="text-[8px] tracking-[0.35em] text-botanica-clay uppercase font-semibold">
+                        Holistic Soap & Botanical Spa
+                    </span>
+                </div>
+                <div class="flex flex-wrap gap-6 text-xs text-stone-700 font-semibold uppercase tracking-wider">
+                    <a href="index.html" class="hover:text-botanica-clay">Beranda</a>
+                    <a href="katalog.html" class="hover:text-botanica-clay">Katalog</a>
+                    <a href="detail.html" class="hover:text-botanica-clay">Bahan</a>
+                    <a href="tentang.html" class="hover:text-botanica-clay">Cold-Process</a>
+                    <a href="artikel.html" class="hover:text-botanica-clay">Jurnal</a>
+                    <a href="kontak.html" class="text-botanica-moss font-bold">Studio</a>
+                </div>
+            </div>
+            <div class="mt-6 flex flex-col sm:flex-row items-center justify-between text-xs text-stone-500">
+                <p>&copy; 2026 ALUNAN BOTANIKA ATELIER. All Rights Reserved.</p>
+                <p class="text-[11px] mt-2 sm:mt-0">Lentera Pasar Production Template — Botanical Spa</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- FLOATING WHATSAPP BUTTON (bottom-24) -->
+    <a href="https://wa.me/6281234567890?text=Halo%20Alunan%20Botanika,%20saya%20ingin%20konsultasi%20souvenir%20sabun%20organik." 
+       target="_blank" 
+       class="fixed bottom-24 right-6 z-50 group flex items-center gap-3 bg-white hover:bg-botanica-linen text-botanica-earth px-4 py-3 rounded-full border border-botanica-border shadow-2xl hover:border-botanica-moss transition-all duration-300">
+        <span class="relative flex h-3 w-3">
+            <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-emerald-400 opacity-75"></span>
+            <span class="relative inline-flex rounded-full h-3 w-3 bg-emerald-500"></span>
+        </span>
+        <i class="fa-brands fa-whatsapp text-2xl text-emerald-600"></i>
+        <div class="text-left hidden sm:block pr-1">
+            <div class="text-[10px] text-stone-500 font-bold uppercase tracking-wider leading-none">Herbal Advisor</div>
+            <span class="font-bold text-xs text-botanica-moss">Konsultasi Sabun WA</span>
+        </div>
+    </a>
+
+    <!-- LENTERA PASAR - STICKY DEMO & SALES BAR (fixed bottom-4) -->
+    <div class="fixed bottom-4 left-1/2 -translate-x-1/2 z-50 w-[95%] max-w-4xl bg-slate-900/95 backdrop-blur-md text-white p-3.5 md:p-4 rounded-2xl shadow-2xl border border-slate-700/80 transition-all duration-300">
+      <div class="flex flex-col md:flex-row items-center justify-between gap-3 md:gap-4">
+        <div class="flex items-center gap-3 w-full md:w-auto">
+          <div class="w-10 h-10 rounded-xl bg-emerald-500/20 border border-emerald-500/40 flex items-center justify-center shrink-0">
+            <svg class="w-5 h-5 text-emerald-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 3v4M3 5h4M6 17v4m-2-2h4m5-16l2.286 6.857L21 12l-5.714 2.143L13 21l-2.286-6.857L5 12l5.714-2.143L13 3z" />
+            </svg>
+          </div>
+          <div>
+            <div class="flex items-center gap-2">
+              <span class="font-bold text-sm text-white">Lentera Pasar Engine</span>
+              <span class="text-[10px] bg-emerald-500/20 text-emerald-300 border border-emerald-500/30 px-2 py-0.5 rounded-full font-medium">Botanical Spa & Soap Template</span>
+            </div>
+            <p class="text-xs text-slate-300 hidden sm:block">
+              Terima beres: Website responsif + Panel input produk sendiri + Dikelola tim iklan profesional.
+            </p>
+          </div>
+        </div>
+
+        <div class="flex items-center justify-between md:justify-end gap-3 w-full md:w-auto">
+          <a href="https://wa.me/6281234567890?text=Halo%20Tim%20Lentera%20Pasar,%20saya%20tertarik%20menggunakan%20template%20website%20Botanical%20Soap%20Bodycare%20ini%20lengkap%20dengan%20Admin%20Panel%20dan%20Jasa%20Iklannya." 
+             target="_blank"
+             class="w-full md:w-auto inline-flex items-center justify-center gap-2 bg-gradient-to-r from-emerald-600 to-teal-700 hover:from-emerald-500 hover:to-teal-600 text-white text-xs md:text-sm font-semibold px-5 py-2.5 rounded-xl shadow-lg shadow-emerald-500/20 transition-all hover:scale-105 shrink-0">
+            <span>Gunakan Template Ini</span>
+            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3" />
+            </svg>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <!-- SCRIPT LOGIC -->
+    <script>
+        function handleSouvenirInquiry(e) {
+            e.preventDefault();
+            const name = document.getElementById('souvenirName').value;
+            const phone = document.getElementById('souvenirPhone').value;
+            const type = document.getElementById('souvenirType').value;
+            const qtyDate = document.getElementById('souvenirQtyDate').value || '-';
+            const notes = document.getElementById('souvenirNotes').value || '-';
+
+            const message = `Halo Alunan Botanika Studio,%0A%0ASaya ingin konsultasi pesanan souvenir / hampers dengan data berikut:%0A- Nama: ${encodeURIComponent(name)}%0A- No. HP: ${encodeURIComponent(phone)}%0A- Jenis Pesanan: ${encodeURIComponent(type)}%0A- Jumlah & Tanggal Acara: ${encodeURIComponent(qtyDate)}%0A- Konsep / Catatan: ${encodeURIComponent(notes)}%0A%0AMohon informasi penawaran dan katalog harga khusus souvenir. Terima kasih!`;
+
+            window.open(`https://wa.me/6281234567890?text=${message}`, '_blank');
+        }
+
+        // Mobile menu toggle
+        const mobileMenuBtn = document.getElementById('mobileMenuBtn');
+        const mobileMenu = document.getElementById('mobileMenu');
+        const menuIcon = document.getElementById('menuIcon');
+
+        mobileMenuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+            if (mobileMenu.classList.contains('hidden')) {
+                menuIcon.classList.remove('fa-xmark');
+                menuIcon.classList.add('fa-bars-staggered');
+            } else {
+                menuIcon.classList.remove('fa-bars-staggered');
+                menuIcon.classList.add('fa-xmark');
+            }
+        });
+    </script>
+</body>
+</html>
