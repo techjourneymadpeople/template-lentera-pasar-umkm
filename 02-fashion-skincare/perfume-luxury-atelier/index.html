@@ -1,0 +1,907 @@
+<!DOCTYPE html>
+<html lang="id" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MAISON NOIR SILLAGE — Haute Parfumerie & Olfactory Atelier</title>
+    <meta name="description" content="Atelier parfum mewah dengan konsentrasi Extrait de Parfum murni. Perpaduan minyak atsiri langka, proses maserasi 90 hari, dan ketahanan sillage 12-16 jam.">
+    
+    <!-- Google Fonts: Cinzel Decorative, Playfair Display & Inter Clean -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700;800;900&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400;1,600&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        noir: {
+                            pitch: '#080808',
+                            obsidian: '#0F0E0D',
+                            card: '#161311',
+                            surface: '#1E1916',
+                            border: '#38281F',
+                            borderlight: '#4D382B',
+                            bronze: '#D4A373',
+                            amber: '#E0A96D',
+                            gold: '#C5A059',
+                            champagne: '#F3E5AB',
+                            smoke: '#8E827A',
+                            muted: '#635850'
+                        }
+                    },
+                    fontFamily: {
+                        sans: ['"Inter"', 'sans-serif'],
+                        serif: ['"Playfair Display"', 'Georgia', 'serif'],
+                        display: ['"Cinzel"', 'serif']
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        .no-scrollbar::-webkit-scrollbar { display: none; }
+        .no-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
+        
+        .gold-glow {
+            box-shadow: 0 0 40px -10px rgba(212, 163, 115, 0.25);
+        }
+        .amber-card-hover {
+            transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+        }
+        .amber-card-hover:hover {
+            transform: translateY(-4px);
+            border-color: #D4A373;
+            box-shadow: 0 20px 40px -15px rgba(224, 169, 109, 0.2);
+        }
+
+        .cinematic-vignette {
+            background: radial-gradient(circle at center, transparent 30%, rgba(8, 8, 8, 0.85) 100%);
+        }
+    </style>
+</head>
+<body class="bg-noir-pitch text-stone-200 font-sans antialiased selection:bg-noir-bronze selection:text-noir-pitch">
+
+    <!-- 1. TOP EXCLUSIVE NOTIFICATION BAR -->
+    <div class="bg-noir-obsidian text-stone-400 text-[11px] py-2 px-4 tracking-[0.2em] font-display uppercase border-b border-noir-border/50">
+        <div class="max-w-7xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-2 text-center sm:text-left">
+            <div class="flex items-center justify-center gap-2">
+                <span class="inline-flex items-center gap-1.5 px-2 py-0.5 rounded-full bg-noir-bronze/15 text-noir-amber text-[9px] font-bold border border-noir-bronze/30">
+                    <span class="w-1.5 h-1.5 rounded-full bg-noir-amber animate-ping"></span>
+                    COLD MACERATION 90 DAYS
+                </span>
+                <span class="text-stone-400 font-normal">Small-Batch Artisanal Extrait & Resmi <strong class="text-stone-200 font-display">BPOM RI</strong></span>
+            </div>
+            <div class="flex items-center gap-4 text-[10px] text-stone-400">
+                <span class="hidden md:inline"><i class="fa-solid fa-droplet text-noir-bronze mr-1"></i> 35-40% Fragrance Oil Concentration</span>
+                <span class="hidden md:inline text-noir-muted">|</span>
+                <a href="katalog.html" class="text-noir-amber hover:text-white underline transition">Katalog Discovery Set &rarr;</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- 2. DARK LUXURY NAVBAR -->
+    <header class="sticky top-0 z-40 bg-noir-pitch/95 backdrop-blur-md border-b border-noir-border transition-all">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-20 sm:h-24">
+                
+                <!-- Brand Signature -->
+                <a href="index.html" class="flex flex-col group">
+                    <span class="text-xl sm:text-2xl font-display font-extrabold tracking-[0.25em] text-stone-100 uppercase leading-none group-hover:text-noir-bronze transition duration-300">
+                        NOIR SILLAGE
+                    </span>
+                    <span class="text-[9px] font-display tracking-[0.45em] text-noir-bronze uppercase mt-1">
+                        Haute Parfumerie Atelier
+                    </span>
+                </a>
+
+                <!-- Desktop Navigation Links -->
+                <nav class="hidden lg:flex items-center gap-8 text-xs font-display tracking-[0.2em] uppercase text-stone-400">
+                    <a href="index.html" class="text-noir-bronze font-bold border-b border-noir-bronze pb-1">Beranda</a>
+                    <a href="katalog.html" class="hover:text-stone-100 transition">Koleksi Aroma</a>
+                    <a href="detail.html" class="hover:text-stone-100 transition">Piramida Olfaktori</a>
+                    <a href="tentang.html" class="hover:text-stone-100 transition">Kisah Master Nose</a>
+                    <a href="artikel.html" class="hover:text-stone-100 transition">Jurnal Scent</a>
+                    <a href="kontak.html" class="hover:text-stone-100 transition">Studio & Reservasi</a>
+                </nav>
+
+                <!-- Action Button & Scent Profiler Trigger -->
+                <div class="hidden sm:flex items-center gap-3">
+                    <button onclick="openScentProfilerModal()" class="inline-flex items-center gap-2 px-4 py-2.5 rounded-full border border-noir-border hover:border-noir-bronze bg-noir-card text-xs font-display tracking-widest text-stone-300 hover:text-white transition">
+                        <i class="fa-solid fa-compass text-noir-bronze"></i>
+                        <span>Scent Profiler</span>
+                    </button>
+                    <a href="https://wa.me/6281234567890?text=Halo%20Maison%20Noir%20Sillage,%20saya%20ingin%20konsultasi%20pemilihan%20karakter%20parfum." target="_blank" class="inline-flex items-center gap-2 bg-gradient-to-r from-noir-bronze to-amber-700 hover:from-amber-600 hover:to-amber-800 text-noir-pitch text-xs font-display tracking-widest font-bold px-5 py-2.5 rounded-full shadow-lg transition-all">
+                        <i class="fa-brands fa-whatsapp text-sm text-noir-pitch"></i>
+                        <span>Pesan WA</span>
+                    </a>
+                </div>
+
+                <!-- Mobile Menu Button -->
+                <button id="mobileMenuBtn" class="lg:hidden p-2 text-stone-300 hover:text-noir-bronze focus:outline-none" aria-label="Toggle Menu">
+                    <i id="menuIcon" class="fa-solid fa-bars-staggered text-xl"></i>
+                </button>
+            </div>
+        </div>
+
+        <!-- Mobile Drawer -->
+        <div id="mobileMenu" class="hidden lg:hidden bg-noir-obsidian border-b border-noir-border px-4 py-5 space-y-3">
+            <a href="index.html" class="block text-xs font-display font-bold uppercase tracking-widest text-noir-bronze py-2 border-b border-noir-border/40">Beranda Utama</a>
+            <a href="katalog.html" class="block text-xs font-display font-semibold uppercase tracking-widest text-stone-400 hover:text-stone-100 py-2 border-b border-noir-border/40">Koleksi Extrait & EDP</a>
+            <a href="detail.html" class="block text-xs font-display font-semibold uppercase tracking-widest text-stone-400 hover:text-stone-100 py-2 border-b border-noir-border/40">Piramida Aroma & Sillage</a>
+            <a href="tentang.html" class="block text-xs font-display font-semibold uppercase tracking-widest text-stone-400 hover:text-stone-100 py-2 border-b border-noir-border/40">Kisah Peracik & Ekstraksi Grasse</a>
+            <a href="artikel.html" class="block text-xs font-display font-semibold uppercase tracking-widest text-stone-400 hover:text-stone-100 py-2 border-b border-noir-border/40">Titik Semprot & Glosarium Notes</a>
+            <a href="kontak.html" class="block text-xs font-display font-semibold uppercase tracking-widest text-stone-400 hover:text-stone-100 py-2">Studio Olfaktori & Blind Smell</a>
+            <div class="pt-2 flex flex-col gap-2">
+                <button onclick="openScentProfilerModal()" class="w-full py-3 rounded-full bg-noir-card text-stone-200 border border-noir-border text-xs font-display font-bold uppercase tracking-wider flex items-center justify-center gap-2">
+                    <i class="fa-solid fa-compass text-noir-bronze"></i> Temukan Scent Signature
+                </button>
+                <a href="https://wa.me/6281234567890?text=Halo%20Noir%20Sillage,%20saya%20ingin%20konsultasi%20parfum." target="_blank" class="w-full py-3 rounded-full bg-noir-bronze text-noir-pitch text-xs font-display font-bold uppercase tracking-wider text-center flex items-center justify-center gap-2">
+                    <i class="fa-brands fa-whatsapp"></i> Chat Olfactory Advisor
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- 3. HERO: ATMOSPHERIC FULLSCREEN DARK CANVAS -->
+    <section class="relative min-h-[90vh] flex items-center py-20 bg-noir-pitch overflow-hidden border-b border-noir-border">
+        
+        <!-- Ambient Golden Light Glow in Background -->
+        <div class="absolute top-1/4 left-1/2 -translate-x-1/2 w-[600px] h-[600px] bg-amber-900/15 blur-[120px] rounded-full pointer-events-none"></div>
+
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 w-full">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+                
+                <!-- Left Narrative Column (7 Cols) -->
+                <div class="lg:col-span-7 space-y-6 text-center lg:text-left">
+                    <div class="inline-flex items-center gap-2 px-3.5 py-1 rounded-full bg-noir-card border border-noir-border text-noir-bronze text-xs font-display tracking-widest shadow-inner">
+                        <span class="w-2 h-2 rounded-full bg-noir-amber"></span>
+                        <span>EXTRAIT DE PARFUM / 40% CONCENTRATION</span>
+                    </div>
+
+                    <h1 class="text-4xl sm:text-6xl lg:text-7xl font-serif font-extrabold text-stone-100 tracking-tight leading-[1.08]">
+                        Crafted Scent <br>
+                        <span class="italic font-normal text-noir-bronze font-serif">of Unspoken</span> <br>
+                        Memories.
+                    </h1>
+
+                    <p class="text-stone-400 text-sm sm:text-base max-w-xl mx-auto lg:mx-0 leading-relaxed font-light">
+                        Bukan sekadar aroma, melainkan jejak silase abadi yang membekas di ingatan. Diracik dengan presisi minyak atsiri kelas Grasse, dipadukan kehangatan kayu gaharu Nusantara dan vanila Madagaskar yang melewati 90 hari maserasi beku.
+                    </p>
+
+                    <!-- Accords Badges Strip -->
+                    <div class="pt-2 flex flex-wrap items-center justify-center lg:justify-start gap-2 text-xs font-display">
+                        <span class="px-3 py-1 rounded-full bg-noir-card border border-noir-border text-stone-300">
+                            Smoked Oud
+                        </span>
+                        <span class="px-3 py-1 rounded-full bg-noir-card border border-noir-border text-stone-300">
+                            Spiced Amber
+                        </span>
+                        <span class="px-3 py-1 rounded-full bg-noir-card border border-noir-border text-stone-300">
+                            Madagascar Vanilla
+                        </span>
+                        <span class="px-3 py-1 rounded-full bg-noir-card border border-noir-border text-stone-300">
+                            Italian Bergamot
+                        </span>
+                    </div>
+
+                    <!-- CTA Group -->
+                    <div class="pt-6 flex flex-wrap items-center justify-center lg:justify-start gap-4">
+                        <a href="katalog.html" class="inline-flex items-center gap-3 bg-gradient-to-r from-noir-bronze to-amber-700 hover:from-amber-600 hover:to-amber-800 text-noir-pitch text-xs font-display tracking-widest font-bold px-8 py-4 rounded-full shadow-2xl transition-all duration-300">
+                            <span>EKSPLORASI KOLEKSI ATELIER</span>
+                            <i class="fa-solid fa-arrow-right text-[10px]"></i>
+                        </a>
+                        <button onclick="openScentProfilerModal()" class="inline-flex items-center gap-2 bg-noir-card hover:bg-noir-surface text-stone-200 text-xs font-display tracking-widest font-bold px-7 py-4 rounded-full border border-noir-border transition">
+                            <i class="fa-solid fa-dna text-noir-bronze"></i>
+                            <span>SCENT PROFILER</span>
+                        </button>
+                    </div>
+
+                    <!-- Longevity & Sillage Metric Strip -->
+                    <div class="pt-8 border-t border-noir-border/60 grid grid-cols-3 gap-4 font-display text-xs">
+                        <div>
+                            <span class="text-xl sm:text-2xl font-serif font-bold text-stone-100 block">12–16H</span>
+                            <span class="text-[10px] text-stone-500 tracking-wider uppercase">Longevity On Skin</span>
+                        </div>
+                        <div>
+                            <span class="text-xl sm:text-2xl font-serif font-bold text-stone-100 block">Beast Mode</span>
+                            <span class="text-[10px] text-stone-500 tracking-wider uppercase">Projection & Sillage</span>
+                        </div>
+                        <div>
+                            <span class="text-xl sm:text-2xl font-serif font-bold text-stone-100 block">90 Days</span>
+                            <span class="text-[10px] text-stone-500 tracking-wider uppercase">Cold Barrel Maceration</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Right Visual Column (5 Cols) - Heavy Amber Glass Bottle -->
+                <div class="lg:col-span-5 relative">
+                    <div class="relative rounded-3xl overflow-hidden border border-noir-border bg-noir-card p-4 shadow-2xl group">
+                        <div class="h-[480px] sm:h-[520px] rounded-2xl overflow-hidden bg-noir-obsidian relative flex items-center justify-center">
+                            <img src="https://images.unsplash.com/photo-1592945403244-b3fbafd7f539?auto=format&fit=crop&w=1000&q=80" alt="Amber Glass Luxury Perfume Bottle" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700">
+                            
+                            <!-- Vignette & Light Reflection Overlay -->
+                            <div class="absolute inset-0 cinematic-vignette"></div>
+
+                            <!-- Floating Spec Card -->
+                            <div class="absolute bottom-6 left-6 right-6 p-4 rounded-2xl bg-noir-pitch/90 backdrop-blur-md border border-noir-border text-stone-200">
+                                <div class="flex items-center justify-between text-[10px] font-display text-noir-amber mb-1">
+                                    <span>MASTERPIECE NO. 01</span>
+                                    <span>50 ML / EXTRAIT</span>
+                                </div>
+                                <div class="font-serif font-bold text-base text-stone-100">Santal Éternel & Ambre Noir</div>
+                                <p class="text-[11px] text-stone-400 mt-1 line-clamp-2">Asap kayu cendana berpadu kapulaga pedas dan kelembutan ambergris murni.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- 4. SECTION KHUSUS INTERAKTIF: THE OLFACTORY FRAGRANCE PYRAMID -->
+    <section class="py-20 bg-noir-obsidian border-b border-noir-border relative">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            
+            <div class="text-center max-w-2xl mx-auto mb-16">
+                <span class="text-xs font-display uppercase tracking-[0.25em] text-noir-bronze font-bold block mb-1">
+                    // STRUKTUR ANATOMI SENSORIK
+                </span>
+                <h2 class="text-3xl sm:text-4xl font-serif font-extrabold text-stone-100">
+                    The Olfactory Fragrance Pyramid
+                </h2>
+                <p class="text-xs sm:text-sm text-stone-400 mt-2">
+                    Bagaimana sebuah karya parfum bertransformasi di atas kulitmu seiring berjalannya waktu—dari hembusan pertama hingga jejak abadi di malam hari.
+                </p>
+            </div>
+
+            <!-- Interactive Pyramid Visualizer -->
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
+                
+                <!-- Left: 3 Pyramid Tier Cards -->
+                <div class="lg:col-span-6 space-y-4">
+                    
+                    <!-- Tier 1: Top Notes -->
+                    <div onclick="selectPyramidTier('top')" id="tierCard-top" class="p-6 rounded-2xl bg-noir-card border-2 border-noir-bronze cursor-pointer transition-all duration-300">
+                        <div class="flex items-center justify-between mb-2">
+                            <span class="text-xs font-display font-bold text-noir-amber uppercase tracking-wider flex items-center gap-2">
+                                <i class="fa-solid fa-sparkles"></i> 01. TOP NOTES (15 Menit Pertama)
+                            </span>
+                            <span class="text-[10px] font-display text-stone-400 bg-noir-surface px-2.5 py-0.5 rounded-full">Kesan Pertama</span>
+                        </div>
+                        <h4 class="text-base font-serif font-bold text-stone-100">Italian Bergamot, Pink Peppercorn & Cardamom</h4>
+                        <p class="text-xs text-stone-400 mt-1 leading-relaxed">
+                            Molekul ringan yang menguap pertama kali saat disemprotkan. Memberikan kesegaran sitrus berkilau dengan sentuhan rempah hangat yang membangkitkan indera.
+                        </p>
+                    </div>
+
+                    <!-- Tier 2: Heart Notes -->
+                    <div onclick="selectPyramidTier('heart')" id="tierCard-heart" class="p-6 rounded-2xl bg-noir-card border border-noir-border cursor-pointer transition-all duration-300 hover:border-noir-borderlight">
+                        <div class="flex items-center justify-between mb-2">
+                            <span class="text-xs font-display font-bold text-stone-400 uppercase tracking-wider flex items-center gap-2">
+                                <i class="fa-solid fa-heart"></i> 02. HEART / MIDDLE NOTES (Jam 1 — 4)
+                            </span>
+                            <span class="text-[10px] font-display text-stone-400 bg-noir-surface px-2.5 py-0.5 rounded-full">Karakter Utama</span>
+                        </div>
+                        <h4 class="text-base font-serif font-bold text-stone-100">Damask Rose Absolute, Frankincense & Black Tea</h4>
+                        <p class="text-xs text-stone-400 mt-1 leading-relaxed">
+                            Jiwa sejati dari formula wewangian. Muncul saat top notes memudar, menghadirkan kemewahan bunga mawar pekat berpadu asap dupa frankincense yang misterius.
+                        </p>
+                    </div>
+
+                    <!-- Tier 3: Base Notes -->
+                    <div onclick="selectPyramidTier('base')" id="tierCard-base" class="p-6 rounded-2xl bg-noir-card border border-noir-border cursor-pointer transition-all duration-300 hover:border-noir-borderlight">
+                        <div class="flex items-center justify-between mb-2">
+                            <span class="text-xs font-display font-bold text-stone-400 uppercase tracking-wider flex items-center gap-2">
+                                <i class="fa-solid fa-gem"></i> 03. BASE NOTES (Jam 4 — 16+)
+                            </span>
+                            <span class="text-[10px] font-display text-stone-400 bg-noir-surface px-2.5 py-0.5 rounded-full">Sillage Abadi</span>
+                        </div>
+                        <h4 class="text-base font-serif font-bold text-stone-100">Smoked Agarwood (Oud), Ambergris & Bourbon Vanilla</h4>
+                        <p class="text-xs text-stone-400 mt-1 leading-relaxed">
+                            Fondasi molekuler berat yang mengikat seluruh formula pada kulit dan pakaian. Jejak aroma yang memikat, hangat, dan tak terlupakan hingga keesokan hari.
+                        </p>
+                    </div>
+
+                </div>
+
+                <!-- Right: Visual Diagram Screen -->
+                <div class="lg:col-span-6 bg-noir-card rounded-3xl border border-noir-border p-8 text-center space-y-6">
+                    <div class="w-16 h-16 rounded-full bg-noir-surface border border-noir-border text-noir-bronze mx-auto flex items-center justify-center text-2xl">
+                        <i id="pyramidIcon" class="fa-solid fa-flask"></i>
+                    </div>
+                    <div>
+                        <span id="pyramidSub" class="text-[10px] font-display text-noir-bronze uppercase tracking-[0.3em] block mb-1">FASE AWAL APLIKASI</span>
+                        <h3 id="pyramidHeading" class="text-2xl font-serif font-bold text-stone-100">Top Notes: Hembusan Pertama</h3>
+                        <p id="pyramidExplain" class="text-xs text-stone-400 mt-2 max-w-md mx-auto leading-relaxed">
+                            Minyak atsiri berbobot molekul rendah menyajikan letupan kesegaran bergamot Calabria dan percikan rempah pink pepper yang elegan.
+                        </p>
+                    </div>
+
+                    <div class="p-4 rounded-2xl bg-noir-obsidian border border-noir-border text-left font-display text-xs space-y-2">
+                        <div class="flex justify-between text-stone-400">
+                            <span>Tingkat Volatilitas:</span> <strong id="pyramidVol" class="text-noir-amber">Tinggi (Cepat Menguap)</strong>
+                        </div>
+                        <div class="flex justify-between text-stone-400">
+                            <span>Durasi Dominasi:</span> <strong id="pyramidDur" class="text-stone-200">0 - 30 Menit</strong>
+                        </div>
+                        <div class="flex justify-between text-stone-400">
+                            <span>Bahan Utama:</span> <strong id="pyramidIng" class="text-stone-200">Bergamot, Cardamom, Citron</strong>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+    <!-- 5. PRODUK UNGGULAN: HORIZONTAL SHOWCASE BOTOL PARFUM DENGAN SILLAGE & PROJECTION -->
+    <section class="py-20 bg-noir-pitch border-b border-noir-border">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            
+            <div class="flex flex-col md:flex-row md:items-end justify-between mb-14">
+                <div>
+                    <span class="text-xs font-display uppercase tracking-[0.25em] text-noir-bronze font-bold block mb-1">
+                        // THE PRIVATE COLLECTION
+                    </span>
+                    <h2 class="text-3xl sm:text-4xl font-serif font-extrabold text-stone-100">
+                        Koleksi Masterpiece Atelier
+                    </h2>
+                    <p class="text-xs sm:text-sm text-stone-400 mt-2 max-w-xl">
+                        Diracik dalam kuantitas terbatas (*small-batch*) untuk memastikan kemurnian konsentrasi minyak wangi tanpa kompromi bahan pengisi murah.
+                    </p>
+                </div>
+                <a href="katalog.html" class="mt-4 md:mt-0 text-xs font-display font-bold text-noir-bronze border-b border-noir-bronze pb-1 hover:text-white transition uppercase tracking-widest">
+                    Lihat Semua 8 Koleksi &rarr;
+                </a>
+            </div>
+
+            <!-- 3 Columns Perfume Bottle Cards -->
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                
+                <!-- Bottle 1: Santal Éternel -->
+                <div class="bg-noir-card rounded-3xl border border-noir-border p-6 flex flex-col justify-between amber-card-hover">
+                    <div>
+                        <div class="flex items-center justify-between text-[10px] font-display text-stone-400 mb-3">
+                            <span class="text-noir-bronze font-bold">EXTRAIT DE PARFUM</span>
+                            <span class="px-2 py-0.5 rounded-full bg-noir-surface text-stone-300 font-mono">50 ML</span>
+                        </div>
+
+                        <!-- Bottle Image Container -->
+                        <div class="h-64 rounded-2xl bg-noir-obsidian overflow-hidden mb-4 relative group flex items-center justify-center">
+                            <img src="https://images.unsplash.com/photo-1592945403244-b3fbafd7f539?auto=format&fit=crop&w=700&q=80" alt="Santal Éternel Bottle" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                            <span class="absolute top-3 right-3 bg-noir-pitch/80 backdrop-blur-sm text-noir-amber text-[9px] font-display font-bold px-2.5 py-1 rounded-full border border-noir-border">
+                                SILLAGE: BEAST MODE
+                            </span>
+                        </div>
+
+                        <div class="text-[11px] font-display text-noir-amber tracking-wider mb-1">
+                            WOODY • SMOKY • SPICED AMBER
+                        </div>
+                        <h3 class="text-lg font-serif font-bold text-stone-100">Santal Éternel & Ambre Noir</h3>
+                        <p class="text-xs text-stone-400 mt-2 leading-relaxed">
+                            Kayu cendana Mysore yang dibakar perlahan dengan getah mur Somalian dan vanila bourbon pekat.
+                        </p>
+
+                        <!-- Sillage & Longevity Bar -->
+                        <div class="mt-4 p-3 rounded-xl bg-noir-obsidian border border-noir-border text-[11px] font-display space-y-1.5 text-stone-400">
+                            <div class="flex justify-between"><span>Ketahanan Kulit:</span> <strong class="text-stone-200">14–16 Jam</strong></div>
+                            <div class="flex justify-between"><span>Proyeksi Jejak:</span> <strong class="text-noir-amber">2–3 Meter (Intens)</strong></div>
+                            <div class="flex justify-between"><span>BPOM RI:</span> <strong class="text-stone-300 font-mono">NA18230601928</strong></div>
+                        </div>
+                    </div>
+
+                    <div class="mt-6 pt-4 border-t border-noir-border flex items-center justify-between">
+                        <div>
+                            <span class="text-[10px] text-stone-500 font-display block uppercase">Mahar Botol</span>
+                            <span class="text-base font-serif font-bold text-noir-amber">Rp 489.000</span>
+                        </div>
+                        <a href="detail.html" class="px-4 py-2 rounded-full bg-noir-surface hover:bg-noir-bronze hover:text-noir-pitch text-stone-200 text-xs font-display font-bold tracking-wider transition">
+                            DETAIL AROMA &rarr;
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Bottle 2: Rose Impériale -->
+                <div class="bg-noir-card rounded-3xl border-2 border-noir-bronze/40 p-6 flex flex-col justify-between amber-card-hover relative shadow-xl">
+                    <div class="absolute -top-3 left-1/2 -translate-x-1/2 bg-noir-bronze text-noir-pitch text-[9px] font-display font-extrabold px-4 py-1 rounded-full uppercase tracking-widest shadow">
+                        ★ SIGNATURE MASTERPIECE
+                    </div>
+                    <div>
+                        <div class="flex items-center justify-between text-[10px] font-display text-stone-400 mb-3">
+                            <span class="text-noir-bronze font-bold">EXTRAIT DE PARFUM</span>
+                            <span class="px-2 py-0.5 rounded-full bg-noir-surface text-stone-300 font-mono">50 ML</span>
+                        </div>
+
+                        <div class="h-64 rounded-2xl bg-noir-obsidian overflow-hidden mb-4 relative group flex items-center justify-center">
+                            <img src="https://images.unsplash.com/photo-1547887537-6158d64c35b3?auto=format&fit=crop&w=700&q=80" alt="Rose Impériale Bottle" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                            <span class="absolute top-3 right-3 bg-noir-pitch/80 backdrop-blur-sm text-noir-amber text-[9px] font-display font-bold px-2.5 py-1 rounded-full border border-noir-border">
+                                SILLAGE: HEAVY TRAIL
+                            </span>
+                        </div>
+
+                        <div class="text-[11px] font-display text-noir-amber tracking-wider mb-1">
+                            FLORAL • INCENSE • DARK OUD
+                        </div>
+                        <h3 class="text-lg font-serif font-bold text-stone-100">Rose Impériale de Grasse</h3>
+                        <p class="text-xs text-stone-400 mt-2 leading-relaxed">
+                            Ekstrak mawar Damaskus Grasse yang gelap dan sensual, dibalut sentuhan oud Kalimantan dan kesturi putih.
+                        </p>
+
+                        <div class="mt-4 p-3 rounded-xl bg-noir-obsidian border border-noir-border text-[11px] font-display space-y-1.5 text-stone-400">
+                            <div class="flex justify-between"><span>Ketahanan Kulit:</span> <strong class="text-stone-200">16+ Jam</strong></div>
+                            <div class="flex justify-between"><span>Proyeksi Jejak:</span> <strong class="text-noir-amber">3 Meter (Statement)</strong></div>
+                            <div class="flex justify-between"><span>BPOM RI:</span> <strong class="text-stone-300 font-mono">NA18230602114</strong></div>
+                        </div>
+                    </div>
+
+                    <div class="mt-6 pt-4 border-t border-noir-border flex items-center justify-between">
+                        <div>
+                            <span class="text-[10px] text-stone-500 font-display block uppercase">Mahar Botol</span>
+                            <span class="text-base font-serif font-bold text-noir-amber">Rp 529.000</span>
+                        </div>
+                        <a href="detail.html" class="px-4 py-2 rounded-full bg-noir-bronze text-noir-pitch text-xs font-display font-bold tracking-wider hover:bg-amber-400 transition">
+                            DETAIL AROMA &rarr;
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Bottle 3: Vanille Céleste -->
+                <div class="bg-noir-card rounded-3xl border border-noir-border p-6 flex flex-col justify-between amber-card-hover">
+                    <div>
+                        <div class="flex items-center justify-between text-[10px] font-display text-stone-400 mb-3">
+                            <span class="text-noir-bronze font-bold">EXTRAIT DE PARFUM</span>
+                            <span class="px-2 py-0.5 rounded-full bg-noir-surface text-stone-300 font-mono">50 ML</span>
+                        </div>
+
+                        <div class="h-64 rounded-2xl bg-noir-obsidian overflow-hidden mb-4 relative group flex items-center justify-center">
+                            <img src="https://images.unsplash.com/photo-1594035910387-fea47794261f?auto=format&fit=crop&w=700&q=80" alt="Vanille Céleste Bottle" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                            <span class="absolute top-3 right-3 bg-noir-pitch/80 backdrop-blur-sm text-noir-amber text-[9px] font-display font-bold px-2.5 py-1 rounded-full border border-noir-border">
+                                SILLAGE: MODERATE TO BEAST
+                            </span>
+                        </div>
+
+                        <div class="text-[11px] font-display text-noir-amber tracking-wider mb-1">
+                            GOURMAND • TONKA • SPICED RUM
+                        </div>
+                        <h3 class="text-lg font-serif font-bold text-stone-100">Vanille Céleste & Rhum Doré</h3>
+                        <p class="text-xs text-stone-400 mt-2 leading-relaxed">
+                            Biji vanila hitam Madagaskar yang direndam dalam rum karamel hangat, biji tonka, dan sentuhan tembakau pirang.
+                        </p>
+
+                        <div class="mt-4 p-3 rounded-xl bg-noir-obsidian border border-noir-border text-[11px] font-display space-y-1.5 text-stone-400">
+                            <div class="flex justify-between"><span>Ketahanan Kulit:</span> <strong class="text-stone-200">12–14 Jam</strong></div>
+                            <div class="flex justify-between"><span>Proyeksi Jejak:</span> <strong class="text-noir-amber">2 Meter (Warm Hug)</strong></div>
+                            <div class="flex justify-between"><span>BPOM RI:</span> <strong class="text-stone-300 font-mono">NA18230603419</strong></div>
+                        </div>
+                    </div>
+
+                    <div class="mt-6 pt-4 border-t border-noir-border flex items-center justify-between">
+                        <div>
+                            <span class="text-[10px] text-stone-500 font-display block uppercase">Mahar Botol</span>
+                            <span class="text-base font-serif font-bold text-noir-amber">Rp 469.000</span>
+                        </div>
+                        <a href="detail.html" class="px-4 py-2 rounded-full bg-noir-surface hover:bg-noir-bronze hover:text-noir-pitch text-stone-200 text-xs font-display font-bold tracking-wider transition">
+                            DETAIL AROMA &rarr;
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+    <!-- 6. SOCIAL PROOF: TESTIMONI PENGALAMAN AROMA DARI FRAGRANCE ENTHUSIASTS -->
+    <section class="py-20 bg-noir-obsidian text-stone-200 border-b border-noir-border">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            
+            <div class="text-center max-w-2xl mx-auto mb-16">
+                <span class="text-xs font-display uppercase tracking-[0.25em] text-noir-bronze font-bold block mb-1">
+                    // OLFACTORY TESTIMONIALS
+                </span>
+                <h2 class="text-3xl sm:text-4xl font-serif font-extrabold text-stone-100">
+                    Pengakuan Penikmat Wewangian Niche
+                </h2>
+                <p class="text-xs sm:text-sm text-stone-400 mt-2">
+                    Kesan jujur dari fragrance reviewer, kolektor parfum, dan penikmat aroma berkelas.
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                
+                <!-- Review 1 -->
+                <div class="bg-noir-card rounded-3xl p-8 border border-noir-border flex flex-col justify-between">
+                    <div>
+                        <div class="flex items-center gap-1 text-noir-amber text-xs mb-4">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                        <p class="text-xs sm:text-sm text-stone-300 italic leading-relaxed">
+                            "Santal Éternel adalah salah satu racikan Extrait lokal terbaik yang pernah saya cium. Kualitas minyak cendananya halus tanpa ada bau sintetis tajam. Disemprot pagi jam 7, jam 9 malam aromanya masih sangat hidup di kerah jaket!"
+                        </p>
+                    </div>
+                    <div class="mt-6 pt-4 border-t border-noir-border/60 flex items-center gap-3">
+                        <div class="w-10 h-10 rounded-full bg-noir-surface text-noir-bronze font-serif font-bold flex items-center justify-center text-sm border border-noir-border">
+                            DH
+                        </div>
+                        <div>
+                            <div class="text-xs font-display font-bold text-stone-100">Dimas Hadiningrat</div>
+                            <span class="text-[10px] text-stone-500 font-sans">Niche Fragrance Enthusiast & Collector</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Review 2 -->
+                <div class="bg-noir-card rounded-3xl p-8 border border-noir-bronze/50 flex flex-col justify-between shadow-xl">
+                    <div>
+                        <div class="flex items-center gap-1 text-noir-amber text-xs mb-4">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                        <p class="text-xs sm:text-sm text-stone-300 italic leading-relaxed">
+                            "Rose Impériale de Grasse adalah aroma mawar paling gelap dan megah. Bukan tipe mawar sabun biasa, tapi ada asap dupa mistis yang membuatnya sangat seksi dipakai di acara makan malam formal."
+                        </p>
+                    </div>
+                    <div class="mt-6 pt-4 border-t border-noir-border/60 flex items-center gap-3">
+                        <div class="w-10 h-10 rounded-full bg-noir-bronze text-noir-pitch font-serif font-bold flex items-center justify-center text-sm">
+                            SK
+                        </div>
+                        <div>
+                            <div class="text-xs font-display font-bold text-stone-100">Stephanie Kusuma</div>
+                            <span class="text-[10px] text-stone-500 font-sans">Lifestyle Editor & Scent Connoisseur</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Review 3 -->
+                <div class="bg-noir-card rounded-3xl p-8 border border-noir-border flex flex-col justify-between">
+                    <div>
+                        <div class="flex items-center gap-1 text-noir-amber text-xs mb-4">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                        <p class="text-xs sm:text-sm text-stone-300 italic leading-relaxed">
+                            "Discovery Set-nya sangat berharga untuk dicoba sebelum membeli full bottle. Botol kaca berat dengan tutup magnetik klik yang solid membuktikan komitmen kemewahan Maison Noir Sillage."
+                        </p>
+                    </div>
+                    <div class="mt-6 pt-4 border-t border-noir-border/60 flex items-center gap-3">
+                        <div class="w-10 h-10 rounded-full bg-noir-surface text-noir-bronze font-serif font-bold flex items-center justify-center text-sm border border-noir-border">
+                            AP
+                        </div>
+                        <div>
+                            <div class="text-xs font-display font-bold text-stone-100">Aditya Pratama</div>
+                            <span class="text-[10px] text-stone-500 font-sans">Executive & Fragrance Explorer</span>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+    <!-- 7. FOOTER DARK ATELIER -->
+    <footer class="bg-noir-pitch text-stone-400 border-t border-noir-border pt-16 pb-28">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-10">
+                
+                <!-- Col 1: Brand -->
+                <div class="lg:col-span-2 space-y-4">
+                    <a href="index.html" class="flex flex-col">
+                        <span class="text-xl font-display font-extrabold tracking-[0.25em] text-stone-100 uppercase">
+                            NOIR SILLAGE
+                        </span>
+                        <span class="text-[9px] font-display tracking-[0.45em] text-noir-bronze uppercase mt-1">
+                            Haute Parfumerie Atelier
+                        </span>
+                    </a>
+                    <p class="text-xs text-stone-400 leading-relaxed max-w-sm">
+                        Lentera Pasar Luxury Fragrance Collection. Peracikan wewangian artisanal berbasis konsentrat minyak atsiri murni tanpa bahan sintetis berbahaya, terdaftar resmi di BPOM RI.
+                    </p>
+                    <div class="pt-2 text-xs font-display text-stone-400 space-y-1">
+                        <div><i class="fa-solid fa-location-dot text-noir-bronze mr-2"></i> The Scent Pavilion, Gunawarman No. 18, Kebayoran Baru, Jakarta Selatan</div>
+                        <div><i class="fa-brands fa-whatsapp text-emerald-500 mr-2"></i> +62 812-3456-7890 (Private Scent Consultation)</div>
+                    </div>
+                </div>
+
+                <!-- Col 2: Navigasi Cepat -->
+                <div>
+                    <h4 class="text-xs font-display font-bold uppercase tracking-widest text-stone-200 mb-4">Navigasi Utama</h4>
+                    <ul class="space-y-2.5 text-xs text-stone-400 font-medium font-display">
+                        <li><a href="index.html" class="hover:text-noir-bronze transition">Beranda Utama</a></li>
+                        <li><a href="katalog.html" class="hover:text-noir-bronze transition">Koleksi Extrait</a></li>
+                        <li><a href="detail.html" class="hover:text-noir-bronze transition">Piramida Aroma</a></li>
+                        <li><a href="tentang.html" class="hover:text-noir-bronze transition">Kisah Master Nose</a></li>
+                        <li><a href="artikel.html" class="hover:text-noir-bronze transition">Jurnal Wewangian</a></li>
+                        <li><a href="kontak.html" class="hover:text-noir-bronze transition">Studio Olfaktori</a></li>
+                    </ul>
+                </div>
+
+                <!-- Col 3: Karakter Aroma -->
+                <div>
+                    <h4 class="text-xs font-display font-bold uppercase tracking-widest text-stone-200 mb-4">Karakter Aroma</h4>
+                    <ul class="space-y-2.5 text-xs text-stone-400 font-display">
+                        <li><a href="katalog.html" class="hover:text-noir-bronze transition">Woody & Smoky Oud</a></li>
+                        <li><a href="katalog.html" class="hover:text-noir-bronze transition">Dark Floral & Incense</a></li>
+                        <li><a href="katalog.html" class="hover:text-noir-bronze transition">Gourmand Vanilla & Rum</a></li>
+                        <li><a href="katalog.html" class="hover:text-noir-bronze transition">Fresh Citrus & Aquatic</a></li>
+                        <li><a href="katalog.html" class="hover:text-noir-bronze transition">Discovery Sample Set</a></li>
+                    </ul>
+                </div>
+
+                <!-- Col 4: Keamanan & Registrasi -->
+                <div>
+                    <h4 class="text-xs font-display font-bold uppercase tracking-widest text-stone-200 mb-4">Sertifikasi Resmi</h4>
+                    <div class="space-y-2 text-xs text-stone-400 font-mono">
+                        <div class="p-2.5 rounded-xl bg-noir-card border border-noir-border">
+                            <span class="text-[10px] text-stone-500 block uppercase font-display">BPOM Official Registry:</span>
+                            <span class="font-bold text-stone-200 text-[11px]">NA18230601928 / NA18230602114</span>
+                        </div>
+                        <div class="p-2.5 rounded-xl bg-noir-card border border-noir-border">
+                            <span class="text-[10px] text-stone-500 block uppercase font-display">Safety Compliance:</span>
+                            <span class="font-bold text-stone-200 text-[11px]">IFRA 50th Standards</span>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="mt-12 pt-8 border-t border-noir-border/60 flex flex-col sm:flex-row items-center justify-between text-xs text-stone-500">
+                <p>&copy; 2026 MAISON NOIR SILLAGE. All Rights Reserved.</p>
+                <p class="font-display text-[11px] mt-2 sm:mt-0">Lentera Pasar Production Template — Luxury Atelier</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- ========================================================================= -->
+    <!-- SCENT PROFILER MODAL (DIAGNOSTIC POPUP)                                   -->
+    <!-- ========================================================================= -->
+    <div id="scentProfilerModal" class="fixed inset-0 z-50 bg-black/80 backdrop-blur-md hidden flex items-center justify-center p-4">
+        <div class="bg-noir-obsidian rounded-3xl border border-noir-border max-w-lg w-full p-6 sm:p-8 shadow-2xl relative text-stone-200">
+            <button onclick="closeScentProfilerModal()" class="absolute top-5 right-5 text-stone-500 hover:text-stone-200 text-lg p-1">
+                <i class="fa-solid fa-xmark"></i>
+            </button>
+            <div class="flex items-center gap-3 mb-6">
+                <div class="w-10 h-10 rounded-full bg-noir-surface text-noir-bronze flex items-center justify-center text-lg border border-noir-border">
+                    <i class="fa-solid fa-compass"></i>
+                </div>
+                <div>
+                    <h3 class="text-lg font-serif font-bold text-stone-100">Scent Profiler Diagnostic</h3>
+                    <p class="text-xs text-stone-400">Temukan aroma khas yang selaras dengan kepribadianmu.</p>
+                </div>
+            </div>
+
+            <div class="space-y-4 text-xs">
+                <div>
+                    <label class="block font-bold text-stone-200 mb-1.5 font-display uppercase">1. Suasana / Vibe yang Ingin Dipancarkan:</label>
+                    <select id="modalVibe" class="w-full p-3 rounded-xl border border-noir-border bg-noir-card text-stone-200 focus:outline-none focus:border-noir-bronze font-sans text-xs">
+                        <option value="mysterious">Misterius, Elegan, Berwibawa & Hangat (Woody Oud)</option>
+                        <option value="sensual">Sensual, Romantis, Menawan & Memikat (Dark Floral Rose)</option>
+                        <option value="sweet">Manis, Cozy, Menggoda & Ramah (Vanilla Gourmand)</option>
+                        <option value="fresh">Segar, Bersih, Berenergi & Tajam (Citrus Aquatic)</option>
+                    </select>
+                </div>
+
+                <div>
+                    <label class="block font-bold text-stone-200 mb-1.5 font-display uppercase">2. Kebutuhan Penggunaan Utama:</label>
+                    <select id="modalOccasion" class="w-full p-3 rounded-xl border border-noir-border bg-noir-card text-stone-200 focus:outline-none focus:border-noir-bronze font-sans text-xs">
+                        <option value="evening">Malam Hari / Acara Formal / Pesta Mewah / Date Night</option>
+                        <option value="daily">Aktivitas Kantor Ber-AC / Rapat Bisnis Penting</option>
+                        <option value="versatile">Signature Scent Serbaguna untuk Segala Acara</option>
+                    </select>
+                </div>
+
+                <div id="modalScentResult" class="p-4 rounded-2xl bg-noir-card border border-noir-border hidden space-y-2">
+                    <span class="text-[10px] font-display font-bold text-noir-bronze uppercase block">Rekomendasi Parfum Atelier:</span>
+                    <h5 id="modalScentTitle" class="font-serif font-bold text-stone-100 text-sm">Santal Éternel & Ambre Noir (Extrait 50ml)</h5>
+                    <p id="modalScentDesc" class="text-xs text-stone-400 leading-relaxed">Piramida aroma kayu cendana berpadu kehangatan ambergris dan vanila hitam.</p>
+                </div>
+
+                <div class="pt-2 flex items-center justify-between gap-3">
+                    <button onclick="calculateScent()" class="w-1/2 py-3 rounded-full bg-noir-surface hover:bg-noir-border text-stone-200 font-display font-bold text-xs uppercase tracking-wider transition">
+                        Analisis Scent
+                    </button>
+                    <a id="modalScentWaLink" href="https://wa.me/6281234567890?text=Halo%20Noir%20Sillage,%20saya%20sudah%20mencoba%20Scent%20Profiler%20dan%20ingin%20memesan." target="_blank" class="w-1/2 py-3 rounded-full bg-noir-bronze hover:bg-amber-400 text-noir-pitch font-display font-bold text-xs uppercase tracking-wider text-center transition">
+                        Pesan via WA &rarr;
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ========================================================================= -->
+    <!-- FLOATING WHATSAPP BUTTON (bottom-24)                                      -->
+    <!-- ========================================================================= -->
+    <a href="https://wa.me/6281234567890?text=Halo%20Maison%20Noir%20Sillage,%20saya%20ingin%20konsultasi%20pemilihan%20karakter%20parfum." 
+       target="_blank" 
+       class="fixed bottom-24 right-6 z-50 group flex items-center gap-3 bg-noir-obsidian hover:bg-noir-card text-stone-200 px-4 py-3 rounded-full border border-noir-border shadow-2xl hover:border-noir-bronze transition-all duration-300" 
+       aria-label="Konsultasi Parfum via WhatsApp">
+        <span class="relative flex h-3 w-3">
+            <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-amber-400 opacity-75"></span>
+            <span class="relative inline-flex rounded-full h-3 w-3 bg-noir-amber"></span>
+        </span>
+        <i class="fa-brands fa-whatsapp text-2xl text-emerald-500"></i>
+        <div class="text-left hidden sm:block pr-1">
+            <div class="text-[10px] text-stone-500 font-display font-bold uppercase tracking-wider leading-none">Nose Consultant</div>
+            <span class="font-display font-bold text-xs text-stone-200">Konsultasi Aroma WA</span>
+        </div>
+    </a>
+
+    <!-- ========================================================================= -->
+    <!-- LENTERA PASAR - STICKY DEMO & SALES BAR (fixed bottom-4)                 -->
+    <!-- ========================================================================= -->
+    <div class="fixed bottom-4 left-1/2 -translate-x-1/2 z-50 w-[95%] max-w-4xl bg-slate-900/95 backdrop-blur-md text-white p-3.5 md:p-4 rounded-2xl shadow-2xl border border-slate-700/80 transition-all duration-300">
+      <div class="flex flex-col md:flex-row items-center justify-between gap-3 md:gap-4">
+        
+        <!-- Info Template & Value Proposition -->
+        <div class="flex items-center gap-3 w-full md:w-auto">
+          <div class="w-10 h-10 rounded-xl bg-amber-500/20 border border-amber-500/40 flex items-center justify-center shrink-0">
+            <svg class="w-5 h-5 text-amber-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19.428 15.428a2 2 0 00-1.022-.547l-2.387-.477a6 6 0 00-3.86.517l-.318.158a6 6 0 01-3.86.517L6.05 15.21a2 2 0 00-1.806.547M8 4h8l-1 1v5.172a2 2 0 00.586 1.414l5 5c1.26 1.26.367 3.414-1.415 3.414H4.828c-1.782 0-2.674-2.154-1.414-3.414l5-5A2 2 0 009 10.172V5L8 4z" />
+            </svg>
+          </div>
+          <div>
+            <div class="flex items-center gap-2">
+              <span class="font-bold text-sm text-white">Lentera Pasar Engine</span>
+              <span class="text-[10px] bg-amber-500/20 text-amber-300 border border-amber-500/30 px-2 py-0.5 rounded-full font-medium">Perfume Luxury Atelier Template</span>
+            </div>
+            <p class="text-xs text-slate-300 hidden sm:block">
+              Terima beres: Website responsif + Panel input produk sendiri + Dikelola tim iklan profesional.
+            </p>
+          </div>
+        </div>
+
+        <!-- Poin Keunggulan & Tombol Action -->
+        <div class="flex items-center justify-between md:justify-end gap-3 w-full md:w-auto">
+          <div class="hidden lg:flex items-center gap-2 text-xs text-slate-400 border-r border-slate-700 pr-4">
+            <div class="flex items-center gap-1 text-slate-200">
+              <svg class="w-4 h-4 text-emerald-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" /></svg>
+              <span>Fragrance Pyramid</span>
+            </div>
+            <span class="text-slate-600">•</span>
+            <div class="flex items-center gap-1 text-slate-200">
+              <svg class="w-4 h-4 text-emerald-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" /></svg>
+              <span>Direct WA Scent Order</span>
+            </div>
+          </div>
+
+          <a href="https://wa.me/6281234567890?text=Halo%20Tim%20Lentera%20Pasar,%20saya%20tertarik%20menggunakan%20template%20website%20Perfume%20Luxury%20Atelier%20ini%20lengkap%20dengan%20Admin%20Panel%20dan%20Jasa%20Iklannya." 
+             target="_blank"
+             class="w-full md:w-auto inline-flex items-center justify-center gap-2 bg-gradient-to-r from-amber-600 to-amber-700 hover:from-amber-500 hover:to-amber-600 text-white text-xs md:text-sm font-semibold px-5 py-2.5 rounded-xl shadow-lg shadow-amber-500/20 transition-all hover:scale-105 shrink-0 font-display tracking-wider">
+            <span>Gunakan Template Ini</span>
+            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3" />
+            </svg>
+          </a>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- SCRIPT LOGIC -->
+    <script>
+        // Pyramid Visualizer Switcher
+        function selectPyramidTier(tier) {
+            const cardTop = document.getElementById('tierCard-top');
+            const cardHeart = document.getElementById('tierCard-heart');
+            const cardBase = document.getElementById('tierCard-base');
+
+            const icon = document.getElementById('pyramidIcon');
+            const sub = document.getElementById('pyramidSub');
+            const heading = document.getElementById('pyramidHeading');
+            const explain = document.getElementById('pyramidExplain');
+            const vol = document.getElementById('pyramidVol');
+            const dur = document.getElementById('pyramidDur');
+            const ing = document.getElementById('pyramidIng');
+
+            [cardTop, cardHeart, cardBase].forEach(c => {
+                c.classList.remove('border-2', 'border-noir-bronze');
+                c.classList.add('border', 'border-noir-border');
+            });
+
+            if (tier === 'top') {
+                cardTop.classList.add('border-2', 'border-noir-bronze');
+                cardTop.classList.remove('border-noir-border');
+                icon.className = "fa-solid fa-sparkles text-noir-bronze";
+                sub.innerText = "FASE AWAL APLIKASI";
+                heading.innerText = "Top Notes: Hembusan Pertama";
+                explain.innerText = "Minyak atsiri berbobot molekul rendah menyajikan letupan kesegaran bergamot Calabria dan percikan rempah pink pepper yang elegan.";
+                vol.innerText = "Tinggi (Cepat Menguap)";
+                dur.innerText = "0 - 30 Menit";
+                ing.innerText = "Bergamot, Cardamom, Citron";
+            } else if (tier === 'heart') {
+                cardHeart.classList.add('border-2', 'border-noir-bronze');
+                cardHeart.classList.remove('border-noir-border');
+                icon.className = "fa-solid fa-heart text-rose-400";
+                sub.innerText = "FASE UTAMA INTROSPEKSI";
+                heading.innerText = "Heart Notes: Jiwa Sejati Aroma";
+                explain.innerText = "Kehangatan damask rose pekat yang diekstraksi di Grasse Prancis berpadu kepulan dupa frankincense dan teh hitam pekat.";
+                vol.innerText = "Sedang (Stabil & Memancar)";
+                dur.innerText = "30 Menit - 4 Jam";
+                ing.innerText = "Damask Rose, Frankincense, Black Tea";
+            } else {
+                cardBase.classList.add('border-2', 'border-noir-bronze');
+                cardBase.classList.remove('border-noir-border');
+                icon.className = "fa-solid fa-gem text-noir-amber";
+                sub.innerText = "FASE JEJAK ABADI";
+                heading.innerText = "Base Notes: Fondasi Sillage Abadi";
+                explain.innerText = "Minyak gaharu asap Nusantara yang langka menyatu dengan kehangatan ambergris laut dan lelehan vanila hitam Madagaskar.";
+                vol.innerText = "Sangat Rendah (Menempel Kuat)";
+                dur.innerText = "4 - 16+ Jam";
+                ing.innerText = "Smoked Oud, Ambergris, Bourbon Vanilla";
+            }
+        }
+
+        // Scent Profiler Modal
+        const profilerModal = document.getElementById('scentProfilerModal');
+        function openScentProfilerModal() {
+            profilerModal.classList.remove('hidden');
+        }
+        function closeScentProfilerModal() {
+            profilerModal.classList.add('hidden');
+        }
+
+        function calculateScent() {
+            const vibe = document.getElementById('modalVibe').value;
+            const resBox = document.getElementById('modalScentResult');
+            const resTitle = document.getElementById('modalScentTitle');
+            const resDesc = document.getElementById('modalScentDesc');
+            const waLink = document.getElementById('modalScentWaLink');
+
+            resBox.classList.remove('hidden');
+
+            if (vibe === 'mysterious') {
+                resTitle.innerText = "Santal Éternel & Ambre Noir (Extrait 50ml)";
+                resDesc.innerText = "Dominasi kayu cendana Mysore, gaharu asap, kapulaga, dan ambergris hangat.";
+                waLink.href = "https://wa.me/6281234567890?text=Halo%20Noir%20Sillage,%20rekomendasi%20Scent%20Profiler%20saya%20adalah%20Santal%20Eternel.";
+            } else if (vibe === 'sensual') {
+                resTitle.innerText = "Rose Impériale de Grasse (Extrait 50ml)";
+                resDesc.innerText = "Mawar Damaskus Grasse pekat berpadu dupa Somalian dan oud Kalimantan.";
+                waLink.href = "https://wa.me/6281234567890?text=Halo%20Noir%20Sillage,%20rekomendasi%20Scent%20Profiler%20saya%20adalah%20Rose%20Imperiale.";
+            } else if (vibe === 'sweet') {
+                resTitle.innerText = "Vanille Céleste & Rhum Doré (Extrait 50ml)";
+                resDesc.innerText = "Vanila hitam Madagaskar, dark rum, tonka bean, dan tembakau pirang.";
+                waLink.href = "https://wa.me/6281234567890?text=Halo%20Noir%20Sillage,%20rekomendasi%20Scent%20Profiler%20saya%20adalah%20Vanille%20Celeste.";
+            } else {
+                resTitle.innerText = "Verveine Nocturne & Mineral Salt (EDP 50ml)";
+                resDesc.innerText = "Bergamot Calabria, garam laut mineral, vetiver Haiti, dan sage segar.";
+                waLink.href = "https://wa.me/6281234567890?text=Halo%20Noir%20Sillage,%20rekomendasi%20Scent%20Profiler%20saya%20adalah%20Verveine%20Nocturne.";
+            }
+        }
+
+        // Mobile menu toggle
+        const mobileMenuBtn = document.getElementById('mobileMenuBtn');
+        const mobileMenu = document.getElementById('mobileMenu');
+        const menuIcon = document.getElementById('menuIcon');
+
+        mobileMenuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+            if (mobileMenu.classList.contains('hidden')) {
+                menuIcon.classList.remove('fa-xmark');
+                menuIcon.classList.add('fa-bars-staggered');
+            } else {
+                menuIcon.classList.remove('fa-bars-staggered');
+                menuIcon.classList.add('fa-xmark');
+            }
+        });
+    </script>
+</body>
+</html>
