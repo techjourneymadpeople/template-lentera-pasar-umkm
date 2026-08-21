@@ -27,6 +27,7 @@ template-website-umkm/
 │
 ├── 📁 02-fashion-skincare/             # [BIDANG 2 - Fashion & Skincare]
 │   ├── skincare-clinical-lab/          # Skincare Clinical Lab & Derm-Cosmetics BPOM (Aetheria Lab)
+│   ├── makeup-glam-studio/             # Kosmetik & Make-up Dekoratif Runway Glam (Velvet Runway)
 │   ├── fashion-muslim-gamis/           # Hijab, Gamis Syar'i & Abaya Modern
 │   ├── fashion-streetwear-apparel/     # Kaos Distro, Hoodie & Urban Oversize
 │   ├── fashion-batik-etnik/            # Batik Tulis/Cap, Tenun & Kebaya Modern

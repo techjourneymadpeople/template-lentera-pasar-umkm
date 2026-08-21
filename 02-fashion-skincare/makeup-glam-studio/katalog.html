@@ -1,0 +1,790 @@
+<!DOCTYPE html>
+<html lang="id" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Katalog Koleksi Makeup Haute Couture — VELVET RUNWAY</title>
+    <meta name="description" content="Eksplorasi katalog lengkap cushion 16H, velvet lip soufflé, eyeshadow 9-pan, dan blush on dengan pilihan swatch warna asli untuk semua undertone.">
+    
+    <!-- Google Fonts: Bodoni Moda & Plus Jakarta Sans -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400;0,6..96,600;0,6..96,700;0,6..96,800;1,6..96,400;1,6..96,600&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Cinzel:wght@500;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        glam: {
+                            bisque: '#F7EFE9',
+                            warmnude: '#EFE2D8',
+                            darknude: '#DFCEC1',
+                            pitch: '#121212',
+                            noir: '#1A1818',
+                            card: '#FFFBF8',
+                            border: '#E8D8CD',
+                            plum: '#9D174D',
+                            plumhover: '#831843',
+                            ruby: '#BE185D',
+                            rose: '#F43F5E',
+                            gold: '#C5A059',
+                            goldshimmer: '#E5C583',
+                            muted: '#8C7E77'
+                        }
+                    },
+                    fontFamily: {
+                        sans: ['"Plus Jakarta Sans"', 'sans-serif'],
+                        serif: ['"Bodoni Moda"', 'Georgia', 'serif'],
+                        display: ['"Cinzel"', 'serif']
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        .no-scrollbar::-webkit-scrollbar { display: none; }
+        .no-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
+        
+        .product-card {
+            transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+        }
+        .product-card:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 20px 40px -10px rgba(18, 18, 18, 0.12), 0 0 0 1px #C5A059;
+        }
+
+        .swatch-btn {
+            transition: transform 0.15s ease, box-shadow 0.15s ease;
+        }
+        .swatch-btn:hover {
+            transform: scale(1.25);
+        }
+        .swatch-btn.active-swatch {
+            box-shadow: 0 0 0 2px #FFFFFF, 0 0 0 3.5px #121212;
+            transform: scale(1.15);
+        }
+    </style>
+</head>
+<body class="bg-glam-bisque text-glam-pitch font-sans antialiased selection:bg-glam-plum selection:text-white">
+
+    <!-- 1. TOP BAR -->
+    <div class="bg-glam-pitch text-glam-bisque text-[11px] py-2 px-4 tracking-widest font-display uppercase border-b border-glam-gold/30">
+        <div class="max-w-7xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-2 text-center sm:text-left">
+            <div class="flex items-center justify-center gap-2">
+                <span class="inline-flex items-center gap-1.5 px-2 py-0.5 rounded-full bg-glam-plum text-white text-[9px] font-bold tracking-wider">
+                    <span class="w-1.5 h-1.5 rounded-full bg-glam-goldshimmer animate-ping"></span>
+                    ALL SHADES AVAILABLE
+                </span>
+                <span class="text-stone-300">Pilihan Riasan Wajah, Bibir & Mata Berstandar Haute Couture</span>
+            </div>
+            <div class="flex items-center gap-4 text-[10px] text-stone-300">
+                <span>Free Konsultasi Shade WhatsApp</span>
+                <span class="text-stone-600">|</span>
+                <a href="kontak.html" class="text-glam-goldshimmer hover:text-white underline transition">Uji Coba di Studio &rarr;</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- 2. NAVBAR -->
+    <header class="sticky top-0 z-40 bg-glam-bisque/95 backdrop-blur-md border-b border-glam-border transition-all">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-20 sm:h-24">
+                
+                <a href="index.html" class="flex flex-col group">
+                    <span class="text-xl sm:text-2xl font-serif font-extrabold tracking-[0.2em] text-glam-pitch uppercase leading-none group-hover:text-glam-plum transition">
+                        VELVET RUNWAY
+                    </span>
+                    <span class="text-[9px] font-display tracking-[0.35em] text-glam-gold uppercase mt-1">
+                        Haute Cosmetics Atelier
+                    </span>
+                </a>
+
+                <nav class="hidden lg:flex items-center gap-8 text-xs font-semibold tracking-widest uppercase text-stone-700">
+                    <a href="index.html" class="hover:text-glam-plum transition">Beranda</a>
+                    <a href="katalog.html" class="text-glam-plum font-bold border-b border-glam-plum pb-0.5">Katalog Makeup</a>
+                    <a href="detail.html" class="hover:text-glam-plum transition">Formula & Swatch</a>
+                    <a href="tentang.html" class="hover:text-glam-plum transition">Filosofi Inklusif</a>
+                    <a href="artikel.html" class="hover:text-glam-plum transition">Tutorial & Jurnal</a>
+                    <a href="kontak.html" class="hover:text-glam-plum transition">Studio & Konsultasi</a>
+                </nav>
+
+                <div class="hidden sm:flex items-center gap-3">
+                    <a href="https://wa.me/6281234567890?text=Halo%20Velvet%20Runway,%20saya%20ingin%20konsultasi%20pemilihan%20shade%20makeup." target="_blank" class="inline-flex items-center gap-2 bg-glam-pitch hover:bg-glam-plum text-white text-xs font-semibold tracking-wider px-5 py-2.5 rounded-full shadow-md transition-all">
+                        <i class="fa-brands fa-whatsapp text-emerald-400"></i>
+                        <span>Order WA</span>
+                    </a>
+                </div>
+
+                <button id="mobileMenuBtn" class="lg:hidden p-2 text-glam-pitch hover:text-glam-plum focus:outline-none" aria-label="Toggle Menu">
+                    <i id="menuIcon" class="fa-solid fa-bars-staggered text-xl"></i>
+                </button>
+            </div>
+        </div>
+
+        <!-- Mobile Drawer -->
+        <div id="mobileMenu" class="hidden lg:hidden bg-glam-bisque border-b border-glam-border px-4 py-5 space-y-3">
+            <a href="index.html" class="block text-xs font-semibold uppercase tracking-widest text-stone-700 hover:text-glam-plum py-2 border-b border-glam-warmnude">Beranda Utama</a>
+            <a href="katalog.html" class="block text-xs font-bold uppercase tracking-widest text-glam-plum py-2 border-b border-glam-warmnude">Katalog Cushion & Lip Tint</a>
+            <a href="detail.html" class="block text-xs font-semibold uppercase tracking-widest text-stone-700 hover:text-glam-plum py-2 border-b border-glam-warmnude">Detail Shade & Swatch Realistis</a>
+            <a href="tentang.html" class="block text-xs font-semibold uppercase tracking-widest text-stone-700 hover:text-glam-plum py-2 border-b border-glam-warmnude">Filosofi Inklusif & Sertifikasi BPOM</a>
+            <a href="artikel.html" class="block text-xs font-semibold uppercase tracking-widest text-stone-700 hover:text-glam-plum py-2 border-b border-glam-warmnude">Tutorial Flawless & Undertone</a>
+            <a href="kontak.html" class="block text-xs font-semibold uppercase tracking-widest text-stone-700 hover:text-glam-plum py-2">Studio Makeup & Event Booking</a>
+        </div>
+    </header>
+
+    <!-- 3. PAGE HEADER & FILTER ENGINE -->
+    <section class="py-12 bg-white border-b border-glam-border">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="max-w-3xl">
+                <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-glam-bisque border border-glam-border text-glam-pitch text-xs font-display tracking-widest mb-3">
+                    <span class="w-2 h-2 rounded-full bg-glam-plum"></span>
+                    <span>BEAUTY BAR LOOKBOOK</span>
+                </div>
+                <h1 class="text-3xl sm:text-5xl font-serif font-extrabold text-glam-pitch tracking-tight">
+                    Koleksi Riasan & Swatch Shade
+                </h1>
+                <p class="text-xs sm:text-sm text-stone-600 mt-2 leading-relaxed">
+                    Pilih shade riasan favoritmu secara langsung melalui swatch interaktif di bawah setiap produk. Formula bebas kilap berminyak, tahan gesekan masker, dan teruji dermatologis.
+                </p>
+            </div>
+
+            <!-- Search & Filter Controls -->
+            <div class="mt-8 grid grid-cols-1 md:grid-cols-12 gap-4">
+                <!-- Search Box -->
+                <div class="md:col-span-6 relative">
+                    <i class="fa-solid fa-magnifying-glass absolute left-4 top-1/2 -translate-y-1/2 text-stone-400 text-xs"></i>
+                    <input type="text" id="searchInput" placeholder="Cari produk riasan (misal: Cushion, Lip Soufflé, Eyeshadow, Shade 02)..." 
+                           class="w-full pl-10 pr-4 py-3 bg-glam-bisque border border-glam-border rounded-full text-xs text-glam-pitch focus:outline-none focus:border-glam-plum font-sans transition">
+                </div>
+
+                <!-- Finish Type Filter Dropdown -->
+                <div class="md:col-span-3">
+                    <select id="finishFilter" onchange="applyAllFilters()" class="w-full py-3 px-4 bg-glam-bisque border border-glam-border rounded-full text-xs font-display text-glam-pitch focus:outline-none focus:border-glam-plum transition">
+                        <option value="all">Semua Tipe Finish (All Finishes)</option>
+                        <option value="matte">Velvet Semi-Matte</option>
+                        <option value="dewy">Dewy Radiant Glow</option>
+                        <option value="satin">Satin Silk Soft</option>
+                        <option value="shimmer">Metallic & Pearl Foil</option>
+                    </select>
+                </div>
+
+                <!-- Quick Consultation CTA -->
+                <div class="md:col-span-3">
+                    <a href="https://wa.me/6281234567890?text=Halo%20Beauty%20Advisor%20Velvet%20Runway,%20bantu%20saya%20memilih%20shade%20makeup." target="_blank" class="w-full h-full py-3 px-4 bg-glam-pitch hover:bg-glam-plum text-white rounded-full text-xs font-display font-bold tracking-wider flex items-center justify-center gap-2 transition shadow">
+                        <i class="fa-brands fa-whatsapp text-emerald-400"></i>
+                        <span>Bantuan Pilih Shade</span>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Category Filter Pills -->
+            <div class="mt-6 flex items-center gap-2 overflow-x-auto no-scrollbar pb-2">
+                <span class="text-xs font-display text-stone-500 font-bold shrink-0 mr-1 uppercase">Kategori:</span>
+                <button onclick="filterCategory('all')" class="cat-pill active px-4 py-2 rounded-full text-xs font-display font-bold tracking-wider transition bg-glam-pitch text-white" data-category="all">
+                    SEMUA KOLEKSI
+                </button>
+                <button onclick="filterCategory('complexion')" class="cat-pill px-4 py-2 rounded-full text-xs font-display font-bold tracking-wider transition bg-glam-bisque text-stone-700 hover:text-glam-pitch border border-glam-border" data-category="complexion">
+                    CUSHION & FOUNDATION
+                </button>
+                <button onclick="filterCategory('lips')" class="cat-pill px-4 py-2 rounded-full text-xs font-display font-bold tracking-wider transition bg-glam-bisque text-stone-700 hover:text-glam-pitch border border-glam-border" data-category="lips">
+                    LIP SOUFFLÉ & TINT
+                </button>
+                <button onclick="filterCategory('eyes')" class="cat-pill px-4 py-2 rounded-full text-xs font-display font-bold tracking-wider transition bg-glam-bisque text-stone-700 hover:text-glam-pitch border border-glam-border" data-category="eyes">
+                    EYESHADOW PALETTE
+                </button>
+                <button onclick="filterCategory('cheeks')" class="cat-pill px-4 py-2 rounded-full text-xs font-display font-bold tracking-wider transition bg-glam-bisque text-stone-700 hover:text-glam-pitch border border-glam-border" data-category="cheeks">
+                    BLUSH & HIGHLIGHTER
+                </button>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- 4. PRODUCT GRID WITH REALISTIC SWATCH SELECTORS -->
+    <section class="py-16">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            
+            <div class="flex items-center justify-between mb-8">
+                <div class="text-xs font-display text-stone-500">
+                    Menampilkan <span id="productCount" class="font-bold text-glam-pitch">8</span> Produk Pilihan
+                </div>
+                <div class="text-xs font-display text-stone-600 flex items-center gap-2">
+                    <span class="w-2 h-2 rounded-full bg-emerald-500"></span>
+                    <span>100% Produk Original Segel Resmi BPOM</span>
+                </div>
+            </div>
+
+            <!-- Grid Items -->
+            <div id="productsGrid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+
+                <!-- ITEM 1: 16H Velvet Cushion -->
+                <div class="product-item bg-white rounded-3xl border border-glam-border p-5 flex flex-col justify-between product-card" 
+                     data-category="complexion" data-finish="matte" data-title="Luminous Silk Breathable Cushion Bedak Foundation SPF 35">
+                    <div>
+                        <div class="flex items-center justify-between text-[10px] font-display text-stone-500 mb-2">
+                            <span class="font-bold text-glam-plum uppercase">COMPLEXION</span>
+                            <span class="px-2 py-0.5 rounded-full bg-stone-100 text-glam-pitch">Semi-Matte</span>
+                        </div>
+                        
+                        <div class="h-48 rounded-2xl bg-glam-bisque overflow-hidden mb-3 relative group">
+                            <img id="imgItem1" src="https://images.unsplash.com/photo-1522337360788-8b13dee7a37e?auto=format&fit=crop&w=500&q=80" alt="Cushion" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                            <span class="absolute top-2 right-2 bg-glam-pitch text-white text-[9px] font-display font-bold px-2 py-0.5 rounded-full">
+                                SPF 35 PA+++
+                            </span>
+                        </div>
+
+                        <!-- Interactive Shade Swatches -->
+                        <div class="mb-3 bg-glam-bisque/60 p-2.5 rounded-xl border border-glam-border">
+                            <div class="flex items-center justify-between text-[10px] font-display mb-1.5">
+                                <span class="text-stone-500">Shade Aktif:</span>
+                                <strong id="shadeName1" class="text-glam-pitch">02 Warm Sand</strong>
+                            </div>
+                            <div class="flex items-center gap-2">
+                                <button onclick="setProductShade('shadeName1', '01 Vanilla Fair', this)" class="w-5 h-5 rounded-full bg-[#EAD1B8] swatch-btn border border-stone-300" title="01 Vanilla Fair"></button>
+                                <button onclick="setProductShade('shadeName1', '02 Warm Sand', this)" class="w-5 h-5 rounded-full bg-[#D8A77B] swatch-btn active-swatch border border-stone-300" title="02 Warm Sand"></button>
+                                <button onclick="setProductShade('shadeName1', '03 Golden Tan', this)" class="w-5 h-5 rounded-full bg-[#B87B4C] swatch-btn border border-stone-300" title="03 Golden Tan"></button>
+                                <button onclick="setProductShade('shadeName1', '04 Espresso', this)" class="w-5 h-5 rounded-full bg-[#8E4A28] swatch-btn border border-stone-300" title="04 Espresso"></button>
+                            </div>
+                        </div>
+
+                        <h3 class="font-serif font-bold text-sm text-glam-pitch leading-snug">Luminous Breathable Cushion</h3>
+                        <p class="text-xs text-stone-600 mt-1 line-clamp-2">
+                            Medium-to-full coverage yang mengaburkan tampilan pori tanpa terasa tebal.
+                        </p>
+                    </div>
+
+                    <div class="mt-4 pt-3 border-t border-glam-border flex items-center justify-between">
+                        <div>
+                            <span class="text-[10px] text-stone-500 font-display block">Harga</span>
+                            <span class="font-serif font-bold text-sm text-glam-pitch">Rp 179.000</span>
+                        </div>
+                        <div class="flex items-center gap-1">
+                            <a href="detail.html" class="p-2 rounded-full bg-glam-bisque hover:bg-stone-200 text-glam-pitch text-xs transition" title="Lihat Detail">
+                                <i class="fa-solid fa-eye"></i>
+                            </a>
+                            <a href="https://wa.me/6281234567890?text=Halo%20Velvet%20Runway,%20saya%20mau%20pesan%20Luminous%20Breathable%20Cushion%20(Rp%20179.000)." target="_blank" class="px-3 py-1.5 rounded-full bg-glam-pitch hover:bg-glam-plum text-white text-xs font-display font-bold transition">
+                                Beli WA
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- ITEM 2: Velvet Lip Soufflé -->
+                <div class="product-item bg-white rounded-3xl border border-glam-border p-5 flex flex-col justify-between product-card" 
+                     data-category="lips" data-finish="matte" data-title="Haute Velvet Cloud Lip Soufflé Lip Tint Lipstik Plum">
+                    <div>
+                        <div class="flex items-center justify-between text-[10px] font-display text-stone-500 mb-2">
+                            <span class="font-bold text-glam-plum uppercase">LIPS</span>
+                            <span class="px-2 py-0.5 rounded-full bg-rose-50 text-glam-plum font-semibold">Velvet Blur</span>
+                        </div>
+                        
+                        <div class="h-48 rounded-2xl bg-glam-bisque overflow-hidden mb-3 relative group">
+                            <img src="https://images.unsplash.com/photo-1586495777744-4413f21062fa?auto=format&fit=crop&w=500&q=80" alt="Lip Souffle" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                            <span class="absolute top-2 right-2 bg-glam-plum text-white text-[9px] font-display font-bold px-2 py-0.5 rounded-full">
+                                ICONIC
+                            </span>
+                        </div>
+
+                        <!-- Interactive Shade Swatches -->
+                        <div class="mb-3 bg-glam-bisque/60 p-2.5 rounded-xl border border-glam-border">
+                            <div class="flex items-center justify-between text-[10px] font-display mb-1.5">
+                                <span class="text-stone-500">Shade Aktif:</span>
+                                <strong id="shadeName2" class="text-glam-plum">01 Plum Velvet</strong>
+                            </div>
+                            <div class="flex items-center gap-2">
+                                <button onclick="setProductShade('shadeName2', '01 Plum Velvet', this)" class="w-5 h-5 rounded-full bg-[#9D174D] swatch-btn active-swatch border border-stone-300" title="01 Plum Velvet"></button>
+                                <button onclick="setProductShade('shadeName2', '02 Terracotta', this)" class="w-5 h-5 rounded-full bg-[#C25E43] swatch-btn border border-stone-300" title="02 Terracotta"></button>
+                                <button onclick="setProductShade('shadeName2', '03 Rose Couture', this)" class="w-5 h-5 rounded-full bg-[#B84A5B] swatch-btn border border-stone-300" title="03 Rose Couture"></button>
+                                <button onclick="setProductShade('shadeName2', '04 Noir Berry', this)" class="w-5 h-5 rounded-full bg-[#7F2637] swatch-btn border border-stone-300" title="04 Noir Berry"></button>
+                            </div>
+                        </div>
+
+                        <h3 class="font-serif font-bold text-sm text-glam-pitch leading-snug">Velvet Cloud Lip Soufflé</h3>
+                        <p class="text-xs text-stone-600 mt-1 line-clamp-2">
+                            Pigmentasi intens berkabut yang menyamarkan garis bibir dan tidak membuat kering.
+                        </p>
+                    </div>
+
+                    <div class="mt-4 pt-3 border-t border-glam-border flex items-center justify-between">
+                        <div>
+                            <span class="text-[10px] text-stone-500 font-display block">Harga</span>
+                            <span class="font-serif font-bold text-sm text-glam-pitch">Rp 129.000</span>
+                        </div>
+                        <div class="flex items-center gap-1">
+                            <a href="detail.html" class="p-2 rounded-full bg-glam-bisque hover:bg-stone-200 text-glam-pitch text-xs transition">
+                                <i class="fa-solid fa-eye"></i>
+                            </a>
+                            <a href="https://wa.me/6281234567890?text=Halo%20Velvet%20Runway,%20saya%20mau%20pesan%20Velvet%20Cloud%20Lip%20Souffle%20(Rp%20129.000)." target="_blank" class="px-3 py-1.5 rounded-full bg-glam-pitch hover:bg-glam-plum text-white text-xs font-display font-bold transition">
+                                Beli WA
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- ITEM 3: 9-Pan Shadow & Foil -->
+                <div class="product-item bg-white rounded-3xl border border-glam-border p-5 flex flex-col justify-between product-card" 
+                     data-category="eyes" data-finish="shimmer" data-title="Atelier 9-Pan Shadow Eyeshadow Palette Smoky Shimmer">
+                    <div>
+                        <div class="flex items-center justify-between text-[10px] font-display text-stone-500 mb-2">
+                            <span class="font-bold text-glam-plum uppercase">EYES</span>
+                            <span class="px-2 py-0.5 rounded-full bg-stone-100 text-glam-pitch">Multi-Finish</span>
+                        </div>
+                        
+                        <div class="h-48 rounded-2xl bg-glam-bisque overflow-hidden mb-3 relative group">
+                            <img src="https://images.unsplash.com/photo-1596462502278-27bfdc403348?auto=format&fit=crop&w=500&q=80" alt="Eyeshadow" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                        </div>
+
+                        <!-- Swatch Palette Preview -->
+                        <div class="mb-3 bg-glam-bisque/60 p-2.5 rounded-xl border border-glam-border">
+                            <div class="flex items-center justify-between text-[10px] font-display mb-1.5">
+                                <span class="text-stone-500">Tema Palet:</span>
+                                <strong class="text-glam-pitch">01 Autumn Runway</strong>
+                            </div>
+                            <div class="flex items-center gap-1.5">
+                                <span class="w-4 h-4 rounded-full bg-[#E5C583]" title="Gold Shimmer"></span>
+                                <span class="w-4 h-4 rounded-full bg-[#A35D43]" title="Bronze"></span>
+                                <span class="w-4 h-4 rounded-full bg-[#592636]" title="Plum"></span>
+                                <span class="w-4 h-4 rounded-full bg-[#8A3A25]" title="Terracotta"></span>
+                                <span class="w-4 h-4 rounded-full bg-[#2B1B17]" title="Smoky Noir"></span>
+                            </div>
+                        </div>
+
+                        <h3 class="font-serif font-bold text-sm text-glam-pitch leading-snug">Atelier 9-Pan Shadow & Foil</h3>
+                        <p class="text-xs text-stone-600 mt-1 line-clamp-2">
+                            Partikel glitter mikro berdimensi mutiara yang mudah dibaurkan untuk tampilan glamor.
+                        </p>
+                    </div>
+
+                    <div class="mt-4 pt-3 border-t border-glam-border flex items-center justify-between">
+                        <div>
+                            <span class="text-[10px] text-stone-500 font-display block">Harga</span>
+                            <span class="font-serif font-bold text-sm text-glam-pitch">Rp 219.000</span>
+                        </div>
+                        <div class="flex items-center gap-1">
+                            <a href="detail.html" class="p-2 rounded-full bg-glam-bisque hover:bg-stone-200 text-glam-pitch text-xs transition">
+                                <i class="fa-solid fa-eye"></i>
+                            </a>
+                            <a href="https://wa.me/6281234567890?text=Halo%20Velvet%20Runway,%20saya%20mau%20pesan%20Atelier%209-Pan%20Shadow%20(Rp%20219.000)." target="_blank" class="px-3 py-1.5 rounded-full bg-glam-pitch hover:bg-glam-plum text-white text-xs font-display font-bold transition">
+                                Beli WA
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- ITEM 4: Baked Cheek & Highlighter Duo -->
+                <div class="product-item bg-white rounded-3xl border border-glam-border p-5 flex flex-col justify-between product-card" 
+                     data-category="cheeks" data-finish="dewy" data-title="Luminous Baked Blush On Highlighter Cheek Coral Rose">
+                    <div>
+                        <div class="flex items-center justify-between text-[10px] font-display text-stone-500 mb-2">
+                            <span class="font-bold text-glam-plum uppercase">CHEEKS</span>
+                            <span class="px-2 py-0.5 rounded-full bg-amber-50 text-amber-800">Radiant Glow</span>
+                        </div>
+                        
+                        <div class="h-48 rounded-2xl bg-glam-bisque overflow-hidden mb-3 relative group">
+                            <img src="https://images.unsplash.com/photo-1599732493033-9118c7c980fc?auto=format&fit=crop&w=500&q=80" alt="Blush On" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                        </div>
+
+                        <!-- Interactive Shade Swatches -->
+                        <div class="mb-3 bg-glam-bisque/60 p-2.5 rounded-xl border border-glam-border">
+                            <div class="flex items-center justify-between text-[10px] font-display mb-1.5">
+                                <span class="text-stone-500">Shade Aktif:</span>
+                                <strong id="shadeName4" class="text-glam-pitch">02 Spiced Coral</strong>
+                            </div>
+                            <div class="flex items-center gap-2">
+                                <button onclick="setProductShade('shadeName4', '01 Petal Rose', this)" class="w-5 h-5 rounded-full bg-[#D68C96] swatch-btn border border-stone-300" title="01 Petal Rose"></button>
+                                <button onclick="setProductShade('shadeName4', '02 Spiced Coral', this)" class="w-5 h-5 rounded-full bg-[#E08A68] swatch-btn active-swatch border border-stone-300" title="02 Spiced Coral"></button>
+                                <button onclick="setProductShade('shadeName4', '03 Champagne Gold', this)" class="w-5 h-5 rounded-full bg-[#E5C583] swatch-btn border border-stone-300" title="03 Champagne Gold"></button>
+                            </div>
+                        </div>
+
+                        <h3 class="font-serif font-bold text-sm text-glam-pitch leading-snug">Luminous Baked Blush & Glow</h3>
+                        <p class="text-xs text-stone-600 mt-1 line-clamp-2">
+                            Teknologi baked powder dari Italia untuk rona pipi segar bercahaya alami sepanjang hari.
+                        </p>
+                    </div>
+
+                    <div class="mt-4 pt-3 border-t border-glam-border flex items-center justify-between">
+                        <div>
+                            <span class="text-[10px] text-stone-500 font-display block">Harga</span>
+                            <span class="font-serif font-bold text-sm text-glam-pitch">Rp 145.000</span>
+                        </div>
+                        <div class="flex items-center gap-1">
+                            <a href="detail.html" class="p-2 rounded-full bg-glam-bisque hover:bg-stone-200 text-glam-pitch text-xs transition">
+                                <i class="fa-solid fa-eye"></i>
+                            </a>
+                            <a href="https://wa.me/6281234567890?text=Halo%20Velvet%20Runway,%20saya%20mau%20pesan%20Luminous%20Baked%20Blush%20(Rp%20145.000)." target="_blank" class="px-3 py-1.5 rounded-full bg-glam-pitch hover:bg-glam-plum text-white text-xs font-display font-bold transition">
+                                Beli WA
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- ITEM 5: Dewy Glaze Jelly Tint -->
+                <div class="product-item bg-white rounded-3xl border border-glam-border p-5 flex flex-col justify-between product-card" 
+                     data-category="lips" data-finish="dewy" data-title="Dewy Glaze Jelly Lip Tint Glossy Bibir Juicy Plump">
+                    <div>
+                        <div class="flex items-center justify-between text-[10px] font-display text-stone-500 mb-2">
+                            <span class="font-bold text-glam-plum uppercase">LIPS</span>
+                            <span class="px-2 py-0.5 rounded-full bg-pink-50 text-pink-700">Juicy Glaze</span>
+                        </div>
+                        
+                        <div class="h-48 rounded-2xl bg-glam-bisque overflow-hidden mb-3 relative group">
+                            <img src="https://images.unsplash.com/photo-1591360236480-4ed861025fa1?auto=format&fit=crop&w=500&q=80" alt="Jelly Tint" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                        </div>
+
+                        <!-- Interactive Shade Swatches -->
+                        <div class="mb-3 bg-glam-bisque/60 p-2.5 rounded-xl border border-glam-border">
+                            <div class="flex items-center justify-between text-[10px] font-display mb-1.5">
+                                <span class="text-stone-500">Shade Aktif:</span>
+                                <strong id="shadeName5" class="text-glam-plum">01 Cherry Glaze</strong>
+                            </div>
+                            <div class="flex items-center gap-2">
+                                <button onclick="setProductShade('shadeName5', '01 Cherry Glaze', this)" class="w-5 h-5 rounded-full bg-[#BE185D] swatch-btn active-swatch border border-stone-300" title="01 Cherry Glaze"></button>
+                                <button onclick="setProductShade('shadeName5', '02 Peach Jelly', this)" class="w-5 h-5 rounded-full bg-[#FB923C] swatch-btn border border-stone-300" title="02 Peach Jelly"></button>
+                                <button onclick="setProductShade('shadeName5', '03 Mauve Syrup', this)" class="w-5 h-5 rounded-full bg-[#9F1239] swatch-btn border border-stone-300" title="03 Mauve Syrup"></button>
+                            </div>
+                        </div>
+
+                        <h3 class="font-serif font-bold text-sm text-glam-pitch leading-snug">Dewy Glaze Jelly Lip Stain</h3>
+                        <p class="text-xs text-stone-600 mt-1 line-clamp-2">
+                            Efek bibir penuh kaca (glass lips) dengan warna stain yang melekat tahan hingga 12 jam.
+                        </p>
+                    </div>
+
+                    <div class="mt-4 pt-3 border-t border-glam-border flex items-center justify-between">
+                        <div>
+                            <span class="text-[10px] text-stone-500 font-display block">Harga</span>
+                            <span class="font-serif font-bold text-sm text-glam-pitch">Rp 119.000</span>
+                        </div>
+                        <div class="flex items-center gap-1">
+                            <a href="detail.html" class="p-2 rounded-full bg-glam-bisque hover:bg-stone-200 text-glam-pitch text-xs transition">
+                                <i class="fa-solid fa-eye"></i>
+                            </a>
+                            <a href="https://wa.me/6281234567890?text=Halo%20Velvet%20Runway,%20saya%20mau%20pesan%20Dewy%20Glaze%20Jelly%20Lip%20Stain%20(Rp%20119.000)." target="_blank" class="px-3 py-1.5 rounded-full bg-glam-pitch hover:bg-glam-plum text-white text-xs font-display font-bold transition">
+                                Beli WA
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- ITEM 6: 16H Ultra Lock Setting Mist -->
+                <div class="product-item bg-white rounded-3xl border border-glam-border p-5 flex flex-col justify-between product-card" 
+                     data-category="complexion" data-finish="satin" data-title="16H Ultra Lock Setting Mist Semprotan Pengunci Makeup Tahan Luntur">
+                    <div>
+                        <div class="flex items-center justify-between text-[10px] font-display text-stone-500 mb-2">
+                            <span class="font-bold text-glam-plum uppercase">COMPLEXION</span>
+                            <span class="px-2 py-0.5 rounded-full bg-stone-100 text-glam-pitch">Transferproof</span>
+                        </div>
+                        
+                        <div class="h-48 rounded-2xl bg-glam-bisque overflow-hidden mb-3 relative group">
+                            <img src="https://images.unsplash.com/photo-1598440947619-2c35fc9aa908?auto=format&fit=crop&w=500&q=80" alt="Setting Mist" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                        </div>
+
+                        <div class="mb-3 bg-glam-bisque/60 p-2.5 rounded-xl border border-glam-border">
+                            <div class="text-[10px] font-display text-stone-500 mb-0.5">Spesifikasi Formula:</div>
+                            <span class="text-xs font-display font-bold text-glam-pitch">Micro-Film Former Polymer 100ml</span>
+                        </div>
+
+                        <h3 class="font-serif font-bold text-sm text-glam-pitch leading-snug">16H Ultra Lock Setting Mist</h3>
+                        <p class="text-xs text-stone-600 mt-1 line-clamp-2">
+                            Kabut mikro yang mengunci seluruh lapisan makeup dari luntur akibat keringat dan minyak.
+                        </p>
+                    </div>
+
+                    <div class="mt-4 pt-3 border-t border-glam-border flex items-center justify-between">
+                        <div>
+                            <span class="text-[10px] text-stone-500 font-display block">Harga</span>
+                            <span class="font-serif font-bold text-sm text-glam-pitch">Rp 135.000</span>
+                        </div>
+                        <div class="flex items-center gap-1">
+                            <a href="detail.html" class="p-2 rounded-full bg-glam-bisque hover:bg-stone-200 text-glam-pitch text-xs transition">
+                                <i class="fa-solid fa-eye"></i>
+                            </a>
+                            <a href="https://wa.me/6281234567890?text=Halo%20Velvet%20Runway,%20saya%20mau%20pesan%20Setting%20Mist%20(Rp%20135.000)." target="_blank" class="px-3 py-1.5 rounded-full bg-glam-pitch hover:bg-glam-plum text-white text-xs font-display font-bold transition">
+                                Beli WA
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- ITEM 7: Sculpting Brow & Fiber Mascara -->
+                <div class="product-item bg-white rounded-3xl border border-glam-border p-5 flex flex-col justify-between product-card" 
+                     data-category="eyes" data-finish="matte" data-title="Sculpting Brow Fiber Mascara Pensil Alis Bulu Mata Tebal">
+                    <div>
+                        <div class="flex items-center justify-between text-[10px] font-display text-stone-500 mb-2">
+                            <span class="font-bold text-glam-plum uppercase">EYES</span>
+                            <span class="px-2 py-0.5 rounded-full bg-stone-100 text-glam-pitch">Waterproof</span>
+                        </div>
+                        
+                        <div class="h-48 rounded-2xl bg-glam-bisque overflow-hidden mb-3 relative group">
+                            <img src="https://images.unsplash.com/photo-1591360236480-4ed861025fa1?auto=format&fit=crop&w=500&q=80" alt="Mascara" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                        </div>
+
+                        <!-- Interactive Shade Swatches -->
+                        <div class="mb-3 bg-glam-bisque/60 p-2.5 rounded-xl border border-glam-border">
+                            <div class="flex items-center justify-between text-[10px] font-display mb-1.5">
+                                <span class="text-stone-500">Shade Aktif:</span>
+                                <strong id="shadeName7" class="text-glam-pitch">01 Ash Charcoal</strong>
+                            </div>
+                            <div class="flex items-center gap-2">
+                                <button onclick="setProductShade('shadeName7', '01 Ash Charcoal', this)" class="w-5 h-5 rounded-full bg-[#2B2B2B] swatch-btn active-swatch border border-stone-300" title="01 Ash Charcoal"></button>
+                                <button onclick="setProductShade('shadeName7', '02 Dark Espresso', this)" class="w-5 h-5 rounded-full bg-[#4A3728] swatch-btn border border-stone-300" title="02 Dark Espresso"></button>
+                            </div>
+                        </div>
+
+                        <h3 class="font-serif font-bold text-sm text-glam-pitch leading-snug">Micro-Blade Brow & Lash Duo</h3>
+                        <p class="text-xs text-stone-600 mt-1 line-clamp-2">
+                            Ujung presisi 0.5mm untuk guratan serat alis natural yang tidak luntur kena air wudhu/keringat.
+                        </p>
+                    </div>
+
+                    <div class="mt-4 pt-3 border-t border-glam-border flex items-center justify-between">
+                        <div>
+                            <span class="text-[10px] text-stone-500 font-display block">Harga</span>
+                            <span class="font-serif font-bold text-sm text-glam-pitch">Rp 109.000</span>
+                        </div>
+                        <div class="flex items-center gap-1">
+                            <a href="detail.html" class="p-2 rounded-full bg-glam-bisque hover:bg-stone-200 text-glam-pitch text-xs transition">
+                                <i class="fa-solid fa-eye"></i>
+                            </a>
+                            <a href="https://wa.me/6281234567890?text=Halo%20Velvet%20Runway,%20saya%20mau%20pesan%20Brow%20Duo%20(Rp%20109.000)." target="_blank" class="px-3 py-1.5 rounded-full bg-glam-pitch hover:bg-glam-plum text-white text-xs font-display font-bold transition">
+                                Beli WA
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- ITEM 8: Flawless HD Loose Baking Powder -->
+                <div class="product-item bg-white rounded-3xl border border-glam-border p-5 flex flex-col justify-between product-card" 
+                     data-category="complexion" data-finish="matte" data-title="Flawless HD Loose Baking Powder Bedak Tabur Poreless Blur">
+                    <div>
+                        <div class="flex items-center justify-between text-[10px] font-display text-stone-500 mb-2">
+                            <span class="font-bold text-glam-plum uppercase">COMPLEXION</span>
+                            <span class="px-2 py-0.5 rounded-full bg-stone-100 text-glam-pitch">Zero-Flashback</span>
+                        </div>
+                        
+                        <div class="h-48 rounded-2xl bg-glam-bisque overflow-hidden mb-3 relative group">
+                            <img src="https://images.unsplash.com/photo-1556228722-d0b5f543dfda?auto=format&fit=crop&w=500&q=80" alt="Powder" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                        </div>
+
+                        <!-- Interactive Shade Swatches -->
+                        <div class="mb-3 bg-glam-bisque/60 p-2.5 rounded-xl border border-glam-border">
+                            <div class="flex items-center justify-between text-[10px] font-display mb-1.5">
+                                <span class="text-stone-500">Shade Aktif:</span>
+                                <strong id="shadeName8" class="text-glam-pitch">01 Translucent Blur</strong>
+                            </div>
+                            <div class="flex items-center gap-2">
+                                <button onclick="setProductShade('shadeName8', '01 Translucent Blur', this)" class="w-5 h-5 rounded-full bg-[#FFF4EB] swatch-btn active-swatch border border-stone-300" title="01 Translucent"></button>
+                                <button onclick="setProductShade('shadeName8', '02 Banana Warm', this)" class="w-5 h-5 rounded-full bg-[#F3E5AB] swatch-btn border border-stone-300" title="02 Banana Warm"></button>
+                            </div>
+                        </div>
+
+                        <h3 class="font-serif font-bold text-sm text-glam-pitch leading-snug">Flawless HD Micro-Blur Powder</h3>
+                        <p class="text-xs text-stone-600 mt-1 line-clamp-2">
+                            Butiran bedak nano transparan yang menyamarkan pori secara instan tanpa pantulan cahaya kamera putih.
+                        </p>
+                    </div>
+
+                    <div class="mt-4 pt-3 border-t border-glam-border flex items-center justify-between">
+                        <div>
+                            <span class="text-[10px] text-stone-500 font-display block">Harga</span>
+                            <span class="font-serif font-bold text-sm text-glam-pitch">Rp 139.000</span>
+                        </div>
+                        <div class="flex items-center gap-1">
+                            <a href="detail.html" class="p-2 rounded-full bg-glam-bisque hover:bg-stone-200 text-glam-pitch text-xs transition">
+                                <i class="fa-solid fa-eye"></i>
+                            </a>
+                            <a href="https://wa.me/6281234567890?text=Halo%20Velvet%20Runway,%20saya%20mau%20pesan%20Micro-Blur%20Powder%20(Rp%20139.000)." target="_blank" class="px-3 py-1.5 rounded-full bg-glam-pitch hover:bg-glam-plum text-white text-xs font-display font-bold transition">
+                                Beli WA
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- Empty State -->
+            <div id="noResults" class="hidden text-center py-16 bg-white rounded-3xl border border-glam-border">
+                <i class="fa-solid fa-wand-magic-sparkles text-3xl text-glam-plum mb-3"></i>
+                <h4 class="text-lg font-serif font-bold text-glam-pitch">Produk Tidak Ditemukan</h4>
+                <p class="text-xs text-stone-600 mt-1 max-w-sm mx-auto">
+                    Coba gunakan kata kunci pencarian lain atau klik tombol reset kategori untuk melihat seluruh koleksi.
+                </p>
+                <button onclick="resetFilters()" class="mt-4 px-6 py-2.5 bg-glam-pitch text-white text-xs font-display font-bold uppercase tracking-wider rounded-full">
+                    Reset Filter
+                </button>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- 5. FOOTER -->
+    <footer class="bg-glam-bisque text-glam-pitch border-t border-glam-border pt-14 pb-28">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex flex-col md:flex-row items-center justify-between gap-6 border-b border-glam-border pb-8">
+                <div class="flex flex-col">
+                    <span class="text-lg font-serif font-bold tracking-[0.2em] text-glam-pitch uppercase">
+                        VELVET RUNWAY
+                    </span>
+                    <span class="text-[8px] font-display tracking-[0.3em] text-glam-gold uppercase">
+                        Haute Cosmetics Atelier
+                    </span>
+                </div>
+                <div class="flex flex-wrap gap-6 text-xs text-stone-700 font-display font-semibold uppercase tracking-wider">
+                    <a href="index.html" class="hover:text-glam-plum">Beranda</a>
+                    <a href="katalog.html" class="text-glam-plum font-bold">Katalog</a>
+                    <a href="detail.html" class="hover:text-glam-plum">Formula & Swatch</a>
+                    <a href="tentang.html" class="hover:text-glam-plum">Filosofi</a>
+                    <a href="artikel.html" class="hover:text-glam-plum">Tutorial</a>
+                    <a href="kontak.html" class="hover:text-glam-plum">Studio</a>
+                </div>
+            </div>
+            <div class="mt-6 flex flex-col sm:flex-row items-center justify-between text-xs text-stone-600">
+                <p>&copy; 2026 VELVET RUNWAY COSMETICS. All Rights Reserved.</p>
+                <p class="font-display text-[11px] mt-2 sm:mt-0">Lentera Pasar Production Template</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- FLOATING WHATSAPP BUTTON (bottom-24) -->
+    <a href="https://wa.me/6281234567890?text=Halo%20Velvet%20Runway,%20saya%20mau%20konsultasi%20pemilihan%20shade%20makeup." 
+       target="_blank" 
+       class="fixed bottom-24 right-6 z-50 group flex items-center gap-3 bg-white hover:bg-glam-bisque text-glam-pitch px-4 py-3 rounded-full border border-glam-border shadow-2xl hover:border-glam-plum transition-all duration-300">
+        <span class="relative flex h-3 w-3">
+            <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-emerald-400 opacity-75"></span>
+            <span class="relative inline-flex rounded-full h-3 w-3 bg-emerald-500"></span>
+        </span>
+        <i class="fa-brands fa-whatsapp text-2xl text-emerald-600"></i>
+        <div class="text-left hidden sm:block pr-1">
+            <div class="text-[10px] text-stone-500 font-display font-bold uppercase tracking-wider leading-none">Beauty Advisor</div>
+            <span class="font-display font-bold text-xs text-glam-pitch">Konsultasi Shade WA</span>
+        </div>
+    </a>
+
+    <!-- LENTERA PASAR - STICKY DEMO & SALES BAR (fixed bottom-4) -->
+    <div class="fixed bottom-4 left-1/2 -translate-x-1/2 z-50 w-[95%] max-w-4xl bg-slate-900/95 backdrop-blur-md text-white p-3.5 md:p-4 rounded-2xl shadow-2xl border border-slate-700/80 transition-all duration-300">
+      <div class="flex flex-col md:flex-row items-center justify-between gap-3 md:gap-4">
+        <div class="flex items-center gap-3 w-full md:w-auto">
+          <div class="w-10 h-10 rounded-xl bg-glam-plum/30 border border-glam-plum/50 flex items-center justify-center shrink-0">
+            <svg class="w-5 h-5 text-pink-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 3v4M3 5h4M6 17v4m-2-2h4m5-16l2.286 6.857L21 12l-5.714 2.143L13 21l-2.286-6.857L5 12l5.714-2.143L13 3z" />
+            </svg>
+          </div>
+          <div>
+            <div class="flex items-center gap-2">
+              <span class="font-bold text-sm text-white">Lentera Pasar Engine</span>
+              <span class="text-[10px] bg-pink-500/20 text-pink-300 border border-pink-500/30 px-2 py-0.5 rounded-full font-medium">Makeup & Glam Studio Template</span>
+            </div>
+            <p class="text-xs text-slate-300 hidden sm:block">
+              Terima beres: Website responsif + Panel input produk sendiri + Dikelola tim iklan profesional.
+            </p>
+          </div>
+        </div>
+
+        <div class="flex items-center justify-between md:justify-end gap-3 w-full md:w-auto">
+          <a href="https://wa.me/6281234567890?text=Halo%20Tim%20Lentera%20Pasar,%20saya%20tertarik%20menggunakan%20template%20website%20Makeup%20Glam%20Studio%20ini%20lengkap%20dengan%20Admin%20Panel%20dan%20Jasa%20Iklannya." 
+             target="_blank"
+             class="w-full md:w-auto inline-flex items-center justify-center gap-2 bg-gradient-to-r from-glam-plum to-pink-600 hover:from-pink-600 hover:to-pink-700 text-white text-xs md:text-sm font-semibold px-5 py-2.5 rounded-xl shadow-lg shadow-pink-500/20 transition-all hover:scale-105 shrink-0">
+            <span>Gunakan Template Ini</span>
+            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3" />
+            </svg>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <!-- JAVASCRIPT FILTER & SWATCH ENGINE -->
+    <script>
+        let currentCategory = 'all';
+
+        function filterCategory(cat) {
+            currentCategory = cat;
+            document.querySelectorAll('.cat-pill').forEach(btn => {
+                if (btn.dataset.category === cat) {
+                    btn.classList.remove('bg-glam-bisque', 'text-stone-700', 'border');
+                    btn.classList.add('bg-glam-pitch', 'text-white');
+                } else {
+                    btn.classList.remove('bg-glam-pitch', 'text-white');
+                    btn.classList.add('bg-glam-bisque', 'text-stone-700', 'border');
+                }
+            });
+            applyAllFilters();
+        }
+
+        document.getElementById('searchInput').addEventListener('input', applyAllFilters);
+
+        function applyAllFilters() {
+            const query = document.getElementById('searchInput').value.toLowerCase().trim();
+            const finish = document.getElementById('finishFilter').value;
+            const items = document.querySelectorAll('.product-item');
+            let visibleCount = 0;
+
+            items.forEach(item => {
+                const itemCat = item.dataset.category;
+                const itemFinish = item.dataset.finish;
+                const itemTitle = (item.dataset.title || '').toLowerCase();
+
+                const matchCat = (currentCategory === 'all' || itemCat === currentCategory);
+                const matchFinish = (finish === 'all' || itemFinish === finish);
+                const matchQuery = (!query || itemTitle.includes(query));
+
+                if (matchCat && matchFinish && matchQuery) {
+                    item.classList.remove('hidden');
+                    visibleCount++;
+                } else {
+                    item.classList.add('hidden');
+                }
+            });
+
+            document.getElementById('productCount').innerText = visibleCount;
+            const noRes = document.getElementById('noResults');
+            if (visibleCount === 0) {
+                noRes.classList.remove('hidden');
+            } else {
+                noRes.classList.add('hidden');
+            }
+        }
+
+        function resetFilters() {
+            document.getElementById('searchInput').value = '';
+            document.getElementById('finishFilter').value = 'all';
+            filterCategory('all');
+        }
+
+        // Interactive swatch changer on catalog cards
+        function setProductShade(elementId, shadeName, buttonEl) {
+            const targetEl = document.getElementById(elementId);
+            if (targetEl) {
+                targetEl.innerText = shadeName;
+            }
+            // Toggle active swatch style in parent
+            const parent = buttonEl.parentElement;
+            parent.querySelectorAll('.swatch-btn').forEach(btn => btn.classList.remove('active-swatch'));
+            buttonEl.classList.add('active-swatch');
+        }
+
+        // Mobile menu toggle
+        const mobileMenuBtn = document.getElementById('mobileMenuBtn');
+        const mobileMenu = document.getElementById('mobileMenu');
+        const menuIcon = document.getElementById('menuIcon');
+
+        mobileMenuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+            if (mobileMenu.classList.contains('hidden')) {
+                menuIcon.classList.remove('fa-xmark');
+                menuIcon.classList.add('fa-bars-staggered');
+            } else {
+                menuIcon.classList.remove('fa-bars-staggered');
+                menuIcon.classList.add('fa-xmark');
+            }
+        });
+    </script>
+</body>
+</html>

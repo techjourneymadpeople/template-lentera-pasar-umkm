@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html lang="id" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jurnal Tutorial & Tips Riasan Flawless — VELVET RUNWAY</title>
+    <meta name="description" content="Koleksi artikel tutorial makeup panggung mode, panduan menemukan undertone kulit, rahasia complexion tahan 16 jam, dan glosarium hasil akhir makeup.">
+    
+    <!-- Google Fonts: Bodoni Moda & Plus Jakarta Sans -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400;0,6..96,600;0,6..96,700;0,6..96,800;1,6..96,400;1,6..96,600&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Cinzel:wght@500;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        glam: {
+                            bisque: '#F7EFE9',
+                            warmnude: '#EFE2D8',
+                            darknude: '#DFCEC1',
+                            pitch: '#121212',
+                            noir: '#1A1818',
+                            card: '#FFFBF8',
+                            border: '#E8D8CD',
+                            plum: '#9D174D',
+                            plumhover: '#831843',
+                            ruby: '#BE185D',
+                            rose: '#F43F5E',
+                            gold: '#C5A059',
+                            goldshimmer: '#E5C583',
+                            muted: '#8C7E77'
+                        }
+                    },
+                    fontFamily: {
+                        sans: ['"Plus Jakarta Sans"', 'sans-serif'],
+                        serif: ['"Bodoni Moda"', 'Georgia', 'serif'],
+                        display: ['"Cinzel"', 'serif']
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        .no-scrollbar::-webkit-scrollbar { display: none; }
+        .no-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
+        
+        .article-card {
+            transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+        }
+        .article-card:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 20px 40px -10px rgba(18, 18, 18, 0.12), 0 0 0 1px #C5A059;
+        }
+    </style>
+</head>
+<body class="bg-glam-bisque text-glam-pitch font-sans antialiased selection:bg-glam-plum selection:text-white">
+
+    <!-- 1. TOP BAR -->
+    <div class="bg-glam-pitch text-glam-bisque text-[11px] py-2 px-4 tracking-widest font-display uppercase border-b border-glam-gold/30">
+        <div class="max-w-7xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-2 text-center sm:text-left">
+            <div class="flex items-center justify-center gap-2">
+                <span class="inline-flex items-center gap-1.5 px-2 py-0.5 rounded-full bg-glam-plum text-white text-[9px] font-bold tracking-wider">
+                    <span class="w-1.5 h-1.5 rounded-full bg-glam-goldshimmer animate-ping"></span>
+                    EDITORIAL JOURNAL
+                </span>
+                <span class="text-stone-300">Tutorial & Panduan Riasan Berkelas oleh Professional Runway MUA</span>
+            </div>
+            <div class="flex items-center gap-4 text-[10px] text-stone-300">
+                <a href="katalog.html" class="text-glam-goldshimmer hover:text-white underline transition">Katalog Makeup &rarr;</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- 2. NAVBAR -->
+    <header class="sticky top-0 z-40 bg-glam-bisque/95 backdrop-blur-md border-b border-glam-border transition-all">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-20 sm:h-24">
+                
+                <a href="index.html" class="flex flex-col group">
+                    <span class="text-xl sm:text-2xl font-serif font-extrabold tracking-[0.2em] text-glam-pitch uppercase leading-none group-hover:text-glam-plum transition">
+                        VELVET RUNWAY
+                    </span>
+                    <span class="text-[9px] font-display tracking-[0.35em] text-glam-gold uppercase mt-1">
+                        Haute Cosmetics Atelier
+                    </span>
+                </a>
+
+                <nav class="hidden lg:flex items-center gap-8 text-xs font-semibold tracking-widest uppercase text-stone-700">
+                    <a href="index.html" class="hover:text-glam-plum transition">Beranda</a>
+                    <a href="katalog.html" class="hover:text-glam-plum transition">Katalog Makeup</a>
+                    <a href="detail.html" class="hover:text-glam-plum transition">Formula & Swatch</a>
+                    <a href="tentang.html" class="hover:text-glam-plum transition">Filosofi Inklusif</a>
+                    <a href="artikel.html" class="text-glam-plum font-bold border-b border-glam-plum pb-0.5">Tutorial & Jurnal</a>
+                    <a href="kontak.html" class="hover:text-glam-plum transition">Studio & Konsultasi</a>
+                </nav>
+
+                <div class="hidden sm:flex items-center gap-3">
+                    <a href="https://wa.me/6281234567890?text=Halo%20Velvet%20Runway,%20saya%20ingin%20konsultasi%20tutorial%20makeup." target="_blank" class="inline-flex items-center gap-2 bg-glam-pitch hover:bg-glam-plum text-white text-xs font-semibold tracking-wider px-5 py-2.5 rounded-full shadow-md transition-all">
+                        <i class="fa-brands fa-whatsapp text-emerald-400"></i>
+                        <span>Tanya MUA WA</span>
+                    </a>
+                </div>
+
+                <button id="mobileMenuBtn" class="lg:hidden p-2 text-glam-pitch hover:text-glam-plum focus:outline-none" aria-label="Toggle Menu">
+                    <i id="menuIcon" class="fa-solid fa-bars-staggered text-xl"></i>
+                </button>
+            </div>
+        </div>
+
+        <!-- Mobile Drawer -->
+        <div id="mobileMenu" class="hidden lg:hidden bg-glam-bisque border-b border-glam-border px-4 py-5 space-y-3">
+            <a href="index.html" class="block text-xs font-semibold uppercase tracking-widest text-stone-700 hover:text-glam-plum py-2 border-b border-glam-warmnude">Beranda Utama</a>
+            <a href="katalog.html" class="block text-xs font-semibold uppercase tracking-widest text-stone-700 hover:text-glam-plum py-2 border-b border-glam-warmnude">Katalog Cushion & Lip Tint</a>
+            <a href="detail.html" class="block text-xs font-semibold uppercase tracking-widest text-stone-700 hover:text-glam-plum py-2 border-b border-glam-warmnude">Detail Shade & Swatch Realistis</a>
+            <a href="tentang.html" class="block text-xs font-semibold uppercase tracking-widest text-stone-700 hover:text-glam-plum py-2 border-b border-glam-warmnude">Filosofi Inklusif & Sertifikasi BPOM</a>
+            <a href="artikel.html" class="block text-xs font-bold uppercase tracking-widest text-glam-plum py-2 border-b border-glam-warmnude">Tutorial Flawless & Undertone</a>
+            <a href="kontak.html" class="block text-xs font-semibold uppercase tracking-widest text-stone-700 hover:text-glam-plum py-2">Studio Makeup & Event Booking</a>
+        </div>
+    </header>
+
+    <!-- 3. PAGE HEADER & FEATURED EDITORIAL STORY -->
+    <section class="py-12 bg-white border-b border-glam-border">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            
+            <div class="max-w-3xl mb-10">
+                <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-glam-bisque border border-glam-border text-glam-pitch text-xs font-display tracking-widest mb-3">
+                    <span class="w-2 h-2 rounded-full bg-glam-plum"></span>
+                    <span>RUNWAY MASTERCLASS & BEAUTY INSIGHTS</span>
+                </div>
+                <h1 class="text-3xl sm:text-5xl font-serif font-extrabold text-glam-pitch tracking-tight">
+                    Jurnal Tutorial & Panduan Riasan
+                </h1>
+                <p class="text-xs sm:text-sm text-stone-600 mt-2">
+                    Eksplorasi teknik rias wajah profesional dari para penata rias panggung mode untuk hasil kompleksi mulus sempurna di segala suasana.
+                </p>
+            </div>
+
+            <!-- Featured Story Card -->
+            <div class="bg-glam-bisque rounded-3xl border border-glam-border p-6 sm:p-10 shadow-md">
+                <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
+                    <div class="lg:col-span-6">
+                        <div class="h-80 rounded-2xl bg-stone-900 overflow-hidden relative group">
+                            <img src="https://images.unsplash.com/photo-1512496015851-a90fb38ba796?auto=format&fit=crop&w=800&q=80" alt="Masterclass Tutorial" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700">
+                            <span class="absolute top-3 left-3 bg-glam-pitch text-white text-[9px] font-display font-bold px-3 py-1 rounded-full uppercase tracking-wider">
+                                COVER STORY
+                            </span>
+                        </div>
+                    </div>
+                    <div class="lg:col-span-6 space-y-4">
+                        <div class="flex items-center gap-3 text-xs font-display text-stone-500">
+                            <span>Oleh Vanessa Aurelia (Lead MUA)</span>
+                            <span>•</span>
+                            <span>8 Min Read</span>
+                            <span>•</span>
+                            <span class="text-glam-plum font-bold">Complexion Masterclass</span>
+                        </div>
+                        <h2 class="text-2xl sm:text-3xl font-serif font-bold text-glam-pitch leading-tight">
+                            Rahasia Kompleksi 'Glass Skin' Tahan 16 Jam di Iklim Tropis Jakarta
+                        </h2>
+                        <p class="text-xs sm:text-sm text-stone-600 leading-relaxed">
+                            Panduan langkah demi langkah memadukan hidrasi skincare molekuler, teknik *micro-tapping* cushion, dan penguncian dengan setting mist tanpa khawatir pori-pori tersumbat atau riasan retak di area senyum.
+                        </p>
+                        <div class="pt-2">
+                            <a href="detail.html" class="inline-flex items-center gap-2 px-6 py-3 rounded-full bg-glam-pitch hover:bg-glam-plum text-white text-xs font-display font-bold tracking-wider uppercase transition">
+                                <span>Lihat Formula Terkait</span>
+                                <i class="fa-solid fa-arrow-right text-[10px]"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- 4. GRID ARTIKEL TUTORIAL & BEAUTY HACKS -->
+    <section class="py-16">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            
+            <h3 class="text-xl font-serif font-bold text-glam-pitch mb-8 flex items-center gap-2">
+                <i class="fa-solid fa-sparkles text-glam-gold"></i>
+                <span>Semua Artikel Tutorial & Tips Riasan</span>
+            </h3>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                
+                <!-- Article 1 -->
+                <div class="bg-white rounded-3xl border border-glam-border p-6 flex flex-col justify-between article-card">
+                    <div>
+                        <div class="h-48 rounded-2xl bg-glam-bisque overflow-hidden mb-4">
+                            <img src="https://images.unsplash.com/photo-1522337360788-8b13dee7a37e?auto=format&fit=crop&w=500&q=80" alt="Undertone Guide" class="w-full h-full object-cover">
+                        </div>
+                        <div class="flex items-center gap-2 text-[10px] font-display text-stone-500 mb-2">
+                            <span class="text-glam-plum font-bold">SHADE GUIDE</span>
+                            <span>•</span>
+                            <span>5 Min Read</span>
+                        </div>
+                        <h4 class="text-base font-serif font-bold text-glam-pitch leading-snug">
+                            Cara Akurat Menentukan Undertone Kulit dengan Urat Nadi & Perhiasan
+                        </h4>
+                        <p class="text-xs text-stone-600 mt-2 leading-relaxed">
+                            Jangan sampai salah membeli foundation. Pelajari perbedaan Warm, Cool, dan Neutral undertone dalam 3 menit.
+                        </p>
+                    </div>
+                    <div class="mt-6 pt-4 border-t border-glam-border flex items-center justify-between font-display text-xs">
+                        <span class="text-stone-500">MUA Tips</span>
+                        <a href="katalog.html" class="text-glam-plum font-bold hover:underline">Koleksi Cushion &rarr;</a>
+                    </div>
+                </div>
+
+                <!-- Article 2 -->
+                <div class="bg-white rounded-3xl border border-glam-border p-6 flex flex-col justify-between article-card">
+                    <div>
+                        <div class="h-48 rounded-2xl bg-glam-bisque overflow-hidden mb-4">
+                            <img src="https://images.unsplash.com/photo-1586495777744-4413f21062fa?auto=format&fit=crop&w=500&q=80" alt="Ombre Lips" class="w-full h-full object-cover">
+                        </div>
+                        <div class="flex items-center gap-2 text-[10px] font-display text-stone-500 mb-2">
+                            <span class="text-glam-plum font-bold">LIP ART</span>
+                            <span>•</span>
+                            <span>6 Min Read</span>
+                        </div>
+                        <h4 class="text-base font-serif font-bold text-glam-pitch leading-snug">
+                            Tutorial Ombre Lips Velvet Plum Ala Panggung Runway Fashion Week
+                        </h4>
+                        <p class="text-xs text-stone-600 mt-2 leading-relaxed">
+                            Kombinasi base nude terracotta dengan sentuhan titik tengah deep berry untuk ilusi bibir penuh berdimensi.
+                        </p>
+                    </div>
+                    <div class="mt-6 pt-4 border-t border-glam-border flex items-center justify-between font-display text-xs">
+                        <span class="text-stone-500">MUA Tips</span>
+                        <a href="katalog.html" class="text-glam-plum font-bold hover:underline">Pilihan Lip Soufflé &rarr;</a>
+                    </div>
+                </div>
+
+                <!-- Article 3 -->
+                <div class="bg-white rounded-3xl border border-glam-border p-6 flex flex-col justify-between article-card">
+                    <div>
+                        <div class="h-48 rounded-2xl bg-glam-bisque overflow-hidden mb-4">
+                            <img src="https://images.unsplash.com/photo-1556228722-d0b5f543dfda?auto=format&fit=crop&w=500&q=80" alt="Setting Powder" class="w-full h-full object-cover">
+                        </div>
+                        <div class="flex items-center gap-2 text-[10px] font-display text-stone-500 mb-2">
+                            <span class="text-glam-plum font-bold">PRO TIPS</span>
+                            <span>•</span>
+                            <span>7 Min Read</span>
+                        </div>
+                        <h4 class="text-base font-serif font-bold text-glam-pitch leading-snug">
+                            Membongkar Mitos Bedak Tabur: Mengapa Formula Nano-Micro Tidak Bikin Cakey
+                        </h4>
+                        <p class="text-xs text-stone-600 mt-2 leading-relaxed">
+                            Bagaimana teknik *baking* transparan mengunci riasan tanpa menimbulkan efek pantulan putih (*flashback*) di kamera foto.
+                        </p>
+                    </div>
+                    <div class="mt-6 pt-4 border-t border-glam-border flex items-center justify-between font-display text-xs">
+                        <span class="text-stone-500">MUA Tips</span>
+                        <a href="katalog.html" class="text-glam-plum font-bold hover:underline">Lihat Loose Powder &rarr;</a>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+    <!-- 5. KAMUS FINISH MAKEUP (GLOSARIUM HASIL AKHIR) -->
+    <section class="py-16 bg-white border-t border-b border-glam-border">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            
+            <div class="text-center max-w-2xl mx-auto mb-12">
+                <span class="text-xs font-display uppercase tracking-[0.25em] text-glam-plum font-bold block mb-1">
+                    // KAMUS RIASAN PROFESIONAL
+                </span>
+                <h3 class="text-2xl font-serif font-extrabold text-glam-pitch">
+                    Glosarium Hasil Akhir (Makeup Finishes)
+                </h3>
+                <p class="text-xs text-stone-600 mt-1">
+                    Pahami istilah hasil akhir kosmetik untuk memilih produk yang tepat sesuai jenis kulitmu.
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 text-xs font-sans">
+                
+                <div class="p-5 rounded-2xl bg-glam-bisque border border-glam-border">
+                    <strong class="font-serif text-sm font-bold text-glam-pitch block">Velvet Matte</strong>
+                    <p class="text-stone-600 mt-1 text-[11px] leading-relaxed">
+                        Hasil akhir bebas kilap namun tetap terasa lembut seperti beludru, tidak membuat kulit terasa kaku atau kering.
+                    </p>
+                </div>
+
+                <div class="p-5 rounded-2xl bg-glam-bisque border border-glam-border">
+                    <strong class="font-serif text-sm font-bold text-glam-pitch block">Dewy Glass Glow</strong>
+                    <p class="text-stone-600 mt-1 text-[11px] leading-relaxed">
+                        Memberikan efek kilau basah sehat bercahaya ala kulit kaca Korea yang tampak segar dan kenyal terhidrasi.
+                    </p>
+                </div>
+
+                <div class="p-5 rounded-2xl bg-glam-bisque border border-glam-border">
+                    <strong class="font-serif text-sm font-bold text-glam-pitch block">Satin Silk Soft</strong>
+                    <p class="text-stone-600 mt-1 text-[11px] leading-relaxed">
+                        Keseimbangan sempurna antara matte dan dewy. Kilau halus alami menyerupai kilau kain sutra murni.
+                    </p>
+                </div>
+
+                <div class="p-5 rounded-2xl bg-glam-bisque border border-glam-border">
+                    <strong class="font-serif text-sm font-bold text-glam-pitch block">Metallic & Pearl Foil</strong>
+                    <p class="text-stone-600 mt-1 text-[11px] leading-relaxed">
+                        Partikel glitter mutiara berdimensi tinggi yang memantulkan cahaya dramatis untuk riasan mata panggung mode.
+                    </p>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+    <!-- 6. FOOTER -->
+    <footer class="bg-glam-bisque text-glam-pitch border-t border-glam-border pt-14 pb-28">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex flex-col md:flex-row items-center justify-between gap-6 border-b border-glam-border pb-8">
+                <div class="flex flex-col">
+                    <span class="text-lg font-serif font-bold tracking-[0.2em] text-glam-pitch uppercase">
+                        VELVET RUNWAY
+                    </span>
+                    <span class="text-[8px] font-display tracking-[0.3em] text-glam-gold uppercase">
+                        Haute Cosmetics Atelier
+                    </span>
+                </div>
+                <div class="flex flex-wrap gap-6 text-xs text-stone-700 font-display font-semibold uppercase tracking-wider">
+                    <a href="index.html" class="hover:text-glam-plum">Beranda</a>
+                    <a href="katalog.html" class="hover:text-glam-plum">Katalog</a>
+                    <a href="detail.html" class="hover:text-glam-plum">Formula & Swatch</a>
+                    <a href="tentang.html" class="hover:text-glam-plum">Filosofi</a>
+                    <a href="artikel.html" class="text-glam-plum font-bold">Tutorial</a>
+                    <a href="kontak.html" class="hover:text-glam-plum">Studio</a>
+                </div>
+            </div>
+            <div class="mt-6 flex flex-col sm:flex-row items-center justify-between text-xs text-stone-600">
+                <p>&copy; 2026 VELVET RUNWAY COSMETICS. All Rights Reserved.</p>
+                <p class="font-display text-[11px] mt-2 sm:mt-0">Lentera Pasar Production Template</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- FLOATING WHATSAPP BUTTON (bottom-24) -->
+    <a href="https://wa.me/6281234567890?text=Halo%20Velvet%20Runway,%20saya%20mau%20konsultasi%20tutorial%20dan%20pemilihan%20shade." 
+       target="_blank" 
+       class="fixed bottom-24 right-6 z-50 group flex items-center gap-3 bg-white hover:bg-glam-bisque text-glam-pitch px-4 py-3 rounded-full border border-glam-border shadow-2xl hover:border-glam-plum transition-all duration-300">
+        <span class="relative flex h-3 w-3">
+            <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-emerald-400 opacity-75"></span>
+            <span class="relative inline-flex rounded-full h-3 w-3 bg-emerald-500"></span>
+        </span>
+        <i class="fa-brands fa-whatsapp text-2xl text-emerald-600"></i>
+        <div class="text-left hidden sm:block pr-1">
+            <div class="text-[10px] text-stone-500 font-display font-bold uppercase tracking-wider leading-none">Beauty Advisor</div>
+            <span class="font-display font-bold text-xs text-glam-pitch">Konsultasi Shade WA</span>
+        </div>
+    </a>
+
+    <!-- LENTERA PASAR - STICKY DEMO & SALES BAR (fixed bottom-4) -->
+    <div class="fixed bottom-4 left-1/2 -translate-x-1/2 z-50 w-[95%] max-w-4xl bg-slate-900/95 backdrop-blur-md text-white p-3.5 md:p-4 rounded-2xl shadow-2xl border border-slate-700/80 transition-all duration-300">
+      <div class="flex flex-col md:flex-row items-center justify-between gap-3 md:gap-4">
+        <div class="flex items-center gap-3 w-full md:w-auto">
+          <div class="w-10 h-10 rounded-xl bg-glam-plum/30 border border-glam-plum/50 flex items-center justify-center shrink-0">
+            <svg class="w-5 h-5 text-pink-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 3v4M3 5h4M6 17v4m-2-2h4m5-16l2.286 6.857L21 12l-5.714 2.143L13 21l-2.286-6.857L5 12l5.714-2.143L13 3z" />
+            </svg>
+          </div>
+          <div>
+            <div class="flex items-center gap-2">
+              <span class="font-bold text-sm text-white">Lentera Pasar Engine</span>
+              <span class="text-[10px] bg-pink-500/20 text-pink-300 border border-pink-500/30 px-2 py-0.5 rounded-full font-medium">Makeup & Glam Studio Template</span>
+            </div>
+            <p class="text-xs text-slate-300 hidden sm:block">
+              Terima beres: Website responsif + Panel input produk sendiri + Dikelola tim iklan profesional.
+            </p>
+          </div>
+        </div>
+
+        <div class="flex items-center justify-between md:justify-end gap-3 w-full md:w-auto">
+          <a href="https://wa.me/6281234567890?text=Halo%20Tim%20Lentera%20Pasar,%20saya%20tertarik%20menggunakan%20template%20website%20Makeup%20Glam%20Studio%20ini%20lengkap%20dengan%20Admin%20Panel%20dan%20Jasa%20Iklannya." 
+             target="_blank"
+             class="w-full md:w-auto inline-flex items-center justify-center gap-2 bg-gradient-to-r from-glam-plum to-pink-600 hover:from-pink-600 hover:to-pink-700 text-white text-xs md:text-sm font-semibold px-5 py-2.5 rounded-xl shadow-lg shadow-pink-500/20 transition-all hover:scale-105 shrink-0">
+            <span>Gunakan Template Ini</span>
+            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3" />
+            </svg>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <!-- SCRIPT -->
+    <script>
+        const mobileMenuBtn = document.getElementById('mobileMenuBtn');
+        const mobileMenu = document.getElementById('mobileMenu');
+        const menuIcon = document.getElementById('menuIcon');
+
+        mobileMenuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+            if (mobileMenu.classList.contains('hidden')) {
+                menuIcon.classList.remove('fa-xmark');
+                menuIcon.classList.add('fa-bars-staggered');
+            } else {
+                menuIcon.classList.remove('fa-bars-staggered');
+                menuIcon.classList.add('fa-xmark');
+            }
+        });
+    </script>
+</body>
+</html>
