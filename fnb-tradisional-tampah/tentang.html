@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="id" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Warisan Resep Tradisional & Dapur Ibu - Tampah Ayu Nusantara</title>
+    <meta name="description" content="Cerita dapur legendaris Tampah Ayu sejak 1992. Mempertahankan teknik kukus tradisional, 100% kelapa peras asli, gula aren murni, dan balutan daun pisang segar.">
+    
+    <!-- Google Fonts: Playfair Display + Plus Jakarta Sans -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,600;0,700;0,800;1,400;1,600&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    
+    <!-- Tailwind CSS CDN with Custom Config -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        leaf: {
+                            900: '#1F3528',
+                            800: '#2D4B39',
+                            700: '#3D634C',
+                            600: '#528265',
+                            100: '#E4EDE7',
+                            50: '#F2F7F4'
+                        },
+                        bamboo: {
+                            900: '#5A381E',
+                            800: '#8C5D35',
+                            700: '#A67345',
+                            600: '#BF8E5E',
+                            200: '#E5D0BA',
+                            100: '#F3E8D8',
+                            50: '#FAF4EC'
+                        },
+                        amber: {
+                            gold: '#D97706',
+                            light: '#FEF3C7',
+                            dark: '#92400E'
+                        }
+                    },
+                    fontFamily: {
+                        sans: ['"Plus Jakarta Sans"', 'sans-serif'],
+                        serif: ['"Playfair Display"', 'Georgia', 'serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        .heritage-shadow {
+            box-shadow: 0 15px 35px -10px rgba(45, 75, 57, 0.12);
+        }
+        .leaf-glow {
+            box-shadow: 0 10px 25px -5px rgba(45, 75, 57, 0.3);
+        }
+    </style>
+</head>
+<body class="bg-bamboo-50 text-leaf-900 font-sans antialiased selection:bg-leaf-800 selection:text-white">
+
+    <!-- Top Notification Bar -->
+    <div class="bg-leaf-900 text-bamboo-100 text-xs py-2.5 px-4 font-medium border-b border-leaf-800">
+        <div class="max-w-7xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-2 text-center sm:text-left">
+            <div class="flex items-center justify-center gap-2">
+                <span class="w-1.5 h-1.5 rounded-full bg-amber-400 animate-ping"></span>
+                <span>Warisan Kuliner: <strong>Merawat Cita Rasa Otentik Nusantara Sejak 1992</strong></span>
+            </div>
+            <div class="text-[11px] text-bamboo-200">
+                <a href="katalog.html" class="text-amber-300 hover:underline">Lihat Katalog Menu Tampah &rarr;</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Header / Navbar -->
+    <header class="sticky top-0 z-40 bg-bamboo-50/95 backdrop-blur-md border-b border-bamboo-200 transition-all">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-20 sm:h-24">
+                
+                <a href="index.html" class="flex items-center gap-3 group">
+                    <div class="w-11 h-11 sm:w-12 sm:h-12 rounded-full bg-leaf-800 text-amber-300 border-2 border-bamboo-200 flex items-center justify-center text-xl group-hover:scale-105 transition-all shadow-sm">
+                        <i class="fa-solid fa-bowl-rice"></i>
+                    </div>
+                    <div>
+                        <span class="text-xl sm:text-2xl font-serif font-bold tracking-wide text-leaf-900 block leading-none">
+                            TAMPAH AYU
+                        </span>
+                        <span class="text-[10px] font-semibold tracking-[0.25em] text-bamboo-800 uppercase block mt-1">
+                            Jajanan Pasar &amp; Hantaran Tradisional
+                        </span>
+                    </div>
+                </a>
+
+                <nav class="hidden lg:flex items-center gap-8 font-medium text-leaf-900 text-xs tracking-wider uppercase">
+                    <a href="index.html" class="hover:text-leaf-800 transition">Beranda</a>
+                    <a href="katalog.html" class="hover:text-leaf-800 transition">Katalog Tampah &amp; Kue</a>
+                    <a href="detail.html" class="hover:text-leaf-800 transition">Isian &amp; Porsi Tampah</a>
+                    <a href="tentang.html" class="text-leaf-800 font-bold border-b-2 border-leaf-800 pb-1">Warisan Resep Ibu</a>
+                    <a href="artikel.html" class="hover:text-leaf-800 transition">Filosofi &amp; Tips</a>
+                    <a href="kontak.html" class="hover:text-leaf-800 transition">Pemesanan Acara</a>
+                </nav>
+
+                <div class="hidden sm:flex items-center gap-3">
+                    <a href="https://wa.me/6281234567890?text=Halo%20Tampah%20Ayu,%20saya%20mau%20konsultasi%20kue%20tradisional." target="_blank" class="inline-flex items-center gap-2 bg-leaf-800 hover:bg-leaf-900 text-white text-xs font-semibold px-5 py-3 rounded-full leaf-glow transition-all hover:scale-105 tracking-wider uppercase">
+                        <i class="fa-brands fa-whatsapp text-amber-300 text-sm"></i>
+                        <span>Hubungi Dapur</span>
+                    </a>
+                </div>
+
+                <button id="mobileMenuBtn" class="lg:hidden text-leaf-900 hover:text-leaf-800 p-2.5 rounded-xl bg-bamboo-100 border border-bamboo-200 transition" aria-label="Buka Menu">
+                    <i class="fa-solid fa-bars text-lg" id="menuIcon"></i>
+                </button>
+            </div>
+        </div>
+
+        <div id="mobileMenu" class="hidden lg:hidden bg-bamboo-50 border-b border-bamboo-200 px-6 pt-4 pb-6 space-y-3">
+            <a href="index.html" class="block py-2 text-leaf-900 hover:text-leaf-800 text-xs uppercase tracking-widest">Beranda</a>
+            <a href="katalog.html" class="block py-2 text-leaf-900 hover:text-leaf-800 text-xs uppercase tracking-widest">Katalog Tampah &amp; Kue Basah</a>
+            <a href="detail.html" class="block py-2 text-leaf-900 hover:text-leaf-800 text-xs uppercase tracking-widest">Detail Isian Tampah</a>
+            <a href="tentang.html" class="block py-2 text-leaf-800 font-bold text-xs uppercase tracking-widest">Warisan Resep Tradisional</a>
+            <a href="artikel.html" class="block py-2 text-leaf-900 hover:text-leaf-800 text-xs uppercase tracking-widest">Filosofi &amp; Tips Kue Basah</a>
+            <a href="kontak.html" class="block py-2 text-leaf-900 hover:text-leaf-800 text-xs uppercase tracking-widest">Pemesanan Acara Subuh</a>
+        </div>
+    </header>
+
+    <!-- HERO SECTION TENTANG -->
+    <section class="pt-16 pb-12 bg-bamboo-100/60 border-b border-bamboo-200">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <span class="text-xs font-bold text-bamboo-800 uppercase tracking-widest block mb-2">
+                Cerita Rasa &amp; Tradisi Dapur
+            </span>
+            <h1 class="text-3xl sm:text-4xl md:text-5xl font-serif font-bold text-leaf-900 mb-4 leading-tight">
+                Warisan Resep Dapur Ibu &amp; Kehangatan Budaya Guyub Nusantara
+            </h1>
+            <p class="text-sm sm:text-base text-bamboo-800 font-normal leading-relaxed max-w-2xl mx-auto">
+                Berawal dari dapur rumahan sederhana di tahun 1992, kami mendedikasikan diri untuk melestarikan resep kue basah tradisional yang jujur, lezat, dan berbalur doa kebaikan di setiap hajatan.
+            </p>
+        </div>
+    </section>
+
+    <!-- MAIN STORY & PHILOSOPHY SECTION -->
+    <main class="py-16 md:py-24 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center mb-20">
+                
+                <!-- Left Image Visual -->
+                <div class="lg:col-span-5 relative">
+                    <div class="rounded-3xl overflow-hidden border-4 border-bamboo-200 shadow-xl bg-bamboo-100">
+                        <img src="https://images.unsplash.com/photo-1541832676-9b763b0239ab?q=80&w=800&auto=format&fit=crop" 
+                             alt="Traditional Kue Basah Preparation on Banana Leaf" 
+                             class="w-full h-[420px] sm:h-[480px] object-cover">
+                    </div>
+                    <div class="absolute -bottom-5 -right-5 bg-leaf-900 text-white p-5 rounded-2xl border border-amber-500/40 shadow-xl max-w-xs hidden sm:block">
+                        <div class="text-base font-serif font-bold text-amber-300">Resep Turun Temurun</div>
+                        <div class="text-xs text-bamboo-200">Diwariskan dari 3 Generasi Dapur Ibu Djojo</div>
+                    </div>
+                </div>
+
+                <!-- Right Narrative Text -->
+                <div class="lg:col-span-7 space-y-6">
+                    <span class="text-xs font-bold text-bamboo-800 uppercase tracking-widest block">
+                        Kejujuran Bahan Baku
+                    </span>
+                    <h2 class="text-2xl sm:text-3xl md:text-4xl font-serif font-bold text-leaf-900 leading-tight">
+                        Mengapa Kue Basah Kami Selalu Dirindukan di Meja Tamu Anda?
+                    </h2>
+                    <div class="space-y-4 text-xs sm:text-sm text-bamboo-800 leading-relaxed font-light">
+                        <p>
+                            Bagi kami, kue tradisional bukan sekadar jajanan pasar penunda lapar, melainkan simbol keramahtamahan, doa kelancaran acara, dan perekat tali silaturahmi antar keluarga.
+                        </p>
+                        <p>
+                            Kami menolak keras penggunaan pemanis buatan sakarin, santan instan kemasan berpengawet, dan pewarna sintetis. Warna hijau klepon kami murni dari perasan daun suji dan pandan wangi. Manisnya kue cucur dan klepon bersumber dari gula aren batok Cilacap yang dimasak perlahan hingga karamel alami.
+                        </p>
+                        <p>
+                            Setiap pagi buta pukul 03.00 WIB, dapur kami sudah mulai mengepulkan asap kukusan dandang bambu tradisional. Kue dibuat segar di hari H agar tiba dalam kondisi paling prima saat disajikan.
+                        </p>
+                    </div>
+
+                    <!-- 4 Pillars Grid -->
+                    <div class="grid grid-cols-2 gap-4 pt-4 border-t border-bamboo-200">
+                        <div>
+                            <div class="text-2xl font-serif font-bold text-leaf-900">100% Murni</div>
+                            <div class="text-xs text-bamboo-800 mt-0.5">Santan Kelapa Peras Asli</div>
+                        </div>
+                        <div>
+                            <div class="text-2xl font-serif font-bold text-leaf-900">Daun Suji</div>
+                            <div class="text-xs text-bamboo-800 mt-0.5">Pewarna Alami Hijau Alami</div>
+                        </div>
+                        <div>
+                            <div class="text-2xl font-serif font-bold text-leaf-900">Gula Aren</div>
+                            <div class="text-xs text-bamboo-800 mt-0.5">Manis Gurih Tanpa Sakarin</div>
+                        </div>
+                        <div>
+                            <div class="text-2xl font-serif font-bold text-leaf-900">Bambu Asli</div>
+                            <div class="text-xs text-bamboo-800 mt-0.5">Anyaman Pengrajin Lokal</div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- SECTION NILAI & TRADISI KUKUSAN -->
+            <div class="bg-bamboo-50 rounded-3xl border border-bamboo-200 p-8 sm:p-12">
+                <div class="text-center max-w-2xl mx-auto mb-10">
+                    <span class="text-xs font-bold text-bamboo-800 uppercase tracking-widest block mb-1">
+                        Dedikasi Tradisi
+                    </span>
+                    <h3 class="text-2xl sm:text-3xl font-serif font-bold text-leaf-900">
+                        3 Rahasia Dapur Tampah Ayu Nusantara
+                    </h3>
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                    
+                    <div class="p-6 bg-white rounded-2xl border border-bamboo-200 heritage-shadow">
+                        <div class="w-12 h-12 rounded-2xl bg-leaf-800 text-amber-300 flex items-center justify-center text-xl mb-4">
+                            <i class="fa-solid fa-fire-burner"></i>
+                        </div>
+                        <h4 class="font-serif font-bold text-base text-leaf-900 mb-2">1. Teknik Kukus Tradisional</h4>
+                        <p class="text-xs text-bamboo-800 leading-relaxed font-light">
+                            Menggunakan dandang tembaga dan kukusan bambu untuk menjaga tekstur kenyal kue tidak berair atau terlalu keras.
+                        </p>
+                    </div>
+
+                    <div class="p-6 bg-white rounded-2xl border border-bamboo-200 heritage-shadow">
+                        <div class="w-12 h-12 rounded-2xl bg-leaf-800 text-amber-300 flex items-center justify-center text-xl mb-4">
+                            <i class="fa-solid fa-leaf"></i>
+                        </div>
+                        <h4 class="font-serif font-bold text-base text-leaf-900 mb-2">2. Daun Pisang Batu Segar</h4>
+                        <p class="text-xs text-bamboo-800 leading-relaxed font-light">
+                            Daun pisang dibakar lembut dengan uap agar lentur, menghasilkan aroma harum gurih khas pada lemper dan kue bugis.
+                        </p>
+                    </div>
+
+                    <div class="p-6 bg-white rounded-2xl border border-bamboo-200 heritage-shadow">
+                        <div class="w-12 h-12 rounded-2xl bg-leaf-800 text-amber-300 flex items-center justify-center text-xl mb-4">
+                            <i class="fa-solid fa-hands-holding"></i>
+                        </div>
+                        <h4 class="font-serif font-bold text-base text-leaf-900 mb-2">3. Penataan Tampah Artistik</h4>
+                        <p class="text-xs text-bamboo-800 leading-relaxed font-light">
+                            Disusun simetris dengan paduan gradasi warna ceria, lengkap dengan hiasan kelopak cabai dan daun pandan lipat.
+                        </p>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="bg-leaf-900 text-bamboo-200 pt-16 pb-32 text-xs border-t border-leaf-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-10 pb-12 border-b border-leaf-800/80">
+                <div class="lg:col-span-2 space-y-4">
+                    <div class="flex items-center gap-3">
+                        <div class="w-10 h-10 rounded-full bg-leaf-800 text-amber-300 border border-bamboo-200 flex items-center justify-center text-lg">
+                            <i class="fa-solid fa-bowl-rice"></i>
+                        </div>
+                        <div>
+                            <span class="font-serif font-bold text-lg text-white block leading-none">TAMPAH AYU</span>
+                            <span class="text-[9px] text-amber-300 uppercase font-semibold tracking-widest">Jajanan Pasar Nusantara</span>
+                        </div>
+                    </div>
+                    <p class="text-xs text-bamboo-300 leading-relaxed max-w-sm font-light">
+                        Melestarikan cita rasa kue tradisional Nusantara dengan resep otentik turun-temurun, bahan baku alami tanpa pemanis buatan, dan kemasan anyaman bambu ramah lingkungan.
+                    </p>
+                </div>
+                <div class="space-y-3">
+                    <h4 class="font-serif font-bold text-sm text-white uppercase tracking-wider text-amber-300">Navigasi</h4>
+                    <ul class="space-y-2 text-bamboo-300">
+                        <li><a href="index.html" class="hover:text-white transition">Beranda</a></li>
+                        <li><a href="katalog.html" class="hover:text-white transition">Katalog Menu</a></li>
+                        <li><a href="detail.html" class="hover:text-white transition">Detail Isian Tampah</a></li>
+                        <li><a href="tentang.html" class="hover:text-white transition">Resep Dapur Ibu</a></li>
+                        <li><a href="kontak.html" class="hover:text-white transition">Pemesanan Acara</a></li>
+                    </ul>
+                </div>
+                <div class="space-y-3">
+                    <h4 class="font-serif font-bold text-sm text-white uppercase tracking-wider text-amber-300">Komitmen</h4>
+                    <ul class="space-y-2 text-bamboo-300">
+                        <li><a href="tentang.html" class="hover:text-white transition">Tanpa Pemanis Buatan</a></li>
+                        <li><a href="tentang.html" class="hover:text-white transition">Santan Murni Asli</a></li>
+                        <li><a href="tentang.html" class="hover:text-white transition">Dibuat Subuh Hari H</a></li>
+                    </ul>
+                </div>
+                <div class="space-y-3">
+                    <h4 class="font-serif font-bold text-sm text-white uppercase tracking-wider text-amber-300">Dapur Produksi</h4>
+                    <p class="text-xs text-bamboo-300 leading-relaxed">
+                        Jl. Pandan Wangi No. 45, Kebayoran / Pasar Minggu, Jakarta Selatan.
+                    </p>
+                    <p class="text-xs text-bamboo-200">Pengiriman Subuh 05.30 - 08.00 WIB</p>
+                </div>
+            </div>
+            <div class="pt-8 text-center text-xs text-bamboo-300">
+                &copy; 2026 Tampah Ayu Nusantara. All Rights Reserved. Warisan Rasa Tradisi Indonesia.
+            </div>
+        </div>
+    </footer>
+
+    <!-- FLOATING WHATSAPP BUTTON (bottom-24) -->
+    <a href="https://wa.me/6281234567890?text=Halo%20Tampah%20Ayu,%20saya%20mau%20order%20kue%20tampah%20tradisional." 
+       target="_blank" 
+       class="fixed bottom-24 right-6 z-50 group flex items-center gap-3 bg-leaf-900 hover:bg-leaf-800 text-white px-4 py-3.5 rounded-full border border-amber-400/40 shadow-2xl transition-all duration-300" 
+       aria-label="Order via WhatsApp">
+        <span class="relative flex h-3 w-3">
+            <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-amber-400 opacity-75"></span>
+            <span class="relative inline-flex rounded-full h-3 w-3 bg-amber-400"></span>
+        </span>
+        <i class="fa-brands fa-whatsapp text-2xl text-amber-400"></i>
+        <div class="text-left hidden sm:block pr-1">
+            <div class="text-[9px] text-amber-300 font-bold uppercase tracking-wider leading-none">Pesan Acara WA</div>
+            <span class="font-bold text-xs text-white">0812-3456-7890</span>
+        </div>
+    </a>
+
+    <!-- SCRIPTS -->
+    <script>
+        const mobileMenuBtn = document.getElementById('mobileMenuBtn');
+        const mobileMenu = document.getElementById('mobileMenu');
+        const menuIcon = document.getElementById('menuIcon');
+
+        mobileMenuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+            if (mobileMenu.classList.contains('hidden')) {
+                menuIcon.classList.remove('fa-xmark');
+                menuIcon.classList.add('fa-bars');
+            } else {
+                menuIcon.classList.remove('fa-bars');
+                menuIcon.classList.add('fa-xmark');
+            }
+        });
+    </script>
+
+    <!-- ========================================================================= -->
+    <!-- LENTERA PASAR - STICKY DEMO & SALES BAR (fixed bottom-4)                 -->
+    <!-- ========================================================================= -->
+    <div class="fixed bottom-4 left-1/2 -translate-x-1/2 z-50 w-[95%] max-w-4xl bg-slate-900/95 backdrop-blur-md text-white p-3.5 md:p-4 rounded-2xl shadow-2xl border border-slate-700/80 transition-all duration-300">
+      <div class="flex flex-col md:flex-row items-center justify-between gap-3 md:gap-4">
+        <div class="flex items-center gap-3 w-full md:w-auto">
+          <div class="w-10 h-10 rounded-xl bg-amber-500/20 border border-amber-500/40 flex items-center justify-center shrink-0">
+            <svg class="w-5 h-5 text-amber-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z" />
+            </svg>
+          </div>
+          <div>
+            <div class="flex items-center gap-2">
+              <span class="font-bold text-sm text-white">Lentera Pasar Engine</span>
+              <span class="text-[10px] bg-emerald-500/20 text-emerald-300 border border-emerald-500/30 px-2 py-0.5 rounded-full font-medium">Free Admin Panel + Ads Support</span>
+            </div>
+            <p class="text-xs text-slate-300 hidden sm:block">
+              Terima beres: Website responsif + Panel input produk sendiri + Dikelola tim iklan profesional.
+            </p>
+          </div>
+        </div>
+        <div class="flex items-center justify-between md:justify-end gap-3 w-full md:w-auto">
+          <div class="hidden lg:flex items-center gap-2 text-xs text-slate-400 border-r border-slate-700 pr-4">
+            <div class="flex items-center gap-1 text-slate-200">
+              <svg class="w-4 h-4 text-emerald-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" /></svg>
+              <span>Chat WA Instan</span>
+            </div>
+            <span class="text-slate-600">•</span>
+            <div class="flex items-center gap-1 text-slate-200">
+              <svg class="w-4 h-4 text-emerald-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" /></svg>
+              <span>Ready Meta Pixel</span>
+            </div>
+          </div>
+          <a href="https://wa.me/6281234567890?text=Halo%20Tim%20Lentera%20Pasar,%20saya%20tertarik%20menggunakan%20template%20website%20ini%20lengkap%20dengan%20Admin%20Panel%20dan%20Jasa%20Iklannya." 
+             target="_blank"
+             class="w-full md:w-auto inline-flex items-center justify-center gap-2 bg-gradient-to-r from-amber-500 to-orange-600 hover:from-amber-600 hover:to-orange-700 text-white text-xs md:text-sm font-semibold px-5 py-2.5 rounded-xl shadow-lg shadow-orange-500/20 transition-all hover:scale-105 shrink-0">
+            <span>Gunakan Template Ini</span>
+            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3" />
+            </svg>
+          </a>
+        </div>
+      </div>
+    </div>
+
+</body>
+</html>

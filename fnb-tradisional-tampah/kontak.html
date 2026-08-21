@@ -1,0 +1,479 @@
+<!DOCTYPE html>
+<html lang="id" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pemesanan Acara Subuh & Area Kirim - Tampah Ayu Nusantara</title>
+    <meta name="description" content="Informasi pemesanan kue tampah subuh untuk acara kantor, arisan, & hajatan. Dapur Kebayoran Jakarta Selatan dengan kurir mobil berpendingin ke seluruh Jabodetabek.">
+    
+    <!-- Google Fonts: Playfair Display + Plus Jakarta Sans -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,600;0,700;0,800;1,400;1,600&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    
+    <!-- Tailwind CSS CDN with Custom Config -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        leaf: {
+                            900: '#1F3528',
+                            800: '#2D4B39',
+                            700: '#3D634C',
+                            600: '#528265',
+                            100: '#E4EDE7',
+                            50: '#F2F7F4'
+                        },
+                        bamboo: {
+                            900: '#5A381E',
+                            800: '#8C5D35',
+                            700: '#A67345',
+                            600: '#BF8E5E',
+                            200: '#E5D0BA',
+                            100: '#F3E8D8',
+                            50: '#FAF4EC'
+                        },
+                        amber: {
+                            gold: '#D97706',
+                            light: '#FEF3C7',
+                            dark: '#92400E'
+                        }
+                    },
+                    fontFamily: {
+                        sans: ['"Plus Jakarta Sans"', 'sans-serif'],
+                        serif: ['"Playfair Display"', 'Georgia', 'serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        .heritage-shadow {
+            box-shadow: 0 15px 35px -10px rgba(45, 75, 57, 0.12);
+        }
+        .leaf-glow {
+            box-shadow: 0 10px 25px -5px rgba(45, 75, 57, 0.3);
+        }
+    </style>
+</head>
+<body class="bg-bamboo-50 text-leaf-900 font-sans antialiased selection:bg-leaf-800 selection:text-white">
+
+    <!-- Top Notification Bar -->
+    <div class="bg-leaf-900 text-bamboo-100 text-xs py-2.5 px-4 font-medium border-b border-leaf-800">
+        <div class="max-w-7xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-2 text-center sm:text-left">
+            <div class="flex items-center justify-center gap-2">
+                <span class="w-1.5 h-1.5 rounded-full bg-amber-400 animate-ping"></span>
+                <span>Area Layanan Kirim: <strong>Seluruh Wilayah DKI Jakarta, Tangerang, Tangsel, Depok, &amp; Bekasi</strong></span>
+            </div>
+            <div class="text-[11px] text-bamboo-200">
+                <span>Pengiriman Mobil Khusus Kue (Aman &amp; Rapi)</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- Header / Navbar -->
+    <header class="sticky top-0 z-40 bg-bamboo-50/95 backdrop-blur-md border-b border-bamboo-200 transition-all">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-20 sm:h-24">
+                
+                <a href="index.html" class="flex items-center gap-3 group">
+                    <div class="w-11 h-11 sm:w-12 sm:h-12 rounded-full bg-leaf-800 text-amber-300 border-2 border-bamboo-200 flex items-center justify-center text-xl group-hover:scale-105 transition-all shadow-sm">
+                        <i class="fa-solid fa-bowl-rice"></i>
+                    </div>
+                    <div>
+                        <span class="text-xl sm:text-2xl font-serif font-bold tracking-wide text-leaf-900 block leading-none">
+                            TAMPAH AYU
+                        </span>
+                        <span class="text-[10px] font-semibold tracking-[0.25em] text-bamboo-800 uppercase block mt-1">
+                            Jajanan Pasar &amp; Hantaran Tradisional
+                        </span>
+                    </div>
+                </a>
+
+                <nav class="hidden lg:flex items-center gap-8 font-medium text-leaf-900 text-xs tracking-wider uppercase">
+                    <a href="index.html" class="hover:text-leaf-800 transition">Beranda</a>
+                    <a href="katalog.html" class="hover:text-leaf-800 transition">Katalog Tampah &amp; Kue</a>
+                    <a href="detail.html" class="hover:text-leaf-800 transition">Isian &amp; Porsi Tampah</a>
+                    <a href="tentang.html" class="hover:text-leaf-800 transition">Warisan Resep Ibu</a>
+                    <a href="artikel.html" class="hover:text-leaf-800 transition">Filosofi &amp; Tips</a>
+                    <a href="kontak.html" class="text-leaf-800 font-bold border-b-2 border-leaf-800 pb-1">Pemesanan Acara</a>
+                </nav>
+
+                <div class="hidden sm:flex items-center gap-3">
+                    <a href="https://wa.me/6281234567890?text=Halo%20Tampah%20Ayu,%20saya%20mau%20booking%20kue%20tampah%20subuh." target="_blank" class="inline-flex items-center gap-2 bg-leaf-800 hover:bg-leaf-900 text-white text-xs font-semibold px-5 py-3 rounded-full leaf-glow transition-all hover:scale-105 tracking-wider uppercase">
+                        <i class="fa-brands fa-whatsapp text-amber-300 text-sm"></i>
+                        <span>Booking via WA</span>
+                    </a>
+                </div>
+
+                <button id="mobileMenuBtn" class="lg:hidden text-leaf-900 hover:text-leaf-800 p-2.5 rounded-xl bg-bamboo-100 border border-bamboo-200 transition" aria-label="Buka Menu">
+                    <i class="fa-solid fa-bars text-lg" id="menuIcon"></i>
+                </button>
+            </div>
+        </div>
+
+        <div id="mobileMenu" class="hidden lg:hidden bg-bamboo-50 border-b border-bamboo-200 px-6 pt-4 pb-6 space-y-3">
+            <a href="index.html" class="block py-2 text-leaf-900 hover:text-leaf-800 text-xs uppercase tracking-widest">Beranda</a>
+            <a href="katalog.html" class="block py-2 text-leaf-900 hover:text-leaf-800 text-xs uppercase tracking-widest">Katalog Tampah &amp; Kue Basah</a>
+            <a href="detail.html" class="block py-2 text-leaf-900 hover:text-leaf-800 text-xs uppercase tracking-widest">Detail Isian Tampah</a>
+            <a href="tentang.html" class="block py-2 text-leaf-900 hover:text-leaf-800 text-xs uppercase tracking-widest">Warisan Resep Tradisional</a>
+            <a href="artikel.html" class="block py-2 text-leaf-900 hover:text-leaf-800 text-xs uppercase tracking-widest">Filosofi &amp; Tips Kue Basah</a>
+            <a href="kontak.html" class="block py-2 text-leaf-800 font-bold text-xs uppercase tracking-widest">Pemesanan Acara Subuh</a>
+        </div>
+    </header>
+
+    <!-- HERO SECTION KONTAK -->
+    <section class="pt-16 pb-12 bg-bamboo-100/60 border-b border-bamboo-200">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <span class="text-xs font-bold text-bamboo-800 uppercase tracking-widest block mb-2">
+                Pemesanan &amp; Ketentuan Acara
+            </span>
+            <h1 class="text-3xl sm:text-4xl md:text-5xl font-serif font-bold text-leaf-900 mb-4">
+                Pemesanan Acara Subuh, Lokasi Dapur &amp; Pengiriman
+            </h1>
+            <p class="text-sm sm:text-base text-bamboo-800 font-normal leading-relaxed max-w-2xl mx-auto">
+                Silakan isi formulir di bawah ini untuk terhubung langsung dengan admin dapur kami. Kami siap melayani pengantaran pagi-pagi buta dengan armada mobil khusus agar kue tetap utuh sempurna.
+            </p>
+        </div>
+    </section>
+
+    <!-- MAIN CONTACT & RESERVATION SECTION -->
+    <main class="py-12 md:py-20 bg-bamboo-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 items-start">
+                
+                <!-- LEFT COLUMN: Jam Layanan Subuh & Ketentuan Kirim -->
+                <div class="lg:col-span-6 space-y-6">
+                    
+                    <!-- Early Morning Delivery Schedule -->
+                    <div class="bg-white rounded-3xl border border-bamboo-200 p-6 sm:p-8 heritage-shadow space-y-4">
+                        <h3 class="font-serif font-bold text-xl text-leaf-900 flex items-center gap-2">
+                            <i class="fa-solid fa-bell-concierge text-amber-600"></i>
+                            Jadwal Pengiriman Pagi &amp; Siang
+                        </h3>
+                        
+                        <div class="space-y-3 text-xs">
+                            <div class="p-4 rounded-2xl bg-bamboo-50 border border-bamboo-200 flex items-start justify-between">
+                                <div>
+                                    <strong class="text-leaf-900 block font-bold text-sm">Batch Subuh (Paling Sering Dipesan)</strong>
+                                    <span class="text-bamboo-800">Khusus acara sarapan kantor, pengajian subuh, tasyakuran nikah &amp; lamaran.</span>
+                                </div>
+                                <span class="font-bold text-amber-800 bg-amber-100 px-3 py-1 rounded-full shrink-0 ml-3">
+                                    05.30 - 08.00 WIB
+                                </span>
+                            </div>
+
+                            <div class="p-4 rounded-2xl bg-bamboo-50 border border-bamboo-200 flex items-start justify-between">
+                                <div>
+                                    <strong class="text-leaf-900 block font-bold text-sm">Batch Siang (Coffee Break &amp; Seminar)</strong>
+                                    <span class="text-bamboo-800">Tiba hangat untuk istirahat siang rapat instansi kementerian &amp; arisan sore.</span>
+                                </div>
+                                <span class="font-bold text-amber-800 bg-amber-100 px-3 py-1 rounded-full shrink-0 ml-3">
+                                    10.00 - 13.00 WIB
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Ketentuan Pemesanan H-1 -->
+                    <div class="bg-leaf-900 text-white rounded-3xl p-6 sm:p-8 border border-amber-500/30 shadow-xl space-y-3">
+                        <div class="flex items-center gap-3">
+                            <div class="w-10 h-10 rounded-full bg-leaf-800 text-amber-300 border border-amber-400/40 flex items-center justify-center text-lg">
+                                <i class="fa-solid fa-clock"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-serif font-bold text-base text-white">Ketentuan Lead-Time Order</h4>
+                                <span class="text-[10px] text-amber-300 uppercase tracking-wider">Kue Dibuat Segar Sesuai Pesanan</span>
+                            </div>
+                        </div>
+                        <ul class="text-xs text-bamboo-200 space-y-2 pt-1 font-light">
+                            <li><i class="fa-solid fa-check text-amber-400 mr-2"></i> <strong>Kue Tampah (Mini/Sedang/Akbar):</strong> Pemesanan maksimal H-1 sebelum pukul 18.00 WIB.</li>
+                            <li><i class="fa-solid fa-check text-amber-400 mr-2"></i> <strong>Snack Box Rapat (&gt; 50 Box):</strong> Pemesanan disarankan H-2 untuk penyiapan anyaman besek.</li>
+                            <li><i class="fa-solid fa-check text-amber-400 mr-2"></i> <strong>Armada Pengiriman:</strong> Mobil khusus ber-AC agar tampah kue datar dan tidak rusak di jalan.</li>
+                        </ul>
+                    </div>
+
+                    <!-- Alamat Dapur Produksi -->
+                    <div class="bg-white rounded-3xl border border-bamboo-200 p-6 sm:p-8 heritage-shadow">
+                        <div class="flex items-start gap-4">
+                            <div class="w-12 h-12 rounded-2xl bg-bamboo-100 text-bamboo-800 flex items-center justify-center text-xl shrink-0">
+                                <i class="fa-solid fa-kitchen-set"></i>
+                            </div>
+                            <div class="space-y-1.5">
+                                <h3 class="font-serif font-bold text-lg text-leaf-900">
+                                    Dapur Produksi Tampah Ayu
+                                </h3>
+                                <p class="text-xs text-bamboo-800 leading-relaxed font-light">
+                                    Jl. Pandan Wangi No. 45, Kebayoran Baru / Pasar Minggu, Jakarta Selatan 12160.
+                                </p>
+                                <div class="text-xs text-leaf-900 space-y-1 font-medium pt-1">
+                                    <div><i class="fa-solid fa-phone text-amber-600 mr-1.5"></i> WhatsApp Admin: 0812-3456-7890</div>
+                                    <div><i class="fa-solid fa-car text-amber-600 mr-1.5"></i> Melayani Self Pick-Up Dapur (Mulai 05.00 WIB)</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <!-- RIGHT COLUMN: Reservation Form & Map -->
+                <div class="lg:col-span-6 space-y-6">
+                    
+                    <!-- WhatsApp Event Booking Form -->
+                    <div class="bg-white rounded-3xl border border-bamboo-200 p-6 sm:p-8 heritage-shadow">
+                        <span class="text-[10px] font-bold text-bamboo-800 uppercase tracking-widest block mb-1">
+                            Konsultasi &amp; Booking Cepat
+                        </span>
+                        <h3 class="font-serif font-bold text-2xl text-leaf-900 mb-4">
+                            Formulir Pemesanan Acara
+                        </h3>
+
+                        <form id="eventBookingForm" class="space-y-4 text-xs">
+                            <div>
+                                <label class="block font-semibold text-leaf-900 mb-1">Nama Pemesan / Instansi</label>
+                                <input type="text" id="custName" placeholder="Contoh: Ibu Ratna Wulandari / PT Maju Sejahtera" required 
+                                       class="w-full bg-bamboo-50 border border-bamboo-200 rounded-xl px-3.5 py-2.5 text-xs text-leaf-900 focus:outline-none focus:border-leaf-800">
+                            </div>
+
+                            <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                                <div>
+                                    <label class="block font-semibold text-leaf-900 mb-1">Jenis Paket Acara</label>
+                                    <select id="packageType" class="w-full bg-bamboo-50 border border-bamboo-200 rounded-xl px-3.5 py-2.5 text-xs text-leaf-900 focus:outline-none focus:border-leaf-800">
+                                        <option value="Tampah Sedang 50 Pcs (Paling Favorit)">Tampah Sedang 50 Pcs (Paling Favorit)</option>
+                                        <option value="Tampah Akbar 100 Pcs (Hajatan)">Tampah Akbar 100 Pcs (Hajatan)</option>
+                                        <option value="Tampah Mini 25 Pcs (Arisan)">Tampah Mini 25 Pcs (Arisan)</option>
+                                        <option value="Snack Box Besek Anyam (> 20 Box)">Snack Box Besek Anyam (&gt; 20 Box)</option>
+                                        <option value="Snack Box Mika Kraft (> 25 Box)">Snack Box Mika Kraft (&gt; 25 Box)</option>
+                                    </select>
+                                </div>
+
+                                <div>
+                                    <label class="block font-semibold text-leaf-900 mb-1">Jumlah Pesanan</label>
+                                    <input type="text" id="orderQty" placeholder="Contoh: 2 Tampah / 50 Box" required
+                                           class="w-full bg-bamboo-50 border border-bamboo-200 rounded-xl px-3.5 py-2.5 text-xs text-leaf-900 focus:outline-none focus:border-leaf-800">
+                                </div>
+                            </div>
+
+                            <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                                <div>
+                                    <label class="block font-semibold text-leaf-900 mb-1">Tanggal Acara</label>
+                                    <input type="text" id="eventDate" placeholder="Contoh: Sabtu, 28 Agustus 2026" required
+                                           class="w-full bg-bamboo-50 border border-bamboo-200 rounded-xl px-3.5 py-2.5 text-xs text-leaf-900 focus:outline-none focus:border-leaf-800">
+                                </div>
+
+                                <div>
+                                    <label class="block font-semibold text-leaf-900 mb-1">Jam Tiba di Lokasi</label>
+                                    <input type="text" id="eventTime" placeholder="Contoh: 06.30 WIB Pagi" required
+                                           class="w-full bg-bamboo-50 border border-bamboo-200 rounded-xl px-3.5 py-2.5 text-xs text-leaf-900 focus:outline-none focus:border-leaf-800">
+                                </div>
+                            </div>
+
+                            <div>
+                                <label class="block font-semibold text-leaf-900 mb-1">Alamat Lengkap Pengiriman</label>
+                                <input type="text" id="deliveryLoc" placeholder="Contoh: Gedung Mandiri Club, Jl. Mataram No. 1, Kebayoran Baru" required
+                                       class="w-full bg-bamboo-50 border border-bamboo-200 rounded-xl px-3.5 py-2.5 text-xs text-leaf-900 focus:outline-none focus:border-leaf-800">
+                            </div>
+
+                            <div>
+                                <label class="block font-semibold text-leaf-900 mb-1">Catatan Khusus / Tulisan Kartu Ucapan</label>
+                                <textarea id="orderNotes" rows="2" placeholder="Contoh: Dominan kue gurih, kartu ucapan selamat tasyakuran rumah..." 
+                                          class="w-full bg-bamboo-50 border border-bamboo-200 rounded-xl px-3.5 py-2.5 text-xs text-leaf-900 focus:outline-none focus:border-leaf-800"></textarea>
+                            </div>
+
+                            <button type="submit" class="w-full flex items-center justify-center gap-2 bg-leaf-800 hover:bg-leaf-900 text-white text-xs font-bold py-4 rounded-full leaf-glow transition-all uppercase tracking-wider">
+                                <i class="fa-brands fa-whatsapp text-amber-300 text-base"></i>
+                                <span>Kirim Form Booking ke WhatsApp Admin</span>
+                            </button>
+                        </form>
+                    </div>
+
+                    <!-- Stylized Kitchen Map Card -->
+                    <div class="bg-white rounded-3xl border border-bamboo-200 overflow-hidden heritage-shadow">
+                        <div class="relative h-48 bg-bamboo-100">
+                            <img src="https://images.unsplash.com/photo-1526778548025-fa2f459cd5c1?q=80&w=800&auto=format&fit=crop" 
+                                 alt="Lokasi Dapur Tampah Ayu" 
+                                 class="w-full h-full object-cover filter sepia">
+                            
+                            <div class="absolute inset-0 bg-leaf-900/30 flex items-center justify-center">
+                                <div class="bg-white p-4 rounded-2xl border border-bamboo-200 shadow-xl text-center max-w-xs animate-bounce">
+                                    <div class="w-8 h-8 rounded-full bg-leaf-800 text-amber-300 flex items-center justify-center mx-auto mb-1">
+                                        <i class="fa-solid fa-bowl-rice text-xs"></i>
+                                    </div>
+                                    <div class="font-serif font-bold text-xs text-leaf-900">Dapur Tampah Ayu</div>
+                                    <div class="text-[10px] text-bamboo-800">Kebayoran Baru, Jakarta Selatan</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="p-4 bg-bamboo-50 flex items-center justify-between text-xs">
+                            <span class="text-bamboo-800"><i class="fa-solid fa-location-dot text-leaf-800 mr-1"></i> Buka Rute di Google Maps</span>
+                            <a href="https://maps.google.com" target="_blank" class="text-leaf-800 font-bold hover:underline">Petunjuk Lokasi &rarr;</a>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="bg-leaf-900 text-bamboo-200 pt-16 pb-32 text-xs border-t border-leaf-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-10 pb-12 border-b border-leaf-800/80">
+                <div class="lg:col-span-2 space-y-4">
+                    <div class="flex items-center gap-3">
+                        <div class="w-10 h-10 rounded-full bg-leaf-800 text-amber-300 border border-bamboo-200 flex items-center justify-center text-lg">
+                            <i class="fa-solid fa-bowl-rice"></i>
+                        </div>
+                        <div>
+                            <span class="font-serif font-bold text-lg text-white block leading-none">TAMPAH AYU</span>
+                            <span class="text-[9px] text-amber-300 uppercase font-semibold tracking-widest">Jajanan Pasar Nusantara</span>
+                        </div>
+                    </div>
+                    <p class="text-xs text-bamboo-300 leading-relaxed max-w-sm font-light">
+                        Melestarikan cita rasa kue tradisional Nusantara dengan resep otentik turun-temurun, bahan baku alami tanpa pemanis buatan, dan kemasan anyaman bambu ramah lingkungan.
+                    </p>
+                </div>
+                <div class="space-y-3">
+                    <h4 class="font-serif font-bold text-sm text-white uppercase tracking-wider text-amber-300">Navigasi</h4>
+                    <ul class="space-y-2 text-bamboo-300">
+                        <li><a href="index.html" class="hover:text-white transition">Beranda</a></li>
+                        <li><a href="katalog.html" class="hover:text-white transition">Katalog Menu</a></li>
+                        <li><a href="detail.html" class="hover:text-white transition">Detail Isian Tampah</a></li>
+                        <li><a href="tentang.html" class="hover:text-white transition">Resep Dapur Ibu</a></li>
+                        <li><a href="kontak.html" class="hover:text-white transition">Pemesanan Acara</a></li>
+                    </ul>
+                </div>
+                <div class="space-y-3">
+                    <h4 class="font-serif font-bold text-sm text-white uppercase tracking-wider text-amber-300">Area Pengiriman</h4>
+                    <ul class="space-y-2 text-bamboo-300">
+                        <li><a href="kontak.html" class="hover:text-white transition">Jakarta Pusat &amp; Selatan</a></li>
+                        <li><a href="kontak.html" class="hover:text-white transition">Tangerang &amp; Tangsel</a></li>
+                        <li><a href="kontak.html" class="hover:text-white transition">Depok &amp; Bekasi</a></li>
+                    </ul>
+                </div>
+                <div class="space-y-3">
+                    <h4 class="font-serif font-bold text-sm text-white uppercase tracking-wider text-amber-300">Dapur Produksi</h4>
+                    <p class="text-xs text-bamboo-300 leading-relaxed">
+                        Jl. Pandan Wangi No. 45, Kebayoran / Pasar Minggu, Jakarta Selatan.
+                    </p>
+                    <p class="text-xs text-bamboo-200">Pengiriman Subuh 05.30 - 08.00 WIB</p>
+                </div>
+            </div>
+            <div class="pt-8 text-center text-xs text-bamboo-300">
+                &copy; 2026 Tampah Ayu Nusantara. All Rights Reserved. Warisan Rasa Tradisi Indonesia.
+            </div>
+        </div>
+    </footer>
+
+    <!-- FLOATING WHATSAPP BUTTON (bottom-24) -->
+    <a href="https://wa.me/6281234567890?text=Halo%20Tampah%20Ayu,%20saya%20mau%20order%20kue%20tampah%20tradisional." 
+       target="_blank" 
+       class="fixed bottom-24 right-6 z-50 group flex items-center gap-3 bg-leaf-900 hover:bg-leaf-800 text-white px-4 py-3.5 rounded-full border border-amber-400/40 shadow-2xl transition-all duration-300" 
+       aria-label="Order via WhatsApp">
+        <span class="relative flex h-3 w-3">
+            <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-amber-400 opacity-75"></span>
+            <span class="relative inline-flex rounded-full h-3 w-3 bg-amber-400"></span>
+        </span>
+        <i class="fa-brands fa-whatsapp text-2xl text-amber-400"></i>
+        <div class="text-left hidden sm:block pr-1">
+            <div class="text-[9px] text-amber-300 font-bold uppercase tracking-wider leading-none">Pesan Acara WA</div>
+            <span class="font-bold text-xs text-white">0812-3456-7890</span>
+        </div>
+    </a>
+
+    <!-- SCRIPTS -->
+    <script>
+        const mobileMenuBtn = document.getElementById('mobileMenuBtn');
+        const mobileMenu = document.getElementById('mobileMenu');
+        const menuIcon = document.getElementById('menuIcon');
+
+        mobileMenuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+            if (mobileMenu.classList.contains('hidden')) {
+                menuIcon.classList.remove('fa-xmark');
+                menuIcon.classList.add('fa-bars');
+            } else {
+                menuIcon.classList.remove('fa-bars');
+                menuIcon.classList.add('fa-xmark');
+            }
+        });
+
+        // Booking Form to WhatsApp
+        const bookingForm = document.getElementById('eventBookingForm');
+        bookingForm.addEventListener('submit', (e) => {
+            e.preventDefault();
+            const name = document.getElementById('custName').value.trim();
+            const pkg = document.getElementById('packageType').value;
+            const qty = document.getElementById('orderQty').value.trim();
+            const date = document.getElementById('eventDate').value.trim();
+            const time = document.getElementById('eventTime').value.trim();
+            const loc = document.getElementById('deliveryLoc').value.trim();
+            const notes = document.getElementById('orderNotes').value.trim() || '-';
+
+            const message = `Halo Admin Dapur Tampah Ayu, saya ingin booking kue untuk acara:\n\n` +
+                            `• *Nama Pemesan*: ${name}\n` +
+                            `• *Pilihan Paket*: ${pkg}\n` +
+                            `• *Jumlah*: ${qty}\n` +
+                            `• *Tanggal Acara*: ${date}\n` +
+                            `• *Jam Tiba di Lokasi*: ${time}\n` +
+                            `• *Alamat Pengiriman*: ${loc}\n` +
+                            `• *Catatan / Ucapan*: ${notes}\n\n` +
+                            `Mohon konfirmasi ketersediaan slot pengantaran dan rincian total pembayaran. Terima kasih!`;
+
+            window.open(`https://wa.me/6281234567890?text=${encodeURIComponent(message)}`, '_blank');
+        });
+    </script>
+
+    <!-- ========================================================================= -->
+    <!-- LENTERA PASAR - STICKY DEMO & SALES BAR (fixed bottom-4)                 -->
+    <!-- ========================================================================= -->
+    <div class="fixed bottom-4 left-1/2 -translate-x-1/2 z-50 w-[95%] max-w-4xl bg-slate-900/95 backdrop-blur-md text-white p-3.5 md:p-4 rounded-2xl shadow-2xl border border-slate-700/80 transition-all duration-300">
+      <div class="flex flex-col md:flex-row items-center justify-between gap-3 md:gap-4">
+        <div class="flex items-center gap-3 w-full md:w-auto">
+          <div class="w-10 h-10 rounded-xl bg-amber-500/20 border border-amber-500/40 flex items-center justify-center shrink-0">
+            <svg class="w-5 h-5 text-amber-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z" />
+            </svg>
+          </div>
+          <div>
+            <div class="flex items-center gap-2">
+              <span class="font-bold text-sm text-white">Lentera Pasar Engine</span>
+              <span class="text-[10px] bg-emerald-500/20 text-emerald-300 border border-emerald-500/30 px-2 py-0.5 rounded-full font-medium">Free Admin Panel + Ads Support</span>
+            </div>
+            <p class="text-xs text-slate-300 hidden sm:block">
+              Terima beres: Website responsif + Panel input produk sendiri + Dikelola tim iklan profesional.
+            </p>
+          </div>
+        </div>
+        <div class="flex items-center justify-between md:justify-end gap-3 w-full md:w-auto">
+          <div class="hidden lg:flex items-center gap-2 text-xs text-slate-400 border-r border-slate-700 pr-4">
+            <div class="flex items-center gap-1 text-slate-200">
+              <svg class="w-4 h-4 text-emerald-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" /></svg>
+              <span>Chat WA Instan</span>
+            </div>
+            <span class="text-slate-600">•</span>
+            <div class="flex items-center gap-1 text-slate-200">
+              <svg class="w-4 h-4 text-emerald-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" /></svg>
+              <span>Ready Meta Pixel</span>
+            </div>
+          </div>
+          <a href="https://wa.me/6281234567890?text=Halo%20Tim%20Lentera%20Pasar,%20saya%20tertarik%20menggunakan%20template%20website%20ini%20lengkap%20dengan%20Admin%20Panel%20dan%20Jasa%20Iklannya." 
+             target="_blank"
+             class="w-full md:w-auto inline-flex items-center justify-center gap-2 bg-gradient-to-r from-amber-500 to-orange-600 hover:from-amber-600 hover:to-orange-700 text-white text-xs md:text-sm font-semibold px-5 py-2.5 rounded-xl shadow-lg shadow-orange-500/20 transition-all hover:scale-105 shrink-0">
+            <span>Gunakan Template Ini</span>
+            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3" />
+            </svg>
+          </a>
+        </div>
+      </div>
+    </div>
+
+</body>
+</html>
