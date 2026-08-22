@@ -1,0 +1,700 @@
+<!DOCTYPE html>
+<html lang="id" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Katalog Aksesoris Motor & Touring Gear — MOTOKRAFT</title>
+    <meta name="description" content="Koleksi lengkap holder HP motor anti-getar aluminium CNC, jas hujan PVC badai, gembok alarm cakram 110dB, dan pelumas rantai O-ring bergaransi 6 bulan.">
+    
+    <!-- Google Fonts: Space Grotesk & Plus Jakarta Sans -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        garage: {
+                            bg: '#0B0F17',
+                            dark: '#111827',
+                            card: '#182234',
+                            cardlight: '#2E3844',
+                            border: '#334155',
+                            red: '#EF4444',
+                            reddark: '#DC2626',
+                            amber: '#F59E0B',
+                            steel: '#E2E8F0',
+                            silver: '#94A3B8'
+                        }
+                    },
+                    fontFamily: {
+                        sans: ['"Plus Jakarta Sans"', 'sans-serif'],
+                        mono: ['"Space Grotesk"', 'monospace']
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        .no-scrollbar::-webkit-scrollbar { display: none; }
+        .no-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
+        
+        .garage-btn {
+            transition: all 0.2s cubic-bezier(0.16, 1, 0.3, 1);
+        }
+        .garage-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 10px 25px -6px rgba(239, 68, 68, 0.45);
+        }
+    </style>
+</head>
+<body class="bg-garage-bg text-garage-steel font-sans antialiased selection:bg-garage-red selection:text-white">
+
+    <!-- 1. TOP BAR -->
+    <div class="bg-garage-dark text-garage-silver text-xs py-2 px-4 font-mono font-bold border-b border-garage-border">
+        <div class="max-w-7xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-2 text-center sm:text-left">
+            <div class="flex items-center justify-center gap-2">
+                <span class="px-2 py-0.5 bg-garage-red text-white text-[10px] uppercase font-mono font-black tracking-wider">
+                    READY STOCK STORE
+                </span>
+                <span class="text-white">Semua Tipe Bracket Spion & Clamp Stang Tersedia Lengkap</span>
+            </div>
+            <div class="flex items-center gap-4 text-xs font-mono">
+                <a href="kontak.html" class="text-garage-red hover:text-white underline font-extrabold transition">Lokasi Garage Store & Pasang &rarr;</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- 2. NAVBAR -->
+    <header class="sticky top-0 z-40 bg-garage-bg/95 backdrop-blur-md border-b border-garage-border transition-all">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-20 sm:h-24">
+                
+                <a href="index.html" class="flex items-center gap-3 group">
+                    <div class="w-11 h-11 bg-garage-red text-white flex items-center justify-center text-xl font-mono font-black border-2 border-garage-red shadow-lg group-hover:bg-white group-hover:text-garage-red transition">
+                        <i class="fa-solid fa-motorcycle"></i>
+                    </div>
+                    <div class="flex flex-col">
+                        <span class="text-2xl sm:text-3xl font-mono font-black tracking-tight text-white uppercase leading-none">
+                            MOTOKRAFT<span class="text-garage-red">.</span>
+                        </span>
+                        <span class="text-[9px] font-mono tracking-[0.25em] text-garage-red uppercase mt-1 font-bold">
+                            MOTO GARAGE & TOURING GEAR
+                        </span>
+                    </div>
+                </a>
+
+                <nav class="hidden lg:flex items-center gap-8 text-xs font-bold tracking-widest uppercase text-garage-silver font-mono">
+                    <a href="index.html" class="hover:text-garage-red transition">Beranda</a>
+                    <a href="katalog.html" class="text-garage-red border-b-2 border-garage-red pb-1">Katalog Gear</a>
+                    <a href="detail.html" class="hover:text-garage-red transition">Detail Holder CNC</a>
+                    <a href="tentang.html" class="hover:text-garage-red transition">Uji Anti-Getar</a>
+                    <a href="artikel.html" class="hover:text-garage-red transition">Tips Touring</a>
+                    <a href="kontak.html" class="hover:text-garage-red transition">Garage Store & Pasang</a>
+                </nav>
+
+                <div class="hidden sm:flex items-center gap-3 font-mono">
+                    <a href="https://wa.me/6281234567890?text=Halo%20Motokraft%20Garage,%20saya%20mau%20pesan%20aksesoris%20dari%20katalog." target="_blank" class="inline-flex items-center gap-2 bg-garage-red hover:bg-garage-reddark text-white text-xs font-bold tracking-wider px-5 py-2.5 transition-all shadow-lg font-mono garage-btn">
+                        <i class="fa-brands fa-whatsapp text-base"></i>
+                        <span>Order via WA</span>
+                    </a>
+                </div>
+
+                <button id="mobileMenuBtn" class="lg:hidden p-2 text-white hover:text-garage-red focus:outline-none" aria-label="Toggle Menu">
+                    <i id="menuIcon" class="fa-solid fa-bars text-xl"></i>
+                </button>
+            </div>
+        </div>
+
+        <!-- Mobile Drawer -->
+        <div id="mobileMenu" class="hidden lg:hidden bg-garage-dark border-b border-garage-border px-4 py-5 space-y-3 font-mono">
+            <a href="index.html" class="block text-xs font-bold uppercase tracking-wider text-white hover:text-garage-red py-2 border-b border-garage-border">Beranda Utama</a>
+            <a href="katalog.html" class="block text-xs font-bold uppercase tracking-wider text-garage-red py-2 border-b border-garage-border">Katalog Holder & Jas Hujan</a>
+            <a href="detail.html" class="block text-xs font-bold uppercase tracking-wider text-white hover:text-garage-red py-2 border-b border-garage-border">Detail Holder HP CNC Anti-Getar</a>
+            <a href="tentang.html" class="block text-xs font-bold uppercase tracking-wider text-white hover:text-garage-red py-2 border-b border-garage-border">Standar Uji Getaran OIS</a>
+            <a href="artikel.html" class="block text-xs font-bold uppercase tracking-wider text-white hover:text-garage-red py-2 border-b border-garage-border">Tips Berkendara Hujan</a>
+            <a href="kontak.html" class="block text-xs font-bold uppercase tracking-wider text-white hover:text-garage-red py-2">Garage Store & Pasang Langsung</a>
+        </div>
+    </header>
+
+    <!-- 3. PAGE HEADER & FILTER CONTROLS -->
+    <section class="py-12 bg-garage-dark border-b border-garage-border font-mono">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="max-w-3xl">
+                <div class="inline-flex items-center gap-2 px-3 py-1 bg-garage-card border border-garage-red/40 text-garage-red text-xs font-bold tracking-wider mb-3">
+                    <span class="w-2 h-2 rounded-full bg-garage-red"></span>
+                    <span class="uppercase tracking-widest text-[10px]">ALL MOTORCYCLE GEARS</span>
+                </div>
+                <h1 class="text-3xl sm:text-5xl font-mono font-black text-white tracking-tight uppercase">
+                    Katalog Aksesoris Motor & Touring
+                </h1>
+                <p class="text-xs sm:text-sm text-garage-silver mt-2 font-sans leading-relaxed">
+                    Filter berdasarkan tipe dudukan motor (Spion / Stang 22-28mm), peredam getaran kamera OIS, jas hujan badai, dan gembok alarm anti-maling.
+                </p>
+            </div>
+
+            <!-- Search & Filter Controls -->
+            <div class="mt-8 grid grid-cols-1 md:grid-cols-12 gap-4">
+                <!-- Search Box -->
+                <div class="md:col-span-6 relative">
+                    <i class="fa-solid fa-magnifying-glass absolute left-4 top-1/2 -translate-y-1/2 text-garage-silver text-xs"></i>
+                    <input type="text" id="searchInput" placeholder="Cari gear (misal: Armor-Grip Pro, StormShield, Gembok Alarm, Chain Lube)..." 
+                           class="w-full pl-10 pr-4 py-3 bg-garage-card border border-garage-border text-xs text-white focus:outline-none focus:border-garage-red transition font-sans font-medium">
+                </div>
+
+                <!-- Feature Filter Dropdown -->
+                <div class="md:col-span-3">
+                    <select id="featureFilter" onchange="applyAllFilters()" class="w-full py-3 px-4 bg-garage-card border border-garage-border text-xs font-bold text-white focus:outline-none focus:border-garage-red transition font-mono">
+                        <option value="all">Semua Tipe Bracket & Fitur</option>
+                        <option value="damper">Anti-Vibration Damper (OIS Safe)</option>
+                        <option value="cnc">Full Aluminium CNC Alloy</option>
+                        <option value="waterproof">100% Waterproof / Anti-Rembes</option>
+                        <option value="security">Security & Alarm 110dB</option>
+                    </select>
+                </div>
+
+                <!-- Fast WhatsApp Inquiry -->
+                <div class="md:col-span-3">
+                    <a href="https://wa.me/6281234567890?text=Halo%20Motokraft%20Garage,%20saya%20mau%20tanya%20stok%20aksesoris%20motor." target="_blank" class="w-full h-full py-3 px-4 bg-garage-red hover:bg-garage-reddark text-white text-xs font-bold flex items-center justify-center gap-2 transition font-mono garage-btn">
+                        <i class="fa-solid fa-bolt text-white"></i>
+                        <span>Cek Stok & Dudukan WA</span>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Category Pills -->
+            <div class="mt-6 flex items-center gap-2 overflow-x-auto no-scrollbar pb-2 font-mono">
+                <span class="text-xs font-bold text-white shrink-0 mr-1 uppercase tracking-wider">Kategori:</span>
+                <button onclick="filterCategory('all')" class="cat-pill active px-4 py-2 text-xs font-bold tracking-wider transition bg-garage-red text-white font-bold" data-cat="all">
+                    SEMUA GEAR
+                </button>
+                <button onclick="filterCategory('holder')" class="cat-pill px-4 py-2 text-xs font-bold tracking-wider transition bg-garage-card text-garage-silver hover:text-white border border-garage-border" data-cat="holder">
+                    HOLDER HP ANTI-GETAR
+                </button>
+                <button onclick="filterCategory('raincoat')" class="cat-pill px-4 py-2 text-xs font-bold tracking-wider transition bg-garage-card text-garage-silver hover:text-white border border-garage-border" data-cat="raincoat">
+                    JAS HUJAN BADAI PVC
+                </button>
+                <button onclick="filterCategory('lock')" class="cat-pill px-4 py-2 text-xs font-bold tracking-wider transition bg-garage-card text-garage-silver hover:text-white border border-garage-border" data-cat="lock">
+                    GEMBOK ALARM CAKRAM
+                </button>
+                <button onclick="filterCategory('care')" class="cat-pill px-4 py-2 text-xs font-bold tracking-wider transition bg-garage-card text-garage-silver hover:text-white border border-garage-border" data-cat="care">
+                    COVER & LUBE RANTAI
+                </button>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- 4. PRODUCT GRID -->
+    <section class="py-16 bg-garage-bg font-mono">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            
+            <div class="flex items-center justify-between mb-8">
+                <div class="text-xs text-garage-silver font-bold">
+                    Menampilkan <span id="productCount" class="font-black text-white bg-garage-red px-2 py-0.5">8</span> Aksesoris Motor & Touring Ready Stock
+                </div>
+                <div class="text-xs text-garage-red flex items-center gap-1.5 font-bold">
+                    <i class="fa-solid fa-shield-halved text-garage-red"></i>
+                    <span>Official 6-Month Bracket Warranty</span>
+                </div>
+            </div>
+
+            <!-- Grid Items -->
+            <div id="productsGrid" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+
+                <!-- ITEM 1: Motokraft Armor-Grip Pro CNC Phone Mount -->
+                <div class="product-item bg-garage-card border border-garage-border p-4 flex flex-col justify-between hover:border-garage-red transition" 
+                     data-cat="holder" data-feature="damper" data-title="Motokraft Armor-Grip Pro CNC Phone Mount Anti-Getar Kamera OIS Spion Stang">
+                    <div>
+                        <div class="aspect-[4/3] bg-garage-dark overflow-hidden mb-3 relative group border border-garage-border">
+                            <img src="https://images.unsplash.com/photo-1558981403-c5f9899a28bc?auto=format&fit=crop&w=500&q=80" alt="Armor-Grip Pro" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+                            <span class="absolute top-2 left-2 bg-garage-red text-white text-[8px] font-bold px-2 py-0.5 uppercase font-mono">
+                                ANTI-GETAR OIS
+                            </span>
+                        </div>
+
+                        <div class="flex items-center gap-1.5 mb-1.5 text-[10px] text-garage-red font-bold uppercase">
+                            <i class="fa-solid fa-mobile-screen-button"></i>
+                            <span>Alloy T6061 • 4-Point Damper • Universal</span>
+                        </div>
+
+                        <h3 class="font-mono font-bold text-base text-white leading-tight">Armor-Grip Pro CNC Mount</h3>
+                        <p class="text-xs text-garage-silver mt-1 font-sans line-clamp-1">Holder HP aluminium dengan modul peredam getaran anti-rusak kamera OIS.</p>
+                        
+                        <div class="mt-2 text-[10px] text-garage-silver">
+                            <span>Dudukan: Tersedia Versi Spion & Stang 22-28mm</span>
+                        </div>
+                    </div>
+
+                    <div class="mt-4 pt-3 border-t border-garage-border flex items-center justify-between">
+                        <div>
+                            <span class="text-[9px] text-garage-silver block uppercase">Harga Resmi</span>
+                            <span class="font-mono font-bold text-base text-white">Rp 189.000</span>
+                        </div>
+                        <div class="flex items-center gap-1">
+                            <a href="detail.html" class="p-2 bg-garage-dark hover:bg-garage-cardlight border border-garage-border text-white text-xs transition" title="Lihat Detail">
+                                <i class="fa-solid fa-eye"></i>
+                            </a>
+                            <a href="https://wa.me/6281234567890?text=Halo%20Motokraft%20Garage,%20saya%20mau%20pesan%20Armor-Grip%20Pro%20(Rp%20189.000)." target="_blank" class="px-3 py-1.5 bg-garage-red hover:bg-garage-reddark text-white text-xs font-bold uppercase transition">
+                                Pesan WA
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- ITEM 2: StormShield Pro PVC Raincoat Set -->
+                <div class="product-item bg-garage-card border border-garage-border p-4 flex flex-col justify-between hover:border-garage-red transition" 
+                     data-cat="raincoat" data-feature="waterproof" data-title="StormShield Pro PVC Raincoat Set Jas Hujan Setelan Baju Celana Tebal">
+                    <div>
+                        <div class="aspect-[4/3] bg-garage-dark overflow-hidden mb-3 relative group border border-garage-border">
+                            <img src="https://images.unsplash.com/photo-1544816155-12df9643f363?auto=format&fit=crop&w=500&q=80" alt="StormShield Pro" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+                            <span class="absolute top-2 left-2 bg-garage-red text-white text-[8px] font-bold px-2 py-0.5 uppercase font-mono">
+                                ANTI-REMBES
+                            </span>
+                        </div>
+
+                        <div class="flex items-center gap-1.5 mb-1.5 text-[10px] text-garage-red font-bold uppercase">
+                            <i class="fa-solid fa-vest"></i>
+                            <span>PVC Balon 0.25mm • Hot-Press • Reflektif 3M</span>
+                        </div>
+
+                        <h3 class="font-mono font-bold text-base text-white leading-tight">StormShield Pro Raincoat</h3>
+                        <p class="text-xs text-garage-silver mt-1 font-sans line-clamp-1">Jas hujan setelan baju dan celana tebal anti-bocor di selangkangan.</p>
+                        
+                        <div class="mt-2 text-[10px] text-garage-silver">
+                            <span>Ukuran: L, XL, XXL, XXXL</span>
+                        </div>
+                    </div>
+
+                    <div class="mt-4 pt-3 border-t border-garage-border flex items-center justify-between">
+                        <div>
+                            <span class="text-[9px] text-garage-silver block uppercase">Harga Resmi</span>
+                            <span class="font-mono font-bold text-base text-white">Rp 179.000</span>
+                        </div>
+                        <div class="flex items-center gap-1">
+                            <a href="detail.html" class="p-2 bg-garage-dark hover:bg-garage-cardlight border border-garage-border text-white text-xs transition">
+                                <i class="fa-solid fa-eye"></i>
+                            </a>
+                            <a href="https://wa.me/6281234567890?text=Halo%20Motokraft%20Garage,%20saya%20mau%20pesan%20StormShield%20Raincoat%20(Rp%20179.000)." target="_blank" class="px-3 py-1.5 bg-garage-red hover:bg-garage-reddark text-white text-xs font-bold uppercase transition">
+                                Pesan WA
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- ITEM 3: SecureLock 110dB Alarm Disc Lock -->
+                <div class="product-item bg-garage-card border border-garage-border p-4 flex flex-col justify-between hover:border-garage-red transition" 
+                     data-cat="lock" data-feature="security" data-title="SecureLock 110dB Alarm Disc Lock Gembok Cakram Motor Anti-Maling">
+                    <div>
+                        <div class="aspect-[4/3] bg-garage-dark overflow-hidden mb-3 relative group border border-garage-border">
+                            <img src="https://images.unsplash.com/photo-1558981403-c5f9899a28bc?auto=format&fit=crop&w=500&q=80" alt="SecureLock Alarm" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+                            <span class="absolute top-2 left-2 bg-garage-red text-white text-[8px] font-bold px-2 py-0.5 uppercase font-mono">
+                                SIRINE 110DB
+                            </span>
+                        </div>
+
+                        <div class="flex items-center gap-1.5 mb-1.5 text-[10px] text-garage-red font-bold uppercase">
+                            <i class="fa-solid fa-lock"></i>
+                            <span>Pin Baja 7mm • Sensor Getar • Waterproof IPX5</span>
+                        </div>
+
+                        <h3 class="font-mono font-bold text-base text-white leading-tight">SecureLock 110dB Alarm</h3>
+                        <p class="text-xs text-garage-silver mt-1 font-sans line-clamp-1">Gembok cakram bersuara sirine keras anti-maling dengan reminder cable.</p>
+                        
+                        <div class="mt-2 text-[10px] text-garage-silver">
+                            <span>Baterai: Termasuk 6x LR44 + Kunci Cadangan</span>
+                        </div>
+                    </div>
+
+                    <div class="mt-4 pt-3 border-t border-garage-border flex items-center justify-between">
+                        <div>
+                            <span class="text-[9px] text-garage-silver block uppercase">Harga Resmi</span>
+                            <span class="font-mono font-bold text-base text-white">Rp 129.000</span>
+                        </div>
+                        <div class="flex items-center gap-1">
+                            <a href="detail.html" class="p-2 bg-garage-dark hover:bg-garage-cardlight border border-garage-border text-white text-xs transition">
+                                <i class="fa-solid fa-eye"></i>
+                            </a>
+                            <a href="https://wa.me/6281234567890?text=Halo%20Motokraft%20Garage,%20saya%20mau%20pesan%20SecureLock%20Alarm%20(Rp%20129.000)." target="_blank" class="px-3 py-1.5 bg-garage-red hover:bg-garage-reddark text-white text-xs font-bold uppercase transition">
+                                Pesan WA
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- ITEM 4: Motokraft HyperLube O-Ring Chain Lubricant 300ml -->
+                <div class="product-item bg-garage-card border border-garage-border p-4 flex flex-col justify-between hover:border-garage-red transition" 
+                     data-cat="care" data-feature="waterproof" data-title="Motokraft HyperLube O-Ring Chain Lubricant 300ml Pelumas Rantai Motor Anti-Karat">
+                    <div>
+                        <div class="aspect-[4/3] bg-garage-dark overflow-hidden mb-3 relative group border border-garage-border">
+                            <img src="https://images.unsplash.com/photo-1558981403-c5f9899a28bc?auto=format&fit=crop&w=500&q=80" alt="HyperLube Chain" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+                            <span class="absolute top-2 left-2 bg-emerald-500 text-black text-[8px] font-bold px-2 py-0.5 uppercase font-mono">
+                                O-RING SAFE
+                            </span>
+                        </div>
+
+                        <div class="flex items-center gap-1.5 mb-1.5 text-[10px] text-garage-red font-bold uppercase">
+                            <i class="fa-solid fa-oil-can"></i>
+                            <span>Formula Sintetik • Anti-Ciprat • Anti-Karat</span>
+                        </div>
+
+                        <h3 class="font-mono font-bold text-base text-white leading-tight">HyperLube Chain Lube 300ml</h3>
+                        <p class="text-xs text-garage-silver mt-1 font-sans line-clamp-1">Pelumas rantai motor formula sintetis melekat kuat tanpa menciprat ke velg.</p>
+                        
+                        <div class="mt-2 text-[10px] text-garage-silver">
+                            <span>Kompatibilitas: Rantai Standar, O-Ring, X-Ring</span>
+                        </div>
+                    </div>
+
+                    <div class="mt-4 pt-3 border-t border-garage-border flex items-center justify-between">
+                        <div>
+                            <span class="text-[9px] text-garage-silver block uppercase">Harga Resmi</span>
+                            <span class="font-mono font-bold text-base text-white">Rp 59.000</span>
+                        </div>
+                        <div class="flex items-center gap-1">
+                            <a href="detail.html" class="p-2 bg-garage-dark hover:bg-garage-cardlight border border-garage-border text-white text-xs transition">
+                                <i class="fa-solid fa-eye"></i>
+                            </a>
+                            <a href="https://wa.me/6281234567890?text=Halo%20Motokraft%20Garage,%20saya%20mau%20pesan%20HyperLube%20Chain%20(Rp%2059.000)." target="_blank" class="px-3 py-1.5 bg-garage-red hover:bg-garage-reddark text-white text-xs font-bold uppercase transition">
+                                Pesan WA
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- ITEM 5: Armor-Grip Qi Wireless 15W + USB Fast Charge Mount -->
+                <div class="product-item bg-garage-card border border-garage-border p-4 flex flex-col justify-between hover:border-garage-red transition" 
+                     data-cat="holder" data-feature="cnc" data-title="Armor-Grip Qi Wireless 15W Fast Charge Mount Holder HP Cas Motor">
+                    <div>
+                        <div class="aspect-[4/3] bg-garage-dark overflow-hidden mb-3 relative group border border-garage-border">
+                            <img src="https://images.unsplash.com/photo-1558981403-c5f9899a28bc?auto=format&fit=crop&w=500&q=80" alt="Qi Wireless Mount" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+                            <span class="absolute top-2 left-2 bg-garage-red text-white text-[8px] font-bold px-2 py-0.5 uppercase font-mono">
+                                15W WIRELESS + QC3.0
+                            </span>
+                        </div>
+
+                        <div class="flex items-center gap-1.5 mb-1.5 text-[10px] text-garage-red font-bold uppercase">
+                            <i class="fa-solid fa-charging-station"></i>
+                            <span>Wireless 15W • USB-C PD • Saklar On/Off Waterproof</span>
+                        </div>
+
+                        <h3 class="font-mono font-bold text-base text-white leading-tight">Armor-Grip Qi Fast Charge</h3>
+                        <p class="text-xs text-garage-silver mt-1 font-sans line-clamp-1">Holder HP motor aluminium dengan modul pengisian nirkabel 15W tahan hujan.</p>
+                        
+                        <div class="mt-2 text-[10px] text-garage-silver">
+                            <span>Input: 12V - 24V Aki Motor (Fuse Protected)</span>
+                        </div>
+                    </div>
+
+                    <div class="mt-4 pt-3 border-t border-garage-border flex items-center justify-between">
+                        <div>
+                            <span class="text-[9px] text-garage-silver block uppercase">Harga Resmi</span>
+                            <span class="font-mono font-bold text-base text-white">Rp 279.000</span>
+                        </div>
+                        <div class="flex items-center gap-1">
+                            <a href="detail.html" class="p-2 bg-garage-dark hover:bg-garage-cardlight border border-garage-border text-white text-xs transition">
+                                <i class="fa-solid fa-eye"></i>
+                            </a>
+                            <a href="https://wa.me/6281234567890?text=Halo%20Motokraft%20Garage,%20saya%20mau%20pesan%20Armor-Grip%20Qi%20Charge%20(Rp%20279.000)." target="_blank" class="px-3 py-1.5 bg-garage-red hover:bg-garage-reddark text-white text-xs font-bold uppercase transition">
+                                Pesan WA
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- ITEM 6: AquaGuard Silicone Waterproof Shoe Covers -->
+                <div class="product-item bg-garage-card border border-garage-border p-4 flex flex-col justify-between hover:border-garage-red transition" 
+                     data-cat="raincoat" data-feature="waterproof" data-title="AquaGuard Silicone Waterproof Shoe Covers Pelindung Sepatu Hujan Tebal">
+                    <div>
+                        <div class="aspect-[4/3] bg-garage-dark overflow-hidden mb-3 relative group border border-garage-border">
+                            <img src="https://images.unsplash.com/photo-1544816155-12df9643f363?auto=format&fit=crop&w=500&q=80" alt="AquaGuard Shoe Cover" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+                            <span class="absolute top-2 left-2 bg-garage-red text-white text-[8px] font-bold px-2 py-0.5 uppercase font-mono">
+                                SILIKON ELASTIS
+                            </span>
+                        </div>
+
+                        <div class="flex items-center gap-1.5 mb-1.5 text-[10px] text-garage-red font-bold uppercase">
+                            <i class="fa-solid fa-shoe-prints"></i>
+                            <span>Silikon Tebal • Grip Anti-Slip • Reusable</span>
+                        </div>
+
+                        <h3 class="font-mono font-bold text-base text-white leading-tight">AquaGuard Shoe Covers</h3>
+                        <p class="text-xs text-garage-silver mt-1 font-sans line-clamp-1">Pelindung sepatu anti-air elastis dengan sol karet gerigi anti-tergelincir.</p>
+                        
+                        <div class="mt-2 text-[10px] text-garage-silver">
+                            <span>Ukuran: M (36-40), L (41-45)</span>
+                        </div>
+                    </div>
+
+                    <div class="mt-4 pt-3 border-t border-garage-border flex items-center justify-between">
+                        <div>
+                            <span class="text-[9px] text-garage-silver block uppercase">Harga Resmi</span>
+                            <span class="font-mono font-bold text-base text-white">Rp 49.000</span>
+                        </div>
+                        <div class="flex items-center gap-1">
+                            <a href="detail.html" class="p-2 bg-garage-dark hover:bg-garage-cardlight border border-garage-border text-white text-xs transition">
+                                <i class="fa-solid fa-eye"></i>
+                            </a>
+                            <a href="https://wa.me/6281234567890?text=Halo%20Motokraft%20Garage,%20saya%20mau%20pesan%20AquaGuard%20Shoe%20Cover%20(Rp%2049.000)." target="_blank" class="px-3 py-1.5 bg-garage-red hover:bg-garage-reddark text-white text-xs font-bold uppercase transition">
+                                Pesan WA
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- ITEM 7: ShieldGuard Heavy-Duty Waterproof Motorcycle Cover -->
+                <div class="product-item bg-garage-card border border-garage-border p-4 flex flex-col justify-between hover:border-garage-red transition" 
+                     data-cat="care" data-feature="waterproof" data-title="ShieldGuard Heavy-Duty Waterproof Motorcycle Cover Selimut Motor Anti-Panas">
+                    <div>
+                        <div class="aspect-[4/3] bg-garage-dark overflow-hidden mb-3 relative group border border-garage-border">
+                            <img src="https://images.unsplash.com/photo-1558981403-c5f9899a28bc?auto=format&fit=crop&w=500&q=80" alt="Motorcycle Cover" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+                            <span class="absolute top-2 left-2 bg-garage-red text-white text-[8px] font-bold px-2 py-0.5 uppercase font-mono">
+                                3-LAYER TAFFETA
+                            </span>
+                        </div>
+
+                        <div class="flex items-center gap-1.5 mb-1.5 text-[10px] text-garage-red font-bold uppercase">
+                            <i class="fa-solid fa-shield"></i>
+                            <span>Anti-UV • Waterproof • Karet Pengunci Roda</span>
+                        </div>
+
+                        <h3 class="font-mono font-bold text-base text-white leading-tight">ShieldGuard Moto Cover</h3>
+                        <p class="text-xs text-garage-silver mt-1 font-sans line-clamp-1">Selimut pelindung motor anti-panas matahari dan hujan lebat dengan pengunci angin.</p>
+                        
+                        <div class="mt-2 text-[10px] text-garage-silver">
+                            <span>Ukuran: Standar (Beat/Vario), Maxi (NMAX/PCX/Sport)</span>
+                        </div>
+                    </div>
+
+                    <div class="mt-4 pt-3 border-t border-garage-border flex items-center justify-between">
+                        <div>
+                            <span class="text-[9px] text-garage-silver block uppercase">Harga Resmi</span>
+                            <span class="font-mono font-bold text-base text-white">Rp 119.000</span>
+                        </div>
+                        <div class="flex items-center gap-1">
+                            <a href="detail.html" class="p-2 bg-garage-dark hover:bg-garage-cardlight border border-garage-border text-white text-xs transition">
+                                <i class="fa-solid fa-eye"></i>
+                            </a>
+                            <a href="https://wa.me/6281234567890?text=Halo%20Motokraft%20Garage,%20saya%20mau%20pesan%20ShieldGuard%20Cover%20(Rp%20119.000)." target="_blank" class="px-3 py-1.5 bg-garage-red hover:bg-garage-reddark text-white text-xs font-bold uppercase transition">
+                                Pesan WA
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- ITEM 8: HelmetLock 4-Digit Combination Cable Lock -->
+                <div class="product-item bg-garage-card border border-garage-border p-4 flex flex-col justify-between hover:border-garage-red transition" 
+                     data-cat="lock" data-feature="security" data-title="HelmetLock 4-Digit Combination Cable Lock Kunci Gembok Helm Stang Motor">
+                    <div>
+                        <div class="aspect-[4/3] bg-garage-dark overflow-hidden mb-3 relative group border border-garage-border">
+                            <img src="https://images.unsplash.com/photo-1558981403-c5f9899a28bc?auto=format&fit=crop&w=500&q=80" alt="Helmet Lock" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+                            <span class="absolute top-2 left-2 bg-garage-red text-white text-[8px] font-bold px-2 py-0.5 uppercase font-mono">
+                                4-DIGIT PIN
+                            </span>
+                        </div>
+
+                        <div class="flex items-center gap-1.5 mb-1.5 text-[10px] text-garage-red font-bold uppercase">
+                            <i class="fa-solid fa-helmet-safety"></i>
+                            <span>Kabel Baja Lapis Karet • Reset Kode • Ringan</span>
+                        </div>
+
+                        <h3 class="font-mono font-bold text-base text-white leading-tight">HelmetLock Cable PIN</h3>
+                        <p class="text-xs text-garage-silver mt-1 font-sans line-clamp-1">Gembok kombinasi angka praktis untuk mengamankan helm di spion atau stang motor.</p>
+                        
+                        <div class="mt-2 text-[10px] text-garage-silver">
+                            <span>Panjang Kabel: Spiral Elastis hingga 1.5 Meter</span>
+                        </div>
+                    </div>
+
+                    <div class="mt-4 pt-3 border-t border-garage-border flex items-center justify-between">
+                        <div>
+                            <span class="text-[9px] text-garage-silver block uppercase">Harga Resmi</span>
+                            <span class="font-mono font-bold text-base text-white">Rp 45.000</span>
+                        </div>
+                        <div class="flex items-center gap-1">
+                            <a href="detail.html" class="p-2 bg-garage-dark hover:bg-garage-cardlight border border-garage-border text-white text-xs transition">
+                                <i class="fa-solid fa-eye"></i>
+                            </a>
+                            <a href="https://wa.me/6281234567890?text=Halo%20Motokraft%20Garage,%20saya%20mau%20pesan%20HelmetLock%20(Rp%2045.000)." target="_blank" class="px-3 py-1.5 bg-garage-red hover:bg-garage-reddark text-white text-xs font-bold uppercase transition">
+                                Pesan WA
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- Empty State -->
+            <div id="noResults" class="hidden text-center py-16 bg-garage-card border border-garage-border mt-8">
+                <i class="fa-solid fa-motorcycle text-3xl text-garage-red mb-3"></i>
+                <h4 class="text-base font-mono font-bold text-white uppercase">Aksesoris Tidak Ditemukan</h4>
+                <p class="text-xs text-garage-silver mt-1 max-w-sm mx-auto font-sans">
+                    Coba ubah kata kunci pencarian atau reset filter untuk melihat seluruh katalog holder HP dan perlengkapan touring kami.
+                </p>
+                <button onclick="resetFilters()" class="mt-4 px-6 py-2.5 bg-garage-red text-white text-xs font-bold uppercase tracking-wider transition font-mono garage-btn">
+                    Reset Filter
+                </button>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- 5. FOOTER -->
+    <footer class="bg-garage-bg text-garage-silver border-t border-garage-border pt-14 pb-28 font-mono">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex flex-col md:flex-row items-center justify-between gap-6 border-b border-garage-border pb-8">
+                <div class="flex items-center gap-3">
+                    <div class="w-8 h-8 bg-garage-red text-white flex items-center justify-center text-base font-mono font-black">
+                        <i class="fa-solid fa-motorcycle"></i>
+                    </div>
+                    <span class="text-xl font-mono font-black text-white uppercase tracking-tight">
+                        MOTOKRAFT<span class="text-garage-red">.</span>
+                    </span>
+                </div>
+                <div class="flex flex-wrap gap-6 text-xs text-garage-silver font-bold uppercase tracking-wider">
+                    <a href="index.html" class="hover:text-garage-red">Beranda</a>
+                    <a href="katalog.html" class="text-garage-red">Katalog</a>
+                    <a href="detail.html" class="hover:text-garage-red">Detail</a>
+                    <a href="tentang.html" class="hover:text-garage-red">Uji Getar</a>
+                    <a href="artikel.html" class="hover:text-garage-red">Tips Touring</a>
+                    <a href="kontak.html" class="hover:text-garage-red">Garage Store</a>
+                </div>
+            </div>
+            <div class="mt-6 flex flex-col sm:flex-row items-center justify-between text-xs text-slate-500">
+                <p>&copy; 2026 MOTOKRAFT MOTO GARAGE LAB. All Rights Reserved.</p>
+                <p class="text-[11px] mt-2 sm:mt-0 font-sans">Lentera Pasar Production Template — Motorcycle Accessories & Touring Gear</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- FLOATING WHATSAPP BUTTON (bottom-24) -->
+    <a href="https://wa.me/6281234567890?text=Halo%20Motokraft%20Garage,%20saya%20ingin%20konsultasi%20aksesoris%20motor." 
+       target="_blank" 
+       class="fixed bottom-24 right-6 z-50 group flex items-center gap-3 bg-garage-card hover:bg-garage-cardlight text-white px-4 py-3 border border-garage-red/40 shadow-2xl hover:border-garage-red transition-all duration-300 font-mono">
+        <span class="relative flex h-3 w-3">
+            <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-garage-red opacity-75"></span>
+            <span class="relative inline-flex rounded-full h-3 w-3 bg-garage-red"></span>
+        </span>
+        <i class="fa-brands fa-whatsapp text-2xl text-emerald-400"></i>
+        <div class="text-left hidden sm:block pr-1">
+            <div class="text-[10px] text-garage-red font-bold uppercase tracking-wider leading-none">Moto Specialist</div>
+            <span class="font-bold text-xs text-white">Konsultasi Gear WA</span>
+        </div>
+    </a>
+
+    <!-- LENTERA PASAR - STICKY DEMO & SALES BAR (fixed bottom-4) -->
+    <div class="fixed bottom-4 left-1/2 -translate-x-1/2 z-50 w-[95%] max-w-4xl bg-slate-900/95 backdrop-blur-md text-white p-3.5 md:p-4 rounded-2xl shadow-2xl border border-slate-700/80 transition-all duration-300">
+      <div class="flex flex-col md:flex-row items-center justify-between gap-3 md:gap-4">
+        <div class="flex items-center gap-3 w-full md:w-auto">
+          <div class="w-10 h-10 rounded-xl bg-red-500/20 border border-red-500/40 flex items-center justify-center shrink-0">
+            <svg class="w-5 h-5 text-red-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+            </svg>
+          </div>
+          <div>
+            <div class="flex items-center gap-2">
+              <span class="font-bold text-sm text-white">Lentera Pasar Engine</span>
+              <span class="text-[10px] bg-red-500/20 text-red-300 border border-red-500/30 px-2 py-0.5 rounded-full font-medium">Moto Garage & Accessories Template</span>
+            </div>
+            <p class="text-xs text-slate-300 hidden sm:block">
+              Terima beres: Website responsif + Panel input produk sendiri + Dikelola tim iklan profesional.
+            </p>
+          </div>
+        </div>
+
+        <div class="flex items-center justify-between md:justify-end gap-3 w-full md:w-auto">
+          <a href="https://wa.me/6281234567890?text=Halo%20Tim%20Lentera%20Pasar,%20saya%20tertarik%20menggunakan%20template%20website%20Moto%20Garage%20%26%20Accessories%20ini%20lengkap%20dengan%20Admin%20Panel%20dan%20Jasa%20Iklannya." 
+             target="_blank"
+             class="w-full md:w-auto inline-flex items-center justify-center gap-2 bg-gradient-to-r from-red-500 to-rose-600 hover:from-red-400 hover:to-rose-500 text-white text-xs md:text-sm font-bold px-5 py-2.5 rounded-xl shadow-lg transition-all hover:scale-105 shrink-0">
+            <span>Gunakan Template Ini</span>
+            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3" />
+            </svg>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <!-- JAVASCRIPT FILTER LOGIC -->
+    <script>
+        let currentCat = 'all';
+
+        function filterCategory(cat) {
+            currentCat = cat;
+            document.querySelectorAll('.cat-pill').forEach(btn => {
+                if (btn.dataset.cat === cat) {
+                    btn.classList.remove('bg-garage-card', 'text-garage-silver', 'border', 'border-garage-border');
+                    btn.classList.add('bg-garage-red', 'text-white', 'font-bold');
+                } else {
+                    btn.classList.remove('bg-garage-red', 'text-white', 'font-bold');
+                    btn.classList.add('bg-garage-card', 'text-garage-silver', 'border', 'border-garage-border');
+                }
+            });
+            applyAllFilters();
+        }
+
+        document.getElementById('searchInput').addEventListener('input', applyAllFilters);
+
+        function applyAllFilters() {
+            const query = document.getElementById('searchInput').value.toLowerCase().trim();
+            const feature = document.getElementById('featureFilter').value;
+            const items = document.querySelectorAll('.product-item');
+            let visibleCount = 0;
+
+            items.forEach(item => {
+                const itemCat = item.dataset.cat;
+                const itemFeature = item.dataset.feature || '';
+                const itemTitle = (item.dataset.title || '').toLowerCase();
+
+                const matchCat = (currentCat === 'all' || itemCat === currentCat);
+                const matchFeature = (feature === 'all' || itemFeature === feature);
+                const matchQuery = (!query || itemTitle.includes(query));
+
+                if (matchCat && matchFeature && matchQuery) {
+                    item.classList.remove('hidden');
+                    visibleCount++;
+                } else {
+                    item.classList.add('hidden');
+                }
+            });
+
+            document.getElementById('productCount').innerText = visibleCount;
+            const noRes = document.getElementById('noResults');
+            if (visibleCount === 0) {
+                noRes.classList.remove('hidden');
+            } else {
+                noRes.classList.add('hidden');
+            }
+        }
+
+        function resetFilters() {
+            document.getElementById('searchInput').value = '';
+            document.getElementById('featureFilter').value = 'all';
+            filterCategory('all');
+        }
+
+        // Mobile menu toggle
+        const mobileMenuBtn = document.getElementById('mobileMenuBtn');
+        const mobileMenu = document.getElementById('mobileMenu');
+        const menuIcon = document.getElementById('menuIcon');
+
+        mobileMenuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+            if (mobileMenu.classList.contains('hidden')) {
+                menuIcon.classList.remove('fa-xmark');
+                menuIcon.classList.add('fa-bars');
+            } else {
+                menuIcon.classList.remove('fa-bars');
+                menuIcon.classList.add('fa-xmark');
+            }
+        });
+    </script>
+</body>
+</html>

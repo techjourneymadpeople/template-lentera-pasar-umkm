@@ -50,6 +50,7 @@ template-website-umkm/
 │   ├── gadget-mobile-tech/             # Aksesoris HP, Charger GaN 65W, TWS ANC & Powerbank (Voltix Tech)
 │   ├── gaming-peripherals-studio/      # Mechanical Keyboard Gasket, Ultralight Mouse & Deskmat (Keycraft Studio)
 │   ├── tools-hardware-pro/             # Perkakas Tukang, Bor Cordless 20V, Gerinda & Toolbox (Ironkraft Tools)
+│   ├── moto-garage-accessories/        # Holder HP CNC Anti-Getar OIS, Jas Hujan PVC & Gembok Alarm (Motokraft Garage)
 │   ├── gadget-phone-accessories/       # Case Hp, TWS, Charger & Gadget Acc
 │   ├── hobby-plant-monstera/           # Tanaman Hias, Pot Keramik & Pupuk Urban
 │   ├── hobby-aquatic-aquascape/        # Ikan Hias, Aquascape & Pakan Hewan
