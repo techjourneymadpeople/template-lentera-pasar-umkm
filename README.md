@@ -37,6 +37,7 @@ template-website-umkm/
 │   ├── fashion-loungewear-cozy/        # Piyama Sutra, Daster Modern & Loungewear (Serena Lounge)
 │   ├── footwear-sneakers-street/       # Sneakers Urban Streetwear, Loafers & Sandal (Stride Vault)
 │   ├── bags-leather-atelier/           # Tas Ransel Laptop, Totebag & Dompet Kulit (Saddle & Craft)
+│   ├── accessories-modern-optics/      # Kacamata Acetate UV400, Topi & Sabuk Kulit (Lumen Optics)
 │   ├── fashion-muslim-gamis/           # Hijab, Gamis Syar'i & Abaya Modern
 │   ├── fashion-streetwear-apparel/     # Kaos Distro, Hoodie & Urban Oversize
 │   ├── fashion-batik-etnik/            # Batik Tulis/Cap, Tenun & Kebaya Modern

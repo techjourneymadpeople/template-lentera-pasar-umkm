@@ -1,0 +1,856 @@
+<!DOCTYPE html>
+<html lang="id" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LUMEN OPTICS & ACCENTS — Modern Eyewear & Lifestyle Studio</title>
+    <meta name="description" content="Koleksi kacamata handmade acetate anti-radiasi, kacamata hitam UV400, topi bucket hat, dan ikat pinggang kulit asli dengan panduan bentuk wajah presisi.">
+    
+    <!-- Google Fonts: Space Grotesk & Plus Jakarta Sans -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        optics: {
+                            white: '#FFFFFF',
+                            slate: '#F8FAFC',
+                            card: '#FFFFFF',
+                            border: '#E2E8F0',
+                            borderdark: '#CBD5E1',
+                            charcoal: '#0F172A',
+                            dark: '#1E293B',
+                            amber: '#B45309',
+                            amberlight: '#D97706',
+                            amberbg: '#FEF3C7',
+                            amberborder: '#FDE68A',
+                            silver: '#64748B',
+                            muted: '#94A3B8'
+                        }
+                    },
+                    fontFamily: {
+                        sans: ['"Plus Jakarta Sans"', 'sans-serif'],
+                        display: ['"Space Grotesk"', 'sans-serif'],
+                        mono: ['ui-monospace', 'SFMono-Regular', 'Menlo', 'monospace']
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        .no-scrollbar::-webkit-scrollbar { display: none; }
+        .no-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
+        
+        .optics-card {
+            transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+        }
+        .optics-card:hover {
+            transform: translateY(-4px);
+            border-color: #B45309;
+            box-shadow: 0 16px 30px -10px rgba(180, 83, 9, 0.12);
+        }
+    </style>
+</head>
+<body class="bg-optics-slate text-optics-charcoal font-sans antialiased selection:bg-optics-amber selection:text-white">
+
+    <!-- 1. TOP ANNOUNCEMENT BAR -->
+    <div class="bg-optics-charcoal text-white text-[11px] py-2 px-4 font-mono font-medium border-b border-optics-dark">
+        <div class="max-w-7xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-2 text-center sm:text-left">
+            <div class="flex items-center justify-center gap-2">
+                <span class="inline-flex items-center gap-1.5 px-2 py-0.5 rounded-sm bg-optics-amber text-white text-[9px] font-bold tracking-wider uppercase">
+                    <span class="w-1.5 h-1.5 rounded-full bg-white animate-ping"></span>
+                    OPTICAL RX SERVICE
+                </span>
+                <span class="text-slate-300">Bisa Pasang Lensa Minus, Silinder & Photochromic via WhatsApp</span>
+            </div>
+            <div class="flex items-center gap-4 text-[10px] text-slate-400">
+                <span class="hidden md:inline">Free Hardcase & Kain Microfiber</span>
+                <span class="hidden md:inline text-slate-600">|</span>
+                <a href="katalog.html" class="text-amber-400 hover:text-white underline font-bold transition">Katalog Aksesoris &rarr;</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- 2. NAVBAR -->
+    <header class="sticky top-0 z-40 bg-white/95 backdrop-blur-md border-b border-optics-border transition-all">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-20 sm:h-24">
+                
+                <!-- Brand Logo -->
+                <a href="index.html" class="flex items-center gap-3 group">
+                    <div class="w-11 h-11 bg-optics-charcoal text-white flex items-center justify-center text-xl font-display font-black rounded-sm border border-optics-border group-hover:bg-optics-amber transition">
+                        <span>L</span>
+                    </div>
+                    <div class="flex flex-col">
+                        <span class="text-2xl sm:text-3xl font-display font-black tracking-tight text-optics-charcoal uppercase leading-none group-hover:text-optics-amber transition duration-300">
+                            LUMEN<span class="text-optics-amber">.</span>OPTICS
+                        </span>
+                        <span class="text-[8px] font-mono tracking-[0.28em] text-optics-amber uppercase mt-1 font-bold">
+                            MODERN ACCENT STUDIO
+                        </span>
+                    </div>
+                </a>
+
+                <!-- Desktop Navigation Links -->
+                <nav class="hidden lg:flex items-center gap-8 text-xs font-bold tracking-widest uppercase text-optics-silver font-mono">
+                    <a href="index.html" class="text-optics-charcoal border-b-2 border-optics-amber pb-1">Beranda</a>
+                    <a href="katalog.html" class="hover:text-optics-charcoal transition">Katalog Aksesoris</a>
+                    <a href="detail.html" class="hover:text-optics-charcoal transition">Detail Frame & Lensa</a>
+                    <a href="tentang.html" class="hover:text-optics-charcoal transition">Material Acetate</a>
+                    <a href="artikel.html" class="hover:text-optics-charcoal transition">Panduan Wajah</a>
+                    <a href="kontak.html" class="hover:text-optics-charcoal transition">Fitting Studio & Resep</a>
+                </nav>
+
+                <!-- Action Button & Face Shape Finder Modal -->
+                <div class="hidden sm:flex items-center gap-3">
+                    <button onclick="openFaceModal()" class="inline-flex items-center gap-2 px-4 py-2.5 rounded-sm border border-optics-border hover:border-optics-amber text-xs font-mono font-bold text-optics-charcoal bg-optics-slate shadow-xs transition">
+                        <i class="fa-solid fa-face-smile text-optics-amber"></i>
+                        <span>Cek Bentuk Wajah</span>
+                    </button>
+                    <a href="https://wa.me/6281234567890?text=Halo%20Lumen%20Optics,%20saya%20mau%20pasang%20lensa%20minus." target="_blank" class="inline-flex items-center gap-2 bg-optics-charcoal hover:bg-optics-amber text-white text-xs font-bold font-mono tracking-wider px-5 py-2.5 rounded-sm transition-all shadow-md shadow-optics-charcoal/20">
+                        <i class="fa-brands fa-whatsapp text-emerald-400"></i>
+                        <span>Pesan via WA</span>
+                    </a>
+                </div>
+
+                <!-- Mobile Hamburger Button -->
+                <button id="mobileMenuBtn" class="lg:hidden p-2 text-optics-charcoal hover:text-optics-amber focus:outline-none" aria-label="Toggle Menu">
+                    <i id="menuIcon" class="fa-solid fa-bars-staggered text-xl"></i>
+                </button>
+            </div>
+        </div>
+
+        <!-- Mobile Drawer -->
+        <div id="mobileMenu" class="hidden lg:hidden bg-white border-b border-optics-border px-4 py-5 space-y-3 font-mono">
+            <a href="index.html" class="block text-xs font-bold uppercase tracking-wider text-optics-amber py-2 border-b border-optics-slate">Beranda Utama</a>
+            <a href="katalog.html" class="block text-xs font-bold uppercase tracking-wider text-optics-silver hover:text-optics-charcoal py-2 border-b border-optics-slate">Katalog Kacamata & Topi</a>
+            <a href="detail.html" class="block text-xs font-bold uppercase tracking-wider text-optics-silver hover:text-optics-charcoal py-2 border-b border-optics-slate">Detail Frame & Lensa UV400</a>
+            <a href="tentang.html" class="block text-xs font-bold uppercase tracking-wider text-optics-silver hover:text-optics-charcoal py-2 border-b border-optics-slate">Material Handmade Acetate</a>
+            <a href="artikel.html" class="block text-xs font-bold uppercase tracking-wider text-optics-silver hover:text-optics-charcoal py-2 border-b border-optics-slate">Panduan Frame Sesuai Wajah</a>
+            <a href="kontak.html" class="block text-xs font-bold uppercase tracking-wider text-optics-silver hover:text-optics-charcoal py-2">Fitting Studio & Pasang Resep</a>
+            <div class="pt-2 flex flex-col gap-2">
+                <button onclick="openFaceModal()" class="w-full py-3 rounded-sm bg-optics-slate text-optics-charcoal border border-optics-border text-xs font-bold uppercase tracking-wider flex items-center justify-center gap-2">
+                    <i class="fa-solid fa-face-smile text-optics-amber"></i> Panduan Bentuk Wajah
+                </button>
+                <a href="https://wa.me/6281234567890?text=Halo%20Lumen%20Optics,%20saya%20mau%20konsultasi%20kacamata." target="_blank" class="w-full py-3 rounded-sm bg-optics-charcoal text-white text-xs font-bold uppercase tracking-wider text-center flex items-center justify-center gap-2 shadow-sm">
+                    <i class="fa-brands fa-whatsapp text-emerald-400"></i> Konsultasi Resep Lensa WA
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- 3. CLEAN SPLIT SCREEN HERO: OPTICAL ACCENT STUDIO -->
+    <section class="py-14 sm:py-24 border-b border-optics-border bg-white relative overflow-hidden">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+                
+                <!-- Left Sharp Copy (6 Cols) -->
+                <div class="lg:col-span-6 space-y-6">
+                    <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-sm bg-optics-amberbg border border-optics-amberborder text-optics-amber text-xs font-mono font-bold tracking-wider shadow-xs">
+                        <span class="w-2 h-2 rounded-full bg-optics-amber"></span>
+                        <span class="uppercase tracking-widest text-[10px]">PRECISION ACCENTS & EYEWEAR</span>
+                    </div>
+
+                    <h1 class="text-4xl sm:text-6xl lg:text-7xl font-display font-black text-optics-charcoal tracking-tight leading-[1.05]">
+                        Small Details, <br>
+                        <span class="text-optics-amber underline decoration-amber-300">Big Statement.</span>
+                    </h1>
+
+                    <p class="text-xs sm:text-sm text-optics-silver leading-relaxed max-w-lg font-normal">
+                        Koleksi kacamata *handmade acetate* berbobot ultra-ringan dengan lensa standar optik UV400, dipadukan dengan topi bucket hat katun tebal dan sabuk kulit asli untuk menyempurnakan proporsi gaya harian Anda.
+                    </p>
+
+                    <div class="pt-2 flex flex-wrap items-center gap-4 font-mono">
+                        <a href="katalog.html" class="inline-flex items-center gap-2.5 px-8 py-4 bg-optics-charcoal hover:bg-optics-amber text-white text-xs font-bold tracking-widest uppercase transition-all shadow-lg shadow-optics-charcoal/20">
+                            <span>JELAJAHI KOLEKSI</span>
+                            <i class="fa-solid fa-arrow-right text-[10px]"></i>
+                        </a>
+                        <button onclick="openFaceModal()" class="inline-flex items-center gap-2 px-7 py-4 bg-optics-slate hover:bg-white border border-optics-border text-optics-charcoal text-xs font-bold tracking-widest uppercase transition">
+                            <i class="fa-solid fa-glasses text-optics-amber"></i>
+                            <span>PANDUAN BENTUK WAJAH</span>
+                        </button>
+                    </div>
+
+                    <!-- Quick Optical Specs Strip -->
+                    <div class="pt-4 grid grid-cols-3 gap-4 border-t border-optics-border font-mono text-xs">
+                        <div>
+                            <span class="text-[10px] text-optics-muted uppercase block font-bold">FRAME WEIGHT</span>
+                            <strong class="text-base font-bold text-optics-charcoal">21.5 Gram</strong>
+                            <span class="text-[10px] text-optics-amber block">Ultra-Light Acetate</span>
+                        </div>
+                        <div>
+                            <span class="text-[10px] text-optics-muted uppercase block font-bold">LENS TECH</span>
+                            <strong class="text-base font-bold text-optics-charcoal">UV400 / Blue-Ray</strong>
+                            <span class="text-[10px] text-emerald-600 block">Anti-Radiasi Layar</span>
+                        </div>
+                        <div>
+                            <span class="text-[10px] text-optics-muted uppercase block font-bold">HINGE SYSTEM</span>
+                            <strong class="text-base font-bold text-optics-charcoal">5-Barrel Hinge</strong>
+                            <span class="text-[10px] text-optics-charcoal block">Logam Anti-Longgar</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Right Portrait Collage & Eyewear Close-Up (6 Cols) -->
+                <div class="lg:col-span-6 relative">
+                    <div class="grid grid-cols-12 gap-4 items-center">
+                        
+                        <!-- Main Model Eyewear Portrait (7 Cols) -->
+                        <div class="col-span-7 bg-optics-slate border border-optics-border shadow-xl aspect-[3/4] relative group overflow-hidden">
+                            <img src="https://images.unsplash.com/photo-1511499767150-a48a237f0083?auto=format&fit=crop&w=800&q=80" alt="Model Memakai Kacamata Acetate Havana" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700">
+                            <div class="absolute bottom-3 left-3 right-3 bg-white/95 backdrop-blur-sm p-3.5 border border-optics-border shadow-sm font-mono">
+                                <span class="text-[8px] font-bold text-optics-amber uppercase tracking-wider block">CLASSIC EYEWEAR</span>
+                                <strong class="text-xs font-display font-bold text-optics-charcoal">Solstice Havana Acetate Frame</strong>
+                            </div>
+                        </div>
+
+                        <!-- Side Accent Cards: Bucket Hat & Belt (5 Cols) -->
+                        <div class="col-span-5 space-y-4">
+                            <div class="bg-optics-slate border border-optics-border shadow-md aspect-[3/4] relative group overflow-hidden">
+                                <img src="https://images.unsplash.com/photo-1576871337632-b9aef4c17ab9?auto=format&fit=crop&w=600&q=80" alt="Bucket Hat Katun" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700">
+                                <span class="absolute top-2.5 right-2.5 bg-optics-amber text-white text-[8px] font-mono font-bold px-2 py-0.5 uppercase">
+                                    DAILY HAT
+                                </span>
+                            </div>
+                            <div class="p-4 bg-white border border-optics-border text-xs text-optics-silver space-y-1 font-mono shadow-xs">
+                                <span class="font-display font-bold text-optics-charcoal block text-sm">Standar Optik:</span>
+                                <p class="text-[11px] leading-relaxed font-sans font-normal">Bahan bio-cellulose acetate ramah lingkungan yang tidak memicu alergi di pangkal hidung.</p>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- Value Strip Bar -->
+            <div class="mt-16 max-w-5xl mx-auto grid grid-cols-1 sm:grid-cols-3 gap-6 bg-optics-slate p-6 border border-optics-border shadow-xs text-xs font-mono">
+                <div class="flex items-start gap-3.5">
+                    <div class="w-10 h-10 bg-white text-optics-amber flex items-center justify-center shrink-0 text-base border border-optics-border">
+                        <i class="fa-solid fa-shield-halved"></i>
+                    </div>
+                    <div>
+                        <strong class="text-optics-charcoal font-bold block text-sm uppercase">Lensa Standar Optik UV400</strong>
+                        <span class="text-optics-silver leading-relaxed font-sans text-xs">Menangkal 99.9% radiasi UVA/UVB dan filter blue light berbahaya dari monitor.</span>
+                    </div>
+                </div>
+                <div class="flex items-start gap-3.5">
+                    <div class="w-10 h-10 bg-white text-optics-charcoal flex items-center justify-center shrink-0 text-base border border-optics-border">
+                        <i class="fa-solid fa-feather-pointed"></i>
+                    </div>
+                    <div>
+                        <strong class="text-optics-charcoal font-bold block text-sm uppercase">Ultra-Lightweight & Tough</strong>
+                        <span class="text-optics-silver leading-relaxed font-sans text-xs">Bobot kurang dari 22 gram dengan struktur polimer acetate anti-patah.</span>
+                    </div>
+                </div>
+                <div class="flex items-start gap-3.5">
+                    <div class="w-10 h-10 bg-white text-emerald-600 flex items-center justify-center shrink-0 text-base border border-optics-border">
+                        <i class="fa-solid fa-wrench"></i>
+                    </div>
+                    <div>
+                        <strong class="text-optics-charcoal font-bold block text-sm uppercase">Free Penyetelan Tangkai</strong>
+                        <span class="text-optics-silver leading-relaxed font-sans text-xs">Garansi servis gratis pengencangan baut engsel dan fitting hidung seumur hidup.</span>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- 4. SECTION KHUSUS: PANDUAN BENTUK WAJAH (FACE SHAPE GUIDE) -->
+    <section class="py-16 bg-white border-b border-optics-border font-mono">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            
+            <div class="text-center max-w-2xl mx-auto mb-12">
+                <span class="text-xs font-mono uppercase tracking-[0.25em] text-optics-amber font-bold block mb-1">
+                    // FACE SHAPE HARMONY
+                </span>
+                <h2 class="text-2xl sm:text-4xl font-display font-black text-optics-charcoal uppercase">
+                    Panduan Bentuk Wajah & Frame
+                </h2>
+                <p class="text-xs sm:text-sm text-optics-silver mt-1 font-sans">
+                    Temukan siluet kacamata yang menonjolkan fitur terbaik wajah dan memberikan proporsi proporsional.
+                </p>
+            </div>
+
+            <!-- 4 Face Shape Cards -->
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+                
+                <!-- Face 1: Wajah Bulat -->
+                <div class="bg-optics-slate border border-optics-border p-5 flex flex-col justify-between optics-card">
+                    <div>
+                        <div class="w-12 h-12 bg-white text-optics-amber flex items-center justify-center text-xl mb-4 border border-optics-border">
+                            <i class="fa-regular fa-circle"></i>
+                        </div>
+                        <span class="text-[9px] font-bold text-optics-amber uppercase tracking-wider block">PIPI PENUH & RAHANG LEMBUT</span>
+                        <h3 class="text-lg font-display font-bold text-optics-charcoal mt-1">Wajah Bulat (Round)</h3>
+                        <p class="text-xs text-optics-silver mt-2 leading-relaxed font-sans font-normal">
+                            Pilih frame bersudut tegas seperti **Kotak (Square/Wayfarer)** atau **Hexagonal** untuk memberi ilusi wajah lebih tirus dan berstruktur.
+                        </p>
+                    </div>
+                    <div class="mt-6 pt-3 border-t border-optics-border">
+                        <a href="katalog.html" class="text-xs text-optics-amber hover:text-optics-charcoal font-bold flex items-center justify-between">
+                            <span>Frame Kotak & Wayfarer</span>
+                            <span>&rarr;</span>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Face 2: Wajah Kotak -->
+                <div class="bg-optics-slate border border-optics-border p-5 flex flex-col justify-between optics-card">
+                    <div>
+                        <div class="w-12 h-12 bg-white text-optics-charcoal flex items-center justify-center text-xl mb-4 border border-optics-border">
+                            <i class="fa-regular fa-square"></i>
+                        </div>
+                        <span class="text-[9px] font-bold text-optics-charcoal uppercase tracking-wider block">GARIS RAHANG TEGAS & DAHI LEBAR</span>
+                        <h3 class="text-lg font-display font-bold text-optics-charcoal mt-1">Wajah Kotak (Square)</h3>
+                        <p class="text-xs text-optics-silver mt-2 leading-relaxed font-sans font-normal">
+                            Pilih frame dengan kurva lembut seperti **Bulat (Round)** atau **Oval Retro** untuk melunakkan garis rahang yang tegas.
+                        </p>
+                    </div>
+                    <div class="mt-6 pt-3 border-t border-optics-border">
+                        <a href="katalog.html" class="text-xs text-optics-amber hover:text-optics-charcoal font-bold flex items-center justify-between">
+                            <span>Frame Bulat & Oval</span>
+                            <span>&rarr;</span>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Face 3: Wajah Oval -->
+                <div class="bg-optics-slate border border-optics-border p-5 flex flex-col justify-between optics-card">
+                    <div>
+                        <div class="w-12 h-12 bg-white text-emerald-600 flex items-center justify-center text-xl mb-4 border border-optics-border">
+                            <i class="fa-solid fa-egg"></i>
+                        </div>
+                        <span class="text-[9px] font-bold text-emerald-600 uppercase tracking-wider block">PROPORSI SEIMBANG & IDEAL</span>
+                        <h3 class="text-lg font-display font-bold text-optics-charcoal mt-1">Wajah Oval (Balanced)</h3>
+                        <p class="text-xs text-optics-silver mt-2 leading-relaxed font-sans font-normal">
+                            Bentuk paling fleksibel yang cocok memakai hampir semua model frame: **Aviator**, **Cat-Eye**, hingga **Oversized Geometric**.
+                        </p>
+                    </div>
+                    <div class="mt-6 pt-3 border-t border-optics-border">
+                        <a href="katalog.html" class="text-xs text-optics-amber hover:text-optics-charcoal font-bold flex items-center justify-between">
+                            <span>Semua Siluet Frame</span>
+                            <span>&rarr;</span>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Face 4: Wajah Hati / Segitiga -->
+                <div class="bg-optics-slate border border-optics-border p-5 flex flex-col justify-between optics-card">
+                    <div>
+                        <div class="w-12 h-12 bg-white text-rose-600 flex items-center justify-center text-xl mb-4 border border-optics-border">
+                            <i class="fa-regular fa-heart"></i>
+                        </div>
+                        <span class="text-[9px] font-bold text-rose-600 uppercase tracking-wider block">DAHI LEBAR & DAGU LANCIP</span>
+                        <h3 class="text-lg font-display font-bold text-optics-charcoal mt-1">Wajah Hati (Heart)</h3>
+                        <p class="text-xs text-optics-silver mt-2 leading-relaxed font-sans font-normal">
+                            Pilih frame yang lebih lebar di bagian bawah atau berdesain **Cat-Eye Klasik / Clubmaster** untuk mengimbangi dahi yang lebar.
+                        </p>
+                    </div>
+                    <div class="mt-6 pt-3 border-t border-optics-border">
+                        <a href="katalog.html" class="text-xs text-optics-amber hover:text-optics-charcoal font-bold flex items-center justify-between">
+                            <span>Frame Cat-Eye & Browline</span>
+                            <span>&rarr;</span>
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+    <!-- 5. PRODUK UNGGULAN: GRID 4 KOLOM AKSESORIS -->
+    <section class="py-16 bg-optics-slate border-b border-optics-border font-mono">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            
+            <div class="flex flex-col md:flex-row md:items-end justify-between mb-12">
+                <div>
+                    <span class="text-xs font-mono uppercase tracking-[0.25em] text-optics-amber font-bold block mb-1">
+                        // STUDIO CURATION
+                    </span>
+                    <h2 class="text-2xl sm:text-4xl font-display font-black text-optics-charcoal uppercase">
+                        Aksesoris Esensial Terlaris
+                    </h2>
+                    <p class="text-xs sm:text-sm text-optics-silver mt-1 font-sans">
+                        Pilihan kacamata acetate bergradasi optik, topi katun berlingkar nyaman, dan sabuk kulit asli.
+                    </p>
+                </div>
+                <a href="katalog.html" class="mt-4 md:mt-0 text-xs font-mono font-bold text-optics-charcoal border-b border-optics-charcoal pb-0.5 hover:text-optics-amber transition uppercase tracking-wider">
+                    Lihat Semua 8 Model Aksesoris &rarr;
+                </a>
+            </div>
+
+            <!-- 4 Column Product Grid -->
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+                
+                <!-- Product 1: Solstice Havana Acetate Frame -->
+                <div class="bg-white border border-optics-border p-4 flex flex-col justify-between optics-card">
+                    <div>
+                        <div class="aspect-[4/3] bg-optics-slate overflow-hidden mb-3 relative group border border-optics-border">
+                            <img src="https://images.unsplash.com/photo-1511499767150-a48a237f0083?auto=format&fit=crop&w=500&q=80" alt="Solstice Havana" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+                            <span class="absolute top-2 left-2 bg-optics-amber text-white text-[8px] font-bold px-2 py-0.5 uppercase">
+                                BEST SELLER
+                            </span>
+                        </div>
+
+                        <div class="flex items-center gap-1.5 mb-1.5 text-[10px] text-optics-amber font-bold uppercase">
+                            <i class="fa-solid fa-glasses"></i>
+                            <span>Handmade Acetate • 21.5g</span>
+                        </div>
+
+                        <h3 class="font-display font-bold text-base text-optics-charcoal leading-tight">Solstice Havana Acetate Frame</h3>
+                        <p class="text-xs text-optics-silver mt-1 font-sans line-clamp-2">Kacamata kotak klasik bermotif tortoise mewah dengan lensa anti-radiasi blue light.</p>
+                        
+                        <div class="mt-2 text-[10px] text-slate-500">
+                            <span>Dimensi: 51-19-145 mm (Wajah Sedang-Lebar)</span>
+                        </div>
+                    </div>
+
+                    <div class="mt-4 pt-3 border-t border-optics-border flex items-center justify-between">
+                        <div>
+                            <span class="text-[9px] text-optics-muted block uppercase">Harga Frame</span>
+                            <span class="font-display font-bold text-base text-optics-charcoal">Rp 349.000</span>
+                        </div>
+                        <a href="detail.html" class="px-3 py-1.5 bg-optics-charcoal hover:bg-optics-amber text-white text-xs font-bold uppercase transition">
+                            Detail &rarr;
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Product 2: Eclipse Polarized Aviator Sunglasses -->
+                <div class="bg-white border border-optics-border p-4 flex flex-col justify-between optics-card">
+                    <div>
+                        <div class="aspect-[4/3] bg-optics-slate overflow-hidden mb-3 relative group border border-optics-border">
+                            <img src="https://images.unsplash.com/photo-1572635196237-14b3f281503f?auto=format&fit=crop&w=500&q=80" alt="Eclipse Aviator" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+                            <span class="absolute top-2 left-2 bg-optics-charcoal text-white text-[8px] font-bold px-2 py-0.5 uppercase">
+                                UV400 POLARIZED
+                            </span>
+                        </div>
+
+                        <div class="flex items-center gap-1.5 mb-1.5 text-[10px] text-optics-charcoal font-bold uppercase">
+                            <i class="fa-solid fa-sun"></i>
+                            <span>Titanium Alloy • 18.0g</span>
+                        </div>
+
+                        <h3 class="font-display font-bold text-base text-optics-charcoal leading-tight">Eclipse Polarized Aviator</h3>
+                        <p class="text-xs text-optics-silver mt-1 font-sans line-clamp-2">Kacamata hitam frame titanium ringan anti-silau untuk berkendara dan outdoor.</p>
+                        
+                        <div class="mt-2 text-[10px] text-slate-500">
+                            <span>Lensa: Polarized TAC 1.1mm Redam Pantulan Air</span>
+                        </div>
+                    </div>
+
+                    <div class="mt-4 pt-3 border-t border-optics-border flex items-center justify-between">
+                        <div>
+                            <span class="text-[9px] text-optics-muted block uppercase">Harga Frame</span>
+                            <span class="font-display font-bold text-base text-optics-charcoal">Rp 389.000</span>
+                        </div>
+                        <a href="detail.html" class="px-3 py-1.5 bg-optics-charcoal hover:bg-optics-amber text-white text-xs font-bold uppercase transition">
+                            Detail &rarr;
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Product 3: Haven Heavyweight Cotton Bucket Hat -->
+                <div class="bg-white border border-optics-border p-4 flex flex-col justify-between optics-card">
+                    <div>
+                        <div class="aspect-[4/3] bg-optics-slate overflow-hidden mb-3 relative group border border-optics-border">
+                            <img src="https://images.unsplash.com/photo-1576871337632-b9aef4c17ab9?auto=format&fit=crop&w=500&q=80" alt="Haven Bucket Hat" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+                            <span class="absolute top-2 left-2 bg-emerald-700 text-white text-[8px] font-bold px-2 py-0.5 uppercase">
+                                100% COTTON
+                            </span>
+                        </div>
+
+                        <div class="flex items-center gap-1.5 mb-1.5 text-[10px] text-emerald-700 font-bold uppercase">
+                            <i class="fa-solid fa-hat-cowboy"></i>
+                            <span>Lingkar Kepala: 56–58 cm</span>
+                        </div>
+
+                        <h3 class="font-display font-bold text-base text-optics-charcoal leading-tight">Haven Twill Bucket Hat</h3>
+                        <p class="text-xs text-optics-silver mt-1 font-sans line-clamp-2">Topi bucket bahan katun twill tebal yang sejuk dengan brim berstruktur rapi.</p>
+                        
+                        <div class="mt-2 text-[10px] text-slate-500">
+                            <span>Warna: Sand Beige • Olive Green • Black</span>
+                        </div>
+                    </div>
+
+                    <div class="mt-4 pt-3 border-t border-optics-border flex items-center justify-between">
+                        <div>
+                            <span class="text-[9px] text-optics-muted block uppercase">Harga Resmi</span>
+                            <span class="font-display font-bold text-base text-optics-charcoal">Rp 169.000</span>
+                        </div>
+                        <a href="detail.html" class="px-3 py-1.5 bg-optics-charcoal hover:bg-optics-amber text-white text-xs font-bold uppercase transition">
+                            Detail &rarr;
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Product 4: Artisan Full-Grain Leather Belt -->
+                <div class="bg-white border border-optics-border p-4 flex flex-col justify-between optics-card">
+                    <div>
+                        <div class="aspect-[4/3] bg-optics-slate overflow-hidden mb-3 relative group border border-optics-border">
+                            <img src="https://images.unsplash.com/photo-1624222247344-550fb60583dc?auto=format&fit=crop&w=500&q=80" alt="Leather Belt" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+                            <span class="absolute top-2 left-2 bg-optics-amber text-white text-[8px] font-bold px-2 py-0.5 uppercase">
+                                KULIT SAPI ASLI
+                            </span>
+                        </div>
+
+                        <div class="flex items-center gap-1.5 mb-1.5 text-[10px] text-optics-amber font-bold uppercase">
+                            <i class="fa-solid fa-ribbon"></i>
+                            <span>Lebar 3.5cm • Panjang 115-125cm</span>
+                        </div>
+
+                        <h3 class="font-display font-bold text-base text-optics-charcoal leading-tight">Artisan Full-Grain Leather Belt</h3>
+                        <p class="text-xs text-optics-silver mt-1 font-sans line-clamp-2">Sabuk kulit sapi nabati tebal 3.8mm dengan buckle logam kuningan bebas karat.</p>
+                        
+                        <div class="mt-2 text-[10px] text-slate-500">
+                            <span>Warna: Vintage Tan • Dark Chocolate • Black</span>
+                        </div>
+                    </div>
+
+                    <div class="mt-4 pt-3 border-t border-optics-border flex items-center justify-between">
+                        <div>
+                            <span class="text-[9px] text-optics-muted block uppercase">Harga Resmi</span>
+                            <span class="font-display font-bold text-base text-optics-charcoal">Rp 229.000</span>
+                        </div>
+                        <a href="detail.html" class="px-3 py-1.5 bg-optics-charcoal hover:bg-optics-amber text-white text-xs font-bold uppercase transition">
+                            Detail &rarr;
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+    <!-- 6. TESTIMONI PELANGGAN -->
+    <section class="py-16 bg-white border-b border-optics-border font-mono">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            
+            <div class="text-center max-w-2xl mx-auto mb-12">
+                <span class="text-xs font-mono uppercase tracking-[0.25em] text-optics-amber font-bold block mb-1">
+                    // ACCENT LOVERS
+                </span>
+                <h2 class="text-2xl sm:text-4xl font-display font-black text-optics-charcoal uppercase">
+                    Cerita Gaya Pemakai Lumen
+                </h2>
+                <p class="text-xs sm:text-sm text-optics-silver mt-1 font-sans">
+                    Bagaimana kacamata dan aksesoris kami meningkatkan rasa percaya diri sehari-hari.
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                
+                <div class="bg-optics-slate p-6 border border-optics-border flex flex-col justify-between shadow-xs">
+                    <div>
+                        <div class="flex items-center gap-1 text-amber-500 text-xs mb-3">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                        <p class="text-xs text-optics-charcoal leading-relaxed font-sans italic">
+                            "Frame Solstice Havana-nya beneran ringan banget! Dipakai kerja depan laptop 8 jam non-stop hidung nggak berbekas merah sama sekali. Lensa anti-blueray-nya bikin mata nggak gampang lelah."
+                        </p>
+                    </div>
+                    <div class="mt-6 pt-3 border-t border-optics-border flex items-center justify-between text-xs">
+                        <strong class="text-optics-charcoal font-bold font-display">Adinda Maharani</strong>
+                        <span class="text-[10px] text-optics-amber font-mono">Product Designer — Jakarta</span>
+                    </div>
+                </div>
+
+                <div class="bg-optics-slate p-6 border border-optics-border flex flex-col justify-between shadow-xs">
+                    <div>
+                        <div class="flex items-center gap-1 text-amber-500 text-xs mb-3">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                        <p class="text-xs text-optics-charcoal leading-relaxed font-sans italic">
+                            "Panduan bentuk wajahnya sangat membantu! Wajah saya agak bulat, setelah coba frame kotak dari Lumen proporsi muka jadi kelihatan lebih tegas dan estetik pas foto OOTD."
+                        </p>
+                    </div>
+                    <div class="mt-6 pt-3 border-t border-optics-border flex items-center justify-between text-xs">
+                        <strong class="text-optics-charcoal font-bold font-display">Rendra Pratama</strong>
+                        <span class="text-[10px] text-optics-amber font-mono">Content Creator — Bali</span>
+                    </div>
+                </div>
+
+                <div class="bg-optics-slate p-6 border border-optics-border flex flex-col justify-between shadow-xs">
+                    <div>
+                        <div class="flex items-center gap-1 text-amber-500 text-xs mb-3">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                        <p class="text-xs text-optics-charcoal leading-relaxed font-sans italic">
+                            "Proses pasang lensa minus lewat WhatsApp cepat banget. Cukup kirim foto resep dokter, 2 hari kemudian kacamata udah sampai di rumah lengkap dengan hardcase magnetik yang mewah."
+                        </p>
+                    </div>
+                    <div class="mt-6 pt-3 border-t border-optics-border flex items-center justify-between text-xs">
+                        <strong class="text-optics-charcoal font-bold font-display">Vania Setiawan</strong>
+                        <span class="text-[10px] text-optics-amber font-mono">Financial Analyst — Surabaya</span>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+    <!-- 7. FOOTER -->
+    <footer class="bg-optics-charcoal text-slate-400 border-t border-optics-dark pt-14 pb-28 font-mono">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-10">
+                
+                <div class="lg:col-span-2 space-y-4">
+                    <div class="flex items-center gap-3">
+                        <div class="w-9 h-9 bg-optics-amber text-white flex items-center justify-center text-lg font-display font-black">
+                            <span>L</span>
+                        </div>
+                        <span class="text-2xl font-display font-black text-white uppercase tracking-tight">
+                            LUMEN<span class="text-optics-amber">.</span>OPTICS
+                        </span>
+                    </div>
+                    <p class="text-xs text-slate-300 leading-relaxed max-w-sm font-sans">
+                        Lentera Pasar Modern Eyewear & Fashion Accents Template. Menghadirkan kacamata handmade acetate berstandar optik klinis, lensa proteksi UV400 anti-radiasi, bucket hat katun, dan ikat pinggang kulit asli berkualitas tinggi.
+                    </p>
+                    <div class="pt-2 text-xs text-slate-300 space-y-1 font-sans">
+                        <div><i class="fa-solid fa-location-dot text-optics-amber mr-2"></i> Studio Fitting: Jl. Senopati No. 64, Kebayoran Baru, Jakarta Selatan 12190</div>
+                        <div><i class="fa-brands fa-whatsapp text-emerald-400 mr-2"></i> +62 812-3456-7890 (Customer Care WhatsApp)</div>
+                    </div>
+                </div>
+
+                <div>
+                    <h4 class="text-xs font-bold uppercase tracking-wider text-white mb-4">Navigasi Utama</h4>
+                    <ul class="space-y-2.5 text-xs text-slate-300">
+                        <li><a href="index.html" class="hover:text-white transition">Beranda Utama</a></li>
+                        <li><a href="katalog.html" class="hover:text-white transition">Katalog Aksesoris</a></li>
+                        <li><a href="detail.html" class="hover:text-white transition">Detail Frame & Lensa</a></li>
+                        <li><a href="tentang.html" class="hover:text-white transition">Material Acetate</a></li>
+                        <li><a href="artikel.html" class="hover:text-white transition">Panduan Wajah</a></li>
+                        <li><a href="kontak.html" class="hover:text-white transition">Fitting Studio & Resep</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h4 class="text-xs font-bold uppercase tracking-wider text-white mb-4">Kategori Produk</h4>
+                    <ul class="space-y-2.5 text-xs text-slate-300">
+                        <li><a href="katalog.html" class="hover:text-white transition">Kacamata Frame Minus</a></li>
+                        <li><a href="katalog.html" class="hover:text-white transition">Kacamata Hitam UV400</a></li>
+                        <li><a href="katalog.html" class="hover:text-white transition">Twill Bucket Hat</a></li>
+                        <li><a href="katalog.html" class="hover:text-white transition">Sabuk Kulit Sapi Asli</a></li>
+                        <li><a href="katalog.html" class="hover:text-white transition">Lensa Photochromic</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h4 class="text-xs font-bold uppercase tracking-wider text-white mb-4">Jaminan Standar</h4>
+                    <div class="space-y-2 text-xs">
+                        <div class="p-3 bg-optics-dark border border-slate-700">
+                            <span class="text-[10px] text-optics-amber block uppercase font-bold">OPTICAL GRADE:</span>
+                            <span class="font-bold text-white text-[11px]">Lensa Anti-Radiasi Blue-Ray</span>
+                        </div>
+                        <div class="p-3 bg-optics-dark border border-slate-700">
+                            <span class="text-[10px] text-emerald-400 block uppercase font-bold">LIFETIME SERVICE:</span>
+                            <span class="font-bold text-white text-[11px]">Free Penyetelan Tangkai</span>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="mt-12 pt-8 border-t border-slate-800 flex flex-col sm:flex-row items-center justify-between text-xs text-slate-500">
+                <p>&copy; 2026 LUMEN OPTICS & ACCENT STUDIO. All Rights Reserved.</p>
+                <p class="text-[11px] mt-2 sm:mt-0 font-sans">Lentera Pasar Production Template — Modern Optical & Accents</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- ========================================================================= -->
+    <!-- INTERACTIVE FACE SHAPE & FRAME FINDER MODAL                               -->
+    <!-- ========================================================================= -->
+    <div id="faceModal" class="fixed inset-0 z-50 bg-black/80 backdrop-blur-sm hidden flex items-center justify-center p-4 font-mono">
+        <div class="bg-white border border-optics-border max-w-lg w-full p-6 sm:p-8 shadow-2xl relative text-optics-charcoal">
+            <button onclick="closeFaceModal()" class="absolute top-5 right-5 text-optics-silver hover:text-optics-charcoal text-lg p-1">
+                <i class="fa-solid fa-xmark"></i>
+            </button>
+            
+            <div class="flex items-center gap-3 mb-6">
+                <div class="w-10 h-10 bg-optics-charcoal text-white flex items-center justify-center text-lg border border-optics-border">
+                    <i class="fa-solid fa-face-smile text-optics-amber"></i>
+                </div>
+                <div>
+                    <h3 class="text-lg font-display font-bold text-optics-charcoal uppercase">Kalkulator Bentuk Wajah & Frame</h3>
+                    <p class="text-xs text-optics-silver font-sans">Pilih karakteristik garis rahang Anda untuk rekomendasi frame terbaik.</p>
+                </div>
+            </div>
+
+            <div class="space-y-4 text-xs">
+                <div>
+                    <label class="block font-bold text-optics-charcoal mb-1.5 uppercase">Bentuk Wajah Anda:</label>
+                    <select id="faceShapeSelect" onchange="calculateFaceMatch()" class="w-full p-3 border border-optics-border bg-optics-slate text-optics-charcoal focus:outline-none focus:border-optics-amber text-xs font-mono">
+                        <option value="round">Wajah Bulat (Pipi penuh, garis rahang melengkung)</option>
+                        <option value="square">Wajah Kotak (Garis rahang tegas, dahi lebar)</option>
+                        <option value="oval">Wajah Oval (Panjang wajah proporsional, dagu bulat)</option>
+                        <option value="heart">Wajah Hati (Dahi lebar, dagu lancip)</option>
+                    </select>
+                </div>
+
+                <div id="faceResultBox" class="p-4 bg-optics-slate border border-optics-border space-y-2">
+                    <span class="text-[10px] font-bold text-optics-amber uppercase block">// REKOMENDASI MODEL FRAME:</span>
+                    <h5 id="faceTitleDisplay" class="font-display font-bold text-optics-charcoal text-base">Solstice Havana Square Frame (Kotak Bersudut)</h5>
+                    <p id="faceDescDisplay" class="text-[11px] text-optics-silver font-sans leading-relaxed">
+                        Frame bersudut tegas akan memberikan kontras visual yang memanjangkan wajah dan menyeimbangkan pipi penuh.
+                    </p>
+                </div>
+
+                <div class="pt-2 flex items-center justify-between gap-3">
+                    <a id="faceWaLink" href="https://wa.me/6281234567890?text=Halo%20Lumen%20Optics,%20bentuk%20wajah%20saya%20bulat.%20Saya%20tertarik%20rekomendasi%20frame%20Solstice%20Havana." target="_blank" class="w-full py-3.5 bg-optics-charcoal hover:bg-optics-amber text-white font-bold text-xs uppercase tracking-wider text-center transition shadow-md shadow-optics-charcoal/20">
+                        Konsultasi Frame via WhatsApp &rarr;
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ========================================================================= -->
+    <!-- FLOATING WHATSAPP BUTTON (bottom-24)                                      -->
+    <!-- ========================================================================= -->
+    <a href="https://wa.me/6281234567890?text=Halo%20Lumen%20Optics,%20saya%20ingin%20konsultasi%20kacamata%20dan%20resep%20lensa." 
+       target="_blank" 
+       class="fixed bottom-24 right-6 z-50 group flex items-center gap-3 bg-white hover:bg-optics-slate text-optics-charcoal px-4 py-3 border border-optics-border shadow-2xl hover:border-optics-amber transition-all duration-300 font-mono" 
+       aria-label="Konsultasi Kacamata via WhatsApp">
+        <span class="relative flex h-3 w-3">
+            <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-optics-amber opacity-75"></span>
+            <span class="relative inline-flex rounded-full h-3 w-3 bg-optics-amber"></span>
+        </span>
+        <i class="fa-brands fa-whatsapp text-2xl text-emerald-600"></i>
+        <div class="text-left hidden sm:block pr-1">
+            <div class="text-[10px] text-optics-amber font-bold uppercase tracking-wider leading-none">Optical Specialist</div>
+            <span class="font-bold text-xs text-optics-charcoal">Konsultasi Lensa WA</span>
+        </div>
+    </a>
+
+    <!-- ========================================================================= -->
+    <!-- LENTERA PASAR - STICKY DEMO & SALES BAR (fixed bottom-4)                 -->
+    <!-- ========================================================================= -->
+    <div class="fixed bottom-4 left-1/2 -translate-x-1/2 z-50 w-[95%] max-w-4xl bg-slate-900/95 backdrop-blur-md text-white p-3.5 md:p-4 rounded-2xl shadow-2xl border border-slate-700/80 transition-all duration-300">
+      <div class="flex flex-col md:flex-row items-center justify-between gap-3 md:gap-4">
+        
+        <div class="flex items-center gap-3 w-full md:w-auto">
+          <div class="w-10 h-10 rounded-xl bg-amber-500/20 border border-amber-500/40 flex items-center justify-center shrink-0">
+            <svg class="w-5 h-5 text-amber-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z" />
+            </svg>
+          </div>
+          <div>
+            <div class="flex items-center gap-2">
+              <span class="font-bold text-sm text-white">Lentera Pasar Engine</span>
+              <span class="text-[10px] bg-amber-500/20 text-amber-300 border border-amber-500/30 px-2 py-0.5 rounded-full font-medium">Eyewear & Accents Template</span>
+            </div>
+            <p class="text-xs text-slate-300 hidden sm:block">
+              Terima beres: Website responsif + Panel input produk sendiri + Dikelola tim iklan profesional.
+            </p>
+          </div>
+        </div>
+
+        <div class="flex items-center justify-between md:justify-end gap-3 w-full md:w-auto">
+          <div class="hidden lg:flex items-center gap-2 text-xs text-slate-400 border-r border-slate-700 pr-4">
+            <div class="flex items-center gap-1 text-slate-200">
+              <svg class="w-4 h-4 text-emerald-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" /></svg>
+              <span>Face Shape Guide</span>
+            </div>
+            <span class="text-slate-600">•</span>
+            <div class="flex items-center gap-1 text-slate-200">
+              <svg class="w-4 h-4 text-emerald-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" /></svg>
+              <span>Optical Rx Service</span>
+            </div>
+          </div>
+
+          <a href="https://wa.me/6281234567890?text=Halo%20Tim%20Lentera%20Pasar,%20saya%20tertarik%20menggunakan%20template%20website%20Eyewear%20%26%20Accessories%20ini%20lengkap%20dengan%20Admin%20Panel%20dan%20Jasa%20Iklannya." 
+             target="_blank"
+             class="w-full md:w-auto inline-flex items-center justify-center gap-2 bg-gradient-to-r from-amber-600 to-yellow-600 hover:from-amber-500 hover:to-yellow-500 text-white text-xs md:text-sm font-bold px-5 py-2.5 rounded-xl shadow-lg transition-all hover:scale-105 shrink-0">
+            <span>Gunakan Template Ini</span>
+            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3" />
+            </svg>
+          </a>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- SCRIPT LOGIC -->
+    <script>
+        // Face Modal Logic
+        const faceModal = document.getElementById('faceModal');
+        function openFaceModal() {
+            faceModal.classList.remove('hidden');
+            calculateFaceMatch();
+        }
+        function closeFaceModal() {
+            faceModal.classList.add('hidden');
+        }
+
+        function calculateFaceMatch() {
+            const val = document.getElementById('faceShapeSelect').value;
+            const titleDisp = document.getElementById('faceTitleDisplay');
+            const descDisp = document.getElementById('faceDescDisplay');
+            const waLink = document.getElementById('faceWaLink');
+
+            if (val === 'round') {
+                titleDisp.innerText = "Solstice Havana Square Frame (Frame Kotak/Wayfarer)";
+                descDisp.innerText = "Frame bersudut tegas akan memberikan kontras visual yang memanjangkan wajah dan menyeimbangkan pipi penuh.";
+                waLink.href = "https://wa.me/6281234567890?text=Halo%20Lumen%20Optics,%20bentuk%20wajah%20saya%20bulat.%20Saya%20tertarik%20frame%20Solstice%20Havana%20Square.";
+            } else if (val === 'square') {
+                titleDisp.innerText = "Aura Retro Round Frame (Frame Bulat / Oval)";
+                descDisp.innerText = "Siluet melingkar lembut akan melunakkan sudut rahang yang tegas dan memberikan kesan wajah lebih proporsional.";
+                waLink.href = "https://wa.me/6281234567890?text=Halo%20Lumen%20Optics,%20bentuk%20wajah%20saya%20kotak.%20Saya%20tertarik%20frame%20Aura%20Retro%20Round.";
+            } else if (val === 'oval') {
+                titleDisp.innerText = "Eclipse Polarized Aviator / Hexagonal Frame";
+                descDisp.innerText = "Proporsi wajah oval sangat seimbang dan cocok mengenakan hampir semua gaya frame dari Aviator hingga Geometric.";
+                waLink.href = "https://wa.me/6281234567890?text=Halo%20Lumen%20Optics,%20bentuk%20wajah%20saya%20oval.%20Saya%20tertarik%20frame%20Eclipse%20Aviator.";
+            } else {
+                titleDisp.innerText = "Stella Vintage Cat-Eye / Browline Frame";
+                descDisp.innerText = "Frame dengan aksen melebar di sudut atas akan mengimbangi dahi yang lebar dan mempertegas dagu lancip.";
+                waLink.href = "https://wa.me/6281234567890?text=Halo%20Lumen%20Optics,%20bentuk%20wajah%20saya%20hati.%20Saya%20tertarik%20frame%20Stella%20Cat-Eye.";
+            }
+        }
+
+        // Mobile menu toggle
+        const mobileMenuBtn = document.getElementById('mobileMenuBtn');
+        const mobileMenu = document.getElementById('mobileMenu');
+        const menuIcon = document.getElementById('menuIcon');
+
+        mobileMenuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+            if (mobileMenu.classList.contains('hidden')) {
+                menuIcon.classList.remove('fa-xmark');
+                menuIcon.classList.add('fa-bars-staggered');
+            } else {
+                menuIcon.classList.remove('fa-bars-staggered');
+                menuIcon.classList.add('fa-xmark');
+            }
+        });
+    </script>
+</body>
+</html>
