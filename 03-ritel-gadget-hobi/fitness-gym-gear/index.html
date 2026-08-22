@@ -1,0 +1,910 @@
+<!DOCTYPE html>
+<html lang="id" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IRONPULSE // Dynamic Home Gym & Fitness Studio</title>
+    <meta name="description" content="Peralatan fitness dan gym rumahan: Dumbbell hexagonal rubber anti-banting, barbell cast iron, matras yoga TPE 8mm, resistance band, dan shaker protein bergaransi resmi.">
+    
+    <!-- Google Fonts: Barlow Semi Condensed & Plus Jakarta Sans -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:ital,wght@0,600;0,700;0,800;0,900;1,700&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Space+Grotesk:wght@600;700&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        gym: {
+                            bg: '#121215',
+                            dark: '#18181B',
+                            card: '#222227',
+                            cardlight: '#2C2C33',
+                            border: '#363640',
+                            yellow: '#EAB308',
+                            yellowdark: '#CA8A04',
+                            amber: '#F59E0B',
+                            steel: '#F4F4F5',
+                            silver: '#A1A1AA'
+                        }
+                    },
+                    fontFamily: {
+                        sans: ['"Plus Jakarta Sans"', 'sans-serif'],
+                        display: ['"Barlow Semi Condensed"', 'sans-serif'],
+                        mono: ['"Space Grotesk"', 'monospace']
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        .no-scrollbar::-webkit-scrollbar { display: none; }
+        .no-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
+        
+        .gym-btn {
+            transition: all 0.2s cubic-bezier(0.16, 1, 0.3, 1);
+        }
+        .gym-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 10px 25px -6px rgba(234, 179, 8, 0.45);
+        }
+    </style>
+</head>
+<body class="bg-gym-bg text-gym-steel font-sans antialiased selection:bg-gym-yellow selection:text-black">
+
+    <!-- 1. TOP BAR ALERT -->
+    <div class="bg-gym-dark text-gym-silver text-xs py-2 px-4 font-mono font-bold border-b border-gym-border">
+        <div class="max-w-7xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-2 text-center sm:text-left">
+            <div class="flex items-center justify-center gap-2">
+                <span class="px-2 py-0.5 bg-gym-yellow text-black text-[10px] uppercase font-display font-black tracking-wider">
+                    HEAVY CARGO READY
+                </span>
+                <span class="text-white">Siap Kirim Paket Beban Berat via Kargo Murah Se-Indonesia • Garansi Presisi Berat 100%</span>
+            </div>
+            <div class="flex items-center gap-4 text-xs font-mono">
+                <span class="hidden md:inline">Showroom Kelapa Gading Jakarta</span>
+                <span class="hidden md:inline">|</span>
+                <a href="katalog.html" class="text-gym-yellow hover:text-white underline font-extrabold transition">Buka Katalog Alat &rarr;</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- 2. NAVBAR -->
+    <header class="sticky top-0 z-40 bg-gym-bg/95 backdrop-blur-md border-b border-gym-border transition-all">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-20 sm:h-24">
+                
+                <!-- Logo -->
+                <a href="index.html" class="flex items-center gap-3 group">
+                    <div class="w-11 h-11 bg-gym-yellow text-black flex items-center justify-center text-xl font-display font-black border-2 border-gym-yellow shadow-lg group-hover:bg-black group-hover:text-gym-yellow transition">
+                        <i class="fa-solid fa-dumbbell"></i>
+                    </div>
+                    <div class="flex flex-col">
+                        <span class="text-2xl sm:text-3xl font-display font-black tracking-tight text-white uppercase leading-none">
+                            IRONPULSE<span class="text-gym-yellow">.</span>
+                        </span>
+                        <span class="text-[9px] font-mono tracking-[0.25em] text-gym-yellow uppercase mt-1 font-bold">
+                            DYNAMIC FITNESS & STRENGTH LAB
+                        </span>
+                    </div>
+                </a>
+
+                <!-- Desktop Navigation Links -->
+                <nav class="hidden lg:flex items-center gap-8 text-xs font-bold tracking-widest uppercase text-gym-silver font-mono">
+                    <a href="index.html" class="text-gym-yellow border-b-2 border-gym-yellow pb-1">Beranda</a>
+                    <a href="katalog.html" class="hover:text-gym-yellow transition">Katalog Alat</a>
+                    <a href="detail.html" class="hover:text-gym-yellow transition">Detail Dumbbell Hex</a>
+                    <a href="tentang.html" class="hover:text-gym-yellow transition">Standar Cast Iron</a>
+                    <a href="artikel.html" class="hover:text-gym-yellow transition">Panduan Workout</a>
+                    <a href="kontak.html" class="hover:text-gym-yellow transition">Showroom & Grosir</a>
+                </nav>
+
+                <!-- Action Button & Target Calculator Modal -->
+                <div class="hidden sm:flex items-center gap-3 font-mono">
+                    <button onclick="openFitnessModal()" class="inline-flex items-center gap-2 px-4 py-2.5 bg-gym-dark border border-gym-border hover:border-gym-yellow text-xs font-bold text-white transition">
+                        <i class="fa-solid fa-fire text-gym-yellow"></i>
+                        <span>Hitung Kebutuhan Beban</span>
+                    </button>
+                    <a href="https://wa.me/6281234567890?text=Halo%20Ironpulse%20Fitness,%20saya%20tertarik%20dengan%20peralatan%20gym%20dan%20dumbbell." target="_blank" class="inline-flex items-center gap-2 bg-gym-yellow hover:bg-gym-yellowdark text-black text-xs font-bold tracking-wider px-5 py-2.5 transition-all shadow-lg font-mono gym-btn">
+                        <i class="fa-brands fa-whatsapp text-base"></i>
+                        <span>Chat Trainer WA</span>
+                    </a>
+                </div>
+
+                <!-- Mobile Hamburger Button -->
+                <button id="mobileMenuBtn" class="lg:hidden p-2 text-white hover:text-gym-yellow focus:outline-none" aria-label="Toggle Menu">
+                    <i id="menuIcon" class="fa-solid fa-bars text-xl"></i>
+                </button>
+            </div>
+        </div>
+
+        <!-- Mobile Drawer -->
+        <div id="mobileMenu" class="hidden lg:hidden bg-gym-dark border-b border-gym-border px-4 py-5 space-y-3 font-mono">
+            <a href="index.html" class="block text-xs font-bold uppercase tracking-wider text-gym-yellow py-2 border-b border-gym-border">Beranda Utama</a>
+            <a href="katalog.html" class="block text-xs font-bold uppercase tracking-wider text-white hover:text-gym-yellow py-2 border-b border-gym-border">Katalog Dumbbell & Matras</a>
+            <a href="detail.html" class="block text-xs font-bold uppercase tracking-wider text-white hover:text-gym-yellow py-2 border-b border-gym-border">Detail Dumbbell Hexagonal Rubber</a>
+            <a href="tentang.html" class="block text-xs font-bold uppercase tracking-wider text-white hover:text-gym-yellow py-2 border-b border-gym-border">Standar Kualitas Cast Iron</a>
+            <a href="artikel.html" class="block text-xs font-bold uppercase tracking-wider text-white hover:text-gym-yellow py-2 border-b border-gym-border">Panduan Latihan Full-Body</a>
+            <a href="kontak.html" class="block text-xs font-bold uppercase tracking-wider text-white hover:text-gym-yellow py-2">Showroom Kelapa Gading & Grosir</a>
+            <div class="pt-2 flex flex-col gap-2">
+                <button onclick="openFitnessModal()" class="w-full py-3 bg-gym-card text-white border border-gym-border text-xs font-bold uppercase tracking-wider flex items-center justify-center gap-2">
+                    <i class="fa-solid fa-fire text-gym-yellow"></i> Hitung Rekomendasi Beban Latihan
+                </button>
+                <a href="https://wa.me/6281234567890?text=Halo%20Ironpulse%20Fitness,%20saya%20mau%20konsultasi%20alat%20gym." target="_blank" class="w-full py-3 bg-gym-yellow text-black text-xs font-bold uppercase tracking-wider text-center flex items-center justify-center gap-2 font-display">
+                    <i class="fa-brands fa-whatsapp"></i> WhatsApp Fitness Specialist
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- 3. HIGH-POWER STUDIO HERO SECTION -->
+    <section class="py-16 sm:py-24 border-b border-gym-border bg-gradient-to-b from-gym-bg via-gym-dark to-gym-bg relative overflow-hidden">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+                
+                <!-- Left Hero Copy (6 Cols) -->
+                <div class="lg:col-span-6 space-y-6">
+                    <div class="inline-flex items-center gap-2 px-3.5 py-1.5 bg-gym-card border border-gym-yellow/40 text-gym-yellow text-xs font-mono font-bold tracking-wider">
+                        <span class="w-2 h-2 rounded-full bg-gym-yellow animate-ping"></span>
+                        <span class="uppercase tracking-widest text-[10px]">COMMERCIAL GRADE HOME FITNESS</span>
+                    </div>
+
+                    <h1 class="text-4xl sm:text-6xl lg:text-7xl font-display font-black text-white tracking-tight leading-[0.95] uppercase italic">
+                        TRANSFORM <br>
+                        YOUR BODY <br>
+                        <span class="text-gym-yellow">AT HOME.</span>
+                    </h1>
+
+                    <p class="text-xs sm:text-sm text-gym-silver leading-relaxed max-w-lg font-medium font-sans">
+                        Peralatan kebugaran standar komersial untuk home gym Anda. Dumbbell hexagonal berlapis karet virgin rubber anti-banting lantai, pegangan knurling baja chrome anti-slip, matras yoga TPE 8mm peredam sendi, dan resistance band multifungsi.
+                    </p>
+
+                    <div class="pt-2 flex flex-wrap items-center gap-4 font-mono">
+                        <a href="katalog.html" class="inline-flex items-center gap-2.5 px-8 py-4 bg-gym-yellow hover:bg-gym-yellowdark text-black text-xs font-bold tracking-widest uppercase shadow-lg gym-btn font-display">
+                            <span>JELAJAHI ALAT</span>
+                            <i class="fa-solid fa-arrow-right text-[10px]"></i>
+                        </a>
+                        <button onclick="openFitnessModal()" class="inline-flex items-center gap-2 px-7 py-4 bg-gym-card hover:bg-gym-cardlight border border-gym-border text-white text-xs font-bold tracking-widest uppercase transition font-display">
+                            <i class="fa-solid fa-bullseye text-gym-yellow"></i>
+                            <span>PILIH TARGET BEBAN</span>
+                        </button>
+                    </div>
+
+                    <!-- Quick Spec Strip -->
+                    <div class="pt-4 grid grid-cols-3 gap-4 border-t border-gym-border font-mono text-xs">
+                        <div class="p-3 bg-gym-card border border-gym-border">
+                            <span class="text-[10px] text-gym-silver uppercase block font-bold">MATERIAL</span>
+                            <strong class="text-sm font-bold text-white">Cast Iron + Rubber</strong>
+                            <span class="text-[10px] text-gym-yellow font-bold block">Anti-Banting Lantai</span>
+                        </div>
+                        <div class="p-3 bg-gym-card border border-gym-border">
+                            <span class="text-[10px] text-gym-silver uppercase block font-bold">GRIP HANDLE</span>
+                            <strong class="text-sm font-bold text-white">28mm Knurled</strong>
+                            <span class="text-[10px] text-emerald-400 font-bold block">Anti-Slip Keringat</span>
+                        </div>
+                        <div class="p-3 bg-gym-card border border-gym-border">
+                            <span class="text-[10px] text-gym-silver uppercase block font-bold">WEIGHT ACCURACY</span>
+                            <strong class="text-sm font-bold text-white">Error &lt; 1%</strong>
+                            <span class="text-[10px] text-gym-silver block">Presisi Terkalibrasi</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Right Hero Image with Dumbbell Setup Showcase (6 Cols) -->
+                <div class="lg:col-span-6 relative">
+                    <div class="grid grid-cols-12 gap-4 items-center">
+                        
+                        <!-- Main Dumbbell Rack Showcase (7 Cols) -->
+                        <div class="col-span-7 bg-gym-card border border-gym-border aspect-[3/4] relative group overflow-hidden shadow-2xl">
+                            <img src="https://images.unsplash.com/photo-1584735935682-2f2b69dff9d2?auto=format&fit=crop&w=800&q=80" alt="Hexagonal Rubber Dumbbell" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700">
+                            
+                            <!-- Floating Badge -->
+                            <div class="absolute top-3 left-3 bg-gym-yellow text-black px-3 py-1 font-display font-bold shadow-md">
+                                <span class="text-[9px] uppercase tracking-wider block font-bold">FLAGSHIP WEIGHT</span>
+                                <strong class="text-xs font-display font-black">Ironpulse Hex Rubber 10kg</strong>
+                            </div>
+
+                            <div class="absolute bottom-3 left-3 right-3 bg-gym-bg/90 backdrop-blur-xs p-3 border border-gym-border font-mono text-xs flex justify-between items-center">
+                                <span class="text-white font-bold text-[11px]">Anti-Roll Hex Shape</span>
+                                <strong class="text-black bg-gym-yellow px-2 py-0.5 text-[10px]">Pure Cast Iron</strong>
+                            </div>
+                        </div>
+
+                        <!-- Side Yoga Mat & Resistance Band (5 Cols) -->
+                        <div class="col-span-5 space-y-4">
+                            <div class="bg-gym-card border border-gym-border aspect-[3/4] relative group overflow-hidden shadow-xl">
+                                <img src="https://images.unsplash.com/photo-1518611012118-696072aa579a?auto=format&fit=crop&w=600&q=80" alt="Matras Yoga TPE 8mm" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700">
+                                <span class="absolute top-2.5 right-2.5 bg-black/80 text-gym-yellow text-[9px] font-mono font-bold px-2 py-0.5 uppercase border border-gym-yellow/40">
+                                    8MM DUAL LAYER
+                                </span>
+                            </div>
+                            <div class="p-4 bg-gym-dark border border-gym-border text-xs font-mono">
+                                <span class="font-display font-bold text-gym-yellow block text-sm uppercase">Gym Grade Tested:</span>
+                                <p class="text-[11px] leading-relaxed font-sans font-normal text-gym-silver mt-1">Didesain untuk latihan intensif harian tanpa merusak lantai keramik.</p>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- Value Strip Bar -->
+            <div class="mt-16 max-w-5xl mx-auto grid grid-cols-1 sm:grid-cols-3 gap-6 bg-gym-card p-6 border border-gym-border shadow-xl text-xs font-mono">
+                <div class="flex items-start gap-3.5">
+                    <div class="w-10 h-10 bg-gym-dark text-gym-yellow flex items-center justify-center shrink-0 text-base border border-gym-yellow/30">
+                        <i class="fa-solid fa-shield"></i>
+                    </div>
+                    <div>
+                        <strong class="text-white font-bold block text-sm uppercase font-display">Lapisan Karet Ramah Lantai</strong>
+                        <span class="text-gym-silver leading-relaxed font-sans text-xs">Meredam dentuman suara saat diletakkan dan melindungi lantai rumah dari goresan retak.</span>
+                    </div>
+                </div>
+                <div class="flex items-start gap-3.5">
+                    <div class="w-10 h-10 bg-gym-dark text-gym-yellow flex items-center justify-center shrink-0 text-base border border-gym-yellow/30">
+                        <i class="fa-solid fa-hand-fist"></i>
+                    </div>
+                    <div>
+                        <strong class="text-white font-bold block text-sm uppercase font-display">Knurling Chrome Anti-Licin</strong>
+                        <span class="text-gym-silver leading-relaxed font-sans text-xs">Tekstur pegangan intan berdaya cengkeram tinggi, tidak licin meski telapak tangan berkeringat.</span>
+                    </div>
+                </div>
+                <div class="flex items-start gap-3.5">
+                    <div class="w-10 h-10 bg-gym-dark text-gym-yellow flex items-center justify-center shrink-0 text-base border border-gym-yellow/30">
+                        <i class="fa-solid fa-scale-balanced"></i>
+                    </div>
+                    <div>
+                        <strong class="text-white font-bold block text-sm uppercase font-display">Garansi Beban Presisi 100%</strong>
+                        <span class="text-gym-silver leading-relaxed font-sans text-xs">Besi cor murni padat terkalibrasi presisi dengan toleransi deviasi berat di bawah 1%.</span>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- 4. SECTION KHUSUS: HOME WORKOUT STARTER KITS -->
+    <section class="py-16 bg-gym-dark border-b border-gym-border font-mono">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            
+            <div class="text-center max-w-2xl mx-auto mb-12">
+                <span class="text-xs font-mono uppercase tracking-[0.25em] text-gym-yellow font-bold block mb-1">
+                    // BUNDLING WORKOUT KITS
+                </span>
+                <h2 class="text-2xl sm:text-4xl font-display font-black text-white uppercase tracking-tight">
+                    Paket Perlengkapan Latihan Rumahan
+                </h2>
+                <p class="text-xs sm:text-sm text-gym-silver mt-1 font-sans">
+                    Kombinasi alat pilihan untuk program pembentukan otot, fat burning, atau yoga & fleksibilitas.
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                
+                <!-- Package 1: Paket Pemula 10kg -->
+                <div class="bg-gym-card border border-gym-border p-6 sm:p-8 flex flex-col justify-between hover:border-gym-yellow transition">
+                    <div>
+                        <div class="flex justify-between items-center mb-4">
+                            <span class="text-[10px] font-bold bg-gym-dark text-gym-yellow px-2.5 py-1 border border-gym-yellow/30 uppercase tracking-wider font-display">
+                                STARTER WORKOUT
+                            </span>
+                            <span class="text-xs text-gym-silver font-bold">Pemula Home Gym</span>
+                        </div>
+                        <h3 class="text-xl font-display font-bold text-white uppercase">Paket Pemula 10kg Set</h3>
+                        <p class="text-xs text-gym-silver mt-2 leading-relaxed font-sans font-normal">
+                            Sepasang dumbbell hexagonal rubber 5kg + 5kg dilengkapi resistance loop bands 5 level ketahanan untuk latihan pemanasan dan isolasi otot.
+                        </p>
+
+                        <div class="mt-6 space-y-2 text-xs font-mono">
+                            <div class="flex items-center gap-2 text-white">
+                                <i class="fa-solid fa-check text-gym-yellow"></i>
+                                <span>2x Dumbbell Hex Rubber 5kg (Total 10kg)</span>
+                            </div>
+                            <div class="flex items-center gap-2 text-white">
+                                <i class="fa-solid fa-check text-gym-yellow"></i>
+                                <span>1 Set Resistance Loop Band 5 Level</span>
+                            </div>
+                            <div class="flex items-center gap-2 text-white">
+                                <i class="fa-solid fa-check text-gym-yellow"></i>
+                                <span>Bonus Shaker Botol Protein 600ml</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="mt-8 pt-6 border-t border-gym-border flex items-center justify-between">
+                        <div>
+                            <span class="text-[10px] text-gym-silver block uppercase font-bold">Harga Paket</span>
+                            <span class="text-xl font-mono font-bold text-white">Rp 349.000</span>
+                        </div>
+                        <a href="katalog.html" class="px-4 py-2 bg-gym-dark hover:bg-gym-cardlight border border-gym-border text-white text-xs font-bold uppercase tracking-wider transition font-display">
+                            Lihat Paket &rarr;
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Package 2: Paket Tone-Up Wanita & Pilates -->
+                <div class="bg-gym-card border-2 border-gym-yellow p-6 sm:p-8 flex flex-col justify-between shadow-2xl relative">
+                    <span class="absolute -top-3 right-6 bg-gym-yellow text-black text-[10px] font-display font-black px-3 py-0.5 uppercase tracking-wider">
+                        BEST SELLER TONE-UP
+                    </span>
+                    <div>
+                        <div class="flex justify-between items-center mb-4">
+                            <span class="text-[10px] font-bold bg-gym-yellow text-black px-2.5 py-1 uppercase tracking-wider font-display font-bold">
+                                FAT BURN & YOGA
+                            </span>
+                            <span class="text-xs text-gym-yellow font-bold">Matras TPE 8mm</span>
+                        </div>
+                        <h3 class="text-xl font-display font-bold text-white uppercase">Paket Tone-Up & Pilates</h3>
+                        <p class="text-xs text-gym-silver mt-2 leading-relaxed font-sans font-normal">
+                            Kombinasi matras yoga tebal 8mm peredam sendi lutut, sepasang dumbbell neoprene 2kg, dan tali skipping bearing cepat bakar kalori.
+                        </p>
+
+                        <div class="mt-6 space-y-2 text-xs font-mono">
+                            <div class="flex items-center gap-2 text-white">
+                                <i class="fa-solid fa-check text-gym-yellow"></i>
+                                <span>Matras Yoga TPE 8mm Dual-Color Anti-Slip</span>
+                            </div>
+                            <div class="flex items-center gap-2 text-white">
+                                <i class="fa-solid fa-check text-gym-yellow"></i>
+                                <span>2x Dumbbell Neoprene Grip 2kg</span>
+                            </div>
+                            <div class="flex items-center gap-2 text-white">
+                                <i class="fa-solid fa-check text-gym-yellow"></i>
+                                <span>Jump Rope Speed Bearing Baja</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="mt-8 pt-6 border-t border-gym-border flex items-center justify-between">
+                        <div>
+                            <span class="text-[10px] text-gym-silver block uppercase font-bold">Harga Paket</span>
+                            <span class="text-xl font-mono font-bold text-gym-yellow">Rp 299.000</span>
+                        </div>
+                        <a href="detail.html" class="px-4 py-2 bg-gym-yellow hover:bg-gym-yellowdark text-black text-xs font-bold uppercase tracking-wider transition shadow-md font-display">
+                            Detail Paket &rarr;
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Package 3: Paket Muscle Building 40kg -->
+                <div class="bg-gym-card border border-gym-border p-6 sm:p-8 flex flex-col justify-between hover:border-gym-yellow transition">
+                    <div>
+                        <div class="flex justify-between items-center mb-4">
+                            <span class="text-[10px] font-bold bg-gym-dark text-gym-yellow px-2.5 py-1 border border-gym-yellow/30 uppercase tracking-wider font-display">
+                                HEAVY STRENGTH
+                            </span>
+                            <span class="text-xs text-gym-silver font-bold">Koper 40kg Set</span>
+                        </div>
+                        <h3 class="text-xl font-display font-bold text-white uppercase">Paket Muscle Builder 40kg</h3>
+                        <p class="text-xs text-gym-silver mt-2 leading-relaxed font-sans font-normal">
+                            Set dumbbell koper besi cast iron 40kg adjustable yang dapat disambung menjadi barbell panjang menggunakan stik konektor busa empuk.
+                        </p>
+
+                        <div class="mt-6 space-y-2 text-xs font-mono">
+                            <div class="flex items-center gap-2 text-white">
+                                <i class="fa-solid fa-check text-gym-yellow"></i>
+                                <span>Plat Cast Iron Presisi Total 40kg</span>
+                            </div>
+                            <div class="flex items-center gap-2 text-white">
+                                <i class="fa-solid fa-check text-gym-yellow"></i>
+                                <span>2x Stik Dumbbell + 1x Sambungan Barbell</span>
+                            </div>
+                            <div class="flex items-center gap-2 text-white">
+                                <i class="fa-solid fa-check text-gym-yellow"></i>
+                                <span>Koper Hardcase Penyimpanan Roda</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="mt-8 pt-6 border-t border-gym-border flex items-center justify-between">
+                        <div>
+                            <span class="text-[10px] text-gym-silver block uppercase font-bold">Harga Paket</span>
+                            <span class="text-xl font-mono font-bold text-white">Rp 749.000</span>
+                        </div>
+                        <a href="katalog.html" class="px-4 py-2 bg-gym-dark hover:bg-gym-cardlight border border-gym-border text-white text-xs font-bold uppercase tracking-wider transition font-display">
+                            Lihat Paket &rarr;
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+    <!-- 5. PRODUK UNGGULAN: GRID 4 KOLOM FITNESS GEAR -->
+    <section class="py-16 bg-gym-bg border-b border-gym-border font-mono">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            
+            <div class="flex flex-col md:flex-row md:items-end justify-between mb-12">
+                <div>
+                    <span class="text-xs font-mono uppercase tracking-[0.25em] text-gym-yellow font-bold block mb-1">
+                        // FEATURED FITNESS EQUIPMENT
+                    </span>
+                    <h2 class="text-2xl sm:text-4xl font-display font-black text-white uppercase tracking-tight">
+                        Koleksi Alat Kebugaran Unggulan
+                    </h2>
+                    <p class="text-xs sm:text-sm text-gym-silver mt-1 font-sans">
+                        Pilih langsung varian berat kilogram atau ketebalan matras sesuai target latihan harian Anda.
+                    </p>
+                </div>
+                <a href="katalog.html" class="mt-4 md:mt-0 text-xs font-mono font-bold bg-gym-card hover:bg-gym-cardlight text-white border border-gym-border px-4 py-2 uppercase tracking-wider transition font-display">
+                    Lihat Semua 8 Alat &rarr;
+                </a>
+            </div>
+
+            <!-- 4 Column Product Grid -->
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+                
+                <!-- Product 1: Ironpulse Hexagonal Rubber Dumbbell -->
+                <div class="bg-gym-card border border-gym-border p-4 flex flex-col justify-between hover:border-gym-yellow transition">
+                    <div>
+                        <div class="aspect-[4/3] bg-gym-dark overflow-hidden mb-3 relative group border border-gym-border">
+                            <img src="https://images.unsplash.com/photo-1584735935682-2f2b69dff9d2?auto=format&fit=crop&w=500&q=80" alt="Hexagonal Dumbbell" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+                            <span class="absolute top-2 left-2 bg-gym-yellow text-black text-[8px] font-bold px-2 py-0.5 uppercase font-display">
+                                HEX RUBBER
+                            </span>
+                        </div>
+
+                        <div class="flex items-center gap-1.5 mb-1.5 text-[10px] text-gym-yellow font-bold uppercase font-mono">
+                            <i class="fa-solid fa-dumbbell"></i>
+                            <span>Cast Iron • Rubber Coated • Knurled Grip</span>
+                        </div>
+
+                        <h3 class="font-display font-bold text-base text-white uppercase leading-tight">Hex Rubber Dumbbell</h3>
+                        <p class="text-xs text-gym-silver mt-1 font-sans line-clamp-1">Dumbbell besi berlapis karet tebal anti-banting lantai rumah.</p>
+                        
+                        <div class="mt-2 text-[10px] text-gym-silver">
+                            <span>Varian: 2.5kg / 5kg / 7.5kg / 10kg / 15kg / 20kg</span>
+                        </div>
+                    </div>
+
+                    <div class="mt-4 pt-3 border-t border-gym-border flex items-center justify-between">
+                        <div>
+                            <span class="text-[9px] text-gym-silver block uppercase">Mulai Dari</span>
+                            <span class="font-mono font-bold text-base text-white">Rp 89.000</span>
+                        </div>
+                        <a href="detail.html" class="px-3 py-1.5 bg-gym-yellow hover:bg-gym-yellowdark text-black text-xs font-bold uppercase transition font-display">
+                            Pilih Kg &rarr;
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Product 2: ProGrip TPE 8mm Eco-Friendly Yoga Mat -->
+                <div class="bg-gym-card border border-gym-border p-4 flex flex-col justify-between hover:border-gym-yellow transition">
+                    <div>
+                        <div class="aspect-[4/3] bg-gym-dark overflow-hidden mb-3 relative group border border-gym-border">
+                            <img src="https://images.unsplash.com/photo-1518611012118-696072aa579a?auto=format&fit=crop&w=500&q=80" alt="Matras Yoga TPE" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+                            <span class="absolute top-2 left-2 bg-gym-yellow text-black text-[8px] font-bold px-2 py-0.5 uppercase font-display">
+                                8MM CUSHION
+                            </span>
+                        </div>
+
+                        <div class="flex items-center gap-1.5 mb-1.5 text-[10px] text-gym-yellow font-bold uppercase font-mono">
+                            <i class="fa-solid fa-spa"></i>
+                            <span>TPE Eco-Friendly • Anti-Slip • Free Strap</span>
+                        </div>
+
+                        <h3 class="font-display font-bold text-base text-white uppercase leading-tight">ProGrip TPE 8mm Mat</h3>
+                        <p class="text-xs text-gym-silver mt-1 font-sans line-clamp-1">Matras yoga dual-layer tebal meredam tekanan sendi lutut dan tulang belakang.</p>
+                        
+                        <div class="mt-2 text-[10px] text-gym-silver">
+                            <span>Ukuran: 183 x 61 cm (Tebal 8mm Empuk)</span>
+                        </div>
+                    </div>
+
+                    <div class="mt-4 pt-3 border-t border-gym-border flex items-center justify-between">
+                        <div>
+                            <span class="text-[9px] text-gym-silver block uppercase">Harga Resmi</span>
+                            <span class="font-mono font-bold text-base text-white">Rp 129.000</span>
+                        </div>
+                        <a href="detail.html" class="px-3 py-1.5 bg-gym-yellow hover:bg-gym-yellowdark text-black text-xs font-bold uppercase transition font-display">
+                            Detail &rarr;
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Product 3: PowerBand Heavy Resistance Loop Set -->
+                <div class="bg-gym-card border border-gym-border p-4 flex flex-col justify-between hover:border-gym-yellow transition">
+                    <div>
+                        <div class="aspect-[4/3] bg-gym-dark overflow-hidden mb-3 relative group border border-gym-border">
+                            <img src="https://images.unsplash.com/photo-1598289431512-b97b0917affc?auto=format&fit=crop&w=500&q=80" alt="Resistance Band" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+                            <span class="absolute top-2 left-2 bg-gym-yellow text-black text-[8px] font-bold px-2 py-0.5 uppercase font-display">
+                                5-LEVEL SET
+                            </span>
+                        </div>
+
+                        <div class="flex items-center gap-1.5 mb-1.5 text-[10px] text-gym-yellow font-bold uppercase font-mono">
+                            <i class="fa-solid fa-arrows-left-right"></i>
+                            <span>100% Natural Latex • Anti-Snap • Pouch Bag</span>
+                        </div>
+
+                        <h3 class="font-display font-bold text-base text-white uppercase leading-tight">PowerBand 5-Level Set</h3>
+                        <p class="text-xs text-gym-silver mt-1 font-sans line-clamp-1">Karet elastis latihan beban 5 level (5 lbs s/d 40 lbs) dengan pouch praktis.</p>
+                        
+                        <div class="mt-2 text-[10px] text-gym-silver">
+                            <span>Tingkat Beban: X-Light s/d X-Heavy</span>
+                        </div>
+                    </div>
+
+                    <div class="mt-4 pt-3 border-t border-gym-border flex items-center justify-between">
+                        <div>
+                            <span class="text-[9px] text-gym-silver block uppercase">Harga Resmi</span>
+                            <span class="font-mono font-bold text-base text-white">Rp 69.000</span>
+                        </div>
+                        <a href="detail.html" class="px-3 py-1.5 bg-gym-yellow hover:bg-gym-yellowdark text-black text-xs font-bold uppercase transition font-display">
+                            Detail &rarr;
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Product 4: IronBar Doorway Pull-Up & Chin-Up Bar -->
+                <div class="bg-gym-card border border-gym-border p-4 flex flex-col justify-between hover:border-gym-yellow transition">
+                    <div>
+                        <div class="aspect-[4/3] bg-gym-dark overflow-hidden mb-3 relative group border border-gym-border">
+                            <img src="https://images.unsplash.com/photo-1584735935682-2f2b69dff9d2?auto=format&fit=crop&w=500&q=80" alt="Pull Up Bar" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+                            <span class="absolute top-2 left-2 bg-gym-yellow text-black text-[8px] font-bold px-2 py-0.5 uppercase font-display">
+                                MAX 150KG
+                            </span>
+                        </div>
+
+                        <div class="flex items-center gap-1.5 mb-1.5 text-[10px] text-gym-yellow font-bold uppercase font-mono">
+                            <i class="fa-solid fa-bars"></i>
+                            <span>Baja Tebal 2mm • Karet Pengunci Kusen • Tanpa Baut</span>
+                        </div>
+
+                        <h3 class="font-display font-bold text-base text-white uppercase leading-tight">IronBar Door Pull-Up</h3>
+                        <p class="text-xs text-gym-silver mt-1 font-sans line-clamp-1">Palang pull up pintu fleksibel tanpa bor tembok untuk melatih otot punggung dan bisep.</p>
+                        
+                        <div class="mt-2 text-[10px] text-gym-silver">
+                            <span>Panjang: 65 - 100 cm (Adjustable)</span>
+                        </div>
+                    </div>
+
+                    <div class="mt-4 pt-3 border-t border-gym-border flex items-center justify-between">
+                        <div>
+                            <span class="text-[9px] text-gym-silver block uppercase">Harga Resmi</span>
+                            <span class="font-mono font-bold text-base text-white">Rp 119.000</span>
+                        </div>
+                        <a href="detail.html" class="px-3 py-1.5 bg-gym-yellow hover:bg-gym-yellowdark text-black text-xs font-bold uppercase transition font-display">
+                            Detail &rarr;
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+    <!-- 6. TESTIMONI MEMBER & TRAINER -->
+    <section class="py-16 bg-gym-dark border-b border-gym-border font-mono">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            
+            <div class="text-center max-w-2xl mx-auto mb-12">
+                <span class="text-xs font-mono uppercase tracking-[0.25em] text-gym-yellow font-bold block mb-1">
+                    // REAL ATHLETE TESTIMONIALS
+                </span>
+                <h2 class="text-2xl sm:text-4xl font-display font-black text-white uppercase tracking-tight">
+                    Dipercaya Para Penggiat Kebugaran
+                </h2>
+                <p class="text-xs sm:text-sm text-gym-silver mt-1 font-sans">
+                    Ulasan nyata dari pemilik home gym rumahan, personal trainer, dan instruktur yoga.
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                
+                <div class="bg-gym-card p-6 border border-gym-border flex flex-col justify-between">
+                    <div>
+                        <div class="flex items-center gap-1 text-gym-yellow text-xs mb-3">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                        <p class="text-xs text-gym-silver leading-relaxed font-sans italic">
+                            "Beli dumbbell hex rubber 10kg dan 15kg buat latihan di apartemen. Karetnya beneran tebal dan nggak bau minyak tanah. Waktu ditaruh di lantai nggak berisik bikin tetangga bawah komplain."
+                        </p>
+                    </div>
+                    <div class="mt-6 pt-3 border-t border-gym-border flex items-center justify-between text-xs">
+                        <strong class="text-white font-bold font-display uppercase">Rezky Pratama</strong>
+                        <span class="text-[10px] bg-gym-dark text-gym-yellow px-2 py-0.5 border border-gym-yellow/30 font-mono font-bold">Home Gym Enthusiast — Jakarta Barat</span>
+                    </div>
+                </div>
+
+                <div class="bg-gym-card p-6 border border-gym-border flex flex-col justify-between">
+                    <div>
+                        <div class="flex items-center gap-1 text-gym-yellow text-xs mb-3">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                        <p class="text-xs text-gym-silver leading-relaxed font-sans italic">
+                            "Matras TPE 8mm Ironpulse empuk banget buat gerakan plank dan knee-support pose. Lapisan bawahnya mencengkeram lantai keramik dengan rapat, nggak meluncur waktu latihan dinamis."
+                        </p>
+                    </div>
+                    <div class="mt-6 pt-3 border-t border-gym-border flex items-center justify-between text-xs">
+                        <strong class="text-white font-display uppercase font-bold">Nadia Safitri</strong>
+                        <span class="text-[10px] bg-gym-dark text-gym-yellow px-2 py-0.5 border border-gym-yellow/30 font-mono font-bold">Yoga & Pilates Instructor — Surabaya</span>
+                    </div>
+                </div>
+
+                <div class="bg-gym-card p-6 border border-gym-border flex flex-col justify-between">
+                    <div>
+                        <div class="flex items-center gap-1 text-gym-yellow text-xs mb-3">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                        <p class="text-xs text-gym-silver leading-relaxed font-sans italic">
+                            "Order paket dumbbell koper 40kg buat client training privat. Besi cornya rapi, timbangannya presisi di timbangan digital dan ulir pengunci bintangnya rapat nggak gampang kendor."
+                        </p>
+                    </div>
+                    <div class="mt-6 pt-3 border-t border-gym-border flex items-center justify-between text-xs">
+                        <strong class="text-white font-display uppercase font-bold">Coach Adrian Wijaya</strong>
+                        <span class="text-[10px] bg-gym-dark text-gym-yellow px-2 py-0.5 border border-gym-yellow/30 font-mono font-bold">Certified Personal Trainer — Tangerang</span>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+    <!-- 7. FOOTER -->
+    <footer class="bg-gym-bg text-gym-silver border-t border-gym-border pt-14 pb-28 font-mono">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-10">
+                
+                <div class="lg:col-span-2 space-y-4">
+                    <div class="flex items-center gap-3">
+                        <div class="w-9 h-9 bg-gym-yellow text-black flex items-center justify-center text-lg font-display font-black">
+                            <i class="fa-solid fa-dumbbell"></i>
+                        </div>
+                        <span class="text-2xl font-display font-black text-white uppercase tracking-tight">
+                            IRONPULSE<span class="text-gym-yellow">.</span>
+                        </span>
+                    </div>
+                    <p class="text-xs text-gym-silver leading-relaxed max-w-sm font-sans">
+                        Lentera Pasar Fitness & Gym Gear Template. Menghadirkan peralatan kebugaran standar komersial untuk latihan rumahan: dumbbell hexagonal rubber anti-banting, matras yoga TPE 8mm, resistance band, pull up bar, dan botol shaker protein.
+                    </p>
+                    <div class="pt-2 text-xs text-gym-silver space-y-1 font-sans">
+                        <div><i class="fa-solid fa-location-dot text-gym-yellow mr-2"></i> Showroom: Jl. Boulevard Raya Blok QJ3 No. 12, Kelapa Gading, Jakarta Utara 14240</div>
+                        <div><i class="fa-brands fa-whatsapp text-emerald-400 mr-2"></i> +62 812-3456-7890 (Layanan Pengadaan Gym & Konsultasi Alat WA)</div>
+                    </div>
+                </div>
+
+                <div>
+                    <h4 class="text-xs font-bold uppercase tracking-wider text-white mb-4">Navigasi Utama</h4>
+                    <ul class="space-y-2.5 text-xs text-gym-silver">
+                        <li><a href="index.html" class="hover:text-gym-yellow transition">Beranda Utama</a></li>
+                        <li><a href="katalog.html" class="hover:text-gym-yellow transition">Katalog Alat</a></li>
+                        <li><a href="detail.html" class="hover:text-gym-yellow transition">Detail Dumbbell Hex</a></li>
+                        <li><a href="tentang.html" class="hover:text-gym-yellow transition">Standar Cast Iron</a></li>
+                        <li><a href="artikel.html" class="hover:text-gym-yellow transition">Panduan Workout</a></li>
+                        <li><a href="kontak.html" class="hover:text-gym-yellow transition">Showroom & Grosir</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h4 class="text-xs font-bold uppercase tracking-wider text-white mb-4">Kategori Alat</h4>
+                    <ul class="space-y-2.5 text-xs text-gym-silver">
+                        <li><a href="katalog.html" class="hover:text-gym-yellow transition">Dumbbell Hex Rubber</a></li>
+                        <li><a href="katalog.html" class="hover:text-gym-yellow transition">Dumbbell Koper Set</a></li>
+                        <li><a href="katalog.html" class="hover:text-gym-yellow transition">Matras Yoga TPE 8mm</a></li>
+                        <li><a href="katalog.html" class="hover:text-gym-yellow transition">Resistance Loop Bands</a></li>
+                        <li><a href="katalog.html" class="hover:text-gym-yellow transition">Pull Up Bar Pintu</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h4 class="text-xs font-bold uppercase tracking-wider text-white mb-4">Jaminan Kualitas</h4>
+                    <div class="space-y-2 text-xs">
+                        <div class="p-3 bg-gym-card border border-gym-border">
+                            <span class="text-[10px] text-gym-yellow block uppercase font-bold font-display">100% CAST IRON CORE:</span>
+                            <span class="font-bold text-white text-[11px]">Besi Padat Bukan Semen</span>
+                        </div>
+                        <div class="p-3 bg-gym-card border border-gym-border">
+                            <span class="text-[10px] text-emerald-400 block uppercase font-bold font-display">CHEAP CARGO SHIPPING:</span>
+                            <span class="font-bold text-white text-[11px]">Tarif Ongkir Kargo Murah</span>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="mt-12 pt-8 border-t border-gym-border flex flex-col sm:flex-row items-center justify-between text-xs text-slate-500">
+                <p>&copy; 2026 IRONPULSE DYNAMIC FITNESS LAB. All Rights Reserved.</p>
+                <p class="text-[11px] mt-2 sm:mt-0 font-sans">Lentera Pasar Production Template — Fitness Equipment & Gym Gear</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- ========================================================================= -->
+    <!-- INTERACTIVE TARGET CALORIE & WEIGHT PROGRESS CALCULATOR MODAL             -->
+    <!-- ========================================================================= -->
+    <div id="fitnessModal" class="fixed inset-0 z-50 bg-black/85 backdrop-blur-xs hidden flex items-center justify-center p-4 font-mono">
+        <div class="bg-gym-card border border-gym-border max-w-lg w-full p-6 sm:p-8 shadow-2xl relative text-gym-steel">
+            <button onclick="closeFitnessModal()" class="absolute top-5 right-5 text-gym-silver hover:text-white border border-gym-border w-8 h-8 flex items-center justify-center font-bold">
+                <i class="fa-solid fa-xmark"></i>
+            </button>
+            
+            <div class="flex items-center gap-3 mb-6">
+                <div class="w-10 h-10 bg-gym-yellow text-black flex items-center justify-center text-lg border border-gym-yellow font-display">
+                    <i class="fa-solid fa-dumbbell"></i>
+                </div>
+                <div>
+                    <h3 class="text-lg font-display font-bold text-white uppercase">Kalkulator Kebutuhan Beban</h3>
+                    <p class="text-xs text-gym-silver font-sans">Pilih target latihan fisik Anda untuk rekomendasi set beban yang paling tepat.</p>
+                </div>
+            </div>
+
+            <div class="space-y-4 text-xs">
+                <div>
+                    <label class="block font-bold text-white mb-1.5 uppercase">Pilih Target Latihan Utama:</label>
+                    <select id="goalSelect" onchange="updateFitnessResult()" class="w-full p-3 border border-gym-border bg-gym-dark text-white focus:outline-none focus:border-gym-yellow text-xs font-mono font-bold">
+                        <option value="toning">Membakar Lemak & Toning Tubuh (Pemula / Wanita)</option>
+                        <option value="hypertrophy">Membentuk Massa Otot Dada & Lengan (Hypertrophy 5-15kg)</option>
+                        <option value="strength">Latihan Kekuatan Berat Maksimal (Strength 20-40kg)</option>
+                        <option value="flexibility">Yoga, Pilates & Fleksibilitas Sendi</option>
+                    </select>
+                </div>
+
+                <div id="fitnessResultBox" class="p-4 bg-gym-dark border border-gym-yellow/40 space-y-2">
+                    <div class="flex items-center justify-between">
+                        <span class="text-[10px] font-bold bg-gym-yellow text-black px-2 py-0.5 uppercase block font-display">// REKOMENDASI ALAT:</span>
+                        <span id="fitnessTag" class="text-[10px] font-bold text-gym-yellow">Dumbbell 2.5kg - 5kg + Resistance Band</span>
+                    </div>
+                    <h5 id="fitnessTitleDisplay" class="font-display font-bold text-white text-base uppercase">Paket Fat Burning & Toning</h5>
+                    <p id="fitnessDescDisplay" class="text-[11px] text-gym-silver font-sans leading-relaxed">
+                        Kombinasi dumbbell ringan 2.5kg atau 5kg dengan repetisi 15-20 kali dan resistance band untuk mengencangkan otot lengan, paha, dan perut tanpa cedera sendi.
+                    </p>
+                </div>
+
+                <div class="pt-2 flex items-center justify-between gap-3">
+                    <a id="fitnessWaLink" href="https://wa.me/6281234567890?text=Halo%20Ironpulse%20Fitness,%20saya%20tertarik%20dengan%20paket%20latihan%20toning%20dumbbell%20dan%20matras." target="_blank" class="w-full py-3.5 bg-gym-yellow hover:bg-gym-yellowdark text-black font-bold text-xs uppercase tracking-wider text-center transition shadow-lg gym-btn font-display">
+                        Konsultasi Beban Latihan via WhatsApp &rarr;
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ========================================================================= -->
+    <!-- FLOATING WHATSAPP BUTTON (bottom-24)                                      -->
+    <!-- ========================================================================= -->
+    <a href="https://wa.me/6281234567890?text=Halo%20Ironpulse%20Fitness,%20saya%20ingin%20konsultasi%20alat%20gym." 
+       target="_blank" 
+       class="fixed bottom-24 right-6 z-50 group flex items-center gap-3 bg-gym-card hover:bg-gym-cardlight text-white px-4 py-3 border border-gym-yellow/40 shadow-2xl hover:border-gym-yellow transition-all duration-300 font-mono" 
+       aria-label="Konsultasi Gear via WhatsApp">
+        <span class="relative flex h-3 w-3">
+            <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-gym-yellow opacity-75"></span>
+            <span class="relative inline-flex rounded-full h-3 w-3 bg-gym-yellow"></span>
+        </span>
+        <i class="fa-brands fa-whatsapp text-2xl text-emerald-400"></i>
+        <div class="text-left hidden sm:block pr-1">
+            <div class="text-[10px] text-gym-yellow font-bold uppercase tracking-wider leading-none font-display">Fitness Trainer</div>
+            <span class="font-bold text-xs text-white">Konsultasi Alat WA</span>
+        </div>
+    </a>
+
+    <!-- ========================================================================= -->
+    <!-- LENTERA PASAR - STICKY DEMO & SALES BAR (fixed bottom-4)                 -->
+    <!-- ========================================================================= -->
+    <div class="fixed bottom-4 left-1/2 -translate-x-1/2 z-50 w-[95%] max-w-4xl bg-slate-900/95 backdrop-blur-md text-white p-3.5 md:p-4 rounded-2xl shadow-2xl border border-slate-700/80 transition-all duration-300">
+      <div class="flex flex-col md:flex-row items-center justify-between gap-3 md:gap-4">
+        
+        <div class="flex items-center gap-3 w-full md:w-auto">
+          <div class="w-10 h-10 rounded-xl bg-yellow-500/20 border border-yellow-500/40 flex items-center justify-center shrink-0">
+            <svg class="w-5 h-5 text-yellow-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z" />
+            </svg>
+          </div>
+          <div>
+            <div class="flex items-center gap-2">
+              <span class="font-bold text-sm text-white">Lentera Pasar Engine</span>
+              <span class="text-[10px] bg-yellow-500/20 text-yellow-300 border border-yellow-500/30 px-2 py-0.5 rounded-full font-medium">Fitness & Gym Gear Template</span>
+            </div>
+            <p class="text-xs text-slate-300 hidden sm:block">
+              Terima beres: Website responsif + Panel input produk sendiri + Dikelola tim iklan profesional.
+            </p>
+          </div>
+        </div>
+
+        <div class="flex items-center justify-between md:justify-end gap-3 w-full md:w-auto">
+          <div class="hidden lg:flex items-center gap-2 text-xs text-slate-400 border-r border-slate-700 pr-4">
+            <div class="flex items-center gap-1 text-slate-200">
+              <svg class="w-4 h-4 text-yellow-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" /></svg>
+              <span>Gym Studio UI</span>
+            </div>
+            <span class="text-slate-600">•</span>
+            <div class="flex items-center gap-1 text-slate-200">
+              <svg class="w-4 h-4 text-yellow-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" /></svg>
+              <span>Weight Selector</span>
+            </div>
+          </div>
+
+          <a href="https://wa.me/6281234567890?text=Halo%20Tim%20Lentera%20Pasar,%20saya%20tertarik%20menggunakan%20template%20website%20Fitness%20%26%20Gym%20Gear%20ini%20lengkap%20dengan%20Admin%20Panel%20dan%20Jasa%20Iklannya." 
+             target="_blank"
+             class="w-full md:w-auto inline-flex items-center justify-center gap-2 bg-gradient-to-r from-yellow-500 to-amber-600 hover:from-yellow-400 hover:to-amber-500 text-black text-xs md:text-sm font-bold px-5 py-2.5 rounded-xl shadow-lg transition-all hover:scale-105 shrink-0 font-display">
+            <span>Gunakan Template Ini</span>
+            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3" />
+            </svg>
+          </a>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- SCRIPT LOGIC -->
+    <script>
+        const fitnessModal = document.getElementById('fitnessModal');
+        function openFitnessModal() {
+            fitnessModal.classList.remove('hidden');
+            updateFitnessResult();
+        }
+        function closeFitnessModal() {
+            fitnessModal.classList.add('hidden');
+        }
+
+        function updateFitnessResult() {
+            const val = document.getElementById('goalSelect').value;
+            const titleDisp = document.getElementById('fitnessTitleDisplay');
+            const descDisp = document.getElementById('fitnessDescDisplay');
+            const tag = document.getElementById('fitnessTag');
+            const waLink = document.getElementById('fitnessWaLink');
+
+            if (val === 'toning') {
+                titleDisp.innerText = "Paket Fat Burning & Toning";
+                descDisp.innerText = "Kombinasi dumbbell ringan 2.5kg atau 5kg dengan repetisi 15-20 kali dan resistance band untuk mengencangkan otot lengan, paha, dan perut tanpa cedera sendi.";
+                tag.innerText = "Dumbbell 2.5kg - 5kg + Resistance Band";
+                waLink.href = "https://wa.me/6281234567890?text=Halo%20Ironpulse%20Fitness,%20saya%20tertarik%20dengan%20paket%20latihan%20toning%20dumbbell%20dan%20matras.";
+            } else if (val === 'hypertrophy') {
+                titleDisp.innerText = "Paket Hypertrophy Muscle Building";
+                descDisp.innerText = "Sepasang dumbbell hexagonal rubber 7.5kg s/d 12.5kg dan doorway pull up bar untuk melatih otot dada, punggung, bisep, dan bahu secara maksimal di rumah.";
+                tag.innerText = "Dumbbell Hex 7.5kg - 12.5kg + Pull Up Bar";
+                waLink.href = "https://wa.me/6281234567890?text=Halo%20Ironpulse%20Fitness,%20saya%20tertarik%20dengan%20paket%20hypertrophy%20dumbbell%2010kg%20dan%20pull%20up%20bar.";
+            } else if (val === 'strength') {
+                titleDisp.innerText = "Paket Heavy Strength 40kg Koper";
+                descDisp.innerText = "Set dumbbell adjustable 40kg dengan stik konektor barbell panjang untuk gerakan compound lift seperti Deadlift, Squat, dan Bench Press beban berat.";
+                tag.innerText = "Set Koper 40kg Adjustable + Barbell Connector";
+                waLink.href = "https://wa.me/6281234567890?text=Halo%20Ironpulse%20Fitness,%20saya%20tertarik%20dengan%20set%20dumbbell%20koper%2040kg.";
+            } else {
+                titleDisp.innerText = "Paket Yoga & Pilates Flexibility";
+                descDisp.innerText = "Matras yoga TPE tebal 8mm berdaya redam tinggi anti-slip, tali stretching strap, dan dumbbell 2kg untuk latihan keseimbangan inti tubuh (core stability).";
+                tag.innerText = "Matras TPE 8mm + Dumbbell Neoprene 2kg";
+                waLink.href = "https://wa.me/6281234567890?text=Halo%20Ironpulse%20Fitness,%20saya%20tertarik%20dengan%20matras%20yoga%20TPE%208mm%20dan%20alat%20pilates.";
+            }
+        }
+
+        // Mobile menu toggle
+        const mobileMenuBtn = document.getElementById('mobileMenuBtn');
+        const mobileMenu = document.getElementById('mobileMenu');
+        const menuIcon = document.getElementById('menuIcon');
+
+        mobileMenuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+            if (mobileMenu.classList.contains('hidden')) {
+                menuIcon.classList.remove('fa-xmark');
+                menuIcon.classList.add('fa-bars');
+            } else {
+                menuIcon.classList.remove('fa-bars');
+                menuIcon.classList.add('fa-xmark');
+            }
+        });
+    </script>
+</body>
+</html>

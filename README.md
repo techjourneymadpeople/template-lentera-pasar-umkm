@@ -52,6 +52,7 @@ template-website-umkm/
 │   ├── tools-hardware-pro/             # Perkakas Tukang, Bor Cordless 20V, Gerinda & Toolbox (Ironkraft Tools)
 │   ├── moto-garage-accessories/        # Holder HP CNC Anti-Getar OIS, Jas Hujan PVC & Gembok Alarm (Motokraft Garage)
 │   ├── outdoor-camping-expedition/     # Tenda Badai PU 3000mm, Carrier 65L, SB Bulu Angsa & Kompor (Rimbakraft Outdoor)
+│   ├── fitness-gym-gear/               # Dumbbell Hex Rubber, Matras Yoga TPE 8mm & Resistance Band (Ironpulse Fitness)
 │   ├── gadget-phone-accessories/       # Case Hp, TWS, Charger & Gadget Acc
 │   ├── hobby-plant-monstera/           # Tanaman Hias, Pot Keramik & Pupuk Urban
 │   ├── hobby-aquatic-aquascape/        # Ikan Hias, Aquascape & Pakan Hewan
