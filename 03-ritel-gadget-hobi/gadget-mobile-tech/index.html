@@ -1,0 +1,878 @@
+<!DOCTYPE html>
+<html lang="id" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VOLTIX // Next-Gen Mobile Gear & Smart Power Lab</title>
+    <meta name="description" content="Aksesoris smartphone futuristik: Charger GaN 65W/100W, TWS Active Noise Cancelling, Powerbank Fast Charge, dan Casing MagSafe bergaransi resmi 12 bulan ganti baru.">
+    
+    <!-- Google Fonts: Space Grotesk & Plus Jakarta Sans -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        cyber: {
+                            bg: '#090D16',
+                            card: '#0F172A',
+                            cardlight: '#1E293B',
+                            border: '#1E293B',
+                            borderglow: '#06B6D4',
+                            cyan: '#06B6D4',
+                            cyanlight: '#22D3EE',
+                            purple: '#A855F7',
+                            purplelight: '#C084FC',
+                            silver: '#94A3B8',
+                            platinum: '#F1F5F9',
+                            dark: '#05070D'
+                        }
+                    },
+                    fontFamily: {
+                        sans: ['"Plus Jakarta Sans"', 'sans-serif'],
+                        mono: ['"Space Grotesk"', 'monospace']
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        .no-scrollbar::-webkit-scrollbar { display: none; }
+        .no-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
+        
+        .cyan-glow {
+            box-shadow: 0 0 30px -5px rgba(6, 182, 212, 0.2);
+        }
+        
+        .purple-glow {
+            box-shadow: 0 0 30px -5px rgba(168, 85, 247, 0.2);
+        }
+
+        .cyber-card {
+            transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+        }
+        .cyber-card:hover {
+            transform: translateY(-4px);
+            border-color: #06B6D4;
+            box-shadow: 0 16px 35px -10px rgba(6, 182, 212, 0.25);
+        }
+    </style>
+</head>
+<body class="bg-cyber-bg text-cyber-platinum font-sans antialiased selection:bg-cyber-cyan selection:text-black">
+
+    <!-- 1. TOP ANNOUNCEMENT BAR -->
+    <div class="bg-gradient-to-r from-cyber-bg via-slate-900 to-cyber-bg text-cyber-cyanlight text-[11px] py-2 px-4 font-mono font-medium border-b border-cyber-border">
+        <div class="max-w-7xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-2 text-center sm:text-left">
+            <div class="flex items-center justify-center gap-2">
+                <span class="inline-flex items-center gap-1 px-2 py-0.5 rounded-sm bg-cyber-cyan text-black text-[9px] font-bold tracking-wider uppercase font-mono">
+                    <span class="w-1.5 h-1.5 rounded-full bg-black animate-ping"></span>
+                    12-MONTH REPLACEMENT WARRANTY
+                </span>
+                <span class="text-slate-300">Garansi Resmi 12 Bulan Rusak Ganti Baru (1-to-1 Replacement) Tanpa Ribet</span>
+            </div>
+            <div class="flex items-center gap-4 text-[10px] text-slate-400">
+                <span class="hidden md:inline">GaN III Chip Fast Charge & Bluetooth 5.3 ANC</span>
+                <span class="hidden md:inline text-cyber-border">|</span>
+                <a href="katalog.html" class="text-cyber-cyan hover:text-white underline font-bold transition">Buka Semua Gear &rarr;</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- 2. NAVBAR -->
+    <header class="sticky top-0 z-40 bg-cyber-bg/95 backdrop-blur-md border-b border-cyber-border transition-all">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-20 sm:h-24">
+                
+                <!-- Logo -->
+                <a href="index.html" class="flex items-center gap-3 group">
+                    <div class="w-11 h-11 bg-cyber-card text-cyber-cyan flex items-center justify-center text-xl font-mono font-black rounded-xs border border-cyber-cyan/40 group-hover:border-cyber-cyan group-hover:shadow-[0_0_15px_rgba(6,182,212,0.4)] transition">
+                        <i class="fa-solid fa-bolt"></i>
+                    </div>
+                    <div class="flex flex-col">
+                        <span class="text-2xl sm:text-3xl font-mono font-black tracking-tight text-white uppercase leading-none group-hover:text-cyber-cyan transition duration-300">
+                            VOLTIX<span class="text-cyber-cyan">.</span>
+                        </span>
+                        <span class="text-[8px] font-mono tracking-[0.25em] text-cyber-cyan uppercase mt-1 font-bold">
+                            SMART MOBILE TECH LAB
+                        </span>
+                    </div>
+                </a>
+
+                <!-- Desktop Navigation Links -->
+                <nav class="hidden lg:flex items-center gap-8 text-xs font-bold tracking-widest uppercase text-cyber-silver font-mono">
+                    <a href="index.html" class="text-cyber-cyan border-b-2 border-cyber-cyan pb-1">Beranda</a>
+                    <a href="katalog.html" class="hover:text-cyber-cyan transition">Katalog Gear</a>
+                    <a href="detail.html" class="hover:text-cyber-cyan transition">Detail GaN 65W</a>
+                    <a href="tentang.html" class="hover:text-cyber-cyan transition">Teknologi IC GaN</a>
+                    <a href="artikel.html" class="hover:text-cyber-cyan transition">Tips Baterai HP</a>
+                    <a href="kontak.html" class="hover:text-cyber-cyan transition">Klaim Garansi 1-to-1</a>
+                </nav>
+
+                <!-- Action Button & Device Matcher Modal -->
+                <div class="hidden sm:flex items-center gap-3 font-mono">
+                    <button onclick="openDeviceMatcherModal()" class="inline-flex items-center gap-2 px-4 py-2.5 rounded-sm border border-cyber-border hover:border-cyber-cyan text-xs font-bold text-slate-300 bg-cyber-card shadow-xs transition">
+                        <i class="fa-solid fa-mobile-screen text-cyber-cyan"></i>
+                        <span>Cari Sesuai Tipe HP</span>
+                    </button>
+                    <a href="https://wa.me/6281234567890?text=Halo%20Voltix%20Tech,%20saya%20tertarik%20dengan%20produk%20aksesoris%20gadget%20Anda." target="_blank" class="inline-flex items-center gap-2 bg-cyber-cyan hover:bg-cyber-cyanlight text-black text-xs font-bold tracking-wider px-5 py-2.5 rounded-sm transition-all shadow-lg shadow-cyber-cyan/20 font-mono">
+                        <i class="fa-brands fa-whatsapp text-sm"></i>
+                        <span>Order via WA</span>
+                    </a>
+                </div>
+
+                <!-- Mobile Hamburger Button -->
+                <button id="mobileMenuBtn" class="lg:hidden p-2 text-slate-300 hover:text-cyber-cyan focus:outline-none" aria-label="Toggle Menu">
+                    <i id="menuIcon" class="fa-solid fa-bars-staggered text-xl"></i>
+                </button>
+            </div>
+        </div>
+
+        <!-- Mobile Drawer -->
+        <div id="mobileMenu" class="hidden lg:hidden bg-cyber-card border-b border-cyber-border px-4 py-5 space-y-3 font-mono">
+            <a href="index.html" class="block text-xs font-bold uppercase tracking-wider text-cyber-cyan py-2 border-b border-cyber-border">Beranda Utama</a>
+            <a href="katalog.html" class="block text-xs font-bold uppercase tracking-wider text-slate-300 hover:text-cyber-cyan py-2 border-b border-cyber-border">Katalog Charger & TWS</a>
+            <a href="detail.html" class="block text-xs font-bold uppercase tracking-wider text-slate-300 hover:text-cyber-cyan py-2 border-b border-cyber-border">Detail GaN 65W Fast Charge</a>
+            <a href="tentang.html" class="block text-xs font-bold uppercase tracking-wider text-slate-300 hover:text-cyber-cyan py-2 border-b border-cyber-border">Sertifikasi IC & Suhu Dingin</a>
+            <a href="artikel.html" class="block text-xs font-bold uppercase tracking-wider text-slate-300 hover:text-cyber-cyan py-2 border-b border-cyber-border">Tips Awet Battery Health</a>
+            <a href="kontak.html" class="block text-xs font-bold uppercase tracking-wider text-slate-300 hover:text-cyber-cyan py-2">Klaim Garansi & Store</a>
+            <div class="pt-2 flex flex-col gap-2">
+                <button onclick="openDeviceMatcherModal()" class="w-full py-3 rounded-sm bg-cyber-dark text-cyber-cyan border border-cyber-border text-xs font-bold uppercase tracking-wider flex items-center justify-center gap-2">
+                    <i class="fa-solid fa-mobile-screen text-cyber-cyan"></i> Cari Aksesoris Sesuai Tipe HP
+                </button>
+                <a href="https://wa.me/6281234567890?text=Halo%20Voltix%20Tech,%20saya%20mau%20konsultasi%20aksesoris." target="_blank" class="w-full py-3 rounded-sm bg-cyber-cyan text-black text-xs font-bold uppercase tracking-wider text-center flex items-center justify-center gap-2 shadow-sm">
+                    <i class="fa-brands fa-whatsapp text-sm"></i> WhatsApp Support 24 Jam
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- 3. HIGH-ENERGY CYBER MOBILE TECH HERO -->
+    <section class="py-16 sm:py-24 border-b border-cyber-border bg-gradient-to-b from-cyber-bg via-cyber-card to-cyber-bg relative overflow-hidden">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+                
+                <!-- Left Cyber Tech Copy (6 Cols) -->
+                <div class="lg:col-span-6 space-y-6">
+                    <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-sm bg-cyber-card border border-cyber-cyan/30 text-cyber-cyan text-xs font-mono font-bold tracking-wider shadow-xs">
+                        <span class="w-2 h-2 rounded-full bg-cyber-cyan"></span>
+                        <span class="uppercase tracking-widest text-[10px]">NEXT-GEN MOBILE ACCESSORIES</span>
+                    </div>
+
+                    <h1 class="text-4xl sm:text-6xl lg:text-7xl font-mono font-black text-white tracking-tight leading-[1.05]">
+                        Power Up <br>
+                        <span class="text-transparent bg-clip-text bg-gradient-to-r from-cyber-cyan via-cyber-cyanlight to-cyber-purple">Your Daily Tech.</span>
+                    </h1>
+
+                    <p class="text-xs sm:text-sm text-cyber-silver leading-relaxed max-w-lg font-normal font-sans">
+                        Revolusi pengisian daya pintar dan audio nirkabel dengan teknologi semikonduktor GaN III, transmisi Bluetooth 5.3 berlatensi rendah, serta chip proteksi suhu dingin pintar untuk menjaga masa pakai baterai smartphone Anda.
+                    </p>
+
+                    <div class="pt-2 flex flex-wrap items-center gap-4 font-mono">
+                        <a href="katalog.html" class="inline-flex items-center gap-2.5 px-8 py-4 bg-cyber-cyan hover:bg-cyber-cyanlight text-black text-xs font-bold tracking-widest uppercase transition-all shadow-lg shadow-cyber-cyan/25">
+                            <span>JELAJAHI GEAR</span>
+                            <i class="fa-solid fa-arrow-right text-[10px]"></i>
+                        </a>
+                        <button onclick="openDeviceMatcherModal()" class="inline-flex items-center gap-2 px-7 py-4 bg-cyber-card hover:bg-cyber-cardlight border border-cyber-border text-cyber-cyan text-xs font-bold tracking-widest uppercase transition">
+                            <i class="fa-solid fa-microchip"></i>
+                            <span>DEVICE MATCHER</span>
+                        </button>
+                    </div>
+
+                    <!-- Quick Spec Strip -->
+                    <div class="pt-4 grid grid-cols-3 gap-4 border-t border-cyber-border font-mono text-xs">
+                        <div>
+                            <span class="text-[10px] text-cyber-silver uppercase block font-bold">GAN III PROTOCOL</span>
+                            <strong class="text-base font-bold text-white">65W / 100W PD</strong>
+                            <span class="text-[10px] text-cyber-cyan block">Isi 50% dlm 25 Menit</span>
+                        </div>
+                        <div>
+                            <span class="text-[10px] text-cyber-silver uppercase block font-bold">AUDIO CODEC</span>
+                            <strong class="text-base font-bold text-white">ANC 45dB</strong>
+                            <span class="text-[10px] text-cyber-purple block">Bluetooth 5.3 Low-Lag</span>
+                        </div>
+                        <div>
+                            <span class="text-[10px] text-cyber-silver uppercase block font-bold">WARRANTY</span>
+                            <strong class="text-base font-bold text-white">12 Bulan</strong>
+                            <span class="text-[10px] text-emerald-400 block">1-to-1 Ganti Baru</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Right Cyber 3D Gear Visual (6 Cols) -->
+                <div class="lg:col-span-6 relative">
+                    <div class="grid grid-cols-12 gap-4 items-center">
+                        
+                        <!-- Main GaN Charger Showcase (7 Cols) -->
+                        <div class="col-span-7 bg-cyber-card border border-cyber-cyan/40 shadow-2xl aspect-[3/4] relative group overflow-hidden cyan-glow">
+                            <img src="https://images.unsplash.com/photo-1583863788434-e58a36330cf0?auto=format&fit=crop&w=800&q=80" alt="Charger GaN 65W Transparan" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700">
+                            
+                            <!-- Floating Specs Badge -->
+                            <div class="absolute top-3 left-3 bg-cyber-bg/90 backdrop-blur-md px-3 py-1.5 border border-cyber-cyan/40 shadow-sm font-mono text-white">
+                                <span class="text-[9px] font-bold text-cyber-cyan uppercase tracking-wider block">GaN SEMICONDUCTOR</span>
+                                <strong class="text-xs font-bold text-white">Voltix HyperCharge 65W Dual-C</strong>
+                            </div>
+
+                            <div class="absolute bottom-3 left-3 right-3 bg-cyber-bg/95 backdrop-blur-sm p-3 border border-cyber-border shadow-sm font-mono text-xs flex justify-between items-center">
+                                <span class="text-slate-300 text-[11px]">Suhu < 38°C Aman</span>
+                                <strong class="text-cyber-cyan font-bold">PD 3.0 / QC 4.0</strong>
+                            </div>
+                        </div>
+
+                        <!-- Side Floating TWS Card (5 Cols) -->
+                        <div class="col-span-5 space-y-4">
+                            <div class="bg-cyber-card border border-cyber-purple/40 shadow-md aspect-[3/4] relative group overflow-hidden purple-glow">
+                                <img src="https://images.unsplash.com/photo-1590658268037-6bf12165a8df?auto=format&fit=crop&w=600&q=80" alt="TWS Cyber Neon ANC" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700">
+                                <span class="absolute top-2.5 right-2.5 bg-cyber-purple text-black text-[8px] font-mono font-bold px-2 py-0.5 uppercase">
+                                    ANC 45dB
+                                </span>
+                            </div>
+                            <div class="p-4 bg-cyber-card border border-cyber-border text-xs text-cyber-silver space-y-1 font-mono shadow-xs">
+                                <span class="font-mono font-bold text-white block text-sm">Smart IC Protection:</span>
+                                <p class="text-[11px] leading-relaxed font-sans font-normal text-slate-300">Menyesuaikan watt otomatis sesuai kebutuhan perangkat agar baterai HP tetap sehat.</p>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- Value Strip Bar -->
+            <div class="mt-16 max-w-5xl mx-auto grid grid-cols-1 sm:grid-cols-3 gap-6 bg-cyber-card p-6 border border-cyber-border shadow-md text-xs font-mono">
+                <div class="flex items-start gap-3.5">
+                    <div class="w-10 h-10 bg-cyber-dark text-cyber-cyan flex items-center justify-center shrink-0 text-base border border-cyber-cyan/30">
+                        <i class="fa-solid fa-snowflake"></i>
+                    </div>
+                    <div>
+                        <strong class="text-white font-bold block text-sm uppercase">Chip Proteksi Suhu Dingin</strong>
+                        <span class="text-cyber-silver leading-relaxed font-sans text-xs">Arsitektur GaN III menjaga kepala charger tetap dingin dan stabil saat mengecas laptop & HP bersamaan.</span>
+                    </div>
+                </div>
+                <div class="flex items-start gap-3.5">
+                    <div class="w-10 h-10 bg-cyber-dark text-cyber-purple flex items-center justify-center shrink-0 text-base border border-cyber-purple/30">
+                        <i class="fa-solid fa-layer-group"></i>
+                    </div>
+                    <div>
+                        <strong class="text-white font-bold block text-sm uppercase">Multi-Device Protocol</strong>
+                        <span class="text-cyber-silver leading-relaxed font-sans text-xs">Kompatibel penuh dengan iPhone 15/16 Series, Samsung Super Fast Charging 45W, Xiaomi & iPad.</span>
+                    </div>
+                </div>
+                <div class="flex items-start gap-3.5">
+                    <div class="w-10 h-10 bg-cyber-dark text-emerald-400 flex items-center justify-center shrink-0 text-base border border-emerald-500/30">
+                        <i class="fa-solid fa-rotate-left"></i>
+                    </div>
+                    <div>
+                        <strong class="text-white font-bold block text-sm uppercase">1-to-1 Replacement Garansi</strong>
+                        <span class="text-cyber-silver leading-relaxed font-sans text-xs">Garansi 12 bulan rusak langsung ganti unit baru tanpa perlu menunggu servis berbulan-bulan.</span>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- 4. SECTION KHUSUS: DEVICE MATCHER MATRIX -->
+    <section class="py-16 bg-cyber-card border-b border-cyber-border font-mono">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            
+            <div class="text-center max-w-2xl mx-auto mb-12">
+                <span class="text-xs font-mono uppercase tracking-[0.25em] text-cyber-cyan font-bold block mb-1">
+                    // SMART COMPATIBILITY MATRIX
+                </span>
+                <h2 class="text-2xl sm:text-4xl font-mono font-black text-white uppercase">
+                    Pilih Merek & Seri Ponselmu
+                </h2>
+                <p class="text-xs sm:text-sm text-cyber-silver mt-1 font-sans">
+                    Dapatkan rekomendasi adapter charger, kabel data, dan casing yang 100% presisi untuk perangkatmu.
+                </p>
+            </div>
+
+            <!-- 4 Brand Compatibility Archetypes -->
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+                
+                <!-- Brand 1: Apple iPhone & iPad -->
+                <div class="bg-cyber-bg border border-cyber-border p-6 flex flex-col justify-between cyber-card">
+                    <div>
+                        <div class="w-10 h-10 bg-cyber-card text-white flex items-center justify-center text-xl mb-4 border border-cyber-border">
+                            <i class="fa-brands fa-apple"></i>
+                        </div>
+                        <span class="text-[9px] font-bold text-cyber-cyan uppercase tracking-wider block">APPLE ECOSYSTEM</span>
+                        <h3 class="text-lg font-mono font-bold text-white mt-1">iPhone 15/16 & iPad</h3>
+                        <p class="text-xs text-cyber-silver mt-2 leading-relaxed font-sans font-normal">
+                            Rekomendasi GaN 35W PD, kabel Type-C to Type-C braided 60W, dan case MagSafe dengan magnet N52 super kuat.
+                        </p>
+                    </div>
+                    <div class="mt-6 pt-4 border-t border-cyber-border">
+                        <a href="katalog.html" class="text-xs text-cyber-cyan hover:text-white font-bold flex items-center justify-between">
+                            <span>Aksesoris iPhone</span>
+                            <span>&rarr;</span>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Brand 2: Samsung Galaxy Series -->
+                <div class="bg-cyber-bg border border-cyber-border p-6 flex flex-col justify-between cyber-card">
+                    <div>
+                        <div class="w-10 h-10 bg-cyber-card text-cyber-cyan flex items-center justify-center text-xl mb-4 border border-cyber-border">
+                            <i class="fa-solid fa-mobile-screen-button"></i>
+                        </div>
+                        <span class="text-[9px] font-bold text-cyber-cyanlight uppercase tracking-wider block">SUPER FAST CHARGING 2.0</span>
+                        <h3 class="text-lg font-mono font-bold text-white mt-1">Galaxy S24 / S23 / Z Flip</h3>
+                        <p class="text-xs text-cyber-silver mt-2 leading-relaxed font-sans font-normal">
+                            Charger GaN 45W/65W dengan protokol PPS 5A untuk memicu indikator lingkaran biru Super Fast Charge 2.0.
+                        </p>
+                    </div>
+                    <div class="mt-6 pt-4 border-t border-cyber-border">
+                        <a href="katalog.html" class="text-xs text-cyber-cyan hover:text-white font-bold flex items-center justify-between">
+                            <span>Aksesoris Samsung</span>
+                            <span>&rarr;</span>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Brand 3: Xiaomi, Poco & Android Universal -->
+                <div class="bg-cyber-bg border border-cyber-border p-6 flex flex-col justify-between cyber-card">
+                    <div>
+                        <div class="w-10 h-10 bg-cyber-card text-cyber-purple flex items-center justify-center text-xl mb-4 border border-cyber-border">
+                            <i class="fa-solid fa-bolt-lightning"></i>
+                        </div>
+                        <span class="text-[9px] font-bold text-cyber-purple uppercase tracking-wider block">HYPERCHARGE COMPATIBLE</span>
+                        <h3 class="text-lg font-mono font-bold text-white mt-1">Xiaomi, Poco & ROG</h3>
+                        <p class="text-xs text-cyber-silver mt-2 leading-relaxed font-sans font-normal">
+                            Powerbank 20.000mAh 65W dan kabel data USB-C 100W bersertifikasi E-Marker untuk laptop dan ponsel gaming.
+                        </p>
+                    </div>
+                    <div class="mt-6 pt-4 border-t border-cyber-border">
+                        <a href="katalog.html" class="text-xs text-cyber-purple hover:text-white font-bold flex items-center justify-between">
+                            <span>Aksesoris Xiaomi</span>
+                            <span>&rarr;</span>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Brand 4: Laptop & MacBook Workstation -->
+                <div class="bg-cyber-bg border border-cyber-border p-6 flex flex-col justify-between cyber-card">
+                    <div>
+                        <div class="w-10 h-10 bg-cyber-card text-emerald-400 flex items-center justify-center text-xl mb-4 border border-cyber-border">
+                            <i class="fa-solid fa-laptop"></i>
+                        </div>
+                        <span class="text-[9px] font-bold text-emerald-400 uppercase tracking-wider block">WORKSTATION & MACBOOK</span>
+                        <h3 class="text-lg font-mono font-bold text-white mt-1">MacBook Air/Pro & Windows</h3>
+                        <p class="text-xs text-cyber-silver mt-2 leading-relaxed font-sans font-normal">
+                            Adapter GaN 100W 3-Port (2C1A) yang ringkas untuk menggantikan adaptor bawaan laptop yang besar dan berat.
+                        </p>
+                    </div>
+                    <div class="mt-6 pt-4 border-t border-cyber-border">
+                        <a href="katalog.html" class="text-xs text-emerald-400 hover:text-white font-bold flex items-center justify-between">
+                            <span>Aksesoris Laptop</span>
+                            <span>&rarr;</span>
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+    <!-- 5. PRODUK UNGGULAN: GRID 4 KOLOM DETAIL GADGET TECH -->
+    <section class="py-16 bg-cyber-bg border-b border-cyber-border font-mono">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            
+            <div class="flex flex-col md:flex-row md:items-end justify-between mb-12">
+                <div>
+                    <span class="text-xs font-mono uppercase tracking-[0.25em] text-cyber-cyan font-bold block mb-1">
+                        // FEATURED MOBILE GEAR
+                    </span>
+                    <h2 class="text-2xl sm:text-4xl font-mono font-black text-white uppercase">
+                        Gear Unggulan Bergaransi 12 Bulan
+                    </h2>
+                    <p class="text-xs sm:text-sm text-cyber-silver mt-1 font-sans">
+                        Rincian spesifikasi daya output, protokol pengisian, dan latensi audio nirkabel.
+                    </p>
+                </div>
+                <a href="katalog.html" class="mt-4 md:mt-0 text-xs font-mono font-bold text-cyber-cyan border-b border-cyber-cyan pb-0.5 hover:text-white transition uppercase tracking-wider">
+                    Lihat Semua 8 Gear &rarr;
+                </a>
+            </div>
+
+            <!-- 4 Column Product Grid -->
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+                
+                <!-- Product 1: Voltix HyperCharge 65W GaN Dual USB-C -->
+                <div class="bg-cyber-card border border-cyber-border p-4 flex flex-col justify-between cyber-card">
+                    <div>
+                        <div class="aspect-[4/3] bg-cyber-dark overflow-hidden mb-3 relative group border border-cyber-border">
+                            <img src="https://images.unsplash.com/photo-1583863788434-e58a36330cf0?auto=format&fit=crop&w=500&q=80" alt="Charger GaN 65W" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+                            <span class="absolute top-2 left-2 bg-cyber-cyan text-black text-[8px] font-bold px-2 py-0.5 uppercase font-mono">
+                                65W GAN III
+                            </span>
+                        </div>
+
+                        <div class="flex items-center gap-1.5 mb-1.5 text-[10px] text-cyber-cyan font-bold uppercase">
+                            <i class="fa-solid fa-bolt"></i>
+                            <span>Dual Port USB-C • PD 3.0 / PPS</span>
+                        </div>
+
+                        <h3 class="font-mono font-bold text-base text-white leading-tight">Voltix HyperCharge 65W GaN</h3>
+                        <p class="text-xs text-cyber-silver mt-1 font-sans line-clamp-1">Kepala charger GaN III ultra-compact untuk laptop MacBook & fast charging HP.</p>
+                        
+                        <div class="mt-2 text-[10px] text-slate-400">
+                            <span>Kompatibilitas: iPhone 15, Samsung 45W, Laptop</span>
+                        </div>
+                    </div>
+
+                    <div class="mt-4 pt-3 border-t border-cyber-border flex items-center justify-between">
+                        <div>
+                            <span class="text-[9px] text-cyber-silver block uppercase">Harga</span>
+                            <span class="font-mono font-bold text-base text-cyber-cyan">Rp 289.000</span>
+                        </div>
+                        <a href="detail.html" class="px-3 py-1.5 bg-cyber-cyan hover:bg-cyber-cyanlight text-black text-xs font-bold uppercase transition font-mono">
+                            Detail &rarr;
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Product 2: Voltix CyberPods Pro ANC 45dB -->
+                <div class="bg-cyber-card border border-cyber-border p-4 flex flex-col justify-between cyber-card">
+                    <div>
+                        <div class="aspect-[4/3] bg-cyber-dark overflow-hidden mb-3 relative group border border-cyber-border">
+                            <img src="https://images.unsplash.com/photo-1590658268037-6bf12165a8df?auto=format&fit=crop&w=500&q=80" alt="TWS CyberPods Pro" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+                            <span class="absolute top-2 left-2 bg-cyber-purple text-black text-[8px] font-bold px-2 py-0.5 uppercase font-mono">
+                                ANC 45dB
+                            </span>
+                        </div>
+
+                        <div class="flex items-center gap-1.5 mb-1.5 text-[10px] text-cyber-purple font-bold uppercase">
+                            <i class="fa-solid fa-headphones"></i>
+                            <span>BT 5.3 • Latensi 38ms • 32H Play</span>
+                        </div>
+
+                        <h3 class="font-mono font-bold text-base text-white leading-tight">Voltix CyberPods Pro ANC</h3>
+                        <p class="text-xs text-cyber-silver mt-1 font-sans line-clamp-1">TWS berperedam bising aktif 45dB dengan case transparan neon cyber.</p>
+                        
+                        <div class="mt-2 text-[10px] text-slate-400">
+                            <span>Fitur: Transparency Mode & Game Mode</span>
+                        </div>
+                    </div>
+
+                    <div class="mt-4 pt-3 border-t border-cyber-border flex items-center justify-between">
+                        <div>
+                            <span class="text-[9px] text-cyber-silver block uppercase">Harga</span>
+                            <span class="font-mono font-bold text-base text-cyber-purple">Rp 359.000</span>
+                        </div>
+                        <a href="detail.html" class="px-3 py-1.5 bg-cyber-purple hover:bg-cyber-purplelight text-black text-xs font-bold uppercase transition font-mono">
+                            Detail &rarr;
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Product 3: Voltix PowerVolt 20000mAh 65W PD -->
+                <div class="bg-cyber-card border border-cyber-border p-4 flex flex-col justify-between cyber-card">
+                    <div>
+                        <div class="aspect-[4/3] bg-cyber-dark overflow-hidden mb-3 relative group border border-cyber-border">
+                            <img src="https://images.unsplash.com/photo-1609592807904-e3c79c8d50b4?auto=format&fit=crop&w=500&q=80" alt="Powerbank 65W" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+                            <span class="absolute top-2 left-2 bg-emerald-400 text-black text-[8px] font-bold px-2 py-0.5 uppercase font-mono">
+                                20.000 mAh
+                            </span>
+                        </div>
+
+                        <div class="flex items-center gap-1.5 mb-1.5 text-[10px] text-emerald-400 font-bold uppercase">
+                            <i class="fa-solid fa-battery-three-quarters"></i>
+                            <span>Output 65W • Layar Digital LED</span>
+                        </div>
+
+                        <h3 class="font-mono font-bold text-base text-white leading-tight">PowerVolt 20.000mAh 65W</h3>
+                        <p class="text-xs text-cyber-silver mt-1 font-sans line-clamp-1">Powerbank fast charging bertenaga besar untuk mengisi daya laptop & 3 HP.</p>
+                        
+                        <div class="mt-2 text-[10px] text-slate-400">
+                            <span>Sertifikasi: Aman Masuk Kabin Pesawat</span>
+                        </div>
+                    </div>
+
+                    <div class="mt-4 pt-3 border-t border-cyber-border flex items-center justify-between">
+                        <div>
+                            <span class="text-[9px] text-cyber-silver block uppercase">Harga</span>
+                            <span class="font-mono font-bold text-base text-emerald-400">Rp 449.000</span>
+                        </div>
+                        <a href="detail.html" class="px-3 py-1.5 bg-emerald-400 hover:bg-emerald-300 text-black text-xs font-bold uppercase transition font-mono">
+                            Detail &rarr;
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Product 4: Voltix ArmorGuard MagSafe Cyber Case -->
+                <div class="bg-cyber-card border border-cyber-border p-4 flex flex-col justify-between cyber-card">
+                    <div>
+                        <div class="aspect-[4/3] bg-cyber-dark overflow-hidden mb-3 relative group border border-cyber-border">
+                            <img src="https://images.unsplash.com/photo-1601593346740-925612772716?auto=format&fit=crop&w=500&q=80" alt="MagSafe Case" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+                            <span class="absolute top-2 left-2 bg-slate-800 text-cyan-300 border border-cyan-500/40 text-[8px] font-bold px-2 py-0.5 uppercase font-mono">
+                                MAGSAFE N52
+                            </span>
+                        </div>
+
+                        <div class="flex items-center gap-1.5 mb-1.5 text-[10px] text-cyan-400 font-bold uppercase">
+                            <i class="fa-solid fa-shield-halved"></i>
+                            <span>Drop Test 3M • Anti-Yellowing</span>
+                        </div>
+
+                        <h3 class="font-mono font-bold text-base text-white leading-tight">ArmorGuard MagSafe Case</h3>
+                        <p class="text-xs text-cyber-silver mt-1 font-sans line-clamp-1">Casing transparan bertekstur cyber dengan magnet N52 anti lepas dan bezel tebal.</p>
+                        
+                        <div class="mt-2 text-[10px] text-slate-400">
+                            <span>Varian: iPhone 13 - 16 Pro Max, S24 Ultra</span>
+                        </div>
+                    </div>
+
+                    <div class="mt-4 pt-3 border-t border-cyber-border flex items-center justify-between">
+                        <div>
+                            <span class="text-[9px] text-cyber-silver block uppercase">Harga</span>
+                            <span class="font-mono font-bold text-base text-cyan-400">Rp 169.000</span>
+                        </div>
+                        <a href="detail.html" class="px-3 py-1.5 bg-cyan-400 hover:bg-cyan-300 text-black text-xs font-bold uppercase transition font-mono">
+                            Detail &rarr;
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+    <!-- 6. TESTIMONI GADGET REVIEWER & KOMUTER -->
+    <section class="py-16 bg-cyber-card border-b border-cyber-border font-mono">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            
+            <div class="text-center max-w-2xl mx-auto mb-12">
+                <span class="text-xs font-mono uppercase tracking-[0.25em] text-cyber-cyan font-bold block mb-1">
+                    // USER & REVIEWER BENCHMARK
+                </span>
+                <h2 class="text-2xl sm:text-4xl font-mono font-black text-white uppercase">
+                    Dipercaya Tech Enthusiast Indonesia
+                </h2>
+                <p class="text-xs sm:text-sm text-cyber-silver mt-1 font-sans">
+                    Pengalaman nyata pengisian daya cepat dan audio minim latensi.
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                
+                <div class="bg-cyber-bg p-6 border border-cyber-border flex flex-col justify-between shadow-sm">
+                    <div>
+                        <div class="flex items-center gap-1 text-cyber-cyan text-xs mb-3">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                        <p class="text-xs text-slate-200 leading-relaxed font-sans italic">
+                            "Charger GaN 65W Voltix beneran dingin pas ngecas MacBook Air bareng iPhone 15 Pro. Beratnya cuma setengah dari charger bawaan laptop, jadi wajib ada di tas kerja saya."
+                        </p>
+                    </div>
+                    <div class="mt-6 pt-3 border-t border-cyber-border flex items-center justify-between text-xs">
+                        <strong class="text-white font-bold font-mono">Reza Pramudya</strong>
+                        <span class="text-[10px] text-cyber-cyan font-mono">Tech Reviewer — Jakarta</span>
+                    </div>
+                </div>
+
+                <div class="bg-cyber-bg p-6 border border-cyber-border flex flex-col justify-between shadow-sm">
+                    <div>
+                        <div class="flex items-center gap-1 text-cyber-purple text-xs mb-3">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                        <p class="text-xs text-slate-200 leading-relaxed font-sans italic">
+                            "CyberPods Pro ANC-nya ngebantu banget pas naik KRL atau WFC di cafe ramai. Suara bising AC dan obrolan sekitar langsung senyap, suara bass-nya punchy dan mic-nya jernih."
+                        </p>
+                    </div>
+                    <div class="mt-6 pt-3 border-t border-cyber-border flex items-center justify-between text-xs">
+                        <strong class="text-white font-bold font-mono">Dion Pratama</strong>
+                        <span class="text-[10px] text-cyber-purple font-mono">Software Engineer — Tangerang</span>
+                    </div>
+                </div>
+
+                <div class="bg-cyber-bg p-6 border border-cyber-border flex flex-col justify-between shadow-sm">
+                    <div>
+                        <div class="flex items-center gap-1 text-emerald-400 text-xs mb-3">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                        <p class="text-xs text-slate-200 leading-relaxed font-sans italic">
+                            "Pernah kabel Type-C saya terinjak kursi roda kantor dan putus kontak, klaim garansinya via WhatsApp super cepat. Kirim video kendala, langsung dikirimi unit pengganti baru dalam 2 hari."
+                        </p>
+                    </div>
+                    <div class="mt-6 pt-3 border-t border-cyber-border flex items-center justify-between text-xs">
+                        <strong class="text-white font-bold font-mono">Siti Nurhaliza</strong>
+                        <span class="text-[10px] text-emerald-400 font-mono">Content Creator — Bandung</span>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+    <!-- 7. FOOTER -->
+    <footer class="bg-cyber-bg text-cyber-silver border-t border-cyber-border pt-14 pb-28 font-mono">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-10">
+                
+                <div class="lg:col-span-2 space-y-4">
+                    <div class="flex items-center gap-3">
+                        <div class="w-9 h-9 bg-cyber-card text-cyber-cyan flex items-center justify-center text-lg font-mono font-black border border-cyber-cyan/40">
+                            <i class="fa-solid fa-bolt"></i>
+                        </div>
+                        <span class="text-2xl font-mono font-black text-white uppercase tracking-tight">
+                            VOLTIX<span class="text-cyber-cyan">.</span>
+                        </span>
+                    </div>
+                    <p class="text-xs text-slate-300 leading-relaxed max-w-sm font-sans">
+                        Lentera Pasar Smart Mobile Tech & Accessories Template. Solusi pengisian daya GaN cepat bersuhu dingin, TWS ANC minim latensi, dan aksesoris smartphone bergaransi resmi 12 bulan ganti baru.
+                    </p>
+                    <div class="pt-2 text-xs text-slate-300 space-y-1 font-sans">
+                        <div><i class="fa-solid fa-location-dot text-cyber-cyan mr-2"></i> Experience Store: Mangga Dua Mall Lt. 3 No. 42B, Jakarta Pusat</div>
+                        <div><i class="fa-brands fa-whatsapp text-emerald-400 mr-2"></i> +62 812-3456-7890 (Tech Support & Klaim Garansi)</div>
+                    </div>
+                </div>
+
+                <div>
+                    <h4 class="text-xs font-bold uppercase tracking-wider text-white mb-4">Navigasi Utama</h4>
+                    <ul class="space-y-2.5 text-xs text-slate-300">
+                        <li><a href="index.html" class="hover:text-cyber-cyan transition">Beranda Utama</a></li>
+                        <li><a href="katalog.html" class="hover:text-cyber-cyan transition">Katalog Gear</a></li>
+                        <li><a href="detail.html" class="hover:text-cyber-cyan transition">Detail GaN 65W</a></li>
+                        <li><a href="tentang.html" class="hover:text-cyber-cyan transition">Teknologi IC GaN</a></li>
+                        <li><a href="artikel.html" class="hover:text-cyber-cyan transition">Tips Baterai HP</a></li>
+                        <li><a href="kontak.html" class="hover:text-cyber-cyan transition">Klaim Garansi</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h4 class="text-xs font-bold uppercase tracking-wider text-white mb-4">Kategori Gear</h4>
+                    <ul class="space-y-2.5 text-xs text-slate-300">
+                        <li><a href="katalog.html" class="hover:text-cyber-cyan transition">Charger GaN 35W - 100W</a></li>
+                        <li><a href="katalog.html" class="hover:text-cyber-cyan transition">TWS Noise Cancelling</a></li>
+                        <li><a href="katalog.html" class="hover:text-cyber-cyan transition">Powerbank Laptop 65W</a></li>
+                        <li><a href="katalog.html" class="hover:text-cyber-cyan transition">Kabel Braided 100W PD</a></li>
+                        <li><a href="katalog.html" class="hover:text-cyber-cyan transition">Case MagSafe & Screen Guard</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h4 class="text-xs font-bold uppercase tracking-wider text-white mb-4">Garansi Resmi</h4>
+                    <div class="space-y-2 text-xs">
+                        <div class="p-3 bg-cyber-card border border-cyber-cyan/30">
+                            <span class="text-[10px] text-cyber-cyan block uppercase font-bold">1-TO-1 REPLACEMENT:</span>
+                            <span class="font-bold text-white text-[11px]">Rusak Langsung Ganti Unit Baru</span>
+                        </div>
+                        <div class="p-3 bg-cyber-card border border-cyber-purple/30">
+                            <span class="text-[10px] text-cyber-purple block uppercase font-bold">SAFETY CERTIFIED:</span>
+                            <span class="font-bold text-white text-[11px]">Sertifikasi CE, FCC & RoHS</span>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="mt-12 pt-8 border-t border-cyber-border flex flex-col sm:flex-row items-center justify-between text-xs text-slate-500">
+                <p>&copy; 2026 VOLTIX MOBILE TECH LAB. All Rights Reserved.</p>
+                <p class="text-[11px] mt-2 sm:mt-0 font-sans">Lentera Pasar Production Template — Smart Mobile Tech & Accessories</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- ========================================================================= -->
+    <!-- INTERACTIVE DEVICE MATCHER MODAL                                          -->
+    <!-- ========================================================================= -->
+    <div id="deviceModal" class="fixed inset-0 z-50 bg-black/85 backdrop-blur-sm hidden flex items-center justify-center p-4 font-mono">
+        <div class="bg-cyber-card border border-cyber-cyan/50 max-w-lg w-full p-6 sm:p-8 shadow-2xl relative text-cyber-platinum">
+            <button onclick="closeDeviceMatcherModal()" class="absolute top-5 right-5 text-cyber-silver hover:text-white text-lg p-1">
+                <i class="fa-solid fa-xmark"></i>
+            </button>
+            
+            <div class="flex items-center gap-3 mb-6">
+                <div class="w-10 h-10 bg-cyber-dark text-cyber-cyan flex items-center justify-center text-lg border border-cyber-cyan/30">
+                    <i class="fa-solid fa-microchip"></i>
+                </div>
+                <div>
+                    <h3 class="text-lg font-mono font-bold text-white uppercase">Device Matcher Matrix</h3>
+                    <p class="text-xs text-cyber-silver font-sans">Pilih tipe smartphone atau tablet Anda untuk rekomendasi charger & watt optimal.</p>
+                </div>
+            </div>
+
+            <div class="space-y-4 text-xs">
+                <div>
+                    <label class="block font-bold text-white mb-1.5 uppercase">Merek & Seri Perangkat Anda:</label>
+                    <select id="deviceBrandSelect" onchange="calculateDeviceMatch()" class="w-full p-3 border border-cyber-border bg-cyber-bg text-white focus:outline-none focus:border-cyber-cyan text-xs font-mono">
+                        <option value="iphone15">iPhone 15 / 16 Series (Type-C PD 27W Max)</option>
+                        <option value="iphone14">iPhone 14 / 13 / 12 Series (Lightning PD 20W)</option>
+                        <option value="samsung_ultra">Samsung Galaxy S24 / S23 Ultra (Super Fast 45W)</option>
+                        <option value="samsung_base">Samsung Galaxy A-Series / S24 Base (Fast Charge 25W)</option>
+                        <option value="xiaomi_poco">Xiaomi 14 / Poco F-Series (HyperCharge 67W/120W)</option>
+                        <option value="macbook">MacBook Air / Pro M-Series (PD 35W - 100W)</option>
+                    </select>
+                </div>
+
+                <div id="deviceResultBox" class="p-4 bg-cyber-bg border border-cyber-cyan/30 space-y-2">
+                    <span class="text-[10px] font-bold text-cyber-cyan uppercase block">// REKOMENDASI GEAR VOLTIX:</span>
+                    <h5 id="gearTitleDisplay" class="font-mono font-bold text-white text-base">Voltix HyperCharge 35W / 65W GaN Dual-C</h5>
+                    <p id="gearDescDisplay" class="text-[11px] text-slate-300 font-sans leading-relaxed">
+                        Mendukung Power Delivery 3.0 penuh untuk mengisi daya iPhone 15 dari 0% ke 50% dalam 25 menit dengan suhu adaptor tetap dingin.
+                    </p>
+                </div>
+
+                <div class="pt-2 flex items-center justify-between gap-3">
+                    <a id="deviceWaLink" href="https://wa.me/6281234567890?text=Halo%20Voltix%20Tech,%20perangkat%20saya%20iPhone%2015.%20Saya%20tertarik%20dengan%20rekomendasi%20Charger%20GaN." target="_blank" class="w-full py-3.5 bg-cyber-cyan hover:bg-cyber-cyanlight text-black font-bold text-xs uppercase tracking-wider text-center transition shadow-lg shadow-cyber-cyan/20 font-mono">
+                        Konsultasi Gear via WhatsApp &rarr;
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ========================================================================= -->
+    <!-- FLOATING WHATSAPP BUTTON (bottom-24)                                      -->
+    <!-- ========================================================================= -->
+    <a href="https://wa.me/6281234567890?text=Halo%20Voltix%20Tech,%20saya%20ingin%20konsultasi%20aksesoris%20gadget." 
+       target="_blank" 
+       class="fixed bottom-24 right-6 z-50 group flex items-center gap-3 bg-cyber-card hover:bg-cyber-cardlight text-white px-4 py-3 border border-cyber-cyan/40 shadow-2xl hover:border-cyber-cyan transition-all duration-300 font-mono" 
+       aria-label="Konsultasi Gear via WhatsApp">
+        <span class="relative flex h-3 w-3">
+            <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-cyber-cyan opacity-75"></span>
+            <span class="relative inline-flex rounded-full h-3 w-3 bg-cyber-cyan"></span>
+        </span>
+        <i class="fa-brands fa-whatsapp text-2xl text-emerald-400"></i>
+        <div class="text-left hidden sm:block pr-1">
+            <div class="text-[10px] text-cyber-cyan font-bold uppercase tracking-wider leading-none">Voltix Specialist</div>
+            <span class="font-bold text-xs text-white">Konsultasi Gear WA</span>
+        </div>
+    </a>
+
+    <!-- ========================================================================= -->
+    <!-- LENTERA PASAR - STICKY DEMO & SALES BAR (fixed bottom-4)                 -->
+    <!-- ========================================================================= -->
+    <div class="fixed bottom-4 left-1/2 -translate-x-1/2 z-50 w-[95%] max-w-4xl bg-slate-900/95 backdrop-blur-md text-white p-3.5 md:p-4 rounded-2xl shadow-2xl border border-slate-700/80 transition-all duration-300">
+      <div class="flex flex-col md:flex-row items-center justify-between gap-3 md:gap-4">
+        
+        <div class="flex items-center gap-3 w-full md:w-auto">
+          <div class="w-10 h-10 rounded-xl bg-cyan-500/20 border border-cyan-500/40 flex items-center justify-center shrink-0">
+            <svg class="w-5 h-5 text-cyan-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z" />
+            </svg>
+          </div>
+          <div>
+            <div class="flex items-center gap-2">
+              <span class="font-bold text-sm text-white">Lentera Pasar Engine</span>
+              <span class="text-[10px] bg-cyan-500/20 text-cyan-300 border border-cyan-500/30 px-2 py-0.5 rounded-full font-medium">Cyber Mobile Tech Template</span>
+            </div>
+            <p class="text-xs text-slate-300 hidden sm:block">
+              Terima beres: Website responsif + Panel input produk sendiri + Dikelola tim iklan profesional.
+            </p>
+          </div>
+        </div>
+
+        <div class="flex items-center justify-between md:justify-end gap-3 w-full md:w-auto">
+          <div class="hidden lg:flex items-center gap-2 text-xs text-slate-400 border-r border-slate-700 pr-4">
+            <div class="flex items-center gap-1 text-slate-200">
+              <svg class="w-4 h-4 text-cyan-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" /></svg>
+              <span>GaN 65W & Device Matcher</span>
+            </div>
+            <span class="text-slate-600">•</span>
+            <div class="flex items-center gap-1 text-slate-200">
+              <svg class="w-4 h-4 text-emerald-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" /></svg>
+              <span>1-to-1 Replacement</span>
+            </div>
+          </div>
+
+          <a href="https://wa.me/6281234567890?text=Halo%20Tim%20Lentera%20Pasar,%20saya%20tertarik%20menggunakan%20template%20website%20Gadget%20%26%20Mobile%20Tech%20ini%20lengkap%20dengan%20Admin%20Panel%20dan%20Jasa%20Iklannya." 
+             target="_blank"
+             class="w-full md:w-auto inline-flex items-center justify-center gap-2 bg-gradient-to-r from-cyan-500 to-blue-600 hover:from-cyan-400 hover:to-blue-500 text-black text-xs md:text-sm font-bold px-5 py-2.5 rounded-xl shadow-lg transition-all hover:scale-105 shrink-0">
+            <span>Gunakan Template Ini</span>
+            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3" />
+            </svg>
+          </a>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- SCRIPT LOGIC -->
+    <script>
+        // Device Matcher Modal Logic
+        const deviceModal = document.getElementById('deviceModal');
+        function openDeviceMatcherModal() {
+            deviceModal.classList.remove('hidden');
+            calculateDeviceMatch();
+        }
+        function closeDeviceMatcherModal() {
+            deviceModal.classList.add('hidden');
+        }
+
+        function calculateDeviceMatch() {
+            const val = document.getElementById('deviceBrandSelect').value;
+            const titleDisp = document.getElementById('gearTitleDisplay');
+            const descDisp = document.getElementById('gearDescDisplay');
+            const waLink = document.getElementById('deviceWaLink');
+
+            if (val === 'iphone15') {
+                titleDisp.innerText = "Voltix HyperCharge 35W / 65W GaN Dual-C + Kabel Type-C Braided";
+                descDisp.innerText = "Mendukung Power Delivery 3.0 penuh untuk mengisi daya iPhone 15/16 dari 0% ke 50% dalam 25 menit dengan suhu tetap dingin.";
+                waLink.href = "https://wa.me/6281234567890?text=Halo%20Voltix%20Tech,%20device%20saya%20iPhone%2015.%20Saya%20tertarik%20paket%20Charger%20GaN%2035W%20Type-C.";
+            } else if (val === 'iphone14') {
+                titleDisp.innerText = "Voltix 20W PD Nano Charger + Kabel Type-C to Lightning MFi";
+                descDisp.innerText = "Output 20W murni yang aman untuk seri iPhone 14/13/12 tanpa resiko baterai panas atau battery health cepat turun.";
+                waLink.href = "https://wa.me/6281234567890?text=Halo%20Voltix%20Tech,%20device%20saya%20iPhone%2014.%20Saya%20tertarik%20Charger%2020W%20PD%20Lightning.";
+            } else if (val === 'samsung_ultra') {
+                titleDisp.innerText = "Voltix HyperCharge 65W GaN (Support PPS 45W Super Fast Charging 2.0)";
+                descDisp.innerText = "Dilengkapi chip PPS 5A untuk memicu notifikasi Super Fast Charging 2.0 di Galaxy S24 Ultra dan S23 Ultra.";
+                waLink.href = "https://wa.me/6281234567890?text=Halo%20Voltix%20Tech,%20device%20saya%20Samsung%20Ultra.%20Saya%20tertarik%20Charger%2065W%20PPS%2045W.";
+            } else if (val === 'samsung_base') {
+                titleDisp.innerText = "Voltix 30W GaN Mini + Kabel Type-C 60W";
+                descDisp.innerText = "Sangat pas untuk Galaxy A-Series dan S24 standar yang mendukung fast charging 25W.";
+                waLink.href = "https://wa.me/6281234567890?text=Halo%20Voltix%20Tech,%20device%20saya%20Samsung%20A-Series.%20Saya%20tertarik%20Charger%2030W.";
+            } else if (val === 'xiaomi_poco') {
+                titleDisp.innerText = "Voltix PowerVolt 65W GaN + Kabel 100W 5A E-Marker";
+                descDisp.innerText = "Mendukung protokol Quick Charge 4.0+ dan PD bertenaga tinggi untuk ponsel performa tinggi Xiaomi & Poco.";
+                waLink.href = "https://wa.me/6281234567890?text=Halo%20Voltix%20Tech,%20device%20saya%20Xiaomi/Poco.%20Saya%20tertarik%20Charger%2065W%20+%20Kabel%20100W.";
+            } else {
+                titleDisp.innerText = "Voltix ProStation 100W GaN III (3-Port 2C1A)";
+                descDisp.innerText = "Mengecas MacBook Pro bersamaan dengan iPad dan smartphone dengan satu colokan ringkas saat bepergian.";
+                waLink.href = "https://wa.me/6281234567890?text=Halo%20Voltix%20Tech,%20device%20saya%20MacBook.%20Saya%20tertarik%20Charger%20100W%20GaN.";
+            }
+        }
+
+        // Mobile menu toggle
+        const mobileMenuBtn = document.getElementById('mobileMenuBtn');
+        const mobileMenu = document.getElementById('mobileMenu');
+        const menuIcon = document.getElementById('menuIcon');
+
+        mobileMenuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+            if (mobileMenu.classList.contains('hidden')) {
+                menuIcon.classList.remove('fa-xmark');
+                menuIcon.classList.add('fa-bars-staggered');
+            } else {
+                menuIcon.classList.remove('fa-bars-staggered');
+                menuIcon.classList.add('fa-xmark');
+            }
+        });
+    </script>
+</body>
+</html>

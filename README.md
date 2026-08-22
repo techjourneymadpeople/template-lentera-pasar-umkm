@@ -46,7 +46,8 @@ template-website-umkm/
 │   ├── fashion-footwear-shoes/         # Sepatu Lokal Kulit, Sneakers & Sandal
 │   └── beauty-skincare-serum/          # Skincare Glowing, Serum & Sunscreen BPOM
 │
-├── 📁 03-ritel-gadget-hobi/            # [BIDANG 3 - Segera Hadir]
+├── 📁 03-ritel-gadget-hobi/            # [BIDANG 3 - Ritel, Gadget & Hobi]
+│   ├── gadget-mobile-tech/             # Aksesoris HP, Charger GaN 65W, TWS ANC & Powerbank (Voltix Tech)
 │   ├── gadget-phone-accessories/       # Case Hp, TWS, Charger & Gadget Acc
 │   ├── hobby-plant-monstera/           # Tanaman Hias, Pot Keramik & Pupuk Urban
 │   ├── hobby-aquatic-aquascape/        # Ikan Hias, Aquascape & Pakan Hewan
