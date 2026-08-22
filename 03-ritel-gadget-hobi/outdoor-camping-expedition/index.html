@@ -1,0 +1,810 @@
+<!DOCTYPE html>
+<html lang="id" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RIMBAKRAFT // Alpine Expedition & Wilderness Gear Lab</title>
+    <meta name="description" content="Perlengkapan camping dan ekspedisi gunung: Tenda dome stormproof PU 3000mm frame aluminium 7001, carrier ergonomis, sleeping bag bulu angsa, dan kompor windproof.">
+    
+    <!-- Google Fonts: Space Grotesk & Plus Jakarta Sans -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        forest: {
+                            bg: '#131B19',
+                            dark: '#1C2826',
+                            card: '#23322F',
+                            cardlight: '#2D3E3B',
+                            border: '#384D48',
+                            orange: '#F97316',
+                            orangedark: '#EA580C',
+                            amber: '#FBBF24',
+                            mist: '#D1DCD6',
+                            khaki: '#9BAEA6'
+                        }
+                    },
+                    fontFamily: {
+                        sans: ['"Plus Jakarta Sans"', 'sans-serif'],
+                        mono: ['"Space Grotesk"', 'monospace']
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        .no-scrollbar::-webkit-scrollbar { display: none; }
+        .no-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
+        
+        .forest-btn {
+            transition: all 0.2s cubic-bezier(0.16, 1, 0.3, 1);
+        }
+        .forest-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 10px 25px -6px rgba(249, 115, 22, 0.45);
+        }
+    </style>
+</head>
+<body class="bg-forest-bg text-forest-mist font-sans antialiased selection:bg-forest-orange selection:text-white">
+
+    <!-- 1. TOP BAR EXPEDITION -->
+    <div class="bg-forest-dark text-forest-khaki text-xs py-2 px-4 font-mono font-bold border-b border-forest-border">
+        <div class="max-w-7xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-2 text-center sm:text-left">
+            <div class="flex items-center justify-center gap-2">
+                <span class="px-2 py-0.5 bg-forest-orange text-white text-[10px] uppercase font-mono font-black tracking-wider">
+                    EXPEDITION GRADE
+                </span>
+                <span class="text-white">Garansi Frame Aluminium Patah Ganti Baru 1 Tahun • Standar Badai PU 3000mm</span>
+            </div>
+            <div class="flex items-center gap-4 text-xs text-forest-khaki font-mono">
+                <span class="hidden md:inline">Basecamp Sleman Yogyakarta Ready</span>
+                <span class="hidden md:inline">|</span>
+                <a href="katalog.html" class="text-forest-orange hover:text-white underline font-extrabold transition">Buka Katalog Gear &rarr;</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- 2. NAVBAR -->
+    <header class="sticky top-0 z-40 bg-forest-bg/95 backdrop-blur-md border-b border-forest-border transition-all">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-20 sm:h-24">
+                
+                <!-- Logo -->
+                <a href="index.html" class="flex items-center gap-3 group">
+                    <div class="w-11 h-11 bg-forest-orange text-white flex items-center justify-center text-xl font-mono font-black border-2 border-forest-orange shadow-lg group-hover:bg-white group-hover:text-forest-orange transition">
+                        <i class="fa-solid fa-mountain"></i>
+                    </div>
+                    <div class="flex flex-col">
+                        <span class="text-2xl sm:text-3xl font-mono font-black tracking-tight text-white uppercase leading-none">
+                            RIMBAKRAFT<span class="text-forest-orange">.</span>
+                        </span>
+                        <span class="text-[9px] font-mono tracking-[0.25em] text-forest-orange uppercase mt-1 font-bold">
+                            WILDERNESS & EXPEDITION LAB
+                        </span>
+                    </div>
+                </a>
+
+                <!-- Desktop Navigation Links -->
+                <nav class="hidden lg:flex items-center gap-8 text-xs font-bold tracking-widest uppercase text-forest-khaki font-mono">
+                    <a href="index.html" class="text-forest-orange border-b-2 border-forest-orange pb-1">Beranda</a>
+                    <a href="katalog.html" class="hover:text-forest-orange transition">Katalog Gear</a>
+                    <a href="detail.html" class="hover:text-forest-orange transition">Detail Tenda Storm</a>
+                    <a href="tentang.html" class="hover:text-forest-orange transition">Uji Badai & Material</a>
+                    <a href="artikel.html" class="hover:text-forest-orange transition">Checklist Gunung</a>
+                    <a href="kontak.html" class="hover:text-forest-orange transition">Basecamp & Sewa</a>
+                </nav>
+
+                <!-- Action Button & Mountain Checklist Modal -->
+                <div class="hidden sm:flex items-center gap-3 font-mono">
+                    <button onclick="openChecklistModal()" class="inline-flex items-center gap-2 px-4 py-2.5 bg-forest-dark border border-forest-border hover:border-forest-orange text-xs font-bold text-white transition">
+                        <i class="fa-solid fa-list-check text-forest-orange"></i>
+                        <span>Checklist Gunung</span>
+                    </button>
+                    <a href="https://wa.me/6281234567890?text=Halo%20Rimbakraft%20Outdoor,%20saya%20tertarik%20dengan%20tenda%20dan%20perlengkapan%20camping." target="_blank" class="inline-flex items-center gap-2 bg-forest-orange hover:bg-forest-orangedark text-white text-xs font-bold tracking-wider px-5 py-2.5 transition-all shadow-lg font-mono forest-btn">
+                        <i class="fa-brands fa-whatsapp text-base"></i>
+                        <span>Chat Basecamp WA</span>
+                    </a>
+                </div>
+
+                <!-- Mobile Hamburger Button -->
+                <button id="mobileMenuBtn" class="lg:hidden p-2 text-white hover:text-forest-orange focus:outline-none" aria-label="Toggle Menu">
+                    <i id="menuIcon" class="fa-solid fa-bars text-xl"></i>
+                </button>
+            </div>
+        </div>
+
+        <!-- Mobile Drawer -->
+        <div id="mobileMenu" class="hidden lg:hidden bg-forest-dark border-b border-forest-border px-4 py-5 space-y-3 font-mono">
+            <a href="index.html" class="block text-xs font-bold uppercase tracking-wider text-forest-orange py-2 border-b border-forest-border">Beranda Utama</a>
+            <a href="katalog.html" class="block text-xs font-bold uppercase tracking-wider text-white hover:text-forest-orange py-2 border-b border-forest-border">Katalog Tenda & Carrier</a>
+            <a href="detail.html" class="block text-xs font-bold uppercase tracking-wider text-white hover:text-forest-orange py-2 border-b border-forest-border">Detail Tenda Stormproof 2-4P</a>
+            <a href="tentang.html" class="block text-xs font-bold uppercase tracking-wider text-white hover:text-forest-orange py-2 border-b border-forest-border">Standar Uji Badai PU 3000mm</a>
+            <a href="artikel.html" class="block text-xs font-bold uppercase tracking-wider text-white hover:text-forest-orange py-2 border-b border-forest-border">Checklist Wajib Naik Gunung</a>
+            <a href="kontak.html" class="block text-xs font-bold uppercase tracking-wider text-white hover:text-forest-orange py-2">Basecamp Sleman & Sewa Alat</a>
+            <div class="pt-2 flex flex-col gap-2">
+                <button onclick="openChecklistModal()" class="w-full py-3 bg-forest-card text-white border border-forest-border text-xs font-bold uppercase tracking-wider flex items-center justify-center gap-2">
+                    <i class="fa-solid fa-list-check text-forest-orange"></i> Buka Checklist Peralatan Gunung
+                </button>
+                <a href="https://wa.me/6281234567890?text=Halo%20Rimbakraft%20Outdoor,%20saya%20mau%20konsultasi%20gear%20camping." target="_blank" class="w-full py-3 bg-forest-orange text-white text-xs font-bold uppercase tracking-wider text-center flex items-center justify-center gap-2">
+                    <i class="fa-brands fa-whatsapp"></i> WhatsApp Basecamp Concierge
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- 3. WILD MOUNTAIN EXPEDITION HERO SECTION -->
+    <section class="py-16 sm:py-24 border-b border-forest-border bg-gradient-to-b from-forest-bg via-forest-dark to-forest-bg relative overflow-hidden">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+                
+                <!-- Left Hero Copy (6 Cols) -->
+                <div class="lg:col-span-6 space-y-6">
+                    <div class="inline-flex items-center gap-2 px-3.5 py-1.5 bg-forest-card border border-forest-orange/40 text-forest-orange text-xs font-mono font-bold tracking-wider">
+                        <span class="w-2 h-2 rounded-full bg-forest-orange animate-ping"></span>
+                        <span class="uppercase tracking-widest text-[10px]">ALL-WEATHER 4-SEASON SHELTER</span>
+                    </div>
+
+                    <h1 class="text-4xl sm:text-6xl lg:text-7xl font-mono font-black text-white tracking-tight leading-[0.95] uppercase">
+                        CONQUER <br>
+                        EVERY <br>
+                        <span class="text-forest-orange">PEAK.</span>
+                    </h1>
+
+                    <p class="text-xs sm:text-sm text-forest-mist leading-relaxed max-w-lg font-medium font-sans">
+                        Perlengkapan ekspedisi gunung dan camping alam bebas. Tenda dome berkekuatan badai dengan rating waterproof PU 3000mm, rangka aluminium alloy 7001 lentur anti-patah, tas carrier ergonomis anti-pegal, dan perlengkapan survival ultralight.
+                    </p>
+
+                    <div class="pt-2 flex flex-wrap items-center gap-4 font-mono">
+                        <a href="katalog.html" class="inline-flex items-center gap-2.5 px-8 py-4 bg-forest-orange hover:bg-forest-orangedark text-white text-xs font-bold tracking-widest uppercase shadow-lg forest-btn">
+                            <span>JELAJAHI GEAR</span>
+                            <i class="fa-solid fa-arrow-right text-[10px]"></i>
+                        </a>
+                        <button onclick="openChecklistModal()" class="inline-flex items-center gap-2 px-7 py-4 bg-forest-card hover:bg-forest-cardlight border border-forest-border text-white text-xs font-bold tracking-widest uppercase transition">
+                            <i class="fa-solid fa-compass text-forest-orange"></i>
+                            <span>HITUNG GEAR GUNUNG</span>
+                        </button>
+                    </div>
+
+                    <!-- Quick Spec Strip -->
+                    <div class="pt-4 grid grid-cols-3 gap-4 border-t border-forest-border font-mono text-xs">
+                        <div class="p-3 bg-forest-card border border-forest-border">
+                            <span class="text-[10px] text-forest-khaki uppercase block font-bold">WATERPROOF</span>
+                            <strong class="text-sm font-bold text-white">PU 3000mm</strong>
+                            <span class="text-[10px] text-forest-orange font-bold block">Tahan Badai Hujan</span>
+                        </div>
+                        <div class="p-3 bg-forest-card border border-forest-border">
+                            <span class="text-[10px] text-forest-khaki uppercase block font-bold">FRAME ALLOY</span>
+                            <strong class="text-sm font-bold text-white">7001-T6 Poles</strong>
+                            <span class="text-[10px] text-emerald-400 font-bold block">Lentur Anti-Patah</span>
+                        </div>
+                        <div class="p-3 bg-forest-card border border-forest-border">
+                            <span class="text-[10px] text-forest-khaki uppercase block font-bold">WEIGHT PACKING</span>
+                            <strong class="text-sm font-bold text-white">1.85 kg</strong>
+                            <span class="text-[10px] text-forest-khaki block">Ultralight Series</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Right Hero Image with Tent Glow Showcase (6 Cols) -->
+                <div class="lg:col-span-6 relative">
+                    <div class="grid grid-cols-12 gap-4 items-center">
+                        
+                        <!-- Main Tent Showcase (7 Cols) -->
+                        <div class="col-span-7 bg-forest-card border border-forest-border aspect-[3/4] relative group overflow-hidden shadow-2xl">
+                            <img src="https://images.unsplash.com/photo-1504280390367-361c6d9f38f4?auto=format&fit=crop&w=800&q=80" alt="Tenda Camping Rimbakraft di Hutan Pinus" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700">
+                            
+                            <!-- Floating Badge -->
+                            <div class="absolute top-3 left-3 bg-forest-orange text-white px-3 py-1 font-mono font-bold shadow-md">
+                                <span class="text-[9px] uppercase tracking-wider block font-bold">FLAGSHIP SHELTER</span>
+                                <strong class="text-xs font-mono font-black">Rimbakraft Apex-Storm 2P</strong>
+                            </div>
+
+                            <div class="absolute bottom-3 left-3 right-3 bg-forest-bg/90 backdrop-blur-xs p-3 border border-forest-border font-mono text-xs flex justify-between items-center">
+                                <span class="text-white font-bold text-[11px]">210T Ripstop Seam-Tape</span>
+                                <strong class="text-white bg-forest-orange px-2 py-0.5 text-[10px]">Alloy 7001 Frame</strong>
+                            </div>
+                        </div>
+
+                        <!-- Side Carrier & Cooking Stove (5 Cols) -->
+                        <div class="col-span-5 space-y-4">
+                            <div class="bg-forest-card border border-forest-border aspect-[3/4] relative group overflow-hidden shadow-xl">
+                                <img src="https://images.unsplash.com/photo-1510312305653-8ed496efae75?auto=format&fit=crop&w=600&q=80" alt="Carrier Backpack 65L" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700">
+                                <span class="absolute top-2.5 right-2.5 bg-black/80 text-forest-orange text-[9px] font-mono font-bold px-2 py-0.5 uppercase border border-forest-orange/40">
+                                    ERGONOMIC 65L
+                                </span>
+                            </div>
+                            <div class="p-4 bg-forest-dark border border-forest-border text-xs font-mono">
+                                <span class="font-mono font-bold text-forest-orange block text-sm">Alpine Proven:</span>
+                                <p class="text-[11px] leading-relaxed font-sans font-normal text-forest-mist mt-1">Diuji langsung di ketinggian 3726 MDPL Puncak Rinjani & Semeru.</p>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- Value Strip Bar -->
+            <div class="mt-16 max-w-5xl mx-auto grid grid-cols-1 sm:grid-cols-3 gap-6 bg-forest-card p-6 border border-forest-border shadow-xl text-xs font-mono">
+                <div class="flex items-start gap-3.5">
+                    <div class="w-10 h-10 bg-forest-dark text-forest-orange flex items-center justify-center shrink-0 text-base border border-forest-orange/30">
+                        <i class="fa-solid fa-cloud-showers-heavy"></i>
+                    </div>
+                    <div>
+                        <strong class="text-white font-bold block text-sm uppercase">Rating PU 3000mm</strong>
+                        <span class="text-forest-khaki leading-relaxed font-sans text-xs">Jahitan berlapis double seam-sealed tape tahan hujan badai tropis tanpa embun rembes.</span>
+                    </div>
+                </div>
+                <div class="flex items-start gap-3.5">
+                    <div class="w-10 h-10 bg-forest-dark text-forest-orange flex items-center justify-center shrink-0 text-base border border-forest-orange/30">
+                        <i class="fa-solid fa-shield-halved"></i>
+                    </div>
+                    <div>
+                        <strong class="text-white font-bold block text-sm uppercase">Frame Alloy 7001</strong>
+                        <span class="text-forest-khaki leading-relaxed font-sans text-xs">Batang tenda aluminium penerbangan lentur menahan hembusan angin kencang di punggungan.</span>
+                    </div>
+                </div>
+                <div class="flex items-start gap-3.5">
+                    <div class="w-10 h-10 bg-forest-dark text-forest-orange flex items-center justify-center shrink-0 text-base border border-forest-orange/30">
+                        <i class="fa-solid fa-feather-pointed"></i>
+                    </div>
+                    <div>
+                        <strong class="text-white font-bold block text-sm uppercase">Ultralight & Compact</strong>
+                        <span class="text-forest-khaki leading-relaxed font-sans text-xs">Bobot packing ringan mulai 1.85 kg, tidak membebani pundak saat pendakian jarak jauh.</span>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- 4. SECTION KHUSUS: EXPEDITION GEAR CHECKLIST CATEGORIES -->
+    <section class="py-16 bg-forest-dark border-b border-forest-border font-mono">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            
+            <div class="text-center max-w-2xl mx-auto mb-12">
+                <span class="text-xs font-mono uppercase tracking-[0.25em] text-forest-orange font-bold block mb-1">
+                    // ESSENTIAL SURVIVAL MATRIX
+                </span>
+                <h2 class="text-2xl sm:text-4xl font-mono font-black text-white uppercase">
+                    4 Pilar Perlengkapan Ekspedisi
+                </h2>
+                <p class="text-xs sm:text-sm text-forest-mist mt-1 font-sans">
+                    Kombinasi peralatan wajib untuk memastikan kenyamanan dan keselamatan di alam bebas.
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+                
+                <!-- Pillar 1: Tenda & Shelter -->
+                <div class="bg-forest-card border border-forest-border p-6 flex flex-col justify-between hover:border-forest-orange transition">
+                    <div>
+                        <div class="w-10 h-10 bg-forest-dark text-forest-orange flex items-center justify-center text-lg mb-4 border border-forest-orange/30">
+                            <i class="fa-solid fa-tent"></i>
+                        </div>
+                        <h3 class="text-base font-mono font-bold text-white uppercase">1. Shelter & Tenda</h3>
+                        <p class="text-xs text-forest-khaki mt-2 leading-relaxed font-sans font-normal">
+                            Tenda dome 4-season dengan flysheet 210T Ripstop, vestibule luas untuk taruh carrier, dan jaring B3 anti-nyamuk tembus udara.
+                        </p>
+                    </div>
+                    <div class="mt-6 pt-3 border-t border-forest-border text-[11px] font-bold text-forest-orange uppercase">
+                        Kapasitas 2P / 4P Ready
+                    </div>
+                </div>
+
+                <!-- Pillar 2: Ransel Carrier -->
+                <div class="bg-forest-card border border-forest-border p-6 flex flex-col justify-between hover:border-forest-orange transition">
+                    <div>
+                        <div class="w-10 h-10 bg-forest-dark text-forest-orange flex items-center justify-center text-lg mb-4 border border-forest-orange/30">
+                            <i class="fa-solid fa-bag-shopping"></i>
+                        </div>
+                        <h3 class="text-base font-mono font-bold text-white uppercase">2. Pack & Carrier</h3>
+                        <p class="text-xs text-forest-khaki mt-2 leading-relaxed font-sans font-normal">
+                            Carrier 50L hingga 70L dengan sistem bantalan punggung sirkulasi udara (Air-Comfort Backsystem) dan rain cover bawaan.
+                        </p>
+                    </div>
+                    <div class="mt-6 pt-3 border-t border-forest-border text-[11px] font-bold text-forest-orange uppercase">
+                        Distribusi Beban Pinggang
+                    </div>
+                </div>
+
+                <!-- Pillar 3: Sleeping System -->
+                <div class="bg-forest-card border border-forest-border p-6 flex flex-col justify-between hover:border-forest-orange transition">
+                    <div>
+                        <div class="w-10 h-10 bg-forest-dark text-emerald-400 flex items-center justify-center text-lg mb-4 border border-emerald-500/30">
+                            <i class="fa-solid fa-bed"></i>
+                        </div>
+                        <h3 class="text-base font-mono font-bold text-white uppercase">3. Sleeping System</h3>
+                        <p class="text-xs text-forest-khaki mt-2 leading-relaxed font-sans font-normal">
+                            Sleeping bag bulu angsa & polar tebal tahan suhu ekstrem 0°C - 10°C dilengkapi matras tiup aluminium foil anti-dingin tanah.
+                        </p>
+                    </div>
+                    <div class="mt-6 pt-3 border-t border-forest-border text-[11px] font-bold text-emerald-400 uppercase">
+                        Anti-Hipotermia 0°C
+                    </div>
+                </div>
+
+                <!-- Pillar 4: Cooking & Nutrition -->
+                <div class="bg-forest-card border border-forest-border p-6 flex flex-col justify-between hover:border-forest-orange transition">
+                    <div>
+                        <div class="w-10 h-10 bg-forest-dark text-forest-amber flex items-center justify-center text-lg mb-4 border border-forest-amber/30">
+                            <i class="fa-solid fa-fire-burner"></i>
+                        </div>
+                        <h3 class="text-base font-mono font-bold text-white uppercase">4. Cooking Stove</h3>
+                        <p class="text-xs text-forest-khaki mt-2 leading-relaxed font-sans font-normal">
+                            Kompor lipat anti-angin (windproof burner) bertenaga 3500W dengan set panci nesting aluminium anodized anti-lengket.
+                        </p>
+                    </div>
+                    <div class="mt-6 pt-3 border-t border-forest-border text-[11px] font-bold text-forest-amber uppercase">
+                        Api Biru Cepat Mendidih
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+    <!-- 5. PRODUK UNGGULAN: GRID 3 KOLOM EXPEDITION GEAR -->
+    <section class="py-16 bg-forest-bg border-b border-forest-border font-mono">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            
+            <div class="flex flex-col md:flex-row md:items-end justify-between mb-12">
+                <div>
+                    <span class="text-xs font-mono uppercase tracking-[0.25em] text-forest-orange font-bold block mb-1">
+                        // FEATURED EXPEDITION GEAR
+                    </span>
+                    <h2 class="text-2xl sm:text-4xl font-mono font-black text-white uppercase">
+                        Pilihan Perlengkapan Unggulan
+                    </h2>
+                    <p class="text-xs sm:text-sm text-forest-mist mt-1 font-sans">
+                        Rincian spesifikasi kapasitas orang/liter, berat packing, dan rating ketahanan badai.
+                    </p>
+                </div>
+                <a href="katalog.html" class="mt-4 md:mt-0 text-xs font-mono font-bold bg-forest-card hover:bg-forest-cardlight text-white border border-forest-border px-4 py-2 uppercase tracking-wider transition">
+                    Lihat Semua 8 Gear &rarr;
+                </a>
+            </div>
+
+            <!-- 3 Column Product Grid -->
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                
+                <!-- Product 1: Rimbakraft Apex-Storm 2P Tent -->
+                <div class="bg-forest-card border border-forest-border p-5 flex flex-col justify-between hover:border-forest-orange transition">
+                    <div>
+                        <div class="aspect-[4/3] bg-forest-dark overflow-hidden mb-4 relative group border border-forest-border">
+                            <img src="https://images.unsplash.com/photo-1504280390367-361c6d9f38f4?auto=format&fit=crop&w=600&q=80" alt="Apex-Storm 2P Tent" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+                            <span class="absolute top-2.5 left-2.5 bg-forest-orange text-white text-[9px] font-bold px-2 py-0.5 uppercase font-mono">
+                                PU 3000MM
+                            </span>
+                        </div>
+
+                        <div class="flex items-center gap-1.5 mb-2 text-[10px] text-forest-orange font-bold uppercase font-mono">
+                            <i class="fa-solid fa-tent"></i>
+                            <span>2 Orang • Frame Alloy 7001 • Berat 1.85kg</span>
+                        </div>
+
+                        <h3 class="font-mono font-bold text-lg text-white leading-snug">Apex-Storm 2P Dome Tent</h3>
+                        <p class="text-xs text-forest-mist mt-1.5 font-sans line-clamp-2">Tenda ekspedisi double-layer dengan flysheet 210T Ripstop tahan badai hujan deras dan teras luas.</p>
+                        
+                        <div class="mt-3 p-3 bg-forest-dark border border-forest-border text-[10px] space-y-1">
+                            <div class="flex justify-between"><span>Kapasitas:</span> <strong class="text-white">2 Orang Dewasa + Carrier</strong></div>
+                            <div class="flex justify-between"><span>Rangka:</span> <strong class="text-forest-orange">Aluminium 7001 (8.5mm)</strong></div>
+                        </div>
+                    </div>
+
+                    <div class="mt-6 pt-3 border-t border-forest-border flex items-center justify-between">
+                        <div>
+                            <span class="text-[9px] text-forest-khaki block uppercase">Harga Resmi</span>
+                            <span class="font-mono font-bold text-lg text-white">Rp 649.000</span>
+                        </div>
+                        <a href="detail.html" class="px-4 py-2 bg-forest-orange hover:bg-forest-orangedark text-white text-xs font-bold uppercase transition">
+                            Detail &rarr;
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Product 2: TerraTrek 65L Ergonomic Expedition Carrier -->
+                <div class="bg-forest-card border border-forest-border p-5 flex flex-col justify-between hover:border-forest-orange transition">
+                    <div>
+                        <div class="aspect-[4/3] bg-forest-dark overflow-hidden mb-4 relative group border border-forest-border">
+                            <img src="https://images.unsplash.com/photo-1510312305653-8ed496efae75?auto=format&fit=crop&w=600&q=80" alt="TerraTrek 65L Carrier" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+                            <span class="absolute top-2.5 left-2.5 bg-forest-orange text-white text-[9px] font-bold px-2 py-0.5 uppercase font-mono">
+                                CAPACITY 65+5L
+                            </span>
+                        </div>
+
+                        <div class="flex items-center gap-1.5 mb-2 text-[10px] text-forest-orange font-bold uppercase font-mono">
+                            <i class="fa-solid fa-bag-shopping"></i>
+                            <span>Cordura 600D • Backsystem Sirkulasi • Free Raincover</span>
+                        </div>
+
+                        <h3 class="font-mono font-bold text-lg text-white leading-snug">TerraTrek 65L Carrier</h3>
+                        <p class="text-xs text-forest-mist mt-1.5 font-sans line-clamp-2">Tas gunung kapasitas besar dengan rangka aluminium penyangga punggung ganda untuk ekspedisi 3-5 hari.</p>
+                        
+                        <div class="mt-3 p-3 bg-forest-dark border border-forest-border text-[10px] space-y-1">
+                            <div class="flex justify-between"><span>Beban Maksimal:</span> <strong class="text-white">Hingga 25 kg Nyaman</strong></div>
+                            <div class="flex justify-between"><span>Akses Bawah:</span> <strong class="text-emerald-400">Quick Bottom Compartment</strong></div>
+                        </div>
+                    </div>
+
+                    <div class="mt-6 pt-3 border-t border-forest-border flex items-center justify-between">
+                        <div>
+                            <span class="text-[9px] text-forest-khaki block uppercase">Harga Resmi</span>
+                            <span class="font-mono font-bold text-lg text-white">Rp 589.000</span>
+                        </div>
+                        <a href="detail.html" class="px-4 py-2 bg-forest-orange hover:bg-forest-orangedark text-white text-xs font-bold uppercase transition">
+                            Detail &rarr;
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Product 3: AlpineDown 600 Goose Down Sleeping Bag -->
+                <div class="bg-forest-card border border-forest-border p-5 flex flex-col justify-between hover:border-forest-orange transition">
+                    <div>
+                        <div class="aspect-[4/3] bg-forest-dark overflow-hidden mb-4 relative group border border-forest-border">
+                            <img src="https://images.unsplash.com/photo-1510312305653-8ed496efae75?auto=format&fit=crop&w=600&q=80" alt="AlpineDown 600 Sleeping Bag" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+                            <span class="absolute top-2.5 left-2.5 bg-forest-orange text-white text-[9px] font-bold px-2 py-0.5 uppercase font-mono">
+                                COMFORT 0°C
+                            </span>
+                        </div>
+
+                        <div class="flex items-center gap-1.5 mb-2 text-[10px] text-forest-orange font-bold uppercase font-mono">
+                            <i class="fa-solid fa-bed"></i>
+                            <span>Bulu Angsa 600FP • Mummy Shape • Berat 750g</span>
+                        </div>
+
+                        <h3 class="font-mono font-bold text-lg text-white leading-snug">AlpineDown 600 Sleeping Bag</h3>
+                        <p class="text-xs text-forest-mist mt-1.5 font-sans line-clamp-2">Kantung tidur bulu angsa ultralight berdaya insulasi hangat tinggi untuk suhu beku di puncak gunung.</p>
+                        
+                        <div class="mt-3 p-3 bg-forest-dark border border-forest-border text-[10px] space-y-1">
+                            <div class="flex justify-between"><span>Limit Temperature:</span> <strong class="text-white">-5°C Extreme Limit</strong></div>
+                            <div class="flex justify-between"><span>Ukuran Kompres:</span> <strong class="text-forest-orange">18 x 14 cm Sangat Ringkas</strong></div>
+                        </div>
+                    </div>
+
+                    <div class="mt-6 pt-3 border-t border-forest-border flex items-center justify-between">
+                        <div>
+                            <span class="text-[9px] text-forest-khaki block uppercase">Harga Resmi</span>
+                            <span class="font-mono font-bold text-lg text-white">Rp 429.000</span>
+                        </div>
+                        <a href="detail.html" class="px-4 py-2 bg-forest-orange hover:bg-forest-orangedark text-white text-xs font-bold uppercase transition">
+                            Detail &rarr;
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+    <!-- 6. TESTIMONI PENDAKI & CAMPER -->
+    <section class="py-16 bg-forest-dark border-b border-forest-border font-mono">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            
+            <div class="text-center max-w-2xl mx-auto mb-12">
+                <span class="text-xs font-mono uppercase tracking-[0.25em] text-forest-orange font-bold block mb-1">
+                    // REAL EXPEDITION TESTIMONIALS
+                </span>
+                <h2 class="text-2xl sm:text-4xl font-mono font-black text-white uppercase">
+                    Teruji di Puncak Tertinggi Nusantara
+                </h2>
+                <p class="text-xs sm:text-sm text-forest-mist mt-1 font-sans">
+                    Pengalaman nyata dari pendaki gunung, petualang rimba, dan camper keluarga.
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                
+                <div class="bg-forest-card p-6 border border-forest-border flex flex-col justify-between">
+                    <div>
+                        <div class="flex items-center gap-1 text-forest-orange text-xs mb-3">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                        <p class="text-xs text-forest-mist leading-relaxed font-sans italic">
+                            "Bawa tenda Apex-Storm 2P ke Plawangan Sembalun Rinjani pas angin kencang dan badai kabut. Frame aluminium 7001-nya beneran lentur ngikutin angin tanpa bengkok dan bagian dalam tetep kering hangat."
+                        </p>
+                    </div>
+                    <div class="mt-6 pt-3 border-t border-forest-border flex items-center justify-between text-xs">
+                        <strong class="text-white font-bold font-mono">Dimas Satria</strong>
+                        <span class="text-[10px] bg-forest-dark text-forest-orange px-2 py-0.5 border border-forest-orange/30 font-mono font-bold">Pendaki 7 Summits — Bandung</span>
+                    </div>
+                </div>
+
+                <div class="bg-forest-card p-6 border border-forest-border flex flex-col justify-between">
+                    <div>
+                        <div class="flex items-center gap-1 text-forest-orange text-xs mb-3">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                        <p class="text-xs text-forest-mist leading-relaxed font-sans italic">
+                            "Carrier TerraTrek 65L bener-bener penyelamat punggung waktu ekspedisi 4 hari di Gunung Kerinci. Beban 18 kg berasa stabil di pinggang, nggak narik pundak ke belakang."
+                        </p>
+                    </div>
+                    <div class="mt-6 pt-3 border-t border-forest-border flex items-center justify-between text-xs">
+                        <strong class="text-white font-bold font-mono">Reza Pahlevi</strong>
+                        <span class="text-[10px] bg-forest-dark text-forest-orange px-2 py-0.5 border border-forest-orange/30 font-mono font-bold">Backpacker Hutan — Padang</span>
+                    </div>
+                </div>
+
+                <div class="bg-forest-card p-6 border border-forest-border flex flex-col justify-between">
+                    <div>
+                        <div class="flex items-center gap-1 text-forest-orange text-xs mb-3">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                        <p class="text-xs text-forest-mist leading-relaxed font-sans italic">
+                            "Sewa tenda 4P dan kompor di Basecamp Rimbakraft Sleman buat kemping keluarga di Kaliurang. Barangnya bersih, pasak lengkap, dan dapat bonus checklist pendakian yang sangat membantu."
+                        </p>
+                    </div>
+                    <div class="mt-6 pt-3 border-t border-forest-border flex items-center justify-between text-xs">
+                        <strong class="text-white font-bold font-mono">dr. Hendra Kurniawan</strong>
+                        <span class="text-[10px] bg-forest-dark text-forest-orange px-2 py-0.5 border border-forest-orange/30 font-mono font-bold">Camper Keluarga — Yogyakarta</span>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+    <!-- 7. FOOTER -->
+    <footer class="bg-forest-bg text-forest-mist border-t border-forest-border pt-14 pb-28 font-mono">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-10">
+                
+                <div class="lg:col-span-2 space-y-4">
+                    <div class="flex items-center gap-3">
+                        <div class="w-9 h-9 bg-forest-orange text-white flex items-center justify-center text-lg font-mono font-black">
+                            <i class="fa-solid fa-mountain"></i>
+                        </div>
+                        <span class="text-2xl font-mono font-black text-white uppercase tracking-tight">
+                            RIMBAKRAFT<span class="text-forest-orange">.</span>
+                        </span>
+                    </div>
+                    <p class="text-xs text-forest-khaki leading-relaxed max-w-sm font-sans">
+                        Lentera Pasar Outdoor & Camping Gear Template. Menghadirkan perlengkapan petualangan tangguh cuaca ekstrem: tenda dome stormproof PU 3000mm, frame aluminium 7001, carrier ergonomis, sleeping bag bulu angsa, dan kompor windproof.
+                    </p>
+                    <div class="pt-2 text-xs text-forest-khaki space-y-1 font-sans">
+                        <div><i class="fa-solid fa-location-dot text-forest-orange mr-2"></i> Basecamp Store: Jl. Kaliurang Km 9.5 No. 45, Sleman, D.I. Yogyakarta 55581</div>
+                        <div><i class="fa-brands fa-whatsapp text-emerald-400 mr-2"></i> +62 812-3456-7890 (Layanan Sewa Alat & Konsultasi Gear WA)</div>
+                    </div>
+                </div>
+
+                <div>
+                    <h4 class="text-xs font-bold uppercase tracking-wider text-white mb-4">Navigasi Utama</h4>
+                    <ul class="space-y-2.5 text-xs text-forest-khaki">
+                        <li><a href="index.html" class="hover:text-forest-orange transition">Beranda Utama</a></li>
+                        <li><a href="katalog.html" class="hover:text-forest-orange transition">Katalog Gear</a></li>
+                        <li><a href="detail.html" class="hover:text-forest-orange transition">Detail Tenda Storm</a></li>
+                        <li><a href="tentang.html" class="hover:text-forest-orange transition">Uji Badai & Material</a></li>
+                        <li><a href="artikel.html" class="hover:text-forest-orange transition">Checklist Gunung</a></li>
+                        <li><a href="kontak.html" class="hover:text-forest-orange transition">Basecamp & Sewa</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h4 class="text-xs font-bold uppercase tracking-wider text-white mb-4">Kategori Gear</h4>
+                    <ul class="space-y-2.5 text-xs text-forest-khaki">
+                        <li><a href="katalog.html" class="hover:text-forest-orange transition">Tenda Dome & Flysheet</a></li>
+                        <li><a href="katalog.html" class="hover:text-forest-orange transition">Tas Carrier 50L - 70L</a></li>
+                        <li><a href="katalog.html" class="hover:text-forest-orange transition">Sleeping Bag Bulu Angsa</a></li>
+                        <li><a href="katalog.html" class="hover:text-forest-orange transition">Kompor Windproof & Nesting</a></li>
+                        <li><a href="katalog.html" class="hover:text-forest-orange transition">Matras Tiup Foil</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h4 class="text-xs font-bold uppercase tracking-wider text-white mb-4">Jaminan Kualitas</h4>
+                    <div class="space-y-2 text-xs">
+                        <div class="p-3 bg-forest-card border border-forest-border">
+                            <span class="text-[10px] text-forest-orange block uppercase font-bold">1-YEAR FRAME WARRANTY:</span>
+                            <span class="font-bold text-white text-[11px]">Garansi Frame Alloy Patah Ganti Baru</span>
+                        </div>
+                        <div class="p-3 bg-forest-card border border-forest-border">
+                            <span class="text-[10px] text-emerald-400 block uppercase font-bold">RENTAL & GEAR CLINIC:</span>
+                            <span class="font-bold text-white text-[11px]">Sewa & Reparasi Alat di Basecamp</span>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="mt-12 pt-8 border-t border-forest-border flex flex-col sm:flex-row items-center justify-between text-xs text-slate-500">
+                <p>&copy; 2026 RIMBAKRAFT WILDERNESS EXPEDITION LAB. All Rights Reserved.</p>
+                <p class="text-[11px] mt-2 sm:mt-0 font-sans">Lentera Pasar Production Template — Outdoor Camping & Expedition Gear</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- ========================================================================= -->
+    <!-- INTERACTIVE MOUNTAIN EXPEDITION CHECKLIST MODAL                          -->
+    <!-- ========================================================================= -->
+    <div id="checklistModal" class="fixed inset-0 z-50 bg-black/85 backdrop-blur-xs hidden flex items-center justify-center p-4 font-mono">
+        <div class="bg-forest-card border border-forest-border max-w-lg w-full p-6 sm:p-8 shadow-2xl relative text-forest-mist">
+            <button onclick="closeChecklistModal()" class="absolute top-5 right-5 text-forest-khaki hover:text-white border border-forest-border w-8 h-8 flex items-center justify-center font-bold">
+                <i class="fa-solid fa-xmark"></i>
+            </button>
+            
+            <div class="flex items-center gap-3 mb-6">
+                <div class="w-10 h-10 bg-forest-orange text-white flex items-center justify-center text-lg border border-forest-orange">
+                    <i class="fa-solid fa-mountain"></i>
+                </div>
+                <div>
+                    <h3 class="text-lg font-mono font-bold text-white uppercase">Kalkulator Kebutuhan Gear</h3>
+                    <p class="text-xs text-forest-khaki font-sans">Pilih destinasi pendakian untuk rekomendasi kapasitas tenda & ransel.</p>
+                </div>
+            </div>
+
+            <div class="space-y-4 text-xs">
+                <div>
+                    <label class="block font-bold text-white mb-1.5 uppercase">Pilih Karakteristik Pendakian:</label>
+                    <select id="tripSelect" onchange="updateTripResult()" class="w-full p-3 border border-forest-border bg-forest-dark text-white focus:outline-none focus:border-forest-orange text-xs font-mono font-bold">
+                        <option value="short">Tektok / Camping 1-2 Hari (Gunung Prau, Gede, Andong, Papandayan)</option>
+                        <option value="medium">Ekspedisi Gunung 3-4 Hari (Rinjani, Semeru, Slamet, Lawu)</option>
+                        <option value="rain">Ekspedisi Hujan Lebat / Jalur Lembab (Kerinci, Leuser, Raung)</option>
+                    </select>
+                </div>
+
+                <div id="tripResultBox" class="p-4 bg-forest-dark border border-forest-orange/40 space-y-2">
+                    <div class="flex items-center justify-between">
+                        <span class="text-[10px] font-bold bg-forest-orange text-white px-2 py-0.5 uppercase block font-mono">// REKOMENDASI GEAR:</span>
+                        <span id="tripPackTag" class="text-[10px] font-bold text-forest-orange">Carrier 45-50L + Tenda 2P</span>
+                    </div>
+                    <h5 id="tripTitleDisplay" class="font-mono font-bold text-white text-base">Paket Pendakian 1-2 Hari</h5>
+                    <p id="tripDescDisplay" class="text-[11px] text-forest-khaki font-sans leading-relaxed">
+                        Cukup membawa tenda Apex-Storm 2P (1.85kg), carrier 50L, sleeping bag polar, dan kompor lipat mini tanpa perlu beban berlebih.
+                    </p>
+                </div>
+
+                <div class="pt-2 flex items-center justify-between gap-3">
+                    <a id="tripWaLink" href="https://wa.me/6281234567890?text=Halo%20Rimbakraft%20Outdoor,%20saya%20tertarik%20dengan%20paket%20gear%20pendakian%201-2%20hari." target="_blank" class="w-full py-3.5 bg-forest-orange hover:bg-forest-orangedark text-white font-bold text-xs uppercase tracking-wider text-center transition shadow-lg forest-btn">
+                        Konsultasi Gear Pendakian via WhatsApp &rarr;
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ========================================================================= -->
+    <!-- FLOATING WHATSAPP BUTTON (bottom-24)                                      -->
+    <!-- ========================================================================= -->
+    <a href="https://wa.me/6281234567890?text=Halo%20Rimbakraft%20Outdoor,%20saya%20ingin%20konsultasi%20perlengkapan%20camping." 
+       target="_blank" 
+       class="fixed bottom-24 right-6 z-50 group flex items-center gap-3 bg-forest-card hover:bg-forest-cardlight text-white px-4 py-3 border border-forest-orange/40 shadow-2xl hover:border-forest-orange transition-all duration-300 font-mono" 
+       aria-label="Konsultasi Gear via WhatsApp">
+        <span class="relative flex h-3 w-3">
+            <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-forest-orange opacity-75"></span>
+            <span class="relative inline-flex rounded-full h-3 w-3 bg-forest-orange"></span>
+        </span>
+        <i class="fa-brands fa-whatsapp text-2xl text-emerald-400"></i>
+        <div class="text-left hidden sm:block pr-1">
+            <div class="text-[10px] text-forest-orange font-bold uppercase tracking-wider leading-none">Gear Specialist</div>
+            <span class="font-bold text-xs text-white">Konsultasi Basecamp WA</span>
+        </div>
+    </a>
+
+    <!-- ========================================================================= -->
+    <!-- LENTERA PASAR - STICKY DEMO & SALES BAR (fixed bottom-4)                 -->
+    <!-- ========================================================================= -->
+    <div class="fixed bottom-4 left-1/2 -translate-x-1/2 z-50 w-[95%] max-w-4xl bg-slate-900/95 backdrop-blur-md text-white p-3.5 md:p-4 rounded-2xl shadow-2xl border border-slate-700/80 transition-all duration-300">
+      <div class="flex flex-col md:flex-row items-center justify-between gap-3 md:gap-4">
+        
+        <div class="flex items-center gap-3 w-full md:w-auto">
+          <div class="w-10 h-10 rounded-xl bg-orange-500/20 border border-orange-500/40 flex items-center justify-center shrink-0">
+            <svg class="w-5 h-5 text-orange-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+            </svg>
+          </div>
+          <div>
+            <div class="flex items-center gap-2">
+              <span class="font-bold text-sm text-white">Lentera Pasar Engine</span>
+              <span class="text-[10px] bg-orange-500/20 text-orange-300 border border-orange-500/30 px-2 py-0.5 rounded-full font-medium">Outdoor & Camping Template</span>
+            </div>
+            <p class="text-xs text-slate-300 hidden sm:block">
+              Terima beres: Website responsif + Panel input produk sendiri + Dikelola tim iklan profesional.
+            </p>
+          </div>
+        </div>
+
+        <div class="flex items-center justify-between md:justify-end gap-3 w-full md:w-auto">
+          <div class="hidden lg:flex items-center gap-2 text-xs text-slate-400 border-r border-slate-700 pr-4">
+            <div class="flex items-center gap-1 text-slate-200">
+              <svg class="w-4 h-4 text-orange-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" /></svg>
+              <span>Field Journal UI</span>
+            </div>
+            <span class="text-slate-600">•</span>
+            <div class="flex items-center gap-1 text-slate-200">
+              <svg class="w-4 h-4 text-orange-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" /></svg>
+              <span>Gear Checklist</span>
+            </div>
+          </div>
+
+          <a href="https://wa.me/6281234567890?text=Halo%20Tim%20Lentera%20Pasar,%20saya%20tertarik%20menggunakan%20template%20website%20Outdoor%20%26%20Camping%20ini%20lengkap%20dengan%20Admin%20Panel%20dan%20Jasa%20Iklannya." 
+             target="_blank"
+             class="w-full md:w-auto inline-flex items-center justify-center gap-2 bg-gradient-to-r from-orange-500 to-amber-600 hover:from-orange-400 hover:to-amber-500 text-white text-xs md:text-sm font-bold px-5 py-2.5 rounded-xl shadow-lg transition-all hover:scale-105 shrink-0">
+            <span>Gunakan Template Ini</span>
+            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3" />
+            </svg>
+          </a>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- SCRIPT LOGIC -->
+    <script>
+        const checklistModal = document.getElementById('checklistModal');
+        function openChecklistModal() {
+            checklistModal.classList.remove('hidden');
+            updateTripResult();
+        }
+        function closeChecklistModal() {
+            checklistModal.classList.add('hidden');
+        }
+
+        function updateTripResult() {
+            const val = document.getElementById('tripSelect').value;
+            const titleDisp = document.getElementById('tripTitleDisplay');
+            const descDisp = document.getElementById('tripDescDisplay');
+            const packTag = document.getElementById('tripPackTag');
+            const waLink = document.getElementById('tripWaLink');
+
+            if (val === 'short') {
+                titleDisp.innerText = "Paket Pendakian Ringan 1-2 Hari";
+                descDisp.innerText = "Cukup membawa tenda Apex-Storm 2P (1.85kg), carrier 45-50L, sleeping bag polar, matras tiup, dan kompor lipat mini.";
+                packTag.innerText = "Carrier 45-50L + Tenda 2P";
+                waLink.href = "https://wa.me/6281234567890?text=Halo%20Rimbakraft%20Outdoor,%20saya%20tertarik%20dengan%20paket%20pendakian%201-2%20hari.";
+            } else if (val === 'medium') {
+                titleDisp.innerText = "Paket Ekspedisi Gunung 3-4 Hari";
+                descDisp.innerText = "Disarankan membawa carrier 65L dengan frame ganda, tenda dome 4-season PU 3000mm, sleeping bag bulu angsa 0°C, dan nesting masak kapasitas besar.";
+                packTag.innerText = "Carrier 65L + Tenda Badai + SB Bulu Angsa";
+                waLink.href = "https://wa.me/6281234567890?text=Halo%20Rimbakraft%20Outdoor,%20saya%20tertarik%20dengan%20paket%20ekspedisi%20gunung%203-4%20hari.";
+            } else {
+                titleDisp.innerText = "Paket Ekspedisi Hujan Lebat & Hutan Basah";
+                descDisp.innerText = "Wajib melengkapi tenda dengan footprint oxford 210D (PU 5000mm), flysheet cadangan 3x4m, dry bag pakaian, dan kompor windproof tahan hembusan angin.";
+                packTag.innerText = "Full Stormproof + Footprint + Flysheet 3x4m";
+                waLink.href = "https://wa.me/6281234567890?text=Halo%20Rimbakraft%20Outdoor,%20saya%20tertarik%20dengan%20paket%20ekspedisi%20hujan%20lebat.";
+            }
+        }
+
+        // Mobile menu toggle
+        const mobileMenuBtn = document.getElementById('mobileMenuBtn');
+        const mobileMenu = document.getElementById('mobileMenu');
+        const menuIcon = document.getElementById('menuIcon');
+
+        mobileMenuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+            if (mobileMenu.classList.contains('hidden')) {
+                menuIcon.classList.remove('fa-xmark');
+                menuIcon.classList.add('fa-bars');
+            } else {
+                menuIcon.classList.remove('fa-bars');
+                menuIcon.classList.add('fa-xmark');
+            }
+        });
+    </script>
+</body>
+</html>

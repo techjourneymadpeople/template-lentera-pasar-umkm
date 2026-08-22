@@ -51,6 +51,7 @@ template-website-umkm/
 │   ├── gaming-peripherals-studio/      # Mechanical Keyboard Gasket, Ultralight Mouse & Deskmat (Keycraft Studio)
 │   ├── tools-hardware-pro/             # Perkakas Tukang, Bor Cordless 20V, Gerinda & Toolbox (Ironkraft Tools)
 │   ├── moto-garage-accessories/        # Holder HP CNC Anti-Getar OIS, Jas Hujan PVC & Gembok Alarm (Motokraft Garage)
+│   ├── outdoor-camping-expedition/     # Tenda Badai PU 3000mm, Carrier 65L, SB Bulu Angsa & Kompor (Rimbakraft Outdoor)
 │   ├── gadget-phone-accessories/       # Case Hp, TWS, Charger & Gadget Acc
 │   ├── hobby-plant-monstera/           # Tanaman Hias, Pot Keramik & Pupuk Urban
 │   ├── hobby-aquatic-aquascape/        # Ikan Hias, Aquascape & Pakan Hewan

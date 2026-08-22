@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+<html lang="id" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jurnal Edukasi Ekspedisi & Checklist Gunung — RIMBAKRAFT</title>
+    <meta name="description" content="Koleksi artikel panduan pendakian: memahami rating waterproof PU 3000mm, checklist 10 gear wajib anti-hipotermia, dan cara merawat tenda dome.">
+    
+    <!-- Google Fonts: Space Grotesk & Plus Jakarta Sans -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        forest: {
+                            bg: '#131B19',
+                            dark: '#1C2826',
+                            card: '#23322F',
+                            cardlight: '#2D3E3B',
+                            border: '#384D48',
+                            orange: '#F97316',
+                            orangedark: '#EA580C',
+                            amber: '#FBBF24',
+                            mist: '#D1DCD6',
+                            khaki: '#9BAEA6'
+                        }
+                    },
+                    fontFamily: {
+                        sans: ['"Plus Jakarta Sans"', 'sans-serif'],
+                        mono: ['"Space Grotesk"', 'monospace']
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        .no-scrollbar::-webkit-scrollbar { display: none; }
+        .no-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
+        
+        .forest-btn {
+            transition: all 0.2s cubic-bezier(0.16, 1, 0.3, 1);
+        }
+        .forest-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 10px 25px -6px rgba(249, 115, 22, 0.45);
+        }
+    </style>
+</head>
+<body class="bg-forest-bg text-forest-mist font-sans antialiased selection:bg-forest-orange selection:text-white">
+
+    <!-- 1. TOP BAR -->
+    <div class="bg-forest-dark text-forest-khaki text-xs py-2 px-4 font-mono font-bold border-b border-forest-border">
+        <div class="max-w-7xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-2 text-center sm:text-left">
+            <div class="flex items-center justify-center gap-2">
+                <span class="px-2 py-0.5 bg-forest-orange text-white text-[10px] uppercase font-mono font-black tracking-wider">
+                    EXPEDITION FIELD JOURNAL
+                </span>
+                <span class="text-white">Riset Waterproofing, Pencegahan Hipotermia, & Panduan Manajemen Logistik</span>
+            </div>
+            <div class="flex items-center gap-4 text-xs font-mono">
+                <a href="katalog.html" class="text-forest-orange hover:text-white underline font-extrabold transition">Koleksi Gear &rarr;</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- 2. NAVBAR -->
+    <header class="sticky top-0 z-40 bg-forest-bg/95 backdrop-blur-md border-b border-forest-border transition-all">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-20 sm:h-24">
+                
+                <a href="index.html" class="flex items-center gap-3 group">
+                    <div class="w-11 h-11 bg-forest-orange text-white flex items-center justify-center text-xl font-mono font-black border-2 border-forest-orange shadow-lg group-hover:bg-white group-hover:text-forest-orange transition">
+                        <i class="fa-solid fa-mountain"></i>
+                    </div>
+                    <div class="flex flex-col">
+                        <span class="text-2xl sm:text-3xl font-mono font-black tracking-tight text-white uppercase leading-none">
+                            RIMBAKRAFT<span class="text-forest-orange">.</span>
+                        </span>
+                        <span class="text-[9px] font-mono tracking-[0.25em] text-forest-orange uppercase mt-1 font-bold">
+                            WILDERNESS & EXPEDITION LAB
+                        </span>
+                    </div>
+                </a>
+
+                <nav class="hidden lg:flex items-center gap-8 text-xs font-bold tracking-widest uppercase text-forest-khaki font-mono">
+                    <a href="index.html" class="hover:text-forest-orange transition">Beranda</a>
+                    <a href="katalog.html" class="hover:text-forest-orange transition">Katalog Gear</a>
+                    <a href="detail.html" class="hover:text-forest-orange transition">Detail Tenda Storm</a>
+                    <a href="tentang.html" class="hover:text-forest-orange transition">Uji Badai & Material</a>
+                    <a href="artikel.html" class="text-forest-orange border-b-2 border-forest-orange pb-1">Checklist Gunung</a>
+                    <a href="kontak.html" class="hover:text-forest-orange transition">Basecamp & Sewa</a>
+                </nav>
+
+                <div class="hidden sm:flex items-center gap-3 font-mono">
+                    <a href="https://wa.me/6281234567890?text=Halo%20Rimbakraft%20Outdoor,%20saya%20mau%20tanya%20seputar%20tips%20pendakian%20gunung." target="_blank" class="inline-flex items-center gap-2 bg-forest-orange hover:bg-forest-orangedark text-white text-xs font-bold tracking-wider px-5 py-2.5 transition-all shadow-lg font-mono forest-btn">
+                        <i class="fa-brands fa-whatsapp text-base"></i>
+                        <span>Tanya Tim Ekspedisi</span>
+                    </a>
+                </div>
+
+                <button id="mobileMenuBtn" class="lg:hidden p-2 text-white hover:text-forest-orange focus:outline-none" aria-label="Toggle Menu">
+                    <i id="menuIcon" class="fa-solid fa-bars text-xl"></i>
+                </button>
+            </div>
+        </div>
+
+        <!-- Mobile Drawer -->
+        <div id="mobileMenu" class="hidden lg:hidden bg-forest-dark border-b border-forest-border px-4 py-5 space-y-3 font-mono">
+            <a href="index.html" class="block text-xs font-bold uppercase tracking-wider text-white hover:text-forest-orange py-2 border-b border-forest-border">Beranda Utama</a>
+            <a href="katalog.html" class="block text-xs font-bold uppercase tracking-wider text-white hover:text-forest-orange py-2 border-b border-forest-border">Katalog Tenda & Carrier</a>
+            <a href="detail.html" class="block text-xs font-bold uppercase tracking-wider text-white hover:text-forest-orange py-2 border-b border-forest-border">Detail Tenda Stormproof 2-4P</a>
+            <a href="tentang.html" class="block text-xs font-bold uppercase tracking-wider text-white hover:text-forest-orange py-2 border-b border-forest-border">Standar Uji Badai PU 3000mm</a>
+            <a href="artikel.html" class="block text-xs font-bold uppercase tracking-wider text-forest-orange py-2 border-b border-forest-border">Checklist Wajib Naik Gunung</a>
+            <a href="kontak.html" class="block text-xs font-bold uppercase tracking-wider text-white hover:text-forest-orange py-2">Basecamp Sleman & Sewa Alat</a>
+        </div>
+    </header>
+
+    <!-- 3. PAGE HEADER & FEATURED ESSAY -->
+    <section class="py-12 bg-forest-dark border-b border-forest-border font-mono">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            
+            <div class="max-w-3xl mb-10">
+                <div class="inline-flex items-center gap-2 px-3 py-1 bg-forest-card border border-forest-orange/40 text-forest-orange text-xs font-bold tracking-wider mb-3">
+                    <span class="w-2 h-2 rounded-full bg-forest-orange"></span>
+                    <span class="uppercase tracking-widest text-[10px]">WILDERNESS FIELD JOURNAL</span>
+                </div>
+                <h1 class="text-3xl sm:text-5xl font-mono font-black text-white tracking-tight uppercase">
+                    Jurnal Edukasi Ekspedisi & Tips Gunung
+                </h1>
+                <p class="text-xs sm:text-sm text-forest-mist mt-2 font-sans font-normal">
+                    Panduan praktis manajemen peralatan camping, teknik bertahan di cuaca ekstrem, dan tips memilih perlengkapan mountaineering.
+                </p>
+            </div>
+
+            <!-- Featured Cover Story Card -->
+            <div class="bg-forest-card border border-forest-border p-6 sm:p-10 shadow-2xl">
+                <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
+                    <div class="lg:col-span-6">
+                        <div class="aspect-[16/10] bg-forest-dark overflow-hidden relative group border border-forest-border">
+                            <img src="https://images.unsplash.com/photo-1504280390367-361c6d9f38f4?auto=format&fit=crop&w=800&q=80" alt="Rating Waterproof PU 3000mm" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700">
+                            <span class="absolute top-3 left-3 bg-forest-orange text-white text-[9px] font-bold px-3 py-1 uppercase font-mono">
+                                COVER STORY
+                            </span>
+                        </div>
+                    </div>
+                    <div class="lg:col-span-6 space-y-4 font-mono">
+                        <div class="flex items-center gap-3 text-xs text-forest-khaki">
+                            <span>Oleh Tim Ekspedisi Rimbakraft</span>
+                            <span>•</span>
+                            <span>5 Min Read</span>
+                            <span>•</span>
+                            <span class="text-forest-orange font-bold">Waterproof Science</span>
+                        </div>
+                        <h2 class="text-2xl sm:text-3xl font-mono font-bold text-white uppercase leading-tight">
+                            Memahami Rating Waterproof PU 3000mm: Mengapa Angka Ini Sangat Krusial untuk Menahan Badai Hujan Tropis Nusantara?
+                        </h2>
+                        <p class="text-xs sm:text-sm text-forest-mist leading-relaxed font-sans font-normal">
+                            Hujan di gunung tropis seperti Semeru atau Rinjani disertai tiupan angin kencang menghasilkan tekanan air setara 2000-2500mm kolom air. Tenda dengan rating standar PU 1500mm akan rembes (mist spray) dalam 2 jam, sedangkan PU 3000mm dengan double seam-tape menjamin ruang tidur tetap 100% kering semalaman.
+                        </p>
+                        <div class="pt-2">
+                            <a href="detail.html" class="inline-flex items-center gap-2 px-6 py-3 bg-forest-orange text-white text-xs font-bold tracking-wider uppercase hover:bg-forest-orangedark transition forest-btn">
+                                <span>Lihat Tenda Apex-Storm 2P</span>
+                                <i class="fa-solid fa-arrow-right text-[10px]"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- 4. GRID ARTIKEL PANDUAN PENDAKIAN -->
+    <section class="py-16 bg-forest-bg font-mono">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            
+            <h3 class="text-2xl font-mono font-black text-white uppercase mb-8 flex items-center gap-2">
+                <i class="fa-solid fa-newspaper text-forest-orange"></i>
+                <span>Semua Panduan Mountaineering & Tips Survival</span>
+            </h3>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                
+                <!-- Article 1 -->
+                <div class="bg-forest-card border border-forest-border p-6 flex flex-col justify-between hover:border-forest-orange transition">
+                    <div>
+                        <div class="aspect-[16/10] bg-forest-dark overflow-hidden mb-4 border border-forest-border">
+                            <img src="https://images.unsplash.com/photo-1510312305653-8ed496efae75?auto=format&fit=crop&w=500&q=80" alt="Checklist Naik Gunung" class="w-full h-full object-cover">
+                        </div>
+                        <div class="flex items-center gap-2 text-[10px] font-bold text-forest-khaki mb-2">
+                            <span class="text-forest-orange">SURVIVAL CHECKLIST</span>
+                            <span>•</span>
+                            <span>4 Min Read</span>
+                        </div>
+                        <h4 class="font-mono font-bold text-lg text-white leading-snug">
+                            Checklist 10 Perlengkapan Wajib Naik Gunung Perdana agar Tidak Terkena Hipotermia
+                        </h4>
+                        <p class="text-xs text-forest-mist mt-2 leading-relaxed font-sans font-normal">
+                            Dari pakaian layering anti-katun, jas hujan poncho, sleeping bag bulu angsa, matras foil, headlamp cadangan, hingga kompor darurat.
+                        </p>
+                    </div>
+                    <div class="mt-6 pt-4 border-t border-forest-border flex items-center justify-between text-xs">
+                        <span class="text-forest-khaki">Mountain Safety</span>
+                        <a href="katalog.html" class="text-forest-orange font-bold hover:underline">Lihat Carrier &rarr;</a>
+                    </div>
+                </div>
+
+                <!-- Article 2 -->
+                <div class="bg-forest-card border border-forest-border p-6 flex flex-col justify-between hover:border-forest-orange transition">
+                    <div>
+                        <div class="aspect-[16/10] bg-forest-dark overflow-hidden mb-4 border border-forest-border">
+                            <img src="https://images.unsplash.com/photo-1504280390367-361c6d9f38f4?auto=format&fit=crop&w=500&q=80" alt="Rawat Tenda Dome" class="w-full h-full object-cover">
+                        </div>
+                        <div class="flex items-center gap-2 text-[10px] font-bold text-forest-khaki mb-2">
+                            <span class="text-emerald-400">GEAR CARE</span>
+                            <span>•</span>
+                            <span>3 Min Read</span>
+                        </div>
+                        <h4 class="font-mono font-bold text-lg text-white leading-snug">
+                            Cara Mencuci & Menyimpan Tenda Dome yang Benar agar Lapisan Seam-Tape Tidak Mengelupas
+                        </h4>
+                        <p class="text-xs text-forest-mist mt-2 leading-relaxed font-sans font-normal">
+                            Jangan pernah mencuci tenda dengan deterjen keras atau mesin cuci. Keringkan total dengan diangin-anginkan sebelum disimpan di tempat sejuk.
+                        </p>
+                    </div>
+                    <div class="mt-6 pt-4 border-t border-forest-border flex items-center justify-between text-xs">
+                        <span class="text-forest-khaki">Maintenance</span>
+                        <a href="katalog.html" class="text-emerald-400 font-bold hover:underline">Tenda Dome &rarr;</a>
+                    </div>
+                </div>
+
+                <!-- Article 3 -->
+                <div class="bg-forest-card border border-forest-border p-6 flex flex-col justify-between hover:border-forest-orange transition">
+                    <div>
+                        <div class="aspect-[16/10] bg-forest-dark overflow-hidden mb-4 border border-forest-border">
+                            <img src="https://images.unsplash.com/photo-1504280390367-361c6d9f38f4?auto=format&fit=crop&w=500&q=80" alt="Kompor Lapangan" class="w-full h-full object-cover">
+                        </div>
+                        <div class="flex items-center gap-2 text-[10px] font-bold text-forest-khaki mb-2">
+                            <span class="text-forest-amber">CAMP COOKING</span>
+                            <span>•</span>
+                            <span>4 Min Read</span>
+                        </div>
+                        <h4 class="font-mono font-bold text-lg text-white leading-snug">
+                            Panduan Memilih Kompor Lapangan: Gas Butane Canister vs Spiritus di Ketinggian 3000 MDPL
+                        </h4>
+                        <p class="text-xs text-forest-mist mt-2 leading-relaxed font-sans font-normal">
+                            Memahami efek tekanan udara rendah dan suhu dingin terhadap efisiensi gas kaleng serta pentingnya pelindung angin (windshield).
+                        </p>
+                    </div>
+                    <div class="mt-6 pt-4 border-t border-forest-border flex items-center justify-between text-xs">
+                        <span class="text-forest-khaki">Cookware</span>
+                        <a href="katalog.html" class="text-forest-amber font-bold hover:underline">Kompor Lipat &rarr;</a>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+    <!-- 5. GLOSARIUM PERLENGKAPAN OUTDOOR -->
+    <section class="py-16 bg-forest-dark border-t border-b border-forest-border font-mono">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            
+            <div class="text-center max-w-2xl mx-auto mb-12">
+                <span class="text-xs font-mono uppercase tracking-[0.25em] text-forest-orange font-bold block mb-1">
+                    // EXPEDITION TECH GLOSSARY
+                </span>
+                <h3 class="text-2xl sm:text-3xl font-mono font-bold text-white uppercase">
+                    Glosarium Terminologi Perlengkapan Gunung
+                </h3>
+                <p class="text-xs text-forest-khaki mt-1 font-sans">
+                    Mengenal istilah teknis bahan kain, rating ketahanan air, dan sistem insulasi panas.
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 text-xs">
+                
+                <div class="p-5 bg-forest-card border border-forest-border">
+                    <strong class="text-sm font-mono font-bold text-white uppercase block">PU 3000mm</strong>
+                    <p class="text-forest-khaki mt-1 text-[11px] leading-relaxed font-sans">
+                        Ukuran daya tahan lapisan Polyurethane terhadap tekanan air hujan hidrostatik setinggi 3000 milimeter tanpa merembes.
+                    </p>
+                </div>
+
+                <div class="p-5 bg-forest-card border border-forest-border">
+                    <strong class="text-sm font-mono font-bold text-white uppercase block">Alloy 7001-T6</strong>
+                    <p class="text-forest-khaki mt-1 text-[11px] leading-relaxed font-sans">
+                        Paduan aluminium mutu penerbangan yang diperkeras untuk menghasilkan rangka tenda sangat ringan namun elastis menahan badai.
+                    </p>
+                </div>
+
+                <div class="p-5 bg-forest-card border border-forest-border">
+                    <strong class="text-sm font-mono font-bold text-white uppercase block">Seam-Sealed Tape</strong>
+                    <p class="text-forest-khaki mt-1 text-[11px] leading-relaxed font-sans">
+                        Pita isolasi tahan panas yang direkatkan di sepanjang jalur jahitan benang untuk menutup lubang mikro jarum jahit.
+                    </p>
+                </div>
+
+                <div class="p-5 bg-forest-card border border-forest-border">
+                    <strong class="text-sm font-mono font-bold text-white uppercase block">Fill Power (600FP)</strong>
+                    <p class="text-forest-khaki mt-1 text-[11px] leading-relaxed font-sans">
+                        Ukuran volume mengembang bulu angsa (Goose Down) per satu ons, menentukan efisiensi insulasi suhu dingin ekstrem.
+                    </p>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+    <!-- 6. FOOTER -->
+    <footer class="bg-forest-bg text-forest-mist border-t border-forest-border pt-14 pb-28 font-mono">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex flex-col md:flex-row items-center justify-between gap-6 border-b border-forest-border pb-8">
+                <div class="flex items-center gap-3">
+                    <div class="w-8 h-8 bg-forest-orange text-white flex items-center justify-center text-base font-mono font-black">
+                        <i class="fa-solid fa-mountain"></i>
+                    </div>
+                    <span class="text-xl font-mono font-black text-white uppercase tracking-tight">
+                        RIMBAKRAFT<span class="text-forest-orange">.</span>
+                    </span>
+                </div>
+                <div class="flex flex-wrap gap-6 text-xs text-forest-khaki font-bold uppercase tracking-wider">
+                    <a href="index.html" class="hover:text-forest-orange">Beranda</a>
+                    <a href="katalog.html" class="hover:text-forest-orange">Katalog</a>
+                    <a href="detail.html" class="hover:text-forest-orange">Detail</a>
+                    <a href="tentang.html" class="hover:text-forest-orange">Uji Badai</a>
+                    <a href="artikel.html" class="text-forest-orange">Checklist</a>
+                    <a href="kontak.html" class="hover:text-forest-orange">Basecamp</a>
+                </div>
+            </div>
+            <div class="mt-6 flex flex-col sm:flex-row items-center justify-between text-xs text-slate-500">
+                <p>&copy; 2026 RIMBAKRAFT WILDERNESS EXPEDITION LAB. All Rights Reserved.</p>
+                <p class="text-[11px] mt-2 sm:mt-0 font-sans">Lentera Pasar Production Template — Outdoor Camping & Expedition Gear</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- FLOATING WHATSAPP BUTTON (bottom-24) -->
+    <a href="https://wa.me/6281234567890?text=Halo%20Rimbakraft%20Outdoor,%20saya%20mau%20konsultasi%20artikel%20gunung." 
+       target="_blank" 
+       class="fixed bottom-24 right-6 z-50 group flex items-center gap-3 bg-forest-card hover:bg-forest-cardlight text-white px-4 py-3 border border-forest-orange/40 shadow-2xl hover:border-forest-orange transition-all duration-300 font-mono">
+        <span class="relative flex h-3 w-3">
+            <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-forest-orange opacity-75"></span>
+            <span class="relative inline-flex rounded-full h-3 w-3 bg-forest-orange"></span>
+        </span>
+        <i class="fa-brands fa-whatsapp text-2xl text-emerald-400"></i>
+        <div class="text-left hidden sm:block pr-1">
+            <div class="text-[10px] text-forest-orange font-bold uppercase tracking-wider leading-none">Gear Specialist</div>
+            <span class="font-bold text-xs text-white">Konsultasi Basecamp WA</span>
+        </div>
+    </a>
+
+    <!-- LENTERA PASAR - STICKY DEMO & SALES BAR (fixed bottom-4) -->
+    <div class="fixed bottom-4 left-1/2 -translate-x-1/2 z-50 w-[95%] max-w-4xl bg-slate-900/95 backdrop-blur-md text-white p-3.5 md:p-4 rounded-2xl shadow-2xl border border-slate-700/80 transition-all duration-300">
+      <div class="flex flex-col md:flex-row items-center justify-between gap-3 md:gap-4">
+        <div class="flex items-center gap-3 w-full md:w-auto">
+          <div class="w-10 h-10 rounded-xl bg-orange-500/20 border border-orange-500/40 flex items-center justify-center shrink-0">
+            <svg class="w-5 h-5 text-orange-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+            </svg>
+          </div>
+          <div>
+            <div class="flex items-center gap-2">
+              <span class="font-bold text-sm text-white">Lentera Pasar Engine</span>
+              <span class="text-[10px] bg-orange-500/20 text-orange-300 border border-orange-500/30 px-2 py-0.5 rounded-full font-medium">Outdoor & Camping Template</span>
+            </div>
+            <p class="text-xs text-slate-300 hidden sm:block">
+              Terima beres: Website responsif + Panel input produk sendiri + Dikelola tim iklan profesional.
+            </p>
+          </div>
+        </div>
+
+        <div class="flex items-center justify-between md:justify-end gap-3 w-full md:w-auto">
+          <a href="https://wa.me/6281234567890?text=Halo%20Tim%20Lentera%20Pasar,%20saya%20tertarik%20menggunakan%20template%20website%20Outdoor%20%26%20Camping%20ini%20lengkap%20dengan%20Admin%20Panel%20dan%20Jasa%20Iklannya." 
+             target="_blank"
+             class="w-full md:w-auto inline-flex items-center justify-center gap-2 bg-gradient-to-r from-orange-500 to-amber-600 hover:from-orange-400 hover:to-amber-500 text-white text-xs md:text-sm font-bold px-5 py-2.5 rounded-xl shadow-lg transition-all hover:scale-105 shrink-0">
+            <span>Gunakan Template Ini</span>
+            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3" />
+            </svg>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <!-- SCRIPT -->
+    <script>
+        const mobileMenuBtn = document.getElementById('mobileMenuBtn');
+        const mobileMenu = document.getElementById('mobileMenu');
+        const menuIcon = document.getElementById('menuIcon');
+
+        mobileMenuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+            if (mobileMenu.classList.contains('hidden')) {
+                menuIcon.classList.remove('fa-xmark');
+                menuIcon.classList.add('fa-bars');
+            } else {
+                menuIcon.classList.remove('fa-bars');
+                menuIcon.classList.add('fa-xmark');
+            }
+        });
+    </script>
+</body>
+</html>

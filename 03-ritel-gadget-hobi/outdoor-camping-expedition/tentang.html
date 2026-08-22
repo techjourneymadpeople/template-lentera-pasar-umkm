@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="id" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Standar Uji Badai & Kualitas Material — RIMBAKRAFT</title>
+    <meta name="description" content="Mengenal pengujian hidrostatik PU 3000mm, rangka aluminium 7001-T6 tahan angin badai, dan komitmen keselamatan ekspedisi gunung dari Rimbakraft.">
+    
+    <!-- Google Fonts: Space Grotesk & Plus Jakarta Sans -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        forest: {
+                            bg: '#131B19',
+                            dark: '#1C2826',
+                            card: '#23322F',
+                            cardlight: '#2D3E3B',
+                            border: '#384D48',
+                            orange: '#F97316',
+                            orangedark: '#EA580C',
+                            amber: '#FBBF24',
+                            mist: '#D1DCD6',
+                            khaki: '#9BAEA6'
+                        }
+                    },
+                    fontFamily: {
+                        sans: ['"Plus Jakarta Sans"', 'sans-serif'],
+                        mono: ['"Space Grotesk"', 'monospace']
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        .no-scrollbar::-webkit-scrollbar { display: none; }
+        .no-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
+        
+        .forest-btn {
+            transition: all 0.2s cubic-bezier(0.16, 1, 0.3, 1);
+        }
+        .forest-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 10px 25px -6px rgba(249, 115, 22, 0.45);
+        }
+    </style>
+</head>
+<body class="bg-forest-bg text-forest-mist font-sans antialiased selection:bg-forest-orange selection:text-white">
+
+    <!-- 1. TOP BAR -->
+    <div class="bg-forest-dark text-forest-khaki text-xs py-2 px-4 font-mono font-bold border-b border-forest-border">
+        <div class="max-w-7xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-2 text-center sm:text-left">
+            <div class="flex items-center justify-center gap-2">
+                <span class="px-2 py-0.5 bg-forest-orange text-white text-[10px] uppercase font-mono font-black tracking-wider">
+                    ALPINE RIGOR
+                </span>
+                <span class="text-white">Standar Uji Badai Hidrostatik PU 3000mm & Bahan Aluminium Penerbangan 7001</span>
+            </div>
+            <div class="flex items-center gap-4 text-xs font-mono">
+                <a href="katalog.html" class="text-forest-orange hover:text-white underline font-extrabold transition">Koleksi Gear &rarr;</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- 2. NAVBAR -->
+    <header class="sticky top-0 z-40 bg-forest-bg/95 backdrop-blur-md border-b border-forest-border transition-all">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-20 sm:h-24">
+                
+                <a href="index.html" class="flex items-center gap-3 group">
+                    <div class="w-11 h-11 bg-forest-orange text-white flex items-center justify-center text-xl font-mono font-black border-2 border-forest-orange shadow-lg group-hover:bg-white group-hover:text-forest-orange transition">
+                        <i class="fa-solid fa-mountain"></i>
+                    </div>
+                    <div class="flex flex-col">
+                        <span class="text-2xl sm:text-3xl font-mono font-black tracking-tight text-white uppercase leading-none">
+                            RIMBAKRAFT<span class="text-forest-orange">.</span>
+                        </span>
+                        <span class="text-[9px] font-mono tracking-[0.25em] text-forest-orange uppercase mt-1 font-bold">
+                            WILDERNESS & EXPEDITION LAB
+                        </span>
+                    </div>
+                </a>
+
+                <nav class="hidden lg:flex items-center gap-8 text-xs font-bold tracking-widest uppercase text-forest-khaki font-mono">
+                    <a href="index.html" class="hover:text-forest-orange transition">Beranda</a>
+                    <a href="katalog.html" class="hover:text-forest-orange transition">Katalog Gear</a>
+                    <a href="detail.html" class="hover:text-forest-orange transition">Detail Tenda Storm</a>
+                    <a href="tentang.html" class="text-forest-orange border-b-2 border-forest-orange pb-1">Uji Badai & Material</a>
+                    <a href="artikel.html" class="hover:text-forest-orange transition">Checklist Gunung</a>
+                    <a href="kontak.html" class="hover:text-forest-orange transition">Basecamp & Sewa</a>
+                </nav>
+
+                <div class="hidden sm:flex items-center gap-3 font-mono">
+                    <a href="https://wa.me/6281234567890?text=Halo%20Rimbakraft%20Outdoor,%20saya%20tertarik%20dengan%20standar%20kualitas%20tenda%20badai%20Anda." target="_blank" class="inline-flex items-center gap-2 bg-forest-orange hover:bg-forest-orangedark text-white text-xs font-bold tracking-wider px-5 py-2.5 transition-all shadow-lg font-mono forest-btn">
+                        <i class="fa-brands fa-whatsapp text-base"></i>
+                        <span>Chat Tim Ekspedisi</span>
+                    </a>
+                </div>
+
+                <button id="mobileMenuBtn" class="lg:hidden p-2 text-white hover:text-forest-orange focus:outline-none" aria-label="Toggle Menu">
+                    <i id="menuIcon" class="fa-solid fa-bars text-xl"></i>
+                </button>
+            </div>
+        </div>
+
+        <!-- Mobile Drawer -->
+        <div id="mobileMenu" class="hidden lg:hidden bg-forest-dark border-b border-forest-border px-4 py-5 space-y-3 font-mono">
+            <a href="index.html" class="block text-xs font-bold uppercase tracking-wider text-white hover:text-forest-orange py-2 border-b border-forest-border">Beranda Utama</a>
+            <a href="katalog.html" class="block text-xs font-bold uppercase tracking-wider text-white hover:text-forest-orange py-2 border-b border-forest-border">Katalog Tenda & Carrier</a>
+            <a href="detail.html" class="block text-xs font-bold uppercase tracking-wider text-white hover:text-forest-orange py-2 border-b border-forest-border">Detail Tenda Stormproof 2-4P</a>
+            <a href="tentang.html" class="block text-xs font-bold uppercase tracking-wider text-forest-orange py-2 border-b border-forest-border">Standar Uji Badai PU 3000mm</a>
+            <a href="artikel.html" class="block text-xs font-bold uppercase tracking-wider text-white hover:text-forest-orange py-2 border-b border-forest-border">Checklist Wajib Naik Gunung</a>
+            <a href="kontak.html" class="block text-xs font-bold uppercase tracking-wider text-white hover:text-forest-orange py-2">Basecamp Sleman & Sewa Alat</a>
+        </div>
+    </header>
+
+    <!-- 3. BRAND ETHOS & TESTING RIG SECTION -->
+    <section class="py-16 sm:py-24 border-b border-forest-border bg-gradient-to-b from-forest-bg via-forest-dark to-forest-bg font-mono">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+                
+                <div class="lg:col-span-7 space-y-6">
+                    <div class="inline-flex items-center gap-2 px-3.5 py-1.5 bg-forest-card border border-forest-orange/40 text-forest-orange text-xs font-bold tracking-wider">
+                        <span class="w-2 h-2 rounded-full bg-forest-orange"></span>
+                        <span class="uppercase tracking-widest text-[10px]">ALPINE FIELD TESTING LAB</span>
+                    </div>
+
+                    <h1 class="text-4xl sm:text-6xl font-mono font-black text-white tracking-tight uppercase leading-[0.95]">
+                        DIUJI DI BADAI, <br>
+                        DIBUAT UNTUK <br>
+                        <span class="text-forest-orange">SURVIVAL.</span>
+                    </h1>
+
+                    <p class="text-forest-mist text-sm sm:text-base leading-relaxed font-sans font-normal">
+                        Rimbakraft berakar dari komunitas pendaki gunung dan penggiat alam bebas di lereng Gunung Merapi, Yogyakarta. Kami memahami betapa berbahayanya terjebak badai di atas ketinggian 3000 MDPL saat tenda bocor atau frame patah. Setiap produk kami melewati uji coba riil di jalur pendakian terekstrem Nusantara—dari angin kencang Plawangan Sembalun Rinjani hingga hujan lebat hutan tropis Gunung Kerinci.
+                    </p>
+
+                    <div class="pt-4 grid grid-cols-1 sm:grid-cols-3 gap-4 text-xs font-mono">
+                        <div class="p-4 bg-forest-card border border-forest-border">
+                            <span class="text-forest-orange block text-[10px] uppercase font-bold">STANDAR 01</span>
+                            <strong class="text-white text-base font-bold block mt-1">Uji Kolom PU 3000mm</strong>
+                            <span class="text-forest-khaki font-sans text-xs">Anti-bocor hujan badai tropis.</span>
+                        </div>
+                        <div class="p-4 bg-forest-card border border-forest-border">
+                            <span class="text-emerald-400 block text-[10px] uppercase font-bold">STANDAR 02</span>
+                            <strong class="text-white text-base font-bold block mt-1">Alloy 7001-T6</strong>
+                            <span class="text-forest-khaki font-sans text-xs">Lentur menahan angin kencang.</span>
+                        </div>
+                        <div class="p-4 bg-forest-card border border-forest-border">
+                            <span class="text-forest-amber block text-[10px] uppercase font-bold">STANDAR 03</span>
+                            <strong class="text-white text-base font-bold block mt-1">1 Tahun Garansi</strong>
+                            <span class="text-forest-khaki font-sans text-xs">Patah tiang langsung ganti baru.</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="lg:col-span-5">
+                    <div class="border border-forest-border aspect-[3/4] bg-forest-card relative group overflow-hidden shadow-2xl">
+                        <img src="https://images.unsplash.com/photo-1504280390367-361c6d9f38f4?auto=format&fit=crop&w=800&q=80" alt="Rimbakraft Alpine Testing Rig" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700">
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/90 via-transparent to-transparent flex flex-col justify-end p-6 text-white font-mono">
+                            <span class="text-[9px] font-bold text-forest-orange uppercase tracking-widest">// FIELD TESTING RIG</span>
+                            <h4 class="text-base font-mono font-bold text-white">Merapi Alpine Basecamp & Testing Rig</h4>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- 4. EMPAT PILAR KUALITAS RIMBAKRAFT -->
+    <section class="py-20 bg-forest-dark border-b border-forest-border font-mono">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            
+            <div class="text-center max-w-2xl mx-auto mb-16">
+                <span class="text-xs font-mono uppercase tracking-[0.25em] text-forest-orange font-bold block mb-1">
+                    // 4 PILAR REKAYASA PERLENGKAPAN GUNUNG
+                </span>
+                <h2 class="text-2xl sm:text-4xl font-mono font-black text-white uppercase">
+                    Keunggulan Gear Rimbakraft
+                </h2>
+                <p class="text-xs sm:text-sm text-forest-mist mt-1 font-sans">
+                    Material ripstop berdaya tahan gesek tinggi, elastisitas rangka aluminium, dan sirkulasi anti-kondensasi.
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+                
+                <div class="p-6 bg-forest-card border border-forest-border flex flex-col justify-between hover:border-forest-orange transition">
+                    <div>
+                        <div class="w-10 h-10 bg-forest-dark text-forest-orange flex items-center justify-center text-lg mb-4 border border-forest-orange/30">
+                            <i class="fa-solid fa-cloud-showers-heavy"></i>
+                        </div>
+                        <h4 class="text-base font-mono font-bold text-white uppercase">210T Ripstop PU 3000mm</h4>
+                        <p class="text-xs text-forest-khaki mt-2 leading-relaxed font-sans font-normal">
+                            Kain nilon dengan anyaman benang penguat kotak mikro yang menahan robekan meluas serta lapisan tahan air kedap tekanan hujan badai.
+                        </p>
+                    </div>
+                    <div class="mt-6 pt-3 border-t border-forest-border text-[11px] font-bold text-forest-orange uppercase">
+                        Kedap Air & Anti-Sobek
+                    </div>
+                </div>
+
+                <div class="p-6 bg-forest-card border border-forest-border flex flex-col justify-between hover:border-forest-orange transition">
+                    <div>
+                        <div class="w-10 h-10 bg-forest-dark text-emerald-400 flex items-center justify-center text-lg mb-4 border border-emerald-500/30">
+                            <i class="fa-solid fa-shield-halved"></i>
+                        </div>
+                        <h4 class="text-base font-mono font-bold text-white uppercase">Alloy 7001-T6 Frame</h4>
+                        <p class="text-xs text-forest-khaki mt-2 leading-relaxed font-sans font-normal">
+                            Rangka aluminium paduan seng bermutu aviasi yang memiliki elastisitas tinggi saat ditiup angin badai tanpa mengalami pembengkokan permanen.
+                        </p>
+                    </div>
+                    <div class="mt-6 pt-3 border-t border-forest-border text-[11px] font-bold text-emerald-400 uppercase">
+                        Fleksibel & Anti-Patah
+                    </div>
+                </div>
+
+                <div class="p-6 bg-forest-card border border-forest-border flex flex-col justify-between hover:border-forest-orange transition">
+                    <div>
+                        <div class="w-10 h-10 bg-forest-dark text-forest-amber flex items-center justify-center text-lg mb-4 border border-forest-amber/30">
+                            <i class="fa-solid fa-wind"></i>
+                        </div>
+                        <h4 class="text-base font-mono font-bold text-white uppercase">B3 Breathable Mesh</h4>
+                        <p class="text-xs text-forest-khaki mt-2 leading-relaxed font-sans font-normal">
+                            Jaring kerapatan tinggi yang efektif mencegah agas dan nyamuk hutan masuk sekaligus memastikan sirkulasi uap nafas keluar agar tidak mengembun.
+                        </p>
+                    </div>
+                    <div class="mt-6 pt-3 border-t border-forest-border text-[11px] font-bold text-forest-amber uppercase">
+                        Bebas Embun Kondensasi
+                    </div>
+                </div>
+
+                <div class="p-6 bg-forest-card border border-forest-border flex flex-col justify-between hover:border-forest-orange transition">
+                    <div>
+                        <div class="w-10 h-10 bg-forest-dark text-white flex items-center justify-center text-lg mb-4 border border-forest-border">
+                            <i class="fa-solid fa-kit-medical"></i>
+                        </div>
+                        <h4 class="text-base font-mono font-bold text-white uppercase">Gear Clinic & Spareparts</h4>
+                        <p class="text-xs text-forest-khaki mt-2 leading-relaxed font-sans font-normal">
+                            Layanan reparasi tenda, pengeleman ulang seam-tape, dan ketersediaan suku cadang pasak, karet frame, serta buckle di basecamp kami.
+                        </p>
+                    </div>
+                    <div class="mt-6 pt-3 border-t border-forest-border text-[11px] font-bold text-white uppercase">
+                        Dukungan Jangka Panjang
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+    <!-- 5. FOOTER -->
+    <footer class="bg-forest-bg text-forest-mist border-t border-forest-border pt-14 pb-28 font-mono">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex flex-col md:flex-row items-center justify-between gap-6 border-b border-forest-border pb-8">
+                <div class="flex items-center gap-3">
+                    <div class="w-8 h-8 bg-forest-orange text-white flex items-center justify-center text-base font-mono font-black">
+                        <i class="fa-solid fa-mountain"></i>
+                    </div>
+                    <span class="text-xl font-mono font-black text-white uppercase tracking-tight">
+                        RIMBAKRAFT<span class="text-forest-orange">.</span>
+                    </span>
+                </div>
+                <div class="flex flex-wrap gap-6 text-xs text-forest-khaki font-bold uppercase tracking-wider">
+                    <a href="index.html" class="hover:text-forest-orange">Beranda</a>
+                    <a href="katalog.html" class="hover:text-forest-orange">Katalog</a>
+                    <a href="detail.html" class="hover:text-forest-orange">Detail</a>
+                    <a href="tentang.html" class="text-forest-orange">Uji Badai</a>
+                    <a href="artikel.html" class="hover:text-forest-orange">Checklist</a>
+                    <a href="kontak.html" class="hover:text-forest-orange">Basecamp</a>
+                </div>
+            </div>
+            <div class="mt-6 flex flex-col sm:flex-row items-center justify-between text-xs text-slate-500">
+                <p>&copy; 2026 RIMBAKRAFT WILDERNESS EXPEDITION LAB. All Rights Reserved.</p>
+                <p class="text-[11px] mt-2 sm:mt-0 font-sans">Lentera Pasar Production Template — Outdoor Camping & Expedition Gear</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- FLOATING WHATSAPP BUTTON (bottom-24) -->
+    <a href="https://wa.me/6281234567890?text=Halo%20Rimbakraft%20Outdoor,%20saya%20ingin%20konsultasi%20perlengkapan%20camping." 
+       target="_blank" 
+       class="fixed bottom-24 right-6 z-50 group flex items-center gap-3 bg-forest-card hover:bg-forest-cardlight text-white px-4 py-3 border border-forest-orange/40 shadow-2xl hover:border-forest-orange transition-all duration-300 font-mono">
+        <span class="relative flex h-3 w-3">
+            <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-forest-orange opacity-75"></span>
+            <span class="relative inline-flex rounded-full h-3 w-3 bg-forest-orange"></span>
+        </span>
+        <i class="fa-brands fa-whatsapp text-2xl text-emerald-400"></i>
+        <div class="text-left hidden sm:block pr-1">
+            <div class="text-[10px] text-forest-orange font-bold uppercase tracking-wider leading-none">Gear Specialist</div>
+            <span class="font-bold text-xs text-white">Konsultasi Basecamp WA</span>
+        </div>
+    </a>
+
+    <!-- LENTERA PASAR - STICKY DEMO & SALES BAR (fixed bottom-4) -->
+    <div class="fixed bottom-4 left-1/2 -translate-x-1/2 z-50 w-[95%] max-w-4xl bg-slate-900/95 backdrop-blur-md text-white p-3.5 md:p-4 rounded-2xl shadow-2xl border border-slate-700/80 transition-all duration-300">
+      <div class="flex flex-col md:flex-row items-center justify-between gap-3 md:gap-4">
+        <div class="flex items-center gap-3 w-full md:w-auto">
+          <div class="w-10 h-10 rounded-xl bg-orange-500/20 border border-orange-500/40 flex items-center justify-center shrink-0">
+            <svg class="w-5 h-5 text-orange-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+            </svg>
+          </div>
+          <div>
+            <div class="flex items-center gap-2">
+              <span class="font-bold text-sm text-white">Lentera Pasar Engine</span>
+              <span class="text-[10px] bg-orange-500/20 text-orange-300 border border-orange-500/30 px-2 py-0.5 rounded-full font-medium">Outdoor & Camping Template</span>
+            </div>
+            <p class="text-xs text-slate-300 hidden sm:block">
+              Terima beres: Website responsif + Panel input produk sendiri + Dikelola tim iklan profesional.
+            </p>
+          </div>
+        </div>
+
+        <div class="flex items-center justify-between md:justify-end gap-3 w-full md:w-auto">
+          <a href="https://wa.me/6281234567890?text=Halo%20Tim%20Lentera%20Pasar,%20saya%20tertarik%20menggunakan%20template%20website%20Outdoor%20%26%20Camping%20ini%20lengkap%20dengan%20Admin%20Panel%20dan%20Jasa%20Iklannya." 
+             target="_blank"
+             class="w-full md:w-auto inline-flex items-center justify-center gap-2 bg-gradient-to-r from-orange-500 to-amber-600 hover:from-orange-400 hover:to-amber-500 text-white text-xs md:text-sm font-bold px-5 py-2.5 rounded-xl shadow-lg transition-all hover:scale-105 shrink-0">
+            <span>Gunakan Template Ini</span>
+            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3" />
+            </svg>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <!-- SCRIPT -->
+    <script>
+        const mobileMenuBtn = document.getElementById('mobileMenuBtn');
+        const mobileMenu = document.getElementById('mobileMenu');
+        const menuIcon = document.getElementById('menuIcon');
+
+        mobileMenuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+            if (mobileMenu.classList.contains('hidden')) {
+                menuIcon.classList.remove('fa-xmark');
+                menuIcon.classList.add('fa-bars');
+            } else {
+                menuIcon.classList.remove('fa-bars');
+                menuIcon.classList.add('fa-xmark');
+            }
+        });
+    </script>
+</body>
+</html>
