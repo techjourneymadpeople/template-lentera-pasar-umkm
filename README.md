@@ -53,6 +53,7 @@ template-website-umkm/
 │   ├── moto-garage-accessories/        # Holder HP CNC Anti-Getar OIS, Jas Hujan PVC & Gembok Alarm (Motokraft Garage)
 │   ├── outdoor-camping-expedition/     # Tenda Badai PU 3000mm, Carrier 65L, SB Bulu Angsa & Kompor (Rimbakraft Outdoor)
 │   ├── fitness-gym-gear/               # Dumbbell Hex Rubber, Matras Yoga TPE 8mm & Resistance Band (Ironpulse Fitness)
+│   ├── hobby-collector-vault/          # Gunpla Bandai MG/RG/HG, Nendoroid & Display Box Akrilik (MechaVault)
 │   ├── gadget-phone-accessories/       # Case Hp, TWS, Charger & Gadget Acc
 │   ├── hobby-plant-monstera/           # Tanaman Hias, Pot Keramik & Pupuk Urban
 │   ├── hobby-aquatic-aquascape/        # Ikan Hias, Aquascape & Pakan Hewan

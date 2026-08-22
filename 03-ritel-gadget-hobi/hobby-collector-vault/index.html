@@ -1,0 +1,880 @@
+<!DOCTYPE html>
+<html lang="id" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MECHAVAULT // Authentic Collector & Hobby Display Lab</title>
+    <meta name="description" content="Toko hobi dan mainan koleksi resmi: Model kit Gunpla Bandai, action figure anime skala 1/12 Good Smile, diecast premium, display box akrilik bergaransi 100% MISB original.">
+    
+    <!-- Google Fonts: Orbitron & Plus Jakarta Sans -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@600;700;800;900&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Space+Grotesk:wght@600;700&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        vault: {
+                            bg: '#0B0F19',
+                            dark: '#111827',
+                            card: '#182234',
+                            cardlight: '#202E45',
+                            border: '#283853',
+                            crimson: '#EF4444',
+                            crimsondark: '#DC2626',
+                            gold: '#F59E0B',
+                            goldlight: '#FBBF24',
+                            steel: '#F1F5F9',
+                            silver: '#94A3B8'
+                        }
+                    },
+                    fontFamily: {
+                        sans: ['"Plus Jakarta Sans"', 'sans-serif'],
+                        display: ['"Orbitron"', 'sans-serif'],
+                        mono: ['"Space Grotesk"', 'monospace']
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        .no-scrollbar::-webkit-scrollbar { display: none; }
+        .no-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
+        
+        .vault-btn {
+            transition: all 0.2s cubic-bezier(0.16, 1, 0.3, 1);
+        }
+        .vault-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 10px 25px -6px rgba(239, 68, 68, 0.45);
+        }
+    </style>
+</head>
+<body class="bg-vault-bg text-vault-steel font-sans antialiased selection:bg-vault-crimson selection:text-white">
+
+    <!-- 1. TOP COLLECTOR ALERT BAR -->
+    <div class="bg-vault-dark text-vault-silver text-xs py-2 px-4 font-mono font-bold border-b border-vault-border">
+        <div class="max-w-7xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-2 text-center sm:text-left">
+            <div class="flex items-center justify-center gap-2">
+                <span class="px-2 py-0.5 bg-vault-crimson text-white text-[10px] uppercase font-display font-black tracking-wider">
+                    COLLECTOR PACKAGING
+                </span>
+                <span class="text-white">100% Original Authentic + Free Bubble Wrap Berlapis & Kardus Double-Wall Anti-Penyok</span>
+            </div>
+            <div class="flex items-center gap-4 text-xs font-mono">
+                <span class="hidden md:inline">Store Gandaria Jakarta Selatan</span>
+                <span class="hidden md:inline">|</span>
+                <a href="katalog.html" class="text-vault-gold hover:text-white underline font-extrabold transition">Katalog Koleksi &rarr;</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- 2. NAVBAR -->
+    <header class="sticky top-0 z-40 bg-vault-bg/95 backdrop-blur-md border-b border-vault-border transition-all">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-20 sm:h-24">
+                
+                <!-- Logo -->
+                <a href="index.html" class="flex items-center gap-3 group">
+                    <div class="w-11 h-11 bg-vault-crimson text-white flex items-center justify-center text-xl font-display font-black border-2 border-vault-crimson shadow-lg group-hover:bg-white group-hover:text-vault-crimson transition">
+                        <i class="fa-solid fa-robot"></i>
+                    </div>
+                    <div class="flex flex-col">
+                        <span class="text-2xl sm:text-3xl font-display font-black tracking-tight text-white uppercase leading-none">
+                            MECHAVAULT<span class="text-vault-crimson">.</span>
+                        </span>
+                        <span class="text-[9px] font-mono tracking-[0.25em] text-vault-gold uppercase mt-1 font-bold">
+                            COLLECTOR DISPLAY & HOBBYIST LAB
+                        </span>
+                    </div>
+                </a>
+
+                <!-- Desktop Navigation Links -->
+                <nav class="hidden lg:flex items-center gap-8 text-xs font-bold tracking-widest uppercase text-vault-silver font-mono">
+                    <a href="index.html" class="text-vault-crimson border-b-2 border-vault-crimson pb-1">Beranda</a>
+                    <a href="katalog.html" class="hover:text-vault-crimson transition">Katalog Hobi</a>
+                    <a href="detail.html" class="hover:text-vault-crimson transition">Detail Gunpla MG</a>
+                    <a href="tentang.html" class="hover:text-vault-crimson transition">Standar Kolektor</a>
+                    <a href="artikel.html" class="hover:text-vault-crimson transition">Tips Merakit</a>
+                    <a href="kontak.html" class="hover:text-vault-crimson transition">Store & Pre-Order</a>
+                </nav>
+
+                <!-- Action Button & Box Grading Modal -->
+                <div class="hidden sm:flex items-center gap-3 font-mono">
+                    <button onclick="openGradingModal()" class="inline-flex items-center gap-2 px-4 py-2.5 bg-vault-dark border border-vault-border hover:border-vault-gold text-xs font-bold text-vault-gold transition">
+                        <i class="fa-solid fa-box-open"></i>
+                        <span>Cek Grading Box MISB</span>
+                    </button>
+                    <a href="https://wa.me/6281234567890?text=Halo%20MechaVault,%20saya%20tertarik%20dengan%20koleksi%20Gunpla%20dan%20Action%20Figure." target="_blank" class="inline-flex items-center gap-2 bg-vault-crimson hover:bg-vault-crimsondark text-white text-xs font-bold tracking-wider px-5 py-2.5 transition-all shadow-lg font-mono vault-btn">
+                        <i class="fa-brands fa-whatsapp text-base"></i>
+                        <span>Chat Concierge WA</span>
+                    </a>
+                </div>
+
+                <!-- Mobile Hamburger Button -->
+                <button id="mobileMenuBtn" class="lg:hidden p-2 text-white hover:text-vault-crimson focus:outline-none" aria-label="Toggle Menu">
+                    <i id="menuIcon" class="fa-solid fa-bars text-xl"></i>
+                </button>
+            </div>
+        </div>
+
+        <!-- Mobile Drawer -->
+        <div id="mobileMenu" class="hidden lg:hidden bg-vault-dark border-b border-vault-border px-4 py-5 space-y-3 font-mono">
+            <a href="index.html" class="block text-xs font-bold uppercase tracking-wider text-vault-crimson py-2 border-b border-vault-border">Beranda Utama</a>
+            <a href="katalog.html" class="block text-xs font-bold uppercase tracking-wider text-white hover:text-vault-crimson py-2 border-b border-vault-border">Katalog Mecha & Figure</a>
+            <a href="detail.html" class="block text-xs font-bold uppercase tracking-wider text-white hover:text-vault-crimson py-2 border-b border-vault-border">Detail Gunpla Master Grade 1/100</a>
+            <a href="tentang.html" class="block text-xs font-bold uppercase tracking-wider text-white hover:text-vault-crimson py-2 border-b border-vault-border">Standar Keaslian & Packing Box</a>
+            <a href="artikel.html" class="block text-xs font-bold uppercase tracking-wider text-white hover:text-vault-crimson py-2 border-b border-vault-border">Tips Merakit & Rawat Figure</a>
+            <a href="kontak.html" class="block text-xs font-bold uppercase tracking-wider text-white hover:text-vault-crimson py-2">Store Gandaria & Pre-Order</a>
+            <div class="pt-2 flex flex-col gap-2">
+                <button onclick="openGradingModal()" class="w-full py-3 bg-vault-card text-vault-gold border border-vault-border text-xs font-bold uppercase tracking-wider flex items-center justify-center gap-2">
+                    <i class="fa-solid fa-box-open"></i> Panduan Grading Box (MISB / BIB)
+                </button>
+                <a href="https://wa.me/6281234567890?text=Halo%20MechaVault,%20saya%20mau%20konsultasi%20koleksi%20figure." target="_blank" class="w-full py-3 bg-vault-crimson text-white text-xs font-bold uppercase tracking-wider text-center flex items-center justify-center gap-2 font-display">
+                    <i class="fa-brands fa-whatsapp"></i> WhatsApp Collector Specialist
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- 3. COLLECTOR ACRYLIC VAULT HERO SECTION -->
+    <section class="py-16 sm:py-24 border-b border-vault-border bg-gradient-to-b from-vault-bg via-vault-dark to-vault-bg relative overflow-hidden">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+                
+                <!-- Left Hero Copy (6 Cols) -->
+                <div class="lg:col-span-6 space-y-6">
+                    <div class="inline-flex items-center gap-2 px-3.5 py-1.5 bg-vault-card border border-vault-crimson/40 text-vault-crimson text-xs font-mono font-bold tracking-wider">
+                        <span class="w-2 h-2 rounded-full bg-vault-crimson animate-ping"></span>
+                        <span class="uppercase tracking-widest text-[10px]">100% ORIGINAL JAPAN IMPORT</span>
+                    </div>
+
+                    <h1 class="text-4xl sm:text-6xl lg:text-7xl font-display font-black text-white tracking-tight leading-[0.95] uppercase italic">
+                        ELEVATE <br>
+                        YOUR DISPLAY <br>
+                        <span class="text-vault-crimson">VAULT.</span>
+                    </h1>
+
+                    <p class="text-xs sm:text-sm text-vault-silver leading-relaxed max-w-lg font-medium font-sans">
+                        Pusat mainan koleksi dan model kit berlisensi resmi: Gunpla Bandai Spirits (HG, RG, MG, PG), action figure Good Smile Company, diecast Hot Wheels Premium, serta display box akrilik berlampu LED khusus para kolektor antusias.
+                    </p>
+
+                    <div class="pt-2 flex flex-wrap items-center gap-4 font-mono">
+                        <a href="katalog.html" class="inline-flex items-center gap-2.5 px-8 py-4 bg-vault-crimson hover:bg-vault-crimsondark text-white text-xs font-bold tracking-widest uppercase shadow-lg vault-btn font-display">
+                            <span>JELAJAHI KOLEKSI</span>
+                            <i class="fa-solid fa-arrow-right text-[10px]"></i>
+                        </a>
+                        <button onclick="openGradingModal()" class="inline-flex items-center gap-2 px-7 py-4 bg-vault-card hover:bg-vault-cardlight border border-vault-border text-vault-gold text-xs font-bold tracking-widest uppercase transition font-display">
+                            <i class="fa-solid fa-shield-halved text-vault-gold"></i>
+                            <span>STANDAR KONDISI BOX</span>
+                        </button>
+                    </div>
+
+                    <!-- Quick Collector Spec Strip -->
+                    <div class="pt-4 grid grid-cols-3 gap-4 border-t border-vault-border font-mono text-xs">
+                        <div class="p-3 bg-vault-card border border-vault-border">
+                            <span class="text-[10px] text-vault-silver uppercase block font-bold">BOX CONDITION</span>
+                            <strong class="text-sm font-bold text-white font-display">100% MISB</strong>
+                            <span class="text-[10px] text-vault-gold font-bold block">Sudut Dus Mulus</span>
+                        </div>
+                        <div class="p-3 bg-vault-card border border-vault-border">
+                            <span class="text-[10px] text-vault-silver uppercase block font-bold">AUTHENTICITY</span>
+                            <strong class="text-sm font-bold text-white font-display">200% Guarantee</strong>
+                            <span class="text-[10px] text-emerald-400 font-bold block">Original Bandai/GSC</span>
+                        </div>
+                        <div class="p-3 bg-vault-card border border-vault-border">
+                            <span class="text-[10px] text-vault-silver uppercase block font-bold">SAFETY PACKING</span>
+                            <strong class="text-sm font-bold text-white font-display">Double-Wall Box</strong>
+                            <span class="text-[10px] text-vault-silver block">Bubble Wrap 4 Lapis</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Right Hero Image with Mecha Showcase (6 Cols) -->
+                <div class="lg:col-span-6 relative">
+                    <div class="grid grid-cols-12 gap-4 items-center">
+                        
+                        <!-- Main Model Kit Showcase (7 Cols) -->
+                        <div class="col-span-7 bg-vault-card border border-vault-border aspect-[3/4] relative group overflow-hidden shadow-2xl">
+                            <img src="https://images.unsplash.com/photo-1607604276583-eef5d076aa5f?auto=format&fit=crop&w=800&q=80" alt="Model Kit Mecha Robot Display" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700">
+                            
+                            <!-- Floating Badge -->
+                            <div class="absolute top-3 left-3 bg-vault-crimson text-white px-3 py-1 font-display font-bold shadow-md">
+                                <span class="text-[9px] uppercase tracking-wider block font-bold">PREMIUM MASTER GRADE</span>
+                                <strong class="text-xs font-display font-black">MG 1/100 Eclipse Ver. Ka</strong>
+                            </div>
+
+                            <div class="absolute bottom-3 left-3 right-3 bg-vault-bg/90 backdrop-blur-xs p-3 border border-vault-border font-mono text-xs flex justify-between items-center">
+                                <span class="text-white font-bold text-[11px]">Ready Stock Japan Ed.</span>
+                                <strong class="text-black bg-vault-gold px-2 py-0.5 text-[10px] font-display">MISB 99% MINT</strong>
+                            </div>
+                        </div>
+
+                        <!-- Side Figure & Acrylic Display Showcase (5 Cols) -->
+                        <div class="col-span-5 space-y-4">
+                            <div class="bg-vault-card border border-vault-border aspect-[3/4] relative group overflow-hidden shadow-xl">
+                                <img src="https://images.unsplash.com/photo-1563089145-599997674d42?auto=format&fit=crop&w=600&q=80" alt="Action Figure Showcase" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700">
+                                <span class="absolute top-2.5 right-2.5 bg-black/80 text-vault-gold text-[9px] font-mono font-bold px-2 py-0.5 uppercase border border-vault-gold/40">
+                                    LED SHOWCASE
+                                </span>
+                            </div>
+                            <div class="p-4 bg-vault-dark border border-vault-border text-xs font-mono">
+                                <span class="font-display font-bold text-vault-gold block text-sm uppercase">Collector Verified:</span>
+                                <p class="text-[11px] leading-relaxed font-sans font-normal text-vault-silver mt-1">Stok diperiksa teliti sebelum dikemas dengan kardus tebal khusus ekspedisi.</p>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- Value Strip Bar -->
+            <div class="mt-16 max-w-5xl mx-auto grid grid-cols-1 sm:grid-cols-3 gap-6 bg-vault-card p-6 border border-vault-border shadow-xl text-xs font-mono">
+                <div class="flex items-start gap-3.5">
+                    <div class="w-10 h-10 bg-vault-dark text-vault-crimson flex items-center justify-center shrink-0 text-base border border-vault-crimson/30">
+                        <i class="fa-solid fa-box"></i>
+                    </div>
+                    <div>
+                        <strong class="text-white font-bold block text-sm uppercase font-display">Box Mulus Tanpa Dented</strong>
+                        <span class="text-vault-silver leading-relaxed font-sans text-xs">Setiap box diperiksa kondisi sudut dan segel pabriknya untuk kepuasan kolektor sejati.</span>
+                    </div>
+                </div>
+                <div class="flex items-start gap-3.5">
+                    <div class="w-10 h-10 bg-vault-dark text-vault-gold flex items-center justify-center shrink-0 text-base border border-vault-gold/30">
+                        <i class="fa-solid fa-certificate"></i>
+                    </div>
+                    <div>
+                        <strong class="text-white font-bold block text-sm uppercase font-display">Garansi Original 200%</strong>
+                        <span class="text-vault-silver leading-relaxed font-sans text-xs">100% Produk otentik lisensi resmi Bandai Spirits, Good Smile, Kotobukiya & Hot Wheels.</span>
+                    </div>
+                </div>
+                <div class="flex items-start gap-3.5">
+                    <div class="w-10 h-10 bg-vault-dark text-emerald-400 flex items-center justify-center shrink-0 text-base border border-emerald-500/30">
+                        <i class="fa-solid fa-shield-halved"></i>
+                    </div>
+                    <div>
+                        <strong class="text-white font-bold block text-sm uppercase font-display">Kardus Double-Wall Gratis</strong>
+                        <span class="text-vault-silver leading-relaxed font-sans text-xs">Pengemasan standar kolektor dengan kardus tebal ganda dan bubble wrap tebal tanpa biaya tambahan.</span>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- 4. SECTION KHUSUS: BROWSE BY GRADE & FRANCHISE -->
+    <section class="py-16 bg-vault-dark border-b border-vault-border font-mono">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            
+            <div class="text-center max-w-2xl mx-auto mb-12">
+                <span class="text-xs font-mono uppercase tracking-[0.25em] text-vault-gold font-bold block mb-1">
+                    // SCALE & LINE-UP MATRIX
+                </span>
+                <h2 class="text-2xl sm:text-4xl font-display font-black text-white uppercase tracking-tight">
+                    Pilih Berdasarkan Skala & Kategori
+                </h2>
+                <p class="text-xs sm:text-sm text-vault-silver mt-1 font-sans">
+                    Temukan model kit Gunpla dari skala High Grade 1/144 hingga Master Grade 1/100 dan action figure skala 1/12.
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-6">
+                
+                <!-- Category 1: High Grade 1/144 -->
+                <div class="bg-vault-card border border-vault-border p-6 flex flex-col justify-between hover:border-vault-crimson transition">
+                    <div>
+                        <div class="flex justify-between items-center mb-4">
+                            <span class="text-[10px] font-bold bg-vault-dark text-vault-crimson px-2.5 py-1 border border-vault-crimson/30 uppercase tracking-wider font-display">
+                                1/144 SCALE
+                            </span>
+                            <span class="text-xs text-vault-silver font-bold">Tinggi &plusmn;13cm</span>
+                        </div>
+                        <h3 class="text-lg font-display font-bold text-white uppercase">High Grade (HG) & RG</h3>
+                        <p class="text-xs text-vault-silver mt-2 leading-relaxed font-sans font-normal">
+                            Model kit Gunpla skala 1/144 dengan artikulasi fleksibel, runner warna presisi, dan cocok untuk builder pemula hingga mahir.
+                        </p>
+                    </div>
+                    <div class="mt-6 pt-4 border-t border-vault-border flex items-center justify-between">
+                        <span class="text-xs text-vault-gold font-bold">Mulai Rp 185rb</span>
+                        <a href="katalog.html" class="text-xs text-white font-bold hover:text-vault-crimson uppercase font-display">Lihat HG &rarr;</a>
+                    </div>
+                </div>
+
+                <!-- Category 2: Master Grade 1/100 -->
+                <div class="bg-vault-card border-2 border-vault-crimson p-6 flex flex-col justify-between shadow-2xl relative">
+                    <span class="absolute -top-3 right-6 bg-vault-crimson text-white text-[10px] font-display font-black px-3 py-0.5 uppercase tracking-wider">
+                        COLLECTOR FAVORITE
+                    </span>
+                    <div>
+                        <div class="flex justify-between items-center mb-4">
+                            <span class="text-[10px] font-bold bg-vault-crimson text-white px-2.5 py-1 uppercase tracking-wider font-display font-bold">
+                                1/100 SCALE
+                            </span>
+                            <span class="text-xs text-vault-gold font-bold">Tinggi &plusmn;18cm</span>
+                        </div>
+                        <h3 class="text-lg font-display font-bold text-white uppercase">Master Grade (MG)</h3>
+                        <p class="text-xs text-vault-silver mt-2 leading-relaxed font-sans font-normal">
+                            Model kit berskala 1/100 dengan rangka dalam (*Inner Frame*) detail mekanis lengkap, water decal, dan part kokoh.
+                        </p>
+                    </div>
+                    <div class="mt-6 pt-4 border-t border-vault-border flex items-center justify-between">
+                        <span class="text-xs text-vault-gold font-bold">Mulai Rp 549rb</span>
+                        <a href="detail.html" class="text-xs text-vault-crimson font-bold hover:underline uppercase font-display">Lihat MG &rarr;</a>
+                    </div>
+                </div>
+
+                <!-- Category 3: Action Figure 1/12 -->
+                <div class="bg-vault-card border border-vault-border p-6 flex flex-col justify-between hover:border-vault-crimson transition">
+                    <div>
+                        <div class="flex justify-between items-center mb-4">
+                            <span class="text-[10px] font-bold bg-vault-dark text-vault-gold px-2.5 py-1 border border-vault-gold/30 uppercase tracking-wider font-display">
+                                1/12 FIGURE
+                            </span>
+                            <span class="text-xs text-vault-silver font-bold">Nendoroid & Scale</span>
+                        </div>
+                        <h3 class="text-lg font-display font-bold text-white uppercase">Anime Action Figures</h3>
+                        <p class="text-xs text-vault-silver mt-2 leading-relaxed font-sans font-normal">
+                            Figure berlisensi resmi Good Smile, Figma, S.H.Figuarts dengan part wajah alternatif, pose dinamis, dan standbase display.
+                        </p>
+                    </div>
+                    <div class="mt-6 pt-4 border-t border-vault-border flex items-center justify-between">
+                        <span class="text-xs text-vault-gold font-bold">Mulai Rp 499rb</span>
+                        <a href="katalog.html" class="text-xs text-white font-bold hover:text-vault-crimson uppercase font-display">Lihat Figure &rarr;</a>
+                    </div>
+                </div>
+
+                <!-- Category 4: Tools & Display Box -->
+                <div class="bg-vault-card border border-vault-border p-6 flex flex-col justify-between hover:border-vault-crimson transition">
+                    <div>
+                        <div class="flex justify-between items-center mb-4">
+                            <span class="text-[10px] font-bold bg-vault-dark text-white px-2.5 py-1 border border-vault-border uppercase tracking-wider font-display">
+                                DISPLAY & TOOLS
+                            </span>
+                            <span class="text-xs text-vault-silver font-bold">Anti-Debu</span>
+                        </div>
+                        <h3 class="text-lg font-display font-bold text-white uppercase">Display Box & Tools</h3>
+                        <p class="text-xs text-vault-silver mt-2 leading-relaxed font-sans font-normal">
+                            Box akrilik tebal 3mm anti-sinar UV dengan lampu LED showcase dan tang potong nippers presisi untuk builder model kit.
+                        </p>
+                    </div>
+                    <div class="mt-6 pt-4 border-t border-vault-border flex items-center justify-between">
+                        <span class="text-xs text-vault-gold font-bold">Mulai Rp 89rb</span>
+                        <a href="katalog.html" class="text-xs text-white font-bold hover:text-vault-crimson uppercase font-display">Lihat Box &rarr;</a>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+    <!-- 5. PRODUK UNGGULAN: GRID 4 KOLOM MAINAN KOLEKSI -->
+    <section class="py-16 bg-vault-bg border-b border-vault-border font-mono">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            
+            <div class="flex flex-col md:flex-row md:items-end justify-between mb-12">
+                <div>
+                    <span class="text-xs font-mono uppercase tracking-[0.25em] text-vault-gold font-bold block mb-1">
+                        // FEATURED COLLECTIBLE VAULT
+                    </span>
+                    <h2 class="text-2xl sm:text-4xl font-display font-black text-white uppercase tracking-tight">
+                        Koleksi Unggulan Siap Kirim
+                    </h2>
+                    <p class="text-xs sm:text-sm text-vault-silver mt-1 font-sans">
+                        Semua item berstatus Ready Stock di etalase toko kami, kondisi box 100% MISB dengan segel utuh.
+                    </p>
+                </div>
+                <a href="katalog.html" class="mt-4 md:mt-0 text-xs font-mono font-bold bg-vault-card hover:bg-vault-cardlight text-white border border-vault-border px-4 py-2 uppercase tracking-wider transition font-display">
+                    Lihat Semua 8 Koleksi &rarr;
+                </a>
+            </div>
+
+            <!-- 4 Column Product Grid -->
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+                
+                <!-- Product 1: MG 1/100 Gundam Eclipse -->
+                <div class="bg-vault-card border border-vault-border p-4 flex flex-col justify-between hover:border-vault-crimson transition">
+                    <div>
+                        <div class="aspect-[4/3] bg-vault-dark overflow-hidden mb-3 relative group border border-vault-border">
+                            <img src="https://images.unsplash.com/photo-1607604276583-eef5d076aa5f?auto=format&fit=crop&w=500&q=80" alt="MG Gundam Eclipse" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+                            <span class="absolute top-2 left-2 bg-vault-crimson text-white text-[8px] font-bold px-2 py-0.5 uppercase font-display">
+                                MG 1/100
+                            </span>
+                            <span class="absolute top-2 right-2 bg-black/80 text-vault-gold text-[8px] font-bold px-2 py-0.5 uppercase font-mono border border-vault-gold/40">
+                                MISB 99%
+                            </span>
+                        </div>
+
+                        <div class="flex items-center gap-1.5 mb-1.5 text-[10px] text-vault-gold font-bold uppercase font-mono">
+                            <i class="fa-solid fa-robot"></i>
+                            <span>Bandai Spirits • Inner Frame • Water Decal</span>
+                        </div>
+
+                        <h3 class="font-display font-bold text-base text-white uppercase leading-tight">MG 1/100 Eclipse Gundam</h3>
+                        <p class="text-xs text-vault-silver mt-1 font-sans line-clamp-1">Model kit Master Grade dengan transformasi Mobile Armor dan standbase.</p>
+                        
+                        <div class="mt-2 text-[10px] text-vault-silver">
+                            <span>Status: Ready Stock (Dus Mulus Segel)</span>
+                        </div>
+                    </div>
+
+                    <div class="mt-4 pt-3 border-t border-vault-border flex items-center justify-between">
+                        <div>
+                            <span class="text-[9px] text-vault-silver block uppercase">Harga Resmi</span>
+                            <span class="font-mono font-bold text-base text-vault-gold">Rp 689.000</span>
+                        </div>
+                        <a href="detail.html" class="px-3 py-1.5 bg-vault-crimson hover:bg-vault-crimsondark text-white text-xs font-bold uppercase transition font-display">
+                            Detail &rarr;
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Product 2: RG 1/144 Hi-Nu Gundam -->
+                <div class="bg-vault-card border border-vault-border p-4 flex flex-col justify-between hover:border-vault-crimson transition">
+                    <div>
+                        <div class="aspect-[4/3] bg-vault-dark overflow-hidden mb-3 relative group border border-vault-border">
+                            <img src="https://images.unsplash.com/photo-1563089145-599997674d42?auto=format&fit=crop&w=500&q=80" alt="RG Hi-Nu Gundam" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+                            <span class="absolute top-2 left-2 bg-vault-crimson text-white text-[8px] font-bold px-2 py-0.5 uppercase font-display">
+                                RG 1/144
+                            </span>
+                            <span class="absolute top-2 right-2 bg-black/80 text-vault-gold text-[8px] font-bold px-2 py-0.5 uppercase font-mono border border-vault-gold/40">
+                                MISB 100%
+                            </span>
+                        </div>
+
+                        <div class="flex items-center gap-1.5 mb-1.5 text-[10px] text-vault-gold font-bold uppercase font-mono">
+                            <i class="fa-solid fa-robot"></i>
+                            <span>Real Grade • Fin Funnel System • High Articulation</span>
+                        </div>
+
+                        <h3 class="font-display font-bold text-base text-white uppercase leading-tight">RG 1/144 Hi-Nu Gundam</h3>
+                        <p class="text-xs text-vault-silver mt-1 font-sans line-clamp-1">Koleksi Real Grade terbaik dengan artikulasi mekanis ekstrim.</p>
+                        
+                        <div class="mt-2 text-[10px] text-vault-silver">
+                            <span>Status: Rare Item Ready Stock</span>
+                        </div>
+                    </div>
+
+                    <div class="mt-4 pt-3 border-t border-vault-border flex items-center justify-between">
+                        <div>
+                            <span class="text-[9px] text-vault-silver block uppercase">Harga Resmi</span>
+                            <span class="font-mono font-bold text-base text-vault-gold">Rp 579.000</span>
+                        </div>
+                        <a href="detail.html" class="px-3 py-1.5 bg-vault-crimson hover:bg-vault-crimsondark text-white text-xs font-bold uppercase transition font-display">
+                            Detail &rarr;
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Product 3: Nendoroid Anime Figure Limited -->
+                <div class="bg-vault-card border border-vault-border p-4 flex flex-col justify-between hover:border-vault-crimson transition">
+                    <div>
+                        <div class="aspect-[4/3] bg-vault-dark overflow-hidden mb-3 relative group border border-vault-border">
+                            <img src="https://images.unsplash.com/photo-1563089145-599997674d42?auto=format&fit=crop&w=500&q=80" alt="Nendoroid Figure" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+                            <span class="absolute top-2 left-2 bg-vault-crimson text-white text-[8px] font-bold px-2 py-0.5 uppercase font-display">
+                                NENDOROID
+                            </span>
+                            <span class="absolute top-2 right-2 bg-black/80 text-vault-gold text-[8px] font-bold px-2 py-0.5 uppercase font-mono border border-vault-gold/40">
+                                MIB 98%
+                            </span>
+                        </div>
+
+                        <div class="flex items-center gap-1.5 mb-1.5 text-[10px] text-vault-gold font-bold uppercase font-mono">
+                            <i class="fa-solid fa-user-astronaut"></i>
+                            <span>Good Smile Company • Face Plates • Standbase</span>
+                        </div>
+
+                        <h3 class="font-display font-bold text-base text-white uppercase leading-tight">Nendoroid Anya Forger</h3>
+                        <p class="text-xs text-vault-silver mt-1 font-sans line-clamp-1">Figure chibi artikulasi dengan ekspresi wajah ikonik dan boneka chimera.</p>
+                        
+                        <div class="mt-2 text-[10px] text-vault-silver">
+                            <span>Status: Original Import Jepang</span>
+                        </div>
+                    </div>
+
+                    <div class="mt-4 pt-3 border-t border-vault-border flex items-center justify-between">
+                        <div>
+                            <span class="text-[9px] text-vault-silver block uppercase">Harga Resmi</span>
+                            <span class="font-mono font-bold text-base text-vault-gold">Rp 489.000</span>
+                        </div>
+                        <a href="detail.html" class="px-3 py-1.5 bg-vault-crimson hover:bg-vault-crimsondark text-white text-xs font-bold uppercase transition font-display">
+                            Detail &rarr;
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Product 4: Acrylic LED Display Showcase Box -->
+                <div class="bg-vault-card border border-vault-border p-4 flex flex-col justify-between hover:border-vault-crimson transition">
+                    <div>
+                        <div class="aspect-[4/3] bg-vault-dark overflow-hidden mb-3 relative group border border-vault-border">
+                            <img src="https://images.unsplash.com/photo-1607604276583-eef5d076aa5f?auto=format&fit=crop&w=500&q=80" alt="Display Box Acrylic" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+                            <span class="absolute top-2 left-2 bg-vault-crimson text-white text-[8px] font-bold px-2 py-0.5 uppercase font-display">
+                                LED BOX
+                            </span>
+                            <span class="absolute top-2 right-2 bg-black/80 text-emerald-400 text-[8px] font-bold px-2 py-0.5 uppercase font-mono border border-emerald-500/40">
+                                3MM AKRILIK
+                            </span>
+                        </div>
+
+                        <div class="flex items-center gap-1.5 mb-1.5 text-[10px] text-vault-gold font-bold uppercase font-mono">
+                            <i class="fa-solid fa-lightbulb"></i>
+                            <span>Akrilik Bening 3mm • Lampu LED Atas • USB Port</span>
+                        </div>
+
+                        <h3 class="font-display font-bold text-base text-white uppercase leading-tight">LED Showcase Acrylic Box</h3>
+                        <p class="text-xs text-vault-silver mt-1 font-sans line-clamp-1">Kotak etalase pelindung debu untuk Gunpla MG 1/100 dan action figure 1/12.</p>
+                        
+                        <div class="mt-2 text-[10px] text-vault-silver">
+                            <span>Dimensi: 25 x 25 x 35 cm (Sistem Snap)</span>
+                        </div>
+                    </div>
+
+                    <div class="mt-4 pt-3 border-t border-vault-border flex items-center justify-between">
+                        <div>
+                            <span class="text-[9px] text-vault-silver block uppercase">Harga Resmi</span>
+                            <span class="font-mono font-bold text-base text-vault-gold">Rp 195.000</span>
+                        </div>
+                        <a href="detail.html" class="px-3 py-1.5 bg-vault-crimson hover:bg-vault-crimsondark text-white text-xs font-bold uppercase transition font-display">
+                            Detail &rarr;
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+    <!-- 6. TESTIMONI KOMUNITAS KOLEKTOR -->
+    <section class="py-16 bg-vault-dark border-b border-vault-border font-mono">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            
+            <div class="text-center max-w-2xl mx-auto mb-12">
+                <span class="text-xs font-mono uppercase tracking-[0.25em] text-vault-gold font-bold block mb-1">
+                    // COLLECTOR COMMUNITY REVIEWS
+                </span>
+                <h2 class="text-2xl sm:text-4xl font-display font-black text-white uppercase tracking-tight">
+                    Dipercaya Komunitas Kolektor Mainan
+                </h2>
+                <p class="text-xs sm:text-sm text-vault-silver mt-1 font-sans">
+                    Ulasan nyata dari builder Gunpla, kolektor action figure, dan hobiis mainan di Indonesia.
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                
+                <div class="bg-vault-card p-6 border border-vault-border flex flex-col justify-between">
+                    <div>
+                        <div class="flex items-center gap-1 text-vault-gold text-xs mb-3">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                        <p class="text-xs text-vault-silver leading-relaxed font-sans italic">
+                            "Beli Gunpla MG Eclipse di MechaVault packing-nya gila banget. Kardus double-wall super tebal plus bubble wrap tebal. Sudut dusnya beneran 100% lancip tanpa penyok sedikitpun. Mantap buat koleksi dus!"
+                        </p>
+                    </div>
+                    <div class="mt-6 pt-3 border-t border-vault-border flex items-center justify-between text-xs">
+                        <strong class="text-white font-bold font-display uppercase">Dimas Arya</strong>
+                        <span class="text-[10px] bg-vault-dark text-vault-gold px-2 py-0.5 border border-vault-gold/30 font-mono font-bold">Gunpla Builder — Jakarta</span>
+                    </div>
+                </div>
+
+                <div class="bg-vault-card p-6 border border-vault-border flex flex-col justify-between">
+                    <div>
+                        <div class="flex items-center gap-1 text-vault-gold text-xs mb-3">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                        <p class="text-xs text-vault-silver leading-relaxed font-sans italic">
+                            "Figure Nendoroid original Good Smile ada stiker hologram resminya. Sellernya komunikatif banget pas minta difotoin kondisi sudut box sebelum kirim via WhatsApp."
+                        </p>
+                    </div>
+                    <div class="mt-6 pt-3 border-t border-vault-border flex items-center justify-between text-xs">
+                        <strong class="text-white font-display uppercase font-bold">Rangga Pratama</strong>
+                        <span class="text-[10px] bg-vault-dark text-vault-gold px-2 py-0.5 border border-vault-gold/30 font-mono font-bold">Figure Collector — Bandung</span>
+                    </div>
+                </div>
+
+                <div class="bg-vault-card p-6 border border-vault-border flex flex-col justify-between">
+                    <div>
+                        <div class="flex items-center gap-1 text-vault-gold text-xs mb-3">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                        <p class="text-xs text-vault-silver leading-relaxed font-sans italic">
+                            "Display box akrilik LED-nya bening banget dan potongannya presisi. Lampu LED-nya bikin detail panel line mecha jadi kelihatan dramatis waktu dipajang di kamar."
+                        </p>
+                    </div>
+                    <div class="mt-6 pt-3 border-t border-vault-border flex items-center justify-between text-xs">
+                        <strong class="text-white font-display uppercase font-bold">Kevin Tanujaya</strong>
+                        <span class="text-[10px] bg-vault-dark text-vault-gold px-2 py-0.5 border border-vault-gold/30 font-mono font-bold">Mecha Modeler — Surabaya</span>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+    <!-- 7. FOOTER -->
+    <footer class="bg-vault-bg text-vault-silver border-t border-vault-border pt-14 pb-28 font-mono">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-10">
+                
+                <div class="lg:col-span-2 space-y-4">
+                    <div class="flex items-center gap-3">
+                        <div class="w-9 h-9 bg-vault-crimson text-white flex items-center justify-center text-lg font-display font-black">
+                            <i class="fa-solid fa-robot"></i>
+                        </div>
+                        <span class="text-2xl font-display font-black text-white uppercase tracking-tight">
+                            MECHAVAULT<span class="text-vault-crimson">.</span>
+                        </span>
+                    </div>
+                    <p class="text-xs text-vault-silver leading-relaxed max-w-sm font-sans">
+                        Lentera Pasar Hobby & Collector Template. Menghadirkan mainan koleksi berlisensi resmi: Model kit Gunpla Bandai Spirits, Action figure anime Good Smile, diecast koleksi, dan display box akrilik bergaransi keaslian 200%.
+                    </p>
+                    <div class="pt-2 text-xs text-vault-silver space-y-1 font-sans">
+                        <div><i class="fa-solid fa-location-dot text-vault-crimson mr-2"></i> Store: Jl. Gandaria 1 No. 88, Kebayoran Baru, Jakarta Selatan 12130</div>
+                        <div><i class="fa-brands fa-whatsapp text-emerald-400 mr-2"></i> +62 812-3456-7890 (Layanan Cek Kondisi Box & Pre-Order WA)</div>
+                    </div>
+                </div>
+
+                <div>
+                    <h4 class="text-xs font-bold uppercase tracking-wider text-white mb-4">Navigasi Utama</h4>
+                    <ul class="space-y-2.5 text-xs text-vault-silver">
+                        <li><a href="index.html" class="hover:text-vault-crimson transition">Beranda Utama</a></li>
+                        <li><a href="katalog.html" class="hover:text-vault-crimson transition">Katalog Hobi</a></li>
+                        <li><a href="detail.html" class="hover:text-vault-crimson transition">Detail Gunpla MG</a></li>
+                        <li><a href="tentang.html" class="hover:text-vault-crimson transition">Standar Kolektor</a></li>
+                        <li><a href="artikel.html" class="hover:text-vault-crimson transition">Tips Merakit</a></li>
+                        <li><a href="kontak.html" class="hover:text-vault-crimson transition">Store & Pre-Order</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h4 class="text-xs font-bold uppercase tracking-wider text-white mb-4">Kategori Koleksi</h4>
+                    <ul class="space-y-2.5 text-xs text-vault-silver">
+                        <li><a href="katalog.html" class="hover:text-vault-crimson transition">Gunpla Master Grade 1/100</a></li>
+                        <li><a href="katalog.html" class="hover:text-vault-crimson transition">Gunpla High Grade 1/144</a></li>
+                        <li><a href="katalog.html" class="hover:text-vault-crimson transition">Action Figure Nendoroid</a></li>
+                        <li><a href="katalog.html" class="hover:text-vault-crimson transition">Display Box Akrilik LED</a></li>
+                        <li><a href="katalog.html" class="hover:text-vault-crimson transition">Peralatan Nippers Rakit</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h4 class="text-xs font-bold uppercase tracking-wider text-white mb-4">Jaminan Kolektor</h4>
+                    <div class="space-y-2 text-xs">
+                        <div class="p-3 bg-vault-card border border-vault-border">
+                            <span class="text-[10px] text-vault-gold block uppercase font-bold font-display">100% MISB GUARANTEE:</span>
+                            <span class="font-bold text-white text-[11px]">Segel Asli Dus Mulus</span>
+                        </div>
+                        <div class="p-3 bg-vault-card border border-vault-border">
+                            <span class="text-[10px] text-emerald-400 block uppercase font-bold font-display">DOUBLE-WALL PACKAGING:</span>
+                            <span class="font-bold text-white text-[11px]">Bebas Kardus Penyok</span>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="mt-12 pt-8 border-t border-vault-border flex flex-col sm:flex-row items-center justify-between text-xs text-slate-500">
+                <p>&copy; 2026 MECHAVAULT COLLECTOR & HOBBY LAB. All Rights Reserved.</p>
+                <p class="text-[11px] mt-2 sm:mt-0 font-sans">Lentera Pasar Production Template — Collectible Toys & Hobby Gear</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- ========================================================================= -->
+    <!-- INTERACTIVE COLLECTOR BOX GRADING MODAL                                   -->
+    <!-- ========================================================================= -->
+    <div id="gradingModal" class="fixed inset-0 z-50 bg-black/85 backdrop-blur-xs hidden flex items-center justify-center p-4 font-mono">
+        <div class="bg-vault-card border border-vault-border max-w-lg w-full p-6 sm:p-8 shadow-2xl relative text-vault-steel">
+            <button onclick="closeGradingModal()" class="absolute top-5 right-5 text-vault-silver hover:text-white border border-vault-border w-8 h-8 flex items-center justify-center font-bold">
+                <i class="fa-solid fa-xmark"></i>
+            </button>
+            
+            <div class="flex items-center gap-3 mb-6">
+                <div class="w-10 h-10 bg-vault-crimson text-white flex items-center justify-center text-lg border border-vault-crimson font-display">
+                    <i class="fa-solid fa-box-open"></i>
+                </div>
+                <div>
+                    <h3 class="text-lg font-display font-bold text-white uppercase">Panduan Box Grading Kolektor</h3>
+                    <p class="text-xs text-vault-silver font-sans">Pahami standar penilaian kondisi kardus dan keutuhan segel produk kami.</p>
+                </div>
+            </div>
+
+            <div class="space-y-4 text-xs">
+                <div>
+                    <label class="block font-bold text-white mb-1.5 uppercase">Pilih Standar Grading Kondisi:</label>
+                    <select id="gradeSelect" onchange="updateGradingResult()" class="w-full p-3 border border-vault-border bg-vault-dark text-white focus:outline-none focus:border-vault-crimson text-xs font-mono font-bold">
+                        <option value="misb">MISB (Mint in Sealed Box) — 100% Segel Pabrik Utuh</option>
+                        <option value="mib">MIB (Mint in Box) — Segel Dibuka Cek Part, Plastik Runner Utuh</option>
+                        <option value="bib">BIB (Back in Box) — Pernah Dipajang di Showcase, Part Lengkap Mulus</option>
+                        <option value="loose">Loose Mulus — Tanpa Kardus Box, Figure Lengkap Mulus</option>
+                    </select>
+                </div>
+
+                <div id="gradingResultBox" class="p-4 bg-vault-dark border border-vault-gold/40 space-y-2">
+                    <div class="flex items-center justify-between">
+                        <span class="text-[10px] font-bold bg-vault-gold text-black px-2 py-0.5 uppercase block font-display">// STANDAR KUALITAS:</span>
+                        <span id="gradeTag" class="text-[10px] font-bold text-vault-gold">Segel Utuh Pabrik (Grade A+)</span>
+                    </div>
+                    <h5 id="gradeTitleDisplay" class="font-display font-bold text-white text-base uppercase">MISB (Mint In Sealed Box)</h5>
+                    <p id="gradeDescDisplay" class="text-[11px] text-vault-silver font-sans leading-relaxed">
+                        Kondisi tertinggi untuk kolektor: Kardus belum pernah dibuka sama sekali, selotip segel pabrik utuh, dan sudut dus 95-99% mulus sempurna tanpa lekukan.
+                    </p>
+                </div>
+
+                <div class="pt-2 flex items-center justify-between gap-3">
+                    <a id="gradeWaLink" href="https://wa.me/6281234567890?text=Halo%20MechaVault,%20saya%20mau%20minta%20foto%20kondisi%20sudut%20box%20MISB%20item%20koleksi%20ini." target="_blank" class="w-full py-3.5 bg-vault-crimson hover:bg-vault-crimsondark text-white font-bold text-xs uppercase tracking-wider text-center transition shadow-lg vault-btn font-display">
+                        Minta Foto Sudut Box Asli via WA &rarr;
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ========================================================================= -->
+    <!-- FLOATING WHATSAPP BUTTON (bottom-24)                                      -->
+    <!-- ========================================================================= -->
+    <a href="https://wa.me/6281234567890?text=Halo%20MechaVault,%20saya%20ingin%20konsultasi%20koleksi%20Gunpla%20dan%20Figure." 
+       target="_blank" 
+       class="fixed bottom-24 right-6 z-50 group flex items-center gap-3 bg-vault-card hover:bg-vault-cardlight text-white px-4 py-3 border border-vault-crimson/40 shadow-2xl hover:border-vault-crimson transition-all duration-300 font-mono" 
+       aria-label="Konsultasi Koleksi via WhatsApp">
+        <span class="relative flex h-3 w-3">
+            <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-vault-crimson opacity-75"></span>
+            <span class="relative inline-flex rounded-full h-3 w-3 bg-vault-crimson"></span>
+        </span>
+        <i class="fa-brands fa-whatsapp text-2xl text-emerald-400"></i>
+        <div class="text-left hidden sm:block pr-1">
+            <div class="text-[10px] text-vault-gold font-bold uppercase tracking-wider leading-none font-display">Collector Specialist</div>
+            <span class="font-bold text-xs text-white">Konsultasi Box WA</span>
+        </div>
+    </a>
+
+    <!-- ========================================================================= -->
+    <!-- LENTERA PASAR - STICKY DEMO & SALES BAR (fixed bottom-4)                 -->
+    <!-- ========================================================================= -->
+    <div class="fixed bottom-4 left-1/2 -translate-x-1/2 z-50 w-[95%] max-w-4xl bg-slate-900/95 backdrop-blur-md text-white p-3.5 md:p-4 rounded-2xl shadow-2xl border border-slate-700/80 transition-all duration-300">
+      <div class="flex flex-col md:flex-row items-center justify-between gap-3 md:gap-4">
+        
+        <div class="flex items-center gap-3 w-full md:w-auto">
+          <div class="w-10 h-10 rounded-xl bg-red-500/20 border border-red-500/40 flex items-center justify-center shrink-0">
+            <svg class="w-5 h-5 text-red-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10" />
+            </svg>
+          </div>
+          <div>
+            <div class="flex items-center gap-2">
+              <span class="font-bold text-sm text-white">Lentera Pasar Engine</span>
+              <span class="text-[10px] bg-red-500/20 text-red-300 border border-red-500/30 px-2 py-0.5 rounded-full font-medium">Hobby & Collector Template</span>
+            </div>
+            <p class="text-xs text-slate-300 hidden sm:block">
+              Terima beres: Website responsif + Panel input produk sendiri + Dikelola tim iklan profesional.
+            </p>
+          </div>
+        </div>
+
+        <div class="flex items-center justify-between md:justify-end gap-3 w-full md:w-auto">
+          <div class="hidden lg:flex items-center gap-2 text-xs text-slate-400 border-r border-slate-700 pr-4">
+            <div class="flex items-center gap-1 text-slate-200">
+              <svg class="w-4 h-4 text-red-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" /></svg>
+              <span>Display Vault UI</span>
+            </div>
+            <span class="text-slate-600">•</span>
+            <div class="flex items-center gap-1 text-slate-200">
+              <svg class="w-4 h-4 text-red-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" /></svg>
+              <span>Box Grading Tag</span>
+            </div>
+          </div>
+
+          <a href="https://wa.me/6281234567890?text=Halo%20Tim%20Lentera%20Pasar,%20saya%20tertarik%20menggunakan%20template%20website%20Hobby%20%26%20Collector%20ini%20lengkap%20dengan%20Admin%20Panel%20dan%20Jasa%20Iklannya." 
+             target="_blank"
+             class="w-full md:w-auto inline-flex items-center justify-center gap-2 bg-gradient-to-r from-red-600 to-amber-600 hover:from-red-500 hover:to-amber-500 text-white text-xs md:text-sm font-bold px-5 py-2.5 rounded-xl shadow-lg transition-all hover:scale-105 shrink-0 font-display">
+            <span>Gunakan Template Ini</span>
+            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3" />
+            </svg>
+          </a>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- SCRIPT LOGIC -->
+    <script>
+        const gradingModal = document.getElementById('gradingModal');
+        function openGradingModal() {
+            gradingModal.classList.remove('hidden');
+            updateGradingResult();
+        }
+        function closeGradingModal() {
+            gradingModal.classList.add('hidden');
+        }
+
+        function updateGradingResult() {
+            const val = document.getElementById('gradeSelect').value;
+            const titleDisp = document.getElementById('gradeTitleDisplay');
+            const descDisp = document.getElementById('gradeDescDisplay');
+            const tag = document.getElementById('gradeTag');
+            const waLink = document.getElementById('gradeWaLink');
+
+            if (val === 'misb') {
+                titleDisp.innerText = "MISB (Mint In Sealed Box)";
+                descDisp.innerText = "Kondisi tertinggi untuk kolektor: Kardus belum pernah dibuka sama sekali, selotip segel pabrik utuh, dan sudut dus 95-99% mulus sempurna tanpa lekukan.";
+                tag.innerText = "Segel Utuh Pabrik (Grade A+)";
+                waLink.href = "https://wa.me/6281234567890?text=Halo%20MechaVault,%20saya%20mau%20minta%20foto%20kondisi%20sudut%20box%20MISB%20item%20koleksi%20ini.";
+            } else if (val === 'mib') {
+                titleDisp.innerText = "MIB (Mint In Box)";
+                descDisp.innerText = "Segel luar kardus sudah dibuka hanya untuk verifikasi isi part/runner, namun kantong plastik runner dan aksesoris di dalam masih 100% tersegel rapat.";
+                tag.innerText = "Plastik Runner Utuh (Grade A)";
+                waLink.href = "https://wa.me/6281234567890?text=Halo%20MechaVault,%20saya%20tertarik%20dengan%20item%20kondisi%20MIB%20(Mint%20in%20Box).";
+            } else if (val === 'bib') {
+                titleDisp.innerText = "BIB (Back In Box)";
+                descDisp.innerText = "Item figure atau model kit pernah dirakit/dipajang di etalase kaca bersih bebas rokok, part lengkap dengan buku manual dan dus penyimpanan asli.";
+                tag.innerText = "Display Mulus (Grade B+)";
+                waLink.href = "https://wa.me/6281234567890?text=Halo%20MechaVault,%20saya%20mau%20tanya%20detail%20kelengkapan%20item%20BIB.";
+            } else {
+                titleDisp.innerText = "Loose Mulus";
+                descDisp.innerText = "Figure atau model kit dijual tanpa kotak dus kemasan aslinya, namun kondisi part dan sendi artikulasi masih sangat kencang dan mulus.";
+                tag.innerText = "Tanpa Box (Grade B)";
+                waLink.href = "https://wa.me/6281234567890?text=Halo%20MechaVault,%20saya%20mau%20tanya%20stok%20figure%20Loose.";
+            }
+        }
+
+        // Mobile menu toggle
+        const mobileMenuBtn = document.getElementById('mobileMenuBtn');
+        const mobileMenu = document.getElementById('mobileMenu');
+        const menuIcon = document.getElementById('menuIcon');
+
+        mobileMenuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+            if (mobileMenu.classList.contains('hidden')) {
+                menuIcon.classList.remove('fa-xmark');
+                menuIcon.classList.add('fa-bars');
+            } else {
+                menuIcon.classList.remove('fa-bars');
+                menuIcon.classList.add('fa-xmark');
+            }
+        });
+    </script>
+</body>
+</html>
