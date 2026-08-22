@@ -1,0 +1,818 @@
+<!DOCTYPE html>
+<html lang="id" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SADDLE & CRAFT — Artisanal Leather & Utility Atelier</title>
+    <meta name="description" content="Koleksi tas ransel laptop kulit asli, totebag kanvas tahan air, slingbag komuter, dan dompet pria buatan pengrajin lokal dengan garansi jahitan 1 tahun.">
+    
+    <!-- Google Fonts: Playfair Display & Plus Jakarta Sans -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;0,700;0,800;0,900;1,600;1,700&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        saddle: {
+                            canvas: '#FAF8F5',
+                            tan: '#EAD7C3',
+                            border: '#DDCFBE',
+                            borderdark: '#C2B09B',
+                            brown: '#7A4926',
+                            browndark: '#382315',
+                            brownblack: '#21140B',
+                            rust: '#C06014',
+                            rustlight: '#DF7B2F',
+                            sand: '#F4EFEA',
+                            silver: '#8C827A',
+                            muted: '#6E635B'
+                        }
+                    },
+                    fontFamily: {
+                        sans: ['"Plus Jakarta Sans"', 'sans-serif'],
+                        serif: ['"Playfair Display"', 'Georgia', 'serif'],
+                        mono: ['"Space Mono"', 'monospace']
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        .no-scrollbar::-webkit-scrollbar { display: none; }
+        .no-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
+        
+        .craft-card {
+            transition: all 0.35s cubic-bezier(0.16, 1, 0.3, 1);
+        }
+        .craft-card:hover {
+            transform: translateY(-4px);
+            border-color: #7A4926;
+            box-shadow: 0 20px 35px -10px rgba(56, 35, 21, 0.12);
+        }
+    </style>
+</head>
+<body class="bg-saddle-canvas text-saddle-browndark font-sans antialiased selection:bg-saddle-brown selection:text-white">
+
+    <!-- 1. TOP ANNOUNCEMENT BAR -->
+    <div class="bg-saddle-browndark text-saddle-tan text-[11px] py-2.5 px-4 font-mono font-medium border-b border-saddle-brownblack">
+        <div class="max-w-7xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-2 text-center sm:text-left">
+            <div class="flex items-center justify-center gap-2">
+                <span class="inline-flex items-center gap-1.5 px-2.5 py-0.5 rounded-sm bg-saddle-rust text-white text-[9px] font-bold tracking-wider uppercase">
+                    <span class="w-1.5 h-1.5 rounded-full bg-white animate-ping"></span>
+                    FREE CUSTOM MONOGRAM
+                </span>
+                <span class="text-stone-300">Free Grafir Inisial Nama di Setiap Pembelian Tas & Dompet Kulit</span>
+            </div>
+            <div class="flex items-center gap-4 text-[10px] text-stone-400">
+                <span class="hidden md:inline">Garansi Jahitan & Hardware 1 Tahun Penuh</span>
+                <span class="hidden md:inline text-saddle-brown">|</span>
+                <a href="katalog.html" class="text-saddle-tan hover:text-white underline font-bold transition">Buka Katalog Atelier &rarr;</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- 2. NAVBAR -->
+    <header class="sticky top-0 z-40 bg-saddle-canvas/95 backdrop-blur-md border-b border-saddle-border transition-all">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-20 sm:h-24">
+                
+                <!-- Brand Logo -->
+                <a href="index.html" class="flex items-center gap-3 group">
+                    <div class="w-11 h-11 bg-saddle-browndark text-saddle-tan flex items-center justify-center text-xl font-serif font-black rounded-xs border border-saddle-border group-hover:bg-saddle-brown transition">
+                        <span>S</span>
+                    </div>
+                    <div class="flex flex-col">
+                        <span class="text-2xl sm:text-3xl font-serif font-black tracking-tight text-saddle-browndark uppercase leading-none group-hover:text-saddle-rust transition duration-300">
+                            SADDLE<span class="text-saddle-rust">&</span>CRAFT
+                        </span>
+                        <span class="text-[8px] font-mono tracking-[0.28em] text-saddle-brown uppercase mt-1 font-bold">
+                            ARTISANAL LEATHER & UTILITY
+                        </span>
+                    </div>
+                </a>
+
+                <!-- Desktop Navigation Links -->
+                <nav class="hidden lg:flex items-center gap-8 text-xs font-bold tracking-widest uppercase text-saddle-muted font-mono">
+                    <a href="index.html" class="text-saddle-brown border-b-2 border-saddle-brown pb-1">Beranda</a>
+                    <a href="katalog.html" class="hover:text-saddle-brown transition">Katalog Tas</a>
+                    <a href="detail.html" class="hover:text-saddle-brown transition">Detail Kompartemen</a>
+                    <a href="tentang.html" class="hover:text-saddle-brown transition">Kisah Pengrajin</a>
+                    <a href="artikel.html" class="hover:text-saddle-brown transition">Perawatan Kulit</a>
+                    <a href="kontak.html" class="hover:text-saddle-brown transition">Custom Grafir & Toko</a>
+                </nav>
+
+                <!-- Action Button & Bag Finder Modal -->
+                <div class="hidden sm:flex items-center gap-3">
+                    <button onclick="openFitModal()" class="inline-flex items-center gap-2 px-4 py-2.5 rounded-sm border border-saddle-border hover:border-saddle-brown text-xs font-mono font-bold text-saddle-brown bg-white shadow-xs transition">
+                        <i class="fa-solid fa-laptop text-saddle-rust"></i>
+                        <span>Cek Slot Laptop</span>
+                    </button>
+                    <a href="https://wa.me/6281234567890?text=Halo%20Saddle%20%26%20Craft,%20saya%20mau%20pesan%20tas." target="_blank" class="inline-flex items-center gap-2 bg-saddle-browndark hover:bg-saddle-brown text-saddle-tan text-xs font-bold font-mono tracking-wider px-5 py-2.5 rounded-sm transition-all shadow-md shadow-saddle-browndark/20">
+                        <i class="fa-brands fa-whatsapp text-emerald-400"></i>
+                        <span>Pesan via WA</span>
+                    </a>
+                </div>
+
+                <!-- Mobile Hamburger Button -->
+                <button id="mobileMenuBtn" class="lg:hidden p-2 text-saddle-browndark hover:text-saddle-rust focus:outline-none" aria-label="Toggle Menu">
+                    <i id="menuIcon" class="fa-solid fa-bars-staggered text-xl"></i>
+                </button>
+            </div>
+        </div>
+
+        <!-- Mobile Drawer -->
+        <div id="mobileMenu" class="hidden lg:hidden bg-saddle-canvas border-b border-saddle-border px-4 py-5 space-y-3 font-mono">
+            <a href="index.html" class="block text-xs font-bold uppercase tracking-wider text-saddle-brown py-2 border-b border-saddle-tan">Beranda Utama</a>
+            <a href="katalog.html" class="block text-xs font-bold uppercase tracking-wider text-saddle-muted hover:text-saddle-brown py-2 border-b border-saddle-tan">Katalog Ransel & Totebag</a>
+            <a href="detail.html" class="block text-xs font-bold uppercase tracking-wider text-saddle-muted hover:text-saddle-brown py-2 border-b border-saddle-tan">Detail Kompartemen Laptop 15.6"</a>
+            <a href="tentang.html" class="block text-xs font-bold uppercase tracking-wider text-saddle-muted hover:text-saddle-brown py-2 border-b border-saddle-tan">Kisah Pengrajin Kulit Lokal</a>
+            <a href="artikel.html" class="block text-xs font-bold uppercase tracking-wider text-saddle-muted hover:text-saddle-brown py-2 border-b border-saddle-tan">Panduan Merawat Kulit Asli</a>
+            <a href="kontak.html" class="block text-xs font-bold uppercase tracking-wider text-saddle-muted hover:text-saddle-brown py-2">Workshop & Grafir Nama</a>
+            <div class="pt-2 flex flex-col gap-2">
+                <button onclick="openFitModal()" class="w-full py-3 rounded-sm bg-white text-saddle-brown border border-saddle-border text-xs font-bold uppercase tracking-wider flex items-center justify-center gap-2">
+                    <i class="fa-solid fa-laptop text-saddle-rust"></i> Cek Kesesuaian Laptop Anda
+                </button>
+                <a href="https://wa.me/6281234567890?text=Halo%20Saddle%20%26%20Craft,%20saya%20mau%20konsultasi%20tas." target="_blank" class="w-full py-3 rounded-sm bg-saddle-browndark text-saddle-tan text-xs font-bold uppercase tracking-wider text-center flex items-center justify-center gap-2 shadow-sm">
+                    <i class="fa-brands fa-whatsapp text-emerald-400"></i> Chat Customer Care WA
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- 3. ARTISANAL UTILITY HERO: ASYMMETRIC WARM CANVAS -->
+    <section class="py-14 sm:py-24 border-b border-saddle-border bg-gradient-to-b from-saddle-canvas via-saddle-sand to-saddle-canvas relative overflow-hidden">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+                
+                <!-- Left Artisanal Copy (6 Cols) -->
+                <div class="lg:col-span-6 space-y-6">
+                    <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-sm bg-white border border-saddle-border text-saddle-brown text-xs font-mono font-bold tracking-wider shadow-xs">
+                        <span class="w-2 h-2 rounded-full bg-saddle-rust"></span>
+                        <span class="uppercase tracking-widest text-[10px]">LIFETIME UTILITY CARRY</span>
+                    </div>
+
+                    <h1 class="text-4xl sm:text-6xl lg:text-7xl font-serif font-black text-saddle-browndark tracking-tight leading-[1.05]">
+                        Built for Your <br>
+                        Daily Carry & <br>
+                        <span class="text-saddle-rust italic font-normal">Years Ahead.</span>
+                    </h1>
+
+                    <p class="text-xs sm:text-sm text-saddle-muted leading-relaxed max-w-lg font-normal">
+                        Ditempa dengan tangan dari kombinasi *Crazy Horse Leather* dan kanvas berlapis anti-air (*water-repellent*). Dirancang presisi dengan slot laptop berbusa peredam benturan, resleting YKK antik bebas macet, dan garansi jahitan 1 tahun untuk para profesional aktif.
+                    </p>
+
+                    <div class="pt-2 flex flex-wrap items-center gap-4 font-mono">
+                        <a href="katalog.html" class="inline-flex items-center gap-2.5 px-8 py-4 bg-saddle-browndark hover:bg-saddle-brown text-saddle-tan text-xs font-bold tracking-widest uppercase transition-all shadow-lg shadow-saddle-browndark/20">
+                            <span>JELAJAHI KOLEKSI TAS</span>
+                            <i class="fa-solid fa-arrow-right text-[10px]"></i>
+                        </a>
+                        <a href="tentang.html" class="inline-flex items-center gap-2 px-7 py-4 bg-white hover:bg-saddle-sand border border-saddle-border text-saddle-browndark text-xs font-bold tracking-widest uppercase transition">
+                            <span>KISAH PENGRAJIN</span>
+                        </a>
+                    </div>
+
+                    <!-- Quick Engineering Specs -->
+                    <div class="pt-4 grid grid-cols-3 gap-4 border-t border-saddle-border font-mono text-xs">
+                        <div>
+                            <span class="text-[10px] text-saddle-silver uppercase block font-bold">SLOT LAPTOP</span>
+                            <strong class="text-base font-bold text-saddle-browndark">Hingga 15.6"</strong>
+                            <span class="text-[10px] text-saddle-brown block">Busa Tebal 10mm</span>
+                        </div>
+                        <div>
+                            <span class="text-[10px] text-saddle-silver uppercase block font-bold">WATER RESISTANCE</span>
+                            <strong class="text-base font-bold text-saddle-browndark">Hydro-Wax</strong>
+                            <span class="text-[10px] text-emerald-700 block">Tahan Hujan Gerimis</span>
+                        </div>
+                        <div>
+                            <span class="text-[10px] text-saddle-silver uppercase block font-bold">HARDWARE</span>
+                            <strong class="text-base font-bold text-saddle-browndark">YKK Brass</strong>
+                            <span class="text-[10px] text-saddle-rust block">Kuningan Antik</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Right Organized Compartment Photo (6 Cols) -->
+                <div class="lg:col-span-6 relative">
+                    <div class="grid grid-cols-12 gap-4 items-center">
+                        
+                        <!-- Main Backpack Showcase (7 Cols) -->
+                        <div class="col-span-7 bg-white border border-saddle-border shadow-xl aspect-[3/4] relative group overflow-hidden">
+                            <img src="https://images.unsplash.com/photo-1548036328-c9fa89d128fa?auto=format&fit=crop&w=800&q=80" alt="Backpack Kulit & Kanvas Kompartemen Laptop" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700">
+                            <div class="absolute bottom-3 left-3 right-3 bg-saddle-browndark/95 backdrop-blur-sm p-3.5 border border-saddle-brownblack shadow-sm font-mono text-white">
+                                <span class="text-[8px] font-bold text-saddle-tan uppercase tracking-wider block">FLAGSHIP COMMUTER</span>
+                                <strong class="text-xs font-serif font-bold text-white">Vanguard Heritage Backpack 18L</strong>
+                            </div>
+                        </div>
+
+                        <!-- Side Floating Cards (5 Cols) -->
+                        <div class="col-span-5 space-y-4">
+                            <div class="bg-white border border-saddle-border shadow-md aspect-[3/4] relative group overflow-hidden">
+                                <img src="https://images.unsplash.com/photo-1590874103328-eac38a683ce7?auto=format&fit=crop&w=600&q=80" alt="Totebag Kanvas Waxed" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700">
+                                <span class="absolute top-2.5 right-2.5 bg-saddle-rust text-white text-[8px] font-mono font-bold px-2 py-0.5 uppercase">
+                                    DAILY TOTE
+                                </span>
+                            </div>
+                            <div class="p-4 bg-white border border-saddle-border text-xs text-saddle-muted space-y-1 font-mono shadow-xs">
+                                <span class="font-serif font-bold text-saddle-browndark block text-sm">Standar Jahitan:</span>
+                                <p class="text-[11px] leading-relaxed font-sans font-normal">Benang nilon bonded heavy-duty dengan jahitan bartack di setiap titik tumpuan beban.</p>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- Value Strip Bar -->
+            <div class="mt-16 max-w-5xl mx-auto grid grid-cols-1 sm:grid-cols-3 gap-6 bg-white p-6 border border-saddle-border shadow-sm text-xs font-mono">
+                <div class="flex items-start gap-3.5">
+                    <div class="w-10 h-10 bg-saddle-sand text-saddle-brown flex items-center justify-center shrink-0 text-base border border-saddle-border">
+                        <i class="fa-solid fa-cloud-rain"></i>
+                    </div>
+                    <div>
+                        <strong class="text-saddle-browndark font-bold block text-sm uppercase">Water-Repellent Coating</strong>
+                        <span class="text-saddle-muted leading-relaxed font-sans text-xs">Lapisan lilin alami (waxed canvas) yang membuat butiran air hujan meluncur jatuh.</span>
+                    </div>
+                </div>
+                <div class="flex items-start gap-3.5">
+                    <div class="w-10 h-10 bg-saddle-sand text-saddle-rust flex items-center justify-center shrink-0 text-base border border-saddle-border">
+                        <i class="fa-solid fa-shield"></i>
+                    </div>
+                    <div>
+                        <strong class="text-saddle-browndark font-bold block text-sm uppercase">Resleting YKK Original</strong>
+                        <span class="text-saddle-muted leading-relaxed font-sans text-xs">Hardware gigi kuningan tebal anti-macet berdaya tahan hingga 20.000 kali tarikan.</span>
+                    </div>
+                </div>
+                <div class="flex items-start gap-3.5">
+                    <div class="w-10 h-10 bg-saddle-sand text-emerald-700 flex items-center justify-center shrink-0 text-base border border-saddle-border">
+                        <i class="fa-solid fa-stamp"></i>
+                    </div>
+                    <div>
+                        <strong class="text-saddle-browndark font-bold block text-sm uppercase">Free Monogram Nama</strong>
+                        <span class="text-saddle-muted leading-relaxed font-sans text-xs">Grafir inisial nama hingga 4 huruf pada tag kulit nabati eksklusif Anda.</span>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- 4. SECTION KHUSUS: PILIH SESUAI KEBUTUHANMU -->
+    <section class="py-16 bg-saddle-sand border-b border-saddle-border font-mono">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            
+            <div class="text-center max-w-2xl mx-auto mb-12">
+                <span class="text-xs font-mono uppercase tracking-[0.25em] text-saddle-brown font-bold block mb-1">
+                    // UTILITY ARCHETYPES
+                </span>
+                <h2 class="text-2xl sm:text-4xl font-serif font-black text-saddle-browndark uppercase">
+                    Tas Sesuai Kebutuhan Harianmu
+                </h2>
+                <p class="text-xs sm:text-sm text-saddle-muted mt-1 font-sans">
+                    Arsitektur tas yang disesuaikan dengan barang bawaan esensial dan mobilitas kerja Anda.
+                </p>
+            </div>
+
+            <!-- 4 Utility Cards -->
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+                
+                <!-- Archetype 1: Commuter Backpack -->
+                <div class="bg-white border border-saddle-border p-5 flex flex-col justify-between craft-card">
+                    <div>
+                        <div class="w-12 h-12 bg-saddle-canvas text-saddle-brown flex items-center justify-center text-xl mb-4 border border-saddle-border">
+                            <i class="fa-solid fa-person-walking-luggage"></i>
+                        </div>
+                        <span class="text-[9px] font-bold text-saddle-rust uppercase tracking-wider block">LAPTOP 15.6" & WORK</span>
+                        <h3 class="text-lg font-serif font-bold text-saddle-browndark mt-1">Commuter Backpack</h3>
+                        <p class="text-xs text-saddle-muted mt-2 leading-relaxed font-sans font-normal">
+                            Ransel berkapasitas 18–22 Liter dengan slot laptop terlindungi busa tebal dan saku botol samping.
+                        </p>
+                    </div>
+                    <div class="mt-6 pt-3 border-t border-saddle-border">
+                        <a href="katalog.html" class="text-xs text-saddle-brown hover:text-saddle-rust font-bold flex items-center justify-between">
+                            <span>Koleksi Backpack</span>
+                            <span>&rarr;</span>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Archetype 2: Minimalist Totebag -->
+                <div class="bg-white border border-saddle-border p-5 flex flex-col justify-between craft-card">
+                    <div>
+                        <div class="w-12 h-12 bg-saddle-canvas text-saddle-brown flex items-center justify-center text-xl mb-4 border border-saddle-border">
+                            <i class="fa-solid fa-bag-shopping"></i>
+                        </div>
+                        <span class="text-[9px] font-bold text-saddle-brown uppercase tracking-wider block">MEETING & CAFE HOPPING</span>
+                        <h3 class="text-lg font-serif font-bold text-saddle-browndark mt-1">Structured Totebag</h3>
+                        <p class="text-xs text-saddle-muted mt-2 leading-relaxed font-sans font-normal">
+                            Tas jinjing kanvas kokoh yang dapat berdiri tegak (*self-standing*) dengan penutup resleting atas.
+                        </p>
+                    </div>
+                    <div class="mt-6 pt-3 border-t border-saddle-border">
+                        <a href="katalog.html" class="text-xs text-saddle-brown hover:text-saddle-rust font-bold flex items-center justify-between">
+                            <span>Koleksi Totebag</span>
+                            <span>&rarr;</span>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Archetype 3: Compact Slingbag -->
+                <div class="bg-white border border-saddle-border p-5 flex flex-col justify-between craft-card">
+                    <div>
+                        <div class="w-12 h-12 bg-saddle-canvas text-saddle-brown flex items-center justify-center text-xl mb-4 border border-saddle-border">
+                            <i class="fa-solid fa-vest"></i>
+                        </div>
+                        <span class="text-[9px] font-bold text-saddle-rust uppercase tracking-wider block">WEEKEND & EDC ESSENTIALS</span>
+                        <h3 class="text-lg font-serif font-bold text-saddle-browndark mt-1">Crossbody Slingbag</h3>
+                        <p class="text-xs text-saddle-muted mt-2 leading-relaxed font-sans font-normal">
+                            Tas selempang ringkas untuk dompet, smartphone, kunci mobil, kacamata, dan iPad Mini.
+                        </p>
+                    </div>
+                    <div class="mt-6 pt-3 border-t border-saddle-border">
+                        <a href="katalog.html" class="text-xs text-saddle-brown hover:text-saddle-rust font-bold flex items-center justify-between">
+                            <span>Koleksi Slingbag</span>
+                            <span>&rarr;</span>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Archetype 4: Leather Wallet -->
+                <div class="bg-white border border-saddle-border p-5 flex flex-col justify-between craft-card">
+                    <div>
+                        <div class="w-12 h-12 bg-saddle-canvas text-saddle-brown flex items-center justify-center text-xl mb-4 border border-saddle-border">
+                            <i class="fa-solid fa-wallet"></i>
+                        </div>
+                        <span class="text-[9px] font-bold text-emerald-800 uppercase tracking-wider block">POCKET ACCESSORY</span>
+                        <h3 class="text-lg font-serif font-bold text-saddle-browndark mt-1">Leather Cardholder</h3>
+                        <p class="text-xs text-saddle-muted mt-2 leading-relaxed font-sans font-normal">
+                            Dompet kulit nabati ramping dengan 6 slot kartu dan slot uang kertas yang semakin mengkilap (*patina*).
+                        </p>
+                    </div>
+                    <div class="mt-6 pt-3 border-t border-saddle-border">
+                        <a href="katalog.html" class="text-xs text-saddle-brown hover:text-saddle-rust font-bold flex items-center justify-between">
+                            <span>Koleksi Dompet</span>
+                            <span>&rarr;</span>
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+    <!-- 5. PRODUK UNGGULAN: GRID 3 KOLOM DETAIL DIMENSI -->
+    <section class="py-16 bg-white border-b border-saddle-border font-mono">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            
+            <div class="flex flex-col md:flex-row md:items-end justify-between mb-12">
+                <div>
+                    <span class="text-xs font-mono uppercase tracking-[0.25em] text-saddle-brown font-bold block mb-1">
+                        // ATELIER SELECTION
+                    </span>
+                    <h2 class="text-2xl sm:text-4xl font-serif font-black text-saddle-browndark uppercase">
+                        Tas Pilihan dengan Spek Presisi
+                    </h2>
+                    <p class="text-xs sm:text-sm text-saddle-muted mt-1 font-sans">
+                        Rincian kapasitas kompartemen laptop dan ukuran fisik centimeter pada setiap model tas.
+                    </p>
+                </div>
+                <a href="katalog.html" class="mt-4 md:mt-0 text-xs font-mono font-bold text-saddle-brown border-b border-saddle-brown pb-0.5 hover:text-saddle-rust transition uppercase tracking-wider">
+                    Lihat Semua 8 Model Tas &rarr;
+                </a>
+            </div>
+
+            <!-- 3 Column Product Grid -->
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                
+                <!-- Product 1: Vanguard Heritage Laptop Backpack -->
+                <div class="bg-saddle-canvas border border-saddle-border p-5 flex flex-col justify-between craft-card">
+                    <div>
+                        <div class="aspect-[4/3] bg-white overflow-hidden mb-4 relative group border border-saddle-border">
+                            <img src="https://images.unsplash.com/photo-1548036328-c9fa89d128fa?auto=format&fit=crop&w=600&q=80" alt="Vanguard Backpack" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+                            <span class="absolute top-2.5 left-2.5 bg-saddle-browndark text-saddle-tan text-[8px] font-bold px-2.5 py-0.5 uppercase">
+                                BEST SELLER
+                            </span>
+                        </div>
+
+                        <div class="flex items-center gap-1.5 mb-2 text-[10px] text-saddle-rust font-bold uppercase">
+                            <i class="fa-solid fa-laptop"></i>
+                            <span>Slot Laptop 15.6" (Busa 10mm)</span>
+                        </div>
+
+                        <h3 class="font-serif font-bold text-lg text-saddle-browndark leading-snug">Vanguard Heritage Laptop Backpack</h3>
+                        <p class="text-xs text-saddle-muted mt-1.5 font-sans line-clamp-2">Perpaduan kanvas lilin 16oz dan kulit sapi crazy horse dengan penutup rolltop fleksibel.</p>
+                        
+                        <div class="mt-3 p-3 bg-white border border-saddle-border text-[10px] text-saddle-muted space-y-1">
+                            <div class="flex justify-between"><span>Dimensi (P x L x T):</span> <strong class="text-saddle-browndark">30 x 14 x 42 cm</strong></div>
+                            <div class="flex justify-between"><span>Volume Kapasitas:</span> <strong class="text-saddle-browndark">18 — 22 Liter</strong></div>
+                        </div>
+                    </div>
+
+                    <div class="mt-6 pt-3 border-t border-saddle-border flex items-center justify-between">
+                        <div>
+                            <span class="text-[9px] text-saddle-silver block uppercase">Harga Resmi</span>
+                            <span class="font-serif font-bold text-lg text-saddle-browndark">Rp 489.000</span>
+                        </div>
+                        <a href="detail.html" class="px-4 py-2 bg-saddle-browndark hover:bg-saddle-brown text-saddle-tan text-xs font-bold uppercase transition">
+                            Detail &rarr;
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Product 2: Oxford Waxed Canvas Totebag -->
+                <div class="bg-saddle-canvas border border-saddle-border p-5 flex flex-col justify-between craft-card">
+                    <div>
+                        <div class="aspect-[4/3] bg-white overflow-hidden mb-4 relative group border border-saddle-border">
+                            <img src="https://images.unsplash.com/photo-1590874103328-eac38a683ce7?auto=format&fit=crop&w=600&q=80" alt="Oxford Totebag" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+                            <span class="absolute top-2.5 left-2.5 bg-saddle-brown text-white text-[8px] font-bold px-2.5 py-0.5 uppercase">
+                                WAXED CANVAS
+                            </span>
+                        </div>
+
+                        <div class="flex items-center gap-1.5 mb-2 text-[10px] text-saddle-brown font-bold uppercase">
+                            <i class="fa-solid fa-laptop"></i>
+                            <span>Slot Laptop 14" + iPad Pocket</span>
+                        </div>
+
+                        <h3 class="font-serif font-bold text-lg text-saddle-browndark leading-snug">Oxford Commuter Structured Totebag</h3>
+                        <p class="text-xs text-saddle-muted mt-1.5 font-sans line-clamp-2">Tas jinjing kerja berbahan kanvas berat dengan pegangan kulit sapi nabati tebal dan resleting.</p>
+                        
+                        <div class="mt-3 p-3 bg-white border border-saddle-border text-[10px] text-saddle-muted space-y-1">
+                            <div class="flex justify-between"><span>Dimensi (P x L x T):</span> <strong class="text-saddle-browndark">38 x 12 x 32 cm</strong></div>
+                            <div class="flex justify-between"><span>Volume Kapasitas:</span> <strong class="text-saddle-browndark">14 Liter</strong></div>
+                        </div>
+                    </div>
+
+                    <div class="mt-6 pt-3 border-t border-saddle-border flex items-center justify-between">
+                        <div>
+                            <span class="text-[9px] text-saddle-silver block uppercase">Harga Resmi</span>
+                            <span class="font-serif font-bold text-lg text-saddle-browndark">Rp 379.000</span>
+                        </div>
+                        <a href="detail.html" class="px-4 py-2 bg-saddle-browndark hover:bg-saddle-brown text-saddle-tan text-xs font-bold uppercase transition">
+                            Detail &rarr;
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Product 3: Ranger Utility Tactical Slingbag -->
+                <div class="bg-saddle-canvas border border-saddle-border p-5 flex flex-col justify-between craft-card">
+                    <div>
+                        <div class="aspect-[4/3] bg-white overflow-hidden mb-4 relative group border border-saddle-border">
+                            <img src="https://images.unsplash.com/photo-1553062407-98eeb64c6a62?auto=format&fit=crop&w=600&q=80" alt="Ranger Slingbag" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+                            <span class="absolute top-2.5 left-2.5 bg-saddle-rust text-white text-[8px] font-bold px-2.5 py-0.5 uppercase">
+                                COMPACT EDC
+                            </span>
+                        </div>
+
+                        <div class="flex items-center gap-1.5 mb-2 text-[10px] text-saddle-rust font-bold uppercase">
+                            <i class="fa-solid fa-tablet-screen-button"></i>
+                            <span>Slot iPad 11" & Hidden Pocket</span>
+                        </div>
+
+                        <h3 class="font-serif font-bold text-lg text-saddle-browndark leading-snug">Ranger Tactical Leather Slingbag</h3>
+                        <p class="text-xs text-saddle-muted mt-1.5 font-sans line-clamp-2">Tas selempang dada kulit crazy horse antik dengan sabuk selempang nilon tebal berpivot putar.</p>
+                        
+                        <div class="mt-3 p-3 bg-white border border-saddle-border text-[10px] text-saddle-muted space-y-1">
+                            <div class="flex justify-between"><span>Dimensi (P x L x T):</span> <strong class="text-saddle-browndark">24 x 8 x 17 cm</strong></div>
+                            <div class="flex justify-between"><span>Volume Kapasitas:</span> <strong class="text-saddle-browndark">4.5 Liter</strong></div>
+                        </div>
+                    </div>
+
+                    <div class="mt-6 pt-3 border-t border-saddle-border flex items-center justify-between">
+                        <div>
+                            <span class="text-[9px] text-saddle-silver block uppercase">Harga Resmi</span>
+                            <span class="font-serif font-bold text-lg text-saddle-browndark">Rp 299.000</span>
+                        </div>
+                        <a href="detail.html" class="px-4 py-2 bg-saddle-browndark hover:bg-saddle-brown text-saddle-tan text-xs font-bold uppercase transition">
+                            Detail &rarr;
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+    <!-- 6. TESTIMONI PROFESIONAL & ARSITEK -->
+    <section class="py-16 bg-saddle-sand border-b border-saddle-border font-mono">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            
+            <div class="text-center max-w-2xl mx-auto mb-12">
+                <span class="text-xs font-mono uppercase tracking-[0.25em] text-saddle-brown font-bold block mb-1">
+                    // USER REVIEWS
+                </span>
+                <h2 class="text-2xl sm:text-4xl font-serif font-black text-saddle-browndark uppercase">
+                    Dipercaya Para Profesional
+                </h2>
+                <p class="text-xs sm:text-sm text-saddle-muted mt-1 font-sans">
+                    Pengalaman nyata dari arsitek, konsultan bisnis, dan komuter urban di Jakarta & Surabaya.
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                
+                <div class="bg-white p-6 border border-saddle-border flex flex-col justify-between shadow-xs">
+                    <div>
+                        <div class="flex items-center gap-1 text-amber-600 text-xs mb-3">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                        <p class="text-xs text-saddle-browndark leading-relaxed font-sans italic">
+                            "Sebagai arsitek lapangan, tas ini muat MacBook Pro 16", iPad Pro, gulungan gambar A3, dan botol minum tanpa terasa berat di pundak. Kulitnya makin berumur makin bagus karakternya."
+                        </p>
+                    </div>
+                    <div class="mt-6 pt-3 border-t border-saddle-border flex items-center justify-between text-xs">
+                        <strong class="text-saddle-browndark font-bold font-serif">Baskoro Danu, IAI</strong>
+                        <span class="text-[10px] text-saddle-brown font-mono">Arsitek — Jakarta</span>
+                    </div>
+                </div>
+
+                <div class="bg-white p-6 border border-saddle-border flex flex-col justify-between shadow-xs">
+                    <div>
+                        <div class="flex items-center gap-1 text-amber-600 text-xs mb-3">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                        <p class="text-xs text-saddle-browndark leading-relaxed font-sans italic">
+                            "Totebag Oxford-nya sangat kokoh dan bisa berdiri tegak saat ditaruh di lantai cafe. Grafir inisial namanya rapi dan presisi, bikin tas berasa lebih personal dan eksklusif."
+                        </p>
+                    </div>
+                    <div class="mt-6 pt-3 border-t border-saddle-border flex items-center justify-between text-xs">
+                        <strong class="text-saddle-browndark font-bold font-serif">Clara Widjaja</strong>
+                        <span class="text-[10px] text-saddle-brown font-mono">Legal Consultant — Surabaya</span>
+                    </div>
+                </div>
+
+                <div class="bg-white p-6 border border-saddle-border flex flex-col justify-between shadow-xs">
+                    <div>
+                        <div class="flex items-center gap-1 text-amber-600 text-xs mb-3">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                        <p class="text-xs text-saddle-browndark leading-relaxed font-sans italic">
+                            "Resleting YKK-nya luar biasa halus dan nggak pernah nyangkut. Kemarin sempat kehujanan saat naik ojek online, barang di dalam ransel tetap kering total berkat lapisan lilinnya."
+                        </p>
+                    </div>
+                    <div class="mt-6 pt-3 border-t border-saddle-border flex items-center justify-between text-xs">
+                        <strong class="text-saddle-browndark font-bold font-serif">Fahmi Reza</strong>
+                        <span class="text-[10px] text-saddle-brown font-mono">Tech Lead — Bandung</span>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+    <!-- 7. FOOTER -->
+    <footer class="bg-saddle-browndark text-saddle-tan border-t border-saddle-brownblack pt-14 pb-28 font-mono">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-10">
+                
+                <div class="lg:col-span-2 space-y-4">
+                    <div class="flex items-center gap-3">
+                        <div class="w-9 h-9 bg-saddle-tan text-saddle-browndark flex items-center justify-center text-lg font-serif font-black">
+                            <span>S</span>
+                        </div>
+                        <span class="text-2xl font-serif font-black text-white uppercase tracking-tight">
+                            SADDLE<span class="text-saddle-rust">&</span>CRAFT
+                        </span>
+                    </div>
+                    <p class="text-xs text-stone-300 leading-relaxed max-w-sm font-sans">
+                        Lentera Pasar Bags & Leather Goods Template. Menghadirkan tas ransel laptop, totebag kanvas tahan air, dan dompet kulit nabati buatan tangan pengrajin lokal berstandar kualitas internasional.
+                    </p>
+                    <div class="pt-2 text-xs text-saddle-tan space-y-1 font-sans">
+                        <div><i class="fa-solid fa-location-dot text-saddle-rust mr-2"></i> Workshop & Gallery: Jl. Cipete Raya No. 28, Jakarta Selatan 12410</div>
+                        <div><i class="fa-brands fa-whatsapp text-emerald-400 mr-2"></i> +62 812-3456-7890 (Customer Care WhatsApp)</div>
+                    </div>
+                </div>
+
+                <div>
+                    <h4 class="text-xs font-bold uppercase tracking-wider text-white mb-4">Navigasi Utama</h4>
+                    <ul class="space-y-2.5 text-xs text-stone-300">
+                        <li><a href="index.html" class="hover:text-white transition">Beranda Utama</a></li>
+                        <li><a href="katalog.html" class="hover:text-white transition">Katalog Tas</a></li>
+                        <li><a href="detail.html" class="hover:text-white transition">Detail Kompartemen</a></li>
+                        <li><a href="tentang.html" class="hover:text-white transition">Kisah Pengrajin</a></li>
+                        <li><a href="artikel.html" class="hover:text-white transition">Perawatan Kulit</a></li>
+                        <li><a href="kontak.html" class="hover:text-white transition">Workshop & Custom</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h4 class="text-xs font-bold uppercase tracking-wider text-white mb-4">Kategori Tas</h4>
+                    <ul class="space-y-2.5 text-xs text-stone-300">
+                        <li><a href="katalog.html" class="hover:text-white transition">Ransel Laptop 15.6"</a></li>
+                        <li><a href="katalog.html" class="hover:text-white transition">Totebag Kanvas Waxed</a></li>
+                        <li><a href="katalog.html" class="hover:text-white transition">Tactical Slingbag</a></li>
+                        <li><a href="katalog.html" class="hover:text-white transition">Dompet Kulit Nabati</a></li>
+                        <li><a href="katalog.html" class="hover:text-white transition">Leather Care Kit</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h4 class="text-xs font-bold uppercase tracking-wider text-white mb-4">Jaminan Mutu</h4>
+                    <div class="space-y-2 text-xs">
+                        <div class="p-3 bg-saddle-brownblack border border-saddle-brown">
+                            <span class="text-[10px] text-saddle-rust block uppercase font-bold">1-YEAR WARRANTY:</span>
+                            <span class="font-bold text-white text-[11px]">Garansi Jahitan & Resleting</span>
+                        </div>
+                        <div class="p-3 bg-saddle-brownblack border border-saddle-brown">
+                            <span class="text-[10px] text-emerald-400 block uppercase font-bold">FREE MONOGRAM:</span>
+                            <span class="font-bold text-white text-[11px]">Grafir Inisial Nama Gratis</span>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="mt-12 pt-8 border-t border-saddle-brown flex flex-col sm:flex-row items-center justify-between text-xs text-stone-400">
+                <p>&copy; 2026 SADDLE & CRAFT ATELIER. All Rights Reserved.</p>
+                <p class="text-[11px] mt-2 sm:mt-0 font-sans">Lentera Pasar Production Template — Artisanal Bags & Leather</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- ========================================================================= -->
+    <!-- INTERACTIVE LAPTOP FIT DIAGNOSTIC MODAL                                   -->
+    <!-- ========================================================================= -->
+    <div id="fitModal" class="fixed inset-0 z-50 bg-black/80 backdrop-blur-sm hidden flex items-center justify-center p-4 font-mono">
+        <div class="bg-saddle-canvas border border-saddle-border max-w-lg w-full p-6 sm:p-8 shadow-2xl relative text-saddle-browndark">
+            <button onclick="closeFitModal()" class="absolute top-5 right-5 text-saddle-muted hover:text-saddle-browndark text-lg p-1">
+                <i class="fa-solid fa-xmark"></i>
+            </button>
+            
+            <div class="flex items-center gap-3 mb-6">
+                <div class="w-10 h-10 bg-saddle-browndark text-saddle-tan flex items-center justify-center text-lg border border-saddle-border">
+                    <i class="fa-solid fa-laptop text-saddle-rust"></i>
+                </div>
+                <div>
+                    <h3 class="text-lg font-serif font-bold text-saddle-browndark uppercase">Cek Kesesuaian Ukuran Laptop</h3>
+                    <p class="text-xs text-saddle-muted font-sans">Pilih ukuran layar laptop Anda untuk menemukan tas yang pas.</p>
+                </div>
+            </div>
+
+            <div class="space-y-4 text-xs">
+                <div>
+                    <label class="block font-bold text-saddle-browndark mb-1.5 uppercase">Ukuran Layar Laptop Anda:</label>
+                    <select id="laptopSizeSelect" onchange="calculateBagFit()" class="w-full p-3 border border-saddle-border bg-white text-saddle-browndark focus:outline-none focus:border-saddle-brown text-xs font-mono">
+                        <option value="15.6">Laptop 15.6 Inch / 16 Inch (MacBook Pro 16", Asus ROG, ThinkPad)</option>
+                        <option value="14">Laptop 13.3 — 14 Inch (MacBook Air 13", ZenBook 14, Dell XPS 13)</option>
+                        <option value="11">Tablet / iPad Pro 11 — 12.9 Inch</option>
+                    </select>
+                </div>
+
+                <div id="fitResultBox" class="p-4 bg-white border border-saddle-border space-y-2">
+                    <span class="text-[10px] font-bold text-saddle-rust uppercase block">// REKOMENDASI MODEL TAS:</span>
+                    <h5 id="fitTitleDisplay" class="font-serif font-bold text-saddle-browndark text-base">Vanguard Heritage Laptop Backpack (18L)</h5>
+                    <p id="fitDescDisplay" class="text-[11px] text-saddle-muted font-sans leading-relaxed">
+                        Memiliki kompartemen khusus berbantal busa densitas tinggi 10mm yang muat hingga laptop 15.6" dengan saku charger terpisah.
+                    </p>
+                </div>
+
+                <div class="pt-2 flex items-center justify-between gap-3">
+                    <a id="fitWaLink" href="https://wa.me/6281234567890?text=Halo%20Saddle%20%26%20Craft,%20laptop%20saya%20ukuran%2015.6%20inch.%20Mohon%20rekomendasi%20tas." target="_blank" class="w-full py-3.5 bg-saddle-browndark hover:bg-saddle-brown text-saddle-tan font-bold text-xs uppercase tracking-wider text-center transition shadow-md shadow-saddle-browndark/20">
+                        Konsultasi via WhatsApp &rarr;
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ========================================================================= -->
+    <!-- FLOATING WHATSAPP BUTTON (bottom-24)                                      -->
+    <!-- ========================================================================= -->
+    <a href="https://wa.me/6281234567890?text=Halo%20Saddle%20%26%20Craft,%20saya%20ingin%20konsultasi%20tas%20dan%20grafir%20nama." 
+       target="_blank" 
+       class="fixed bottom-24 right-6 z-50 group flex items-center gap-3 bg-white hover:bg-saddle-sand text-saddle-browndark px-4 py-3 border border-saddle-border shadow-2xl hover:border-saddle-brown transition-all duration-300 font-mono" 
+       aria-label="Konsultasi Tas via WhatsApp">
+        <span class="relative flex h-3 w-3">
+            <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-saddle-rust opacity-75"></span>
+            <span class="relative inline-flex rounded-full h-3 w-3 bg-saddle-rust"></span>
+        </span>
+        <i class="fa-brands fa-whatsapp text-2xl text-emerald-600"></i>
+        <div class="text-left hidden sm:block pr-1">
+            <div class="text-[10px] text-saddle-brown font-bold uppercase tracking-wider leading-none">Craft Specialist</div>
+            <span class="font-bold text-xs text-saddle-browndark">Konsultasi Tas WA</span>
+        </div>
+    </a>
+
+    <!-- ========================================================================= -->
+    <!-- LENTERA PASAR - STICKY DEMO & SALES BAR (fixed bottom-4)                 -->
+    <!-- ========================================================================= -->
+    <div class="fixed bottom-4 left-1/2 -translate-x-1/2 z-50 w-[95%] max-w-4xl bg-slate-900/95 backdrop-blur-md text-white p-3.5 md:p-4 rounded-2xl shadow-2xl border border-slate-700/80 transition-all duration-300">
+      <div class="flex flex-col md:flex-row items-center justify-between gap-3 md:gap-4">
+        
+        <div class="flex items-center gap-3 w-full md:w-auto">
+          <div class="w-10 h-10 rounded-xl bg-amber-600/20 border border-amber-600/40 flex items-center justify-center shrink-0">
+            <svg class="w-5 h-5 text-amber-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20 7l-8-4-8 4m16 0l-8 4m8-4v10l-8 4m0-10L4 7m8 4v10M4 7v10l8 4" />
+            </svg>
+          </div>
+          <div>
+            <div class="flex items-center gap-2">
+              <span class="font-bold text-sm text-white">Lentera Pasar Engine</span>
+              <span class="text-[10px] bg-amber-600/20 text-amber-300 border border-amber-600/30 px-2 py-0.5 rounded-full font-medium">Leather & Bags Atelier Template</span>
+            </div>
+            <p class="text-xs text-slate-300 hidden sm:block">
+              Terima beres: Website responsif + Panel input produk sendiri + Dikelola tim iklan profesional.
+            </p>
+          </div>
+        </div>
+
+        <div class="flex items-center justify-between md:justify-end gap-3 w-full md:w-auto">
+          <div class="hidden lg:flex items-center gap-2 text-xs text-slate-400 border-r border-slate-700 pr-4">
+            <div class="flex items-center gap-1 text-slate-200">
+              <svg class="w-4 h-4 text-emerald-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" /></svg>
+              <span>Utility Layout</span>
+            </div>
+            <span class="text-slate-600">•</span>
+            <div class="flex items-center gap-1 text-slate-200">
+              <svg class="w-4 h-4 text-emerald-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" /></svg>
+              <span>Custom Monogram</span>
+            </div>
+          </div>
+
+          <a href="https://wa.me/6281234567890?text=Halo%20Tim%20Lentera%20Pasar,%20saya%20tertarik%20menggunakan%20template%20website%20Bags%20Leather%20Atelier%20ini%20lengkap%20dengan%20Admin%20Panel%20dan%20Jasa%20Iklannya." 
+             target="_blank"
+             class="w-full md:w-auto inline-flex items-center justify-center gap-2 bg-gradient-to-r from-amber-700 to-yellow-600 hover:from-amber-600 hover:to-yellow-500 text-white text-xs md:text-sm font-bold px-5 py-2.5 rounded-xl shadow-lg transition-all hover:scale-105 shrink-0">
+            <span>Gunakan Template Ini</span>
+            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3" />
+            </svg>
+          </a>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- SCRIPT LOGIC -->
+    <script>
+        // Fit Modal Logic
+        const fitModal = document.getElementById('fitModal');
+        function openFitModal() {
+            fitModal.classList.remove('hidden');
+            calculateBagFit();
+        }
+        function closeFitModal() {
+            fitModal.classList.add('hidden');
+        }
+
+        function calculateBagFit() {
+            const val = document.getElementById('laptopSizeSelect').value;
+            const titleDisp = document.getElementById('fitTitleDisplay');
+            const descDisp = document.getElementById('fitDescDisplay');
+            const waLink = document.getElementById('fitWaLink');
+
+            if (val === '15.6') {
+                titleDisp.innerText = "Vanguard Heritage Laptop Backpack (18L)";
+                descDisp.innerText = "Dilengkapi slot laptop berbusa tebal 10mm khusus laptop 15.6 inch hingga 16 inch tanpa terasa sempit.";
+                waLink.href = "https://wa.me/6281234567890?text=Halo%20Saddle%20%26%20Craft,%20saya%20mau%20pesan%20Vanguard%20Heritage%20Backpack%20untuk%20laptop%2015.6%20inch.";
+            } else if (val === '14') {
+                titleDisp.innerText = "Oxford Commuter Structured Totebag (14L)";
+                descDisp.innerText = "Sangat pas untuk laptop 13.3 hingga 14 inch dengan penutup resleting atas anti-debu.";
+                waLink.href = "https://wa.me/6281234567890?text=Halo%20Saddle%20%26%20Craft,%20saya%20mau%20pesan%20Oxford%20Totebag%20untuk%20laptop%2014%20inch.";
+            } else {
+                titleDisp.innerText = "Ranger Tactical Leather Slingbag (4.5L)";
+                descDisp.innerText = "Tas selempang ringkas yang pas melindungi iPad Pro / Tablet 11 inch dan dompet.";
+                waLink.href = "https://wa.me/6281234567890?text=Halo%20Saddle%20%26%20Craft,%20saya%20mau%20pesan%20Ranger%20Slingbag%20untuk%20iPad/Tablet.";
+            }
+        }
+
+        // Mobile menu toggle
+        const mobileMenuBtn = document.getElementById('mobileMenuBtn');
+        const mobileMenu = document.getElementById('mobileMenu');
+        const menuIcon = document.getElementById('menuIcon');
+
+        mobileMenuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+            if (mobileMenu.classList.contains('hidden')) {
+                menuIcon.classList.remove('fa-xmark');
+                menuIcon.classList.add('fa-bars-staggered');
+            } else {
+                menuIcon.classList.remove('fa-bars-staggered');
+                menuIcon.classList.add('fa-xmark');
+            }
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html lang="id" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jurnal Perawatan Kulit Asli & Panduan Utility — SADDLE & CRAFT</title>
+    <meta name="description" content="Kumpulan panduan perawatan tas kulit asli, trik menjaga lapisan lilin kanvas tahan air, dan teknik ergonomis mengatur beban ransel laptop kerja.">
+    
+    <!-- Google Fonts: Playfair Display & Plus Jakarta Sans -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;0,700;0,800;0,900;1,600;1,700&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        saddle: {
+                            canvas: '#FAF8F5',
+                            tan: '#EAD7C3',
+                            border: '#DDCFBE',
+                            borderdark: '#C2B09B',
+                            brown: '#7A4926',
+                            browndark: '#382315',
+                            brownblack: '#21140B',
+                            rust: '#C06014',
+                            rustlight: '#DF7B2F',
+                            sand: '#F4EFEA',
+                            silver: '#8C827A',
+                            muted: '#6E635B'
+                        }
+                    },
+                    fontFamily: {
+                        sans: ['"Plus Jakarta Sans"', 'sans-serif'],
+                        serif: ['"Playfair Display"', 'Georgia', 'serif'],
+                        mono: ['"Space Mono"', 'monospace']
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        .no-scrollbar::-webkit-scrollbar { display: none; }
+        .no-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
+        
+        .craft-card {
+            transition: all 0.35s cubic-bezier(0.16, 1, 0.3, 1);
+        }
+        .craft-card:hover {
+            transform: translateY(-4px);
+            border-color: #7A4926;
+            box-shadow: 0 20px 35px -10px rgba(56, 35, 21, 0.12);
+        }
+    </style>
+</head>
+<body class="bg-saddle-canvas text-saddle-browndark font-sans antialiased selection:bg-saddle-brown selection:text-white">
+
+    <!-- 1. TOP BAR -->
+    <div class="bg-saddle-browndark text-saddle-tan text-[11px] py-2.5 px-4 font-mono font-medium border-b border-saddle-brownblack">
+        <div class="max-w-7xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-2 text-center sm:text-left">
+            <div class="flex items-center justify-center gap-2">
+                <span class="inline-flex items-center gap-1.5 px-2.5 py-0.5 rounded-sm bg-saddle-rust text-white text-[9px] font-bold tracking-wider uppercase">
+                    <span class="w-1.5 h-1.5 rounded-full bg-white animate-ping"></span>
+                    LEATHER CARE JOURNAL
+                </span>
+                <span class="text-stone-300">Riset Perawatan Kulit Asli & Panduan Ergonomi Membawa Laptop</span>
+            </div>
+            <div class="flex items-center gap-4 text-[10px] text-stone-400">
+                <a href="katalog.html" class="text-saddle-tan hover:text-white underline font-bold transition">Koleksi Tas Atelier &rarr;</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- 2. NAVBAR -->
+    <header class="sticky top-0 z-40 bg-saddle-canvas/95 backdrop-blur-md border-b border-saddle-border transition-all">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-20 sm:h-24">
+                
+                <a href="index.html" class="flex items-center gap-3 group">
+                    <div class="w-11 h-11 bg-saddle-browndark text-saddle-tan flex items-center justify-center text-xl font-serif font-black rounded-xs border border-saddle-border group-hover:bg-saddle-brown transition">
+                        <span>S</span>
+                    </div>
+                    <div class="flex flex-col">
+                        <span class="text-2xl sm:text-3xl font-serif font-black tracking-tight text-saddle-browndark uppercase leading-none group-hover:text-saddle-rust transition duration-300">
+                            SADDLE<span class="text-saddle-rust">&</span>CRAFT
+                        </span>
+                        <span class="text-[8px] font-mono tracking-[0.28em] text-saddle-brown uppercase mt-1 font-bold">
+                            ARTISANAL LEATHER & UTILITY
+                        </span>
+                    </div>
+                </a>
+
+                <nav class="hidden lg:flex items-center gap-8 text-xs font-bold tracking-widest uppercase text-saddle-muted font-mono">
+                    <a href="index.html" class="hover:text-saddle-brown transition">Beranda</a>
+                    <a href="katalog.html" class="hover:text-saddle-brown transition">Katalog Tas</a>
+                    <a href="detail.html" class="hover:text-saddle-brown transition">Detail Kompartemen</a>
+                    <a href="tentang.html" class="hover:text-saddle-brown transition">Kisah Pengrajin</a>
+                    <a href="artikel.html" class="text-saddle-brown border-b-2 border-saddle-brown pb-1">Perawatan Kulit</a>
+                    <a href="kontak.html" class="hover:text-saddle-brown transition">Custom Grafir & Toko</a>
+                </nav>
+
+                <div class="hidden sm:flex items-center gap-3">
+                    <a href="https://wa.me/6281234567890?text=Halo%20Saddle%20%26%20Craft,%20saya%20mau%20tanya%20seputar%20tips%20merawat%20tas%20kulit." target="_blank" class="inline-flex items-center gap-2 bg-saddle-browndark hover:bg-saddle-brown text-saddle-tan text-xs font-bold font-mono tracking-wider px-5 py-2.5 rounded-sm transition-all shadow-md shadow-saddle-browndark/20">
+                        <i class="fa-brands fa-whatsapp text-emerald-400"></i>
+                        <span>Tanya Stylist WA</span>
+                    </a>
+                </div>
+
+                <button id="mobileMenuBtn" class="lg:hidden p-2 text-saddle-browndark hover:text-saddle-rust focus:outline-none" aria-label="Toggle Menu">
+                    <i id="menuIcon" class="fa-solid fa-bars-staggered text-xl"></i>
+                </button>
+            </div>
+        </div>
+
+        <!-- Mobile Drawer -->
+        <div id="mobileMenu" class="hidden lg:hidden bg-saddle-canvas border-b border-saddle-border px-4 py-5 space-y-3 font-mono">
+            <a href="index.html" class="block text-xs font-bold uppercase tracking-wider text-saddle-muted hover:text-saddle-brown py-2 border-b border-saddle-tan">Beranda Utama</a>
+            <a href="katalog.html" class="block text-xs font-bold uppercase tracking-wider text-saddle-muted hover:text-saddle-brown py-2 border-b border-saddle-tan">Katalog Ransel & Totebag</a>
+            <a href="detail.html" class="block text-xs font-bold uppercase tracking-wider text-saddle-muted hover:text-saddle-brown py-2 border-b border-saddle-tan">Detail Kompartemen Laptop 15.6"</a>
+            <a href="tentang.html" class="block text-xs font-bold uppercase tracking-wider text-saddle-muted hover:text-saddle-brown py-2 border-b border-saddle-tan">Kisah Pengrajin Kulit Lokal</a>
+            <a href="artikel.html" class="block text-xs font-bold uppercase tracking-wider text-saddle-brown py-2 border-b border-saddle-tan">Panduan Merawat Kulit Asli</a>
+            <a href="kontak.html" class="block text-xs font-bold uppercase tracking-wider text-saddle-muted hover:text-saddle-brown py-2">Workshop & Grafir Nama</a>
+        </div>
+    </header>
+
+    <!-- 3. PAGE HEADER & FEATURED ESSAY -->
+    <section class="py-12 bg-saddle-sand border-b border-saddle-border font-mono">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            
+            <div class="max-w-3xl mb-10">
+                <div class="inline-flex items-center gap-2 px-3 py-1 bg-white border border-saddle-border text-saddle-brown text-xs font-bold tracking-wider mb-3">
+                    <span class="w-2 h-2 rounded-full bg-saddle-rust"></span>
+                    <span class="uppercase tracking-widest text-[10px]">CRAFTSMANSHIP JOURNAL</span>
+                </div>
+                <h1 class="text-3xl sm:text-5xl font-serif font-black text-saddle-browndark tracking-tight uppercase">
+                    Jurnal Edukasi & Perawatan Leathercraft
+                </h1>
+                <p class="text-xs sm:text-sm text-saddle-muted mt-2 font-sans font-normal">
+                    Kiat praktis merawat keindahan kulit crazy horse, menjaga lapisan lilin kanvas tahan air, dan teknik ergonomis membawa beban kerja harian.
+                </p>
+            </div>
+
+            <!-- Featured Story Card -->
+            <div class="bg-white border border-saddle-border p-6 sm:p-10 shadow-xl">
+                <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
+                    <div class="lg:col-span-6">
+                        <div class="aspect-[16/10] bg-saddle-sand overflow-hidden relative group border border-saddle-border">
+                            <img src="https://images.unsplash.com/photo-1548036328-c9fa89d128fa?auto=format&fit=crop&w=800&q=80" alt="Patina Evolution Tas Kulit" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700">
+                            <span class="absolute top-3 left-3 bg-saddle-browndark text-saddle-tan text-[9px] font-bold px-3 py-1 uppercase">
+                                COVER STORY
+                            </span>
+                        </div>
+                    </div>
+                    <div class="lg:col-span-6 space-y-4">
+                        <div class="flex items-center gap-3 text-xs text-saddle-muted">
+                            <span>Oleh Master Craftsman Garut</span>
+                            <span>•</span>
+                            <span>5 Min Read</span>
+                            <span>•</span>
+                            <span class="text-saddle-rust font-bold">Patina Science</span>
+                        </div>
+                        <h2 class="text-2xl sm:text-3xl font-serif font-bold text-saddle-browndark uppercase leading-tight">
+                            The Anatomy of a Lifetime Carry: Mengapa Tas Kulit Crazy Horse Semakin Indah Seiring Waktu
+                        </h2>
+                        <p class="text-xs sm:text-sm text-saddle-muted leading-relaxed font-sans font-normal">
+                            Goresan pemakaian pada kulit crazy horse bukanlah cacat produk, melainkan perpindahan minyak alami yang menciptakan tekstur dua warna unik (*two-tone vintage patina*). Pelajari bagaimana minyak telapak tangan Anda berinteraksi dengan lilin nabati kulit.
+                        </p>
+                        <div class="pt-2">
+                            <a href="detail.html" class="inline-flex items-center gap-2 px-6 py-3 bg-saddle-browndark text-saddle-tan text-xs font-bold tracking-wider uppercase hover:bg-saddle-brown transition">
+                                <span>Lihat Ransel Crazy Horse</span>
+                                <i class="fa-solid fa-arrow-right text-[10px]"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- 4. GRID ARTIKEL PANDUAN & TIPS LEATHERCRAFT -->
+    <section class="py-16 bg-white font-mono">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            
+            <h3 class="text-2xl font-serif font-black text-saddle-browndark uppercase mb-8 flex items-center gap-2">
+                <i class="fa-solid fa-feather text-saddle-rust"></i>
+                <span>Semua Panduan Leather & Utility</span>
+            </h3>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                
+                <!-- Article 1 -->
+                <div class="bg-saddle-canvas border border-saddle-border p-6 flex flex-col justify-between craft-card">
+                    <div>
+                        <div class="aspect-[16/10] bg-white overflow-hidden mb-4 border border-saddle-border">
+                            <img src="https://images.unsplash.com/photo-1590874103328-eac38a683ce7?auto=format&fit=crop&w=500&q=80" alt="Merawat Kanvas Lilin" class="w-full h-full object-cover">
+                        </div>
+                        <div class="flex items-center gap-2 text-[10px] font-bold text-saddle-silver mb-2">
+                            <span class="text-emerald-800">WAXED CANVAS</span>
+                            <span>•</span>
+                            <span>4 Min Read</span>
+                        </div>
+                        <h4 class="font-serif font-bold text-lg text-saddle-browndark leading-snug">
+                            Cara Membersihkan Tas Kanvas Lilin yang Terkena Lumpur Tanpa Merusak Lapisan Anti-Air
+                        </h4>
+                        <p class="text-xs text-saddle-muted mt-2 leading-relaxed font-sans font-normal">
+                            Trik membersihkan kotoran kering menggunakan sikat berbulu lembut tanpa deterjen keras yang melunturkan lilin.
+                        </p>
+                    </div>
+                    <div class="mt-6 pt-4 border-t border-saddle-border flex items-center justify-between text-xs">
+                        <span class="text-saddle-muted">Care Tips</span>
+                        <a href="katalog.html" class="text-saddle-brown font-bold hover:underline">Koleksi Kanvas &rarr;</a>
+                    </div>
+                </div>
+
+                <!-- Article 2 -->
+                <div class="bg-saddle-canvas border border-saddle-border p-6 flex flex-col justify-between craft-card">
+                    <div>
+                        <div class="aspect-[16/10] bg-white overflow-hidden mb-4 border border-saddle-border">
+                            <img src="https://images.unsplash.com/photo-1553062407-98eeb64c6a62?auto=format&fit=crop&w=500&q=80" alt="Ergonomi Ransel Laptop" class="w-full h-full object-cover">
+                        </div>
+                        <div class="flex items-center gap-2 text-[10px] font-bold text-saddle-silver mb-2">
+                            <span class="text-saddle-rust">ERGONOMICS</span>
+                            <span>•</span>
+                            <span>5 Min Read</span>
+                        </div>
+                        <h4 class="font-serif font-bold text-lg text-saddle-browndark leading-snug">
+                            Panduan Mengatur Kompartemen Ransel Laptop Agar Pundak Bebas Pegal di Jam Sibuk
+                        </h4>
+                        <p class="text-xs text-saddle-muted mt-2 leading-relaxed font-sans font-normal">
+                            Prinsip menempatkan benda terberat (laptop & charger) sedekat mungkin dengan punggung tubuh.
+                        </p>
+                    </div>
+                    <div class="mt-6 pt-4 border-t border-saddle-border flex items-center justify-between text-xs">
+                        <span class="text-saddle-muted">Utility Tips</span>
+                        <a href="katalog.html" class="text-saddle-brown font-bold hover:underline">Koleksi Ransel &rarr;</a>
+                    </div>
+                </div>
+
+                <!-- Article 3 -->
+                <div class="bg-saddle-canvas border border-saddle-border p-6 flex flex-col justify-between craft-card">
+                    <div>
+                        <div class="aspect-[16/10] bg-white overflow-hidden mb-4 border border-saddle-border">
+                            <img src="https://images.unsplash.com/photo-1627123424574-724758594e93?auto=format&fit=crop&w=500&q=80" alt="Perbedaan Kulit Asli" class="w-full h-full object-cover">
+                        </div>
+                        <div class="flex items-center gap-2 text-[10px] font-bold text-saddle-silver mb-2">
+                            <span class="text-saddle-brown">LEATHER KNOWLEDGE</span>
+                            <span>•</span>
+                            <span>6 Min Read</span>
+                        </div>
+                        <h4 class="font-serif font-bold text-lg text-saddle-browndark leading-snug">
+                            Perbedaan Mutlak Kulit Asli Full Grain vs Genuine Leather vs Kulit Sintetis Faux
+                        </h4>
+                        <p class="text-xs text-saddle-muted mt-2 leading-relaxed font-sans font-normal">
+                            Mengenali pori-pori alami, aroma khas penyamakan nabati, dan daya tahan jahitan jangka panjang.
+                        </p>
+                    </div>
+                    <div class="mt-6 pt-4 border-t border-saddle-border flex items-center justify-between text-xs">
+                        <span class="text-saddle-muted">Knowledge</span>
+                        <a href="katalog.html" class="text-saddle-brown font-bold hover:underline">Koleksi Dompet &rarr;</a>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+    <!-- 5. GLOSARIUM TEKNOLOGI LEATHERCRAFT -->
+    <section class="py-16 bg-saddle-sand border-t border-b border-saddle-border font-mono">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            
+            <div class="text-center max-w-2xl mx-auto mb-12">
+                <span class="text-xs font-mono uppercase tracking-[0.25em] text-saddle-brown font-bold block mb-1">
+                    // KAMUS TEKNIS LEATHERCRAFT
+                </span>
+                <h3 class="text-2xl sm:text-3xl font-serif font-black text-saddle-browndark uppercase">
+                    Glosarium Terminologi Tas Kulit
+                </h3>
+                <p class="text-xs text-saddle-muted mt-1 font-sans">
+                    Mengenal ragam istilah material dan konstruksi tas atelier fungsional.
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 text-xs">
+                
+                <div class="p-5 bg-white border border-saddle-border">
+                    <strong class="text-sm font-serif font-bold text-saddle-browndark uppercase block">Crazy Horse Leather</strong>
+                    <p class="text-saddle-muted mt-1 text-[11px] leading-relaxed font-sans">
+                        Kulit sapi asli yang diresapi lilin khusus, menghasilkan goresan retro yang mudah dipulihkan dengan gesekan jari.
+                    </p>
+                </div>
+
+                <div class="p-5 bg-white border border-saddle-border">
+                    <strong class="text-sm font-serif font-bold text-saddle-browndark uppercase block">Vegetable Tanning</strong>
+                    <p class="text-saddle-muted mt-1 text-[11px] leading-relaxed font-sans">
+                        Proses penyamakan kuno menggunakan tanin kulit kayu alami yang ramah lingkungan dan menghasilkan aroma kulit wangi.
+                    </p>
+                </div>
+
+                <div class="p-5 bg-white border border-saddle-border">
+                    <strong class="text-sm font-serif font-bold text-saddle-browndark uppercase block">Bartack Stitching</strong>
+                    <p class="text-saddle-muted mt-1 text-[11px] leading-relaxed font-sans">
+                        Jahitan kunci zigzag berkerapatan sangat tinggi di titik-titik tumpuan beban tali ransel untuk mencegah robek.
+                    </p>
+                </div>
+
+                <div class="p-5 bg-white border border-saddle-border">
+                    <strong class="text-sm font-serif font-bold text-saddle-browndark uppercase block">Waxed Canvas 16oz</strong>
+                    <p class="text-saddle-muted mt-1 text-[11px] leading-relaxed font-sans">
+                        Kain kanvas katun berat yang diresapi lilin lebah alami sehingga menolak air hujan dan memiliki daya tahan ekstrem.
+                    </p>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+    <!-- 6. FOOTER -->
+    <footer class="bg-saddle-browndark text-saddle-tan border-t border-saddle-brownblack pt-14 pb-28 font-mono">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex flex-col md:flex-row items-center justify-between gap-6 border-b border-saddle-brown pb-8">
+                <div class="flex items-center gap-3">
+                    <div class="w-8 h-8 bg-saddle-tan text-saddle-browndark flex items-center justify-center text-base font-serif font-black">
+                        <span>S</span>
+                    </div>
+                    <span class="text-xl font-serif font-black text-white uppercase tracking-tight">
+                        SADDLE<span class="text-saddle-rust">&</span>CRAFT
+                    </span>
+                </div>
+                <div class="flex flex-wrap gap-6 text-xs text-stone-300 font-bold uppercase tracking-wider">
+                    <a href="index.html" class="hover:text-white">Beranda</a>
+                    <a href="katalog.html" class="hover:text-white">Katalog</a>
+                    <a href="detail.html" class="hover:text-white">Detail</a>
+                    <a href="tentang.html" class="hover:text-white">Pengrajin</a>
+                    <a href="artikel.html" class="text-saddle-tan">Perawatan</a>
+                    <a href="kontak.html" class="hover:text-white">Workshop</a>
+                </div>
+            </div>
+            <div class="mt-6 flex flex-col sm:flex-row items-center justify-between text-xs text-stone-400">
+                <p>&copy; 2026 SADDLE & CRAFT ATELIER. All Rights Reserved.</p>
+                <p class="text-[11px] mt-2 sm:mt-0 font-sans">Lentera Pasar Production Template — Artisanal Bags & Leather</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- FLOATING WHATSAPP BUTTON (bottom-24) -->
+    <a href="https://wa.me/6281234567890?text=Halo%20Saddle%20%26%20Craft,%20saya%20mau%20konsultasi%20artikel%20tas." 
+       target="_blank" 
+       class="fixed bottom-24 right-6 z-50 group flex items-center gap-3 bg-white hover:bg-saddle-sand text-saddle-browndark px-4 py-3 border border-saddle-border shadow-2xl hover:border-saddle-brown transition-all duration-300 font-mono">
+        <span class="relative flex h-3 w-3">
+            <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-saddle-rust opacity-75"></span>
+            <span class="relative inline-flex rounded-full h-3 w-3 bg-saddle-rust"></span>
+        </span>
+        <i class="fa-brands fa-whatsapp text-2xl text-emerald-600"></i>
+        <div class="text-left hidden sm:block pr-1">
+            <div class="text-[10px] text-saddle-brown font-bold uppercase tracking-wider leading-none">Craft Specialist</div>
+            <span class="font-bold text-xs text-saddle-browndark">Konsultasi Tas WA</span>
+        </div>
+    </a>
+
+    <!-- LENTERA PASAR - STICKY DEMO & SALES BAR (fixed bottom-4) -->
+    <div class="fixed bottom-4 left-1/2 -translate-x-1/2 z-50 w-[95%] max-w-4xl bg-slate-900/95 backdrop-blur-md text-white p-3.5 md:p-4 rounded-2xl shadow-2xl border border-slate-700/80 transition-all duration-300">
+      <div class="flex flex-col md:flex-row items-center justify-between gap-3 md:gap-4">
+        <div class="flex items-center gap-3 w-full md:w-auto">
+          <div class="w-10 h-10 rounded-xl bg-amber-600/20 border border-amber-600/40 flex items-center justify-center shrink-0">
+            <svg class="w-5 h-5 text-amber-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20 7l-8-4-8 4m16 0l-8 4m8-4v10l-8 4m0-10L4 7m8 4v10M4 7v10l8 4" />
+            </svg>
+          </div>
+          <div>
+            <div class="flex items-center gap-2">
+              <span class="font-bold text-sm text-white">Lentera Pasar Engine</span>
+              <span class="text-[10px] bg-amber-600/20 text-amber-300 border border-amber-600/30 px-2 py-0.5 rounded-full font-medium">Leather & Bags Atelier Template</span>
+            </div>
+            <p class="text-xs text-slate-300 hidden sm:block">
+              Terima beres: Website responsif + Panel input produk sendiri + Dikelola tim iklan profesional.
+            </p>
+          </div>
+        </div>
+
+        <div class="flex items-center justify-between md:justify-end gap-3 w-full md:w-auto">
+          <a href="https://wa.me/6281234567890?text=Halo%20Tim%20Lentera%20Pasar,%20saya%20tertarik%20menggunakan%20template%20website%20Bags%20Leather%20Atelier%20ini%20lengkap%20dengan%20Admin%20Panel%20dan%20Jasa%20Iklannya." 
+             target="_blank"
+             class="w-full md:w-auto inline-flex items-center justify-center gap-2 bg-gradient-to-r from-amber-700 to-yellow-600 hover:from-amber-600 hover:to-yellow-500 text-white text-xs md:text-sm font-bold px-5 py-2.5 rounded-xl shadow-lg transition-all hover:scale-105 shrink-0">
+            <span>Gunakan Template Ini</span>
+            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3" />
+            </svg>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <!-- SCRIPT -->
+    <script>
+        const mobileMenuBtn = document.getElementById('mobileMenuBtn');
+        const mobileMenu = document.getElementById('mobileMenu');
+        const menuIcon = document.getElementById('menuIcon');
+
+        mobileMenuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+            if (mobileMenu.classList.contains('hidden')) {
+                menuIcon.classList.remove('fa-xmark');
+                menuIcon.classList.add('fa-bars-staggered');
+            } else {
+                menuIcon.classList.remove('fa-bars-staggered');
+                menuIcon.classList.add('fa-xmark');
+            }
+        });
+    </script>
+</body>
+</html>

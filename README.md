@@ -36,6 +36,7 @@ template-website-umkm/
 │   ├── fashion-activewear-kinetic/     # Pakaian Olahraga, Activewear & Jersey Club (Kinetix Lab)
 │   ├── fashion-loungewear-cozy/        # Piyama Sutra, Daster Modern & Loungewear (Serena Lounge)
 │   ├── footwear-sneakers-street/       # Sneakers Urban Streetwear, Loafers & Sandal (Stride Vault)
+│   ├── bags-leather-atelier/           # Tas Ransel Laptop, Totebag & Dompet Kulit (Saddle & Craft)
 │   ├── fashion-muslim-gamis/           # Hijab, Gamis Syar'i & Abaya Modern
 │   ├── fashion-streetwear-apparel/     # Kaos Distro, Hoodie & Urban Oversize
 │   ├── fashion-batik-etnik/            # Batik Tulis/Cap, Tenun & Kebaya Modern
