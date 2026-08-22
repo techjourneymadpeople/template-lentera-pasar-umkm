@@ -1,0 +1,700 @@
+<!DOCTYPE html>
+<html lang="id" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Katalog Perkakas & Mesin Pertukangan — IRONKRAFT</title>
+    <meta name="description" content="Koleksi lengkap mesin bor cordless 20V brushless, gerinda baterai 4 inch, kunci sok 108 pcs baja Cr-V, dan toolbox pertukangan bergaransi 1 tahun resmi.">
+    
+    <!-- Google Fonts: Space Grotesk & Plus Jakarta Sans -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        heavy: {
+                            bg: '#13171C',
+                            charcoal: '#1E242B',
+                            card: '#242C35',
+                            cardlight: '#2E3844',
+                            border: '#374151',
+                            amber: '#F59E0B',
+                            amberdark: '#D97706',
+                            yellow: '#FBBF24',
+                            steel: '#E5E7EB',
+                            silver: '#9CA3AF'
+                        }
+                    },
+                    fontFamily: {
+                        sans: ['"Plus Jakarta Sans"', 'sans-serif'],
+                        mono: ['"Space Grotesk"', 'monospace']
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        .no-scrollbar::-webkit-scrollbar { display: none; }
+        .no-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
+        
+        .heavy-btn {
+            transition: all 0.2s cubic-bezier(0.16, 1, 0.3, 1);
+        }
+        .heavy-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 8px 20px -6px rgba(245, 158, 11, 0.4);
+        }
+    </style>
+</head>
+<body class="bg-heavy-bg text-heavy-steel font-sans antialiased selection:bg-heavy-amber selection:text-black">
+
+    <!-- 1. TOP BAR -->
+    <div class="bg-heavy-charcoal text-heavy-amber text-xs py-2 px-4 font-mono font-bold border-b border-heavy-border">
+        <div class="max-w-7xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-2 text-center sm:text-left">
+            <div class="flex items-center justify-center gap-2">
+                <span class="px-2 py-0.5 bg-heavy-amber text-black text-[10px] uppercase font-mono font-black tracking-wider">
+                    PENGADAAN ALAT PROYEK READY
+                </span>
+                <span class="text-white">Melayani Pembelian Satuan & Grosir Proyek Konstruksi / Bengkel</span>
+            </div>
+            <div class="flex items-center gap-4 text-xs font-mono">
+                <a href="kontak.html" class="text-heavy-amber hover:text-white underline font-extrabold transition">Jadwal Uji Coba di Service Center &rarr;</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- 2. NAVBAR -->
+    <header class="sticky top-0 z-40 bg-heavy-bg/95 backdrop-blur-md border-b border-heavy-border transition-all">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-20 sm:h-24">
+                
+                <a href="index.html" class="flex items-center gap-3 group">
+                    <div class="w-11 h-11 bg-heavy-amber text-black flex items-center justify-center text-xl font-mono font-black border-2 border-heavy-amber shadow-lg group-hover:bg-black group-hover:text-heavy-amber transition">
+                        <i class="fa-solid fa-wrench"></i>
+                    </div>
+                    <div class="flex flex-col">
+                        <span class="text-2xl sm:text-3xl font-mono font-black tracking-tight text-white uppercase leading-none">
+                            IRONKRAFT<span class="text-heavy-amber">.</span>
+                        </span>
+                        <span class="text-[9px] font-mono tracking-[0.25em] text-heavy-amber uppercase mt-1 font-bold">
+                            HEAVY-DUTY POWER TOOLS
+                        </span>
+                    </div>
+                </a>
+
+                <nav class="hidden lg:flex items-center gap-8 text-xs font-bold tracking-widest uppercase text-heavy-silver font-mono">
+                    <a href="index.html" class="hover:text-heavy-amber transition">Beranda</a>
+                    <a href="katalog.html" class="text-heavy-amber border-b-2 border-heavy-amber pb-1">Katalog Alat</a>
+                    <a href="detail.html" class="hover:text-heavy-amber transition">Detail Bor 20V</a>
+                    <a href="tentang.html" class="hover:text-heavy-amber transition">Standar Baja & Servis</a>
+                    <a href="artikel.html" class="hover:text-heavy-amber transition">Tips Pertukangan</a>
+                    <a href="kontak.html" class="hover:text-heavy-amber transition">Pusat Servis & Grosir</a>
+                </nav>
+
+                <div class="hidden sm:flex items-center gap-3 font-mono">
+                    <a href="https://wa.me/6281234567890?text=Halo%20Ironkraft%20Tools,%20saya%20mau%20pesan%20perkakas%20dari%20katalog." target="_blank" class="inline-flex items-center gap-2 bg-heavy-amber hover:bg-heavy-amberdark text-black text-xs font-bold tracking-wider px-5 py-2.5 transition-all shadow-lg font-mono heavy-btn">
+                        <i class="fa-brands fa-whatsapp text-base"></i>
+                        <span>Order via WA</span>
+                    </a>
+                </div>
+
+                <button id="mobileMenuBtn" class="lg:hidden p-2 text-white hover:text-heavy-amber focus:outline-none" aria-label="Toggle Menu">
+                    <i id="menuIcon" class="fa-solid fa-bars text-xl"></i>
+                </button>
+            </div>
+        </div>
+
+        <!-- Mobile Drawer -->
+        <div id="mobileMenu" class="hidden lg:hidden bg-heavy-charcoal border-b border-heavy-border px-4 py-5 space-y-3 font-mono">
+            <a href="index.html" class="block text-xs font-bold uppercase tracking-wider text-white hover:text-heavy-amber py-2 border-b border-heavy-border">Beranda Utama</a>
+            <a href="katalog.html" class="block text-xs font-bold uppercase tracking-wider text-heavy-amber py-2 border-b border-heavy-border">Katalog Mesin & Toolbox</a>
+            <a href="detail.html" class="block text-xs font-bold uppercase tracking-wider text-white hover:text-heavy-amber py-2 border-b border-heavy-border">Detail Bor 20V Brushless</a>
+            <a href="tentang.html" class="block text-xs font-bold uppercase tracking-wider text-white hover:text-heavy-amber py-2 border-b border-heavy-border">Standar Ketahanan Motor</a>
+            <a href="artikel.html" class="block text-xs font-bold uppercase tracking-wider text-white hover:text-heavy-amber py-2 border-b border-heavy-border">Tips Perawatan Baterai</a>
+            <a href="kontak.html" class="block text-xs font-bold uppercase tracking-wider text-white hover:text-heavy-amber py-2">Pusat Servis Glodok & Grosir</a>
+        </div>
+    </header>
+
+    <!-- 3. PAGE HEADER & FILTER CONTROLS -->
+    <section class="py-12 bg-heavy-charcoal border-b border-heavy-border font-mono">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="max-w-3xl">
+                <div class="inline-flex items-center gap-2 px-3 py-1 bg-heavy-card border border-heavy-amber/40 text-heavy-amber text-xs font-bold tracking-wider mb-3">
+                    <span class="w-2 h-2 rounded-full bg-heavy-amber"></span>
+                    <span class="uppercase tracking-widest text-[10px]">ALL INDUSTRIAL TOOLS</span>
+                </div>
+                <h1 class="text-3xl sm:text-5xl font-mono font-black text-white tracking-tight uppercase">
+                    Katalog Mesin Bor, Gerinda & Toolbox
+                </h1>
+                <p class="text-xs sm:text-sm text-heavy-silver mt-2 font-sans leading-relaxed">
+                    Filter berdasarkan voltase baterai (20V Max / 12V Compact), teknologi motor brushless, set kunci pas mekanik, dan koper hardcase lengkap.
+                </p>
+            </div>
+
+            <!-- Search & Filter Controls -->
+            <div class="mt-8 grid grid-cols-1 md:grid-cols-12 gap-4">
+                <!-- Search Box -->
+                <div class="md:col-span-6 relative">
+                    <i class="fa-solid fa-magnifying-glass absolute left-4 top-1/2 -translate-y-1/2 text-heavy-silver text-xs"></i>
+                    <input type="text" id="searchInput" placeholder="Cari alat (misal: Volt-X20, Gerinda 20V, Kunci Sok 108 Pcs, Baterai 4.0Ah)..." 
+                           class="w-full pl-10 pr-4 py-3 bg-heavy-card border border-heavy-border text-xs text-white focus:outline-none focus:border-heavy-amber transition font-sans font-medium">
+                </div>
+
+                <!-- Feature Filter Dropdown -->
+                <div class="md:col-span-3">
+                    <select id="featureFilter" onchange="applyAllFilters()" class="w-full py-3 px-4 bg-heavy-card border border-heavy-border text-xs font-bold text-white focus:outline-none focus:border-heavy-amber transition font-mono">
+                        <option value="all">Semua Tipe Spesifikasi</option>
+                        <option value="brushless">Motor Brushless 100%</option>
+                        <option value="20v">20V Max Heavy-Duty</option>
+                        <option value="12v">12V Compact DIY</option>
+                        <option value="crv">Baja Chrome Vanadium</option>
+                    </select>
+                </div>
+
+                <!-- Fast WhatsApp Inquiry -->
+                <div class="md:col-span-3">
+                    <a href="https://wa.me/6281234567890?text=Halo%20Ironkraft%20Tools,%20saya%20mau%20cek%20stok%20perkakas." target="_blank" class="w-full h-full py-3 px-4 bg-heavy-amber hover:bg-heavy-amberdark text-black text-xs font-bold flex items-center justify-center gap-2 transition font-mono heavy-btn">
+                        <i class="fa-solid fa-bolt text-black"></i>
+                        <span>Cek Stok & Penawaran WA</span>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Category Pills -->
+            <div class="mt-6 flex items-center gap-2 overflow-x-auto no-scrollbar pb-2 font-mono">
+                <span class="text-xs font-bold text-white shrink-0 mr-1 uppercase tracking-wider">Kategori:</span>
+                <button onclick="filterCategory('all')" class="cat-pill active px-4 py-2 text-xs font-bold tracking-wider transition bg-heavy-amber text-black font-bold" data-cat="all">
+                    SEMUA PERKAKAS
+                </button>
+                <button onclick="filterCategory('drill')" class="cat-pill px-4 py-2 text-xs font-bold tracking-wider transition bg-heavy-card text-heavy-silver hover:text-white border border-heavy-border" data-cat="drill">
+                    BOR CORDLESS & IMPACT
+                </button>
+                <button onclick="filterCategory('grinder')" class="cat-pill px-4 py-2 text-xs font-bold tracking-wider transition bg-heavy-card text-heavy-silver hover:text-white border border-heavy-border" data-cat="grinder">
+                    GERINDA & MESIN POTONG
+                </button>
+                <button onclick="filterCategory('socket')" class="cat-pill px-4 py-2 text-xs font-bold tracking-wider transition bg-heavy-card text-heavy-silver hover:text-white border border-heavy-border" data-cat="socket">
+                    KUNCI SOK & TOOLBOX
+                </button>
+                <button onclick="filterCategory('battery')" class="cat-pill px-4 py-2 text-xs font-bold tracking-wider transition bg-heavy-card text-heavy-silver hover:text-white border border-heavy-border" data-cat="battery">
+                    BATERAI & CHARGER DOK
+                </button>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- 4. PRODUCT GRID -->
+    <section class="py-16 bg-heavy-bg font-mono">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            
+            <div class="flex items-center justify-between mb-8">
+                <div class="text-xs text-heavy-silver font-bold">
+                    Menampilkan <span id="productCount" class="font-black text-black bg-heavy-amber px-2 py-0.5">8</span> Perkakas Heavy-Duty Ready Stock
+                </div>
+                <div class="text-xs text-heavy-amber flex items-center gap-1.5 font-bold">
+                    <i class="fa-solid fa-shield-halved text-heavy-amber"></i>
+                    <span>Official 12-Month Replacement Warranty</span>
+                </div>
+            </div>
+
+            <!-- Grid Items -->
+            <div id="productsGrid" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+
+                <!-- ITEM 1: Ironkraft Volt-X20 Brushless Cordless Impact Drill -->
+                <div class="product-item bg-heavy-card border border-heavy-border p-4 flex flex-col justify-between hover:border-heavy-amber transition" 
+                     data-cat="drill" data-feature="brushless" data-title="Ironkraft Volt-X20 Brushless Cordless Impact Drill 20V Max 60 Nm">
+                    <div>
+                        <div class="aspect-[4/3] bg-heavy-charcoal overflow-hidden mb-3 relative group border border-heavy-border">
+                            <img src="https://images.unsplash.com/photo-1504148455328-c376907d081c?auto=format&fit=crop&w=500&q=80" alt="Volt-X20 Drill" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+                            <span class="absolute top-2 left-2 bg-heavy-amber text-black text-[8px] font-bold px-2 py-0.5 uppercase font-mono">
+                                20V BRUSHLESS
+                            </span>
+                        </div>
+
+                        <div class="flex items-center gap-1.5 mb-1.5 text-[10px] text-heavy-amber font-bold uppercase">
+                            <i class="fa-solid fa-bolt"></i>
+                            <span>60 N.m • 3 Mode • 13mm Chuck</span>
+                        </div>
+
+                        <h3 class="font-mono font-bold text-base text-white leading-tight">Volt-X20 Impact Drill</h3>
+                        <p class="text-xs text-heavy-silver mt-1 font-sans line-clamp-1">Mesin bor cordless 20V brushless 3 mode dengan koper hardcase 24 pcs.</p>
+                        
+                        <div class="mt-2 text-[10px] text-heavy-silver">
+                            <span>RPM: Dual Speed 0-450 / 0-1750 RPM</span>
+                        </div>
+                    </div>
+
+                    <div class="mt-4 pt-3 border-t border-heavy-border flex items-center justify-between">
+                        <div>
+                            <span class="text-[9px] text-heavy-silver block uppercase">Harga Paket</span>
+                            <span class="font-mono font-bold text-base text-white">Rp 649.000</span>
+                        </div>
+                        <div class="flex items-center gap-1">
+                            <a href="detail.html" class="p-2 bg-heavy-charcoal hover:bg-heavy-cardlight border border-heavy-border text-white text-xs transition" title="Lihat Detail">
+                                <i class="fa-solid fa-eye"></i>
+                            </a>
+                            <a href="https://wa.me/6281234567890?text=Halo%20Ironkraft%20Tools,%20saya%20mau%20pesan%20Volt-X20%20(Rp%20649.000)." target="_blank" class="px-3 py-1.5 bg-heavy-amber hover:bg-heavy-amberdark text-black text-xs font-bold uppercase transition">
+                                Pesan WA
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- ITEM 2: Ironkraft Grind-X20 Cordless Angle Grinder -->
+                <div class="product-item bg-heavy-card border border-heavy-border p-4 flex flex-col justify-between hover:border-heavy-amber transition" 
+                     data-cat="grinder" data-feature="brushless" data-title="Ironkraft Grind-X20 Cordless Angle Grinder 20V 4 Inch Brushless">
+                    <div>
+                        <div class="aspect-[4/3] bg-heavy-charcoal overflow-hidden mb-3 relative group border border-heavy-border">
+                            <img src="https://images.unsplash.com/photo-1572981779307-38b8cabb2407?auto=format&fit=crop&w=500&q=80" alt="Grind-X20 Grinder" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+                            <span class="absolute top-2 left-2 bg-heavy-amber text-black text-[8px] font-bold px-2 py-0.5 uppercase font-mono">
+                                4 INCH BRUSHLESS
+                            </span>
+                        </div>
+
+                        <div class="flex items-center gap-1.5 mb-1.5 text-[10px] text-heavy-amber font-bold uppercase">
+                            <i class="fa-solid fa-compact-disc"></i>
+                            <span>20V Max • 8500 RPM • Anti-Kickback</span>
+                        </div>
+
+                        <h3 class="font-mono font-bold text-base text-white leading-tight">Grind-X20 Angle Grinder</h3>
+                        <p class="text-xs text-heavy-silver mt-1 font-sans line-clamp-1">Mesin gerinda potong cordless tanpa kabel dengan rem elektronik.</p>
+                        
+                        <div class="mt-2 text-[10px] text-heavy-silver">
+                            <span>Diameter Spindle: M10 (100mm Disc)</span>
+                        </div>
+                    </div>
+
+                    <div class="mt-4 pt-3 border-t border-heavy-border flex items-center justify-between">
+                        <div>
+                            <span class="text-[9px] text-heavy-silver block uppercase">Harga Paket</span>
+                            <span class="font-mono font-bold text-base text-white">Rp 589.000</span>
+                        </div>
+                        <div class="flex items-center gap-1">
+                            <a href="detail.html" class="p-2 bg-heavy-charcoal hover:bg-heavy-cardlight border border-heavy-border text-white text-xs transition">
+                                <i class="fa-solid fa-eye"></i>
+                            </a>
+                            <a href="https://wa.me/6281234567890?text=Halo%20Ironkraft%20Tools,%20saya%20mau%20pesan%20Grind-X20%20(Rp%20589.000)." target="_blank" class="px-3 py-1.5 bg-heavy-amber hover:bg-heavy-amberdark text-black text-xs font-bold uppercase transition">
+                                Pesan WA
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- ITEM 3: Ironkraft Craft-12V Compact Cordless Drill -->
+                <div class="product-item bg-heavy-card border border-heavy-border p-4 flex flex-col justify-between hover:border-heavy-amber transition" 
+                     data-cat="drill" data-feature="12v" data-title="Ironkraft Craft-12V Compact Cordless Drill Obeng Baterai DIY Rumah">
+                    <div>
+                        <div class="aspect-[4/3] bg-heavy-charcoal overflow-hidden mb-3 relative group border border-heavy-border">
+                            <img src="https://images.unsplash.com/photo-1504148455328-c376907d081c?auto=format&fit=crop&w=500&q=80" alt="Craft-12V Drill" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+                            <span class="absolute top-2 left-2 bg-emerald-500 text-black text-[8px] font-bold px-2 py-0.5 uppercase font-mono">
+                                12V COMPACT DIY
+                            </span>
+                        </div>
+
+                        <div class="flex items-center gap-1.5 mb-1.5 text-[10px] text-heavy-amber font-bold uppercase">
+                            <i class="fa-solid fa-screwdriver"></i>
+                            <span>12V Max • 35 N.m • 0.95 kg Ringan</span>
+                        </div>
+
+                        <h3 class="font-mono font-bold text-base text-white leading-tight">Craft-12V Compact Drill</h3>
+                        <p class="text-xs text-heavy-silver mt-1 font-sans line-clamp-1">Bor obeng baterai ringkas untuk perakitan furnitur dan perbaikan rumah.</p>
+                        
+                        <div class="mt-2 text-[10px] text-heavy-silver">
+                            <span>Chuck: 10mm Keyless Auto-Lock</span>
+                        </div>
+                    </div>
+
+                    <div class="mt-4 pt-3 border-t border-heavy-border flex items-center justify-between">
+                        <div>
+                            <span class="text-[9px] text-heavy-silver block uppercase">Harga Paket</span>
+                            <span class="font-mono font-bold text-base text-white">Rp 389.000</span>
+                        </div>
+                        <div class="flex items-center gap-1">
+                            <a href="detail.html" class="p-2 bg-heavy-charcoal hover:bg-heavy-cardlight border border-heavy-border text-white text-xs transition">
+                                <i class="fa-solid fa-eye"></i>
+                            </a>
+                            <a href="https://wa.me/6281234567890?text=Halo%20Ironkraft%20Tools,%20saya%20mau%20pesan%20Craft-12V%20(Rp%20389.000)." target="_blank" class="px-3 py-1.5 bg-heavy-amber hover:bg-heavy-amberdark text-black text-xs font-bold uppercase transition">
+                                Pesan WA
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- ITEM 4: MasterCraft 108 Pcs Industrial Socket Tool Set -->
+                <div class="product-item bg-heavy-card border border-heavy-border p-4 flex flex-col justify-between hover:border-heavy-amber transition" 
+                     data-cat="socket" data-feature="crv" data-title="MasterCraft 108 Pcs Industrial Socket Tool Set Koper Kunci Sok Baja Cr-V">
+                    <div>
+                        <div class="aspect-[4/3] bg-heavy-charcoal overflow-hidden mb-3 relative group border border-heavy-border">
+                            <img src="https://images.unsplash.com/photo-1581783898377-1c85bf937427?auto=format&fit=crop&w=500&q=80" alt="MasterCraft Tool Set" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+                            <span class="absolute top-2 left-2 bg-heavy-amber text-black text-[8px] font-bold px-2 py-0.5 uppercase font-mono">
+                                108 PCS CR-V
+                            </span>
+                        </div>
+
+                        <div class="flex items-center gap-1.5 mb-1.5 text-[10px] text-heavy-amber font-bold uppercase">
+                            <i class="fa-solid fa-toolbox"></i>
+                            <span>Baja Cr-V • Ratchet 72T • Koper Keras</span>
+                        </div>
+
+                        <h3 class="font-mono font-bold text-base text-white leading-tight">MasterCraft 108 Pcs Set</h3>
+                        <p class="text-xs text-heavy-silver mt-1 font-sans line-clamp-1">Koper perkakas mekanik lengkap berisi kunci sok ratchet dan tang baja.</p>
+                        
+                        <div class="mt-2 text-[10px] text-heavy-silver">
+                            <span>Material: Forged Chrome Vanadium Steel</span>
+                        </div>
+                    </div>
+
+                    <div class="mt-4 pt-3 border-t border-heavy-border flex items-center justify-between">
+                        <div>
+                            <span class="text-[9px] text-heavy-silver block uppercase">Harga Paket</span>
+                            <span class="font-mono font-bold text-base text-white">Rp 479.000</span>
+                        </div>
+                        <div class="flex items-center gap-1">
+                            <a href="detail.html" class="p-2 bg-heavy-charcoal hover:bg-heavy-cardlight border border-heavy-border text-white text-xs transition">
+                                <i class="fa-solid fa-eye"></i>
+                            </a>
+                            <a href="https://wa.me/6281234567890?text=Halo%20Ironkraft%20Tools,%20saya%20mau%20pesan%20MasterCraft%20108%20Pcs%20(Rp%20479.000)." target="_blank" class="px-3 py-1.5 bg-heavy-amber hover:bg-heavy-amberdark text-black text-xs font-bold uppercase transition">
+                                Pesan WA
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- ITEM 5: Ironkraft Impact Wrench 20V High-Torque 350 N.m -->
+                <div class="product-item bg-heavy-card border border-heavy-border p-4 flex flex-col justify-between hover:border-heavy-amber transition" 
+                     data-cat="drill" data-feature="20v" data-title="Ironkraft Impact Wrench 20V High-Torque 350 Nm Buka Baut Roda Mobil">
+                    <div>
+                        <div class="aspect-[4/3] bg-heavy-charcoal overflow-hidden mb-3 relative group border border-heavy-border">
+                            <img src="https://images.unsplash.com/photo-1504148455328-c376907d081c?auto=format&fit=crop&w=500&q=80" alt="Impact Wrench 20V" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+                            <span class="absolute top-2 left-2 bg-heavy-amber text-black text-[8px] font-bold px-2 py-0.5 uppercase font-mono">
+                                350 N.M TORSI
+                            </span>
+                        </div>
+
+                        <div class="flex items-center gap-1.5 mb-1.5 text-[10px] text-heavy-amber font-bold uppercase">
+                            <i class="fa-solid fa-wrench"></i>
+                            <span>1/2 Inch Anvil • 350 N.m • Buka Baut Roda</span>
+                        </div>
+
+                        <h3 class="font-mono font-bold text-base text-white leading-tight">Wrench-X20 Impact 350Nm</h3>
+                        <p class="text-xs text-heavy-silver mt-1 font-sans line-clamp-1">Mesin pembuka baut roda mobil dan CVT motor matic berkekuatan torsi tinggi.</p>
+                        
+                        <div class="mt-2 text-[10px] text-heavy-silver">
+                            <span>Anvil: 1/2 Inch Heavy Square Drive</span>
+                        </div>
+                    </div>
+
+                    <div class="mt-4 pt-3 border-t border-heavy-border flex items-center justify-between">
+                        <div>
+                            <span class="text-[9px] text-heavy-silver block uppercase">Harga Paket</span>
+                            <span class="font-mono font-bold text-base text-white">Rp 729.000</span>
+                        </div>
+                        <div class="flex items-center gap-1">
+                            <a href="detail.html" class="p-2 bg-heavy-charcoal hover:bg-heavy-cardlight border border-heavy-border text-white text-xs transition">
+                                <i class="fa-solid fa-eye"></i>
+                            </a>
+                            <a href="https://wa.me/6281234567890?text=Halo%20Ironkraft%20Tools,%20saya%20mau%20pesan%20Wrench-X20%20(Rp%20729.000)." target="_blank" class="px-3 py-1.5 bg-heavy-amber hover:bg-heavy-amberdark text-black text-xs font-bold uppercase transition">
+                                Pesan WA
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- ITEM 6: Ironkraft PowerVault 20V 4.0Ah Extra Battery -->
+                <div class="product-item bg-heavy-card border border-heavy-border p-4 flex flex-col justify-between hover:border-heavy-amber transition" 
+                     data-cat="battery" data-feature="20v" data-title="Ironkraft PowerVault 20V 4.0Ah Extra Battery Cadangan Lithium Ion">
+                    <div>
+                        <div class="aspect-[4/3] bg-heavy-charcoal overflow-hidden mb-3 relative group border border-heavy-border">
+                            <img src="https://images.unsplash.com/photo-1583863788434-e58a36330cf0?auto=format&fit=crop&w=500&q=80" alt="Baterai 20V 4.0Ah" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+                            <span class="absolute top-2 left-2 bg-emerald-500 text-black text-[8px] font-bold px-2 py-0.5 uppercase font-mono">
+                                4.0AH CAPACITY
+                            </span>
+                        </div>
+
+                        <div class="flex items-center gap-1.5 mb-1.5 text-[10px] text-heavy-amber font-bold uppercase">
+                            <i class="fa-solid fa-battery-full"></i>
+                            <span>20V Max • Sel Grade A • Indikator LED</span>
+                        </div>
+
+                        <h3 class="font-mono font-bold text-base text-white leading-tight">PowerVault 20V 4.0Ah Pack</h3>
+                        <p class="text-xs text-heavy-silver mt-1 font-sans line-clamp-1">Baterai cadangan kompatibel untuk seluruh lini mesin bor dan gerinda Ironkraft 20V.</p>
+                        
+                        <div class="mt-2 text-[10px] text-heavy-silver">
+                            <span>Proteksi: BMS Over-Heat & Over-Current</span>
+                        </div>
+                    </div>
+
+                    <div class="mt-4 pt-3 border-t border-heavy-border flex items-center justify-between">
+                        <div>
+                            <span class="text-[9px] text-heavy-silver block uppercase">Harga Satuan</span>
+                            <span class="font-mono font-bold text-base text-white">Rp 219.000</span>
+                        </div>
+                        <div class="flex items-center gap-1">
+                            <a href="detail.html" class="p-2 bg-heavy-charcoal hover:bg-heavy-cardlight border border-heavy-border text-white text-xs transition">
+                                <i class="fa-solid fa-eye"></i>
+                            </a>
+                            <a href="https://wa.me/6281234567890?text=Halo%20Ironkraft%20Tools,%20saya%20mau%20pesan%20PowerVault%2020V%20(Rp%20219.000)." target="_blank" class="px-3 py-1.5 bg-heavy-amber hover:bg-heavy-amberdark text-black text-xs font-bold uppercase transition">
+                                Pesan WA
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- ITEM 7: Ironkraft MasonPro 12 Pcs Tungsten Carbide Drill Bits -->
+                <div class="product-item bg-heavy-card border border-heavy-border p-4 flex flex-col justify-between hover:border-heavy-amber transition" 
+                     data-cat="drill" data-feature="crv" data-title="Ironkraft MasonPro 12 Pcs Tungsten Carbide Mata Bor Beton Besi Kayu">
+                    <div>
+                        <div class="aspect-[4/3] bg-heavy-charcoal overflow-hidden mb-3 relative group border border-heavy-border">
+                            <img src="https://images.unsplash.com/photo-1504148455328-c376907d081c?auto=format&fit=crop&w=500&q=80" alt="Mata Bor Tungsten" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+                            <span class="absolute top-2 left-2 bg-heavy-amber text-black text-[8px] font-bold px-2 py-0.5 uppercase font-mono">
+                                TUNGSTEN CARBIDE
+                            </span>
+                        </div>
+
+                        <div class="flex items-center gap-1.5 mb-1.5 text-[10px] text-heavy-amber font-bold uppercase">
+                            <i class="fa-solid fa-crosshairs"></i>
+                            <span>12 Pcs Set • Ukuran 3mm - 12mm • Multi-Material</span>
+                        </div>
+
+                        <h3 class="font-mono font-bold text-base text-white leading-tight">MasonPro 12 Pcs Drill Bits</h3>
+                        <p class="text-xs text-heavy-silver mt-1 font-sans line-clamp-1">Mata bor ujung karbida tajam untuk menembus keramik, granit, beton, dan besi.</p>
+                        
+                        <div class="mt-2 text-[10px] text-heavy-silver">
+                            <span>Shank: Hex Shank 1/4 Inch Anti-Selip</span>
+                        </div>
+                    </div>
+
+                    <div class="mt-4 pt-3 border-t border-heavy-border flex items-center justify-between">
+                        <div>
+                            <span class="text-[9px] text-heavy-silver block uppercase">Harga Set</span>
+                            <span class="font-mono font-bold text-base text-white">Rp 129.000</span>
+                        </div>
+                        <div class="flex items-center gap-1">
+                            <a href="detail.html" class="p-2 bg-heavy-charcoal hover:bg-heavy-cardlight border border-heavy-border text-white text-xs transition">
+                                <i class="fa-solid fa-eye"></i>
+                            </a>
+                            <a href="https://wa.me/6281234567890?text=Halo%20Ironkraft%20Tools,%20saya%20mau%20pesan%20MasonPro%2012%20Pcs%20(Rp%20129.000)." target="_blank" class="px-3 py-1.5 bg-heavy-amber hover:bg-heavy-amberdark text-black text-xs font-bold uppercase transition">
+                                Pesan WA
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- ITEM 8: Ironkraft ArmorBox 21 Inch Heavy-Duty Toolbox -->
+                <div class="product-item bg-heavy-card border border-heavy-border p-4 flex flex-col justify-between hover:border-heavy-amber transition" 
+                     data-cat="socket" data-feature="crv" data-title="Ironkraft ArmorBox 21 Inch Heavy-Duty Toolbox Kotak Perkakas Kunci Logam">
+                    <div>
+                        <div class="aspect-[4/3] bg-heavy-charcoal overflow-hidden mb-3 relative group border border-heavy-border">
+                            <img src="https://images.unsplash.com/photo-1581783898377-1c85bf937427?auto=format&fit=crop&w=500&q=80" alt="ArmorBox Toolbox" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+                            <span class="absolute top-2 left-2 bg-heavy-amber text-black text-[8px] font-bold px-2 py-0.5 uppercase font-mono">
+                                21 INCH SOLID
+                            </span>
+                        </div>
+
+                        <div class="flex items-center gap-1.5 mb-1.5 text-[10px] text-heavy-amber font-bold uppercase">
+                            <i class="fa-solid fa-box-archive"></i>
+                            <span>Bahan PP Tebal • Kunci Stainless • Baki Dalam</span>
+                        </div>
+
+                        <h3 class="font-mono font-bold text-base text-white leading-tight">ArmorBox 21" Pro Toolbox</h3>
+                        <p class="text-xs text-heavy-silver mt-1 font-sans line-clamp-1">Kotak perkakas ekstra lega dengan baki bertingkat dan pengait logam tahan banting.</p>
+                        
+                        <div class="mt-2 text-[10px] text-heavy-silver">
+                            <span>Beban Maksimal: Kuat Diduduki hingga 100 kg</span>
+                        </div>
+                    </div>
+
+                    <div class="mt-4 pt-3 border-t border-heavy-border flex items-center justify-between">
+                        <div>
+                            <span class="text-[9px] text-heavy-silver block uppercase">Harga Satuan</span>
+                            <span class="font-mono font-bold text-base text-white">Rp 169.000</span>
+                        </div>
+                        <div class="flex items-center gap-1">
+                            <a href="detail.html" class="p-2 bg-heavy-charcoal hover:bg-heavy-cardlight border border-heavy-border text-white text-xs transition">
+                                <i class="fa-solid fa-eye"></i>
+                            </a>
+                            <a href="https://wa.me/6281234567890?text=Halo%20Ironkraft%20Tools,%20saya%20mau%20pesan%20ArmorBox%20(Rp%20169.000)." target="_blank" class="px-3 py-1.5 bg-heavy-amber hover:bg-heavy-amberdark text-black text-xs font-bold uppercase transition">
+                                Pesan WA
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- Empty State -->
+            <div id="noResults" class="hidden text-center py-16 bg-heavy-card border border-heavy-border mt-8">
+                <i class="fa-solid fa-screwdriver-wrench text-3xl text-heavy-amber mb-3"></i>
+                <h4 class="text-base font-mono font-bold text-white uppercase">Perkakas Tidak Ditemukan</h4>
+                <p class="text-xs text-heavy-silver mt-1 max-w-sm mx-auto font-sans">
+                    Coba ubah kata kunci pencarian atau reset filter untuk melihat seluruh katalog mesin bor dan kunci perkakas kami.
+                </p>
+                <button onclick="resetFilters()" class="mt-4 px-6 py-2.5 bg-heavy-amber text-black text-xs font-bold uppercase tracking-wider transition font-mono heavy-btn">
+                    Reset Filter
+                </button>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- 5. FOOTER -->
+    <footer class="bg-heavy-bg text-heavy-silver border-t border-heavy-border pt-14 pb-28 font-mono">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex flex-col md:flex-row items-center justify-between gap-6 border-b border-heavy-border pb-8">
+                <div class="flex items-center gap-3">
+                    <div class="w-8 h-8 bg-heavy-amber text-black flex items-center justify-center text-base font-mono font-black">
+                        <i class="fa-solid fa-wrench"></i>
+                    </div>
+                    <span class="text-xl font-mono font-black text-white uppercase tracking-tight">
+                        IRONKRAFT<span class="text-heavy-amber">.</span>
+                    </span>
+                </div>
+                <div class="flex flex-wrap gap-6 text-xs text-heavy-silver font-bold uppercase tracking-wider">
+                    <a href="index.html" class="hover:text-heavy-amber">Beranda</a>
+                    <a href="katalog.html" class="text-heavy-amber">Katalog</a>
+                    <a href="detail.html" class="hover:text-heavy-amber">Detail</a>
+                    <a href="tentang.html" class="hover:text-heavy-amber">Standar Baja</a>
+                    <a href="artikel.html" class="hover:text-heavy-amber">Tips Alat</a>
+                    <a href="kontak.html" class="hover:text-heavy-amber">Pusat Servis</a>
+                </div>
+            </div>
+            <div class="mt-6 flex flex-col sm:flex-row items-center justify-between text-xs text-slate-500">
+                <p>&copy; 2026 IRONKRAFT INDUSTRIAL TOOLS LAB. All Rights Reserved.</p>
+                <p class="text-[11px] mt-2 sm:mt-0 font-sans">Lentera Pasar Production Template — Heavy-Duty Tools & Hardware</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- FLOATING WHATSAPP BUTTON (bottom-24) -->
+    <a href="https://wa.me/6281234567890?text=Halo%20Ironkraft%20Tools,%20saya%20ingin%20konsultasi%20alat%20perkakas." 
+       target="_blank" 
+       class="fixed bottom-24 right-6 z-50 group flex items-center gap-3 bg-heavy-card hover:bg-heavy-cardlight text-white px-4 py-3 border border-heavy-amber/40 shadow-2xl hover:border-heavy-amber transition-all duration-300 font-mono">
+        <span class="relative flex h-3 w-3">
+            <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-heavy-amber opacity-75"></span>
+            <span class="relative inline-flex rounded-full h-3 w-3 bg-heavy-amber"></span>
+        </span>
+        <i class="fa-brands fa-whatsapp text-2xl text-emerald-400"></i>
+        <div class="text-left hidden sm:block pr-1">
+            <div class="text-[10px] text-heavy-amber font-bold uppercase tracking-wider leading-none">Tool Specialist</div>
+            <span class="font-bold text-xs text-white">Konsultasi Proyek WA</span>
+        </div>
+    </a>
+
+    <!-- LENTERA PASAR - STICKY DEMO & SALES BAR (fixed bottom-4) -->
+    <div class="fixed bottom-4 left-1/2 -translate-x-1/2 z-50 w-[95%] max-w-4xl bg-slate-900/95 backdrop-blur-md text-white p-3.5 md:p-4 rounded-2xl shadow-2xl border border-slate-700/80 transition-all duration-300">
+      <div class="flex flex-col md:flex-row items-center justify-between gap-3 md:gap-4">
+        <div class="flex items-center gap-3 w-full md:w-auto">
+          <div class="w-10 h-10 rounded-xl bg-amber-500/20 border border-amber-500/40 flex items-center justify-center shrink-0">
+            <svg class="w-5 h-5 text-amber-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19.428 15.428a2 2 0 00-1.022-.547l-2.387-.477a6 6 0 00-3.86.517l-.318.158a6 6 0 01-3.86.517L6.05 15.21a2 2 0 00-1.806.547M8 4h8l-1 1v5.172a2 2 0 00.586 1.414l5 5c1.26 1.26.367 3.414-1.415 3.414H4.828c-1.782 0-2.674-2.154-1.414-3.414l5-5A2 2 0 009 10.172V5L8 4z" />
+            </svg>
+          </div>
+          <div>
+            <div class="flex items-center gap-2">
+              <span class="font-bold text-sm text-white">Lentera Pasar Engine</span>
+              <span class="text-[10px] bg-amber-500/20 text-amber-300 border border-amber-500/30 px-2 py-0.5 rounded-full font-medium">Tools & Hardware Template</span>
+            </div>
+            <p class="text-xs text-slate-300 hidden sm:block">
+              Terima beres: Website responsif + Panel input produk sendiri + Dikelola tim iklan profesional.
+            </p>
+          </div>
+        </div>
+
+        <div class="flex items-center justify-between md:justify-end gap-3 w-full md:w-auto">
+          <a href="https://wa.me/6281234567890?text=Halo%20Tim%20Lentera%20Pasar,%20saya%20tertarik%20menggunakan%20template%20website%20Tools%20%26%20Hardware%20ini%20lengkap%20dengan%20Admin%20Panel%20dan%20Jasa%20Iklannya." 
+             target="_blank"
+             class="w-full md:w-auto inline-flex items-center justify-center gap-2 bg-gradient-to-r from-amber-500 to-orange-500 hover:from-amber-400 hover:to-orange-400 text-black text-xs md:text-sm font-bold px-5 py-2.5 rounded-xl shadow-lg transition-all hover:scale-105 shrink-0">
+            <span>Gunakan Template Ini</span>
+            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3" />
+            </svg>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <!-- JAVASCRIPT FILTER LOGIC -->
+    <script>
+        let currentCat = 'all';
+
+        function filterCategory(cat) {
+            currentCat = cat;
+            document.querySelectorAll('.cat-pill').forEach(btn => {
+                if (btn.dataset.cat === cat) {
+                    btn.classList.remove('bg-heavy-card', 'text-heavy-silver', 'border', 'border-heavy-border');
+                    btn.classList.add('bg-heavy-amber', 'text-black', 'font-bold');
+                } else {
+                    btn.classList.remove('bg-heavy-amber', 'text-black', 'font-bold');
+                    btn.classList.add('bg-heavy-card', 'text-heavy-silver', 'border', 'border-heavy-border');
+                }
+            });
+            applyAllFilters();
+        }
+
+        document.getElementById('searchInput').addEventListener('input', applyAllFilters);
+
+        function applyAllFilters() {
+            const query = document.getElementById('searchInput').value.toLowerCase().trim();
+            const feature = document.getElementById('featureFilter').value;
+            const items = document.querySelectorAll('.product-item');
+            let visibleCount = 0;
+
+            items.forEach(item => {
+                const itemCat = item.dataset.cat;
+                const itemFeature = item.dataset.feature || '';
+                const itemTitle = (item.dataset.title || '').toLowerCase();
+
+                const matchCat = (currentCat === 'all' || itemCat === currentCat);
+                const matchFeature = (feature === 'all' || itemFeature === feature);
+                const matchQuery = (!query || itemTitle.includes(query));
+
+                if (matchCat && matchFeature && matchQuery) {
+                    item.classList.remove('hidden');
+                    visibleCount++;
+                } else {
+                    item.classList.add('hidden');
+                }
+            });
+
+            document.getElementById('productCount').innerText = visibleCount;
+            const noRes = document.getElementById('noResults');
+            if (visibleCount === 0) {
+                noRes.classList.remove('hidden');
+            } else {
+                noRes.classList.add('hidden');
+            }
+        }
+
+        function resetFilters() {
+            document.getElementById('searchInput').value = '';
+            document.getElementById('featureFilter').value = 'all';
+            filterCategory('all');
+        }
+
+        // Mobile menu toggle
+        const mobileMenuBtn = document.getElementById('mobileMenuBtn');
+        const mobileMenu = document.getElementById('mobileMenu');
+        const menuIcon = document.getElementById('menuIcon');
+
+        mobileMenuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+            if (mobileMenu.classList.contains('hidden')) {
+                menuIcon.classList.remove('fa-xmark');
+                menuIcon.classList.add('fa-bars');
+            } else {
+                menuIcon.classList.remove('fa-bars');
+                menuIcon.classList.add('fa-xmark');
+            }
+        });
+    </script>
+</body>
+</html>

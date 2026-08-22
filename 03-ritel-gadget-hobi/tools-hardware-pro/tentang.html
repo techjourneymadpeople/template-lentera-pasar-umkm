@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="id" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Standar Kualitas Baja Industri & Garansi Servis — IRONKRAFT</title>
+    <meta name="description" content="Mengenal standar pengujian dinamo motor tembaga murni, ketersediaan suku cadang resmi, dan komitmen garansi servis mesin seumur hidup dari Ironkraft.">
+    
+    <!-- Google Fonts: Space Grotesk & Plus Jakarta Sans -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        heavy: {
+                            bg: '#13171C',
+                            charcoal: '#1E242B',
+                            card: '#242C35',
+                            cardlight: '#2E3844',
+                            border: '#374151',
+                            amber: '#F59E0B',
+                            amberdark: '#D97706',
+                            yellow: '#FBBF24',
+                            steel: '#E5E7EB',
+                            silver: '#9CA3AF'
+                        }
+                    },
+                    fontFamily: {
+                        sans: ['"Plus Jakarta Sans"', 'sans-serif'],
+                        mono: ['"Space Grotesk"', 'monospace']
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        .no-scrollbar::-webkit-scrollbar { display: none; }
+        .no-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
+        
+        .heavy-btn {
+            transition: all 0.2s cubic-bezier(0.16, 1, 0.3, 1);
+        }
+        .heavy-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 8px 20px -6px rgba(245, 158, 11, 0.4);
+        }
+    </style>
+</head>
+<body class="bg-heavy-bg text-heavy-steel font-sans antialiased selection:bg-heavy-amber selection:text-black">
+
+    <!-- 1. TOP BAR -->
+    <div class="bg-heavy-charcoal text-heavy-amber text-xs py-2 px-4 font-mono font-bold border-b border-heavy-border">
+        <div class="max-w-7xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-2 text-center sm:text-left">
+            <div class="flex items-center justify-center gap-2">
+                <span class="px-2 py-0.5 bg-heavy-amber text-black text-[10px] uppercase font-mono font-black tracking-wider">
+                    INDUSTRIAL RIGOR
+                </span>
+                <span class="text-white">Standar Uji Ketahanan Dinamo 500 Jam Non-Stop & Sertifikasi Baja Cr-V</span>
+            </div>
+            <div class="flex items-center gap-4 text-xs font-mono">
+                <a href="katalog.html" class="text-heavy-amber hover:text-white underline font-extrabold transition">Koleksi Perkakas &rarr;</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- 2. NAVBAR -->
+    <header class="sticky top-0 z-40 bg-heavy-bg/95 backdrop-blur-md border-b border-heavy-border transition-all">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-20 sm:h-24">
+                
+                <a href="index.html" class="flex items-center gap-3 group">
+                    <div class="w-11 h-11 bg-heavy-amber text-black flex items-center justify-center text-xl font-mono font-black border-2 border-heavy-amber shadow-lg group-hover:bg-black group-hover:text-heavy-amber transition">
+                        <i class="fa-solid fa-wrench"></i>
+                    </div>
+                    <div class="flex flex-col">
+                        <span class="text-2xl sm:text-3xl font-mono font-black tracking-tight text-white uppercase leading-none">
+                            IRONKRAFT<span class="text-heavy-amber">.</span>
+                        </span>
+                        <span class="text-[9px] font-mono tracking-[0.25em] text-heavy-amber uppercase mt-1 font-bold">
+                            HEAVY-DUTY POWER TOOLS
+                        </span>
+                    </div>
+                </a>
+
+                <nav class="hidden lg:flex items-center gap-8 text-xs font-bold tracking-widest uppercase text-heavy-silver font-mono">
+                    <a href="index.html" class="hover:text-heavy-amber transition">Beranda</a>
+                    <a href="katalog.html" class="hover:text-heavy-amber transition">Katalog Alat</a>
+                    <a href="detail.html" class="hover:text-heavy-amber transition">Detail Bor 20V</a>
+                    <a href="tentang.html" class="text-heavy-amber border-b-2 border-heavy-amber pb-1">Standar Baja & Servis</a>
+                    <a href="artikel.html" class="hover:text-heavy-amber transition">Tips Pertukangan</a>
+                    <a href="kontak.html" class="hover:text-heavy-amber transition">Pusat Servis & Grosir</a>
+                </nav>
+
+                <div class="hidden sm:flex items-center gap-3 font-mono">
+                    <a href="https://wa.me/6281234567890?text=Halo%20Ironkraft%20Tools,%20saya%20tertarik%20dengan%20standar%20kualitas%20dan%20garansi%20perkakas%20Anda." target="_blank" class="inline-flex items-center gap-2 bg-heavy-amber hover:bg-heavy-amberdark text-black text-xs font-bold tracking-wider px-5 py-2.5 transition-all shadow-lg font-mono heavy-btn">
+                        <i class="fa-brands fa-whatsapp text-base"></i>
+                        <span>Chat Tim Teknik</span>
+                    </a>
+                </div>
+
+                <button id="mobileMenuBtn" class="lg:hidden p-2 text-white hover:text-heavy-amber focus:outline-none" aria-label="Toggle Menu">
+                    <i id="menuIcon" class="fa-solid fa-bars text-xl"></i>
+                </button>
+            </div>
+        </div>
+
+        <!-- Mobile Drawer -->
+        <div id="mobileMenu" class="hidden lg:hidden bg-heavy-charcoal border-b border-heavy-border px-4 py-5 space-y-3 font-mono">
+            <a href="index.html" class="block text-xs font-bold uppercase tracking-wider text-white hover:text-heavy-amber py-2 border-b border-heavy-border">Beranda Utama</a>
+            <a href="katalog.html" class="block text-xs font-bold uppercase tracking-wider text-white hover:text-heavy-amber py-2 border-b border-heavy-border">Katalog Mesin & Toolbox</a>
+            <a href="detail.html" class="block text-xs font-bold uppercase tracking-wider text-white hover:text-heavy-amber py-2 border-b border-heavy-border">Detail Bor 20V Brushless</a>
+            <a href="tentang.html" class="block text-xs font-bold uppercase tracking-wider text-heavy-amber py-2 border-b border-heavy-border">Standar Ketahanan Motor</a>
+            <a href="artikel.html" class="block text-xs font-bold uppercase tracking-wider text-white hover:text-heavy-amber py-2 border-b border-heavy-border">Tips Perawatan Baterai</a>
+            <a href="kontak.html" class="block text-xs font-bold uppercase tracking-wider text-white hover:text-heavy-amber py-2">Pusat Servis Glodok & Grosir</a>
+        </div>
+    </header>
+
+    <!-- 3. BRAND ETHOS & TESTING RIG SECTION -->
+    <section class="py-16 sm:py-24 border-b border-heavy-border bg-gradient-to-b from-heavy-bg via-heavy-charcoal to-heavy-bg font-mono">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+                
+                <div class="lg:col-span-7 space-y-6">
+                    <div class="inline-flex items-center gap-2 px-3.5 py-1.5 bg-heavy-card border border-heavy-amber/40 text-heavy-amber text-xs font-bold tracking-wider">
+                        <span class="w-2 h-2 rounded-full bg-heavy-amber"></span>
+                        <span class="uppercase tracking-widest text-[10px]">ENGINEERING FOR HEAVY DUTY</span>
+                    </div>
+
+                    <h1 class="text-4xl sm:text-6xl font-mono font-black text-white tracking-tight uppercase leading-[0.95]">
+                        DIBANGUN UNTUK <br>
+                        KERJA KERAS & <br>
+                        <span class="text-heavy-amber">TIDAK REWEL.</span>
+                    </h1>
+
+                    <p class="text-heavy-silver text-sm sm:text-base leading-relaxed font-sans font-normal">
+                        Ironkraft berakar dari industri perkakas teknik di Glodok, Jakarta Barat. Kami memahami rasa frustrasi para tukang dan kontraktor ketika mesin bor cepat panas, roda gigi rontok saat mengebor beton, atau sulitnya mencari suku cadang pengganti. Setiap unit mesin kami dirancang dengan rotor tembaga murni, gigi baja karbon presisi, dan ketersediaan sparepart resmi hingga 5 tahun ke depan.
+                    </p>
+
+                    <div class="pt-4 grid grid-cols-1 sm:grid-cols-3 gap-4 text-xs font-mono">
+                        <div class="p-4 bg-heavy-card border border-heavy-border">
+                            <span class="text-heavy-amber block text-[10px] uppercase font-bold">STANDAR 01</span>
+                            <strong class="text-white text-base font-bold block mt-1">500 Jam Uji Beban</strong>
+                            <span class="text-heavy-silver font-sans text-xs">Uji torsi non-stop di laboratorium.</span>
+                        </div>
+                        <div class="p-4 bg-heavy-card border border-heavy-border">
+                            <span class="text-emerald-400 block text-[10px] uppercase font-bold">STANDAR 02</span>
+                            <strong class="text-white text-base font-bold block mt-1">100% Suku Cadang</strong>
+                            <span class="text-heavy-silver font-sans text-xs">Armature, switch & baterai ready.</span>
+                        </div>
+                        <div class="p-4 bg-heavy-card border border-heavy-border">
+                            <span class="text-heavy-amber block text-[10px] uppercase font-bold">STANDAR 03</span>
+                            <strong class="text-white text-base font-bold block mt-1">Free Jasa Servis</strong>
+                            <span class="text-heavy-silver font-sans text-xs">Gratis ongkos servis selamanya.</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="lg:col-span-5">
+                    <div class="border border-heavy-border aspect-[3/4] bg-heavy-card relative group overflow-hidden shadow-2xl">
+                        <img src="https://images.unsplash.com/photo-1581783898377-1c85bf937427?auto=format&fit=crop&w=800&q=80" alt="Ironkraft Service Workshop" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700">
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/90 via-transparent to-transparent flex flex-col justify-end p-6 text-white font-mono">
+                            <span class="text-[9px] font-bold text-heavy-amber uppercase tracking-widest">// SERVICE CENTER & R&D</span>
+                            <h4 class="text-base font-mono font-bold text-white">Jakarta Glodok Technical Lab & Workshop</h4>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- 4. EMPAT PILAR KUALITAS IRONKRAFT -->
+    <section class="py-20 bg-heavy-charcoal border-b border-heavy-border font-mono">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            
+            <div class="text-center max-w-2xl mx-auto mb-16">
+                <span class="text-xs font-mono uppercase tracking-[0.25em] text-heavy-amber font-bold block mb-1">
+                    // 4 PILAR STANDAR REKAYASA TEKNIK
+                </span>
+                <h2 class="text-2xl sm:text-4xl font-mono font-black text-white uppercase">
+                    Keunggulan Perkakas Ironkraft
+                </h2>
+                <p class="text-xs sm:text-sm text-heavy-silver mt-1 font-sans">
+                    Material baja tempa berkualitas tinggi dan motor penggerak tanpa kompromi.
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+                
+                <div class="p-6 bg-heavy-card border border-heavy-border flex flex-col justify-between hover:border-heavy-amber transition">
+                    <div>
+                        <div class="w-10 h-10 bg-heavy-charcoal text-heavy-amber flex items-center justify-center text-lg mb-4 border border-heavy-amber/30">
+                            <i class="fa-solid fa-bolt"></i>
+                        </div>
+                        <h4 class="text-base font-mono font-bold text-white uppercase">Pure Copper Brushless</h4>
+                        <p class="text-xs text-heavy-silver mt-2 leading-relaxed font-sans font-normal">
+                            Gulungan tembaga murni dengan ketahanan insulasi suhu tinggi hingga 200°C, menjamin tenaga mesin stabil saat pengeboran beban berat.
+                        </p>
+                    </div>
+                    <div class="mt-6 pt-3 border-t border-heavy-border text-[11px] font-bold text-heavy-amber uppercase">
+                        Bebas Overheat & Awet
+                    </div>
+                </div>
+
+                <div class="p-6 bg-heavy-card border border-heavy-border flex flex-col justify-between hover:border-heavy-amber transition">
+                    <div>
+                        <div class="w-10 h-10 bg-heavy-charcoal text-emerald-400 flex items-center justify-center text-lg mb-4 border border-emerald-500/30">
+                            <i class="fa-solid fa-microchip"></i>
+                        </div>
+                        <h4 class="text-base font-mono font-bold text-white uppercase">Smart BMS Lithium-Ion</h4>
+                        <p class="text-xs text-heavy-silver mt-2 leading-relaxed font-sans font-normal">
+                            Sistem proteksi cerdas pada baterai yang memutus arus saat kelebihan beban, korsleting, atau baterai terlalu panas (thermal overload).
+                        </p>
+                    </div>
+                    <div class="mt-6 pt-3 border-t border-heavy-border text-[11px] font-bold text-emerald-400 uppercase">
+                        Baterai Tidak Kembung
+                    </div>
+                </div>
+
+                <div class="p-6 bg-heavy-card border border-heavy-border flex flex-col justify-between hover:border-heavy-amber transition">
+                    <div>
+                        <div class="w-10 h-10 bg-heavy-charcoal text-heavy-amber flex items-center justify-center text-lg mb-4 border border-heavy-amber/30">
+                            <i class="fa-solid fa-shield-halved"></i>
+                        </div>
+                        <h4 class="text-base font-mono font-bold text-white uppercase">Rubber Armor & Drop-Test</h4>
+                        <p class="text-xs text-heavy-silver mt-2 leading-relaxed font-sans font-normal">
+                            Casing berbahan plastik polimer ABS tebal diperkuat lapisan karet peredam benturan, tahan benturan saat jatuh dari tangga kerja 1.5 meter.
+                        </p>
+                    </div>
+                    <div class="mt-6 pt-3 border-t border-heavy-border text-[11px] font-bold text-heavy-amber uppercase">
+                        Tahan Banting Lapangan
+                    </div>
+                </div>
+
+                <div class="p-6 bg-heavy-card border border-heavy-border flex flex-col justify-between hover:border-heavy-amber transition">
+                    <div>
+                        <div class="w-10 h-10 bg-heavy-charcoal text-white flex items-center justify-center text-lg mb-4 border border-heavy-border">
+                            <i class="fa-solid fa-wrench"></i>
+                        </div>
+                        <h4 class="text-base font-mono font-bold text-white uppercase">Jaminan Sparepart 5 Tahun</h4>
+                        <p class="text-xs text-heavy-silver mt-2 leading-relaxed font-sans font-normal">
+                            Kami menjamin ketersediaan suku cadang saklar, chuck, kontroler, dan baterai selama minimal 5 tahun agar alat tidak menjadi rongsokan.
+                        </p>
+                    </div>
+                    <div class="mt-6 pt-3 border-t border-heavy-border text-[11px] font-bold text-white uppercase">
+                        Investasi Alat Jangka Panjang
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+    <!-- 5. FOOTER -->
+    <footer class="bg-heavy-bg text-heavy-silver border-t border-heavy-border pt-14 pb-28 font-mono">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex flex-col md:flex-row items-center justify-between gap-6 border-b border-heavy-border pb-8">
+                <div class="flex items-center gap-3">
+                    <div class="w-8 h-8 bg-heavy-amber text-black flex items-center justify-center text-base font-mono font-black">
+                        <i class="fa-solid fa-wrench"></i>
+                    </div>
+                    <span class="text-xl font-mono font-black text-white uppercase tracking-tight">
+                        IRONKRAFT<span class="text-heavy-amber">.</span>
+                    </span>
+                </div>
+                <div class="flex flex-wrap gap-6 text-xs text-heavy-silver font-bold uppercase tracking-wider">
+                    <a href="index.html" class="hover:text-heavy-amber">Beranda</a>
+                    <a href="katalog.html" class="hover:text-heavy-amber">Katalog</a>
+                    <a href="detail.html" class="hover:text-heavy-amber">Detail</a>
+                    <a href="tentang.html" class="text-heavy-amber">Standar Baja</a>
+                    <a href="artikel.html" class="hover:text-heavy-amber">Tips Alat</a>
+                    <a href="kontak.html" class="hover:text-heavy-amber">Pusat Servis</a>
+                </div>
+            </div>
+            <div class="mt-6 flex flex-col sm:flex-row items-center justify-between text-xs text-slate-500">
+                <p>&copy; 2026 IRONKRAFT INDUSTRIAL TOOLS LAB. All Rights Reserved.</p>
+                <p class="text-[11px] mt-2 sm:mt-0 font-sans">Lentera Pasar Production Template — Heavy-Duty Tools & Hardware</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- FLOATING WHATSAPP BUTTON (bottom-24) -->
+    <a href="https://wa.me/6281234567890?text=Halo%20Ironkraft%20Tools,%20saya%20ingin%20konsultasi%20alat%20perkakas." 
+       target="_blank" 
+       class="fixed bottom-24 right-6 z-50 group flex items-center gap-3 bg-heavy-card hover:bg-heavy-cardlight text-white px-4 py-3 border border-heavy-amber/40 shadow-2xl hover:border-heavy-amber transition-all duration-300 font-mono">
+        <span class="relative flex h-3 w-3">
+            <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-heavy-amber opacity-75"></span>
+            <span class="relative inline-flex rounded-full h-3 w-3 bg-heavy-amber"></span>
+        </span>
+        <i class="fa-brands fa-whatsapp text-2xl text-emerald-400"></i>
+        <div class="text-left hidden sm:block pr-1">
+            <div class="text-[10px] text-heavy-amber font-bold uppercase tracking-wider leading-none">Tool Specialist</div>
+            <span class="font-bold text-xs text-white">Konsultasi Proyek WA</span>
+        </div>
+    </a>
+
+    <!-- LENTERA PASAR - STICKY DEMO & SALES BAR (fixed bottom-4) -->
+    <div class="fixed bottom-4 left-1/2 -translate-x-1/2 z-50 w-[95%] max-w-4xl bg-slate-900/95 backdrop-blur-md text-white p-3.5 md:p-4 rounded-2xl shadow-2xl border border-slate-700/80 transition-all duration-300">
+      <div class="flex flex-col md:flex-row items-center justify-between gap-3 md:gap-4">
+        <div class="flex items-center gap-3 w-full md:w-auto">
+          <div class="w-10 h-10 rounded-xl bg-amber-500/20 border border-amber-500/40 flex items-center justify-center shrink-0">
+            <svg class="w-5 h-5 text-amber-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19.428 15.428a2 2 0 00-1.022-.547l-2.387-.477a6 6 0 00-3.86.517l-.318.158a6 6 0 01-3.86.517L6.05 15.21a2 2 0 00-1.806.547M8 4h8l-1 1v5.172a2 2 0 00.586 1.414l5 5c1.26 1.26.367 3.414-1.415 3.414H4.828c-1.782 0-2.674-2.154-1.414-3.414l5-5A2 2 0 009 10.172V5L8 4z" />
+            </svg>
+          </div>
+          <div>
+            <div class="flex items-center gap-2">
+              <span class="font-bold text-sm text-white">Lentera Pasar Engine</span>
+              <span class="text-[10px] bg-amber-500/20 text-amber-300 border border-amber-500/30 px-2 py-0.5 rounded-full font-medium">Tools & Hardware Template</span>
+            </div>
+            <p class="text-xs text-slate-300 hidden sm:block">
+              Terima beres: Website responsif + Panel input produk sendiri + Dikelola tim iklan profesional.
+            </p>
+          </div>
+        </div>
+
+        <div class="flex items-center justify-between md:justify-end gap-3 w-full md:w-auto">
+          <a href="https://wa.me/6281234567890?text=Halo%20Tim%20Lentera%20Pasar,%20saya%20tertarik%20menggunakan%20template%20website%20Tools%20%26%20Hardware%20ini%20lengkap%20dengan%20Admin%20Panel%20dan%20Jasa%20Iklannya." 
+             target="_blank"
+             class="w-full md:w-auto inline-flex items-center justify-center gap-2 bg-gradient-to-r from-amber-500 to-orange-500 hover:from-amber-400 hover:to-orange-400 text-black text-xs md:text-sm font-bold px-5 py-2.5 rounded-xl shadow-lg transition-all hover:scale-105 shrink-0">
+            <span>Gunakan Template Ini</span>
+            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3" />
+            </svg>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <!-- SCRIPT -->
+    <script>
+        const mobileMenuBtn = document.getElementById('mobileMenuBtn');
+        const mobileMenu = document.getElementById('mobileMenu');
+        const menuIcon = document.getElementById('menuIcon');
+
+        mobileMenuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+            if (mobileMenu.classList.contains('hidden')) {
+                menuIcon.classList.remove('fa-xmark');
+                menuIcon.classList.add('fa-bars');
+            } else {
+                menuIcon.classList.remove('fa-bars');
+                menuIcon.classList.add('fa-xmark');
+            }
+        });
+    </script>
+</body>
+</html>
