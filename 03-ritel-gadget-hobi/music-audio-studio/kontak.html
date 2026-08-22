@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="id" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Studio Musik Store & Coba Suara Akustik — SONORA</title>
+    <meta name="description" content="Kunjungi Sonora Guitar Studio di Cipete Jakarta Selatan untuk mencoba suara gitar akustik solid langsung, konsultasi setup luthier, dan order via WhatsApp.">
+    
+    <!-- Google Fonts: Playfair Display & Plus Jakarta Sans -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;0,700;0,800;0,900;1,600;1,700&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Space+Grotesk:wght@600;700&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        sonora: {
+                            bg: '#180E09',
+                            dark: '#24140D',
+                            card: '#311C13',
+                            cardlight: '#3F251A',
+                            border: '#523223',
+                            gold: '#D97706',
+                            goldlight: '#F59E0B',
+                            amber: '#B45309',
+                            cream: '#FDF8F5',
+                            sand: '#E7DACF',
+                            muted: '#A89284'
+                        }
+                    },
+                    fontFamily: {
+                        sans: ['"Plus Jakarta Sans"', 'sans-serif'],
+                        serif: ['"Playfair Display"', 'serif'],
+                        mono: ['"Space Grotesk"', 'monospace']
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        .no-scrollbar::-webkit-scrollbar { display: none; }
+        .no-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
+        
+        .sonora-btn {
+            transition: all 0.2s cubic-bezier(0.16, 1, 0.3, 1);
+        }
+        .sonora-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 10px 25px -6px rgba(217, 119, 6, 0.45);
+        }
+    </style>
+</head>
+<body class="bg-sonora-bg text-sonora-cream font-sans antialiased selection:bg-sonora-gold selection:text-black">
+
+    <!-- 1. TOP BAR -->
+    <div class="bg-sonora-dark text-sonora-sand text-xs py-2 px-4 font-mono font-bold border-b border-sonora-border">
+        <div class="max-w-7xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-2 text-center sm:text-left">
+            <div class="flex items-center justify-center gap-2">
+                <span class="px-2 py-0.5 bg-sonora-gold text-black text-[10px] uppercase font-serif font-black tracking-wider">
+                    STUDIO FITTING & TEST ROOM
+                </span>
+                <span class="text-white">Ruang Kedap Akustik untuk Tes Karakter Suara Gitar & Ukulele di Cipete</span>
+            </div>
+            <div class="flex items-center gap-4 text-xs font-mono">
+                <span>Setiap Hari: 10.00 — 21.00 WIB</span>
+                <span>|</span>
+                <a href="katalog.html" class="text-sonora-goldlight hover:text-white underline font-extrabold transition">Katalog Alat &rarr;</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- 2. NAVBAR -->
+    <header class="sticky top-0 z-40 bg-sonora-bg/95 backdrop-blur-md border-b border-sonora-border transition-all">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-20 sm:h-24">
+                
+                <a href="index.html" class="flex items-center gap-3 group">
+                    <div class="w-11 h-11 bg-sonora-gold text-black flex items-center justify-center text-xl font-serif font-black border-2 border-sonora-gold shadow-lg group-hover:bg-white group-hover:text-sonora-gold transition">
+                        <i class="fa-solid fa-guitar"></i>
+                    </div>
+                    <div class="flex flex-col">
+                        <span class="text-2xl sm:text-3xl font-serif font-black tracking-tight text-white uppercase leading-none">
+                            SONORA<span class="text-sonora-gold">.</span>
+                        </span>
+                        <span class="text-[9px] font-mono tracking-[0.25em] text-sonora-goldlight uppercase mt-1 font-bold">
+                            ACOUSTIC STAGE & STUDIO SOUND
+                        </span>
+                    </div>
+                </a>
+
+                <nav class="hidden lg:flex items-center gap-8 text-xs font-bold tracking-widest uppercase text-sonora-muted font-mono">
+                    <a href="index.html" class="hover:text-sonora-gold transition">Beranda</a>
+                    <a href="katalog.html" class="hover:text-sonora-gold transition">Katalog Alat</a>
+                    <a href="detail.html" class="hover:text-sonora-gold transition">Detail Gitar Spruce</a>
+                    <a href="tentang.html" class="hover:text-sonora-gold transition">Standar Setting Luthier</a>
+                    <a href="artikel.html" class="hover:text-sonora-gold transition">Tips Menyetem</a>
+                    <a href="kontak.html" class="text-sonora-gold border-b-2 border-sonora-gold pb-1">Studio & Tes Suara</a>
+                </nav>
+
+                <div class="hidden sm:flex items-center gap-3 font-mono">
+                    <a href="https://wa.me/6281234567890?text=Halo%20Sonora%20Guitars,%20saya%20mau%20konsultasi%20gitar%20dan%20tes%20suara." target="_blank" class="inline-flex items-center gap-2 bg-sonora-gold hover:bg-sonora-amber text-black text-xs font-bold tracking-wider px-5 py-2.5 transition-all shadow-lg font-mono sonora-btn font-serif">
+                        <i class="fa-brands fa-whatsapp text-base"></i>
+                        <span>Chat Studio WA</span>
+                    </a>
+                </div>
+
+                <button id="mobileMenuBtn" class="lg:hidden p-2 text-white hover:text-sonora-gold focus:outline-none" aria-label="Toggle Menu">
+                    <i id="menuIcon" class="fa-solid fa-bars text-xl"></i>
+                </button>
+            </div>
+        </div>
+
+        <!-- Mobile Drawer -->
+        <div id="mobileMenu" class="hidden lg:hidden bg-sonora-dark border-b border-sonora-border px-4 py-5 space-y-3 font-mono">
+            <a href="index.html" class="block text-xs font-bold uppercase tracking-wider text-white hover:text-sonora-gold py-2 border-b border-sonora-border">Beranda Utama</a>
+            <a href="katalog.html" class="block text-xs font-bold uppercase tracking-wider text-white hover:text-sonora-gold py-2 border-b border-sonora-border">Katalog Gitar & Ukulele</a>
+            <a href="detail.html" class="block text-xs font-bold uppercase tracking-wider text-white hover:text-sonora-gold py-2 border-b border-sonora-border">Detail Gitar Akustik Spruce Solid</a>
+            <a href="tentang.html" class="block text-xs font-bold uppercase tracking-wider text-white hover:text-sonora-gold py-2 border-b border-sonora-border">Standar Setup Low Action Ceper</a>
+            <a href="artikel.html" class="block text-xs font-bold uppercase tracking-wider text-white hover:text-sonora-gold py-2 border-b border-sonora-border">Tips Stem & Rawat Fretboard</a>
+            <a href="kontak.html" class="block text-xs font-bold uppercase tracking-wider text-sonora-gold py-2">Studio Cipete & Tes Suara</a>
+        </div>
+    </header>
+
+    <!-- 3. PAGE HEADER -->
+    <section class="py-12 bg-sonora-dark border-b border-sonora-border font-mono">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="max-w-3xl">
+                <div class="inline-flex items-center gap-2 px-3 py-1 bg-sonora-card border border-sonora-gold/40 text-sonora-gold text-xs font-bold tracking-wider mb-3">
+                    <span class="w-2 h-2 rounded-full bg-sonora-gold"></span>
+                    <span class="uppercase tracking-widest text-[10px] font-serif">ACOUSTIC FITTING STUDIO & LUTHIER BENCH</span>
+                </div>
+                <h1 class="text-3xl sm:text-5xl font-serif font-black text-white tracking-tight uppercase">
+                    Studio Musik Store & Ruang Tes Suara
+                </h1>
+                <p class="text-xs sm:text-sm text-sonora-sand mt-2 font-sans leading-relaxed">
+                    Kunjungi studio fitting kami di Cipete Jakarta Selatan untuk mencoba langsung berbagai karakter kayu tonewood, konsultasi ketinggian senar custom dengan luthier, atau minta video sampel suara via WhatsApp.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- 4. SPLIT LAYOUT: FORM PENGAJUAN WA + INFO STUDIO & MAPS -->
+    <section class="py-14 bg-sonora-bg font-mono">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-10">
+                
+                <!-- LEFT: INTAKE & VIDEO REQUEST FORM (7 Cols) -->
+                <div class="lg:col-span-7">
+                    <div class="bg-sonora-card border border-sonora-border p-6 sm:p-8 shadow-2xl space-y-6">
+                        <div class="flex items-center gap-3 pb-4 border-b border-sonora-border">
+                            <div class="w-10 h-10 bg-sonora-dark text-sonora-gold flex items-center justify-center text-lg border border-sonora-gold/30 font-serif">
+                                <i class="fa-solid fa-microphone text-sonora-gold"></i>
+                            </div>
+                            <div>
+                                <h3 class="text-base font-serif font-bold text-white uppercase">Formulir Permintaan Video Tes Suara & Order</h3>
+                                <p class="text-xs text-sonora-sand font-sans font-normal">Tim luthier Sonora akan merekam petikan audio akustik aktual dan mengirimkannya via WhatsApp.</p>
+                            </div>
+                        </div>
+
+                        <form onsubmit="handleSonoraInquiry(event)" class="space-y-4 text-xs font-mono">
+                            
+                            <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                                <div>
+                                    <label class="block font-bold text-white mb-1.5 uppercase font-serif">Nama Lengkap Pemain:</label>
+                                    <input type="text" id="custName" required placeholder="Contoh: Rian Satrio" class="w-full p-3 border border-sonora-border bg-sonora-dark text-white focus:outline-none focus:border-sonora-gold text-xs font-sans">
+                                </div>
+                                <div>
+                                    <label class="block font-bold text-white mb-1.5 uppercase font-serif">Nomor WhatsApp:</label>
+                                    <input type="tel" id="custPhone" required placeholder="Contoh: 081234567890" class="w-full p-3 border border-sonora-border bg-sonora-dark text-white focus:outline-none focus:border-sonora-gold text-xs font-sans">
+                                </div>
+                            </div>
+
+                            <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                                <div>
+                                    <label class="block font-bold text-white mb-1.5 uppercase font-serif">Jenis Layanan / Kebutuhan:</label>
+                                    <select id="custTopic" class="w-full p-3 border border-sonora-border bg-sonora-dark text-white focus:outline-none focus:border-sonora-gold text-xs font-serif uppercase font-bold">
+                                        <option value="Minta Video Sample Suara Petikan Gitar Aktual">Minta Video Sample Suara Petikan Gitar Aktual</option>
+                                        <option value="Pemesanan Gitar Akustik Kirim Packing Kayu">Pemesanan Gitar Akustik Kirim Packing Kayu</option>
+                                        <option value="Jasa Setup Low Action & Fret Leveling">Jasa Setup Low Action & Fret Leveling</option>
+                                        <option value="Konsultasi Upgrade Preamp & Bone Saddle">Konsultasi Upgrade Preamp & Bone Saddle</option>
+                                    </select>
+                                </div>
+                                <div>
+                                    <label class="block font-bold text-white mb-1.5 uppercase font-serif">Tipe Gitar / Instrumen:</label>
+                                    <input type="text" id="custGuitars" placeholder="Contoh: Sonora D-45 Solid Spruce / Ukulele 23" class="w-full p-3 border border-sonora-border bg-sonora-dark text-white focus:outline-none focus:border-sonora-gold text-xs font-sans">
+                                </div>
+                            </div>
+
+                            <div>
+                                <label class="block font-bold text-white mb-1.5 uppercase font-serif">Kota Tujuan Kirim / Catatan Setup Khusus:</label>
+                                <textarea id="custNotes" rows="3" placeholder="Sebutkan preferensi ukuran senar (.010 / .011) atau kota tujuan kirim ekspedisi packing kayu..." class="w-full p-3 border border-sonora-border bg-sonora-dark text-white focus:outline-none focus:border-sonora-gold text-xs font-sans"></textarea>
+                            </div>
+
+                            <div class="pt-2">
+                                <button type="submit" class="w-full py-4 px-6 bg-sonora-gold hover:bg-sonora-amber text-black text-xs font-bold tracking-widest uppercase flex items-center justify-center gap-2 shadow-lg sonora-btn font-serif">
+                                    <i class="fa-brands fa-whatsapp text-lg"></i>
+                                    <span>Kirim Permintaan ke WhatsApp Luthier</span>
+                                </button>
+                            </div>
+
+                        </form>
+                    </div>
+                </div>
+
+                <!-- RIGHT: STUDIO LOCATION, HOURS & GOOGLE MAPS (5 Cols) -->
+                <div class="lg:col-span-5 space-y-6">
+                    
+                    <div class="bg-sonora-card border border-sonora-border p-6 sm:p-7 shadow-xl space-y-4">
+                        <div class="font-bold text-xs uppercase tracking-wider text-white flex items-center gap-2 font-serif">
+                            <i class="fa-solid fa-clock text-sonora-gold"></i> Jam Layanan Studio & Fitting Room
+                        </div>
+                        <div class="p-4 bg-sonora-dark border border-sonora-border text-xs space-y-2 text-sonora-sand font-mono">
+                            <div class="flex justify-between">
+                                <span>Senin — Jumat:</span> <strong class="text-white">10.00 — 21.00 WIB</strong>
+                            </div>
+                            <div class="flex justify-between">
+                                <span>Sabtu & Minggu:</span> <strong class="text-white">09.30 — 21.30 WIB</strong>
+                            </div>
+                            <div class="flex justify-between">
+                                <span>WhatsApp Concierge:</span> <strong class="text-emerald-400 font-bold">Setiap Hari 24 Jam</strong>
+                            </div>
+                        </div>
+
+                        <div class="space-y-2 text-xs text-sonora-sand font-mono">
+                            <div class="flex items-center gap-3 p-3 bg-sonora-dark border border-sonora-border">
+                                <i class="fa-brands fa-whatsapp text-lg text-emerald-400"></i>
+                                <div>
+                                    <span class="block text-[10px] text-sonora-muted uppercase font-bold font-serif">Hotline WhatsApp Studio</span>
+                                    <strong class="text-white text-xs">+62 812-3456-7890</strong>
+                                </div>
+                            </div>
+                            <div class="flex items-center gap-3 p-3 bg-sonora-dark border border-sonora-border">
+                                <i class="fa-solid fa-envelope text-lg text-sonora-gold"></i>
+                                <div>
+                                    <span class="block text-[10px] text-sonora-muted uppercase font-bold font-serif">Email Musician Care</span>
+                                    <strong class="text-white text-xs">studio@sonora.id</strong>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Location & Google Maps Embed -->
+                    <div class="bg-sonora-card border border-sonora-border p-6 sm:p-7 shadow-xl space-y-3">
+                        <div class="font-bold text-xs uppercase tracking-wider text-white flex items-center gap-2 font-serif">
+                            <i class="fa-solid fa-location-dot text-sonora-gold"></i> Lokasi Cipete Studio
+                        </div>
+                        <p class="text-xs text-sonora-sand leading-relaxed font-sans font-normal">
+                            <strong class="text-white font-serif uppercase">Sonora Acoustic Guitars & Audio Studio</strong><br>
+                            Jl. Pangeran Antasari No. 52, Cipete Selatan, Cilandak, Jakarta Selatan 12410
+                        </p>
+                        
+                        <div class="h-44 bg-sonora-dark border border-sonora-border overflow-hidden relative">
+                            <iframe 
+                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3966.048369408456!2d106.8075!3d-6.2778!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNsKwMTYnNDAuMSJTIDEwNsKwNDgnMjcuMCJF!5e0!3m2!1sen!2sid!4v1600000000000!5m2!1sen!2sid" 
+                                width="100%" 
+                                height="100%" 
+                                style="border:0;" 
+                                allowfullscreen="" 
+                                loading="lazy" 
+                                class="grayscale contrast-125 hover:grayscale-0 transition-all duration-500">
+                            </iframe>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- 5. FOOTER -->
+    <footer class="bg-sonora-bg text-sonora-sand border-t border-sonora-border pt-14 pb-28 font-mono">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex flex-col md:flex-row items-center justify-between gap-6 border-b border-sonora-border pb-8">
+                <div class="flex items-center gap-3">
+                    <div class="w-8 h-8 bg-sonora-gold text-black flex items-center justify-center text-base font-serif font-black">
+                        <i class="fa-solid fa-guitar"></i>
+                    </div>
+                    <span class="text-xl font-serif font-black text-white uppercase tracking-tight">
+                        SONORA<span class="text-sonora-gold">.</span>
+                    </span>
+                </div>
+                <div class="flex flex-wrap gap-6 text-xs text-sonora-sand font-bold uppercase tracking-wider font-serif">
+                    <a href="index.html" class="hover:text-sonora-gold">Beranda</a>
+                    <a href="katalog.html" class="hover:text-sonora-gold">Katalog</a>
+                    <a href="detail.html" class="hover:text-sonora-gold">Detail</a>
+                    <a href="tentang.html" class="hover:text-sonora-gold">Standar Setup</a>
+                    <a href="artikel.html" class="hover:text-sonora-gold">Tips Menyetem</a>
+                    <a href="kontak.html" class="text-sonora-gold">Studio</a>
+                </div>
+            </div>
+            <div class="mt-6 flex flex-col sm:flex-row items-center justify-between text-xs text-slate-500">
+                <p>&copy; 2026 SONORA ACOUSTIC GUITARS & AUDIO LAB. All Rights Reserved.</p>
+                <p class="text-[11px] mt-2 sm:mt-0 font-sans">Lentera Pasar Production Template — Acoustic Stage & Musical Gear</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- FLOATING WHATSAPP BUTTON (bottom-24) -->
+    <a href="https://wa.me/6281234567890?text=Halo%20Sonora%20Guitars,%20saya%20ingin%20konsultasi%20gitar%20akustik." 
+       target="_blank" 
+       class="fixed bottom-24 right-6 z-50 group flex items-center gap-3 bg-sonora-card hover:bg-sonora-cardlight text-white px-4 py-3 border border-sonora-gold/40 shadow-2xl hover:border-sonora-gold transition-all duration-300 font-mono">
+        <span class="relative flex h-3 w-3">
+            <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-sonora-gold opacity-75"></span>
+            <span class="relative inline-flex rounded-full h-3 w-3 bg-sonora-gold"></span>
+        </span>
+        <i class="fa-brands fa-whatsapp text-2xl text-emerald-400"></i>
+        <div class="text-left hidden sm:block pr-1">
+            <div class="text-[10px] text-sonora-gold font-bold uppercase tracking-wider leading-none font-serif">Luthier Specialist</div>
+            <span class="font-bold text-xs text-white">Tes Suara Gitar WA</span>
+        </div>
+    </a>
+
+    <!-- LENTERA PASAR - STICKY DEMO & SALES BAR (fixed bottom-4) -->
+    <div class="fixed bottom-4 left-1/2 -translate-x-1/2 z-50 w-[95%] max-w-4xl bg-slate-900/95 backdrop-blur-md text-white p-3.5 md:p-4 rounded-2xl shadow-2xl border border-slate-700/80 transition-all duration-300">
+      <div class="flex flex-col md:flex-row items-center justify-between gap-3 md:gap-4">
+        <div class="flex items-center gap-3 w-full md:w-auto">
+          <div class="w-10 h-10 rounded-xl bg-amber-500/20 border border-amber-500/40 flex items-center justify-center shrink-0">
+            <svg class="w-5 h-5 text-amber-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 19V6l12-3v13M9 19c0 1.105-1.343 2-3 2s-3-.895-3-2 1.343-2 3-2 3 .895 3 2zm12-3c0 1.105-1.343 2-3 2s-3-.895-3-2 1.343-2 3-2 3 .895 3 2zM9 10l12-3" />
+            </svg>
+          </div>
+          <div>
+            <div class="flex items-center gap-2">
+              <span class="font-bold text-sm text-white">Lentera Pasar Engine</span>
+              <span class="text-[10px] bg-amber-500/20 text-amber-300 border border-amber-500/30 px-2 py-0.5 rounded-full font-medium">Musical Instruments Template</span>
+            </div>
+            <p class="text-xs text-slate-300 hidden sm:block">
+              Terima beres: Website responsif + Panel input produk sendiri + Dikelola tim iklan profesional.
+            </p>
+          </div>
+        </div>
+
+        <div class="flex items-center justify-between md:justify-end gap-3 w-full md:w-auto">
+          <a href="https://wa.me/6281234567890?text=Halo%20Tim%20Lentera%20Pasar,%20saya%20tertarik%20menggunakan%20template%20website%20Musical%20Instruments%20ini%20lengkap%20dengan%20Admin%20Panel%20dan%20Jasa%20Iklannya." 
+             target="_blank"
+             class="w-full md:w-auto inline-flex items-center justify-center gap-2 bg-gradient-to-r from-amber-600 to-yellow-600 hover:from-amber-500 hover:to-yellow-500 text-black text-xs md:text-sm font-bold px-5 py-2.5 rounded-xl shadow-lg transition-all hover:scale-105 shrink-0 font-serif">
+            <span>Gunakan Template Ini</span>
+            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3" />
+            </svg>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <!-- SCRIPT LOGIC -->
+    <script>
+        function handleSonoraInquiry(e) {
+            e.preventDefault();
+            const name = document.getElementById('custName').value;
+            const phone = document.getElementById('custPhone').value;
+            const topic = document.getElementById('custTopic').value;
+            const guitars = document.getElementById('custGuitars').value || '-';
+            const notes = document.getElementById('custNotes').value || '-';
+
+            const text = `Halo Sonora Luthier Specialist,%0A%0ASaya ingin mengajukan permohonan dengan data berikut:%0A- Nama Pemain: ${encodeURIComponent(name)}%0A- No. WhatsApp: ${encodeURIComponent(phone)}%0A- Jenis Layanan: ${encodeURIComponent(topic)}%0A- Tipe Gitar: ${encodeURIComponent(guitars)}%0A- Catatan / Kota Kirim: ${encodeURIComponent(notes)}%0A%0AMohon sampel video petikan suara / konfirmasi ketersediaan stok. Terima kasih!`;
+
+            window.open(`https://wa.me/6281234567890?text=${text}`, '_blank');
+        }
+
+        // Mobile menu toggle
+        const mobileMenuBtn = document.getElementById('mobileMenuBtn');
+        const mobileMenu = document.getElementById('mobileMenu');
+        const menuIcon = document.getElementById('menuIcon');
+
+        mobileMenuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+            if (mobileMenu.classList.contains('hidden')) {
+                menuIcon.classList.remove('fa-xmark');
+                menuIcon.classList.add('fa-bars');
+            } else {
+                menuIcon.classList.remove('fa-bars');
+                menuIcon.classList.add('fa-xmark');
+            }
+        });
+    </script>
+</body>
+</html>
