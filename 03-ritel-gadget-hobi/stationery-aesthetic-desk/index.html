@@ -1,0 +1,886 @@
+<!DOCTYPE html>
+<html lang="id" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FOLIO & KRAFT // Aesthetic Paper Goods & Journal Studio</title>
+    <meta name="description" content="Studio alat tulis dan buku jurnal estetik: Bullet Journal 120 GSM bleed-proof, undated planner, pulpen gel vintage, washi tape, dan buku self-improvement untuk meja kerja kreatif Anda.">
+    
+    <!-- Google Fonts: Cormorant Garamond & Plus Jakarta Sans -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,600;1,700&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Space+Grotesk:wght@600;700&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        folio: {
+                            kraft: '#F5EFE6',
+                            kraftsoft: '#FAF6F0',
+                            card: '#FFFFFF',
+                            sage: '#52796F',
+                            sagedark: '#354F52',
+                            sagelight: '#84A98C',
+                            sagesoft: '#EBF2EE',
+                            charcoal: '#2F3E46',
+                            border: '#DCD2C4',
+                            warmtan: '#B08968',
+                            terracotta: '#B2675E'
+                        }
+                    },
+                    fontFamily: {
+                        sans: ['"Plus Jakarta Sans"', 'sans-serif'],
+                        serif: ['"Cormorant Garamond"', 'serif'],
+                        mono: ['"Space Grotesk"', 'monospace']
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        .no-scrollbar::-webkit-scrollbar { display: none; }
+        .no-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
+        
+        .folio-btn {
+            transition: all 0.2s cubic-bezier(0.16, 1, 0.3, 1);
+        }
+        .folio-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 10px 25px -6px rgba(82, 121, 111, 0.45);
+        }
+    </style>
+</head>
+<body class="bg-folio-kraft text-folio-charcoal font-sans antialiased selection:bg-folio-sage selection:text-white">
+
+    <!-- 1. TOP PROMO ALERT BAR -->
+    <div class="bg-folio-charcoal text-folio-kraft text-xs py-2 px-4 font-mono font-bold border-b border-folio-border/30">
+        <div class="max-w-7xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-2 text-center sm:text-left">
+            <div class="flex items-center justify-center gap-2">
+                <span class="px-2 py-0.5 bg-folio-sage text-white text-[10px] uppercase font-serif font-black tracking-wider rounded-md">
+                    CREATIVE DESK PROMO
+                </span>
+                <span class="text-white">Free Aesthetic Sticker Pack & Pembatas Buku Pita untuk Setiap Pembelian Journal 120 GSM</span>
+            </div>
+            <div class="flex items-center gap-4 text-xs font-mono">
+                <span class="hidden md:inline">Studio Wijaya Melawai Jakarta</span>
+                <span class="hidden md:inline">|</span>
+                <a href="katalog.html" class="text-folio-sagelight hover:text-white underline font-extrabold transition">Jelajahi Katalog Buku & Alat Tulis &rarr;</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- 2. NAVBAR -->
+    <header class="sticky top-0 z-40 bg-folio-kraft/95 backdrop-blur-md border-b border-folio-border transition-all">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-20 sm:h-24">
+                
+                <!-- Logo -->
+                <a href="index.html" class="flex items-center gap-3 group">
+                    <div class="w-11 h-11 bg-folio-sage text-white flex items-center justify-center text-xl font-serif font-black rounded-2xl shadow-lg group-hover:bg-folio-charcoal transition">
+                        <i class="fa-solid fa-feather-pointed"></i>
+                    </div>
+                    <div class="flex flex-col">
+                        <span class="text-2xl sm:text-3xl font-serif font-black tracking-tight text-folio-charcoal uppercase leading-none">
+                            FOLIO & KRAFT<span class="text-folio-sage">.</span>
+                        </span>
+                        <span class="text-[9px] font-mono tracking-[0.25em] text-folio-sage uppercase mt-1 font-bold">
+                            PAPER GOODS & JOURNAL STUDIO
+                        </span>
+                    </div>
+                </a>
+
+                <!-- Desktop Navigation Links -->
+                <nav class="hidden lg:flex items-center gap-8 text-xs font-bold tracking-wider uppercase text-folio-sage font-mono">
+                    <a href="index.html" class="text-folio-charcoal border-b-2 border-folio-sage pb-1">Beranda</a>
+                    <a href="katalog.html" class="hover:text-folio-charcoal transition">Katalog Jurnal & Pulpen</a>
+                    <a href="detail.html" class="hover:text-folio-charcoal transition">Detail Planner 120 GSM</a>
+                    <a href="tentang.html" class="hover:text-folio-charcoal transition">Standar Kertas Bebas Asam</a>
+                    <a href="artikel.html" class="hover:text-folio-charcoal transition">Ide Bullet Journal</a>
+                    <a href="kontak.html" class="hover:text-folio-charcoal transition">Studio & Custom Souvenir</a>
+                </nav>
+
+                <!-- Action Buttons & Modal -->
+                <div class="hidden sm:flex items-center gap-3 font-mono">
+                    <button onclick="openPaperModal()" class="inline-flex items-center gap-2 px-4 py-2.5 bg-white border border-folio-border hover:border-folio-sage text-xs font-bold text-folio-charcoal rounded-xl transition shadow-xs">
+                        <i class="fa-solid fa-book-open text-folio-sage"></i>
+                        <span>Pilih Format Halaman</span>
+                    </button>
+                    <a href="https://wa.me/6281234567890?text=Halo%20Folio%20%26%20Kraft,%20saya%20tertarik%20dengan%20koleksi%20jurnal%20estetik." target="_blank" class="inline-flex items-center gap-2 bg-folio-sage hover:bg-folio-sagedark text-white text-xs font-bold tracking-wider px-5 py-2.5 rounded-xl transition-all shadow-lg font-mono folio-btn font-serif">
+                        <i class="fa-brands fa-whatsapp text-base"></i>
+                        <span>Pesan via WA</span>
+                    </a>
+                </div>
+
+                <!-- Mobile Hamburger Button -->
+                <button id="mobileMenuBtn" class="lg:hidden p-2 text-folio-charcoal hover:text-folio-sage focus:outline-none" aria-label="Toggle Menu">
+                    <i id="menuIcon" class="fa-solid fa-bars text-xl"></i>
+                </button>
+            </div>
+        </div>
+
+        <!-- Mobile Drawer -->
+        <div id="mobileMenu" class="hidden lg:hidden bg-white border-b border-folio-border px-4 py-5 space-y-3 font-mono">
+            <a href="index.html" class="block text-xs font-bold uppercase tracking-wider text-folio-charcoal py-2 border-b border-folio-border">Beranda Utama</a>
+            <a href="katalog.html" class="block text-xs font-bold uppercase tracking-wider text-folio-sage hover:text-folio-charcoal py-2 border-b border-folio-border">Katalog Jurnal, Pulpen & Washi Tape</a>
+            <a href="detail.html" class="block text-xs font-bold uppercase tracking-wider text-folio-sage hover:text-folio-charcoal py-2 border-b border-folio-border">Detail Hardcover Journal 120 GSM</a>
+            <a href="tentang.html" class="block text-xs font-bold uppercase tracking-wider text-folio-sage hover:text-folio-charcoal py-2 border-b border-folio-border">Filosofi Kertas Bebas Asam</a>
+            <a href="artikel.html" class="block text-xs font-bold uppercase tracking-wider text-folio-sage hover:text-folio-charcoal py-2 border-b border-folio-border">Panduan Bullet Journal & Buku</a>
+            <a href="kontak.html" class="block text-xs font-bold uppercase tracking-wider text-folio-sage hover:text-folio-charcoal py-2">Studio Melawai & Custom Pesanan</a>
+            <div class="pt-2 flex flex-col gap-2">
+                <button onclick="openPaperModal()" class="w-full py-3 bg-folio-kraft text-folio-charcoal border border-folio-border rounded-xl text-xs font-bold uppercase tracking-wider flex items-center justify-center gap-2">
+                    <i class="fa-solid fa-book-open"></i> Cari Format Jurnal
+                </button>
+                <a href="https://wa.me/6281234567890?text=Halo%20Folio%20%26%20Kraft,%20saya%20mau%20tanya%20jurnal." target="_blank" class="w-full py-3 bg-folio-sage text-white rounded-xl text-xs font-bold uppercase tracking-wider text-center flex items-center justify-center gap-2 font-serif">
+                    <i class="fa-brands fa-whatsapp"></i> Chat WhatsApp Studio
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- 3. COZY CREATIVE DESK HERO SECTION -->
+    <section class="py-16 sm:py-24 border-b border-folio-border bg-gradient-to-b from-folio-kraft via-folio-kraftsoft to-folio-kraft relative overflow-hidden">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+                
+                <!-- Left Hero Copy (6 Cols) -->
+                <div class="lg:col-span-6 space-y-6">
+                    <div class="inline-flex items-center gap-2 px-3.5 py-1.5 bg-white border border-folio-border text-folio-sage text-xs font-mono font-bold tracking-wider rounded-full shadow-xs">
+                        <span class="w-2 h-2 rounded-full bg-folio-sage"></span>
+                        <span class="uppercase tracking-widest text-[10px] font-serif">120 GSM BLEED-PROOF PAPER</span>
+                    </div>
+
+                    <h1 class="text-4xl sm:text-6xl font-serif font-bold text-folio-charcoal tracking-tight leading-[1.02] uppercase italic">
+                        WRITE, PLAN, <br>
+                        AND CRAFT YOUR <br>
+                        <span class="text-folio-sage not-italic">INNER THOUGHTS.</span>
+                    </h1>
+
+                    <p class="text-xs sm:text-sm text-folio-charcoal/80 leading-relaxed max-w-lg font-medium font-sans">
+                        Temukan kebahagiaan menulis tangan di atas kertas tebal 120 GSM bebas tembus tinta (*anti-ghosting*). Dilengkapi jilid jahit benang yang dapat dibuka rata 180° dan sampul kain linen mewah untuk menemani produktivitas harian Anda.
+                    </p>
+
+                    <div class="pt-2 flex flex-wrap items-center gap-4 font-mono">
+                        <a href="katalog.html" class="inline-flex items-center gap-2.5 px-8 py-4 bg-folio-sage hover:bg-folio-sagedark text-white text-xs font-bold tracking-widest uppercase rounded-2xl shadow-lg folio-btn font-serif">
+                            <span>JELAJAHI KOLEKSI JURNAL</span>
+                            <i class="fa-solid fa-arrow-right text-[10px]"></i>
+                        </a>
+                        <button onclick="openPaperModal()" class="inline-flex items-center gap-2 px-7 py-4 bg-white hover:bg-folio-kraft border border-folio-border text-folio-charcoal text-xs font-bold tracking-widest uppercase rounded-2xl transition font-serif shadow-xs">
+                            <i class="fa-solid fa-pen-nib text-folio-sage"></i>
+                            <span>PILIH TIPE HALAMAN</span>
+                        </button>
+                    </div>
+
+                    <!-- Quick Paper Spec Strip -->
+                    <div class="pt-4 grid grid-cols-3 gap-4 border-t border-folio-border font-mono text-xs">
+                        <div class="p-3.5 bg-white border border-folio-border rounded-xl shadow-xs">
+                            <span class="text-[10px] text-folio-sage uppercase block font-bold">PAPER THICKNESS</span>
+                            <strong class="text-sm font-bold text-folio-charcoal font-serif">120 GSM Cream</strong>
+                            <span class="text-[10px] text-emerald-700 font-bold block">No Ink Bleed-Through</span>
+                        </div>
+                        <div class="p-3.5 bg-white border border-folio-border rounded-xl shadow-xs">
+                            <span class="text-[10px] text-folio-sage uppercase block font-bold">FLAT-LAY BINDING</span>
+                            <strong class="text-sm font-bold text-folio-charcoal font-serif">180° Buka Rata</strong>
+                            <span class="text-[10px] text-folio-warmtan font-bold block">Jahit Benang Kokoh</span>
+                        </div>
+                        <div class="p-3.5 bg-white border border-folio-border rounded-xl shadow-xs">
+                            <span class="text-[10px] text-folio-sage uppercase block font-bold">PAGE CAPACITY</span>
+                            <strong class="text-sm font-bold text-folio-charcoal font-serif">192 Halaman</strong>
+                            <span class="text-[10px] text-folio-charcoal block">Acid-Free Archival</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Right Hero Image with Flatlay Desk Showcase (6 Cols) -->
+                <div class="lg:col-span-6 relative">
+                    <div class="grid grid-cols-12 gap-4 items-center">
+                        
+                        <!-- Main Flatlay Journal (7 Cols) -->
+                        <div class="col-span-7 bg-white border border-folio-border rounded-3xl aspect-[3/4] relative group overflow-hidden shadow-2xl">
+                            <img src="https://images.unsplash.com/photo-1544716278-ca5e3f4abd8c?auto=format&fit=crop&w=800&q=80" alt="Aesthetic Journal Desk Flatlay" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700">
+                            
+                            <!-- Floating Badge -->
+                            <div class="absolute top-3 left-3 bg-folio-charcoal text-white px-3 py-1.5 font-serif font-bold rounded-xl shadow-md">
+                                <span class="text-[9px] uppercase tracking-wider block font-bold text-folio-sagelight">FLAGSHIP PLANNER</span>
+                                <strong class="text-xs font-serif font-bold">Linen Hardcover 120 GSM</strong>
+                            </div>
+
+                            <div class="absolute bottom-3 left-3 right-3 bg-white/95 backdrop-blur-xs p-3 rounded-xl border border-folio-border font-mono text-xs flex justify-between items-center shadow-md">
+                                <span class="text-folio-charcoal font-bold text-[11px]">Dotted • Grid • Ruled</span>
+                                <strong class="text-white bg-folio-sage px-2 py-0.5 text-[10px] rounded-md font-serif">FREE STICKERS</strong>
+                            </div>
+                        </div>
+
+                        <!-- Side Stationery & Accessories (5 Cols) -->
+                        <div class="col-span-5 space-y-4">
+                            <div class="bg-white border border-folio-border rounded-2xl aspect-[3/4] relative group overflow-hidden shadow-lg">
+                                <img src="https://images.unsplash.com/photo-1583485088034-697b5bc54ccd?auto=format&fit=crop&w=600&q=80" alt="Vintage Gel Pen and Washi Tape" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700">
+                                <span class="absolute top-2.5 right-2.5 bg-folio-sage/90 text-white text-[9px] font-mono font-bold px-2 py-0.5 uppercase rounded-md border border-folio-border">
+                                    VINTAGE GEL PEN
+                                </span>
+                            </div>
+                            <div class="p-4 bg-white border border-folio-border rounded-2xl text-xs font-mono shadow-xs">
+                                <span class="font-serif font-bold text-folio-sage block text-sm uppercase">Fountain Pen Friendly:</span>
+                                <p class="text-[11px] leading-relaxed font-sans font-normal text-folio-charcoal/80 mt-1">Serat kertas halus tidak berbulu saat digores nib fountain pen atau highlighter tebal.</p>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- Value Strip Bar -->
+            <div class="mt-16 max-w-5xl mx-auto grid grid-cols-1 sm:grid-cols-3 gap-6 bg-white p-6 rounded-3xl border border-folio-border shadow-xl text-xs font-mono">
+                <div class="flex items-start gap-3.5">
+                    <div class="w-10 h-10 rounded-2xl bg-folio-sagesoft text-folio-sage flex items-center justify-center shrink-0 text-base border border-folio-sage/20">
+                        <i class="fa-solid fa-droplet-slash"></i>
+                    </div>
+                    <div>
+                        <strong class="text-folio-charcoal font-bold block text-sm uppercase font-serif">Kertas 120 GSM Bebas Tembus</strong>
+                        <span class="text-folio-charcoal/80 leading-relaxed font-sans text-xs">Uji coba aman untuk pulpen gel, spidol brushpen, dan tinta fountain pen tanpa bayangan (*ghosting*).</span>
+                    </div>
+                </div>
+                <div class="flex items-start gap-3.5">
+                    <div class="w-10 h-10 rounded-2xl bg-amber-50 text-amber-800 flex items-center justify-center shrink-0 text-base border border-amber-600/20">
+                        <i class="fa-solid fa-book"></i>
+                    </div>
+                    <div>
+                        <strong class="text-folio-charcoal font-bold block text-sm uppercase font-serif">Jahit Benang Buka Rata 180°</strong>
+                        <span class="text-folio-charcoal/80 leading-relaxed font-sans text-xs">Buku dapat terbuka mendatar tanpa perlu ditekan paksa, sangat nyaman untuk tangan kiri maupun kanan.</span>
+                    </div>
+                </div>
+                <div class="flex items-start gap-3.5">
+                    <div class="w-10 h-10 rounded-2xl bg-folio-sagesoft text-folio-sage flex items-center justify-center shrink-0 text-base border border-folio-sage/20">
+                        <i class="fa-solid fa-stamp"></i>
+                    </div>
+                    <div>
+                        <strong class="text-folio-charcoal font-bold block text-sm uppercase font-serif">Custom Nama Emboss Emas</strong>
+                        <span class="text-folio-charcoal/80 leading-relaxed font-sans text-xs">Personalisasi nama Anda atau kutipan favorit dengan ukiran foil emas berkilau pada cover buku.</span>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- 4. SECTION KHUSUS: PILIH FORMAT JURNALMU -->
+    <section class="py-16 bg-folio-kraftsoft border-b border-folio-border font-mono">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            
+            <div class="text-center max-w-2xl mx-auto mb-12">
+                <span class="text-xs font-mono uppercase tracking-[0.25em] text-folio-sage font-bold block mb-1">
+                    // JOURNAL LAYOUT SYSTEM
+                </span>
+                <h2 class="text-2xl sm:text-4xl font-serif font-bold text-folio-charcoal uppercase tracking-tight">
+                    Pilih Format Halaman Sesuai Kebutuhanmu
+                </h2>
+                <p class="text-xs sm:text-sm text-folio-charcoal/80 mt-1 font-sans">
+                    Setiap halaman dirancang dengan presisi garis yang lembut agar tulisan tangan dan ilustrasi Anda tetap menjadi pusat perhatian.
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-6">
+                
+                <!-- Format 1: Dotted Bullet Journal -->
+                <div class="bg-white border-2 border-folio-sage rounded-2xl p-6 flex flex-col justify-between shadow-xl relative">
+                    <span class="absolute -top-3 right-6 bg-folio-sage text-white text-[10px] font-serif font-bold px-3 py-0.5 uppercase tracking-wider rounded-full">
+                        MOST POPULAR
+                    </span>
+                    <div>
+                        <div class="flex justify-between items-center mb-4">
+                            <span class="text-[10px] font-bold bg-folio-sagesoft text-folio-sage px-2.5 py-1 rounded-md uppercase tracking-wider font-serif">
+                                DOTTED GRID 5MM
+                            </span>
+                            <span class="text-xs text-folio-sage font-bold">Bullet Journal</span>
+                        </div>
+                        <h3 class="text-lg font-serif font-bold text-folio-charcoal uppercase">Dotted Grid (Titik-Titik)</h3>
+                        <p class="text-xs text-folio-charcoal/80 mt-2 leading-relaxed font-sans font-normal">
+                            Format paling fleksibel untuk membuat kotak to-do list, diagram habit tracker bulanan, dan lettering kaligrafi tanpa terdistraksi garis tegas.
+                        </p>
+                    </div>
+                    <div class="mt-6 pt-4 border-t border-folio-border flex items-center justify-between">
+                        <span class="text-xs text-folio-sage font-bold">192 Halaman</span>
+                        <a href="detail.html" class="text-xs text-folio-charcoal font-bold hover:text-folio-sage uppercase font-serif">Pilih Dotted &rarr;</a>
+                    </div>
+                </div>
+
+                <!-- Format 2: Grid Kotak 5mm -->
+                <div class="bg-white border border-folio-border rounded-2xl p-6 flex flex-col justify-between hover:border-folio-sage transition shadow-xs">
+                    <div>
+                        <div class="flex justify-between items-center mb-4">
+                            <span class="text-[10px] font-bold bg-folio-kraft text-folio-charcoal px-2.5 py-1 rounded-md uppercase tracking-wider font-serif">
+                                SQUARED 5MM
+                            </span>
+                            <span class="text-xs text-folio-sage font-bold">Studi & Diagram</span>
+                        </div>
+                        <h3 class="text-lg font-serif font-bold text-folio-charcoal uppercase">Grid (Kotak-Kotak)</h3>
+                        <p class="text-xs text-folio-charcoal/80 mt-2 leading-relaxed font-sans font-normal">
+                            Sangat disukai oleh mahasiswa, perancang tabel keuangan, dan desainer untuk mencatat rumus, tabel perbandingan, dan sketsa presisi.
+                        </p>
+                    </div>
+                    <div class="mt-6 pt-4 border-t border-folio-border flex items-center justify-between">
+                        <span class="text-xs text-folio-sage font-bold">192 Halaman</span>
+                        <a href="katalog.html" class="text-xs text-folio-charcoal font-bold hover:text-folio-sage uppercase font-serif">Pilih Grid &rarr;</a>
+                    </div>
+                </div>
+
+                <!-- Format 3: Ruled Garis 7mm -->
+                <div class="bg-white border border-folio-border rounded-2xl p-6 flex flex-col justify-between hover:border-folio-sage transition shadow-xs">
+                    <div>
+                        <div class="flex justify-between items-center mb-4">
+                            <span class="text-[10px] font-bold bg-folio-kraft text-folio-charcoal px-2.5 py-1 rounded-md uppercase tracking-wider font-serif">
+                                LINED 7MM
+                            </span>
+                            <span class="text-xs text-folio-sage font-bold">Diary & Menulis</span>
+                        </div>
+                        <h3 class="text-lg font-serif font-bold text-folio-charcoal uppercase">Ruled (Garis Klasik)</h3>
+                        <p class="text-xs text-folio-charcoal/80 mt-2 leading-relaxed font-sans font-normal">
+                            Jarak baris 7mm yang lapang dan nyaman untuk menuangkan curahan hati (*daily journaling*), esai pemikiran, dan catatan rapat kantor.
+                        </p>
+                    </div>
+                    <div class="mt-6 pt-4 border-t border-folio-border flex items-center justify-between">
+                        <span class="text-xs text-folio-sage font-bold">192 Halaman</span>
+                        <a href="katalog.html" class="text-xs text-folio-charcoal font-bold hover:text-folio-sage uppercase font-serif">Pilih Ruled &rarr;</a>
+                    </div>
+                </div>
+
+                <!-- Format 4: Blank Polos Kertas Tebal -->
+                <div class="bg-white border border-folio-border rounded-2xl p-6 flex flex-col justify-between hover:border-folio-sage transition shadow-xs">
+                    <div>
+                        <div class="flex justify-between items-center mb-4">
+                            <span class="text-[10px] font-bold bg-folio-kraft text-folio-charcoal px-2.5 py-1 rounded-md uppercase tracking-wider font-serif">
+                                BLANK UNLINED
+                            </span>
+                            <span class="text-xs text-folio-sage font-bold">Sketsa & Mindmap</span>
+                        </div>
+                        <h3 class="text-lg font-serif font-bold text-folio-charcoal uppercase">Blank (Polos Bersih)</h3>
+                        <p class="text-xs text-folio-charcoal/80 mt-2 leading-relaxed font-sans font-normal">
+                            Kebebasan tanpa batas untuk ilustrasi cat air ringan, kolase stiker washi tape vintage, dan pembuatan peta pemikiran (*mind mapping*).
+                        </p>
+                    </div>
+                    <div class="mt-6 pt-4 border-t border-folio-border flex items-center justify-between">
+                        <span class="text-xs text-folio-sage font-bold">192 Halaman</span>
+                        <a href="katalog.html" class="text-xs text-folio-charcoal font-bold hover:text-folio-sage uppercase font-serif">Pilih Blank &rarr;</a>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+    <!-- 5. PRODUK UNGGULAN: GRID 4 KOLOM BUKU & ALAT TULIS -->
+    <section class="py-16 bg-folio-kraft border-b border-folio-border font-mono">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            
+            <div class="flex flex-col md:flex-row md:items-end justify-between mb-12">
+                <div>
+                    <span class="text-xs font-mono uppercase tracking-[0.25em] text-folio-sage font-bold block mb-1">
+                        // CURATED STATIONERY COLLECTION
+                    </span>
+                    <h2 class="text-2xl sm:text-4xl font-serif font-bold text-folio-charcoal uppercase tracking-tight">
+                        Koleksi Meja Tulis & Jurnal Pilihan
+                    </h2>
+                    <p class="text-xs sm:text-sm text-folio-charcoal/80 mt-1 font-sans">
+                        Setiap produk menggunakan kertas ramah lingkungan, tinta berkualitas tinggi, dan estetika minimalis.
+                    </p>
+                </div>
+                <a href="katalog.html" class="mt-4 md:mt-0 text-xs font-mono font-bold bg-white hover:bg-folio-kraftsoft text-folio-charcoal border border-folio-border px-4 py-2 rounded-xl uppercase tracking-wider transition font-serif shadow-xs">
+                    Lihat Semua 8 Produk &rarr;
+                </a>
+            </div>
+
+            <!-- 4 Column Product Grid -->
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+                
+                <!-- Product 1: Linen Hardcover Journal 120 GSM -->
+                <div class="bg-white border border-folio-border rounded-3xl p-4 flex flex-col justify-between hover:border-folio-sage transition shadow-xs">
+                    <div>
+                        <div class="aspect-[4/3] bg-folio-kraftsoft rounded-2xl overflow-hidden mb-3 relative group border border-folio-border">
+                            <img src="https://images.unsplash.com/photo-1544716278-ca5e3f4abd8c?auto=format&fit=crop&w=500&q=80" alt="Linen Hardcover Journal" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+                            <span class="absolute top-2 left-2 bg-folio-charcoal text-white text-[8px] font-bold px-2 py-0.5 rounded-md uppercase font-serif">
+                                120 GSM
+                            </span>
+                            <span class="absolute top-2 right-2 bg-white/90 text-folio-sage text-[8px] font-bold px-2 py-0.5 rounded-md uppercase font-mono border border-folio-border">
+                                FLAT-LAY 180°
+                            </span>
+                        </div>
+
+                        <div class="flex items-center gap-1.5 mb-1 text-[10px] text-folio-sage font-bold uppercase font-mono">
+                            <i class="fa-solid fa-book-bookmark"></i>
+                            <span>192 Hlm • Saku Belakang • Pita Ganda</span>
+                        </div>
+
+                        <h3 class="font-serif font-bold text-base text-folio-charcoal uppercase leading-tight">Linen Hardcover Journal</h3>
+                        <p class="text-xs text-folio-charcoal/80 mt-1 font-sans line-clamp-1">Jurnal bersampul kain linen natural dengan kertas tebal anti-tembus.</p>
+                        
+                        <div class="mt-2 text-[10px] text-folio-sage">
+                            <span>Warna: Sage Green, Dusty Rose, Charcoal, Oat Cream</span>
+                        </div>
+                    </div>
+
+                    <div class="mt-4 pt-3 border-t border-folio-border flex items-center justify-between">
+                        <div>
+                            <span class="text-[9px] text-folio-sage block uppercase">Harga Resmi</span>
+                            <span class="font-mono font-bold text-base text-folio-charcoal">Rp 98.000</span>
+                        </div>
+                        <a href="detail.html" class="px-3.5 py-1.5 bg-folio-sage hover:bg-folio-sagedark text-white text-xs font-bold uppercase rounded-lg transition font-serif">
+                            Detail &rarr;
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Product 2: Vintage Gel Pen 0.5mm Set (5 Warna) -->
+                <div class="bg-white border border-folio-border rounded-3xl p-4 flex flex-col justify-between hover:border-folio-sage transition shadow-xs">
+                    <div>
+                        <div class="aspect-[4/3] bg-folio-kraftsoft rounded-2xl overflow-hidden mb-3 relative group border border-folio-border">
+                            <img src="https://images.unsplash.com/photo-1583485088034-697b5bc54ccd?auto=format&fit=crop&w=500&q=80" alt="Vintage Gel Pen Set" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+                            <span class="absolute top-2 left-2 bg-folio-sage text-white text-[8px] font-bold px-2 py-0.5 rounded-md uppercase font-serif">
+                                0.5MM NIB
+                            </span>
+                            <span class="absolute top-2 right-2 bg-white/90 text-folio-charcoal text-[8px] font-bold px-2 py-0.5 rounded-md uppercase font-mono border border-folio-border">
+                                QUICK DRY INK
+                            </span>
+                        </div>
+
+                        <div class="flex items-center gap-1.5 mb-1 text-[10px] text-folio-sage font-bold uppercase font-mono">
+                            <i class="fa-solid fa-pen-nib"></i>
+                            <span>Tinta Cepat Kering • Grip Matte Lembut</span>
+                        </div>
+
+                        <h3 class="font-serif font-bold text-base text-folio-charcoal uppercase leading-tight">Vintage Gel Pen 0.5 Set</h3>
+                        <p class="text-xs text-folio-charcoal/80 mt-1 font-sans line-clamp-1">Set 5 pulpen bernuansa warna vintage retro (Vintage Black, Pine, Sepia).</p>
+                        
+                        <div class="mt-2 text-[10px] text-folio-sage">
+                            <span>Isi: 5 Pcs Warna Berbeda</span>
+                        </div>
+                    </div>
+
+                    <div class="mt-4 pt-3 border-t border-folio-border flex items-center justify-between">
+                        <div>
+                            <span class="text-[9px] text-folio-sage block uppercase">Harga Resmi</span>
+                            <span class="font-mono font-bold text-base text-folio-charcoal">Rp 48.000</span>
+                        </div>
+                        <a href="katalog.html" class="px-3.5 py-1.5 bg-folio-sage hover:bg-folio-sagedark text-white text-xs font-bold uppercase rounded-lg transition font-serif">
+                            Pesan WA
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Product 3: Washi Tape Aesthetic Vintage Pack (6 Rolls) -->
+                <div class="bg-white border border-folio-border rounded-3xl p-4 flex flex-col justify-between hover:border-folio-sage transition shadow-xs">
+                    <div>
+                        <div class="aspect-[4/3] bg-folio-kraftsoft rounded-2xl overflow-hidden mb-3 relative group border border-folio-border">
+                            <img src="https://images.unsplash.com/photo-1513519245088-0e12902e5a38?auto=format&fit=crop&w=500&q=80" alt="Washi Tape Vintage" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+                            <span class="absolute top-2 left-2 bg-folio-warmtan text-white text-[8px] font-bold px-2 py-0.5 rounded-md uppercase font-serif">
+                                6 ROLLS PACK
+                            </span>
+                            <span class="absolute top-2 right-2 bg-white/90 text-folio-sage text-[8px] font-bold px-2 py-0.5 rounded-md uppercase font-mono border border-folio-border">
+                                JAPANESE PAPER
+                            </span>
+                        </div>
+
+                        <div class="flex items-center gap-1.5 mb-1 text-[10px] text-folio-sage font-bold uppercase font-mono">
+                            <i class="fa-solid fa-tape"></i>
+                            <span>Mudah Dilepas • Bebas Residu Lem • Estetik</span>
+                        </div>
+
+                        <h3 class="font-serif font-bold text-base text-folio-charcoal uppercase leading-tight">Vintage Washi Tape Set</h3>
+                        <p class="text-xs text-folio-charcoal/80 mt-1 font-sans line-clamp-1">Pita selotip kertas motif botani dan kalender tanggal estetik.</p>
+                        
+                        <div class="mt-2 text-[10px] text-folio-sage">
+                            <span>Panjang: 5 Meter per Roll</span>
+                        </div>
+                    </div>
+
+                    <div class="mt-4 pt-3 border-t border-folio-border flex items-center justify-between">
+                        <div>
+                            <span class="text-[9px] text-folio-sage block uppercase">Harga Resmi</span>
+                            <span class="font-mono font-bold text-base text-folio-charcoal">Rp 35.000</span>
+                        </div>
+                        <a href="katalog.html" class="px-3.5 py-1.5 bg-folio-sage hover:bg-folio-sagedark text-white text-xs font-bold uppercase rounded-lg transition font-serif">
+                            Pesan WA
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Product 4: Undated Weekly Habit Planner (100 GSM) -->
+                <div class="bg-white border border-folio-border rounded-3xl p-4 flex flex-col justify-between hover:border-folio-sage transition shadow-xs">
+                    <div>
+                        <div class="aspect-[4/3] bg-folio-kraftsoft rounded-2xl overflow-hidden mb-3 relative group border border-folio-border">
+                            <img src="https://images.unsplash.com/photo-1506784983877-45594efa4cbe?auto=format&fit=crop&w=500&q=80" alt="Undated Weekly Habit Planner" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+                            <span class="absolute top-2 left-2 bg-folio-sage text-white text-[8px] font-bold px-2 py-0.5 rounded-md uppercase font-serif">
+                                UNDATED 52 WEEKS
+                            </span>
+                            <span class="absolute top-2 right-2 bg-white/90 text-folio-charcoal text-[8px] font-bold px-2 py-0.5 rounded-md uppercase font-mono border border-folio-border">
+                                SPIRAL GOLD
+                            </span>
+                        </div>
+
+                        <div class="flex items-center gap-1.5 mb-1 text-[10px] text-folio-sage font-bold uppercase font-mono">
+                            <i class="fa-solid fa-calendar-check"></i>
+                            <span>Bisa Mulai Kapan Saja • Habit Tracker Harian</span>
+                        </div>
+
+                        <h3 class="font-serif font-bold text-base text-folio-charcoal uppercase leading-tight">Undated Weekly Planner</h3>
+                        <p class="text-xs text-folio-charcoal/80 mt-1 font-sans line-clamp-1">Planner meja kerja spiral kawat emas tanpa batas tahun.</p>
+                        
+                        <div class="mt-2 text-[10px] text-folio-sage">
+                            <span>Format: Weekly Spread + Priority Box</span>
+                        </div>
+                    </div>
+
+                    <div class="mt-4 pt-3 border-t border-folio-border flex items-center justify-between">
+                        <div>
+                            <span class="text-[9px] text-folio-sage block uppercase">Harga Resmi</span>
+                            <span class="font-mono font-bold text-base text-folio-charcoal">Rp 65.000</span>
+                        </div>
+                        <a href="katalog.html" class="px-3.5 py-1.5 bg-folio-sage hover:bg-folio-sagedark text-white text-xs font-bold uppercase rounded-lg transition font-serif">
+                            Pesan WA
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+    <!-- 6. TESTIMONI PENGGIAT JOURNALING & ILUSTRATOR -->
+    <section class="py-16 bg-folio-kraftsoft border-b border-folio-border font-mono">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            
+            <div class="text-center max-w-2xl mx-auto mb-12">
+                <span class="text-xs font-mono uppercase tracking-[0.25em] text-folio-sage font-bold block mb-1">
+                    // CREATIVE COMMUNITY REVIEWS
+                </span>
+                <h2 class="text-2xl sm:text-4xl font-serif font-bold text-folio-charcoal uppercase tracking-tight">
+                    Kesan Para Penggiat Jurnal & Ilustrator
+                </h2>
+                <p class="text-xs sm:text-sm text-folio-charcoal/80 mt-1 font-sans">
+                    Ulasan nyata dari mereka yang mendedikasikan waktu setiap hari untuk menuangkan ide dan rencana di atas kertas.
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                
+                <div class="bg-white p-6 rounded-3xl border border-folio-border flex flex-col justify-between shadow-xs">
+                    <div>
+                        <div class="flex items-center gap-1 text-amber-500 text-xs mb-3">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                        <p class="text-xs text-folio-charcoal/80 leading-relaxed font-sans italic">
+                            "Sebagai pengguna fountain pen bertahun-tahun, susah banget cari jurnal lokal yang kertasnya nggak tembus atau bercabang (*feathering*). Kertas 120 GSM Folio & Kraft ini beneran solid, tintanya cepat kering dan warnanya keluar pekat!"
+                        </p>
+                    </div>
+                    <div class="mt-6 pt-3 border-t border-folio-border flex items-center justify-between text-xs">
+                        <strong class="text-folio-charcoal font-bold font-serif uppercase">Rania Pramesti</strong>
+                        <span class="text-[10px] bg-folio-sagesoft text-folio-sage px-2 py-0.5 rounded-md font-mono font-bold">Bullet Journalist — Jakarta</span>
+                    </div>
+                </div>
+
+                <div class="bg-white p-6 rounded-3xl border border-folio-border flex flex-col justify-between shadow-xs">
+                    <div>
+                        <div class="flex items-center gap-1 text-amber-500 text-xs mb-3">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                        <p class="text-xs text-folio-charcoal/80 leading-relaxed font-sans italic">
+                            "Jilid jahit benangnya juara banget! Bukunya bisa kebuka bener-bener rata 180 derajat di atas meja tanpa harus diganjal tangan. Bikin sesi gambar sketsa dan nulis to-do list harian jadi jauh lebih nyaman."
+                        </p>
+                    </div>
+                    <div class="mt-6 pt-3 border-t border-folio-border flex items-center justify-between text-xs">
+                        <strong class="text-folio-charcoal font-serif uppercase font-bold">Bagas Wicaksono</strong>
+                        <span class="text-[10px] bg-folio-sagesoft text-folio-sage px-2 py-0.5 rounded-md font-mono font-bold">Graphic Designer — Bandung</span>
+                    </div>
+                </div>
+
+                <div class="bg-white p-6 rounded-3xl border border-folio-border flex flex-col justify-between shadow-xs">
+                    <div>
+                        <div class="flex items-center gap-1 text-amber-500 text-xs mb-3">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                        <p class="text-xs text-folio-charcoal/80 leading-relaxed font-sans italic">
+                            "Pesan custom nama emboss emas untuk hadiah wisuda sahabat. Hasil ukiran foil emasnya sangat rapi dan kemasan gift box-nya elegan banget. Sangat direkomendasikan untuk kado bermakna."
+                        </p>
+                    </div>
+                    <div class="mt-6 pt-3 border-t border-folio-border flex items-center justify-between text-xs">
+                        <strong class="text-folio-charcoal font-serif uppercase font-bold">Nadia Safira</strong>
+                        <span class="text-[10px] bg-folio-sagesoft text-folio-sage px-2 py-0.5 rounded-md font-mono font-bold">Mahasiswi Pascasarjana — Depok</span>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+    <!-- 7. FOOTER -->
+    <footer class="bg-folio-charcoal text-folio-kraft border-t border-folio-border/30 pt-14 pb-28 font-mono">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-10">
+                
+                <div class="lg:col-span-2 space-y-4">
+                    <div class="flex items-center gap-3">
+                        <div class="w-9 h-9 bg-folio-sage text-white flex items-center justify-center text-lg font-serif font-black rounded-xl">
+                            <i class="fa-solid fa-feather-pointed"></i>
+                        </div>
+                        <span class="text-2xl font-serif font-black text-white uppercase tracking-tight">
+                            FOLIO & KRAFT<span class="text-folio-sagelight">.</span>
+                        </span>
+                    </div>
+                    <p class="text-xs text-folio-kraft/80 leading-relaxed max-w-sm font-sans">
+                        Lentera Pasar Aesthetic Paper Goods & Journal Studio Template. Menghadirkan buku jurnal tebal 120 GSM anti-tembus tinta, pulpen gel vintage, perlengkapan meja kerja, dan layanan custom emboss nama untuk mendukung budaya menulis tangan penuh kesadaran (*mindful handwriting*).
+                    </p>
+                    <div class="pt-2 text-xs text-folio-kraft/90 space-y-1 font-sans">
+                        <div><i class="fa-solid fa-location-dot text-folio-sagelight mr-2"></i> Studio: Jl. Wijaya I No. 28, Melawai, Kebayoran Baru, Jakarta Selatan 12160</div>
+                        <div><i class="fa-brands fa-whatsapp text-emerald-400 mr-2"></i> +62 812-3456-7890 (Custom Order & Pengadaan Hadiah Perusahaan)</div>
+                    </div>
+                </div>
+
+                <div>
+                    <h4 class="text-xs font-bold uppercase tracking-wider text-white mb-4">Navigasi Utama</h4>
+                    <ul class="space-y-2.5 text-xs text-folio-kraft/80">
+                        <li><a href="index.html" class="hover:text-folio-sagelight transition">Beranda Utama</a></li>
+                        <li><a href="katalog.html" class="hover:text-folio-sagelight transition">Katalog Jurnal</a></li>
+                        <li><a href="detail.html" class="hover:text-folio-sagelight transition">Detail Planner</a></li>
+                        <li><a href="tentang.html" class="hover:text-folio-sagelight transition">Standar Kertas</a></li>
+                        <li><a href="artikel.html" class="hover:text-folio-sagelight transition">Ide Bullet Journal</a></li>
+                        <li><a href="kontak.html" class="hover:text-folio-sagelight transition">Studio & Kontak</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h4 class="text-xs font-bold uppercase tracking-wider text-white mb-4">Koleksi Produk</h4>
+                    <ul class="space-y-2.5 text-xs text-folio-kraft/80">
+                        <li><a href="katalog.html" class="hover:text-folio-sagelight transition">Linen Hardcover Journal</a></li>
+                        <li><a href="katalog.html" class="hover:text-folio-sagelight transition">Undated Weekly Planner</a></li>
+                        <li><a href="katalog.html" class="hover:text-folio-sagelight transition">Vintage Gel Pen 0.5mm</a></li>
+                        <li><a href="katalog.html" class="hover:text-folio-sagelight transition">Washi Tape Botani Pack</a></li>
+                        <li><a href="katalog.html" class="hover:text-folio-sagelight transition">Buku Self-Improvement</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h4 class="text-xs font-bold uppercase tracking-wider text-white mb-4">Kualitas Kertas</h4>
+                    <div class="space-y-2 text-xs">
+                        <div class="p-3 bg-folio-sagedark/60 border border-folio-border/30 rounded-xl">
+                            <span class="text-[10px] text-folio-sagelight block uppercase font-bold font-serif">120 GSM ACID-FREE:</span>
+                            <span class="font-bold text-white text-[11px]">Tahan Tinta Fountain Pen</span>
+                        </div>
+                        <div class="p-3 bg-folio-sagedark/60 border border-folio-border/30 rounded-xl">
+                            <span class="text-[10px] text-amber-300 block uppercase font-bold font-serif">180° FLAT-LAY:</span>
+                            <span class="font-bold text-white text-[11px]">Jahit Benang Buka Rata</span>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="mt-12 pt-8 border-t border-folio-border/20 flex flex-col sm:flex-row items-center justify-between text-xs text-folio-kraft/60">
+                <p>&copy; 2026 FOLIO & KRAFT PAPER GOODS STUDIO. All Rights Reserved.</p>
+                <p class="text-[11px] mt-2 sm:mt-0 font-sans">Lentera Pasar Production Template — Aesthetic Stationery & Journal Goods</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- ========================================================================= -->
+    <!-- INTERACTIVE PAPER & LAYOUT FINDER MODAL                                   -->
+    <!-- ========================================================================= -->
+    <div id="paperModal" class="fixed inset-0 z-50 bg-black/80 backdrop-blur-xs hidden flex items-center justify-center p-4 font-mono">
+        <div class="bg-white border border-folio-border max-w-lg w-full p-6 sm:p-8 rounded-3xl shadow-2xl relative text-folio-charcoal">
+            <button onclick="closePaperModal()" class="absolute top-5 right-5 text-folio-sage hover:text-folio-charcoal border border-folio-border w-8 h-8 rounded-full flex items-center justify-center font-bold">
+                <i class="fa-solid fa-xmark"></i>
+            </button>
+            
+            <div class="flex items-center gap-3 mb-6">
+                <div class="w-10 h-10 bg-folio-sage text-white flex items-center justify-center text-lg rounded-2xl font-serif">
+                    <i class="fa-solid fa-book-open"></i>
+                </div>
+                <div>
+                    <h3 class="text-lg font-serif font-bold text-folio-charcoal uppercase">Paper Layout Finder</h3>
+                    <p class="text-xs text-folio-charcoal/80 font-sans">Pilih aktivitas utama Anda untuk menemukan tipe halaman jurnal yang paling pas.</p>
+                </div>
+            </div>
+
+            <div class="space-y-4 text-xs">
+                <div>
+                    <label class="block font-bold text-folio-charcoal mb-1.5 uppercase font-serif">Pilih Aktivitas Menulis:</label>
+                    <select id="activitySelect" onchange="updatePaperResult()" class="w-full p-3 border border-folio-border bg-folio-kraft text-folio-charcoal rounded-xl focus:outline-none focus:border-folio-sage text-xs font-mono font-bold">
+                        <option value="bujo">Bullet Journaling, Tracker & To-Do List Harian (Dotted)</option>
+                        <option value="planner">Perencanaan Jadwal Mingguan & Manajemen Waktu (Weekly Spread)</option>
+                        <option value="study">Catatan Kuliah, Tabel Data & Diagram Rapi (Grid)</option>
+                        <option value="diary">Curahan Hati, Esai & Menulis Diary Panjang (Ruled)</option>
+                        <option value="sketch">Ilustrasi Bebas, Kolase Stiker & Mindmapping (Blank)</option>
+                    </select>
+                </div>
+
+                <div id="paperResultBox" class="p-4 bg-folio-kraftsoft border border-folio-sage/40 rounded-2xl space-y-2">
+                    <div class="flex items-center justify-between">
+                        <span class="text-[10px] font-bold bg-folio-sage text-white px-2.5 py-0.5 rounded-md uppercase block font-serif">// REKOMENDASI FORMAT:</span>
+                        <span id="paperTag" class="text-[10px] font-bold text-folio-sage">Dotted Grid 5mm</span>
+                    </div>
+                    <h5 id="paperTitleDisplay" class="font-serif font-bold text-folio-charcoal text-base uppercase">Linen Hardcover Journal — Dotted Grid</h5>
+                    <p id="paperDescDisplay" class="text-[11px] text-folio-charcoal/80 font-sans leading-relaxed">
+                        Titik-titik 5mm abu-abu lembut memberikan panduan rapi membuat garis tabel tanpa mengganggu keindahan tulisan tangan Anda.
+                    </p>
+                </div>
+
+                <div class="pt-2 flex items-center justify-between gap-3">
+                    <a id="paperWaLink" href="https://wa.me/6281234567890?text=Halo%20Folio%20%26%20Kraft,%20saya%20tertarik%20dengan%20Linen%20Hardcover%20Journal%20Dotted%20Grid." target="_blank" class="w-full py-3.5 bg-folio-sage hover:bg-folio-sagedark text-white font-bold text-xs uppercase tracking-wider rounded-xl text-center transition shadow-lg folio-btn font-serif">
+                        Pesan Jurnal Ini via WhatsApp &rarr;
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ========================================================================= -->
+    <!-- FLOATING WHATSAPP BUTTON (bottom-24)                                      -->
+    <!-- ========================================================================= -->
+    <a href="https://wa.me/6281234567890?text=Halo%20Folio%20%26%20Kraft,%20saya%20ingin%20konsultasi%20jurnal%20dan%20alat%20tulis." 
+       target="_blank" 
+       class="fixed bottom-24 right-6 z-50 group flex items-center gap-3 bg-white hover:bg-folio-kraftsoft text-folio-charcoal px-4 py-3 border border-folio-border rounded-2xl shadow-2xl hover:border-folio-sage transition-all duration-300 font-mono" 
+       aria-label="Pesan Alat Tulis via WhatsApp">
+        <span class="relative flex h-3 w-3">
+            <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-folio-sage opacity-75"></span>
+            <span class="relative inline-flex rounded-full h-3 w-3 bg-folio-sage"></span>
+        </span>
+        <i class="fa-brands fa-whatsapp text-2xl text-emerald-600"></i>
+        <div class="text-left hidden sm:block pr-1">
+            <div class="text-[10px] text-folio-sage font-bold uppercase tracking-wider leading-none font-serif">Desk Stylist</div>
+            <span class="font-bold text-xs text-folio-charcoal">Custom Journal WA</span>
+        </div>
+    </a>
+
+    <!-- ========================================================================= -->
+    <!-- LENTERA PASAR - STICKY DEMO & SALES BAR (fixed bottom-4)                 -->
+    <!-- ========================================================================= -->
+    <div class="fixed bottom-4 left-1/2 -translate-x-1/2 z-50 w-[95%] max-w-4xl bg-slate-900/95 backdrop-blur-md text-white p-3.5 md:p-4 rounded-2xl shadow-2xl border border-slate-700/80 transition-all duration-300">
+      <div class="flex flex-col md:flex-row items-center justify-between gap-3 md:gap-4">
+        
+        <div class="flex items-center gap-3 w-full md:w-auto">
+          <div class="w-10 h-10 rounded-xl bg-emerald-500/20 border border-emerald-500/40 flex items-center justify-center shrink-0">
+            <svg class="w-5 h-5 text-emerald-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253" />
+            </svg>
+          </div>
+          <div>
+            <div class="flex items-center gap-2">
+              <span class="font-bold text-sm text-white">Lentera Pasar Engine</span>
+              <span class="text-[10px] bg-emerald-500/20 text-emerald-300 border border-emerald-500/30 px-2 py-0.5 rounded-full font-medium">Stationery & Book Template</span>
+            </div>
+            <p class="text-xs text-slate-300 hidden sm:block">
+              Terima beres: Website responsif + Panel input produk sendiri + Dikelola tim iklan profesional.
+            </p>
+          </div>
+        </div>
+
+        <div class="flex items-center justify-between md:justify-end gap-3 w-full md:w-auto">
+          <div class="hidden lg:flex items-center gap-2 text-xs text-slate-400 border-r border-slate-700 pr-4">
+            <div class="flex items-center gap-1 text-slate-200">
+              <svg class="w-4 h-4 text-emerald-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" /></svg>
+              <span>Editorial Desk</span>
+            </div>
+            <span class="text-slate-600">•</span>
+            <div class="flex items-center gap-1 text-slate-200">
+              <svg class="w-4 h-4 text-emerald-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" /></svg>
+              <span>120 GSM Bleed-Proof</span>
+            </div>
+          </div>
+
+          <a href="https://wa.me/6281234567890?text=Halo%20Tim%20Lentera%20Pasar,%20saya%20tertarik%20menggunakan%20template%20website%20Stationery%20%26%20Aesthetic%20Desk%20ini%20lengkap%20dengan%20Admin%20Panel%20dan%20Jasa%20Iklannya." 
+             target="_blank"
+             class="w-full md:w-auto inline-flex items-center justify-center gap-2 bg-gradient-to-r from-emerald-600 to-teal-600 hover:from-emerald-500 hover:to-teal-500 text-white text-xs md:text-sm font-bold px-5 py-2.5 rounded-xl shadow-lg transition-all hover:scale-105 shrink-0 font-serif">
+            <span>Gunakan Template Ini</span>
+            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3" />
+            </svg>
+          </a>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- SCRIPT LOGIC -->
+    <script>
+        const paperModal = document.getElementById('paperModal');
+        function openPaperModal() {
+            paperModal.classList.remove('hidden');
+            updatePaperResult();
+        }
+        function closePaperModal() {
+            paperModal.classList.add('hidden');
+        }
+
+        function updatePaperResult() {
+            const act = document.getElementById('activitySelect').value;
+            const titleDisp = document.getElementById('paperTitleDisplay');
+            const descDisp = document.getElementById('paperDescDisplay');
+            const tag = document.getElementById('paperTag');
+            const waLink = document.getElementById('paperWaLink');
+
+            if (act === 'bujo') {
+                titleDisp.innerText = "Linen Hardcover Journal — Dotted Grid 5mm";
+                descDisp.innerText = "Titik-titik 5mm abu-abu lembut memberikan panduan rapi membuat garis tabel to-do list tanpa mengganggu keindahan tulisan tangan Anda.";
+                tag.innerText = "Dotted Grid 5mm";
+                waLink.href = "https://wa.me/6281234567890?text=Halo%20Folio%20%26%20Kraft,%20saya%20tertarik%20dengan%20Linen%20Hardcover%20Journal%20Dotted%20Grid.";
+            } else if (act === 'planner') {
+                titleDisp.innerText = "Undated Weekly Habit Planner 52 Weeks";
+                descDisp.innerText = "Format kalender mingguan terbuka lapang dilengkapi kotak skala prioritas dan habit tracker harian tanpa batas tanggal.";
+                tag.innerText = "Weekly Planner";
+                waLink.href = "https://wa.me/6281234567890?text=Halo%20Folio%20%26%20Kraft,%20saya%20tertarik%20dengan%20Undated%20Weekly%20Planner.";
+            } else if (act === 'study') {
+                titleDisp.innerText = "Linen Hardcover Journal — Grid Squared 5mm";
+                descDisp.innerText = "Kotak-kotak simetris 5mm sangat sempurna untuk pencatatan rumus, bagan logika data, dan tabel keuangan yang rapi.";
+                tag.innerText = "Grid 5mm";
+                waLink.href = "https://wa.me/6281234567890?text=Halo%20Folio%20%26%20Kraft,%20saya%20tertarik%20dengan%20Linen%20Hardcover%20Journal%20Grid.";
+            } else if (act === 'diary') {
+                titleDisp.innerText = "Linen Hardcover Journal — Ruled Lined 7mm";
+                descDisp.innerText = "Jarak baris 7mm klasik yang sangat bersahabat untuk menuangkan ide-ide panjang, diary harian, dan refleksi pikiran.";
+                tag.innerText = "Ruled 7mm";
+                waLink.href = "https://wa.me/6281234567890?text=Halo%20Folio%20%26%20Kraft,%20saya%20tertarik%20dengan%20Linen%20Hardcover%20Journal%20Ruled.";
+            } else {
+                titleDisp.innerText = "Linen Hardcover Journal — Blank Unlined";
+                descDisp.innerText = "Kertas polos tebal 120 GSM bebas garis untuk kebebasan menggambar sketsa pensil, sapuan kuas kaligrafi, dan kolase washi tape.";
+                tag.innerText = "Blank Polos";
+                waLink.href = "https://wa.me/6281234567890?text=Halo%20Folio%20%26%20Kraft,%20saya%20tertarik%20dengan%20Linen%20Hardcover%20Journal%20Blank.";
+            }
+        }
+
+        // Mobile menu toggle
+        const mobileMenuBtn = document.getElementById('mobileMenuBtn');
+        const mobileMenu = document.getElementById('mobileMenu');
+        const menuIcon = document.getElementById('menuIcon');
+
+        mobileMenuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+            if (mobileMenu.classList.contains('hidden')) {
+                menuIcon.classList.remove('fa-xmark');
+                menuIcon.classList.add('fa-bars');
+            } else {
+                menuIcon.classList.remove('fa-bars');
+                menuIcon.classList.add('fa-xmark');
+            }
+        });
+    </script>
+</body>
+</html>

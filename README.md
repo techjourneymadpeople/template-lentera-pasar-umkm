@@ -57,6 +57,7 @@ template-website-umkm/
 │   ├── music-audio-studio/             # Gitar Akustik Spruce Solid, Ukulele Mahogany & Preamp (Sonora Guitars)
 │   ├── pet-care-haven/                 # Pakan Kucing Salmon 32% Protein, Pasir 10L & Minyak Ikan (PawParadise)
 │   ├── plants-botanical-greenhouse/    # Tanaman Indoor Monstera, Pot Terakota & Media Porous (Verdant Lab)
+│   ├── stationery-aesthetic-desk/      # Jurnal 120 GSM Bleed-Proof, Pulpen Vintage & Washi (Folio & Kraft)
 │   ├── gadget-phone-accessories/       # Case Hp, TWS, Charger & Gadget Acc
 │   ├── hobby-plant-monstera/           # Tanaman Hias, Pot Keramik & Pupuk Urban
 │   ├── hobby-aquatic-aquascape/        # Ikan Hias, Aquascape & Pakan Hewan
