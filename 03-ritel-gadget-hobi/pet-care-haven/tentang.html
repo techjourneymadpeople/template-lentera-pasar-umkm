@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="id" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Komitmen Nutrisi Sehat & Higienitas Petshop — PAWPARADISE</title>
+    <meta name="description" content="Kisah dedikasi PawParadise menjaga kesehatan anabul kesayangan dengan pakan protein hewani asli, kontrol kesegaran gudang ber-AC, dan konsultasi nutrisi gratis.">
+    
+    <!-- Google Fonts: Plus Jakarta Sans & Outfit -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@500;600;700;800;900&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Space+Grotesk:wght@600;700&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        paw: {
+                            orange: '#F97316',
+                            orangedark: '#EA580C',
+                            orangelight: '#FFEDD5',
+                            bg: '#FDFBF7',
+                            card: '#FFFFFF',
+                            cardsoft: '#F8F4EC',
+                            border: '#EADBC8',
+                            choco: '#43281C',
+                            chocolight: '#6B4226',
+                            mint: '#10B981',
+                            mintsoft: '#ECFDF5',
+                            sand: '#9C7A63'
+                        }
+                    },
+                    fontFamily: {
+                        sans: ['"Plus Jakarta Sans"', 'sans-serif'],
+                        display: ['"Outfit"', 'sans-serif'],
+                        mono: ['"Space Grotesk"', 'monospace']
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        .no-scrollbar::-webkit-scrollbar { display: none; }
+        .no-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
+        
+        .paw-btn {
+            transition: all 0.2s cubic-bezier(0.16, 1, 0.3, 1);
+        }
+        .paw-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 10px 25px -6px rgba(249, 115, 22, 0.45);
+        }
+    </style>
+</head>
+<body class="bg-paw-bg text-paw-choco font-sans antialiased selection:bg-paw-orange selection:text-white">
+
+    <!-- 1. TOP BAR -->
+    <div class="bg-paw-choco text-paw-orangelight text-xs py-2 px-4 font-mono font-bold border-b border-paw-border/30">
+        <div class="max-w-7xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-2 text-center sm:text-left">
+            <div class="flex items-center justify-center gap-2">
+                <span class="px-2 py-0.5 bg-paw-orange text-white text-[10px] uppercase font-display font-black tracking-wider rounded-md">
+                    PET NUTRITION ETHOS
+                </span>
+                <span class="text-white">Komitmen 100% Nutrisi Hewani Murni & Gudang Penyimpanan Sejuk Ber-AC</span>
+            </div>
+            <div class="flex items-center gap-4 text-xs font-mono">
+                <a href="katalog.html" class="text-paw-orange hover:text-white underline font-extrabold transition">Koleksi Pakan & Pasir &rarr;</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- 2. NAVBAR -->
+    <header class="sticky top-0 z-40 bg-paw-bg/95 backdrop-blur-md border-b border-paw-border transition-all">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-20 sm:h-24">
+                
+                <a href="index.html" class="flex items-center gap-3 group">
+                    <div class="w-11 h-11 bg-paw-orange text-white flex items-center justify-center text-xl font-display font-black rounded-2xl shadow-lg group-hover:bg-paw-choco transition">
+                        <i class="fa-solid fa-paw"></i>
+                    </div>
+                    <div class="flex flex-col">
+                        <span class="text-2xl sm:text-3xl font-display font-black tracking-tight text-paw-choco uppercase leading-none">
+                            PAWPARADISE<span class="text-paw-orange">.</span>
+                        </span>
+                        <span class="text-[9px] font-mono tracking-[0.25em] text-paw-orange uppercase mt-1 font-bold">
+                            HEALTHY NUTRITION & PET CARE
+                        </span>
+                    </div>
+                </a>
+
+                <nav class="hidden lg:flex items-center gap-8 text-xs font-bold tracking-wider uppercase text-paw-sand font-mono">
+                    <a href="index.html" class="hover:text-paw-orange transition">Beranda</a>
+                    <a href="katalog.html" class="hover:text-paw-orange transition">Katalog Pakan</a>
+                    <a href="detail.html" class="hover:text-paw-orange transition">Detail Salmon Kibble</a>
+                    <a href="tentang.html" class="text-paw-orange border-b-2 border-paw-orange pb-1">Standar Nutrisi</a>
+                    <a href="artikel.html" class="hover:text-paw-orange transition">Tips Anabul</a>
+                    <a href="kontak.html" class="hover:text-paw-orange transition">Petshop & Delivery</a>
+                </nav>
+
+                <div class="hidden sm:flex items-center gap-3 font-mono">
+                    <a href="https://wa.me/6281234567890?text=Halo%20PawParadise,%20saya%20tertarik%20dengan%20standar%20kualitas%20pakan%20anabul%20Anda." target="_blank" class="inline-flex items-center gap-2 bg-paw-orange hover:bg-paw-orangedark text-white text-xs font-bold tracking-wider px-5 py-2.5 rounded-xl transition-all shadow-lg font-mono paw-btn font-display">
+                        <i class="fa-brands fa-whatsapp text-base"></i>
+                        <span>Chat Tim Nutrisi</span>
+                    </a>
+                </div>
+
+                <button id="mobileMenuBtn" class="lg:hidden p-2 text-paw-choco hover:text-paw-orange focus:outline-none" aria-label="Toggle Menu">
+                    <i id="menuIcon" class="fa-solid fa-bars text-xl"></i>
+                </button>
+            </div>
+        </div>
+
+        <!-- Mobile Drawer -->
+        <div id="mobileMenu" class="hidden lg:hidden bg-white border-b border-paw-border px-4 py-5 space-y-3 font-mono">
+            <a href="index.html" class="block text-xs font-bold uppercase tracking-wider text-paw-choco hover:text-paw-orange py-2 border-b border-paw-border">Beranda Utama</a>
+            <a href="katalog.html" class="block text-xs font-bold uppercase tracking-wider text-paw-choco hover:text-paw-orange py-2 border-b border-paw-border">Katalog Makanan & Pasir</a>
+            <a href="detail.html" class="block text-xs font-bold uppercase tracking-wider text-paw-choco hover:text-paw-orange py-2 border-b border-paw-border">Detail Pakan Salmon Kucing</a>
+            <a href="tentang.html" class="block text-xs font-bold uppercase tracking-wider text-paw-orange py-2 border-b border-paw-border">Standar Nutrisi Sehat</a>
+            <a href="artikel.html" class="block text-xs font-bold uppercase tracking-wider text-paw-choco hover:text-paw-orange py-2 border-b border-paw-border">Tips Perawatan & Bulu Rontok</a>
+            <a href="kontak.html" class="block text-xs font-bold uppercase tracking-wider text-paw-choco hover:text-paw-orange py-2">Petshop Radio Dalam & Order</a>
+        </div>
+    </header>
+
+    <!-- 3. BRAND ETHOS & PET HAVEN SECTION -->
+    <section class="py-16 sm:py-24 border-b border-paw-border bg-gradient-to-b from-paw-bg via-paw-cardsoft to-paw-bg font-mono">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+                
+                <div class="lg:col-span-7 space-y-6">
+                    <div class="inline-flex items-center gap-2 px-3.5 py-1.5 bg-white border border-paw-border text-paw-orange text-xs font-bold tracking-wider rounded-full shadow-xs">
+                        <span class="w-2 h-2 rounded-full bg-paw-orange"></span>
+                        <span class="uppercase tracking-widest text-[10px] font-display">DEVOTION TO ANIMAL WELLNESS</span>
+                    </div>
+
+                    <h1 class="text-4xl sm:text-6xl font-display font-black text-paw-choco tracking-tight uppercase leading-[1.02]">
+                        DIBUAT DENGAN CINTA, <br>
+                        UNTUK KESEHATAN <br>
+                        <span class="text-paw-orange">ANABUL SEJATI.</span>
+                    </h1>
+
+                    <p class="text-paw-chocolight text-sm sm:text-base leading-relaxed font-sans font-normal">
+                        PawParadise didirikan oleh para pencinta kucing dan anjing di Jakarta Selatan yang sangat peduli terhadap apa yang masuk ke dalam mangkuk pakan anabul. Kami menolak penggunaan bahan pengisi murahan seperti tepung bulu dan pewarna sintesis. Bagi kami, anabul adalah anggota keluarga yang berhak mendapatkan nutrisi terbaik, higienis, dan lezat setiap hari.
+                    </p>
+
+                    <div class="pt-4 grid grid-cols-1 sm:grid-cols-3 gap-4 text-xs font-mono">
+                        <div class="p-4 bg-white border border-paw-border rounded-2xl shadow-xs">
+                            <span class="text-paw-orange block text-[10px] uppercase font-bold font-display">STANDAR 01</span>
+                            <strong class="text-paw-choco text-base font-bold block mt-1 font-display">Real Meat 100%</strong>
+                            <span class="text-paw-chocolight font-sans text-xs">Tanpa pewarna atau bahan kimia.</span>
+                        </div>
+                        <div class="p-4 bg-white border border-paw-border rounded-2xl shadow-xs">
+                            <span class="text-emerald-700 block text-[10px] uppercase font-bold font-display">STANDAR 02</span>
+                            <strong class="text-paw-choco text-base font-bold block mt-1 font-display">Gudang Suhu AC</strong>
+                            <span class="text-paw-chocolight font-sans text-xs">Kibble tetap renyah bebas jamur.</span>
+                        </div>
+                        <div class="p-4 bg-white border border-paw-border rounded-2xl shadow-xs">
+                            <span class="text-amber-700 block text-[10px] uppercase font-bold font-display">STANDAR 03</span>
+                            <strong class="text-paw-choco text-base font-bold block mt-1 font-display">Antar Instan 2 Jam</strong>
+                            <span class="text-paw-chocolight font-sans text-xs">Solusi darurat pakan habis.</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="lg:col-span-5">
+                    <div class="border border-paw-border rounded-3xl aspect-[3/4] bg-white relative group overflow-hidden shadow-2xl">
+                        <img src="https://images.unsplash.com/photo-1548767797-d8c844163c4c?auto=format&fit=crop&w=800&q=80" alt="PawParadise Petshop Hub Showcase" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700">
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent flex flex-col justify-end p-6 text-white font-mono">
+                            <span class="text-[9px] font-bold text-paw-orange uppercase tracking-widest font-display">// PETSHOP & GROOMING HUB</span>
+                            <h4 class="text-base font-display font-bold text-white uppercase">Radio Dalam Pet Care Hub & Fresh Kitchen</h4>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- 4. EMPAT PILAR KUALITAS PAWPARADISE -->
+    <section class="py-20 bg-paw-cardsoft border-b border-paw-border font-mono">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            
+            <div class="text-center max-w-2xl mx-auto mb-16">
+                <span class="text-xs font-mono uppercase tracking-[0.25em] text-paw-orange font-bold block mb-1">
+                    // 4 PILAR STANDAR LAYANAN PAWPARADISE
+                </span>
+                <h2 class="text-2xl sm:text-4xl font-display font-black text-paw-choco uppercase tracking-tight">
+                    Komitmen Nutrisi & Kualitas
+                </h2>
+                <p class="text-xs sm:text-sm text-paw-chocolight mt-1 font-sans">
+                    Standar bahan baku daging murni, kontrol kesegaran kemasan, dan kecepatan respon pengiriman instan.
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+                
+                <div class="p-6 bg-white border border-paw-border rounded-2xl flex flex-col justify-between hover:border-paw-orange transition shadow-xs">
+                    <div>
+                        <div class="w-10 h-10 bg-paw-orangelight text-paw-orange flex items-center justify-center text-lg mb-4 rounded-xl font-display">
+                            <i class="fa-solid fa-fish"></i>
+                        </div>
+                        <h4 class="text-base font-display font-bold text-paw-choco uppercase">Human-Grade Ingredients</h4>
+                        <p class="text-xs text-paw-chocolight mt-2 leading-relaxed font-sans font-normal">
+                            Semua pakan kibble dan basah diproduksi dari daging ikan salmon liar, tuna, dan ayam utuh tanpa jeroan berlebih atau pewarna buatan.
+                        </p>
+                    </div>
+                    <div class="mt-6 pt-3 border-t border-paw-border text-[11px] font-bold text-paw-orange uppercase font-display">
+                        100% Daging Asli Bernutrisi
+                    </div>
+                </div>
+
+                <div class="p-6 bg-white border border-paw-border rounded-2xl flex flex-col justify-between hover:border-paw-orange transition shadow-xs">
+                    <div>
+                        <div class="w-10 h-10 bg-emerald-100 text-emerald-600 flex items-center justify-center text-lg mb-4 rounded-xl font-display">
+                            <i class="fa-solid fa-snowflake"></i>
+                        </div>
+                        <h4 class="text-base font-display font-bold text-paw-choco uppercase">Storage Suhu Ber-AC</h4>
+                        <p class="text-xs text-paw-chocolight mt-2 leading-relaxed font-sans font-normal">
+                            Gudang petshop kami dilengkapi pendingin ruangan bersuhu 22°C bebas kelembapan untuk menjaga minyak alami pada kibble tidak tengik atau berjamur.
+                        </p>
+                    </div>
+                    <div class="mt-6 pt-3 border-t border-paw-border text-[11px] font-bold text-emerald-700 uppercase font-display">
+                        Kerenyahan & Rasa Terjaga
+                    </div>
+                </div>
+
+                <div class="p-6 bg-white border border-paw-border rounded-2xl flex flex-col justify-between hover:border-paw-orange transition shadow-xs">
+                    <div>
+                        <div class="w-10 h-10 bg-amber-100 text-amber-600 flex items-center justify-center text-lg mb-4 rounded-xl font-display">
+                            <i class="fa-solid fa-truck-fast"></i>
+                        </div>
+                        <h4 class="text-base font-display font-bold text-paw-choco uppercase">Emergency Delivery 2 Jam</h4>
+                        <p class="text-xs text-paw-chocolight mt-2 leading-relaxed font-sans font-normal">
+                            Layanan kurir instan GoSend/GrabExpress siap mengantarkan pakan dan pasir anabul darurat dalam waktu 2 jam ke area Jabodetabek.
+                        </p>
+                    </div>
+                    <div class="mt-6 pt-3 border-t border-paw-border text-[11px] font-bold text-amber-700 uppercase font-display">
+                        Respon Cepat Tanggap
+                    </div>
+                </div>
+
+                <div class="p-6 bg-white border border-paw-border rounded-2xl flex flex-col justify-between hover:border-paw-orange transition shadow-xs">
+                    <div>
+                        <div class="w-10 h-10 bg-paw-cardsoft text-paw-choco flex items-center justify-center text-lg mb-4 rounded-xl border border-paw-border font-display">
+                            <i class="fa-solid fa-user-doctor"></i>
+                        </div>
+                        <h4 class="text-base font-display font-bold text-paw-choco uppercase">Konsultasi Nutrisi Gratis</h4>
+                        <p class="text-xs text-paw-chocolight mt-2 leading-relaxed font-sans font-normal">
+                            Tim pet nutritionist kami siap membantu menghitung porsi pakan ideal, merekomendasikan formula bulu rontok, dan mendampingi transisi pakan anabul via WhatsApp.
+                        </p>
+                    </div>
+                    <div class="mt-6 pt-3 border-t border-paw-border text-[11px] font-bold text-paw-choco uppercase font-display">
+                        Bimbingan Nutrisi Ramah
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+    <!-- 5. FOOTER -->
+    <footer class="bg-paw-choco text-paw-orangelight border-t border-paw-border/30 pt-14 pb-28 font-mono">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex flex-col md:flex-row items-center justify-between gap-6 border-b border-paw-border/20 pb-8">
+                <div class="flex items-center gap-3">
+                    <div class="w-8 h-8 bg-paw-orange text-white flex items-center justify-center text-base font-display font-black rounded-xl">
+                        <i class="fa-solid fa-paw"></i>
+                    </div>
+                    <span class="text-xl font-display font-black text-white uppercase tracking-tight">
+                        PAWPARADISE<span class="text-paw-orange">.</span>
+                    </span>
+                </div>
+                <div class="flex flex-wrap gap-6 text-xs text-paw-orangelight font-bold uppercase tracking-wider font-display">
+                    <a href="index.html" class="hover:text-paw-orange">Beranda</a>
+                    <a href="katalog.html" class="hover:text-paw-orange">Katalog</a>
+                    <a href="detail.html" class="hover:text-paw-orange">Detail</a>
+                    <a href="tentang.html" class="text-paw-orange">Standar Nutrisi</a>
+                    <a href="artikel.html" class="hover:text-paw-orange">Tips Anabul</a>
+                    <a href="kontak.html" class="hover:text-paw-orange">Petshop</a>
+                </div>
+            </div>
+            <div class="mt-6 flex flex-col sm:flex-row items-center justify-between text-xs text-paw-orangelight/60">
+                <p>&copy; 2026 PAWPARADISE PET CARE & NUTRITION LAB. All Rights Reserved.</p>
+                <p class="text-[11px] mt-2 sm:mt-0 font-sans">Lentera Pasar Production Template — Pet Care & Nutritional Supplies</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- FLOATING WHATSAPP BUTTON (bottom-24) -->
+    <a href="https://wa.me/6281234567890?text=Halo%20PawParadise,%20saya%20ingin%20konsultasi%20makanan%20anabul." 
+       target="_blank" 
+       class="fixed bottom-24 right-6 z-50 group flex items-center gap-3 bg-white hover:bg-paw-cardsoft text-paw-choco px-4 py-3 border border-paw-orange/40 rounded-2xl shadow-2xl hover:border-paw-orange transition-all duration-300 font-mono">
+        <span class="relative flex h-3 w-3">
+            <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-paw-orange opacity-75"></span>
+            <span class="relative inline-flex rounded-full h-3 w-3 bg-paw-orange"></span>
+        </span>
+        <i class="fa-brands fa-whatsapp text-2xl text-emerald-500"></i>
+        <div class="text-left hidden sm:block pr-1">
+            <div class="text-[10px] text-paw-orange font-bold uppercase tracking-wider leading-none font-display">Pet Nutritionist</div>
+            <span class="font-bold text-xs text-paw-choco">Order Pakan WA</span>
+        </div>
+    </a>
+
+    <!-- LENTERA PASAR - STICKY DEMO & SALES BAR (fixed bottom-4) -->
+    <div class="fixed bottom-4 left-1/2 -translate-x-1/2 z-50 w-[95%] max-w-4xl bg-slate-900/95 backdrop-blur-md text-white p-3.5 md:p-4 rounded-2xl shadow-2xl border border-slate-700/80 transition-all duration-300">
+      <div class="flex flex-col md:flex-row items-center justify-between gap-3 md:gap-4">
+        <div class="flex items-center gap-3 w-full md:w-auto">
+          <div class="w-10 h-10 rounded-xl bg-orange-500/20 border border-orange-500/40 flex items-center justify-center shrink-0">
+            <svg class="w-5 h-5 text-orange-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+            </svg>
+          </div>
+          <div>
+            <div class="flex items-center gap-2">
+              <span class="font-bold text-sm text-white">Lentera Pasar Engine</span>
+              <span class="text-[10px] bg-orange-500/20 text-orange-300 border border-orange-500/30 px-2 py-0.5 rounded-full font-medium">Pet Supplies & Haven Template</span>
+            </div>
+            <p class="text-xs text-slate-300 hidden sm:block">
+              Terima beres: Website responsif + Panel input produk sendiri + Dikelola tim iklan profesional.
+            </p>
+          </div>
+        </div>
+
+        <div class="flex items-center justify-between md:justify-end gap-3 w-full md:w-auto">
+          <a href="https://wa.me/6281234567890?text=Halo%20Tim%20Lentera%20Pasar,%20saya%20tertarik%20menggunakan%20template%20website%20Pet%20Care%20%26%20Haven%20ini%20lengkap%20dengan%20Admin%20Panel%20dan%20Jasa%20Iklannya." 
+             target="_blank"
+             class="w-full md:w-auto inline-flex items-center justify-center gap-2 bg-gradient-to-r from-orange-500 to-amber-500 hover:from-orange-600 hover:to-amber-600 text-white text-xs md:text-sm font-bold px-5 py-2.5 rounded-xl shadow-lg transition-all hover:scale-105 shrink-0 font-display">
+            <span>Gunakan Template Ini</span>
+            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3" />
+            </svg>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <!-- SCRIPT -->
+    <script>
+        const mobileMenuBtn = document.getElementById('mobileMenuBtn');
+        const mobileMenu = document.getElementById('mobileMenu');
+        const menuIcon = document.getElementById('menuIcon');
+
+        mobileMenuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+            if (mobileMenu.classList.contains('hidden')) {
+                menuIcon.classList.remove('fa-xmark');
+                menuIcon.classList.add('fa-bars');
+            } else {
+                menuIcon.classList.remove('fa-bars');
+                menuIcon.classList.add('fa-xmark');
+            }
+        });
+    </script>
+</body>
+</html>

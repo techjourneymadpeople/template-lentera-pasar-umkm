@@ -1,0 +1,727 @@
+<!DOCTYPE html>
+<html lang="id" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Katalog Pakan, Pasir & Perawatan Anabul — PAWPARADISE</title>
+    <meta name="description" content="Katalog makanan kucing & anjing protein tinggi, pasir gumpal wangi 10L, wet food pouch, minyak salmon omega-3, dan vitamin bulu dengan pengiriman cepat instan.">
+    
+    <!-- Google Fonts: Plus Jakarta Sans & Outfit -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@500;600;700;800;900&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Space+Grotesk:wght@600;700&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        paw: {
+                            orange: '#F97316',
+                            orangedark: '#EA580C',
+                            orangelight: '#FFEDD5',
+                            bg: '#FDFBF7',
+                            card: '#FFFFFF',
+                            cardsoft: '#F8F4EC',
+                            border: '#EADBC8',
+                            choco: '#43281C',
+                            chocolight: '#6B4226',
+                            mint: '#10B981',
+                            mintsoft: '#ECFDF5',
+                            sand: '#9C7A63'
+                        }
+                    },
+                    fontFamily: {
+                        sans: ['"Plus Jakarta Sans"', 'sans-serif'],
+                        display: ['"Outfit"', 'sans-serif'],
+                        mono: ['"Space Grotesk"', 'monospace']
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        .no-scrollbar::-webkit-scrollbar { display: none; }
+        .no-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
+        
+        .paw-btn {
+            transition: all 0.2s cubic-bezier(0.16, 1, 0.3, 1);
+        }
+        .paw-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 10px 25px -6px rgba(249, 115, 22, 0.45);
+        }
+    </style>
+</head>
+<body class="bg-paw-bg text-paw-choco font-sans antialiased selection:bg-paw-orange selection:text-white">
+
+    <!-- 1. TOP BAR -->
+    <div class="bg-paw-choco text-paw-orangelight text-xs py-2 px-4 font-mono font-bold border-b border-paw-border/30">
+        <div class="max-w-7xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-2 text-center sm:text-left">
+            <div class="flex items-center justify-center gap-2">
+                <span class="px-2 py-0.5 bg-paw-orange text-white text-[10px] uppercase font-display font-black tracking-wider rounded-md">
+                    EXPRESS DELIVERY
+                </span>
+                <span class="text-white">Pakan Kucing & Anjing Fresh Expired Panjang • Pasir Gumpal Cepat</span>
+            </div>
+            <div class="flex items-center gap-4 text-xs font-mono">
+                <a href="kontak.html" class="text-paw-orange hover:text-white underline font-extrabold transition">Lokasi Petshop & Antar Instan &rarr;</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- 2. NAVBAR -->
+    <header class="sticky top-0 z-40 bg-paw-bg/95 backdrop-blur-md border-b border-paw-border transition-all">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-20 sm:h-24">
+                
+                <a href="index.html" class="flex items-center gap-3 group">
+                    <div class="w-11 h-11 bg-paw-orange text-white flex items-center justify-center text-xl font-display font-black rounded-2xl shadow-lg group-hover:bg-paw-choco transition">
+                        <i class="fa-solid fa-paw"></i>
+                    </div>
+                    <div class="flex flex-col">
+                        <span class="text-2xl sm:text-3xl font-display font-black tracking-tight text-paw-choco uppercase leading-none">
+                            PAWPARADISE<span class="text-paw-orange">.</span>
+                        </span>
+                        <span class="text-[9px] font-mono tracking-[0.25em] text-paw-orange uppercase mt-1 font-bold">
+                            HEALTHY NUTRITION & PET CARE
+                        </span>
+                    </div>
+                </a>
+
+                <nav class="hidden lg:flex items-center gap-8 text-xs font-bold tracking-wider uppercase text-paw-sand font-mono">
+                    <a href="index.html" class="hover:text-paw-orange transition">Beranda</a>
+                    <a href="katalog.html" class="text-paw-orange border-b-2 border-paw-orange pb-1">Katalog Pakan</a>
+                    <a href="detail.html" class="hover:text-paw-orange transition">Detail Salmon Kibble</a>
+                    <a href="tentang.html" class="hover:text-paw-orange transition">Standar Nutrisi</a>
+                    <a href="artikel.html" class="hover:text-paw-orange transition">Tips Anabul</a>
+                    <a href="kontak.html" class="hover:text-paw-orange transition">Petshop & Delivery</a>
+                </nav>
+
+                <div class="hidden sm:flex items-center gap-3 font-mono">
+                    <a href="https://wa.me/6281234567890?text=Halo%20PawParadise,%20saya%20mau%20pesan%20produk%20dari%20katalog." target="_blank" class="inline-flex items-center gap-2 bg-paw-orange hover:bg-paw-orangedark text-white text-xs font-bold tracking-wider px-5 py-2.5 rounded-xl transition-all shadow-lg font-mono paw-btn font-display">
+                        <i class="fa-brands fa-whatsapp text-base"></i>
+                        <span>Order via WA</span>
+                    </a>
+                </div>
+
+                <button id="mobileMenuBtn" class="lg:hidden p-2 text-paw-choco hover:text-paw-orange focus:outline-none" aria-label="Toggle Menu">
+                    <i id="menuIcon" class="fa-solid fa-bars text-xl"></i>
+                </button>
+            </div>
+        </div>
+
+        <!-- Mobile Drawer -->
+        <div id="mobileMenu" class="hidden lg:hidden bg-white border-b border-paw-border px-4 py-5 space-y-3 font-mono">
+            <a href="index.html" class="block text-xs font-bold uppercase tracking-wider text-paw-choco hover:text-paw-orange py-2 border-b border-paw-border">Beranda Utama</a>
+            <a href="katalog.html" class="block text-xs font-bold uppercase tracking-wider text-paw-orange py-2 border-b border-paw-border">Katalog Makanan & Pasir</a>
+            <a href="detail.html" class="block text-xs font-bold uppercase tracking-wider text-paw-choco hover:text-paw-orange py-2 border-b border-paw-border">Detail Pakan Salmon Kucing</a>
+            <a href="tentang.html" class="block text-xs font-bold uppercase tracking-wider text-paw-choco hover:text-paw-orange py-2 border-b border-paw-border">Standar Nutrisi Sehat</a>
+            <a href="artikel.html" class="block text-xs font-bold uppercase tracking-wider text-paw-choco hover:text-paw-orange py-2 border-b border-paw-border">Tips Perawatan & Bulu Rontok</a>
+            <a href="kontak.html" class="block text-xs font-bold uppercase tracking-wider text-paw-choco hover:text-paw-orange py-2">Petshop Radio Dalam & Order</a>
+        </div>
+    </header>
+
+    <!-- 3. PAGE HEADER & FILTER CONTROLS -->
+    <section class="py-12 bg-paw-cardsoft border-b border-paw-border font-mono">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="max-w-3xl">
+                <div class="inline-flex items-center gap-2 px-3 py-1 bg-white border border-paw-border text-paw-orange text-xs font-bold tracking-wider mb-3 rounded-full shadow-xs">
+                    <span class="w-2 h-2 rounded-full bg-paw-orange"></span>
+                    <span class="uppercase tracking-widest text-[10px] font-display">PET FOOD & CARE CATALOG</span>
+                </div>
+                <h1 class="text-3xl sm:text-5xl font-display font-black text-paw-choco tracking-tight uppercase">
+                    Katalog Pakan & Perlengkapan Anabul
+                </h1>
+                <p class="text-xs sm:text-sm text-paw-chocolight mt-2 font-sans leading-relaxed">
+                    Filter berdasarkan kategori makanan kering (kibble), makanan basah kaldu, pasir kucing gumpal wangi, fase usia anakan hingga dewasa, dan suplemen bulu.
+                </p>
+            </div>
+
+            <!-- Search & Filter Controls -->
+            <div class="mt-8 grid grid-cols-1 md:grid-cols-12 gap-4">
+                <!-- Search Box -->
+                <div class="md:col-span-6 relative">
+                    <i class="fa-solid fa-magnifying-glass absolute left-4 top-1/2 -translate-y-1/2 text-paw-sand text-xs"></i>
+                    <input type="text" id="searchInput" placeholder="Cari produk (misal: Salmon 1.5kg, Pasir Lavender, Wet Food Tuna, Minyak Ikan)..." 
+                           class="w-full pl-10 pr-4 py-3 bg-white border border-paw-border rounded-xl text-xs text-paw-choco focus:outline-none focus:border-paw-orange transition font-sans font-medium shadow-xs">
+                </div>
+
+                <!-- Age / Formula Filter Dropdown -->
+                <div class="md:col-span-3">
+                    <select id="stageFilter" onchange="applyAllFilters()" class="w-full py-3 px-4 bg-white border border-paw-border rounded-xl text-xs font-bold text-paw-choco focus:outline-none focus:border-paw-orange transition font-display uppercase shadow-xs">
+                        <option value="all">Semua Fase Usia Anabul</option>
+                        <option value="kitten">Kitten & Puppy (< 1 Tahun)</option>
+                        <option value="adult">Adult Dewasa (1 - 7 Tahun)</option>
+                        <option value="litter">Pasir Gumpal (All Cat)</option>
+                        <option value="vitamin">Vitamin & Suplemen Bulu</option>
+                    </select>
+                </div>
+
+                <!-- Fast WhatsApp Inquiry -->
+                <div class="md:col-span-3">
+                    <a href="https://wa.me/6281234567890?text=Halo%20PawParadise,%20saya%20mau%20order%20cepat%20kurir%20instan%20sekarang." target="_blank" class="w-full h-full py-3 px-4 bg-paw-orange hover:bg-paw-orangedark text-white text-xs font-bold flex items-center justify-center gap-2 rounded-xl transition font-display uppercase shadow-md paw-btn">
+                        <i class="fa-solid fa-truck-fast text-white"></i>
+                        <span>Order Antar Instan WA</span>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Category Pills -->
+            <div class="mt-6 flex items-center gap-2 overflow-x-auto no-scrollbar pb-2 font-mono">
+                <span class="text-xs font-bold text-paw-choco shrink-0 mr-1 uppercase tracking-wider font-display">Kategori:</span>
+                <button onclick="filterCategory('all')" class="cat-pill active px-4 py-2 text-xs font-bold tracking-wider rounded-xl transition bg-paw-orange text-white font-display" data-cat="all">
+                    SEMUA PRODUK
+                </button>
+                <button onclick="filterCategory('dry')" class="cat-pill px-4 py-2 text-xs font-bold tracking-wider rounded-xl transition bg-white text-paw-chocolight hover:text-paw-orange border border-paw-border font-display" data-cat="dry">
+                    MAKANAN KERING (DRY)
+                </button>
+                <button onclick="filterCategory('wet')" class="cat-pill px-4 py-2 text-xs font-bold tracking-wider rounded-xl transition bg-white text-paw-chocolight hover:text-paw-orange border border-paw-border font-display" data-cat="wet">
+                    MAKANAN BASAH (WET POUCH)
+                </button>
+                <button onclick="filterCategory('litter')" class="cat-pill px-4 py-2 text-xs font-bold tracking-wider rounded-xl transition bg-white text-paw-chocolight hover:text-paw-orange border border-paw-border font-display" data-cat="litter">
+                    PASIR KUCING GUMPAL
+                </button>
+                <button onclick="filterCategory('vitamin')" class="cat-pill px-4 py-2 text-xs font-bold tracking-wider rounded-xl transition bg-white text-paw-chocolight hover:text-paw-orange border border-paw-border font-display" data-cat="vitamin">
+                    VITAMIN & PERAWATAN
+                </button>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- 4. PRODUCT GRID -->
+    <section class="py-16 bg-paw-bg font-mono">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            
+            <div class="flex items-center justify-between mb-8">
+                <div class="text-xs text-paw-chocolight font-bold">
+                    Menampilkan <span id="productCount" class="font-black text-white bg-paw-orange px-2 py-0.5 rounded-md">8</span> Produk Pakan & Perawatan Ready Stock
+                </div>
+                <div class="text-xs text-emerald-600 flex items-center gap-1.5 font-bold">
+                    <i class="fa-solid fa-shield-heart text-emerald-500"></i>
+                    <span>100% Real Meat & Fresh Stock Guaranteed</span>
+                </div>
+            </div>
+
+            <!-- Grid Items -->
+            <div id="productsGrid" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+
+                <!-- ITEM 1: PawParadise Wild Salmon Cat Kibble 1.5kg -->
+                <div class="product-item bg-white border border-paw-border rounded-2xl p-4 flex flex-col justify-between hover:border-paw-orange transition shadow-xs" 
+                     data-cat="dry" data-stage="adult" data-title="PawParadise Wild Salmon Tuna Cat Kibble Makanan Kering Kucing 1.5kg Bulu Sehat">
+                    <div>
+                        <div class="aspect-[4/3] bg-paw-cardsoft rounded-xl overflow-hidden mb-3 relative group border border-paw-border">
+                            <img src="https://images.unsplash.com/photo-1548767797-d8c844163c4c?auto=format&fit=crop&w=500&q=80" alt="PawParadise Salmon 1.5kg" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+                            <span class="absolute top-2 left-2 bg-paw-orange text-white text-[8px] font-bold px-2 py-0.5 rounded-md uppercase font-display">
+                                32% PROTEIN
+                            </span>
+                            <span class="absolute top-2 right-2 bg-white/90 text-paw-choco text-[8px] font-bold px-2 py-0.5 rounded-md uppercase font-mono border border-paw-border">
+                                1.5 KG
+                            </span>
+                        </div>
+
+                        <div class="flex items-center gap-1.5 mb-1 text-[10px] text-paw-orange font-bold uppercase font-mono">
+                            <i class="fa-solid fa-fish"></i>
+                            <span>Wild Salmon • Omega 3 • Hairball Care</span>
+                        </div>
+
+                        <h3 class="font-display font-bold text-base text-paw-choco uppercase leading-tight">PawParadise Salmon 1.5kg</h3>
+                        <p class="text-xs text-paw-chocolight mt-1 font-sans line-clamp-1">Kibble daging salmon lezat untuk bulu tebal bebas rontok.</p>
+                        
+                        <div class="mt-2 text-[10px] text-paw-sand">
+                            <span>Fase: Kucing Dewasa & Kitten (All Life Stages)</span>
+                        </div>
+                    </div>
+
+                    <div class="mt-4 pt-3 border-t border-paw-border flex items-center justify-between">
+                        <div>
+                            <span class="text-[9px] text-paw-sand block uppercase">Harga Resmi</span>
+                            <span class="font-mono font-bold text-base text-paw-orange">Rp 85.000</span>
+                        </div>
+                        <div class="flex items-center gap-1">
+                            <a href="detail.html" class="p-2 bg-paw-cardsoft hover:bg-paw-orangelight text-paw-choco rounded-lg text-xs transition" title="Lihat Detail">
+                                <i class="fa-solid fa-eye"></i>
+                            </a>
+                            <a href="https://wa.me/6281234567890?text=Halo%20PawParadise,%20saya%20mau%20pesan%20PawParadise%20Salmon%201.5kg%20(Rp%2085.000)." target="_blank" class="px-3 py-1.5 bg-paw-orange hover:bg-paw-orangedark text-white text-xs font-bold uppercase rounded-lg transition font-display">
+                                Pesan WA
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- ITEM 2: PawParadise Kitten Starter Real Chicken 1.5kg -->
+                <div class="product-item bg-white border border-paw-border rounded-2xl p-4 flex flex-col justify-between hover:border-paw-orange transition shadow-xs" 
+                     data-cat="dry" data-stage="kitten" data-title="PawParadise Kitten Starter Real Chicken Makanan Anak Kucing 1.5kg Protein 34">
+                    <div>
+                        <div class="aspect-[4/3] bg-paw-cardsoft rounded-xl overflow-hidden mb-3 relative group border border-paw-border">
+                            <img src="https://images.unsplash.com/photo-1548767797-d8c844163c4c?auto=format&fit=crop&w=500&q=80" alt="Kitten Starter Chicken" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+                            <span class="absolute top-2 left-2 bg-amber-500 text-white text-[8px] font-bold px-2 py-0.5 rounded-md uppercase font-display">
+                                34% PROTEIN KITTEN
+                            </span>
+                            <span class="absolute top-2 right-2 bg-white/90 text-paw-choco text-[8px] font-bold px-2 py-0.5 rounded-md uppercase font-mono border border-paw-border">
+                                BUTIRAN KECIL
+                            </span>
+                        </div>
+
+                        <div class="flex items-center gap-1.5 mb-1 text-[10px] text-amber-700 font-bold uppercase font-mono">
+                            <i class="fa-solid fa-drumstick-bite"></i>
+                            <span>Real Chicken • Kalsium Tulang • DHA Otak</span>
+                        </div>
+
+                        <h3 class="font-display font-bold text-base text-paw-choco uppercase leading-tight">Kitten Starter Chicken 1.5kg</h3>
+                        <p class="text-xs text-paw-chocolight mt-1 font-sans line-clamp-1">Kibble mini empuk khusus rahang anak kucing 2-12 bulan.</p>
+                        
+                        <div class="mt-2 text-[10px] text-paw-sand">
+                            <span>Nutrisi: Ekstra Kalsium & Susu Kambing Alami</span>
+                        </div>
+                    </div>
+
+                    <div class="mt-4 pt-3 border-t border-paw-border flex items-center justify-between">
+                        <div>
+                            <span class="text-[9px] text-paw-sand block uppercase">Harga Resmi</span>
+                            <span class="font-mono font-bold text-base text-paw-orange">Rp 92.000</span>
+                        </div>
+                        <div class="flex items-center gap-1">
+                            <a href="detail.html" class="p-2 bg-paw-cardsoft hover:bg-paw-orangelight text-paw-choco rounded-lg text-xs transition">
+                                <i class="fa-solid fa-eye"></i>
+                            </a>
+                            <a href="https://wa.me/6281234567890?text=Halo%20PawParadise,%20saya%20mau%20pesan%20Kitten%20Starter%201.5kg%20(Rp%2092.000)." target="_blank" class="px-3 py-1.5 bg-paw-orange hover:bg-paw-orangedark text-white text-xs font-bold uppercase rounded-lg transition font-display">
+                                Pesan WA
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- ITEM 3: Clumping Bentonite Cat Litter 10L Lavender -->
+                <div class="product-item bg-white border border-paw-border rounded-2xl p-4 flex flex-col justify-between hover:border-paw-orange transition shadow-xs" 
+                     data-cat="litter" data-stage="litter" data-title="Clumping Bentonite Cat Litter Pasir Kucing Gumpal Wangi Lavender 10 Liter">
+                    <div>
+                        <div class="aspect-[4/3] bg-paw-cardsoft rounded-xl overflow-hidden mb-3 relative group border border-paw-border">
+                            <img src="https://images.unsplash.com/photo-1514888286974-6c03e2ca1dba?auto=format&fit=crop&w=500&q=80" alt="Pasir Kucing Lavender 10L" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+                            <span class="absolute top-2 left-2 bg-emerald-600 text-white text-[8px] font-bold px-2 py-0.5 rounded-md uppercase font-display">
+                                GUMPAL 3 DETIK
+                            </span>
+                            <span class="absolute top-2 right-2 bg-white/90 text-paw-choco text-[8px] font-bold px-2 py-0.5 rounded-md uppercase font-mono border border-paw-border">
+                                10 LITER
+                            </span>
+                        </div>
+
+                        <div class="flex items-center gap-1.5 mb-1 text-[10px] text-emerald-700 font-bold uppercase font-mono">
+                            <i class="fa-solid fa-sparkles"></i>
+                            <span>Wangi Lavender • Anti-Debu 99.5% • Cepat Kering</span>
+                        </div>
+
+                        <h3 class="font-display font-bold text-base text-paw-choco uppercase leading-tight">Clumping Litter 10L</h3>
+                        <p class="text-xs text-paw-chocolight mt-1 font-sans line-clamp-1">Pasir bentonit gumpal padat tanpa bau pesing di dalam rumah.</p>
+                        
+                        <div class="mt-2 text-[10px] text-paw-sand">
+                            <span>Varian Aroma: Lavender Floral Segar</span>
+                        </div>
+                    </div>
+
+                    <div class="mt-4 pt-3 border-t border-paw-border flex items-center justify-between">
+                        <div>
+                            <span class="text-[9px] text-paw-sand block uppercase">Harga Resmi</span>
+                            <span class="font-mono font-bold text-base text-paw-orange">Rp 52.000</span>
+                        </div>
+                        <div class="flex items-center gap-1">
+                            <a href="detail.html" class="p-2 bg-paw-cardsoft hover:bg-paw-orangelight text-paw-choco rounded-lg text-xs transition">
+                                <i class="fa-solid fa-eye"></i>
+                            </a>
+                            <a href="https://wa.me/6281234567890?text=Halo%20PawParadise,%20saya%20mau%20pesan%20Clumping%20Litter%2010L%20(Rp%2052.000)." target="_blank" class="px-3 py-1.5 bg-paw-orange hover:bg-paw-orangedark text-white text-xs font-bold uppercase rounded-lg transition font-display">
+                                Pesan WA
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- ITEM 4: Clumping Bentonite Cat Litter 10L Roasted Coffee -->
+                <div class="product-item bg-white border border-paw-border rounded-2xl p-4 flex flex-col justify-between hover:border-paw-orange transition shadow-xs" 
+                     data-cat="litter" data-stage="litter" data-title="Clumping Bentonite Cat Litter Pasir Kucing Gumpal Kopi Roasted Coffee 10 Liter">
+                    <div>
+                        <div class="aspect-[4/3] bg-paw-cardsoft rounded-xl overflow-hidden mb-3 relative group border border-paw-border">
+                            <img src="https://images.unsplash.com/photo-1514888286974-6c03e2ca1dba?auto=format&fit=crop&w=500&q=80" alt="Pasir Kucing Kopi 10L" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+                            <span class="absolute top-2 left-2 bg-paw-choco text-white text-[8px] font-bold px-2 py-0.5 rounded-md uppercase font-display">
+                                AROMA KOPI
+                            </span>
+                            <span class="absolute top-2 right-2 bg-white/90 text-paw-choco text-[8px] font-bold px-2 py-0.5 rounded-md uppercase font-mono border border-paw-border">
+                                10 LITER
+                            </span>
+                        </div>
+
+                        <div class="flex items-center gap-1.5 mb-1 text-[10px] text-paw-choco font-bold uppercase font-mono">
+                            <i class="fa-solid fa-mug-hot"></i>
+                            <span>Roasted Coffee • Serap Bau Ekstrem • Bebas Debu</span>
+                        </div>
+
+                        <h3 class="font-display font-bold text-base text-paw-choco uppercase leading-tight">Clumping Litter Kopi 10L</h3>
+                        <p class="text-xs text-paw-chocolight mt-1 font-sans line-clamp-1">Aroma biji kopi harum yang efektif menetralkan bau amonia.</p>
+                        
+                        <div class="mt-2 text-[10px] text-paw-sand">
+                            <span>Varian Aroma: Roasted Coffee Bean</span>
+                        </div>
+                    </div>
+
+                    <div class="mt-4 pt-3 border-t border-paw-border flex items-center justify-between">
+                        <div>
+                            <span class="text-[9px] text-paw-sand block uppercase">Harga Resmi</span>
+                            <span class="font-mono font-bold text-base text-paw-orange">Rp 52.000</span>
+                        </div>
+                        <div class="flex items-center gap-1">
+                            <a href="detail.html" class="p-2 bg-paw-cardsoft hover:bg-paw-orangelight text-paw-choco rounded-lg text-xs transition">
+                                <i class="fa-solid fa-eye"></i>
+                            </a>
+                            <a href="https://wa.me/6281234567890?text=Halo%20PawParadise,%20saya%20mau%20pesan%20Pasir%20Kopi%2010L%20(Rp%2052.000)." target="_blank" class="px-3 py-1.5 bg-paw-orange hover:bg-paw-orangedark text-white text-xs font-bold uppercase rounded-lg transition font-display">
+                                Pesan WA
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- ITEM 5: Pure Tuna Wet Food Pouch Pack of 12 -->
+                <div class="product-item bg-white border border-paw-border rounded-2xl p-4 flex flex-col justify-between hover:border-paw-orange transition shadow-xs" 
+                     data-cat="wet" data-stage="adult" data-title="Pure Tuna Wet Food Makanan Basah Kucing Pouch Kaldu Dus 12 Pcs">
+                    <div>
+                        <div class="aspect-[4/3] bg-paw-cardsoft rounded-xl overflow-hidden mb-3 relative group border border-paw-border">
+                            <img src="https://images.unsplash.com/photo-1548767797-d8c844163c4c?auto=format&fit=crop&w=500&q=80" alt="Wet Food Pouch Tuna" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+                            <span class="absolute top-2 left-2 bg-paw-orange text-white text-[8px] font-bold px-2 py-0.5 rounded-md uppercase font-display">
+                                DUS 12 POUCH
+                            </span>
+                            <span class="absolute top-2 right-2 bg-white/90 text-paw-sand text-[8px] font-bold px-2 py-0.5 rounded-md uppercase font-mono border border-paw-border">
+                                12 X 85G
+                            </span>
+                        </div>
+
+                        <div class="flex items-center gap-1.5 mb-1 text-[10px] text-paw-orange font-bold uppercase font-mono">
+                            <i class="fa-solid fa-bowl-food"></i>
+                            <span>Daging Tuna Asli • Kuah Kaldu • Hidrasi Ginjal</span>
+                        </div>
+
+                        <h3 class="font-display font-bold text-base text-paw-choco uppercase leading-tight">Pure Tuna Pouch (12 Pcs)</h3>
+                        <p class="text-xs text-paw-chocolight mt-1 font-sans line-clamp-1">Makanan basah kucing untuk nafsu makan ekstra dan hidrasi.</p>
+                        
+                        <div class="mt-2 text-[10px] text-paw-sand">
+                            <span>Kemasan: 12 Pouch x 85g Praktis Sekali Makan</span>
+                        </div>
+                    </div>
+
+                    <div class="mt-4 pt-3 border-t border-paw-border flex items-center justify-between">
+                        <div>
+                            <span class="text-[9px] text-paw-sand block uppercase">Harga Resmi</span>
+                            <span class="font-mono font-bold text-base text-paw-orange">Rp 75.000</span>
+                        </div>
+                        <div class="flex items-center gap-1">
+                            <a href="detail.html" class="p-2 bg-paw-cardsoft hover:bg-paw-orangelight text-paw-choco rounded-lg text-xs transition">
+                                <i class="fa-solid fa-eye"></i>
+                            </a>
+                            <a href="https://wa.me/6281234567890?text=Halo%20PawParadise,%20saya%20mau%20pesan%20Pure%20Tuna%20Pouch%2012pcs%20(Rp%2075.000)." target="_blank" class="px-3 py-1.5 bg-paw-orange hover:bg-paw-orangedark text-white text-xs font-bold uppercase rounded-lg transition font-display">
+                                Pesan WA
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- ITEM 6: Creamy Cat Treat Lickable Sticks (Pack of 20) -->
+                <div class="product-item bg-white border border-paw-border rounded-2xl p-4 flex flex-col justify-between hover:border-paw-orange transition shadow-xs" 
+                     data-cat="wet" data-stage="adult" data-title="Creamy Cat Treat Lickable Sticks Camilan Snack Kucing Menjilat 20 Sticks">
+                    <div>
+                        <div class="aspect-[4/3] bg-paw-cardsoft rounded-xl overflow-hidden mb-3 relative group border border-paw-border">
+                            <img src="https://images.unsplash.com/photo-1548767797-d8c844163c4c?auto=format&fit=crop&w=500&q=80" alt="Creamy Cat Treat" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+                            <span class="absolute top-2 left-2 bg-emerald-600 text-white text-[8px] font-bold px-2 py-0.5 rounded-md uppercase font-display">
+                                20 STICKS
+                            </span>
+                            <span class="absolute top-2 right-2 bg-white/90 text-paw-sand text-[8px] font-bold px-2 py-0.5 rounded-md uppercase font-mono border border-paw-border">
+                                SNACK CREAMY
+                            </span>
+                        </div>
+
+                        <div class="flex items-center gap-1.5 mb-1 text-[10px] text-emerald-700 font-bold uppercase font-mono">
+                            <i class="fa-solid fa-heart"></i>
+                            <span>Snack Menjilat • Menjinakkan Kucing • Kaya Prebiotik</span>
+                        </div>
+
+                        <h3 class="font-display font-bold text-base text-paw-choco uppercase leading-tight">Creamy Treats (20 Sticks)</h3>
+                        <p class="text-xs text-paw-chocolight mt-1 font-sans line-clamp-1">Camilan basah menjilat kesukaan kucing untuk bonding bermain.</p>
+                        
+                        <div class="mt-2 text-[10px] text-paw-sand">
+                            <span>Varian: Salmon, Ayam & Tuna Mix</span>
+                        </div>
+                    </div>
+
+                    <div class="mt-4 pt-3 border-t border-paw-border flex items-center justify-between">
+                        <div>
+                            <span class="text-[9px] text-paw-sand block uppercase">Harga Resmi</span>
+                            <span class="font-mono font-bold text-base text-paw-orange">Rp 45.000</span>
+                        </div>
+                        <div class="flex items-center gap-1">
+                            <a href="detail.html" class="p-2 bg-paw-cardsoft hover:bg-paw-orangelight text-paw-choco rounded-lg text-xs transition">
+                                <i class="fa-solid fa-eye"></i>
+                            </a>
+                            <a href="https://wa.me/6281234567890?text=Halo%20PawParadise,%20saya%20mau%20pesan%20Creamy%20Treats%2020pcs%20(Rp%2045.000)." target="_blank" class="px-3 py-1.5 bg-paw-orange hover:bg-paw-orangedark text-white text-xs font-bold uppercase rounded-lg transition font-display">
+                                Pesan WA
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- ITEM 7: Wild Salmon Oil Omega-3 Coat & Skin 100ml -->
+                <div class="product-item bg-white border border-paw-border rounded-2xl p-4 flex flex-col justify-between hover:border-paw-orange transition shadow-xs" 
+                     data-cat="vitamin" data-stage="vitamin" data-title="Wild Salmon Oil Omega-3 Coat Skin Minyak Ikan Salmon Anabul Kucing Anjing 100ml">
+                    <div>
+                        <div class="aspect-[4/3] bg-paw-cardsoft rounded-xl overflow-hidden mb-3 relative group border border-paw-border">
+                            <img src="https://images.unsplash.com/photo-1583511655857-d19b40a7a54e?auto=format&fit=crop&w=500&q=80" alt="Minyak Ikan Salmon 100ml" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+                            <span class="absolute top-2 left-2 bg-amber-500 text-white text-[8px] font-bold px-2 py-0.5 rounded-md uppercase font-display">
+                                PURE OMEGA-3
+                            </span>
+                            <span class="absolute top-2 right-2 bg-white/90 text-paw-sand text-[8px] font-bold px-2 py-0.5 rounded-md uppercase font-mono border border-paw-border">
+                                100 ML
+                            </span>
+                        </div>
+
+                        <div class="flex items-center gap-1.5 mb-1 text-[10px] text-amber-700 font-bold uppercase font-mono">
+                            <i class="fa-solid fa-droplet"></i>
+                            <span>Bulu Halus Mengkilap • Anti-Rontok • Nafsu Makan</span>
+                        </div>
+
+                        <h3 class="font-display font-bold text-base text-paw-choco uppercase leading-tight">Salmon Oil Drop 100ml</h3>
+                        <p class="text-xs text-paw-chocolight mt-1 font-sans line-clamp-1">Minyak salmon murni untuk dicampurkan ke makanan harian anabul.</p>
+                        
+                        <div class="mt-2 text-[10px] text-paw-sand">
+                            <span>Manfaat: Memperkuat Akar Bulu & Kesehatan Jantung</span>
+                        </div>
+                    </div>
+
+                    <div class="mt-4 pt-3 border-t border-paw-border flex items-center justify-between">
+                        <div>
+                            <span class="text-[9px] text-paw-sand block uppercase">Harga Resmi</span>
+                            <span class="font-mono font-bold text-base text-paw-orange">Rp 48.000</span>
+                        </div>
+                        <div class="flex items-center gap-1">
+                            <a href="detail.html" class="p-2 bg-paw-cardsoft hover:bg-paw-orangelight text-paw-choco rounded-lg text-xs transition">
+                                <i class="fa-solid fa-eye"></i>
+                            </a>
+                            <a href="https://wa.me/6281234567890?text=Halo%20PawParadise,%20saya%20mau%20pesan%20Salmon%20Oil%20100ml%20(Rp%2048.000)." target="_blank" class="px-3 py-1.5 bg-paw-orange hover:bg-paw-orangedark text-white text-xs font-bold uppercase rounded-lg transition font-display">
+                                Pesan WA
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- ITEM 8: PawParadise Repack Hemat Salmon Kibble 8kg -->
+                <div class="product-item bg-white border border-paw-border rounded-2xl p-4 flex flex-col justify-between hover:border-paw-orange transition shadow-xs" 
+                     data-cat="dry" data-stage="adult" data-title="PawParadise Repack Hemat Salmon Kibble Makanan Kucing Karung 8kg Fresh Vacuum">
+                    <div>
+                        <div class="aspect-[4/3] bg-paw-cardsoft rounded-xl overflow-hidden mb-3 relative group border border-paw-border">
+                            <img src="https://images.unsplash.com/photo-1548767797-d8c844163c4c?auto=format&fit=crop&w=500&q=80" alt="Karung Hemat 8kg" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+                            <span class="absolute top-2 left-2 bg-emerald-600 text-white text-[8px] font-bold px-2 py-0.5 rounded-md uppercase font-display">
+                                SUPER HEMAT
+                            </span>
+                            <span class="absolute top-2 right-2 bg-white/90 text-paw-choco text-[8px] font-bold px-2 py-0.5 rounded-md uppercase font-mono border border-paw-border">
+                                8 KG
+                            </span>
+                        </div>
+
+                        <div class="flex items-center gap-1.5 mb-1 text-[10px] text-emerald-700 font-bold uppercase font-mono">
+                            <i class="fa-solid fa-boxes-stacked"></i>
+                            <span>Kemasan Karung 8kg • Vacuum Fresh • Hemat 25%</span>
+                        </div>
+
+                        <h3 class="font-display font-bold text-base text-paw-choco uppercase leading-tight">Karung Hemat Salmon 8kg</h3>
+                        <p class="text-xs text-paw-chocolight mt-1 font-sans line-clamp-1">Pilihan hemat untuk pemilik banyak anabul (*multi-cat household*).</p>
+                        
+                        <div class="mt-2 text-[10px] text-paw-sand">
+                            <span>Kemasan: Karung Double Seal Bebas Kutu</span>
+                        </div>
+                    </div>
+
+                    <div class="mt-4 pt-3 border-t border-paw-border flex items-center justify-between">
+                        <div>
+                            <span class="text-[9px] text-paw-sand block uppercase">Harga Resmi</span>
+                            <span class="font-mono font-bold text-base text-paw-orange">Rp 385.000</span>
+                        </div>
+                        <div class="flex items-center gap-1">
+                            <a href="detail.html" class="p-2 bg-paw-cardsoft hover:bg-paw-orangelight text-paw-choco rounded-lg text-xs transition">
+                                <i class="fa-solid fa-eye"></i>
+                            </a>
+                            <a href="https://wa.me/6281234567890?text=Halo%20PawParadise,%20saya%20mau%20pesan%20Karung%20Hemat%20Salmon%208kg%20(Rp%20385.000)." target="_blank" class="px-3 py-1.5 bg-paw-orange hover:bg-paw-orangedark text-white text-xs font-bold uppercase rounded-lg transition font-display">
+                                Pesan WA
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- Empty State -->
+            <div id="noResults" class="hidden text-center py-16 bg-white rounded-3xl border border-paw-border mt-8 shadow-xs">
+                <i class="fa-solid fa-paw text-3xl text-paw-orange mb-3"></i>
+                <h4 class="text-base font-display font-bold text-paw-choco uppercase">Produk Anabul Tidak Ditemukan</h4>
+                <p class="text-xs text-paw-chocolight mt-1 max-w-sm mx-auto font-sans">
+                    Coba ubah kata kunci pencarian atau reset filter untuk melihat seluruh katalog makanan kucing, anjing, dan pasir kami.
+                </p>
+                <button onclick="resetFilters()" class="mt-4 px-6 py-2.5 bg-paw-orange text-white rounded-xl text-xs font-bold uppercase tracking-wider transition font-display paw-btn">
+                    Reset Filter
+                </button>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- 5. FOOTER -->
+    <footer class="bg-paw-choco text-paw-orangelight border-t border-paw-border/30 pt-14 pb-28 font-mono">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex flex-col md:flex-row items-center justify-between gap-6 border-b border-paw-border/20 pb-8">
+                <div class="flex items-center gap-3">
+                    <div class="w-8 h-8 bg-paw-orange text-white flex items-center justify-center text-base font-display font-black rounded-xl">
+                        <i class="fa-solid fa-paw"></i>
+                    </div>
+                    <span class="text-xl font-display font-black text-white uppercase tracking-tight">
+                        PAWPARADISE<span class="text-paw-orange">.</span>
+                    </span>
+                </div>
+                <div class="flex flex-wrap gap-6 text-xs text-paw-orangelight font-bold uppercase tracking-wider font-display">
+                    <a href="index.html" class="hover:text-paw-orange">Beranda</a>
+                    <a href="katalog.html" class="text-paw-orange">Katalog</a>
+                    <a href="detail.html" class="hover:text-paw-orange">Detail</a>
+                    <a href="tentang.html" class="hover:text-paw-orange">Standar Nutrisi</a>
+                    <a href="artikel.html" class="hover:text-paw-orange">Tips Anabul</a>
+                    <a href="kontak.html" class="hover:text-paw-orange">Petshop</a>
+                </div>
+            </div>
+            <div class="mt-6 flex flex-col sm:flex-row items-center justify-between text-xs text-paw-orangelight/60">
+                <p>&copy; 2026 PAWPARADISE PET CARE & NUTRITION LAB. All Rights Reserved.</p>
+                <p class="text-[11px] mt-2 sm:mt-0 font-sans">Lentera Pasar Production Template — Pet Care & Nutritional Supplies</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- FLOATING WHATSAPP BUTTON (bottom-24) -->
+    <a href="https://wa.me/6281234567890?text=Halo%20PawParadise,%20saya%20ingin%20konsultasi%20makanan%20anabul." 
+       target="_blank" 
+       class="fixed bottom-24 right-6 z-50 group flex items-center gap-3 bg-white hover:bg-paw-cardsoft text-paw-choco px-4 py-3 border border-paw-orange/40 rounded-2xl shadow-2xl hover:border-paw-orange transition-all duration-300 font-mono">
+        <span class="relative flex h-3 w-3">
+            <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-paw-orange opacity-75"></span>
+            <span class="relative inline-flex rounded-full h-3 w-3 bg-paw-orange"></span>
+        </span>
+        <i class="fa-brands fa-whatsapp text-2xl text-emerald-500"></i>
+        <div class="text-left hidden sm:block pr-1">
+            <div class="text-[10px] text-paw-orange font-bold uppercase tracking-wider leading-none font-display">Pet Nutritionist</div>
+            <span class="font-bold text-xs text-paw-choco">Order Pakan WA</span>
+        </div>
+    </a>
+
+    <!-- LENTERA PASAR - STICKY DEMO & SALES BAR (fixed bottom-4) -->
+    <div class="fixed bottom-4 left-1/2 -translate-x-1/2 z-50 w-[95%] max-w-4xl bg-slate-900/95 backdrop-blur-md text-white p-3.5 md:p-4 rounded-2xl shadow-2xl border border-slate-700/80 transition-all duration-300">
+      <div class="flex flex-col md:flex-row items-center justify-between gap-3 md:gap-4">
+        <div class="flex items-center gap-3 w-full md:w-auto">
+          <div class="w-10 h-10 rounded-xl bg-orange-500/20 border border-orange-500/40 flex items-center justify-center shrink-0">
+            <svg class="w-5 h-5 text-orange-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+            </svg>
+          </div>
+          <div>
+            <div class="flex items-center gap-2">
+              <span class="font-bold text-sm text-white">Lentera Pasar Engine</span>
+              <span class="text-[10px] bg-orange-500/20 text-orange-300 border border-orange-500/30 px-2 py-0.5 rounded-full font-medium">Pet Supplies & Haven Template</span>
+            </div>
+            <p class="text-xs text-slate-300 hidden sm:block">
+              Terima beres: Website responsif + Panel input produk sendiri + Dikelola tim iklan profesional.
+            </p>
+          </div>
+        </div>
+
+        <div class="flex items-center justify-between md:justify-end gap-3 w-full md:w-auto">
+          <a href="https://wa.me/6281234567890?text=Halo%20Tim%20Lentera%20Pasar,%20saya%20tertarik%20menggunakan%20template%20website%20Pet%20Care%20%26%20Haven%20ini%20lengkap%20dengan%20Admin%20Panel%20dan%20Jasa%20Iklannya." 
+             target="_blank"
+             class="w-full md:w-auto inline-flex items-center justify-center gap-2 bg-gradient-to-r from-orange-500 to-amber-500 hover:from-orange-600 hover:to-amber-600 text-white text-xs md:text-sm font-bold px-5 py-2.5 rounded-xl shadow-lg transition-all hover:scale-105 shrink-0 font-display">
+            <span>Gunakan Template Ini</span>
+            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3" />
+            </svg>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <!-- JAVASCRIPT FILTER LOGIC -->
+    <script>
+        let currentCat = 'all';
+
+        function filterCategory(cat) {
+            currentCat = cat;
+            document.querySelectorAll('.cat-pill').forEach(btn => {
+                if (btn.dataset.cat === cat) {
+                    btn.classList.remove('bg-white', 'text-paw-chocolight', 'border', 'border-paw-border');
+                    btn.classList.add('bg-paw-orange', 'text-white', 'font-bold');
+                } else {
+                    btn.classList.remove('bg-paw-orange', 'text-white', 'font-bold');
+                    btn.classList.add('bg-white', 'text-paw-chocolight', 'border', 'border-paw-border');
+                }
+            });
+            applyAllFilters();
+        }
+
+        document.getElementById('searchInput').addEventListener('input', applyAllFilters);
+
+        function applyAllFilters() {
+            const query = document.getElementById('searchInput').value.toLowerCase().trim();
+            const stage = document.getElementById('stageFilter').value;
+            const items = document.querySelectorAll('.product-item');
+            let visibleCount = 0;
+
+            items.forEach(item => {
+                const itemCat = item.dataset.cat;
+                const itemStage = item.dataset.stage || '';
+                const itemTitle = (item.dataset.title || '').toLowerCase();
+
+                const matchCat = (currentCat === 'all' || itemCat === currentCat);
+                const matchStage = (stage === 'all' || itemStage === stage || itemStage === 'all');
+                const matchQuery = (!query || itemTitle.includes(query));
+
+                if (matchCat && matchStage && matchQuery) {
+                    item.classList.remove('hidden');
+                    visibleCount++;
+                } else {
+                    item.classList.add('hidden');
+                }
+            });
+
+            document.getElementById('productCount').innerText = visibleCount;
+            const noRes = document.getElementById('noResults');
+            if (visibleCount === 0) {
+                noRes.classList.remove('hidden');
+            } else {
+                noRes.classList.add('hidden');
+            }
+        }
+
+        function resetFilters() {
+            document.getElementById('searchInput').value = '';
+            document.getElementById('stageFilter').value = 'all';
+            filterCategory('all');
+        }
+
+        // Mobile menu toggle
+        const mobileMenuBtn = document.getElementById('mobileMenuBtn');
+        const mobileMenu = document.getElementById('mobileMenu');
+        const menuIcon = document.getElementById('menuIcon');
+
+        mobileMenuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+            if (mobileMenu.classList.contains('hidden')) {
+                menuIcon.classList.remove('fa-xmark');
+                menuIcon.classList.add('fa-bars');
+            } else {
+                menuIcon.classList.remove('fa-bars');
+                menuIcon.classList.add('fa-xmark');
+            }
+        });
+    </script>
+</body>
+</html>
