@@ -48,6 +48,7 @@ template-website-umkm/
 │
 ├── 📁 03-ritel-gadget-hobi/            # [BIDANG 3 - Ritel, Gadget & Hobi]
 │   ├── gadget-mobile-tech/             # Aksesoris HP, Charger GaN 65W, TWS ANC & Powerbank (Voltix Tech)
+│   ├── gaming-peripherals-studio/      # Mechanical Keyboard Gasket, Ultralight Mouse & Deskmat (Keycraft Studio)
 │   ├── gadget-phone-accessories/       # Case Hp, TWS, Charger & Gadget Acc
 │   ├── hobby-plant-monstera/           # Tanaman Hias, Pot Keramik & Pupuk Urban
 │   ├── hobby-aquatic-aquascape/        # Ikan Hias, Aquascape & Pakan Hewan

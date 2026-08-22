@@ -1,0 +1,842 @@
+<!DOCTYPE html>
+<html lang="id" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KEYCRAFT // Custom Mechanical Keyboard & Desk Setup Studio</title>
+    <meta name="description" content="Studio periferal gaming dan custom mechanical keyboard: Gasket mount keyboard, switch lubed pabrik, ultralight wireless mouse, dan deskmat estetik.">
+    
+    <!-- Google Fonts: Space Grotesk & Plus Jakarta Sans -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        neo: {
+                            bg: '#FDFDFE',
+                            dark: '#121212',
+                            lime: '#CCFF00',
+                            limedark: '#A3CC00',
+                            cyan: '#06B6D4',
+                            coral: '#FF5757',
+                            card: '#FFFFFF',
+                            slate: '#F4F4F5',
+                            border: '#121212'
+                        }
+                    },
+                    fontFamily: {
+                        sans: ['"Plus Jakarta Sans"', 'sans-serif'],
+                        mono: ['"Space Grotesk"', 'monospace']
+                    },
+                    boxShadow: {
+                        'neo-sm': '2px 2px 0px #121212',
+                        'neo': '4px 4px 0px #121212',
+                        'neo-lg': '6px 6px 0px #121212',
+                        'neo-xl': '8px 8px 0px #121212'
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        .no-scrollbar::-webkit-scrollbar { display: none; }
+        .no-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
+        
+        .neo-btn {
+            transition: all 0.15s ease-in-out;
+        }
+        .neo-btn:hover {
+            transform: translate(2px, 2px);
+            box-shadow: 2px 2px 0px #121212;
+        }
+        .neo-btn:active {
+            transform: translate(4px, 4px);
+            box-shadow: 0px 0px 0px #121212;
+        }
+    </style>
+</head>
+<body class="bg-neo-bg text-neo-dark font-sans antialiased selection:bg-neo-lime selection:text-black">
+
+    <!-- 1. TOP NEO-BAR -->
+    <div class="bg-neo-lime text-neo-dark text-xs py-2 px-4 font-mono font-bold border-b-2 border-neo-dark">
+        <div class="max-w-7xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-2 text-center sm:text-left">
+            <div class="flex items-center justify-center gap-2">
+                <span class="px-2 py-0.5 bg-neo-dark text-white text-[10px] uppercase font-mono tracking-wider">
+                    HOT-SWAP 5-PIN READY
+                </span>
+                <span>Custom Keycaps & Factory Lubed Switches Ready Stock • Garansi Resmi 2 Tahun</span>
+            </div>
+            <div class="flex items-center gap-4 text-xs">
+                <span class="hidden md:inline">1000Hz Polling Rate & Tri-Mode Wireless</span>
+                <span class="hidden md:inline">|</span>
+                <a href="katalog.html" class="underline hover:text-black font-extrabold transition">Buka Semua Gear &rarr;</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- 2. NAVBAR -->
+    <header class="sticky top-0 z-40 bg-white border-b-2 border-neo-dark transition-all">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-20 sm:h-24">
+                
+                <!-- Logo -->
+                <a href="index.html" class="flex items-center gap-3 group">
+                    <div class="w-11 h-11 bg-neo-lime text-neo-dark flex items-center justify-center text-2xl font-mono font-black border-2 border-neo-dark shadow-neo-sm group-hover:bg-neo-dark group-hover:text-neo-lime transition">
+                        <span>⌨</span>
+                    </div>
+                    <div class="flex flex-col">
+                        <span class="text-2xl sm:text-3xl font-mono font-black tracking-tight text-neo-dark uppercase leading-none">
+                            KEYCRAFT<span class="text-neo-lime bg-neo-dark px-1 ml-0.5">.</span>
+                        </span>
+                        <span class="text-[9px] font-mono tracking-[0.2em] text-neo-dark uppercase mt-1 font-bold">
+                            PERIPHERALS & DESK STUDIO
+                        </span>
+                    </div>
+                </a>
+
+                <!-- Desktop Navigation Links -->
+                <nav class="hidden lg:flex items-center gap-7 text-xs font-bold tracking-widest uppercase text-neo-dark font-mono">
+                    <a href="index.html" class="bg-neo-lime px-2.5 py-1 border-2 border-neo-dark shadow-neo-sm">Beranda</a>
+                    <a href="katalog.html" class="hover:bg-neo-lime px-2.5 py-1 border-2 border-transparent hover:border-neo-dark transition">Katalog Periferal</a>
+                    <a href="detail.html" class="hover:bg-neo-lime px-2.5 py-1 border-2 border-transparent hover:border-neo-dark transition">Detail Keyboard 75%</a>
+                    <a href="tentang.html" class="hover:bg-neo-lime px-2.5 py-1 border-2 border-transparent hover:border-neo-dark transition">Gasket & Modding</a>
+                    <a href="artikel.html" class="hover:bg-neo-lime px-2.5 py-1 border-2 border-transparent hover:border-neo-dark transition">Panduan Switch</a>
+                    <a href="kontak.html" class="hover:bg-neo-lime px-2.5 py-1 border-2 border-transparent hover:border-neo-dark transition">Sound Test Studio</a>
+                </nav>
+
+                <!-- Action Button & Switch Sound Simulator Modal -->
+                <div class="hidden sm:flex items-center gap-3 font-mono">
+                    <button onclick="openSoundModal()" class="inline-flex items-center gap-2 px-4 py-2.5 bg-white border-2 border-neo-dark text-xs font-bold shadow-neo-sm neo-btn">
+                        <i class="fa-solid fa-volume-high text-neo-dark"></i>
+                        <span>Cek Suara Switch</span>
+                    </button>
+                    <a href="https://wa.me/6281234567890?text=Halo%20Keycraft%20Studio,%20saya%20tertarik%20dengan%20koleksi%20keyboard%20mekanikal." target="_blank" class="inline-flex items-center gap-2 bg-neo-dark text-white text-xs font-bold tracking-wider px-5 py-2.5 border-2 border-neo-dark shadow-neo-sm neo-btn">
+                        <i class="fa-brands fa-whatsapp text-emerald-400"></i>
+                        <span>Order WA</span>
+                    </a>
+                </div>
+
+                <!-- Mobile Hamburger Button -->
+                <button id="mobileMenuBtn" class="lg:hidden p-2 text-neo-dark hover:bg-neo-lime border-2 border-neo-dark shadow-neo-sm focus:outline-none" aria-label="Toggle Menu">
+                    <i id="menuIcon" class="fa-solid fa-bars text-xl"></i>
+                </button>
+            </div>
+        </div>
+
+        <!-- Mobile Drawer -->
+        <div id="mobileMenu" class="hidden lg:hidden bg-neo-bg border-b-2 border-neo-dark px-4 py-5 space-y-3 font-mono">
+            <a href="index.html" class="block text-xs font-bold uppercase tracking-wider bg-neo-lime py-2 px-3 border-2 border-neo-dark">Beranda Utama</a>
+            <a href="katalog.html" class="block text-xs font-bold uppercase tracking-wider text-neo-dark hover:bg-neo-lime py-2 px-3 border-2 border-neo-dark">Katalog Keyboard & Mouse</a>
+            <a href="detail.html" class="block text-xs font-bold uppercase tracking-wider text-neo-dark hover:bg-neo-lime py-2 px-3 border-2 border-neo-dark">Detail Keyboard 75% Gasket</a>
+            <a href="tentang.html" class="block text-xs font-bold uppercase tracking-wider text-neo-dark hover:bg-neo-lime py-2 px-3 border-2 border-neo-dark">Filosofi Modding & Lube</a>
+            <a href="artikel.html" class="block text-xs font-bold uppercase tracking-wider text-neo-dark hover:bg-neo-lime py-2 px-3 border-2 border-neo-dark">Panduan Switch & Deskmat</a>
+            <a href="kontak.html" class="block text-xs font-bold uppercase tracking-wider text-neo-dark hover:bg-neo-lime py-2 px-3 border-2 border-neo-dark">Sound Test Studio & Maps</a>
+            <div class="pt-2 flex flex-col gap-2">
+                <button onclick="openSoundModal()" class="w-full py-3 bg-white text-neo-dark border-2 border-neo-dark shadow-neo text-xs font-bold uppercase tracking-wider flex items-center justify-center gap-2">
+                    <i class="fa-solid fa-volume-high"></i> Tes Profil Suara Switch
+                </button>
+                <a href="https://wa.me/6281234567890?text=Halo%20Keycraft%20Studio,%20saya%20mau%20konsultasi%20setup." target="_blank" class="w-full py-3 bg-neo-dark text-white border-2 border-neo-dark shadow-neo text-xs font-bold uppercase tracking-wider text-center flex items-center justify-center gap-2">
+                    <i class="fa-brands fa-whatsapp text-emerald-400"></i> WhatsApp Concierge 24 Jam
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- 3. BOLD OFFSET NEO-BRUTALIST HERO -->
+    <section class="py-16 sm:py-24 border-b-2 border-neo-dark bg-neo-bg relative overflow-hidden">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+                
+                <!-- Left Hero Copy (6 Cols) -->
+                <div class="lg:col-span-6 space-y-6">
+                    <div class="inline-flex items-center gap-2 px-3.5 py-1.5 bg-neo-lime border-2 border-neo-dark text-neo-dark text-xs font-mono font-bold tracking-wider shadow-neo-sm">
+                        <span class="w-2.5 h-2.5 bg-neo-dark"></span>
+                        <span class="uppercase tracking-widest text-[10px]">ULTIMATE DESK SETUP LAB</span>
+                    </div>
+
+                    <h1 class="text-4xl sm:text-6xl lg:text-7xl font-mono font-black text-neo-dark tracking-tight leading-[0.95] uppercase">
+                        UPGRADE YOUR <br>
+                        <span class="bg-neo-dark text-neo-lime px-2 inline-block -rotate-1 shadow-neo-sm">BATTLESTATION.</span>
+                    </h1>
+
+                    <p class="text-xs sm:text-sm text-slate-700 leading-relaxed max-w-lg font-medium font-sans">
+                        Rasakan sensasi ketikan empuk (*thocky*) tanpa rattle dengan struktur Gasket Mount Poron foam, stabilizer factory-lubed, switch hot-swappable 5-pin, serta mouse gaming nirkabel ultra-ringan 49 gram.
+                    </p>
+
+                    <div class="pt-2 flex flex-wrap items-center gap-4 font-mono">
+                        <a href="katalog.html" class="inline-flex items-center gap-2.5 px-8 py-4 bg-neo-lime hover:bg-neo-limedark text-neo-dark text-xs font-bold tracking-widest uppercase border-2 border-neo-dark shadow-neo neo-btn">
+                            <span>JELAJAHI GEAR</span>
+                            <i class="fa-solid fa-arrow-right text-[10px]"></i>
+                        </a>
+                        <button onclick="openSoundModal()" class="inline-flex items-center gap-2 px-7 py-4 bg-white hover:bg-neo-slate border-2 border-neo-dark text-neo-dark text-xs font-bold tracking-widest uppercase shadow-neo neo-btn">
+                            <i class="fa-solid fa-play text-neo-dark"></i>
+                            <span>TYPING SOUND SIMULATOR</span>
+                        </button>
+                    </div>
+
+                    <!-- Quick Spec Strip -->
+                    <div class="pt-4 grid grid-cols-3 gap-4 border-t-2 border-neo-dark font-mono text-xs">
+                        <div class="p-3 bg-white border-2 border-neo-dark shadow-neo-sm">
+                            <span class="text-[10px] text-slate-500 uppercase block font-bold">MOUNTING</span>
+                            <strong class="text-sm font-bold text-neo-dark">Gasket Poron</strong>
+                            <span class="text-[10px] text-neo-dark font-bold block">Empuk Tanpa Getar</span>
+                        </div>
+                        <div class="p-3 bg-white border-2 border-neo-dark shadow-neo-sm">
+                            <span class="text-[10px] text-slate-500 uppercase block font-bold">POLLING RATE</span>
+                            <strong class="text-sm font-bold text-neo-dark">1000Hz (1ms)</strong>
+                            <span class="text-[10px] text-emerald-600 font-bold block">Zero Delay Input</span>
+                        </div>
+                        <div class="p-3 bg-white border-2 border-neo-dark shadow-neo-sm">
+                            <span class="text-[10px] text-slate-500 uppercase block font-bold">STABILIZER</span>
+                            <strong class="text-sm font-bold text-neo-dark">Factory Lubed</strong>
+                            <span class="text-[10px] text-neo-dark font-bold block">No Wire Rattle</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Right Hero Image with Offset Hard Shadow (6 Cols) -->
+                <div class="lg:col-span-6 relative">
+                    <div class="grid grid-cols-12 gap-4 items-center">
+                        
+                        <!-- Main Keyboard Showcase (7 Cols) -->
+                        <div class="col-span-7 bg-white border-2 border-neo-dark shadow-neo-lg aspect-[3/4] relative group overflow-hidden">
+                            <img src="https://images.unsplash.com/photo-1595225476474-87563907a212?auto=format&fit=crop&w=800&q=80" alt="Mechanical Keyboard Setup" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700">
+                            
+                            <!-- Floating Neo Tag -->
+                            <div class="absolute top-3 left-3 bg-neo-lime border-2 border-neo-dark px-3 py-1 font-mono text-neo-dark shadow-neo-sm">
+                                <span class="text-[9px] font-bold uppercase tracking-wider block">FLAGSHIP 75%</span>
+                                <strong class="text-xs font-bold text-neo-dark">Keycraft Apex-75 Gasket</strong>
+                            </div>
+
+                            <div class="absolute bottom-3 left-3 right-3 bg-white p-3 border-2 border-neo-dark shadow-neo-sm font-mono text-xs flex justify-between items-center">
+                                <span class="text-neo-dark font-bold text-[11px]">Tri-Mode 2.4G/BT/Wired</span>
+                                <strong class="text-neo-dark bg-neo-lime px-2 py-0.5 border border-neo-dark">Hot-Swap 5-Pin</strong>
+                            </div>
+                        </div>
+
+                        <!-- Side Floating Mouse & Deskmat (5 Cols) -->
+                        <div class="col-span-5 space-y-4">
+                            <div class="bg-white border-2 border-neo-dark shadow-neo aspect-[3/4] relative group overflow-hidden">
+                                <img src="https://images.unsplash.com/photo-1615663245857-ac93bb7c39e7?auto=format&fit=crop&w=600&q=80" alt="Gaming Mouse Ultralight" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700">
+                                <span class="absolute top-2.5 right-2.5 bg-neo-dark text-neo-lime text-[8px] font-mono font-bold px-2 py-0.5 uppercase border border-neo-dark">
+                                    49 GRAMS
+                                </span>
+                            </div>
+                            <div class="p-4 bg-neo-lime border-2 border-neo-dark shadow-neo-sm text-xs font-mono">
+                                <span class="font-mono font-black text-neo-dark block text-sm">Aesthetic Desk Setup:</span>
+                                <p class="text-[11px] leading-relaxed font-sans font-normal text-neo-dark mt-1">Dirancang presisi untuk software engineer yang produktif dan pro player esports kompetitif.</p>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- Value Strip Bar -->
+            <div class="mt-16 max-w-5xl mx-auto grid grid-cols-1 sm:grid-cols-3 gap-6 bg-white p-6 border-2 border-neo-dark shadow-neo text-xs font-mono">
+                <div class="flex items-start gap-3.5">
+                    <div class="w-10 h-10 bg-neo-lime text-neo-dark flex items-center justify-center shrink-0 text-base border-2 border-neo-dark shadow-neo-sm">
+                        <i class="fa-solid fa-keyboard"></i>
+                    </div>
+                    <div>
+                        <strong class="text-neo-dark font-bold block text-sm uppercase">PBT Dye-Sub Keycaps</strong>
+                        <span class="text-slate-600 leading-relaxed font-sans text-xs">Material PBT ekstra tebal 1.5mm anti-minyak (shine-free) dengan legenda huruf tidak akan luntur.</span>
+                    </div>
+                </div>
+                <div class="flex items-start gap-3.5">
+                    <div class="w-10 h-10 bg-neo-cyan text-neo-dark flex items-center justify-center shrink-0 text-base border-2 border-neo-dark shadow-neo-sm">
+                        <i class="fa-solid fa-wave-square"></i>
+                    </div>
+                    <div>
+                        <strong class="text-neo-dark font-bold block text-sm uppercase">1000Hz Zero Delay</strong>
+                        <span class="text-slate-600 leading-relaxed font-sans text-xs">Koneksi 2.4GHz nirkabel berkecepatan 1 milidetik setara kabel untuk performa game FPS intens.</span>
+                    </div>
+                </div>
+                <div class="flex items-start gap-3.5">
+                    <div class="w-10 h-10 bg-neo-coral text-white flex items-center justify-center shrink-0 text-base border-2 border-neo-dark shadow-neo-sm">
+                        <i class="fa-solid fa-shield-check"></i>
+                    </div>
+                    <div>
+                        <strong class="text-neo-dark font-bold block text-sm uppercase">2 Tahun Garansi Resmi</strong>
+                        <span class="text-slate-600 leading-relaxed font-sans text-xs">Jaminan purna jual PCB hot-swap, sensor optik mouse, dan baterai selama 24 bulan penuh.</span>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- 4. SECTION KHUSUS: TYPING SOUND & SWITCH PROFILE GUIDE -->
+    <section class="py-16 bg-neo-slate border-b-2 border-neo-dark font-mono">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            
+            <div class="text-center max-w-2xl mx-auto mb-12">
+                <span class="text-xs font-mono uppercase tracking-[0.25em] bg-neo-lime px-2 py-0.5 border border-neo-dark font-bold inline-block mb-2 shadow-neo-sm">
+                    // SWITCH SOUND SCIENCE
+                </span>
+                <h2 class="text-2xl sm:text-4xl font-mono font-black text-neo-dark uppercase">
+                    Pilih Karakter Suara Ketikanmu
+                </h2>
+                <p class="text-xs sm:text-sm text-slate-600 mt-1 font-sans">
+                    Setiap switch mekanikal memiliki profil audio dan sensasi pantulan pegas yang unik.
+                </p>
+            </div>
+
+            <!-- 3 Sound Archetypes -->
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                
+                <!-- Profile 1: Thocky Deep Sound (Linear) -->
+                <div class="bg-white border-2 border-neo-dark p-6 flex flex-col justify-between shadow-neo hover:translate-x-[2px] hover:translate-y-[2px] hover:shadow-neo-sm transition">
+                    <div>
+                        <div class="aspect-[16/10] bg-neo-bg overflow-hidden mb-5 border-2 border-neo-dark">
+                            <img src="https://images.unsplash.com/photo-1595225476474-87563907a212?auto=format&fit=crop&w=600&q=80" alt="Thocky Sound" class="w-full h-full object-cover">
+                        </div>
+                        <span class="text-[9px] font-bold bg-neo-lime text-neo-dark px-2 py-0.5 border border-neo-dark uppercase tracking-wider inline-block">
+                            LINEAR // THOCKY SOUND
+                        </span>
+                        <h3 class="text-xl font-mono font-bold text-neo-dark mt-2">Deep & Solid 'Thock'</h3>
+                        <p class="text-xs text-slate-600 mt-2 leading-relaxed font-sans font-normal">
+                            Switch Linear (Gateron Pro Yellow/Red) dengan travel mulus tanpa hentakan tactile. Menghasilkan suara bas dalam yang tenang dan memuaskan saat mengetik kode.
+                        </p>
+                    </div>
+                    <div class="mt-6 pt-4 border-t-2 border-neo-dark">
+                        <button onclick="openSoundModal('thock')" class="w-full py-2.5 bg-neo-dark text-white text-xs font-bold uppercase flex items-center justify-center gap-2 border border-neo-dark neo-btn">
+                            <i class="fa-solid fa-volume-high text-neo-lime"></i>
+                            <span>Dengarkan Suara Thock</span>
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Profile 2: Clacky Crispy Sound (Clicky) -->
+                <div class="bg-white border-2 border-neo-dark p-6 flex flex-col justify-between shadow-neo hover:translate-x-[2px] hover:translate-y-[2px] hover:shadow-neo-sm transition">
+                    <div>
+                        <div class="aspect-[16/10] bg-neo-bg overflow-hidden mb-5 border-2 border-neo-dark">
+                            <img src="https://images.unsplash.com/photo-1587829741301-dc798b83add3?auto=format&fit=crop&w=600&q=80" alt="Clacky Sound" class="w-full h-full object-cover">
+                        </div>
+                        <span class="text-[9px] font-bold bg-neo-cyan text-neo-dark px-2 py-0.5 border border-neo-dark uppercase tracking-wider inline-block">
+                            CLICKY // CRISPY CLACK
+                        </span>
+                        <h3 class="text-xl font-mono font-bold text-neo-dark mt-2">Crispy & Tactile 'Clack'</h3>
+                        <p class="text-xs text-slate-600 mt-2 leading-relaxed font-sans font-normal">
+                            Switch Clicky (Kailh Box White/Blue) dengan click bar presisi. Memberikan feedback auditori klik renyah yang memuaskan untuk gamer yang membutuhkan konfirmasi tekan pasti.
+                        </p>
+                    </div>
+                    <div class="mt-6 pt-4 border-t-2 border-neo-dark">
+                        <button onclick="openSoundModal('clack')" class="w-full py-2.5 bg-neo-dark text-white text-xs font-bold uppercase flex items-center justify-center gap-2 border border-neo-dark neo-btn">
+                            <i class="fa-solid fa-volume-high text-neo-cyan"></i>
+                            <span>Dengarkan Suara Clack</span>
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Profile 3: Tactile Bumpy Sound -->
+                <div class="bg-white border-2 border-neo-dark p-6 flex flex-col justify-between shadow-neo hover:translate-x-[2px] hover:translate-y-[2px] hover:shadow-neo-sm transition">
+                    <div>
+                        <div class="aspect-[16/10] bg-neo-bg overflow-hidden mb-5 border-2 border-neo-dark">
+                            <img src="https://images.unsplash.com/photo-1541140532154-b024d705b909?auto=format&fit=crop&w=600&q=80" alt="Tactile Bump" class="w-full h-full object-cover">
+                        </div>
+                        <span class="text-[9px] font-bold bg-neo-coral text-white px-2 py-0.5 border border-neo-dark uppercase tracking-wider inline-block">
+                            TACTILE // SUBTLE POP
+                        </span>
+                        <h3 class="text-xl font-mono font-bold text-neo-dark mt-2">Balanced 'Tactile Bump'</h3>
+                        <p class="text-xs text-slate-600 mt-2 leading-relaxed font-sans font-normal">
+                            Switch Tactile (Holy Panda/Brown) dengan gundukan halus di titik aktivasi. Sangat pas untuk kantor karena memberikan sensasi pantulan jelas tanpa suara berisik.
+                        </p>
+                    </div>
+                    <div class="mt-6 pt-4 border-t-2 border-neo-dark">
+                        <button onclick="openSoundModal('tactile')" class="w-full py-2.5 bg-neo-dark text-white text-xs font-bold uppercase flex items-center justify-center gap-2 border border-neo-dark neo-btn">
+                            <i class="fa-solid fa-volume-high text-neo-coral"></i>
+                            <span>Dengarkan Suara Tactile</span>
+                        </button>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+    <!-- 5. PRODUK UNGGULAN: GRID 3 KOLOM NEO-BRUTALIST -->
+    <section class="py-16 bg-neo-bg border-b-2 border-neo-dark font-mono">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            
+            <div class="flex flex-col md:flex-row md:items-end justify-between mb-12">
+                <div>
+                    <span class="text-xs font-mono uppercase tracking-[0.25em] bg-neo-lime px-2 py-0.5 border border-neo-dark font-bold inline-block mb-1 shadow-neo-sm">
+                        // FEATURED GEAR COLLECTION
+                    </span>
+                    <h2 class="text-2xl sm:text-4xl font-mono font-black text-neo-dark uppercase">
+                        Periferal Unggulan Battlestation
+                    </h2>
+                    <p class="text-xs sm:text-sm text-slate-600 mt-1 font-sans">
+                        Rincian spesifikasi switch hot-swap, berat mouse ultralight, dan material deskmat tahan air.
+                    </p>
+                </div>
+                <a href="katalog.html" class="mt-4 md:mt-0 text-xs font-mono font-bold bg-white text-neo-dark border-2 border-neo-dark px-4 py-2 shadow-neo-sm neo-btn uppercase tracking-wider">
+                    Lihat Semua 8 Gear &rarr;
+                </a>
+            </div>
+
+            <!-- 3 Column Product Grid -->
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                
+                <!-- Product 1: Keycraft Apex-75 Gasket Mechanical Keyboard -->
+                <div class="bg-white border-2 border-neo-dark p-5 flex flex-col justify-between shadow-neo hover:translate-x-[2px] hover:translate-y-[2px] hover:shadow-neo-sm transition">
+                    <div>
+                        <div class="aspect-[4/3] bg-neo-slate overflow-hidden mb-4 relative group border-2 border-neo-dark">
+                            <img src="https://images.unsplash.com/photo-1595225476474-87563907a212?auto=format&fit=crop&w=600&q=80" alt="Apex-75 Keyboard" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+                            <span class="absolute top-2.5 left-2.5 bg-neo-lime text-neo-dark border border-neo-dark text-[9px] font-bold px-2 py-0.5 uppercase">
+                                BEST SELLER
+                            </span>
+                        </div>
+
+                        <div class="flex items-center gap-1.5 mb-2 text-[10px] text-neo-dark font-bold uppercase">
+                            <i class="fa-solid fa-keyboard"></i>
+                            <span>Layout 75% (82 Keys) • Knob Volume • Tri-Mode</span>
+                        </div>
+
+                        <h3 class="font-mono font-bold text-lg text-neo-dark leading-snug">Keycraft Apex-75 Gasket</h3>
+                        <p class="text-xs text-slate-600 mt-1.5 font-sans line-clamp-2">Keyboard mekanikal gasket mount dengan plat polikarbonat empuk dan knob volume CNC aluminium.</p>
+                        
+                        <div class="mt-3 p-3 bg-neo-slate border border-neo-dark text-[10px] space-y-1">
+                            <div class="flex justify-between"><span>Hot-Swap:</span> <strong class="text-neo-dark">Universal 3/5-Pin Socket</strong></div>
+                            <div class="flex justify-between"><span>Peredam Suara:</span> <strong class="text-emerald-700">Poron Plate + Case Foam</strong></div>
+                        </div>
+                    </div>
+
+                    <div class="mt-6 pt-3 border-t-2 border-neo-dark flex items-center justify-between">
+                        <div>
+                            <span class="text-[9px] text-slate-500 block uppercase">Harga Resmi</span>
+                            <span class="font-mono font-bold text-lg text-neo-dark">Rp 849.000</span>
+                        </div>
+                        <a href="detail.html" class="px-4 py-2 bg-neo-lime hover:bg-neo-limedark text-neo-dark border-2 border-neo-dark text-xs font-bold uppercase shadow-neo-sm neo-btn">
+                            Detail &rarr;
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Product 2: Voltix Phantom-X 49g Ultralight Wireless Mouse -->
+                <div class="bg-white border-2 border-neo-dark p-5 flex flex-col justify-between shadow-neo hover:translate-x-[2px] hover:translate-y-[2px] hover:shadow-neo-sm transition">
+                    <div>
+                        <div class="aspect-[4/3] bg-neo-slate overflow-hidden mb-4 relative group border-2 border-neo-dark">
+                            <img src="https://images.unsplash.com/photo-1615663245857-ac93bb7c39e7?auto=format&fit=crop&w=600&q=80" alt="Phantom-X Mouse" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+                            <span class="absolute top-2.5 left-2.5 bg-neo-cyan text-neo-dark border border-neo-dark text-[9px] font-bold px-2 py-0.5 uppercase">
+                                PAW3395 SENSOR
+                            </span>
+                        </div>
+
+                        <div class="flex items-center gap-1.5 mb-2 text-[10px] text-neo-dark font-bold uppercase">
+                            <i class="fa-solid fa-computer-mouse"></i>
+                            <span>49 Grams • 26.000 DPI • 1000Hz</span>
+                        </div>
+
+                        <h3 class="font-mono font-bold text-lg text-neo-dark leading-snug">Phantom-X 49g Ultralight</h3>
+                        <p class="text-xs text-slate-600 mt-1.5 font-sans line-clamp-2">Mouse gaming nirkabel ultra-ringan tanpa lubang dengan sensor PixArt PAW3395 flagship.</p>
+                        
+                        <div class="mt-3 p-3 bg-neo-slate border border-neo-dark text-[10px] space-y-1">
+                            <div class="flex justify-between"><span>Switch Klik:</span> <strong class="text-neo-dark">Huano Blue Shell Pink Dot (80M)</strong></div>
+                            <div class="flex justify-between"><span>Baterai:</span> <strong class="text-emerald-700">Tahan 70 Jam Non-Stop</strong></div>
+                        </div>
+                    </div>
+
+                    <div class="mt-6 pt-3 border-t-2 border-neo-dark flex items-center justify-between">
+                        <div>
+                            <span class="text-[9px] text-slate-500 block uppercase">Harga Resmi</span>
+                            <span class="font-mono font-bold text-lg text-neo-dark">Rp 499.000</span>
+                        </div>
+                        <a href="detail.html" class="px-4 py-2 bg-neo-cyan hover:bg-cyan-400 text-neo-dark border-2 border-neo-dark text-xs font-bold uppercase shadow-neo-sm neo-btn">
+                            Detail &rarr;
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Product 3: Battlestation Topo Deskmat 900x400x4mm -->
+                <div class="bg-white border-2 border-neo-dark p-5 flex flex-col justify-between shadow-neo hover:translate-x-[2px] hover:translate-y-[2px] hover:shadow-neo-sm transition">
+                    <div>
+                        <div class="aspect-[4/3] bg-neo-slate overflow-hidden mb-4 relative group border-2 border-neo-dark">
+                            <img src="https://images.unsplash.com/photo-1541140532154-b024d705b909?auto=format&fit=crop&w=600&q=80" alt="Topo Deskmat" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+                            <span class="absolute top-2.5 left-2.5 bg-neo-coral text-white border border-neo-dark text-[9px] font-bold px-2 py-0.5 uppercase">
+                                TEBAL 4MM
+                            </span>
+                        </div>
+
+                        <div class="flex items-center gap-1.5 mb-2 text-[10px] text-neo-dark font-bold uppercase">
+                            <i class="fa-solid fa-rug"></i>
+                            <span>900 x 400 mm • Jahit Tepi Anti-Koyak</span>
+                        </div>
+
+                        <h3 class="font-mono font-bold text-lg text-neo-dark leading-snug">Battlestation Topo Deskmat</h3>
+                        <p class="text-xs text-slate-600 mt-1.5 font-sans line-clamp-2">Alas meja gaming ekstra lebar motif kontur topografi dengan permukaan micro-woven halus.</p>
+                        
+                        <div class="mt-3 p-3 bg-neo-slate border border-neo-dark text-[10px] space-y-1">
+                            <div class="flex justify-between"><span>Base:</span> <strong class="text-neo-dark">Natural Anti-Slip Rubber 4mm</strong></div>
+                            <div class="flex justify-between"><span>Fitur:</span> <strong class="text-emerald-700">Water-Repellent Coating</strong></div>
+                        </div>
+                    </div>
+
+                    <div class="mt-6 pt-3 border-t-2 border-neo-dark flex items-center justify-between">
+                        <div>
+                            <span class="text-[9px] text-slate-500 block uppercase">Harga Resmi</span>
+                            <span class="font-mono font-bold text-lg text-neo-dark">Rp 179.000</span>
+                        </div>
+                        <a href="detail.html" class="px-4 py-2 bg-neo-lime hover:bg-neo-limedark text-neo-dark border-2 border-neo-dark text-xs font-bold uppercase shadow-neo-sm neo-btn">
+                            Detail &rarr;
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+    <!-- 6. TESTIMONI GAMERS & SOFTWARE ENGINEERS -->
+    <section class="py-16 bg-neo-slate border-b-2 border-neo-dark font-mono">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            
+            <div class="text-center max-w-2xl mx-auto mb-12">
+                <span class="text-xs font-mono uppercase tracking-[0.25em] bg-white px-2 py-0.5 border border-neo-dark font-bold inline-block mb-1 shadow-neo-sm">
+                    // DESK SETUP REVIEWS
+                </span>
+                <h2 class="text-2xl sm:text-4xl font-mono font-black text-neo-dark uppercase">
+                    Kata Para Builder & Gamer
+                </h2>
+                <p class="text-xs sm:text-sm text-slate-600 mt-1 font-sans">
+                    Pengalaman nyata kenyamanan mengetik dan performa respon klik dari komunitas.
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                
+                <div class="bg-white p-6 border-2 border-neo-dark shadow-neo flex flex-col justify-between">
+                    <div>
+                        <div class="flex items-center gap-1 text-neo-dark text-xs mb-3">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                        <p class="text-xs text-slate-700 leading-relaxed font-sans italic">
+                            "Apex-75 beneran thock out-of-the-box! Stabilizer spasi-nya padat banget, nggak ada suara kawat berisik sama sekali. Ngetik ribuan baris kode seharian di VS Code jadi nggak berasa capek."
+                        </p>
+                    </div>
+                    <div class="mt-6 pt-3 border-t-2 border-neo-dark flex items-center justify-between text-xs">
+                        <strong class="text-neo-dark font-bold font-mono">Dimas Anugrah</strong>
+                        <span class="text-[10px] bg-neo-lime px-2 py-0.5 border border-neo-dark font-mono font-bold">Backend Dev — Jakarta</span>
+                    </div>
+                </div>
+
+                <div class="bg-white p-6 border-2 border-neo-dark shadow-neo flex flex-col justify-between">
+                    <div>
+                        <div class="flex items-center gap-1 text-neo-dark text-xs mb-3">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                        <p class="text-xs text-slate-700 leading-relaxed font-sans italic">
+                            "Mouse Phantom-X 49 gram-nya enteng gila buat main Valorant. Tracking micro-adjustment jadi sangat presisi dan glide feet PTFE-nya super licin di atas deskmat Topo."
+                        </p>
+                    </div>
+                    <div class="mt-6 pt-3 border-t-2 border-neo-dark flex items-center justify-between text-xs">
+                        <strong class="text-neo-dark font-bold font-mono">Aldo Pratama</strong>
+                        <span class="text-[10px] bg-neo-cyan px-2 py-0.5 border border-neo-dark font-mono font-bold">FPS Competitor — Surabaya</span>
+                    </div>
+                </div>
+
+                <div class="bg-white p-6 border-2 border-neo-dark shadow-neo flex flex-col justify-between">
+                    <div>
+                        <div class="flex items-center gap-1 text-neo-dark text-xs mb-3">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                        <p class="text-xs text-slate-700 leading-relaxed font-sans italic">
+                            "Pelayanan konsultasi modding-nya juara. Saya minta rekomendasi switch yang hening buat WFH malam hari, disaranin Gateron Silent Black dan suaranya beneran senyap tanpa ganggu orang rumah."
+                        </p>
+                    </div>
+                    <div class="mt-6 pt-3 border-t-2 border-neo-dark flex items-center justify-between text-xs">
+                        <strong class="text-neo-dark font-bold font-mono">Kevin Wijaya</strong>
+                        <span class="text-[10px] bg-neo-coral text-white px-2 py-0.5 border border-neo-dark font-mono font-bold">UI/UX Designer — Bandung</span>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+    <!-- 7. FOOTER -->
+    <footer class="bg-neo-dark text-slate-300 border-t-2 border-neo-dark pt-14 pb-28 font-mono">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-10">
+                
+                <div class="lg:col-span-2 space-y-4">
+                    <div class="flex items-center gap-3">
+                        <div class="w-9 h-9 bg-neo-lime text-neo-dark flex items-center justify-center text-lg font-mono font-black border-2 border-white shadow-neo-sm">
+                            <span>⌨</span>
+                        </div>
+                        <span class="text-2xl font-mono font-black text-white uppercase tracking-tight">
+                            KEYCRAFT<span class="text-neo-lime bg-white text-neo-dark px-1 ml-0.5">.</span>
+                        </span>
+                    </div>
+                    <p class="text-xs text-slate-300 leading-relaxed max-w-sm font-sans">
+                        Lentera Pasar Gaming Peripherals & Custom Keyboard Template. Menghadirkan keyboard mekanikal gasket mount bersuara thocky, switch lubed pabrik, mouse gaming ultralight, dan perlengkapan meja kerja estetis.
+                    </p>
+                    <div class="pt-2 text-xs text-slate-300 space-y-1 font-sans">
+                        <div><i class="fa-solid fa-location-dot text-neo-lime mr-2"></i> Experience Studio: Jl. Gandaria I No. 34, Kebayoran Baru, Jakarta Selatan 12130</div>
+                        <div><i class="fa-brands fa-whatsapp text-emerald-400 mr-2"></i> +62 812-3456-7890 (Custom Keyboard Builder Hotline)</div>
+                    </div>
+                </div>
+
+                <div>
+                    <h4 class="text-xs font-bold uppercase tracking-wider text-white mb-4">Navigasi Utama</h4>
+                    <ul class="space-y-2.5 text-xs text-slate-300">
+                        <li><a href="index.html" class="hover:text-neo-lime transition">Beranda Utama</a></li>
+                        <li><a href="katalog.html" class="hover:text-neo-lime transition">Katalog Periferal</a></li>
+                        <li><a href="detail.html" class="hover:text-neo-lime transition">Detail Apex-75</a></li>
+                        <li><a href="tentang.html" class="hover:text-neo-lime transition">Gasket & Modding</a></li>
+                        <li><a href="artikel.html" class="hover:text-neo-lime transition">Panduan Switch</a></li>
+                        <li><a href="kontak.html" class="hover:text-neo-lime transition">Sound Test Studio</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h4 class="text-xs font-bold uppercase tracking-wider text-white mb-4">Kategori Setup</h4>
+                    <ul class="space-y-2.5 text-xs text-slate-300">
+                        <li><a href="katalog.html" class="hover:text-neo-lime transition">Custom 75% Keyboard</a></li>
+                        <li><a href="katalog.html" class="hover:text-neo-lime transition">Compact 65% Wireless</a></li>
+                        <li><a href="katalog.html" class="hover:text-neo-lime transition">Ultralight Mouse 49g</a></li>
+                        <li><a href="katalog.html" class="hover:text-neo-lime transition">Deskmat Topo 90x40cm</a></li>
+                        <li><a href="katalog.html" class="hover:text-neo-lime transition">Lube Station & Switches</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h4 class="text-xs font-bold uppercase tracking-wider text-white mb-4">Jaminan Kualitas</h4>
+                    <div class="space-y-2 text-xs">
+                        <div class="p-3 bg-slate-900 border border-slate-700">
+                            <span class="text-[10px] text-neo-lime block uppercase font-bold">2-YEAR WARRANTY:</span>
+                            <span class="font-bold text-white text-[11px]">Garansi PCB & Sensor Optik</span>
+                        </div>
+                        <div class="p-3 bg-slate-900 border border-slate-700">
+                            <span class="text-[10px] text-neo-cyan block uppercase font-bold">FACTORY LUBED:</span>
+                            <span class="font-bold text-white text-[11px]">Stabilizer Bebas Rattle</span>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="mt-12 pt-8 border-t border-slate-800 flex flex-col sm:flex-row items-center justify-between text-xs text-slate-500">
+                <p>&copy; 2026 KEYCRAFT PERIPHERALS & DESK STUDIO. All Rights Reserved.</p>
+                <p class="text-[11px] mt-2 sm:mt-0 font-sans">Lentera Pasar Production Template — Gaming Peripherals & Desk Setup</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- ========================================================================= -->
+    <!-- INTERACTIVE SWITCH & KEY SOUND SIMULATOR MODAL                            -->
+    <!-- ========================================================================= -->
+    <div id="soundModal" class="fixed inset-0 z-50 bg-black/80 backdrop-blur-xs hidden flex items-center justify-center p-4 font-mono">
+        <div class="bg-white border-3 border-neo-dark max-w-lg w-full p-6 sm:p-8 shadow-neo-xl relative text-neo-dark">
+            <button onclick="closeSoundModal()" class="absolute top-5 right-5 text-neo-dark hover:bg-neo-lime border-2 border-neo-dark w-8 h-8 flex items-center justify-center font-bold">
+                <i class="fa-solid fa-xmark"></i>
+            </button>
+            
+            <div class="flex items-center gap-3 mb-6">
+                <div class="w-10 h-10 bg-neo-lime text-neo-dark flex items-center justify-center text-lg border-2 border-neo-dark shadow-neo-sm">
+                    <i class="fa-solid fa-volume-high"></i>
+                </div>
+                <div>
+                    <h3 class="text-lg font-mono font-bold text-neo-dark uppercase">Typing Sound Simulator</h3>
+                    <p class="text-xs text-slate-600 font-sans">Dengarkan simulasi frekuensi dan sensasi ketukan switch mekanikal favorit Anda.</p>
+                </div>
+            </div>
+
+            <div class="space-y-4 text-xs">
+                <div>
+                    <label class="block font-bold text-neo-dark mb-1.5 uppercase">Pilih Profil Karakter Switch:</label>
+                    <select id="switchSelect" onchange="updateSoundProfile()" class="w-full p-3 border-2 border-neo-dark bg-neo-bg text-neo-dark focus:outline-none focus:bg-neo-lime text-xs font-mono font-bold">
+                        <option value="thock">Gateron Pro Yellow (Linear) — Deep 'Thock' Sound (Rekomendasi Coding)</option>
+                        <option value="clack">Kailh Box White (Clicky) — Crispy 'Clack' Sound (Gaming FPS)</option>
+                        <option value="tactile">Holy Panda / Brown (Tactile) — Subtly Bumpy Pop Sound (Kantor/Office)</option>
+                    </select>
+                </div>
+
+                <div id="soundResultBox" class="p-4 bg-neo-slate border-2 border-neo-dark space-y-2">
+                    <div class="flex items-center justify-between">
+                        <span class="text-[10px] font-bold bg-neo-lime text-neo-dark px-2 py-0.5 border border-neo-dark uppercase block">// PROFIL SUARA:</span>
+                        <span id="actuationForce" class="text-[10px] font-bold text-slate-600">Actuation: 50g • Travel: 4.0mm</span>
+                    </div>
+                    <h5 id="soundTitleDisplay" class="font-mono font-bold text-neo-dark text-base">Gateron Pro Yellow Linear (Deep Thock)</h5>
+                    <p id="soundDescDisplay" class="text-[11px] text-slate-700 font-sans leading-relaxed">
+                        Suara ketukan tebal dan padat berfrekuensi rendah (*low-pitched thock*). Mengetik terasa sangat halus tanpa hentakan, meminimalkan kelelahan jari saat bekerja lama.
+                    </p>
+                    <div class="pt-2">
+                        <button onclick="playSampleSound()" class="w-full py-3 bg-neo-dark text-neo-lime border-2 border-neo-dark font-bold text-xs uppercase flex items-center justify-center gap-2 neo-btn shadow-neo-sm">
+                            <i class="fa-solid fa-play"></i> <span id="btnAudioText">Putar Audio Demo Suara Ketikan (Thock 120 WPM)</span>
+                        </button>
+                    </div>
+                </div>
+
+                <div class="pt-2 flex items-center justify-between gap-3">
+                    <a id="switchWaLink" href="https://wa.me/6281234567890?text=Halo%20Keycraft%20Studio,%20saya%20tertarik%20dengan%20keyboard%20Apex-75%20Switch%20Linear%20Yellow." target="_blank" class="w-full py-3.5 bg-neo-lime hover:bg-neo-limedark text-neo-dark font-bold text-xs uppercase tracking-wider text-center border-2 border-neo-dark shadow-neo neo-btn">
+                        Konsultasi Switch Custom via WhatsApp &rarr;
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ========================================================================= -->
+    <!-- FLOATING WHATSAPP BUTTON (bottom-24)                                      -->
+    <!-- ========================================================================= -->
+    <a href="https://wa.me/6281234567890?text=Halo%20Keycraft%20Studio,%20saya%20ingin%20konsultasi%20setup%20keyboard." 
+       target="_blank" 
+       class="fixed bottom-24 right-6 z-50 group flex items-center gap-3 bg-white hover:bg-neo-lime text-neo-dark px-4 py-3 border-2 border-neo-dark shadow-neo-lg hover:shadow-neo neo-btn font-mono" 
+       aria-label="Konsultasi Setup via WhatsApp">
+        <span class="relative flex h-3 w-3">
+            <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-neo-lime opacity-75"></span>
+            <span class="relative inline-flex rounded-full h-3 w-3 bg-neo-dark"></span>
+        </span>
+        <i class="fa-brands fa-whatsapp text-2xl text-emerald-600"></i>
+        <div class="text-left hidden sm:block pr-1">
+            <div class="text-[10px] text-slate-600 font-bold uppercase tracking-wider leading-none">Keyboard Builder</div>
+            <span class="font-bold text-xs text-neo-dark">Konsultasi Setup WA</span>
+        </div>
+    </a>
+
+    <!-- ========================================================================= -->
+    <!-- LENTERA PASAR - STICKY DEMO & SALES BAR (fixed bottom-4)                 -->
+    <!-- ========================================================================= -->
+    <div class="fixed bottom-4 left-1/2 -translate-x-1/2 z-50 w-[95%] max-w-4xl bg-slate-900/95 backdrop-blur-md text-white p-3.5 md:p-4 rounded-2xl shadow-2xl border border-slate-700/80 transition-all duration-300">
+      <div class="flex flex-col md:flex-row items-center justify-between gap-3 md:gap-4">
+        
+        <div class="flex items-center gap-3 w-full md:w-auto">
+          <div class="w-10 h-10 rounded-xl bg-lime-500/20 border border-lime-500/40 flex items-center justify-center shrink-0">
+            <svg class="w-5 h-5 text-lime-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+            </svg>
+          </div>
+          <div>
+            <div class="flex items-center gap-2">
+              <span class="font-bold text-sm text-white">Lentera Pasar Engine</span>
+              <span class="text-[10px] bg-lime-500/20 text-lime-300 border border-lime-500/30 px-2 py-0.5 rounded-full font-medium">Gaming & Desk Setup Template</span>
+            </div>
+            <p class="text-xs text-slate-300 hidden sm:block">
+              Terima beres: Website responsif + Panel input produk sendiri + Dikelola tim iklan profesional.
+            </p>
+          </div>
+        </div>
+
+        <div class="flex items-center justify-between md:justify-end gap-3 w-full md:w-auto">
+          <div class="hidden lg:flex items-center gap-2 text-xs text-slate-400 border-r border-slate-700 pr-4">
+            <div class="flex items-center gap-1 text-slate-200">
+              <svg class="w-4 h-4 text-lime-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" /></svg>
+              <span>Neo-Brutalism UI</span>
+            </div>
+            <span class="text-slate-600">•</span>
+            <div class="flex items-center gap-1 text-slate-200">
+              <svg class="w-4 h-4 text-lime-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" /></svg>
+              <span>Switch Simulator</span>
+            </div>
+          </div>
+
+          <a href="https://wa.me/6281234567890?text=Halo%20Tim%20Lentera%20Pasar,%20saya%20tertarik%20menggunakan%20template%20website%20Gaming%20Peripherals%20%26%20Desk%20Setup%20ini%20lengkap%20dengan%20Admin%20Panel%20dan%20Jasa%20Iklannya." 
+             target="_blank"
+             class="w-full md:w-auto inline-flex items-center justify-center gap-2 bg-gradient-to-r from-lime-500 to-emerald-500 hover:from-lime-400 hover:to-emerald-400 text-black text-xs md:text-sm font-bold px-5 py-2.5 rounded-xl shadow-lg transition-all hover:scale-105 shrink-0">
+            <span>Gunakan Template Ini</span>
+            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3" />
+            </svg>
+          </a>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- SCRIPT LOGIC -->
+    <script>
+        // Sound Simulator Modal Logic
+        const soundModal = document.getElementById('soundModal');
+        function openSoundModal(profileType) {
+            soundModal.classList.remove('hidden');
+            if (profileType) {
+                document.getElementById('switchSelect').value = profileType;
+            }
+            updateSoundProfile();
+        }
+        function closeSoundModal() {
+            soundModal.classList.add('hidden');
+        }
+
+        function updateSoundProfile() {
+            const val = document.getElementById('switchSelect').value;
+            const titleDisp = document.getElementById('soundTitleDisplay');
+            const descDisp = document.getElementById('soundDescDisplay');
+            const forceDisp = document.getElementById('actuationForce');
+            const btnText = document.getElementById('btnAudioText');
+            const waLink = document.getElementById('switchWaLink');
+
+            if (val === 'thock') {
+                titleDisp.innerText = "Gateron Pro Yellow Linear (Deep Thock)";
+                descDisp.innerText = "Suara ketukan tebal dan padat berfrekuensi rendah (low-pitched thock). Mengetik terasa sangat halus tanpa hentakan, meminimalkan kelelahan jari saat bekerja lama.";
+                forceDisp.innerText = "Actuation: 50g • Travel: 4.0mm • Linear";
+                btnText.innerText = "Putar Audio Demo Suara Ketikan (Thock 120 WPM)";
+                waLink.href = "https://wa.me/6281234567890?text=Halo%20Keycraft%20Studio,%20saya%20tertarik%20Apex-75%20dengan%20Switch%20Linear%20Yellow%20(Thocky).";
+            } else if (val === 'clack') {
+                titleDisp.innerText = "Kailh Box White (Crispy Clack)";
+                descDisp.innerText = "Sensasi klik renyah berfrekuensi tinggi dengan pegas click bar. Sangat presisi untuk gamer yang butuh konfirmasi suara dan hentakan pasti.";
+                forceDisp.innerText = "Actuation: 45g • Travel: 3.6mm • Clicky";
+                btnText.innerText = "Putar Audio Demo Suara Ketikan (Crispy Clack 140 WPM)";
+                waLink.href = "https://wa.me/6281234567890?text=Halo%20Keycraft%20Studio,%20saya%20tertarik%20Apex-75%20dengan%20Switch%20Box%20White%20(Clicky).";
+            } else {
+                titleDisp.innerText = "Holy Panda / Brown (Subtle Tactile Pop)";
+                descDisp.innerText = "Gundukan taktil halus di awal penekanan tombol. Menghasilkan suara 'pop' yang terkontrol, sangat cocok untuk lingkungan kantor yang tenang.";
+                forceDisp.innerText = "Actuation: 55g • Travel: 3.8mm • Tactile";
+                btnText.innerText = "Putar Audio Demo Suara Ketikan (Tactile Pop 110 WPM)";
+                waLink.href = "https://wa.me/6281234567890?text=Halo%20Keycraft%20Studio,%20saya%20tertarik%20Apex-75%20dengan%20Switch%20Tactile%20(Office-Safe).";
+            }
+        }
+
+        function playSampleSound() {
+            const btnText = document.getElementById('btnAudioText');
+            btnText.innerText = "🔊 Memutar Audio Suara Ketikan... [Thock-Thock-Clack]";
+            setTimeout(() => {
+                btnText.innerText = "▶ Putar Ulang Audio Demo Suara";
+            }, 2500);
+        }
+
+        // Mobile menu toggle
+        const mobileMenuBtn = document.getElementById('mobileMenuBtn');
+        const mobileMenu = document.getElementById('mobileMenu');
+        const menuIcon = document.getElementById('menuIcon');
+
+        mobileMenuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+            if (mobileMenu.classList.contains('hidden')) {
+                menuIcon.classList.remove('fa-xmark');
+                menuIcon.classList.add('fa-bars');
+            } else {
+                menuIcon.classList.remove('fa-bars');
+                menuIcon.classList.add('fa-xmark');
+            }
+        });
+    </script>
+</body>
+</html>
