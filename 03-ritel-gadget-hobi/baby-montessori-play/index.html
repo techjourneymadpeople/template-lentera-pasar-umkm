@@ -1,0 +1,882 @@
+<!DOCTYPE html>
+<html lang="id" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KIDDOPLAY // Montessori Wooden Toys & Baby Essentials</title>
+    <meta name="description" content="Toko mainan kayu Montessori dan perlengkapan bayi aman: Balok susun kayu halus tanpa sudut tajam, teether silikon food-grade BPA-Free, dan feeding set bersertifikasi SNI resmi.">
+    
+    <!-- Google Fonts: Fredoka & Plus Jakarta Sans -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Space+Grotesk:wght@600;700&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        kiddo: {
+                            pine: '#FFFDF7',
+                            pinesoft: '#FBF7EE',
+                            card: '#FFFFFF',
+                            mustard: '#F59E0B',
+                            mustarddark: '#D97706',
+                            mustardsoft: '#FEF3C7',
+                            sage: '#2D5A43',
+                            sagedark: '#1E3D2D',
+                            sagesoft: '#D1E7DD',
+                            coral: '#E07A5F',
+                            coralsoft: '#FDEFEA',
+                            charcoal: '#374151',
+                            border: '#E8DFC8'
+                        }
+                    },
+                    fontFamily: {
+                        sans: ['"Plus Jakarta Sans"', 'sans-serif'],
+                        display: ['"Fredoka"', 'cursive', 'sans-serif'],
+                        mono: ['"Space Grotesk"', 'monospace']
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        .no-scrollbar::-webkit-scrollbar { display: none; }
+        .no-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
+        
+        .kiddo-btn {
+            transition: all 0.2s cubic-bezier(0.16, 1, 0.3, 1);
+        }
+        .kiddo-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 10px 25px -6px rgba(245, 158, 11, 0.45);
+        }
+    </style>
+</head>
+<body class="bg-kiddo-pine text-kiddo-charcoal font-sans antialiased selection:bg-kiddo-mustard selection:text-white">
+
+    <!-- 1. TOP SAFETY ALERT BAR -->
+    <div class="bg-kiddo-sage text-white text-xs py-2 px-4 font-mono font-bold border-b border-kiddo-border/30">
+        <div class="max-w-7xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-2 text-center sm:text-left">
+            <div class="flex items-center justify-center gap-2">
+                <span class="px-2 py-0.5 bg-kiddo-mustard text-white text-[10px] uppercase font-display font-bold tracking-wider rounded-md">
+                    CHILD SAFETY CERTIFIED
+                </span>
+                <span class="text-white">100% Sertifikasi SNI Resmi • Cat Water-Based Ramah Bayi Bebas Timbal • Food-Grade Silicone</span>
+            </div>
+            <div class="flex items-center gap-4 text-xs font-mono">
+                <span class="hidden md:inline">Studio Playroom Panglima Polim Jakarta</span>
+                <span class="hidden md:inline">|</span>
+                <a href="katalog.html" class="text-kiddo-mustardsoft hover:text-white underline font-extrabold transition">Koleksi Mainan Milestone &rarr;</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- 2. NAVBAR -->
+    <header class="sticky top-0 z-40 bg-kiddo-pine/95 backdrop-blur-md border-b border-kiddo-border transition-all">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-20 sm:h-24">
+                
+                <!-- Logo -->
+                <a href="index.html" class="flex items-center gap-3 group">
+                    <div class="w-11 h-11 bg-kiddo-mustard text-white flex items-center justify-center text-xl font-display font-bold rounded-2xl shadow-lg group-hover:bg-kiddo-sage transition">
+                        <i class="fa-solid fa-shapes"></i>
+                    </div>
+                    <div class="flex flex-col">
+                        <span class="text-2xl sm:text-3xl font-display font-bold tracking-tight text-kiddo-charcoal uppercase leading-none">
+                            KIDDOPLAY<span class="text-kiddo-mustard">.</span>
+                        </span>
+                        <span class="text-[9px] font-mono tracking-[0.25em] text-kiddo-mustard uppercase mt-1 font-bold">
+                            MONTESSORI TOYS & BABY CARE
+                        </span>
+                    </div>
+                </a>
+
+                <!-- Desktop Navigation Links -->
+                <nav class="hidden lg:flex items-center gap-8 text-xs font-bold tracking-wider uppercase text-kiddo-charcoal/80 font-mono">
+                    <a href="index.html" class="text-kiddo-mustard border-b-2 border-kiddo-mustard pb-1">Beranda</a>
+                    <a href="katalog.html" class="hover:text-kiddo-mustard transition">Katalog Mainan</a>
+                    <a href="detail.html" class="hover:text-kiddo-mustard transition">Detail Balok Kayu</a>
+                    <a href="tentang.html" class="hover:text-kiddo-mustard transition">Standar Keamanan SNI</a>
+                    <a href="artikel.html" class="hover:text-kiddo-mustard transition">Tips Motorik Anak</a>
+                    <a href="kontak.html" class="hover:text-kiddo-mustard transition">Playroom & Gift Set</a>
+                </nav>
+
+                <!-- Action Buttons & Modal -->
+                <div class="hidden sm:flex items-center gap-3 font-mono">
+                    <button onclick="openMilestoneModal()" class="inline-flex items-center gap-2 px-4 py-2.5 bg-white border border-kiddo-border hover:border-kiddo-mustard text-xs font-bold text-kiddo-charcoal rounded-xl transition shadow-xs">
+                        <i class="fa-solid fa-baby text-kiddo-mustard"></i>
+                        <span>Pilih Usia Anak</span>
+                    </button>
+                    <a href="https://wa.me/6281234567890?text=Halo%20Kiddoplay,%20saya%20mau%20konsultasi%20mainan%20sesuai%20usia%20anak." target="_blank" class="inline-flex items-center gap-2 bg-kiddo-mustard hover:bg-kiddo-mustarddark text-white text-xs font-bold tracking-wider px-5 py-2.5 rounded-xl transition-all shadow-lg font-mono kiddo-btn font-display">
+                        <i class="fa-brands fa-whatsapp text-base"></i>
+                        <span>Konsultasi WA</span>
+                    </a>
+                </div>
+
+                <!-- Mobile Hamburger Button -->
+                <button id="mobileMenuBtn" class="lg:hidden p-2 text-kiddo-charcoal hover:text-kiddo-mustard focus:outline-none" aria-label="Toggle Menu">
+                    <i id="menuIcon" class="fa-solid fa-bars text-xl"></i>
+                </button>
+            </div>
+        </div>
+
+        <!-- Mobile Drawer -->
+        <div id="mobileMenu" class="hidden lg:hidden bg-white border-b border-kiddo-border px-4 py-5 space-y-3 font-mono">
+            <a href="index.html" class="block text-xs font-bold uppercase tracking-wider text-kiddo-mustard py-2 border-b border-kiddo-border">Beranda Utama</a>
+            <a href="katalog.html" class="block text-xs font-bold uppercase tracking-wider text-kiddo-charcoal hover:text-kiddo-mustard py-2 border-b border-kiddo-border">Katalog Mainan & Perlengkapan Makan</a>
+            <a href="detail.html" class="block text-xs font-bold uppercase tracking-wider text-kiddo-charcoal hover:text-kiddo-mustard py-2 border-b border-kiddo-border">Detail Balok Pelangi Montessori</a>
+            <a href="tentang.html" class="block text-xs font-bold uppercase tracking-wider text-kiddo-charcoal hover:text-kiddo-mustard py-2 border-b border-kiddo-border">Standar Keamanan SNI & Kayu</a>
+            <a href="artikel.html" class="block text-xs font-bold uppercase tracking-wider text-kiddo-charcoal hover:text-kiddo-mustard py-2 border-b border-kiddo-border">Tips Stimulasi Sensorik Anak</a>
+            <a href="kontak.html" class="block text-xs font-bold uppercase tracking-wider text-kiddo-charcoal hover:text-kiddo-mustard py-2">Playroom Melawai & Gift Box</a>
+            <div class="pt-2 flex flex-col gap-2">
+                <button onclick="openMilestoneModal()" class="w-full py-3 bg-kiddo-pinesoft text-kiddo-charcoal border border-kiddo-border rounded-xl text-xs font-bold uppercase tracking-wider flex items-center justify-center gap-2">
+                    <i class="fa-solid fa-baby"></i> Rekomendasi Mainan Usia Anak
+                </button>
+                <a href="https://wa.me/6281234567890?text=Halo%20Kiddoplay,%20saya%20mau%20tanya%20mainan." target="_blank" class="w-full py-3 bg-kiddo-mustard text-white rounded-xl text-xs font-bold uppercase tracking-wider text-center flex items-center justify-center gap-2 font-display">
+                    <i class="fa-brands fa-whatsapp"></i> Chat WhatsApp Konsultan
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- 3. WARM MONTESSORI PLAYROOM HERO SECTION -->
+    <section class="py-16 sm:py-24 border-b border-kiddo-border bg-gradient-to-b from-kiddo-pine via-kiddo-pinesoft to-kiddo-pine relative overflow-hidden">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+                
+                <!-- Left Hero Copy (6 Cols) -->
+                <div class="lg:col-span-6 space-y-6">
+                    <div class="inline-flex items-center gap-2 px-3.5 py-1.5 bg-white border border-kiddo-border text-kiddo-sage text-xs font-mono font-bold tracking-wider rounded-full shadow-xs">
+                        <span class="w-2 h-2 rounded-full bg-emerald-500 animate-ping"></span>
+                        <span class="uppercase tracking-widest text-[10px] font-display">DEVELOPMENTAL SENSORY PLAY</span>
+                    </div>
+
+                    <h1 class="text-4xl sm:text-6xl font-display font-bold text-kiddo-charcoal tracking-tight leading-[1.05] uppercase">
+                        STIMULATE <br>
+                        LITTLE MINDS <br>
+                        <span class="text-kiddo-mustard">NATURALLY.</span>
+                    </h1>
+
+                    <p class="text-xs sm:text-sm text-kiddo-charcoal/80 leading-relaxed max-w-lg font-medium font-sans">
+                        Temani setiap tahapan tumbuh kembang si kecil dengan mainan kayu alami Montessori dan perlengkapan bayi bersertifikasi SNI resmi. Dibuat dari kayu beechwood solid dengan sudut melengkung halus dan silikon *food-grade* bebas BPA yang aman digigit.
+                    </p>
+
+                    <div class="pt-2 flex flex-wrap items-center gap-4 font-mono">
+                        <a href="katalog.html" class="inline-flex items-center gap-2.5 px-8 py-4 bg-kiddo-mustard hover:bg-kiddo-mustarddark text-white text-xs font-bold tracking-widest uppercase rounded-2xl shadow-lg kiddo-btn font-display">
+                            <span>JELAJAHI MAINAN ANAK</span>
+                            <i class="fa-solid fa-arrow-right text-[10px]"></i>
+                        </a>
+                        <button onclick="openMilestoneModal()" class="inline-flex items-center gap-2 px-7 py-4 bg-white hover:bg-kiddo-pinesoft border border-kiddo-border text-kiddo-charcoal text-xs font-bold tracking-widest uppercase rounded-2xl transition font-display shadow-xs">
+                            <i class="fa-solid fa-cubes text-kiddo-mustard"></i>
+                            <span>PANDUAN TAHAP USIA</span>
+                        </button>
+                    </div>
+
+                    <!-- Quick Safety Spec Strip -->
+                    <div class="pt-4 grid grid-cols-3 gap-4 border-t border-kiddo-border font-mono text-xs">
+                        <div class="p-3.5 bg-white border border-kiddo-border rounded-xl shadow-xs">
+                            <span class="text-[10px] text-kiddo-charcoal/60 uppercase block font-bold">MATERIAL KAYU</span>
+                            <strong class="text-sm font-bold text-kiddo-charcoal font-display">Solid Beechwood</strong>
+                            <span class="text-[10px] text-emerald-700 font-bold block">Sudut Halus Anti-Luka</span>
+                        </div>
+                        <div class="p-3.5 bg-white border border-kiddo-border rounded-xl shadow-xs">
+                            <span class="text-[10px] text-kiddo-charcoal/60 uppercase block font-bold">SILIKON AMAN</span>
+                            <strong class="text-sm font-bold text-kiddo-charcoal font-display">Food-Grade 100%</strong>
+                            <span class="text-[10px] text-kiddo-mustarddark font-bold block">BPA & Lead Free</span>
+                        </div>
+                        <div class="p-3.5 bg-white border border-kiddo-border rounded-xl shadow-xs">
+                            <span class="text-[10px] text-kiddo-charcoal/60 uppercase block font-bold">SERTIFIKASI</span>
+                            <strong class="text-sm font-bold text-kiddo-charcoal font-display">SNI ISO 8124</strong>
+                            <span class="text-[10px] text-kiddo-sage font-bold block">Uji Lab Terakreditasi</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Right Hero Image with Playroom Showcase (6 Cols) -->
+                <div class="lg:col-span-6 relative">
+                    <div class="grid grid-cols-12 gap-4 items-center">
+                        
+                        <!-- Main Wooden Toy Showcase (7 Cols) -->
+                        <div class="col-span-7 bg-white border border-kiddo-border rounded-3xl aspect-[3/4] relative group overflow-hidden shadow-2xl">
+                            <img src="https://images.unsplash.com/photo-1596461404969-9ae70f2830c1?auto=format&fit=crop&w=800&q=80" alt="Montessori Wooden Rainbow Blocks" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700">
+                            
+                            <!-- Floating Badge -->
+                            <div class="absolute top-3 left-3 bg-kiddo-charcoal text-white px-3 py-1.5 font-display font-bold rounded-xl shadow-md">
+                                <span class="text-[9px] uppercase tracking-wider block font-bold text-kiddo-mustard">MONTESSORI HERO</span>
+                                <strong class="text-xs font-display">Rainbow Stacking Blocks</strong>
+                            </div>
+
+                            <div class="absolute bottom-3 left-3 right-3 bg-white/95 backdrop-blur-xs p-3 rounded-xl border border-kiddo-border font-mono text-xs flex justify-between items-center shadow-md">
+                                <span class="text-kiddo-charcoal font-bold text-[11px]">Usia 1 - 3 Tahun</span>
+                                <strong class="text-white bg-kiddo-mustard px-2 py-0.5 text-[10px] rounded-md font-display">BEST SELLER</strong>
+                            </div>
+                        </div>
+
+                        <!-- Side Baby Teether & Feeding (5 Cols) -->
+                        <div class="col-span-5 space-y-4">
+                            <div class="bg-white border border-kiddo-border rounded-2xl aspect-[3/4] relative group overflow-hidden shadow-lg">
+                                <img src="https://images.unsplash.com/photo-1515488042361-ee00e0ddd4e4?auto=format&fit=crop&w=600&q=80" alt="Food Grade Silicone Teether" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700">
+                                <span class="absolute top-2.5 right-2.5 bg-kiddo-sage/90 text-white text-[9px] font-mono font-bold px-2 py-0.5 uppercase rounded-md border border-kiddo-border">
+                                    0-6M TEETHING
+                                </span>
+                            </div>
+                            <div class="p-4 bg-white border border-kiddo-border rounded-2xl text-xs font-mono shadow-xs">
+                                <span class="font-display font-bold text-kiddo-mustarddark block text-sm uppercase">Tahan Suhu Rebus 200°C:</span>
+                                <p class="text-[11px] leading-relaxed font-sans font-normal text-kiddo-charcoal/80 mt-1">Silikon teether dan piring makan aman disterilkan menggunakan uap panas atau UV sterilizer.</p>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- Value Strip Bar -->
+            <div class="mt-16 max-w-5xl mx-auto grid grid-cols-1 sm:grid-cols-3 gap-6 bg-white p-6 rounded-3xl border border-kiddo-border shadow-xl text-xs font-mono">
+                <div class="flex items-start gap-3.5">
+                    <div class="w-10 h-10 rounded-2xl bg-kiddo-mustardsoft text-kiddo-mustarddark flex items-center justify-center shrink-0 text-base border border-kiddo-mustard/20">
+                        <i class="fa-solid fa-shield-heart"></i>
+                    </div>
+                    <div>
+                        <strong class="text-kiddo-charcoal font-bold block text-sm uppercase font-display">Sudut Kayu Halus Melengkung</strong>
+                        <span class="text-kiddo-charcoal/80 leading-relaxed font-sans text-xs">Diamplas secara manual dengan tangan untuk memastikan tidak ada serpihan kayu tajam yang melukai tangan bayi.</span>
+                    </div>
+                </div>
+                <div class="flex items-start gap-3.5">
+                    <div class="w-10 h-10 rounded-2xl bg-emerald-100 text-emerald-800 flex items-center justify-center shrink-0 text-base border border-emerald-500/20">
+                        <i class="fa-solid fa-temperature-arrow-up"></i>
+                    </div>
+                    <div>
+                        <strong class="text-kiddo-charcoal font-bold block text-sm uppercase font-display">Platinum Silicone 200°C</strong>
+                        <span class="text-kiddo-charcoal/80 leading-relaxed font-sans text-xs">Silikon lentur bersertifikasi FDA yang tahan direbus, bebas bahan kimia BPA, phthalates, dan PVC.</span>
+                    </div>
+                </div>
+                <div class="flex items-start gap-3.5">
+                    <div class="w-10 h-10 rounded-2xl bg-kiddo-sagesoft text-kiddo-sage flex items-center justify-center shrink-0 text-base border border-kiddo-sage/20">
+                        <i class="fa-solid fa-brain"></i>
+                    </div>
+                    <div>
+                        <strong class="text-kiddo-charcoal font-bold block text-sm uppercase font-display">Asah Motorik & Sensorik</strong>
+                        <span class="text-kiddo-charcoal/80 leading-relaxed font-sans text-xs">Konsep permainan terbuka (*open-ended play*) yang memicu daya imajinasi dan koordinasi mata-tangan anak.</span>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- 4. SECTION KHUSUS: MILESTONE PLAY GUIDE -->
+    <section class="py-16 bg-kiddo-pinesoft border-b border-kiddo-border font-mono">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            
+            <div class="text-center max-w-2xl mx-auto mb-12">
+                <span class="text-xs font-mono uppercase tracking-[0.25em] text-kiddo-mustard font-bold block mb-1">
+                    // CHILD DEVELOPMENT MILESTONE
+                </span>
+                <h2 class="text-2xl sm:text-4xl font-display font-bold text-kiddo-charcoal uppercase tracking-tight">
+                    Panduan Mainan Berdasarkan Tahap Usia
+                </h2>
+                <p class="text-xs sm:text-sm text-kiddo-charcoal/80 mt-1 font-sans">
+                    Pilih mainan yang tepat untuk menstimulasi panca indra dan kemampuan motorik anak sesuai tahapan usianya.
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-6">
+                
+                <!-- Stage 1: 0-6 Months (Sensory & Rattle) -->
+                <div class="bg-white border border-kiddo-border rounded-2xl p-6 flex flex-col justify-between hover:border-kiddo-mustard transition shadow-xs">
+                    <div>
+                        <div class="flex justify-between items-center mb-4">
+                            <span class="text-[10px] font-bold bg-kiddo-sagesoft text-kiddo-sage px-2.5 py-1 rounded-md uppercase tracking-wider font-display">
+                                0 - 6 BULAN
+                            </span>
+                            <span class="text-xs text-kiddo-charcoal/60 font-bold">Sensory Stage</span>
+                        </div>
+                        <h3 class="text-lg font-display font-bold text-kiddo-charcoal uppercase">Sensorik Bunyi & Raba</h3>
+                        <p class="text-xs text-kiddo-charcoal/80 mt-2 leading-relaxed font-sans font-normal">
+                            Rattle kayu berbunyi gemerincing lembut, bola sensorik rajut katun, dan teether silikon lembut pereda gusi gatal saat mulai tumbuh gigi.
+                        </p>
+                    </div>
+                    <div class="mt-6 pt-4 border-t border-kiddo-border flex items-center justify-between">
+                        <span class="text-xs text-kiddo-mustard font-bold">Mulai Rp 35rb</span>
+                        <a href="katalog.html" class="text-xs text-kiddo-charcoal font-bold hover:text-kiddo-mustard uppercase font-display">Lihat 0-6M &rarr;</a>
+                    </div>
+                </div>
+
+                <!-- Stage 2: 6-12 Months (Teething & Feeding) -->
+                <div class="bg-white border border-kiddo-border rounded-2xl p-6 flex flex-col justify-between hover:border-kiddo-mustard transition shadow-xs">
+                    <div>
+                        <div class="flex justify-between items-center mb-4">
+                            <span class="text-[10px] font-bold bg-kiddo-mustardsoft text-kiddo-mustarddark px-2.5 py-1 rounded-md uppercase tracking-wider font-display">
+                                6 - 12 BULAN
+                            </span>
+                            <span class="text-xs text-kiddo-charcoal/60 font-bold">Teething & MPASI</span>
+                        </div>
+                        <h3 class="text-lg font-display font-bold text-kiddo-charcoal uppercase">Teether & Alat Makan MPASI</h3>
+                        <p class="text-xs text-kiddo-charcoal/80 mt-2 leading-relaxed font-sans font-normal">
+                            Piring makan silikon suction anti-tumpah, sendok garpu lentur ramah gusi, dan cangkir minum mini untuk melatih kemandirian makan (*BLW*).
+                        </p>
+                    </div>
+                    <div class="mt-6 pt-4 border-t border-kiddo-border flex items-center justify-between">
+                        <span class="text-xs text-kiddo-mustard font-bold">Mulai Rp 45rb</span>
+                        <a href="katalog.html" class="text-xs text-kiddo-charcoal font-bold hover:text-kiddo-mustard uppercase font-display">Lihat 6-12M &rarr;</a>
+                    </div>
+                </div>
+
+                <!-- Stage 3: 1-3 Years (Fine Motor Montessori) -->
+                <div class="bg-white border-2 border-kiddo-mustard rounded-2xl p-6 flex flex-col justify-between shadow-xl relative">
+                    <span class="absolute -top-3 right-6 bg-kiddo-mustard text-white text-[10px] font-display font-bold px-3 py-0.5 uppercase tracking-wider rounded-full">
+                        FAVORIT BALITA
+                    </span>
+                    <div>
+                        <div class="flex justify-between items-center mb-4">
+                            <span class="text-[10px] font-bold bg-kiddo-mustardsoft text-kiddo-mustarddark px-2.5 py-1 rounded-md uppercase tracking-wider font-display">
+                                1 - 3 TAHUN
+                            </span>
+                            <span class="text-xs text-kiddo-sage font-bold">Motorik Halus</span>
+                        </div>
+                        <h3 class="text-lg font-display font-bold text-kiddo-charcoal uppercase">Balok Susun & Bentuk</h3>
+                        <p class="text-xs text-kiddo-charcoal/80 mt-2 leading-relaxed font-sans font-normal">
+                            Rainbow stacking arch, puzzle kayu sortir bentuk geometri, dan silinder kayu bertingkat untuk melatih koordinasi jemari tangan dan ketelitian.
+                        </p>
+                    </div>
+                    <div class="mt-6 pt-4 border-t border-kiddo-border flex items-center justify-between">
+                        <span class="text-xs text-kiddo-mustard font-bold">Mulai Rp 75rb</span>
+                        <a href="detail.html" class="text-xs text-kiddo-charcoal font-bold hover:underline uppercase font-display">Detail Balok &rarr;</a>
+                    </div>
+                </div>
+
+                <!-- Stage 4: 3+ Years (Creative & Cognitive Logic) -->
+                <div class="bg-white border border-kiddo-border rounded-2xl p-6 flex flex-col justify-between hover:border-kiddo-mustard transition shadow-xs">
+                    <div>
+                        <div class="flex justify-between items-center mb-4">
+                            <span class="text-[10px] font-bold bg-kiddo-coralsoft text-kiddo-coral px-2.5 py-1 rounded-md uppercase tracking-wider font-display">
+                                3+ TAHUN
+                            </span>
+                            <span class="text-xs text-kiddo-charcoal/60 font-bold">Logika & Imajinasi</span>
+                        </div>
+                        <h3 class="text-lg font-display font-bold text-kiddo-charcoal uppercase">Puzzle Kognitif & Balok Kota</h3>
+                        <p class="text-xs text-kiddo-charcoal/80 mt-2 leading-relaxed font-sans font-normal">
+                            Mainan konstruksi balok arsitektur, puzzle alfabet kayu, dan permainan peran profesi untuk mengasah nalar logika dan kemampuan bercerita.
+                        </p>
+                    </div>
+                    <div class="mt-6 pt-4 border-t border-kiddo-border flex items-center justify-between">
+                        <span class="text-xs text-kiddo-mustard font-bold">Mulai Rp 85rb</span>
+                        <a href="katalog.html" class="text-xs text-kiddo-charcoal font-bold hover:text-kiddo-mustard uppercase font-display">Lihat 3+ Thn &rarr;</a>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+    <!-- 5. PRODUK UNGGULAN: GRID 4 KOLOM MAINAN KAYU & PERLENGKAPAN BAYI -->
+    <section class="py-16 bg-kiddo-pine border-b border-kiddo-border font-mono">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            
+            <div class="flex flex-col md:flex-row md:items-end justify-between mb-12">
+                <div>
+                    <span class="text-xs font-mono uppercase tracking-[0.25em] text-kiddo-mustard font-bold block mb-1">
+                        // FEATURED PLAYROOM COLLECTION
+                    </span>
+                    <h2 class="text-2xl sm:text-4xl font-display font-bold text-kiddo-charcoal uppercase tracking-tight">
+                        Koleksi Pilihan Playroom & Bayi
+                    </h2>
+                    <p class="text-xs sm:text-sm text-kiddo-charcoal/80 mt-1 font-sans">
+                        Setiap produk telah lolos uji laboratorium bebas racun, bersertifikasi SNI resmi, dan menggunakan kayu solid ramah lingkungan.
+                    </p>
+                </div>
+                <a href="katalog.html" class="mt-4 md:mt-0 text-xs font-mono font-bold bg-white hover:bg-kiddo-pinesoft text-kiddo-charcoal border border-kiddo-border px-4 py-2 rounded-xl uppercase tracking-wider transition font-display shadow-xs">
+                    Lihat Semua 8 Produk &rarr;
+                </a>
+            </div>
+
+            <!-- 4 Column Product Grid -->
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+                
+                <!-- Product 1: Montessori Wooden Rainbow Stacking Arch (12 Pcs) -->
+                <div class="bg-white border border-kiddo-border rounded-3xl p-4 flex flex-col justify-between hover:border-kiddo-mustard transition shadow-xs">
+                    <div>
+                        <div class="aspect-[4/3] bg-kiddo-pinesoft rounded-2xl overflow-hidden mb-3 relative group border border-kiddo-border">
+                            <img src="https://images.unsplash.com/photo-1596461404969-9ae70f2830c1?auto=format&fit=crop&w=500&q=80" alt="Rainbow Stacking Blocks" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+                            <span class="absolute top-2 left-2 bg-kiddo-mustard text-white text-[8px] font-bold px-2 py-0.5 rounded-md uppercase font-display">
+                                1 - 3 TAHUN
+                            </span>
+                            <span class="absolute top-2 right-2 bg-white/90 text-kiddo-sage text-[8px] font-bold px-2 py-0.5 rounded-md uppercase font-mono border border-kiddo-border">
+                                SNI CERTIFIED
+                            </span>
+                        </div>
+
+                        <div class="flex items-center gap-1.5 mb-1 text-[10px] text-kiddo-mustard font-bold uppercase font-mono">
+                            <i class="fa-solid fa-cubes"></i>
+                            <span>12 Lengkungan • Solid Beechwood • Cat Water-Based</span>
+                        </div>
+
+                        <h3 class="font-display font-bold text-base text-kiddo-charcoal uppercase leading-tight">Rainbow Stacking Arch</h3>
+                        <p class="text-xs text-kiddo-charcoal/80 mt-1 font-sans line-clamp-1">Balok lengkung pelangi kayu untuk melatih keseimbangan dan kreativitas.</p>
+                        
+                        <div class="mt-2 text-[10px] text-kiddo-charcoal/60">
+                            <span>Warna: Pastel Rainbow Tone (12 Pcs)</span>
+                        </div>
+                    </div>
+
+                    <div class="mt-4 pt-3 border-t border-kiddo-border flex items-center justify-between">
+                        <div>
+                            <span class="text-[9px] text-kiddo-charcoal/60 block uppercase">Harga Resmi</span>
+                            <span class="font-mono font-bold text-base text-kiddo-charcoal">Rp 135.000</span>
+                        </div>
+                        <a href="detail.html" class="px-3.5 py-1.5 bg-kiddo-mustard hover:bg-kiddo-mustarddark text-white text-xs font-bold uppercase rounded-lg transition font-display">
+                            Detail &rarr;
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Product 2: Food-Grade Silicone Teether Rattle Ring -->
+                <div class="bg-white border border-kiddo-border rounded-3xl p-4 flex flex-col justify-between hover:border-kiddo-mustard transition shadow-xs">
+                    <div>
+                        <div class="aspect-[4/3] bg-kiddo-pinesoft rounded-2xl overflow-hidden mb-3 relative group border border-kiddo-border">
+                            <img src="https://images.unsplash.com/photo-1515488042361-ee00e0ddd4e4?auto=format&fit=crop&w=500&q=80" alt="Silicone Teether Ring" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+                            <span class="absolute top-2 left-2 bg-kiddo-sage text-white text-[8px] font-bold px-2 py-0.5 rounded-md uppercase font-display">
+                                0 - 6 BULAN
+                            </span>
+                            <span class="absolute top-2 right-2 bg-white/90 text-kiddo-charcoal text-[8px] font-bold px-2 py-0.5 rounded-md uppercase font-mono border border-kiddo-border">
+                                BPA-FREE
+                            </span>
+                        </div>
+
+                        <div class="flex items-center gap-1.5 mb-1 text-[10px] text-emerald-700 font-bold uppercase font-mono">
+                            <i class="fa-solid fa-tooth"></i>
+                            <span>Silikon Platinum • Ring Kayu Halus • Pereda Gusi</span>
+                        </div>
+
+                        <h3 class="font-display font-bold text-base text-kiddo-charcoal uppercase leading-tight">Silicone Teether Ring</h3>
+                        <p class="text-xs text-kiddo-charcoal/80 mt-1 font-sans line-clamp-1">Gigitan bayi bertekstur lembut untuk meredakan gusi gatal tumbuh gigi.</p>
+                        
+                        <div class="mt-2 text-[10px] text-kiddo-charcoal/60">
+                            <span>Sterilisasi: Tahan Air Mendidih 200°C</span>
+                        </div>
+                    </div>
+
+                    <div class="mt-4 pt-3 border-t border-kiddo-border flex items-center justify-between">
+                        <div>
+                            <span class="text-[9px] text-kiddo-charcoal/60 block uppercase">Harga Resmi</span>
+                            <span class="font-mono font-bold text-base text-kiddo-charcoal">Rp 42.000</span>
+                        </div>
+                        <a href="katalog.html" class="px-3.5 py-1.5 bg-kiddo-mustard hover:bg-kiddo-mustarddark text-white text-xs font-bold uppercase rounded-lg transition font-display">
+                            Pesan WA
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Product 3: Silicone Suction Feeding Plate Set (Plate + Bib + Spoon) -->
+                <div class="bg-white border border-kiddo-border rounded-3xl p-4 flex flex-col justify-between hover:border-kiddo-mustard transition shadow-xs">
+                    <div>
+                        <div class="aspect-[4/3] bg-kiddo-pinesoft rounded-2xl overflow-hidden mb-3 relative group border border-kiddo-border">
+                            <img src="https://images.unsplash.com/photo-1584824486509-112e4181ff6b?auto=format&fit=crop&w=500&q=80" alt="Silicone Feeding Set" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+                            <span class="absolute top-2 left-2 bg-kiddo-coral text-white text-[8px] font-bold px-2 py-0.5 rounded-md uppercase font-display">
+                                6 - 12 BULAN
+                            </span>
+                            <span class="absolute top-2 right-2 bg-white/90 text-kiddo-sage text-[8px] font-bold px-2 py-0.5 rounded-md uppercase font-mono border border-kiddo-border">
+                                SUCTION LOCK
+                            </span>
+                        </div>
+
+                        <div class="flex items-center gap-1.5 mb-1 text-[10px] text-kiddo-coral font-bold uppercase font-mono">
+                            <i class="fa-solid fa-utensils"></i>
+                            <span>Piring Suction • Celemek Bib Kantong • Sendok</span>
+                        </div>
+
+                        <h3 class="font-display font-bold text-base text-kiddo-charcoal uppercase leading-tight">Silicone Feeding Set 3-in-1</h3>
+                        <p class="text-xs text-kiddo-charcoal/80 mt-1 font-sans line-clamp-1">Set makan bayi anti-tumpah dengan dasar mangkuk menempel kuat di meja.</p>
+                        
+                        <div class="mt-2 text-[10px] text-kiddo-charcoal/60">
+                            <span>Warna: Sage Green, Dusty Pink, Mustard Yellow</span>
+                        </div>
+                    </div>
+
+                    <div class="mt-4 pt-3 border-t border-kiddo-border flex items-center justify-between">
+                        <div>
+                            <span class="text-[9px] text-kiddo-charcoal/60 block uppercase">Harga Resmi</span>
+                            <span class="font-mono font-bold text-base text-kiddo-charcoal">Rp 89.000</span>
+                        </div>
+                        <a href="katalog.html" class="px-3.5 py-1.5 bg-kiddo-mustard hover:bg-kiddo-mustarddark text-white text-xs font-bold uppercase rounded-lg transition font-display">
+                            Pesan WA
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Product 4: Wooden Shape Sorting Puzzle Box (Geometri) -->
+                <div class="bg-white border border-kiddo-border rounded-3xl p-4 flex flex-col justify-between hover:border-kiddo-mustard transition shadow-xs">
+                    <div>
+                        <div class="aspect-[4/3] bg-kiddo-pinesoft rounded-2xl overflow-hidden mb-3 relative group border border-kiddo-border">
+                            <img src="https://images.unsplash.com/photo-1587654780291-39c9404d746b?auto=format&fit=crop&w=500&q=80" alt="Wooden Shape Sorter" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+                            <span class="absolute top-2 left-2 bg-kiddo-mustard text-white text-[8px] font-bold px-2 py-0.5 rounded-md uppercase font-display">
+                                1 - 3 TAHUN
+                            </span>
+                            <span class="absolute top-2 right-2 bg-white/90 text-kiddo-charcoal text-[8px] font-bold px-2 py-0.5 rounded-md uppercase font-mono border border-kiddo-border">
+                                LOGIC PUZZLE
+                            </span>
+                        </div>
+
+                        <div class="flex items-center gap-1.5 mb-1 text-[10px] text-kiddo-mustard font-bold uppercase font-mono">
+                            <i class="fa-solid fa-shapes"></i>
+                            <span>12 Bentuk Geometri • Kotak Buka Tutup • Solid Wood</span>
+                        </div>
+
+                        <h3 class="font-display font-bold text-base text-kiddo-charcoal uppercase leading-tight">Wooden Shape Sorter Box</h3>
+                        <p class="text-xs text-kiddo-charcoal/80 mt-1 font-sans line-clamp-1">Kotak sortir bentuk geometri kayu untuk mengasah ketelitian logika anak.</p>
+                        
+                        <div class="mt-2 text-[10px] text-kiddo-charcoal/60">
+                            <span>Manfaat: Problem Solving & Bentuk Ruang</span>
+                        </div>
+                    </div>
+
+                    <div class="mt-4 pt-3 border-t border-kiddo-border flex items-center justify-between">
+                        <div>
+                            <span class="text-[9px] text-kiddo-charcoal/60 block uppercase">Harga Resmi</span>
+                            <span class="font-mono font-bold text-base text-kiddo-charcoal">Rp 95.000</span>
+                        </div>
+                        <a href="katalog.html" class="px-3.5 py-1.5 bg-kiddo-mustard hover:bg-kiddo-mustarddark text-white text-xs font-bold uppercase rounded-lg transition font-display">
+                            Pesan WA
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+    <!-- 6. TESTIMONI SMART MOMS & TERAPIS TUMBUH KEMBANG -->
+    <section class="py-16 bg-kiddo-pinesoft border-b border-kiddo-border font-mono">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            
+            <div class="text-center max-w-2xl mx-auto mb-12">
+                <span class="text-xs font-mono uppercase tracking-[0.25em] text-kiddo-mustard font-bold block mb-1">
+                    // SMART MOMS & EXPERT REVIEWS
+                </span>
+                <h2 class="text-2xl sm:text-4xl font-display font-bold text-kiddo-charcoal uppercase tracking-tight">
+                    Kepercayaan Para Orang Tua Bijak
+                </h2>
+                <p class="text-xs sm:text-sm text-kiddo-charcoal/80 mt-1 font-sans">
+                    Ulasan nyata dari para ibu dan praktisi terapi tumbuh kembang anak tentang keamanan dan manfaat produk Kiddoplay.
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                
+                <div class="bg-white p-6 rounded-3xl border border-kiddo-border flex flex-col justify-between shadow-xs">
+                    <div>
+                        <div class="flex items-center gap-1 text-amber-500 text-xs mb-3">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                        <p class="text-xs text-kiddo-charcoal/80 leading-relaxed font-sans italic">
+                            "Balok pelangi Montessori-nya beneran halus banget, nggak ada sudut tajam atau bau cat kimia menyengat. Anak saya usia 2 tahun betah berjam-jam bikin jembatan dan terowongan mobil. Worth it banget!"
+                        </p>
+                    </div>
+                    <div class="mt-6 pt-3 border-t border-kiddo-border flex items-center justify-between text-xs">
+                        <strong class="text-kiddo-charcoal font-bold font-display uppercase">dr. Tiara Prameswari</strong>
+                        <span class="text-[10px] bg-kiddo-mustardsoft text-kiddo-mustarddark px-2 py-0.5 rounded-md font-mono font-bold">Dokter Anak & Ibu 2 Anak — Jakarta</span>
+                    </div>
+                </div>
+
+                <div class="bg-white p-6 rounded-3xl border border-kiddo-border flex flex-col justify-between shadow-xs">
+                    <div>
+                        <div class="flex items-center gap-1 text-amber-500 text-xs mb-3">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                        <p class="text-xs text-kiddo-charcoal/80 leading-relaxed font-sans italic">
+                            "Sebagai terapis sensori integrasi anak, saya sangat merekomendasikan mainan kayu open-ended seperti Kiddoplay. Membantu koordinasi bilateral tangan dan fokus anak jauh lebih baik dibanding gawai."
+                        </p>
+                    </div>
+                    <div class="mt-6 pt-3 border-t border-kiddo-border flex items-center justify-between text-xs">
+                        <strong class="text-kiddo-charcoal font-display uppercase font-bold">Nadia Maharani, S.Ft</strong>
+                        <span class="text-[10px] bg-kiddo-sagesoft text-kiddo-sage px-2 py-0.5 rounded-md font-mono font-bold">Terapis Okupasi Anak — Surabaya</span>
+                    </div>
+                </div>
+
+                <div class="bg-white p-6 rounded-3xl border border-kiddo-border flex flex-col justify-between shadow-xs">
+                    <div>
+                        <div class="flex items-center gap-1 text-amber-500 text-xs mb-3">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                        <p class="text-xs text-kiddo-charcoal/80 leading-relaxed font-sans italic">
+                            "Set piring makannya nempel kencang di meja *high chair*, nggak gampang dilempar sama bayi. Celemek bib silikonnya gampang dicuci dan teether cincinnya jadi penolong utama saat anak mulai tumbuh gigi."
+                        </p>
+                    </div>
+                    <div class="mt-6 pt-3 border-t border-kiddo-border flex items-center justify-between text-xs">
+                        <strong class="text-kiddo-charcoal font-display uppercase font-bold">Citra Kirana Wardhani</strong>
+                        <span class="text-[10px] bg-kiddo-coralsoft text-kiddo-coral px-2 py-0.5 rounded-md font-mono font-bold">Mom of 8-Month Baby — Tangerang</span>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+    <!-- 7. FOOTER -->
+    <footer class="bg-kiddo-charcoal text-white border-t border-kiddo-border/30 pt-14 pb-28 font-mono">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-10">
+                
+                <div class="lg:col-span-2 space-y-4">
+                    <div class="flex items-center gap-3">
+                        <div class="w-9 h-9 bg-kiddo-mustard text-white flex items-center justify-center text-lg font-display font-bold rounded-xl">
+                            <i class="fa-solid fa-shapes"></i>
+                        </div>
+                        <span class="text-2xl font-display font-bold text-white uppercase tracking-tight">
+                            KIDDOPLAY<span class="text-kiddo-mustard">.</span>
+                        </span>
+                    </div>
+                    <p class="text-xs text-white/80 leading-relaxed max-w-sm font-sans">
+                        Lentera Pasar Montessori Toys & Baby Essentials Template. Menghadirkan mainan kayu Montessori bersertifikasi SNI resmi, teether silikon platinum food-grade BPA-Free, dan feeding set untuk menemani tumbuh kembang buah hati dengan aman dan menyenangkan.
+                    </p>
+                    <div class="pt-2 text-xs text-white/90 space-y-1 font-sans">
+                        <div><i class="fa-solid fa-location-dot text-kiddo-mustard mr-2"></i> Playroom: Jl. Panglima Polim V No. 19, Melawai, Kebayoran Baru, Jakarta Selatan 12160</div>
+                        <div><i class="fa-brands fa-whatsapp text-emerald-400 mr-2"></i> +62 812-3456-7890 (Konsultasi Milestone & Baby Shower Gift Set)</div>
+                    </div>
+                </div>
+
+                <div>
+                    <h4 class="text-xs font-bold uppercase tracking-wider text-white mb-4">Navigasi Utama</h4>
+                    <ul class="space-y-2.5 text-xs text-white/80">
+                        <li><a href="index.html" class="hover:text-kiddo-mustard transition">Beranda Utama</a></li>
+                        <li><a href="katalog.html" class="hover:text-kiddo-mustard transition">Katalog Mainan</a></li>
+                        <li><a href="detail.html" class="hover:text-kiddo-mustard transition">Detail Balok Kayu</a></li>
+                        <li><a href="tentang.html" class="hover:text-kiddo-mustard transition">Standar Keamanan</a></li>
+                        <li><a href="artikel.html" class="hover:text-kiddo-mustard transition">Tips Motorik Anak</a></li>
+                        <li><a href="kontak.html" class="hover:text-kiddo-mustard transition">Playroom & Kontak</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h4 class="text-xs font-bold uppercase tracking-wider text-white mb-4">Kategori Usia</h4>
+                    <ul class="space-y-2.5 text-xs text-white/80">
+                        <li><a href="katalog.html" class="hover:text-kiddo-mustard transition">0 - 6 Bulan (Sensory Starter)</a></li>
+                        <li><a href="katalog.html" class="hover:text-kiddo-mustard transition">6 - 12 Bulan (Teething & MPASI)</a></li>
+                        <li><a href="katalog.html" class="hover:text-kiddo-mustard transition">1 - 3 Tahun (Motorik Halus)</a></li>
+                        <li><a href="katalog.html" class="hover:text-kiddo-mustard transition">3+ Tahun (Logika & Kreatif)</a></li>
+                        <li><a href="katalog.html" class="hover:text-kiddo-mustard transition">Newborn Gift Box Package</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h4 class="text-xs font-bold uppercase tracking-wider text-white mb-4">Jaminan Keamanan</h4>
+                    <div class="space-y-2 text-xs">
+                        <div class="p-3 bg-white/10 border border-white/20 rounded-xl">
+                            <span class="text-[10px] text-kiddo-mustard block uppercase font-bold font-display">SNI ISO 8124:</span>
+                            <span class="font-bold text-white text-[11px]">Uji Keamanan Mainan Resmi</span>
+                        </div>
+                        <div class="p-3 bg-white/10 border border-white/20 rounded-xl">
+                            <span class="text-[10px] text-emerald-400 block uppercase font-bold font-display">FOOD-GRADE SILICONE:</span>
+                            <span class="font-bold text-white text-[11px]">BPA & Phthalate Free</span>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="mt-12 pt-8 border-t border-white/20 flex flex-col sm:flex-row items-center justify-between text-xs text-white/60">
+                <p>&copy; 2026 KIDDOPLAY MONTESSORI & BABY ESSENTIALS. All Rights Reserved.</p>
+                <p class="text-[11px] mt-2 sm:mt-0 font-sans">Lentera Pasar Production Template — Montessori Play & Baby Care</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- ========================================================================= -->
+    <!-- INTERACTIVE MILESTONE TOY FINDER MODAL                                    -->
+    <!-- ========================================================================= -->
+    <div id="milestoneModal" class="fixed inset-0 z-50 bg-black/80 backdrop-blur-xs hidden flex items-center justify-center p-4 font-mono">
+        <div class="bg-white border border-kiddo-border max-w-lg w-full p-6 sm:p-8 rounded-3xl shadow-2xl relative text-kiddo-charcoal">
+            <button onclick="closeMilestoneModal()" class="absolute top-5 right-5 text-kiddo-charcoal/60 hover:text-kiddo-charcoal border border-kiddo-border w-8 h-8 rounded-full flex items-center justify-center font-bold">
+                <i class="fa-solid fa-xmark"></i>
+            </button>
+            
+            <div class="flex items-center gap-3 mb-6">
+                <div class="w-10 h-10 bg-kiddo-mustard text-white flex items-center justify-center text-lg rounded-2xl font-display">
+                    <i class="fa-solid fa-baby"></i>
+                </div>
+                <div>
+                    <h3 class="text-lg font-display font-bold text-kiddo-charcoal uppercase">Milestone Toy Finder</h3>
+                    <p class="text-xs text-kiddo-charcoal/80 font-sans">Pilih rentang usia anak Anda untuk rekomendasi mainan stimulasi yang tepat.</p>
+                </div>
+            </div>
+
+            <div class="space-y-4 text-xs">
+                <div>
+                    <label class="block font-bold text-kiddo-charcoal mb-1.5 uppercase font-display">Pilih Rentang Usia Anak:</label>
+                    <select id="milestoneAgeSelect" onchange="updateMilestoneResult()" class="w-full p-3 border border-kiddo-border bg-kiddo-pine text-kiddo-charcoal rounded-xl focus:outline-none focus:border-kiddo-mustard text-xs font-mono font-bold">
+                        <option value="0-6m">0 - 6 Bulan (Sensorik Bunyi, Penglihatan Kontras & Rattle)</option>
+                        <option value="6-12m">6 - 12 Bulan (Teething, Menggenggam & MPASI Mandiri)</option>
+                        <option value="1-3y">1 - 3 Tahun (Balok Susun, Sortir Bentuk & Motorik Halus)</option>
+                        <option value="3plus">3+ Tahun (Puzzle Logika, Balok Kota & Permainan Peran)</option>
+                    </select>
+                </div>
+
+                <div id="milestoneResultBox" class="p-4 bg-kiddo-pinesoft border border-kiddo-mustard/40 rounded-2xl space-y-2">
+                    <div class="flex items-center justify-between">
+                        <span class="text-[10px] font-bold bg-kiddo-mustard text-white px-2.5 py-0.5 rounded-md uppercase block font-display">// REKOMENDASI MAINAN:</span>
+                        <span id="milestoneTag" class="text-[10px] font-bold text-kiddo-mustarddark">0-6M Sensory Rattle</span>
+                    </div>
+                    <h5 id="milestoneTitleDisplay" class="font-display font-bold text-kiddo-charcoal text-base uppercase">Silicone Teether Ring & Wooden Rattle</h5>
+                    <p id="milestoneDescDisplay" class="text-[11px] text-kiddo-charcoal/80 font-sans leading-relaxed">
+                        Menggabungkan ring kayu beechwood bersuara lembut dengan silikon lentur untuk menenangkan gusi gatal dan melatih genggaman jari bayi.
+                    </p>
+                </div>
+
+                <div class="pt-2 flex items-center justify-between gap-3">
+                    <a id="milestoneWaLink" href="https://wa.me/6281234567890?text=Halo%20Kiddoplay,%20saya%20tertarik%20dengan%20Silicone%20Teether%20Ring%200-6M." target="_blank" class="w-full py-3.5 bg-kiddo-mustard hover:bg-kiddo-mustarddark text-white font-bold text-xs uppercase tracking-wider rounded-xl text-center transition shadow-lg kiddo-btn font-display">
+                        Konsultasi Mainan Ini via WhatsApp &rarr;
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ========================================================================= -->
+    <!-- FLOATING WHATSAPP BUTTON (bottom-24)                                      -->
+    <!-- ========================================================================= -->
+    <a href="https://wa.me/6281234567890?text=Halo%20Kiddoplay,%20saya%20ingin%20konsultasi%20mainan%20anak." 
+       target="_blank" 
+       class="fixed bottom-24 right-6 z-50 group flex items-center gap-3 bg-white hover:bg-kiddo-pinesoft text-kiddo-charcoal px-4 py-3 border border-kiddo-border rounded-2xl shadow-2xl hover:border-kiddo-mustard transition-all duration-300 font-mono" 
+       aria-label="Konsultasi Mainan via WhatsApp">
+        <span class="relative flex h-3 w-3">
+            <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-kiddo-mustard opacity-75"></span>
+            <span class="relative inline-flex rounded-full h-3 w-3 bg-kiddo-mustard"></span>
+        </span>
+        <i class="fa-brands fa-whatsapp text-2xl text-emerald-600"></i>
+        <div class="text-left hidden sm:block pr-1">
+            <div class="text-[10px] text-kiddo-mustarddark font-bold uppercase tracking-wider leading-none font-display">Play Specialist</div>
+            <span class="font-bold text-xs text-kiddo-charcoal">Tanya Milestone WA</span>
+        </div>
+    </a>
+
+    <!-- ========================================================================= -->
+    <!-- LENTERA PASAR - STICKY DEMO & SALES BAR (fixed bottom-4)                 -->
+    <!-- ========================================================================= -->
+    <div class="fixed bottom-4 left-1/2 -translate-x-1/2 z-50 w-[95%] max-w-4xl bg-slate-900/95 backdrop-blur-md text-white p-3.5 md:p-4 rounded-2xl shadow-2xl border border-slate-700/80 transition-all duration-300">
+      <div class="flex flex-col md:flex-row items-center justify-between gap-3 md:gap-4">
+        
+        <div class="flex items-center gap-3 w-full md:w-auto">
+          <div class="w-10 h-10 rounded-xl bg-amber-500/20 border border-amber-500/40 flex items-center justify-center shrink-0">
+            <svg class="w-5 h-5 text-amber-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14.828 14.828a4 4 0 01-5.656 0M9 10h.01M15 10h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+            </svg>
+          </div>
+          <div>
+            <div class="flex items-center gap-2">
+              <span class="font-bold text-sm text-white">Lentera Pasar Engine</span>
+              <span class="text-[10px] bg-amber-500/20 text-amber-300 border border-amber-500/30 px-2 py-0.5 rounded-full font-medium">Baby & Montessori Template</span>
+            </div>
+            <p class="text-xs text-slate-300 hidden sm:block">
+              Terima beres: Website responsif + Panel input produk sendiri + Dikelola tim iklan profesional.
+            </p>
+          </div>
+        </div>
+
+        <div class="flex items-center justify-between md:justify-end gap-3 w-full md:w-auto">
+          <div class="hidden lg:flex items-center gap-2 text-xs text-slate-400 border-r border-slate-700 pr-4">
+            <div class="flex items-center gap-1 text-slate-200">
+              <svg class="w-4 h-4 text-amber-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" /></svg>
+              <span>Montessori Play</span>
+            </div>
+            <span class="text-slate-600">•</span>
+            <div class="flex items-center gap-1 text-slate-200">
+              <svg class="w-4 h-4 text-amber-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" /></svg>
+              <span>SNI & BPA-Free</span>
+            </div>
+          </div>
+
+          <a href="https://wa.me/6281234567890?text=Halo%20Tim%20Lentera%20Pasar,%20saya%20tertarik%20menggunakan%20template%20website%20Baby%20%26%20Montessori%20Play%20ini%20lengkap%20dengan%20Admin%20Panel%20dan%20Jasa%20Iklannya." 
+             target="_blank"
+             class="w-full md:w-auto inline-flex items-center justify-center gap-2 bg-gradient-to-r from-amber-500 to-orange-500 hover:from-amber-600 hover:to-orange-600 text-white text-xs md:text-sm font-bold px-5 py-2.5 rounded-xl shadow-lg transition-all hover:scale-105 shrink-0 font-display">
+            <span>Gunakan Template Ini</span>
+            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3" />
+            </svg>
+          </a>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- SCRIPT LOGIC -->
+    <script>
+        const milestoneModal = document.getElementById('milestoneModal');
+        function openMilestoneModal() {
+            milestoneModal.classList.remove('hidden');
+            updateMilestoneResult();
+        }
+        function closeMilestoneModal() {
+            milestoneModal.classList.add('hidden');
+        }
+
+        function updateMilestoneResult() {
+            const age = document.getElementById('milestoneAgeSelect').value;
+            const titleDisp = document.getElementById('milestoneTitleDisplay');
+            const descDisp = document.getElementById('milestoneDescDisplay');
+            const tag = document.getElementById('milestoneTag');
+            const waLink = document.getElementById('milestoneWaLink');
+
+            if (age === '0-6m') {
+                titleDisp.innerText = "Silicone Teether Ring & Wooden Rattle";
+                descDisp.innerText = "Menggabungkan ring kayu beechwood bersuara lembut dengan silikon lentur untuk menenangkan gusi gatal dan melatih genggaman jari bayi.";
+                tag.innerText = "0-6M Sensory Rattle";
+                waLink.href = "https://wa.me/6281234567890?text=Halo%20Kiddoplay,%20saya%20tertarik%20pesan%20Silicone%20Teether%20Ring%200-6M.";
+            } else if (age === '6-12m') {
+                titleDisp.innerText = "Silicone Suction Feeding Plate Set 3-in-1";
+                descDisp.innerText = "Piring makan menempel kuat anti-tumpah lengkap dengan sendok garpu lentur dan bib silikon berpouch untuk melatih kemandirian makan.";
+                tag.innerText = "6-12M MPASI Set";
+                waLink.href = "https://wa.me/6281234567890?text=Halo%20Kiddoplay,%20saya%20tertarik%20pesan%20Feeding%20Set%206-12M.";
+            } else if (age === '1-3y') {
+                titleDisp.innerText = "Montessori Rainbow Stacking Arch (12 Pcs)";
+                descDisp.innerText = "Balok susun pelangi kayu bersudut melengkung halus untuk mengasah koordinasi tangan-mata, keseimbangan, dan konsep warna pada balita.";
+                tag.innerText = "1-3Y Motorik Halus";
+                waLink.href = "https://wa.me/6281234567890?text=Halo%20Kiddoplay,%20saya%20tertarik%20pesan%20Rainbow%20Stacking%20Arch%201-3Y.";
+            } else {
+                titleDisp.innerText = "Wooden Shape Sorter & City Blocks (3+ Thn)";
+                descDisp.innerText = "Kotak puzzle sortir geometri dan balok konstruksi kayu arsitektur untuk melatih nalar logika matematika dan pemecahan masalah.";
+                tag.innerText = "3+Y Logika & Puzzle";
+                waLink.href = "https://wa.me/6281234567890?text=Halo%20Kiddoplay,%20saya%20tertarik%20pesan%20Shape%20Sorter%203%2B%20Thn.";
+            }
+        }
+
+        // Mobile menu toggle
+        const mobileMenuBtn = document.getElementById('mobileMenuBtn');
+        const mobileMenu = document.getElementById('mobileMenu');
+        const menuIcon = document.getElementById('menuIcon');
+
+        mobileMenuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+            if (mobileMenu.classList.contains('hidden')) {
+                menuIcon.classList.remove('fa-xmark');
+                menuIcon.classList.add('fa-bars');
+            } else {
+                menuIcon.classList.remove('fa-bars');
+                menuIcon.classList.add('fa-xmark');
+            }
+        });
+    </script>
+</body>
+</html>
