@@ -1,0 +1,801 @@
+<!DOCTYPE html>
+<html lang="id" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AURELIA HOROLOGY — Haute Timepieces & Fine Jewelry Atelier</title>
+    <meta name="description" content="Koleksi jam tangan mewah presisi mesin Jepang, kaca kristal safir anti-gores, dan perhiasan lapis emas 18K dengan garansi mesin resmi 2 tahun.">
+    
+    <!-- Google Fonts: Cinzel & Plus Jakarta Sans -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;600;700;800;900&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&family=Space+Grotesk:wght@400;500;600&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        horo: {
+                            black: '#0C0D0E',
+                            dark: '#141619',
+                            card: '#1B1D20',
+                            cardlight: '#23262B',
+                            border: '#262A30',
+                            bordergold: '#3E3420',
+                            gold: '#D4AF37',
+                            goldlight: '#F3E5AB',
+                            golddark: '#997D21',
+                            silver: '#94A3B8',
+                            platinum: '#E2E8F0',
+                            muted: '#64748B'
+                        }
+                    },
+                    fontFamily: {
+                        sans: ['"Plus Jakarta Sans"', 'sans-serif'],
+                        serif: ['"Cinzel"', 'Georgia', 'serif'],
+                        mono: ['"Space Grotesk"', 'monospace']
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        .no-scrollbar::-webkit-scrollbar { display: none; }
+        .no-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
+        
+        .gold-glow {
+            box-shadow: 0 0 35px -5px rgba(212, 175, 55, 0.15);
+        }
+        
+        .luxury-card {
+            transition: all 0.35s cubic-bezier(0.16, 1, 0.3, 1);
+        }
+        .luxury-card:hover {
+            transform: translateY(-4px);
+            border-color: #D4AF37;
+            box-shadow: 0 20px 40px -10px rgba(212, 175, 55, 0.12);
+        }
+    </style>
+</head>
+<body class="bg-horo-black text-horo-platinum font-sans antialiased selection:bg-horo-gold selection:text-black">
+
+    <!-- 1. TOP ANNOUNCEMENT BAR -->
+    <div class="bg-gradient-to-r from-horo-black via-horo-dark to-horo-black text-horo-goldlight text-[11px] py-2.5 px-4 font-mono font-medium border-b border-horo-bordergold">
+        <div class="max-w-7xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-2 text-center sm:text-left">
+            <div class="flex items-center justify-center gap-2">
+                <span class="inline-flex items-center gap-1.5 px-2.5 py-0.5 rounded-sm bg-horo-gold text-black text-[9px] font-bold tracking-wider uppercase font-sans">
+                    <span class="w-1.5 h-1.5 rounded-full bg-black animate-ping"></span>
+                    2-YEAR OFFICIAL WARRANTY
+                </span>
+                <span class="text-slate-300">Garansi Mesin Resmi 2 Tahun Penuh + Free Luxury Velvet Gift Box</span>
+            </div>
+            <div class="flex items-center gap-4 text-[10px] text-slate-400">
+                <span class="hidden md:inline">Japanese Miyota Movement & Sapphire Crystal</span>
+                <span class="hidden md:inline text-horo-bordergold">|</span>
+                <a href="katalog.html" class="text-horo-gold hover:text-white underline font-bold transition">Buka Koleksi Horologi &rarr;</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- 2. NAVBAR -->
+    <header class="sticky top-0 z-40 bg-horo-black/95 backdrop-blur-md border-b border-horo-border transition-all">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-20 sm:h-24">
+                
+                <!-- Brand Logo -->
+                <a href="index.html" class="flex items-center gap-3 group">
+                    <div class="w-11 h-11 bg-horo-dark text-horo-gold flex items-center justify-center text-xl font-serif font-black rounded-xs border border-horo-bordergold group-hover:border-horo-gold transition">
+                        <span>A</span>
+                    </div>
+                    <div class="flex flex-col">
+                        <span class="text-2xl sm:text-3xl font-serif font-black tracking-tight text-white uppercase leading-none group-hover:text-horo-gold transition duration-300">
+                            AURELIA<span class="text-horo-gold">.</span>
+                        </span>
+                        <span class="text-[8px] font-mono tracking-[0.3em] text-horo-gold uppercase mt-1 font-bold">
+                            HAUTE HORLOGERIE & JEWELRY
+                        </span>
+                    </div>
+                </a>
+
+                <!-- Desktop Navigation Links -->
+                <nav class="hidden lg:flex items-center gap-8 text-xs font-bold tracking-widest uppercase text-horo-silver font-mono">
+                    <a href="index.html" class="text-horo-gold border-b-2 border-horo-gold pb-1">Beranda</a>
+                    <a href="katalog.html" class="hover:text-horo-gold transition">Koleksi Jam & Perhiasan</a>
+                    <a href="detail.html" class="hover:text-horo-gold transition">Detail Diameter & ATM</a>
+                    <a href="tentang.html" class="hover:text-horo-gold transition">Presisi Mesin Jepang</a>
+                    <a href="artikel.html" class="hover:text-horo-gold transition">Perawatan Emas 18K</a>
+                    <a href="kontak.html" class="hover:text-horo-gold transition">Showroom & Servis</a>
+                </nav>
+
+                <!-- Action Button & Wrist Calculator Modal -->
+                <div class="hidden sm:flex items-center gap-3 font-mono">
+                    <button onclick="openWristModal()" class="inline-flex items-center gap-2 px-4 py-2.5 rounded-sm border border-horo-border hover:border-horo-gold text-xs font-bold text-slate-300 bg-horo-dark shadow-xs transition">
+                        <i class="fa-solid fa-clock text-horo-gold"></i>
+                        <span>Cek Ukuran Dial</span>
+                    </button>
+                    <a href="https://wa.me/6281234567890?text=Halo%20Aurelia%20Horology,%20saya%20tertarik%20dengan%20koleksi%20jam%20tangan%20mewah." target="_blank" class="inline-flex items-center gap-2 bg-horo-gold hover:bg-horo-goldlight text-black text-xs font-bold tracking-wider px-5 py-2.5 rounded-sm transition-all shadow-lg shadow-horo-gold/15">
+                        <i class="fa-brands fa-whatsapp text-sm"></i>
+                        <span>Pesan via WA</span>
+                    </a>
+                </div>
+
+                <!-- Mobile Hamburger Button -->
+                <button id="mobileMenuBtn" class="lg:hidden p-2 text-slate-300 hover:text-horo-gold focus:outline-none" aria-label="Toggle Menu">
+                    <i id="menuIcon" class="fa-solid fa-bars-staggered text-xl"></i>
+                </button>
+            </div>
+        </div>
+
+        <!-- Mobile Drawer -->
+        <div id="mobileMenu" class="hidden lg:hidden bg-horo-dark border-b border-horo-border px-4 py-5 space-y-3 font-mono">
+            <a href="index.html" class="block text-xs font-bold uppercase tracking-wider text-horo-gold py-2 border-b border-horo-border">Beranda Utama</a>
+            <a href="katalog.html" class="block text-xs font-bold uppercase tracking-wider text-slate-300 hover:text-horo-gold py-2 border-b border-horo-border">Katalog Jam & Perhiasan</a>
+            <a href="detail.html" class="block text-xs font-bold uppercase tracking-wider text-slate-300 hover:text-horo-gold py-2 border-b border-horo-border">Detail Diameter 40mm & 5 ATM</a>
+            <a href="tentang.html" class="block text-xs font-bold uppercase tracking-wider text-slate-300 hover:text-horo-gold py-2 border-b border-horo-border">Standar Kaca Safir & Mesin</a>
+            <a href="artikel.html" class="block text-xs font-bold uppercase tracking-wider text-slate-300 hover:text-horo-gold py-2 border-b border-horo-border">Tips Merawat Emas 18K</a>
+            <a href="kontak.html" class="block text-xs font-bold uppercase tracking-wider text-slate-300 hover:text-horo-gold py-2">Showroom Senayan & Klaim</a>
+            <div class="pt-2 flex flex-col gap-2">
+                <button onclick="openWristModal()" class="w-full py-3 rounded-sm bg-horo-card text-horo-gold border border-horo-border text-xs font-bold uppercase tracking-wider flex items-center justify-center gap-2">
+                    <i class="fa-solid fa-clock text-horo-gold"></i> Cek Ukuran Diameter Dial
+                </button>
+                <a href="https://wa.me/6281234567890?text=Halo%20Aurelia%20Horology,%20saya%20mau%20konsultasi%20jam%20tangan." target="_blank" class="w-full py-3 rounded-sm bg-horo-gold text-black text-xs font-bold uppercase tracking-wider text-center flex items-center justify-center gap-2 shadow-sm">
+                    <i class="fa-brands fa-whatsapp text-sm"></i> Concierge WhatsApp 24 Jam
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- 3. CINEMATIC DARK LUXURY HERO -->
+    <section class="py-16 sm:py-24 border-b border-horo-border bg-gradient-to-b from-horo-black via-horo-dark to-horo-black relative overflow-hidden">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+                
+                <!-- Left Horology Copy (6 Cols) -->
+                <div class="lg:col-span-6 space-y-6">
+                    <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-sm bg-horo-card border border-horo-bordergold text-horo-gold text-xs font-mono font-bold tracking-wider shadow-xs">
+                        <span class="w-2 h-2 rounded-full bg-horo-gold"></span>
+                        <span class="uppercase tracking-widest text-[10px]">SWISS-INSPIRED JAPANEASE PRECISION</span>
+                    </div>
+
+                    <h1 class="text-4xl sm:text-6xl lg:text-7xl font-serif font-black text-white tracking-tight leading-[1.05]">
+                        Timeless Elegance <br>
+                        <span class="text-horo-gold italic font-normal">on Your Wrist.</span>
+                    </h1>
+
+                    <p class="text-xs sm:text-sm text-horo-silver leading-relaxed max-w-lg font-normal">
+                        Ditempa dengan presisi standar tinggi menggunakan baja bedah 316L, kaca kristal safir tahan goresan ekstrem, dan mesin quartz Jepang Miyota yang akurat. Dirancang untuk menemani setiap pencapaian berharga dalam hidup Anda.
+                    </p>
+
+                    <div class="pt-2 flex flex-wrap items-center gap-4 font-mono">
+                        <a href="katalog.html" class="inline-flex items-center gap-2.5 px-8 py-4 bg-horo-gold hover:bg-horo-goldlight text-black text-xs font-bold tracking-widest uppercase transition-all shadow-lg shadow-horo-gold/20">
+                            <span>JELAJAHI KOLEKSI</span>
+                            <i class="fa-solid fa-arrow-right text-[10px]"></i>
+                        </a>
+                        <a href="tentang.html" class="inline-flex items-center gap-2 px-7 py-4 bg-horo-dark hover:bg-horo-card border border-horo-bordergold text-horo-gold text-xs font-bold tracking-widest uppercase transition">
+                            <span>STANDAR HOROLOGI</span>
+                        </a>
+                    </div>
+
+                    <!-- Quick Horology Specs Strip -->
+                    <div class="pt-4 grid grid-cols-3 gap-4 border-t border-horo-border font-mono text-xs">
+                        <div>
+                            <span class="text-[10px] text-horo-muted uppercase block font-bold">GLASS MATERIAL</span>
+                            <strong class="text-base font-bold text-white">Sapphire 9 Mohs</strong>
+                            <span class="text-[10px] text-horo-gold block">Anti-Gores Pisau</span>
+                        </div>
+                        <div>
+                            <span class="text-[10px] text-horo-muted uppercase block font-bold">MOVEMENT</span>
+                            <strong class="text-base font-bold text-white">Miyota Calibre</strong>
+                            <span class="text-[10px] text-emerald-400 block">Presisi ±15 dtk/bln</span>
+                        </div>
+                        <div>
+                            <span class="text-[10px] text-horo-muted uppercase block font-bold">WATER RESIST</span>
+                            <strong class="text-base font-bold text-white">5 ATM (50M)</strong>
+                            <span class="text-[10px] text-horo-gold block">Tahan Mandi & Hujan</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Right Macro Timepiece & Jewelry Lighting (6 Cols) -->
+                <div class="lg:col-span-6 relative">
+                    <div class="grid grid-cols-12 gap-4 items-center">
+                        
+                        <!-- Main Timepiece Showcase (7 Cols) -->
+                        <div class="col-span-7 bg-horo-card border border-horo-bordergold shadow-2xl aspect-[3/4] relative group overflow-hidden gold-glow">
+                            <img src="https://images.unsplash.com/photo-1522335789203-aabd1fc54bc9?auto=format&fit=crop&w=800&q=80" alt="Jam Tangan Mewah Kaca Safir" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700">
+                            <div class="absolute bottom-3 left-3 right-3 bg-horo-black/95 backdrop-blur-sm p-3.5 border border-horo-bordergold shadow-sm font-mono text-white">
+                                <span class="text-[8px] font-bold text-horo-gold uppercase tracking-wider block">FLAGSHIP HOROLOGY</span>
+                                <strong class="text-xs font-serif font-bold text-white">Sovereign Obsidian Chrono 40mm</strong>
+                            </div>
+                        </div>
+
+                        <!-- Side Floating Jewelry Cards (5 Cols) -->
+                        <div class="col-span-5 space-y-4">
+                            <div class="bg-horo-card border border-horo-border shadow-md aspect-[3/4] relative group overflow-hidden">
+                                <img src="https://images.unsplash.com/photo-1599643478518-a784e5dc4c8f?auto=format&fit=crop&w=600&q=80" alt="Kalung Lapis Emas 18K" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700">
+                                <span class="absolute top-2.5 right-2.5 bg-horo-gold text-black text-[8px] font-mono font-bold px-2 py-0.5 uppercase">
+                                    18K GOLD PVD
+                                </span>
+                            </div>
+                            <div class="p-4 bg-horo-dark border border-horo-border text-xs text-horo-silver space-y-1 font-mono shadow-xs">
+                                <span class="font-serif font-bold text-white block text-sm">Finishing Standar:</span>
+                                <p class="text-[11px] leading-relaxed font-sans font-normal text-slate-300">Baja 316L dilapisi emas 18K metode PVD vacuum plating yang tidak luntur bertahun-tahun.</p>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- Value Strip Bar -->
+            <div class="mt-16 max-w-5xl mx-auto grid grid-cols-1 sm:grid-cols-3 gap-6 bg-horo-card p-6 border border-horo-border shadow-md text-xs font-mono">
+                <div class="flex items-start gap-3.5">
+                    <div class="w-10 h-10 bg-horo-dark text-horo-gold flex items-center justify-center shrink-0 text-base border border-horo-bordergold">
+                        <i class="fa-solid fa-gem"></i>
+                    </div>
+                    <div>
+                        <strong class="text-white font-bold block text-sm uppercase">Sapphire Crystal Glass</strong>
+                        <span class="text-horo-silver leading-relaxed font-sans text-xs">Skala kekerasan 9 Mohs (setara safir asli) yang tidak bisa tergores oleh kunci maupun koin.</span>
+                    </div>
+                </div>
+                <div class="flex items-start gap-3.5">
+                    <div class="w-10 h-10 bg-horo-dark text-horo-gold flex items-center justify-center shrink-0 text-base border border-horo-bordergold">
+                        <i class="fa-solid fa-gears"></i>
+                    </div>
+                    <div>
+                        <strong class="text-white font-bold block text-sm uppercase">Mesin Quartz Miyota Jepang</strong>
+                        <span class="text-horo-silver leading-relaxed font-sans text-xs">Akurasi waktu mekanik tingkat tinggi dengan konsumsi daya baterai tahan hingga 3 tahun.</span>
+                    </div>
+                </div>
+                <div class="flex items-start gap-3.5">
+                    <div class="w-10 h-10 bg-horo-dark text-emerald-400 flex items-center justify-center shrink-0 text-base border border-horo-bordergold">
+                        <i class="fa-solid fa-shield-halved"></i>
+                    </div>
+                    <div>
+                        <strong class="text-white font-bold block text-sm uppercase">Baja Medis 316L Hipoalergenik</strong>
+                        <span class="text-horo-silver leading-relaxed font-sans text-xs">Material bebas nikel yang aman untuk kulit sensitif dan tahan karat keringat tropis.</span>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- 4. SECTION KHUSUS: KOLEKSI BERDASARKAN MOMEN -->
+    <section class="py-16 bg-horo-dark border-b border-horo-border font-mono">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            
+            <div class="text-center max-w-2xl mx-auto mb-12">
+                <span class="text-xs font-mono uppercase tracking-[0.25em] text-horo-gold font-bold block mb-1">
+                    // MOMENTS OF DISTINCTION
+                </span>
+                <h2 class="text-2xl sm:text-4xl font-serif font-black text-white uppercase">
+                    Koleksi Sesuai Karakter & Momen
+                </h2>
+                <p class="text-xs sm:text-sm text-horo-silver mt-1 font-sans">
+                    Pilihan penunjuk waktu dan perhiasan untuk rapat dewan direksi, acara gala, maupun kado istimewa.
+                </p>
+            </div>
+
+            <!-- 3 Moment Cards -->
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                
+                <!-- Moment 1: Executive Formal Timepiece -->
+                <div class="bg-horo-card border border-horo-border p-6 flex flex-col justify-between luxury-card">
+                    <div>
+                        <div class="aspect-[16/10] bg-horo-black overflow-hidden mb-5 border border-horo-border">
+                            <img src="https://images.unsplash.com/photo-1524805444758-089113d48a6d?auto=format&fit=crop&w=600&q=80" alt="Executive Formal Watch" class="w-full h-full object-cover">
+                        </div>
+                        <span class="text-[9px] font-bold text-horo-gold uppercase tracking-wider block">BOARDROOM & GALA</span>
+                        <h3 class="text-xl font-serif font-bold text-white mt-1">Executive Formal Chrono</h3>
+                        <p class="text-xs text-horo-silver mt-2 leading-relaxed font-sans font-normal">
+                            Diameter dial 40–42mm dengan bezel polished, strap rantai baja solid 316L, dan tampilan sub-dial stopwatch presisi.
+                        </p>
+                    </div>
+                    <div class="mt-6 pt-4 border-t border-horo-border">
+                        <a href="katalog.html" class="text-xs text-horo-gold hover:text-white font-bold flex items-center justify-between">
+                            <span>Lihat Koleksi Chrono</span>
+                            <span>&rarr;</span>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Moment 2: Minimalist Daily Watch -->
+                <div class="bg-horo-card border border-horo-border p-6 flex flex-col justify-between luxury-card">
+                    <div>
+                        <div class="aspect-[16/10] bg-horo-black overflow-hidden mb-5 border border-horo-border">
+                            <img src="https://images.unsplash.com/photo-1522335789203-aabd1fc54bc9?auto=format&fit=crop&w=600&q=80" alt="Minimalist Daily Watch" class="w-full h-full object-cover">
+                        </div>
+                        <span class="text-[9px] font-bold text-slate-300 uppercase tracking-wider block">DAILY COMMUTE & CAFE</span>
+                        <h3 class="text-xl font-serif font-bold text-white mt-1">Minimalist Slim Dress Watch</h3>
+                        <p class="text-xs text-horo-silver mt-2 leading-relaxed font-sans font-normal">
+                            Ketebalan ultra-slim hanya 7.8mm dengan strap kulit sapi asli Italia yang ringan menyatu di bawah kancing manset kemeja.
+                        </p>
+                    </div>
+                    <div class="mt-6 pt-4 border-t border-horo-border">
+                        <a href="katalog.html" class="text-xs text-horo-gold hover:text-white font-bold flex items-center justify-between">
+                            <span>Lihat Koleksi Slim Dress</span>
+                            <span>&rarr;</span>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Moment 3: Fine Jewelry Gift Set -->
+                <div class="bg-horo-card border border-horo-border p-6 flex flex-col justify-between luxury-card">
+                    <div>
+                        <div class="aspect-[16/10] bg-horo-black overflow-hidden mb-5 border border-horo-border">
+                            <img src="https://images.unsplash.com/photo-1599643478518-a784e5dc4c8f?auto=format&fit=crop&w=600&q=80" alt="Fine Jewelry Gift Set" class="w-full h-full object-cover">
+                        </div>
+                        <span class="text-[9px] font-bold text-amber-300 uppercase tracking-wider block">ANNIVERSARY & GIFT BOX</span>
+                        <h3 class="text-xl font-serif font-bold text-white mt-1">Fine Jewelry & Diamond Accents</h3>
+                        <p class="text-xs text-horo-silver mt-2 leading-relaxed font-sans font-normal">
+                            Kalung lapis emas 18K, gelang titanium bangle, dan cincin bermata zirkonia berkilau tinggi dalam balutan gift box eksklusif.
+                        </p>
+                    </div>
+                    <div class="mt-6 pt-4 border-t border-horo-border">
+                        <a href="katalog.html" class="text-xs text-horo-gold hover:text-white font-bold flex items-center justify-between">
+                            <span>Lihat Koleksi Perhiasan</span>
+                            <span>&rarr;</span>
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+    <!-- 5. PRODUK UNGGULAN: GRID 3 KOLOM DETAIL HOROLOGI -->
+    <section class="py-16 bg-horo-black border-b border-horo-border font-mono">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            
+            <div class="flex flex-col md:flex-row md:items-end justify-between mb-12">
+                <div>
+                    <span class="text-xs font-mono uppercase tracking-[0.25em] text-horo-gold font-bold block mb-1">
+                        // MASTERPIECE SELECTION
+                    </span>
+                    <h2 class="text-2xl sm:text-4xl font-serif font-black text-white uppercase">
+                        Koleksi Unggulan Bersertifikasi
+                    </h2>
+                    <p class="text-xs sm:text-sm text-horo-silver mt-1 font-sans">
+                        Rincian spesifikasi diameter dial, rating ketahanan air, dan material strap pada setiap mahakarya.
+                    </p>
+                </div>
+                <a href="katalog.html" class="mt-4 md:mt-0 text-xs font-mono font-bold text-horo-gold border-b border-horo-gold pb-0.5 hover:text-white transition uppercase tracking-wider">
+                    Lihat Semua 8 Koleksi &rarr;
+                </a>
+            </div>
+
+            <!-- 3 Column Product Grid -->
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                
+                <!-- Product 1: Sovereign Obsidian Chronograph 40mm -->
+                <div class="bg-horo-card border border-horo-border p-5 flex flex-col justify-between luxury-card">
+                    <div>
+                        <div class="aspect-[4/3] bg-horo-dark overflow-hidden mb-4 relative group border border-horo-border">
+                            <img src="https://images.unsplash.com/photo-1524805444758-089113d48a6d?auto=format&fit=crop&w=600&q=80" alt="Sovereign Chrono" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+                            <span class="absolute top-2.5 left-2.5 bg-horo-gold text-black text-[8px] font-bold px-2.5 py-0.5 uppercase">
+                                BEST SELLER
+                            </span>
+                        </div>
+
+                        <div class="flex items-center gap-1.5 mb-2 text-[10px] text-horo-gold font-bold uppercase">
+                            <i class="fa-solid fa-clock"></i>
+                            <span>Dial 40mm • Kaca Safir • 5 ATM</span>
+                        </div>
+
+                        <h3 class="font-serif font-bold text-lg text-white leading-snug">Sovereign Obsidian Chrono 40mm</h3>
+                        <p class="text-xs text-horo-silver mt-1.5 font-sans line-clamp-2">Jam tangan kronograf maskulin bermesin Miyota Jepang dengan strap rantai baja 316L hitam pekat.</p>
+                        
+                        <div class="mt-3 p-3 bg-horo-dark border border-horo-border text-[10px] text-slate-300 space-y-1">
+                            <div class="flex justify-between"><span>Material Case:</span> <strong class="text-white">Surgical Steel 316L</strong></div>
+                            <div class="flex justify-between"><span>Ketahanan Air:</span> <strong class="text-emerald-400">5 ATM (50 Meter)</strong></div>
+                        </div>
+                    </div>
+
+                    <div class="mt-6 pt-3 border-t border-horo-border flex items-center justify-between">
+                        <div>
+                            <span class="text-[9px] text-horo-muted block uppercase">Harga Resmi</span>
+                            <span class="font-serif font-bold text-lg text-horo-gold">Rp 1.289.000</span>
+                        </div>
+                        <a href="detail.html" class="px-4 py-2 bg-horo-gold hover:bg-horo-goldlight text-black text-xs font-bold uppercase transition">
+                            Detail &rarr;
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Product 2: Aurelia Luminary Gold Mesh 36mm -->
+                <div class="bg-horo-card border border-horo-border p-5 flex flex-col justify-between luxury-card">
+                    <div>
+                        <div class="aspect-[4/3] bg-horo-dark overflow-hidden mb-4 relative group border border-horo-border">
+                            <img src="https://images.unsplash.com/photo-1522335789203-aabd1fc54bc9?auto=format&fit=crop&w=600&q=80" alt="Luminary Gold Mesh" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+                            <span class="absolute top-2.5 left-2.5 bg-horo-dark text-horo-gold border border-horo-bordergold text-[8px] font-bold px-2.5 py-0.5 uppercase">
+                                18K GOLD PVD
+                            </span>
+                        </div>
+
+                        <div class="flex items-center gap-1.5 mb-2 text-[10px] text-horo-gold font-bold uppercase">
+                            <i class="fa-solid fa-clock"></i>
+                            <span>Dial 36mm • Ultra-Slim 7.8mm • 3 ATM</span>
+                        </div>
+
+                        <h3 class="font-serif font-bold text-lg text-white leading-snug">Luminary Champagne Gold Mesh 36mm</h3>
+                        <p class="text-xs text-horo-silver mt-1.5 font-sans line-clamp-2">Jam tangan wanita anggun berlapis emas 18K dengan strap anyaman milanese mesh halus.</p>
+                        
+                        <div class="mt-3 p-3 bg-horo-dark border border-horo-border text-[10px] text-slate-300 space-y-1">
+                            <div class="flex justify-between"><span>Material Case:</span> <strong class="text-white">18K Gold Plated Steel</strong></div>
+                            <div class="flex justify-between"><span>Ketahanan Air:</span> <strong class="text-emerald-400">3 ATM (Splashproof)</strong></div>
+                        </div>
+                    </div>
+
+                    <div class="mt-6 pt-3 border-t border-horo-border flex items-center justify-between">
+                        <div>
+                            <span class="text-[9px] text-horo-muted block uppercase">Harga Resmi</span>
+                            <span class="font-serif font-bold text-lg text-horo-gold">Rp 989.000</span>
+                        </div>
+                        <a href="detail.html" class="px-4 py-2 bg-horo-gold hover:bg-horo-goldlight text-black text-xs font-bold uppercase transition">
+                            Detail &rarr;
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Product 3: Etoile Solitaire 18K Gold Necklace Set -->
+                <div class="bg-horo-card border border-horo-border p-5 flex flex-col justify-between luxury-card">
+                    <div>
+                        <div class="aspect-[4/3] bg-horo-dark overflow-hidden mb-4 relative group border border-horo-border">
+                            <img src="https://images.unsplash.com/photo-1599643478518-a784e5dc4c8f?auto=format&fit=crop&w=600&q=80" alt="Etoile Necklace Set" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+                            <span class="absolute top-2.5 left-2.5 bg-amber-400 text-black text-[8px] font-bold px-2.5 py-0.5 uppercase">
+                                FINE JEWELRY
+                            </span>
+                        </div>
+
+                        <div class="flex items-center gap-1.5 mb-2 text-[10px] text-amber-300 font-bold uppercase">
+                            <i class="fa-solid fa-gem"></i>
+                            <span>Panjang 45cm • Liontin Zirconia 1.5ct</span>
+                        </div>
+
+                        <h3 class="font-serif font-bold text-lg text-white leading-snug">Etoile Solitaire 18K Necklace Set</h3>
+                        <p class="text-xs text-horo-silver mt-1.5 font-sans line-clamp-2">Set kalung dan anting lapis emas 18K bermata kristal zirkonia berkilau bintang malam.</p>
+                        
+                        <div class="mt-3 p-3 bg-horo-dark border border-horo-border text-[10px] text-slate-300 space-y-1">
+                            <div class="flex justify-between"><span>Material:</span> <strong class="text-white">Titanium 18K PVD Coated</strong></div>
+                            <div class="flex justify-between"><span>Kemasan:</span> <strong class="text-horo-gold">Velvet Gift Box + Sertifikat</strong></div>
+                        </div>
+                    </div>
+
+                    <div class="mt-6 pt-3 border-t border-horo-border flex items-center justify-between">
+                        <div>
+                            <span class="text-[9px] text-horo-muted block uppercase">Harga Resmi</span>
+                            <span class="font-serif font-bold text-lg text-horo-gold">Rp 459.000</span>
+                        </div>
+                        <a href="detail.html" class="px-4 py-2 bg-horo-gold hover:bg-horo-goldlight text-black text-xs font-bold uppercase transition">
+                            Detail &rarr;
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+    <!-- 6. TESTIMONI EKSEKUTIF & KOLEKTOR -->
+    <section class="py-16 bg-horo-dark border-b border-horo-border font-mono">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            
+            <div class="text-center max-w-2xl mx-auto mb-12">
+                <span class="text-xs font-mono uppercase tracking-[0.25em] text-horo-gold font-bold block mb-1">
+                    // PATRON REVIEWS
+                </span>
+                <h2 class="text-2xl sm:text-4xl font-serif font-black text-white uppercase">
+                    Kepercayaan Para Pemilik Aurelia
+                </h2>
+                <p class="text-xs sm:text-sm text-horo-silver mt-1 font-sans">
+                    Pengalaman nyata para eksekutif dan pencinta jam tangan di Jakarta, Surabaya, dan Medan.
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                
+                <div class="bg-horo-card p-6 border border-horo-border flex flex-col justify-between shadow-sm">
+                    <div>
+                        <div class="flex items-center gap-1 text-horo-gold text-xs mb-3">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                        <p class="text-xs text-slate-200 leading-relaxed font-sans italic">
+                            "Finishing dial Sovereign Chrono-nya luar biasa rapi. Bezel dan rantai bajanya berkilau elegan di bawah lampu meeting tanpa terkesan berlebihan. Kaca safirnya terbukti anti-gores saat terbentur meja kaca."
+                        </p>
+                    </div>
+                    <div class="mt-6 pt-3 border-t border-horo-border flex items-center justify-between text-xs">
+                        <strong class="text-white font-bold font-serif">Arya Wiguna, MBA</strong>
+                        <span class="text-[10px] text-horo-gold font-mono">Managing Director — Jakarta</span>
+                    </div>
+                </div>
+
+                <div class="bg-horo-card p-6 border border-horo-border flex flex-col justify-between shadow-sm">
+                    <div>
+                        <div class="flex items-center gap-1 text-horo-gold text-xs mb-3">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                        <p class="text-xs text-slate-200 leading-relaxed font-sans italic">
+                            "Beli set Luminary Gold Mesh sebagai kado anniversary pernikahan istri. Kotak beludrunya sangat mewah dan ada sertifikat garansinya. Istri sangat suka karena rantainya lembut dan tidak menjepit bulu tangan."
+                        </p>
+                    </div>
+                    <div class="mt-6 pt-3 border-t border-horo-border flex items-center justify-between text-xs">
+                        <strong class="text-white font-bold font-serif">Dharmawan Tan</strong>
+                        <span class="text-[10px] text-horo-gold font-mono">Entrepreneur — Surabaya</span>
+                    </div>
+                </div>
+
+                <div class="bg-horo-card p-6 border border-horo-border flex flex-col justify-between shadow-sm">
+                    <div>
+                        <div class="flex items-center gap-1 text-horo-gold text-xs mb-3">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                        <p class="text-xs text-slate-200 leading-relaxed font-sans italic">
+                            "Layanan klaim garansinya sangat responsif. Dulu sempat mau potong rantai strap agar pas di tangan, dilayani dengan ramah via WhatsApp dan dikirimkan alat penyesuai link gratis."
+                        </p>
+                    </div>
+                    <div class="mt-6 pt-3 border-t border-horo-border flex items-center justify-between text-xs">
+                        <strong class="text-white font-bold font-serif">Natasha Gunawan</strong>
+                        <span class="text-[10px] text-horo-gold font-mono">Creative Director — Medan</span>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+    <!-- 7. FOOTER -->
+    <footer class="bg-horo-black text-horo-silver border-t border-horo-bordergold pt-14 pb-28 font-mono">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-10">
+                
+                <div class="lg:col-span-2 space-y-4">
+                    <div class="flex items-center gap-3">
+                        <div class="w-9 h-9 bg-horo-gold text-black flex items-center justify-center text-lg font-serif font-black">
+                            <span>A</span>
+                        </div>
+                        <span class="text-2xl font-serif font-black text-white uppercase tracking-tight">
+                            AURELIA<span class="text-horo-gold">.</span>
+                        </span>
+                    </div>
+                    <p class="text-xs text-slate-300 leading-relaxed max-w-sm font-sans">
+                        Lentera Pasar Luxury Timepieces & Fine Jewelry Template. Menghadirkan jam tangan presisi standar horologi Jepang, kaca safir 9 Mohs, serta perhiasan lapis emas 18K bergaransi resmi 2 tahun.
+                    </p>
+                    <div class="pt-2 text-xs text-slate-300 space-y-1 font-sans">
+                        <div><i class="fa-solid fa-location-dot text-horo-gold mr-2"></i> Showroom: Senayan City Mall Lt. 2 No. 45, Jakarta Pusat 10270</div>
+                        <div><i class="fa-brands fa-whatsapp text-emerald-400 mr-2"></i> +62 812-3456-7890 (Horology Concierge WhatsApp)</div>
+                    </div>
+                </div>
+
+                <div>
+                    <h4 class="text-xs font-bold uppercase tracking-wider text-white mb-4">Navigasi Utama</h4>
+                    <ul class="space-y-2.5 text-xs text-slate-300">
+                        <li><a href="index.html" class="hover:text-horo-gold transition">Beranda Utama</a></li>
+                        <li><a href="katalog.html" class="hover:text-horo-gold transition">Katalog Jam & Emas</a></li>
+                        <li><a href="detail.html" class="hover:text-horo-gold transition">Detail Diameter & ATM</a></li>
+                        <li><a href="tentang.html" class="hover:text-horo-gold transition">Standar Kaca Safir</a></li>
+                        <li><a href="artikel.html" class="hover:text-horo-gold transition">Perawatan Emas 18K</a></li>
+                        <li><a href="kontak.html" class="hover:text-horo-gold transition">Showroom & Servis</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h4 class="text-xs font-bold uppercase tracking-wider text-white mb-4">Koleksi Horologi</h4>
+                    <ul class="space-y-2.5 text-xs text-slate-300">
+                        <li><a href="katalog.html" class="hover:text-horo-gold transition">Executive Chronograph</a></li>
+                        <li><a href="katalog.html" class="hover:text-horo-gold transition">Slim Dress Watch 36mm</a></li>
+                        <li><a href="katalog.html" class="hover:text-horo-gold transition">Titanium Cuff Bangle</a></li>
+                        <li><a href="katalog.html" class="hover:text-horo-gold transition">18K Gold Solitaire Necklace</a></li>
+                        <li><a href="katalog.html" class="hover:text-horo-gold transition">Italian Leather Straps</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h4 class="text-xs font-bold uppercase tracking-wider text-white mb-4">Jaminan Mutu</h4>
+                    <div class="space-y-2 text-xs">
+                        <div class="p-3 bg-horo-dark border border-horo-bordergold">
+                            <span class="text-[10px] text-horo-gold block uppercase font-bold">2-YEAR WARRANTY:</span>
+                            <span class="font-bold text-white text-[11px]">Garansi Mesin Resmi 24 Bulan</span>
+                        </div>
+                        <div class="p-3 bg-horo-dark border border-horo-bordergold">
+                            <span class="text-[10px] text-emerald-400 block uppercase font-bold">AUTHENTIC SAPPHIRE:</span>
+                            <span class="font-bold text-white text-[11px]">Kaca Kristal Safir 9 Mohs</span>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="mt-12 pt-8 border-t border-horo-border flex flex-col sm:flex-row items-center justify-between text-xs text-slate-500">
+                <p>&copy; 2026 AURELIA HOROLOGY ATELIER. All Rights Reserved.</p>
+                <p class="text-[11px] mt-2 sm:mt-0 font-sans">Lentera Pasar Production Template — Luxury Timepieces & Jewelry</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- ========================================================================= -->
+    <!-- INTERACTIVE WRIST SIZE & CASE DIAMETER CALCULATOR MODAL                   -->
+    <!-- ========================================================================= -->
+    <div id="wristModal" class="fixed inset-0 z-50 bg-black/85 backdrop-blur-sm hidden flex items-center justify-center p-4 font-mono">
+        <div class="bg-horo-dark border border-horo-bordergold max-w-lg w-full p-6 sm:p-8 shadow-2xl relative text-horo-platinum">
+            <button onclick="closeWristModal()" class="absolute top-5 right-5 text-horo-silver hover:text-white text-lg p-1">
+                <i class="fa-solid fa-xmark"></i>
+            </button>
+            
+            <div class="flex items-center gap-3 mb-6">
+                <div class="w-10 h-10 bg-horo-card text-horo-gold flex items-center justify-center text-lg border border-horo-bordergold">
+                    <i class="fa-solid fa-clock text-horo-gold"></i>
+                </div>
+                <div>
+                    <h3 class="text-lg font-serif font-bold text-white uppercase">Kalkulator Diameter Dial Jam</h3>
+                    <p class="text-xs text-horo-silver font-sans">Pilih lingkar pergelangan tangan Anda untuk rekomendasi ukuran case jam yang paling proporsional.</p>
+                </div>
+            </div>
+
+            <div class="space-y-4 text-xs">
+                <div>
+                    <label class="block font-bold text-white mb-1.5 uppercase">Lingkar Pergelangan Tangan Anda:</label>
+                    <select id="wristSizeSelect" onchange="calculateDialMatch()" class="w-full p-3 border border-horo-border bg-horo-card text-white focus:outline-none focus:border-horo-gold text-xs font-mono">
+                        <option value="medium">Pergelangan Sedang (16 — 18 cm) — Standar Pria/Wanita</option>
+                        <option value="small">Pergelangan Ramping (< 16 cm) — Wanita / Pria Ramping</option>
+                        <option value="large">Pergelangan Besar (> 18 cm) — Pria Maskulin</option>
+                    </select>
+                </div>
+
+                <div id="wristResultBox" class="p-4 bg-horo-card border border-horo-bordergold space-y-2">
+                    <span class="text-[10px] font-bold text-horo-gold uppercase block">// REKOMENDASI DIAMETER CASE:</span>
+                    <h5 id="dialTitleDisplay" class="font-serif font-bold text-white text-base">Diameter Dial 40 mm (Sovereign Obsidian Chrono)</h5>
+                    <p id="dialDescDisplay" class="text-[11px] text-slate-300 font-sans leading-relaxed">
+                        Ukuran paling proporsional dan fleksibel untuk pergelangan tangan sedang, tidak terlalu besar dan tetap terlihat berwibawa di bawah kemeja.
+                    </p>
+                </div>
+
+                <div class="pt-2 flex items-center justify-between gap-3">
+                    <a id="wristWaLink" href="https://wa.me/6281234567890?text=Halo%20Aurelia%20Horology,%20lingkar%20tangan%20saya%2016-18cm.%20Saya%20tertarik%20rekomendasi%20dial%2040mm." target="_blank" class="w-full py-3.5 bg-horo-gold hover:bg-horo-goldlight text-black font-bold text-xs uppercase tracking-wider text-center transition shadow-lg shadow-horo-gold/20">
+                        Konsultasi Ukuran via WhatsApp &rarr;
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ========================================================================= -->
+    <!-- FLOATING WHATSAPP BUTTON (bottom-24)                                      -->
+    <!-- ========================================================================= -->
+    <a href="https://wa.me/6281234567890?text=Halo%20Aurelia%20Horology,%20saya%20ingin%20konsultasi%20jam%20tangan%20dan%20perhiasan." 
+       target="_blank" 
+       class="fixed bottom-24 right-6 z-50 group flex items-center gap-3 bg-horo-dark hover:bg-horo-card text-white px-4 py-3 border border-horo-bordergold shadow-2xl hover:border-horo-gold transition-all duration-300 font-mono" 
+       aria-label="Konsultasi Jam via WhatsApp">
+        <span class="relative flex h-3 w-3">
+            <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-horo-gold opacity-75"></span>
+            <span class="relative inline-flex rounded-full h-3 w-3 bg-horo-gold"></span>
+        </span>
+        <i class="fa-brands fa-whatsapp text-2xl text-emerald-400"></i>
+        <div class="text-left hidden sm:block pr-1">
+            <div class="text-[10px] text-horo-gold font-bold uppercase tracking-wider leading-none">Horology Concierge</div>
+            <span class="font-bold text-xs text-white">Konsultasi Jam WA</span>
+        </div>
+    </a>
+
+    <!-- ========================================================================= -->
+    <!-- LENTERA PASAR - STICKY DEMO & SALES BAR (fixed bottom-4)                 -->
+    <!-- ========================================================================= -->
+    <div class="fixed bottom-4 left-1/2 -translate-x-1/2 z-50 w-[95%] max-w-4xl bg-slate-900/95 backdrop-blur-md text-white p-3.5 md:p-4 rounded-2xl shadow-2xl border border-slate-700/80 transition-all duration-300">
+      <div class="flex flex-col md:flex-row items-center justify-between gap-3 md:gap-4">
+        
+        <div class="flex items-center gap-3 w-full md:w-auto">
+          <div class="w-10 h-10 rounded-xl bg-amber-500/20 border border-amber-500/40 flex items-center justify-center shrink-0">
+            <svg class="w-5 h-5 text-amber-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
+            </svg>
+          </div>
+          <div>
+            <div class="flex items-center gap-2">
+              <span class="font-bold text-sm text-white">Lentera Pasar Engine</span>
+              <span class="text-[10px] bg-amber-500/20 text-amber-300 border border-amber-500/30 px-2 py-0.5 rounded-full font-medium">Luxury Horology Template</span>
+            </div>
+            <p class="text-xs text-slate-300 hidden sm:block">
+              Terima beres: Website responsif + Panel input produk sendiri + Dikelola tim iklan profesional.
+            </p>
+          </div>
+        </div>
+
+        <div class="flex items-center justify-between md:justify-end gap-3 w-full md:w-auto">
+          <div class="hidden lg:flex items-center gap-2 text-xs text-slate-400 border-r border-slate-700 pr-4">
+            <div class="flex items-center gap-1 text-slate-200">
+              <svg class="w-4 h-4 text-emerald-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" /></svg>
+              <span>Dark Horology UI</span>
+            </div>
+            <span class="text-slate-600">•</span>
+            <div class="flex items-center gap-1 text-slate-200">
+              <svg class="w-4 h-4 text-emerald-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" /></svg>
+              <span>ATM & Dial Specs</span>
+            </div>
+          </div>
+
+          <a href="https://wa.me/6281234567890?text=Halo%20Tim%20Lentera%20Pasar,%20saya%20tertarik%20menggunakan%20template%20website%20Timepiece%20%26%20Jewelry%20ini%20lengkap%20dengan%20Admin%20Panel%20dan%20Jasa%20Iklannya." 
+             target="_blank"
+             class="w-full md:w-auto inline-flex items-center justify-center gap-2 bg-gradient-to-r from-amber-600 to-yellow-600 hover:from-amber-500 hover:to-yellow-500 text-black text-xs md:text-sm font-bold px-5 py-2.5 rounded-xl shadow-lg transition-all hover:scale-105 shrink-0">
+            <span>Gunakan Template Ini</span>
+            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3" />
+            </svg>
+          </a>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- SCRIPT LOGIC -->
+    <script>
+        // Wrist Modal Logic
+        const wristModal = document.getElementById('wristModal');
+        function openWristModal() {
+            wristModal.classList.remove('hidden');
+            calculateDialMatch();
+        }
+        function closeWristModal() {
+            wristModal.classList.add('hidden');
+        }
+
+        function calculateDialMatch() {
+            const val = document.getElementById('wristSizeSelect').value;
+            const titleDisp = document.getElementById('dialTitleDisplay');
+            const descDisp = document.getElementById('dialDescDisplay');
+            const waLink = document.getElementById('wristWaLink');
+
+            if (val === 'medium') {
+                titleDisp.innerText = "Diameter Dial 40 mm (Sovereign Obsidian Chrono)";
+                descDisp.innerText = "Ukuran paling proporsional dan fleksibel untuk pergelangan tangan sedang (16–18cm), seimbang dan berwibawa di bawah kemeja.";
+                waLink.href = "https://wa.me/6281234567890?text=Halo%20Aurelia%20Horology,%20pergelangan%20saya%2016-18cm.%20Saya%20tertarik%20dial%2040mm%20Sovereign%20Chrono.";
+            } else if (val === 'small') {
+                titleDisp.innerText = "Diameter Dial 36 — 38 mm (Luminary Slim Dress)";
+                descDisp.innerText = "Sangat cocok untuk pergelangan tangan ramping (<16cm) agar lugs jam tidak melewati batas lebar pergelangan tangan.";
+                waLink.href = "https://wa.me/6281234567890?text=Halo%20Aurelia%20Horology,%20pergelangan%20saya%20ramping.%20Saya%20tertarik%20dial%2036mm%20Luminary.";
+            } else {
+                titleDisp.innerText = "Diameter Dial 42 — 44 mm (Vanguard Bold Chronograph)";
+                descDisp.innerText = "Sangat maskulin dan kokoh untuk pergelangan tangan besar (>18cm) dengan bezel berkarakter tegas.";
+                waLink.href = "https://wa.me/6281234567890?text=Halo%20Aurelia%20Horology,%20pergelangan%20saya%20besar.%20Saya%20tertarik%20dial%2042mm%20Vanguard.";
+            }
+        }
+
+        // Mobile menu toggle
+        const mobileMenuBtn = document.getElementById('mobileMenuBtn');
+        const mobileMenu = document.getElementById('mobileMenu');
+        const menuIcon = document.getElementById('menuIcon');
+
+        mobileMenuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+            if (mobileMenu.classList.contains('hidden')) {
+                menuIcon.classList.remove('fa-xmark');
+                menuIcon.classList.add('fa-bars-staggered');
+            } else {
+                menuIcon.classList.remove('fa-bars-staggered');
+                menuIcon.classList.add('fa-xmark');
+            }
+        });
+    </script>
+</body>
+</html>

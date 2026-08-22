@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html lang="id" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jurnal Horologi & Panduan Emas 18K — AURELIA HOROLOGY</title>
+    <meta name="description" content="Koleksi artikel edukasi jam tangan mewah dan perhiasan emas 18K: panduan merawat kaca safir, arti water resistant 5 ATM, dan cara ukur diameter dial jam.">
+    
+    <!-- Google Fonts: Cinzel & Plus Jakarta Sans -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;600;700;800;900&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&family=Space+Grotesk:wght@400;500;600&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        horo: {
+                            black: '#0C0D0E',
+                            dark: '#141619',
+                            card: '#1B1D20',
+                            cardlight: '#23262B',
+                            border: '#262A30',
+                            bordergold: '#3E3420',
+                            gold: '#D4AF37',
+                            goldlight: '#F3E5AB',
+                            golddark: '#997D21',
+                            silver: '#94A3B8',
+                            platinum: '#E2E8F0',
+                            muted: '#64748B'
+                        }
+                    },
+                    fontFamily: {
+                        sans: ['"Plus Jakarta Sans"', 'sans-serif'],
+                        serif: ['"Cinzel"', 'Georgia', 'serif'],
+                        mono: ['"Space Grotesk"', 'monospace']
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        .no-scrollbar::-webkit-scrollbar { display: none; }
+        .no-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
+        
+        .luxury-card {
+            transition: all 0.35s cubic-bezier(0.16, 1, 0.3, 1);
+        }
+        .luxury-card:hover {
+            transform: translateY(-4px);
+            border-color: #D4AF37;
+            box-shadow: 0 20px 40px -10px rgba(212, 175, 55, 0.12);
+        }
+    </style>
+</head>
+<body class="bg-horo-black text-horo-platinum font-sans antialiased selection:bg-horo-gold selection:text-black">
+
+    <!-- 1. TOP BAR -->
+    <div class="bg-gradient-to-r from-horo-black via-horo-dark to-horo-black text-horo-goldlight text-[11px] py-2.5 px-4 font-mono font-medium border-b border-horo-bordergold">
+        <div class="max-w-7xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-2 text-center sm:text-left">
+            <div class="flex items-center justify-center gap-2">
+                <span class="inline-flex items-center gap-1.5 px-2.5 py-0.5 rounded-sm bg-horo-gold text-black text-[9px] font-bold tracking-wider uppercase font-sans">
+                    <span class="w-1.5 h-1.5 rounded-full bg-black animate-ping"></span>
+                    HOROLOGY JOURNAL
+                </span>
+                <span class="text-slate-300">Riset Ketahanan Kaca Safir & Panduan Perawatan Logam Mulia</span>
+            </div>
+            <div class="flex items-center gap-4 text-[10px] text-slate-400">
+                <a href="katalog.html" class="text-horo-gold hover:text-white underline font-bold transition">Koleksi Jam Tangan &rarr;</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- 2. NAVBAR -->
+    <header class="sticky top-0 z-40 bg-horo-black/95 backdrop-blur-md border-b border-horo-border transition-all">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-20 sm:h-24">
+                
+                <a href="index.html" class="flex items-center gap-3 group">
+                    <div class="w-11 h-11 bg-horo-dark text-horo-gold flex items-center justify-center text-xl font-serif font-black rounded-xs border border-horo-bordergold group-hover:border-horo-gold transition">
+                        <span>A</span>
+                    </div>
+                    <div class="flex flex-col">
+                        <span class="text-2xl sm:text-3xl font-serif font-black tracking-tight text-white uppercase leading-none group-hover:text-horo-gold transition duration-300">
+                            AURELIA<span class="text-horo-gold">.</span>
+                        </span>
+                        <span class="text-[8px] font-mono tracking-[0.3em] text-horo-gold uppercase mt-1 font-bold">
+                            HAUTE HORLOGERIE & JEWELRY
+                        </span>
+                    </div>
+                </a>
+
+                <nav class="hidden lg:flex items-center gap-8 text-xs font-bold tracking-widest uppercase text-horo-silver font-mono">
+                    <a href="index.html" class="hover:text-horo-gold transition">Beranda</a>
+                    <a href="katalog.html" class="hover:text-horo-gold transition">Koleksi Jam & Perhiasan</a>
+                    <a href="detail.html" class="hover:text-horo-gold transition">Detail Diameter & ATM</a>
+                    <a href="tentang.html" class="hover:text-horo-gold transition">Presisi Mesin Jepang</a>
+                    <a href="artikel.html" class="text-horo-gold border-b-2 border-horo-gold pb-1">Perawatan Emas 18K</a>
+                    <a href="kontak.html" class="hover:text-horo-gold transition">Showroom & Servis</a>
+                </nav>
+
+                <div class="hidden sm:flex items-center gap-3 font-mono">
+                    <a href="https://wa.me/6281234567890?text=Halo%20Aurelia%20Horology,%20saya%20mau%20tanya%20seputar%20tips%20merawat%20jam." target="_blank" class="inline-flex items-center gap-2 bg-horo-gold hover:bg-horo-goldlight text-black text-xs font-bold tracking-wider px-5 py-2.5 rounded-sm transition-all shadow-lg shadow-horo-gold/15">
+                        <i class="fa-brands fa-whatsapp text-sm"></i>
+                        <span>Tanya Concierge WA</span>
+                    </a>
+                </div>
+
+                <button id="mobileMenuBtn" class="lg:hidden p-2 text-slate-300 hover:text-horo-gold focus:outline-none" aria-label="Toggle Menu">
+                    <i id="menuIcon" class="fa-solid fa-bars-staggered text-xl"></i>
+                </button>
+            </div>
+        </div>
+
+        <!-- Mobile Drawer -->
+        <div id="mobileMenu" class="hidden lg:hidden bg-horo-dark border-b border-horo-border px-4 py-5 space-y-3 font-mono">
+            <a href="index.html" class="block text-xs font-bold uppercase tracking-wider text-slate-300 hover:text-horo-gold py-2 border-b border-horo-border">Beranda Utama</a>
+            <a href="katalog.html" class="block text-xs font-bold uppercase tracking-wider text-slate-300 hover:text-horo-gold py-2 border-b border-horo-border">Katalog Jam & Perhiasan</a>
+            <a href="detail.html" class="block text-xs font-bold uppercase tracking-wider text-slate-300 hover:text-horo-gold py-2 border-b border-horo-border">Detail Diameter 40mm & 5 ATM</a>
+            <a href="tentang.html" class="block text-xs font-bold uppercase tracking-wider text-slate-300 hover:text-horo-gold py-2 border-b border-horo-border">Standar Kaca Safir & Mesin</a>
+            <a href="artikel.html" class="block text-xs font-bold uppercase tracking-wider text-horo-gold py-2 border-b border-horo-border">Tips Merawat Emas 18K</a>
+            <a href="kontak.html" class="block text-xs font-bold uppercase tracking-wider text-slate-300 hover:text-horo-gold py-2">Showroom Senayan & Klaim</a>
+        </div>
+    </header>
+
+    <!-- 3. PAGE HEADER & FEATURED ESSAY -->
+    <section class="py-12 bg-horo-dark border-b border-horo-border font-mono">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            
+            <div class="max-w-3xl mb-10">
+                <div class="inline-flex items-center gap-2 px-3 py-1 bg-horo-card border border-horo-bordergold text-horo-gold text-xs font-bold tracking-wider mb-3">
+                    <span class="w-2 h-2 rounded-full bg-horo-gold"></span>
+                    <span class="uppercase tracking-widest text-[10px]">HOROLOGICAL ESSAY & SCIENCE</span>
+                </div>
+                <h1 class="text-3xl sm:text-5xl font-serif font-black text-white tracking-tight uppercase">
+                    Jurnal Edukasi Horologi & Perhiasan
+                </h1>
+                <p class="text-xs sm:text-sm text-horo-silver mt-2 font-sans font-normal">
+                    Panduan mendalam tentang ilmu kristal safir, perbedaan tekanan air ATM, dan cara merawat perhiasan lapis emas 18K agar tidak kusam.
+                </p>
+            </div>
+
+            <!-- Featured Story Card -->
+            <div class="bg-horo-card border border-horo-bordergold p-6 sm:p-10 shadow-2xl">
+                <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
+                    <div class="lg:col-span-6">
+                        <div class="aspect-[16/10] bg-horo-dark overflow-hidden relative group border border-horo-border">
+                            <img src="https://images.unsplash.com/photo-1522335789203-aabd1fc54bc9?auto=format&fit=crop&w=800&q=80" alt="Horology Sapphire Science" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700">
+                            <span class="absolute top-3 left-3 bg-horo-gold text-black text-[9px] font-bold px-3 py-1 uppercase">
+                                COVER STORY
+                            </span>
+                        </div>
+                    </div>
+                    <div class="lg:col-span-6 space-y-4">
+                        <div class="flex items-center gap-3 text-xs text-horo-silver">
+                            <span>Oleh Master Horologist Aurelia</span>
+                            <span>•</span>
+                            <span>5 Min Read</span>
+                            <span>•</span>
+                            <span class="text-horo-gold font-bold">Sapphire Science</span>
+                        </div>
+                        <h2 class="text-2xl sm:text-3xl font-serif font-bold text-white uppercase leading-tight">
+                            The Art of Horology: Mengapa Jam Tangan Ultra-Slim dengan Kaca Safir Membutuhkan Presisi Ekstrem
+                        </h2>
+                        <p class="text-xs sm:text-sm text-horo-silver leading-relaxed font-sans font-normal">
+                            Memadukan kaca kristal safir berketebalan 1.2mm ke dalam case baja bedah setebal 8.2mm memerlukan toleransi presisi mesin mikron agar kedap air 5 ATM tetap terjaga tanpa mengorbankan estetika tipis.
+                        </p>
+                        <div class="pt-2">
+                            <a href="detail.html" class="inline-flex items-center gap-2 px-6 py-3 bg-horo-gold text-black text-xs font-bold tracking-wider uppercase hover:bg-horo-goldlight transition">
+                                <span>Lihat Sovereign Chrono</span>
+                                <i class="fa-solid fa-arrow-right text-[10px]"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- 4. GRID ARTIKEL PANDUAN & TIPS HOROLOGI -->
+    <section class="py-16 bg-horo-black font-mono">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            
+            <h3 class="text-2xl font-serif font-black text-white uppercase mb-8 flex items-center gap-2">
+                <i class="fa-solid fa-book-open text-horo-gold"></i>
+                <span>Semua Panduan Jam Tangan & Logam Mulia</span>
+            </h3>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                
+                <!-- Article 1 -->
+                <div class="bg-horo-card border border-horo-border p-6 flex flex-col justify-between luxury-card">
+                    <div>
+                        <div class="aspect-[16/10] bg-horo-dark overflow-hidden mb-4 border border-horo-border">
+                            <img src="https://images.unsplash.com/photo-1599643478518-a784e5dc4c8f?auto=format&fit=crop&w=500&q=80" alt="Merawat Emas 18K" class="w-full h-full object-cover">
+                        </div>
+                        <div class="flex items-center gap-2 text-[10px] font-bold text-horo-silver mb-2">
+                            <span class="text-amber-300">JEWELRY CARE</span>
+                            <span>•</span>
+                            <span>4 Min Read</span>
+                        </div>
+                        <h4 class="font-serif font-bold text-lg text-white leading-snug">
+                            Cara Merawat Perhiasan Lapis Emas 18K Agar Bebas Kusam & Tidak Menghitam Kena Keringat
+                        </h4>
+                        <p class="text-xs text-horo-silver mt-2 leading-relaxed font-sans font-normal">
+                            Langkah sederhana menyeka perhiasan dengan kain microfiber kering setelah dipakai sebelum disimpan di kantong beludru.
+                        </p>
+                    </div>
+                    <div class="mt-6 pt-4 border-t border-horo-border flex items-center justify-between text-xs">
+                        <span class="text-slate-400">Care Tips</span>
+                        <a href="katalog.html" class="text-horo-gold font-bold hover:underline">Koleksi Emas &rarr;</a>
+                    </div>
+                </div>
+
+                <!-- Article 2 -->
+                <div class="bg-horo-card border border-horo-border p-6 flex flex-col justify-between luxury-card">
+                    <div>
+                        <div class="aspect-[16/10] bg-horo-dark overflow-hidden mb-4 border border-horo-border">
+                            <img src="https://images.unsplash.com/photo-1524805444758-089113d48a6d?auto=format&fit=crop&w=500&q=80" alt="Panduan Ukur Pergelangan" class="w-full h-full object-cover">
+                        </div>
+                        <div class="flex items-center gap-2 text-[10px] font-bold text-horo-silver mb-2">
+                            <span class="text-horo-gold">WRIST SIZING</span>
+                            <span>•</span>
+                            <span>5 Min Read</span>
+                        </div>
+                        <h4 class="font-serif font-bold text-lg text-white leading-snug">
+                            Panduan Mengukur Lingkar Pergelangan Tangan untuk Menentukan Diameter Dial Jam yang Pas
+                        </h4>
+                        <p class="text-xs text-horo-silver mt-2 leading-relaxed font-sans font-normal">
+                            Kiat menggunakan pita ukur atau seutas tali agar lugs jam tangan tidak meluber melewati batas pergelangan.
+                        </p>
+                    </div>
+                    <div class="mt-6 pt-4 border-t border-horo-border flex items-center justify-between text-xs">
+                        <span class="text-slate-400">Sizing Guide</span>
+                        <a href="katalog.html" class="text-horo-gold font-bold hover:underline">Pilih Ukuran &rarr;</a>
+                    </div>
+                </div>
+
+                <!-- Article 3 -->
+                <div class="bg-horo-card border border-horo-border p-6 flex flex-col justify-between luxury-card">
+                    <div>
+                        <div class="aspect-[16/10] bg-horo-dark overflow-hidden mb-4 border border-horo-border">
+                            <img src="https://images.unsplash.com/photo-1522335789203-aabd1fc54bc9?auto=format&fit=crop&w=500&q=80" alt="Water Resistance ATM" class="w-full h-full object-cover">
+                        </div>
+                        <div class="flex items-center gap-2 text-[10px] font-bold text-horo-silver mb-2">
+                            <span class="text-emerald-400">WATERPROOF SCIENCE</span>
+                            <span>•</span>
+                            <span>6 Min Read</span>
+                        </div>
+                        <h4 class="font-serif font-bold text-lg text-white leading-snug">
+                            Memahami Arti 3 ATM vs 5 ATM: Mengapa Jam Tangan Tidak Boleh Dibawa Mandi Air Panas?
+                        </h4>
+                        <p class="text-xs text-horo-silver mt-2 leading-relaxed font-sans font-normal">
+                            Penjelasan bahaya uap air panas yang dapat memuai dan menembus gasket karet pelindung mesin internal jam tangan.
+                        </p>
+                    </div>
+                    <div class="mt-6 pt-4 border-t border-horo-border flex items-center justify-between text-xs">
+                        <span class="text-slate-400">Tech Guide</span>
+                        <a href="katalog.html" class="text-horo-gold font-bold hover:underline">Koleksi 5 ATM &rarr;</a>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+    <!-- 5. GLOSARIUM TEKNOLOGI HOROLOGI -->
+    <section class="py-16 bg-horo-dark border-t border-b border-horo-border font-mono">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            
+            <div class="text-center max-w-2xl mx-auto mb-12">
+                <span class="text-xs font-mono uppercase tracking-[0.25em] text-horo-gold font-bold block mb-1">
+                    // KAMUS TEKNIS HOROLOGI
+                </span>
+                <h3 class="text-2xl sm:text-3xl font-serif font-bold text-white uppercase">
+                    Glosarium Terminologi Jam Tangan
+                </h3>
+                <p class="text-xs text-horo-silver mt-1 font-sans">
+                    Mengenal ragam istilah komponen mekanik dan standar pelapisan perhiasan.
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 text-xs">
+                
+                <div class="p-5 bg-horo-card border border-horo-border">
+                    <strong class="text-sm font-serif font-bold text-white uppercase block">Sapphire Crystal</strong>
+                    <p class="text-horo-silver mt-1 text-[11px] leading-relaxed font-sans">
+                        Kaca sintetis kristal korundum berkekerasan 9 Mohs yang menjamin permukaan jam selalu jernih tanpa baret.
+                    </p>
+                </div>
+
+                <div class="p-5 bg-horo-card border border-horo-border">
+                    <strong class="text-sm font-serif font-bold text-white uppercase block">Miyota Calibre</strong>
+                    <p class="text-horo-silver mt-1 text-[11px] leading-relaxed font-sans">
+                        Modul mesin quartz bergetar frekuensi tinggi dari Citizen Group Jepang berstandar akurasi tinggi.
+                    </p>
+                </div>
+
+                <div class="p-5 bg-horo-card border border-horo-border">
+                    <strong class="text-sm font-serif font-bold text-white uppercase block">PVD Gold Coating</strong>
+                    <p class="text-horo-silver mt-1 text-[11px] leading-relaxed font-sans">
+                        Metode pelapisan uap fisik dalam ruang hampa udara yang mengikat partikel emas 18K ke pori-pori baja.
+                    </p>
+                </div>
+
+                <div class="p-5 bg-horo-card border border-horo-border">
+                    <strong class="text-sm font-serif font-bold text-white uppercase block">Butterfly Clasp</strong>
+                    <p class="text-horo-silver mt-1 text-[11px] leading-relaxed font-sans">
+                        Sistem pengait rantai lipat ganda tersembunyi yang memberikan tampilan seamless dan aman tidak mudah lepas.
+                    </p>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+    <!-- 6. FOOTER -->
+    <footer class="bg-horo-black text-horo-silver border-t border-horo-bordergold pt-14 pb-28 font-mono">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex flex-col md:flex-row items-center justify-between gap-6 border-b border-horo-border pb-8">
+                <div class="flex items-center gap-3">
+                    <div class="w-8 h-8 bg-horo-gold text-black flex items-center justify-center text-base font-serif font-black">
+                        <span>A</span>
+                    </div>
+                    <span class="text-xl font-serif font-black text-white uppercase tracking-tight">
+                        AURELIA<span class="text-horo-gold">.</span>
+                    </span>
+                </div>
+                <div class="flex flex-wrap gap-6 text-xs text-slate-300 font-bold uppercase tracking-wider">
+                    <a href="index.html" class="hover:text-horo-gold">Beranda</a>
+                    <a href="katalog.html" class="hover:text-horo-gold">Katalog</a>
+                    <a href="detail.html" class="hover:text-horo-gold">Detail</a>
+                    <a href="tentang.html" class="hover:text-horo-gold">Horologi</a>
+                    <a href="artikel.html" class="text-horo-gold">Perawatan</a>
+                    <a href="kontak.html" class="hover:text-horo-gold">Showroom</a>
+                </div>
+            </div>
+            <div class="mt-6 flex flex-col sm:flex-row items-center justify-between text-xs text-slate-500">
+                <p>&copy; 2026 AURELIA HOROLOGY ATELIER. All Rights Reserved.</p>
+                <p class="text-[11px] mt-2 sm:mt-0 font-sans">Lentera Pasar Production Template — Luxury Timepieces & Jewelry</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- FLOATING WHATSAPP BUTTON (bottom-24) -->
+    <a href="https://wa.me/6281234567890?text=Halo%20Aurelia%20Horology,%20saya%20mau%20konsultasi%20artikel%20jam." 
+       target="_blank" 
+       class="fixed bottom-24 right-6 z-50 group flex items-center gap-3 bg-horo-dark hover:bg-horo-card text-white px-4 py-3 border border-horo-bordergold shadow-2xl hover:border-horo-gold transition-all duration-300 font-mono">
+        <span class="relative flex h-3 w-3">
+            <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-horo-gold opacity-75"></span>
+            <span class="relative inline-flex rounded-full h-3 w-3 bg-horo-gold"></span>
+        </span>
+        <i class="fa-brands fa-whatsapp text-2xl text-emerald-400"></i>
+        <div class="text-left hidden sm:block pr-1">
+            <div class="text-[10px] text-horo-gold font-bold uppercase tracking-wider leading-none">Horology Concierge</div>
+            <span class="font-bold text-xs text-white">Konsultasi Jam WA</span>
+        </div>
+    </a>
+
+    <!-- LENTERA PASAR - STICKY DEMO & SALES BAR (fixed bottom-4) -->
+    <div class="fixed bottom-4 left-1/2 -translate-x-1/2 z-50 w-[95%] max-w-4xl bg-slate-900/95 backdrop-blur-md text-white p-3.5 md:p-4 rounded-2xl shadow-2xl border border-slate-700/80 transition-all duration-300">
+      <div class="flex flex-col md:flex-row items-center justify-between gap-3 md:gap-4">
+        <div class="flex items-center gap-3 w-full md:w-auto">
+          <div class="w-10 h-10 rounded-xl bg-amber-500/20 border border-amber-500/40 flex items-center justify-center shrink-0">
+            <svg class="w-5 h-5 text-amber-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
+            </svg>
+          </div>
+          <div>
+            <div class="flex items-center gap-2">
+              <span class="font-bold text-sm text-white">Lentera Pasar Engine</span>
+              <span class="text-[10px] bg-amber-500/20 text-amber-300 border border-amber-500/30 px-2 py-0.5 rounded-full font-medium">Luxury Horology Template</span>
+            </div>
+            <p class="text-xs text-slate-300 hidden sm:block">
+              Terima beres: Website responsif + Panel input produk sendiri + Dikelola tim iklan profesional.
+            </p>
+          </div>
+        </div>
+
+        <div class="flex items-center justify-between md:justify-end gap-3 w-full md:w-auto">
+          <a href="https://wa.me/6281234567890?text=Halo%20Tim%20Lentera%20Pasar,%20saya%20tertarik%20menggunakan%20template%20website%20Timepiece%20%26%20Jewelry%20ini%20lengkap%20dengan%20Admin%20Panel%20dan%20Jasa%20Iklannya." 
+             target="_blank"
+             class="w-full md:w-auto inline-flex items-center justify-center gap-2 bg-gradient-to-r from-amber-600 to-yellow-600 hover:from-amber-500 hover:to-yellow-500 text-black text-xs md:text-sm font-bold px-5 py-2.5 rounded-xl shadow-lg transition-all hover:scale-105 shrink-0">
+            <span>Gunakan Template Ini</span>
+            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3" />
+            </svg>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <!-- SCRIPT -->
+    <script>
+        const mobileMenuBtn = document.getElementById('mobileMenuBtn');
+        const mobileMenu = document.getElementById('mobileMenu');
+        const menuIcon = document.getElementById('menuIcon');
+
+        mobileMenuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+            if (mobileMenu.classList.contains('hidden')) {
+                menuIcon.classList.remove('fa-xmark');
+                menuIcon.classList.add('fa-bars-staggered');
+            } else {
+                menuIcon.classList.remove('fa-bars-staggered');
+                menuIcon.classList.add('fa-xmark');
+            }
+        });
+    </script>
+</body>
+</html>
