@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html lang="id" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jurnal Arsitektur & Perawatan Kayu Solid — JATIKARA</title>
+    <meta name="description" content="Koleksi artikel panduan merawat furnitur kayu jati solid, filosofi desain Japandi, perbandingan serat kayu, dan tips memilih ukuran meja makan minimalis.">
+    
+    <!-- Google Fonts: Cormorant Garamond & Plus Jakarta Sans -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,600;1,700&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Space+Grotesk:wght@600;700&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        jatikara: {
+                            linen: '#F9F7F2',
+                            linensoft: '#F4EFE6',
+                            card: '#FFFFFF',
+                            amber: '#8C5D35',
+                            amberdark: '#6F4420',
+                            ambersoft: '#EBDCCE',
+                            walnut: '#2E1F16',
+                            walnutdark: '#1A110B',
+                            charcoal: '#2D2926',
+                            border: '#E5DDD0',
+                            sage: '#708272'
+                        }
+                    },
+                    fontFamily: {
+                        sans: ['"Plus Jakarta Sans"', 'sans-serif'],
+                        serif: ['"Cormorant Garamond"', 'serif'],
+                        mono: ['"Space Grotesk"', 'monospace']
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        .no-scrollbar::-webkit-scrollbar { display: none; }
+        .no-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
+        
+        .jatikara-btn {
+            transition: all 0.2s cubic-bezier(0.16, 1, 0.3, 1);
+        }
+        .jatikara-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 10px 25px -6px rgba(140, 93, 53, 0.45);
+        }
+    </style>
+</head>
+<body class="bg-jatikara-linen text-jatikara-charcoal font-sans antialiased selection:bg-jatikara-amber selection:text-white">
+
+    <!-- 1. TOP BAR -->
+    <div class="bg-jatikara-walnut text-jatikara-linen text-xs py-2.5 px-4 font-mono font-bold border-b border-jatikara-border/30">
+        <div class="max-w-7xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-2 text-center sm:text-left">
+            <div class="flex items-center justify-center gap-2">
+                <span class="px-2 py-0.5 bg-jatikara-amber text-white text-[10px] uppercase font-serif font-black tracking-wider rounded-md">
+                    ARCHITECTURAL ESSAY
+                </span>
+                <span class="text-white">Inspirasi Desain Japandi, Perawatan Kayu Tropis, & Panduan Tata Ruang</span>
+            </div>
+            <div class="flex items-center gap-4 text-xs font-mono">
+                <a href="katalog.html" class="text-jatikara-ambersoft hover:text-white underline font-extrabold transition">Koleksi Mebel &rarr;</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- 2. NAVBAR -->
+    <header class="sticky top-0 z-40 bg-jatikara-linen/95 backdrop-blur-md border-b border-jatikara-border transition-all">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-20 sm:h-24">
+                
+                <a href="index.html" class="flex items-center gap-3 group">
+                    <div class="w-11 h-11 bg-jatikara-walnut text-white flex items-center justify-center text-xl font-serif font-black rounded-2xl shadow-lg group-hover:bg-jatikara-amber transition">
+                        <i class="fa-solid fa-tree"></i>
+                    </div>
+                    <div class="flex flex-col">
+                        <span class="text-2xl sm:text-3xl font-serif font-black tracking-tight text-jatikara-walnut uppercase leading-none">
+                            JATIKARA<span class="text-jatikara-amber">.</span>
+                        </span>
+                        <span class="text-[9px] font-mono tracking-[0.28em] text-jatikara-amber uppercase mt-1 font-bold">
+                            SOLID TEAK & JAPANDI LIVING
+                        </span>
+                    </div>
+                </a>
+
+                <nav class="hidden lg:flex items-center gap-8 text-xs font-bold tracking-wider uppercase text-jatikara-charcoal/80 font-mono">
+                    <a href="index.html" class="hover:text-jatikara-amber transition">Beranda</a>
+                    <a href="katalog.html" class="hover:text-jatikara-amber transition">Katalog Mebel</a>
+                    <a href="detail.html" class="hover:text-jatikara-amber transition">Detail Meja Makan</a>
+                    <a href="tentang.html" class="hover:text-jatikara-amber transition">Keahlian Pengrajin</a>
+                    <a href="artikel.html" class="text-jatikara-amber border-b-2 border-jatikara-amber pb-1">Panduan Perawatan</a>
+                    <a href="kontak.html" class="hover:text-jatikara-amber transition">Showroom & Custom Ukuran</a>
+                </nav>
+
+                <div class="hidden sm:flex items-center gap-3 font-mono">
+                    <a href="https://wa.me/6281234567890?text=Halo%20Jatikara,%20saya%20mau%20konsultasi%20perawatan%20furnitur." target="_blank" class="inline-flex items-center gap-2 bg-jatikara-amber hover:bg-jatikara-amberdark text-white text-xs font-bold tracking-wider px-5 py-2.5 rounded-xl transition-all shadow-lg font-mono jatikara-btn font-serif">
+                        <i class="fa-brands fa-whatsapp text-base"></i>
+                        <span>Tanya Perawatan WA</span>
+                    </a>
+                </div>
+
+                <button id="mobileMenuBtn" class="lg:hidden p-2 text-jatikara-walnut hover:text-jatikara-amber focus:outline-none" aria-label="Toggle Menu">
+                    <i id="menuIcon" class="fa-solid fa-bars text-xl"></i>
+                </button>
+            </div>
+        </div>
+
+        <!-- Mobile Drawer -->
+        <div id="mobileMenu" class="hidden lg:hidden bg-white border-b border-jatikara-border px-4 py-5 space-y-3 font-mono">
+            <a href="index.html" class="block text-xs font-bold uppercase tracking-wider text-jatikara-charcoal hover:text-jatikara-amber py-2 border-b border-jatikara-border">Beranda Utama</a>
+            <a href="katalog.html" class="block text-xs font-bold uppercase tracking-wider text-jatikara-charcoal hover:text-jatikara-amber py-2 border-b border-jatikara-border">Katalog Meja, Kursi & Lemari</a>
+            <a href="detail.html" class="block text-xs font-bold uppercase tracking-wider text-jatikara-charcoal hover:text-jatikara-amber py-2 border-b border-jatikara-border">Detail Meja Makan Solid Teak</a>
+            <a href="tentang.html" class="block text-xs font-bold uppercase tracking-wider text-jatikara-charcoal hover:text-jatikara-amber py-2 border-b border-jatikara-border">Standar Kayu Oven SVLK</a>
+            <a href="artikel.html" class="block text-xs font-bold uppercase tracking-wider text-jatikara-amber py-2 border-b border-jatikara-border">Inspirasi Japandi Living & Tips</a>
+            <a href="kontak.html" class="block text-xs font-bold uppercase tracking-wider text-jatikara-charcoal hover:text-jatikara-amber py-2">Showroom Kemang & Custom Denah</a>
+        </div>
+    </header>
+
+    <!-- 3. PAGE HEADER & FEATURED ESSAY -->
+    <section class="py-12 bg-jatikara-linensoft border-b border-jatikara-border font-mono">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            
+            <div class="max-w-3xl mb-10">
+                <div class="inline-flex items-center gap-2 px-3 py-1 bg-white border border-jatikara-border text-jatikara-amber text-xs font-bold tracking-wider mb-3 rounded-full shadow-xs">
+                    <span class="w-2 h-2 rounded-full bg-jatikara-amber"></span>
+                    <span class="uppercase tracking-widest text-[10px] font-serif">ESSAY & WOODCARE JOURNAL</span>
+                </div>
+                <h1 class="text-3xl sm:text-5xl font-serif font-bold text-jatikara-walnut tracking-tight uppercase">
+                    Jurnal Desain & Seni Perkayuan
+                </h1>
+                <p class="text-xs sm:text-sm text-jatikara-charcoal/80 mt-2 font-sans font-normal">
+                    Eksplorasi filosofi estetika Japandi, tips merawat keindahan kayu solid di iklim tropis, dan panduan memilih dimensi furnitur yang selaras dengan denah hunian Anda.
+                </p>
+            </div>
+
+            <!-- Featured Cover Story Card -->
+            <div class="bg-white border border-jatikara-border rounded-3xl p-6 sm:p-10 shadow-xl">
+                <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
+                    <div class="lg:col-span-6">
+                        <div class="aspect-[16/10] bg-jatikara-linensoft rounded-2xl overflow-hidden relative group border border-jatikara-border">
+                            <img src="https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?auto=format&fit=crop&w=800&q=80" alt="The Philosophy of Japandi Living" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700">
+                            <span class="absolute top-3 left-3 bg-jatikara-walnut text-white text-[9px] font-bold px-3 py-1 rounded-md uppercase font-serif">
+                                COVER ESSAY
+                            </span>
+                        </div>
+                    </div>
+                    <div class="lg:col-span-6 space-y-4 font-mono">
+                        <div class="flex items-center gap-3 text-xs text-jatikara-charcoal/60">
+                            <span>Oleh Danang Pratama, M.Arch</span>
+                            <span>•</span>
+                            <span>6 Min Read</span>
+                            <span>•</span>
+                            <span class="text-jatikara-amber font-bold font-serif">Japandi Aesthetics</span>
+                        </div>
+                        <h2 class="text-2xl sm:text-3xl font-serif font-bold text-jatikara-walnut uppercase leading-tight">
+                            The Philosophy of Japandi Living: Menyatukan Kehangatan Kayu Tropis Indonesia dengan Kesederhanaan Minimalis Skandinavia & Wabi-Sabi
+                        </h2>
+                        <p class="text-xs sm:text-sm text-jatikara-charcoal/80 leading-relaxed font-sans font-normal">
+                            Bagaimana perpaduan antara filosofi ketenangan Jepang (*wabi-sabi*) dan kenyamanan fungsional Nordik (*hygge*) menciptakan ruang hunian yang lapang, tenang, dan membumi dengan kehadiran furnitur kayu solid.
+                        </p>
+                        <div class="pt-2">
+                            <a href="detail.html" class="inline-flex items-center gap-2 px-6 py-3 bg-jatikara-amber text-white text-xs font-bold tracking-wider uppercase rounded-xl hover:bg-jatikara-amberdark transition jatikara-btn font-serif">
+                                <span>Lihat Meja Makan Solid Teak Kami</span>
+                                <i class="fa-solid fa-arrow-right text-[10px]"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- 4. GRID ARTIKEL PANDUAN PERAWATAN & DESAIN -->
+    <section class="py-16 bg-jatikara-linen font-mono">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            
+            <h3 class="text-2xl font-serif font-bold text-jatikara-walnut uppercase mb-8 flex items-center gap-2">
+                <i class="fa-solid fa-tree text-jatikara-amber"></i>
+                <span>Semua Panduan Perawatan & Tips Interior</span>
+            </h3>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                
+                <!-- Article 1 -->
+                <div class="bg-white border border-jatikara-border rounded-2xl p-6 flex flex-col justify-between hover:border-jatikara-amber transition shadow-xs">
+                    <div>
+                        <div class="aspect-[16/10] bg-jatikara-linensoft rounded-xl overflow-hidden mb-4 border border-jatikara-border">
+                            <img src="https://images.unsplash.com/photo-1540574163026-643ea20ade25?auto=format&fit=crop&w=500&q=80" alt="Perawatan Kayu Jati Tropis" class="w-full h-full object-cover">
+                        </div>
+                        <div class="flex items-center gap-2 text-[10px] font-bold text-jatikara-amber mb-2">
+                            <span class="font-serif">WOOD MAINTENANCE</span>
+                            <span>•</span>
+                            <span>4 Min Read</span>
+                        </div>
+                        <h4 class="font-serif font-bold text-lg text-jatikara-walnut leading-snug uppercase">
+                            Cara Merawat Furnitur Kayu Jati Solid Agar Tetap Berkilau Alami dan Tahan Jamur di Iklim Tropis
+                        </h4>
+                        <p class="text-xs text-jatikara-charcoal/80 mt-2 leading-relaxed font-sans font-normal">
+                            Panduan praktis mengoleskan minyak jati (*teak oil*), menjaga kelembapan ruangan ber-AC, dan mengatasi noda air pada permukaan meja tanpa mengikis lapisan politur.
+                        </p>
+                    </div>
+                    <div class="mt-6 pt-4 border-t border-jatikara-border flex items-center justify-between text-xs">
+                        <span class="text-jatikara-charcoal/60">Care Manual</span>
+                        <a href="katalog.html" class="text-jatikara-amber font-bold hover:underline font-serif">Lihat Mebel &rarr;</a>
+                    </div>
+                </div>
+
+                <!-- Article 2 -->
+                <div class="bg-white border border-jatikara-border rounded-2xl p-6 flex flex-col justify-between hover:border-jatikara-amber transition shadow-xs">
+                    <div>
+                        <div class="aspect-[16/10] bg-jatikara-linensoft rounded-xl overflow-hidden mb-4 border border-jatikara-border">
+                            <img src="https://images.unsplash.com/photo-1594633312681-425c7b97ccd1?auto=format&fit=crop&w=500&q=80" alt="Perbedaan Serat Kayu Jati vs Sungkai vs Mahoni" class="w-full h-full object-cover">
+                        </div>
+                        <div class="flex items-center gap-2 text-[10px] font-bold text-emerald-800 mb-2">
+                            <span class="font-serif">TIMBER SPECIES</span>
+                            <span>•</span>
+                            <span>5 Min Read</span>
+                        </div>
+                        <h4 class="font-serif font-bold text-lg text-jatikara-walnut leading-snug uppercase">
+                            Memahami Perbedaan Karakteristik Serat Kayu Jati vs Kayu Sungkai vs Mahoni untuk Interior Rumah Modern
+                        </h4>
+                        <p class="text-xs text-jatikara-charcoal/80 mt-2 leading-relaxed font-sans font-normal">
+                            Mengenal kepadatan serat, warna alami kayu, tingkat muai-susut, dan kecocokan masing-masing jenis kayu untuk tema interior Japandi, Scandinavian, atau Mid-Century.
+                        </p>
+                    </div>
+                    <div class="mt-6 pt-4 border-t border-jatikara-border flex items-center justify-between text-xs">
+                        <span class="text-jatikara-charcoal/60">Timber Guide</span>
+                        <a href="katalog.html" class="text-emerald-800 font-bold hover:underline font-serif">Pilih Material &rarr;</a>
+                    </div>
+                </div>
+
+                <!-- Article 3 -->
+                <div class="bg-white border border-jatikara-border rounded-2xl p-6 flex flex-col justify-between hover:border-jatikara-amber transition shadow-xs">
+                    <div>
+                        <div class="aspect-[16/10] bg-jatikara-linensoft rounded-xl overflow-hidden mb-4 border border-jatikara-border">
+                            <img src="https://images.unsplash.com/photo-1533779283484-8da49dc92f11?auto=format&fit=crop&w=500&q=80" alt="Tips Memilih Ukuran Meja Makan" class="w-full h-full object-cover">
+                        </div>
+                        <div class="flex items-center gap-2 text-[10px] font-bold text-jatikara-walnut mb-2">
+                            <span class="font-serif">SPACE PLANNING</span>
+                            <span>•</span>
+                            <span>4 Min Read</span>
+                        </div>
+                        <h4 class="font-serif font-bold text-lg text-jatikara-walnut leading-snug uppercase">
+                            Tips Menata Ruang Makan Minimalis: Memilih Ukuran Meja Makan yang Pas Sesuai Luas Denah
+                        </h4>
+                        <p class="text-xs text-jatikara-charcoal/80 mt-2 leading-relaxed font-sans font-normal">
+                            Rumus menghitung jarak sirkulasi kursi ke dinding, kelebihan meja berujung oval (*pill-shaped*), dan trik menggunakan bangku panjang (*bench*) untuk ruangan terbatas.
+                        </p>
+                    </div>
+                    <div class="mt-6 pt-4 border-t border-jatikara-border flex items-center justify-between text-xs">
+                        <span class="text-jatikara-charcoal/60">Interior Planning</span>
+                        <a href="kontak.html" class="text-jatikara-walnut font-bold hover:underline font-serif">Konsultasi Denah &rarr;</a>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+    <!-- 5. GLOSARIUM PERKAYUAN & MEBEL SOLID -->
+    <section class="py-16 bg-jatikara-linensoft border-t border-b border-jatikara-border font-mono">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            
+            <div class="text-center max-w-2xl mx-auto mb-12">
+                <span class="text-xs font-mono uppercase tracking-[0.25em] text-jatikara-amber font-bold block mb-1">
+                    // SOLID WOODCRAFT GLOSSARY
+                </span>
+                <h3 class="text-2xl sm:text-3xl font-serif font-bold text-jatikara-walnut uppercase">
+                    Glosarium Istilah Mebel Kayu Solid
+                </h3>
+                <p class="text-xs text-jatikara-charcoal/80 mt-1 font-sans">
+                    Mengenal terminologi konstruksi purus, kadar air kayu oven, dan standar legalitas hutan.
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 text-xs">
+                
+                <div class="p-5 bg-white border border-jatikara-border rounded-2xl shadow-xs">
+                    <strong class="text-sm font-serif font-bold text-jatikara-walnut uppercase block">Mortise & Tenon</strong>
+                    <p class="text-jatikara-charcoal/80 mt-1 text-[11px] leading-relaxed font-sans">
+                        Sistem sambungan kayu tradisional di mana tonjolan purus (*tenon*) masuk ke dalam lubang pasak (*mortise*), mengunci struktur rangka tanpa paku besi.
+                    </p>
+                </div>
+
+                <div class="p-5 bg-white border border-jatikara-border rounded-2xl shadow-xs">
+                    <strong class="text-sm font-serif font-bold text-jatikara-walnut uppercase block">Kiln-Dried (MC &lt; 12%)</strong>
+                    <p class="text-jatikara-charcoal/80 mt-1 text-[11px] leading-relaxed font-sans">
+                        Pengeringan kayu dalam oven berkelembapan terkontrol untuk mencapai kadar air (*moisture content*) seimbang sehingga kayu tidak retak saat digunakan.
+                    </p>
+                </div>
+
+                <div class="p-5 bg-white border border-jatikara-border rounded-2xl shadow-xs">
+                    <strong class="text-sm font-serif font-bold text-jatikara-walnut uppercase block">Sistem Verifikasi SVLK</strong>
+                    <p class="text-jatikara-charcoal/80 mt-1 text-[11px] leading-relaxed font-sans">
+                        Sertifikasi nasional yang menjamin seluruh kayu dipanen dari hutan lestari resmi tanpa merusak ekosistem hutan lindung.
+                    </p>
+                </div>
+
+                <div class="p-5 bg-white border border-jatikara-border rounded-2xl shadow-xs">
+                    <strong class="text-sm font-serif font-bold text-jatikara-walnut uppercase block">Waterbased Matte Polyurethane</strong>
+                    <p class="text-jatikara-charcoal/80 mt-1 text-[11px] leading-relaxed font-sans">
+                        Lapisan pelindung kayu berbahan dasar air yang mempertahankan rabaan alami serat kayu tanpa kilau plastik, tahan air, dan bebas racun VOC.
+                    </p>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+    <!-- 6. FOOTER -->
+    <footer class="bg-jatikara-walnut text-jatikara-linen border-t border-jatikara-border/30 pt-14 pb-28 font-mono">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex flex-col md:flex-row items-center justify-between gap-6 border-b border-white/20 pb-8">
+                <div class="flex items-center gap-3">
+                    <div class="w-8 h-8 bg-jatikara-amber text-white flex items-center justify-center text-base font-serif font-bold rounded-xl">
+                        <i class="fa-solid fa-tree"></i>
+                    </div>
+                    <span class="text-xl font-serif font-bold text-white uppercase tracking-tight">
+                        JATIKARA<span class="text-jatikara-amber">.</span>
+                    </span>
+                </div>
+                <div class="flex flex-wrap gap-6 text-xs text-jatikara-linen/80 font-bold uppercase tracking-wider font-serif">
+                    <a href="index.html" class="hover:text-jatikara-amber">Beranda</a>
+                    <a href="katalog.html" class="hover:text-jatikara-amber">Katalog</a>
+                    <a href="detail.html" class="hover:text-jatikara-amber">Detail</a>
+                    <a href="tentang.html" class="hover:text-jatikara-amber">Keahlian Pengrajin</a>
+                    <a href="artikel.html" class="text-jatikara-amber">Tips Perawatan</a>
+                    <a href="kontak.html" class="hover:text-jatikara-amber">Showroom</a>
+                </div>
+            </div>
+            <div class="mt-6 flex flex-col sm:flex-row items-center justify-between text-xs text-jatikara-linen/60">
+                <p>&copy; 2026 JATIKARA ARCHITECTURAL SOLID FURNITURE STUDIO. All Rights Reserved.</p>
+                <p class="text-[11px] mt-2 sm:mt-0 font-sans">Lentera Pasar Production Template — Kriya, Mebel & Dekorasi Kayu Solid</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- FLOATING WHATSAPP BUTTON (bottom-24) -->
+    <a href="https://wa.me/6281234567890?text=Halo%20Jatikara,%20saya%20ingin%20konsultasi%20artikel%20perawatan%20furnitur." 
+       target="_blank" 
+       class="fixed bottom-24 right-6 z-50 group flex items-center gap-3 bg-white hover:bg-jatikara-linensoft text-jatikara-charcoal px-4 py-3 border border-jatikara-border rounded-2xl shadow-2xl hover:border-jatikara-amber transition-all duration-300 font-mono">
+        <span class="relative flex h-3 w-3">
+            <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-jatikara-amber opacity-75"></span>
+            <span class="relative inline-flex rounded-full h-3 w-3 bg-jatikara-amber"></span>
+        </span>
+        <i class="fa-brands fa-whatsapp text-2xl text-emerald-600"></i>
+        <div class="text-left hidden sm:block pr-1">
+            <div class="text-[10px] text-jatikara-amber font-bold uppercase tracking-wider leading-none font-serif">Interior Architect</div>
+            <span class="font-bold text-xs text-jatikara-charcoal">Custom Ukuran WA</span>
+        </div>
+    </a>
+
+    <!-- LENTERA PASAR - STICKY DEMO & SALES BAR (fixed bottom-4) -->
+    <div class="fixed bottom-4 left-1/2 -translate-x-1/2 z-50 w-[95%] max-w-4xl bg-slate-900/95 backdrop-blur-md text-white p-3.5 md:p-4 rounded-2xl shadow-2xl border border-slate-700/80 transition-all duration-300">
+      <div class="flex flex-col md:flex-row items-center justify-between gap-3 md:gap-4">
+        <div class="flex items-center gap-3 w-full md:w-auto">
+          <div class="w-10 h-10 rounded-xl bg-amber-600/20 border border-amber-500/40 flex items-center justify-center shrink-0">
+            <svg class="w-5 h-5 text-amber-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4" />
+            </svg>
+          </div>
+          <div>
+            <div class="flex items-center gap-2">
+              <span class="font-bold text-sm text-white">Lentera Pasar Engine</span>
+              <span class="text-[10px] bg-amber-500/20 text-amber-300 border border-amber-500/30 px-2 py-0.5 rounded-full font-medium">Solid Furniture & Japandi</span>
+            </div>
+            <p class="text-xs text-slate-300 hidden sm:block">
+              Terima beres: Website responsif + Panel input produk sendiri + Dikelola tim iklan profesional.
+            </p>
+          </div>
+        </div>
+
+        <div class="flex items-center justify-between md:justify-end gap-3 w-full md:w-auto">
+          <a href="https://wa.me/6281234567890?text=Halo%20Tim%20Lentera%20Pasar,%20saya%20tertarik%20menggunakan%20template%20website%20Furniture%20%26%20Solid%20Woodcraft%20ini%20lengkap%20dengan%20Admin%20Panel%20dan%20Jasa%20Iklannya." 
+             target="_blank"
+             class="w-full md:w-auto inline-flex items-center justify-center gap-2 bg-gradient-to-r from-amber-600 to-amber-700 hover:from-amber-500 hover:to-amber-600 text-white text-xs md:text-sm font-bold px-5 py-2.5 rounded-xl shadow-lg transition-all hover:scale-105 shrink-0 font-serif">
+            <span>Gunakan Template Ini</span>
+            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3" />
+            </svg>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <!-- SCRIPT -->
+    <script>
+        const mobileMenuBtn = document.getElementById('mobileMenuBtn');
+        const mobileMenu = document.getElementById('mobileMenu');
+        const menuIcon = document.getElementById('menuIcon');
+
+        mobileMenuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+            if (mobileMenu.classList.contains('hidden')) {
+                menuIcon.classList.remove('fa-xmark');
+                menuIcon.classList.add('fa-bars');
+            } else {
+                menuIcon.classList.remove('fa-bars');
+                menuIcon.classList.add('fa-xmark');
+            }
+        });
+    </script>
+</body>
+</html>

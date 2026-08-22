@@ -66,7 +66,8 @@ template-website-umkm/
 │   ├── auto-care-motorcycle/           # Perawatan Motor/Mobil & Detailing Kit
 │   └── sport-active-gym/               # Jersey Olahraga, Botol Tumbler & Matras Yoga
 │
-├── 📁 04-kriya-dekorasi/               # [BIDANG 4 - Segera Hadir]
+├── 📁 04-kriya-dekorasi/               # [BIDANG 4 - Kriya & Dekorasi]
+│   ├── furniture-teak-artisan/         # Mebel Jati Solid, Japandi Dining & Lounge (Jatikara)
 │   ├── kriya-rotan-anyaman/            # Furniture Rotan, Keranjang & Tas Anyam
 │   ├── kriya-keramik-pottery/          # Mug Keramik Handmade, Piring & Vas Estetik
 │   ├── kriya-leather-goods/            # Dompet Kulit Nabati, Sabuk & Pouch Custom
