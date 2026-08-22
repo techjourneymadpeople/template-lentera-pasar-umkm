@@ -68,8 +68,8 @@ template-website-umkm/
 │
 ├── 📁 04-kriya-dekorasi/               # [BIDANG 4 - Kriya & Dekorasi]
 │   ├── furniture-teak-artisan/         # Mebel Jati Solid, Japandi Dining & Lounge (Jatikara)
+│   ├── ceramics-clay-pottery/          # Keramik Tembikar, Cangkir Kopi & Tableware (Bhumikala)
 │   ├── kriya-rotan-anyaman/            # Furniture Rotan, Keranjang & Tas Anyam
-│   ├── kriya-keramik-pottery/          # Mug Keramik Handmade, Piring & Vas Estetik
 │   ├── kriya-leather-goods/            # Dompet Kulit Nabati, Sabuk & Pouch Custom
 │   ├── decor-wooden-home/              # Talenan Kayu Jati, Hiasan Dinding & Rak
 │   └── decor-candle-scented/           # Lilin Aromaterapi Soywax & Home Fragrance

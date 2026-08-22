@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html lang="id" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jurnal Tembikar & Panduan Tableware Keramik — BHUMIKALA</title>
+    <meta name="description" content="Koleksi artikel panduan merawat tableware keramik buatan tangan, filosofi wabi-sabi cangkir kopi, perbandingan stoneware vs porselen, dan tips menata meja makan.">
+    
+    <!-- Google Fonts: Cormorant Garamond & Plus Jakarta Sans -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,600;1,700&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Space+Grotesk:wght@600;700&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        bhumikala: {
+                            ash: '#F4EFEA',
+                            ashsoft: '#FAF7F2',
+                            card: '#FFFFFF',
+                            terracotta: '#C46851',
+                            terracottadark: '#A84E38',
+                            terracottasoft: '#F8EDE9',
+                            basalt: '#2C2724',
+                            basaltdark: '#1B1816',
+                            border: '#DDD5CB',
+                            celadon: '#6B8E7D',
+                            indigo: '#3D5A6C'
+                        }
+                    },
+                    fontFamily: {
+                        sans: ['"Plus Jakarta Sans"', 'sans-serif'],
+                        serif: ['"Cormorant Garamond"', 'serif'],
+                        mono: ['"Space Grotesk"', 'monospace']
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        .no-scrollbar::-webkit-scrollbar { display: none; }
+        .no-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
+        
+        .bhumikala-btn {
+            transition: all 0.2s cubic-bezier(0.16, 1, 0.3, 1);
+        }
+        .bhumikala-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 10px 25px -6px rgba(196, 104, 81, 0.45);
+        }
+    </style>
+</head>
+<body class="bg-bhumikala-ash text-bhumikala-basalt font-sans antialiased selection:bg-bhumikala-terracotta selection:text-white">
+
+    <!-- 1. TOP BAR -->
+    <div class="bg-bhumikala-basalt text-bhumikala-ash text-xs py-2.5 px-4 font-mono font-bold border-b border-bhumikala-border/30">
+        <div class="max-w-7xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-2 text-center sm:text-left">
+            <div class="flex items-center justify-center gap-2">
+                <span class="px-2 py-0.5 bg-bhumikala-terracotta text-white text-[10px] uppercase font-serif font-black tracking-wider rounded-md">
+                    POTTERY ESSAY
+                </span>
+                <span class="text-white">Cerita Seni Tembikar, Tips Perawatan Glasir Keramik, & Inspirasi Table Setting</span>
+            </div>
+            <div class="flex items-center gap-4 text-xs font-mono">
+                <a href="katalog.html" class="text-bhumikala-terracottasoft hover:text-white underline font-extrabold transition">Koleksi Keramik &rarr;</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- 2. NAVBAR -->
+    <header class="sticky top-0 z-40 bg-bhumikala-ash/95 backdrop-blur-md border-b border-bhumikala-border transition-all">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-20 sm:h-24">
+                
+                <a href="index.html" class="flex items-center gap-3 group">
+                    <div class="w-11 h-11 bg-bhumikala-terracotta text-white flex items-center justify-center text-xl font-serif font-black rounded-2xl shadow-lg group-hover:bg-bhumikala-basalt transition">
+                        <i class="fa-solid fa-mug-saucer"></i>
+                    </div>
+                    <div class="flex flex-col">
+                        <span class="text-2xl sm:text-3xl font-serif font-black tracking-tight text-bhumikala-basalt uppercase leading-none">
+                            BHUMIKALA<span class="text-bhumikala-terracotta">.</span>
+                        </span>
+                        <span class="text-[9px] font-mono tracking-[0.28em] text-bhumikala-terracotta uppercase mt-1 font-bold">
+                            ARTISAN CERAMICS & TABLEWARE
+                        </span>
+                    </div>
+                </a>
+
+                <nav class="hidden lg:flex items-center gap-8 text-xs font-bold tracking-wider uppercase text-bhumikala-basalt/80 font-mono">
+                    <a href="index.html" class="hover:text-bhumikala-terracotta transition">Beranda</a>
+                    <a href="katalog.html" class="hover:text-bhumikala-terracotta transition">Katalog Keramik</a>
+                    <a href="detail.html" class="hover:text-bhumikala-terracotta transition">Detail Cangkir Kopi</a>
+                    <a href="tentang.html" class="hover:text-bhumikala-terracotta transition">Proses Pembakaran Kiln</a>
+                    <a href="artikel.html" class="text-bhumikala-terracotta border-b-2 border-bhumikala-terracotta pb-1">Cerita Studio & Tips</a>
+                    <a href="kontak.html" class="hover:text-bhumikala-terracotta transition">Studio & Workshop Class</a>
+                </nav>
+
+                <div class="hidden sm:flex items-center gap-3 font-mono">
+                    <a href="https://wa.me/6281234567890?text=Halo%20Bhumikala,%20saya%20mau%20konsultasi%20perawatan%20keramik." target="_blank" class="inline-flex items-center gap-2 bg-bhumikala-terracotta hover:bg-bhumikala-terracottadark text-white text-xs font-bold tracking-wider px-5 py-2.5 rounded-xl transition-all shadow-lg font-mono bhumikala-btn font-serif">
+                        <i class="fa-brands fa-whatsapp text-base"></i>
+                        <span>Tanya Studio WA</span>
+                    </a>
+                </div>
+
+                <button id="mobileMenuBtn" class="lg:hidden p-2 text-bhumikala-basalt hover:text-bhumikala-terracotta focus:outline-none" aria-label="Toggle Menu">
+                    <i id="menuIcon" class="fa-solid fa-bars text-xl"></i>
+                </button>
+            </div>
+        </div>
+
+        <!-- Mobile Drawer -->
+        <div id="mobileMenu" class="hidden lg:hidden bg-white border-b border-bhumikala-border px-4 py-5 space-y-3 font-mono">
+            <a href="index.html" class="block text-xs font-bold uppercase tracking-wider text-bhumikala-basalt hover:text-bhumikala-terracotta py-2 border-b border-bhumikala-border">Beranda Utama</a>
+            <a href="katalog.html" class="block text-xs font-bold uppercase tracking-wider text-bhumikala-basalt hover:text-bhumikala-terracotta py-2 border-b border-bhumikala-border">Katalog Cangkir, Piring & Vas</a>
+            <a href="detail.html" class="block text-xs font-bold uppercase tracking-wider text-bhumikala-basalt hover:text-bhumikala-terracotta py-2 border-b border-bhumikala-border">Detail Cangkir Kopi Stoneware</a>
+            <a href="tentang.html" class="block text-xs font-bold uppercase tracking-wider text-bhumikala-basalt hover:text-bhumikala-terracotta py-2 border-b border-bhumikala-border">Proses Pembakaran 1250°C</a>
+            <a href="artikel.html" class="block text-xs font-bold uppercase tracking-wider text-bhumikala-terracotta py-2 border-b border-bhumikala-border">Cerita Studio & Tips</a>
+            <a href="kontak.html" class="block text-xs font-bold uppercase tracking-wider text-bhumikala-basalt hover:text-bhumikala-terracotta py-2">Studio Kemang & Kelas Tembikar</a>
+        </div>
+    </header>
+
+    <!-- 3. PAGE HEADER & FEATURED ESSAY -->
+    <section class="py-12 bg-bhumikala-ashsoft border-b border-bhumikala-border font-mono">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            
+            <div class="max-w-3xl mb-10">
+                <div class="inline-flex items-center gap-2 px-3 py-1 bg-white border border-bhumikala-border text-bhumikala-terracotta text-xs font-bold tracking-wider mb-3 rounded-full shadow-xs">
+                    <span class="w-2 h-2 rounded-full bg-bhumikala-terracotta"></span>
+                    <span class="uppercase tracking-widest text-[10px] font-serif">JOURNAL & CERAMIC ESSAYS</span>
+                </div>
+                <h1 class="text-3xl sm:text-5xl font-serif font-bold text-bhumikala-basalt tracking-tight uppercase">
+                    Jurnal Studio & Perawatan Keramik
+                </h1>
+                <p class="text-xs sm:text-sm text-bhumikala-basalt/80 mt-2 font-sans font-normal">
+                    Cerita di balik seni tembikar roda putar, panduan mencuci dan merawat tableware keramik handmade, serta tips menata hidangan estetik di meja makan.
+                </p>
+            </div>
+
+            <!-- Featured Cover Story Card -->
+            <div class="bg-white border border-bhumikala-border rounded-3xl p-6 sm:p-10 shadow-xl">
+                <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
+                    <div class="lg:col-span-6">
+                        <div class="aspect-[16/10] bg-bhumikala-ashsoft rounded-2xl overflow-hidden relative group border border-bhumikala-border">
+                            <img src="https://images.unsplash.com/photo-1514432324607-a09d9b4aefdd?auto=format&fit=crop&w=800&q=80" alt="The Beauty of Imperfection Ceramic Mug" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700">
+                            <span class="absolute top-3 left-3 bg-bhumikala-basalt text-white text-[9px] font-bold px-3 py-1 rounded-md uppercase font-serif">
+                                FEATURED STORY
+                            </span>
+                        </div>
+                    </div>
+                    <div class="lg:col-span-6 space-y-4 font-mono">
+                        <div class="flex items-center gap-3 text-xs text-bhumikala-basalt/60">
+                            <span>Oleh Citra Larasati (Ceramicist)</span>
+                            <span>•</span>
+                            <span>5 Min Read</span>
+                            <span>•</span>
+                            <span class="text-bhumikala-terracotta font-bold font-serif">Wabi-Sabi Ritual</span>
+                        </div>
+                        <h2 class="text-2xl sm:text-3xl font-serif font-bold text-bhumikala-basalt uppercase leading-tight">
+                            The Beauty of Imperfection: Mengapa Cangkir Keramik Buatan Tangan Memberikan Pengalaman Menyeruput Kopi yang Lebih Bermakna?
+                        </h2>
+                        <p class="text-xs sm:text-sm text-bhumikala-basalt/80 leading-relaxed font-sans font-normal">
+                            Bagaimana kehangatan dinding tanah liat tebal, lekukan jempol yang intim, dan keunikan bintik glasir mineral mampu memperlambat ritme pagi Anda untuk menikmati setiap tetes kopi dengan penuh kesadaran (*mindfulness*).
+                        </p>
+                        <div class="pt-2">
+                            <a href="detail.html" class="inline-flex items-center gap-2 px-6 py-3 bg-bhumikala-terracotta text-white text-xs font-bold tracking-wider uppercase rounded-xl hover:bg-bhumikala-terracottadark transition bhumikala-btn font-serif">
+                                <span>Lihat Cangkir Kopi Bumi Kami</span>
+                                <i class="fa-solid fa-arrow-right text-[10px]"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- 4. GRID ARTIKEL PANDUAN KERAMIK -->
+    <section class="py-16 bg-bhumikala-ash font-mono">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            
+            <h3 class="text-2xl font-serif font-bold text-bhumikala-basalt uppercase mb-8 flex items-center gap-2">
+                <i class="fa-solid fa-mug-saucer text-bhumikala-terracotta"></i>
+                <span>Semua Panduan & Tips Tableware</span>
+            </h3>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                
+                <!-- Article 1 -->
+                <div class="bg-white border border-bhumikala-border rounded-2xl p-6 flex flex-col justify-between hover:border-bhumikala-terracotta transition shadow-xs">
+                    <div>
+                        <div class="aspect-[16/10] bg-bhumikala-ashsoft rounded-xl overflow-hidden mb-4 border border-bhumikala-border">
+                            <img src="https://images.unsplash.com/photo-1578749556568-bc2c40e68b61?auto=format&fit=crop&w=500&q=80" alt="Cara Merawat Tableware Keramik" class="w-full h-full object-cover">
+                        </div>
+                        <div class="flex items-center gap-2 text-[10px] font-bold text-bhumikala-terracotta mb-2">
+                            <span class="font-serif">CERAMIC CARE</span>
+                            <span>•</span>
+                            <span>4 Min Read</span>
+                        </div>
+                        <h4 class="font-serif font-bold text-lg text-bhumikala-basalt leading-snug uppercase">
+                            Cara Merawat dan Mencuci Tableware Keramik Handmade Agar Glasir Tetap Berkilau dan Bebas Bau
+                        </h4>
+                        <p class="text-xs text-bhumikala-basalt/80 mt-2 leading-relaxed font-sans font-normal">
+                            Tips membersihkan noda kopi atau teh yang membandel dengan baking soda alami, cara penyimpanan piring bertumpuk yang aman, dan penggunaan dishwasher yang tepat.
+                        </p>
+                    </div>
+                    <div class="mt-6 pt-4 border-t border-bhumikala-border flex items-center justify-between text-xs">
+                        <span class="text-bhumikala-basalt/60">Care Manual</span>
+                        <a href="katalog.html" class="text-bhumikala-terracotta font-bold hover:underline font-serif">Lihat Tableware &rarr;</a>
+                    </div>
+                </div>
+
+                <!-- Article 2 -->
+                <div class="bg-white border border-bhumikala-border rounded-2xl p-6 flex flex-col justify-between hover:border-bhumikala-terracotta transition shadow-xs">
+                    <div>
+                        <div class="aspect-[16/10] bg-bhumikala-ashsoft rounded-xl overflow-hidden mb-4 border border-bhumikala-border">
+                            <img src="https://images.unsplash.com/photo-1565193566173-7a0ee3dbe261?auto=format&fit=crop&w=500&q=80" alt="Stoneware vs Porcelain vs Earthenware" class="w-full h-full object-cover">
+                        </div>
+                        <div class="flex items-center gap-2 text-[10px] font-bold text-emerald-800 mb-2">
+                            <span class="font-serif">MATERIAL GUIDE</span>
+                            <span>•</span>
+                            <span>6 Min Read</span>
+                        </div>
+                        <h4 class="font-serif font-bold text-lg text-bhumikala-basalt leading-snug uppercase">
+                            Mengenal Perbedaan Karakter Keramik Stoneware vs Porcelain vs Earthenware untuk Penggunaan Sehari-hari
+                        </h4>
+                        <p class="text-xs text-bhumikala-basalt/80 mt-2 leading-relaxed font-sans font-normal">
+                            Memahami suhu pembakaran, tingkat penyerapan air, ketahanan gumpil, dan mengapa stoneware 1250°C adalah pilihan terbaik untuk tableware tahan lama.
+                        </p>
+                    </div>
+                    <div class="mt-6 pt-4 border-t border-bhumikala-border flex items-center justify-between text-xs">
+                        <span class="text-bhumikala-basalt/60">Clay Knowledge</span>
+                        <a href="katalog.html" class="text-emerald-800 font-bold hover:underline font-serif">Pilih Koleksi &rarr;</a>
+                    </div>
+                </div>
+
+                <!-- Article 3 -->
+                <div class="bg-white border border-bhumikala-border rounded-2xl p-6 flex flex-col justify-between hover:border-bhumikala-terracotta transition shadow-xs">
+                    <div>
+                        <div class="aspect-[16/10] bg-bhumikala-ashsoft rounded-xl overflow-hidden mb-4 border border-bhumikala-border">
+                            <img src="https://images.unsplash.com/photo-1544816155-12df9643f363?auto=format&fit=crop&w=500&q=80" alt="Ide Menata Meja Makan Estetik" class="w-full h-full object-cover">
+                        </div>
+                        <div class="flex items-center gap-2 text-[10px] font-bold text-bhumikala-indigo mb-2">
+                            <span class="font-serif">TABLE STYLING</span>
+                            <span>•</span>
+                            <span>4 Min Read</span>
+                        </div>
+                        <h4 class="font-serif font-bold text-lg text-bhumikala-basalt leading-snug uppercase">
+                            Ide Menata Meja Makan Estetik untuk Acara Jamuan Makan Malam Keluarga dengan Keramik Buatan Tangan
+                        </h4>
+                        <p class="text-xs text-bhumikala-basalt/80 mt-2 leading-relaxed font-sans font-normal">
+                            Trik memadukan piring keramik glasir indigo dengan taplak linen natural, vas bunga terakota wabi-sabi, dan pencahayaan lilin hangat yang memikat selera.
+                        </p>
+                    </div>
+                    <div class="mt-6 pt-4 border-t border-bhumikala-border flex items-center justify-between text-xs">
+                        <span class="text-bhumikala-basalt/60">Styling Tips</span>
+                        <a href="kontak.html" class="text-bhumikala-indigo font-bold hover:underline font-serif">Custom Set Resto &rarr;</a>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+    <!-- 5. GLOSARIUM ISTILAH TEMBIKAR & KERAMIK -->
+    <section class="py-16 bg-bhumikala-ashsoft border-t border-b border-bhumikala-border font-mono">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            
+            <div class="text-center max-w-2xl mx-auto mb-12">
+                <span class="text-xs font-mono uppercase tracking-[0.25em] text-bhumikala-terracotta font-bold block mb-1">
+                    // POTTERY & CERAMIC GLOSSARY
+                </span>
+                <h3 class="text-2xl sm:text-3xl font-serif font-bold text-bhumikala-basalt uppercase">
+                    Glosarium Istilah Seni Tembikar
+                </h3>
+                <p class="text-xs text-bhumikala-basalt/80 mt-1 font-sans">
+                    Mengenal terminologi teknis pembakaran biskuit, vitrifikasi glasir, dan struktur kaki keramik.
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 text-xs">
+                
+                <div class="p-5 bg-white border border-bhumikala-border rounded-2xl shadow-xs">
+                    <strong class="text-sm font-serif font-bold text-bhumikala-basalt uppercase block">Bisque Firing (900°C)</strong>
+                    <p class="text-bhumikala-basalt/80 mt-1 text-[11px] leading-relaxed font-sans">
+                        Pembakaran tahap awal untuk menghilangkan kelembapan kimiawi tanah liat sehingga keramik menjadi porous dan siap menyerap glasir cair.
+                    </p>
+                </div>
+
+                <div class="p-5 bg-white border border-bhumikala-border rounded-2xl shadow-xs">
+                    <strong class="text-sm font-serif font-bold text-bhumikala-basalt uppercase block">Vitrification (1250°C)</strong>
+                    <p class="text-bhumikala-basalt/80 mt-1 text-[11px] leading-relaxed font-sans">
+                        Proses di mana silika dalam tanah liat meleleh menjadi kaca padat, membuat struktur keramik 100% kedap air dan tidak berpori.
+                    </p>
+                </div>
+
+                <div class="p-5 bg-white border border-bhumikala-border rounded-2xl shadow-xs">
+                    <strong class="text-sm font-serif font-bold text-bhumikala-basalt uppercase block">Lead-Free Glaze</strong>
+                    <p class="text-bhumikala-basalt/80 mt-1 text-[11px] leading-relaxed font-sans">
+                        Lapisan kaca pelindung keramik yang diformulasikan tanpa timbal atau logam berat berbahaya, aman bersentuhan langsung dengan makanan panas.
+                    </p>
+                </div>
+
+                <div class="p-5 bg-white border border-bhumikala-border rounded-2xl shadow-xs">
+                    <strong class="text-sm font-serif font-bold text-bhumikala-basalt uppercase block">Footring (Kaki Keramik)</strong>
+                    <p class="text-bhumikala-basalt/80 mt-1 text-[11px] leading-relaxed font-sans">
+                        Bagian dasar bawah keramik yang sengaja dibersihkan dari glasir agar tidak menempel di rak tungku kiln, dihaluskan dengan amplas halus.
+                    </p>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+    <!-- 6. FOOTER -->
+    <footer class="bg-bhumikala-basalt text-bhumikala-ash border-t border-bhumikala-border/30 pt-14 pb-28 font-mono">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex flex-col md:flex-row items-center justify-between gap-6 border-b border-white/20 pb-8">
+                <div class="flex items-center gap-3">
+                    <div class="w-8 h-8 bg-bhumikala-terracotta text-white flex items-center justify-center text-base font-serif font-bold rounded-xl">
+                        <i class="fa-solid fa-mug-saucer"></i>
+                    </div>
+                    <span class="text-xl font-serif font-bold text-white uppercase tracking-tight">
+                        BHUMIKALA<span class="text-bhumikala-terracotta">.</span>
+                    </span>
+                </div>
+                <div class="flex flex-wrap gap-6 text-xs text-bhumikala-ash/80 font-bold uppercase tracking-wider font-serif">
+                    <a href="index.html" class="hover:text-bhumikala-terracotta">Beranda</a>
+                    <a href="katalog.html" class="hover:text-bhumikala-terracotta">Katalog</a>
+                    <a href="detail.html" class="hover:text-bhumikala-terracotta">Detail</a>
+                    <a href="tentang.html" class="hover:text-bhumikala-terracotta">Proses Kiln</a>
+                    <a href="artikel.html" class="text-bhumikala-terracotta">Tips Perawatan</a>
+                    <a href="kontak.html" class="hover:text-bhumikala-terracotta">Studio</a>
+                </div>
+            </div>
+            <div class="mt-6 flex flex-col sm:flex-row items-center justify-between text-xs text-bhumikala-ash/60">
+                <p>&copy; 2026 BHUMIKALA ARTISAN CERAMICS & POTTERY STUDIO. All Rights Reserved.</p>
+                <p class="text-[11px] mt-2 sm:mt-0 font-sans">Lentera Pasar Production Template — Kriya, Keramik & Tableware Handmade</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- FLOATING WHATSAPP BUTTON (bottom-24) -->
+    <a href="https://wa.me/6281234567890?text=Halo%20Bhumikala,%20saya%20ingin%20konsultasi%20artikel%20keramik." 
+       target="_blank" 
+       class="fixed bottom-24 right-6 z-50 group flex items-center gap-3 bg-white hover:bg-bhumikala-ashsoft text-bhumikala-basalt px-4 py-3 border border-bhumikala-border rounded-2xl shadow-2xl hover:border-bhumikala-terracotta transition-all duration-300 font-mono">
+        <span class="relative flex h-3 w-3">
+            <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-bhumikala-terracotta opacity-75"></span>
+            <span class="relative inline-flex rounded-full h-3 w-3 bg-bhumikala-terracotta"></span>
+        </span>
+        <i class="fa-brands fa-whatsapp text-2xl text-emerald-600"></i>
+        <div class="text-left hidden sm:block pr-1">
+            <div class="text-[10px] text-bhumikala-terracotta font-bold uppercase tracking-wider leading-none font-serif">Pottery Studio</div>
+            <span class="font-bold text-xs text-bhumikala-basalt">Custom Tableware WA</span>
+        </div>
+    </a>
+
+    <!-- LENTERA PASAR - STICKY DEMO & SALES BAR (fixed bottom-4) -->
+    <div class="fixed bottom-4 left-1/2 -translate-x-1/2 z-50 w-[95%] max-w-4xl bg-slate-900/95 backdrop-blur-md text-white p-3.5 md:p-4 rounded-2xl shadow-2xl border border-slate-700/80 transition-all duration-300">
+      <div class="flex flex-col md:flex-row items-center justify-between gap-3 md:gap-4">
+        <div class="flex items-center gap-3 w-full md:w-auto">
+          <div class="w-10 h-10 rounded-xl bg-orange-600/20 border border-orange-500/40 flex items-center justify-center shrink-0">
+            <svg class="w-5 h-5 text-orange-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10" />
+            </svg>
+          </div>
+          <div>
+            <div class="flex items-center gap-2">
+              <span class="font-bold text-sm text-white">Lentera Pasar Engine</span>
+              <span class="text-[10px] bg-orange-500/20 text-orange-300 border border-orange-500/30 px-2 py-0.5 rounded-full font-medium">Ceramics & Tableware Template</span>
+            </div>
+            <p class="text-xs text-slate-300 hidden sm:block">
+              Terima beres: Website responsif + Panel input produk sendiri + Dikelola tim iklan profesional.
+            </p>
+          </div>
+        </div>
+
+        <div class="flex items-center justify-between md:justify-end gap-3 w-full md:w-auto">
+          <a href="https://wa.me/6281234567890?text=Halo%20Tim%20Lentera%20Pasar,%20saya%20tertarik%20menggunakan%20template%20website%20Ceramics%20%26%20Artisan%20Pottery%20ini%20lengkap%20dengan%20Admin%20Panel%20dan%20Jasa%20Iklannya." 
+             target="_blank"
+             class="w-full md:w-auto inline-flex items-center justify-center gap-2 bg-gradient-to-r from-orange-600 to-amber-700 hover:from-orange-500 hover:to-amber-600 text-white text-xs md:text-sm font-bold px-5 py-2.5 rounded-xl shadow-lg transition-all hover:scale-105 shrink-0 font-serif">
+            <span>Gunakan Template Ini</span>
+            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3" />
+            </svg>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <!-- SCRIPT -->
+    <script>
+        const mobileMenuBtn = document.getElementById('mobileMenuBtn');
+        const mobileMenu = document.getElementById('mobileMenu');
+        const menuIcon = document.getElementById('menuIcon');
+
+        mobileMenuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+            if (mobileMenu.classList.contains('hidden')) {
+                menuIcon.classList.remove('fa-xmark');
+                menuIcon.classList.add('fa-bars');
+            } else {
+                menuIcon.classList.remove('fa-bars');
+                menuIcon.classList.add('fa-xmark');
+            }
+        });
+    </script>
+</body>
+</html>
