@@ -1,0 +1,850 @@
+<!DOCTYPE html>
+<html lang="id" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VERDANT LAB // Botanical Greenhouse & Urban Jungle</title>
+    <meta name="description" content="Nursery tanaman hias indoor dan pot terakota resmi: Monstera Deliciosa, Sansevieria pembersih udara, media tanam porous, dan pupuk daun dengan garansi tanaman segar tiba di rumah.">
+    
+    <!-- Google Fonts: Playfair Display & Plus Jakarta Sans -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;0,700;0,800;0,900;1,600;1,700&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Space+Grotesk:wght@600;700&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        verdant: {
+                            green: '#1E3A2F',
+                            greendark: '#142921',
+                            greenlight: '#2D5545',
+                            terra: '#C86D51',
+                            terradark: '#A85238',
+                            terrasoft: '#FDF1ED',
+                            bg: '#F8F6F0',
+                            card: '#FFFFFF',
+                            cardsoft: '#EFECE3',
+                            border: '#E6E1D5',
+                            sage: '#7C9082',
+                            forest: '#0F1F19'
+                        }
+                    },
+                    fontFamily: {
+                        sans: ['"Plus Jakarta Sans"', 'sans-serif'],
+                        serif: ['"Playfair Display"', 'serif'],
+                        mono: ['"Space Grotesk"', 'monospace']
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        .no-scrollbar::-webkit-scrollbar { display: none; }
+        .no-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
+        
+        .verdant-btn {
+            transition: all 0.2s cubic-bezier(0.16, 1, 0.3, 1);
+        }
+        .verdant-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 10px 25px -6px rgba(200, 109, 81, 0.45);
+        }
+    </style>
+</head>
+<body class="bg-verdant-bg text-verdant-forest font-sans antialiased selection:bg-verdant-green selection:text-white">
+
+    <!-- 1. TOP BOTANICAL ALERT BAR -->
+    <div class="bg-verdant-green text-verdant-terrasoft text-xs py-2 px-4 font-mono font-bold border-b border-verdant-border/30">
+        <div class="max-w-7xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-2 text-center sm:text-left">
+            <div class="flex items-center justify-center gap-2">
+                <span class="px-2 py-0.5 bg-verdant-terra text-white text-[10px] uppercase font-serif font-black tracking-wider rounded-md">
+                    PLANT GUARANTEE
+                </span>
+                <span class="text-white">Garansi Tanaman Segar & Ganti Baru Jika Rusak di Perjalanan • Packing Kayu Aman</span>
+            </div>
+            <div class="flex items-center gap-4 text-xs font-mono">
+                <span class="hidden md:inline">Nursery Kemang Jakarta Selatan</span>
+                <span class="hidden md:inline">|</span>
+                <a href="katalog.html" class="text-verdant-terra hover:text-white underline font-extrabold transition">Katalog Tanaman & Pot &rarr;</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- 2. NAVBAR -->
+    <header class="sticky top-0 z-40 bg-verdant-bg/95 backdrop-blur-md border-b border-verdant-border transition-all">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-20 sm:h-24">
+                
+                <!-- Logo -->
+                <a href="index.html" class="flex items-center gap-3 group">
+                    <div class="w-11 h-11 bg-verdant-green text-white flex items-center justify-center text-xl font-serif font-black rounded-2xl shadow-lg group-hover:bg-verdant-terra transition">
+                        <i class="fa-solid fa-leaf"></i>
+                    </div>
+                    <div class="flex flex-col">
+                        <span class="text-2xl sm:text-3xl font-serif font-black tracking-tight text-verdant-green uppercase leading-none">
+                            VERDANT LAB<span class="text-verdant-terra">.</span>
+                        </span>
+                        <span class="text-[9px] font-mono tracking-[0.25em] text-verdant-terra uppercase mt-1 font-bold">
+                            BOTANICAL GREENHOUSE & PLANTERS
+                        </span>
+                    </div>
+                </a>
+
+                <!-- Desktop Navigation Links -->
+                <nav class="hidden lg:flex items-center gap-8 text-xs font-bold tracking-wider uppercase text-verdant-sage font-mono">
+                    <a href="index.html" class="text-verdant-green border-b-2 border-verdant-green pb-1">Beranda</a>
+                    <a href="katalog.html" class="hover:text-verdant-green transition">Katalog Tanaman</a>
+                    <a href="detail.html" class="hover:text-verdant-green transition">Detail Monstera</a>
+                    <a href="tentang.html" class="hover:text-verdant-green transition">Greenhouse & Garansi</a>
+                    <a href="artikel.html" class="hover:text-verdant-green transition">Tips Perawatan</a>
+                    <a href="kontak.html" class="hover:text-verdant-green transition">Nursery & Konsultasi</a>
+                </nav>
+
+                <!-- Action Button & Plant Care Matcher Modal -->
+                <div class="hidden sm:flex items-center gap-3 font-mono">
+                    <button onclick="openCareModal()" class="inline-flex items-center gap-2 px-4 py-2.5 bg-white border border-verdant-border hover:border-verdant-green text-xs font-bold text-verdant-green rounded-xl transition shadow-xs">
+                        <i class="fa-solid fa-sun text-verdant-terra"></i>
+                        <span>Cari Tanaman Ruangan</span>
+                    </button>
+                    <a href="https://wa.me/6281234567890?text=Halo%20Verdant%20Lab,%20saya%20tertarik%20dengan%20koleksi%20tanaman%20indoor." target="_blank" class="inline-flex items-center gap-2 bg-verdant-green hover:bg-verdant-greendark text-white text-xs font-bold tracking-wider px-5 py-2.5 rounded-xl transition-all shadow-lg font-mono verdant-btn font-serif">
+                        <i class="fa-brands fa-whatsapp text-base"></i>
+                        <span>Chat Botanist WA</span>
+                    </a>
+                </div>
+
+                <!-- Mobile Hamburger Button -->
+                <button id="mobileMenuBtn" class="lg:hidden p-2 text-verdant-green hover:text-verdant-terra focus:outline-none" aria-label="Toggle Menu">
+                    <i id="menuIcon" class="fa-solid fa-bars text-xl"></i>
+                </button>
+            </div>
+        </div>
+
+        <!-- Mobile Drawer -->
+        <div id="mobileMenu" class="hidden lg:hidden bg-white border-b border-verdant-border px-4 py-5 space-y-3 font-mono">
+            <a href="index.html" class="block text-xs font-bold uppercase tracking-wider text-verdant-green py-2 border-b border-verdant-border">Beranda Utama</a>
+            <a href="katalog.html" class="block text-xs font-bold uppercase tracking-wider text-verdant-forest hover:text-verdant-green py-2 border-b border-verdant-border">Katalog Tanaman & Pot Terakota</a>
+            <a href="detail.html" class="block text-xs font-bold uppercase tracking-wider text-verdant-forest hover:text-verdant-green py-2 border-b border-verdant-border">Detail Monstera Deliciosa King</a>
+            <a href="tentang.html" class="block text-xs font-bold uppercase tracking-wider text-verdant-forest hover:text-verdant-green py-2 border-b border-verdant-border">Greenhouse & Standar Rawat</a>
+            <a href="artikel.html" class="block text-xs font-bold uppercase tracking-wider text-verdant-forest hover:text-verdant-green py-2 border-b border-verdant-border">Tips Tanaman Minim Cahaya</a>
+            <a href="kontak.html" class="block text-xs font-bold uppercase tracking-wider text-verdant-forest hover:text-verdant-green py-2">Nursery Kemang & Konsultasi</a>
+            <div class="pt-2 flex flex-col gap-2">
+                <button onclick="openCareModal()" class="w-full py-3 bg-verdant-cardsoft text-verdant-green border border-verdant-border rounded-xl text-xs font-bold uppercase tracking-wider flex items-center justify-center gap-2">
+                    <i class="fa-solid fa-sun"></i> Plant Care Matcher Ruangan
+                </button>
+                <a href="https://wa.me/6281234567890?text=Halo%20Verdant%20Lab,%20saya%20mau%20konsultasi%20tanaman." target="_blank" class="w-full py-3 bg-verdant-green text-white rounded-xl text-xs font-bold uppercase tracking-wider text-center flex items-center justify-center gap-2 font-serif">
+                    <i class="fa-brands fa-whatsapp"></i> WhatsApp Botanist Specialist
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- 3. LUSH GREENHOUSE HERO SECTION -->
+    <section class="py-16 sm:py-24 border-b border-verdant-border bg-gradient-to-b from-verdant-bg via-verdant-cardsoft to-verdant-bg relative overflow-hidden">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+                
+                <!-- Left Hero Copy (6 Cols) -->
+                <div class="lg:col-span-6 space-y-6">
+                    <div class="inline-flex items-center gap-2 px-3.5 py-1.5 bg-white border border-verdant-border text-verdant-green text-xs font-mono font-bold tracking-wider rounded-full shadow-xs">
+                        <span class="w-2 h-2 rounded-full bg-emerald-500 animate-ping"></span>
+                        <span class="uppercase tracking-widest text-[10px] font-serif">ACCLIMATIZED INDOOR PLANTS</span>
+                    </div>
+
+                    <h1 class="text-4xl sm:text-6xl font-serif font-black text-verdant-green tracking-tight leading-[1.02] uppercase italic">
+                        BRING NATURE <br>
+                        INSIDE YOUR <br>
+                        <span class="text-verdant-terra not-italic">LIVING SPACE.</span>
+                    </h1>
+
+                    <p class="text-xs sm:text-sm text-verdant-forest/80 leading-relaxed max-w-lg font-medium font-sans">
+                        Hadirkan ketenangan hijau dan kesegaran alami di dalam rumah Anda. Koleksi tanaman indoor pembersih udara yang sudah diaklimatisasi suhu ruangan, ditanam dalam media porous anti-busuk akar, dan dipadukan dengan pot terakota handmade bernapas.
+                    </p>
+
+                    <div class="pt-2 flex flex-wrap items-center gap-4 font-mono">
+                        <a href="katalog.html" class="inline-flex items-center gap-2.5 px-8 py-4 bg-verdant-green hover:bg-verdant-greendark text-white text-xs font-bold tracking-widest uppercase rounded-2xl shadow-lg verdant-btn font-serif">
+                            <span>JELAJAHI KOLEKSI TANAMAN</span>
+                            <i class="fa-solid fa-arrow-right text-[10px]"></i>
+                        </a>
+                        <button onclick="openCareModal()" class="inline-flex items-center gap-2 px-7 py-4 bg-white hover:bg-verdant-cardsoft border border-verdant-border text-verdant-green text-xs font-bold tracking-widest uppercase rounded-2xl transition font-serif shadow-xs">
+                            <i class="fa-solid fa-compass text-verdant-terra"></i>
+                            <span>PANDUAN RAWAT RUANGAN</span>
+                        </button>
+                    </div>
+
+                    <!-- Quick Plant Care Spec Strip -->
+                    <div class="pt-4 grid grid-cols-3 gap-4 border-t border-verdant-border font-mono text-xs">
+                        <div class="p-3.5 bg-white border border-verdant-border rounded-xl shadow-xs">
+                            <span class="text-[10px] text-verdant-sage uppercase block font-bold">LIGHT REQUIREMENT</span>
+                            <strong class="text-sm font-bold text-verdant-green font-serif">Bright Indirect</strong>
+                            <span class="text-[10px] text-verdant-terra font-bold block">Tahan Minim Cahaya</span>
+                        </div>
+                        <div class="p-3.5 bg-white border border-verdant-border rounded-xl shadow-xs">
+                            <span class="text-[10px] text-verdant-sage uppercase block font-bold">WATERING CYCLE</span>
+                            <strong class="text-sm font-bold text-verdant-green font-serif">1-2x Seminggu</strong>
+                            <span class="text-[10px] text-emerald-600 font-bold block">Siram Saat Tanah Kering</span>
+                        </div>
+                        <div class="p-3.5 bg-white border border-verdant-border rounded-xl shadow-xs">
+                            <span class="text-[10px] text-verdant-sage uppercase block font-bold">POTTING MIX</span>
+                            <strong class="text-sm font-bold text-verdant-green font-serif">Porous & Pumice</strong>
+                            <span class="text-[10px] text-verdant-forest block">Bebas Jamur Akar</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Right Hero Image with Botanical Living Showcase (6 Cols) -->
+                <div class="lg:col-span-6 relative">
+                    <div class="grid grid-cols-12 gap-4 items-center">
+                        
+                        <!-- Main Plant Showcase (7 Cols) -->
+                        <div class="col-span-7 bg-white border border-verdant-border rounded-3xl aspect-[3/4] relative group overflow-hidden shadow-2xl">
+                            <img src="https://images.unsplash.com/photo-1614594975525-e45190c55d0b?auto=format&fit=crop&w=800&q=80" alt="Monstera Deliciosa Indoor Plant" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700">
+                            
+                            <!-- Floating Badge -->
+                            <div class="absolute top-3 left-3 bg-verdant-green text-white px-3 py-1.5 font-serif font-bold rounded-xl shadow-md">
+                                <span class="text-[9px] uppercase tracking-wider block font-bold">AIR PURIFYING HERO</span>
+                                <strong class="text-xs font-serif font-black">Monstera Deliciosa King</strong>
+                            </div>
+
+                            <div class="absolute bottom-3 left-3 right-3 bg-white/95 backdrop-blur-xs p-3 rounded-xl border border-verdant-border font-mono text-xs flex justify-between items-center shadow-md">
+                                <span class="text-verdant-green font-bold text-[11px]">Include Pot Terakota 25cm</span>
+                                <strong class="text-white bg-verdant-terra px-2 py-0.5 text-[10px] rounded-md font-serif">READY TO DISPLAY</strong>
+                            </div>
+                        </div>
+
+                        <!-- Side Sansevieria & Planter (5 Cols) -->
+                        <div class="col-span-5 space-y-4">
+                            <div class="bg-white border border-verdant-border rounded-2xl aspect-[3/4] relative group overflow-hidden shadow-lg">
+                                <img src="https://images.unsplash.com/photo-1509423350716-97f9360b4e09?auto=format&fit=crop&w=600&q=80" alt="Sansevieria Trifasciata" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700">
+                                <span class="absolute top-2.5 right-2.5 bg-verdant-green/85 text-white text-[9px] font-mono font-bold px-2 py-0.5 uppercase rounded-md border border-verdant-border">
+                                    LOW LIGHT OK
+                                </span>
+                            </div>
+                            <div class="p-4 bg-white border border-verdant-border rounded-2xl text-xs font-mono shadow-xs">
+                                <span class="font-serif font-bold text-verdant-terra block text-sm uppercase">Nursery Quality Check:</span>
+                                <p class="text-[11px] leading-relaxed font-sans font-normal text-verdant-forest/80 mt-1">Akar sudah mapan 3 bulan di pot dan daun bebas kutu putih atau spider mites.</p>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- Value Strip Bar -->
+            <div class="mt-16 max-w-5xl mx-auto grid grid-cols-1 sm:grid-cols-3 gap-6 bg-white p-6 rounded-3xl border border-verdant-border shadow-xl text-xs font-mono">
+                <div class="flex items-start gap-3.5">
+                    <div class="w-10 h-10 rounded-2xl bg-emerald-100 text-emerald-700 flex items-center justify-center shrink-0 text-base border border-emerald-500/20">
+                        <i class="fa-solid fa-seedling"></i>
+                    </div>
+                    <div>
+                        <strong class="text-verdant-green font-bold block text-sm uppercase font-serif">Akar Kuat Mapan Sehat</strong>
+                        <span class="text-verdant-forest/80 leading-relaxed font-sans text-xs">Bukan bibit baru potong stek. Tanaman sudah berakar lebat dan terbukti sehat di lingkungan indoor.</span>
+                    </div>
+                </div>
+                <div class="flex items-start gap-3.5">
+                    <div class="w-10 h-10 rounded-2xl bg-verdant-terrasoft text-verdant-terra flex items-center justify-center shrink-0 text-base border border-verdant-terra/20">
+                        <i class="fa-solid fa-mountain"></i>
+                    </div>
+                    <div>
+                        <strong class="text-verdant-green font-bold block text-sm uppercase font-serif">Media Tanam Porous Anti-Busuk</strong>
+                        <span class="text-verdant-forest/80 leading-relaxed font-sans text-xs">Formulasi campuran pumice, perlite, andam, dan sekam fermentasi yang mengalirkan air dengan lancar.</span>
+                    </div>
+                </div>
+                <div class="flex items-start gap-3.5">
+                    <div class="w-10 h-10 rounded-2xl bg-amber-100 text-amber-700 flex items-center justify-center shrink-0 text-base border border-amber-500/20">
+                        <i class="fa-solid fa-box-open"></i>
+                    </div>
+                    <div>
+                        <strong class="text-verdant-green font-bold block text-sm uppercase font-serif">Packing Kayu Ekspedisi Aman</strong>
+                        <span class="text-verdant-forest/80 leading-relaxed font-sans text-xs">Pengiriman luar kota dilengkapi rangka kayu kokoh agar daun tidak patah dan media tidak tumpah.</span>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- 4. SECTION KHUSUS: PLANT CARE MATCHER & CATEGORIES -->
+    <section class="py-16 bg-verdant-cardsoft border-b border-verdant-border font-mono">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            
+            <div class="text-center max-w-2xl mx-auto mb-12">
+                <span class="text-xs font-mono uppercase tracking-[0.25em] text-verdant-terra font-bold block mb-1">
+                    // BOTANICAL CATEGORIES & SPACES
+                </span>
+                <h2 class="text-2xl sm:text-4xl font-serif font-black text-verdant-green uppercase tracking-tight">
+                    Pilih Tanaman Sesuai Ruangan Anda
+                </h2>
+                <p class="text-xs sm:text-sm text-verdant-forest/80 mt-1 font-sans">
+                    Koleksi tanaman pembersih udara kamar tidur, penghias sudut ruang tamu terang, pot terakota handmade, dan nutrisi daun.
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-6">
+                
+                <!-- Category 1: Indoor Air Purifying -->
+                <div class="bg-white border border-verdant-border rounded-2xl p-6 flex flex-col justify-between hover:border-verdant-green transition shadow-xs">
+                    <div>
+                        <div class="flex justify-between items-center mb-4">
+                            <span class="text-[10px] font-bold bg-emerald-100 text-emerald-800 px-2.5 py-1 rounded-md uppercase tracking-wider font-serif">
+                                AIR PURIFIER
+                            </span>
+                            <span class="text-xs text-verdant-sage font-bold">Kamar & Kantor</span>
+                        </div>
+                        <h3 class="text-lg font-serif font-bold text-verdant-green uppercase">Tanaman Pembersih Udara</h3>
+                        <p class="text-xs text-verdant-forest/80 mt-2 leading-relaxed font-sans font-normal">
+                            Sansevieria Lidah Mertua, Peace Lily, dan Spider Plant yang aktif memfilter racun formaldehida dan melepas oksigen segar di malam hari.
+                        </p>
+                    </div>
+                    <div class="mt-6 pt-4 border-t border-verdant-border flex items-center justify-between">
+                        <span class="text-xs text-verdant-terra font-bold">Mulai Rp 45rb</span>
+                        <a href="katalog.html" class="text-xs text-verdant-green font-bold hover:text-verdant-terra uppercase font-serif">Lihat Tanaman &rarr;</a>
+                    </div>
+                </div>
+
+                <!-- Category 2: Statement Foliage (Monstera / Philodendron) -->
+                <div class="bg-white border-2 border-verdant-green rounded-2xl p-6 flex flex-col justify-between shadow-xl relative">
+                    <span class="absolute -top-3 right-6 bg-verdant-green text-white text-[10px] font-serif font-black px-3 py-0.5 uppercase tracking-wider rounded-full">
+                        LIVING ROOM FAVORITE
+                    </span>
+                    <div>
+                        <div class="flex justify-between items-center mb-4">
+                            <span class="text-[10px] font-bold bg-verdant-terrasoft text-verdant-terra px-2.5 py-1 rounded-md uppercase tracking-wider font-serif font-bold">
+                                STATEMENT PLANTS
+                            </span>
+                            <span class="text-xs text-verdant-green font-bold">Daun Rimbun Estetik</span>
+                        </div>
+                        <h3 class="text-lg font-serif font-bold text-verdant-green uppercase">Monstera & Philodendron</h3>
+                        <p class="text-xs text-verdant-forest/80 mt-2 leading-relaxed font-sans font-normal">
+                            Tanaman berdaun lebar menjuntai dengan robekan daun ikonik, cocok ditempatkan di sudut ruang tamu dekat jendela bertirai tipis.
+                        </p>
+                    </div>
+                    <div class="mt-6 pt-4 border-t border-verdant-border flex items-center justify-between">
+                        <span class="text-xs text-verdant-terra font-bold">Mulai Rp 65rb</span>
+                        <a href="detail.html" class="text-xs text-verdant-green font-bold hover:underline uppercase font-serif">Detail Monstera &rarr;</a>
+                    </div>
+                </div>
+
+                <!-- Category 3: Pot Terakota & Keramik Handmade -->
+                <div class="bg-white border border-verdant-border rounded-2xl p-6 flex flex-col justify-between hover:border-verdant-green transition shadow-xs">
+                    <div>
+                        <div class="flex justify-between items-center mb-4">
+                            <span class="text-[10px] font-bold bg-verdant-terrasoft text-verdant-terra px-2.5 py-1 rounded-md uppercase tracking-wider font-serif">
+                                PLANTERS
+                            </span>
+                            <span class="text-xs text-verdant-sage font-bold">Tanah Liat Berpori</span>
+                        </div>
+                        <h3 class="text-lg font-serif font-bold text-verdant-green uppercase">Pot Terakota & Keramik</h3>
+                        <p class="text-xs text-verdant-forest/80 mt-2 leading-relaxed font-sans font-normal">
+                            Pot terakota tanah liat alami yang menyerap kelembapan berlebih sehingga sirkulasi udara di sekitar perakaran tanaman tetap optimal.
+                        </p>
+                    </div>
+                    <div class="mt-6 pt-4 border-t border-verdant-border flex items-center justify-between">
+                        <span class="text-xs text-verdant-terra font-bold">Mulai Rp 35rb</span>
+                        <a href="katalog.html" class="text-xs text-verdant-green font-bold hover:text-verdant-terra uppercase font-serif">Lihat Pot &rarr;</a>
+                    </div>
+                </div>
+
+                <!-- Category 4: Media Tanam & Vitamin Daun -->
+                <div class="bg-white border border-verdant-border rounded-2xl p-6 flex flex-col justify-between hover:border-verdant-green transition shadow-xs">
+                    <div>
+                        <div class="flex justify-between items-center mb-4">
+                            <span class="text-[10px] font-bold bg-verdant-cardsoft text-verdant-forest px-2.5 py-1 rounded-md border border-verdant-border uppercase tracking-wider font-serif">
+                                PLANT CARE
+                            </span>
+                            <span class="text-xs text-verdant-sage font-bold">Pupuk & Pumice</span>
+                        </div>
+                        <h3 class="text-lg font-serif font-bold text-verdant-green uppercase">Media Tanam & Nutrisi Daun</h3>
+                        <p class="text-xs text-verdant-forest/80 mt-2 leading-relaxed font-sans font-normal">
+                            Racikan media tanam premium siap pakai, batu pumice drainase, vitamin B1 anti-stres, dan cairan pengkilap daun organik (*leaf shine*).
+                        </p>
+                    </div>
+                    <div class="mt-6 pt-4 border-t border-verdant-border flex items-center justify-between">
+                        <span class="text-xs text-verdant-terra font-bold">Mulai Rp 18rb</span>
+                        <a href="katalog.html" class="text-xs text-verdant-green font-bold hover:text-verdant-terra uppercase font-serif">Lihat Nutrisi &rarr;</a>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+    <!-- 5. PRODUK UNGGULAN: GRID 3 KOLOM TANAMAN DENGAN INDIKATOR CAHAYA -->
+    <section class="py-16 bg-verdant-bg border-b border-verdant-border font-mono">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            
+            <div class="flex flex-col md:flex-row md:items-end justify-between mb-12">
+                <div>
+                    <span class="text-xs font-mono uppercase tracking-[0.25em] text-verdant-terra font-bold block mb-1">
+                        // FEATURED BOTANICAL COLLECTION
+                    </span>
+                    <h2 class="text-2xl sm:text-4xl font-serif font-black text-verdant-green uppercase tracking-tight">
+                        Koleksi Tanaman Pilihan Greenhouse
+                    </h2>
+                    <p class="text-xs sm:text-sm text-verdant-forest/80 mt-1 font-sans">
+                        Setiap tanaman sudah dilengkapi indikator kebutuhan sinar matahari, jadwal siram, dan opsi include pot terakota siap pajang.
+                    </p>
+                </div>
+                <a href="katalog.html" class="mt-4 md:mt-0 text-xs font-mono font-bold bg-white hover:bg-verdant-cardsoft text-verdant-green border border-verdant-border px-4 py-2 rounded-xl uppercase tracking-wider transition font-serif shadow-xs">
+                    Lihat Semua 8 Tanaman &rarr;
+                </a>
+            </div>
+
+            <!-- 3 Column Product Grid -->
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                
+                <!-- Product 1: Monstera Deliciosa King -->
+                <div class="bg-white border border-verdant-border rounded-3xl p-5 flex flex-col justify-between hover:border-verdant-green transition shadow-sm">
+                    <div>
+                        <div class="aspect-[4/3] bg-verdant-cardsoft rounded-2xl overflow-hidden mb-3 relative group border border-verdant-border">
+                            <img src="https://images.unsplash.com/photo-1614594975525-e45190c55d0b?auto=format&fit=crop&w=600&q=80" alt="Monstera Deliciosa King" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+                            <span class="absolute top-2 left-2 bg-verdant-green text-white text-[8px] font-bold px-2 py-0.5 rounded-md uppercase font-serif">
+                                BRIGHT INDIRECT LIGHT
+                            </span>
+                            <span class="absolute top-2 right-2 bg-white/90 text-verdant-green text-[8px] font-bold px-2 py-0.5 rounded-md uppercase font-mono border border-verdant-border">
+                                4-5 DAUN ROBEK
+                            </span>
+                        </div>
+
+                        <div class="flex items-center gap-1.5 mb-1.5 text-[10px] text-verdant-terra font-bold uppercase font-mono">
+                            <i class="fa-solid fa-droplet"></i>
+                            <span>Siram 1-2x Seminggu • Tinggi 50-60cm • Pot Terakota 22cm</span>
+                        </div>
+
+                        <h3 class="font-serif font-bold text-lg text-verdant-green uppercase leading-tight">Monstera Deliciosa King</h3>
+                        <p class="text-xs text-verdant-forest/80 mt-1 font-sans line-clamp-2">Tanaman ikonik berdaun lebar mengkilap dengan fenestrasi robekan daun yang rapi dan akar kokoh.</p>
+                        
+                        <div class="mt-3 p-2.5 bg-verdant-cardsoft border border-verdant-border rounded-xl text-[11px] text-verdant-forest/80 space-y-1">
+                            <div class="flex justify-between"><span>Penempatan:</span> <strong class="text-verdant-green">Ruang Tamu / Sudut Jendela</strong></div>
+                            <div class="flex justify-between"><span>Bonus:</span> <strong class="text-verdant-terra">Include Pot Terakota + Tatakan</strong></div>
+                        </div>
+                    </div>
+
+                    <div class="mt-5 pt-3 border-t border-verdant-border flex items-center justify-between">
+                        <div>
+                            <span class="text-[9px] text-verdant-sage block uppercase">Harga Resmi</span>
+                            <span class="font-mono font-bold text-lg text-verdant-green">Rp 125.000</span>
+                        </div>
+                        <a href="detail.html" class="px-4 py-2 bg-verdant-green hover:bg-verdant-greendark text-white text-xs font-bold uppercase rounded-xl transition font-serif">
+                            Detail &rarr;
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Product 2: Sansevieria Trifasciata Laurentii (Lidah Mertua) -->
+                <div class="bg-white border-2 border-verdant-green rounded-3xl p-5 flex flex-col justify-between shadow-xl relative">
+                    <span class="absolute -top-3 right-6 bg-verdant-terra text-white text-[10px] font-serif font-black px-3 py-0.5 uppercase tracking-wider rounded-full">
+                        BEST FOR BEDROOM
+                    </span>
+                    <div>
+                        <div class="aspect-[4/3] bg-verdant-cardsoft rounded-2xl overflow-hidden mb-3 relative group border border-verdant-border">
+                            <img src="https://images.unsplash.com/photo-1509423350716-97f9360b4e09?auto=format&fit=crop&w=600&q=80" alt="Sansevieria Laurentii" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+                            <span class="absolute top-2 left-2 bg-emerald-600 text-white text-[8px] font-bold px-2 py-0.5 rounded-md uppercase font-serif">
+                                LOW LIGHT TOLERANT
+                            </span>
+                            <span class="absolute top-2 right-2 bg-white/90 text-verdant-green text-[8px] font-bold px-2 py-0.5 rounded-md uppercase font-mono border border-verdant-border">
+                                AIR PURIFIER
+                            </span>
+                        </div>
+
+                        <div class="flex items-center gap-1.5 mb-1.5 text-[10px] text-emerald-700 font-bold uppercase font-mono">
+                            <i class="fa-solid fa-moon"></i>
+                            <span>Siram 1x per 10 Hari • Rilis Oksigen Malam • Easy Care</span>
+                        </div>
+
+                        <h3 class="font-serif font-bold text-lg text-verdant-green uppercase leading-tight">Sansevieria Laurentii</h3>
+                        <p class="text-xs text-verdant-forest/80 mt-1 font-sans line-clamp-2">Lidah mertua berbingkai kuning emas yang sangat tangguh terhadap ruangan minim cahaya dan pendingin AC.</p>
+                        
+                        <div class="mt-3 p-2.5 bg-verdant-cardsoft border border-verdant-border rounded-xl text-[11px] text-verdant-forest/80 space-y-1">
+                            <div class="flex justify-between"><span>Karakter:</span> <strong class="text-verdant-green">Sangat Jarang Perlu Disiram</strong></div>
+                            <div class="flex justify-between"><span>Bonus:</span> <strong class="text-verdant-terra">Pot Keramik Putih Minimalis</strong></div>
+                        </div>
+                    </div>
+
+                    <div class="mt-5 pt-3 border-t border-verdant-border flex items-center justify-between">
+                        <div>
+                            <span class="text-[9px] text-verdant-sage block uppercase">Harga Resmi</span>
+                            <span class="font-mono font-bold text-lg text-verdant-green">Rp 68.000</span>
+                        </div>
+                        <a href="detail.html" class="px-4 py-2 bg-verdant-green hover:bg-verdant-greendark text-white text-xs font-bold uppercase rounded-xl transition font-serif">
+                            Detail &rarr;
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Product 3: Philodendron Birkin Variegata -->
+                <div class="bg-white border border-verdant-border rounded-3xl p-5 flex flex-col justify-between hover:border-verdant-green transition shadow-sm">
+                    <div>
+                        <div class="aspect-[4/3] bg-verdant-cardsoft rounded-2xl overflow-hidden mb-3 relative group border border-verdant-border">
+                            <img src="https://images.unsplash.com/photo-1598880940371-c756e015fea1?auto=format&fit=crop&w=600&q=80" alt="Philodendron Birkin" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+                            <span class="absolute top-2 left-2 bg-verdant-terra text-white text-[8px] font-bold px-2 py-0.5 rounded-md uppercase font-serif">
+                                VARIEGATED LINES
+                            </span>
+                            <span class="absolute top-2 right-2 bg-white/90 text-verdant-sage text-[8px] font-bold px-2 py-0.5 rounded-md uppercase font-mono border border-verdant-border">
+                                DESK PLANT
+                            </span>
+                        </div>
+
+                        <div class="flex items-center gap-1.5 mb-1.5 text-[10px] text-verdant-terra font-bold uppercase font-mono">
+                            <i class="fa-solid fa-palette"></i>
+                            <span>Garis Daun Putih Krem • Kompak 25cm • Meja Kerja</span>
+                        </div>
+
+                        <h3 class="font-serif font-bold text-lg text-verdant-green uppercase leading-tight">Philodendron Birkin</h3>
+                        <p class="text-xs text-verdant-forest/80 mt-1 font-sans line-clamp-2">Tanaman hias meja dengan corak garis pinstripe putih elegan yang tumbuh rapi dan menyegarkan mata.</p>
+                        
+                        <div class="mt-3 p-2.5 bg-verdant-cardsoft border border-verdant-border rounded-xl text-[11px] text-verdant-forest/80 space-y-1">
+                            <div class="flex justify-between"><span>Penempatan:</span> <strong class="text-verdant-green">Meja Kerja / Rak Estetik</strong></div>
+                            <div class="flex justify-between"><span>Bonus:</span> <strong class="text-verdant-terra">Pot Terakota Doff 15cm</strong></div>
+                        </div>
+                    </div>
+
+                    <div class="mt-5 pt-3 border-t border-verdant-border flex items-center justify-between">
+                        <div>
+                            <span class="text-[9px] text-verdant-sage block uppercase">Harga Resmi</span>
+                            <span class="font-mono font-bold text-lg text-verdant-green">Rp 82.000</span>
+                        </div>
+                        <a href="detail.html" class="px-4 py-2 bg-verdant-green hover:bg-verdant-greendark text-white text-xs font-bold uppercase rounded-xl transition font-serif">
+                            Detail &rarr;
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+    <!-- 6. TESTIMONI URBAN JUNGLE & INTERIOR ENTHUSIASTS -->
+    <section class="py-16 bg-verdant-cardsoft border-b border-verdant-border font-mono">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            
+            <div class="text-center max-w-2xl mx-auto mb-12">
+                <span class="text-xs font-mono uppercase tracking-[0.25em] text-verdant-terra font-bold block mb-1">
+                    // URBAN JUNGLE REVIEWS
+                </span>
+                <h2 class="text-2xl sm:text-4xl font-serif font-black text-verdant-green uppercase tracking-tight">
+                    Kesan Para Pemilik Rumah & Kafe
+                </h2>
+                <p class="text-xs sm:text-sm text-verdant-forest/80 mt-1 font-sans">
+                    Ulasan nyata dari pecinta dekorasi interior, pemilik kafe estetik, dan pegiat urban jungle di Indonesia.
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                
+                <div class="bg-white p-6 rounded-3xl border border-verdant-border flex flex-col justify-between shadow-xs">
+                    <div>
+                        <div class="flex items-center gap-1 text-amber-500 text-xs mb-3">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                        <p class="text-xs text-verdant-forest/80 leading-relaxed font-sans italic">
+                            "Beli Monstera King dan Sansevieria untuk dekorasi ruang tamu baru. Tanaman datang dalam kondisi segar bugar, daun tidak ada yang sobek atau layu berkat packing kayu tebalnya. Pot terakotanya estetik banget!"
+                        </p>
+                    </div>
+                    <div class="mt-6 pt-3 border-t border-verdant-border flex items-center justify-between text-xs">
+                        <strong class="text-verdant-green font-bold font-serif uppercase">Clara Anindya</strong>
+                        <span class="text-[10px] bg-verdant-terrasoft text-verdant-terra px-2 py-0.5 rounded-md font-mono font-bold">Home Decorator — Bintaro</span>
+                    </div>
+                </div>
+
+                <div class="bg-white p-6 rounded-3xl border border-verdant-border flex flex-col justify-between shadow-xs">
+                    <div>
+                        <div class="flex items-center gap-1 text-amber-500 text-xs mb-3">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                        <p class="text-xs text-verdant-forest/80 leading-relaxed font-sans italic">
+                            "Pesan 8 pot tanaman untuk sudut kafe kopi di Senopati. Tim Verdant Lab sangat responsif mengarahkan tanaman mana yang cocok untuk area ber-AC dan minim jendela. Media tanamnya beneran porous nggak becek berbau."
+                        </p>
+                    </div>
+                    <div class="mt-6 pt-3 border-t border-verdant-border flex items-center justify-between text-xs">
+                        <strong class="text-verdant-green font-serif uppercase font-bold">Fajar Hidayat</strong>
+                        <span class="text-[10px] bg-verdant-terrasoft text-verdant-terra px-2 py-0.5 rounded-md font-mono font-bold">Coffee Shop Owner — Jakarta</span>
+                    </div>
+                </div>
+
+                <div class="bg-white p-6 rounded-3xl border border-verdant-border flex flex-col justify-between shadow-xs">
+                    <div>
+                        <div class="flex items-center gap-1 text-amber-500 text-xs mb-3">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                        <p class="text-xs text-verdant-forest/80 leading-relaxed font-sans italic">
+                            "Sebagai pemula yang sering bikin tanaman mati karena overwatering, panduan plant care Verdant Lab ngebantu banget. Tanaman Birkin saya sekarang aktif ngeluarin daun baru setiap 2 minggu."
+                        </p>
+                    </div>
+                    <div class="mt-6 pt-3 border-t border-verdant-border flex items-center justify-between text-xs">
+                        <strong class="text-verdant-green font-serif uppercase font-bold">Dina Marlina</strong>
+                        <span class="text-[10px] bg-verdant-terrasoft text-verdant-terra px-2 py-0.5 rounded-md font-mono font-bold">Urban Jungle Enthusiast — Bandung</span>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+    <!-- 7. FOOTER -->
+    <footer class="bg-verdant-green text-verdant-terrasoft border-t border-verdant-border/30 pt-14 pb-28 font-mono">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-10">
+                
+                <div class="lg:col-span-2 space-y-4">
+                    <div class="flex items-center gap-3">
+                        <div class="w-9 h-9 bg-verdant-terra text-white flex items-center justify-center text-lg font-serif font-black rounded-xl">
+                            <i class="fa-solid fa-leaf"></i>
+                        </div>
+                        <span class="text-2xl font-serif font-black text-white uppercase tracking-tight">
+                            VERDANT LAB<span class="text-verdant-terra">.</span>
+                        </span>
+                    </div>
+                    <p class="text-xs text-verdant-terrasoft/80 leading-relaxed max-w-sm font-sans">
+                        Lentera Pasar Botanical Greenhouse & Planters Template. Menghadirkan tanaman indoor pembersih udara berakar kuat sehat, pot terakota tanah liat berpori, media tanam andam-pumice, dan garansi tanaman segar tiba di rumah.
+                    </p>
+                    <div class="pt-2 text-xs text-verdant-terrasoft/90 space-y-1 font-sans">
+                        <div><i class="fa-solid fa-location-dot text-verdant-terra mr-2"></i> Nursery Kebun: Jl. Kemang Timur No. 34, Bangka, Mampang Prapatan, Jakarta Selatan 12730</div>
+                        <div><i class="fa-brands fa-whatsapp text-emerald-400 mr-2"></i> +62 812-3456-7890 (Konsultasi Tanaman & Minta Foto Real-Plant WA)</div>
+                    </div>
+                </div>
+
+                <div>
+                    <h4 class="text-xs font-bold uppercase tracking-wider text-white mb-4">Navigasi Utama</h4>
+                    <ul class="space-y-2.5 text-xs text-verdant-terrasoft/80">
+                        <li><a href="index.html" class="hover:text-verdant-terra transition">Beranda Utama</a></li>
+                        <li><a href="katalog.html" class="hover:text-verdant-terra transition">Katalog Tanaman</a></li>
+                        <li><a href="detail.html" class="hover:text-verdant-terra transition">Detail Monstera</a></li>
+                        <li><a href="tentang.html" class="hover:text-verdant-terra transition">Greenhouse Nursery</a></li>
+                        <li><a href="artikel.html" class="hover:text-verdant-terra transition">Tips Perawatan</a></li>
+                        <li><a href="kontak.html" class="hover:text-verdant-terra transition">Nursery & Kontak</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h4 class="text-xs font-bold uppercase tracking-wider text-white mb-4">Kategori Tanaman</h4>
+                    <ul class="space-y-2.5 text-xs text-verdant-terrasoft/80">
+                        <li><a href="katalog.html" class="hover:text-verdant-terra transition">Tanaman Indoor Pembersih</a></li>
+                        <li><a href="katalog.html" class="hover:text-verdant-terra transition">Monstera & Philodendron</a></li>
+                        <li><a href="katalog.html" class="hover:text-verdant-terra transition">Pot Terakota Handmade</a></li>
+                        <li><a href="katalog.html" class="hover:text-verdant-terra transition">Media Tanam Porous Mix</a></li>
+                        <li><a href="katalog.html" class="hover:text-verdant-terra transition">Vitamin B1 & Leaf Shine</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h4 class="text-xs font-bold uppercase tracking-wider text-white mb-4">Jaminan Nursery</h4>
+                    <div class="space-y-2 text-xs">
+                        <div class="p-3 bg-verdant-greendark/70 border border-verdant-border/30 rounded-xl">
+                            <span class="text-[10px] text-verdant-terra block uppercase font-bold font-serif">FRESH DELIVERY:</span>
+                            <span class="font-bold text-white text-[11px]">Garansi Daun Segar 100%</span>
+                        </div>
+                        <div class="p-3 bg-verdant-greendark/70 border border-verdant-border/30 rounded-xl">
+                            <span class="text-[10px] text-emerald-400 block uppercase font-bold font-serif">HEALTHY ROOTS:</span>
+                            <span class="font-bold text-white text-[11px]">Akar Mapan 3 Bulan</span>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="mt-12 pt-8 border-t border-verdant-border/20 flex flex-col sm:flex-row items-center justify-between text-xs text-verdant-terrasoft/60">
+                <p>&copy; 2026 VERDANT LAB BOTANICAL NURSERY. All Rights Reserved.</p>
+                <p class="text-[11px] mt-2 sm:mt-0 font-sans">Lentera Pasar Production Template — Botanical Greenhouse & Planters</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- ========================================================================= -->
+    <!-- INTERACTIVE PLANT CARE MATCHER & LIGHT PROFILER MODAL                     -->
+    <!-- ========================================================================= -->
+    <div id="careModal" class="fixed inset-0 z-50 bg-black/80 backdrop-blur-xs hidden flex items-center justify-center p-4 font-mono">
+        <div class="bg-white border border-verdant-border max-w-lg w-full p-6 sm:p-8 rounded-3xl shadow-2xl relative text-verdant-forest">
+            <button onclick="closeCareModal()" class="absolute top-5 right-5 text-verdant-sage hover:text-verdant-green border border-verdant-border w-8 h-8 rounded-full flex items-center justify-center font-bold">
+                <i class="fa-solid fa-xmark"></i>
+            </button>
+            
+            <div class="flex items-center gap-3 mb-6">
+                <div class="w-10 h-10 bg-verdant-green text-white flex items-center justify-center text-lg rounded-2xl font-serif">
+                    <i class="fa-solid fa-seedling"></i>
+                </div>
+                <div>
+                    <h3 class="text-lg font-serif font-bold text-verdant-green uppercase">Plant Care Matcher</h3>
+                    <p class="text-xs text-verdant-forest/80 font-sans">Pilih kondisi pencahayaan ruangan Anda untuk mendapatkan rekomendasi tanaman yang tepat.</p>
+                </div>
+            </div>
+
+            <div class="space-y-4 text-xs">
+                <div>
+                    <label class="block font-bold text-verdant-green mb-1.5 uppercase font-serif">Pilih Kondisi Ruangan:</label>
+                    <select id="roomLightSelect" onchange="updateCareResult()" class="w-full p-3 border border-verdant-border bg-verdant-bg text-verdant-forest rounded-xl focus:outline-none focus:border-verdant-green text-xs font-mono font-bold">
+                        <option value="lowlight">Kamar Tidur / Sudut Ruangan Minim Cahaya (Low Light)</option>
+                        <option value="brightindirect">Ruang Tamu Dekat Jendela Bertirai (Bright Indirect)</option>
+                        <option value="desk">Meja Kerja / Rak Dinding Estetik (Desk Plant)</option>
+                        <option value="balcony">Balkon / Teras Semi-Outdoor (Bright Direct Light)</option>
+                    </select>
+                </div>
+
+                <div id="careResultBox" class="p-4 bg-verdant-cardsoft border border-verdant-terra/40 rounded-2xl space-y-2">
+                    <div class="flex items-center justify-between">
+                        <span class="text-[10px] font-bold bg-verdant-green text-white px-2.5 py-0.5 rounded-md uppercase block font-serif">// REKOMENDASI TANAMAN:</span>
+                        <span id="careTag" class="text-[10px] font-bold text-verdant-terra">Sansevieria Laurentii</span>
+                    </div>
+                    <h5 id="careTitleDisplay" class="font-serif font-bold text-verdant-green text-base uppercase">Sansevieria Laurentii (Lidah Mertua)</h5>
+                    <p id="careDescDisplay" class="text-[11px] text-verdant-forest/80 font-sans leading-relaxed">
+                        Sangat tangguh di ruangan minim sinar matahari, cukup disiram 1 kali setiap 10-14 hari, dan aktif memfilter udara saat tidur.
+                    </p>
+                </div>
+
+                <div class="pt-2 flex items-center justify-between gap-3">
+                    <a id="careWaLink" href="https://wa.me/6281234567890?text=Halo%20Verdant%20Lab,%20saya%20tertarik%20dengan%20tanaman%20Sansevieria%20Laurentii." target="_blank" class="w-full py-3.5 bg-verdant-green hover:bg-verdant-greendark text-white font-bold text-xs uppercase tracking-wider rounded-xl text-center transition shadow-lg verdant-btn font-serif">
+                        Minta Foto Real-Plant Tanaman via WA &rarr;
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ========================================================================= -->
+    <!-- FLOATING WHATSAPP BUTTON (bottom-24)                                      -->
+    <!-- ========================================================================= -->
+    <a href="https://wa.me/6281234567890?text=Halo%20Verdant%20Lab,%20saya%20ingin%20konsultasi%20tanaman%20indoor." 
+       target="_blank" 
+       class="fixed bottom-24 right-6 z-50 group flex items-center gap-3 bg-white hover:bg-verdant-cardsoft text-verdant-green px-4 py-3 border border-verdant-border rounded-2xl shadow-2xl hover:border-verdant-green transition-all duration-300 font-mono" 
+       aria-label="Konsultasi Tanaman via WhatsApp">
+        <span class="relative flex h-3 w-3">
+            <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-emerald-500 opacity-75"></span>
+            <span class="relative inline-flex rounded-full h-3 w-3 bg-emerald-500"></span>
+        </span>
+        <i class="fa-brands fa-whatsapp text-2xl text-emerald-600"></i>
+        <div class="text-left hidden sm:block pr-1">
+            <div class="text-[10px] text-verdant-terra font-bold uppercase tracking-wider leading-none font-serif">Botanist Specialist</div>
+            <span class="font-bold text-xs text-verdant-green">Minta Foto Real WA</span>
+        </div>
+    </a>
+
+    <!-- ========================================================================= -->
+    <!-- LENTERA PASAR - STICKY DEMO & SALES BAR (fixed bottom-4)                 -->
+    <!-- ========================================================================= -->
+    <div class="fixed bottom-4 left-1/2 -translate-x-1/2 z-50 w-[95%] max-w-4xl bg-slate-900/95 backdrop-blur-md text-white p-3.5 md:p-4 rounded-2xl shadow-2xl border border-slate-700/80 transition-all duration-300">
+      <div class="flex flex-col md:flex-row items-center justify-between gap-3 md:gap-4">
+        
+        <div class="flex items-center gap-3 w-full md:w-auto">
+          <div class="w-10 h-10 rounded-xl bg-emerald-500/20 border border-emerald-500/40 flex items-center justify-center shrink-0">
+            <svg class="w-5 h-5 text-emerald-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253" />
+            </svg>
+          </div>
+          <div>
+            <div class="flex items-center gap-2">
+              <span class="font-bold text-sm text-white">Lentera Pasar Engine</span>
+              <span class="text-[10px] bg-emerald-500/20 text-emerald-300 border border-emerald-500/30 px-2 py-0.5 rounded-full font-medium">Botanical Greenhouse Template</span>
+            </div>
+            <p class="text-xs text-slate-300 hidden sm:block">
+              Terima beres: Website responsif + Panel input produk sendiri + Dikelola tim iklan profesional.
+            </p>
+          </div>
+        </div>
+
+        <div class="flex items-center justify-between md:justify-end gap-3 w-full md:w-auto">
+          <div class="hidden lg:flex items-center gap-2 text-xs text-slate-400 border-r border-slate-700 pr-4">
+            <div class="flex items-center gap-1 text-slate-200">
+              <svg class="w-4 h-4 text-emerald-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" /></svg>
+              <span>Botanical UI</span>
+            </div>
+            <span class="text-slate-600">•</span>
+            <div class="flex items-center gap-1 text-slate-200">
+              <svg class="w-4 h-4 text-emerald-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" /></svg>
+              <span>Plant Care Matrix</span>
+            </div>
+          </div>
+
+          <a href="https://wa.me/6281234567890?text=Halo%20Tim%20Lentera%20Pasar,%20saya%20tertarik%20menggunakan%20template%20website%20Botanical%20Greenhouse%20ini%20lengkap%20dengan%20Admin%20Panel%20dan%20Jasa%20Iklannya." 
+             target="_blank"
+             class="w-full md:w-auto inline-flex items-center justify-center gap-2 bg-gradient-to-r from-emerald-600 to-teal-600 hover:from-emerald-500 hover:to-teal-500 text-white text-xs md:text-sm font-bold px-5 py-2.5 rounded-xl shadow-lg transition-all hover:scale-105 shrink-0 font-serif">
+            <span>Gunakan Template Ini</span>
+            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3" />
+            </svg>
+          </a>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- SCRIPT LOGIC -->
+    <script>
+        const careModal = document.getElementById('careModal');
+        function openCareModal() {
+            careModal.classList.remove('hidden');
+            updateCareResult();
+        }
+        function closeCareModal() {
+            careModal.classList.add('hidden');
+        }
+
+        function updateCareResult() {
+            const room = document.getElementById('roomLightSelect').value;
+            const titleDisp = document.getElementById('careTitleDisplay');
+            const descDisp = document.getElementById('careDescDisplay');
+            const tag = document.getElementById('careTag');
+            const waLink = document.getElementById('careWaLink');
+
+            if (room === 'lowlight') {
+                titleDisp.innerText = "Sansevieria Laurentii (Lidah Mertua)";
+                descDisp.innerText = "Sangat tangguh di ruangan minim sinar matahari, cukup disiram 1 kali setiap 10-14 hari, dan aktif memfilter racun udara saat malam.";
+                tag.innerText = "Sansevieria Laurentii";
+                waLink.href = "https://wa.me/6281234567890?text=Halo%20Verdant%20Lab,%20saya%20tertarik%20pesan%20Sansevieria%20Laurentii.";
+            } else if (room === 'brightindirect') {
+                titleDisp.innerText = "Monstera Deliciosa King";
+                descDisp.innerText = "Tumbuh prima di dekat jendela dengan sinar matahari terfilter tirai. Menghasilkan daun lebar berlubang indah dan menyerap karbon ruangan.";
+                tag.innerText = "Monstera Deliciosa King";
+                waLink.href = "https://wa.me/6281234567890?text=Halo%20Verdant%20Lab,%20saya%20tertarik%20pesan%20Monstera%20Deliciosa.";
+            } else if (room === 'desk') {
+                titleDisp.innerText = "Philodendron Birkin Variegata";
+                descDisp.innerText = "Ukuran kompak 20-30cm dengan garis daun putih tegas yang sangat menawan diletakkan di atas meja kerja kayu Anda.";
+                tag.innerText = "Philodendron Birkin";
+                waLink.href = "https://wa.me/6281234567890?text=Halo%20Verdant%20Lab,%20saya%20tertarik%20pesan%20Philodendron%20Birkin.";
+            } else {
+                titleDisp.innerText = "Kaktus Candelabra & Sukulen Mix";
+                descDisp.innerText = "Menyukai paparan cahaya matahari langsung di area balkon terbuka, bentuk arsitektural gagah, dan sangat minim perawatan air.";
+                tag.innerText = "Kaktus Candelabra";
+                waLink.href = "https://wa.me/6281234567890?text=Halo%20Verdant%20Lab,%20saya%20tertarik%20pesan%20Kaktus%20Candelabra.";
+            }
+        }
+
+        // Mobile menu toggle
+        const mobileMenuBtn = document.getElementById('mobileMenuBtn');
+        const mobileMenu = document.getElementById('mobileMenu');
+        const menuIcon = document.getElementById('menuIcon');
+
+        mobileMenuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+            if (mobileMenu.classList.contains('hidden')) {
+                menuIcon.classList.remove('fa-xmark');
+                menuIcon.classList.add('fa-bars');
+            } else {
+                menuIcon.classList.remove('fa-bars');
+                menuIcon.classList.add('fa-xmark');
+            }
+        });
+    </script>
+</body>
+</html>

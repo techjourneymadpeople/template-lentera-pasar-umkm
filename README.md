@@ -56,6 +56,7 @@ template-website-umkm/
 │   ├── hobby-collector-vault/          # Gunpla Bandai MG/RG/HG, Nendoroid & Display Box Akrilik (MechaVault)
 │   ├── music-audio-studio/             # Gitar Akustik Spruce Solid, Ukulele Mahogany & Preamp (Sonora Guitars)
 │   ├── pet-care-haven/                 # Pakan Kucing Salmon 32% Protein, Pasir 10L & Minyak Ikan (PawParadise)
+│   ├── plants-botanical-greenhouse/    # Tanaman Indoor Monstera, Pot Terakota & Media Porous (Verdant Lab)
 │   ├── gadget-phone-accessories/       # Case Hp, TWS, Charger & Gadget Acc
 │   ├── hobby-plant-monstera/           # Tanaman Hias, Pot Keramik & Pupuk Urban
 │   ├── hobby-aquatic-aquascape/        # Ikan Hias, Aquascape & Pakan Hewan

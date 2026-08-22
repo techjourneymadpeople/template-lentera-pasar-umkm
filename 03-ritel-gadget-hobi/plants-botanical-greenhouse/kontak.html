@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="id" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nursery Kebun & Konsultasi Tanaman — VERDANT LAB</title>
+    <meta name="description" content="Kunjungi kebun nursery Verdant Lab di Kemang Jakarta Selatan untuk memilih langsung tanaman indoor, pot terakota, atau ajukan konsultasi perawatan via WhatsApp.">
+    
+    <!-- Google Fonts: Playfair Display & Plus Jakarta Sans -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;0,700;0,800;0,900;1,600;1,700&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Space+Grotesk:wght@600;700&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        verdant: {
+                            green: '#1E3A2F',
+                            greendark: '#142921',
+                            greenlight: '#2D5545',
+                            terra: '#C86D51',
+                            terradark: '#A85238',
+                            terrasoft: '#FDF1ED',
+                            bg: '#F8F6F0',
+                            card: '#FFFFFF',
+                            cardsoft: '#EFECE3',
+                            border: '#E6E1D5',
+                            sage: '#7C9082',
+                            forest: '#0F1F19'
+                        }
+                    },
+                    fontFamily: {
+                        sans: ['"Plus Jakarta Sans"', 'sans-serif'],
+                        serif: ['"Playfair Display"', 'serif'],
+                        mono: ['"Space Grotesk"', 'monospace']
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        .no-scrollbar::-webkit-scrollbar { display: none; }
+        .no-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
+        
+        .verdant-btn {
+            transition: all 0.2s cubic-bezier(0.16, 1, 0.3, 1);
+        }
+        .verdant-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 10px 25px -6px rgba(200, 109, 81, 0.45);
+        }
+    </style>
+</head>
+<body class="bg-verdant-bg text-verdant-forest font-sans antialiased selection:bg-verdant-green selection:text-white">
+
+    <!-- 1. TOP BAR -->
+    <div class="bg-verdant-green text-verdant-terrasoft text-xs py-2 px-4 font-mono font-bold border-b border-verdant-border/30">
+        <div class="max-w-7xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-2 text-center sm:text-left">
+            <div class="flex items-center justify-center gap-2">
+                <span class="px-2 py-0.5 bg-verdant-terra text-white text-[10px] uppercase font-serif font-black tracking-wider rounded-md">
+                    NURSERY OPEN
+                </span>
+                <span class="text-white">Buka Setiap Hari: 08.30 — 18.00 WIB • Bisa Pilih Tanaman Langsung di Kebun</span>
+            </div>
+            <div class="flex items-center gap-4 text-xs font-mono">
+                <span>Kemang Jakarta Selatan</span>
+                <span>|</span>
+                <a href="katalog.html" class="text-verdant-terra hover:text-white underline font-extrabold transition">Katalog Tanaman &rarr;</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- 2. NAVBAR -->
+    <header class="sticky top-0 z-40 bg-verdant-bg/95 backdrop-blur-md border-b border-verdant-border transition-all">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-20 sm:h-24">
+                
+                <a href="index.html" class="flex items-center gap-3 group">
+                    <div class="w-11 h-11 bg-verdant-green text-white flex items-center justify-center text-xl font-serif font-black rounded-2xl shadow-lg group-hover:bg-verdant-terra transition">
+                        <i class="fa-solid fa-leaf"></i>
+                    </div>
+                    <div class="flex flex-col">
+                        <span class="text-2xl sm:text-3xl font-serif font-black tracking-tight text-verdant-green uppercase leading-none">
+                            VERDANT LAB<span class="text-verdant-terra">.</span>
+                        </span>
+                        <span class="text-[9px] font-mono tracking-[0.25em] text-verdant-terra uppercase mt-1 font-bold">
+                            BOTANICAL GREENHOUSE & PLANTERS
+                        </span>
+                    </div>
+                </a>
+
+                <nav class="hidden lg:flex items-center gap-8 text-xs font-bold tracking-wider uppercase text-verdant-sage font-mono">
+                    <a href="index.html" class="hover:text-verdant-green transition">Beranda</a>
+                    <a href="katalog.html" class="hover:text-verdant-green transition">Katalog Tanaman</a>
+                    <a href="detail.html" class="hover:text-verdant-green transition">Detail Monstera</a>
+                    <a href="tentang.html" class="hover:text-verdant-green transition">Greenhouse & Garansi</a>
+                    <a href="artikel.html" class="hover:text-verdant-green transition">Tips Perawatan</a>
+                    <a href="kontak.html" class="text-verdant-green border-b-2 border-verdant-green pb-1">Nursery & Konsultasi</a>
+                </nav>
+
+                <div class="hidden sm:flex items-center gap-3 font-mono">
+                    <a href="https://wa.me/6281234567890?text=Halo%20Verdant%20Lab,%20saya%20mau%20konsultasi%20tanaman%20sekarang." target="_blank" class="inline-flex items-center gap-2 bg-verdant-green hover:bg-verdant-greendark text-white text-xs font-bold tracking-wider px-5 py-2.5 rounded-xl transition-all shadow-lg font-mono verdant-btn font-serif">
+                        <i class="fa-brands fa-whatsapp text-base"></i>
+                        <span>Chat WhatsApp</span>
+                    </a>
+                </div>
+
+                <button id="mobileMenuBtn" class="lg:hidden p-2 text-verdant-green hover:text-verdant-terra focus:outline-none" aria-label="Toggle Menu">
+                    <i id="menuIcon" class="fa-solid fa-bars text-xl"></i>
+                </button>
+            </div>
+        </div>
+
+        <!-- Mobile Drawer -->
+        <div id="mobileMenu" class="hidden lg:hidden bg-white border-b border-verdant-border px-4 py-5 space-y-3 font-mono">
+            <a href="index.html" class="block text-xs font-bold uppercase tracking-wider text-verdant-forest hover:text-verdant-green py-2 border-b border-verdant-border">Beranda Utama</a>
+            <a href="katalog.html" class="block text-xs font-bold uppercase tracking-wider text-verdant-forest hover:text-verdant-green py-2 border-b border-verdant-border">Katalog Tanaman & Pot Terakota</a>
+            <a href="detail.html" class="block text-xs font-bold uppercase tracking-wider text-verdant-forest hover:text-verdant-green py-2 border-b border-verdant-border">Detail Monstera Deliciosa King</a>
+            <a href="tentang.html" class="block text-xs font-bold uppercase tracking-wider text-verdant-forest hover:text-verdant-green py-2 border-b border-verdant-border">Greenhouse & Standar Rawat</a>
+            <a href="artikel.html" class="block text-xs font-bold uppercase tracking-wider text-verdant-forest hover:text-verdant-green py-2 border-b border-verdant-border">Tips Tanaman Minim Cahaya</a>
+            <a href="kontak.html" class="block text-xs font-bold uppercase tracking-wider text-verdant-green py-2">Nursery Kemang & Konsultasi</a>
+        </div>
+    </header>
+
+    <!-- 3. PAGE HEADER -->
+    <section class="py-12 bg-verdant-cardsoft border-b border-verdant-border font-mono">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="max-w-3xl">
+                <div class="inline-flex items-center gap-2 px-3 py-1 bg-white border border-verdant-border text-verdant-green text-xs font-bold tracking-wider mb-3 rounded-full shadow-xs">
+                    <span class="w-2 h-2 rounded-full bg-emerald-500"></span>
+                    <span class="uppercase tracking-widest text-[10px] font-serif">GREENHOUSE VISIT & BOTANICAL INQUIRY</span>
+                </div>
+                <h1 class="text-3xl sm:text-5xl font-serif font-black text-verdant-green tracking-tight uppercase">
+                    Kunjungi Nursery & Konsultasi Tanaman
+                </h1>
+                <p class="text-xs sm:text-sm text-verdant-forest/80 mt-2 font-sans leading-relaxed">
+                    Kunjungi langsung greenhouse kami di Kemang Jakarta Selatan untuk melihat rimbunnya tanaman secara nyata, memilih pot terakota, atau ajukan permintaan foto real-plant stok terbaru via WhatsApp.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- 4. SPLIT LAYOUT: FORM PENGAJUAN WA + INFO NURSERY & MAPS -->
+    <section class="py-14 bg-verdant-bg font-mono">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-10">
+                
+                <!-- LEFT: INTAKE & REAL-PLANT INQUIRY FORM (7 Cols) -->
+                <div class="lg:col-span-7">
+                    <div class="bg-white border border-verdant-border rounded-3xl p-6 sm:p-8 shadow-xl space-y-6">
+                        <div class="flex items-center gap-3 pb-4 border-b border-verdant-border">
+                            <div class="w-10 h-10 bg-verdant-green text-white flex items-center justify-center text-lg rounded-2xl font-serif">
+                                <i class="fa-solid fa-camera text-verdant-terra"></i>
+                            </div>
+                            <div>
+                                <h3 class="text-base font-serif font-bold text-verdant-green uppercase">Formulir Minta Foto Real-Plant & Konsultasi</h3>
+                                <p class="text-xs text-verdant-forest/80 font-sans font-normal">Data pertanyaan Anda akan otomatis tersambung ke Botanist Specialist Verdant Lab di WhatsApp.</p>
+                            </div>
+                        </div>
+
+                        <form onsubmit="handleVerdantInquiry(event)" class="space-y-4 text-xs font-mono">
+                            
+                            <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                                <div>
+                                    <label class="block font-bold text-verdant-green mb-1.5 uppercase font-serif">Nama Anda:</label>
+                                    <input type="text" id="custName" required placeholder="Contoh: Sarah Andira" class="w-full p-3 border border-verdant-border bg-verdant-bg text-verdant-forest rounded-xl focus:outline-none focus:border-verdant-green text-xs font-sans">
+                                </div>
+                                <div>
+                                    <label class="block font-bold text-verdant-green mb-1.5 uppercase font-serif">Nomor WhatsApp:</label>
+                                    <input type="tel" id="custPhone" required placeholder="Contoh: 081234567890" class="w-full p-3 border border-verdant-border bg-verdant-bg text-verdant-forest rounded-xl focus:outline-none focus:border-verdant-green text-xs font-sans">
+                                </div>
+                            </div>
+
+                            <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                                <div>
+                                    <label class="block font-bold text-verdant-green mb-1.5 uppercase font-serif">Topik Konsultasi:</label>
+                                    <select id="custTopic" class="w-full p-3 border border-verdant-border bg-verdant-bg text-verdant-forest rounded-xl focus:outline-none focus:border-verdant-green text-xs font-serif uppercase font-bold">
+                                        <option value="Minta Foto Stok Real-Plant Tanaman Aktual">Minta Foto Stok Real-Plant Tanaman Aktual</option>
+                                        <option value="Konsultasi Tanaman untuk Ruangan Tertentu (AC / Minim Cahaya)">Konsultasi Tanaman untuk Ruangan Tertentu (AC / Minim Cahaya)</option>
+                                        <option value="Pengadaan Tanaman Dekorasi Kafe / Kantor">Pengadaan Tanaman Dekorasi Kafe / Kantor</option>
+                                        <option value="Klinik Tanaman (Daun Menguning / Perawatan Hama)">Klinik Tanaman (Daun Menguning / Perawatan Hama)</option>
+                                    </select>
+                                </div>
+                                <div>
+                                    <label class="block font-bold text-verdant-green mb-1.5 uppercase font-serif">Jenis Tanaman yang Diminati:</label>
+                                    <input type="text" id="custPlant" placeholder="Contoh: Monstera King 60cm + Pot Terakota 22cm" class="w-full p-3 border border-verdant-border bg-verdant-bg text-verdant-forest rounded-xl focus:outline-none focus:border-verdant-green text-xs font-sans">
+                                </div>
+                            </div>
+
+                            <div>
+                                <label class="block font-bold text-verdant-green mb-1.5 uppercase font-serif">Kondisi Ruangan / Catatan Tambahan:</label>
+                                <textarea id="custNotes" rows="3" placeholder="Sebutkan kondisi cahaya ruangan (misal: kamar tidur ber-AC dekat jendela timur)..." class="w-full p-3 border border-verdant-border bg-verdant-bg text-verdant-forest rounded-xl focus:outline-none focus:border-verdant-green text-xs font-sans"></textarea>
+                            </div>
+
+                            <div class="pt-2">
+                                <button type="submit" class="w-full py-4 px-6 bg-verdant-green hover:bg-verdant-greendark text-white text-xs font-bold tracking-widest uppercase rounded-2xl flex items-center justify-center gap-2 shadow-lg verdant-btn font-serif">
+                                    <i class="fa-brands fa-whatsapp text-lg"></i>
+                                    <span>Kirim Permintaan ke WhatsApp Botanist</span>
+                                </button>
+                            </div>
+
+                        </form>
+                    </div>
+                </div>
+
+                <!-- RIGHT: NURSERY LOCATION, HOURS & GOOGLE MAPS (5 Cols) -->
+                <div class="lg:col-span-5 space-y-6">
+                    
+                    <div class="bg-white border border-verdant-border rounded-3xl p-6 sm:p-7 shadow-xl space-y-4">
+                        <div class="font-bold text-xs uppercase tracking-wider text-verdant-green flex items-center gap-2 font-serif">
+                            <i class="fa-solid fa-clock text-verdant-terra"></i> Jam Buka Kebun Nursery
+                        </div>
+                        <div class="p-4 bg-verdant-cardsoft border border-verdant-border rounded-2xl text-xs space-y-2 text-verdant-forest/80 font-mono">
+                            <div class="flex justify-between">
+                                <span>Senin — Jumat:</span> <strong class="text-verdant-green">08.30 — 17.30 WIB</strong>
+                            </div>
+                            <div class="flex justify-between">
+                                <span>Sabtu & Minggu:</span> <strong class="text-verdant-green">08.00 — 18.00 WIB</strong>
+                            </div>
+                            <div class="flex justify-between">
+                                <span>Layanan Chat WA:</span> <strong class="text-emerald-700 font-bold">Fast Response 24 Jam</strong>
+                            </div>
+                        </div>
+
+                        <div class="space-y-2 text-xs text-verdant-forest/80 font-mono">
+                            <div class="flex items-center gap-3 p-3 bg-verdant-cardsoft border border-verdant-border rounded-2xl">
+                                <i class="fa-brands fa-whatsapp text-lg text-emerald-600"></i>
+                                <div>
+                                    <span class="block text-[10px] text-verdant-sage uppercase font-bold font-serif">Hotline WhatsApp Botanist</span>
+                                    <strong class="text-verdant-green text-xs">+62 812-3456-7890</strong>
+                                </div>
+                            </div>
+                            <div class="flex items-center gap-3 p-3 bg-verdant-cardsoft border border-verdant-border rounded-2xl">
+                                <i class="fa-solid fa-envelope text-lg text-verdant-terra"></i>
+                                <div>
+                                    <span class="block text-[10px] text-verdant-sage uppercase font-bold font-serif">Email Botanical Care</span>
+                                    <strong class="text-verdant-green text-xs">care@verdantlab.id</strong>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Location & Google Maps Embed -->
+                    <div class="bg-white border border-verdant-border rounded-3xl p-6 sm:p-7 shadow-xl space-y-3">
+                        <div class="font-bold text-xs uppercase tracking-wider text-verdant-green flex items-center gap-2 font-serif">
+                            <i class="fa-solid fa-location-dot text-verdant-terra"></i> Lokasi Kebun Nursery Kemang
+                        </div>
+                        <p class="text-xs text-verdant-forest/80 leading-relaxed font-sans font-normal">
+                            <strong class="text-verdant-green font-serif uppercase">Verdant Lab Botanical Greenhouse</strong><br>
+                            Jl. Kemang Timur No. 34, Bangka, Mampang Prapatan, Jakarta Selatan 12730
+                        </p>
+                        
+                        <div class="h-44 bg-verdant-cardsoft border border-verdant-border rounded-2xl overflow-hidden relative">
+                            <iframe 
+                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3966.148369408456!2d106.815!3d-6.273!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNsKwMTYnMjIuOCJTIDEwNsKwNDgnNTQuMCJF!5e0!3m2!1sen!2sid!4v1600000000000!5m2!1sen!2sid" 
+                                width="100%" 
+                                height="100%" 
+                                style="border:0;" 
+                                allowfullscreen="" 
+                                loading="lazy" 
+                                class="contrast-105 hover:contrast-125 transition-all duration-500">
+                            </iframe>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- 5. FOOTER -->
+    <footer class="bg-verdant-green text-verdant-terrasoft border-t border-verdant-border/30 pt-14 pb-28 font-mono">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex flex-col md:flex-row items-center justify-between gap-6 border-b border-verdant-border/20 pb-8">
+                <div class="flex items-center gap-3">
+                    <div class="w-8 h-8 bg-verdant-terra text-white flex items-center justify-center text-base font-serif font-black rounded-xl">
+                        <i class="fa-solid fa-leaf"></i>
+                    </div>
+                    <span class="text-xl font-serif font-black text-white uppercase tracking-tight">
+                        VERDANT LAB<span class="text-verdant-terra">.</span>
+                    </span>
+                </div>
+                <div class="flex flex-wrap gap-6 text-xs text-verdant-terrasoft font-bold uppercase tracking-wider font-serif">
+                    <a href="index.html" class="hover:text-verdant-terra">Beranda</a>
+                    <a href="katalog.html" class="hover:text-verdant-terra">Katalog</a>
+                    <a href="detail.html" class="hover:text-verdant-terra">Detail</a>
+                    <a href="tentang.html" class="hover:text-verdant-terra">Greenhouse</a>
+                    <a href="artikel.html" class="hover:text-verdant-terra">Tips Perawatan</a>
+                    <a href="kontak.html" class="text-verdant-terra">Nursery</a>
+                </div>
+            </div>
+            <div class="mt-6 flex flex-col sm:flex-row items-center justify-between text-xs text-verdant-terrasoft/60">
+                <p>&copy; 2026 VERDANT LAB BOTANICAL NURSERY. All Rights Reserved.</p>
+                <p class="text-[11px] mt-2 sm:mt-0 font-sans">Lentera Pasar Production Template — Botanical Greenhouse & Planters</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- FLOATING WHATSAPP BUTTON (bottom-24) -->
+    <a href="https://wa.me/6281234567890?text=Halo%20Verdant%20Lab,%20saya%20ingin%20konsultasi%20tanaman%20indoor." 
+       target="_blank" 
+       class="fixed bottom-24 right-6 z-50 group flex items-center gap-3 bg-white hover:bg-verdant-cardsoft text-verdant-green px-4 py-3 border border-verdant-border rounded-2xl shadow-2xl hover:border-verdant-green transition-all duration-300 font-mono">
+        <span class="relative flex h-3 w-3">
+            <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-emerald-500 opacity-75"></span>
+            <span class="relative inline-flex rounded-full h-3 w-3 bg-emerald-500"></span>
+        </span>
+        <i class="fa-brands fa-whatsapp text-2xl text-emerald-600"></i>
+        <div class="text-left hidden sm:block pr-1">
+            <div class="text-[10px] text-verdant-terra font-bold uppercase tracking-wider leading-none font-serif">Botanist Specialist</div>
+            <span class="font-bold text-xs text-verdant-green">Minta Foto Real WA</span>
+        </div>
+    </a>
+
+    <!-- LENTERA PASAR - STICKY DEMO & SALES BAR (fixed bottom-4) -->
+    <div class="fixed bottom-4 left-1/2 -translate-x-1/2 z-50 w-[95%] max-w-4xl bg-slate-900/95 backdrop-blur-md text-white p-3.5 md:p-4 rounded-2xl shadow-2xl border border-slate-700/80 transition-all duration-300">
+      <div class="flex flex-col md:flex-row items-center justify-between gap-3 md:gap-4">
+        <div class="flex items-center gap-3 w-full md:w-auto">
+          <div class="w-10 h-10 rounded-xl bg-emerald-500/20 border border-emerald-500/40 flex items-center justify-center shrink-0">
+            <svg class="w-5 h-5 text-emerald-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253" />
+            </svg>
+          </div>
+          <div>
+            <div class="flex items-center gap-2">
+              <span class="font-bold text-sm text-white">Lentera Pasar Engine</span>
+              <span class="text-[10px] bg-emerald-500/20 text-emerald-300 border border-emerald-500/30 px-2 py-0.5 rounded-full font-medium">Botanical Greenhouse Template</span>
+            </div>
+            <p class="text-xs text-slate-300 hidden sm:block">
+              Terima beres: Website responsif + Panel input produk sendiri + Dikelola tim iklan profesional.
+            </p>
+          </div>
+        </div>
+
+        <div class="flex items-center justify-between md:justify-end gap-3 w-full md:w-auto">
+          <a href="https://wa.me/6281234567890?text=Halo%20Tim%20Lentera%20Pasar,%20saya%20tertarik%20menggunakan%20template%20website%20Botanical%20Greenhouse%20ini%20lengkap%20dengan%20Admin%20Panel%20dan%20Jasa%20Iklannya." 
+             target="_blank"
+             class="w-full md:w-auto inline-flex items-center justify-center gap-2 bg-gradient-to-r from-emerald-600 to-teal-600 hover:from-emerald-500 hover:to-teal-500 text-white text-xs md:text-sm font-bold px-5 py-2.5 rounded-xl shadow-lg transition-all hover:scale-105 shrink-0 font-serif">
+            <span>Gunakan Template Ini</span>
+            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3" />
+            </svg>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <!-- SCRIPT LOGIC -->
+    <script>
+        function handleVerdantInquiry(e) {
+            e.preventDefault();
+            const name = document.getElementById('custName').value;
+            const phone = document.getElementById('custPhone').value;
+            const topic = document.getElementById('custTopic').value;
+            const plant = document.getElementById('custPlant').value || '-';
+            const notes = document.getElementById('custNotes').value || '-';
+
+            const text = `Halo Botanist Specialist Verdant Lab,%0A%0ASaya ingin konsultasi / minta foto real-plant tanaman dengan data berikut:%0A- Nama: ${encodeURIComponent(name)}%0A- No. WhatsApp: ${encodeURIComponent(phone)}%0A- Topik: ${encodeURIComponent(topic)}%0A- Tanaman yang Diminati: ${encodeURIComponent(plant)}%0A- Kondisi Ruangan / Catatan: ${encodeURIComponent(notes)}%0A%0AMohon informasi ketersediaan foto tanaman real ready stock. Terima kasih!`;
+
+            window.open(`https://wa.me/6281234567890?text=${text}`, '_blank');
+        }
+
+        // Mobile menu toggle
+        const mobileMenuBtn = document.getElementById('mobileMenuBtn');
+        const mobileMenu = document.getElementById('mobileMenu');
+        const menuIcon = document.getElementById('menuIcon');
+
+        mobileMenuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+            if (mobileMenu.classList.contains('hidden')) {
+                menuIcon.classList.remove('fa-xmark');
+                menuIcon.classList.add('fa-bars');
+            } else {
+                menuIcon.classList.remove('fa-bars');
+                menuIcon.classList.add('fa-xmark');
+            }
+        });
+    </script>
+</body>
+</html>
