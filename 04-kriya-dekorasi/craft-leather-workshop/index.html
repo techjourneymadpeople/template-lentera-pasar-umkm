@@ -1,0 +1,846 @@
+<!DOCTYPE html>
+<html lang="id" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HAVELOCK LEATHERWORKS // Handcrafted Rugged Leather Goods & Bespoke Patina</title>
+    <meta name="description" content="Bengkel kriya kulit sapi asli handmade: Dompet kartu nabati, sabuk kulit utuh, lanyard ID card, dan pouch kulit dengan teknik jahit tangan pelana (saddle stitch) bergaransi seumur hidup.">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;0,700;0,800;0,900;1,700&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome 6 -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        havelock: {
+                            tan: '#7C4724',
+                            tandark: '#5C3115',
+                            tansoft: '#F2E4D8',
+                            smoke: '#261B14',
+                            smokedark: '#170F0B',
+                            smokesoft: '#EAE1D9',
+                            parchment: '#F9F4EB',
+                            parchmentsoft: '#F1E7D6',
+                            brass: '#D4A373',
+                            brassdark: '#B07B47',
+                            border: '#D6C5B3',
+                            charcoal: '#221914'
+                        }
+                    },
+                    fontFamily: {
+                        sans: ['"Plus Jakarta Sans"', 'sans-serif'],
+                        serif: ['"Playfair Display"', 'serif'],
+                        mono: ['"Space Grotesk"', 'monospace']
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        .no-scrollbar::-webkit-scrollbar { display: none; }
+        .no-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
+
+        .leather-grain-bg {
+            background-image: radial-gradient(#D6C5B3 0.7px, transparent 0.7px), radial-gradient(#D6C5B3 0.7px, #F9F4EB 0.7px);
+            background-size: 20px 20px;
+            background-position: 0 0, 10px 10px;
+        }
+
+        .btn-rugged {
+            transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+        }
+        .btn-rugged:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 12px 24px -8px rgba(124, 71, 36, 0.4);
+        }
+
+        .workshop-card {
+            transition: all 0.3s ease;
+        }
+        .workshop-card:hover {
+            transform: translateY(-5px);
+        }
+    </style>
+</head>
+<body class="bg-havelock-parchment text-havelock-charcoal font-sans antialiased selection:bg-havelock-tan selection:text-white">
+
+    <!-- 1. TOP ANNOUNCEMENT BAR -->
+    <div class="bg-havelock-smoke text-havelock-parchment text-xs py-2.5 px-4 font-mono font-medium border-b border-havelock-brass/20">
+        <div class="max-w-7xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-2 text-center sm:text-left">
+            <div class="flex items-center justify-center gap-2">
+                <span class="px-2 py-0.5 bg-havelock-brass text-havelock-smoke text-[10px] uppercase font-mono font-bold tracking-wider rounded">
+                    FREE BESPOKE DEBOSSING
+                </span>
+                <span class="text-white/95">Gratis Custom Grafir / Emboss Panas Inisial Nama di Setiap Pembelian Dompet & Aksesoris</span>
+            </div>
+            <div class="flex items-center gap-4 text-xs font-mono">
+                <span class="hidden md:inline text-havelock-brass">Garansi Jahitan Tangan Seumur Hidup</span>
+                <span class="hidden md:inline text-white/30">•</span>
+                <a href="katalog.html" class="text-amber-300 hover:underline font-bold transition">Katalog Kulit &rarr;</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- 2. NAVBAR -->
+    <header class="sticky top-0 z-40 bg-havelock-parchment/95 backdrop-blur-md border-b border-havelock-border transition-all">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-20 sm:h-24">
+                
+                <!-- Logo -->
+                <a href="index.html" class="flex items-center gap-3.5 group">
+                    <div class="w-12 h-12 bg-havelock-tan border border-havelock-brass/40 text-white flex items-center justify-center text-xl font-serif rounded-2xl shadow-md group-hover:bg-havelock-smoke transition">
+                        <i class="fa-solid fa-stamp"></i>
+                    </div>
+                    <div class="flex flex-col">
+                        <span class="text-2xl sm:text-3xl font-serif font-black tracking-tight text-havelock-smoke uppercase leading-none">
+                            HAVELOCK<span class="text-havelock-brass">.</span>
+                        </span>
+                        <span class="text-[9px] font-mono tracking-[0.26em] text-havelock-tan uppercase mt-1 font-bold">
+                            HANDCRAFTED LEATHERWORKS
+                        </span>
+                    </div>
+                </a>
+
+                <!-- Desktop Navigation Links -->
+                <nav class="hidden lg:flex items-center gap-8 text-xs font-bold tracking-wider uppercase text-havelock-smoke/80 font-mono">
+                    <a href="index.html" class="text-havelock-tan border-b-2 border-havelock-tan pb-1 font-bold">Beranda</a>
+                    <a href="katalog.html" class="hover:text-havelock-tan transition">Katalog Dompet & Sabuk</a>
+                    <a href="detail.html" class="hover:text-havelock-tan transition">Detail Bifold Patina</a>
+                    <a href="tentang.html" class="hover:text-havelock-tan transition">Teknik Saddle Stitch</a>
+                    <a href="artikel.html" class="hover:text-havelock-tan transition">Proses Patina & Rawat</a>
+                    <a href="kontak.html" class="hover:text-havelock-tan transition">Workshop & Souvenir</a>
+                </nav>
+
+                <!-- Actions -->
+                <div class="hidden sm:flex items-center gap-3 font-mono">
+                    <a href="index.html#patinaJourney" class="inline-flex items-center gap-2 px-3.5 py-2.5 bg-white border border-havelock-border hover:border-havelock-tan text-xs font-bold text-havelock-smoke rounded-xl transition shadow-xs">
+                        <i class="fa-solid fa-clock-rotate-left text-havelock-tan"></i>
+                        <span>Aging Patina</span>
+                    </a>
+                    <a href="https://wa.me/6281234567890?text=Halo%20Havelock%20Leatherworks,%20saya%20tertarik%20dengan%20koleksi%20kulit%20nabati%20handmade." target="_blank" class="inline-flex items-center gap-2 bg-havelock-tan hover:bg-havelock-tandark text-white text-xs font-bold tracking-wider px-5 py-2.5 rounded-xl border border-havelock-brass/40 transition-all shadow-md font-mono btn-rugged">
+                        <i class="fa-brands fa-whatsapp text-sm text-green-300"></i>
+                        <span>Order via WA</span>
+                    </a>
+                </div>
+
+                <!-- Mobile Hamburger Button -->
+                <button id="mobileMenuBtn" class="lg:hidden p-2.5 text-havelock-smoke hover:text-havelock-tan focus:outline-none" aria-label="Toggle Menu">
+                    <i id="menuIcon" class="fa-solid fa-bars text-xl"></i>
+                </button>
+            </div>
+        </div>
+
+        <!-- Mobile Drawer -->
+        <div id="mobileMenu" class="hidden lg:hidden bg-white border-b border-havelock-border px-5 py-5 space-y-3 font-mono shadow-xl">
+            <a href="index.html" class="block text-xs font-bold uppercase tracking-wider text-havelock-tan py-2 border-b border-havelock-border">Beranda Utama</a>
+            <a href="katalog.html" class="block text-xs font-bold uppercase tracking-wider text-havelock-smoke hover:text-havelock-tan py-2 border-b border-havelock-border">Katalog Dompet, Sabuk & Lanyard</a>
+            <a href="detail.html" class="block text-xs font-bold uppercase tracking-wider text-havelock-smoke hover:text-havelock-tan py-2 border-b border-havelock-border">Detail Dompet Bifold Kulit Nabati</a>
+            <a href="tentang.html" class="block text-xs font-bold uppercase tracking-wider text-havelock-smoke hover:text-havelock-tan py-2 border-b border-havelock-border">Teknik Jahit Tangan Pelana</a>
+            <a href="artikel.html" class="block text-xs font-bold uppercase tracking-wider text-havelock-smoke hover:text-havelock-tan py-2 border-b border-havelock-border">Panduan Patina & Leather Balm</a>
+            <a href="kontak.html" class="block text-xs font-bold uppercase tracking-wider text-havelock-smoke hover:text-havelock-tan py-2">Workshop & Souvenir Kantor</a>
+            <div class="pt-3">
+                <a href="https://wa.me/6281234567890?text=Halo%20Havelock." target="_blank" class="w-full py-3 bg-havelock-tan text-white rounded-xl text-xs font-bold uppercase tracking-wider text-center flex items-center justify-center gap-2 font-mono">
+                    <i class="fa-brands fa-whatsapp text-green-300"></i> WhatsApp Fast Response
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- 3. RUGGED LEATHER WORKSHOP HERO SECTION -->
+    <section class="py-14 sm:py-22 lg:py-26 border-b border-havelock-border bg-gradient-to-b from-havelock-parchmentsoft via-havelock-parchment to-havelock-parchmentsoft relative overflow-hidden">
+        <!-- Leather grain pattern -->
+        <div class="absolute inset-0 leather-grain-bg opacity-35 pointer-events-none"></div>
+
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+                
+                <!-- Left Content: Masculine Headline & Values -->
+                <div class="lg:col-span-7 space-y-6">
+                    <div class="inline-flex items-center gap-2.5 px-4 py-1.5 bg-white/90 border border-havelock-border rounded-full text-xs font-mono text-havelock-smoke shadow-xs">
+                        <span class="w-2 h-2 rounded-full bg-havelock-tan animate-pulse"></span>
+                        <span class="font-bold tracking-wide">100% Genuine Full-Grain Vegetable Tanned Leather</span>
+                    </div>
+
+                    <h1 class="text-4xl sm:text-5xl lg:text-6xl font-serif font-black text-havelock-smoke leading-[1.12] tracking-tight">
+                        Built by Hand, <span class="italic text-havelock-tan font-bold">Aged with Character</span>.
+                    </h1>
+
+                    <p class="text-base sm:text-lg text-havelock-smoke/80 leading-relaxed max-w-2xl font-sans">
+                        Karya kriya kulit sapi nabati asli yang dijahit tangan satu per satu menggunakan teknik pelana <em>(saddle stitch)</em> dan benang lilin tahan putus. Dirancang kokoh untuk menua bersamamu, menghasilkan kilau patina eksklusif yang tak ternilai.
+                    </p>
+
+                    <!-- Feature Attribute Strips -->
+                    <div class="grid grid-cols-2 sm:grid-cols-3 gap-3 pt-2 font-mono text-xs">
+                        <div class="flex items-center gap-2.5 bg-white/90 p-3.5 rounded-2xl border border-havelock-border">
+                            <i class="fa-solid fa-hand-fist text-havelock-tan text-sm"></i>
+                            <div>
+                                <p class="font-bold text-havelock-smoke">Saddle Stitch</p>
+                                <p class="text-[10px] text-havelock-smoke/60">Jahit Tangan 2 Jarum</p>
+                            </div>
+                        </div>
+                        <div class="flex items-center gap-2.5 bg-white/90 p-3.5 rounded-2xl border border-havelock-border">
+                            <i class="fa-solid fa-fire-flame-curved text-havelock-brassdark text-sm"></i>
+                            <div>
+                                <p class="font-bold text-havelock-smoke">Natural Patina</p>
+                                <p class="text-[10px] text-havelock-smoke/60">Makin Tua Makin Matang</p>
+                            </div>
+                        </div>
+                        <div class="flex items-center gap-2.5 bg-white/90 p-3.5 rounded-2xl border border-havelock-border col-span-2 sm:col-span-1">
+                            <i class="fa-solid fa-stamp text-havelock-tan text-sm"></i>
+                            <div>
+                                <p class="font-bold text-havelock-smoke">Custom Deboss</p>
+                                <p class="text-[10px] text-havelock-smoke/60">Gratis Grafir Inisial</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Call To Action Group -->
+                    <div class="flex flex-col sm:flex-row items-stretch sm:items-center gap-4 pt-3 font-mono">
+                        <a href="katalog.html" class="inline-flex items-center justify-center gap-3 px-8 py-4 bg-havelock-tan hover:bg-havelock-tandark text-white text-xs sm:text-sm font-bold tracking-wider uppercase rounded-xl transition-all shadow-xl font-mono border border-havelock-brass/40 btn-rugged">
+                            <span>Jelajahi Koleksi Kulit</span>
+                            <i class="fa-solid fa-arrow-right text-amber-200"></i>
+                        </a>
+                        <a href="https://wa.me/6281234567890?text=Halo%20Havelock,%20saya%20mau%20konsultasi%20pembuatan%20dompet%20kulit%20kustom%20nama." target="_blank" class="inline-flex items-center justify-center gap-2.5 px-6 py-4 bg-white hover:bg-havelock-parchment border border-havelock-border text-havelock-smoke text-xs sm:text-sm font-bold tracking-wider uppercase rounded-xl transition shadow-xs">
+                            <i class="fa-brands fa-whatsapp text-green-600 text-base"></i>
+                            <span>Konsultasi Custom Nama</span>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Right Visual: Rugged Workshop Bench Staging -->
+                <div class="lg:col-span-5 relative">
+                    <div class="relative rounded-3xl overflow-hidden border-4 border-white shadow-2xl bg-havelock-smoke group">
+                        <img src="https://images.unsplash.com/photo-1627123424574-724758594e93?q=80&w=1000&auto=format&fit=crop" 
+                             alt="Dompet Kulit Bifold Nabati Jahit Tangan di Meja Kerja Kayu" 
+                             class="w-full h-[480px] object-cover group-hover:scale-105 transition-transform duration-700">
+                        
+                        <div class="absolute inset-0 bg-gradient-to-t from-havelock-smokedark/90 via-transparent to-transparent"></div>
+                        
+                        <!-- Floating Staging Badge -->
+                        <div class="absolute bottom-5 left-5 right-5 p-4 bg-white/95 backdrop-blur-md rounded-2xl border border-havelock-border shadow-lg">
+                            <div class="flex items-center justify-between">
+                                <div class="space-y-0.5">
+                                    <span class="text-[10px] font-mono font-bold tracking-wider uppercase text-havelock-tan">Masterpiece Wallet</span>
+                                    <h2 class="text-base font-serif font-bold text-havelock-smoke">Bifold Cardholder "The Outlaw Tan"</h2>
+                                    <p class="text-xs text-havelock-smoke/70 font-mono">Full-Grain Cowhide • Waxed Linen Thread</p>
+                                </div>
+                                <span class="text-xs font-mono font-bold px-3 py-1.5 bg-havelock-tansoft text-havelock-tandark rounded-lg border border-havelock-tan/30">
+                                    Rp 385.000
+                                </span>
+                            </div>
+                        </div>
+
+                        <!-- Top Right Badge -->
+                        <div class="absolute top-4 right-4 bg-havelock-smoke/90 backdrop-blur-sm text-havelock-brass px-3.5 py-1.5 rounded-full text-[10px] font-mono font-bold tracking-wider uppercase flex items-center gap-1.5 shadow-md border border-havelock-brass/40">
+                            <i class="fa-solid fa-award text-amber-300"></i>
+                            <span>Lifetime Stitch Guarantee</span>
+                        </div>
+                    </div>
+
+                    <!-- Floating Mini Badge: Burnished Edges -->
+                    <div class="hidden sm:flex absolute -bottom-6 -left-6 bg-white p-4 rounded-2xl border border-havelock-border shadow-xl items-center gap-3.5 max-w-[260px]">
+                        <img src="https://images.unsplash.com/photo-1553062407-98eeb64c6a62?q=80&w=300&auto=format&fit=crop" 
+                             alt="Finishing Burnished Edge dengan Beeswax Alami" 
+                             class="w-12 h-12 rounded-xl object-cover border border-havelock-border">
+                        <div class="space-y-0.5 font-mono">
+                            <p class="text-[10px] uppercase font-bold text-havelock-tan">Beeswax Finish</p>
+                            <p class="text-xs font-bold text-havelock-smoke">Burnished Edge</p>
+                            <p class="text-[10px] text-havelock-smoke/60">Halus Tanpa Cat Sintetis</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- 4. CRAFTSMANSHIP PROMISES VALUE STRIP -->
+    <section class="py-9 bg-white border-b border-havelock-border">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-6 text-center sm:text-left">
+                
+                <div class="flex flex-col sm:flex-row items-center sm:items-start gap-3.5">
+                    <div class="w-12 h-12 rounded-2xl bg-havelock-tansoft text-havelock-tan flex items-center justify-center text-xl shrink-0 border border-havelock-border">
+                        <i class="fa-solid fa-scissors"></i>
+                    </div>
+                    <div>
+                        <h4 class="font-serif font-bold text-sm text-havelock-smoke">100% Jahit Tangan</h4>
+                        <p class="text-xs text-havelock-smoke/70 font-sans mt-0.5">Metode pelana saddle stitch 2 jarum yang tidak akan terurai meski 1 simpul putus.</p>
+                    </div>
+                </div>
+
+                <div class="flex flex-col sm:flex-row items-center sm:items-start gap-3.5">
+                    <div class="w-12 h-12 rounded-2xl bg-amber-50 text-amber-900 flex items-center justify-center text-xl shrink-0 border border-havelock-border">
+                        <i class="fa-solid fa-shield-halved"></i>
+                    </div>
+                    <div>
+                        <h4 class="font-serif font-bold text-sm text-havelock-smoke">Kulit Nabati Tebal</h4>
+                        <p class="text-xs text-havelock-smoke/70 font-sans mt-0.5">Bahan kulit sapi asli ketebalan 1.8mm - 3.5mm yang padat, lentur, dan anti-kelupas.</p>
+                    </div>
+                </div>
+
+                <div class="flex flex-col sm:flex-row items-center sm:items-start gap-3.5">
+                    <div class="w-12 h-12 rounded-2xl bg-emerald-50 text-emerald-900 flex items-center justify-center text-xl shrink-0 border border-havelock-border">
+                        <i class="fa-solid fa-clock-rotate-left"></i>
+                    </div>
+                    <div>
+                        <h4 class="font-serif font-bold text-sm text-havelock-smoke">Proses Patina Alami</h4>
+                        <p class="text-xs text-havelock-smoke/70 font-sans mt-0.5">Warna kulit akan bertransformasi makin gelap berkilau indah seiring pemakaian harian.</p>
+                    </div>
+                </div>
+
+                <div class="flex flex-col sm:flex-row items-center sm:items-start gap-3.5">
+                    <div class="w-12 h-12 rounded-2xl bg-havelock-smokesoft text-havelock-smoke flex items-center justify-center text-xl shrink-0 border border-havelock-border">
+                        <i class="fa-solid fa-stamp"></i>
+                    </div>
+                    <div>
+                        <h4 class="font-serif font-bold text-sm text-havelock-smoke">Custom Grafir Nama</h4>
+                        <p class="text-xs text-havelock-smoke/70 font-sans mt-0.5">Gratis emboss panas inisial nama atau logo perusahaan untuk hadiah personal berkelas.</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- 5. SECTION KHUSUS: THE AGING & PATINA JOURNEY -->
+    <section id="patinaJourney" class="py-16 sm:py-24 border-b border-havelock-border bg-havelock-parchmentsoft relative">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            
+            <div class="text-center max-w-3xl mx-auto mb-14 space-y-3">
+                <span class="px-3.5 py-1 bg-white border border-havelock-border text-havelock-tan font-mono text-[11px] font-bold uppercase tracking-widest rounded-full">
+                    The Magic of Vegetable Tanned Leather
+                </span>
+                <h2 class="text-3xl sm:text-4xl lg:text-5xl font-serif font-bold text-havelock-smoke">
+                    Perjalanan Patina: Semakin Tua, Semakin Mempesona
+                </h2>
+                <p class="text-sm sm:text-base text-havelock-smoke/75 font-sans">
+                    Berbeda dengan kulit imitasi sintetis yang mengelupas, kulit nabati asli <em>(veg-tan leather)</em> menyerap minyak alami dari jemari, paparan sinar matahari, dan gesekan harian untuk menghasilkan rona patina gelap yang unik bagi setiap pemilik.
+                </p>
+            </div>
+
+            <!-- Patina Timeline 3 Stages -->
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                
+                <!-- Stage 1: Day 1 -->
+                <div class="bg-white rounded-3xl border border-havelock-border overflow-hidden p-6 shadow-sm flex flex-col justify-between space-y-5">
+                    <div class="space-y-4">
+                        <div class="h-48 rounded-2xl bg-[#E8D4C0] border border-havelock-border flex flex-col items-center justify-center p-4 text-center">
+                            <span class="text-xs font-mono font-bold uppercase tracking-wider text-havelock-smoke/60">Hari Ke-1 (Baru)</span>
+                            <span class="text-2xl font-serif font-bold text-havelock-smoke mt-1">Natural Pale Tan</span>
+                            <p class="text-[11px] text-havelock-smoke/60 mt-1">Warna cokelat muda pucat, permukaan matte lembut khas kulit mentah baru selesai disamak.</p>
+                        </div>
+                        <h3 class="font-serif font-bold text-xl text-havelock-smoke">
+                            Tahap Awal: Lembaran Murni
+                        </h3>
+                        <p class="text-xs text-havelock-smoke/75 leading-relaxed font-sans">
+                            Karakter kulit masih kaku dan segar dari bengkel. Siap menyerap riwayat perjalanan harian dan aktivitas pemiliknya.
+                        </p>
+                    </div>
+                    <div class="pt-3 border-t border-havelock-border font-mono text-xs text-havelock-smoke/60">
+                        <span>Karakter: Lembut & Bersih</span>
+                    </div>
+                </div>
+
+                <!-- Stage 2: Day 90 -->
+                <div class="bg-white rounded-3xl border border-havelock-border overflow-hidden p-6 shadow-sm flex flex-col justify-between space-y-5">
+                    <div class="space-y-4">
+                        <div class="h-48 rounded-2xl bg-[#B07B47] text-white border border-havelock-border flex flex-col items-center justify-center p-4 text-center">
+                            <span class="text-xs font-mono font-bold uppercase tracking-wider text-amber-200">Hari Ke-90 (3 Bulan)</span>
+                            <span class="text-2xl font-serif font-bold text-white mt-1">Golden Honey Amber</span>
+                            <p class="text-[11px] text-white/80 mt-1">Warna mulai menggelap keemasan, serat lentur menyesuaikan bentuk saku celana.</p>
+                        </div>
+                        <h3 class="font-serif font-bold text-xl text-havelock-smoke">
+                            Tahap Transisi: Kilau Keemasan
+                        </h3>
+                        <p class="text-xs text-havelock-smoke/75 leading-relaxed font-sans">
+                            Minyak alami kulit mulai naik ke permukaan. Garis lipatan dan lekukan saku membentuk karakter personal yang gagah.
+                        </p>
+                    </div>
+                    <div class="pt-3 border-t border-havelock-border font-mono text-xs text-havelock-smoke/60">
+                        <span>Karakter: Lentur & Mengkilap Halus</span>
+                    </div>
+                </div>
+
+                <!-- Stage 3: Day 365 -->
+                <div class="bg-white rounded-3xl border border-havelock-border overflow-hidden p-6 shadow-sm flex flex-col justify-between space-y-5">
+                    <div class="space-y-4">
+                        <div class="h-48 rounded-2xl bg-[#5C3115] text-white border border-havelock-border flex flex-col items-center justify-center p-4 text-center">
+                            <span class="text-xs font-mono font-bold uppercase tracking-wider text-amber-300">Hari Ke-365+ (1 Tahun+)</span>
+                            <span class="text-2xl font-serif font-bold text-white mt-1">Deep Caramel Patina</span>
+                            <p class="text-[11px] text-white/80 mt-1">Rona cokelat gelap mengkilap mewah seperti kayu mahoni tua yang sangat bernilai seni.</p>
+                        </div>
+                        <h3 class="font-serif font-bold text-xl text-havelock-smoke">
+                            Puncak Karakter: Timeless Vintage
+                        </h3>
+                        <p class="text-xs text-havelock-smoke/75 leading-relaxed font-sans">
+                            Ketahanan abadi yang tidak bisa ditiru oleh pabrik manapun. Menjadi barang pusaka peninggalan yang penuh kenangan.
+                        </p>
+                    </div>
+                    <div class="pt-3 border-t border-havelock-border font-mono text-xs text-havelock-smoke/60">
+                        <span>Karakter: Mengkilap Pekat & Tahan Cuaca</span>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+    <!-- 6. PRODUK UNGGULAN: 3-COLUMN RUGGED SHOWCASE -->
+    <section class="py-16 sm:py-24 border-b border-havelock-border bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            
+            <div class="flex flex-col md:flex-row md:items-end justify-between mb-12 gap-4">
+                <div>
+                    <span class="text-xs font-mono font-bold uppercase tracking-widest text-havelock-tan">
+                        Handmade Leather Artifacts
+                    </span>
+                    <h2 class="text-3xl sm:text-4xl lg:text-5xl font-serif font-bold text-havelock-smoke mt-1">
+                        Koleksi Kriya Kulit Pilihan
+                    </h2>
+                </div>
+                <div class="flex items-center gap-2">
+                    <a href="katalog.html" class="inline-flex items-center gap-2 text-xs font-mono font-bold uppercase tracking-wider text-havelock-smoke hover:text-havelock-tan transition border-b border-havelock-tan pb-1">
+                        <span>Lihat Semua Produk (12+)</span>
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </a>
+                </div>
+            </div>
+
+            <!-- 3 Column Grid -->
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                
+                <!-- Card 1: Dompet Bifold Kulit Nabati -->
+                <div class="workshop-card bg-havelock-parchment rounded-3xl border border-havelock-border overflow-hidden flex flex-col group">
+                    <div class="relative overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1627123424574-724758594e93?q=80&w=600&auto=format&fit=crop" 
+                             alt="Bifold Wallet Kulit Nabati" 
+                             class="w-full h-80 object-cover group-hover:scale-105 transition-transform duration-500">
+                        <div class="absolute top-3.5 left-3.5 bg-havelock-smoke text-havelock-brass text-[10px] font-mono font-bold uppercase px-3 py-1 rounded-md shadow border border-havelock-brass/40">
+                            100% Saddle Stitch
+                        </div>
+                        <div class="absolute bottom-3.5 right-3.5 bg-white/90 backdrop-blur-sm text-havelock-smoke text-[10px] font-mono font-bold px-2.5 py-0.5 rounded border border-havelock-border">
+                            6 Slot Kartu + Uang Kertas
+                        </div>
+                    </div>
+                    <div class="p-6 flex-1 flex flex-col justify-between space-y-4">
+                        <div>
+                            <div class="flex items-center justify-between text-xs font-mono text-havelock-smoke/60 mb-1">
+                                <span>Vegetable Tanned Leather</span>
+                                <span class="text-amber-500 font-bold"><i class="fa-solid fa-star"></i> 5.0</span>
+                            </div>
+                            <a href="detail.html" class="block font-serif font-bold text-xl text-havelock-smoke hover:text-havelock-tan transition leading-snug">
+                                The Maverick Bifold Wallet
+                            </a>
+                            <p class="text-xs text-havelock-smoke/75 mt-1.5 leading-relaxed font-sans">
+                                Dompet saku bifold ramping kulit sapi nabati tan dengan pinggiran burnished halus dan benang lilin tahan putus.
+                            </p>
+                        </div>
+                        <div class="pt-4 border-t border-havelock-border flex items-center justify-between font-mono">
+                            <div>
+                                <span class="text-[10px] text-havelock-smoke/50 uppercase block">Gratis Grafir Nama</span>
+                                <span class="text-base font-bold text-havelock-smoke">Rp 385.000</span>
+                            </div>
+                            <a href="detail.html" class="px-4 py-2 bg-havelock-tan hover:bg-havelock-tandark text-white rounded-xl text-xs font-mono font-bold transition">
+                                Detail &rarr;
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 2: Sabuk Kulit Sapi Utuh Heavy Duty -->
+                <div class="workshop-card bg-havelock-parchment rounded-3xl border border-havelock-border overflow-hidden flex flex-col group">
+                    <div class="relative overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1553062407-98eeb64c6a62?q=80&w=600&auto=format&fit=crop" 
+                             alt="Sabuk Kulit Gesper Kuningan Solid" 
+                             class="w-full h-80 object-cover group-hover:scale-105 transition-transform duration-500">
+                        <div class="absolute top-3.5 left-3.5 bg-havelock-tan text-white text-[10px] font-mono font-bold uppercase px-3 py-1 rounded-md shadow">
+                            Solid Brass Buckle
+                        </div>
+                        <div class="absolute bottom-3.5 right-3.5 bg-white/90 backdrop-blur-sm text-havelock-smoke text-[10px] font-mono font-bold px-2.5 py-0.5 rounded border border-havelock-border">
+                            Tebal 3.8mm
+                        </div>
+                    </div>
+                    <div class="p-6 flex-1 flex flex-col justify-between space-y-4">
+                        <div>
+                            <div class="flex items-center justify-between text-xs font-mono text-havelock-smoke/60 mb-1">
+                                <span>Kulit Punggung Sapi Utuh</span>
+                                <span class="text-amber-500 font-bold"><i class="fa-solid fa-star"></i> 4.9</span>
+                            </div>
+                            <a href="detail.html" class="block font-serif font-bold text-xl text-havelock-smoke hover:text-havelock-tan transition leading-snug">
+                                Heavy Duty Workwear Belt 1.5"
+                            </a>
+                            <p class="text-xs text-havelock-smoke/75 mt-1.5 leading-relaxed font-sans">
+                                Sabuk kulit sapi utuh satu lapis tanpa lem atau sambungan, dilengkapi gesper kuningan murni antikarat.
+                            </p>
+                        </div>
+                        <div class="pt-4 border-t border-havelock-border flex items-center justify-between font-mono">
+                            <div>
+                                <span class="text-[10px] text-havelock-smoke/50 uppercase block">Gesper Kuningan Asli</span>
+                                <span class="text-base font-bold text-havelock-smoke">Rp 450.000</span>
+                            </div>
+                            <a href="detail.html" class="px-4 py-2 bg-havelock-tan hover:bg-havelock-tandark text-white rounded-xl text-xs font-mono font-bold transition">
+                                Detail &rarr;
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 3: Lanyard ID Card & Keychain Set -->
+                <div class="workshop-card bg-havelock-parchment rounded-3xl border border-havelock-border overflow-hidden flex flex-col group">
+                    <div class="relative overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1544816155-12df9643f363?q=80&w=600&auto=format&fit=crop" 
+                             alt="Lanyard ID Card Kulit Asli" 
+                             class="w-full h-80 object-cover group-hover:scale-105 transition-transform duration-500">
+                        <div class="absolute top-3.5 left-3.5 bg-amber-900 text-white text-[10px] font-mono font-bold uppercase px-3 py-1 rounded-md shadow">
+                            Best Corporate Gift
+                        </div>
+                        <div class="absolute bottom-3.5 right-3.5 bg-white/90 backdrop-blur-sm text-havelock-smoke text-[10px] font-mono font-bold px-2.5 py-0.5 rounded border border-havelock-border">
+                            Tali Kulit + Hook Kuningan
+                        </div>
+                    </div>
+                    <div class="p-6 flex-1 flex flex-col justify-between space-y-4">
+                        <div>
+                            <div class="flex items-center justify-between text-xs font-mono text-havelock-smoke/60 mb-1">
+                                <span>Pull-Up Leather Havana</span>
+                                <span class="text-amber-500 font-bold"><i class="fa-solid fa-star"></i> 5.0</span>
+                            </div>
+                            <a href="detail.html" class="block font-serif font-bold text-xl text-havelock-smoke hover:text-havelock-tan transition leading-snug">
+                                Executive Lanyard & Key Holder
+                            </a>
+                            <p class="text-xs text-havelock-smoke/75 mt-1.5 leading-relaxed font-sans">
+                                Wadah ID card kulit ramping dua sisi dengan tali kalung kulit asli nyaman dan pengait putar kokoh.
+                            </p>
+                        </div>
+                        <div class="pt-4 border-t border-havelock-border flex items-center justify-between font-mono">
+                            <div>
+                                <span class="text-[10px] text-havelock-smoke/50 uppercase block">Custom Nama / NIP</span>
+                                <span class="text-base font-bold text-havelock-smoke">Rp 175.000</span>
+                            </div>
+                            <a href="detail.html" class="px-4 py-2 bg-havelock-tan hover:bg-havelock-tandark text-white rounded-xl text-xs font-mono font-bold transition">
+                                Detail &rarr;
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+    <!-- 7. SADDLE STITCH VS MACHINE SEWING SECTION -->
+    <section class="py-16 sm:py-24 border-b border-havelock-border bg-havelock-parchmentsoft">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+                
+                <div class="lg:col-span-6 space-y-6">
+                    <span class="text-xs font-mono font-bold uppercase tracking-widest text-havelock-tan">
+                        Superior Handcraft Technique
+                    </span>
+                    <h2 class="text-3xl sm:text-4xl lg:text-5xl font-serif font-bold text-havelock-smoke leading-tight">
+                        Mengapa Kami Menolak Jahitan Mesin Pabrik?
+                    </h2>
+                    <p class="text-base text-havelock-smoke/80 font-sans leading-relaxed">
+                        Jahitan mesin tekstil menggunakan sistem *lock stitch*, di mana jika satu benang terpotong atau aus akibat gesekan saku, seluruh deretan jahitan akan terurai seperti efek ritsleting lepas.
+                    </p>
+                    <p class="text-base text-havelock-smoke/80 font-sans leading-relaxed">
+                        Di bengkel HAVELOCK, kami menerapkan <strong>Handmade Saddle Stitch</strong>: dua jarum jahit melintasi setiap lubang tusukan pricking iron dari arah berlawanan, mengikat simpul benang lilin secara mandiri. Produk kulit Anda tetap terikat kuat meski telah berusia puluhan tahun.
+                    </p>
+
+                    <div class="space-y-3 pt-2 font-mono text-xs">
+                        <div class="flex items-center gap-3 p-3 bg-white rounded-xl border border-havelock-border">
+                            <i class="fa-solid fa-check text-green-600 font-bold"></i>
+                            <span class="text-havelock-smoke"><strong>Benang Waxed Polyester:</strong> Tahan gesekan, air, dan tidak lapuk dimakan usia.</span>
+                        </div>
+                        <div class="flex items-center gap-3 p-3 bg-white rounded-xl border border-havelock-border">
+                            <i class="fa-solid fa-check text-green-600 font-bold"></i>
+                            <span class="text-havelock-smoke"><strong>Lubang Slanted Pricking:</strong> Sudut tusukan miring 45 derajat yang estetik dan rapi.</span>
+                        </div>
+                    </div>
+
+                    <div class="pt-2">
+                        <a href="tentang.html" class="inline-flex items-center gap-2 text-xs font-mono font-bold uppercase tracking-wider text-havelock-smoke hover:text-havelock-tan transition border-b-2 border-havelock-tan pb-1">
+                            <span>Pelajari Proses Pengerjaan Bengkel Kami</span>
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="lg:col-span-6 grid grid-cols-2 gap-4">
+                    <img src="https://images.unsplash.com/photo-1590874103328-eac38a683ce7?q=80&w=600&auto=format&fit=crop" 
+                         alt="Proses Jahit Tangan Pelana Kulit" 
+                         class="w-full h-72 object-cover rounded-3xl border border-havelock-border shadow-md">
+                    <img src="https://images.unsplash.com/photo-1553062407-98eeb64c6a62?q=80&w=600&auto=format&fit=crop" 
+                         alt="Peralatan Leathercraft Palu Kayu & Jarum" 
+                         class="w-full h-72 object-cover rounded-3xl border border-havelock-border shadow-md mt-6">
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- 8. TESTIMONIALS: ADVENTURERS, DAILY CARRIERS & EXECUTIVES -->
+    <section class="py-16 sm:py-24 border-b border-havelock-border bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            
+            <div class="text-center max-w-2xl mx-auto mb-14 space-y-2">
+                <span class="text-xs font-mono font-bold uppercase tracking-widest text-havelock-tan">
+                    Tested by Daily Carriers
+                </span>
+                <h2 class="text-3xl sm:text-4xl lg:text-5xl font-serif font-bold text-havelock-smoke">
+                    Kisah Pemilik Havelock
+                </h2>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                
+                <!-- Testi 1 -->
+                <div class="bg-havelock-parchment p-8 rounded-3xl border border-havelock-border flex flex-col justify-between space-y-6">
+                    <div class="space-y-3">
+                        <div class="flex text-amber-500 text-xs gap-1">
+                            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                        </div>
+                        <p class="text-sm text-havelock-smoke/80 italic leading-relaxed font-sans">
+                            "Sudah 1.5 tahun memakai Bifold Outlaw Tan ini setiap hari. Warnanya sekarang berubah jadi cokelat karamel gelap mengkilap yang luar biasa ganteng. Jahitan tangan pelananya tidak ada yang longgar sama sekali!"
+                        </p>
+                    </div>
+                    <div class="flex items-center gap-3.5 pt-4 border-t border-havelock-border font-mono">
+                        <div class="w-10 h-10 rounded-full bg-havelock-tan text-white flex items-center justify-center font-bold text-xs">
+                            RA
+                        </div>
+                        <div>
+                            <p class="text-xs font-bold text-havelock-smoke">Rian Ardiansyah</p>
+                            <p class="text-[10px] text-havelock-smoke/60">Architect & Rider, Bandung</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Testi 2 -->
+                <div class="bg-havelock-parchment p-8 rounded-3xl border border-havelock-border flex flex-col justify-between space-y-6">
+                    <div class="space-y-3">
+                        <div class="flex text-amber-500 text-xs gap-1">
+                            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                        </div>
+                        <p class="text-sm text-havelock-smoke/80 italic leading-relaxed font-sans">
+                            "Pesan 80 pcs lanyard ID card custom logo perusahaan untuk souvenir tahunan tim kami. Hasil debossing namanya sangat rapi dan kulit sapinya wangi alami. Semua rekan kerja puas!"
+                        </p>
+                    </div>
+                    <div class="flex items-center gap-3.5 pt-4 border-t border-havelock-border font-mono">
+                        <div class="w-10 h-10 rounded-full bg-havelock-smoke text-white flex items-center justify-center font-bold text-xs">
+                            DM
+                        </div>
+                        <div>
+                            <p class="text-xs font-bold text-havelock-smoke">Dian Mahendra</p>
+                            <p class="text-[10px] text-havelock-smoke/60">HR Director Fintech, Jakarta</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Testi 3 -->
+                <div class="bg-havelock-parchment p-8 rounded-3xl border border-havelock-border flex flex-col justify-between space-y-6">
+                    <div class="space-y-3">
+                        <div class="flex text-amber-500 text-xs gap-1">
+                            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                        </div>
+                        <p class="text-sm text-havelock-smoke/80 italic leading-relaxed font-sans">
+                            "Sabuk heavy duty-nya tebal banget tapi langsung nyaman dipakai di celana denim raw saya. Gesper kuningan aslinya solid dan berat. Ini tipe sabuk yang bakal diwariskan ke anak kelak."
+                        </p>
+                    </div>
+                    <div class="flex items-center gap-3.5 pt-4 border-t border-havelock-border font-mono">
+                        <div class="w-10 h-10 rounded-full bg-havelock-tan text-white flex items-center justify-center font-bold text-xs">
+                            YP
+                        </div>
+                        <div>
+                            <p class="text-xs font-bold text-havelock-smoke">Yudha Pratama</p>
+                            <p class="text-[10px] text-havelock-smoke/60">Denim & Leather Enthusiast, Surabaya</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+    <!-- 9. CORPORATE SOUVENIR BANNER -->
+    <section class="py-14 bg-havelock-smoke text-havelock-parchment relative overflow-hidden border-t border-havelock-brass/30">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative">
+            <div class="flex flex-col lg:flex-row items-center justify-between gap-8 text-center lg:text-left">
+                <div class="space-y-2 max-w-2xl">
+                    <span class="text-[11px] font-mono uppercase tracking-widest text-amber-300 font-bold">B2B Corporate Hampers & Merchandising</span>
+                    <h3 class="text-2xl sm:text-3xl font-serif font-bold text-white">Butuh Souvenir Kulit Asli dengan Grafir Logo Perusahaan?</h3>
+                    <p class="text-xs sm:text-sm text-havelock-parchment/80 font-sans">
+                        Kami melayani pesanan partai lanyard, cardholder, passport cover, dan pouch kulit sapi asli dengan harga grosir kompetitif dan kustomisasi plat cetak logo panas (*hot foil stamp*).
+                    </p>
+                </div>
+                <div class="flex flex-col sm:flex-row items-center gap-3 font-mono shrink-0">
+                    <a href="kontak.html" class="px-6 py-3.5 bg-white hover:bg-havelock-parchment text-havelock-smoke text-xs font-bold uppercase tracking-wider rounded-xl transition shadow">
+                        Konsultasi Souvenir
+                    </a>
+                    <a href="https://wa.me/6281234567890?text=Halo%20Havelock,%20saya%20tertarik%20pemesanan%20souvenir%20kulit%20grosir." target="_blank" class="px-6 py-3.5 bg-havelock-tan hover:bg-havelock-tandark text-white text-xs font-bold uppercase tracking-wider rounded-xl transition shadow flex items-center gap-2">
+                        <i class="fa-brands fa-whatsapp text-sm"></i>
+                        <span>Diskusi via WhatsApp</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 10. FOOTER -->
+    <footer class="bg-havelock-smokedark text-havelock-parchment py-16 border-t border-havelock-brass/20 font-sans">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-10 mb-12">
+                
+                <!-- Brand Bio -->
+                <div class="lg:col-span-2 space-y-4">
+                    <a href="index.html" class="flex items-center gap-3">
+                        <div class="w-10 h-10 bg-havelock-tan border border-havelock-brass/40 text-white flex items-center justify-center text-lg font-serif rounded-lg">
+                            <i class="fa-solid fa-stamp"></i>
+                        </div>
+                        <span class="text-2xl font-serif font-black tracking-tight text-white uppercase">
+                            HAVELOCK<span class="text-havelock-brass">.</span>
+                        </span>
+                    </a>
+                    <p class="text-xs text-havelock-parchment/75 leading-relaxed max-w-sm">
+                        Bengkel kriya kulit sapi asli handmade. Dibuat dengan ketelitian teknik jahit tangan pelana, kulit nabati pilihan, dan komitmen menghasilkan produk yang menua penuh karakter.
+                    </p>
+                    <div class="flex items-center gap-3 pt-2">
+                        <a href="#" class="w-8 h-8 rounded-full bg-white/10 hover:bg-havelock-tan text-white flex items-center justify-center text-xs transition"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="#" class="w-8 h-8 rounded-full bg-white/10 hover:bg-havelock-tan text-white flex items-center justify-center text-xs transition"><i class="fa-brands fa-tiktok"></i></a>
+                        <a href="#" class="w-8 h-8 rounded-full bg-white/10 hover:bg-havelock-tan text-white flex items-center justify-center text-xs transition"><i class="fa-brands fa-youtube"></i></a>
+                        <a href="#" class="w-8 h-8 rounded-full bg-white/10 hover:bg-havelock-tan text-white flex items-center justify-center text-xs transition"><i class="fa-brands fa-whatsapp"></i></a>
+                    </div>
+                </div>
+
+                <!-- Navigation Links -->
+                <div class="space-y-3 font-mono">
+                    <h5 class="text-xs font-bold text-white uppercase tracking-wider">Koleksi Kulit</h5>
+                    <ul class="space-y-2 text-xs text-havelock-parchment/70">
+                        <li><a href="katalog.html" class="hover:text-amber-300 transition">Dompet Bifold & Slim</a></li>
+                        <li><a href="katalog.html" class="hover:text-amber-300 transition">Sabuk Kulit Heavy Duty</a></li>
+                        <li><a href="katalog.html" class="hover:text-amber-300 transition">Lanyard ID Card Kantor</a></li>
+                        <li><a href="katalog.html" class="hover:text-amber-300 transition">Gantungan Kunci & Pouch</a></li>
+                        <li><a href="katalog.html" class="hover:text-amber-300 transition">Balsam Kulit & Perawatan</a></li>
+                    </ul>
+                </div>
+
+                <!-- Quick Menu -->
+                <div class="space-y-3 font-mono">
+                    <h5 class="text-xs font-bold text-white uppercase tracking-wider">Halaman</h5>
+                    <ul class="space-y-2 text-xs text-havelock-parchment/70">
+                        <li><a href="index.html" class="hover:text-amber-300 transition">Beranda</a></li>
+                        <li><a href="katalog.html" class="hover:text-amber-300 transition">Katalog Produk</a></li>
+                        <li><a href="detail.html" class="hover:text-amber-300 transition">Detail Bifold</a></li>
+                        <li><a href="tentang.html" class="hover:text-amber-300 transition">Teknik Jahit Tangan</a></li>
+                        <li><a href="artikel.html" class="hover:text-amber-300 transition">Panduan Patina</a></li>
+                        <li><a href="kontak.html" class="hover:text-amber-300 transition">Workshop & Souvenir</a></li>
+                    </ul>
+                </div>
+
+                <!-- Studio Address -->
+                <div class="space-y-3 font-mono text-xs">
+                    <h5 class="text-xs font-bold text-white uppercase tracking-wider">Workshop Bengkel</h5>
+                    <p class="text-havelock-parchment/70 leading-relaxed font-sans">
+                        Jl. Magelang Km 6.8, Sinduadi, Mlati, Sleman, D.I. Yogyakarta 55284
+                    </p>
+                    <p class="text-havelock-parchment/70 font-mono">
+                        Buka: Senin - Sabtu (09:00 - 17:30 WIB)
+                    </p>
+                    <p class="text-amber-300 font-bold">
+                        WhatsApp: +62 812-3456-7890
+                    </p>
+                </div>
+
+            </div>
+
+            <div class="pt-8 border-t border-white/10 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs font-mono text-havelock-parchment/50">
+                <p>&copy; 2026 HAVELOCK HANDCRAFTED LEATHERWORKS. All rights reserved.</p>
+                <p>Template UMKM Kriya Kulit by Lentera Pasar</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- 11. FLOATING WHATSAPP BUTTON (bottom-24) -->
+    <div class="fixed bottom-24 right-4 sm:right-6 z-40">
+        <a href="https://wa.me/6281234567890?text=Halo%20Havelock%20Leatherworks,%20saya%20tertarik%20dengan%20produk%20kulitnya." 
+           target="_blank" 
+           aria-label="Chat WhatsApp Workshop"
+           class="flex items-center gap-2.5 bg-emerald-600 hover:bg-emerald-700 text-white px-4 py-3 rounded-full shadow-2xl transition-all duration-300 hover:scale-105 group font-mono text-xs font-bold border-2 border-white/80">
+            <i class="fa-brands fa-whatsapp text-xl text-white group-hover:rotate-12 transition-transform"></i>
+            <span class="hidden sm:inline">WhatsApp Workshop</span>
+        </a>
+    </div>
+
+    <!-- 12. LENTERA PASAR STICKY DEMO & SALES BAR (fixed bottom-4) -->
+    <div class="fixed bottom-4 left-4 right-4 z-50 max-w-5xl mx-auto">
+      <div class="bg-slate-900/95 backdrop-blur-md text-white px-4 py-3 rounded-2xl shadow-2xl border border-slate-700/80 flex flex-col md:flex-row items-center justify-between gap-3">
+        
+        <div class="flex items-center gap-3">
+          <div class="w-8 h-8 rounded-lg bg-amber-600/30 border border-amber-500/50 flex items-center justify-center shrink-0">
+            <svg class="w-4 h-4 text-amber-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z" /></svg>
+          </div>
+          <div>
+            <div class="text-xs md:text-sm font-bold text-slate-100 flex items-center gap-2">
+              <span>Lentera Pasar Demo</span>
+              <span class="text-[10px] px-1.5 py-0.5 rounded bg-amber-500/20 text-amber-300 font-mono">Template Kriya Kulit Asli</span>
+            </div>
+            <p class="text-[11px] text-slate-400 hidden sm:block">Template website tangguh untuk bengkel kerajinan kulit handmade, dompet bifold, dan souvenir kustom grafir.</p>
+          </div>
+        </div>
+
+        <div class="flex items-center gap-3 w-full md:w-auto justify-end">
+          <div class="hidden lg:flex items-center gap-4 text-xs font-mono text-slate-400 border-r border-slate-700 pr-4">
+            <div class="flex items-center gap-1 text-slate-200">
+              <svg class="w-4 h-4 text-amber-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" /></svg>
+              <span>100% Saddle Stitch</span>
+            </div>
+            <span class="text-slate-600">•</span>
+            <div class="flex items-center gap-1 text-slate-200">
+              <svg class="w-4 h-4 text-emerald-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" /></svg>
+              <span>Free Custom Deboss</span>
+            </div>
+          </div>
+
+          <a href="https://wa.me/6281234567890?text=Halo%20Tim%20Lentera%20Pasar,%20saya%20tertarik%20menggunakan%20template%20website%20Kriya%20Kulit%20Handmade%20ini%20lengkap%20dengan%20Admin%20Panel%20dan%20Jasa%20Iklannya." 
+             target="_blank"
+             class="w-full md:w-auto inline-flex items-center justify-center gap-2 bg-gradient-to-r from-amber-600 to-amber-800 hover:from-amber-500 hover:to-amber-700 text-white text-xs md:text-sm font-bold px-5 py-2.5 rounded-xl shadow-lg transition-all hover:scale-105 shrink-0 font-serif">
+            <span>Gunakan Template Ini</span>
+            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3" />
+            </svg>
+          </a>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- SCRIPT MOBILE MENU -->
+    <script>
+        const mobileMenuBtn = document.getElementById('mobileMenuBtn');
+        const mobileMenu = document.getElementById('mobileMenu');
+        const menuIcon = document.getElementById('menuIcon');
+
+        mobileMenuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+            if (mobileMenu.classList.contains('hidden')) {
+                menuIcon.classList.remove('fa-xmark');
+                menuIcon.classList.add('fa-bars');
+            } else {
+                menuIcon.classList.remove('fa-bars');
+                menuIcon.classList.add('fa-xmark');
+            }
+        });
+    </script>
+</body>
+</html>
