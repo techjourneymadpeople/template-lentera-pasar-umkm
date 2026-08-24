@@ -1,0 +1,502 @@
+<!DOCTYPE html>
+<html lang="id" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kontak Nursery & Trukase Proyek // AGRO SUBUR MAKMUR</title>
+    <meta name="description" content="Hubungi Agro Subur Makmur: Konsultasi bibit buah okulasi, pemesanan pupuk kompos trukase proyek perkebunan, lokasi nursery Majalengka, dan maps.">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Playfair+Display:ital,wght@0,600;0,700;0,800;1,600&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome 6 -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        agro: {
+                            green: '#15803D',
+                            greendark: '#166534',
+                            greenlight: '#22C55E',
+                            lime: '#65A30D',
+                            limelight: '#84CC16',
+                            humus: '#271E18',
+                            humusdark: '#1A130E',
+                            humuslight: '#3D2F26',
+                            compost: '#78350F',
+                            earthbg: '#FDFCF7',
+                            earthcard: '#F7F4EB',
+                            earthborder: '#E8E1D3',
+                            charcoal: '#1A1C18'
+                        }
+                    },
+                    fontFamily: {
+                        sans: ['"Plus Jakarta Sans"', 'sans-serif'],
+                        serif: ['"Playfair Display"', 'serif']
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        .no-scrollbar::-webkit-scrollbar { display: none; }
+        .no-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
+    </style>
+</head>
+<body class="bg-agro-earthbg text-agro-charcoal font-sans antialiased selection:bg-agro-green selection:text-white">
+
+    <!-- 1. TOP ANNOUNCEMENT BAR -->
+    <div class="bg-agro-humus text-emerald-100 text-xs py-2.5 px-4 font-sans font-medium border-b border-stone-900/40">
+        <div class="max-w-7xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-2 text-center sm:text-left">
+            <div class="flex items-center justify-center gap-2">
+                <span class="px-2 py-0.5 bg-agro-green text-white text-[10px] uppercase font-bold tracking-wider rounded-md shadow-xs flex items-center gap-1">
+                    <i class="fa-solid fa-phone text-emerald-200"></i> LAYANAN NURSERY & TRUKASE
+                </span>
+                <span class="text-white/95 font-medium">Konsultasi Bibit Buah, Kunjungan Kebun Pembibitan, & Pengadaan Pupuk Kompos Partai Truk</span>
+            </div>
+            <div class="flex items-center gap-4 text-xs">
+                <a href="katalog.html" class="text-lime-300 hover:underline font-bold transition flex items-center gap-1">
+                    Katalog Bibit <i class="fa-solid fa-arrow-right text-[10px]"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- 2. NAVBAR -->
+    <header class="sticky top-0 z-40 bg-white/95 backdrop-blur-md border-b border-agro-earthborder transition-all shadow-xs">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-20 sm:h-24">
+                
+                <!-- Logo -->
+                <a href="index.html" class="flex items-center gap-3.5 group">
+                    <div class="w-12 h-12 bg-gradient-to-br from-agro-green to-agro-humus text-white flex items-center justify-center text-2xl font-bold rounded-2xl shadow-md group-hover:scale-105 transition">
+                        <i class="fa-solid fa-plant-wilt text-lime-300"></i>
+                    </div>
+                    <div class="flex flex-col">
+                        <span class="text-2xl sm:text-3xl font-extrabold tracking-tight text-agro-humus uppercase leading-none font-serif">
+                            AGRO SUBUR<span class="text-agro-green">.</span>
+                        </span>
+                        <span class="text-[9px] tracking-[0.28em] text-agro-green uppercase mt-1 font-bold">
+                            NURSERY & BIO-FERTILIZER HUB
+                        </span>
+                    </div>
+                </a>
+
+                <!-- Desktop Navigation Links -->
+                <nav class="hidden lg:flex items-center gap-7 text-xs font-bold tracking-wider uppercase text-slate-700 font-sans">
+                    <a href="index.html" class="hover:text-agro-green transition">Beranda</a>
+                    <a href="katalog.html" class="hover:text-agro-green transition">Katalog Bibit & Pupuk</a>
+                    <a href="detail.html" class="hover:text-agro-green transition">Detail Bibit Alpukat</a>
+                    <a href="tentang.html" class="hover:text-agro-green transition">Kebun Balitbang & Kompos</a>
+                    <a href="artikel.html" class="hover:text-agro-green transition">Panduan Tabulampot</a>
+                    <a href="kontak.html" class="text-agro-green border-b-2 border-agro-green pb-1 font-bold">Nursery & Trukase Proyek</a>
+                </nav>
+
+                <!-- Actions -->
+                <div class="hidden sm:flex items-center gap-3">
+                    <a href="https://wa.me/6281234567890?text=Halo%20Admin%20Agro%20Subur,%20saya%20ingin%20konsultasi%20bibit%20tanaman%20dan%20pupuk." 
+                       target="_blank"
+                       class="inline-flex items-center gap-2 px-4 py-2.5 bg-agro-green hover:bg-agro-greendark text-xs font-bold text-white rounded-xl transition shadow-md hover:shadow-lg">
+                        <i class="fa-brands fa-whatsapp text-base"></i>
+                        <span>Chat WhatsApp Nursery</span>
+                    </a>
+                </div>
+
+                <!-- Mobile Menu Button -->
+                <div class="flex lg:hidden items-center gap-2">
+                    <a href="https://wa.me/6281234567890" target="_blank" class="p-2.5 bg-emerald-100 text-emerald-900 rounded-xl text-sm">
+                        <i class="fa-brands fa-whatsapp"></i>
+                    </a>
+                    <button id="mobileMenuBtn" class="p-2.5 text-slate-700 hover:text-agro-green focus:outline-hidden rounded-xl bg-emerald-50">
+                        <i id="menuIcon" class="fa-solid fa-bars text-xl"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Mobile Dropdown Menu -->
+        <div id="mobileMenu" class="hidden lg:hidden border-t border-agro-earthborder bg-white/98 px-6 py-5 shadow-xl">
+            <div class="flex flex-col gap-4 text-sm font-bold uppercase text-slate-700">
+                <a href="index.html" class="hover:text-agro-green transition flex items-center justify-between">
+                    <span>Beranda</span>
+                    <i class="fa-solid fa-chevron-right text-xs"></i>
+                </a>
+                <a href="katalog.html" class="hover:text-agro-green transition flex items-center justify-between">
+                    <span>Katalog Bibit Buah, Kompos & Pakan</span>
+                    <i class="fa-solid fa-chevron-right text-xs"></i>
+                </a>
+                <a href="detail.html" class="hover:text-agro-green transition flex items-center justify-between">
+                    <span>Detail Tinggi Bibit & Kadar NPK</span>
+                    <i class="fa-solid fa-chevron-right text-xs"></i>
+                </a>
+                <a href="tentang.html" class="hover:text-agro-green transition flex items-center justify-between">
+                    <span>Kebun Sertifikasi & Rumah Kompos 70°C</span>
+                    <i class="fa-solid fa-chevron-right text-xs"></i>
+                </a>
+                <a href="artikel.html" class="hover:text-agro-green transition flex items-center justify-between">
+                    <span>Cara Tanam Tabulampot & Aplikasi Pupuk</span>
+                    <i class="fa-solid fa-chevron-right text-xs"></i>
+                </a>
+                <a href="kontak.html" class="text-agro-green flex items-center justify-between">
+                    <span>Lokasi Nursery & Pengiriman Trukase</span>
+                    <i class="fa-solid fa-chevron-right text-xs"></i>
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- 3. PAGE BANNER -->
+    <section class="py-12 bg-gradient-to-b from-emerald-100/60 to-agro-earthbg border-b border-agro-earthborder">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="max-w-3xl">
+                <span class="px-3 py-1 bg-emerald-100 text-agro-greendark text-xs font-bold uppercase rounded-md tracking-wider">
+                    DIRECT NURSERY & TRUCKLOAD CONTRACT
+                </span>
+                <h1 class="text-3xl sm:text-5xl font-extrabold text-agro-humus font-serif mt-3 mb-3 leading-tight">
+                    Hubungi Kebun Nursery & Layanan Trukase
+                </h1>
+                <p class="text-slate-600 text-sm sm:text-base leading-relaxed">
+                    Ajukan pemesanan bibit eceran polibag untuk teras rumah, jadwalkan survei ke kebun pembibitan kami di Majalengka, atau minta penawaran kontrak pengadaan bibit dan pupuk kompos partai truk kargo (5–10 Ton).
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- 4. 3 CONTACT CHANNELS -->
+    <section class="py-12 -mt-6">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                
+                <!-- Channel 1 -->
+                <div class="bg-white rounded-3xl p-6 border border-agro-earthborder shadow-md flex flex-col justify-between">
+                    <div>
+                        <div class="w-12 h-12 rounded-2xl bg-emerald-100 text-agro-green flex items-center justify-center text-2xl mb-4">
+                            <i class="fa-solid fa-seedling"></i>
+                        </div>
+                        <h3 class="text-base font-bold text-slate-900 font-serif">Layanan Bibit Eceran & Pot</h3>
+                        <p class="text-xs text-slate-500 mt-1">Pemesanan 1–20 bibit polibag dengan packing kayu ekspedisi aman.</p>
+                        <p class="text-sm font-black text-agro-green mt-3">+62 812-3456-7890</p>
+                    </div>
+                    <a href="https://wa.me/6281234567890?text=Halo%20Admin%20Agro%20Subur,%20saya%20ingin%20order%20bibit%20eceran." target="_blank"
+                       class="mt-6 w-full py-2.5 bg-agro-green hover:bg-agro-greendark text-white font-bold text-xs rounded-xl text-center transition flex items-center justify-center gap-2">
+                        <i class="fa-brands fa-whatsapp"></i> Chat CS Bibit
+                    </a>
+                </div>
+
+                <!-- Channel 2 -->
+                <div class="bg-white rounded-3xl p-6 border border-agro-earthborder shadow-md flex flex-col justify-between">
+                    <div>
+                        <div class="w-12 h-12 rounded-2xl bg-amber-100 text-amber-900 flex items-center justify-center text-2xl mb-4">
+                            <i class="fa-solid fa-truck-moving"></i>
+                        </div>
+                        <h3 class="text-base font-bold text-slate-900 font-serif">Divisi Proyek Kebun & Trukase</h3>
+                        <p class="text-xs text-slate-500 mt-1">Pengadaan bibit ribuan batang & pasokan kompos 5-10 ton per truk.</p>
+                        <p class="text-sm font-black text-slate-900 mt-3">+62 812-9876-5432</p>
+                    </div>
+                    <a href="https://wa.me/6281298765432?text=Halo%20Tim%20B2B%20Agro%20Subur,%20saya%20ingin%20tanya%20pengadaan%20bibit%20dan%20trukase%20kompos." target="_blank"
+                       class="mt-6 w-full py-2.5 bg-agro-humus hover:bg-agro-humusdark text-white font-bold text-xs rounded-xl text-center transition flex items-center justify-center gap-2">
+                        <i class="fa-brands fa-whatsapp"></i> Hubungi Divisi Proyek
+                    </a>
+                </div>
+
+                <!-- Channel 3 -->
+                <div class="bg-white rounded-3xl p-6 border border-agro-earthborder shadow-md flex flex-col justify-between">
+                    <div>
+                        <div class="w-12 h-12 rounded-2xl bg-lime-100 text-lime-800 flex items-center justify-center text-2xl mb-4">
+                            <i class="fa-solid fa-location-dot"></i>
+                        </div>
+                        <h3 class="text-base font-bold text-slate-900 font-serif">Kunjungan Kebun Nursery</h3>
+                        <p class="text-xs text-slate-500 mt-1">Pilih langsung bibit di kebun 15 hektar & konsultasi agronomis.</p>
+                        <p class="text-sm font-black text-lime-800 mt-3">+62 813-1122-3344</p>
+                    </div>
+                    <a href="https://wa.me/6281311223344?text=Halo%20Admin%20Agro%20Subur,%20saya%20ingin%20jadwalkan%20kunjungan%20ke%20kebun%20nursery." target="_blank"
+                       class="mt-6 w-full py-2.5 bg-lime-700 hover:bg-lime-800 text-white font-bold text-xs rounded-xl text-center transition flex items-center justify-center gap-2">
+                        <i class="fa-brands fa-whatsapp"></i> Jadwalkan Kunjungan
+                    </a>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- 5. INTERACTIVE ORDER FORM & MAPS -->
+    <section class="py-12 md:py-16 bg-white border-t border-agro-earthborder">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12">
+                
+                <!-- Left: Interactive Form -->
+                <div class="lg:col-span-7 bg-agro-earthcard rounded-3xl p-6 sm:p-10 border-2 border-agro-earthborder shadow-lg">
+                    <div class="mb-6">
+                        <span class="px-3 py-1 bg-emerald-100 text-agro-greendark text-[10px] font-extrabold uppercase rounded-md tracking-wider">
+                            DIRECT WHATSAPP ORDER GENERATOR
+                        </span>
+                        <h2 class="text-2xl font-extrabold text-agro-humus font-serif mt-2">
+                            Formulir Pemesanan Bibit & Pengadaan Pupuk
+                        </h2>
+                        <p class="text-xs text-slate-600 mt-1">
+                            Lengkapi rincian kebutuhan bibit atau pupuk Anda di bawah ini untuk terhubung langsung dengan tim agronomis Agro Subur Makmur via WhatsApp.
+                        </p>
+                    </div>
+
+                    <form id="orderForm" onsubmit="handleFormSubmit(event)" class="space-y-4 text-xs">
+                        
+                        <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                            <div>
+                                <label class="block font-bold text-slate-700 mb-1">Nama Pemesan / Perusahaan Kebun *</label>
+                                <input type="text" id="formNama" required placeholder="Contoh: Bapak Haryanto / CV Tani Subur Makmur" 
+                                       class="w-full px-4 py-3 bg-white border border-agro-earthborder rounded-xl focus:outline-hidden focus:border-agro-green transition">
+                            </div>
+                            <div>
+                                <label class="block font-bold text-slate-700 mb-1">Nomor WhatsApp Aktif *</label>
+                                <input type="tel" id="formWA" required placeholder="Contoh: 081234567890" 
+                                       class="w-full px-4 py-3 bg-white border border-agro-earthborder rounded-xl focus:outline-hidden focus:border-agro-green transition">
+                            </div>
+                        </div>
+
+                        <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                            <div>
+                                <label class="block font-bold text-slate-700 mb-1">Kategori Kebutuhan *</label>
+                                <select id="formKategori" required class="w-full px-4 py-3 bg-white border border-agro-earthborder rounded-xl focus:outline-hidden focus:border-agro-green transition">
+                                    <option value="Pesanan Bibit Buah Polibag Eceran (1-20 Batang)">Pesanan Bibit Buah Polibag Eceran (1-20 Batang)</option>
+                                    <option value="Paket Kebun Buah Komersial (50-500 Batang)">Paket Kebun Buah Komersial (50-500 Batang)</option>
+                                    <option value="Pengadaan Bibit Skala Hektar (> 1.000 Batang)">Pengadaan Bibit Skala Hektar (> 1.000 Batang)</option>
+                                    <option value="Pemesanan Pupuk Kompos Kohe (Eceran Karung 25kg)">Pemesanan Pupuk Kompos Kohe (Eceran Karung 25kg)</option>
+                                    <option value="Pengadaan Kompos Curah Trukase (5-10 Ton)">Pengadaan Kompos Curah Trukase (5-10 Ton)</option>
+                                    <option value="Kunjungan & Pilih Bibit Langsung di Kebun">Kunjungan & Pilih Bibit Langsung di Kebun</option>
+                                </select>
+                            </div>
+                            <div>
+                                <label class="block font-bold text-slate-700 mb-1">Pilihan Varietas Bibit / Produk *</label>
+                                <select id="formProduk" required class="w-full px-4 py-3 bg-white border border-agro-earthborder rounded-xl focus:outline-hidden focus:border-agro-green transition">
+                                    <option value="Bibit Alpukat Aligator Okulasi Super">Bibit Alpukat Aligator Okulasi Super</option>
+                                    <option value="Durian Musang King Kaki Tiga Sambung Pucuk">Durian Musang King Kaki Tiga Sambung Pucuk</option>
+                                    <option value="Bibit Mangga Kiojay Super Jumbo Okulasi">Bibit Mangga Kiojay Super Jumbo Okulasi</option>
+                                    <option value="Bibit Jeruk Santang Madu Tabulampot">Bibit Jeruk Santang Madu Tabulampot</option>
+                                    <option value="Pupuk Kompos Kohe Kambing Fermentasi 25kg">Pupuk Kompos Kohe Kambing Fermentasi 25kg</option>
+                                    <option value="Pupuk Kompos Kohe Sapi Organik Granul 25kg">Pupuk Kompos Kohe Sapi Organik Granul 25kg</option>
+                                    <option value="POC Bio-Urine Fermentasi 5 Liter">POC Bio-Urine Fermentasi 5 Liter</option>
+                                    <option value="Media Tanam Super 7-in-1 Siap Pakai 15kg">Media Tanam Super 7-in-1 Siap Pakai 15kg</option>
+                                    <option value="Arang Sekam Padi Bakar Murni 10kg">Arang Sekam Padi Bakar Murni 10kg</option>
+                                    <option value="Cocopeat Serat Halus Low EC 15kg">Cocopeat Serat Halus Low EC 15kg</option>
+                                    <option value="Silase Jagung Pakan Ternak Fermentasi 40kg">Silase Jagung Pakan Ternak Fermentasi 40kg</option>
+                                    <option value="Konsentrat Penggemukan Ruminansia 50kg">Konsentrat Penggemukan Ruminansia 50kg</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                            <div>
+                                <label class="block font-bold text-slate-700 mb-1">Jumlah Pesanan (Batang / Karung / Ton) *</label>
+                                <input type="text" id="formJumlah" required placeholder="Contoh: 10 Batang / 50 Karung / 1 Truk (7 Ton)" 
+                                       class="w-full px-4 py-3 bg-white border border-agro-earthborder rounded-xl focus:outline-hidden focus:border-agro-green transition">
+                            </div>
+                            <div>
+                                <label class="block font-bold text-slate-700 mb-1">Kota & Alamat Pengiriman / Lokasi Lahan *</label>
+                                <input type="text" id="formKota" required placeholder="Contoh: Bandung Barat / Malang / Lampung" 
+                                       class="w-full px-4 py-3 bg-white border border-agro-earthborder rounded-xl focus:outline-hidden focus:border-agro-green transition">
+                            </div>
+                        </div>
+
+                        <div>
+                            <label class="block font-bold text-slate-700 mb-1">Catatan Tambahan (Kebutuhan Packing Kayu / Konsultasi Lubang Tanam)</label>
+                            <textarea id="formCatatan" rows="3" placeholder="Contoh: Mohon sertakan packing kayu untuk pengiriman luar pulau, dan panduan takaran pupuk kompos per lubang tanam lahan miring." 
+                                      class="w-full px-4 py-3 bg-white border border-agro-earthborder rounded-xl focus:outline-hidden focus:border-agro-green transition"></textarea>
+                        </div>
+
+                        <button type="submit" 
+                                class="w-full py-4 bg-gradient-to-r from-agro-green to-emerald-800 hover:from-emerald-700 hover:to-emerald-900 text-white font-bold text-xs uppercase tracking-wider rounded-2xl shadow-lg transition flex items-center justify-center gap-2">
+                            <i class="fa-brands fa-whatsapp text-lg"></i>
+                            <span>Kirim Permintaan ke WhatsApp Nursery</span>
+                        </button>
+                    </form>
+                </div>
+
+                <!-- Right: Location Details & Maps -->
+                <div class="lg:col-span-5 space-y-6">
+                    
+                    <div class="bg-agro-earthcard rounded-3xl p-6 sm:p-8 border border-agro-earthborder shadow-xs space-y-4">
+                        <div class="flex items-center gap-3">
+                            <div class="w-10 h-10 rounded-xl bg-agro-green text-white flex items-center justify-center text-lg">
+                                <i class="fa-solid fa-location-dot"></i>
+                            </div>
+                            <div>
+                                <h3 class="font-bold text-slate-900 font-serif">Kebun Pembibitan & Rumah Kompos</h3>
+                                <p class="text-[11px] text-slate-500">Majalengka & Cirebon - Jawa Barat</p>
+                            </div>
+                        </div>
+
+                        <div class="space-y-2 text-xs text-slate-600 leading-relaxed pt-2 border-t border-agro-earthborder">
+                            <p><strong>Kebun Pembibitan Hortikultura Pusat:</strong><br>
+                            Kawasan Pembibitan Hortikultura, Jl. Agrobisnis Raya No. 25, Majalengka, Jawa Barat 45411</p>
+                            <p><strong>Pabrik Pengolahan Kompos & Media:</strong><br>
+                            Jl. Raya Pantura No. 108, Cirebon, Jawa Barat 45153</p>
+                            <p><strong>Jam Layanan & Muat Trukase:</strong><br>
+                            Senin – Minggu: 07:30 – 17:30 WIB<br>
+                            Bongkar Muat Trukase Kargo: 24 Jam Sesuai Manifest</p>
+                        </div>
+                    </div>
+
+                    <!-- Map Container -->
+                    <div class="rounded-3xl overflow-hidden border-2 border-agro-earthborder shadow-md bg-emerald-50 relative h-64">
+                        <iframe class="w-full h-full border-0" 
+                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3961.500000000000!2d108.2200000!3d-6.8300000!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e6f2f0000000000%3A0x123456789abcdef!2sMajalengka%2C%20West%20Java!5e0!3m2!1sen!2sid!4v1700000000000" 
+                                allowfullscreen="" loading="lazy"></iframe>
+                        <div class="absolute bottom-3 left-3 bg-white/90 backdrop-blur-md px-3 py-1.5 rounded-xl text-[10px] font-bold text-slate-800 border border-slate-200">
+                            📍 Agro Subur Nursery & Bio-Fertilizer Hub
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- 6. FOOTER -->
+    <footer class="bg-agro-humusdark text-stone-300 text-xs pt-16 pb-36 border-t border-stone-900 font-sans">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-10 pb-12 border-b border-stone-800">
+                <div class="lg:col-span-2 space-y-4">
+                    <a href="index.html" class="flex items-center gap-3">
+                        <div class="w-10 h-10 bg-gradient-to-br from-agro-green to-agro-humus text-white flex items-center justify-center text-xl font-bold rounded-xl">
+                            <i class="fa-solid fa-plant-wilt text-lime-300"></i>
+                        </div>
+                        <span class="text-2xl font-extrabold text-white tracking-tight font-serif">
+                            AGRO SUBUR<span class="text-agro-green">.</span>
+                        </span>
+                    </a>
+                    <p class="text-xs text-stone-400 leading-relaxed max-w-sm">
+                        Pusat pembibitan tanaman buah unggul perbanyakan okulasi bersertifikat Balitbang dan produsen pupuk kompos organik fermentasi suhu tinggi bebas patogen. Solusi kesuburan tanah dan keberhasilan panen perkebunan modern Indonesia.
+                    </p>
+                </div>
+                <div>
+                    <h4 class="text-xs font-bold text-white uppercase tracking-wider mb-4 font-serif">Navigasi Halaman</h4>
+                    <ul class="space-y-2.5">
+                        <li><a href="index.html" class="hover:text-lime-400 transition">Beranda Utama</a></li>
+                        <li><a href="katalog.html" class="hover:text-lime-400 transition">Katalog Bibit & Pupuk</a></li>
+                        <li><a href="detail.html" class="hover:text-lime-400 transition">Detail Bibit Alpukat</a></li>
+                        <li><a href="tentang.html" class="hover:text-lime-400 transition">Kebun Balitbang & Kompos</a></li>
+                        <li><a href="artikel.html" class="hover:text-lime-400 transition">Panduan Tabulampot</a></li>
+                        <li><a href="kontak.html" class="hover:text-lime-400 transition">Nursery & Trukase Proyek</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-xs font-bold text-white uppercase tracking-wider mb-4 font-serif">Produk Unggulan</h4>
+                    <ul class="space-y-2.5">
+                        <li><a href="detail.html" class="hover:text-lime-400 transition">Bibit Alpukat Aligator Okulasi</a></li>
+                        <li><a href="detail.html" class="hover:text-lime-400 transition">Durian Musang King Kaki Tiga</a></li>
+                        <li><a href="katalog.html" class="hover:text-lime-400 transition">Bibit Mangga Kiojay Super Jumbo</a></li>
+                        <li><a href="katalog.html" class="hover:text-lime-400 transition">Pupuk Kompos Kohe Kambing 25kg</a></li>
+                        <li><a href="katalog.html" class="hover:text-lime-400 transition">Media Tanam Super 7-in-1 Siap Pakai</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-xs font-bold text-white uppercase tracking-wider mb-4 font-serif">Kebun Nursery Pusat</h4>
+                    <p class="text-xs text-stone-400 leading-relaxed mb-3">
+                        Kawasan Pembibitan Hortikultura, Jl. Agrobisnis Raya No. 25, Majalengka, Jawa Barat 45411 / Depot Pupuk: Jl. Raya Pantura No. 108, Cirebon.
+                    </p>
+                    <p class="text-xs text-lime-400 font-bold mb-1"><i class="fa-solid fa-phone mr-1.5"></i> +62 812-3456-7890</p>
+                    <p class="text-xs text-stone-400"><i class="fa-solid fa-envelope mr-1.5"></i> order@agrosuburmakmur.com</p>
+                </div>
+            </div>
+            <div class="pt-8 flex flex-col sm:flex-row items-center justify-between gap-4 text-[11px] text-stone-500">
+                <p>&copy; 2026 AGRO SUBUR MAKMUR. All rights reserved.</p>
+                <div class="flex items-center gap-4">
+                    <span>100% Certified Grafted Variety</span>
+                    <span>•</span>
+                    <span>Fermentasi Suhu 70°C Bebas Bau</span>
+                    <span>•</span>
+                    <span>Packing Kayu Ekspedisi Aman</span>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- 7. FLOATING WHATSAPP BUTTON (bottom-24) -->
+    <div class="fixed bottom-24 right-5 z-40">
+        <a href="https://wa.me/6281234567890?text=Halo%20Admin%20Agro%20Subur,%20saya%20ingin%20tanya%20bibit%20dan%20pupuk." 
+           target="_blank" 
+           aria-label="Chat WhatsApp Agro Subur Makmur"
+           class="group flex items-center gap-3 bg-gradient-to-r from-agro-green to-emerald-800 hover:from-emerald-700 hover:to-emerald-900 text-white px-4 py-3.5 rounded-full shadow-2xl transition-all transform hover:scale-105 border-2 border-white/80">
+            <i class="fa-brands fa-whatsapp text-2xl animate-pulse"></i>
+            <span class="text-xs font-bold tracking-wide pr-1 hidden sm:inline">Pesan Bibit & Pupuk WA</span>
+        </a>
+    </div>
+
+    <!-- 8. STICKY DEMO & SALES BAR (fixed bottom-4) -->
+    <div class="fixed bottom-4 left-4 right-4 z-50 max-w-5xl mx-auto">
+      <div class="bg-agro-humusdark/95 backdrop-blur-md text-white px-4 sm:px-6 py-3.5 rounded-2xl shadow-2xl border border-stone-800 flex flex-col md:flex-row items-center justify-between gap-3">
+        <div class="flex items-center gap-3 text-left w-full md:w-auto">
+          <div class="w-9 h-9 rounded-xl bg-emerald-500/20 border border-emerald-400/40 flex items-center justify-center shrink-0">
+            <i class="fa-solid fa-plant-wilt text-lime-400 text-sm"></i>
+          </div>
+          <div>
+            <div class="text-xs md:text-sm font-bold text-stone-100 flex items-center gap-2">
+              <span>Lentera Pasar Demo</span>
+              <span class="text-[10px] px-2 py-0.5 rounded bg-emerald-500/20 text-lime-300 font-bold">Kontak & Form Order Nursery</span>
+            </div>
+            <p class="text-[11px] text-stone-400 hidden sm:block">Desain Bio-Fertilizer & Plant Nursery Hub untuk bibit buah okulasi, pupuk kompos, & pakan ternak.</p>
+          </div>
+        </div>
+        <div class="flex items-center gap-3 w-full md:w-auto justify-end">
+          <a href="https://wa.me/6281234567890?text=Halo%20Tim%20Lentera%20Pasar,%20saya%20tertarik%20menggunakan%20template%20website%20Nursery%20dan%20Pupuk%20ini." 
+             target="_blank"
+             class="w-full md:w-auto inline-flex items-center justify-center gap-2 bg-gradient-to-r from-agro-green to-emerald-800 hover:from-emerald-700 hover:to-emerald-900 text-white text-xs md:text-sm font-bold px-5 py-2.5 rounded-xl shadow-lg transition-all hover:scale-105 shrink-0">
+            <span>Gunakan Template Ini</span>
+            <i class="fa-solid fa-arrow-right text-xs"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <!-- SCRIPT FORM HANDLING -->
+    <script>
+        const mobileMenuBtn = document.getElementById('mobileMenuBtn');
+        const mobileMenu = document.getElementById('mobileMenu');
+        const menuIcon = document.getElementById('menuIcon');
+
+        mobileMenuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+            if (mobileMenu.classList.contains('hidden')) {
+                menuIcon.classList.remove('fa-xmark');
+                menuIcon.classList.add('fa-bars');
+            } else {
+                menuIcon.classList.remove('fa-bars');
+                menuIcon.classList.add('fa-xmark');
+            }
+        });
+
+        function handleFormSubmit(event) {
+            event.preventDefault();
+            const nama = document.getElementById('formNama').value;
+            const wa = document.getElementById('formWA').value;
+            const kategori = document.getElementById('formKategori').value;
+            const produk = document.getElementById('formProduk').value;
+            const jumlah = document.getElementById('formJumlah').value;
+            const kota = document.getElementById('formKota').value;
+            const catatan = document.getElementById('formCatatan').value || '-';
+
+            const message = `Halo Admin Agro Subur Makmur, saya ingin mengajukan pemesanan bibit / penawaran pengadaan pupuk:
+- Nama Pemesan / Perusahaan: ${nama}
+- No. WhatsApp: ${wa}
+- Kategori Kebutuhan: ${kategori}
+- Produk / Varietas: ${produk}
+- Jumlah Pesanan: ${jumlah}
+- Kota & Alamat Kirim: ${kota}
+- Catatan Tambahan: ${catatan}
+
+Mohon konfirmasi ketersediaan stok bibit segar di kebun dan estimasi ongkir ekspedisi/trukase ke lokasi kami. Terima kasih!`;
+
+            const encoded = encodeURIComponent(message);
+            window.open(`https://wa.me/6281234567890?text=${encoded}`, '_blank');
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,938 @@
+<!DOCTYPE html>
+<html lang="id" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Katalog Bibit Buah, Kompos & Pakan // AGRO SUBUR MAKMUR</title>
+    <meta name="description" content="Katalog bibit buah okulasi bersertifikat, pupuk kompos kohe fermentasi matang, media tanam siap pakai, dan silase pakan ternak berkualitas.">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Playfair+Display:ital,wght@0,600;0,700;0,800;1,600&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome 6 -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        agro: {
+                            green: '#15803D',
+                            greendark: '#166534',
+                            greenlight: '#22C55E',
+                            lime: '#65A30D',
+                            limelight: '#84CC16',
+                            humus: '#271E18',
+                            humusdark: '#1A130E',
+                            humuslight: '#3D2F26',
+                            compost: '#78350F',
+                            earthbg: '#FDFCF7',
+                            earthcard: '#F7F4EB',
+                            earthborder: '#E8E1D3',
+                            charcoal: '#1A1C18'
+                        }
+                    },
+                    fontFamily: {
+                        sans: ['"Plus Jakarta Sans"', 'sans-serif'],
+                        serif: ['"Playfair Display"', 'serif']
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        .no-scrollbar::-webkit-scrollbar { display: none; }
+        .no-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
+
+        .agro-card {
+            transition: all 0.35s cubic-bezier(0.16, 1, 0.3, 1);
+        }
+        .agro-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 20px 35px -10px rgba(21, 128, 61, 0.16);
+        }
+    </style>
+</head>
+<body class="bg-agro-earthbg text-agro-charcoal font-sans antialiased selection:bg-agro-green selection:text-white">
+
+    <!-- 1. TOP ANNOUNCEMENT BAR -->
+    <div class="bg-agro-humus text-emerald-100 text-xs py-2.5 px-4 font-sans font-medium border-b border-stone-900/40">
+        <div class="max-w-7xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-2 text-center sm:text-left">
+            <div class="flex items-center justify-center gap-2">
+                <span class="px-2 py-0.5 bg-agro-green text-white text-[10px] uppercase font-bold tracking-wider rounded-md shadow-xs flex items-center gap-1">
+                    <i class="fa-solid fa-seedling text-emerald-200"></i> BIBIT & PUPUK BERSERTIFIKAT
+                </span>
+                <span class="text-white/95 font-medium">Garansi 100% Asli Varietas Indukan Produktif • Pupuk Kompos Fermentasi Matang Bebas Bau</span>
+            </div>
+            <div class="flex items-center gap-4 text-xs">
+                <a href="https://wa.me/6281234567890?text=Halo%20Admin%20Agro%20Subur,%20saya%20ingin%20tanya%20stok%20katalog%20bibit%20dan%20pupuk." target="_blank" class="text-lime-300 hover:underline font-bold transition flex items-center gap-1">
+                    Fast Order WA <i class="fa-solid fa-arrow-right text-[10px]"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- 2. NAVBAR -->
+    <header class="sticky top-0 z-40 bg-white/95 backdrop-blur-md border-b border-agro-earthborder transition-all shadow-xs">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-20 sm:h-24">
+                
+                <!-- Logo -->
+                <a href="index.html" class="flex items-center gap-3.5 group">
+                    <div class="w-12 h-12 bg-gradient-to-br from-agro-green to-agro-humus text-white flex items-center justify-center text-2xl font-bold rounded-2xl shadow-md group-hover:scale-105 transition">
+                        <i class="fa-solid fa-plant-wilt text-lime-300"></i>
+                    </div>
+                    <div class="flex flex-col">
+                        <span class="text-2xl sm:text-3xl font-extrabold tracking-tight text-agro-humus uppercase leading-none font-serif">
+                            AGRO SUBUR<span class="text-agro-green">.</span>
+                        </span>
+                        <span class="text-[9px] tracking-[0.28em] text-agro-green uppercase mt-1 font-bold">
+                            NURSERY & BIO-FERTILIZER HUB
+                        </span>
+                    </div>
+                </a>
+
+                <!-- Desktop Navigation Links -->
+                <nav class="hidden lg:flex items-center gap-7 text-xs font-bold tracking-wider uppercase text-slate-700 font-sans">
+                    <a href="index.html" class="hover:text-agro-green transition">Beranda</a>
+                    <a href="katalog.html" class="text-agro-green border-b-2 border-agro-green pb-1 font-bold">Katalog Bibit & Pupuk</a>
+                    <a href="detail.html" class="hover:text-agro-green transition">Detail Bibit Alpukat</a>
+                    <a href="tentang.html" class="hover:text-agro-green transition">Kebun Balitbang & Kompos</a>
+                    <a href="artikel.html" class="hover:text-agro-green transition">Panduan Tabulampot</a>
+                    <a href="kontak.html" class="hover:text-agro-green transition">Nursery & Trukase Proyek</a>
+                </nav>
+
+                <!-- Actions -->
+                <div class="hidden sm:flex items-center gap-3">
+                    <a href="https://wa.me/6281234567890?text=Halo%20Admin%20Agro%20Subur,%20saya%20ingin%20memesan%20dari%20katalog." 
+                       target="_blank"
+                       class="inline-flex items-center gap-2 px-4 py-2.5 bg-agro-green hover:bg-agro-greendark text-xs font-bold text-white rounded-xl transition shadow-md hover:shadow-lg">
+                        <i class="fa-brands fa-whatsapp text-base"></i>
+                        <span>Order Bibit & Pupuk WA</span>
+                    </a>
+                </div>
+
+                <!-- Mobile Menu Button -->
+                <div class="flex lg:hidden items-center gap-2">
+                    <a href="https://wa.me/6281234567890" target="_blank" class="p-2.5 bg-emerald-100 text-emerald-900 rounded-xl text-sm">
+                        <i class="fa-brands fa-whatsapp"></i>
+                    </a>
+                    <button id="mobileMenuBtn" class="p-2.5 text-slate-700 hover:text-agro-green focus:outline-hidden rounded-xl bg-emerald-50">
+                        <i id="menuIcon" class="fa-solid fa-bars text-xl"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Mobile Dropdown Menu -->
+        <div id="mobileMenu" class="hidden lg:hidden border-t border-agro-earthborder bg-white/98 px-6 py-5 shadow-xl">
+            <div class="flex flex-col gap-4 text-sm font-bold uppercase text-slate-700">
+                <a href="index.html" class="hover:text-agro-green transition flex items-center justify-between">
+                    <span>Beranda</span>
+                    <i class="fa-solid fa-chevron-right text-xs"></i>
+                </a>
+                <a href="katalog.html" class="text-agro-green flex items-center justify-between">
+                    <span>Katalog Bibit Buah, Kompos & Pakan</span>
+                    <i class="fa-solid fa-chevron-right text-xs"></i>
+                </a>
+                <a href="detail.html" class="hover:text-agro-green transition flex items-center justify-between">
+                    <span>Detail Tinggi Bibit & Kadar NPK</span>
+                    <i class="fa-solid fa-chevron-right text-xs"></i>
+                </a>
+                <a href="tentang.html" class="hover:text-agro-green transition flex items-center justify-between">
+                    <span>Kebun Sertifikasi & Rumah Kompos 70°C</span>
+                    <i class="fa-solid fa-chevron-right text-xs"></i>
+                </a>
+                <a href="artikel.html" class="hover:text-agro-green transition flex items-center justify-between">
+                    <span>Cara Tanam Tabulampot & Aplikasi Pupuk</span>
+                    <i class="fa-solid fa-chevron-right text-xs"></i>
+                </a>
+                <a href="kontak.html" class="hover:text-agro-green transition flex items-center justify-between">
+                    <span>Lokasi Nursery & Pengiriman Trukase</span>
+                    <i class="fa-solid fa-chevron-right text-xs"></i>
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- 3. PAGE BANNER & BREADCRUMBS -->
+    <section class="pt-8 pb-10 bg-gradient-to-b from-emerald-100/60 to-agro-earthbg border-b border-agro-earthborder">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            
+            <nav class="flex items-center gap-2 text-xs text-slate-500 mb-4">
+                <a href="index.html" class="hover:text-agro-green transition">Beranda</a>
+                <i class="fa-solid fa-chevron-right text-[10px] text-slate-400"></i>
+                <span class="text-agro-humus font-bold">Katalog Bibit & Pupuk Organik</span>
+            </nav>
+
+            <div class="flex flex-col md:flex-row md:items-end justify-between gap-6">
+                <div>
+                    <span class="px-3 py-1 bg-emerald-100 text-agro-greendark text-xs font-bold uppercase rounded-md tracking-wider">
+                        CERTIFIED NURSERY & ORGANIC PRODUCTS
+                    </span>
+                    <h1 class="text-3xl sm:text-5xl font-extrabold text-agro-humus font-serif mt-2">
+                        Katalog Bibit Buah, Pupuk & Pakan
+                    </h1>
+                    <p class="text-slate-600 text-sm sm:text-base mt-2 max-w-2xl">
+                        Bibit buah okulasi siap tanam, durian kaki tiga, pupuk kompos kohe fermentasi matang suhu 70°C, media tanam super, dan silase pakan ternak ruminansia.
+                    </p>
+                </div>
+
+                <div class="flex items-center gap-3">
+                    <div class="bg-white p-3.5 rounded-2xl border border-agro-earthborder shadow-xs flex items-center gap-3">
+                        <div class="w-10 h-10 rounded-xl bg-emerald-100 text-agro-green flex items-center justify-center text-lg">
+                            <i class="fa-solid fa-truck"></i>
+                        </div>
+                        <div>
+                            <p class="text-xs font-bold text-slate-900">Eceran & Partai Trukase</p>
+                            <p class="text-[11px] text-slate-500">Packing Kayu Ekspedisi Aman</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- 4. FILTER TABS & SEARCH -->
+    <section class="py-6 bg-white border-b border-agro-earthborder sticky top-20 sm:top-24 z-30 shadow-xs">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex flex-col lg:flex-row lg:items-center justify-between gap-4">
+                
+                <!-- Category Buttons -->
+                <div class="flex items-center gap-2 overflow-x-auto no-scrollbar pb-1 lg:pb-0">
+                    <button onclick="filterAgro('all')" id="btn-all" class="cat-btn px-4 py-2 rounded-xl text-xs font-bold transition bg-agro-green text-white shadow-xs shrink-0">
+                        Semua Produk (12)
+                    </button>
+                    <button onclick="filterAgro('bibit')" id="btn-bibit" class="cat-btn px-4 py-2 rounded-xl text-xs font-bold transition bg-emerald-50 text-slate-700 hover:bg-emerald-100 shrink-0">
+                        Bibit Buah Okulasi (4)
+                    </button>
+                    <button onclick="filterAgro('pupuk')" id="btn-pupuk" class="cat-btn px-4 py-2 rounded-xl text-xs font-bold transition bg-emerald-50 text-slate-700 hover:bg-emerald-100 shrink-0">
+                        Pupuk Kompos & POC (3)
+                    </button>
+                    <button onclick="filterAgro('media')" id="btn-media" class="cat-btn px-4 py-2 rounded-xl text-xs font-bold transition bg-emerald-50 text-slate-700 hover:bg-emerald-100 shrink-0">
+                        Media Tanam & Sekam (3)
+                    </button>
+                    <button onclick="filterAgro('pakan')" id="btn-pakan" class="cat-btn px-4 py-2 rounded-xl text-xs font-bold transition bg-emerald-50 text-slate-700 hover:bg-emerald-100 shrink-0">
+                        Pakan Ternak Fermentasi (2)
+                    </button>
+                </div>
+
+                <!-- Search -->
+                <div class="flex items-center gap-3">
+                    <div class="relative flex-1 sm:w-64">
+                        <i class="fa-solid fa-magnifying-glass absolute left-3.5 top-1/2 -translate-y-1/2 text-slate-400 text-xs"></i>
+                        <input type="text" id="searchInput" onkeyup="searchAgro()" placeholder="Cari alpukat, durian, kompos, pakan..." 
+                               class="w-full pl-9 pr-3.5 py-2 text-xs bg-slate-50 border border-slate-200 rounded-xl focus:outline-hidden focus:border-agro-green focus:bg-white transition">
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- 5. PRODUCTS GRID SECTION -->
+    <section class="py-12 md:py-16">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            
+            <div id="agroGrid" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
+                
+                <!-- Product 1: Bibit Alpukat Aligator Okulasi -->
+                <div class="product-item agro-card bg-white rounded-3xl border border-agro-earthborder shadow-xs overflow-hidden flex flex-col justify-between" data-category="bibit" data-name="bibit alpukat aligator okulasi tinggi 70-80cm buah jumbo 1.5kg cepat berbuah">
+                    <div class="relative h-56 bg-emerald-50 overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1592417817098-8f3d6910a775?q=80&w=600&auto=format&fit=crop" 
+                             alt="Bibit Alpukat Aligator Okulasi" class="w-full h-full object-cover transform hover:scale-105 transition-all duration-500">
+                        <div class="absolute top-3 left-3">
+                            <span class="bg-agro-green text-white text-[10px] font-bold px-2.5 py-1 rounded-md shadow-xs">
+                                Okulasi Super
+                            </span>
+                        </div>
+                        <div class="absolute top-3 right-3 bg-white/95 text-slate-800 text-[10px] font-bold px-2 py-0.5 rounded shadow-xs">
+                            Tinggi 70-80cm
+                        </div>
+                    </div>
+                    <div class="p-5 flex-1 flex flex-col justify-between">
+                        <div>
+                            <div class="flex items-center justify-between text-xs text-slate-500 mb-1">
+                                <span>Buah: <strong>Jumbo 1-1.5 Kg</strong></span>
+                                <span class="text-amber-600 font-bold"><i class="fa-solid fa-star text-amber-400"></i> 4.9 (420+)</span>
+                            </div>
+                            <h3 class="text-base font-bold text-slate-900 font-serif">Alpukat Aligator Okulasi</h3>
+                            <p class="text-xs text-slate-600 mt-1.5 leading-relaxed">
+                                Daging tebal pulen mentega tanpa serat. Batang bawah kokoh dengan sambungan tunas rapat sempurna.
+                            </p>
+                            <div class="mt-3 pt-2.5 border-t border-agro-earthborder text-[11px] text-slate-700 flex items-center justify-between">
+                                <span><i class="fa-solid fa-leaf text-agro-green"></i> 1.5 Th Berbuah</span>
+                                <span class="text-agro-humus font-bold">Polibag 40x40</span>
+                            </div>
+                        </div>
+                        <div class="mt-5 pt-3 border-t border-agro-earthborder flex items-center justify-between">
+                            <div>
+                                <span class="text-[10px] text-slate-400 uppercase">Harga Bibit</span>
+                                <p class="text-base font-black text-agro-green">Rp 55.000</p>
+                            </div>
+                            <a href="detail.html" class="px-3.5 py-2 bg-agro-green hover:bg-agro-greendark text-white text-xs font-bold rounded-xl shadow-xs transition">
+                                Detail Bibit
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product 2: Durian Musang King Kaki Tiga -->
+                <div class="product-item agro-card bg-white rounded-3xl border border-agro-earthborder shadow-xs overflow-hidden flex flex-col justify-between" data-category="bibit" data-name="durian musang king kaki tiga sambung pucuk tinggi 80-100cm manis legit">
+                    <div class="relative h-56 bg-amber-50 overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1592417817098-8f3d6910a775?q=80&w=600&auto=format&fit=crop" 
+                             alt="Durian Musang King Kaki Tiga" class="w-full h-full object-cover transform hover:scale-105 transition-all duration-500">
+                        <div class="absolute top-3 left-3">
+                            <span class="bg-amber-800 text-white text-[10px] font-bold px-2.5 py-1 rounded-md shadow-xs">
+                                Kaki Tiga Super
+                            </span>
+                        </div>
+                        <div class="absolute top-3 right-3 bg-white/95 text-slate-800 text-[10px] font-bold px-2 py-0.5 rounded shadow-xs">
+                            Tinggi 80-100cm
+                        </div>
+                    </div>
+                    <div class="p-5 flex-1 flex flex-col justify-between">
+                        <div>
+                            <div class="flex items-center justify-between text-xs text-slate-500 mb-1">
+                                <span>Rasa: <strong>Manis Legit Pahit</strong></span>
+                                <span class="text-amber-600 font-bold"><i class="fa-solid fa-star text-amber-400"></i> 5.0 (310+)</span>
+                            </div>
+                            <h3 class="text-base font-bold text-slate-900 font-serif">Durian Musang King Kaki 3</h3>
+                            <p class="text-xs text-slate-600 mt-1.5 leading-relaxed">
+                                Tiga batang bawah penyerap hara super cepat. Pertumbuhan lebih cepat dan tahan terpaan angin kencang.
+                            </p>
+                            <div class="mt-3 pt-2.5 border-t border-agro-earthborder text-[11px] text-slate-700 flex items-center justify-between">
+                                <span><i class="fa-solid fa-shield-halved text-amber-700"></i> Tahan Angin</span>
+                                <span class="text-amber-800 font-bold">3 Th Berbuah</span>
+                            </div>
+                        </div>
+                        <div class="mt-5 pt-3 border-t border-agro-earthborder flex items-center justify-between">
+                            <div>
+                                <span class="text-[10px] text-slate-400 uppercase">Harga Bibit</span>
+                                <p class="text-base font-black text-agro-green">Rp 85.000</p>
+                            </div>
+                            <a href="detail.html" class="px-3.5 py-2 bg-amber-800 hover:bg-amber-900 text-white text-xs font-bold rounded-xl shadow-xs transition">
+                                Detail Bibit
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product 3: Mangga Kiojay Okulasi Jumbo -->
+                <div class="product-item agro-card bg-white rounded-3xl border border-agro-earthborder shadow-xs overflow-hidden flex flex-col justify-between" data-category="bibit" data-name="bibit mangga kiojay okulasi jumbo tinggi 70cm manis renyah">
+                    <div class="relative h-56 bg-emerald-50 overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1592417817098-8f3d6910a775?q=80&w=600&auto=format&fit=crop" 
+                             alt="Mangga Kiojay Okulasi" class="w-full h-full object-cover transform hover:scale-105 transition-all duration-500">
+                        <div class="absolute top-3 left-3">
+                            <span class="bg-agro-green text-white text-[10px] font-bold px-2.5 py-1 rounded-md shadow-xs">
+                                Mangga Jumbo
+                            </span>
+                        </div>
+                    </div>
+                    <div class="p-5 flex-1 flex flex-col justify-between">
+                        <div>
+                            <div class="flex items-center justify-between text-xs text-slate-500 mb-1">
+                                <span>Bobot: <strong>1 - 1.2 Kg/Buah</strong></span>
+                                <span class="text-amber-600 font-bold"><i class="fa-solid fa-star text-amber-400"></i> 4.8 (210+)</span>
+                            </div>
+                            <h3 class="text-base font-bold text-slate-900 font-serif">Mangga Kiojay Okulasi 70cm</h3>
+                            <p class="text-xs text-slate-600 mt-1.5 leading-relaxed">
+                                Mangga asal Thailand dengan ukuran buah raksasa. Manis renyah bahkan saat dimakan mentah/mengkel.
+                            </p>
+                            <div class="mt-3 pt-2.5 border-t border-agro-earthborder text-[11px] text-slate-700 flex items-center justify-between">
+                                <span><i class="fa-solid fa-sun text-yellow-600"></i> Tahan Panas</span>
+                                <span class="text-agro-green font-bold">1 Th Berbuah</span>
+                            </div>
+                        </div>
+                        <div class="mt-5 pt-3 border-t border-agro-earthborder flex items-center justify-between">
+                            <div>
+                                <span class="text-[10px] text-slate-400 uppercase">Harga Bibit</span>
+                                <p class="text-base font-black text-agro-green">Rp 50.000</p>
+                            </div>
+                            <a href="detail.html" class="px-3.5 py-2 bg-agro-green hover:bg-agro-greendark text-white text-xs font-bold rounded-xl shadow-xs transition">
+                                Detail Bibit
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product 4: Jeruk Santang Madu Okulasi -->
+                <div class="product-item agro-card bg-white rounded-3xl border border-agro-earthborder shadow-xs overflow-hidden flex flex-col justify-between" data-category="bibit" data-name="bibit jeruk santang madu okulasi tinggi 60cm manis madu tabulampot pot">
+                    <div class="relative h-56 bg-orange-50 overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1592417817098-8f3d6910a775?q=80&w=600&auto=format&fit=crop" 
+                             alt="Jeruk Santang Madu Okulasi" class="w-full h-full object-cover transform hover:scale-105 transition-all duration-500">
+                        <div class="absolute top-3 left-3">
+                            <span class="bg-orange-600 text-white text-[10px] font-bold px-2.5 py-1 rounded-md shadow-xs">
+                                Cocok Tabulampot
+                            </span>
+                        </div>
+                    </div>
+                    <div class="p-5 flex-1 flex flex-col justify-between">
+                        <div>
+                            <div class="flex items-center justify-between text-xs text-slate-500 mb-1">
+                                <span>Rasa: <strong>Manis Madu Juicy</strong></span>
+                                <span class="text-amber-600 font-bold"><i class="fa-solid fa-star text-amber-400"></i> 4.9 (350+)</span>
+                            </div>
+                            <h3 class="text-base font-bold text-slate-900 font-serif">Jeruk Santang Madu 60cm</h3>
+                            <p class="text-xs text-slate-600 mt-1.5 leading-relaxed">
+                                Sangat rajin berbuah lebat di dalam pot teras rumah. Kulit mudah dikupas dengan rasa manis tanpa biji.
+                            </p>
+                            <div class="mt-3 pt-2.5 border-t border-agro-earthborder text-[11px] text-slate-700 flex items-center justify-between">
+                                <span><i class="fa-solid fa-tree text-orange-600"></i> Rajin Berbuah</span>
+                                <span class="text-orange-700 font-bold">Tabulampot</span>
+                            </div>
+                        </div>
+                        <div class="mt-5 pt-3 border-t border-agro-earthborder flex items-center justify-between">
+                            <div>
+                                <span class="text-[10px] text-slate-400 uppercase">Harga Bibit</span>
+                                <p class="text-base font-black text-agro-green">Rp 45.000</p>
+                            </div>
+                            <a href="detail.html" class="px-3.5 py-2 bg-orange-600 hover:bg-orange-700 text-white text-xs font-bold rounded-xl shadow-xs transition">
+                                Detail Bibit
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product 5: Pupuk Kompos Kohe Kambing Matang -->
+                <div class="product-item agro-card bg-white rounded-3xl border border-agro-earthborder shadow-xs overflow-hidden flex flex-col justify-between" data-category="pupuk" data-name="pupuk kompos kohe kambing fermentasi matang suhu 70C halus bebas bau karung 25kg">
+                    <div class="relative h-56 bg-stone-100 overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1592417817098-8f3d6910a775?q=80&w=600&auto=format&fit=crop" 
+                             alt="Pupuk Kompos Kohe Kambing" class="w-full h-full object-cover transform hover:scale-105 transition-all duration-500">
+                        <div class="absolute top-3 left-3">
+                            <span class="bg-agro-humus text-white text-[10px] font-bold px-2.5 py-1 rounded-md shadow-xs">
+                                Fermentasi Matang
+                            </span>
+                        </div>
+                        <div class="absolute top-3 right-3 bg-white/95 text-slate-800 text-[10px] font-bold px-2 py-0.5 rounded shadow-xs">
+                            Karung 25 Kg
+                        </div>
+                    </div>
+                    <div class="p-5 flex-1 flex flex-col justify-between">
+                        <div>
+                            <div class="flex items-center justify-between text-xs text-slate-500 mb-1">
+                                <span>Kondisi: <strong>Halus & Bebas Bau</strong></span>
+                                <span class="text-agro-green font-bold"><i class="fa-solid fa-check text-agro-green"></i> Siap Pakai</span>
+                            </div>
+                            <h3 class="text-base font-bold text-slate-900 font-serif">Kompos Kohe Kambing 25kg</h3>
+                            <p class="text-xs text-slate-600 mt-1.5 leading-relaxed">
+                                Kohe kambing fermentasi suhu 70°C yang digiling halus. Kaya unsur hara Kalium & Fosfor untuk merangsang bunga buah.
+                            </p>
+                            <div class="mt-3 pt-2.5 border-t border-agro-earthborder text-[11px] text-slate-700 flex items-center justify-between">
+                                <span><i class="fa-solid fa-flask text-agro-green"></i> NPK Organik</span>
+                                <span class="text-lime-700 font-bold">Trichoderma</span>
+                            </div>
+                        </div>
+                        <div class="mt-5 pt-3 border-t border-agro-earthborder flex items-center justify-between">
+                            <div>
+                                <span class="text-[10px] text-slate-400 uppercase">Harga Karung 25kg</span>
+                                <p class="text-base font-black text-agro-green">Rp 30.000</p>
+                            </div>
+                            <a href="detail.html" class="px-3.5 py-2 bg-agro-humus hover:bg-agro-humusdark text-white text-xs font-bold rounded-xl shadow-xs transition">
+                                Detail Pupuk
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product 6: Pupuk Kompos Kohe Sapi Granul -->
+                <div class="product-item agro-card bg-white rounded-3xl border border-agro-earthborder shadow-xs overflow-hidden flex flex-col justify-between" data-category="pupuk" data-name="pupuk kompos kohe sapi organik granul karung 25kg pembenah tanah humus">
+                    <div class="relative h-56 bg-stone-100 overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1592417817098-8f3d6910a775?q=80&w=600&auto=format&fit=crop" 
+                             alt="Pupuk Kompos Kohe Sapi" class="w-full h-full object-cover transform hover:scale-105 transition-all duration-500">
+                        <div class="absolute top-3 left-3">
+                            <span class="bg-agro-humus text-white text-[10px] font-bold px-2.5 py-1 rounded-md shadow-xs">
+                                Kohe Sapi Matang
+                            </span>
+                        </div>
+                    </div>
+                    <div class="p-5 flex-1 flex flex-col justify-between">
+                        <div>
+                            <div class="flex items-center justify-between text-xs text-slate-500 mb-1">
+                                <span>Bahan: <strong>Kohe Sapi + Mikroba</strong></span>
+                                <span class="text-agro-green font-bold"><i class="fa-solid fa-star text-amber-400"></i> 4.8 (190+)</span>
+                            </div>
+                            <h3 class="text-base font-bold text-slate-900 font-serif">Kompos Kohe Sapi 25kg</h3>
+                            <p class="text-xs text-slate-600 mt-1.5 leading-relaxed">
+                                Meningkatkan kapasitas tukar kation tanah liat dan pasir. Menggemburkan tanah keras dan menjaga kelembapan mikroorganisme.
+                            </p>
+                            <div class="mt-3 pt-2.5 border-t border-agro-earthborder text-[11px] text-slate-700 flex items-center justify-between">
+                                <span><i class="fa-solid fa-earth-americas text-agro-green"></i> Humus Tinggi</span>
+                                <span class="text-stone-700 font-bold">Gembur Remah</span>
+                            </div>
+                        </div>
+                        <div class="mt-5 pt-3 border-t border-agro-earthborder flex items-center justify-between">
+                            <div>
+                                <span class="text-[10px] text-slate-400 uppercase">Harga Karung 25kg</span>
+                                <p class="text-base font-black text-agro-green">Rp 28.000</p>
+                            </div>
+                            <a href="detail.html" class="px-3.5 py-2 bg-agro-humus hover:bg-agro-humusdark text-white text-xs font-bold rounded-xl shadow-xs transition">
+                                Detail Pupuk
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product 7: POC Bio-Urine Fermentasi -->
+                <div class="product-item agro-card bg-white rounded-3xl border border-agro-earthborder shadow-xs overflow-hidden flex flex-col justify-between" data-category="pupuk" data-name="pupuk organik cair poc bio-urine kelinci sapi fermentasi jerigen 5 liter booster daun">
+                    <div class="relative h-56 bg-emerald-50 overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1592417817098-8f3d6910a775?q=80&w=600&auto=format&fit=crop" 
+                             alt="POC Bio-Urine Fermentasi" class="w-full h-full object-cover transform hover:scale-105 transition-all duration-500">
+                        <div class="absolute top-3 left-3">
+                            <span class="bg-lime-700 text-white text-[10px] font-bold px-2.5 py-1 rounded-md shadow-xs">
+                                POC Konsentrat
+                            </span>
+                        </div>
+                    </div>
+                    <div class="p-5 flex-1 flex flex-col justify-between">
+                        <div>
+                            <div class="flex items-center justify-between text-xs text-slate-500 mb-1">
+                                <span>Kemasan: <strong>Jerigen 5 Liter</strong></span>
+                                <span class="text-lime-700 font-bold"><i class="fa-solid fa-bolt text-lime-600"></i> Fast Acting</span>
+                            </div>
+                            <h3 class="text-base font-bold text-slate-900 font-serif">POC Bio-Urine 5 Liter</h3>
+                            <p class="text-xs text-slate-600 mt-1.5 leading-relaxed">
+                                Pupuk organik cair fermentasi urine hewan ternak dengan EM4 & rempah herbal. Disemprot ke daun untuk mempercepat tunas baru.
+                            </p>
+                            <div class="mt-3 pt-2.5 border-t border-agro-earthborder text-[11px] text-slate-700 flex items-center justify-between">
+                                <span><i class="fa-solid fa-spray-can text-lime-700"></i> Semprot Daun</span>
+                                <span class="text-agro-green font-bold">Nitrogen Tinggi</span>
+                            </div>
+                        </div>
+                        <div class="mt-5 pt-3 border-t border-agro-earthborder flex items-center justify-between">
+                            <div>
+                                <span class="text-[10px] text-slate-400 uppercase">Harga Jerigen 5L</span>
+                                <p class="text-base font-black text-agro-green">Rp 45.000</p>
+                            </div>
+                            <a href="detail.html" class="px-3.5 py-2 bg-lime-700 hover:bg-lime-800 text-white text-xs font-bold rounded-xl shadow-xs transition">
+                                Detail POC
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product 8: Media Tanam Super 7-in-1 -->
+                <div class="product-item agro-card bg-white rounded-3xl border border-agro-earthborder shadow-xs overflow-hidden flex flex-col justify-between" data-category="media" data-name="media tanam super 7-in-1 siap pakai karung 15kg tanah sekam cocopeat kompos">
+                    <div class="relative h-56 bg-emerald-50 overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1592417817098-8f3d6910a775?q=80&w=600&auto=format&fit=crop" 
+                             alt="Media Tanam Super 7-in-1" class="w-full h-full object-cover transform hover:scale-105 transition-all duration-500">
+                        <div class="absolute top-3 left-3">
+                            <span class="bg-agro-green text-white text-[10px] font-bold px-2.5 py-1 rounded-md shadow-xs">
+                                Siap Pakai Langsung
+                            </span>
+                        </div>
+                    </div>
+                    <div class="p-5 flex-1 flex flex-col justify-between">
+                        <div>
+                            <div class="flex items-center justify-between text-xs text-slate-500 mb-1">
+                                <span>Komposisi: <strong>7 Bahan Organik</strong></span>
+                                <span class="text-amber-600 font-bold"><i class="fa-solid fa-star text-amber-400"></i> 4.9 (560+)</span>
+                            </div>
+                            <h3 class="text-base font-bold text-slate-900 font-serif">Media Tanam Super 15kg</h3>
+                            <p class="text-xs text-slate-600 mt-1.5 leading-relaxed">
+                                Formulasi tanah subur, sekam bakar, cocopeat, kompos matang, dolomit, & bakteri pengurai. Porositas sempurna tanpa perlu campur lagi.
+                            </p>
+                            <div class="mt-3 pt-2.5 border-t border-agro-earthborder text-[11px] text-slate-700 flex items-center justify-between">
+                                <span><i class="fa-solid fa-droplet text-blue-600"></i> Porous Bagus</span>
+                                <span class="text-agro-green font-bold">Praktis Tabulampot</span>
+                            </div>
+                        </div>
+                        <div class="mt-5 pt-3 border-t border-agro-earthborder flex items-center justify-between">
+                            <div>
+                                <span class="text-[10px] text-slate-400 uppercase">Harga Karung 15kg</span>
+                                <p class="text-base font-black text-agro-green">Rp 22.000</p>
+                            </div>
+                            <a href="detail.html" class="px-3.5 py-2 bg-agro-green hover:bg-agro-greendark text-white text-xs font-bold rounded-xl shadow-xs transition">
+                                Detail Media
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product 9: Arang Sekam Padi Bakar Murni -->
+                <div class="product-item agro-card bg-white rounded-3xl border border-agro-earthborder shadow-xs overflow-hidden flex flex-col justify-between" data-category="media" data-name="arang sekam padi bakar murni karung 10kg porous antijamur akar">
+                    <div class="relative h-56 bg-stone-100 overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1592417817098-8f3d6910a775?q=80&w=600&auto=format&fit=crop" 
+                             alt="Arang Sekam Bakar Murni" class="w-full h-full object-cover transform hover:scale-105 transition-all duration-500">
+                        <div class="absolute top-3 left-3">
+                            <span class="bg-stone-800 text-white text-[10px] font-bold px-2.5 py-1 rounded-md shadow-xs">
+                                Sekam Bakar Murni
+                            </span>
+                        </div>
+                    </div>
+                    <div class="p-5 flex-1 flex flex-col justify-between">
+                        <div>
+                            <div class="flex items-center justify-between text-xs text-slate-500 mb-1">
+                                <span>Bahan: <strong>Kulit Padi Hitam Murni</strong></span>
+                                <span class="text-stone-700 font-bold"><i class="fa-solid fa-shield text-stone-600"></i> Antijamur</span>
+                            </div>
+                            <h3 class="text-base font-bold text-slate-900 font-serif">Arang Sekam Bakar 10kg</h3>
+                            <p class="text-xs text-slate-600 mt-1.5 leading-relaxed">
+                                Dibakar sempurna tanpa abu berlebih. Mengandung silika tinggi yang memperkuat dinding sel tanaman dan mencegah jamur busuk akar.
+                            </p>
+                            <div class="mt-3 pt-2.5 border-t border-agro-earthborder text-[11px] text-slate-700 flex items-center justify-between">
+                                <span><i class="fa-solid fa-wind text-stone-600"></i> Aerasi Akar</span>
+                                <span class="text-stone-800 font-bold">Silika Organik</span>
+                            </div>
+                        </div>
+                        <div class="mt-5 pt-3 border-t border-agro-earthborder flex items-center justify-between">
+                            <div>
+                                <span class="text-[10px] text-slate-400 uppercase">Harga Karung 10kg</span>
+                                <p class="text-base font-black text-agro-green">Rp 18.000</p>
+                            </div>
+                            <a href="detail.html" class="px-3.5 py-2 bg-stone-800 hover:bg-stone-900 text-white text-xs font-bold rounded-xl shadow-xs transition">
+                                Detail Sekam
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product 10: Cocopeat Serat Halus Rendah Tanin -->
+                <div class="product-item agro-card bg-white rounded-3xl border border-agro-earthborder shadow-xs overflow-hidden flex flex-col justify-between" data-category="media" data-name="cocopeat serat kelapa halus rendah tanin karung 15kg simpan air akar">
+                    <div class="relative h-56 bg-amber-50 overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1592417817098-8f3d6910a775?q=80&w=600&auto=format&fit=crop" 
+                             alt="Cocopeat Serat Kelapa Halus" class="w-full h-full object-cover transform hover:scale-105 transition-all duration-500">
+                        <div class="absolute top-3 left-3">
+                            <span class="bg-amber-800 text-white text-[10px] font-bold px-2.5 py-1 rounded-md shadow-xs">
+                                Low EC (Dicuci Bersih)
+                            </span>
+                        </div>
+                    </div>
+                    <div class="p-5 flex-1 flex flex-col justify-between">
+                        <div>
+                            <div class="flex items-center justify-between text-xs text-slate-500 mb-1">
+                                <span>Kadar EC: <strong>< 0.5 mS/cm (Aman)</strong></span>
+                                <span class="text-amber-700 font-bold"><i class="fa-solid fa-droplet text-blue-500"></i> Simpan Air</span>
+                            </div>
+                            <h3 class="text-base font-bold text-slate-900 font-serif">Cocopeat Halus Low EC 15kg</h3>
+                            <p class="text-xs text-slate-600 mt-1.5 leading-relaxed">
+                                Serbuk sabut kelapa yang telah dicuci bebas zat tanin penghambat tumbuh. Menyimpan air 8x lipat bobotnya untuk media semai bibit.
+                            </p>
+                            <div class="mt-3 pt-2.5 border-t border-agro-earthborder text-[11px] text-slate-700 flex items-center justify-between">
+                                <span><i class="fa-solid fa-seedling text-amber-700"></i> Media Semai</span>
+                                <span class="text-amber-800 font-bold">Bebas Tanin</span>
+                            </div>
+                        </div>
+                        <div class="mt-5 pt-3 border-t border-agro-earthborder flex items-center justify-between">
+                            <div>
+                                <span class="text-[10px] text-slate-400 uppercase">Harga Karung 15kg</span>
+                                <p class="text-base font-black text-agro-green">Rp 20.000</p>
+                            </div>
+                            <a href="detail.html" class="px-3.5 py-2 bg-amber-800 hover:bg-amber-900 text-white text-xs font-bold rounded-xl shadow-xs transition">
+                                Detail Cocopeat
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product 11: Silase Jagung Pakan Ternak Fermentasi -->
+                <div class="product-item agro-card bg-white rounded-3xl border border-agro-earthborder shadow-xs overflow-hidden flex flex-col justify-between" data-category="pakan" data-name="silase jagung pakan ternak fermentasi sak 40kg protein tinggi pakan sapi kambing">
+                    <div class="relative h-56 bg-lime-50 overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1592417817098-8f3d6910a775?q=80&w=600&auto=format&fit=crop" 
+                             alt="Silase Jagung Pakan Ternak" class="w-full h-full object-cover transform hover:scale-105 transition-all duration-500">
+                        <div class="absolute top-3 left-3">
+                            <span class="bg-lime-700 text-white text-[10px] font-bold px-2.5 py-1 rounded-md shadow-xs">
+                                Silase Jagung Utuh
+                            </span>
+                        </div>
+                        <div class="absolute top-3 right-3 bg-white/95 text-slate-800 text-[10px] font-bold px-2 py-0.5 rounded shadow-xs">
+                            Sak Kedap 40 Kg
+                        </div>
+                    </div>
+                    <div class="p-5 flex-1 flex flex-col justify-between">
+                        <div>
+                            <div class="flex items-center justify-between text-xs text-slate-500 mb-1">
+                                <span>Protein Kasar: <strong>9.5% Digestible</strong></span>
+                                <span class="text-lime-700 font-bold"><i class="fa-solid fa-cow text-lime-700"></i> Pakan Ruminansia</span>
+                            </div>
+                            <h3 class="text-base font-bold text-slate-900 font-serif">Silase Jagung Fermentasi 40kg</h3>
+                            <p class="text-xs text-slate-600 mt-1.5 leading-relaxed">
+                                Batang, daun dan tongkol jagung manis yang dicacah dan difermentasi anaerob. Aroma asam manis harum disukai sapi & kambing.
+                            </p>
+                            <div class="mt-3 pt-2.5 border-t border-agro-earthborder text-[11px] text-slate-700 flex items-center justify-between">
+                                <span><i class="fa-solid fa-box text-lime-700"></i> Kedap Udara</span>
+                                <span class="text-lime-800 font-bold">Awet 6 Bulan</span>
+                            </div>
+                        </div>
+                        <div class="mt-5 pt-3 border-t border-agro-earthborder flex items-center justify-between">
+                            <div>
+                                <span class="text-[10px] text-slate-400 uppercase">Harga Sak 40kg</span>
+                                <p class="text-base font-black text-agro-green">Rp 70.000</p>
+                            </div>
+                            <a href="detail.html" class="px-3.5 py-2 bg-lime-700 hover:bg-lime-800 text-white text-xs font-bold rounded-xl shadow-xs transition">
+                                Detail Silase
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product 12: Konsentrat Pakan Penggemukan Ruminansia -->
+                <div class="product-item agro-card bg-white rounded-3xl border border-agro-earthborder shadow-xs overflow-hidden flex flex-col justify-between" data-category="pakan" data-name="konsentrat pakan ternak fermentasi penggemukan sapi kambing domba sak 50kg protein 14%">
+                    <div class="relative h-56 bg-amber-50 overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1592417817098-8f3d6910a775?q=80&w=600&auto=format&fit=crop" 
+                             alt="Konsentrat Pakan Ternak" class="w-full h-full object-cover transform hover:scale-105 transition-all duration-500">
+                        <div class="absolute top-3 left-3">
+                            <span class="bg-amber-900 text-white text-[10px] font-bold px-2.5 py-1 rounded-md shadow-xs">
+                                Konsentrat Super
+                            </span>
+                        </div>
+                        <div class="absolute top-3 right-3 bg-white/95 text-slate-800 text-[10px] font-bold px-2 py-0.5 rounded shadow-xs">
+                            Sak 50 Kg
+                        </div>
+                    </div>
+                    <div class="p-5 flex-1 flex flex-col justify-between">
+                        <div>
+                            <div class="flex items-center justify-between text-xs text-slate-500 mb-1">
+                                <span>Protein Kasar: <strong>14.2% PK Tinggi</strong></span>
+                                <span class="text-amber-800 font-bold"><i class="fa-solid fa-weight-scale text-amber-700"></i> Fast Fattening</span>
+                            </div>
+                            <h3 class="text-base font-bold text-slate-900 font-serif">Konsentrat Penggemukan 50kg</h3>
+                            <p class="text-xs text-slate-600 mt-1.5 leading-relaxed">
+                                Formulasi bungkil kelapa sawit, dedak gandum, jagung giling, molasses, & premix mineral untuk percepatan bobot sapi potong dan domba.
+                            </p>
+                            <div class="mt-3 pt-2.5 border-t border-agro-earthborder text-[11px] text-slate-700 flex items-center justify-between">
+                                <span><i class="fa-solid fa-arrow-trend-up text-amber-700"></i> ADG 1.2 Kg/Hari</span>
+                                <span class="text-amber-900 font-bold">Premium Feed</span>
+                            </div>
+                        </div>
+                        <div class="mt-5 pt-3 border-t border-agro-earthborder flex items-center justify-between">
+                            <div>
+                                <span class="text-[10px] text-slate-400 uppercase">Harga Sak 50kg</span>
+                                <p class="text-base font-black text-agro-green">Rp 185.000</p>
+                            </div>
+                            <a href="detail.html" class="px-3.5 py-2 bg-amber-900 hover:bg-amber-950 text-white text-xs font-bold rounded-xl shadow-xs transition">
+                                Detail Pakan
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- No results message -->
+            <div id="noResults" class="hidden py-16 text-center">
+                <div class="w-16 h-16 rounded-full bg-emerald-100 text-agro-green flex items-center justify-center mx-auto text-2xl mb-3">
+                    <i class="fa-solid fa-plant-wilt"></i>
+                </div>
+                <h3 class="text-lg font-bold text-slate-900 font-serif">Produk Tidak Ditemukan</h3>
+                <p class="text-xs text-slate-500 mt-1">Coba gunakan kata kunci lain seperti 'alpukat', 'durian', 'kompos', atau 'pakan'.</p>
+                <button onclick="resetAgroFilter()" class="mt-4 px-5 py-2.5 bg-agro-green text-white font-bold text-xs rounded-xl hover:bg-agro-greendark transition">
+                    Tampilkan Semua Produk
+                </button>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- 6. B2B BULK TRUCKLOAD BANNER -->
+    <section class="py-14 bg-white border-t border-agro-earthborder">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="bg-gradient-to-r from-agro-humusdark via-agro-humus to-stone-900 rounded-3xl p-8 sm:p-12 text-white flex flex-col lg:flex-row items-center justify-between gap-8 shadow-xl">
+                <div class="space-y-3 max-w-2xl text-center lg:text-left">
+                    <span class="px-3 py-1 bg-emerald-800 text-lime-200 text-[10px] font-extrabold uppercase tracking-wider rounded-md">
+                        LAYANAN TRUKASE PERKEBUNAN 5 – 10 TON
+                    </span>
+                    <h2 class="text-2xl sm:text-3xl font-extrabold font-serif leading-tight">
+                        Pengadaan Bibit Skala Hektar & Pasokan Kompos Partai Truk Kargo
+                    </h2>
+                    <p class="text-emerald-100/80 text-xs sm:text-sm leading-relaxed">
+                        Dapatkan penawaran harga grosir khusus untuk pembukaan kebun baru, peremajaan tanaman, pengadaan pupuk proyek pemerintah/CSR, lengkap dengan surat jalan karantina dan garansi bibit hidup.
+                    </p>
+                </div>
+                <div class="flex flex-col sm:flex-row gap-3.5 w-full lg:w-auto shrink-0">
+                    <a href="https://wa.me/6281234567890?text=Halo%20Tim%20B2B%20Agro%20Subur,%20saya%20ingin%20tanya%20harga%20partai%20trukase." 
+                       target="_blank"
+                       class="inline-flex items-center justify-center gap-2.5 px-6 py-4 bg-agro-green hover:bg-agro-greendark text-white font-bold text-xs uppercase tracking-wider rounded-2xl shadow-lg transition text-center">
+                        <i class="fa-brands fa-whatsapp text-base"></i>
+                        <span>Minta Penawaran Trukase</span>
+                    </a>
+                    <a href="kontak.html" 
+                       class="inline-flex items-center justify-center gap-2 px-5 py-4 bg-white/10 hover:bg-white/20 text-white font-bold text-xs rounded-2xl border border-white/20 transition text-center">
+                        <span>Lokasi Nursery & Maps</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 7. FOOTER -->
+    <footer class="bg-agro-humusdark text-stone-300 text-xs pt-16 pb-36 border-t border-stone-900 font-sans">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-10 pb-12 border-b border-stone-800">
+                <div class="lg:col-span-2 space-y-4">
+                    <a href="index.html" class="flex items-center gap-3">
+                        <div class="w-10 h-10 bg-gradient-to-br from-agro-green to-agro-humus text-white flex items-center justify-center text-xl font-bold rounded-xl">
+                            <i class="fa-solid fa-plant-wilt text-lime-300"></i>
+                        </div>
+                        <span class="text-2xl font-extrabold text-white tracking-tight font-serif">
+                            AGRO SUBUR<span class="text-agro-green">.</span>
+                        </span>
+                    </a>
+                    <p class="text-xs text-stone-400 leading-relaxed max-w-sm">
+                        Pusat pembibitan tanaman buah unggul perbanyakan okulasi bersertifikat Balitbang dan produsen pupuk kompos organik fermentasi suhu tinggi bebas patogen. Solusi kesuburan tanah dan keberhasilan panen perkebunan modern Indonesia.
+                    </p>
+                </div>
+                <div>
+                    <h4 class="text-xs font-bold text-white uppercase tracking-wider mb-4 font-serif">Navigasi Halaman</h4>
+                    <ul class="space-y-2.5">
+                        <li><a href="index.html" class="hover:text-lime-400 transition">Beranda Utama</a></li>
+                        <li><a href="katalog.html" class="hover:text-lime-400 transition">Katalog Bibit & Pupuk</a></li>
+                        <li><a href="detail.html" class="hover:text-lime-400 transition">Detail Bibit Alpukat</a></li>
+                        <li><a href="tentang.html" class="hover:text-lime-400 transition">Kebun Balitbang & Kompos</a></li>
+                        <li><a href="artikel.html" class="hover:text-lime-400 transition">Panduan Tabulampot</a></li>
+                        <li><a href="kontak.html" class="hover:text-lime-400 transition">Nursery & Trukase Proyek</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-xs font-bold text-white uppercase tracking-wider mb-4 font-serif">Produk Unggulan</h4>
+                    <ul class="space-y-2.5">
+                        <li><a href="detail.html" class="hover:text-lime-400 transition">Bibit Alpukat Aligator Okulasi</a></li>
+                        <li><a href="detail.html" class="hover:text-lime-400 transition">Durian Musang King Kaki Tiga</a></li>
+                        <li><a href="katalog.html" class="hover:text-lime-400 transition">Bibit Mangga Kiojay Super Jumbo</a></li>
+                        <li><a href="katalog.html" class="hover:text-lime-400 transition">Pupuk Kompos Kohe Kambing 25kg</a></li>
+                        <li><a href="katalog.html" class="hover:text-lime-400 transition">Media Tanam Super 7-in-1 Siap Pakai</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-xs font-bold text-white uppercase tracking-wider mb-4 font-serif">Kebun Nursery Pusat</h4>
+                    <p class="text-xs text-stone-400 leading-relaxed mb-3">
+                        Kawasan Pembibitan Hortikultura, Jl. Agrobisnis Raya No. 25, Majalengka, Jawa Barat 45411 / Depot Pupuk: Jl. Raya Pantura No. 108, Cirebon.
+                    </p>
+                    <p class="text-xs text-lime-400 font-bold mb-1"><i class="fa-solid fa-phone mr-1.5"></i> +62 812-3456-7890</p>
+                    <p class="text-xs text-stone-400"><i class="fa-solid fa-envelope mr-1.5"></i> order@agrosuburmakmur.com</p>
+                </div>
+            </div>
+            <div class="pt-8 flex flex-col sm:flex-row items-center justify-between gap-4 text-[11px] text-stone-500">
+                <p>&copy; 2026 AGRO SUBUR MAKMUR. All rights reserved.</p>
+                <div class="flex items-center gap-4">
+                    <span>100% Certified Grafted Variety</span>
+                    <span>•</span>
+                    <span>Fermentasi Suhu 70°C Bebas Bau</span>
+                    <span>•</span>
+                    <span>Packing Kayu Ekspedisi Aman</span>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- 8. FLOATING WHATSAPP BUTTON (bottom-24) -->
+    <div class="fixed bottom-24 right-5 z-40">
+        <a href="https://wa.me/6281234567890?text=Halo%20Admin%20Agro%20Subur,%20saya%20ingin%20tanya%20stok%20katalog%20bibit." 
+           target="_blank" 
+           aria-label="Chat WhatsApp Agro Subur Makmur"
+           class="group flex items-center gap-3 bg-gradient-to-r from-agro-green to-emerald-800 hover:from-emerald-700 hover:to-emerald-900 text-white px-4 py-3.5 rounded-full shadow-2xl transition-all transform hover:scale-105 border-2 border-white/80">
+            <i class="fa-brands fa-whatsapp text-2xl animate-pulse"></i>
+            <span class="text-xs font-bold tracking-wide pr-1 hidden sm:inline">Pesan Bibit & Pupuk WA</span>
+        </a>
+    </div>
+
+    <!-- 9. STICKY DEMO & SALES BAR (fixed bottom-4) -->
+    <div class="fixed bottom-4 left-4 right-4 z-50 max-w-5xl mx-auto">
+      <div class="bg-agro-humusdark/95 backdrop-blur-md text-white px-4 sm:px-6 py-3.5 rounded-2xl shadow-2xl border border-stone-800 flex flex-col md:flex-row items-center justify-between gap-3">
+        <div class="flex items-center gap-3 text-left w-full md:w-auto">
+          <div class="w-9 h-9 rounded-xl bg-emerald-500/20 border border-emerald-400/40 flex items-center justify-center shrink-0">
+            <i class="fa-solid fa-plant-wilt text-lime-400 text-sm"></i>
+          </div>
+          <div>
+            <div class="text-xs md:text-sm font-bold text-stone-100 flex items-center gap-2">
+              <span>Lentera Pasar Demo</span>
+              <span class="text-[10px] px-2 py-0.5 rounded bg-emerald-500/20 text-lime-300 font-bold">Katalog Bibit & Kompos</span>
+            </div>
+            <p class="text-[11px] text-stone-400 hidden sm:block">Desain Bio-Fertilizer & Plant Nursery Hub untuk bibit buah okulasi, pupuk kompos, & pakan ternak.</p>
+          </div>
+        </div>
+        <div class="flex items-center gap-3 w-full md:w-auto justify-end">
+          <a href="https://wa.me/6281234567890?text=Halo%20Tim%20Lentera%20Pasar,%20saya%20tertarik%20menggunakan%20template%20website%20Nursery%20dan%20Pupuk%20ini." 
+             target="_blank"
+             class="w-full md:w-auto inline-flex items-center justify-center gap-2 bg-gradient-to-r from-agro-green to-emerald-800 hover:from-emerald-700 hover:to-emerald-900 text-white text-xs md:text-sm font-bold px-5 py-2.5 rounded-xl shadow-lg transition-all hover:scale-105 shrink-0">
+            <span>Gunakan Template Ini</span>
+            <i class="fa-solid fa-arrow-right text-xs"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <!-- JAVASCRIPT FILTER & SEARCH -->
+    <script>
+        const mobileMenuBtn = document.getElementById('mobileMenuBtn');
+        const mobileMenu = document.getElementById('mobileMenu');
+        const menuIcon = document.getElementById('menuIcon');
+
+        mobileMenuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+            if (mobileMenu.classList.contains('hidden')) {
+                menuIcon.classList.remove('fa-xmark');
+                menuIcon.classList.add('fa-bars');
+            } else {
+                menuIcon.classList.remove('fa-bars');
+                menuIcon.classList.add('fa-xmark');
+            }
+        });
+
+        function filterAgro(cat) {
+            const items = document.querySelectorAll('.product-item');
+            const buttons = document.querySelectorAll('.cat-btn');
+
+            buttons.forEach(b => {
+                b.className = "cat-btn px-4 py-2 rounded-xl text-xs font-bold transition bg-emerald-50 text-slate-700 hover:bg-emerald-100 shrink-0";
+            });
+            const activeBtn = document.getElementById(`btn-${cat}`);
+            if (activeBtn) {
+                activeBtn.className = "cat-btn px-4 py-2 rounded-xl text-xs font-bold transition bg-agro-green text-white shadow-xs shrink-0";
+            }
+
+            let count = 0;
+            items.forEach(item => {
+                const itemCat = item.getAttribute('data-category');
+                if (cat === 'all' || itemCat === cat) {
+                    item.classList.remove('hidden');
+                    count++;
+                } else {
+                    item.classList.add('hidden');
+                }
+            });
+
+            const noResults = document.getElementById('noResults');
+            if (count === 0) {
+                noResults.classList.remove('hidden');
+            } else {
+                noResults.classList.add('hidden');
+            }
+        }
+
+        function searchAgro() {
+            const query = document.getElementById('searchInput').value.toLowerCase();
+            const items = document.querySelectorAll('.product-item');
+            let count = 0;
+
+            items.forEach(item => {
+                const name = item.getAttribute('data-name').toLowerCase();
+                if (name.includes(query)) {
+                    item.classList.remove('hidden');
+                    count++;
+                } else {
+                    item.classList.add('hidden');
+                }
+            });
+
+            const noResults = document.getElementById('noResults');
+            if (count === 0) {
+                noResults.classList.remove('hidden');
+            } else {
+                noResults.classList.add('hidden');
+            }
+        }
+
+        function resetAgroFilter() {
+            document.getElementById('searchInput').value = '';
+            filterAgro('all');
+        }
+    </script>
+</body>
+</html>
