@@ -1,0 +1,529 @@
+<!DOCTYPE html>
+<html lang="id" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulasi & Panduan Bahan Bakery // NUTRABAKE INGREDIENTS</title>
+    <meta name="description" content="Edukasi formulasi bakery industri: Panduan emulsifier SP/Ovalet, ragi fermentasi high-sugar, melting point margarin, dan cokelat bake-stable.">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800;900&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome 6 -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        nutra: {
+                            cream: '#FBF9F4',
+                            white: '#FFFFFF',
+                            teal: '#115E59',
+                            tealdark: '#0F766E',
+                            teallight: '#0D9488',
+                            tealbg: '#F0FDFA',
+                            amber: '#B45309',
+                            amberbg: '#FEF3C7',
+                            amberlight: '#F59E0B',
+                            slate: '#475569',
+                            border: '#E2E8F0',
+                            dark: '#0F172A',
+                            softgray: '#F8FAFC'
+                        }
+                    },
+                    fontFamily: {
+                        sans: ['"Plus Jakarta Sans"', 'sans-serif'],
+                        tech: ['"Inter"', 'sans-serif']
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        .no-scrollbar::-webkit-scrollbar { display: none; }
+        .no-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
+
+        .nutra-card-hover {
+            transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+        }
+        .nutra-card-hover:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 20px 35px -10px rgba(17, 94, 89, 0.12);
+            border-color: #115E59;
+        }
+    </style>
+</head>
+<body class="bg-nutra-cream text-slate-800 font-sans antialiased selection:bg-nutra-teal selection:text-white">
+
+    <!-- 1. TOP QUALITY BAR -->
+    <div class="bg-nutra-teal text-teal-50 text-xs py-2.5 px-4 font-sans font-medium border-b border-teal-800">
+        <div class="max-w-7xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-2 text-center sm:text-left">
+            <div class="flex items-center justify-center gap-2">
+                <span class="px-2 py-0.5 bg-nutra-amber text-white text-[10px] uppercase font-black tracking-wider rounded-xs shadow-xs flex items-center gap-1 font-tech">
+                    <i class="fa-solid fa-graduation-cap"></i> FOOD SCIENCE JOURNAL
+                </span>
+                <span class="text-teal-100 font-medium">Panduan Formulasi Bakery & Rekayasa Tekstur Makanan Olahan • Disusun oleh R&D Nutrabake</span>
+            </div>
+            <div class="flex items-center gap-4 text-xs font-tech">
+                <a href="katalog.html" class="text-amber-300 hover:underline font-bold transition flex items-center gap-1">
+                    Katalog Bahan Baku <i class="fa-solid fa-arrow-right text-[10px]"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- 2. NAVBAR INGREDIENTS LAB -->
+    <header class="sticky top-0 z-40 bg-white/98 backdrop-blur-md border-b border-nutra-border transition-all shadow-xs">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-20 sm:h-24">
+                
+                <!-- Logo -->
+                <a href="index.html" class="flex items-center gap-3.5 group">
+                    <div class="w-12 h-12 bg-gradient-to-br from-nutra-teal to-teal-900 text-white flex items-center justify-center text-2xl font-bold rounded-xl shadow-md group-hover:scale-105 transition border border-teal-500/30">
+                        <i class="fa-solid fa-wheat-awn text-amber-300"></i>
+                    </div>
+                    <div class="flex flex-col">
+                        <span class="text-2xl sm:text-3xl font-extrabold tracking-tight text-nutra-teal uppercase leading-none font-sans">
+                            NUTRABAKE<span class="text-nutra-amber">.</span>
+                        </span>
+                        <span class="text-[9px] tracking-[0.25em] text-nutra-amber font-bold uppercase mt-1 font-tech">
+                            INDUSTRIAL FOOD INGREDIENTS
+                        </span>
+                    </div>
+                </a>
+
+                <!-- Desktop Navigation Links -->
+                <nav class="hidden lg:flex items-center gap-7 text-xs font-bold tracking-wider uppercase text-slate-700 font-sans">
+                    <a href="index.html" class="hover:text-nutra-teal transition">Beranda</a>
+                    <a href="katalog.html" class="hover:text-nutra-teal transition">Katalog Bahan Baku</a>
+                    <a href="detail.html" class="hover:text-nutra-teal transition">Spesifikasi COA & Lemak</a>
+                    <a href="tentang.html" class="hover:text-nutra-teal transition">Gudang Suhu AC & CPPOB</a>
+                    <a href="artikel.html" class="text-nutra-teal border-b-2 border-nutra-teal pb-1 font-bold">Formulasi & Tekstur Roti</a>
+                    <a href="kontak.html" class="hover:text-nutra-teal transition">Showroom & Sample R&D</a>
+                </nav>
+
+                <!-- Actions -->
+                <div class="hidden sm:flex items-center gap-3">
+                    <a href="https://wa.me/6281234567890?text=Halo%20Nutrabake,%20saya%20ingin%20tanya%20seputar%20artikel%20formulasi." 
+                       target="_blank"
+                       class="inline-flex items-center gap-2 px-4 py-2.5 bg-nutra-teal hover:bg-nutra-tealdark text-xs font-bold text-white rounded-xl transition shadow-md hover:shadow-lg font-tech">
+                        <i class="fa-brands fa-whatsapp text-emerald-400 text-base"></i>
+                        <span>Technical Baker WA</span>
+                    </a>
+                </div>
+
+                <!-- Mobile Menu Button -->
+                <div class="flex lg:hidden items-center gap-2">
+                    <a href="https://wa.me/6281234567890" target="_blank" class="p-2.5 bg-nutra-tealbg text-nutra-teal rounded-xl text-sm">
+                        <i class="fa-brands fa-whatsapp"></i>
+                    </a>
+                    <button id="mobileMenuBtn" class="p-2.5 text-slate-700 hover:text-nutra-teal focus:outline-hidden rounded-xl bg-slate-100">
+                        <i id="menuIcon" class="fa-solid fa-bars text-xl"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Mobile Dropdown Menu -->
+        <div id="mobileMenu" class="hidden lg:hidden border-t border-nutra-border bg-white px-6 py-5 shadow-xl">
+            <div class="flex flex-col gap-4 text-sm font-bold uppercase text-slate-700">
+                <a href="index.html" class="hover:text-nutra-teal transition flex items-center justify-between">
+                    <span>Beranda Utama</span>
+                    <i class="fa-solid fa-chevron-right text-xs"></i>
+                </a>
+                <a href="katalog.html" class="hover:text-nutra-teal transition flex items-center justify-between">
+                    <span>Katalog Bahan Baku Bakery</span>
+                    <i class="fa-solid fa-chevron-right text-xs"></i>
+                </a>
+                <a href="detail.html" class="hover:text-nutra-teal transition flex items-center justify-between">
+                    <span>Detail COA & Kemasan Pail 15kg</span>
+                    <i class="fa-solid fa-chevron-right text-xs"></i>
+                </a>
+                <a href="tentang.html" class="hover:text-nutra-teal transition flex items-center justify-between">
+                    <span>Gudang Suhu AC & Standar CPPOB</span>
+                    <i class="fa-solid fa-chevron-right text-xs"></i>
+                </a>
+                <a href="artikel.html" class="text-nutra-teal flex items-center justify-between">
+                    <span>Panduan Formulasi & Emulsifier</span>
+                    <i class="fa-solid fa-chevron-right text-xs"></i>
+                </a>
+                <a href="kontak.html" class="hover:text-nutra-teal transition flex items-center justify-between">
+                    <span>Showroom & Request Sample R&D</span>
+                    <i class="fa-solid fa-chevron-right text-xs"></i>
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- 3. PAGE BANNER -->
+    <section class="py-12 bg-white border-b border-nutra-border">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="max-w-3xl">
+                <span class="px-3 py-1 bg-nutra-tealbg text-nutra-teal text-xs font-bold uppercase rounded-md tracking-wider font-tech border border-teal-200">
+                    BAKERY FORMULATION & FOOD SCIENCE
+                </span>
+                <h1 class="text-3xl sm:text-5xl font-extrabold text-nutra-teal font-sans mt-3 mb-3 leading-tight">
+                    Panduan Formulasi & Rekayasa Tekstur
+                </h1>
+                <p class="text-slate-600 text-sm sm:text-base leading-relaxed font-light">
+                    Wawasan teknis untuk tim R&D pangan, master baker, dan pemilik pabrik makanan: Membedakan fungsi Cake Emulsifier SP vs Ovalet, memaksimalkan daya fermentasi ragi high-sugar, dan peran titik leleh lemak nabati.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- 4. FEATURED ARTICLE 1: MEMILIH CAKE EMULSIFIER -->
+    <section class="py-12 md:py-16 bg-nutra-cream border-b border-nutra-border">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="bg-white rounded-2xl p-6 sm:p-10 border border-nutra-border shadow-md grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
+                
+                <div class="lg:col-span-7 space-y-4 font-sans">
+                    <div class="flex items-center gap-2 font-tech">
+                        <span class="px-2.5 py-0.5 bg-nutra-amber text-white text-[10px] font-bold uppercase rounded-md">
+                            EMULSIFICATION SCIENCE
+                        </span>
+                        <span class="text-xs text-slate-500">5 Menit Baca • Disusun oleh R&D Nutrabake</span>
+                    </div>
+                    
+                    <h2 class="text-2xl sm:text-3xl font-extrabold text-nutra-teal leading-snug">
+                        Panduan Memilih Cake Emulsifier: Perbedaan SP vs Ovalet vs TBM untuk Sponge Cake Lembut
+                    </h2>
+
+                    <p class="text-xs sm:text-sm text-slate-600 leading-relaxed font-light">
+                        Dalam produksi cake komersial skala besar, emulsifier berfungsi menyatukan molekul lemak dan air pada adonan telur sehingga memerangkap gelembung udara secara stabil:
+                    </p>
+
+                    <div class="space-y-3 bg-nutra-softgray p-5 rounded-2xl border border-slate-200 text-xs font-tech text-slate-700 font-light">
+                        <div class="flex items-start gap-2.5">
+                            <span class="w-6 h-6 rounded-full bg-nutra-teal text-white flex items-center justify-center font-bold shrink-0 text-xs">1</span>
+                            <div>
+                                <strong class="text-slate-900 font-bold">Cake Emulsifier SP:</strong> Mengandung mono-digliserida tinggi yang optimal untuk teknik pengocokan telur satu langkah (*all-in method*). Menghasilkan pori bolu sangat halus dan lembut.
+                            </div>
+                        </div>
+                        <div class="flex items-start gap-2.5">
+                            <span class="w-6 h-6 rounded-full bg-nutra-teal text-white flex items-center justify-center font-bold shrink-0 text-xs">2</span>
+                            <div>
+                                <strong class="text-slate-900 font-bold">Ovalet:</strong> Memiliki kandungan asam lemak lebih pekat untuk menjaga kelembaban cake (*moist retention*), sangat cocok untuk kue lapis surabaya dan bolu kukus mekar.
+                            </div>
+                        </div>
+                        <div class="flex items-start gap-2.5">
+                            <span class="w-6 h-6 rounded-full bg-nutra-teal text-white flex items-center justify-center font-bold shrink-0 text-xs">3</span>
+                            <div>
+                                <strong class="text-slate-900 font-bold">TBM:</strong> Dirancang khusus untuk kestabilan adonan cake berkadar mentega/minyak tinggi agar tidak mudah amblas saat pemanggangan oven.
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="pt-2 font-tech">
+                        <a href="katalog.html" class="inline-flex items-center gap-2 px-6 py-3 bg-nutra-teal hover:bg-nutra-tealdark text-white font-bold text-xs uppercase tracking-wider rounded-xl shadow-md transition">
+                            <span>Beli Cake Emulsifier SP Pail 15kg</span>
+                            <i class="fa-solid fa-arrow-right text-xs"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="lg:col-span-5">
+                    <div class="rounded-xl overflow-hidden shadow-xl border-2 border-nutra-border bg-slate-900">
+                        <img src="https://images.unsplash.com/photo-1578985545062-69928b1d9587?q=80&w=800&auto=format&fit=crop" 
+                             alt="Cake Emulsifier Pasta Nutrabake" 
+                             class="w-full h-80 object-cover transform hover:scale-105 transition-all duration-700">
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- 5. FEATURED ARTICLE 2: HIGH-SUGAR YEAST -->
+    <section class="py-14 bg-white border-b border-nutra-border">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 space-y-8 font-sans">
+            
+            <div class="text-center space-y-2">
+                <span class="px-3 py-1 bg-nutra-tealbg text-nutra-teal text-xs font-bold uppercase rounded-md tracking-wider font-tech border border-teal-200">
+                    YEAST OSMOTOLERANCE SCIENCE
+                </span>
+                <h3 class="text-2xl sm:text-3xl font-extrabold text-nutra-teal">
+                    Peran Ragi Instan High-Sugar vs Low-Sugar dalam Fermentasi Roti Manis
+                </h3>
+                <p class="text-slate-600 text-xs sm:text-sm font-light">
+                    Kadar gula dalam adonan memberikan tekanan osmotik tinggi pada sel ragi yang memerlukan strain ragi khusus.
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6 font-tech">
+                
+                <div class="bg-nutra-cream rounded-2xl p-6 border-2 border-nutra-teal shadow-xs flex flex-col justify-between">
+                    <div>
+                        <div class="w-10 h-10 rounded-xl bg-white text-nutra-teal flex items-center justify-center font-bold text-sm mb-4 border border-teal-200">
+                            1
+                        </div>
+                        <h4 class="font-bold text-sm text-nutra-teal font-sans">Tekanan Osmotik Gula</h4>
+                        <p class="text-xs text-slate-600 mt-2 leading-relaxed font-sans font-light">
+                            Pada adonan roti manis Indonesia dengan kadar gula 15%–25%, ragi standar biasa akan terdehidrasi dan melambat laju fermentasinya.
+                        </p>
+                    </div>
+                    <div class="mt-4 pt-3 border-t border-slate-200 text-[11px] text-nutra-teal font-bold">
+                        🔬 Osmotolerant Yeast Cell
+                    </div>
+                </div>
+
+                <div class="bg-nutra-cream rounded-2xl p-6 border border-slate-200 shadow-xs flex flex-col justify-between">
+                    <div>
+                        <div class="w-10 h-10 rounded-xl bg-white text-nutra-amber flex items-center justify-center font-bold text-sm mb-4 border border-amber-200">
+                            2
+                        </div>
+                        <h4 class="font-bold text-sm text-nutra-teal font-sans">Strain High-Sugar</h4>
+                        <p class="text-xs text-slate-600 mt-2 leading-relaxed font-sans font-light">
+                            High-Sugar Yeast Nutrabake memiliki dinding sel khusus yang tahan tekanan osmotik, menghasilkan produksi gas CO2 > 850 mL dalam 2 jam.
+                        </p>
+                    </div>
+                    <div class="mt-4 pt-3 border-t border-slate-200 text-[11px] text-nutra-amber font-bold">
+                        💨 Fast Fermentation CO2
+                    </div>
+                </div>
+
+                <div class="bg-nutra-cream rounded-2xl p-6 border border-slate-200 shadow-xs flex flex-col justify-between">
+                    <div>
+                        <div class="w-10 h-10 rounded-xl bg-white text-emerald-700 flex items-center justify-center font-bold text-sm mb-4 border border-emerald-200">
+                            3
+                        </div>
+                        <h4 class="font-bold text-sm text-nutra-teal font-sans">Volume Kembang Maksimal</h4>
+                        <p class="text-xs text-slate-600 mt-2 leading-relaxed font-sans font-light">
+                            Waktu proofing adonan menjadi 20% lebih cepat dengan struktur rongga roti manis yang kokoh dan tidak mudah amblas pasca-oven.
+                        </p>
+                    </div>
+                    <div class="mt-4 pt-3 border-t border-slate-200 text-[11px] text-emerald-700 font-bold">
+                        🍞 20% Faster Proofing
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+    <!-- 6. KNOWLEDGE ARTICLES GRID -->
+    <section class="py-14 md:py-20 bg-nutra-cream">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-2xl mx-auto mb-12">
+                <span class="px-3 py-1 bg-white text-nutra-teal text-xs font-bold uppercase rounded-md tracking-wider font-tech border border-teal-200">
+                    FOOD TECHNOLOGY KNOWLEDGE
+                </span>
+                <h2 class="text-2xl sm:text-4xl font-extrabold text-nutra-teal font-sans mt-2 mb-2">
+                    Artikel & Panduan Bahan Baku Pangan
+                </h2>
+                <p class="text-slate-600 text-xs sm:text-sm font-light">
+                    Kupas tuntas seputar titik leleh margarin 38°C, cokelat bake-stable, dan membaca lembar Certificate of Analysis (COA).
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                
+                <!-- Article 1 -->
+                <div class="nutra-card-hover bg-white rounded-2xl border border-nutra-border overflow-hidden flex flex-col justify-between shadow-xs">
+                    <div class="h-48 overflow-hidden bg-slate-100">
+                        <img src="https://images.unsplash.com/photo-1589985270826-4b7bb135bc9d?q=80&w=600&auto=format&fit=crop" 
+                             alt="Titik Leleh Margarin Melting Point" class="w-full h-full object-cover">
+                    </div>
+                    <div class="p-6 flex-1 flex flex-col justify-between">
+                        <div>
+                            <span class="text-[10px] bg-nutra-tealbg text-nutra-teal font-bold px-2 py-0.5 rounded font-tech uppercase border border-teal-200">Fat Technology</span>
+                            <h3 class="text-base font-bold text-nutra-teal font-sans mt-2">
+                                Titik Leleh (*Melting Point*): Mengapa Margarin 38°C Menghasilkan Mouthfeel Terbaik?
+                            </h3>
+                            <p class="text-xs text-slate-600 mt-2 leading-relaxed font-light">
+                                Penjelasan ilmiah bagaimana titik leleh yang mendekati suhu tubuh manusia (37°C) mencegah sensasi lengket berlemak di lidah.
+                            </p>
+                        </div>
+                        <div class="mt-4 pt-3 border-t border-slate-100 flex items-center justify-between text-xs font-tech">
+                            <span class="text-slate-400 text-[11px]">4 Menit Baca</span>
+                            <a href="detail.html" class="font-bold text-nutra-teal hover:underline uppercase tracking-wider">Lihat Detail &rarr;</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Article 2 -->
+                <div class="nutra-card-hover bg-white rounded-2xl border border-nutra-border overflow-hidden flex flex-col justify-between shadow-xs">
+                    <div class="h-48 overflow-hidden bg-slate-100">
+                        <img src="https://images.unsplash.com/photo-1548907040-4baa42d10919?q=80&w=600&auto=format&fit=crop" 
+                             alt="Cokelat Bake Stable Cookies" class="w-full h-full object-cover">
+                    </div>
+                    <div class="p-6 flex-1 flex flex-col justify-between">
+                        <div>
+                            <span class="text-[10px] bg-amber-50 text-amber-800 font-bold px-2 py-0.5 rounded font-tech uppercase border border-amber-200">Chocolate Science</span>
+                            <h3 class="text-base font-bold text-nutra-teal font-sans mt-2">
+                                Mengenal Cokelat Bake-Stable: Rahasia Choco Chips Tidak Meleleh di Suhu Oven 200°C
+                            </h3>
+                            <p class="text-xs text-slate-600 mt-2 leading-relaxed font-light">
+                                Formulasi lemak nabati berstruktur trigliserida khusus yang mempertahankan bentuk drop kubah saat pemanggangan cookies & muffin.
+                            </p>
+                        </div>
+                        <div class="mt-4 pt-3 border-t border-slate-100 flex items-center justify-between text-xs font-tech">
+                            <span class="text-slate-400 text-[11px]">3 Menit Baca</span>
+                            <a href="katalog.html" class="font-bold text-nutra-teal hover:underline uppercase tracking-wider">Katalog Cokelat &rarr;</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Article 3 -->
+                <div class="nutra-card-hover bg-white rounded-2xl border border-nutra-border overflow-hidden flex flex-col justify-between shadow-xs">
+                    <div class="h-48 overflow-hidden bg-slate-100">
+                        <img src="https://images.unsplash.com/photo-1509440159596-0249088772ff?q=80&w=600&auto=format&fit=crop" 
+                             alt="Membaca Dokumen COA Lab Bahan Pangan" class="w-full h-full object-cover">
+                    </div>
+                    <div class="p-6 flex-1 flex flex-col justify-between">
+                        <div>
+                            <span class="text-[10px] bg-teal-50 text-teal-800 font-bold px-2 py-0.5 rounded font-tech uppercase border border-teal-200">Compliance & QA</span>
+                            <h3 class="text-base font-bold text-nutra-teal font-sans mt-2">
+                                Cara Membaca Certificate of Analysis (COA) untuk Memenuhi Standar Audit BPOM
+                            </h3>
+                            <p class="text-xs text-slate-600 mt-2 leading-relaxed font-light">
+                                Panduan bagi tim QA pabrik pangan dalam memverifikasi batas asam lemak bebas (FFA), angka lempeng total (ALT), dan uji logam berat.
+                            </p>
+                        </div>
+                        <div class="mt-4 pt-3 border-t border-slate-100 flex items-center justify-between text-xs font-tech">
+                            <span class="text-slate-400 text-[11px]">5 Menit Baca</span>
+                            <a href="kontak.html" class="font-bold text-nutra-teal hover:underline uppercase tracking-wider">Minta Sample &rarr;</a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- 7. FOOTER INGREDIENTS HUB -->
+    <footer class="bg-nutra-dark text-slate-400 text-xs pt-16 pb-36 border-t border-slate-800 font-sans">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-10 pb-12 border-b border-slate-800">
+                
+                <!-- Col 1: Brand & Bio -->
+                <div class="lg:col-span-2 space-y-4">
+                    <a href="index.html" class="flex items-center gap-3">
+                        <div class="w-10 h-10 bg-gradient-to-br from-nutra-teal to-teal-900 text-white flex items-center justify-center text-xl font-bold rounded-xl border border-teal-400/40">
+                            <i class="fa-solid fa-wheat-awn text-amber-300"></i>
+                        </div>
+                        <span class="text-2xl font-extrabold text-white tracking-tight font-sans">
+                            NUTRABAKE<span class="text-nutra-amber">.</span>
+                        </span>
+                    </a>
+                    <p class="text-xs text-slate-400 leading-relaxed max-w-sm font-light">
+                        PT Nutrabake Prima Pangan Nusantara — Distributor dan pemasok bahan baku industri bakery, lemak nabati, margarin pail 15kg, ragi instan, cokelat compound, dan emulsifier pangan berstandar CPPOB, Halal MUI, dan BPOM RI.
+                    </p>
+                </div>
+
+                <!-- Col 2: Navigasi Cepat -->
+                <div>
+                    <h4 class="text-xs font-bold text-white uppercase tracking-wider mb-4 font-tech">Navigasi Halaman</h4>
+                    <ul class="space-y-2.5 font-tech font-light">
+                        <li><a href="index.html" class="hover:text-teal-300 transition">Beranda Utama</a></li>
+                        <li><a href="katalog.html" class="hover:text-teal-300 transition">Katalog Bahan Baku</a></li>
+                        <li><a href="detail.html" class="hover:text-teal-300 transition">Spesifikasi COA & Lemak</a></li>
+                        <li><a href="tentang.html" class="hover:text-teal-300 transition">Gudang Suhu AC & CPPOB</a></li>
+                        <li><a href="artikel.html" class="hover:text-teal-300 transition">Formulasi & Tekstur Roti</a></li>
+                        <li><a href="kontak.html" class="hover:text-teal-300 transition">Showroom & Sample R&D</a></li>
+                    </ul>
+                </div>
+
+                <!-- Col 3: Kategori Produk -->
+                <div>
+                    <h4 class="text-xs font-bold text-white uppercase tracking-wider mb-4 font-tech">Kategori Bahan</h4>
+                    <ul class="space-y-2.5 font-tech font-light">
+                        <li><a href="detail.html" class="hover:text-teal-300 transition">Margarin & Mentega Pail 15kg</a></li>
+                        <li><a href="katalog.html" class="hover:text-teal-300 transition">Ragi Instan High-Sugar Yeast</a></li>
+                        <li><a href="katalog.html" class="hover:text-teal-300 transition">Cokelat Compound & Choco Chips</a></li>
+                        <li><a href="katalog.html" class="hover:text-teal-300 transition">Cake Emulsifier SP & Ovalet</a></li>
+                        <li><a href="kontak.html" class="hover:text-teal-300 transition">Perisa Pasta & Pewarna Alami</a></li>
+                    </ul>
+                </div>
+
+                <!-- Col 4: Fasilitas & Gudang -->
+                <div>
+                    <h4 class="text-xs font-bold text-white uppercase tracking-wider mb-4 font-tech">Gudang & Baking Center</h4>
+                    <p class="text-xs text-slate-400 leading-relaxed mb-3 font-light font-sans">
+                        Kawasan Industri Pangan Candi, Jl. Gatot Subroto No. 45 Blok B-8, Kota Semarang, Jawa Tengah 50181.
+                    </p>
+                    <p class="text-xs text-teal-300 font-bold mb-1 font-tech"><i class="fa-solid fa-phone mr-1.5"></i> +62 24-7645-7890 / 0812-3456-7890</p>
+                    <p class="text-xs text-slate-400 font-tech"><i class="fa-solid fa-envelope mr-1.5"></i> sales@nutrabake.co.id</p>
+                </div>
+
+            </div>
+
+            <div class="pt-8 flex flex-col sm:flex-row items-center justify-between gap-4 text-[11px] text-slate-500 font-tech font-light">
+                <p>&copy; 2026 PT NUTRABAKE PRIMA PANGAN NUSANTARA. All rights reserved.</p>
+                <div class="flex items-center gap-4">
+                    <span>100% Food Grade Certified</span>
+                    <span>•</span>
+                    <span>Cold Chain Storage</span>
+                    <span>•</span>
+                    <span>Direct Factory Supply</span>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- 8. FLOATING WHATSAPP BUTTON (bottom-24) -->
+    <div class="fixed bottom-24 right-5 z-40">
+        <a href="https://wa.me/6281234567890?text=Halo%20Nutrabake,%20saya%20ingin%20tanya%20seputar%20artikel%20formulasi." 
+           target="_blank" 
+           aria-label="Chat WhatsApp Sales Nutrabake Ingredients"
+           class="group flex items-center gap-3 bg-nutra-teal hover:bg-nutra-tealdark text-white px-4 py-3.5 rounded-full shadow-2xl transition-all transform hover:scale-105 border-2 border-teal-300">
+            <i class="fa-brands fa-whatsapp text-2xl text-emerald-400 animate-pulse"></i>
+            <span class="text-xs font-bold tracking-wide pr-1 hidden sm:inline font-tech">Technical Baker WA</span>
+        </a>
+    </div>
+
+    <!-- 9. STICKY DEMO & SALES BAR (fixed bottom-4) -->
+    <div class="fixed bottom-4 left-4 right-4 z-50 max-w-5xl mx-auto">
+      <div class="bg-nutra-dark/95 backdrop-blur-md text-white px-4 sm:px-6 py-3.5 rounded-2xl shadow-2xl border border-slate-700 flex flex-col md:flex-row items-center justify-between gap-3">
+        
+        <div class="flex items-center gap-3 text-left w-full md:w-auto">
+          <div class="w-9 h-9 rounded-xl bg-nutra-teal/30 border border-teal-400/40 flex items-center justify-center shrink-0">
+            <i class="fa-solid fa-wheat-awn text-teal-300 text-sm"></i>
+          </div>
+          <div>
+            <div class="text-xs md:text-sm font-bold text-white flex items-center gap-2 font-sans">
+              <span>Lentera Pasar Demo</span>
+              <span class="text-[10px] px-2 py-0.5 rounded bg-nutra-amber/30 text-amber-300 font-bold font-tech">Formulasi Bahan Bakery</span>
+            </div>
+            <p class="text-[11px] text-slate-300 hidden sm:block font-light">Desain Food-Grade Chemical Lab untuk distributor margarin pail 15kg, ragi instan, cokelat & emulsifier.</p>
+          </div>
+        </div>
+
+        <div class="flex items-center gap-3 w-full md:w-auto justify-end">
+          <a href="https://wa.me/6281234567890?text=Halo%20Tim%20Lentera%20Pasar,%20saya%20tertarik%20menggunakan%20template%20website%20Bahan%20Baku%20Bakery%20ini." 
+             target="_blank"
+             class="w-full md:w-auto inline-flex items-center justify-center gap-2 bg-nutra-teal hover:bg-nutra-tealdark text-white text-xs md:text-sm font-bold px-5 py-2.5 rounded-xl shadow-lg transition-all hover:scale-105 shrink-0 font-tech uppercase tracking-wider">
+            <span>Gunakan Template Ini</span>
+            <i class="fa-solid fa-arrow-right text-xs"></i>
+          </a>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- SCRIPT MOBILE MENU -->
+    <script>
+        const mobileMenuBtn = document.getElementById('mobileMenuBtn');
+        const mobileMenu = document.getElementById('mobileMenu');
+        const menuIcon = document.getElementById('menuIcon');
+
+        mobileMenuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+            if (mobileMenu.classList.contains('hidden')) {
+                menuIcon.classList.remove('fa-xmark');
+                menuIcon.classList.add('fa-bars');
+            } else {
+                menuIcon.classList.remove('fa-bars');
+                menuIcon.classList.add('fa-xmark');
+            }
+        });
+    </script>
+</body>
+</html>
