@@ -1,0 +1,470 @@
+<!DOCTYPE html>
+<html lang="id" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kelompok Tani & Sawah Organik // LUMBUNG SRI</title>
+    <meta name="description" content="Kisah dedikasi petani sawah organik Lumbung Sri di lereng Gunung Merbabu: Pengairan mata air murni, pupuk kompos alami, dan benih padi lokal warisan leluhur.">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,600;0,700;0,800;1,600&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome 6 -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        paddy: {
+                            gold: '#EAB308',
+                            amber: '#CA8A04',
+                            ochre: '#A16207',
+                            brown: '#854D0E',
+                            earth: '#78350F',
+                            soil: '#451A03',
+                            parchment: '#FAF8F2',
+                            cream: '#F5F0E6',
+                            border: '#E8DFC9',
+                            sprout: '#15803D',
+                            sproutdark: '#166534',
+                            sproutlight: '#DCFCE7',
+                            charcoal: '#27272A'
+                        }
+                    },
+                    fontFamily: {
+                        sans: ['"Plus Jakarta Sans"', 'sans-serif'],
+                        serif: ['"Playfair Display"', 'serif']
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        .no-scrollbar::-webkit-scrollbar { display: none; }
+        .no-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
+
+        .paddy-hero-bg {
+            background: linear-gradient(180deg, #F5F0E6 0%, #FAF8F2 100%);
+        }
+    </style>
+</head>
+<body class="bg-paddy-parchment text-paddy-charcoal font-sans antialiased selection:bg-paddy-gold selection:text-paddy-soil">
+
+    <!-- 1. TOP ANNOUNCEMENT BAR -->
+    <div class="bg-paddy-earth text-amber-100 text-xs py-2 px-4 font-sans font-medium border-b border-amber-900/40">
+        <div class="max-w-7xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-2 text-center sm:text-left">
+            <div class="flex items-center justify-center gap-2">
+                <span class="px-2 py-0.5 bg-paddy-gold text-paddy-soil text-[10px] uppercase font-bold tracking-wider rounded-sm shadow-xs flex items-center gap-1">
+                    <i class="fa-solid fa-leaf text-paddy-sprout"></i> 100% ORGANIK RESMI
+                </span>
+                <span class="text-white/95 font-medium">Dedikasi Gabungan Kelompok Tani (Gapoktan) Padi Nusantara Lereng Merbabu</span>
+            </div>
+            <div class="flex items-center gap-4 text-xs">
+                <a href="katalog.html" class="text-paddy-gold hover:underline font-bold transition flex items-center gap-1">
+                    Lihat Hasil Panen <i class="fa-solid fa-arrow-right text-[10px]"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- 2. NAVBAR -->
+    <header class="sticky top-0 z-40 bg-white/95 backdrop-blur-md border-b border-paddy-border transition-all shadow-xs">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-20 sm:h-24">
+                
+                <!-- Logo -->
+                <a href="index.html" class="flex items-center gap-3.5 group">
+                    <div class="w-12 h-12 bg-gradient-to-br from-amber-600 to-paddy-earth text-white flex items-center justify-center text-2xl font-bold rounded-2xl shadow-md group-hover:scale-105 transition">
+                        <i class="fa-solid fa-wheat-awn"></i>
+                    </div>
+                    <div class="flex flex-col">
+                        <span class="text-2xl sm:text-3xl font-extrabold tracking-tight text-paddy-soil uppercase leading-none font-serif">
+                            LUMBUNG SRI<span class="text-paddy-gold">.</span>
+                        </span>
+                        <span class="text-[9px] tracking-[0.28em] text-paddy-ochre uppercase mt-1 font-bold">
+                            ORGANIC HERITAGE PADDY
+                        </span>
+                    </div>
+                </a>
+
+                <!-- Desktop Navigation Links -->
+                <nav class="hidden lg:flex items-center gap-7 text-xs font-bold tracking-wider uppercase text-slate-700 font-sans">
+                    <a href="index.html" class="hover:text-paddy-ochre transition">Beranda</a>
+                    <a href="katalog.html" class="hover:text-paddy-ochre transition">Koleksi Beras</a>
+                    <a href="detail.html" class="hover:text-paddy-ochre transition">Detail Mentik Wangi</a>
+                    <a href="tentang.html" class="text-paddy-ochre border-b-2 border-paddy-ochre pb-1 font-bold">Kelompok Tani</a>
+                    <a href="artikel.html" class="hover:text-paddy-ochre transition">Manfaat & Tips Masak</a>
+                    <a href="kontak.html" class="hover:text-paddy-ochre transition">Lumbung & Pasokan Resto</a>
+                </nav>
+
+                <!-- Actions -->
+                <div class="hidden sm:flex items-center gap-3">
+                    <a href="https://wa.me/6281234567890?text=Halo%20Admin%20Lumbung%20Sri,%20saya%20ingin%20tanya%20profil%20kelompok%20tani." 
+                       target="_blank"
+                       class="inline-flex items-center gap-2 px-4 py-2.5 bg-paddy-earth hover:bg-paddy-soil text-xs font-bold text-white rounded-xl transition shadow-md hover:shadow-lg">
+                        <i class="fa-brands fa-whatsapp text-base text-emerald-400"></i>
+                        <span>Hubungi Lumbung WA</span>
+                    </a>
+                </div>
+
+                <!-- Mobile Menu Button -->
+                <div class="flex lg:hidden items-center gap-2">
+                    <a href="https://wa.me/6281234567890" target="_blank" class="p-2.5 bg-emerald-100 text-emerald-800 rounded-xl text-sm">
+                        <i class="fa-brands fa-whatsapp"></i>
+                    </a>
+                    <button id="mobileMenuBtn" class="p-2.5 text-slate-700 hover:text-paddy-ochre focus:outline-hidden rounded-xl bg-amber-50">
+                        <i id="menuIcon" class="fa-solid fa-bars text-xl"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Mobile Dropdown Menu -->
+        <div id="mobileMenu" class="hidden lg:hidden border-t border-paddy-border bg-white/98 px-6 py-5 shadow-xl">
+            <div class="flex flex-col gap-4 text-sm font-bold uppercase text-slate-700">
+                <a href="index.html" class="hover:text-paddy-ochre transition flex items-center justify-between">
+                    <span>Beranda</span>
+                    <i class="fa-solid fa-chevron-right text-xs"></i>
+                </a>
+                <a href="katalog.html" class="hover:text-paddy-ochre transition flex items-center justify-between">
+                    <span>Koleksi Beras Organik</span>
+                    <i class="fa-solid fa-chevron-right text-xs"></i>
+                </a>
+                <a href="detail.html" class="hover:text-paddy-ochre transition flex items-center justify-between">
+                    <span>Detail Varietas & Uji Lab</span>
+                    <i class="fa-solid fa-chevron-right text-xs"></i>
+                </a>
+                <a href="tentang.html" class="text-paddy-ochre flex items-center justify-between">
+                    <span>Kelompok Tani & Sawah</span>
+                    <i class="fa-solid fa-chevron-right text-xs"></i>
+                </a>
+                <a href="artikel.html" class="hover:text-paddy-ochre transition flex items-center justify-between">
+                    <span>Tips Memasak & Indeks Glikemik</span>
+                    <i class="fa-solid fa-chevron-right text-xs"></i>
+                </a>
+                <a href="kontak.html" class="hover:text-paddy-ochre transition flex items-center justify-between">
+                    <span>Lumbung & Pasokan Resto</span>
+                    <i class="fa-solid fa-chevron-right text-xs"></i>
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- 3. HERO ABOUT SECTION -->
+    <section class="py-14 md:py-20 paddy-hero-bg border-b border-paddy-border">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 items-center">
+                
+                <div class="lg:col-span-7 space-y-5">
+                    <span class="px-3.5 py-1 rounded-full bg-amber-200/90 text-paddy-soil text-xs font-bold uppercase tracking-wider">
+                        OUR HERITAGE & MISSION
+                    </span>
+                    <h1 class="text-3xl sm:text-5xl font-extrabold text-paddy-soil font-serif leading-[1.15]">
+                        Menjaga Kemurnian Sawah, <br>
+                        <span class="text-transparent bg-clip-text bg-gradient-to-r from-paddy-ochre via-amber-700 to-paddy-earth">
+                            Merawat Warisan Leluhur
+                        </span>
+                    </h1>
+                    <p class="text-slate-700 text-sm sm:text-base leading-relaxed max-w-2xl">
+                        <strong>LUMBUNG SRI</strong> lahir dari kegelisahan melihat maraknya beras yang dipoles zat pemutih kimia, pewangi buatan, dan pestisida berlebih. Bersama gabungan kelompok tani di lereng Gunung Merbabu, kami mengembalikan kearifan budidaya padi organik: membiarkan tanah bernapas dengan pupuk kandang alami dan dialiri air pegunungan yang jernih.
+                    </p>
+                    <div class="flex flex-wrap items-center gap-4 pt-2">
+                        <div class="flex items-center gap-2 text-xs font-bold text-slate-800 bg-white px-4 py-2 rounded-xl border border-paddy-border shadow-xs">
+                            <i class="fa-solid fa-seedling text-emerald-600"></i> Pupuk Kompos & Bio-Urine 100%
+                        </div>
+                        <div class="flex items-center gap-2 text-xs font-bold text-slate-800 bg-white px-4 py-2 rounded-xl border border-paddy-border shadow-xs">
+                            <i class="fa-solid fa-water text-blue-600"></i> Air Irigasi Hulu Pegunungan
+                        </div>
+                    </div>
+                </div>
+
+                <div class="lg:col-span-5 relative">
+                    <div class="rounded-3xl overflow-hidden shadow-2xl border-4 border-white bg-amber-100">
+                        <img src="https://images.unsplash.com/photo-1536304993881-ff6e9eefa2a6?q=80&w=1000&auto=format&fit=crop" 
+                             alt="Hamparan Sawah Padi Organik Lereng Gunung" 
+                             class="w-full h-96 object-cover transform hover:scale-105 transition-all duration-700">
+                    </div>
+                    <div class="absolute -bottom-4 -left-4 bg-paddy-soil text-white p-4 rounded-2xl shadow-xl border border-amber-900">
+                        <p class="text-xl font-black text-amber-300 font-serif">150+ Hektar</p>
+                        <p class="text-[11px] text-amber-100">Sawah Organik Binaan</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- 4. KEY METRICS -->
+    <section class="py-12 bg-white border-b border-paddy-border">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-2 lg:grid-cols-4 gap-6 text-center">
+                <div class="p-6 rounded-2xl bg-paddy-parchment border border-paddy-border">
+                    <p class="text-3xl sm:text-4xl font-extrabold text-paddy-soil font-serif">150+ Ha</p>
+                    <p class="text-xs text-slate-600 font-bold uppercase mt-1">Sawah Organik Tersertifikasi</p>
+                </div>
+                <div class="p-6 rounded-2xl bg-paddy-parchment border border-paddy-border">
+                    <p class="text-3xl sm:text-4xl font-extrabold text-emerald-700 font-serif">120 Petani</p>
+                    <p class="text-xs text-slate-600 font-bold uppercase mt-1">Anggota Gapoktan Berdaya</p>
+                </div>
+                <div class="p-6 rounded-2xl bg-paddy-parchment border border-paddy-border">
+                    <p class="text-3xl sm:text-4xl font-extrabold text-paddy-earth font-serif">0% Kimia</p>
+                    <p class="text-xs text-slate-600 font-bold uppercase mt-1">Bebas Pestisida & Klorin</p>
+                </div>
+                <div class="p-6 rounded-2xl bg-paddy-parchment border border-paddy-border">
+                    <p class="text-3xl sm:text-4xl font-extrabold text-slate-900 font-serif">12 Bulan</p>
+                    <p class="text-xs text-slate-600 font-bold uppercase mt-1">Ketahanan Vakum Anti Kutu</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 5. 4 PILAR BUDIDAYA PADI ORGANIK -->
+    <section class="py-16 md:py-20 bg-paddy-parchment">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-2xl mx-auto mb-14">
+                <span class="px-3 py-1 bg-emerald-100 text-emerald-800 text-xs font-bold uppercase rounded-md tracking-wider">
+                    OUR FARMING STANDARDS
+                </span>
+                <h2 class="text-2xl sm:text-4xl font-extrabold text-paddy-soil font-serif mt-3 mb-3">
+                    4 Pilar Utama Budidaya Padi Lumbung Sri
+                </h2>
+                <p class="text-slate-600 text-sm">
+                    Komitmen konsisten kami dari penyiapan tanah, penyemaian benih, hingga penggilingan bebas minyak.
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                
+                <!-- Pillar 1 -->
+                <div class="bg-white rounded-3xl p-8 border border-paddy-border shadow-xs flex items-start gap-5">
+                    <div class="w-14 h-14 rounded-2xl bg-paddy-earth text-white flex items-center justify-center text-2xl shrink-0 shadow-xs">
+                        <i class="fa-solid fa-water"></i>
+                    </div>
+                    <div class="space-y-2">
+                        <h3 class="text-lg font-bold text-slate-900 font-serif">1. Irigasi Hulu Bebas Polutan</h3>
+                        <p class="text-xs text-slate-600 leading-relaxed">
+                            Lahan sawah kami berada di zona atas lereng gunung dengan posisi petak pertama yang menerima limpahan air mata air langsung, tanpa terkontaminasi buangan limbah pemukiman atau pabrik industri.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Pillar 2 -->
+                <div class="bg-white rounded-3xl p-8 border border-paddy-border shadow-xs flex items-start gap-5">
+                    <div class="w-14 h-14 rounded-2xl bg-emerald-700 text-white flex items-center justify-center text-2xl shrink-0 shadow-xs">
+                        <i class="fa-solid fa-cow"></i>
+                    </div>
+                    <div class="space-y-2">
+                        <h3 class="text-lg font-bold text-slate-900 font-serif">2. Pupuk Organik Mandiri</h3>
+                        <p class="text-xs text-slate-600 leading-relaxed">
+                            Kelompok tani memproduksi pupuk bokashi kompos dari kotoran ternak sapi lokal yang difermentasi bersama jerami sisa panen dan mikroorganisme baik, mengembalikan struktur tanah yang gembur alami.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Pillar 3 -->
+                <div class="bg-white rounded-3xl p-8 border border-paddy-border shadow-xs flex items-start gap-5">
+                    <div class="w-14 h-14 rounded-2xl bg-amber-600 text-white flex items-center justify-center text-2xl shrink-0 shadow-xs">
+                        <i class="fa-solid fa-feather-pointed"></i>
+                    </div>
+                    <div class="space-y-2">
+                        <h3 class="text-lg font-bold text-slate-900 font-serif">3. Pengendalian Hama Hayati (Biological Control)</h3>
+                        <p class="text-xs text-slate-600 leading-relaxed">
+                            Kami membangun rumah burung hantu (Tyto Alba) sebagai predator alami tikus sawah serta menanam bunga refugia (kenikir & matahari) di pematang untuk mengusir wereng tanpa racun pestisida kimia.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Pillar 4 -->
+                <div class="bg-white rounded-3xl p-8 border border-paddy-border shadow-xs flex items-start gap-5">
+                    <div class="w-14 h-14 rounded-2xl bg-stone-900 text-white flex items-center justify-center text-2xl shrink-0 shadow-xs">
+                        <i class="fa-solid fa-gears"></i>
+                    </div>
+                    <div class="space-y-2">
+                        <h3 class="text-lg font-bold text-slate-900 font-serif">4. Penggilingan Stainless & Kemasan Vakum</h3>
+                        <p class="text-xs text-slate-600 leading-relaxed">
+                            Mesin penggilingan gabah menggunakan material food-grade stainless steel bebas jelaga minyak pelumas. Begitu disortir, beras langsung dikemas vakum kedap udara agar tidak dihinggapi kutu.
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- 6. TOKOH PETANI BINAAN -->
+    <section class="py-16 md:py-20 bg-white border-t border-paddy-border">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-2xl mx-auto mb-14">
+                <span class="px-3 py-1 bg-amber-100 text-paddy-earth text-xs font-bold uppercase rounded-md tracking-wider">
+                    FACES OF LUMBUNG SRI
+                </span>
+                <h2 class="text-2xl sm:text-4xl font-extrabold text-paddy-soil font-serif mt-3 mb-3">
+                    Sosok Petani Penjaga Benih Padi Organik
+                </h2>
+                <p class="text-slate-600 text-sm">
+                    Keahlian turun-temurun dipadukan dengan standar sertifikasi pangan organik modern.
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                
+                <!-- Person 1 -->
+                <div class="bg-paddy-parchment rounded-3xl p-6 border border-paddy-border text-center flex flex-col items-center">
+                    <div class="w-24 h-24 rounded-full bg-amber-200 text-amber-800 flex items-center justify-center text-4xl mb-4 border-2 border-amber-400">
+                        👨‍🌾
+                    </div>
+                    <h3 class="text-base font-bold text-slate-900 font-serif">Mbah Sastro Wardoyo</h3>
+                    <p class="text-xs font-semibold text-paddy-ochre mt-0.5">Ketua Gapoktan Padi Organik</p>
+                    <p class="text-xs text-slate-600 mt-3 leading-relaxed">
+                        "Sudah lebih dari 35 tahun kami menolak racun kimia di sawah ini. Jika kita merawat tanah dengan penuh kasih, tanah akan memberi nasi yang manis dan menyehatkan anak cucu."
+                    </p>
+                </div>
+
+                <!-- Person 2 -->
+                <div class="bg-paddy-parchment rounded-3xl p-6 border border-paddy-border text-center flex flex-col items-center">
+                    <div class="w-24 h-24 rounded-full bg-emerald-200 text-emerald-800 flex items-center justify-center text-4xl mb-4 border-2 border-emerald-400">
+                        👩‍🔬
+                    </div>
+                    <h3 class="text-base font-bold text-slate-900 font-serif">Wahyuni Triastuti, S.P.</h3>
+                    <p class="text-xs font-semibold text-emerald-800 mt-0.5">Agronomist & QC Sertifikasi</p>
+                    <p class="text-xs text-slate-600 mt-3 leading-relaxed">
+                        "Kami memastikan setiap tahapan mulai dari pengolahan kompos hingga uji residu bebas klorin memenuhi standar ketat sertifikasi organik nasional INOFICE."
+                    </p>
+                </div>
+
+                <!-- Person 3 -->
+                <div class="bg-paddy-parchment rounded-3xl p-6 border border-paddy-border text-center flex flex-col items-center">
+                    <div class="w-24 h-24 rounded-full bg-stone-200 text-stone-800 flex items-center justify-center text-4xl mb-4 border-2 border-stone-400">
+                        👨‍🌾
+                    </div>
+                    <h3 class="text-base font-bold text-slate-900 font-serif">Danang Wicaksono</h3>
+                    <p class="text-xs font-semibold text-stone-800 mt-0.5">Kepala Unit Penggilingan & Vakum</p>
+                    <p class="text-xs text-slate-600 mt-3 leading-relaxed">
+                        "Proses vakum bertekanan tinggi kami pastikan bebas oksigen 100%, sehingga kutu tidak memiliki ruang untuk bertelur dan bulir tetap fresh saat dibuka di dapur Anda."
+                    </p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- 7. FOOTER -->
+    <footer class="bg-stone-900 text-stone-400 text-xs pt-16 pb-36 border-t border-stone-800 font-sans">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-10 pb-12 border-b border-stone-800">
+                <div class="lg:col-span-2 space-y-4">
+                    <a href="index.html" class="flex items-center gap-3">
+                        <div class="w-10 h-10 bg-gradient-to-br from-amber-600 to-paddy-earth text-white flex items-center justify-center text-xl font-bold rounded-xl">
+                            <i class="fa-solid fa-wheat-awn"></i>
+                        </div>
+                        <span class="text-2xl font-extrabold text-white tracking-tight font-serif">
+                            LUMBUNG SRI<span class="text-paddy-gold">.</span>
+                        </span>
+                    </a>
+                    <p class="text-xs text-stone-400 leading-relaxed max-w-sm">
+                        Beras organik nusantara bersertifikat resmi tanpa pemutih, pewangi, atau pengawet kimia. Kemasan vakum kedap udara menjaga kualitas bulir tetap segar pulen.
+                    </p>
+                </div>
+                <div>
+                    <h4 class="text-xs font-bold text-white uppercase tracking-wider mb-4">Navigasi Halaman</h4>
+                    <ul class="space-y-2.5">
+                        <li><a href="index.html" class="hover:text-amber-400 transition">Beranda Utama</a></li>
+                        <li><a href="katalog.html" class="hover:text-amber-400 transition">Koleksi Beras Organik</a></li>
+                        <li><a href="detail.html" class="hover:text-amber-400 transition">Detail Mentik Wangi</a></li>
+                        <li><a href="tentang.html" class="hover:text-amber-400 transition">Kelompok Tani & Sawah</a></li>
+                        <li><a href="artikel.html" class="hover:text-amber-400 transition">Tips & Indeks Glikemik</a></li>
+                        <li><a href="kontak.html" class="hover:text-amber-400 transition">Lumbung & Pasokan Resto</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-xs font-bold text-white uppercase tracking-wider mb-4">Varietas Beras Utama</h4>
+                    <ul class="space-y-2.5">
+                        <li><a href="detail.html" class="hover:text-amber-400 transition">Beras Mentik Wangi Susu</a></li>
+                        <li><a href="detail.html" class="hover:text-amber-400 transition">Beras Merah Pecah Kulit</a></li>
+                        <li><a href="detail.html" class="hover:text-amber-400 transition">Beras Hitam Melik Organik</a></li>
+                        <li><a href="detail.html" class="hover:text-amber-400 transition">Beras Pandan Wangi Cianjur</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-xs font-bold text-white uppercase tracking-wider mb-4">Pusat Penggilingan</h4>
+                    <p class="text-xs text-stone-400 leading-relaxed mb-3">
+                        Kawasan Sawah Organik Lereng Gunung Merbabu, Magelang - Jawa Tengah, Indonesia.
+                    </p>
+                    <p class="text-xs text-amber-400 font-bold mb-1"><i class="fa-solid fa-phone mr-1.5"></i> +62 812-3456-7890</p>
+                    <p class="text-xs text-stone-400"><i class="fa-solid fa-envelope mr-1.5"></i> order@lumbungsri-organic.com</p>
+                </div>
+            </div>
+            <div class="pt-8 flex flex-col sm:flex-row items-center justify-between gap-4 text-[11px] text-stone-500">
+                <p>&copy; 2026 LUMBUNG SRI Organic Heritage Paddy. All rights reserved.</p>
+                <div class="flex items-center gap-4">
+                    <span>100% Organik Bersertifikat</span>
+                    <span>•</span>
+                    <span>Kemasan Vakum Bebas Kutu</span>
+                    <span>•</span>
+                    <span>Bebas Pemutih</span>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- 8. FLOATING WHATSAPP BUTTON (bottom-24) -->
+    <div class="fixed bottom-24 right-5 z-40">
+        <a href="https://wa.me/6281234567890?text=Halo%20Admin%20Lumbung%20Sri,%20saya%20ingin%20tanya%20profil%20kelompok%20tani." 
+           target="_blank" 
+           aria-label="Chat WhatsApp Lumbung Sri"
+           class="group flex items-center gap-3 bg-gradient-to-r from-emerald-600 to-emerald-700 hover:from-emerald-700 hover:to-emerald-800 text-white px-4 py-3.5 rounded-full shadow-2xl transition-all transform hover:scale-105 border-2 border-white">
+            <i class="fa-brands fa-whatsapp text-2xl animate-pulse"></i>
+            <span class="text-xs font-bold tracking-wide pr-1 hidden sm:inline">Pesan Beras Organik</span>
+        </a>
+    </div>
+
+    <!-- 9. STICKY DEMO & SALES BAR (fixed bottom-4) -->
+    <div class="fixed bottom-4 left-4 right-4 z-50 max-w-5xl mx-auto">
+      <div class="bg-stone-900/95 backdrop-blur-md text-white px-4 sm:px-6 py-3.5 rounded-2xl shadow-2xl border border-stone-700 flex flex-col md:flex-row items-center justify-between gap-3">
+        <div class="flex items-center gap-3 text-left w-full md:w-auto">
+          <div class="w-9 h-9 rounded-xl bg-amber-500/20 border border-amber-400/40 flex items-center justify-center shrink-0">
+            <i class="fa-solid fa-wheat-awn text-amber-400 text-sm"></i>
+          </div>
+          <div>
+            <div class="text-xs md:text-sm font-bold text-stone-100 flex items-center gap-2">
+              <span>Lentera Pasar Demo</span>
+              <span class="text-[10px] px-2 py-0.5 rounded bg-amber-500/20 text-amber-300 font-bold">Tentang Kelompok Tani</span>
+            </div>
+            <p class="text-[11px] text-stone-400 hidden sm:block">Desain Heritage Paddy & Grain Harvest untuk agrobisnis beras organik, kemasan vakum, & supply resto.</p>
+          </div>
+        </div>
+        <div class="flex items-center gap-3 w-full md:w-auto justify-end">
+          <a href="https://wa.me/6281234567890?text=Halo%20Tim%20Lentera%20Pasar,%20saya%20tertarik%20menggunakan%20template%20website%20Beras%20Organik%20ini." 
+             target="_blank"
+             class="w-full md:w-auto inline-flex items-center justify-center gap-2 bg-gradient-to-r from-amber-600 to-paddy-earth hover:from-amber-500 hover:to-amber-900 text-white text-xs md:text-sm font-bold px-5 py-2.5 rounded-xl shadow-lg transition-all hover:scale-105 shrink-0">
+            <span>Gunakan Template Ini</span>
+            <i class="fa-solid fa-arrow-right text-xs"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <script>
+        const mobileMenuBtn = document.getElementById('mobileMenuBtn');
+        const mobileMenu = document.getElementById('mobileMenu');
+        const menuIcon = document.getElementById('menuIcon');
+
+        mobileMenuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+            if (mobileMenu.classList.contains('hidden')) {
+                menuIcon.classList.remove('fa-xmark');
+                menuIcon.classList.add('fa-bars');
+            } else {
+                menuIcon.classList.remove('fa-bars');
+                menuIcon.classList.add('fa-xmark');
+            }
+        });
+    </script>
+</body>
+</html>
