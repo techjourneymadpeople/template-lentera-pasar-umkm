@@ -1,0 +1,933 @@
+<!DOCTYPE html>
+<html lang="id" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Katalog Daging Sapi, Kambing & Ternak Halal // LEMBAH BIMA RANCH</title>
+    <meta name="description" content="Katalog potongan daging sapi segar has dalam/luar, daging rendang, karkas kambing muda, tulang iga ribs, buntut oxtail, serta sapi/domba qurban hidup bobot nyata.">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Playfair+Display:ital,wght@0,600;0,700;0,800;1,600&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome 6 -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        ranch: {
+                            brown: '#38220F',
+                            browndark: '#241407',
+                            brownlight: '#4D321A',
+                            crimson: '#B91C1C',
+                            crimsondark: '#991B1B',
+                            green: '#15803D',
+                            greenlight: '#DCFCE7',
+                            parchment: '#FAF6EF',
+                            cream: '#FFFDF8',
+                            border: '#E5DAC6',
+                            charcoal: '#1C1510'
+                        }
+                    },
+                    fontFamily: {
+                        sans: ['"Plus Jakarta Sans"', 'sans-serif'],
+                        serif: ['"Playfair Display"', 'serif'],
+                        cinzel: ['"Cinzel"', 'serif']
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        .no-scrollbar::-webkit-scrollbar { display: none; }
+        .no-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
+
+        .meat-card {
+            transition: all 0.35s cubic-bezier(0.16, 1, 0.3, 1);
+        }
+        .meat-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 20px 35px -10px rgba(56, 34, 15, 0.12);
+        }
+    </style>
+</head>
+<body class="bg-ranch-parchment text-ranch-charcoal font-sans antialiased selection:bg-ranch-crimson selection:text-white">
+
+    <!-- 1. TOP ANNOUNCEMENT BAR -->
+    <div class="bg-ranch-brown text-amber-100 text-xs py-2.5 px-4 font-sans font-medium border-b border-amber-950/40">
+        <div class="max-w-7xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-2 text-center sm:text-left">
+            <div class="flex items-center justify-center gap-2">
+                <span class="px-2 py-0.5 bg-ranch-green text-white text-[10px] uppercase font-bold tracking-wider rounded-md shadow-xs flex items-center gap-1">
+                    <i class="fa-solid fa-certificate text-emerald-200"></i> HALAL RPH RESMI
+                </span>
+                <span class="text-white/95 font-medium">Sembelih Subuh Jam 02.00 WIB • Garansi 100% Bebas Daging Gelonggongan</span>
+            </div>
+            <div class="flex items-center gap-4 text-xs">
+                <a href="https://wa.me/6281234567890?text=Halo%20Admin%20Lembah%20Bima%20Ranch,%20saya%20ingin%20tanya%20stok%20katalog%20daging." target="_blank" class="text-amber-300 hover:underline font-bold transition flex items-center gap-1">
+                    Fast Order WA <i class="fa-solid fa-arrow-right text-[10px]"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- 2. NAVBAR -->
+    <header class="sticky top-0 z-40 bg-white/95 backdrop-blur-md border-b border-ranch-border transition-all shadow-xs">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-20 sm:h-24">
+                
+                <!-- Logo -->
+                <a href="index.html" class="flex items-center gap-3.5 group">
+                    <div class="w-12 h-12 bg-gradient-to-br from-ranch-brown to-ranch-crimson text-white flex items-center justify-center text-2xl font-bold rounded-2xl shadow-md group-hover:scale-105 transition">
+                        <i class="fa-solid fa-cow"></i>
+                    </div>
+                    <div class="flex flex-col">
+                        <span class="text-2xl sm:text-3xl font-extrabold tracking-tight text-ranch-brown uppercase leading-none font-serif">
+                            LEMBAH BIMA<span class="text-ranch-crimson">.</span>
+                        </span>
+                        <span class="text-[9px] tracking-[0.28em] text-ranch-green uppercase mt-1 font-bold">
+                            HALAL GRASS-FED RANCH
+                        </span>
+                    </div>
+                </a>
+
+                <!-- Desktop Navigation Links -->
+                <nav class="hidden lg:flex items-center gap-7 text-xs font-bold tracking-wider uppercase text-slate-700 font-sans">
+                    <a href="index.html" class="hover:text-ranch-crimson transition">Beranda</a>
+                    <a href="katalog.html" class="text-ranch-crimson border-b-2 border-ranch-crimson pb-1 font-bold">Koleksi Daging & Ternak</a>
+                    <a href="detail.html" class="hover:text-ranch-crimson transition">Detail Daging Sapi</a>
+                    <a href="tentang.html" class="hover:text-ranch-crimson transition">Padang Penggemukan</a>
+                    <a href="artikel.html" class="hover:text-ranch-crimson transition">Tips Cek Daging Segar</a>
+                    <a href="kontak.html" class="hover:text-ranch-crimson transition">Pasokan Resto & Jagal</a>
+                </nav>
+
+                <!-- Actions -->
+                <div class="hidden sm:flex items-center gap-3">
+                    <a href="https://wa.me/6281234567890?text=Halo%20Admin%20Lembah%20Bima%20Ranch,%20saya%20ingin%20memesan%20daging%20dari%20katalog." 
+                       target="_blank"
+                       class="inline-flex items-center gap-2 px-4 py-2.5 bg-ranch-crimson hover:bg-ranch-crimsondark text-xs font-bold text-white rounded-xl transition shadow-md hover:shadow-lg">
+                        <i class="fa-brands fa-whatsapp text-base"></i>
+                        <span>Order Daging WA</span>
+                    </a>
+                </div>
+
+                <!-- Mobile Menu Button -->
+                <div class="flex lg:hidden items-center gap-2">
+                    <a href="https://wa.me/6281234567890" target="_blank" class="p-2.5 bg-emerald-100 text-emerald-800 rounded-xl text-sm">
+                        <i class="fa-brands fa-whatsapp"></i>
+                    </a>
+                    <button id="mobileMenuBtn" class="p-2.5 text-slate-700 hover:text-ranch-crimson focus:outline-hidden rounded-xl bg-amber-50">
+                        <i id="menuIcon" class="fa-solid fa-bars text-xl"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Mobile Dropdown Menu -->
+        <div id="mobileMenu" class="hidden lg:hidden border-t border-ranch-border bg-white/98 px-6 py-5 shadow-xl">
+            <div class="flex flex-col gap-4 text-sm font-bold uppercase text-slate-700">
+                <a href="index.html" class="hover:text-ranch-crimson transition flex items-center justify-between">
+                    <span>Beranda</span>
+                    <i class="fa-solid fa-chevron-right text-xs"></i>
+                </a>
+                <a href="katalog.html" class="text-ranch-crimson flex items-center justify-between">
+                    <span>Koleksi Daging & Ternak Hidup</span>
+                    <i class="fa-solid fa-chevron-right text-xs"></i>
+                </a>
+                <a href="detail.html" class="hover:text-ranch-crimson transition flex items-center justify-between">
+                    <span>Detail Potongan Daging & Uji RPH</span>
+                    <i class="fa-solid fa-chevron-right text-xs"></i>
+                </a>
+                <a href="tentang.html" class="hover:text-ranch-crimson transition flex items-center justify-between">
+                    <span>Padang Rumput & Standar Halal</span>
+                    <i class="fa-solid fa-chevron-right text-xs"></i>
+                </a>
+                <a href="artikel.html" class="hover:text-ranch-crimson transition flex items-center justify-between">
+                    <span>Tips Hindari Daging Gelonggongan</span>
+                    <i class="fa-solid fa-chevron-right text-xs"></i>
+                </a>
+                <a href="kontak.html" class="hover:text-ranch-crimson transition flex items-center justify-between">
+                    <span>Pasokan Rumah Makan & Qurban</span>
+                    <i class="fa-solid fa-chevron-right text-xs"></i>
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- 3. PAGE BANNER & BREADCRUMBS -->
+    <section class="pt-8 pb-10 bg-gradient-to-b from-amber-100/60 to-ranch-parchment border-b border-ranch-border">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            
+            <nav class="flex items-center gap-2 text-xs text-slate-500 mb-4">
+                <a href="index.html" class="hover:text-ranch-crimson transition">Beranda</a>
+                <i class="fa-solid fa-chevron-right text-[10px] text-slate-400"></i>
+                <span class="text-ranch-brown font-bold">Koleksi Daging & Ternak Halal</span>
+            </nav>
+
+            <div class="flex flex-col md:flex-row md:items-end justify-between gap-6">
+                <div>
+                    <span class="px-3 py-1 bg-amber-100 text-ranch-brown text-xs font-bold uppercase rounded-md tracking-wider">
+                        POTONGAN SEGAR RPH & TERNAK HIDUP
+                    </span>
+                    <h1 class="text-3xl sm:text-5xl font-extrabold text-ranch-brown font-serif mt-2">
+                        Koleksi Daging Sapi, Kambing & Qurban
+                    </h1>
+                    <p class="text-slate-600 text-sm sm:text-base mt-2 max-w-2xl">
+                        Potongan daging sapi has dalam/luar, daging rendang gandik, karkas kambing muda, iga ribs, serta sapi & domba hidup bergaransi bobot timbang nyata.
+                    </p>
+                </div>
+
+                <div class="flex items-center gap-3">
+                    <div class="bg-white p-3.5 rounded-2xl border border-ranch-border shadow-xs flex items-center gap-3">
+                        <div class="w-10 h-10 rounded-xl bg-emerald-100 text-ranch-green flex items-center justify-center text-lg">
+                            <i class="fa-solid fa-calendar-check"></i>
+                        </div>
+                        <div>
+                            <p class="text-xs font-bold text-slate-900">Potong Subuh Harian</p>
+                            <p class="text-[11px] text-slate-500">Jam 02.00 WIB di RPH</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- 4. FILTER TABS & SEARCH -->
+    <section class="py-6 bg-white border-b border-ranch-border sticky top-20 sm:top-24 z-30 shadow-xs">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex flex-col lg:flex-row lg:items-center justify-between gap-4">
+                
+                <!-- Category Buttons -->
+                <div class="flex items-center gap-2 overflow-x-auto no-scrollbar pb-1 lg:pb-0">
+                    <button onclick="filterMeat('all')" id="btn-all" class="cat-btn px-4 py-2 rounded-xl text-xs font-bold transition bg-ranch-crimson text-white shadow-xs shrink-0">
+                        Semua Daging & Ternak (12)
+                    </button>
+                    <button onclick="filterMeat('sapi')" id="btn-sapi" class="cat-btn px-4 py-2 rounded-xl text-xs font-bold transition bg-amber-50 text-slate-700 hover:bg-amber-100 shrink-0">
+                        Daging Sapi Segar (5)
+                    </button>
+                    <button onclick="filterMeat('kambing')" id="btn-kambing" class="cat-btn px-4 py-2 rounded-xl text-xs font-bold transition bg-amber-50 text-slate-700 hover:bg-amber-100 shrink-0">
+                        Daging Kambing Muda (3)
+                    </button>
+                    <button onclick="filterMeat('tulang')" id="btn-tulang" class="cat-btn px-4 py-2 rounded-xl text-xs font-bold transition bg-amber-50 text-slate-700 hover:bg-amber-100 shrink-0">
+                        Iga, Buntut & Tetelan (2)
+                    </button>
+                    <button onclick="filterMeat('ternak')" id="btn-ternak" class="cat-btn px-4 py-2 rounded-xl text-xs font-bold transition bg-amber-50 text-slate-700 hover:bg-amber-100 shrink-0">
+                        Sapi & Kambing Hidup (2)
+                    </button>
+                </div>
+
+                <!-- Search -->
+                <div class="flex items-center gap-3">
+                    <div class="relative flex-1 sm:w-64">
+                        <i class="fa-solid fa-magnifying-glass absolute left-3.5 top-1/2 -translate-y-1/2 text-slate-400 text-xs"></i>
+                        <input type="text" id="searchInput" onkeyup="searchMeat()" placeholder="Cari sirloin, rendang, iga, qurban..." 
+                               class="w-full pl-9 pr-3.5 py-2 text-xs bg-slate-50 border border-slate-200 rounded-xl focus:outline-hidden focus:border-ranch-crimson focus:bg-white transition">
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- 5. PRODUCTS GRID SECTION -->
+    <section class="py-12 md:py-16">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            
+            <div id="meatGrid" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
+                
+                <!-- Product 1: Has Dalam Tenderloin -->
+                <div class="product-item meat-card bg-white rounded-3xl border border-ranch-border shadow-xs overflow-hidden flex flex-col justify-between" data-category="sapi" data-name="daging sapi has dalam tenderloin super empuk steak medallion">
+                    <div class="relative h-56 bg-amber-50 overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1607623814075-e51df1bdc82f?q=80&w=600&auto=format&fit=crop" 
+                             alt="Daging Sapi Has Dalam Tenderloin" class="w-full h-full object-cover transform hover:scale-105 transition-all duration-500">
+                        <div class="absolute top-3 left-3">
+                            <span class="bg-ranch-crimson text-white text-[10px] font-bold px-2.5 py-1 rounded-md shadow-xs">
+                                Has Dalam (Tenderloin)
+                            </span>
+                        </div>
+                        <div class="absolute top-3 right-3 bg-white/95 text-slate-800 text-[10px] font-bold px-2 py-0.5 rounded shadow-xs">
+                            Pack 1 Kg
+                        </div>
+                    </div>
+                    <div class="p-5 flex-1 flex flex-col justify-between">
+                        <div>
+                            <div class="flex items-center justify-between text-xs text-slate-500 mb-1">
+                                <span>Potong: <strong>Subuh RPH</strong></span>
+                                <span class="text-amber-600 font-bold"><i class="fa-solid fa-star text-amber-400"></i> 5.0 (610+)</span>
+                            </div>
+                            <h3 class="text-base font-bold text-slate-900 font-serif">Daging Sapi Has Dalam (Tenderloin)</h3>
+                            <p class="text-xs text-slate-600 mt-1.5 leading-relaxed">
+                                Bagian paling empuk tanpa urat keras, sangat lumer untuk steak dan sate sapi maranggi.
+                            </p>
+                            <div class="mt-3 pt-2.5 border-t border-ranch-border text-[11px] text-slate-700 flex items-center justify-between">
+                                <span><i class="fa-solid fa-check text-emerald-600"></i> Paling Empuk</span>
+                                <span class="text-ranch-crimson font-bold">Premium Cut</span>
+                            </div>
+                        </div>
+                        <div class="mt-5 pt-3 border-t border-ranch-border flex items-center justify-between">
+                            <div>
+                                <span class="text-[10px] text-slate-400 uppercase">Harga / Kg</span>
+                                <p class="text-base font-black text-ranch-crimson">Rp 160.000</p>
+                            </div>
+                            <a href="detail.html" class="px-3.5 py-2 bg-ranch-crimson hover:bg-ranch-crimsondark text-white text-xs font-bold rounded-xl shadow-xs transition">
+                                Detail & Order
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product 2: Has Luar Sirloin -->
+                <div class="product-item meat-card bg-white rounded-3xl border border-ranch-border shadow-xs overflow-hidden flex flex-col justify-between" data-category="sapi" data-name="daging sapi has luar sirloin gurih lada hitam">
+                    <div class="relative h-56 bg-amber-50 overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1607623814075-e51df1bdc82f?q=80&w=600&auto=format&fit=crop" 
+                             alt="Daging Sapi Has Luar Sirloin" class="w-full h-full object-cover transform hover:scale-105 transition-all duration-500">
+                        <div class="absolute top-3 left-3">
+                            <span class="bg-ranch-brown text-white text-[10px] font-bold px-2.5 py-1 rounded-md shadow-xs">
+                                Has Luar (Sirloin)
+                            </span>
+                        </div>
+                        <div class="absolute top-3 right-3 bg-white/95 text-slate-800 text-[10px] font-bold px-2 py-0.5 rounded shadow-xs">
+                            Pack 1 Kg
+                        </div>
+                    </div>
+                    <div class="p-5 flex-1 flex flex-col justify-between">
+                        <div>
+                            <div class="flex items-center justify-between text-xs text-slate-500 mb-1">
+                                <span>Karakter: <strong>Juicy Gurih</strong></span>
+                                <span class="text-amber-600 font-bold"><i class="fa-solid fa-star text-amber-400"></i> 4.9 (480+)</span>
+                            </div>
+                            <h3 class="text-base font-bold text-slate-900 font-serif">Daging Sapi Has Luar (Sirloin)</h3>
+                            <p class="text-xs text-slate-600 mt-1.5 leading-relaxed">
+                                Memiliki lapisan lemak tipis gurih di sisinya yang menciptakan aroma wangi khas saat ditumis.
+                            </p>
+                            <div class="mt-3 pt-2.5 border-t border-ranch-border text-[11px] text-slate-700 flex items-center justify-between">
+                                <span><i class="fa-solid fa-fire text-amber-600"></i> Steak & Tumis</span>
+                                <span class="text-emerald-700 font-bold">100% Halal</span>
+                            </div>
+                        </div>
+                        <div class="mt-5 pt-3 border-t border-ranch-border flex items-center justify-between">
+                            <div>
+                                <span class="text-[10px] text-slate-400 uppercase">Harga / Kg</span>
+                                <p class="text-base font-black text-ranch-crimson">Rp 140.000</p>
+                            </div>
+                            <a href="detail.html" class="px-3.5 py-2 bg-ranch-crimson hover:bg-ranch-crimsondark text-white text-xs font-bold rounded-xl shadow-xs transition">
+                                Detail & Order
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product 3: Gandik / Topside Rendang -->
+                <div class="product-item meat-card bg-white rounded-3xl border border-ranch-border shadow-xs overflow-hidden flex flex-col justify-between" data-category="sapi" data-name="daging sapi gandik topside paha belakang rendang empal dendeng">
+                    <div class="relative h-56 bg-amber-50 overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1607623814075-e51df1bdc82f?q=80&w=600&auto=format&fit=crop" 
+                             alt="Daging Sapi Gandik Topside Rendang" class="w-full h-full object-cover transform hover:scale-105 transition-all duration-500">
+                        <div class="absolute top-3 left-3">
+                            <span class="bg-rose-700 text-white text-[10px] font-bold px-2.5 py-1 rounded-md shadow-xs">
+                                Khusus Rendang Padang
+                            </span>
+                        </div>
+                    </div>
+                    <div class="p-5 flex-1 flex flex-col justify-between">
+                        <div>
+                            <div class="flex items-center justify-between text-xs text-slate-500 mb-1">
+                                <span>Serat: <strong>Lurus Panjang Padat</strong></span>
+                                <span class="text-amber-600 font-bold"><i class="fa-solid fa-star text-amber-400"></i> 4.9 (730+)</span>
+                            </div>
+                            <h3 class="text-base font-bold text-slate-900 font-serif">Daging Gandik / Topside Rendang</h3>
+                            <p class="text-xs text-slate-600 mt-1.5 leading-relaxed">
+                                Daging padat murni tanpa gajih berlebih. Tidak mudah hancur saat diaduk bumbu rendang santan pekat.
+                            </p>
+                            <div class="mt-3 pt-2.5 border-t border-ranch-border text-[11px] text-slate-700 flex items-center justify-between">
+                                <span><i class="fa-solid fa-utensils text-rose-600"></i> Rendang & Dendeng</span>
+                                <span class="text-emerald-700 font-bold">Best Seller</span>
+                            </div>
+                        </div>
+                        <div class="mt-5 pt-3 border-t border-ranch-border flex items-center justify-between">
+                            <div>
+                                <span class="text-[10px] text-slate-400 uppercase">Harga / Kg</span>
+                                <p class="text-base font-black text-ranch-crimson">Rp 135.000</p>
+                            </div>
+                            <a href="detail.html" class="px-3.5 py-2 bg-ranch-crimson hover:bg-ranch-crimsondark text-white text-xs font-bold rounded-xl shadow-xs transition">
+                                Detail & Order
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product 4: Sandung Lamur Brisket -->
+                <div class="product-item meat-card bg-white rounded-3xl border border-ranch-border shadow-xs overflow-hidden flex flex-col justify-between" data-category="sapi" data-name="daging sandung lamur brisket dada rawon soto betawi asam padeh">
+                    <div class="relative h-56 bg-amber-50 overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1607623814075-e51df1bdc82f?q=80&w=600&auto=format&fit=crop" 
+                             alt="Daging Sandung Lamur Brisket Rawon" class="w-full h-full object-cover transform hover:scale-105 transition-all duration-500">
+                        <div class="absolute top-3 left-3">
+                            <span class="bg-emerald-700 text-white text-[10px] font-bold px-2.5 py-1 rounded-md shadow-xs">
+                                Dada Gurih (Brisket)
+                            </span>
+                        </div>
+                    </div>
+                    <div class="p-5 flex-1 flex flex-col justify-between">
+                        <div>
+                            <div class="flex items-center justify-between text-xs text-slate-500 mb-1">
+                                <span>Kaldu: <strong>Wangi Gurih Kental</strong></span>
+                                <span class="text-amber-600 font-bold"><i class="fa-solid fa-star text-amber-400"></i> 4.9 (520+)</span>
+                            </div>
+                            <h3 class="text-base font-bold text-slate-900 font-serif">Daging Sandung Lamur (Brisket)</h3>
+                            <p class="text-xs text-slate-600 mt-1.5 leading-relaxed">
+                                Selipan lemak gurih menciptakan kuah kaldu yang kaya rasa untuk rawon surabaya dan soto betawi.
+                            </p>
+                            <div class="mt-3 pt-2.5 border-t border-ranch-border text-[11px] text-slate-700 flex items-center justify-between">
+                                <span><i class="fa-solid fa-bowl-food text-emerald-600"></i> Rawon & Soto</span>
+                                <span class="text-slate-700 font-bold">Juicy Lembut</span>
+                            </div>
+                        </div>
+                        <div class="mt-5 pt-3 border-t border-ranch-border flex items-center justify-between">
+                            <div>
+                                <span class="text-[10px] text-slate-400 uppercase">Harga / Kg</span>
+                                <p class="text-base font-black text-ranch-crimson">Rp 125.000</p>
+                            </div>
+                            <a href="detail.html" class="px-3.5 py-2 bg-ranch-crimson hover:bg-ranch-crimsondark text-white text-xs font-bold rounded-xl shadow-xs transition">
+                                Detail & Order
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product 5: Sengkel Sapi Shank -->
+                <div class="product-item meat-card bg-white rounded-3xl border border-ranch-border shadow-xs overflow-hidden flex flex-col justify-between" data-category="sapi" data-name="daging sengkel sapi shank berurat kenyal gulai semur sop">
+                    <div class="relative h-56 bg-amber-50 overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1607623814075-e51df1bdc82f?q=80&w=600&auto=format&fit=crop" 
+                             alt="Daging Sengkel Sapi Shank" class="w-full h-full object-cover transform hover:scale-105 transition-all duration-500">
+                        <div class="absolute top-3 left-3">
+                            <span class="bg-amber-700 text-white text-[10px] font-bold px-2.5 py-1 rounded-md shadow-xs">
+                                Sengkel Berurat (Shank)
+                            </span>
+                        </div>
+                    </div>
+                    <div class="p-5 flex-1 flex flex-col justify-between">
+                        <div>
+                            <div class="flex items-center justify-between text-xs text-slate-500 mb-1">
+                                <span>Tekstur: <strong>Urat Kenyal Alami</strong></span>
+                                <span class="text-amber-600 font-bold"><i class="fa-solid fa-star text-amber-400"></i> 4.8 (390+)</span>
+                            </div>
+                            <h3 class="text-base font-bold text-slate-900 font-serif">Daging Sengkel Sapi (Shank)</h3>
+                            <p class="text-xs text-slate-600 mt-1.5 leading-relaxed">
+                                Daging bagian betis dengan urat gelatin yang kenyal empuk saat direbus lama untuk semur dan gulai urat.
+                            </p>
+                            <div class="mt-3 pt-2.5 border-t border-ranch-border text-[11px] text-slate-700 flex items-center justify-between">
+                                <span><i class="fa-solid fa-bone text-amber-700"></i> Urat Kolagen</span>
+                                <span class="text-slate-700 font-bold">Semur & Bakso</span>
+                            </div>
+                        </div>
+                        <div class="mt-5 pt-3 border-t border-ranch-border flex items-center justify-between">
+                            <div>
+                                <span class="text-[10px] text-slate-400 uppercase">Harga / Kg</span>
+                                <p class="text-base font-black text-ranch-crimson">Rp 130.000</p>
+                            </div>
+                            <a href="detail.html" class="px-3.5 py-2 bg-ranch-crimson hover:bg-ranch-crimsondark text-white text-xs font-bold rounded-xl shadow-xs transition">
+                                Detail & Order
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product 6: Daging Kambing Muda Campur -->
+                <div class="product-item meat-card bg-white rounded-3xl border border-ranch-border shadow-xs overflow-hidden flex flex-col justify-between" data-category="kambing" data-name="daging kambing muda campur potongan sate gule tongseng bebas prengus">
+                    <div class="relative h-56 bg-amber-50 overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1544025162-d76694265947?q=80&w=600&auto=format&fit=crop" 
+                             alt="Daging Kambing Muda Campur" class="w-full h-full object-cover transform hover:scale-105 transition-all duration-500">
+                        <div class="absolute top-3 left-3">
+                            <span class="bg-ranch-brown text-white text-[10px] font-bold px-2.5 py-1 rounded-md shadow-xs">
+                                Kambing Muda < 1 Tahun
+                            </span>
+                        </div>
+                    </div>
+                    <div class="p-5 flex-1 flex flex-col justify-between">
+                        <div>
+                            <div class="flex items-center justify-between text-xs text-slate-500 mb-1">
+                                <span>Karakter: <strong>Empuk Bebas Prengus</strong></span>
+                                <span class="text-amber-600 font-bold"><i class="fa-solid fa-star text-amber-400"></i> 4.9 (420+)</span>
+                            </div>
+                            <h3 class="text-base font-bold text-slate-900 font-serif">Daging Kambing Muda Campur</h3>
+                            <p class="text-xs text-slate-600 mt-1.5 leading-relaxed">
+                                Potongan daging paha dan iga campur kambing muda. Daging empuk lembut untuk sate klathak dan gule gurih.
+                            </p>
+                            <div class="mt-3 pt-2.5 border-t border-ranch-border text-[11px] text-slate-700 flex items-center justify-between">
+                                <span><i class="fa-solid fa-fire text-amber-600"></i> Sate & Gule</span>
+                                <span class="text-emerald-700 font-bold">Tanpa Prengus</span>
+                            </div>
+                        </div>
+                        <div class="mt-5 pt-3 border-t border-ranch-border flex items-center justify-between">
+                            <div>
+                                <span class="text-[10px] text-slate-400 uppercase">Harga / Kg</span>
+                                <p class="text-base font-black text-ranch-crimson">Rp 145.000</p>
+                            </div>
+                            <a href="detail.html" class="px-3.5 py-2 bg-ranch-brown hover:bg-ranch-browndark text-white text-xs font-bold rounded-xl shadow-xs transition">
+                                Detail & Order
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product 7: Iga Kambing Muda Lamb Chops -->
+                <div class="product-item meat-card bg-white rounded-3xl border border-ranch-border shadow-xs overflow-hidden flex flex-col justify-between" data-category="kambing" data-name="iga kambing muda lamb chops bakar madu tongseng">
+                    <div class="relative h-56 bg-amber-50 overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1544025162-d76694265947?q=80&w=600&auto=format&fit=crop" 
+                             alt="Iga Kambing Muda Lamb Chops" class="w-full h-full object-cover transform hover:scale-105 transition-all duration-500">
+                        <div class="absolute top-3 left-3">
+                            <span class="bg-amber-900 text-white text-[10px] font-bold px-2.5 py-1 rounded-md shadow-xs">
+                                Iga Kambing Muda (Chops)
+                            </span>
+                        </div>
+                    </div>
+                    <div class="p-5 flex-1 flex flex-col justify-between">
+                        <div>
+                            <div class="flex items-center justify-between text-xs text-slate-500 mb-1">
+                                <span>Olahan: <strong>Tongseng & Iga Bakar</strong></span>
+                                <span class="text-amber-600 font-bold"><i class="fa-solid fa-star text-amber-400"></i> 5.0 (310+)</span>
+                            </div>
+                            <h3 class="text-base font-bold text-slate-900 font-serif">Iga Kambing Muda (Lamb Chops)</h3>
+                            <p class="text-xs text-slate-600 mt-1.5 leading-relaxed">
+                                Iga berdaging tebal berbalut lemak gurih alami. Sangat empuk dipanggang bumbu kecap pedas.
+                            </p>
+                            <div class="mt-3 pt-2.5 border-t border-ranch-border text-[11px] text-slate-700 flex items-center justify-between">
+                                <span><i class="fa-solid fa-drumstick-bite text-amber-700"></i> Daging Tebal</span>
+                                <span class="text-emerald-700 font-bold">Mudah Lepas</span>
+                            </div>
+                        </div>
+                        <div class="mt-5 pt-3 border-t border-ranch-border flex items-center justify-between">
+                            <div>
+                                <span class="text-[10px] text-slate-400 uppercase">Harga / Kg</span>
+                                <p class="text-base font-black text-ranch-crimson">Rp 155.000</p>
+                            </div>
+                            <a href="detail.html" class="px-3.5 py-2 bg-ranch-brown hover:bg-ranch-browndark text-white text-xs font-bold rounded-xl shadow-xs transition">
+                                Detail & Order
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product 8: Paha Kambing Muda Utuh -->
+                <div class="product-item meat-card bg-white rounded-3xl border border-ranch-border shadow-xs overflow-hidden flex flex-col justify-between" data-category="kambing" data-name="paha kambing muda utuh lamb leg kambing guling aqiqah">
+                    <div class="relative h-56 bg-amber-50 overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1544025162-d76694265947?q=80&w=600&auto=format&fit=crop" 
+                             alt="Paha Kambing Muda Utuh" class="w-full h-full object-cover transform hover:scale-105 transition-all duration-500">
+                        <div class="absolute top-3 left-3">
+                            <span class="bg-emerald-800 text-white text-[10px] font-bold px-2.5 py-1 rounded-md shadow-xs">
+                                1.5 - 2 Kg / Paha
+                            </span>
+                        </div>
+                    </div>
+                    <div class="p-5 flex-1 flex flex-col justify-between">
+                        <div>
+                            <div class="flex items-center justify-between text-xs text-slate-500 mb-1">
+                                <span>Khusus: <strong>Kambing Guling & Mandhi</strong></span>
+                                <span class="text-amber-600 font-bold"><i class="fa-solid fa-star text-amber-400"></i> 4.9 (280+)</span>
+                            </div>
+                            <h3 class="text-base font-bold text-slate-900 font-serif">Paha Kambing Muda Utuh</h3>
+                            <p class="text-xs text-slate-600 mt-1.5 leading-relaxed">
+                                Paha utuh padat daging untuk sajian kambing guling pesta pernikahan dan nasi kebuli mandhi timur tengah.
+                            </p>
+                            <div class="mt-3 pt-2.5 border-t border-ranch-border text-[11px] text-slate-700 flex items-center justify-between">
+                                <span><i class="fa-solid fa-fire-burner text-emerald-700"></i> Kambing Guling</span>
+                                <span class="text-slate-700 font-bold">1 Ekor Paha</span>
+                            </div>
+                        </div>
+                        <div class="mt-5 pt-3 border-t border-ranch-border flex items-center justify-between">
+                            <div>
+                                <span class="text-[10px] text-slate-400 uppercase">Harga / Kg</span>
+                                <p class="text-base font-black text-ranch-crimson">Rp 150.000</p>
+                            </div>
+                            <a href="detail.html" class="px-3.5 py-2 bg-ranch-brown hover:bg-ranch-browndark text-white text-xs font-bold rounded-xl shadow-xs transition">
+                                Detail & Order
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product 9: Iga Sapi Ribs Pilihan -->
+                <div class="product-item meat-card bg-white rounded-3xl border border-ranch-border shadow-xs overflow-hidden flex flex-col justify-between" data-category="tulang" data-name="iga sapi pilihan beef ribs sup iga konro bakar madu">
+                    <div class="relative h-56 bg-amber-50 overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1607623814075-e51df1bdc82f?q=80&w=600&auto=format&fit=crop" 
+                             alt="Iga Sapi Pilihan Beef Ribs" class="w-full h-full object-cover transform hover:scale-105 transition-all duration-500">
+                        <div class="absolute top-3 left-3">
+                            <span class="bg-blue-700 text-white text-[10px] font-bold px-2.5 py-1 rounded-md shadow-xs">
+                                Iga Potong Rapi (Ribs)
+                            </span>
+                        </div>
+                    </div>
+                    <div class="p-5 flex-1 flex flex-col justify-between">
+                        <div>
+                            <div class="flex items-center justify-between text-xs text-slate-500 mb-1">
+                                <span>Karakter: <strong>Daging Menempel Tebal</strong></span>
+                                <span class="text-amber-600 font-bold"><i class="fa-solid fa-star text-amber-400"></i> 4.9 (680+)</span>
+                            </div>
+                            <h3 class="text-base font-bold text-slate-900 font-serif">Iga Sapi Pilihan (Beef Ribs)</h3>
+                            <p class="text-xs text-slate-600 mt-1.5 leading-relaxed">
+                                Iga sapi lokal dengan ketebalan daging optimal, sangat nikmat untuk sop iga bening dan iga bakar madu.
+                            </p>
+                            <div class="mt-3 pt-2.5 border-t border-ranch-border text-[11px] text-slate-700 flex items-center justify-between">
+                                <span><i class="fa-solid fa-check text-blue-600"></i> Kaldu Gurih</span>
+                                <span class="text-slate-700 font-bold">Pack 1 Kg</span>
+                            </div>
+                        </div>
+                        <div class="mt-5 pt-3 border-t border-ranch-border flex items-center justify-between">
+                            <div>
+                                <span class="text-[10px] text-slate-400 uppercase">Harga / Kg</span>
+                                <p class="text-base font-black text-ranch-crimson">Rp 115.000</p>
+                            </div>
+                            <a href="detail.html" class="px-3.5 py-2 bg-ranch-crimson hover:bg-ranch-crimsondark text-white text-xs font-bold rounded-xl shadow-xs transition">
+                                Detail & Order
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product 10: Buntut Sapi Oxtail -->
+                <div class="product-item meat-card bg-white rounded-3xl border border-ranch-border shadow-xs overflow-hidden flex flex-col justify-between" data-category="tulang" data-name="buntut sapi utuh potong oxtail sop buntut bakar borobudur">
+                    <div class="relative h-56 bg-amber-50 overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1607623814075-e51df1bdc82f?q=80&w=600&auto=format&fit=crop" 
+                             alt="Buntut Sapi Oxtail Segar" class="w-full h-full object-cover transform hover:scale-105 transition-all duration-500">
+                        <div class="absolute top-3 left-3">
+                            <span class="bg-stone-800 text-white text-[10px] font-bold px-2.5 py-1 rounded-md shadow-xs">
+                                Buntut Tengah (Center Cut)
+                            </span>
+                        </div>
+                    </div>
+                    <div class="p-5 flex-1 flex flex-col justify-between">
+                        <div>
+                            <div class="flex items-center justify-between text-xs text-slate-500 mb-1">
+                                <span>Potongan: <strong>Center Cut 2-3 cm</strong></span>
+                                <span class="text-amber-600 font-bold"><i class="fa-solid fa-star text-amber-400"></i> 4.9 (450+)</span>
+                            </div>
+                            <h3 class="text-base font-bold text-slate-900 font-serif">Buntut Sapi Pilihan (Oxtail)</h3>
+                            <p class="text-xs text-slate-600 mt-1.5 leading-relaxed">
+                                Bagian buntut tengah berdaging melimpah dengan cincin kolagen kenyal, bahan baku sop buntut legendaris.
+                            </p>
+                            <div class="mt-3 pt-2.5 border-t border-ranch-border text-[11px] text-slate-700 flex items-center justify-between">
+                                <span><i class="fa-solid fa-crown text-amber-600"></i> Sop Buntut Hotel</span>
+                                <span class="text-slate-700 font-bold">Kolagen Alami</span>
+                            </div>
+                        </div>
+                        <div class="mt-5 pt-3 border-t border-ranch-border flex items-center justify-between">
+                            <div>
+                                <span class="text-[10px] text-slate-400 uppercase">Harga / Kg</span>
+                                <p class="text-base font-black text-ranch-crimson">Rp 135.000</p>
+                            </div>
+                            <a href="detail.html" class="px-3.5 py-2 bg-ranch-crimson hover:bg-ranch-crimsondark text-white text-xs font-bold rounded-xl shadow-xs transition">
+                                Detail & Order
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product 11: Domba / Kambing Aqiqah Hidup -->
+                <div class="product-item meat-card bg-white rounded-3xl border-2 border-emerald-300 shadow-xs overflow-hidden flex flex-col justify-between" data-category="ternak" data-name="domba kambing aqiqah jantan hidup 28kg 35kg syar i sehat">
+                    <div class="relative h-56 bg-emerald-50 overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1544025162-d76694265947?q=80&w=600&auto=format&fit=crop" 
+                             alt="Domba Aqiqah Jantan Hidup" class="w-full h-full object-cover transform hover:scale-105 transition-all duration-500">
+                        <div class="absolute top-3 left-3">
+                            <span class="bg-ranch-green text-white text-[10px] font-bold px-2.5 py-1 rounded-md shadow-xs">
+                                Paket Aqiqah & Qurban
+                            </span>
+                        </div>
+                        <div class="absolute top-3 right-3 bg-white/95 text-emerald-800 text-[10px] font-bold px-2 py-0.5 rounded shadow-xs">
+                            Bobot 28 - 35 Kg
+                        </div>
+                    </div>
+                    <div class="p-5 flex-1 flex flex-col justify-between">
+                        <div>
+                            <div class="flex items-center justify-between text-xs text-slate-500 mb-1">
+                                <span>Syarat: <strong>Cukup Umur & Jantan Sehat</strong></span>
+                                <span class="text-amber-600 font-bold"><i class="fa-solid fa-star text-amber-400"></i> 5.0 (380+)</span>
+                            </div>
+                            <h3 class="text-base font-bold text-slate-900 font-serif">Domba / Kambing Aqiqah Hidup</h3>
+                            <p class="text-xs text-slate-600 mt-1.5 leading-relaxed">
+                                Hewan jantan sehat cukup umur, bersertifikat dokter hewan. Bisa dikirim hidup atau siap potong masak gule sate.
+                            </p>
+                            <div class="mt-3 pt-2.5 border-t border-ranch-border text-[11px] text-slate-700 flex items-center justify-between">
+                                <span><i class="fa-solid fa-truck text-emerald-700"></i> Gratis Antar</span>
+                                <span class="text-emerald-700 font-bold">Syar'i 100%</span>
+                            </div>
+                        </div>
+                        <div class="mt-5 pt-3 border-t border-ranch-border flex items-center justify-between">
+                            <div>
+                                <span class="text-[10px] text-slate-400 uppercase">Harga Ekor</span>
+                                <p class="text-base font-black text-ranch-green">Rp 2.450.000</p>
+                            </div>
+                            <a href="detail.html" class="px-3.5 py-2 bg-ranch-green hover:bg-emerald-800 text-white text-xs font-bold rounded-xl shadow-xs transition">
+                                Pesan Ternak
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product 12: Sapi Limosin Qurban Hidup -->
+                <div class="product-item meat-card bg-white rounded-3xl border-2 border-amber-300 shadow-xs overflow-hidden flex flex-col justify-between" data-category="ternak" data-name="sapi limosin simental qurban hidup 450kg 550kg bobot nyata dkm">
+                    <div class="relative h-56 bg-amber-50 overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1570042225831-d98fa7577f1e?q=80&w=600&auto=format&fit=crop" 
+                             alt="Sapi Limosin Simental Qurban Hidup" class="w-full h-full object-cover transform hover:scale-105 transition-all duration-500">
+                        <div class="absolute top-3 left-3">
+                            <span class="bg-ranch-brown text-white text-[10px] font-bold px-2.5 py-1 rounded-md shadow-xs">
+                                Sapi Qurban Pilihan
+                            </span>
+                        </div>
+                        <div class="absolute top-3 right-3 bg-white/95 text-slate-800 text-[10px] font-bold px-2 py-0.5 rounded shadow-xs">
+                            Bobot 400 - 500 Kg
+                        </div>
+                    </div>
+                    <div class="p-5 flex-1 flex flex-col justify-between">
+                        <div>
+                            <div class="flex items-center justify-between text-xs text-slate-500 mb-1">
+                                <span>Layanan: <strong>Gratis Rawat s/d Hari H</strong></span>
+                                <span class="text-amber-600 font-bold"><i class="fa-solid fa-star text-amber-400"></i> 5.0 (290+)</span>
+                            </div>
+                            <h3 class="text-base font-bold text-slate-900 font-serif">Sapi Limosin Qurban Hidup</h3>
+                            <p class="text-xs text-slate-600 mt-1.5 leading-relaxed">
+                                Timbangan digital nyata disaksikan pembeli, bebas PMK & cacing hati, siap kirim armada khusus ke masjid/lokasi Anda.
+                            </p>
+                            <div class="mt-3 pt-2.5 border-t border-ranch-border text-[11px] text-slate-700 flex items-center justify-between">
+                                <span><i class="fa-solid fa-certificate text-emerald-700"></i> SKKH Dokter Hewan</span>
+                                <span class="text-ranch-brown font-bold">Poel Gigi 2</span>
+                            </div>
+                        </div>
+                        <div class="mt-5 pt-3 border-t border-ranch-border flex items-center justify-between">
+                            <div>
+                                <span class="text-[10px] text-slate-400 uppercase">Mulai Dari</span>
+                                <p class="text-base font-black text-ranch-brown">Rp 24.500.000</p>
+                            </div>
+                            <a href="detail.html" class="px-3.5 py-2 bg-ranch-brown hover:bg-ranch-browndark text-white text-xs font-bold rounded-xl shadow-xs transition">
+                                Pesan Sapi
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- No results message -->
+            <div id="noResults" class="hidden py-16 text-center">
+                <div class="w-16 h-16 rounded-full bg-amber-100 text-ranch-crimson flex items-center justify-center mx-auto text-2xl mb-3">
+                    <i class="fa-solid fa-cow"></i>
+                </div>
+                <h3 class="text-lg font-bold text-slate-900 font-serif">Daging / Ternak Tidak Ditemukan</h3>
+                <p class="text-xs text-slate-500 mt-1">Coba gunakan kata kunci lain seperti 'tenderloin', 'rendang', atau 'iga'.</p>
+                <button onclick="resetMeatFilter()" class="mt-4 px-5 py-2.5 bg-ranch-crimson text-white font-bold text-xs rounded-xl hover:bg-ranch-crimsondark transition">
+                    Tampilkan Semua Daging
+                </button>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- 6. B2B / PASOKAN RESTO BANNER -->
+    <section class="py-14 bg-white border-t border-ranch-border">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="bg-gradient-to-r from-ranch-browndark via-ranch-brown to-stone-900 rounded-3xl p-8 sm:p-12 text-white flex flex-col lg:flex-row items-center justify-between gap-8 shadow-xl">
+                <div class="space-y-3 max-w-2xl text-center lg:text-left">
+                    <span class="px-3 py-1 bg-emerald-800 text-emerald-200 text-[10px] font-extrabold uppercase tracking-wider rounded-md">
+                        KONTRAK PASOKAN 20 KG - 500 KG / HARI
+                    </span>
+                    <h2 class="text-2xl sm:text-3xl font-extrabold font-serif leading-tight">
+                        Mencari Pasokan Daging Sapi & Kambing Rutin untuk Usaha Kuliner Anda?
+                    </h2>
+                    <p class="text-amber-100/80 text-xs sm:text-sm leading-relaxed">
+                        Dapatkan harga potong karkas langsung dari RPH peternakan Lembah Bima Ranch, jaminan daging padat tanpa suntikan air, dan pengiriman subuh jam 05.00 WIB setiap hari.
+                    </p>
+                </div>
+                <div class="flex flex-col sm:flex-row gap-3.5 w-full lg:w-auto shrink-0">
+                    <a href="https://wa.me/6281234567890?text=Halo%20Tim%20B2B%20Lembah%20Bima%20Ranch,%20saya%20tertarik%20dengan%20pasokan%20grosir%20daging." 
+                       target="_blank"
+                       class="inline-flex items-center justify-center gap-2.5 px-6 py-4 bg-ranch-crimson hover:bg-ranch-crimsondark text-white font-bold text-xs uppercase tracking-wider rounded-2xl shadow-lg transition text-center">
+                        <i class="fa-brands fa-whatsapp text-base"></i>
+                        <span>Konsultasi Pasokan B2B</span>
+                    </a>
+                    <a href="kontak.html" 
+                       class="inline-flex items-center justify-center gap-2 px-5 py-4 bg-white/10 hover:bg-white/20 text-white font-bold text-xs rounded-2xl border border-white/20 transition text-center">
+                        <span>Info Kandang & RPH</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 7. FOOTER -->
+    <footer class="bg-ranch-browndark text-stone-300 text-xs pt-16 pb-36 border-t border-amber-950 font-sans">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-10 pb-12 border-b border-amber-950/60">
+                <div class="lg:col-span-2 space-y-4">
+                    <a href="index.html" class="flex items-center gap-3">
+                        <div class="w-10 h-10 bg-gradient-to-br from-ranch-brown to-ranch-crimson text-white flex items-center justify-center text-xl font-bold rounded-xl">
+                            <i class="fa-solid fa-cow"></i>
+                        </div>
+                        <span class="text-2xl font-extrabold text-white tracking-tight font-serif">
+                            LEMBAH BIMA<span class="text-ranch-crimson">.</span>
+                        </span>
+                    </a>
+                    <p class="text-xs text-stone-400 leading-relaxed max-w-sm">
+                        Peternakan sapi & kambing terpadu dengan sistem pakan rumput alami. Rumah potong hewan (RPH) berstandar Halal MUI menghasilkan daging murni segar tanpa suntikan air dan tanpa bahan kimia pengawet.
+                    </p>
+                </div>
+                <div>
+                    <h4 class="text-xs font-bold text-white uppercase tracking-wider mb-4 font-serif">Navigasi Halaman</h4>
+                    <ul class="space-y-2.5">
+                        <li><a href="index.html" class="hover:text-amber-400 transition">Beranda Utama</a></li>
+                        <li><a href="katalog.html" class="hover:text-amber-400 transition">Koleksi Daging & Ternak</a></li>
+                        <li><a href="detail.html" class="hover:text-amber-400 transition">Detail Daging Sapi</a></li>
+                        <li><a href="tentang.html" class="hover:text-amber-400 transition">Padang Penggemukan</a></li>
+                        <li><a href="artikel.html" class="hover:text-amber-400 transition">Tips Cek Daging Segar</a></li>
+                        <li><a href="kontak.html" class="hover:text-amber-400 transition">Pasokan Resto & Jagal</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-xs font-bold text-white uppercase tracking-wider mb-4 font-serif">Potongan Daging</h4>
+                    <ul class="space-y-2.5">
+                        <li><a href="detail.html" class="hover:text-amber-400 transition">Has Dalam (Tenderloin)</a></li>
+                        <li><a href="detail.html" class="hover:text-amber-400 transition">Gandik / Topside Rendang</a></li>
+                        <li><a href="detail.html" class="hover:text-amber-400 transition">Sandung Lamur Rawon</a></li>
+                        <li><a href="katalog.html" class="hover:text-amber-400 transition">Iga Sapi Pilihan (Ribs)</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-xs font-bold text-white uppercase tracking-wider mb-4 font-serif">Kandang Ranch & RPH</h4>
+                    <p class="text-xs text-stone-400 leading-relaxed mb-3">
+                        Kawasan Peternakan Lembah Bima, Jl. Padang Hijau No. 8, Kec. Bandungan, Kab. Semarang, Jawa Tengah 50614.
+                    </p>
+                    <p class="text-xs text-amber-400 font-bold mb-1"><i class="fa-solid fa-phone mr-1.5"></i> +62 812-3456-7890</p>
+                    <p class="text-xs text-stone-400"><i class="fa-solid fa-envelope mr-1.5"></i> order@lembahbimaranch.com</p>
+                </div>
+            </div>
+            <div class="pt-8 flex flex-col sm:flex-row items-center justify-between gap-4 text-[11px] text-stone-500">
+                <p>&copy; 2026 LEMBAH BIMA RANCH. All rights reserved.</p>
+                <div class="flex items-center gap-4">
+                    <span>100% Halal RPH MUI</span>
+                    <span>•</span>
+                    <span>Bebas Daging Gelonggongan</span>
+                    <span>•</span>
+                    <span>Pakan Rumput Alami</span>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- 8. FLOATING WHATSAPP BUTTON (bottom-24) -->
+    <div class="fixed bottom-24 right-5 z-40">
+        <a href="https://wa.me/6281234567890?text=Halo%20Admin%20Lembah%20Bima%20Ranch,%20saya%20ingin%20tanya%20stok%20katalog%20daging." 
+           target="_blank" 
+           aria-label="Chat WhatsApp Lembah Bima Ranch"
+           class="group flex items-center gap-3 bg-gradient-to-r from-ranch-crimson to-red-800 hover:from-red-700 hover:to-red-900 text-white px-4 py-3.5 rounded-full shadow-2xl transition-all transform hover:scale-105 border-2 border-white/80">
+            <i class="fa-brands fa-whatsapp text-2xl animate-pulse"></i>
+            <span class="text-xs font-bold tracking-wide pr-1 hidden sm:inline">Pesan Daging Segar WA</span>
+        </a>
+    </div>
+
+    <!-- 9. STICKY DEMO & SALES BAR (fixed bottom-4) -->
+    <div class="fixed bottom-4 left-4 right-4 z-50 max-w-5xl mx-auto">
+      <div class="bg-ranch-browndark/95 backdrop-blur-md text-white px-4 sm:px-6 py-3.5 rounded-2xl shadow-2xl border border-amber-900/60 flex flex-col md:flex-row items-center justify-between gap-3">
+        <div class="flex items-center gap-3 text-left w-full md:w-auto">
+          <div class="w-9 h-9 rounded-xl bg-red-500/20 border border-red-400/40 flex items-center justify-center shrink-0">
+            <i class="fa-solid fa-cow text-red-400 text-sm"></i>
+          </div>
+          <div>
+            <div class="text-xs md:text-sm font-bold text-stone-100 flex items-center gap-2">
+              <span>Lentera Pasar Demo</span>
+              <span class="text-[10px] px-2 py-0.5 rounded bg-emerald-500/20 text-emerald-300 font-bold">Katalog Daging & Ternak</span>
+            </div>
+            <p class="text-[11px] text-stone-400 hidden sm:block">Desain Halal Grass-Fed Ranch untuk agrobisnis peternakan sapi, kambing muda, & suplai daging segar.</p>
+          </div>
+        </div>
+        <div class="flex items-center gap-3 w-full md:w-auto justify-end">
+          <a href="https://wa.me/6281234567890?text=Halo%20Tim%20Lentera%20Pasar,%20saya%20tertarik%20menggunakan%20template%20website%20Daging%20Sapi%20ini." 
+             target="_blank"
+             class="w-full md:w-auto inline-flex items-center justify-center gap-2 bg-gradient-to-r from-ranch-crimson to-red-700 hover:from-red-600 hover:to-red-800 text-white text-xs md:text-sm font-bold px-5 py-2.5 rounded-xl shadow-lg transition-all hover:scale-105 shrink-0">
+            <span>Gunakan Template Ini</span>
+            <i class="fa-solid fa-arrow-right text-xs"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <!-- JAVASCRIPT FILTER & SEARCH -->
+    <script>
+        const mobileMenuBtn = document.getElementById('mobileMenuBtn');
+        const mobileMenu = document.getElementById('mobileMenu');
+        const menuIcon = document.getElementById('menuIcon');
+
+        mobileMenuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+            if (mobileMenu.classList.contains('hidden')) {
+                menuIcon.classList.remove('fa-xmark');
+                menuIcon.classList.add('fa-bars');
+            } else {
+                menuIcon.classList.remove('fa-bars');
+                menuIcon.classList.add('fa-xmark');
+            }
+        });
+
+        function filterMeat(cat) {
+            const items = document.querySelectorAll('.product-item');
+            const buttons = document.querySelectorAll('.cat-btn');
+
+            buttons.forEach(b => {
+                b.className = "cat-btn px-4 py-2 rounded-xl text-xs font-bold transition bg-amber-50 text-slate-700 hover:bg-amber-100 shrink-0";
+            });
+            const activeBtn = document.getElementById(`btn-${cat}`);
+            if (activeBtn) {
+                activeBtn.className = "cat-btn px-4 py-2 rounded-xl text-xs font-bold transition bg-ranch-crimson text-white shadow-xs shrink-0";
+            }
+
+            let count = 0;
+            items.forEach(item => {
+                const itemCat = item.getAttribute('data-category');
+                if (cat === 'all' || itemCat === cat) {
+                    item.classList.remove('hidden');
+                    count++;
+                } else {
+                    item.classList.add('hidden');
+                }
+            });
+
+            const noResults = document.getElementById('noResults');
+            if (count === 0) {
+                noResults.classList.remove('hidden');
+            } else {
+                noResults.classList.add('hidden');
+            }
+        }
+
+        function searchMeat() {
+            const query = document.getElementById('searchInput').value.toLowerCase();
+            const items = document.querySelectorAll('.product-item');
+            let count = 0;
+
+            items.forEach(item => {
+                const name = item.getAttribute('data-name').toLowerCase();
+                if (name.includes(query)) {
+                    item.classList.remove('hidden');
+                    count++;
+                } else {
+                    item.classList.add('hidden');
+                }
+            });
+
+            const noResults = document.getElementById('noResults');
+            if (count === 0) {
+                noResults.classList.remove('hidden');
+            } else {
+                noResults.classList.add('hidden');
+            }
+        }
+
+        function resetMeatFilter() {
+            document.getElementById('searchInput').value = '';
+            filterMeat('all');
+        }
+    </script>
+</body>
+</html>

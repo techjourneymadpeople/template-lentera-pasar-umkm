@@ -1,0 +1,515 @@
+<!DOCTYPE html>
+<html lang="id" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edukasi Daging Segar & Tips Olahan // LEMBAH BIMA RANCH</title>
+    <meta name="description" content="Edukasi daging peternakan: Cara membedakan daging sapi segar vs gelonggongan, tips masak daging kambing empuk tanpa bau prengus, dan panduan hewan qurban syar'i.">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Playfair+Display:ital,wght@0,600;0,700;0,800;1,600&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome 6 -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        ranch: {
+                            brown: '#38220F',
+                            browndark: '#241407',
+                            brownlight: '#4D321A',
+                            crimson: '#B91C1C',
+                            crimsondark: '#991B1B',
+                            green: '#15803D',
+                            greenlight: '#DCFCE7',
+                            parchment: '#FAF6EF',
+                            cream: '#FFFDF8',
+                            border: '#E5DAC6',
+                            charcoal: '#1C1510'
+                        }
+                    },
+                    fontFamily: {
+                        sans: ['"Plus Jakarta Sans"', 'sans-serif'],
+                        serif: ['"Playfair Display"', 'serif'],
+                        cinzel: ['"Cinzel"', 'serif']
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        .no-scrollbar::-webkit-scrollbar { display: none; }
+        .no-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
+
+        .meat-card {
+            transition: all 0.35s cubic-bezier(0.16, 1, 0.3, 1);
+        }
+        .meat-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 20px 35px -10px rgba(56, 34, 15, 0.12);
+        }
+    </style>
+</head>
+<body class="bg-ranch-parchment text-ranch-charcoal font-sans antialiased selection:bg-ranch-crimson selection:text-white">
+
+    <!-- 1. TOP ANNOUNCEMENT BAR -->
+    <div class="bg-ranch-brown text-amber-100 text-xs py-2.5 px-4 font-sans font-medium border-b border-amber-950/40">
+        <div class="max-w-7xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-2 text-center sm:text-left">
+            <div class="flex items-center justify-center gap-2">
+                <span class="px-2 py-0.5 bg-ranch-green text-white text-[10px] uppercase font-bold tracking-wider rounded-md shadow-xs flex items-center gap-1">
+                    <i class="fa-solid fa-book-open text-emerald-200"></i> EDUKASI MUTU DAGING
+                </span>
+                <span class="text-white/95 font-medium">Panduan Ciri Daging Segar, Waspada Gelonggongan, & Tips Olahan Dapur</span>
+            </div>
+            <div class="flex items-center gap-4 text-xs">
+                <a href="katalog.html" class="text-amber-300 hover:underline font-bold transition flex items-center gap-1">
+                    Pesan Daging Segar <i class="fa-solid fa-arrow-right text-[10px]"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- 2. NAVBAR -->
+    <header class="sticky top-0 z-40 bg-white/95 backdrop-blur-md border-b border-ranch-border transition-all shadow-xs">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-20 sm:h-24">
+                
+                <!-- Logo -->
+                <a href="index.html" class="flex items-center gap-3.5 group">
+                    <div class="w-12 h-12 bg-gradient-to-br from-ranch-brown to-ranch-crimson text-white flex items-center justify-center text-2xl font-bold rounded-2xl shadow-md group-hover:scale-105 transition">
+                        <i class="fa-solid fa-cow"></i>
+                    </div>
+                    <div class="flex flex-col">
+                        <span class="text-2xl sm:text-3xl font-extrabold tracking-tight text-ranch-brown uppercase leading-none font-serif">
+                            LEMBAH BIMA<span class="text-ranch-crimson">.</span>
+                        </span>
+                        <span class="text-[9px] tracking-[0.28em] text-ranch-green uppercase mt-1 font-bold">
+                            HALAL GRASS-FED RANCH
+                        </span>
+                    </div>
+                </a>
+
+                <!-- Desktop Navigation Links -->
+                <nav class="hidden lg:flex items-center gap-7 text-xs font-bold tracking-wider uppercase text-slate-700 font-sans">
+                    <a href="index.html" class="hover:text-ranch-crimson transition">Beranda</a>
+                    <a href="katalog.html" class="hover:text-ranch-crimson transition">Koleksi Daging & Ternak</a>
+                    <a href="detail.html" class="hover:text-ranch-crimson transition">Detail Daging Sapi</a>
+                    <a href="tentang.html" class="hover:text-ranch-crimson transition">Padang Penggemukan</a>
+                    <a href="artikel.html" class="text-ranch-crimson border-b-2 border-ranch-crimson pb-1 font-bold">Tips Cek Daging Segar</a>
+                    <a href="kontak.html" class="hover:text-ranch-crimson transition">Pasokan Resto & Jagal</a>
+                </nav>
+
+                <!-- Actions -->
+                <div class="hidden sm:flex items-center gap-3">
+                    <a href="https://wa.me/6281234567890?text=Halo%20Admin%20Lembah%20Bima%20Ranch,%20saya%20ingin%20tanya%20tips%20daging%20segar." 
+                       target="_blank"
+                       class="inline-flex items-center gap-2 px-4 py-2.5 bg-ranch-crimson hover:bg-ranch-crimsondark text-xs font-bold text-white rounded-xl transition shadow-md hover:shadow-lg">
+                        <i class="fa-brands fa-whatsapp text-base"></i>
+                        <span>Order Daging WA</span>
+                    </a>
+                </div>
+
+                <!-- Mobile Menu Button -->
+                <div class="flex lg:hidden items-center gap-2">
+                    <a href="https://wa.me/6281234567890" target="_blank" class="p-2.5 bg-emerald-100 text-emerald-800 rounded-xl text-sm">
+                        <i class="fa-brands fa-whatsapp"></i>
+                    </a>
+                    <button id="mobileMenuBtn" class="p-2.5 text-slate-700 hover:text-ranch-crimson focus:outline-hidden rounded-xl bg-amber-50">
+                        <i id="menuIcon" class="fa-solid fa-bars text-xl"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Mobile Dropdown Menu -->
+        <div id="mobileMenu" class="hidden lg:hidden border-t border-ranch-border bg-white/98 px-6 py-5 shadow-xl">
+            <div class="flex flex-col gap-4 text-sm font-bold uppercase text-slate-700">
+                <a href="index.html" class="hover:text-ranch-crimson transition flex items-center justify-between">
+                    <span>Beranda</span>
+                    <i class="fa-solid fa-chevron-right text-xs"></i>
+                </a>
+                <a href="katalog.html" class="hover:text-ranch-crimson transition flex items-center justify-between">
+                    <span>Koleksi Daging & Ternak Hidup</span>
+                    <i class="fa-solid fa-chevron-right text-xs"></i>
+                </a>
+                <a href="detail.html" class="hover:text-ranch-crimson transition flex items-center justify-between">
+                    <span>Detail Potongan Daging & Uji RPH</span>
+                    <i class="fa-solid fa-chevron-right text-xs"></i>
+                </a>
+                <a href="tentang.html" class="hover:text-ranch-crimson transition flex items-center justify-between">
+                    <span>Padang Rumput & Standar Halal</span>
+                    <i class="fa-solid fa-chevron-right text-xs"></i>
+                </a>
+                <a href="artikel.html" class="text-ranch-crimson flex items-center justify-between">
+                    <span>Tips Hindari Daging Gelonggongan</span>
+                    <i class="fa-solid fa-chevron-right text-xs"></i>
+                </a>
+                <a href="kontak.html" class="hover:text-ranch-crimson transition flex items-center justify-between">
+                    <span>Pasokan Rumah Makan & Qurban</span>
+                    <i class="fa-solid fa-chevron-right text-xs"></i>
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- 3. PAGE BANNER -->
+    <section class="py-12 bg-gradient-to-b from-amber-100/60 to-ranch-parchment border-b border-ranch-border">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="max-w-3xl">
+                <span class="px-3 py-1 bg-amber-100 text-ranch-brown text-xs font-bold uppercase rounded-md tracking-wider">
+                    LIVESTOCK & MEAT SCIENCE GUIDE
+                </span>
+                <h1 class="text-3xl sm:text-5xl font-extrabold text-ranch-brown font-serif mt-3 mb-3 leading-tight">
+                    Edukasi Daging Segar & Tips Olahan
+                </h1>
+                <p class="text-slate-600 text-sm sm:text-base leading-relaxed">
+                    Ketahui cara membedakan daging sapi segar murni dari daging gelonggongan air, teknik memasak daging kambing agar empuk tanpa bau prengus, serta panduan memilih hewan qurban syar'i.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- 4. FEATURED ARTICLE 1: WASPADA DAGING GELONGGONGAN -->
+    <section class="py-12 md:py-16 bg-white border-b border-ranch-border">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="bg-ranch-parchment rounded-3xl p-6 sm:p-10 border-2 border-ranch-border shadow-md grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
+                
+                <div class="lg:col-span-6 space-y-4">
+                    <div class="flex items-center gap-2">
+                        <span class="px-3 py-0.5 bg-ranch-crimson text-white text-[10px] font-black uppercase rounded-md">
+                            PANDUAN KONSUMEN
+                        </span>
+                        <span class="text-xs text-slate-500">4 Menit Baca • Uji Mandiri di Rumah</span>
+                    </div>
+                    
+                    <h2 class="text-2xl sm:text-3xl font-extrabold text-slate-900 font-serif leading-snug">
+                        5 Cara Membedakan Daging Sapi Segar Murni vs Daging Gelonggongan Air
+                    </h2>
+
+                    <p class="text-xs sm:text-sm text-slate-600 leading-relaxed">
+                        Praktik gelonggongan adalah pemaksaan air dalam jumlah banyak ke perut sapi sebelum dipotong. Selain haram karena menyiksa hewan, daging gelonggongan sangat rentan terkontaminasi bakteri pembusuk.
+                    </p>
+
+                    <div class="space-y-2.5 pt-2 text-xs text-slate-700">
+                        <div class="flex items-start gap-2.5">
+                            <span class="w-5 h-5 rounded-full bg-rose-100 text-ranch-crimson flex items-center justify-center font-bold shrink-0">1</span>
+                            <div><strong>Warna Daging:</strong> Daging murni berwarna merah cerah segar (*cherry red*), sedangkan daging gelonggongan pucat keputihan seperti daging rebus.</div>
+                        </div>
+                        <div class="flex items-start gap-2.5">
+                            <span class="w-5 h-5 rounded-full bg-rose-100 text-ranch-crimson flex items-center justify-center font-bold shrink-0">2</span>
+                            <div><strong>Tekstur Permukaan:</strong> Daging murni terasa kesat padat dan tidak basah berlendir saat dipegang.</div>
+                        </div>
+                        <div class="flex items-start gap-2.5">
+                            <span class="w-5 h-5 rounded-full bg-rose-100 text-ranch-crimson flex items-center justify-center font-bold shrink-0">3</span>
+                            <div><strong>Uji Tisu / Kertas:</strong> Tempelkan tisu makan pada permukaan daging. Pada daging murni tisu tetap kering, pada daging gelonggongan tisu langsung basah kuyup.</div>
+                        </div>
+                        <div class="flex items-start gap-2.5">
+                            <span class="w-5 h-5 rounded-full bg-rose-100 text-ranch-crimson flex items-center justify-center font-bold shrink-0">4</span>
+                            <div><strong>Cara Digantung:</strong> Daging murni tidak meneteskan air saat digantung di los jagal, sedangkan daging gelonggongan meneteskan air terus-menerus.</div>
+                        </div>
+                        <div class="flex items-start gap-2.5">
+                            <span class="w-5 h-5 rounded-full bg-rose-100 text-ranch-crimson flex items-center justify-center font-bold shrink-0">5</span>
+                            <div><strong>Penyusutan Masak:</strong> Daging gelonggongan akan menyusut hingga 40-50% saat dimasak karena kandungan airnya menguap.</div>
+                        </div>
+                    </div>
+
+                    <div class="pt-3">
+                        <a href="katalog.html" class="inline-flex items-center gap-2 px-5 py-3 bg-ranch-crimson hover:bg-ranch-crimsondark text-white font-bold text-xs rounded-xl shadow-md transition">
+                            <span>Pesan Daging Murni Tanpa Suntik Air</span>
+                            <i class="fa-solid fa-arrow-right text-xs"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="lg:col-span-6">
+                    <div class="rounded-2xl overflow-hidden shadow-md border-2 border-white bg-amber-50">
+                        <img src="https://images.unsplash.com/photo-1607623814075-e51df1bdc82f?q=80&w=800&auto=format&fit=crop" 
+                             alt="Daging Sapi Segar Merah Murni di Talenan Kayu" 
+                             class="w-full h-80 object-cover transform hover:scale-105 transition-all duration-700">
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- 5. FEATURED ARTICLE 2: TIPS KAMBING EMPUK BEBAS PRENGUS -->
+    <section class="py-14 bg-white border-b border-ranch-border">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 space-y-8">
+            
+            <div class="text-center space-y-2">
+                <span class="px-3 py-1 bg-amber-100 text-ranch-brown text-xs font-bold uppercase rounded-md tracking-wider">
+                    RAHASIA DAPUR KAMBING
+                </span>
+                <h3 class="text-2xl sm:text-3xl font-extrabold text-ranch-brown font-serif">
+                    3 Trik Memasak Daging Kambing Empuk Lembut Bebas Bau Prengus
+                </h3>
+                <p class="text-slate-600 text-xs sm:text-sm">
+                    Bau prengus berasal dari kelenjar keringat dan cairan di bulu kambing yang menempel jika disembelih sembarangan:
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                
+                <div class="bg-ranch-parchment rounded-3xl p-6 border border-ranch-border shadow-xs flex flex-col justify-between">
+                    <div>
+                        <div class="w-10 h-10 rounded-xl bg-ranch-crimson text-white flex items-center justify-center font-black text-sm mb-4">
+                            1
+                        </div>
+                        <h4 class="font-bold text-sm text-slate-900 font-serif">Jangan Dicuci Air Mentah</h4>
+                        <p class="text-xs text-slate-600 mt-2 leading-relaxed">
+                            Mencuci daging kambing dengan air justru memperkuat aroma prengus dan membuat daging berair liat. Cukup buang lemak berlebih (*trimming*) dan lap dengan tisu.
+                        </p>
+                    </div>
+                    <div class="mt-4 pt-3 border-t border-ranch-border text-[11px] text-ranch-crimson font-semibold">
+                        🚫 Stop Cuci Air Kran
+                    </div>
+                </div>
+
+                <div class="bg-ranch-parchment rounded-3xl p-6 border border-ranch-border shadow-xs flex flex-col justify-between">
+                    <div>
+                        <div class="w-10 h-10 rounded-xl bg-ranch-green text-white flex items-center justify-center font-black text-sm mb-4">
+                            2
+                        </div>
+                        <h4 class="font-bold text-sm text-slate-900 font-serif">Bungkus Daun Pepaya / Nanas</h4>
+                        <p class="text-xs text-slate-600 mt-2 leading-relaxed">
+                            Enzim papain dari daun pepaya yang diremas atau parutan nanas muda selama 20 menit akan memecah serat protein daging kambing menjadi sangat empuk.
+                        </p>
+                    </div>
+                    <div class="mt-4 pt-3 border-t border-ranch-border text-[11px] text-emerald-800 font-semibold">
+                        🍃 Enzim Papain Alami
+                    </div>
+                </div>
+
+                <div class="bg-ranch-parchment rounded-3xl p-6 border border-ranch-border shadow-xs flex flex-col justify-between">
+                    <div>
+                        <div class="w-10 h-10 rounded-xl bg-ranch-brown text-white flex items-center justify-center font-black text-sm mb-4">
+                            3
+                        </div>
+                        <h4 class="font-bold text-sm text-slate-900 font-serif">Gunakan Rempah Aromatik</h4>
+                        <p class="text-xs text-slate-600 mt-2 leading-relaxed">
+                            Rebus daging dengan daun salam, serai, jahe geprek, cengkeh, dan kapulaga untuk mengikat sisa aroma serta menciptakan kaldu gule yang harum sedap.
+                        </p>
+                    </div>
+                    <div class="mt-4 pt-3 border-t border-ranch-border text-[11px] text-slate-700 font-semibold">
+                        🌿 Rempah Nusantara
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+    <!-- 6. KNOWLEDGE ARTICLES GRID -->
+    <section class="py-14 md:py-20 bg-ranch-parchment">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-2xl mx-auto mb-12">
+                <span class="px-3 py-1 bg-amber-100 text-ranch-brown text-xs font-bold uppercase rounded-md tracking-wider">
+                    ARTIKEL & WAWASAN PETERNAKAN
+                </span>
+                <h2 class="text-2xl sm:text-4xl font-extrabold text-ranch-brown font-serif mt-2 mb-2">
+                    Fakta Ilmiah Seputar Daging Halal
+                </h2>
+                <p class="text-slate-600 text-xs sm:text-sm">
+                    Edukasi cerdas untuk menjaga nutrisi dan kehalalan hidangan keluarga Anda.
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                
+                <!-- Article 1 -->
+                <div class="meat-card bg-white rounded-3xl border border-ranch-border overflow-hidden flex flex-col justify-between shadow-xs">
+                    <div class="h-48 overflow-hidden bg-amber-50">
+                        <img src="https://images.unsplash.com/photo-1607623814075-e51df1bdc82f?q=80&w=600&auto=format&fit=crop" 
+                             alt="Alasan Daging Tidak Boleh Dicuci Air" class="w-full h-full object-cover">
+                    </div>
+                    <div class="p-6 flex-1 flex flex-col justify-between">
+                        <div>
+                            <span class="text-[10px] bg-rose-100 text-ranch-crimson px-2 py-0.5 rounded font-bold uppercase">Tips Dapur</span>
+                            <h3 class="text-base font-bold text-slate-900 font-serif mt-2">
+                                Mengapa Daging Segar Tidak Boleh Dicuci Air Sebelum Masuk Freezer?
+                            </h3>
+                            <p class="text-xs text-slate-600 mt-2 leading-relaxed">
+                                Air mentah kran mengandung bakteri yang akan berkembang biak di pori-pori daging, serta membentuk kristal es tajam yang merusak jaringan serat empuk daging saat beku.
+                            </p>
+                        </div>
+                        <div class="mt-4 pt-3 border-t border-ranch-border flex items-center justify-between text-xs">
+                            <span class="text-slate-400">3 Menit Baca</span>
+                            <a href="katalog.html" class="font-bold text-ranch-crimson hover:underline">Pesan Daging &rarr;</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Article 2 -->
+                <div class="meat-card bg-white rounded-3xl border border-ranch-border overflow-hidden flex flex-col justify-between shadow-xs">
+                    <div class="h-48 overflow-hidden bg-amber-50">
+                        <img src="https://images.unsplash.com/photo-1570042225831-d98fa7577f1e?q=80&w=600&auto=format&fit=crop" 
+                             alt="Grass-Fed vs Grain-Fed" class="w-full h-full object-cover">
+                    </div>
+                    <div class="p-6 flex-1 flex flex-col justify-between">
+                        <div>
+                            <span class="text-[10px] bg-emerald-100 text-emerald-800 px-2 py-0.5 rounded font-bold uppercase">Nutrisi Ternak</span>
+                            <h3 class="text-base font-bold text-slate-900 font-serif mt-2">
+                                Mengenal Perbedaan Daging Sapi Grass-Fed vs Grain-Fed
+                            </h3>
+                            <p class="text-xs text-slate-600 mt-2 leading-relaxed">
+                                Sapi pakan rumput alami (grass-fed) memiliki kandungan asam lemak CLA dan Omega-3 jauh lebih tinggi dengan kadar lemak jenuh yang lebih rendah, sangat baik untuk kesehatan kolesterol.
+                            </p>
+                        </div>
+                        <div class="mt-4 pt-3 border-t border-ranch-border flex items-center justify-between text-xs">
+                            <span class="text-slate-400">4 Menit Baca</span>
+                            <a href="detail.html" class="font-bold text-ranch-crimson hover:underline">Baca Selengkapnya &rarr;</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Article 3 -->
+                <div class="meat-card bg-white rounded-3xl border border-ranch-border overflow-hidden flex flex-col justify-between shadow-xs">
+                    <div class="h-48 overflow-hidden bg-amber-50">
+                        <img src="https://images.unsplash.com/photo-1544025162-d76694265947?q=80&w=600&auto=format&fit=crop" 
+                             alt="Syariat Hewan Qurban" class="w-full h-full object-cover">
+                    </div>
+                    <div class="p-6 flex-1 flex flex-col justify-between">
+                        <div>
+                            <span class="text-[10px] bg-amber-100 text-ranch-brown px-2 py-0.5 rounded font-bold uppercase">Panduan Qurban</span>
+                            <h3 class="text-base font-bold text-slate-900 font-serif mt-2">
+                                4 Syarat Sah Hewan Qurban: Poel Gigi, Sehat & Bobot Nyata
+                            </h3>
+                            <p class="text-xs text-slate-600 mt-2 leading-relaxed">
+                                Pastikan sapi telah genap berumur 2 tahun (poel sepasang gigi seri) dan kambing minimal 1 tahun, serta tidak buta, tidak pincang, dan tidak kurus kering berpenyakit.
+                            </p>
+                        </div>
+                        <div class="mt-4 pt-3 border-t border-ranch-border flex items-center justify-between text-xs">
+                            <span class="text-slate-400">5 Menit Baca</span>
+                            <a href="katalog.html" class="font-bold text-ranch-crimson hover:underline">Pesan Qurban &rarr;</a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- 7. FOOTER -->
+    <footer class="bg-ranch-browndark text-stone-300 text-xs pt-16 pb-36 border-t border-amber-950 font-sans">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-10 pb-12 border-b border-amber-950/60">
+                <div class="lg:col-span-2 space-y-4">
+                    <a href="index.html" class="flex items-center gap-3">
+                        <div class="w-10 h-10 bg-gradient-to-br from-ranch-brown to-ranch-crimson text-white flex items-center justify-center text-xl font-bold rounded-xl">
+                            <i class="fa-solid fa-cow"></i>
+                        </div>
+                        <span class="text-2xl font-extrabold text-white tracking-tight font-serif">
+                            LEMBAH BIMA<span class="text-ranch-crimson">.</span>
+                        </span>
+                    </a>
+                    <p class="text-xs text-stone-400 leading-relaxed max-w-sm">
+                        Peternakan sapi & kambing terpadu dengan sistem pakan rumput alami. Rumah potong hewan (RPH) berstandar Halal MUI menghasilkan daging murni segar tanpa suntikan air dan tanpa bahan kimia pengawet.
+                    </p>
+                </div>
+                <div>
+                    <h4 class="text-xs font-bold text-white uppercase tracking-wider mb-4 font-serif">Navigasi Halaman</h4>
+                    <ul class="space-y-2.5">
+                        <li><a href="index.html" class="hover:text-amber-400 transition">Beranda Utama</a></li>
+                        <li><a href="katalog.html" class="hover:text-amber-400 transition">Koleksi Daging & Ternak</a></li>
+                        <li><a href="detail.html" class="hover:text-amber-400 transition">Detail Daging Sapi</a></li>
+                        <li><a href="tentang.html" class="hover:text-amber-400 transition">Padang Penggemukan</a></li>
+                        <li><a href="artikel.html" class="hover:text-amber-400 transition">Tips Cek Daging Segar</a></li>
+                        <li><a href="kontak.html" class="hover:text-amber-400 transition">Pasokan Resto & Jagal</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-xs font-bold text-white uppercase tracking-wider mb-4 font-serif">Potongan Daging</h4>
+                    <ul class="space-y-2.5">
+                        <li><a href="detail.html" class="hover:text-amber-400 transition">Has Dalam (Tenderloin)</a></li>
+                        <li><a href="detail.html" class="hover:text-amber-400 transition">Gandik / Topside Rendang</a></li>
+                        <li><a href="detail.html" class="hover:text-amber-400 transition">Sandung Lamur Rawon</a></li>
+                        <li><a href="katalog.html" class="hover:text-amber-400 transition">Iga Sapi Pilihan (Ribs)</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-xs font-bold text-white uppercase tracking-wider mb-4 font-serif">Kandang Ranch & RPH</h4>
+                    <p class="text-xs text-stone-400 leading-relaxed mb-3">
+                        Kawasan Peternakan Lembah Bima, Jl. Padang Hijau No. 8, Kec. Bandungan, Kab. Semarang, Jawa Tengah 50614.
+                    </p>
+                    <p class="text-xs text-amber-400 font-bold mb-1"><i class="fa-solid fa-phone mr-1.5"></i> +62 812-3456-7890</p>
+                    <p class="text-xs text-stone-400"><i class="fa-solid fa-envelope mr-1.5"></i> order@lembahbimaranch.com</p>
+                </div>
+            </div>
+            <div class="pt-8 flex flex-col sm:flex-row items-center justify-between gap-4 text-[11px] text-stone-500">
+                <p>&copy; 2026 LEMBAH BIMA RANCH. All rights reserved.</p>
+                <div class="flex items-center gap-4">
+                    <span>100% Halal RPH MUI</span>
+                    <span>•</span>
+                    <span>Bebas Daging Gelonggongan</span>
+                    <span>•</span>
+                    <span>Pakan Rumput Alami</span>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- 8. FLOATING WHATSAPP BUTTON (bottom-24) -->
+    <div class="fixed bottom-24 right-5 z-40">
+        <a href="https://wa.me/6281234567890?text=Halo%20Admin%20Lembah%20Bima%20Ranch,%20saya%20ingin%20tanya%20tips%20daging%20segar." 
+           target="_blank" 
+           aria-label="Chat WhatsApp Lembah Bima Ranch"
+           class="group flex items-center gap-3 bg-gradient-to-r from-ranch-crimson to-red-800 hover:from-red-700 hover:to-red-900 text-white px-4 py-3.5 rounded-full shadow-2xl transition-all transform hover:scale-105 border-2 border-white/80">
+            <i class="fa-brands fa-whatsapp text-2xl animate-pulse"></i>
+            <span class="text-xs font-bold tracking-wide pr-1 hidden sm:inline">Pesan Daging Segar WA</span>
+        </a>
+    </div>
+
+    <!-- 9. STICKY DEMO & SALES BAR (fixed bottom-4) -->
+    <div class="fixed bottom-4 left-4 right-4 z-50 max-w-5xl mx-auto">
+      <div class="bg-ranch-browndark/95 backdrop-blur-md text-white px-4 sm:px-6 py-3.5 rounded-2xl shadow-2xl border border-amber-900/60 flex flex-col md:flex-row items-center justify-between gap-3">
+        <div class="flex items-center gap-3 text-left w-full md:w-auto">
+          <div class="w-9 h-9 rounded-xl bg-red-500/20 border border-red-400/40 flex items-center justify-center shrink-0">
+            <i class="fa-solid fa-cow text-red-400 text-sm"></i>
+          </div>
+          <div>
+            <div class="text-xs md:text-sm font-bold text-stone-100 flex items-center gap-2">
+              <span>Lentera Pasar Demo</span>
+              <span class="text-[10px] px-2 py-0.5 rounded bg-emerald-500/20 text-emerald-300 font-bold">Artikel & Edukasi Daging Halal</span>
+            </div>
+            <p class="text-[11px] text-stone-400 hidden sm:block">Desain Halal Grass-Fed Ranch untuk agrobisnis peternakan sapi, kambing muda, & suplai daging segar.</p>
+          </div>
+        </div>
+        <div class="flex items-center gap-3 w-full md:w-auto justify-end">
+          <a href="https://wa.me/6281234567890?text=Halo%20Tim%20Lentera%20Pasar,%20saya%20tertarik%20menggunakan%20template%20website%20Daging%20Sapi%20ini." 
+             target="_blank"
+             class="w-full md:w-auto inline-flex items-center justify-center gap-2 bg-gradient-to-r from-ranch-crimson to-red-700 hover:from-red-600 hover:to-red-800 text-white text-xs md:text-sm font-bold px-5 py-2.5 rounded-xl shadow-lg transition-all hover:scale-105 shrink-0">
+            <span>Gunakan Template Ini</span>
+            <i class="fa-solid fa-arrow-right text-xs"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <!-- SCRIPT MOBILE MENU -->
+    <script>
+        const mobileMenuBtn = document.getElementById('mobileMenuBtn');
+        const mobileMenu = document.getElementById('mobileMenu');
+        const menuIcon = document.getElementById('menuIcon');
+
+        mobileMenuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+            if (mobileMenu.classList.contains('hidden')) {
+                menuIcon.classList.remove('fa-xmark');
+                menuIcon.classList.add('fa-bars');
+            } else {
+                menuIcon.classList.remove('fa-bars');
+                menuIcon.classList.add('fa-xmark');
+            }
+        });
+    </script>
+</body>
+</html>
