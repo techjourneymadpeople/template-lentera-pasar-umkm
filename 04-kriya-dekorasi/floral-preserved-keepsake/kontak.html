@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="id" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kontak Studio & Layanan Kado Bunga Kilat // VALENTINA BOTANICALS</title>
+    <meta name="description" content="Kunjungi Studio VALENTINA BOTANICALS di Sleman Yogyakarta atau pesan kado bunga wisuda & anniversary kilat H-1 selesai via WhatsApp.">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,500;1,600&family=Plus+Jakarta+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome 6 -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        valentina: {
+                            rose: '#F9F0EE',
+                            rosesoft: '#FCFAF7',
+                            border: '#EADBD6',
+                            rosedark: '#8C4A5A',
+                            wine: '#5E2B38',
+                            winedark: '#3E1923',
+                            green: '#3D5244',
+                            greensoft: '#EAF0EB',
+                            gold: '#C48B71',
+                            goldlight: '#E5C0AF',
+                            charcoal: '#2D1E22'
+                        }
+                    },
+                    fontFamily: {
+                        sans: ['"Plus Jakarta Sans"', 'sans-serif'],
+                        serif: ['"Playfair Display"', 'serif'],
+                        mono: ['"Space Grotesk"', 'monospace']
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        .no-scrollbar::-webkit-scrollbar { display: none; }
+        .no-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
+
+        .btn-keepsake {
+            transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+        }
+        .btn-keepsake:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 12px 24px -6px rgba(140, 74, 90, 0.35);
+        }
+    </style>
+</head>
+<body class="bg-valentina-rosesoft text-valentina-charcoal font-sans antialiased selection:bg-valentina-rosedark selection:text-white">
+
+    <!-- 1. TOP BAR -->
+    <div class="bg-valentina-winedark text-valentina-rose text-xs py-2 px-4 font-mono border-b border-valentina-gold/30">
+        <div class="max-w-7xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-2 text-center sm:text-left">
+            <div class="flex items-center gap-2">
+                <span class="px-2 py-0.5 bg-valentina-rosedark text-white text-[10px] uppercase font-mono font-bold rounded">STUDIO SLEMAN YOGYAKARTA</span>
+                <span class="text-white/95">Buka Senin - Sabtu (09:00 - 17:30 WIB) • Melayani Konsultasi Custom Kaligrafi & Foto</span>
+            </div>
+            <div class="text-xs">
+                <span>WhatsApp Florist: <a href="https://wa.me/6281234567890" target="_blank" class="text-amber-300 hover:underline font-bold">+62 812-3456-7890</a></span>
+            </div>
+        </div>
+    </div>
+
+    <!-- 2. NAVBAR -->
+    <header class="sticky top-0 z-40 bg-valentina-rosesoft/95 backdrop-blur-md border-b border-valentina-border transition-all">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-20 sm:h-24">
+                
+                <!-- Logo -->
+                <a href="index.html" class="flex items-center gap-3.5 group">
+                    <div class="w-12 h-12 bg-valentina-wine border border-valentina-gold/40 text-amber-200 flex items-center justify-center text-xl font-serif rounded-2xl shadow-md group-hover:bg-valentina-rosedark transition">
+                        <i class="fa-solid fa-seedling"></i>
+                    </div>
+                    <div class="flex flex-col">
+                        <span class="text-2xl sm:text-3xl font-serif font-bold tracking-tight text-valentina-wine uppercase leading-none">
+                            VALENTINA<span class="text-valentina-gold">.</span>
+                        </span>
+                        <span class="text-[9px] font-mono tracking-[0.28em] text-valentina-rosedark uppercase mt-1 font-bold">
+                            PRESERVED FLORAL KEEPSAKE
+                        </span>
+                    </div>
+                </a>
+
+                <!-- Desktop Navigation Links -->
+                <nav class="hidden lg:flex items-center gap-8 text-xs font-bold tracking-wider uppercase text-valentina-charcoal/80 font-mono">
+                    <a href="index.html" class="hover:text-valentina-rosedark transition">Beranda</a>
+                    <a href="katalog.html" class="hover:text-valentina-rosedark transition">Koleksi Pigura & Buket</a>
+                    <a href="detail.html" class="hover:text-valentina-rosedark transition">Detail Shadowbox 3D</a>
+                    <a href="tentang.html" class="hover:text-valentina-rosedark transition">Proses Pengawetan</a>
+                    <a href="artikel.html" class="hover:text-valentina-rosedark transition">Tips Rawat Bunga Kering</a>
+                    <a href="kontak.html" class="text-valentina-rosedark border-b-2 border-valentina-rosedark pb-1 font-bold">Studio & Kado Kilat</a>
+                </nav>
+
+                <!-- Actions -->
+                <div class="hidden sm:flex items-center gap-3 font-mono">
+                    <a href="https://wa.me/6281234567890?text=Halo%20Valentina,%20saya%20mau%20konsultasi%20pemesanan%20kado%20bunga." target="_blank" class="inline-flex items-center gap-2 bg-valentina-wine hover:bg-valentina-winedark text-valentina-rose text-xs font-bold tracking-wider px-5 py-2.5 rounded-xl border border-valentina-gold/40 transition-all shadow-md font-mono btn-keepsake">
+                        <i class="fa-brands fa-whatsapp text-sm text-green-300"></i>
+                        <span>Chat WhatsApp</span>
+                    </a>
+                </div>
+
+                <!-- Mobile Hamburger Button -->
+                <button id="mobileMenuBtn" class="lg:hidden p-2.5 text-valentina-charcoal hover:text-valentina-rosedark focus:outline-none" aria-label="Toggle Menu">
+                    <i id="menuIcon" class="fa-solid fa-bars text-xl"></i>
+                </button>
+            </div>
+        </div>
+
+        <!-- Mobile Drawer -->
+        <div id="mobileMenu" class="hidden lg:hidden bg-white border-b border-valentina-border px-5 py-5 space-y-3 font-mono shadow-xl">
+            <a href="index.html" class="block text-xs font-bold uppercase tracking-wider text-valentina-charcoal hover:text-valentina-rosedark py-2 border-b border-valentina-border">Beranda Utama</a>
+            <a href="katalog.html" class="block text-xs font-bold uppercase tracking-wider text-valentina-charcoal hover:text-valentina-rosedark py-2 border-b border-valentina-border">Koleksi Pigura 3D & Buket</a>
+            <a href="detail.html" class="block text-xs font-bold uppercase tracking-wider text-valentina-charcoal hover:text-valentina-rosedark py-2 border-b border-valentina-border">Detail Shadowbox 3D Mawar</a>
+            <a href="tentang.html" class="block text-xs font-bold uppercase tracking-wider text-valentina-charcoal hover:text-valentina-rosedark py-2 border-b border-valentina-border">Proses Pengawetan Bunga</a>
+            <a href="artikel.html" class="block text-xs font-bold uppercase tracking-wider text-valentina-charcoal hover:text-valentina-rosedark py-2 border-b border-valentina-border">Tips Perawatan Bunga Kering</a>
+            <a href="kontak.html" class="block text-xs font-bold uppercase tracking-wider text-valentina-rosedark py-2">Studio & Kado Kilat Wisuda</a>
+            <div class="pt-3">
+                <a href="https://wa.me/6281234567890?text=Halo%20Valentina%20Botanicals." target="_blank" class="w-full py-3 bg-valentina-wine text-valentina-rose rounded-xl text-xs font-bold uppercase tracking-wider text-center flex items-center justify-center gap-2 font-mono border border-valentina-gold">
+                    <i class="fa-brands fa-whatsapp text-green-300"></i> WhatsApp Fast Response
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- 3. KONTAK HEADER -->
+    <section class="py-12 sm:py-16 border-b border-valentina-border bg-valentina-rose relative">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="max-w-3xl space-y-3">
+                <div class="flex items-center gap-2 text-xs font-mono text-valentina-rosedark uppercase font-bold">
+                    <a href="index.html" class="hover:underline">Beranda</a>
+                    <span>/</span>
+                    <span>Studio Bunga & Layanan Pesanan Kilat</span>
+                </div>
+                <h1 class="text-3xl sm:text-4xl lg:text-5xl font-serif font-bold text-valentina-wine">
+                    Hubungi Studio & Pesanan Khusus
+                </h1>
+                <p class="text-sm sm:text-base text-valentina-charcoal/75 font-sans leading-relaxed">
+                    Butuh kado wisuda kilat untuk besok pagi, ingin konsultasi warna mawar custom, atau mendiskusikan konsep mahar pernikahan rustic? Kami siap membantu merangkai memori terbaik Anda.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- 4. CONTACT FORM & STUDIO INFO GRID -->
+    <section class="py-12 sm:py-20 bg-white border-b border-valentina-border">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12">
+                
+                <!-- Left Column: Interactive Form (7 Cols) -->
+                <div class="lg:col-span-7 bg-valentina-rose p-6 sm:p-10 rounded-3xl border border-valentina-border shadow-sm">
+                    <div class="mb-6 space-y-1">
+                        <span class="text-xs font-mono font-bold uppercase tracking-widest text-valentina-rosedark">
+                            Formulir Pesanan & Kado Kilat
+                        </span>
+                        <h2 class="text-2xl font-serif font-bold text-valentina-wine">
+                            Konsultasi Kado Bunga & Foto Kenangan
+                        </h2>
+                    </div>
+
+                    <form id="contactForm" onsubmit="handleContactSubmit(event)" class="space-y-4 font-mono text-xs">
+                        <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                            <div>
+                                <label class="block font-bold text-valentina-wine mb-1 uppercase">Nama Pemesan *</label>
+                                <input type="text" id="senderName" required placeholder="Contoh: Amanda Permata" class="w-full px-4 py-3 bg-white border border-valentina-border rounded-xl focus:outline-none focus:border-valentina-rosedark">
+                            </div>
+                            <div>
+                                <label class="block font-bold text-valentina-wine mb-1 uppercase">Nomor WhatsApp *</label>
+                                <input type="tel" id="senderPhone" required placeholder="Contoh: 081234567890" class="w-full px-4 py-3 bg-white border border-valentina-border rounded-xl focus:outline-none focus:border-valentina-rosedark">
+                            </div>
+                        </div>
+
+                        <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                            <div>
+                                <label class="block font-bold text-valentina-wine mb-1 uppercase">Jenis Kado / Momen *</label>
+                                <select id="inquiryType" class="w-full px-4 py-3 bg-white border border-valentina-border rounded-xl focus:outline-none focus:border-valentina-rosedark font-mono">
+                                    <option value="wisuda-urgent">Kado Wisuda Kilat (H-1 / Same Day)</option>
+                                    <option value="shadowbox-anniversary">Pigura 3D Shadowbox Foto Anniversary</option>
+                                    <option value="glass-dome">Glass Dome Mawar Beauty and The Beast</option>
+                                    <option value="mahar-nikah">Kotak Cincin & Pigura Mahar Pernikahan</option>
+                                    <option value="farewell-kantor">Kado Farewell Rekan Kerja Kantor</option>
+                                </select>
+                            </div>
+                            <div>
+                                <label class="block font-bold text-valentina-wine mb-1 uppercase">Kota Pengiriman *</label>
+                                <input type="text" id="senderCity" required placeholder="Contoh: Yogyakarta / Jakarta / Surabaya" class="w-full px-4 py-3 bg-white border border-valentina-border rounded-xl focus:outline-none focus:border-valentina-rosedark">
+                            </div>
+                        </div>
+
+                        <div>
+                            <label class="block font-bold text-valentina-wine mb-1 uppercase">Rincian Tulisan Kaligrafi & Tanggal Acara</label>
+                            <textarea id="senderMsg" rows="4" placeholder="Sebutkan tanggal acara (misal: Wisuda tgl 26 Agustus), tulisan nama yang diinginkan, dan warna mawar (Merah/Pink/Putih/Biru)..." class="w-full px-4 py-3 bg-white border border-valentina-border rounded-xl focus:outline-none focus:border-valentina-rosedark font-sans text-xs"></textarea>
+                        </div>
+
+                        <button type="submit" class="w-full py-4 bg-valentina-wine hover:bg-valentina-winedark text-valentina-rose font-mono text-xs font-bold uppercase tracking-wider rounded-xl transition shadow-md flex items-center justify-center gap-2 border border-valentina-gold/40 btn-keepsake">
+                            <i class="fa-brands fa-whatsapp text-base text-green-300"></i>
+                            <span>Kirim Rincian Pesanan ke WhatsApp Florist</span>
+                        </button>
+                    </form>
+                </div>
+
+                <!-- Right Column: Studio Info & Hours (5 Cols) -->
+                <div class="lg:col-span-5 space-y-6">
+                    
+                    <!-- Studio Info Card -->
+                    <div class="bg-white p-6 sm:p-8 rounded-3xl border border-valentina-border shadow-sm space-y-4">
+                        <div class="flex items-center gap-3">
+                            <div class="w-11 h-11 rounded-2xl bg-rose-100 text-valentina-rosedark flex items-center justify-center text-lg border border-valentina-border">
+                                <i class="fa-solid fa-house-chimney-window"></i>
+                            </div>
+                            <div>
+                                <h3 class="font-serif font-bold text-xl text-valentina-wine">Atelier & Studio Fisik</h3>
+                                <p class="text-xs font-mono text-valentina-charcoal/60">Sleman, D.I. Yogyakarta</p>
+                            </div>
+                        </div>
+                        <p class="text-xs text-valentina-charcoal/75 leading-relaxed font-sans">
+                            Jl. Palagan Tentara Pelajar Km 7.8, Sariharjo, Ngaglik, Kabupaten Sleman, D.I. Yogyakarta 55581 (Kawasan Palagan / Belakang Hyatt Regency)
+                        </p>
+                        <div class="pt-2 border-t border-valentina-border text-xs font-mono space-y-1 text-valentina-charcoal/70">
+                            <p><i class="fa-solid fa-clock text-valentina-rosedark mr-1.5"></i> Senin - Sabtu: 09:00 - 17:30 WIB (Minggu Libur/Janji Temu)</p>
+                            <p><i class="fa-solid fa-motorcycle text-valentina-rosedark mr-1.5"></i> Menerima Pengiriman Instant Gojek/Grab Car Area Jogja</p>
+                        </div>
+                    </div>
+
+                    <!-- Direct Contacts -->
+                    <div class="bg-white p-6 sm:p-8 rounded-3xl border border-valentina-border shadow-sm space-y-3 font-mono text-xs">
+                        <h4 class="font-bold uppercase tracking-wider text-valentina-wine mb-2">Kontak Resmi Florist:</h4>
+                        
+                        <a href="https://wa.me/6281234567890" target="_blank" class="flex items-center justify-between p-3 rounded-xl bg-valentina-rose border border-valentina-border hover:border-valentina-rosedark transition">
+                            <div class="flex items-center gap-2.5">
+                                <i class="fa-brands fa-whatsapp text-green-600 text-base"></i>
+                                <span class="font-bold text-valentina-wine">WhatsApp Konsultasi Cepat</span>
+                            </div>
+                            <span class="text-valentina-rosedark font-bold">+62 812-3456-7890 &rarr;</span>
+                        </a>
+
+                        <a href="mailto:order@valentinabotanicals.com" class="flex items-center justify-between p-3 rounded-xl bg-valentina-rose border border-valentina-border hover:border-valentina-rosedark transition">
+                            <div class="flex items-center gap-2.5">
+                                <i class="fa-solid fa-envelope text-valentina-charcoal text-sm"></i>
+                                <span class="font-bold text-valentina-wine">Email Kolaborasi & B2B</span>
+                            </div>
+                            <span class="text-valentina-rosedark font-bold">hello@valentina.id &rarr;</span>
+                        </a>
+                    </div>
+
+                    <!-- Map Container Preview -->
+                    <div class="rounded-3xl overflow-hidden border border-valentina-border shadow-sm bg-valentina-rose p-4 text-center font-mono text-xs">
+                        <div class="w-full h-40 bg-slate-200 rounded-2xl flex flex-col items-center justify-center text-valentina-charcoal/60 relative overflow-hidden">
+                            <i class="fa-solid fa-map-location-dot text-3xl text-valentina-rosedark mb-2"></i>
+                            <span class="font-bold text-valentina-wine font-serif">Google Maps Studio Palagan</span>
+                            <span class="text-[10px] text-valentina-charcoal/60">Dekat Jalan Utama Palagan Km 7.8</span>
+                        </div>
+                        <a href="https://maps.google.com" target="_blank" class="mt-3 inline-flex items-center gap-2 text-xs font-bold text-valentina-rosedark hover:text-valentina-wine underline">
+                            <span>Buka di Google Maps Navigasi</span>
+                            <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                        </a>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- 5. FOOTER -->
+    <footer class="bg-valentina-winedark text-valentina-rose py-16 border-t border-valentina-gold/20 font-sans">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-10 mb-12">
+                <div class="lg:col-span-2 space-y-4">
+                    <a href="index.html" class="flex items-center gap-3">
+                        <div class="w-10 h-10 bg-valentina-wine border border-valentina-gold/40 text-amber-200 flex items-center justify-center text-lg font-serif rounded-lg">
+                            <i class="fa-solid fa-seedling"></i>
+                        </div>
+                        <span class="text-2xl font-serif font-bold tracking-tight text-white uppercase">
+                            VALENTINA<span class="text-valentina-gold">.</span>
+                        </span>
+                    </a>
+                    <p class="text-xs text-valentina-rose/75 leading-relaxed max-w-sm font-sans">
+                        Studio kriya bunga abadi: Preserved flower frame 3D, shadowbox foto kenangan, glass dome mawar, dan perlengkapan mahar pernikahan yang mengabadikan memori indah selamanya.
+                    </p>
+                </div>
+                <div class="space-y-3 font-mono">
+                    <h5 class="text-xs font-bold text-white uppercase tracking-wider">Koleksi Bunga</h5>
+                    <ul class="space-y-2 text-xs text-valentina-rose/70">
+                        <li><a href="katalog.html" class="hover:text-amber-300 transition">Shadowbox 3D Foto</a></li>
+                        <li><a href="katalog.html" class="hover:text-amber-300 transition">Glass Dome Mawar LED</a></li>
+                        <li><a href="katalog.html" class="hover:text-amber-300 transition">Buket Wisuda Abadi</a></li>
+                        <li><a href="katalog.html" class="hover:text-amber-300 transition">Kotak Mahar & Cincin</a></li>
+                    </ul>
+                </div>
+                <div class="space-y-3 font-mono">
+                    <h5 class="text-xs font-bold text-white uppercase tracking-wider">Halaman</h5>
+                    <ul class="space-y-2 text-xs text-valentina-rose/70">
+                        <li><a href="index.html" class="hover:text-amber-300 transition">Beranda</a></li>
+                        <li><a href="katalog.html" class="hover:text-amber-300 transition">Katalog Hadiah</a></li>
+                        <li><a href="detail.html" class="hover:text-amber-300 transition">Detail Shadowbox</a></li>
+                        <li><a href="tentang.html" class="hover:text-amber-300 transition">Proses Pengawetan</a></li>
+                    </ul>
+                </div>
+                <div class="space-y-3 font-mono text-xs">
+                    <h5 class="text-xs font-bold text-white uppercase tracking-wider">Studio & Workshop</h5>
+                    <p class="text-valentina-rose/70">Sleman, D.I. Yogyakarta</p>
+                    <p class="text-amber-300 font-bold">+62 812-3456-7890</p>
+                </div>
+            </div>
+            <div class="pt-8 border-t border-white/10 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs font-mono text-valentina-rose/50">
+                <p>&copy; 2026 VALENTINA BOTANICAL KEEPSAKE STUDIO. All rights reserved.</p>
+                <p>Template UMKM Kriya Bunga Abadi by Lentera Pasar</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- 6. FLOATING WHATSAPP -->
+    <div class="fixed bottom-24 right-4 sm:right-6 z-40">
+        <a href="https://wa.me/6281234567890?text=Halo%20Valentina,%20saya%20ingin%20tanya%20pesanan%20kado%20bunga%20kilat." 
+           target="_blank" 
+           class="flex items-center gap-2.5 bg-emerald-600 hover:bg-emerald-700 text-white px-4 py-3 rounded-full shadow-2xl transition-all duration-300 hover:scale-105 font-mono text-xs font-bold border-2 border-rose-300">
+            <i class="fa-brands fa-whatsapp text-xl"></i>
+            <span class="hidden sm:inline">WhatsApp Studio</span>
+        </a>
+    </div>
+
+    <!-- 7. LENTERA PASAR STICKY DEMO BAR -->
+    <div class="fixed bottom-4 left-4 right-4 z-50 max-w-5xl mx-auto">
+      <div class="bg-slate-900/95 backdrop-blur-md text-white px-4 py-3 rounded-2xl shadow-2xl border border-slate-700/80 flex flex-col md:flex-row items-center justify-between gap-3">
+        <div class="flex items-center gap-3">
+          <div class="w-8 h-8 rounded-lg bg-amber-600/30 border border-amber-500/50 flex items-center justify-center shrink-0">
+            <svg class="w-4 h-4 text-amber-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z" /></svg>
+          </div>
+          <div>
+            <div class="text-xs md:text-sm font-bold text-slate-100 flex items-center gap-2">
+              <span>Lentera Pasar Demo</span>
+              <span class="text-[10px] px-1.5 py-0.5 rounded bg-amber-500/20 text-amber-300 font-mono">Kontak & Form Kado Kilat</span>
+            </div>
+            <p class="text-[11px] text-slate-400 hidden sm:block">Formulir konsultasi pesanan kado wisuda kilat dan shadowbox foto custom via WhatsApp.</p>
+          </div>
+        </div>
+
+        <div class="flex items-center gap-3 w-full md:w-auto justify-end">
+          <a href="https://wa.me/6281234567890?text=Halo%20Tim%20Lentera%20Pasar,%20saya%20tertarik%20menggunakan%20template%20website%20Bunga%20Abadi%20ini." 
+             target="_blank"
+             class="w-full md:w-auto inline-flex items-center justify-center gap-2 bg-gradient-to-r from-amber-600 to-amber-800 hover:from-amber-500 hover:to-amber-700 text-white text-xs md:text-sm font-bold px-5 py-2.5 rounded-xl shadow-lg transition-all hover:scale-105 shrink-0 font-serif">
+            <span>Gunakan Template Ini</span>
+            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3" /></svg>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <!-- SCRIPT FORM SUBMISSION & MOBILE MENU -->
+    <script>
+        function handleContactSubmit(e) {
+            e.preventDefault();
+            const name = document.getElementById('senderName').value;
+            const phone = document.getElementById('senderPhone').value;
+            const type = document.getElementById('inquiryType').value;
+            const city = document.getElementById('senderCity').value;
+            const msg = document.getElementById('senderMsg').value;
+
+            const waText = `Halo Studio Valentina Botanicals,\nSaya ingin mengirimkan formulir pesanan kado bunga dari website:\n- Nama: ${name}\n- WhatsApp: ${phone}\n- Kebutuhan: ${type}\n- Kota Kirim: ${city}\n- Rincian Acara/Nama: ${msg}\nMohon info ketersediaan slot pengerjaan dan estimasi ongkir. Terima kasih.`;
+
+            window.open(`https://wa.me/6281234567890?text=${encodeURIComponent(waText)}`, '_blank');
+        }
+
+        // Mobile menu toggle
+        const mobileMenuBtn = document.getElementById('mobileMenuBtn');
+        const mobileMenu = document.getElementById('mobileMenu');
+        const menuIcon = document.getElementById('menuIcon');
+
+        mobileMenuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+            if (mobileMenu.classList.contains('hidden')) {
+                menuIcon.classList.remove('fa-xmark');
+                menuIcon.classList.add('fa-bars');
+            } else {
+                menuIcon.classList.remove('fa-bars');
+                menuIcon.classList.add('fa-xmark');
+            }
+        });
+    </script>
+</body>
+</html>
