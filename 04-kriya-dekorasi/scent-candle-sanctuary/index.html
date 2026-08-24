@@ -1,0 +1,865 @@
+<!DOCTYPE html>
+<html lang="id" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LUMINA SANCTUARY // Botanical Scent & Hand-Poured Soy Candle Atelier</title>
+    <meta name="description" content="Studio lilin aromaterapi 100% natural soy wax, reed diffuser minyak esensial murni, dan room spray terapeutik. Nyala api tenang bebas jelaga dengan sumbu kayu berderik.">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,600;1,700&family=Plus+Jakarta+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome 6 -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        lumina: {
+                            amber: '#FAF6EE',
+                            ambersoft: '#F3EDE2',
+                            border: '#E5DDD0',
+                            sandalwood: '#422C1D',
+                            sandalwooddark: '#2E1E14',
+                            sandalwoodsoft: '#EFE7DE',
+                            flame: '#D97706',
+                            flamedark: '#B45309',
+                            flamesoft: '#FEF3C7',
+                            sage: '#E8EDE6',
+                            sagedark: '#485C4B',
+                            charcoal: '#261D17'
+                        }
+                    },
+                    fontFamily: {
+                        sans: ['"Plus Jakarta Sans"', 'sans-serif'],
+                        serif: ['"Cormorant Garamond"', 'serif'],
+                        mono: ['"Space Grotesk"', 'monospace']
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        .no-scrollbar::-webkit-scrollbar { display: none; }
+        .no-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
+
+        .candle-glow-bg {
+            background: radial-gradient(circle at 50% 20%, rgba(254, 243, 199, 0.6) 0%, rgba(250, 246, 238, 1) 70%);
+        }
+
+        .btn-ambient {
+            transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+        }
+        .btn-ambient:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 12px 24px -6px rgba(217, 119, 6, 0.35);
+        }
+
+        .scent-card {
+            transition: all 0.35s ease;
+        }
+        .scent-card:hover {
+            transform: translateY(-4px);
+        }
+    </style>
+</head>
+<body class="bg-lumina-amber text-lumina-charcoal font-sans antialiased selection:bg-lumina-sandalwood selection:text-white">
+
+    <!-- 1. TOP ANNOUNCEMENT BAR -->
+    <div class="bg-lumina-sandalwooddark text-lumina-amber text-xs py-2.5 px-4 font-mono font-medium border-b border-lumina-flame/30">
+        <div class="max-w-7xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-2 text-center sm:text-left">
+            <div class="flex items-center justify-center gap-2">
+                <span class="px-2 py-0.5 bg-lumina-flame text-white text-[10px] uppercase font-mono font-bold tracking-wider rounded">
+                    100% VEGAN SOY WAX
+                </span>
+                <span class="text-white/95">Bebas Asap Hitam Jelaga • Minyak Esensial Murni Tanpa Bahan Phthalate & Paraben</span>
+            </div>
+            <div class="flex items-center gap-4 text-xs font-mono">
+                <span class="hidden md:inline text-amber-200">Sumbu Kayu Berderik (Crackling Wood Wick)</span>
+                <span class="hidden md:inline text-white/30">•</span>
+                <a href="katalog.html" class="text-amber-300 hover:underline font-bold transition">Katalog Wewangian &rarr;</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- 2. NAVBAR -->
+    <header class="sticky top-0 z-40 bg-lumina-amber/95 backdrop-blur-md border-b border-lumina-border transition-all">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-20 sm:h-24">
+                
+                <!-- Logo -->
+                <a href="index.html" class="flex items-center gap-3.5 group">
+                    <div class="w-12 h-12 bg-lumina-sandalwood border border-lumina-flame/40 text-amber-300 flex items-center justify-center text-xl font-serif rounded-2xl shadow-md group-hover:bg-lumina-flamedark transition">
+                        <i class="fa-solid fa-fire-flame-curved"></i>
+                    </div>
+                    <div class="flex flex-col">
+                        <span class="text-2xl sm:text-3xl font-serif font-bold tracking-tight text-lumina-sandalwood uppercase leading-none">
+                            LUMINA<span class="text-lumina-flame">.</span>
+                        </span>
+                        <span class="text-[9px] font-mono tracking-[0.28em] text-lumina-sandalwood/70 uppercase mt-1 font-bold">
+                            SCENT & SOY SANCTUARY
+                        </span>
+                    </div>
+                </a>
+
+                <!-- Desktop Navigation Links -->
+                <nav class="hidden lg:flex items-center gap-8 text-xs font-bold tracking-wider uppercase text-lumina-charcoal/80 font-mono">
+                    <a href="index.html" class="text-lumina-flame border-b-2 border-lumina-flame pb-1 font-bold">Beranda</a>
+                    <a href="katalog.html" class="hover:text-lumina-flame transition">Koleksi Lilin & Diffuser</a>
+                    <a href="detail.html" class="hover:text-lumina-flame transition">Detail Lavender Calm</a>
+                    <a href="tentang.html" class="hover:text-lumina-flame transition">Filosofi Soy Wax</a>
+                    <a href="artikel.html" class="hover:text-lumina-flame transition">Tips Bakar Lilin & Relaksasi</a>
+                    <a href="kontak.html" class="hover:text-lumina-flame transition">Studio & Souvenir Kado</a>
+                </nav>
+
+                <!-- Actions -->
+                <div class="hidden sm:flex items-center gap-3 font-mono">
+                    <a href="#moodMatcher" class="inline-flex items-center gap-2 px-3.5 py-2.5 bg-white border border-lumina-border hover:border-lumina-flame text-xs font-bold text-lumina-charcoal rounded-xl transition shadow-xs">
+                        <i class="fa-solid fa-wand-magic-sparkles text-lumina-flame"></i>
+                        <span>Mood Matcher</span>
+                    </a>
+                    <a href="https://wa.me/6281234567890?text=Halo%20Lumina%20Sanctuary,%20saya%20tertarik%20dengan%20koleksi%20lilin%20aromaterapi." target="_blank" class="inline-flex items-center gap-2 bg-lumina-sandalwood hover:bg-lumina-sandalwooddark text-lumina-amber text-xs font-bold tracking-wider px-5 py-2.5 rounded-xl border border-lumina-flame/40 transition-all shadow-md font-mono btn-ambient">
+                        <i class="fa-brands fa-whatsapp text-sm text-green-300"></i>
+                        <span>Order via WA</span>
+                    </a>
+                </div>
+
+                <!-- Mobile Hamburger Button -->
+                <button id="mobileMenuBtn" class="lg:hidden p-2.5 text-lumina-charcoal hover:text-lumina-flame focus:outline-none" aria-label="Toggle Menu">
+                    <i id="menuIcon" class="fa-solid fa-bars text-xl"></i>
+                </button>
+            </div>
+        </div>
+
+        <!-- Mobile Drawer -->
+        <div id="mobileMenu" class="hidden lg:hidden bg-white border-b border-lumina-border px-5 py-5 space-y-3 font-mono shadow-xl">
+            <a href="index.html" class="block text-xs font-bold uppercase tracking-wider text-lumina-flame py-2 border-b border-lumina-border">Beranda Utama</a>
+            <a href="katalog.html" class="block text-xs font-bold uppercase tracking-wider text-lumina-charcoal hover:text-lumina-flame py-2 border-b border-lumina-border">Koleksi Lilin & Diffuser</a>
+            <a href="detail.html" class="block text-xs font-bold uppercase tracking-wider text-lumina-charcoal hover:text-lumina-flame py-2 border-b border-lumina-border">Detail Lilin Lavender Calm</a>
+            <a href="tentang.html" class="block text-xs font-bold uppercase tracking-wider text-lumina-charcoal hover:text-lumina-flame py-2 border-b border-lumina-border">Filosofi 100% Lilin Kedelai</a>
+            <a href="artikel.html" class="block text-xs font-bold uppercase tracking-wider text-lumina-charcoal hover:text-lumina-flame py-2 border-b border-lumina-border">Tips Bakar Tanpa Tunneling</a>
+            <a href="kontak.html" class="block text-xs font-bold uppercase tracking-wider text-lumina-charcoal hover:text-lumina-flame py-2">Studio & Souvenir Lilin</a>
+            <div class="pt-3">
+                <a href="https://wa.me/6281234567890?text=Halo%20Lumina." target="_blank" class="w-full py-3 bg-lumina-sandalwood text-lumina-amber rounded-xl text-xs font-bold uppercase tracking-wider text-center flex items-center justify-center gap-2 font-mono border border-lumina-flame">
+                    <i class="fa-brands fa-whatsapp text-green-300"></i> WhatsApp Fast Response
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- 3. WARM AMBIENT CANDLE HERO SECTION -->
+    <section class="candle-glow-bg py-14 sm:py-22 lg:py-26 border-b border-lumina-border relative overflow-hidden">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+                
+                <!-- Left Content: Poetic Headline & Therapeutic Warmth -->
+                <div class="lg:col-span-7 space-y-6">
+                    <div class="inline-flex items-center gap-2.5 px-4 py-1.5 bg-white/90 border border-lumina-border rounded-full text-xs font-mono text-lumina-sandalwood shadow-xs">
+                        <span class="w-2 h-2 rounded-full bg-lumina-flame animate-pulse"></span>
+                        <span class="font-bold tracking-wide">Pure Essential Oil & Natural Soy Wax</span>
+                    </div>
+
+                    <h1 class="text-4xl sm:text-5xl lg:text-6xl font-serif font-bold text-lumina-sandalwood leading-[1.15]">
+                        Illuminate Your Senses, <span class="italic text-lumina-flame font-normal">Calm Your Soul</span>.
+                    </h1>
+
+                    <p class="text-base sm:text-lg text-lumina-charcoal/80 leading-relaxed max-w-2xl font-sans">
+                        Ciptakan suaka ketenangan pribadi di dalam rumah. Setiap jar lilin dituangkan manual menggunakan 100% lilin kedelai murni nabati, sumbu kayu berderik lembut, dan minyak esensial terapeutik yang membersihkan pikiran penat setelah seharian bekerja.
+                    </p>
+
+                    <!-- Feature Attribute Strips -->
+                    <div class="grid grid-cols-2 sm:grid-cols-3 gap-3 pt-2 font-mono text-xs">
+                        <div class="flex items-center gap-2.5 bg-white/90 p-3.5 rounded-2xl border border-lumina-border">
+                            <i class="fa-solid fa-leaf text-lumina-sagedark text-sm"></i>
+                            <div>
+                                <p class="font-bold text-lumina-sandalwood">100% Soy Wax</p>
+                                <p class="text-[10px] text-lumina-charcoal/60">Bebas Parafin Minyak Bumi</p>
+                            </div>
+                        </div>
+                        <div class="flex items-center gap-2.5 bg-white/90 p-3.5 rounded-2xl border border-lumina-border">
+                            <i class="fa-solid fa-volume-low text-lumina-flame text-sm"></i>
+                            <div>
+                                <p class="font-bold text-lumina-sandalwood">Wood Wick Sound</p>
+                                <p class="text-[10px] text-lumina-charcoal/60">Suara Gemeretak Lembut</p>
+                            </div>
+                        </div>
+                        <div class="flex items-center gap-2.5 bg-white/90 p-3.5 rounded-2xl border border-lumina-border col-span-2 sm:col-span-1">
+                            <i class="fa-solid fa-clock text-lumina-flame text-sm"></i>
+                            <div>
+                                <p class="font-bold text-lumina-sandalwood">45+ Jam Nyala</p>
+                                <p class="text-[10px] text-lumina-charcoal/60">Bakar Bersih Bebas Jelaga</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Call To Action Group -->
+                    <div class="flex flex-col sm:flex-row items-stretch sm:items-center gap-4 pt-3 font-mono">
+                        <a href="katalog.html" class="inline-flex items-center justify-center gap-3 px-8 py-4 bg-lumina-sandalwood hover:bg-lumina-sandalwooddark text-lumina-amber text-xs sm:text-sm font-bold tracking-wider uppercase rounded-xl transition-all shadow-xl font-mono border border-lumina-flame/40 btn-ambient">
+                            <span>Jelajahi Suaka Aroma</span>
+                            <i class="fa-solid fa-arrow-right text-amber-300"></i>
+                        </a>
+                        <a href="detail.html" class="inline-flex items-center justify-center gap-2.5 px-6 py-4 bg-white hover:bg-lumina-ambersoft border border-lumina-border text-lumina-charcoal text-xs sm:text-sm font-bold tracking-wider uppercase rounded-xl transition shadow-xs">
+                            <i class="fa-solid fa-spa text-lumina-flame"></i>
+                            <span>Aroma Lavender Calm</span>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Right Visual: Amber Glass Jar Candle Staging -->
+                <div class="lg:col-span-5 relative">
+                    <div class="relative rounded-3xl overflow-hidden border-4 border-white shadow-2xl bg-lumina-sandalwooddark group">
+                        <img src="https://images.unsplash.com/photo-1603006905003-be475563bc59?q=80&w=1000&auto=format&fit=crop" 
+                             alt="Lilin Aromaterapi Amber Glass Jar Sumbu Kayu" 
+                             class="w-full h-[480px] object-cover group-hover:scale-105 transition-transform duration-700">
+                        
+                        <div class="absolute inset-0 bg-gradient-to-t from-lumina-sandalwooddark/90 via-transparent to-transparent"></div>
+                        
+                        <!-- Floating Staging Badge -->
+                        <div class="absolute bottom-5 left-5 right-5 p-4 bg-white/95 backdrop-blur-md rounded-2xl border border-lumina-border shadow-lg">
+                            <div class="flex items-center justify-between">
+                                <div class="space-y-0.5">
+                                    <span class="text-[10px] font-mono font-bold tracking-wider uppercase text-lumina-flame">Signature Scent</span>
+                                    <h2 class="text-base font-serif font-bold text-lumina-sandalwood">Lavender French & Chamomile Mist</h2>
+                                    <p class="text-xs text-lumina-charcoal/70 font-mono">Netto 200g • Wood Wick • 45 Jam Nyala Rata</p>
+                                </div>
+                                <span class="text-xs font-mono font-bold px-3 py-1.5 bg-amber-100 text-amber-900 rounded-lg border border-amber-300">
+                                    Rp 165.000
+                                </span>
+                            </div>
+                        </div>
+
+                        <!-- Top Right Badge -->
+                        <div class="absolute top-4 right-4 bg-lumina-sandalwooddark/90 backdrop-blur-sm text-amber-300 px-3.5 py-1.5 rounded-full text-[10px] font-mono font-bold tracking-wider uppercase flex items-center gap-1.5 shadow-md border border-lumina-flame/40">
+                            <i class="fa-solid fa-sparkles text-amber-400"></i>
+                            <span>Hand-Poured in Sleman</span>
+                        </div>
+                    </div>
+
+                    <!-- Floating Mini Card: Scent Pyramid Swatch -->
+                    <div class="hidden sm:flex absolute -bottom-6 -left-6 bg-white p-4 rounded-2xl border border-lumina-border shadow-xl items-center gap-3.5 max-w-[260px]">
+                        <div class="w-12 h-12 rounded-xl bg-lumina-sandalwood text-amber-300 flex items-center justify-center text-xl shrink-0">
+                            <i class="fa-solid fa-cloud-moon"></i>
+                        </div>
+                        <div class="space-y-0.5 font-mono">
+                            <p class="text-[10px] uppercase font-bold text-lumina-flame">Deep Sleep Therapy</p>
+                            <p class="text-xs font-bold text-lumina-sandalwood">Relaksasi Insomnia</p>
+                            <p class="text-[10px] text-lumina-charcoal/60">Lavender & White Cedar</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- 4. SENSORY SANCTUARY VALUE STRIP -->
+    <section class="py-9 bg-white border-b border-lumina-border">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-6 text-center sm:text-left">
+                
+                <div class="flex flex-col sm:flex-row items-center sm:items-start gap-3.5">
+                    <div class="w-12 h-12 rounded-2xl bg-amber-50 text-amber-800 flex items-center justify-center text-xl shrink-0 border border-lumina-border">
+                        <i class="fa-solid fa-seedling"></i>
+                    </div>
+                    <div>
+                        <h4 class="font-serif font-bold text-sm text-lumina-sandalwood">100% Lilin Kedelai Murni</h4>
+                        <p class="text-xs text-lumina-charcoal/70 font-sans mt-0.5">Terbuat dari minyak kedelai alami nabati yang dapat terurai dan terbakar lebih lambat.</p>
+                    </div>
+                </div>
+
+                <div class="flex flex-col sm:flex-row items-center sm:items-start gap-3.5">
+                    <div class="w-12 h-12 rounded-2xl bg-orange-50 text-orange-800 flex items-center justify-center text-xl shrink-0 border border-lumina-border">
+                        <i class="fa-solid fa-tree"></i>
+                    </div>
+                    <div>
+                        <h4 class="font-serif font-bold text-sm text-lumina-sandalwood">Sumbu Kayu Crackling</h4>
+                        <p class="text-xs text-lumina-charcoal/70 font-sans mt-0.5">Menghasilkan suara gemeretak kayu mirip perapian kayu yang menenangkan pikiran.</p>
+                    </div>
+                </div>
+
+                <div class="flex flex-col sm:flex-row items-center sm:items-start gap-3.5">
+                    <div class="w-12 h-12 rounded-2xl bg-emerald-50 text-emerald-800 flex items-center justify-center text-xl shrink-0 border border-lumina-border">
+                        <i class="fa-solid fa-droplet"></i>
+                    </div>
+                    <div>
+                        <h4 class="font-serif font-bold text-sm text-lumina-sandalwood">Minyak Esensial Alami</h4>
+                        <p class="text-xs text-lumina-charcoal/70 font-sans mt-0.5">Formulasi terapeutik bersertifikat IFRA, bebas dari zat beracun phthalate dan paraben.</p>
+                    </div>
+                </div>
+
+                <div class="flex flex-col sm:flex-row items-center sm:items-start gap-3.5">
+                    <div class="w-12 h-12 rounded-2xl bg-slate-50 text-slate-800 flex items-center justify-center text-xl shrink-0 border border-lumina-border">
+                        <i class="fa-solid fa-box-heart"></i>
+                    </div>
+                    <div>
+                        <h4 class="font-serif font-bold text-sm text-lumina-sandalwood">Packing Anti-Pecah</h4>
+                        <p class="text-xs text-lumina-charcoal/70 font-sans mt-0.5">Dikemas dengan box tebal, bubble wrap tebal, dan kartu pesan kustom gratis.</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- 5. SECTION KHUSUS: "THE MOOD & SCENT MATCHER" -->
+    <section id="moodMatcher" class="py-16 sm:py-24 border-b border-lumina-border bg-lumina-ambersoft relative">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            
+            <div class="text-center max-w-3xl mx-auto mb-14 space-y-3">
+                <span class="px-3.5 py-1 bg-white border border-lumina-border text-lumina-flame font-mono text-[11px] font-bold uppercase tracking-widest rounded-full">
+                    Aroma Psychology & Mood Therapy
+                </span>
+                <h2 class="text-3xl sm:text-4xl lg:text-5xl font-serif font-bold text-lumina-sandalwood">
+                    Temukan Wangi yang Sesuai dengan Suasana Hatimu
+                </h2>
+                <p class="text-sm sm:text-base text-lumina-charcoal/75 font-sans">
+                    Aroma terhubung langsung dengan sistem limbik otak pengatur emosi dan memori. Pilih suasana yang ingin Anda hadirkan malam ini:
+                </p>
+            </div>
+
+            <!-- Mood Grid (4 Cards) -->
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+                
+                <!-- Mood 1: Deep Sleep -->
+                <div class="bg-white p-6 rounded-3xl border border-lumina-border shadow-sm flex flex-col justify-between space-y-4 hover:border-lumina-flame transition">
+                    <div class="space-y-3">
+                        <div class="w-12 h-12 rounded-2xl bg-indigo-50 text-indigo-900 flex items-center justify-center text-xl">
+                            <i class="fa-solid fa-moon"></i>
+                        </div>
+                        <h3 class="font-serif font-bold text-xl text-lumina-sandalwood">Deep Sleep & Anti-Stres</h3>
+                        <p class="text-xs text-lumina-charcoal/75 leading-relaxed font-sans">
+                            Menenangkan detak jantung dan merilekskan otot tegang sebelum tidur. Membantu penderita insomnia tidur pulas.
+                        </p>
+                        <div class="pt-2 border-t border-lumina-border font-mono text-[11px] text-lumina-sandalwood space-y-1">
+                            <p><strong>Top Notes:</strong> French Lavender</p>
+                            <p><strong>Heart Notes:</strong> Roman Chamomile</p>
+                            <p><strong>Base Notes:</strong> White Cedarwood</p>
+                        </div>
+                    </div>
+                    <a href="detail.html" class="inline-flex items-center gap-1.5 text-xs font-mono font-bold text-lumina-flame hover:underline pt-2">
+                        <span>Pilih Lilin Lavender Calm &rarr;</span>
+                    </a>
+                </div>
+
+                <!-- Mood 2: Morning Focus -->
+                <div class="bg-white p-6 rounded-3xl border border-lumina-border shadow-sm flex flex-col justify-between space-y-4 hover:border-lumina-flame transition">
+                    <div class="space-y-3">
+                        <div class="w-12 h-12 rounded-2xl bg-amber-50 text-amber-900 flex items-center justify-center text-xl">
+                            <i class="fa-solid fa-sun"></i>
+                        </div>
+                        <h3 class="font-serif font-bold text-xl text-lumina-sandalwood">Morning Focus & Segar</h3>
+                        <p class="text-xs text-lumina-charcoal/75 leading-relaxed font-sans">
+                            Membangkitkan energi positif dan fokus kerja saat WFH. Kombinasi teh putih segar dan pir manis yang menyegarkan.
+                        </p>
+                        <div class="pt-2 border-t border-lumina-border font-mono text-[11px] text-lumina-sandalwood space-y-1">
+                            <p><strong>Top Notes:</strong> Bergamot & Crisp Pear</p>
+                            <p><strong>Heart Notes:</strong> White Tea Leaves</p>
+                            <p><strong>Base Notes:</strong> Soft Musk & Amber</p>
+                        </div>
+                    </div>
+                    <a href="katalog.html" class="inline-flex items-center gap-1.5 text-xs font-mono font-bold text-lumina-flame hover:underline pt-2">
+                        <span>Pilih White Tea & Pear &rarr;</span>
+                    </a>
+                </div>
+
+                <!-- Mood 3: Cozy Rainy Day -->
+                <div class="bg-white p-6 rounded-3xl border border-lumina-border shadow-sm flex flex-col justify-between space-y-4 hover:border-lumina-flame transition">
+                    <div class="space-y-3">
+                        <div class="w-12 h-12 rounded-2xl bg-amber-100 text-amber-950 flex items-center justify-center text-xl">
+                            <i class="fa-solid fa-mug-hot"></i>
+                        </div>
+                        <h3 class="font-serif font-bold text-xl text-lumina-sandalwood">Cozy Rainy Day & Buku</h3>
+                        <p class="text-xs text-lumina-charcoal/75 leading-relaxed font-sans">
+                            Kehangatan aroma kopi arabika panggang, vanila madagaskar gurih, dan kayu manis manis di sore hari hujan.
+                        </p>
+                        <div class="pt-2 border-t border-lumina-border font-mono text-[11px] text-lumina-sandalwood space-y-1">
+                            <p><strong>Top Notes:</strong> Espresso Roast</p>
+                            <p><strong>Heart Notes:</strong> Warm Vanilla Bean</p>
+                            <p><strong>Base Notes:</strong> Cinnamon Bark</p>
+                        </div>
+                    </div>
+                    <a href="katalog.html" class="inline-flex items-center gap-1.5 text-xs font-mono font-bold text-lumina-flame hover:underline pt-2">
+                        <span>Pilih Vanilla Coffee &rarr;</span>
+                    </a>
+                </div>
+
+                <!-- Mood 4: Romantic Forest -->
+                <div class="bg-white p-6 rounded-3xl border border-lumina-border shadow-sm flex flex-col justify-between space-y-4 hover:border-lumina-flame transition">
+                    <div class="space-y-3">
+                        <div class="w-12 h-12 rounded-2xl bg-emerald-50 text-emerald-950 flex items-center justify-center text-xl">
+                            <i class="fa-solid fa-tree-city"></i>
+                        </div>
+                        <h3 class="font-serif font-bold text-xl text-lumina-sandalwood">Sandalwood Forest</h3>
+                        <p class="text-xs text-lumina-charcoal/75 leading-relaxed font-sans">
+                            Nuansa hutan kayu cendana hangat dan rempah kapulaga mistis untuk makan malam romantis atau meditasi hening.
+                        </p>
+                        <div class="pt-2 border-t border-lumina-border font-mono text-[11px] text-lumina-sandalwood space-y-1">
+                            <p><strong>Top Notes:</strong> Cardamom Spice</p>
+                            <p><strong>Heart Notes:</strong> Smoked Sandalwood</p>
+                            <p><strong>Base Notes:</strong> Tonka Bean & Oakmoss</p>
+                        </div>
+                    </div>
+                    <a href="katalog.html" class="inline-flex items-center gap-1.5 text-xs font-mono font-bold text-lumina-flame hover:underline pt-2">
+                        <span>Pilih Sandalwood Forest &rarr;</span>
+                    </a>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+    <!-- 6. PRODUK UNGGULAN: 3-COLUMN SCENTED CANDLE SHOWCASE -->
+    <section class="py-16 sm:py-24 border-b border-lumina-border bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            
+            <div class="flex flex-col md:flex-row md:items-end justify-between mb-12 gap-4">
+                <div>
+                    <span class="text-xs font-mono font-bold uppercase tracking-widest text-lumina-flame">
+                        Curated Hand-Poured Scent Collection
+                    </span>
+                    <h2 class="text-3xl sm:text-4xl lg:text-5xl font-serif font-bold text-lumina-sandalwood mt-1">
+                        Koleksi Lilin Aromaterapi Pilihan
+                    </h2>
+                </div>
+                <div class="flex items-center gap-2">
+                    <a href="katalog.html" class="inline-flex items-center gap-2 text-xs font-mono font-bold uppercase tracking-wider text-lumina-sandalwood hover:text-lumina-flame transition border-b border-lumina-flame pb-1">
+                        <span>Lihat Seluruh Koleksi (10+)</span>
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </a>
+                </div>
+            </div>
+
+            <!-- 3 Column Grid -->
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                
+                <!-- Card 1: Lavender Calm & Chamomile -->
+                <div class="scent-card bg-lumina-amber rounded-3xl border border-lumina-border overflow-hidden flex flex-col group">
+                    <div class="relative overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1603006905003-be475563bc59?q=80&w=600&auto=format&fit=crop" 
+                             alt="Lilin Aromaterapi Lavender Calm" 
+                             class="w-full h-80 object-cover group-hover:scale-105 transition-transform duration-500">
+                        <div class="absolute top-3.5 left-3.5 bg-lumina-sandalwood text-lumina-amber text-[10px] font-mono font-bold uppercase px-3 py-1 rounded-md shadow border border-lumina-flame/40">
+                            100% Soy Wax
+                        </div>
+                        <div class="absolute bottom-3.5 right-3.5 bg-white/90 backdrop-blur-sm text-lumina-charcoal text-[10px] font-mono font-bold px-2.5 py-0.5 rounded border border-lumina-border">
+                            45 Jam Bakar • 200g
+                        </div>
+                    </div>
+                    <div class="p-6 flex-1 flex flex-col justify-between space-y-4">
+                        <div>
+                            <div class="flex items-center justify-between text-xs font-mono text-lumina-charcoal/60 mb-1">
+                                <span>Wood Wick Crackling</span>
+                                <span class="text-amber-500 font-bold"><i class="fa-solid fa-star"></i> 5.0</span>
+                            </div>
+                            <a href="detail.html" class="block font-serif font-bold text-2xl text-lumina-sandalwood hover:text-lumina-flame transition leading-snug">
+                                Lavender Calm & Chamomile
+                            </a>
+                            <p class="text-xs text-lumina-charcoal/75 mt-1.5 leading-relaxed font-sans">
+                                Sentuhan wangi bunga lavender Prancis yang menyejukkan syaraf pikiran dengan semburat chamomile lembut.
+                            </p>
+                        </div>
+                        <div class="pt-4 border-t border-lumina-border flex items-center justify-between font-mono">
+                            <div>
+                                <span class="text-[10px] text-lumina-charcoal/50 uppercase block">Termasuk Tutup Kayu</span>
+                                <span class="text-base font-bold text-lumina-sandalwood">Rp 165.000</span>
+                            </div>
+                            <a href="detail.html" class="px-4 py-2 bg-lumina-sandalwood hover:bg-lumina-sandalwooddark text-lumina-amber rounded-xl text-xs font-bold transition font-mono">
+                                Detail &rarr;
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 2: White Tea & Crisp Pear -->
+                <div class="scent-card bg-lumina-amber rounded-3xl border border-lumina-border overflow-hidden flex flex-col group">
+                    <div class="relative overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1572726729207-a78d6feb18d7?q=80&w=600&auto=format&fit=crop" 
+                             alt="Lilin Aromaterapi White Tea & Crisp Pear" 
+                             class="w-full h-80 object-cover group-hover:scale-105 transition-transform duration-500">
+                        <div class="absolute top-3.5 left-3.5 bg-lumina-sagedark text-white text-[10px] font-mono font-bold uppercase px-3 py-1 rounded-md shadow">
+                            Fresh Morning
+                        </div>
+                        <div class="absolute bottom-3.5 right-3.5 bg-white/90 backdrop-blur-sm text-lumina-charcoal text-[10px] font-mono font-bold px-2.5 py-0.5 rounded border border-lumina-border">
+                            45 Jam Bakar • 200g
+                        </div>
+                    </div>
+                    <div class="p-6 flex-1 flex flex-col justify-between space-y-4">
+                        <div>
+                            <div class="flex items-center justify-between text-xs font-mono text-lumina-charcoal/60 mb-1">
+                                <span>Wood Wick Crackling</span>
+                                <span class="text-amber-500 font-bold"><i class="fa-solid fa-star"></i> 4.9</span>
+                            </div>
+                            <a href="detail.html" class="block font-serif font-bold text-2xl text-lumina-sandalwood hover:text-lumina-flame transition leading-snug">
+                                White Tea & Crisp Pear
+                            </a>
+                            <p class="text-xs text-lumina-charcoal/75 mt-1.5 leading-relaxed font-sans">
+                                Kesegaran pucuk daun teh putih pegunungan dipadukan dengan manisnya buah pir matang yang membangkitkan konsentrasi kerja.
+                            </p>
+                        </div>
+                        <div class="pt-4 border-t border-lumina-border flex items-center justify-between font-mono">
+                            <div>
+                                <span class="text-[10px] text-lumina-charcoal/50 uppercase block">Termasuk Tutup Kayu</span>
+                                <span class="text-base font-bold text-lumina-sandalwood">Rp 165.000</span>
+                            </div>
+                            <a href="detail.html" class="px-4 py-2 bg-lumina-sandalwood hover:bg-lumina-sandalwooddark text-lumina-amber rounded-xl text-xs font-bold transition font-mono">
+                                Detail &rarr;
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 3: Warm Vanilla Espresso Roast -->
+                <div class="scent-card bg-lumina-amber rounded-3xl border border-lumina-border overflow-hidden flex flex-col group">
+                    <div class="relative overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1598300042247-d088f8ab3a91?q=80&w=600&auto=format&fit=crop" 
+                             alt="Lilin Aromaterapi Warm Vanilla Espresso" 
+                             class="w-full h-80 object-cover group-hover:scale-105 transition-transform duration-500">
+                        <div class="absolute top-3.5 left-3.5 bg-lumina-flame text-white text-[10px] font-mono font-bold uppercase px-3 py-1 rounded-md shadow">
+                            Cozy Sweet
+                        </div>
+                        <div class="absolute bottom-3.5 right-3.5 bg-white/90 backdrop-blur-sm text-lumina-charcoal text-[10px] font-mono font-bold px-2.5 py-0.5 rounded border border-lumina-border">
+                            45 Jam Bakar • 200g
+                        </div>
+                    </div>
+                    <div class="p-6 flex-1 flex flex-col justify-between space-y-4">
+                        <div>
+                            <div class="flex items-center justify-between text-xs font-mono text-lumina-charcoal/60 mb-1">
+                                <span>Wood Wick Crackling</span>
+                                <span class="text-amber-500 font-bold"><i class="fa-solid fa-star"></i> 5.0</span>
+                            </div>
+                            <a href="detail.html" class="block font-serif font-bold text-2xl text-lumina-sandalwood hover:text-lumina-flame transition leading-snug">
+                                Warm Vanilla Espresso Roast
+                            </a>
+                            <p class="text-xs text-lumina-charcoal/75 mt-1.5 leading-relaxed font-sans">
+                                Aroma biji kopi sangrai berpadu vanila madagaskar gurih yang mengubah ruang kerja menjadi suasana kedai kopi hangat.
+                            </p>
+                        </div>
+                        <div class="pt-4 border-t border-lumina-border flex items-center justify-between font-mono">
+                            <div>
+                                <span class="text-[10px] text-lumina-charcoal/50 uppercase block">Termasuk Tutup Kayu</span>
+                                <span class="text-base font-bold text-lumina-sandalwood">Rp 165.000</span>
+                            </div>
+                            <a href="detail.html" class="px-4 py-2 bg-lumina-sandalwood hover:bg-lumina-sandalwooddark text-lumina-amber rounded-xl text-xs font-bold transition font-mono">
+                                Detail &rarr;
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+    <!-- 7. SECTION THE HAND-POURED RITUAL -->
+    <section class="py-16 sm:py-24 border-b border-lumina-border bg-lumina-ambersoft">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+                
+                <div class="lg:col-span-6 space-y-6">
+                    <span class="text-xs font-mono font-bold uppercase tracking-widest text-lumina-flame">
+                        The Artisanal Hand-Poured Ritual
+                    </span>
+                    <h2 class="text-3xl sm:text-4xl lg:text-5xl font-serif font-bold text-lumina-sandalwood leading-tight">
+                        Dituang Tangan dalam Batch Kecil untuk Kualitas Sempurna.
+                    </h2>
+                    <p class="text-base text-lumina-charcoal/80 font-sans leading-relaxed">
+                        Kami menolak proses produksi massal pabrik. Setiap jar lilin di studio LUMINA dituangkan dengan tangan dalam kelompok kecil (*small-batch*) pada suhu leleh kedelai 55°C yang tepat, memastikan minyak esensial terikat sempurna dengan molekul soy wax tanpa teroksidasi.
+                    </p>
+                    <p class="text-base text-lumina-charcoal/80 font-sans leading-relaxed">
+                        Sumbu kayu kami dipotong manual dari kayu maple bersertifikasi lestari yang menghasilkan suara gemeretak api (*wood crackle sound*) menyerupai api unggun mini di samping tempat tidur Anda.
+                    </p>
+
+                    <div class="space-y-3 pt-2 font-mono text-xs">
+                        <div class="flex items-center gap-3 p-3 bg-white rounded-xl border border-lumina-border">
+                            <i class="fa-solid fa-check text-green-600 font-bold"></i>
+                            <span class="text-lumina-charcoal"><strong>Zero Petroleum Paraffin:</strong> Tidak menimbulkan noda asap hitam jelaga di dinding kamar.</span>
+                        </div>
+                        <div class="flex items-center gap-3 p-3 bg-white rounded-xl border border-lumina-border">
+                            <i class="fa-solid fa-check text-green-600 font-bold"></i>
+                            <span class="text-lumina-charcoal"><strong>Tahan Hingga 45+ Jam:</strong> Lilin kedelai memiliki titik leleh rendah sehingga meleleh rata tanpa terbuang.</span>
+                        </div>
+                    </div>
+
+                    <div class="pt-2">
+                        <a href="tentang.html" class="inline-flex items-center gap-2 text-xs font-mono font-bold uppercase tracking-wider text-lumina-sandalwood hover:text-lumina-flame transition border-b-2 border-lumina-flame pb-1">
+                            <span>Pelajari Cerita Studio Lilin Kami</span>
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="lg:col-span-6 grid grid-cols-2 gap-4">
+                    <img src="https://images.unsplash.com/photo-1608181831718-c9f4d7b27e69?q=80&w=600&auto=format&fit=crop" 
+                         alt="Proses Penuangan Lilin Kedelai Hand-Poured" 
+                         class="w-full h-72 object-cover rounded-3xl border border-lumina-border shadow-md">
+                    <img src="https://images.unsplash.com/photo-1602874801007-bd458bb1b8b6?q=80&w=600&auto=format&fit=crop" 
+                         alt="Sumbu Kayu Berderik Wood Wick Nyala Bersih" 
+                         class="w-full h-72 object-cover rounded-3xl border border-lumina-border shadow-md mt-6">
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- 8. TESTIMONIALS: WFH WORKERS, YOGA PRACTITIONERS & GIFT BUYERS -->
+    <section class="py-16 sm:py-24 border-b border-lumina-border bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            
+            <div class="text-center max-w-2xl mx-auto mb-14 space-y-2">
+                <span class="text-xs font-mono font-bold uppercase tracking-widest text-lumina-flame">
+                    Cerita dari Pecinta Suasana Tenang
+                </span>
+                <h2 class="text-3xl sm:text-4xl lg:text-5xl font-serif font-bold text-lumina-sandalwood">
+                    Momen Relaksasi yang Menyejukkan Hati
+                </h2>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                
+                <!-- Testi 1 -->
+                <div class="bg-lumina-amber p-8 rounded-3xl border border-lumina-border flex flex-col justify-between space-y-6">
+                    <div class="space-y-3">
+                        <div class="flex text-amber-500 text-xs gap-1">
+                            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                        </div>
+                        <p class="text-sm text-lumina-charcoal/80 italic leading-relaxed font-sans">
+                            "Sebagai desainer yang sering lembur di depan laptop, aroma Lavender Calm dengan suara derik kayu sumbunya beneran bikin otak langsung adem. Tidur jadi nyenyak banget dan bangun pagi badan enteng!"
+                        </p>
+                    </div>
+                    <div class="flex items-center gap-3.5 pt-4 border-t border-lumina-border font-mono">
+                        <div class="w-10 h-10 rounded-full bg-lumina-sandalwood text-amber-300 flex items-center justify-center font-bold text-xs">
+                            AS
+                        </div>
+                        <div>
+                            <p class="text-xs font-bold text-lumina-sandalwood">Annisa Saraswati</p>
+                            <p class="text-[10px] text-lumina-charcoal/60">UI/UX Designer & Remote Worker, Jakarta</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Testi 2 -->
+                <div class="bg-lumina-amber p-8 rounded-3xl border border-lumina-border flex flex-col justify-between space-y-6">
+                    <div class="space-y-3">
+                        <div class="flex text-amber-500 text-xs gap-1">
+                            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                        </div>
+                        <p class="text-sm text-lumina-charcoal/80 italic leading-relaxed font-sans">
+                            "Saya pakai varian White Tea & Crisp Pear untuk studio yoga & meditasi kami di Bandung. Klien banyak yang menanyakan beli lilin ini di mana karena wanginya lembut, natural, dan tidak bikin pusing kepala."
+                        </p>
+                    </div>
+                    <div class="flex items-center gap-3.5 pt-4 border-t border-lumina-border font-mono">
+                        <div class="w-10 h-10 rounded-full bg-lumina-sagedark text-white flex items-center justify-center font-bold text-xs">
+                            RP
+                        </div>
+                        <div>
+                            <p class="text-xs font-bold text-lumina-sandalwood">Ratih Prameswari</p>
+                            <p class="text-[10px] text-lumina-charcoal/60">Yoga & Mindfulness Instructor, Bandung</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Testi 3 -->
+                <div class="bg-lumina-amber p-8 rounded-3xl border border-lumina-border flex flex-col justify-between space-y-6">
+                    <div class="space-y-3">
+                        <div class="flex text-amber-500 text-xs gap-1">
+                            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                        </div>
+                        <p class="text-sm text-lumina-charcoal/80 italic leading-relaxed font-sans">
+                            "Pesan 80 pcs custom scented candle jar mini untuk souvenir pernikahan kami. Kemasannya super estetik dengan pita linen, kartu ucapan personalized, dan wanginya tahan berbulan-bulan!"
+                        </p>
+                    </div>
+                    <div class="flex items-center gap-3.5 pt-4 border-t border-lumina-border font-mono">
+                        <div class="w-10 h-10 rounded-full bg-lumina-sandalwood text-amber-300 flex items-center justify-center font-bold text-xs">
+                            DH
+                        </div>
+                        <div>
+                            <p class="text-xs font-bold text-lumina-sandalwood">Dimas & Helen</p>
+                            <p class="text-[10px] text-lumina-charcoal/60">Wedding Souvenir Client, Yogyakarta</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+    <!-- 9. GIFT SET & WEDDING SOUVENIR BANNER -->
+    <section class="py-14 bg-lumina-sandalwooddark text-lumina-amber relative overflow-hidden border-t border-lumina-flame/30">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative">
+            <div class="flex flex-col lg:flex-row items-center justify-between gap-8 text-center lg:text-left">
+                <div class="space-y-2 max-w-2xl">
+                    <span class="text-[11px] font-mono uppercase tracking-widest text-amber-300 font-bold">Custom Scent & Hampers Souvenir</span>
+                    <h3 class="text-2xl sm:text-3xl font-serif font-bold text-white">Buat Kado Pernikahan & Hampers Perusahaan dengan Aroma Kustom</h3>
+                    <p class="text-xs sm:text-sm text-lumina-amber/80 font-sans">
+                        Tersedia paket hampers hardbox pita eksklusif dan pemesanan souvenir lilin partai besar (50 - 500+ pcs) dengan label nama kustom.
+                    </p>
+                </div>
+                <div class="flex flex-col sm:flex-row items-center gap-3 font-mono shrink-0">
+                    <a href="kontak.html" class="px-6 py-3.5 bg-white hover:bg-lumina-amber text-lumina-sandalwood text-xs font-bold uppercase tracking-wider rounded-xl transition shadow font-mono">
+                        Konsultasi Souvenir Lilin
+                    </a>
+                    <a href="https://wa.me/6281234567890?text=Halo%20Lumina,%20saya%20tertarik%20pemesanan%20hampers%20lilin%20custom." target="_blank" class="px-6 py-3.5 bg-lumina-flame hover:bg-lumina-flamedark text-white text-xs font-bold uppercase tracking-wider rounded-xl transition shadow flex items-center gap-2 font-mono">
+                        <i class="fa-brands fa-whatsapp text-sm"></i>
+                        <span>Diskusi via WhatsApp</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 10. FOOTER -->
+    <footer class="bg-lumina-sandalwooddark text-lumina-amber py-16 border-t border-lumina-flame/20 font-sans">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-10 mb-12">
+                
+                <!-- Brand Bio -->
+                <div class="lg:col-span-2 space-y-4">
+                    <a href="index.html" class="flex items-center gap-3">
+                        <div class="w-10 h-10 bg-lumina-sandalwood border border-lumina-flame/40 text-amber-300 flex items-center justify-center text-lg font-serif rounded-lg">
+                            <i class="fa-solid fa-fire-flame-curved"></i>
+                        </div>
+                        <span class="text-2xl font-serif font-bold tracking-tight text-white uppercase">
+                            LUMINA<span class="text-lumina-flame">.</span>
+                        </span>
+                    </a>
+                    <p class="text-xs text-lumina-amber/75 leading-relaxed max-w-sm font-sans">
+                        Studio kriya lilin aromaterapi 100% soy wax alami, reed diffuser stik fiber, dan pengharum ruangan botanikal. Dituang tangan dengan cinta untuk menghadirkan ketenangan jiwa.
+                    </p>
+                    <div class="flex items-center gap-3 pt-2">
+                        <a href="#" class="w-8 h-8 rounded-full bg-white/10 hover:bg-lumina-flame hover:text-white text-white flex items-center justify-center text-xs transition"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="#" class="w-8 h-8 rounded-full bg-white/10 hover:bg-lumina-flame hover:text-white text-white flex items-center justify-center text-xs transition"><i class="fa-brands fa-tiktok"></i></a>
+                        <a href="#" class="w-8 h-8 rounded-full bg-white/10 hover:bg-lumina-flame hover:text-white text-white flex items-center justify-center text-xs transition"><i class="fa-brands fa-pinterest"></i></a>
+                        <a href="#" class="w-8 h-8 rounded-full bg-white/10 hover:bg-lumina-flame hover:text-white text-white flex items-center justify-center text-xs transition"><i class="fa-brands fa-whatsapp"></i></a>
+                    </div>
+                </div>
+
+                <!-- Navigation Links -->
+                <div class="space-y-3 font-mono">
+                    <h5 class="text-xs font-bold text-white uppercase tracking-wider">Koleksi Aroma</h5>
+                    <ul class="space-y-2 text-xs text-lumina-amber/70">
+                        <li><a href="katalog.html" class="hover:text-amber-300 transition">Scented Candle Jar</a></li>
+                        <li><a href="katalog.html" class="hover:text-amber-300 transition">Reed Diffuser 100ml</a></li>
+                        <li><a href="katalog.html" class="hover:text-amber-300 transition">Linen & Room Spray</a></li>
+                        <li><a href="katalog.html" class="hover:text-amber-300 transition">Wax Melts & Tungku</a></li>
+                        <li><a href="katalog.html" class="hover:text-amber-300 transition">Gift Set & Hampers</a></li>
+                    </ul>
+                </div>
+
+                <!-- Quick Menu -->
+                <div class="space-y-3 font-mono">
+                    <h5 class="text-xs font-bold text-white uppercase tracking-wider">Halaman</h5>
+                    <ul class="space-y-2 text-xs text-lumina-amber/70">
+                        <li><a href="index.html" class="hover:text-amber-300 transition">Beranda</a></li>
+                        <li><a href="katalog.html" class="hover:text-amber-300 transition">Katalog Produk</a></li>
+                        <li><a href="detail.html" class="hover:text-amber-300 transition">Detail Lavender Calm</a></li>
+                        <li><a href="tentang.html" class="hover:text-amber-300 transition">Filosofi Soy Wax</a></li>
+                        <li><a href="artikel.html" class="hover:text-amber-300 transition">Tips Bakar Lilin</a></li>
+                        <li><a href="kontak.html" class="hover:text-amber-300 transition">Studio & Kontak</a></li>
+                    </ul>
+                </div>
+
+                <!-- Studio Address -->
+                <div class="space-y-3 font-mono text-xs">
+                    <h5 class="text-xs font-bold text-white uppercase tracking-wider">Studio & Workshop</h5>
+                    <p class="text-lumina-amber/70 leading-relaxed font-sans">
+                        Jl. Kaliurang Km 9.2, Sinduharjo, Ngaglik, Sleman, D.I. Yogyakarta 55581 (Sanctuary Scent Studio)
+                    </p>
+                    <p class="text-lumina-amber/70 font-mono">
+                        Buka: Selasa - Minggu (10:00 - 18:00 WIB)
+                    </p>
+                    <p class="text-amber-300 font-bold">
+                        WhatsApp: +62 812-3456-7890
+                    </p>
+                </div>
+
+            </div>
+
+            <div class="pt-8 border-t border-white/10 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs font-mono text-lumina-amber/50">
+                <p>&copy; 2026 LUMINA BOTANICAL SCENT SANCTUARY. All rights reserved.</p>
+                <p>Template UMKM Kriya Lilin Aromaterapi by Lentera Pasar</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- 11. FLOATING WHATSAPP BUTTON (bottom-24) -->
+    <div class="fixed bottom-24 right-4 sm:right-6 z-40">
+        <a href="https://wa.me/6281234567890?text=Halo%20Lumina%20Sanctuary,%20saya%20tertarik%20dengan%20koleksi%20lilin%20aromaterapi." 
+           target="_blank" 
+           aria-label="Chat WhatsApp Studio"
+           class="flex items-center gap-2.5 bg-emerald-600 hover:bg-emerald-700 text-white px-4 py-3 rounded-full shadow-2xl transition-all duration-300 hover:scale-105 group font-mono text-xs font-bold border-2 border-amber-300">
+            <i class="fa-brands fa-whatsapp text-xl text-white group-hover:rotate-12 transition-transform"></i>
+            <span class="hidden sm:inline">WhatsApp Studio</span>
+        </a>
+    </div>
+
+    <!-- 12. LENTERA PASAR STICKY DEMO & SALES BAR (fixed bottom-4) -->
+    <div class="fixed bottom-4 left-4 right-4 z-50 max-w-5xl mx-auto">
+      <div class="bg-slate-900/95 backdrop-blur-md text-white px-4 py-3 rounded-2xl shadow-2xl border border-slate-700/80 flex flex-col md:flex-row items-center justify-between gap-3">
+        
+        <div class="flex items-center gap-3">
+          <div class="w-8 h-8 rounded-lg bg-amber-600/30 border border-amber-500/50 flex items-center justify-center shrink-0">
+            <svg class="w-4 h-4 text-amber-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z" /></svg>
+          </div>
+          <div>
+            <div class="text-xs md:text-sm font-bold text-slate-100 flex items-center gap-2">
+              <span>Lentera Pasar Demo</span>
+              <span class="text-[10px] px-1.5 py-0.5 rounded bg-amber-500/20 text-amber-300 font-mono">Template Lilin Aromaterapi & Scent</span>
+            </div>
+            <p class="text-[11px] text-slate-400 hidden sm:block">Template website hangat menenangkan untuk bisnis kriya lilin kedelai, diffuser, dan relaksasi.</p>
+          </div>
+        </div>
+
+        <div class="flex items-center gap-3 w-full md:w-auto justify-end">
+          <div class="hidden lg:flex items-center gap-4 text-xs font-mono text-slate-400 border-r border-slate-700 pr-4">
+            <div class="flex items-center gap-1 text-slate-200">
+              <svg class="w-4 h-4 text-amber-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" /></svg>
+              <span>100% Soy Wax</span>
+            </div>
+            <span class="text-slate-600">•</span>
+            <div class="flex items-center gap-1 text-slate-200">
+              <svg class="w-4 h-4 text-emerald-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" /></svg>
+              <span>Wood Wick Crackle</span>
+            </div>
+          </div>
+
+          <a href="https://wa.me/6281234567890?text=Halo%20Tim%20Lentera%20Pasar,%20saya%20tertarik%20menggunakan%20template%20website%20Lilin%20Aromaterapi%20ini%20lengkap%20dengan%20Admin%20Panel%20dan%20Jasa%20Iklannya." 
+             target="_blank"
+             class="w-full md:w-auto inline-flex items-center justify-center gap-2 bg-gradient-to-r from-amber-600 to-amber-800 hover:from-amber-500 hover:to-amber-700 text-white text-xs md:text-sm font-bold px-5 py-2.5 rounded-xl shadow-lg transition-all hover:scale-105 shrink-0 font-serif">
+            <span>Gunakan Template Ini</span>
+            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3" />
+            </svg>
+          </a>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- SCRIPT MOBILE MENU -->
+    <script>
+        const mobileMenuBtn = document.getElementById('mobileMenuBtn');
+        const mobileMenu = document.getElementById('mobileMenu');
+        const menuIcon = document.getElementById('menuIcon');
+
+        mobileMenuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+            if (mobileMenu.classList.contains('hidden')) {
+                menuIcon.classList.remove('fa-xmark');
+                menuIcon.classList.add('fa-bars');
+            } else {
+                menuIcon.classList.remove('fa-bars');
+                menuIcon.classList.add('fa-xmark');
+            }
+        });
+    </script>
+</body>
+</html>
