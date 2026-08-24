@@ -1,0 +1,513 @@
+<!DOCTYPE html>
+<html lang="id" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Panduan Sablon Plastisol vs DTF // VOLT SCREENPRINT</title>
+    <meta name="description" content="Edukasi sablon massal: Perbedaan sablon Plastisol vs DTF digital, memilih gramasi Cotton Combed 24s vs 30s, dan tips merawat kaos event tahan cuci.">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800;900&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome 6 -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        print: {
+                            dark: '#18181B',
+                            card: '#27272A',
+                            black: '#0F0F12',
+                            border: '#3F3F46',
+                            cyan: '#06B6D4',
+                            cyandark: '#0891B2',
+                            cyanlight: '#67E8F9',
+                            yellow: '#EAB308',
+                            yellowdark: '#CA8A04',
+                            yellowlight: '#FDE047',
+                            slate: '#A1A1AA'
+                        }
+                    },
+                    fontFamily: {
+                        sans: ['"Plus Jakarta Sans"', 'sans-serif'],
+                        tech: ['"Space Grotesk"', 'monospace']
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        .no-scrollbar::-webkit-scrollbar { display: none; }
+        .no-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
+
+        .print-card-hover {
+            transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+        }
+        .print-card-hover:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 20px 35px -10px rgba(6, 182, 212, 0.25);
+            border-color: #06B6D4;
+        }
+    </style>
+</head>
+<body class="bg-print-dark text-slate-100 font-sans antialiased selection:bg-print-cyan selection:text-black">
+
+    <!-- 1. TOP ANNOUNCEMENT BAR -->
+    <div class="bg-print-black text-slate-300 text-xs py-2.5 px-4 font-sans font-medium border-b border-print-border">
+        <div class="max-w-7xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-2 text-center sm:text-left">
+            <div class="flex items-center justify-center gap-2">
+                <span class="px-2 py-0.5 bg-print-cyan text-black text-[10px] uppercase font-black tracking-wider rounded-xs shadow-xs flex items-center gap-1 font-tech">
+                    <i class="fa-solid fa-book-open"></i> APPAREL PRINTING JOURNAL
+                </span>
+                <span class="text-slate-200 font-medium">Panduan Memilih Sablon Kaos Event • Plastisol vs DTF Digital vs Rubber Matsui</span>
+            </div>
+            <div class="flex items-center gap-4 text-xs font-tech">
+                <a href="katalog.html" class="text-print-cyanlight hover:underline font-bold transition flex items-center gap-1">
+                    Katalog Kaos <i class="fa-solid fa-arrow-right text-[10px]"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- 2. NAVBAR -->
+    <header class="sticky top-0 z-40 bg-print-dark/98 backdrop-blur-md border-b border-print-border transition-all shadow-md">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-20 sm:h-24">
+                
+                <!-- Logo -->
+                <a href="index.html" class="flex items-center gap-3.5 group">
+                    <div class="w-12 h-12 bg-gradient-to-br from-print-cyan to-black text-white flex items-center justify-center text-2xl font-bold rounded-xl shadow-lg group-hover:scale-105 transition border border-print-cyan/40">
+                        <i class="fa-solid fa-shirt text-print-yellow"></i>
+                    </div>
+                    <div class="flex flex-col">
+                        <span class="text-2xl sm:text-3xl font-black tracking-tight text-white uppercase leading-none font-sans">
+                            VOLT<span class="text-print-cyan">.</span>
+                        </span>
+                        <span class="text-[9px] tracking-[0.25em] text-print-cyan font-bold uppercase mt-1 font-tech">
+                            SCREENPRINT & EVENT APPAREL HUB
+                        </span>
+                    </div>
+                </a>
+
+                <!-- Desktop Navigation Links -->
+                <nav class="hidden lg:flex items-center gap-7 text-xs font-bold tracking-wider uppercase text-slate-300 font-sans">
+                    <a href="index.html" class="hover:text-print-cyan transition">Beranda</a>
+                    <a href="katalog.html" class="hover:text-print-cyan transition">Katalog Kaos & Merch</a>
+                    <a href="detail.html" class="hover:text-print-cyan transition">Spesifikasi Sablon & Combed</a>
+                    <a href="tentang.html" class="hover:text-print-cyan transition">Workshop 5.000 Pcs/Hari</a>
+                    <a href="artikel.html" class="text-print-cyan border-b-2 border-print-cyan pb-1 font-bold">Panduan Plastisol vs DTF</a>
+                    <a href="kontak.html" class="hover:text-print-cyan transition">Order Kilat H-3 & Mockup</a>
+                </nav>
+
+                <!-- Actions -->
+                <div class="hidden sm:flex items-center gap-3">
+                    <a href="https://wa.me/6281234567890?text=Halo%20Volt%20Screenprint,%20saya%20ingin%20tanya%20seputar%20artikel%20sablon." 
+                       target="_blank"
+                       class="inline-flex items-center gap-2 px-4 py-2.5 bg-print-cyan hover:bg-print-cyandark text-xs font-black text-black rounded-xl transition shadow-md hover:shadow-lg font-tech uppercase tracking-wider">
+                        <i class="fa-brands fa-whatsapp text-black text-base"></i>
+                        <span>Customer Care WA</span>
+                    </a>
+                </div>
+
+                <!-- Mobile Menu Button -->
+                <div class="flex lg:hidden items-center gap-2">
+                    <a href="https://wa.me/6281234567890" target="_blank" class="p-2.5 bg-print-card text-print-cyan rounded-xl text-sm border border-print-border">
+                        <i class="fa-brands fa-whatsapp"></i>
+                    </a>
+                    <button id="mobileMenuBtn" class="p-2.5 text-slate-300 hover:text-print-cyan focus:outline-hidden rounded-xl bg-print-card border border-print-border">
+                        <i id="menuIcon" class="fa-solid fa-bars text-xl"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Mobile Dropdown Menu -->
+        <div id="mobileMenu" class="hidden lg:hidden border-t border-print-border bg-print-dark px-6 py-5 shadow-2xl">
+            <div class="flex flex-col gap-4 text-sm font-bold uppercase text-slate-300">
+                <a href="index.html" class="hover:text-print-cyan transition flex items-center justify-between">
+                    <span>Beranda Utama</span>
+                    <i class="fa-solid fa-chevron-right text-xs"></i>
+                </a>
+                <a href="katalog.html" class="hover:text-print-cyan transition flex items-center justify-between">
+                    <span>Katalog Kaos & Merchandise</span>
+                    <i class="fa-solid fa-chevron-right text-xs"></i>
+                </a>
+                <a href="detail.html" class="hover:text-print-cyan transition flex items-center justify-between">
+                    <span>Detail Bahan Combed & Sablon</span>
+                    <i class="fa-solid fa-chevron-right text-xs"></i>
+                </a>
+                <a href="tentang.html" class="hover:text-print-cyan transition flex items-center justify-between">
+                    <span>Kapasitas Workshop Sablon 40 Meja Rel</span>
+                    <i class="fa-solid fa-chevron-right text-xs"></i>
+                </a>
+                <a href="artikel.html" class="text-print-cyan flex items-center justify-between">
+                    <span>Panduan Plastisol vs DTF Digital</span>
+                    <i class="fa-solid fa-chevron-right text-xs"></i>
+                </a>
+                <a href="kontak.html" class="hover:text-print-cyan transition flex items-center justify-between">
+                    <span>Order Kilat H-3 & Mockup Desain</span>
+                    <i class="fa-solid fa-chevron-right text-xs"></i>
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- 3. PAGE BANNER -->
+    <section class="py-12 bg-print-card border-b border-print-border">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="max-w-3xl">
+                <span class="px-3 py-1 bg-print-dark text-print-cyan text-xs font-black uppercase rounded-md tracking-wider font-tech border border-print-cyan/40">
+                    SCREENPRINT KNOWLEDGE & FABRIC GUIDE
+                </span>
+                <h1 class="text-3xl sm:text-5xl font-black text-white font-sans mt-3 mb-3 leading-tight">
+                    Panduan Sablon Massal & Edukasi Garmen Event
+                </h1>
+                <p class="text-slate-300 text-sm sm:text-base leading-relaxed font-light">
+                    Wawasan teknis untuk Event Organizer, Panitia Gathering, dan Brand Owner: Cara membedakan sablon Plastisol vs DTF digital, memilih gramasi Cotton Combed yang tepat, dan tips merawat sablon agar tahan cuci mesin.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- 4. FEATURED ARTICLE 1: PLASTISOL VS DTF DIGITAL -->
+    <section class="py-12 md:py-16 bg-print-dark border-b border-print-border">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="bg-print-card rounded-2xl p-6 sm:p-10 border border-print-border shadow-2xl grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
+                
+                <div class="lg:col-span-6 space-y-4 font-sans">
+                    <div class="flex items-center gap-2 font-tech">
+                        <span class="px-2.5 py-0.5 bg-print-cyan text-black text-[10px] font-black uppercase rounded-md">
+                            PRINTING TECHNOLOGY COMPARISON
+                        </span>
+                        <span class="text-xs text-slate-400">4 Menit Baca • Oleh Master Printmaker Volt</span>
+                    </div>
+                    
+                    <h2 class="text-2xl sm:text-3xl font-black text-white leading-snug">
+                        Sablon Plastisol vs DTF Digital: Mana yang Lebih Tepat untuk Kaos Event Anda?
+                    </h2>
+
+                    <p class="text-xs sm:text-sm text-slate-300 leading-relaxed font-light">
+                        Kedua teknik sablon ini merupakan standar terbaik di industri apparel modern saat ini, namun memiliki efisiensi biaya dan keunggulan visual yang berbeda:
+                    </p>
+
+                    <div class="space-y-2.5 pt-2 text-xs text-slate-300 font-tech font-light">
+                        <div class="flex items-start gap-2.5">
+                            <span class="w-5 h-5 rounded-full bg-print-cyan text-black flex items-center justify-center font-bold shrink-0 text-[11px]">1</span>
+                            <div><strong class="text-print-cyan font-bold">Sablon Plastisol Manual:</strong> Terbaik untuk pesanan partai besar (&ge; 100 s.d 10.000+ pcs) dengan desain warna solid/spot colors. Biaya per pcs sangat murah, tinta tebal bertekstur premium, dan sangat awet melewati ratusan kali cuci mesin.</div>
+                        </div>
+                        <div class="flex items-start gap-2.5">
+                            <span class="w-5 h-5 rounded-full bg-print-yellow text-black flex items-center justify-center font-bold shrink-0 text-[11px]">2</span>
+                            <div><strong class="text-print-yellow font-bold">Direct to Film (DTF) Digital:</strong> Sangat unggul untuk desain full-color bergradasi rumit, cetak foto beresolusi tinggi, pesanan batch kecil (50–200 pcs), serta pengerjaan kilat express H-1 hingga H-3 tanpa perlu pembuatan film sablon.</div>
+                        </div>
+                    </div>
+
+                    <div class="pt-3 font-tech">
+                        <a href="katalog.html" class="inline-flex items-center gap-2 px-5 py-3 bg-print-cyan hover:bg-print-cyandark text-black font-black text-xs uppercase tracking-wider rounded-xl shadow-md transition">
+                            <span>Lihat Katalog Sablon</span>
+                            <i class="fa-solid fa-arrow-right text-xs"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="lg:col-span-6">
+                    <div class="rounded-xl overflow-hidden shadow-2xl border-2 border-print-cyan/50 bg-black">
+                        <img src="https://images.unsplash.com/photo-1503342217505-b0a15ec3261c?q=80&w=800&auto=format&fit=crop" 
+                             alt="Perbandingan Sablon Plastisol dan DTF Digital" 
+                             class="w-full h-80 object-cover transform hover:scale-105 transition-all duration-700">
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- 5. FEATURED ARTICLE 2: MEMILIH BAHAN KAOS OUTDOOR -->
+    <section class="py-14 bg-print-card border-b border-print-border">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 space-y-8 font-sans">
+            
+            <div class="text-center space-y-2">
+                <span class="px-3 py-1 bg-print-dark text-print-cyan text-xs font-black uppercase rounded-md tracking-wider font-tech border border-print-cyan/40">
+                    FABRIC SELECTION FOR OUTDOOR EVENTS
+                </span>
+                <h3 class="text-2xl sm:text-3xl font-black text-white">
+                    Cotton Combed 24s vs 30s vs Dry-Fit Milano: Mana yang Paling Pas untuk Acara Lapangan?
+                </h3>
+                <p class="text-slate-400 text-xs sm:text-sm font-light">
+                    Memilih bahan yang tepat mencegah peserta merasa gerah atau basah keringat berlebihan.
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6 font-tech">
+                
+                <div class="bg-print-dark rounded-2xl p-6 border-2 border-print-cyan shadow-xs flex flex-col justify-between relative">
+                    <div class="absolute -top-2.5 right-3 bg-print-cyan text-black text-[9px] font-black px-2 py-0.5 rounded uppercase">
+                        Terlaris Gathering
+                    </div>
+                    <div>
+                        <div class="w-10 h-10 rounded-xl bg-black text-print-cyan flex items-center justify-center font-black text-sm mb-4 border border-print-cyan/40">
+                            1
+                        </div>
+                        <h4 class="font-bold text-sm text-white font-sans">Cotton Combed 30s</h4>
+                        <p class="text-xs text-slate-400 mt-2 leading-relaxed font-sans font-light">
+                            Gramasi 140–150 GSM yang ringan dan adem. Sangat cocok untuk acara gathering indoor/outdoor santai, konser musik, dan kaos seragam panitia harian.
+                        </p>
+                    </div>
+                    <div class="mt-4 pt-3 border-t border-print-border text-[11px] text-print-cyan font-bold">
+                        🌿 Ringan, Halus & Dingin
+                    </div>
+                </div>
+
+                <div class="bg-print-dark rounded-2xl p-6 border border-print-border shadow-xs flex flex-col justify-between">
+                    <div>
+                        <div class="w-10 h-10 rounded-xl bg-black text-print-yellow flex items-center justify-center font-black text-sm mb-4 border border-print-yellow/40">
+                            2
+                        </div>
+                        <h4 class="font-bold text-sm text-white font-sans">Cotton Combed 24s</h4>
+                        <p class="text-xs text-slate-400 mt-2 leading-relaxed font-sans font-light">
+                            Gramasi 175–185 GSM yang tebal dan kokoh tidak menerawang. Standar kaos distro streetwear premium dan merchandise komunitas motor/mobil.
+                        </p>
+                    </div>
+                    <div class="mt-4 pt-3 border-t border-print-border text-[11px] text-print-yellow font-bold">
+                        👕 Tebal, Jatuh & Berwibawa
+                    </div>
+                </div>
+
+                <div class="bg-print-dark rounded-2xl p-6 border border-print-border shadow-xs flex flex-col justify-between">
+                    <div>
+                        <div class="w-10 h-10 rounded-xl bg-black text-emerald-400 flex items-center justify-center font-black text-sm mb-4 border border-emerald-400/40">
+                            3
+                        </div>
+                        <h4 class="font-bold text-sm text-white font-sans">Dry-Fit Milano / Bintik</h4>
+                        <p class="text-xs text-slate-400 mt-2 leading-relaxed font-sans font-light">
+                            Serat mikro poliester berpori cepat kering (*quick-dry*). Standar wajib untuk event lari (Marathon / Fun Run 5K), gowes sepeda, dan senam massal.
+                        </p>
+                    </div>
+                    <div class="mt-4 pt-3 border-t border-print-border text-[11px] text-emerald-400 font-bold">
+                        🏃 Quick-Dry & Anti-Lengket
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+    <!-- 6. KNOWLEDGE ARTICLES GRID -->
+    <section class="py-14 md:py-20 bg-print-dark">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-2xl mx-auto mb-12">
+                <span class="px-3 py-1 bg-print-card text-print-cyan text-xs font-black uppercase rounded-md tracking-wider font-tech border border-print-cyan/40">
+                    TECHNICAL PRINTING ARTICLES
+                </span>
+                <h2 class="text-2xl sm:text-4xl font-black text-white font-sans mt-2 mb-2">
+                    Artikel & Panduan Produksi Kaos
+                </h2>
+                <p class="text-slate-400 text-xs sm:text-sm font-light">
+                    Wawasan seputar proses curing dryer 160°C, resolusi vector, dan SOP pembagian ukuran.
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                
+                <!-- Article 1 -->
+                <div class="print-card-hover bg-print-card rounded-2xl border border-print-border overflow-hidden flex flex-col justify-between shadow-md">
+                    <div class="h-48 overflow-hidden bg-black">
+                        <img src="https://images.unsplash.com/photo-1503342217505-b0a15ec3261c?q=80&w=600&auto=format&fit=crop" 
+                             alt="Proses Curing Dryer 160 Derajat Sablon Plastisol" class="w-full h-full object-cover">
+                    </div>
+                    <div class="p-6 flex-1 flex flex-col justify-between">
+                        <div>
+                            <span class="text-[10px] bg-black text-print-cyan font-black px-2 py-0.5 rounded font-tech uppercase border border-print-cyan/40">Curing Science</span>
+                            <h3 class="text-base font-bold text-white font-sans mt-2">
+                                Suhu Conveyor Curing 160°C: Mengapa Sablon Tidak Boleh Rontok Setelah Dicuci?
+                            </h3>
+                            <p class="text-xs text-slate-400 mt-2 leading-relaxed font-light">
+                                Pematangan tinta plastisol pada suhu terkalibrasi agar polimer PVC mengikat kuat ke serat kain katun tanpa meninggalkan minyak.
+                            </p>
+                        </div>
+                        <div class="mt-4 pt-3 border-t border-print-border flex items-center justify-between text-xs font-tech">
+                            <span class="text-slate-500 text-[11px]">3 Menit Baca</span>
+                            <a href="detail.html" class="font-bold text-print-cyan hover:underline uppercase tracking-wider">Lihat Detail &rarr;</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Article 2 -->
+                <div class="print-card-hover bg-print-card rounded-2xl border border-print-border overflow-hidden flex flex-col justify-between shadow-md">
+                    <div class="h-48 overflow-hidden bg-black">
+                        <img src="https://images.unsplash.com/photo-1521572267360-ee0c2909d518?q=80&w=600&auto=format&fit=crop" 
+                             alt="Panduan Format Vector Artwork Desain" class="w-full h-full object-cover">
+                    </div>
+                    <div class="p-6 flex-1 flex flex-col justify-between">
+                        <div>
+                            <span class="text-[10px] bg-black text-print-yellow font-black px-2 py-0.5 rounded font-tech uppercase border border-print-yellow/40">Artwork Guidelines</span>
+                            <h3 class="text-base font-bold text-white font-sans mt-2">
+                                Menyiapkan File Artwork Sablon: Format Vector .AI / .CDR vs Raster PNG 300 DPI
+                            </h3>
+                            <p class="text-xs text-slate-400 mt-2 leading-relaxed font-light">
+                                Tips mengubah font menjadi outlines dan memastikan ketajaman garis sablon tidak pecah saat dicetak skala besar A3.
+                            </p>
+                        </div>
+                        <div class="mt-4 pt-3 border-t border-print-border flex items-center justify-between text-xs font-tech">
+                            <span class="text-slate-500 text-[11px]">4 Menit Baca</span>
+                            <a href="kontak.html" class="font-bold text-print-cyan hover:underline uppercase tracking-wider">Minta Mockup 3D &rarr;</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Article 3 -->
+                <div class="print-card-hover bg-print-card rounded-2xl border border-print-border overflow-hidden flex flex-col justify-between shadow-md">
+                    <div class="h-48 overflow-hidden bg-black">
+                        <img src="https://images.unsplash.com/photo-1544816155-12df9643f363?q=80&w=600&auto=format&fit=crop" 
+                             alt="SOP Pembagian Ukuran Kaos Event Massal" class="w-full h-full object-cover">
+                    </div>
+                    <div class="p-6 flex-1 flex flex-col justify-between">
+                        <div>
+                            <span class="text-[10px] bg-black text-emerald-400 font-black px-2 py-0.5 rounded font-tech uppercase border border-emerald-400/40">Event Logistics</span>
+                            <h3 class="text-base font-bold text-white font-sans mt-2">
+                                SOP Pembagian Kaos Event Massal: Strategi Breakdown Ukuran Bebas Tertukar
+                            </h3>
+                            <p class="text-xs text-slate-400 mt-2 leading-relaxed font-light">
+                                Rumus persentase ukuran S, M, L, XL, 2XL untuk ribuan peserta event gathering dan teknik labeling packing satuan.
+                            </p>
+                        </div>
+                        <div class="mt-4 pt-3 border-t border-print-border flex items-center justify-between text-xs font-tech">
+                            <span class="text-slate-500 text-[11px]">5 Menit Baca</span>
+                            <a href="katalog.html" class="font-bold text-print-cyan hover:underline uppercase tracking-wider">Pesan Kaos &rarr;</a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- 7. FOOTER SCREENPRINT HUB -->
+    <footer class="bg-print-black text-slate-400 text-xs pt-16 pb-36 border-t border-print-border font-sans">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-10 pb-12 border-b border-print-border">
+                
+                <div class="lg:col-span-2 space-y-4">
+                    <a href="index.html" class="flex items-center gap-3">
+                        <div class="w-10 h-10 bg-gradient-to-br from-print-cyan to-black text-white flex items-center justify-center text-xl font-bold rounded-xl border border-print-cyan/40">
+                            <i class="fa-solid fa-shirt text-print-yellow"></i>
+                        </div>
+                        <span class="text-2xl font-black text-white tracking-tight font-sans">
+                            VOLT<span class="text-print-cyan">.</span>
+                        </span>
+                    </a>
+                    <p class="text-xs text-slate-400 leading-relaxed max-w-sm font-light">
+                        PT Volt Grafika Apparel Nusantara — Pabrik konveksi dan workshop sablon massal spesialis kaos event, gathering korporasi, sablon plastisol high density, DTF digital large-format, jersey sublimasi, dan paket bundling souvenir merchandise se-Indonesia.
+                    </p>
+                </div>
+
+                <div>
+                    <h4 class="text-xs font-bold text-white uppercase tracking-wider mb-4 font-tech">Navigasi Halaman</h4>
+                    <ul class="space-y-2.5 font-tech font-light">
+                        <li><a href="index.html" class="hover:text-print-cyan transition">Beranda Utama</a></li>
+                        <li><a href="katalog.html" class="hover:text-print-cyan transition">Katalog Kaos & Merch</a></li>
+                        <li><a href="detail.html" class="hover:text-print-cyan transition">Spesifikasi Sablon & Combed</a></li>
+                        <li><a href="tentang.html" class="hover:text-print-cyan transition">Workshop 5.000 Pcs/Hari</a></li>
+                        <li><a href="artikel.html" class="hover:text-print-cyan transition">Panduan Plastisol vs DTF</a></li>
+                        <li><a href="kontak.html" class="hover:text-print-cyan transition">Order Kilat H-3 & Mockup</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h4 class="text-xs font-bold text-white uppercase tracking-wider mb-4 font-tech">Kategori Sablon</h4>
+                    <ul class="space-y-2.5 font-tech font-light">
+                        <li><a href="detail.html" class="hover:text-print-cyan transition">Kaos Combed 30s Plastisol</a></li>
+                        <li><a href="katalog.html" class="hover:text-print-cyan transition">Jersey Fun Run Full Sublim</a></li>
+                        <li><a href="katalog.html" class="hover:text-print-cyan transition">Kaos Partai Hyget Super Murah</a></li>
+                        <li><a href="katalog.html" class="hover:text-print-cyan transition">Hoodie Fleece Komunitas DTF</a></li>
+                        <li><a href="kontak.html" class="hover:text-print-cyan transition">Paket Bundling Event Kit</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h4 class="text-xs font-bold text-white uppercase tracking-wider mb-4 font-tech">Workshop & Pabrik Sablon</h4>
+                    <p class="text-xs text-slate-400 leading-relaxed mb-3 font-light font-sans">
+                        Sentra Industri Garmen & Sablon, Jl. Surapati No. 128, Sukaluyu, Cibeunying Kaler, Kota Bandung 40123.
+                    </p>
+                    <p class="text-xs text-print-cyan font-bold mb-1 font-tech"><i class="fa-solid fa-phone mr-1.5"></i> +62 22-7234-7890 / 0812-3456-7890</p>
+                    <p class="text-xs text-slate-400 font-tech"><i class="fa-solid fa-envelope mr-1.5"></i> order@voltscreenprint.co.id</p>
+                </div>
+
+            </div>
+
+            <div class="pt-8 flex flex-col sm:flex-row items-center justify-between gap-4 text-[11px] text-slate-500 font-tech font-light">
+                <p>&copy; 2026 PT VOLT GRAFIKA APPAREL NUSANTARA. All rights reserved.</p>
+                <div class="flex items-center gap-4">
+                    <span>100% Cotton Combed Reactive</span>
+                    <span>•</span>
+                    <span>Plastisol & DTF 4-Head</span>
+                    <span>•</span>
+                    <span>Direct Factory Price</span>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- 8. FLOATING WHATSAPP BUTTON (bottom-24) -->
+    <div class="fixed bottom-24 right-5 z-40">
+        <a href="https://wa.me/6281234567890?text=Halo%20Volt%20Screenprint,%20saya%20ingin%20tanya%20seputar%20artikel%20sablon." 
+           target="_blank" 
+           aria-label="Chat WhatsApp Sales Volt Screenprint"
+           class="group flex items-center gap-3 bg-black hover:bg-print-card text-white px-4 py-3.5 rounded-full shadow-2xl transition-all transform hover:scale-105 border-2 border-print-cyan">
+            <i class="fa-brands fa-whatsapp text-2xl text-print-cyan animate-pulse"></i>
+            <span class="text-xs font-bold tracking-wide pr-1 hidden sm:inline font-tech">Customer Care WA</span>
+        </a>
+    </div>
+
+    <!-- 9. STICKY DEMO & SALES BAR (fixed bottom-4) -->
+    <div class="fixed bottom-4 left-4 right-4 z-50 max-w-5xl mx-auto">
+      <div class="bg-black/95 backdrop-blur-md text-white px-4 sm:px-6 py-3.5 rounded-2xl shadow-2xl border border-print-border flex flex-col md:flex-row items-center justify-between gap-3">
+        <div class="flex items-center gap-3 text-left w-full md:w-auto">
+          <div class="w-9 h-9 rounded-xl bg-print-cyan/20 border border-print-cyan/40 flex items-center justify-center shrink-0">
+            <i class="fa-solid fa-shirt text-print-cyan text-sm"></i>
+          </div>
+          <div>
+            <div class="text-xs md:text-sm font-bold text-white flex items-center gap-2 font-sans">
+              <span>Lentera Pasar Demo</span>
+              <span class="text-[10px] px-2 py-0.5 rounded bg-print-cyan/30 text-print-cyan font-bold font-tech">Panduan Sablon Event</span>
+            </div>
+            <p class="text-[11px] text-slate-400 hidden sm:block font-light">Desain Dynamic Screenprint Hub untuk pabrik sablon plastisol, kaos gathering, DTF digital & merchandise.</p>
+          </div>
+        </div>
+        <div class="flex items-center gap-3 w-full md:w-auto justify-end">
+          <a href="https://wa.me/6281234567890?text=Halo%20Tim%20Lentera%20Pasar,%20saya%20tertarik%20menggunakan%20template%20website%20Konveksi%20Sablon%20Kaos%20Event%20ini." 
+             target="_blank"
+             class="w-full md:w-auto inline-flex items-center justify-center gap-2 bg-print-cyan hover:bg-print-cyandark text-black text-xs md:text-sm font-black px-5 py-2.5 rounded-xl shadow-lg transition-all hover:scale-105 shrink-0 font-tech uppercase tracking-wider">
+            <span>Gunakan Template Ini</span>
+            <i class="fa-solid fa-arrow-right text-xs"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <!-- SCRIPT MOBILE MENU -->
+    <script>
+        const mobileMenuBtn = document.getElementById('mobileMenuBtn');
+        const mobileMenu = document.getElementById('mobileMenu');
+        const menuIcon = document.getElementById('menuIcon');
+
+        mobileMenuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+            if (mobileMenu.classList.contains('hidden')) {
+                menuIcon.classList.remove('fa-xmark');
+                menuIcon.classList.add('fa-bars');
+            } else {
+                menuIcon.classList.remove('fa-bars');
+                menuIcon.classList.add('fa-xmark');
+            }
+        });
+    </script>
+</body>
+</html>
