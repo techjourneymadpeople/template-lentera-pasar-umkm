@@ -1,0 +1,507 @@
+<!DOCTYPE html>
+<html lang="id" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edukasi Telur Segar & Manfaat Omega-3 // KENCANA FARM</title>
+    <meta name="description" content="Edukasi telur peternakan: Cara membedakan telur segar vs busuk dengan tes apung air, manfaat DHA Omega-3 untuk anak, dan alasan telur tidak boleh dicuci sebelum masuk kulkas.">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome 6 -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        poultry: {
+                            yolk: '#D97706',
+                            amber: '#F59E0B',
+                            gold: '#B45309',
+                            cream: '#FAF7F0',
+                            eggshell: '#FFFDF9',
+                            border: '#EADFCB',
+                            farm: '#3F2B1D',
+                            farmdark: '#2C1E14',
+                            farmlight: '#573D29',
+                            clover: '#15803D',
+                            cloverlight: '#DCFCE7',
+                            charcoal: '#1F1A16'
+                        }
+                    },
+                    fontFamily: {
+                        sans: ['"Plus Jakarta Sans"', 'sans-serif'],
+                        clean: ['"Inter"', 'sans-serif']
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        .no-scrollbar::-webkit-scrollbar { display: none; }
+        .no-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
+
+        .farm-card {
+            transition: all 0.35s cubic-bezier(0.16, 1, 0.3, 1);
+        }
+        .farm-card:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 20px 30px -10px rgba(63, 43, 29, 0.12);
+        }
+    </style>
+</head>
+<body class="bg-poultry-cream text-poultry-charcoal font-sans antialiased selection:bg-poultry-yolk selection:text-white">
+
+    <!-- 1. TOP ANNOUNCEMENT BAR -->
+    <div class="bg-poultry-farm text-amber-100 text-xs py-2.5 px-4 font-clean font-medium shadow-inner">
+        <div class="max-w-7xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-2 text-center sm:text-left">
+            <div class="flex items-center justify-center gap-2">
+                <span class="px-2 py-0.5 bg-poultry-yolk text-white text-[10px] uppercase font-bold tracking-wider rounded-md shadow-xs flex items-center gap-1">
+                    <i class="fa-solid fa-book-open text-yellow-200"></i> EDUKASI GIZI PANGAN
+                </span>
+                <span class="text-white/95 font-medium">Panduan Mutu Telur Segar, Manfaat DHA Anak, & Tips Penyimpanan Dapur</span>
+            </div>
+            <div class="flex items-center gap-4 text-xs">
+                <a href="katalog.html" class="text-amber-300 hover:underline font-bold transition flex items-center gap-1">
+                    Pesan Telur Segar <i class="fa-solid fa-arrow-right text-[10px]"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- 2. NAVBAR -->
+    <header class="sticky top-0 z-40 bg-white/95 backdrop-blur-md border-b border-poultry-border transition-all shadow-xs">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-20 sm:h-24">
+                
+                <!-- Logo -->
+                <a href="index.html" class="flex items-center gap-3.5 group">
+                    <div class="w-12 h-12 bg-gradient-to-br from-poultry-yolk to-poultry-farm text-white flex items-center justify-center text-2xl font-bold rounded-2xl shadow-md group-hover:scale-105 transition">
+                        <i class="fa-solid fa-egg"></i>
+                    </div>
+                    <div class="flex flex-col">
+                        <span class="text-2xl sm:text-3xl font-extrabold tracking-tight text-poultry-farm uppercase leading-none font-sans">
+                            KENCANA<span class="text-poultry-yolk">.</span>
+                        </span>
+                        <span class="text-[9px] tracking-[0.28em] text-poultry-yolk uppercase mt-1 font-bold">
+                            GOLDEN POULTRY & EGG FARM
+                        </span>
+                    </div>
+                </a>
+
+                <!-- Desktop Navigation Links -->
+                <nav class="hidden lg:flex items-center gap-7 text-xs font-bold tracking-wider uppercase text-slate-700 font-sans">
+                    <a href="index.html" class="hover:text-poultry-yolk transition">Beranda</a>
+                    <a href="katalog.html" class="hover:text-poultry-yolk transition">Koleksi Telur & Ayam</a>
+                    <a href="detail.html" class="hover:text-poultry-yolk transition">Detail Telur Omega-3</a>
+                    <a href="tentang.html" class="hover:text-poultry-yolk transition">Biosekuriti Kandang</a>
+                    <a href="artikel.html" class="text-poultry-yolk border-b-2 border-poultry-yolk pb-1 font-bold">Edukasi & Gizi</a>
+                    <a href="kontak.html" class="hover:text-poultry-yolk transition">Pasokan Toko & Bakery</a>
+                </nav>
+
+                <!-- Actions -->
+                <div class="hidden sm:flex items-center gap-3">
+                    <a href="https://wa.me/6281234567890?text=Halo%20Admin%20Kencana%20Farm,%20saya%20ingin%20tanya%20tips%20telur%20segar." 
+                       target="_blank"
+                       class="inline-flex items-center gap-2 px-4 py-2.5 bg-poultry-yolk hover:bg-poultry-gold text-xs font-bold text-white rounded-xl transition shadow-md hover:shadow-lg">
+                        <i class="fa-brands fa-whatsapp text-base"></i>
+                        <span>Order Telur WA</span>
+                    </a>
+                </div>
+
+                <!-- Mobile Menu Button -->
+                <div class="flex lg:hidden items-center gap-2">
+                    <a href="https://wa.me/6281234567890" target="_blank" class="p-2.5 bg-emerald-100 text-emerald-800 rounded-xl text-sm">
+                        <i class="fa-brands fa-whatsapp"></i>
+                    </a>
+                    <button id="mobileMenuBtn" class="p-2.5 text-slate-700 hover:text-poultry-yolk focus:outline-hidden rounded-xl bg-amber-50">
+                        <i id="menuIcon" class="fa-solid fa-bars text-xl"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Mobile Dropdown Menu -->
+        <div id="mobileMenu" class="hidden lg:hidden border-t border-poultry-border bg-white/98 px-6 py-5 shadow-xl">
+            <div class="flex flex-col gap-4 text-sm font-bold uppercase text-slate-700">
+                <a href="index.html" class="hover:text-poultry-yolk transition flex items-center justify-between">
+                    <span>Beranda</span>
+                    <i class="fa-solid fa-chevron-right text-xs"></i>
+                </a>
+                <a href="katalog.html" class="hover:text-poultry-yolk transition flex items-center justify-between">
+                    <span>Koleksi Telur & Daging Unggas</span>
+                    <i class="fa-solid fa-chevron-right text-xs"></i>
+                </a>
+                <a href="detail.html" class="hover:text-poultry-yolk transition flex items-center justify-between">
+                    <span>Detail Telur Omega-3 & Uji Lab</span>
+                    <i class="fa-solid fa-chevron-right text-xs"></i>
+                </a>
+                <a href="tentang.html" class="hover:text-poultry-yolk transition flex items-center justify-between">
+                    <span>Kandang Closed-House & Biosekuriti</span>
+                    <i class="fa-solid fa-chevron-right text-xs"></i>
+                </a>
+                <a href="artikel.html" class="text-poultry-yolk flex items-center justify-between">
+                    <span>Tips Cek Telur Segar & Gizi</span>
+                    <i class="fa-solid fa-chevron-right text-xs"></i>
+                </a>
+                <a href="kontak.html" class="hover:text-poultry-yolk transition flex items-center justify-between">
+                    <span>Pasokan Toko, Resto & Bakery</span>
+                    <i class="fa-solid fa-chevron-right text-xs"></i>
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- 3. PAGE BANNER -->
+    <section class="py-12 bg-gradient-to-b from-amber-100/50 to-poultry-cream border-b border-poultry-border">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="max-w-3xl">
+                <span class="px-3 py-1 bg-amber-100 text-poultry-yolk text-xs font-bold uppercase rounded-md tracking-wider font-clean">
+                    POULTRY SCIENCE & NUTRITION GUIDE
+                </span>
+                <h1 class="text-3xl sm:text-5xl font-extrabold text-poultry-farm mt-3 mb-3 leading-tight">
+                    Edukasi Gizi & Panduan Telur Segar
+                </h1>
+                <p class="text-slate-600 text-sm sm:text-base leading-relaxed font-clean">
+                    Ketahui cara membedakan telur segar dari telur lama dengan tes apung air, manfaat asam lemak DHA Omega-3 untuk perkembangan otak anak, serta mitos seputar warna cangkang telur.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- 4. FEATURED ARTICLE 1: TES APUNG AIR -->
+    <section class="py-12 md:py-16 bg-white border-b border-poultry-border">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="bg-poultry-cream rounded-3xl p-6 sm:p-10 border-2 border-amber-300 shadow-md grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
+                
+                <div class="lg:col-span-6 space-y-4">
+                    <div class="flex items-center gap-2">
+                        <span class="px-3 py-0.5 bg-poultry-yolk text-white text-[10px] font-black uppercase rounded-md font-clean">
+                            PANDUAN KELUARGA
+                        </span>
+                        <span class="text-xs text-slate-500 font-clean">4 Menit Baca • Uji Praktis di Dapur</span>
+                    </div>
+                    
+                    <h2 class="text-2xl sm:text-3xl font-extrabold text-slate-900 leading-snug">
+                        Cara Mudah Membedakan Telur Segar vs Telur Busuk dengan Tes Apung Air
+                    </h2>
+
+                    <p class="text-xs sm:text-sm text-slate-600 leading-relaxed font-clean">
+                        Seiring bertambahnya usia telur, cairan di dalamnya akan menguap melalui pori-pori cangkang dan digantikan oleh udara. Hal ini memperbesar kantung udara (*air cell*) di bagian ujung tumpul telur.
+                    </p>
+
+                    <div class="space-y-2.5 pt-2 text-xs text-slate-700 font-medium font-clean">
+                        <div class="flex items-start gap-2.5">
+                            <span class="w-5 h-5 rounded-full bg-emerald-100 text-emerald-800 flex items-center justify-center font-bold shrink-0">1</span>
+                            <div><strong>Tenggelam Mendatar di Dasar Air:</strong> Telur sangat segar (umur 1-7 hari). Kuning telur bulat tinggi, putih kental sempurna.</div>
+                        </div>
+                        <div class="flex items-start gap-2.5">
+                            <span class="w-5 h-5 rounded-full bg-amber-100 text-amber-800 flex items-center justify-center font-bold shrink-0">2</span>
+                            <div><strong>Tenggelam Namun Berdiri Miring:</strong> Telur berumur 14-21 hari. Masih aman dikonsumsi matang sempurna untuk kue/rebus.</div>
+                        </div>
+                        <div class="flex items-start gap-2.5">
+                            <span class="w-5 h-5 rounded-full bg-red-100 text-red-800 flex items-center justify-center font-bold shrink-0">3</span>
+                            <div><strong>Mengapung di Permukaan Air:</strong> Telur sudah rusak/busuk. Kantung udara terisi gas bakteri, jangan dikonsumsi!</div>
+                        </div>
+                    </div>
+
+                    <div class="pt-3">
+                        <a href="katalog.html" class="inline-flex items-center gap-2 px-5 py-3 bg-poultry-yolk hover:bg-poultry-gold text-white font-bold text-xs rounded-xl shadow-md transition font-clean">
+                            <span>Pesan Telur Panen Pagi Segar 100%</span>
+                            <i class="fa-solid fa-arrow-right text-xs"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="lg:col-span-6">
+                    <div class="rounded-2xl overflow-hidden shadow-md border-2 border-white bg-amber-50">
+                        <img src="https://images.unsplash.com/photo-1582722872445-44dc5f7e3c8f?q=80&w=800&auto=format&fit=crop" 
+                             alt="Kuning Telur Dome Oranye Kental Segar" 
+                             class="w-full h-80 object-cover transform hover:scale-105 transition-all duration-700">
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- 5. FEATURED ARTICLE 2: MANFAAT OMEGA-3 ANAK -->
+    <section class="py-14 bg-white border-b border-poultry-border">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 space-y-8">
+            
+            <div class="text-center space-y-2">
+                <span class="px-3 py-1 bg-amber-100 text-poultry-yolk text-xs font-bold uppercase rounded-md tracking-wider font-clean">
+                    GIZI & TUMBUH KEMBANG
+                </span>
+                <h3 class="text-2xl sm:text-3xl font-extrabold text-poultry-farm">
+                    3 Alasan Mengapa Anak Perlu Asupan Telur Omega-3 Sejak Dini
+                </h3>
+                <p class="text-slate-600 text-xs sm:text-sm font-clean">
+                    Nutrisi vital pada masa emas pertumbuhan (Golden Age) untuk kecerdasan kognitif dan kesehatan mata:
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                
+                <div class="bg-poultry-cream rounded-3xl p-6 border border-poultry-border shadow-xs flex flex-col justify-between">
+                    <div>
+                        <div class="w-10 h-10 rounded-xl bg-poultry-yolk text-white flex items-center justify-center font-black text-sm mb-4">
+                            <i class="fa-solid fa-brain"></i>
+                        </div>
+                        <h4 class="font-bold text-sm text-slate-900">Perkembangan Memori & Fokus</h4>
+                        <p class="text-xs text-slate-600 mt-2 leading-relaxed font-clean">
+                            Asam lemak DHA adalah komponen struktural utama pembentuk 60% jaringan otak. Mengonsumsi telur Omega-3 membantu daya konsentrasi belajar anak.
+                        </p>
+                    </div>
+                    <div class="mt-4 pt-3 border-t border-slate-200 text-[11px] text-amber-700 font-semibold font-clean">
+                        🧠 350mg DHA per Butir
+                    </div>
+                </div>
+
+                <div class="bg-poultry-cream rounded-3xl p-6 border border-poultry-border shadow-xs flex flex-col justify-between">
+                    <div>
+                        <div class="w-10 h-10 rounded-xl bg-emerald-700 text-white flex items-center justify-center font-black text-sm mb-4">
+                            <i class="fa-solid fa-eye"></i>
+                        </div>
+                        <h4 class="font-bold text-sm text-slate-900">Perlindungan Retina Mata (Lutein)</h4>
+                        <p class="text-xs text-slate-600 mt-2 leading-relaxed font-clean">
+                            Pigmen lutein dan zeaxanthin dari pakan marigold terkonsentrasi di makula mata, melindungi retina dari paparan sinar biru layar gadget/gawai.
+                        </p>
+                    </div>
+                    <div class="mt-4 pt-3 border-t border-slate-200 text-[11px] text-emerald-800 font-semibold font-clean">
+                        👁️ Antioksidan Lutein
+                    </div>
+                </div>
+
+                <div class="bg-poultry-cream rounded-3xl p-6 border border-poultry-border shadow-xs flex flex-col justify-between">
+                    <div>
+                        <div class="w-10 h-10 rounded-xl bg-poultry-farm text-white flex items-center justify-center font-black text-sm mb-4">
+                            <i class="fa-solid fa-shield-heart"></i>
+                        </div>
+                        <h4 class="font-bold text-sm text-slate-900">Bebas Residu & Salmonella</h4>
+                        <p class="text-xs text-slate-600 mt-2 leading-relaxed font-clean">
+                            Karena teruji bebas bakteri Salmonella, telur Omega-3 Kencana Farm sangat aman disajikan sebagai menu MPASI balita tanpa risiko infeksi pencernaan.
+                        </p>
+                    </div>
+                    <div class="mt-4 pt-3 border-t border-slate-200 text-[11px] text-slate-700 font-semibold font-clean">
+                        🛡️ Uji Lab KAN Negatif
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+    <!-- 6. KNOWLEDGE ARTICLES GRID -->
+    <section class="py-14 md:py-20 bg-poultry-cream">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-2xl mx-auto mb-12">
+                <span class="px-3 py-1 bg-amber-100 text-poultry-yolk text-xs font-bold uppercase rounded-md tracking-wider font-clean">
+                    ARTIKEL & WAWASAN PETERNAKAN
+                </span>
+                <h2 class="text-2xl sm:text-4xl font-extrabold text-poultry-farm mt-2 mb-2">
+                    Fakta Ilmiah Seputar Telur Unggas
+                </h2>
+                <p class="text-slate-600 text-xs sm:text-sm font-clean">
+                    Tips dapur cerdas untuk menjaga nutrisi dan kebersihan bahan pangan keluarga.
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                
+                <!-- Article 1 -->
+                <div class="farm-card bg-white rounded-3xl border border-poultry-border overflow-hidden flex flex-col justify-between shadow-xs">
+                    <div class="h-48 overflow-hidden bg-amber-50">
+                        <img src="https://images.unsplash.com/photo-1516467508483-a7212febe31a?q=80&w=600&auto=format&fit=crop" 
+                             alt="Warna Cangkang Telur" class="w-full h-full object-cover">
+                    </div>
+                    <div class="p-6 flex-1 flex flex-col justify-between">
+                        <div>
+                            <span class="text-[10px] bg-amber-100 text-poultry-farm px-2 py-0.5 rounded font-bold uppercase font-clean">Mitos vs Fakta</span>
+                            <h3 class="text-base font-bold text-slate-900 mt-2">
+                                Apakah Warna Cangkang Cokelat Lebih Bernutrisi dari Cangkang Putih?
+                            </h3>
+                            <p class="text-xs text-slate-600 mt-2 leading-relaxed font-clean">
+                                Warna cangkang hanya dipengaruhi genetika ras ayam (ayam Lohmann menghasilkan cangkang cokelat, Leghorn putih). Kualitas nutrisi murni ditentukan oleh pakan dan biosekuriti kandang.
+                            </p>
+                        </div>
+                        <div class="mt-4 pt-3 border-t border-poultry-border flex items-center justify-between text-xs font-clean">
+                            <span class="text-slate-400">3 Menit Baca</span>
+                            <a href="katalog.html" class="font-bold text-poultry-yolk hover:underline">Pesan Telur &rarr;</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Article 2 -->
+                <div class="farm-card bg-white rounded-3xl border border-poultry-border overflow-hidden flex flex-col justify-between shadow-xs">
+                    <div class="h-48 overflow-hidden bg-amber-50">
+                        <img src="https://images.unsplash.com/photo-1582722872445-44dc5f7e3c8f?q=80&w=600&auto=format&fit=crop" 
+                             alt="Penyimpanan Telur di Kulkas" class="w-full h-full object-cover">
+                    </div>
+                    <div class="p-6 flex-1 flex flex-col justify-between">
+                        <div>
+                            <span class="text-[10px] bg-blue-100 text-blue-800 px-2 py-0.5 rounded font-bold uppercase font-clean">Tips Dapur</span>
+                            <h3 class="text-base font-bold text-slate-900 mt-2">
+                                Alasan Mengapa Telur Tidak Boleh Dicuci Air Sebelum Disimpan di Kulkas
+                            </h3>
+                            <p class="text-xs text-slate-600 mt-2 leading-relaxed font-clean">
+                                Air akan mengikis lapisan minyak kutikula alami pelindung telur, membuka pori-pori mikroskopis cangkang yang memungkinkan bakteri luar masuk ke dalam putih telur.
+                            </p>
+                        </div>
+                        <div class="mt-4 pt-3 border-t border-poultry-border flex items-center justify-between text-xs font-clean">
+                            <span class="text-slate-400">4 Menit Baca</span>
+                            <a href="detail.html" class="font-bold text-poultry-yolk hover:underline">Baca Selengkapnya &rarr;</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Article 3 -->
+                <div class="farm-card bg-white rounded-3xl border border-poultry-border overflow-hidden flex flex-col justify-between shadow-xs">
+                    <div class="h-48 overflow-hidden bg-amber-50">
+                        <img src="https://images.unsplash.com/photo-1516467508483-a7212febe31a?q=80&w=600&auto=format&fit=crop" 
+                             alt="Rahasia Telur untuk Bakery" class="w-full h-full object-cover">
+                    </div>
+                    <div class="p-6 flex-1 flex flex-col justify-between">
+                        <div>
+                            <span class="text-[10px] bg-emerald-100 text-emerald-800 px-2 py-0.5 rounded font-bold uppercase font-clean">Tips Bakery</span>
+                            <h3 class="text-base font-bold text-slate-900 mt-2">
+                                Rahasia Memilih Telur yang Bikin Roti & Bolu Mengembang Tinggi
+                            </h3>
+                            <p class="text-xs text-slate-600 mt-2 leading-relaxed font-clean">
+                                Telur panen baru (1-3 hari) memiliki putih telur berprotein albumin kental yang mampu memerangkap gelembung udara secara stabil saat dimixer, mencegah kue bantat.
+                            </p>
+                        </div>
+                        <div class="mt-4 pt-3 border-t border-poultry-border flex items-center justify-between text-xs font-clean">
+                            <span class="text-slate-400">5 Menit Baca</span>
+                            <a href="katalog.html" class="font-bold text-poultry-yolk hover:underline">Pesan Tray Bakery &rarr;</a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- 7. FOOTER -->
+    <footer class="bg-stone-900 text-stone-400 text-xs pt-16 pb-36 border-t border-stone-800 font-sans">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-10 pb-12 border-b border-stone-800">
+                <div class="lg:col-span-2 space-y-4">
+                    <a href="index.html" class="flex items-center gap-3">
+                        <div class="w-10 h-10 bg-gradient-to-br from-poultry-yolk to-poultry-farm text-white flex items-center justify-center text-xl font-bold rounded-xl">
+                            <i class="fa-solid fa-egg"></i>
+                        </div>
+                        <span class="text-2xl font-extrabold text-white tracking-tight">
+                            KENCANA<span class="text-poultry-yolk">.</span>
+                        </span>
+                    </a>
+                    <p class="text-xs text-stone-400 leading-relaxed max-w-sm font-clean">
+                        Peternakan ayam closed-house modern terintegrasi. Memproduksi telur Omega-3 DHA, telur ayam negeri super panen subuh, dan daging karkas ayam potong halal dengan standar biosekuriti ketat.
+                    </p>
+                </div>
+                <div>
+                    <h4 class="text-xs font-bold text-white uppercase tracking-wider mb-4">Navigasi Halaman</h4>
+                    <ul class="space-y-2.5 font-clean">
+                        <li><a href="index.html" class="hover:text-amber-400 transition">Beranda Utama</a></li>
+                        <li><a href="katalog.html" class="hover:text-amber-400 transition">Koleksi Telur & Ayam</a></li>
+                        <li><a href="detail.html" class="hover:text-amber-400 transition">Detail Telur Omega-3</a></li>
+                        <li><a href="tentang.html" class="hover:text-amber-400 transition">Biosekuriti Kandang</a></li>
+                        <li><a href="artikel.html" class="hover:text-amber-400 transition">Edukasi & Gizi</a></li>
+                        <li><a href="kontak.html" class="hover:text-amber-400 transition">Pasokan Bakery & Resto</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-xs font-bold text-white uppercase tracking-wider mb-4">Produk Peternakan</h4>
+                    <ul class="space-y-2.5 font-clean">
+                        <li><a href="detail.html" class="hover:text-amber-400 transition">Telur Omega-3 DHA Mika</a></li>
+                        <li><a href="detail.html" class="hover:text-amber-400 transition">Telur Negeri Super Tray 30</a></li>
+                        <li><a href="detail.html" class="hover:text-amber-400 transition">Telur Ayam Kampung Asli</a></li>
+                        <li><a href="katalog.html" class="hover:text-amber-400 transition">Ayam Karkas Segar Halal</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-xs font-bold text-white uppercase tracking-wider mb-4">Pusat Peternakan Farm</h4>
+                    <p class="text-xs text-stone-400 leading-relaxed mb-3 font-clean">
+                        Kawasan Closed-House Farm Kencana, Kec. Bawen, Kab. Semarang, Jawa Tengah 50661.
+                    </p>
+                    <p class="text-xs text-amber-400 font-bold mb-1"><i class="fa-solid fa-phone mr-1.5"></i> +62 812-3456-7890</p>
+                    <p class="text-xs text-stone-400 font-clean"><i class="fa-solid fa-envelope mr-1.5"></i> order@kencanafarm.com</p>
+                </div>
+            </div>
+            <div class="pt-8 flex flex-col sm:flex-row items-center justify-between gap-4 text-[11px] text-stone-500 font-clean">
+                <p>&copy; 2026 KENCANA POULTRY FARM. All rights reserved.</p>
+                <div class="flex items-center gap-4">
+                    <span>Salmonella Tested Negative</span>
+                    <span>•</span>
+                    <span>100% Halal MUI</span>
+                    <span>•</span>
+                    <span>Garansi Telur Retak 100%</span>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- 8. FLOATING WHATSAPP BUTTON (bottom-24) -->
+    <div class="fixed bottom-24 right-5 z-40">
+        <a href="https://wa.me/6281234567890?text=Halo%20Admin%20Kencana%20Farm,%20saya%20ingin%20tanya%20tips%20telur%20segar." 
+           target="_blank" 
+           aria-label="Chat WhatsApp Kencana Farm"
+           class="group flex items-center gap-3 bg-gradient-to-r from-emerald-600 to-emerald-700 hover:from-emerald-700 hover:to-emerald-800 text-white px-4 py-3.5 rounded-full shadow-2xl transition-all transform hover:scale-105 border-2 border-white">
+            <i class="fa-brands fa-whatsapp text-2xl animate-pulse"></i>
+            <span class="text-xs font-bold tracking-wide pr-1 hidden sm:inline font-clean">Pesan Telur Segar WA</span>
+        </a>
+    </div>
+
+    <!-- 9. STICKY DEMO & SALES BAR (fixed bottom-4) -->
+    <div class="fixed bottom-4 left-4 right-4 z-50 max-w-5xl mx-auto">
+      <div class="bg-stone-900/95 backdrop-blur-md text-white px-4 sm:px-6 py-3.5 rounded-2xl shadow-2xl border border-stone-700 flex flex-col md:flex-row items-center justify-between gap-3">
+        <div class="flex items-center gap-3 text-left w-full md:w-auto">
+          <div class="w-9 h-9 rounded-xl bg-amber-500/20 border border-amber-400/40 flex items-center justify-center shrink-0">
+            <i class="fa-solid fa-egg text-amber-400 text-sm"></i>
+          </div>
+          <div>
+            <div class="text-xs md:text-sm font-bold text-stone-100 flex items-center gap-2">
+              <span>Lentera Pasar Demo</span>
+              <span class="text-[10px] px-2 py-0.5 rounded bg-amber-500/20 text-amber-300 font-bold">Artikel & Edukasi Gizi Telur</span>
+            </div>
+            <p class="text-[11px] text-stone-400 hidden sm:block font-clean">Desain Golden Farmstead untuk agrobisnis peternakan telur ayam, karkas halal, & pasokan bakery.</p>
+          </div>
+        </div>
+        <div class="flex items-center gap-3 w-full md:w-auto justify-end">
+          <a href="https://wa.me/6281234567890?text=Halo%20Tim%20Lentera%20Pasar,%20saya%20tertarik%20menggunakan%20template%20website%20Peternakan%20Telur%20ini." 
+             target="_blank"
+             class="w-full md:w-auto inline-flex items-center justify-center gap-2 bg-gradient-to-r from-amber-600 to-poultry-yolk hover:from-amber-500 hover:to-amber-700 text-white text-xs md:text-sm font-bold px-5 py-2.5 rounded-xl shadow-lg transition-all hover:scale-105 shrink-0 font-clean">
+            <span>Gunakan Template Ini</span>
+            <i class="fa-solid fa-arrow-right text-xs"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <!-- SCRIPT MOBILE MENU -->
+    <script>
+        const mobileMenuBtn = document.getElementById('mobileMenuBtn');
+        const mobileMenu = document.getElementById('mobileMenu');
+        const menuIcon = document.getElementById('menuIcon');
+
+        mobileMenuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+            if (mobileMenu.classList.contains('hidden')) {
+                menuIcon.classList.remove('fa-xmark');
+                menuIcon.classList.add('fa-bars');
+            } else {
+                menuIcon.classList.remove('fa-bars');
+                menuIcon.classList.add('fa-xmark');
+            }
+        });
+    </script>
+</body>
+</html>
