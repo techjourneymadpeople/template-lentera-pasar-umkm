@@ -1,0 +1,525 @@
+<!DOCTYPE html>
+<html lang="id" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Analisis Harga & Manajemen Stok Sembako // AGROLOGIX COMMODITY HUB</title>
+    <meta name="description" content="Edukasi komoditas pangan B2B: Analisis fluktuasi harga minyak goreng sawit, manajemen gudang FIFO gula/terigu, dan SOP kalibrasi timbangan tera.">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800;900&family=Roboto+Mono:wght@500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome 6 -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        agro: {
+                            navy: '#0C1524',
+                            dark: '#070D18',
+                            card: '#131F33',
+                            amber: '#D97706',
+                            amberlight: '#F59E0B',
+                            amberdark: '#B45309',
+                            pallet: '#1E293B',
+                            border: '#24344D',
+                            slate: '#94A3B8'
+                        }
+                    },
+                    fontFamily: {
+                        sans: ['"Plus Jakarta Sans"', 'sans-serif'],
+                        tech: ['"Roboto Mono"', 'monospace']
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        .no-scrollbar::-webkit-scrollbar { display: none; }
+        .no-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
+
+        .agro-card-hover {
+            transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+        }
+        .agro-card-hover:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 20px 35px -10px rgba(217, 119, 6, 0.25);
+            border-color: #D97706;
+        }
+    </style>
+</head>
+<body class="bg-agro-navy text-slate-100 font-sans antialiased selection:bg-agro-amber selection:text-white">
+
+    <!-- 1. TOP COMMODITY BAR -->
+    <div class="bg-agro-dark text-slate-300 text-xs py-2.5 px-4 font-sans font-medium border-b border-agro-border">
+        <div class="max-w-7xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-2 text-center sm:text-left">
+            <div class="flex items-center justify-center gap-2">
+                <span class="px-2 py-0.5 bg-agro-amber text-white text-[10px] uppercase font-black tracking-wider rounded-xs shadow-xs flex items-center gap-1 font-tech">
+                    <i class="fa-solid fa-chart-line"></i> COMMODITY MARKET INSIGHTS
+                </span>
+                <span class="text-slate-200 font-medium">Analisis Pergerakan Harga Pasar Komoditas Pangan • Tips Manajemen Stok Gudang Sembako</span>
+            </div>
+            <div class="flex items-center gap-4 text-xs font-tech">
+                <a href="katalog.html" class="text-amber-400 hover:underline font-bold transition flex items-center gap-1">
+                    Katalog Sembako <i class="fa-solid fa-arrow-right text-[10px]"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- 2. NAVBAR LOGISTICS DEPOT -->
+    <header class="sticky top-0 z-40 bg-agro-navy/98 backdrop-blur-md border-b border-agro-border transition-all shadow-md">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-20 sm:h-24">
+                
+                <!-- Logo -->
+                <a href="index.html" class="flex items-center gap-3.5 group">
+                    <div class="w-12 h-12 bg-gradient-to-br from-agro-amber to-agro-dark text-white flex items-center justify-center text-2xl font-bold rounded-xl shadow-lg group-hover:scale-105 transition border border-agro-amber/40">
+                        <i class="fa-solid fa-cubes-stacked text-amber-300"></i>
+                    </div>
+                    <div class="flex flex-col">
+                        <span class="text-2xl sm:text-3xl font-black tracking-tight text-white uppercase leading-none font-sans">
+                            AGROLOGIX<span class="text-agro-amber">.</span>
+                        </span>
+                        <span class="text-[9px] tracking-[0.25em] text-agro-amber font-bold uppercase mt-1 font-tech">
+                            WHOLESALE COMMODITY SUPPLY
+                        </span>
+                    </div>
+                </a>
+
+                <!-- Desktop Navigation Links -->
+                <nav class="hidden lg:flex items-center gap-7 text-xs font-bold tracking-wider uppercase text-slate-300 font-sans">
+                    <a href="index.html" class="hover:text-agro-amber transition">Beranda</a>
+                    <a href="katalog.html" class="hover:text-agro-amber transition">Katalog Sembako</a>
+                    <a href="detail.html" class="hover:text-agro-amber transition">Spesifikasi Gula & Minyak</a>
+                    <a href="tentang.html" class="hover:text-agro-amber transition">Gudang 5.000 Ton & Truk</a>
+                    <a href="artikel.html" class="text-agro-amber border-b-2 border-agro-amber pb-1 font-bold">Analisis Harga Pasar</a>
+                    <a href="kontak.html" class="hover:text-agro-amber transition">Pusat Distribusi & Kemitraan</a>
+                </nav>
+
+                <!-- Actions -->
+                <div class="hidden sm:flex items-center gap-3">
+                    <a href="https://wa.me/6281234567890?text=Halo%20Sales%20Agrologix,%20saya%20ingin%20tanya%20seputar%20analisis%20pasar%20sembako." 
+                       target="_blank"
+                       class="inline-flex items-center gap-2 px-4 py-2.5 bg-agro-amber hover:bg-agro-amberdark text-xs font-black text-white rounded-xl transition shadow-md hover:shadow-lg font-tech uppercase tracking-wider">
+                        <i class="fa-brands fa-whatsapp text-white text-base"></i>
+                        <span>Customer Care WA</span>
+                    </a>
+                </div>
+
+                <!-- Mobile Menu Button -->
+                <div class="flex lg:hidden items-center gap-2">
+                    <a href="https://wa.me/6281234567890" target="_blank" class="p-2.5 bg-agro-card text-agro-amber rounded-xl text-sm border border-agro-border">
+                        <i class="fa-brands fa-whatsapp"></i>
+                    </a>
+                    <button id="mobileMenuBtn" class="p-2.5 text-slate-300 hover:text-agro-amber focus:outline-hidden rounded-xl bg-agro-card border border-agro-border">
+                        <i id="menuIcon" class="fa-solid fa-bars text-xl"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Mobile Dropdown Menu -->
+        <div id="mobileMenu" class="hidden lg:hidden border-t border-agro-border bg-agro-navy px-6 py-5 shadow-2xl">
+            <div class="flex flex-col gap-4 text-sm font-bold uppercase text-slate-300">
+                <a href="index.html" class="hover:text-agro-amber transition flex items-center justify-between">
+                    <span>Beranda Utama</span>
+                    <i class="fa-solid fa-chevron-right text-xs"></i>
+                </a>
+                <a href="katalog.html" class="hover:text-agro-amber transition flex items-center justify-between">
+                    <span>Katalog Komoditas Sembako</span>
+                    <i class="fa-solid fa-chevron-right text-xs"></i>
+                </a>
+                <a href="detail.html" class="hover:text-agro-amber transition flex items-center justify-between">
+                    <span>Detail Sak 50kg & Tonase Truk</span>
+                    <i class="fa-solid fa-chevron-right text-xs"></i>
+                </a>
+                <a href="tentang.html" class="hover:text-agro-amber transition flex items-center justify-between">
+                    <span>Kapasitas Gudang 5.000 Ton</span>
+                    <i class="fa-solid fa-chevron-right text-xs"></i>
+                </a>
+                <a href="artikel.html" class="text-agro-amber flex items-center justify-between">
+                    <span>Analisis Pergerakan Harga Pasar</span>
+                    <i class="fa-solid fa-chevron-right text-xs"></i>
+                </a>
+                <a href="kontak.html" class="hover:text-agro-amber transition flex items-center justify-between">
+                    <span>Pusat Distribusi & Daftar Agen</span>
+                    <i class="fa-solid fa-chevron-right text-xs"></i>
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- 3. PAGE BANNER -->
+    <section class="py-12 bg-agro-card border-b border-agro-border">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="max-w-3xl">
+                <span class="px-3 py-1 bg-agro-navy text-amber-400 text-xs font-bold uppercase rounded-md tracking-wider font-tech border border-agro-amber/40">
+                    COMMODITY MARKET & WAREHOUSE MANAGEMENT
+                </span>
+                <h1 class="text-3xl sm:text-5xl font-black text-white font-sans mt-3 mb-3 leading-tight">
+                    Analisis Pasar Komoditas & Manajemen Gudang
+                </h1>
+                <p class="text-slate-300 text-sm sm:text-base leading-relaxed font-light">
+                    Wawasan strategis untuk pemilik toko grosir sembako, distributor daerah, dan purchasing industri: Memahami siklus pergerakan harga minyak goreng sawit CPO, manajemen rotasi stok FIFO, dan pencegahan susut timbangan.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- 4. FEATURED ARTICLE 1: ANALISIS HARGA MINYAK GORENG B2B -->
+    <section class="py-12 md:py-16 bg-agro-navy border-b border-agro-border">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="bg-agro-card rounded-2xl p-6 sm:p-10 border border-agro-border shadow-2xl grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
+                
+                <div class="lg:col-span-7 space-y-4 font-sans">
+                    <div class="flex items-center gap-2 font-tech">
+                        <span class="px-2.5 py-0.5 bg-agro-amber text-white text-[10px] font-black uppercase rounded-md">
+                            COMMODITY MARKET ANALYSIS
+                        </span>
+                        <span class="text-xs text-slate-400">5 Menit Baca • Tim Riset Pasar Agrologix</span>
+                    </div>
+                    
+                    <h2 class="text-2xl sm:text-3xl font-black text-white leading-snug">
+                        Analisis Fluktuasi Harga Minyak Goreng Sawit B2B: Kapan Waktu Tepat Mengunci Kontrak Tonase?
+                    </h2>
+
+                    <p class="text-xs sm:text-sm text-slate-300 leading-relaxed font-light">
+                        Pergerakan harga minyak goreng kelapa sawit curah dan kemasan sangat dipengaruhi oleh dinamika pasar CPO (Crude Palm Oil) global, pungutan ekspor, dan pola konsumsi musiman domestik:
+                    </p>
+
+                    <div class="space-y-3 bg-agro-navy p-5 rounded-2xl border border-agro-border text-xs font-tech text-slate-300 font-light">
+                        <div class="flex items-start gap-2.5">
+                            <span class="w-6 h-6 rounded-full bg-agro-amber text-white flex items-center justify-center font-bold shrink-0 text-xs">1</span>
+                            <div>
+                                <strong class="text-white font-bold">Pantau Siklus Panen TBS Sawit:</strong> Pasokan CPO melimpah pada kuartal 3 (Agustus–Oktober) cenderung menstabilkan harga refinery di tingkat pabrik.
+                            </div>
+                        </div>
+                        <div class="flex items-start gap-2.5">
+                            <span class="w-6 h-6 rounded-full bg-agro-amber text-white flex items-center justify-center font-bold shrink-0 text-xs">2</span>
+                            <div>
+                                <strong class="text-white font-bold">Strategi Kontrak Buffer Stock H-45 Hari Raya:</strong> Melakukan kontrak harga tonase 1.5–2 bulan sebelum puncak hari raya untuk mengunci alokasi armada dan mengamankan marjin laba toko.
+                            </div>
+                        </div>
+                        <div class="flex items-start gap-2.5">
+                            <span class="w-6 h-6 rounded-full bg-agro-amber text-white flex items-center justify-center font-bold shrink-0 text-xs">3</span>
+                            <div>
+                                <strong class="text-white font-bold">Efisiensi Kemasan Pouch vs Jerigen 18L:</strong> Menggunakan jerigen jumbo untuk pelanggan industri katering menghemat biaya kemasan hingga 8% dibanding kemasan pouch 1L.
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="pt-2 font-tech">
+                        <a href="katalog.html" class="inline-flex items-center gap-2 px-6 py-3 bg-agro-amber hover:bg-agro-amberdark text-white font-black text-xs uppercase tracking-wider rounded-xl shadow-md transition">
+                            <span>Lihat Harga Minyak Goreng Hari Ini</span>
+                            <i class="fa-solid fa-arrow-right text-xs"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="lg:col-span-5">
+                    <div class="rounded-xl overflow-hidden shadow-2xl border-2 border-agro-border bg-slate-900">
+                        <img src="https://images.unsplash.com/photo-1474979266404-7eaacbcd87c5?q=80&w=800&auto=format&fit=crop" 
+                             alt="Minyak Goreng Sawit Tonase Agrologix" 
+                             class="w-full h-80 object-cover transform hover:scale-105 transition-all duration-700">
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- 5. FEATURED ARTICLE 2: MANAJEMEN GUDANG FIFO -->
+    <section class="py-14 bg-agro-card border-b border-agro-border">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 space-y-8 font-sans">
+            
+            <div class="text-center space-y-2">
+                <span class="px-3 py-1 bg-agro-navy text-amber-400 text-xs font-bold uppercase rounded-md tracking-wider font-tech border border-agro-amber/40">
+                    WAREHOUSE OPERATIONS & FIFO PROTOCOLS
+                </span>
+                <h3 class="text-2xl sm:text-3xl font-black text-white">
+                    Manajemen Gudang Sembako FIFO: Cara Menjaga Gula & Terigu Bebas Gumpalan
+                </h3>
+                <p class="text-slate-400 text-xs sm:text-sm font-light">
+                    Penerapan standar pergudangan modern untuk meminimalkan kerusakan fisik karung dan menjaga mutu bahan pangan.
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6 font-tech">
+                
+                <div class="bg-agro-navy rounded-2xl p-6 border-2 border-agro-amber shadow-xs flex flex-col justify-between">
+                    <div>
+                        <div class="w-10 h-10 rounded-xl bg-agro-card text-amber-400 flex items-center justify-center font-black text-sm mb-4 border border-agro-amber/40">
+                            1
+                        </div>
+                        <h4 class="font-bold text-sm text-white font-sans">Alas Palet Kayu / Plastik</h4>
+                        <p class="text-xs text-slate-400 mt-2 leading-relaxed font-sans font-light">
+                            Jangan pernah menumpuk sak karung langsung menyentuh lantai semen. Gunakan palet minimal tinggi 15 cm untuk menghindari kondensasi uap air dingin.
+                        </p>
+                    </div>
+                    <div class="mt-4 pt-3 border-t border-agro-border text-[11px] text-amber-400 font-bold">
+                        🪵 Anti-Lembab & Anti-Basah
+                    </div>
+                </div>
+
+                <div class="bg-agro-navy rounded-2xl p-6 border border-agro-border shadow-xs flex flex-col justify-between">
+                    <div>
+                        <div class="w-10 h-10 rounded-xl bg-agro-card text-emerald-400 flex items-center justify-center font-black text-sm mb-4 border border-emerald-400/40">
+                            2
+                        </div>
+                        <h4 class="font-bold text-sm text-white font-sans">Maksimal Tumpukan 10 Sak</h4>
+                        <p class="text-xs text-slate-400 mt-2 leading-relaxed font-sans font-light">
+                            Tumpukan silang (*interlocking stacking*) maksimal 8–10 susun untuk mencegah tekanan berlebih yang menyebabkan butiran gula saling memadat dan menggumpal.
+                        </p>
+                    </div>
+                    <div class="mt-4 pt-3 border-t border-agro-border text-[11px] text-emerald-400 font-bold">
+                        📦 Bebas Gumpalan Tekanan
+                    </div>
+                </div>
+
+                <div class="bg-agro-navy rounded-2xl p-6 border border-agro-border shadow-xs flex flex-col justify-between">
+                    <div>
+                        <div class="w-10 h-10 rounded-xl bg-agro-card text-blue-400 flex items-center justify-center font-black text-sm mb-4 border border-blue-400/40">
+                            3
+                        </div>
+                        <h4 class="font-bold text-sm text-white font-sans">Sirkulasi FIFO Disiplin</h4>
+                        <p class="text-xs text-slate-400 mt-2 leading-relaxed font-sans font-light">
+                            Gula dan tepung yang masuk lebih awal harus dikeluarkan terlebih dahulu (*First-In First-Out*) dengan label tanggal kedatangan yang jelas pada setiap palet.
+                        </p>
+                    </div>
+                    <div class="mt-4 pt-3 border-t border-agro-border text-[11px] text-blue-400 font-bold">
+                        🔄 Stok Selalu Segar Pabrik
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+    <!-- 6. KNOWLEDGE ARTICLES GRID -->
+    <section class="py-14 md:py-20 bg-agro-navy">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-2xl mx-auto mb-12">
+                <span class="px-3 py-1 bg-agro-card text-amber-400 text-xs font-bold uppercase rounded-md tracking-wider font-tech border border-agro-amber/40">
+                    TECHNICAL COMMODITY ARTICLES
+                </span>
+                <h2 class="text-2xl sm:text-4xl font-black text-white font-sans mt-2 mb-2">
+                    Artikel & Panduan Komoditas Sembako
+                </h2>
+                <p class="text-slate-400 text-xs sm:text-sm font-light">
+                    Edukasi seputar perbedaan mutu gula GKP vs rafinasi, kadar gluten terigu, dan SOP tera timbangan.
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                
+                <!-- Article 1 -->
+                <div class="agro-card-hover bg-agro-card rounded-2xl border border-agro-border overflow-hidden flex flex-col justify-between shadow-md">
+                    <div class="h-48 overflow-hidden bg-slate-900">
+                        <img src="https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?q=80&w=600&auto=format&fit=crop" 
+                             alt="Perbedaan Gula Kristal Putih dan Rafinasi" class="w-full h-full object-cover">
+                    </div>
+                    <div class="p-6 flex-1 flex flex-col justify-between">
+                        <div>
+                            <span class="text-[10px] bg-agro-navy text-amber-400 font-bold px-2 py-0.5 rounded font-tech uppercase border border-agro-amber/40">Sugar Standards</span>
+                            <h3 class="text-base font-bold text-white font-sans mt-2">
+                                Gula Kristal Putih (GKP) vs Gula Rafinasi R1: Mana yang Sesuai untuk Industri Anda?
+                            </h3>
+                            <p class="text-xs text-slate-400 mt-2 leading-relaxed font-light">
+                                Membedakan nilai ICUMSA gula konsumsi pasar (100–150 IU) vs gula rafinasi industri (&lt; 45 IU) untuk industri biskuit dan minuman.
+                            </p>
+                        </div>
+                        <div class="mt-4 pt-3 border-t border-agro-border flex items-center justify-between text-xs font-tech">
+                            <span class="text-slate-500 text-[11px]">4 Menit Baca</span>
+                            <a href="detail.html" class="font-bold text-amber-400 hover:underline uppercase tracking-wider">Lihat Detail &rarr;</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Article 2 -->
+                <div class="agro-card-hover bg-agro-card rounded-2xl border border-agro-border overflow-hidden flex flex-col justify-between shadow-md">
+                    <div class="h-48 overflow-hidden bg-slate-900">
+                        <img src="https://images.unsplash.com/photo-1509440159596-0249088772ff?q=80&w=600&auto=format&fit=crop" 
+                             alt="Kadar Gluten Tepung Terigu" class="w-full h-full object-cover">
+                    </div>
+                    <div class="p-6 flex-1 flex flex-col justify-between">
+                        <div>
+                            <span class="text-[10px] bg-agro-navy text-emerald-400 font-bold px-2 py-0.5 rounded font-tech uppercase border border-emerald-400/40">Flour Science</span>
+                            <h3 class="text-base font-bold text-white font-sans mt-2">
+                                Kadar Gluten Tepung Terigu: Panduan Memilih Protein Tinggi (13%) vs Sedang (10.5%)
+                            </h3>
+                            <p class="text-xs text-slate-400 mt-2 leading-relaxed font-light">
+                                Mengapa elastisitas gluten penting untuk mie kenyal dan bagaimana protein sedang menghasilkan bolu yang empuk tanpa bantat.
+                            </p>
+                        </div>
+                        <div class="mt-4 pt-3 border-t border-agro-border flex items-center justify-between text-xs font-tech">
+                            <span class="text-slate-500 text-[11px]">3 Menit Baca</span>
+                            <a href="katalog.html" class="font-bold text-amber-400 hover:underline uppercase tracking-wider">Katalog Terigu &rarr;</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Article 3 -->
+                <div class="agro-card-hover bg-agro-card rounded-2xl border border-agro-border overflow-hidden flex flex-col justify-between shadow-md">
+                    <div class="h-48 overflow-hidden bg-slate-900">
+                        <img src="https://images.unsplash.com/photo-1586201375761-83865001e31c?q=80&w=600&auto=format&fit=crop" 
+                             alt="SOP Timbangan Tera Metrologi Sembako" class="w-full h-full object-cover">
+                    </div>
+                    <div class="p-6 flex-1 flex flex-col justify-between">
+                        <div>
+                            <span class="text-[10px] bg-agro-navy text-blue-400 font-bold px-2 py-0.5 rounded font-tech uppercase border border-blue-400/40">Logistics SOP</span>
+                            <h3 class="text-base font-bold text-white font-sans mt-2">
+                                SOP Penerimaan Truk Sembako: Cek Segel Karung & Kalibrasi Tera Metrologi
+                            </h3>
+                            <p class="text-xs text-slate-400 mt-2 leading-relaxed font-light">
+                                Panduan bagi tim gudang dalam memverifikasi keutuhan segel dobel jahitan pabrik dan membaca surat jalan timbangan jembatan tara.
+                            </p>
+                        </div>
+                        <div class="mt-4 pt-3 border-t border-agro-border flex items-center justify-between text-xs font-tech">
+                            <span class="text-slate-500 text-[11px]">5 Menit Baca</span>
+                            <a href="kontak.html" class="font-bold text-amber-400 hover:underline uppercase tracking-wider">Hubungi Kami &rarr;</a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- 7. FOOTER COMMODITY HUB -->
+    <footer class="bg-agro-dark text-slate-400 text-xs pt-16 pb-36 border-t border-agro-border font-sans">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-10 pb-12 border-b border-agro-border">
+                
+                <!-- Col 1: Brand & Bio -->
+                <div class="lg:col-span-2 space-y-4">
+                    <a href="index.html" class="flex items-center gap-3">
+                        <div class="w-10 h-10 bg-gradient-to-br from-agro-amber to-agro-dark text-white flex items-center justify-center text-xl font-bold rounded-xl border border-agro-amber/40">
+                            <i class="fa-solid fa-cubes-stacked text-amber-300"></i>
+                        </div>
+                        <span class="text-2xl font-black text-white tracking-tight font-sans">
+                            AGROLOGIX<span class="text-agro-amber">.</span>
+                        </span>
+                    </a>
+                    <p class="text-xs text-slate-400 leading-relaxed max-w-sm font-light">
+                        PT Agrologix Nusantara Pangan Makmur — Pusat distribusi dan supplier grosir komoditas sembako pangan pokok berskala besar: Gula Pasir GKP Sak 50kg, Minyak Goreng Sawit Karton & Jerigen, Tepung Terigu Karungan, dan Beras Grosir se-Indonesia.
+                    </p>
+                </div>
+
+                <!-- Col 2: Navigasi Cepat -->
+                <div>
+                    <h4 class="text-xs font-bold text-white uppercase tracking-wider mb-4 font-tech">Navigasi Halaman</h4>
+                    <ul class="space-y-2.5 font-tech font-light">
+                        <li><a href="index.html" class="hover:text-amber-400 transition">Beranda Utama</a></li>
+                        <li><a href="katalog.html" class="hover:text-amber-400 transition">Katalog Sembako</a></li>
+                        <li><a href="detail.html" class="hover:text-amber-400 transition">Spesifikasi Gula & Minyak</a></li>
+                        <li><a href="tentang.html" class="hover:text-amber-400 transition">Gudang 5.000 Ton & Truk</a></li>
+                        <li><a href="artikel.html" class="hover:text-amber-400 transition">Analisis Harga Pasar</a></li>
+                        <li><a href="kontak.html" class="hover:text-amber-400 transition">Pusat Distribusi & Agen</a></li>
+                    </ul>
+                </div>
+
+                <!-- Col 3: Kategori Komoditas -->
+                <div>
+                    <h4 class="text-xs font-bold text-white uppercase tracking-wider mb-4 font-tech">Kategori Sembako</h4>
+                    <ul class="space-y-2.5 font-tech font-light">
+                        <li><a href="detail.html" class="hover:text-amber-400 transition">Gula Pasir GKP Sak 50kg</a></li>
+                        <li><a href="katalog.html" class="hover:text-amber-400 transition">Minyak Goreng Sawit Dus/Jerigen</a></li>
+                        <li><a href="katalog.html" class="hover:text-amber-400 transition">Tepung Terigu Protein Tinggi</a></li>
+                        <li><a href="katalog.html" class="hover:text-amber-400 transition">Beras Premium IR64 Slyp Super</a></li>
+                        <li><a href="kontak.html" class="hover:text-amber-400 transition">Pendaftaran Mitra Toko</a></li>
+                    </ul>
+                </div>
+
+                <!-- Col 4: Gudang & Pool Armada -->
+                <div>
+                    <h4 class="text-xs font-bold text-white uppercase tracking-wider mb-4 font-tech">Pusat Logistik Sembako</h4>
+                    <p class="text-xs text-slate-400 leading-relaxed mb-3 font-light font-sans">
+                        Kawasan Pergudangan & Distribusi Pangan Nasional, Jl. Logistik Pangan No. 88, Pergudangan Marunda, Cilincing, Jakarta Utara 14120.
+                    </p>
+                    <p class="text-xs text-amber-400 font-bold mb-1 font-tech"><i class="fa-solid fa-phone mr-1.5"></i> +62 21-8923-7890 / 0812-3456-7890</p>
+                    <p class="text-xs text-slate-400 font-tech"><i class="fa-solid fa-envelope mr-1.5"></i> order@agrologix.co.id</p>
+                </div>
+
+            </div>
+
+            <div class="pt-8 flex flex-col sm:flex-row items-center justify-between gap-4 text-[11px] text-slate-500 font-tech font-light">
+                <p>&copy; 2026 PT AGROLOGIX NUSANTARA PANGAN MAKMUR. All rights reserved.</p>
+                <div class="flex items-center gap-4">
+                    <span>100% Segel SNI Pabrik</span>
+                    <span>•</span>
+                    <span>Timbangan Akurat Kalibrasi</span>
+                    <span>•</span>
+                    <span>Direct Refinery Wholesale Price</span>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- 8. FLOATING WHATSAPP BUTTON (bottom-24) -->
+    <div class="fixed bottom-24 right-5 z-40">
+        <a href="https://wa.me/6281234567890?text=Halo%20Agrologix,%20saya%20ingin%20tanya%20seputar%20analisis%20pasar%20sembako." 
+           target="_blank" 
+           aria-label="Chat WhatsApp Sales Agrologix Commodity"
+           class="group flex items-center gap-3 bg-agro-card hover:bg-slate-800 text-white px-4 py-3.5 rounded-full shadow-2xl transition-all transform hover:scale-105 border-2 border-agro-amber">
+            <i class="fa-brands fa-whatsapp text-2xl text-amber-400 animate-pulse"></i>
+            <span class="text-xs font-bold tracking-wide pr-1 hidden sm:inline font-tech">Sales Sembako WA</span>
+        </a>
+    </div>
+
+    <!-- 9. STICKY DEMO & SALES BAR (fixed bottom-4) -->
+    <div class="fixed bottom-4 left-4 right-4 z-50 max-w-5xl mx-auto">
+      <div class="bg-agro-dark/95 backdrop-blur-md text-white px-4 sm:px-6 py-3.5 rounded-2xl shadow-2xl border border-agro-border flex flex-col md:flex-row items-center justify-between gap-3">
+        
+        <div class="flex items-center gap-3 text-left w-full md:w-auto">
+          <div class="w-9 h-9 rounded-xl bg-agro-amber/20 border border-agro-amber/40 flex items-center justify-center shrink-0">
+            <i class="fa-solid fa-cubes-stacked text-agro-amber text-sm"></i>
+          </div>
+          <div>
+            <div class="text-xs md:text-sm font-bold text-white flex items-center gap-2 font-sans">
+              <span>Lentera Pasar Demo</span>
+              <span class="text-[10px] px-2 py-0.5 rounded bg-agro-amber/30 text-amber-300 font-bold font-tech">Analisis Pasar Sembako</span>
+            </div>
+            <p class="text-[11px] text-slate-400 hidden sm:block font-light">Desain Wholesale Commodity Logistics untuk distributor gula sak 50kg, minyak goreng dus/jerigen & beras.</p>
+          </div>
+        </div>
+
+        <div class="flex items-center gap-3 w-full md:w-auto justify-end">
+          <a href="https://wa.me/6281234567890?text=Halo%20Tim%20Lentera%20Pasar,%20saya%20tertarik%20menggunakan%20template%20website%20Grosir%20Sembako%20Tonase%20ini." 
+             target="_blank"
+             class="w-full md:w-auto inline-flex items-center justify-center gap-2 bg-agro-amber hover:bg-agro-amberdark text-white text-xs md:text-sm font-black px-5 py-2.5 rounded-xl shadow-lg transition-all hover:scale-105 shrink-0 font-tech uppercase tracking-wider">
+            <span>Gunakan Template Ini</span>
+            <i class="fa-solid fa-arrow-right text-xs"></i>
+          </a>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- SCRIPT MOBILE MENU -->
+    <script>
+        const mobileMenuBtn = document.getElementById('mobileMenuBtn');
+        const mobileMenu = document.getElementById('mobileMenu');
+        const menuIcon = document.getElementById('menuIcon');
+
+        mobileMenuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+            if (mobileMenu.classList.contains('hidden')) {
+                menuIcon.classList.remove('fa-xmark');
+                menuIcon.classList.add('fa-bars');
+            } else {
+                menuIcon.classList.remove('fa-bars');
+                menuIcon.classList.add('fa-xmark');
+            }
+        });
+    </script>
+</body>
+</html>
