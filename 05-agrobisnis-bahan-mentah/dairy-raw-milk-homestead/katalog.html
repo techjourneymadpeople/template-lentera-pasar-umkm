@@ -1,0 +1,938 @@
+<!DOCTYPE html>
+<html lang="id" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Katalog Susu Murni, Yogurt & Keju // LEMBAH SUSU HOMESTEAD</title>
+    <meta name="description" content="Katalog susu sapi murni pasteurisasi botol kaca 1L/500ml, greek yogurt kental, keju mozzarella lokal, susu kambing etawa, dan jerigen susu kafe 5L.">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800;900&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Playfair+Display:ital,wght@0,600;0,700;0,800;1,600&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome 6 -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        dairy: {
+                            white: '#FFFFFF',
+                            cream: '#FFFDF5',
+                            creambg: '#FAF6EA',
+                            border: '#EFE8CE',
+                            brown: '#42281D',
+                            browndark: '#2A1811',
+                            brownlight: '#654332',
+                            sky: '#0284C7',
+                            skylight: '#E0F2FE',
+                            skydark: '#0369A1',
+                            green: '#16A34A',
+                            greenlight: '#DCFCE7',
+                            charcoal: '#1E1B18'
+                        }
+                    },
+                    fontFamily: {
+                        sans: ['"Plus Jakarta Sans"', 'sans-serif'],
+                        nunito: ['"Nunito"', 'sans-serif'],
+                        serif: ['"Playfair Display"', 'serif']
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        .no-scrollbar::-webkit-scrollbar { display: none; }
+        .no-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
+
+        .dairy-card {
+            transition: all 0.35s cubic-bezier(0.16, 1, 0.3, 1);
+        }
+        .dairy-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 20px 35px -10px rgba(66, 40, 29, 0.10);
+        }
+    </style>
+</head>
+<body class="bg-dairy-cream text-dairy-charcoal font-sans antialiased selection:bg-dairy-sky selection:text-white">
+
+    <!-- 1. TOP ANNOUNCEMENT BAR -->
+    <div class="bg-dairy-brown text-amber-100 text-xs py-2.5 px-4 font-sans font-medium border-b border-amber-950/40">
+        <div class="max-w-7xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-2 text-center sm:text-left">
+            <div class="flex items-center justify-center gap-2">
+                <span class="px-2 py-0.5 bg-dairy-sky text-white text-[10px] uppercase font-bold tracking-wider rounded-md shadow-xs flex items-center gap-1">
+                    <i class="fa-solid fa-droplet text-sky-200"></i> DIPERAH 05.00 PAGI
+                </span>
+                <span class="text-white/95 font-medium">100% Susu Murni Dataran Tinggi • Pasteurisasi Suhu Rendah LTLT 72°C</span>
+            </div>
+            <div class="flex items-center gap-4 text-xs">
+                <a href="https://wa.me/6281234567890?text=Halo%20Admin%20Lembah%20Susu%20Homestead,%20saya%20ingin%20tanya%20stok%20katalog." target="_blank" class="text-sky-300 hover:underline font-bold transition flex items-center gap-1">
+                    Fast Order WA <i class="fa-solid fa-arrow-right text-[10px]"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- 2. NAVBAR -->
+    <header class="sticky top-0 z-40 bg-white/95 backdrop-blur-md border-b border-dairy-border transition-all shadow-xs">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-20 sm:h-24">
+                
+                <!-- Logo -->
+                <a href="index.html" class="flex items-center gap-3.5 group">
+                    <div class="w-12 h-12 bg-gradient-to-br from-dairy-sky to-sky-700 text-white flex items-center justify-center text-2xl font-bold rounded-2xl shadow-md group-hover:scale-105 transition">
+                        <i class="fa-solid fa-bottle-water"></i>
+                    </div>
+                    <div class="flex flex-col">
+                        <span class="text-2xl sm:text-3xl font-extrabold tracking-tight text-dairy-brown uppercase leading-none font-serif">
+                            LEMBAH SUSU<span class="text-dairy-sky">.</span>
+                        </span>
+                        <span class="text-[9px] tracking-[0.28em] text-dairy-sky uppercase mt-1 font-bold">
+                            ALPINE DAIRY & CREAMERY
+                        </span>
+                    </div>
+                </a>
+
+                <!-- Desktop Navigation Links -->
+                <nav class="hidden lg:flex items-center gap-7 text-xs font-bold tracking-wider uppercase text-slate-700 font-sans">
+                    <a href="index.html" class="hover:text-dairy-sky transition">Beranda</a>
+                    <a href="katalog.html" class="text-dairy-sky border-b-2 border-dairy-sky pb-1 font-bold">Katalog Susu & Olahan</a>
+                    <a href="detail.html" class="hover:text-dairy-sky transition">Detail Susu Segar</a>
+                    <a href="tentang.html" class="hover:text-dairy-sky transition">Peternakan Dataran Tinggi</a>
+                    <a href="artikel.html" class="hover:text-dairy-sky transition">Manfaat Pasteurisasi</a>
+                    <a href="kontak.html" class="hover:text-dairy-sky transition">Langganan & Suplai Kafe</a>
+                </nav>
+
+                <!-- Actions -->
+                <div class="hidden sm:flex items-center gap-3">
+                    <a href="https://wa.me/6281234567890?text=Halo%20Admin%20Lembah%20Susu%20Homestead,%20saya%20ingin%20memesan%20dari%20katalog." 
+                       target="_blank"
+                       class="inline-flex items-center gap-2 px-4 py-2.5 bg-dairy-sky hover:bg-dairy-skydark text-xs font-bold text-white rounded-xl transition shadow-md hover:shadow-lg">
+                        <i class="fa-brands fa-whatsapp text-base"></i>
+                        <span>Order Susu Pagi WA</span>
+                    </a>
+                </div>
+
+                <!-- Mobile Menu Button -->
+                <div class="flex lg:hidden items-center gap-2">
+                    <a href="https://wa.me/6281234567890" target="_blank" class="p-2.5 bg-sky-100 text-sky-800 rounded-xl text-sm">
+                        <i class="fa-brands fa-whatsapp"></i>
+                    </a>
+                    <button id="mobileMenuBtn" class="p-2.5 text-slate-700 hover:text-dairy-sky focus:outline-hidden rounded-xl bg-sky-50">
+                        <i id="menuIcon" class="fa-solid fa-bars text-xl"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Mobile Dropdown Menu -->
+        <div id="mobileMenu" class="hidden lg:hidden border-t border-dairy-border bg-white/98 px-6 py-5 shadow-xl">
+            <div class="flex flex-col gap-4 text-sm font-bold uppercase text-slate-700">
+                <a href="index.html" class="hover:text-dairy-sky transition flex items-center justify-between">
+                    <span>Beranda</span>
+                    <i class="fa-solid fa-chevron-right text-xs"></i>
+                </a>
+                <a href="katalog.html" class="text-dairy-sky flex items-center justify-between">
+                    <span>Katalog Susu & Olahan Creamery</span>
+                    <i class="fa-solid fa-chevron-right text-xs"></i>
+                </a>
+                <a href="detail.html" class="hover:text-dairy-sky transition flex items-center justify-between">
+                    <span>Detail Kadar Lemak & Botol Kaca</span>
+                    <i class="fa-solid fa-chevron-right text-xs"></i>
+                </a>
+                <a href="tentang.html" class="hover:text-dairy-sky transition flex items-center justify-between">
+                    <span>Sapi Friesian Holstein & Higienitas</span>
+                    <i class="fa-solid fa-chevron-right text-xs"></i>
+                </a>
+                <a href="artikel.html" class="hover:text-dairy-sky transition flex items-center justify-between">
+                    <span>Manfaat Pasteurisasi Suhu Rendah</span>
+                    <i class="fa-solid fa-chevron-right text-xs"></i>
+                </a>
+                <a href="kontak.html" class="hover:text-dairy-sky transition flex items-center justify-between">
+                    <span>Langganan Susu Rumah & Kafe</span>
+                    <i class="fa-solid fa-chevron-right text-xs"></i>
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- 3. PAGE BANNER & BREADCRUMBS -->
+    <section class="pt-8 pb-10 bg-gradient-to-b from-sky-100/60 to-dairy-cream border-b border-dairy-border">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            
+            <nav class="flex items-center gap-2 text-xs text-slate-500 mb-4">
+                <a href="index.html" class="hover:text-dairy-sky transition">Beranda</a>
+                <i class="fa-solid fa-chevron-right text-[10px] text-slate-400"></i>
+                <span class="text-dairy-brown font-bold">Katalog Susu & Olahan Dairy</span>
+            </nav>
+
+            <div class="flex flex-col md:flex-row md:items-end justify-between gap-6">
+                <div>
+                    <span class="px-3 py-1 bg-sky-100 text-dairy-sky text-xs font-bold uppercase rounded-md tracking-wider">
+                        PRODUK SEGAR DIPERAH SUBUH
+                    </span>
+                    <h1 class="text-3xl sm:text-5xl font-extrabold text-dairy-brown font-serif mt-2">
+                        Koleksi Susu Segar, Yogurt & Keju
+                    </h1>
+                    <p class="text-slate-600 text-sm sm:text-base mt-2 max-w-2xl">
+                        Susu sapi murni pasteurisasi suhu rendah, greek yogurt kental probiotik, keju mozzarella lokal segar, serta susu kambing etawa ramah pencernaan.
+                    </p>
+                </div>
+
+                <div class="flex items-center gap-3">
+                    <div class="bg-white p-3.5 rounded-2xl border border-dairy-border shadow-xs flex items-center gap-3">
+                        <div class="w-10 h-10 rounded-xl bg-sky-100 text-dairy-sky flex items-center justify-center text-lg">
+                            <i class="fa-solid fa-snowflake"></i>
+                        </div>
+                        <div>
+                            <p class="text-xs font-bold text-slate-900">Rantai Dingin 4°C</p>
+                            <p class="text-[11px] text-slate-500">Kulkas Khusus Cold-Chain</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- 4. FILTER TABS & SEARCH -->
+    <section class="py-6 bg-white border-b border-dairy-border sticky top-20 sm:top-24 z-30 shadow-xs">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex flex-col lg:flex-row lg:items-center justify-between gap-4">
+                
+                <!-- Category Buttons -->
+                <div class="flex items-center gap-2 overflow-x-auto no-scrollbar pb-1 lg:pb-0">
+                    <button onclick="filterDairy('all')" id="btn-all" class="cat-btn px-4 py-2 rounded-xl text-xs font-bold transition bg-dairy-sky text-white shadow-xs shrink-0">
+                        Semua Dairy (12)
+                    </button>
+                    <button onclick="filterDairy('susu')" id="btn-susu" class="cat-btn px-4 py-2 rounded-xl text-xs font-bold transition bg-sky-50 text-slate-700 hover:bg-sky-100 shrink-0">
+                        Susu Sapi Murni (4)
+                    </button>
+                    <button onclick="filterDairy('yogurt')" id="btn-yogurt" class="cat-btn px-4 py-2 rounded-xl text-xs font-bold transition bg-sky-50 text-slate-700 hover:bg-sky-100 shrink-0">
+                        Yogurt Probiotik (3)
+                    </button>
+                    <button onclick="filterDairy('keju')" id="btn-keju" class="cat-btn px-4 py-2 rounded-xl text-xs font-bold transition bg-sky-50 text-slate-700 hover:bg-sky-100 shrink-0">
+                        Keju Peternakan (3)
+                    </button>
+                    <button onclick="filterDairy('lainnya')" id="btn-lainnya" class="cat-btn px-4 py-2 rounded-xl text-xs font-bold transition bg-sky-50 text-slate-700 hover:bg-sky-100 shrink-0">
+                        Etawa & Jerigen Kafe (2)
+                    </button>
+                </div>
+
+                <!-- Search -->
+                <div class="flex items-center gap-3">
+                    <div class="relative flex-1 sm:w-64">
+                        <i class="fa-solid fa-magnifying-glass absolute left-3.5 top-1/2 -translate-y-1/2 text-slate-400 text-xs"></i>
+                        <input type="text" id="searchInput" onkeyup="searchDairy()" placeholder="Cari plain, cokelat, greek, mozzarella..." 
+                               class="w-full pl-9 pr-3.5 py-2 text-xs bg-slate-50 border border-slate-200 rounded-xl focus:outline-hidden focus:border-dairy-sky focus:bg-white transition">
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- 5. PRODUCTS GRID SECTION -->
+    <section class="py-12 md:py-16">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            
+            <div id="dairyGrid" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
+                
+                <!-- Product 1: Susu Plain 1 Liter -->
+                <div class="product-item dairy-card bg-white rounded-3xl border border-dairy-border shadow-xs overflow-hidden flex flex-col justify-between" data-category="susu" data-name="susu sapi murni pasteurisasi plain 1 liter botol kaca creamline whole milk">
+                    <div class="relative h-56 bg-sky-50 overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1550583724-b2692b85b150?q=80&w=600&auto=format&fit=crop" 
+                             alt="Susu Sapi Murni Pasteurisasi Plain 1L" class="w-full h-full object-cover transform hover:scale-105 transition-all duration-500">
+                        <div class="absolute top-3 left-3">
+                            <span class="bg-dairy-sky text-white text-[10px] font-bold px-2.5 py-1 rounded-md shadow-xs">
+                                Original Plain
+                            </span>
+                        </div>
+                        <div class="absolute top-3 right-3 bg-white/95 text-slate-800 text-[10px] font-bold px-2 py-0.5 rounded shadow-xs">
+                            Botol Kaca 1L
+                        </div>
+                    </div>
+                    <div class="p-5 flex-1 flex flex-col justify-between">
+                        <div>
+                            <div class="flex items-center justify-between text-xs text-slate-500 mb-1">
+                                <span>Perah: <strong>05.00 Pagi</strong></span>
+                                <span class="text-amber-600 font-bold"><i class="fa-solid fa-star text-amber-400"></i> 5.0 (890+)</span>
+                            </div>
+                            <h3 class="text-base font-bold text-slate-900 font-serif">Susu Sapi Murni Pasteurisasi Plain</h3>
+                            <p class="text-xs text-slate-600 mt-1.5 leading-relaxed">
+                                Susu segar utuh berkepala susu alami (creamline), gurih manis alami tanpa penambahan air atau gula.
+                            </p>
+                            <div class="mt-3 pt-2.5 border-t border-dairy-border text-[11px] text-slate-700 flex items-center justify-between">
+                                <span><i class="fa-solid fa-snowflake text-sky-600"></i> Simpan 4°C</span>
+                                <span class="text-dairy-sky font-bold">Fat 4.0%</span>
+                            </div>
+                        </div>
+                        <div class="mt-5 pt-3 border-t border-dairy-border flex items-center justify-between">
+                            <div>
+                                <span class="text-[10px] text-slate-400 uppercase">Harga / Botol 1L</span>
+                                <p class="text-base font-black text-dairy-sky">Rp 28.000</p>
+                            </div>
+                            <a href="detail.html" class="px-3.5 py-2 bg-dairy-sky hover:bg-dairy-skydark text-white text-xs font-bold rounded-xl shadow-xs transition">
+                                Detail & Order
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product 2: Susu Cokelat Swiss 1L -->
+                <div class="product-item dairy-card bg-white rounded-3xl border border-dairy-border shadow-xs overflow-hidden flex flex-col justify-between" data-category="susu" data-name="susu sapi pasteurisasi cokelat swiss dark choco cocoa botol kaca 1 liter">
+                    <div class="relative h-56 bg-amber-50 overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1550583724-b2692b85b150?q=80&w=600&auto=format&fit=crop" 
+                             alt="Susu Sapi Pasteurisasi Cokelat Swiss 1L" class="w-full h-full object-cover transform hover:scale-105 transition-all duration-500">
+                        <div class="absolute top-3 left-3">
+                            <span class="bg-dairy-brown text-white text-[10px] font-bold px-2.5 py-1 rounded-md shadow-xs">
+                                Dark Choco Swiss
+                            </span>
+                        </div>
+                        <div class="absolute top-3 right-3 bg-white/95 text-slate-800 text-[10px] font-bold px-2 py-0.5 rounded shadow-xs">
+                            Botol Kaca 1L
+                        </div>
+                    </div>
+                    <div class="p-5 flex-1 flex flex-col justify-between">
+                        <div>
+                            <div class="flex items-center justify-between text-xs text-slate-500 mb-1">
+                                <span>Rasa: <strong>Kakao Murni Pekat</strong></span>
+                                <span class="text-amber-600 font-bold"><i class="fa-solid fa-star text-amber-400"></i> 4.9 (620+)</span>
+                            </div>
+                            <h3 class="text-base font-bold text-slate-900 font-serif">Susu Pasteurisasi Cokelat Swiss</h3>
+                            <p class="text-xs text-slate-600 mt-1.5 leading-relaxed">
+                                Paduan susu murni creamy dengan bubuk kakao murni premium dan sedikit gula tebu alami, manis legit pas.
+                            </p>
+                            <div class="mt-3 pt-2.5 border-t border-dairy-border text-[11px] text-slate-700 flex items-center justify-between">
+                                <span><i class="fa-solid fa-mug-hot text-amber-700"></i> Favorit Anak</span>
+                                <span class="text-dairy-brown font-bold">Kakao Asli</span>
+                            </div>
+                        </div>
+                        <div class="mt-5 pt-3 border-t border-dairy-border flex items-center justify-between">
+                            <div>
+                                <span class="text-[10px] text-slate-400 uppercase">Harga / Botol 1L</span>
+                                <p class="text-base font-black text-dairy-sky">Rp 32.000</p>
+                            </div>
+                            <a href="detail.html" class="px-3.5 py-2 bg-dairy-sky hover:bg-dairy-skydark text-white text-xs font-bold rounded-xl shadow-xs transition">
+                                Detail & Order
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product 3: Susu Strawberry Puree 1L -->
+                <div class="product-item dairy-card bg-white rounded-3xl border border-dairy-border shadow-xs overflow-hidden flex flex-col justify-between" data-category="susu" data-name="susu sapi pasteurisasi strawberry puree buah asli ciwidey botol kaca 1 liter">
+                    <div class="relative h-56 bg-rose-50 overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1550583724-b2692b85b150?q=80&w=600&auto=format&fit=crop" 
+                             alt="Susu Sapi Pasteurisasi Strawberry Puree 1L" class="w-full h-full object-cover transform hover:scale-105 transition-all duration-500">
+                        <div class="absolute top-3 left-3">
+                            <span class="bg-rose-600 text-white text-[10px] font-bold px-2.5 py-1 rounded-md shadow-xs">
+                                Strawberry Puree
+                            </span>
+                        </div>
+                        <div class="absolute top-3 right-3 bg-white/95 text-slate-800 text-[10px] font-bold px-2 py-0.5 rounded shadow-xs">
+                            Botol Kaca 1L
+                        </div>
+                    </div>
+                    <div class="p-5 flex-1 flex flex-col justify-between">
+                        <div>
+                            <div class="flex items-center justify-between text-xs text-slate-500 mb-1">
+                                <span>Buah: <strong>Strawberry Ciwidey Asli</strong></span>
+                                <span class="text-amber-600 font-bold"><i class="fa-solid fa-star text-amber-400"></i> 4.9 (480+)</span>
+                            </div>
+                            <h3 class="text-base font-bold text-slate-900 font-serif">Susu Pasteurisasi Strawberry Puree</h3>
+                            <p class="text-xs text-slate-600 mt-1.5 leading-relaxed">
+                                Dibuat dari selai buah strawberry segar asli Ciwidey yang dimasak perlahan, tanpa perisa sintetik.
+                            </p>
+                            <div class="mt-3 pt-2.5 border-t border-dairy-border text-[11px] text-slate-700 flex items-center justify-between">
+                                <span><i class="fa-solid fa-strawberry text-rose-500"></i> Bulir Buah Asli</span>
+                                <span class="text-rose-600 font-bold">Segar Asam Manis</span>
+                            </div>
+                        </div>
+                        <div class="mt-5 pt-3 border-t border-dairy-border flex items-center justify-between">
+                            <div>
+                                <span class="text-[10px] text-slate-400 uppercase">Harga / Botol 1L</span>
+                                <p class="text-base font-black text-dairy-sky">Rp 32.000</p>
+                            </div>
+                            <a href="detail.html" class="px-3.5 py-2 bg-dairy-sky hover:bg-dairy-skydark text-white text-xs font-bold rounded-xl shadow-xs transition">
+                                Detail & Order
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product 4: Susu Botol Personal 500ml -->
+                <div class="product-item dairy-card bg-white rounded-3xl border border-dairy-border shadow-xs overflow-hidden flex flex-col justify-between" data-category="susu" data-name="susu sapi murni botol kaca personal 500ml porsi bekal anak sarapan">
+                    <div class="relative h-56 bg-sky-50 overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1550583724-b2692b85b150?q=80&w=600&auto=format&fit=crop" 
+                             alt="Susu Sapi Murni Botol Personal 500ml" class="w-full h-full object-cover transform hover:scale-105 transition-all duration-500">
+                        <div class="absolute top-3 left-3">
+                            <span class="bg-dairy-sky text-white text-[10px] font-bold px-2.5 py-1 rounded-md shadow-xs">
+                                Porsi Personal 500ml
+                            </span>
+                        </div>
+                    </div>
+                    <div class="p-5 flex-1 flex flex-col justify-between">
+                        <div>
+                            <div class="flex items-center justify-between text-xs text-slate-500 mb-1">
+                                <span>Kemasan: <strong>Botol Kaca Ramping</strong></span>
+                                <span class="text-amber-600 font-bold"><i class="fa-solid fa-star text-amber-400"></i> 4.9 (530+)</span>
+                            </div>
+                            <h3 class="text-base font-bold text-slate-900 font-serif">Susu Sapi Murni Botol 500ml</h3>
+                            <p class="text-xs text-slate-600 mt-1.5 leading-relaxed">
+                                Porsi pas untuk bekal sekolah anak atau minuman segar setelah berolahraga pagi.
+                            </p>
+                            <div class="mt-3 pt-2.5 border-t border-dairy-border text-[11px] text-slate-700 flex items-center justify-between">
+                                <span><i class="fa-solid fa-bottle-droplet text-sky-600"></i> Praktis Dibawa</span>
+                                <span class="text-emerald-700 font-bold">100% Segar</span>
+                            </div>
+                        </div>
+                        <div class="mt-5 pt-3 border-t border-dairy-border flex items-center justify-between">
+                            <div>
+                                <span class="text-[10px] text-slate-400 uppercase">Harga / Botol 500ml</span>
+                                <p class="text-base font-black text-dairy-sky">Rp 16.000</p>
+                            </div>
+                            <a href="detail.html" class="px-3.5 py-2 bg-dairy-sky hover:bg-dairy-skydark text-white text-xs font-bold rounded-xl shadow-xs transition">
+                                Detail & Order
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product 5: Greek Yogurt Plain 500g -->
+                <div class="product-item dairy-card bg-white rounded-3xl border border-dairy-border shadow-xs overflow-hidden flex flex-col justify-between" data-category="yogurt" data-name="greek yogurt kental plain jar kaca 500g probiotik hidup tinggi protein diet">
+                    <div class="relative h-56 bg-sky-50 overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1488477181946-6428a0291777?q=80&w=600&auto=format&fit=crop" 
+                             alt="Greek Yogurt Kental Plain 500g" class="w-full h-full object-cover transform hover:scale-105 transition-all duration-500">
+                        <div class="absolute top-3 left-3">
+                            <span class="bg-purple-700 text-white text-[10px] font-bold px-2.5 py-1 rounded-md shadow-xs">
+                                Greek Probiotik
+                            </span>
+                        </div>
+                        <div class="absolute top-3 right-3 bg-white/95 text-slate-800 text-[10px] font-bold px-2 py-0.5 rounded shadow-xs">
+                            Jar Kaca 500g
+                        </div>
+                    </div>
+                    <div class="p-5 flex-1 flex flex-col justify-between">
+                        <div>
+                            <div class="flex items-center justify-between text-xs text-slate-500 mb-1">
+                                <span>Tekstur: <strong>Kental Padat Creamy</strong></span>
+                                <span class="text-amber-600 font-bold"><i class="fa-solid fa-star text-amber-400"></i> 4.9 (420+)</span>
+                            </div>
+                            <h3 class="text-base font-bold text-slate-900 font-serif">Greek Yogurt Kental Plain</h3>
+                            <p class="text-xs text-slate-600 mt-1.5 leading-relaxed">
+                                Yogurt murni disaring 3x tanpa gelatin pengental, sangat tinggi protein untuk sarapan buah & granola.
+                            </p>
+                            <div class="mt-3 pt-2.5 border-t border-dairy-border text-[11px] text-slate-700 flex items-center justify-between">
+                                <span><i class="fa-solid fa-seedling text-emerald-600"></i> Probiotik Hidup</span>
+                                <span class="text-purple-700 font-bold">Tanpa Gula</span>
+                            </div>
+                        </div>
+                        <div class="mt-5 pt-3 border-t border-dairy-border flex items-center justify-between">
+                            <div>
+                                <span class="text-[10px] text-slate-400 uppercase">Harga / Jar 500g</span>
+                                <p class="text-base font-black text-dairy-sky">Rp 45.000</p>
+                            </div>
+                            <a href="detail.html" class="px-3.5 py-2 bg-dairy-sky hover:bg-dairy-skydark text-white text-xs font-bold rounded-xl shadow-xs transition">
+                                Detail & Order
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product 6: Drinkable Yogurt Blueberry 250ml -->
+                <div class="product-item dairy-card bg-white rounded-3xl border border-dairy-border shadow-xs overflow-hidden flex flex-col justify-between" data-category="yogurt" data-name="drinkable yogurt buah blueberry alami botol 250ml probiotik">
+                    <div class="relative h-56 bg-purple-50 overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1488477181946-6428a0291777?q=80&w=600&auto=format&fit=crop" 
+                             alt="Drinkable Yogurt Blueberry 250ml" class="w-full h-full object-cover transform hover:scale-105 transition-all duration-500">
+                        <div class="absolute top-3 left-3">
+                            <span class="bg-indigo-700 text-white text-[10px] font-bold px-2.5 py-1 rounded-md shadow-xs">
+                                Wild Blueberry
+                            </span>
+                        </div>
+                    </div>
+                    <div class="p-5 flex-1 flex flex-col justify-between">
+                        <div>
+                            <div class="flex items-center justify-between text-xs text-slate-500 mb-1">
+                                <span>Format: <strong>Siap Minum Dingin</strong></span>
+                                <span class="text-amber-600 font-bold"><i class="fa-solid fa-star text-amber-400"></i> 4.9 (310+)</span>
+                            </div>
+                            <h3 class="text-base font-bold text-slate-900 font-serif">Drinkable Yogurt Blueberry</h3>
+                            <p class="text-xs text-slate-600 mt-1.5 leading-relaxed">
+                                Yogurt cair segar dengan selai buah blueberry asli yang kaya antioksidan, menyegarkan dahaga siang hari.
+                            </p>
+                            <div class="mt-3 pt-2.5 border-t border-dairy-border text-[11px] text-slate-700 flex items-center justify-between">
+                                <span><i class="fa-solid fa-shield-heart text-purple-600"></i> Antioksidan</span>
+                                <span class="text-indigo-700 font-bold">250 ml</span>
+                            </div>
+                        </div>
+                        <div class="mt-5 pt-3 border-t border-dairy-border flex items-center justify-between">
+                            <div>
+                                <span class="text-[10px] text-slate-400 uppercase">Harga / Botol</span>
+                                <p class="text-base font-black text-dairy-sky">Rp 15.000</p>
+                            </div>
+                            <a href="detail.html" class="px-3.5 py-2 bg-dairy-sky hover:bg-dairy-skydark text-white text-xs font-bold rounded-xl shadow-xs transition">
+                                Detail & Order
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product 7: Drinkable Yogurt Mangga Gedong -->
+                <div class="product-item dairy-card bg-white rounded-3xl border border-dairy-border shadow-xs overflow-hidden flex flex-col justify-between" data-category="yogurt" data-name="drinkable yogurt buah mangga gedong gincu manis harum botol 250ml">
+                    <div class="relative h-56 bg-amber-50 overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1488477181946-6428a0291777?q=80&w=600&auto=format&fit=crop" 
+                             alt="Drinkable Yogurt Mangga Gedong 250ml" class="w-full h-full object-cover transform hover:scale-105 transition-all duration-500">
+                        <div class="absolute top-3 left-3">
+                            <span class="bg-amber-600 text-white text-[10px] font-bold px-2.5 py-1 rounded-md shadow-xs">
+                                Mangga Gedong
+                            </span>
+                        </div>
+                    </div>
+                    <div class="p-5 flex-1 flex flex-col justify-between">
+                        <div>
+                            <div class="flex items-center justify-between text-xs text-slate-500 mb-1">
+                                <span>Aroma: <strong>Harum Manis Alami</strong></span>
+                                <span class="text-amber-600 font-bold"><i class="fa-solid fa-star text-amber-400"></i> 4.8 (290+)</span>
+                            </div>
+                            <h3 class="text-base font-bold text-slate-900 font-serif">Drinkable Yogurt Mangga Gedong</h3>
+                            <p class="text-xs text-slate-600 mt-1.5 leading-relaxed">
+                                Paduan yogurt asam segar dengan keharuman mangga gedong gincu manis matang pohon asli Majalengka.
+                            </p>
+                            <div class="mt-3 pt-2.5 border-t border-dairy-border text-[11px] text-slate-700 flex items-center justify-between">
+                                <span><i class="fa-solid fa-sun text-amber-500"></i> Vitamin C Alami</span>
+                                <span class="text-amber-700 font-bold">250 ml</span>
+                            </div>
+                        </div>
+                        <div class="mt-5 pt-3 border-t border-dairy-border flex items-center justify-between">
+                            <div>
+                                <span class="text-[10px] text-slate-400 uppercase">Harga / Botol</span>
+                                <p class="text-base font-black text-dairy-sky">Rp 15.000</p>
+                            </div>
+                            <a href="detail.html" class="px-3.5 py-2 bg-dairy-sky hover:bg-dairy-skydark text-white text-xs font-bold rounded-xl shadow-xs transition">
+                                Detail & Order
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product 8: Keju Mozzarella Fresh 250g -->
+                <div class="product-item dairy-card bg-white rounded-3xl border border-dairy-border shadow-xs overflow-hidden flex flex-col justify-between" data-category="keju" data-name="keju mozzarella fresh peternakan 250g molor pizza lasagna melt">
+                    <div class="relative h-56 bg-amber-50 overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1559561853-08451507cbe7?q=80&w=600&auto=format&fit=crop" 
+                             alt="Keju Mozzarella Fresh Peternakan 250g" class="w-full h-full object-cover transform hover:scale-105 transition-all duration-500">
+                        <div class="absolute top-3 left-3">
+                            <span class="bg-amber-600 text-white text-[10px] font-bold px-2.5 py-1 rounded-md shadow-xs">
+                                Artisanal Cheese
+                            </span>
+                        </div>
+                    </div>
+                    <div class="p-5 flex-1 flex flex-col justify-between">
+                        <div>
+                            <div class="flex items-center justify-between text-xs text-slate-500 mb-1">
+                                <span>Karakter: <strong>Molor Elastis Gurih</strong></span>
+                                <span class="text-amber-600 font-bold"><i class="fa-solid fa-star text-amber-400"></i> 4.9 (350+)</span>
+                            </div>
+                            <h3 class="text-base font-bold text-slate-900 font-serif">Keju Mozzarella Fresh Peternakan</h3>
+                            <p class="text-xs text-slate-600 mt-1.5 leading-relaxed">
+                                Keju mozzarella segar dari 100% susu murni tanpa minyak nabati kelapa sawit, meleleh mulus di atas pizza & roti panggang.
+                            </p>
+                            <div class="mt-3 pt-2.5 border-t border-dairy-border text-[11px] text-slate-700 flex items-center justify-between">
+                                <span><i class="fa-solid fa-fire text-amber-600"></i> Meleleh Sempurna</span>
+                                <span class="text-amber-700 font-bold">Block 250g</span>
+                            </div>
+                        </div>
+                        <div class="mt-5 pt-3 border-t border-dairy-border flex items-center justify-between">
+                            <div>
+                                <span class="text-[10px] text-slate-400 uppercase">Harga / Block</span>
+                                <p class="text-base font-black text-dairy-sky">Rp 38.000</p>
+                            </div>
+                            <a href="detail.html" class="px-3.5 py-2 bg-dairy-sky hover:bg-dairy-skydark text-white text-xs font-bold rounded-xl shadow-xs transition">
+                                Detail & Order
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product 9: Keju Ricotta Lembut 200g -->
+                <div class="product-item dairy-card bg-white rounded-3xl border border-dairy-border shadow-xs overflow-hidden flex flex-col justify-between" data-category="keju" data-name="keju ricotta lembut jar 200g rendah lemak pancake lasagna ravioli">
+                    <div class="relative h-56 bg-sky-50 overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1559561853-08451507cbe7?q=80&w=600&auto=format&fit=crop" 
+                             alt="Keju Ricotta Lembut 200g" class="w-full h-full object-cover transform hover:scale-105 transition-all duration-500">
+                        <div class="absolute top-3 left-3">
+                            <span class="bg-sky-700 text-white text-[10px] font-bold px-2.5 py-1 rounded-md shadow-xs">
+                                Ricotta Lembut
+                            </span>
+                        </div>
+                    </div>
+                    <div class="p-5 flex-1 flex flex-col justify-between">
+                        <div>
+                            <div class="flex items-center justify-between text-xs text-slate-500 mb-1">
+                                <span>Tekstur: <strong>Lembut Creamy Manis</strong></span>
+                                <span class="text-amber-600 font-bold"><i class="fa-solid fa-star text-amber-400"></i> 4.8 (210+)</span>
+                            </div>
+                            <h3 class="text-base font-bold text-slate-900 font-serif">Keju Ricotta Peternakan</h3>
+                            <p class="text-xs text-slate-600 mt-1.5 leading-relaxed">
+                                Keju lembut segar berbahan dasar sweet whey susu murni, sempurna untuk olesan roti panggang madu dan isian lasagna.
+                            </p>
+                            <div class="mt-3 pt-2.5 border-t border-dairy-border text-[11px] text-slate-700 flex items-center justify-between">
+                                <span><i class="fa-solid fa-bread-slice text-amber-600"></i> Olesan Roti</span>
+                                <span class="text-sky-700 font-bold">Rendah Lemak</span>
+                            </div>
+                        </div>
+                        <div class="mt-5 pt-3 border-t border-dairy-border flex items-center justify-between">
+                            <div>
+                                <span class="text-[10px] text-slate-400 uppercase">Harga / Jar 200g</span>
+                                <p class="text-base font-black text-dairy-sky">Rp 35.000</p>
+                            </div>
+                            <a href="detail.html" class="px-3.5 py-2 bg-dairy-sky hover:bg-dairy-skydark text-white text-xs font-bold rounded-xl shadow-xs transition">
+                                Detail & Order
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product 10: Keju Halloumi Panggang -->
+                <div class="product-item dairy-card bg-white rounded-3xl border border-dairy-border shadow-xs overflow-hidden flex flex-col justify-between" data-category="keju" data-name="keju halloumi panggang grill cheese gurih tahan leleh 200g salad">
+                    <div class="relative h-56 bg-amber-50 overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1559561853-08451507cbe7?q=80&w=600&auto=format&fit=crop" 
+                             alt="Keju Halloumi Panggang 200g" class="w-full h-full object-cover transform hover:scale-105 transition-all duration-500">
+                        <div class="absolute top-3 left-3">
+                            <span class="bg-amber-800 text-white text-[10px] font-bold px-2.5 py-1 rounded-md shadow-xs">
+                                Grill Cheese
+                            </span>
+                        </div>
+                    </div>
+                    <div class="p-5 flex-1 flex flex-col justify-between">
+                        <div>
+                            <div class="flex items-center justify-between text-xs text-slate-500 mb-1">
+                                <span>Karakter: <strong>Renyah Luar Lembut Dalam</strong></span>
+                                <span class="text-amber-600 font-bold"><i class="fa-solid fa-star text-amber-400"></i> 4.9 (180+)</span>
+                            </div>
+                            <h3 class="text-base font-bold text-slate-900 font-serif">Keju Halloumi Panggang (Grill)</h3>
+                            <p class="text-xs text-slate-600 mt-1.5 leading-relaxed">
+                                Keju semi-keras titik leleh tinggi yang bisa dipanggang langsung di atas teflon tanpa mencair, gurih beraroma mentega.
+                            </p>
+                            <div class="mt-3 pt-2.5 border-t border-dairy-border text-[11px] text-slate-700 flex items-center justify-between">
+                                <span><i class="fa-solid fa-utensils text-amber-700"></i> Siap Panggang</span>
+                                <span class="text-amber-900 font-bold">Block 200g</span>
+                            </div>
+                        </div>
+                        <div class="mt-5 pt-3 border-t border-dairy-border flex items-center justify-between">
+                            <div>
+                                <span class="text-[10px] text-slate-400 uppercase">Harga / Block</span>
+                                <p class="text-base font-black text-dairy-sky">Rp 42.000</p>
+                            </div>
+                            <a href="detail.html" class="px-3.5 py-2 bg-dairy-sky hover:bg-dairy-skydark text-white text-xs font-bold rounded-xl shadow-xs transition">
+                                Detail & Order
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product 11: Susu Kambing Etawa 500ml -->
+                <div class="product-item dairy-card bg-white rounded-3xl border border-dairy-border shadow-xs overflow-hidden flex flex-col justify-between" data-category="lainnya" data-name="susu kambing etawa murni pasteurisasi botol kaca 500ml pernafasan asma maag">
+                    <div class="relative h-56 bg-emerald-50 overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1528750997573-59b89d56f4f7?q=80&w=600&auto=format&fit=crop" 
+                             alt="Susu Kambing Etawa Murni 500ml" class="w-full h-full object-cover transform hover:scale-105 transition-all duration-500">
+                        <div class="absolute top-3 left-3">
+                            <span class="bg-emerald-700 text-white text-[10px] font-bold px-2.5 py-1 rounded-md shadow-xs">
+                                Etawa Pegunungan
+                            </span>
+                        </div>
+                    </div>
+                    <div class="p-5 flex-1 flex flex-col justify-between">
+                        <div>
+                            <div class="flex items-center justify-between text-xs text-slate-500 mb-1">
+                                <span>Khasiat: <strong>Pernafasan & Lambung</strong></span>
+                                <span class="text-amber-600 font-bold"><i class="fa-solid fa-star text-amber-400"></i> 5.0 (480+)</span>
+                            </div>
+                            <h3 class="text-base font-bold text-slate-900 font-serif">Susu Kambing Etawa Murni</h3>
+                            <p class="text-xs text-slate-600 mt-1.5 leading-relaxed">
+                                Molekul lemak lebih kecil mudah diserap usus sensitif, ramah penderita alergi susu sapi & menjaga kesehatan paru-paru.
+                            </p>
+                            <div class="mt-3 pt-2.5 border-t border-dairy-border text-[11px] text-slate-700 flex items-center justify-between">
+                                <span><i class="fa-solid fa-lungs text-emerald-600"></i> Bebas Prengus</span>
+                                <span class="text-emerald-700 font-bold">500 ml</span>
+                            </div>
+                        </div>
+                        <div class="mt-5 pt-3 border-t border-dairy-border flex items-center justify-between">
+                            <div>
+                                <span class="text-[10px] text-slate-400 uppercase">Harga / Botol</span>
+                                <p class="text-base font-black text-dairy-sky">Rp 32.000</p>
+                            </div>
+                            <a href="detail.html" class="px-3.5 py-2 bg-dairy-sky hover:bg-dairy-skydark text-white text-xs font-bold rounded-xl shadow-xs transition">
+                                Detail & Order
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product 12: Jerigen Susu Kafe Barista 5 Liter -->
+                <div class="product-item dairy-card bg-white rounded-3xl border-2 border-sky-300 shadow-xs overflow-hidden flex flex-col justify-between" data-category="lainnya" data-name="jerigen susu kafe barista 5 liter fresh whole milk latte art coffee shop pasokan grosir">
+                    <div class="relative h-56 bg-sky-100 overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1550583724-b2692b85b150?q=80&w=600&auto=format&fit=crop" 
+                             alt="Jerigen Susu Kafe Barista 5L" class="w-full h-full object-cover transform hover:scale-105 transition-all duration-500">
+                        <div class="absolute top-3 left-3">
+                            <span class="bg-dairy-brown text-white text-[10px] font-bold px-2.5 py-1 rounded-md shadow-xs">
+                                Barista Grade 5L
+                            </span>
+                        </div>
+                        <div class="absolute top-3 right-3 bg-white/95 text-dairy-sky text-[10px] font-bold px-2 py-0.5 rounded shadow-xs">
+                            Jerigen 5 Liter
+                        </div>
+                    </div>
+                    <div class="p-5 flex-1 flex flex-col justify-between">
+                        <div>
+                            <div class="flex items-center justify-between text-xs text-slate-500 mb-1">
+                                <span>Khusus: <strong>Coffee Shop & Bakery</strong></span>
+                                <span class="text-amber-600 font-bold"><i class="fa-solid fa-star text-amber-400"></i> 5.0 (650+)</span>
+                            </div>
+                            <h3 class="text-base font-bold text-slate-900 font-serif">Jerigen Susu Kafe Barista 5 Liter</h3>
+                            <p class="text-xs text-slate-600 mt-1.5 leading-relaxed">
+                                Kemasan jerigen foodgrade ekonomis untuk kebutuhan kedai kopi. Busa microfoam mengkilap dan stabil hingga tegukan terakhir.
+                            </p>
+                            <div class="mt-3 pt-2.5 border-t border-dairy-border text-[11px] text-slate-700 flex items-center justify-between">
+                                <span><i class="fa-solid fa-mug-hot text-amber-700"></i> Microfoam Juara</span>
+                                <span class="text-dairy-sky font-bold">Hemat Biaya</span>
+                            </div>
+                        </div>
+                        <div class="mt-5 pt-3 border-t border-dairy-border flex items-center justify-between">
+                            <div>
+                                <span class="text-[10px] text-slate-400 uppercase">Harga / Jerigen 5L</span>
+                                <p class="text-base font-black text-dairy-sky">Rp 125.000</p>
+                            </div>
+                            <a href="detail.html" class="px-3.5 py-2 bg-dairy-sky hover:bg-dairy-skydark text-white text-xs font-bold rounded-xl shadow-xs transition">
+                                Pesan Jerigen
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- No results message -->
+            <div id="noResults" class="hidden py-16 text-center">
+                <div class="w-16 h-16 rounded-full bg-sky-100 text-dairy-sky flex items-center justify-center mx-auto text-2xl mb-3">
+                    <i class="fa-solid fa-bottle-water"></i>
+                </div>
+                <h3 class="text-lg font-bold text-slate-900 font-serif">Produk Dairy Tidak Ditemukan</h3>
+                <p class="text-xs text-slate-500 mt-1">Coba gunakan kata kunci lain seperti 'plain', 'greek', 'mozzarella', atau 'cokelat'.</p>
+                <button onclick="resetDairyFilter()" class="mt-4 px-5 py-2.5 bg-dairy-sky text-white font-bold text-xs rounded-xl hover:bg-dairy-skydark transition">
+                    Tampilkan Semua Produk
+                </button>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- 6. B2B / PASOKAN KAFE BANNER -->
+    <section class="py-14 bg-white border-t border-dairy-border">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="bg-gradient-to-r from-dairy-browndark via-dairy-brown to-stone-900 rounded-3xl p-8 sm:p-12 text-white flex flex-col lg:flex-row items-center justify-between gap-8 shadow-xl">
+                <div class="space-y-3 max-w-2xl text-center lg:text-left">
+                    <span class="px-3 py-1 bg-sky-800 text-sky-200 text-[10px] font-extrabold uppercase tracking-wider rounded-md">
+                        KONTRAK PASOKAN 10 LITER - 200 LITER / HARI
+                    </span>
+                    <h2 class="text-2xl sm:text-3xl font-extrabold font-serif leading-tight">
+                        Mencari Pasokan Susu Segar Gurih untuk Coffee Shop atau Bakery Anda?
+                    </h2>
+                    <p class="text-amber-100/80 text-xs sm:text-sm leading-relaxed">
+                        Dapatkan harga grosir langsung dari peternakan Lembah Susu Homestead, jaminan kadar lemak konsisten 4.0%, dan pengiriman subuh jam 06.00 pagi dengan armada berpendingin.
+                    </p>
+                </div>
+                <div class="flex flex-col sm:flex-row gap-3.5 w-full lg:w-auto shrink-0">
+                    <a href="https://wa.me/6281234567890?text=Halo%20Tim%20B2B%20Lembah%20Susu%20Homestead,%20saya%20tertarik%20dengan%20pasokan%20susu%20kafe." 
+                       target="_blank"
+                       class="inline-flex items-center justify-center gap-2.5 px-6 py-4 bg-dairy-sky hover:bg-dairy-skydark text-white font-bold text-xs uppercase tracking-wider rounded-2xl shadow-lg transition text-center">
+                        <i class="fa-brands fa-whatsapp text-base"></i>
+                        <span>Konsultasi Pasokan Kafe</span>
+                    </a>
+                    <a href="kontak.html" 
+                       class="inline-flex items-center justify-center gap-2 px-5 py-4 bg-white/10 hover:bg-white/20 text-white font-bold text-xs rounded-2xl border border-white/20 transition text-center">
+                        <span>Info Depot & Farm</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 7. FOOTER -->
+    <footer class="bg-dairy-browndark text-stone-300 text-xs pt-16 pb-36 border-t border-amber-950 font-sans">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-10 pb-12 border-b border-amber-950/60">
+                <div class="lg:col-span-2 space-y-4">
+                    <a href="index.html" class="flex items-center gap-3">
+                        <div class="w-10 h-10 bg-gradient-to-br from-dairy-sky to-sky-700 text-white flex items-center justify-center text-xl font-bold rounded-xl">
+                            <i class="fa-solid fa-bottle-water"></i>
+                        </div>
+                        <span class="text-2xl font-extrabold text-white tracking-tight font-serif">
+                            LEMBAH SUSU<span class="text-dairy-sky">.</span>
+                        </span>
+                    </a>
+                    <p class="text-xs text-stone-400 leading-relaxed max-w-sm">
+                        Peternakan sapi perah dataran tinggi sejuk Lembang & Pangalengan. Susu murni pasteurisasi suhu rendah LTLT 72°C, yogurt kental probiotik, dan keju mozzarella segar dalam botol kaca ramah lingkungan.
+                    </p>
+                </div>
+                <div>
+                    <h4 class="text-xs font-bold text-white uppercase tracking-wider mb-4 font-serif">Navigasi Halaman</h4>
+                    <ul class="space-y-2.5">
+                        <li><a href="index.html" class="hover:text-sky-300 transition">Beranda Utama</a></li>
+                        <li><a href="katalog.html" class="hover:text-sky-300 transition">Katalog Susu & Olahan</a></li>
+                        <li><a href="detail.html" class="hover:text-sky-300 transition">Detail Susu Segar</a></li>
+                        <li><a href="tentang.html" class="hover:text-sky-300 transition">Peternakan Dataran Tinggi</a></li>
+                        <li><a href="artikel.html" class="hover:text-sky-300 transition">Manfaat Pasteurisasi</a></li>
+                        <li><a href="kontak.html" class="hover:text-sky-300 transition">Langganan & Suplai Kafe</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-xs font-bold text-white uppercase tracking-wider mb-4 font-serif">Produk Dairy</h4>
+                    <ul class="space-y-2.5">
+                        <li><a href="detail.html" class="hover:text-sky-300 transition">Susu Murni Plain 1L</a></li>
+                        <li><a href="detail.html" class="hover:text-sky-300 transition">Susu Cokelat Swiss 1L</a></li>
+                        <li><a href="katalog.html" class="hover:text-sky-300 transition">Greek Yogurt Kental 500g</a></li>
+                        <li><a href="katalog.html" class="hover:text-sky-300 transition">Keju Mozzarella Fresh</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-xs font-bold text-white uppercase tracking-wider mb-4 font-serif">Homestead & Depot</h4>
+                    <p class="text-xs text-stone-400 leading-relaxed mb-3">
+                        Kawasan Peternakan Lembah Susu, Jl. Panorama Dataran Tinggi No. 12, Lembang, Kab. Bandung Barat, Jawa Barat 40391.
+                    </p>
+                    <p class="text-xs text-sky-300 font-bold mb-1"><i class="fa-solid fa-phone mr-1.5"></i> +62 812-3456-7890</p>
+                    <p class="text-xs text-stone-400"><i class="fa-solid fa-envelope mr-1.5"></i> order@lembahsusu.com</p>
+                </div>
+            </div>
+            <div class="pt-8 flex flex-col sm:flex-row items-center justify-between gap-4 text-[11px] text-stone-500">
+                <p>&copy; 2026 LEMBAH SUSU HOMESTEAD. All rights reserved.</p>
+                <div class="flex items-center gap-4">
+                    <span>100% Fresh Whole Milk</span>
+                    <span>•</span>
+                    <span>LTLT 72°C Pasteurization</span>
+                    <span>•</span>
+                    <span>Botol Kaca Higienis</span>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- 8. FLOATING WHATSAPP BUTTON (bottom-24) -->
+    <div class="fixed bottom-24 right-5 z-40">
+        <a href="https://wa.me/6281234567890?text=Halo%20Admin%20Lembah%20Susu%20Homestead,%20saya%20ingin%20tanya%20stok%20katalog." 
+           target="_blank" 
+           aria-label="Chat WhatsApp Lembah Susu Homestead"
+           class="group flex items-center gap-3 bg-gradient-to-r from-dairy-sky to-sky-700 hover:from-sky-600 hover:to-sky-800 text-white px-4 py-3.5 rounded-full shadow-2xl transition-all transform hover:scale-105 border-2 border-white/80">
+            <i class="fa-brands fa-whatsapp text-2xl animate-pulse"></i>
+            <span class="text-xs font-bold tracking-wide pr-1 hidden sm:inline">Pesan Susu Segar WA</span>
+        </a>
+    </div>
+
+    <!-- 9. STICKY DEMO & SALES BAR (fixed bottom-4) -->
+    <div class="fixed bottom-4 left-4 right-4 z-50 max-w-5xl mx-auto">
+      <div class="bg-dairy-browndark/95 backdrop-blur-md text-white px-4 sm:px-6 py-3.5 rounded-2xl shadow-2xl border border-amber-900/60 flex flex-col md:flex-row items-center justify-between gap-3">
+        <div class="flex items-center gap-3 text-left w-full md:w-auto">
+          <div class="w-9 h-9 rounded-xl bg-sky-500/20 border border-sky-400/40 flex items-center justify-center shrink-0">
+            <i class="fa-solid fa-bottle-water text-sky-400 text-sm"></i>
+          </div>
+          <div>
+            <div class="text-xs md:text-sm font-bold text-stone-100 flex items-center gap-2">
+              <span>Lentera Pasar Demo</span>
+              <span class="text-[10px] px-2 py-0.5 rounded bg-sky-500/20 text-sky-300 font-bold">Katalog Susu Murni & Dairy</span>
+            </div>
+            <p class="text-[11px] text-stone-400 hidden sm:block">Desain Pure Dairy Homestead untuk agrobisnis peternakan sapi perah, yogurt, & keju lokal.</p>
+          </div>
+        </div>
+        <div class="flex items-center gap-3 w-full md:w-auto justify-end">
+          <a href="https://wa.me/6281234567890?text=Halo%20Tim%20Lentera%20Pasar,%20saya%20tertarik%20menggunakan%20template%20website%20Susu%20Murni%20ini." 
+             target="_blank"
+             class="w-full md:w-auto inline-flex items-center justify-center gap-2 bg-gradient-to-r from-dairy-sky to-sky-700 hover:from-sky-600 hover:to-sky-800 text-white text-xs md:text-sm font-bold px-5 py-2.5 rounded-xl shadow-lg transition-all hover:scale-105 shrink-0">
+            <span>Gunakan Template Ini</span>
+            <i class="fa-solid fa-arrow-right text-xs"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <!-- JAVASCRIPT FILTER & SEARCH -->
+    <script>
+        const mobileMenuBtn = document.getElementById('mobileMenuBtn');
+        const mobileMenu = document.getElementById('mobileMenu');
+        const menuIcon = document.getElementById('menuIcon');
+
+        mobileMenuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+            if (mobileMenu.classList.contains('hidden')) {
+                menuIcon.classList.remove('fa-xmark');
+                menuIcon.classList.add('fa-bars');
+            } else {
+                menuIcon.classList.remove('fa-bars');
+                menuIcon.classList.add('fa-xmark');
+            }
+        });
+
+        function filterDairy(cat) {
+            const items = document.querySelectorAll('.product-item');
+            const buttons = document.querySelectorAll('.cat-btn');
+
+            buttons.forEach(b => {
+                b.className = "cat-btn px-4 py-2 rounded-xl text-xs font-bold transition bg-sky-50 text-slate-700 hover:bg-sky-100 shrink-0";
+            });
+            const activeBtn = document.getElementById(`btn-${cat}`);
+            if (activeBtn) {
+                activeBtn.className = "cat-btn px-4 py-2 rounded-xl text-xs font-bold transition bg-dairy-sky text-white shadow-xs shrink-0";
+            }
+
+            let count = 0;
+            items.forEach(item => {
+                const itemCat = item.getAttribute('data-category');
+                if (cat === 'all' || itemCat === cat) {
+                    item.classList.remove('hidden');
+                    count++;
+                } else {
+                    item.classList.add('hidden');
+                }
+            });
+
+            const noResults = document.getElementById('noResults');
+            if (count === 0) {
+                noResults.classList.remove('hidden');
+            } else {
+                noResults.classList.add('hidden');
+            }
+        }
+
+        function searchDairy() {
+            const query = document.getElementById('searchInput').value.toLowerCase();
+            const items = document.querySelectorAll('.product-item');
+            let count = 0;
+
+            items.forEach(item => {
+                const name = item.getAttribute('data-name').toLowerCase();
+                if (name.includes(query)) {
+                    item.classList.remove('hidden');
+                    count++;
+                } else {
+                    item.classList.add('hidden');
+                }
+            });
+
+            const noResults = document.getElementById('noResults');
+            if (count === 0) {
+                noResults.classList.remove('hidden');
+            } else {
+                noResults.classList.add('hidden');
+            }
+        }
+
+        function resetDairyFilter() {
+            document.getElementById('searchInput').value = '';
+            filterDairy('all');
+        }
+    </script>
+</body>
+</html>

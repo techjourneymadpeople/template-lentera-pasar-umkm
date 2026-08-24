@@ -1,0 +1,496 @@
+<!DOCTYPE html>
+<html lang="id" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kontak Homestead & Langganan Susu // LEMBAH SUSU HOMESTEAD</title>
+    <meta name="description" content="Hubungi Peternakan Lembah Susu Homestead: Layanan langganan susu botol kaca pagi hari, pasokan jerigen susu kafe barista, depot creamery Lembang, dan maps.">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800;900&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Playfair+Display:ital,wght@0,600;0,700;0,800;1,600&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome 6 -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        dairy: {
+                            white: '#FFFFFF',
+                            cream: '#FFFDF5',
+                            creambg: '#FAF6EA',
+                            border: '#EFE8CE',
+                            brown: '#42281D',
+                            browndark: '#2A1811',
+                            brownlight: '#654332',
+                            sky: '#0284C7',
+                            skylight: '#E0F2FE',
+                            skydark: '#0369A1',
+                            green: '#16A34A',
+                            greenlight: '#DCFCE7',
+                            charcoal: '#1E1B18'
+                        }
+                    },
+                    fontFamily: {
+                        sans: ['"Plus Jakarta Sans"', 'sans-serif'],
+                        nunito: ['"Nunito"', 'sans-serif'],
+                        serif: ['"Playfair Display"', 'serif']
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        .no-scrollbar::-webkit-scrollbar { display: none; }
+        .no-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
+    </style>
+</head>
+<body class="bg-dairy-cream text-dairy-charcoal font-sans antialiased selection:bg-dairy-sky selection:text-white">
+
+    <!-- 1. TOP ANNOUNCEMENT BAR -->
+    <div class="bg-dairy-brown text-amber-100 text-xs py-2.5 px-4 font-sans font-medium border-b border-amber-950/40">
+        <div class="max-w-7xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-2 text-center sm:text-left">
+            <div class="flex items-center justify-center gap-2">
+                <span class="px-2 py-0.5 bg-dairy-sky text-white text-[10px] uppercase font-bold tracking-wider rounded-md shadow-xs flex items-center gap-1">
+                    <i class="fa-solid fa-phone text-sky-200"></i> LAYANAN HOMESTEAD & LANGGANAN
+                </span>
+                <span class="text-white/95 font-medium">Layanan Langganan Susu Botol Pagi, Pasokan Kafe Barista, & Depot Creamery Lembang</span>
+            </div>
+            <div class="flex items-center gap-4 text-xs">
+                <a href="katalog.html" class="text-sky-300 hover:underline font-bold transition flex items-center gap-1">
+                    Katalog Susu <i class="fa-solid fa-arrow-right text-[10px]"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- 2. NAVBAR -->
+    <header class="sticky top-0 z-40 bg-white/95 backdrop-blur-md border-b border-dairy-border transition-all shadow-xs">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-20 sm:h-24">
+                
+                <!-- Logo -->
+                <a href="index.html" class="flex items-center gap-3.5 group">
+                    <div class="w-12 h-12 bg-gradient-to-br from-dairy-sky to-sky-700 text-white flex items-center justify-center text-2xl font-bold rounded-2xl shadow-md group-hover:scale-105 transition">
+                        <i class="fa-solid fa-bottle-water"></i>
+                    </div>
+                    <div class="flex flex-col">
+                        <span class="text-2xl sm:text-3xl font-extrabold tracking-tight text-dairy-brown uppercase leading-none font-serif">
+                            LEMBAH SUSU<span class="text-dairy-sky">.</span>
+                        </span>
+                        <span class="text-[9px] tracking-[0.28em] text-dairy-sky uppercase mt-1 font-bold">
+                            ALPINE DAIRY & CREAMERY
+                        </span>
+                    </div>
+                </a>
+
+                <!-- Desktop Navigation Links -->
+                <nav class="hidden lg:flex items-center gap-7 text-xs font-bold tracking-wider uppercase text-slate-700 font-sans">
+                    <a href="index.html" class="hover:text-dairy-sky transition">Beranda</a>
+                    <a href="katalog.html" class="hover:text-dairy-sky transition">Katalog Susu & Olahan</a>
+                    <a href="detail.html" class="hover:text-dairy-sky transition">Detail Susu Segar</a>
+                    <a href="tentang.html" class="hover:text-dairy-sky transition">Peternakan Dataran Tinggi</a>
+                    <a href="artikel.html" class="hover:text-dairy-sky transition">Manfaat Pasteurisasi</a>
+                    <a href="kontak.html" class="text-dairy-sky border-b-2 border-dairy-sky pb-1 font-bold">Langganan & Suplai Kafe</a>
+                </nav>
+
+                <!-- Actions -->
+                <div class="hidden sm:flex items-center gap-3">
+                    <a href="https://wa.me/6281234567890?text=Halo%20Admin%20Lembah%20Susu%20Homestead,%20saya%20ingin%20konsultasi%20langganan%20susu." 
+                       target="_blank"
+                       class="inline-flex items-center gap-2 px-4 py-2.5 bg-dairy-sky hover:bg-dairy-skydark text-xs font-bold text-white rounded-xl transition shadow-md hover:shadow-lg">
+                        <i class="fa-brands fa-whatsapp text-base"></i>
+                        <span>Chat WhatsApp Farm</span>
+                    </a>
+                </div>
+
+                <!-- Mobile Menu Button -->
+                <div class="flex lg:hidden items-center gap-2">
+                    <a href="https://wa.me/6281234567890" target="_blank" class="p-2.5 bg-sky-100 text-sky-800 rounded-xl text-sm">
+                        <i class="fa-brands fa-whatsapp"></i>
+                    </a>
+                    <button id="mobileMenuBtn" class="p-2.5 text-slate-700 hover:text-dairy-sky focus:outline-hidden rounded-xl bg-sky-50">
+                        <i id="menuIcon" class="fa-solid fa-bars text-xl"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Mobile Dropdown Menu -->
+        <div id="mobileMenu" class="hidden lg:hidden border-t border-dairy-border bg-white/98 px-6 py-5 shadow-xl">
+            <div class="flex flex-col gap-4 text-sm font-bold uppercase text-slate-700">
+                <a href="index.html" class="hover:text-dairy-sky transition flex items-center justify-between">
+                    <span>Beranda</span>
+                    <i class="fa-solid fa-chevron-right text-xs"></i>
+                </a>
+                <a href="katalog.html" class="hover:text-dairy-sky transition flex items-center justify-between">
+                    <span>Katalog Susu & Olahan Creamery</span>
+                    <i class="fa-solid fa-chevron-right text-xs"></i>
+                </a>
+                <a href="detail.html" class="hover:text-dairy-sky transition flex items-center justify-between">
+                    <span>Detail Kadar Lemak & Botol Kaca</span>
+                    <i class="fa-solid fa-chevron-right text-xs"></i>
+                </a>
+                <a href="tentang.html" class="hover:text-dairy-sky transition flex items-center justify-between">
+                    <span>Sapi Friesian Holstein & Higienitas</span>
+                    <i class="fa-solid fa-chevron-right text-xs"></i>
+                </a>
+                <a href="artikel.html" class="hover:text-dairy-sky transition flex items-center justify-between">
+                    <span>Manfaat Pasteurisasi Suhu Rendah</span>
+                    <i class="fa-solid fa-chevron-right text-xs"></i>
+                </a>
+                <a href="kontak.html" class="text-dairy-sky flex items-center justify-between">
+                    <span>Langganan Susu Rumah & Kafe</span>
+                    <i class="fa-solid fa-chevron-right text-xs"></i>
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- 3. PAGE BANNER -->
+    <section class="py-12 bg-gradient-to-b from-sky-100/60 to-dairy-cream border-b border-dairy-border">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="max-w-3xl">
+                <span class="px-3 py-1 bg-sky-100 text-dairy-sky text-xs font-bold uppercase rounded-md tracking-wider">
+                    DIRECT HOMESTEAD & CREAMERY CONTACT
+                </span>
+                <h1 class="text-3xl sm:text-5xl font-extrabold text-dairy-brown font-serif mt-3 mb-3 leading-tight">
+                    Kunjungi Homestead & Layanan Langganan
+                </h1>
+                <p class="text-slate-600 text-sm sm:text-base leading-relaxed">
+                    Daftar paket langganan susu murni botol kaca yang diantar ke rumah setiap pagi sebelum jam 07.00, konsultasi pasokan jerigen barista untuk kafe kopi, atau kunjungi depot creamery kami di Lembang.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- 4. 3 CONTACT CHANNELS -->
+    <section class="py-12 -mt-6">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                
+                <!-- Channel 1 -->
+                <div class="bg-white rounded-3xl p-6 border border-dairy-border shadow-md flex flex-col justify-between">
+                    <div>
+                        <div class="w-12 h-12 rounded-2xl bg-sky-100 text-dairy-sky flex items-center justify-center text-2xl mb-4">
+                            <i class="fa-solid fa-house-chimney-user"></i>
+                        </div>
+                        <h3 class="text-base font-bold text-slate-900 font-serif">Langganan Susu Rumah Tangga</h3>
+                        <p class="text-xs text-slate-500 mt-1">Botol kaca 1L/500ml diantar kurir pagi jam 06.00 & sistem tukar botol.</p>
+                        <p class="text-sm font-black text-dairy-sky mt-3">+62 812-3456-7890</p>
+                    </div>
+                    <a href="https://wa.me/6281234567890?text=Halo%20Admin%20Lembah%20Susu%20Homestead,%20saya%20ingin%20langganan%20susu%20rumah." target="_blank"
+                       class="mt-6 w-full py-2.5 bg-dairy-sky hover:bg-dairy-skydark text-white font-bold text-xs rounded-xl text-center transition flex items-center justify-center gap-2">
+                        <i class="fa-brands fa-whatsapp"></i> Langganan Susu Pagi
+                    </a>
+                </div>
+
+                <!-- Channel 2 -->
+                <div class="bg-white rounded-3xl p-6 border border-dairy-border shadow-md flex flex-col justify-between">
+                    <div>
+                        <div class="w-12 h-12 rounded-2xl bg-amber-100 text-dairy-brown flex items-center justify-center text-2xl mb-4">
+                            <i class="fa-solid fa-mug-hot"></i>
+                        </div>
+                        <h3 class="text-base font-bold text-slate-900 font-serif">Divisi B2B Kafe Kopi & Bakery</h3>
+                        <p class="text-xs text-slate-500 mt-1">Pasokan jerigen 5L barista grade, keju mozzarella kiloan, & invoice tempo.</p>
+                        <p class="text-sm font-black text-slate-900 mt-3">+62 812-9876-5432</p>
+                    </div>
+                    <a href="https://wa.me/6281298765432?text=Halo%20Tim%20B2B%20Lembah%20Susu%20Homestead,%20saya%20ingin%20tanya%20harga%20pasokan%20jerigen%20kafe." target="_blank"
+                       class="mt-6 w-full py-2.5 bg-dairy-brown hover:bg-dairy-browndark text-white font-bold text-xs rounded-xl text-center transition flex items-center justify-center gap-2">
+                        <i class="fa-brands fa-whatsapp"></i> Hubungi Divisi Kafe
+                    </a>
+                </div>
+
+                <!-- Channel 3 -->
+                <div class="bg-white rounded-3xl p-6 border border-dairy-border shadow-md flex flex-col justify-between">
+                    <div>
+                        <div class="w-12 h-12 rounded-2xl bg-emerald-100 text-dairy-green flex items-center justify-center text-2xl mb-4">
+                            <i class="fa-solid fa-store"></i>
+                        </div>
+                        <h3 class="text-base font-bold text-slate-900 font-serif">Depot Creamery & Kunjungan</h3>
+                        <p class="text-xs text-slate-500 mt-1">Beli langsung di farm Lembang, nikmati gelato susu murni & fresh yogurt.</p>
+                        <p class="text-sm font-black text-emerald-800 mt-3">+62 813-1122-3344</p>
+                    </div>
+                    <a href="https://wa.me/6281311223344?text=Halo%20Admin%20Lembah%20Susu%20Homestead,%20saya%20ingin%20info%20kunjungan%20depot." target="_blank"
+                       class="mt-6 w-full py-2.5 bg-dairy-green hover:bg-emerald-800 text-white font-bold text-xs rounded-xl text-center transition flex items-center justify-center gap-2">
+                        <i class="fa-brands fa-whatsapp"></i> Info Depot & Kunjungan
+                    </a>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- 5. INTERACTIVE ORDER FORM & MAPS -->
+    <section class="py-12 md:py-16 bg-white border-t border-dairy-border">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12">
+                
+                <!-- Left: Interactive Form -->
+                <div class="lg:col-span-7 bg-dairy-cream rounded-3xl p-6 sm:p-10 border-2 border-dairy-border shadow-lg">
+                    <div class="mb-6">
+                        <span class="px-3 py-1 bg-sky-100 text-dairy-sky text-[10px] font-extrabold uppercase rounded-md tracking-wider">
+                            DIRECT WA FORM GENERATOR
+                        </span>
+                        <h2 class="text-2xl font-extrabold text-dairy-brown font-serif mt-2">
+                            Formulir Pemesanan & Langganan Susu
+                        </h2>
+                        <p class="text-xs text-slate-600 mt-1">
+                            Lengkapi data pesanan Anda di bawah ini untuk terhubung langsung dengan admin logistik Lembah Susu Homestead via WhatsApp.
+                        </p>
+                    </div>
+
+                    <form id="orderForm" onsubmit="handleFormSubmit(event)" class="space-y-4 text-xs">
+                        
+                        <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                            <div>
+                                <label class="block font-bold text-slate-700 mb-1">Nama Pemesan / Nama Kafe *</label>
+                                <input type="text" id="formNama" required placeholder="Contoh: Ibu Rina / Kopi Senja Lembang" 
+                                       class="w-full px-4 py-3 bg-white border border-dairy-border rounded-xl focus:outline-hidden focus:border-dairy-sky transition">
+                            </div>
+                            <div>
+                                <label class="block font-bold text-slate-700 mb-1">Nomor WhatsApp Aktif *</label>
+                                <input type="tel" id="formWA" required placeholder="Contoh: 081234567890" 
+                                       class="w-full px-4 py-3 bg-white border border-dairy-border rounded-xl focus:outline-hidden focus:border-dairy-sky transition">
+                            </div>
+                        </div>
+
+                        <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                            <div>
+                                <label class="block font-bold text-slate-700 mb-1">Kategori Kebutuhan *</label>
+                                <select id="formKategori" required class="w-full px-4 py-3 bg-white border border-dairy-border rounded-xl focus:outline-hidden focus:border-dairy-sky transition">
+                                    <option value="Langganan Mingguan Rumah Tangga (Kurir Pagi)">Langganan Mingguan Rumah Tangga (Kurir Pagi)</option>
+                                    <option value="Beli Eceran Botol Kaca Segar">Beli Eceran Botol Kaca Segar</option>
+                                    <option value="Pasokan Harian Coffee Shop (Jerigen 5L)">Pasokan Harian Coffee Shop (Jerigen 5L)</option>
+                                    <option value="Pasokan Bakery / Restoran (Susu & Keju)">Pasokan Bakery / Restoran (Susu & Keju)</option>
+                                    <option value="Pemesanan Greek Yogurt / Keju Khusus">Pemesanan Greek Yogurt / Keju Khusus</option>
+                                </select>
+                            </div>
+                            <div>
+                                <label class="block font-bold text-slate-700 mb-1">Pilihan Produk Dairy Utama *</label>
+                                <select id="formProduk" required class="w-full px-4 py-3 bg-white border border-dairy-border rounded-xl focus:outline-hidden focus:border-dairy-sky transition">
+                                    <option value="Susu Sapi Murni Plain (Botol 1L)">Susu Sapi Murni Plain (Botol 1L)</option>
+                                    <option value="Susu Sapi Cokelat Swiss (Botol 1L)">Susu Sapi Cokelat Swiss (Botol 1L)</option>
+                                    <option value="Susu Sapi Strawberry Puree (Botol 1L)">Susu Sapi Strawberry Puree (Botol 1L)</option>
+                                    <option value="Greek Yogurt Kental Plain (Jar 500g)">Greek Yogurt Kental Plain (Jar 500g)</option>
+                                    <option value="Keju Mozzarella Fresh (Block 250g)">Keju Mozzarella Fresh (Block 250g)</option>
+                                    <option value="Susu Kambing Etawa Segar (Botol 500ml)">Susu Kambing Etawa Segar (Botol 500ml)</option>
+                                    <option value="Jerigen Susu Kafe Barista 5 Liter">Jerigen Susu Kafe Barista 5 Liter</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                            <div>
+                                <label class="block font-bold text-slate-700 mb-1">Estimasi Jumlah (Botol / Liter) *</label>
+                                <input type="text" id="formJumlah" required placeholder="Contoh: 3 Botol 1L / 2 Jerigen 5L" 
+                                       class="w-full px-4 py-3 bg-white border border-dairy-border rounded-xl focus:outline-hidden focus:border-dairy-sky transition">
+                            </div>
+                            <div>
+                                <label class="block font-bold text-slate-700 mb-1">Alamat Tujuan Pengiriman / Kota *</label>
+                                <input type="text" id="formKota" required placeholder="Contoh: Dago Bandung / Setiabudi / Cimahi" 
+                                       class="w-full px-4 py-3 bg-white border border-dairy-border rounded-xl focus:outline-hidden focus:border-dairy-sky transition">
+                            </div>
+                        </div>
+
+                        <div>
+                            <label class="block font-bold text-slate-700 mb-1">Catatan Khusus (Request Jam Kirim Pagi / Tukar Botol)</label>
+                            <textarea id="formCatatan" rows="3" placeholder="Contoh: Tolong diantar sebelum jam 06.30 pagi untuk sarapan anak, ada 2 botol kosong untuk ditukar deposit." 
+                                      class="w-full px-4 py-3 bg-white border border-dairy-border rounded-xl focus:outline-hidden focus:border-dairy-sky transition"></textarea>
+                        </div>
+
+                        <button type="submit" 
+                                class="w-full py-4 bg-gradient-to-r from-dairy-sky to-sky-700 hover:from-sky-600 hover:to-sky-800 text-white font-bold text-xs uppercase tracking-wider rounded-2xl shadow-lg transition flex items-center justify-center gap-2">
+                            <i class="fa-brands fa-whatsapp text-lg"></i>
+                            <span>Kirim Permintaan Pesanan ke WhatsApp Farm</span>
+                        </button>
+                    </form>
+                </div>
+
+                <!-- Right: Location Details & Maps -->
+                <div class="lg:col-span-5 space-y-6">
+                    
+                    <div class="bg-dairy-cream rounded-3xl p-6 sm:p-8 border border-dairy-border shadow-xs space-y-4">
+                        <div class="flex items-center gap-3">
+                            <div class="w-10 h-10 rounded-xl bg-dairy-sky text-white flex items-center justify-center text-lg">
+                                <i class="fa-solid fa-location-dot"></i>
+                            </div>
+                            <div>
+                                <h3 class="font-bold text-slate-900 font-serif">Depot Homestead & Creamery</h3>
+                                <p class="text-[11px] text-slate-500">Dataran Tinggi Lembang 1.400 mdpl</p>
+                            </div>
+                        </div>
+
+                        <div class="space-y-2 text-xs text-slate-600 leading-relaxed pt-2 border-t border-dairy-border">
+                            <p><strong>Alamat Peternakan & Depot:</strong><br>
+                            Kawasan Peternakan Lembah Susu, Jl. Panorama Dataran Tinggi No. 12, Lembang, Kab. Bandung Barat, Jawa Barat 40391</p>
+                            <p><strong>Area Jangkauan Kurir Subuh Susu Botol:</strong><br>
+                            Lembang, Bandung Kota (Dago, Setiabudi, Cihampelas, Buah Batu), Cimahi, & Pengiriman Kargo Dingin Jabodetabek</p>
+                            <p><strong>Jam Buka Depot & Pengiriman:</strong><br>
+                            Pengiriman Kurir Pagi: 05:30 – 08:00 WIB<br>
+                            Depot Susu & Gelato Farm: Setiap Hari 07:00 – 18:00 WIB</p>
+                        </div>
+                    </div>
+
+                    <!-- Map Simulation Container -->
+                    <div class="rounded-3xl overflow-hidden border-2 border-dairy-border shadow-md bg-sky-50 relative h-64">
+                        <iframe class="w-full h-full border-0" 
+                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3961.500000000000!2d107.6100000!3d-6.8100000!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e68e10000000000%3A0x123456789abcdef!2sLembang%2C%20West%20Bandung%20Regency%2C%20West%20Java!5e0!3m2!1sen!2sid!4v1700000000000" 
+                                allowfullscreen="" loading="lazy"></iframe>
+                        <div class="absolute bottom-3 left-3 bg-white/90 backdrop-blur-md px-3 py-1.5 rounded-xl text-[10px] font-bold text-slate-800 border border-slate-200">
+                            📍 Lembang Alpine Creamery Estate
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- 6. FOOTER -->
+    <footer class="bg-dairy-browndark text-stone-300 text-xs pt-16 pb-36 border-t border-amber-950 font-sans">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-10 pb-12 border-b border-amber-950/60">
+                <div class="lg:col-span-2 space-y-4">
+                    <a href="index.html" class="flex items-center gap-3">
+                        <div class="w-10 h-10 bg-gradient-to-br from-dairy-sky to-sky-700 text-white flex items-center justify-center text-xl font-bold rounded-xl">
+                            <i class="fa-solid fa-bottle-water"></i>
+                        </div>
+                        <span class="text-2xl font-extrabold text-white tracking-tight font-serif">
+                            LEMBAH SUSU<span class="text-dairy-sky">.</span>
+                        </span>
+                    </a>
+                    <p class="text-xs text-stone-400 leading-relaxed max-w-sm">
+                        Peternakan sapi perah dataran tinggi sejuk Lembang & Pangalengan. Susu murni pasteurisasi suhu rendah LTLT 72°C, yogurt kental probiotik, dan keju mozzarella segar dalam botol kaca ramah lingkungan.
+                    </p>
+                </div>
+                <div>
+                    <h4 class="text-xs font-bold text-white uppercase tracking-wider mb-4 font-serif">Navigasi Halaman</h4>
+                    <ul class="space-y-2.5">
+                        <li><a href="index.html" class="hover:text-sky-300 transition">Beranda Utama</a></li>
+                        <li><a href="katalog.html" class="hover:text-sky-300 transition">Katalog Susu & Olahan</a></li>
+                        <li><a href="detail.html" class="hover:text-sky-300 transition">Detail Susu Segar</a></li>
+                        <li><a href="tentang.html" class="hover:text-sky-300 transition">Peternakan Dataran Tinggi</a></li>
+                        <li><a href="artikel.html" class="hover:text-sky-300 transition">Manfaat Pasteurisasi</a></li>
+                        <li><a href="kontak.html" class="hover:text-sky-300 transition">Langganan & Suplai Kafe</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-xs font-bold text-white uppercase tracking-wider mb-4 font-serif">Produk Dairy</h4>
+                    <ul class="space-y-2.5">
+                        <li><a href="detail.html" class="hover:text-sky-300 transition">Susu Murni Plain 1L</a></li>
+                        <li><a href="detail.html" class="hover:text-sky-300 transition">Susu Cokelat Swiss 1L</a></li>
+                        <li><a href="katalog.html" class="hover:text-sky-300 transition">Greek Yogurt Kental 500g</a></li>
+                        <li><a href="katalog.html" class="hover:text-sky-300 transition">Keju Mozzarella Fresh</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-xs font-bold text-white uppercase tracking-wider mb-4 font-serif">Homestead & Depot</h4>
+                    <p class="text-xs text-stone-400 leading-relaxed mb-3">
+                        Kawasan Peternakan Lembah Susu, Jl. Panorama Dataran Tinggi No. 12, Lembang, Kab. Bandung Barat, Jawa Barat 40391.
+                    </p>
+                    <p class="text-xs text-sky-300 font-bold mb-1"><i class="fa-solid fa-phone mr-1.5"></i> +62 812-3456-7890</p>
+                    <p class="text-xs text-stone-400"><i class="fa-solid fa-envelope mr-1.5"></i> order@lembahsusu.com</p>
+                </div>
+            </div>
+            <div class="pt-8 flex flex-col sm:flex-row items-center justify-between gap-4 text-[11px] text-stone-500">
+                <p>&copy; 2026 LEMBAH SUSU HOMESTEAD. All rights reserved.</p>
+                <div class="flex items-center gap-4">
+                    <span>100% Fresh Whole Milk</span>
+                    <span>•</span>
+                    <span>LTLT 72°C Pasteurization</span>
+                    <span>•</span>
+                    <span>Botol Kaca Higienis</span>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- 7. FLOATING WHATSAPP BUTTON (bottom-24) -->
+    <div class="fixed bottom-24 right-5 z-40">
+        <a href="https://wa.me/6281234567890?text=Halo%20Admin%20Lembah%20Susu%20Homestead,%20saya%20ingin%20tanya%20pemesanan%20susu." 
+           target="_blank" 
+           aria-label="Chat WhatsApp Lembah Susu Homestead"
+           class="group flex items-center gap-3 bg-gradient-to-r from-dairy-sky to-sky-700 hover:from-sky-600 hover:to-sky-800 text-white px-4 py-3.5 rounded-full shadow-2xl transition-all transform hover:scale-105 border-2 border-white/80">
+            <i class="fa-brands fa-whatsapp text-2xl animate-pulse"></i>
+            <span class="text-xs font-bold tracking-wide pr-1 hidden sm:inline">Pesan Susu Segar WA</span>
+        </a>
+    </div>
+
+    <!-- 8. STICKY DEMO & SALES BAR (fixed bottom-4) -->
+    <div class="fixed bottom-4 left-4 right-4 z-50 max-w-5xl mx-auto">
+      <div class="bg-dairy-browndark/95 backdrop-blur-md text-white px-4 sm:px-6 py-3.5 rounded-2xl shadow-2xl border border-amber-900/60 flex flex-col md:flex-row items-center justify-between gap-3">
+        <div class="flex items-center gap-3 text-left w-full md:w-auto">
+          <div class="w-9 h-9 rounded-xl bg-sky-500/20 border border-sky-400/40 flex items-center justify-center shrink-0">
+            <i class="fa-solid fa-bottle-water text-sky-400 text-sm"></i>
+          </div>
+          <div>
+            <div class="text-xs md:text-sm font-bold text-stone-100 flex items-center gap-2">
+              <span>Lentera Pasar Demo</span>
+              <span class="text-[10px] px-2 py-0.5 rounded bg-sky-500/20 text-sky-300 font-bold">Kontak & Form Langganan</span>
+            </div>
+            <p class="text-[11px] text-stone-400 hidden sm:block">Desain Pure Dairy Homestead untuk agrobisnis peternakan sapi perah, yogurt, & keju lokal.</p>
+          </div>
+        </div>
+        <div class="flex items-center gap-3 w-full md:w-auto justify-end">
+          <a href="https://wa.me/6281234567890?text=Halo%20Tim%20Lentera%20Pasar,%20saya%20tertarik%20menggunakan%20template%20website%20Susu%20Murni%20ini." 
+             target="_blank"
+             class="w-full md:w-auto inline-flex items-center justify-center gap-2 bg-gradient-to-r from-dairy-sky to-sky-700 hover:from-sky-600 hover:to-sky-800 text-white text-xs md:text-sm font-bold px-5 py-2.5 rounded-xl shadow-lg transition-all hover:scale-105 shrink-0">
+            <span>Gunakan Template Ini</span>
+            <i class="fa-solid fa-arrow-right text-xs"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <!-- SCRIPT FORM HANDLING -->
+    <script>
+        const mobileMenuBtn = document.getElementById('mobileMenuBtn');
+        const mobileMenu = document.getElementById('mobileMenu');
+        const menuIcon = document.getElementById('menuIcon');
+
+        mobileMenuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+            if (mobileMenu.classList.contains('hidden')) {
+                menuIcon.classList.remove('fa-xmark');
+                menuIcon.classList.add('fa-bars');
+            } else {
+                menuIcon.classList.remove('fa-bars');
+                menuIcon.classList.add('fa-xmark');
+            }
+        });
+
+        function handleFormSubmit(event) {
+            event.preventDefault();
+            const nama = document.getElementById('formNama').value;
+            const wa = document.getElementById('formWA').value;
+            const kategori = document.getElementById('formKategori').value;
+            const produk = document.getElementById('formProduk').value;
+            const jumlah = document.getElementById('formJumlah').value;
+            const kota = document.getElementById('formKota').value;
+            const catatan = document.getElementById('formCatatan').value || '-';
+
+            const message = `Halo Admin Lembah Susu Homestead, saya ingin mengajukan pesanan / langganan susu murni:
+- Nama / Kafe: ${nama}
+- No. WhatsApp: ${wa}
+- Kategori Kebutuhan: ${kategori}
+- Pilihan Produk: ${produk}
+- Jumlah Pesanan: ${jumlah}
+- Alamat / Kota Kirim: ${kota}
+- Catatan Khusus: ${catatan}
+
+Mohon konfirmasi ketersediaan perahan pagi hari ini dan jadwal pengiriman kurir ke alamat saya. Terima kasih!`;
+
+            const encoded = encodeURIComponent(message);
+            window.open(`https://wa.me/6281234567890?text=${encoded}`, '_blank');
+        }
+    </script>
+</body>
+</html>

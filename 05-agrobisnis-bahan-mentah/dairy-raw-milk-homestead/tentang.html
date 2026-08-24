@@ -1,0 +1,472 @@
+<!DOCTYPE html>
+<html lang="id" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Peternakan Dataran Tinggi & Creamery // LEMBAH SUSU HOMESTEAD</title>
+    <meta name="description" content="Mengenal peternakan sapi perah Lembah Susu Homestead: Sapi Friesian Holstein dataran tinggi 1.400 mdpl Lembang, mesin perah tertutup otomatis, dan pasteurisasi LTLT higienis.">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800;900&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Playfair+Display:ital,wght@0,600;0,700;0,800;1,600&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome 6 -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        dairy: {
+                            white: '#FFFFFF',
+                            cream: '#FFFDF5',
+                            creambg: '#FAF6EA',
+                            border: '#EFE8CE',
+                            brown: '#42281D',
+                            browndark: '#2A1811',
+                            brownlight: '#654332',
+                            sky: '#0284C7',
+                            skylight: '#E0F2FE',
+                            skydark: '#0369A1',
+                            green: '#16A34A',
+                            greenlight: '#DCFCE7',
+                            charcoal: '#1E1B18'
+                        }
+                    },
+                    fontFamily: {
+                        sans: ['"Plus Jakarta Sans"', 'sans-serif'],
+                        nunito: ['"Nunito"', 'sans-serif'],
+                        serif: ['"Playfair Display"', 'serif']
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        .no-scrollbar::-webkit-scrollbar { display: none; }
+        .no-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
+
+        .dairy-hero-bg {
+            background: linear-gradient(180deg, #F0F8FF 0%, #FFFDF5 100%);
+        }
+    </style>
+</head>
+<body class="bg-dairy-cream text-dairy-charcoal font-sans antialiased selection:bg-dairy-sky selection:text-white">
+
+    <!-- 1. TOP ANNOUNCEMENT BAR -->
+    <div class="bg-dairy-brown text-amber-100 text-xs py-2.5 px-4 font-sans font-medium border-b border-amber-950/40">
+        <div class="max-w-7xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-2 text-center sm:text-left">
+            <div class="flex items-center justify-center gap-2">
+                <span class="px-2 py-0.5 bg-dairy-sky text-white text-[10px] uppercase font-bold tracking-wider rounded-md shadow-xs flex items-center gap-1">
+                    <i class="fa-solid fa-mountain text-sky-200"></i> 1.400 MDPL LEMBANG
+                </span>
+                <span class="text-white/95 font-medium">Peternakan Sapi Perah Friesian Holstein Sejuk • Mesin Perah Tertutup Otomatis</span>
+            </div>
+            <div class="flex items-center gap-4 text-xs">
+                <a href="katalog.html" class="text-sky-300 hover:underline font-bold transition flex items-center gap-1">
+                    Katalog Susu <i class="fa-solid fa-arrow-right text-[10px]"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- 2. NAVBAR -->
+    <header class="sticky top-0 z-40 bg-white/95 backdrop-blur-md border-b border-dairy-border transition-all shadow-xs">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-20 sm:h-24">
+                
+                <!-- Logo -->
+                <a href="index.html" class="flex items-center gap-3.5 group">
+                    <div class="w-12 h-12 bg-gradient-to-br from-dairy-sky to-sky-700 text-white flex items-center justify-center text-2xl font-bold rounded-2xl shadow-md group-hover:scale-105 transition">
+                        <i class="fa-solid fa-bottle-water"></i>
+                    </div>
+                    <div class="flex flex-col">
+                        <span class="text-2xl sm:text-3xl font-extrabold tracking-tight text-dairy-brown uppercase leading-none font-serif">
+                            LEMBAH SUSU<span class="text-dairy-sky">.</span>
+                        </span>
+                        <span class="text-[9px] tracking-[0.28em] text-dairy-sky uppercase mt-1 font-bold">
+                            ALPINE DAIRY & CREAMERY
+                        </span>
+                    </div>
+                </a>
+
+                <!-- Desktop Navigation Links -->
+                <nav class="hidden lg:flex items-center gap-7 text-xs font-bold tracking-wider uppercase text-slate-700 font-sans">
+                    <a href="index.html" class="hover:text-dairy-sky transition">Beranda</a>
+                    <a href="katalog.html" class="hover:text-dairy-sky transition">Katalog Susu & Olahan</a>
+                    <a href="detail.html" class="hover:text-dairy-sky transition">Detail Susu Segar</a>
+                    <a href="tentang.html" class="text-dairy-sky border-b-2 border-dairy-sky pb-1 font-bold">Peternakan Dataran Tinggi</a>
+                    <a href="artikel.html" class="hover:text-dairy-sky transition">Manfaat Pasteurisasi</a>
+                    <a href="kontak.html" class="hover:text-dairy-sky transition">Langganan & Suplai Kafe</a>
+                </nav>
+
+                <!-- Actions -->
+                <div class="hidden sm:flex items-center gap-3">
+                    <a href="https://wa.me/6281234567890?text=Halo%20Admin%20Lembah%20Susu%20Homestead,%20saya%20ingin%20tanya%20profil%20peternakan." 
+                       target="_blank"
+                       class="inline-flex items-center gap-2 px-4 py-2.5 bg-dairy-sky hover:bg-dairy-skydark text-xs font-bold text-white rounded-xl transition shadow-md hover:shadow-lg">
+                        <i class="fa-brands fa-whatsapp text-base"></i>
+                        <span>Hubungi Peternakan WA</span>
+                    </a>
+                </div>
+
+                <!-- Mobile Menu Button -->
+                <div class="flex lg:hidden items-center gap-2">
+                    <a href="https://wa.me/6281234567890" target="_blank" class="p-2.5 bg-sky-100 text-sky-800 rounded-xl text-sm">
+                        <i class="fa-brands fa-whatsapp"></i>
+                    </a>
+                    <button id="mobileMenuBtn" class="p-2.5 text-slate-700 hover:text-dairy-sky focus:outline-hidden rounded-xl bg-sky-50">
+                        <i id="menuIcon" class="fa-solid fa-bars text-xl"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Mobile Dropdown Menu -->
+        <div id="mobileMenu" class="hidden lg:hidden border-t border-dairy-border bg-white/98 px-6 py-5 shadow-xl">
+            <div class="flex flex-col gap-4 text-sm font-bold uppercase text-slate-700">
+                <a href="index.html" class="hover:text-dairy-sky transition flex items-center justify-between">
+                    <span>Beranda</span>
+                    <i class="fa-solid fa-chevron-right text-xs"></i>
+                </a>
+                <a href="katalog.html" class="hover:text-dairy-sky transition flex items-center justify-between">
+                    <span>Katalog Susu & Olahan Creamery</span>
+                    <i class="fa-solid fa-chevron-right text-xs"></i>
+                </a>
+                <a href="detail.html" class="hover:text-dairy-sky transition flex items-center justify-between">
+                    <span>Detail Kadar Lemak & Botol Kaca</span>
+                    <i class="fa-solid fa-chevron-right text-xs"></i>
+                </a>
+                <a href="tentang.html" class="text-dairy-sky flex items-center justify-between">
+                    <span>Sapi Friesian Holstein & Higienitas</span>
+                    <i class="fa-solid fa-chevron-right text-xs"></i>
+                </a>
+                <a href="artikel.html" class="hover:text-dairy-sky transition flex items-center justify-between">
+                    <span>Manfaat Pasteurisasi Suhu Rendah</span>
+                    <i class="fa-solid fa-chevron-right text-xs"></i>
+                </a>
+                <a href="kontak.html" class="hover:text-dairy-sky transition flex items-center justify-between">
+                    <span>Langganan Susu Rumah & Kafe</span>
+                    <i class="fa-solid fa-chevron-right text-xs"></i>
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- 3. HERO ABOUT SECTION -->
+    <section class="py-14 md:py-20 dairy-hero-bg border-b border-dairy-border">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 items-center">
+                
+                <div class="lg:col-span-7 space-y-5">
+                    <span class="px-3.5 py-1 rounded-full bg-sky-100 text-dairy-sky text-xs font-bold uppercase tracking-wider border border-sky-300">
+                        ALPINE DAIRY PURITY PHILOSOPHY
+                    </span>
+                    <h1 class="text-3xl sm:text-5xl font-extrabold text-dairy-brown font-serif leading-[1.15]">
+                        Kesejukan Dataran Tinggi, <br>
+                        <span class="text-transparent bg-clip-text bg-gradient-to-r from-dairy-sky via-sky-600 to-dairy-brown">
+                            Kemurnian Susu Tanpa Kompromi
+                        </span>
+                    </h1>
+                    <p class="text-slate-700 text-sm sm:text-base leading-relaxed max-w-2xl">
+                        <strong>LEMBAH SUSU HOMESTEAD</strong> berlokasi di perbukitan hijau sejuk Lembang pada ketinggian 1.400 meter di atas permukaan laut. Suhu udara yang stabil antara 16°C – 20°C menciptakan iklim yang sangat ideal bagi sapi perah ras unggul Friesian Holstein agar hidup nyaman tanpa stres panas, sehingga menghasilkan susu dengan kadar lemak alami tinggi (3.8% – 4.2%) dan rasa gurih legit alami.
+                    </p>
+                    <div class="flex flex-wrap items-center gap-4 pt-2">
+                        <div class="flex items-center gap-2 text-xs font-bold text-slate-800 bg-white px-4 py-2 rounded-xl border border-dairy-border shadow-xs">
+                            <i class="fa-solid fa-mountain-sun text-sky-700"></i> Udara Bersih Bebas Polusi 1.400 mdpl
+                        </div>
+                        <div class="flex items-center gap-2 text-xs font-bold text-slate-800 bg-white px-4 py-2 rounded-xl border border-dairy-border shadow-xs">
+                            <i class="fa-solid fa-robot text-dairy-brown"></i> Mesin Perah Tertutup Stainless Steel
+                        </div>
+                    </div>
+                </div>
+
+                <div class="lg:col-span-5 relative">
+                    <div class="rounded-3xl overflow-hidden shadow-2xl border-4 border-white bg-slate-100">
+                        <img src="https://images.unsplash.com/photo-1570042225831-d98fa7577f1e?q=80&w=1000&auto=format&fit=crop" 
+                             alt="Sapi Perah Friesian Holstein Lembang" 
+                             class="w-full h-96 object-cover transform hover:scale-105 transition-all duration-700">
+                    </div>
+                    <div class="absolute -bottom-4 -left-4 bg-dairy-brown text-white p-4 rounded-2xl shadow-xl border border-amber-950 font-serif">
+                        <p class="text-xl font-black text-sky-300">1.400 mdpl</p>
+                        <p class="text-[11px] text-amber-100 font-sans">320+ Sapi Friesian Holstein</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- 4. KEY METRICS -->
+    <section class="py-12 bg-white border-b border-dairy-border">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-2 lg:grid-cols-4 gap-6 text-center">
+                <div class="p-6 rounded-2xl bg-dairy-cream border border-dairy-border">
+                    <p class="text-3xl sm:text-4xl font-extrabold text-dairy-sky font-serif">1.400 m</p>
+                    <p class="text-xs text-slate-600 font-bold uppercase mt-1">Ketinggian Dataran Tinggi</p>
+                </div>
+                <div class="p-6 rounded-2xl bg-dairy-cream border border-dairy-border">
+                    <p class="text-3xl sm:text-4xl font-extrabold text-dairy-brown font-serif">320+</p>
+                    <p class="text-xs text-slate-600 font-bold uppercase mt-1">Sapi Friesian Holstein</p>
+                </div>
+                <div class="p-6 rounded-2xl bg-dairy-cream border border-dairy-border">
+                    <p class="text-3xl sm:text-4xl font-extrabold text-dairy-green font-serif">4.0%</p>
+                    <p class="text-xs text-slate-600 font-bold uppercase mt-1">Kadar Lemak Utuh Alami</p>
+                </div>
+                <div class="p-6 rounded-2xl bg-dairy-cream border border-dairy-border">
+                    <p class="text-3xl sm:text-4xl font-extrabold text-slate-900 font-serif">72°C LTLT</p>
+                    <p class="text-xs text-slate-600 font-bold uppercase mt-1">Pasteurisasi Suhu Rendah</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 5. 4 PILAR STANDAR KEBERSIHAN & MUTU -->
+    <section class="py-16 md:py-20 bg-dairy-cream">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-2xl mx-auto mb-14">
+                <span class="px-3 py-1 bg-sky-100 text-dairy-sky text-xs font-bold uppercase rounded-md tracking-wider border border-sky-300">
+                    OUR DAIRY STANDARDS
+                </span>
+                <h2 class="text-2xl sm:text-4xl font-extrabold text-dairy-brown font-serif mt-3 mb-3">
+                    4 Pilar Mutu Lembah Susu Homestead
+                </h2>
+                <p class="text-slate-600 text-sm">
+                    Kombinasi peternakan ramah alam dan teknologi pengolahan susu berstandar higienis tinggi.
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                
+                <!-- Pillar 1 -->
+                <div class="bg-white rounded-3xl p-8 border border-dairy-border shadow-xs flex items-start gap-5">
+                    <div class="w-14 h-14 rounded-2xl bg-dairy-sky text-white flex items-center justify-center text-2xl shrink-0 shadow-xs">
+                        <i class="fa-solid fa-cow"></i>
+                    </div>
+                    <div class="space-y-2">
+                        <h3 class="text-lg font-bold text-slate-900 font-serif">1. Ras Unggul Friesian Holstein & Pakan Alami</h3>
+                        <p class="text-xs text-slate-600 leading-relaxed">
+                            Sapi perah kami dirawat dengan pakan hijauan alfalfa, rumput gajah segar, dan fermentasi konsentrat bekatul jagung bernutrisi tinggi. 100% bebas hormon pemacu produksi sintetis.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Pillar 2 -->
+                <div class="bg-white rounded-3xl p-8 border border-dairy-border shadow-xs flex items-start gap-5">
+                    <div class="w-14 h-14 rounded-2xl bg-dairy-brown text-white flex items-center justify-center text-2xl shrink-0 shadow-xs">
+                        <i class="fa-solid fa-robot"></i>
+                    </div>
+                    <div class="space-y-2">
+                        <h3 class="text-lg font-bold text-slate-900 font-serif">2. Sistem Perah Otomatis Stainless Steel Tertutup</h3>
+                        <p class="text-xs text-slate-600 leading-relaxed">
+                            Pemerahan menggunakan mesin otomatis bertekanan vakum halus yang meniru hisapan anak sapi. Susu langsung dialirkan melalui pipa stainless steel foodgrade 316 ke tangki pendingin 4°C tanpa sentuhan tangan.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Pillar 3 -->
+                <div class="bg-white rounded-3xl p-8 border border-dairy-border shadow-xs flex items-start gap-5">
+                    <div class="w-14 h-14 rounded-2xl bg-emerald-600 text-white flex items-center justify-center text-2xl shrink-0 shadow-xs">
+                        <i class="fa-solid fa-temperature-low"></i>
+                    </div>
+                    <div class="space-y-2">
+                        <h3 class="text-lg font-bold text-slate-900 font-serif">3. Pasteurisasi LTLT 72°C (Nutrisi Utuh)</h3>
+                        <p class="text-xs text-slate-600 leading-relaxed">
+                            Pemanasan suhu rendah menjaga keutuhan enzim imunoglobulin, kalsium alami, dan kasein utuh. Menghasilkan susu bertekstur lembut dengan lapisan kepala susu (*creamline*) alami yang kaya rasa.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Pillar 4 -->
+                <div class="bg-white rounded-3xl p-8 border border-dairy-border shadow-xs flex items-start gap-5">
+                    <div class="w-14 h-14 rounded-2xl bg-purple-600 text-white flex items-center justify-center text-2xl shrink-0 shadow-xs">
+                        <i class="fa-solid fa-recycle"></i>
+                    </div>
+                    <div class="space-y-2">
+                        <h3 class="text-lg font-bold text-slate-900 font-serif">4. Kemasan Botol Kaca & Sterilisasi Autoclave</h3>
+                        <p class="text-xs text-slate-600 leading-relaxed">
+                            Botol kaca menjaga suhu dingin lebih stabil dan tidak mentransfer bau plastik ke susu. Seluruh botol disterilkan dengan autoclave uap panas 120°C sebelum diisi susu segar subuh.
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- 6. PROFIL TIM PAKAR PETERNAKAN -->
+    <section class="py-16 md:py-20 bg-white border-t border-dairy-border">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-2xl mx-auto mb-14">
+                <span class="px-3 py-1 bg-sky-100 text-dairy-sky text-xs font-bold uppercase rounded-md tracking-wider border border-sky-300">
+                    OUR DAIRY MASTERS
+                </span>
+                <h2 class="text-2xl sm:text-4xl font-extrabold text-dairy-brown font-serif mt-3 mb-3">
+                    Sosok di Balik Kesegaran Lembah Susu
+                </h2>
+                <p class="text-slate-600 text-sm">
+                    Dedikasi praktisi peternak sapi perah, dokter hewan veteriner, dan artisan pembuat keju.
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                
+                <!-- Person 1 -->
+                <div class="bg-dairy-cream rounded-3xl p-6 border border-dairy-border text-center flex flex-col items-center">
+                    <div class="w-24 h-24 rounded-full bg-sky-100 text-dairy-sky flex items-center justify-center text-4xl mb-4 border-2 border-sky-300">
+                        👨‍🌾
+                    </div>
+                    <h3 class="text-base font-bold text-slate-900 font-serif">Ir. Hendrawan Suwandi</h3>
+                    <p class="text-xs font-semibold text-dairy-sky mt-0.5">Founder & Dairy Husbandry Expert</p>
+                    <p class="text-xs text-slate-600 mt-3 leading-relaxed">
+                        "Lebih dari 25 tahun mendedikasikan hidup untuk sapi perah Lembang. Misi kami sederhana: menghadirkan kembali rasa susu murni yang sesungguhnya ke meja makan keluarga Indonesia."
+                    </p>
+                </div>
+
+                <!-- Person 2 -->
+                <div class="bg-dairy-cream rounded-3xl p-6 border border-dairy-border text-center flex flex-col items-center">
+                    <div class="w-24 h-24 rounded-full bg-emerald-100 text-emerald-800 flex items-center justify-center text-4xl mb-4 border-2 border-emerald-300">
+                        👩‍⚕️
+                    </div>
+                    <h3 class="text-base font-bold text-slate-900 font-serif">drh. Melati Anggraeni</h3>
+                    <p class="text-xs font-semibold text-emerald-800 mt-0.5">Kepala Dokter Hewan & Higienitas</p>
+                    <p class="text-xs text-slate-600 mt-3 leading-relaxed">
+                        "Setiap ambing sapi diperiksa sebelum pemerahan. Kami memastikan tidak ada residu antibiotik yang masuk ke rantai produksi susu murni pasteurisasi."
+                    </p>
+                </div>
+
+                <!-- Person 3 -->
+                <div class="bg-dairy-cream rounded-3xl p-6 border border-dairy-border text-center flex flex-col items-center">
+                    <div class="w-24 h-24 rounded-full bg-amber-100 text-amber-900 flex items-center justify-center text-4xl mb-4 border-2 border-amber-300">
+                        👨‍🍳
+                    </div>
+                    <h3 class="text-base font-bold text-slate-900 font-serif">Chef Alessandro Rinaldi</h3>
+                    <p class="text-xs font-semibold text-amber-800 mt-0.5">Artisanal Cheese & Yogurt Master</p>
+                    <p class="text-xs text-slate-600 mt-3 leading-relaxed">
+                        "Dengan bahan baku susu segar berkualitas tinggi dari peternakan sendiri, pembuatan keju mozzarella dan greek yogurt menghasilkan tekstur dan aroma yang luar biasa gurih."
+                    </p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- 7. FOOTER -->
+    <footer class="bg-dairy-browndark text-stone-300 text-xs pt-16 pb-36 border-t border-amber-950 font-sans">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-10 pb-12 border-b border-amber-950/60">
+                <div class="lg:col-span-2 space-y-4">
+                    <a href="index.html" class="flex items-center gap-3">
+                        <div class="w-10 h-10 bg-gradient-to-br from-dairy-sky to-sky-700 text-white flex items-center justify-center text-xl font-bold rounded-xl">
+                            <i class="fa-solid fa-bottle-water"></i>
+                        </div>
+                        <span class="text-2xl font-extrabold text-white tracking-tight font-serif">
+                            LEMBAH SUSU<span class="text-dairy-sky">.</span>
+                        </span>
+                    </a>
+                    <p class="text-xs text-stone-400 leading-relaxed max-w-sm">
+                        Peternakan sapi perah dataran tinggi sejuk Lembang & Pangalengan. Susu murni pasteurisasi suhu rendah LTLT 72°C, yogurt kental probiotik, dan keju mozzarella segar dalam botol kaca ramah lingkungan.
+                    </p>
+                </div>
+                <div>
+                    <h4 class="text-xs font-bold text-white uppercase tracking-wider mb-4 font-serif">Navigasi Halaman</h4>
+                    <ul class="space-y-2.5">
+                        <li><a href="index.html" class="hover:text-sky-300 transition">Beranda Utama</a></li>
+                        <li><a href="katalog.html" class="hover:text-sky-300 transition">Katalog Susu & Olahan</a></li>
+                        <li><a href="detail.html" class="hover:text-sky-300 transition">Detail Susu Segar</a></li>
+                        <li><a href="tentang.html" class="hover:text-sky-300 transition">Peternakan Dataran Tinggi</a></li>
+                        <li><a href="artikel.html" class="hover:text-sky-300 transition">Manfaat Pasteurisasi</a></li>
+                        <li><a href="kontak.html" class="hover:text-sky-300 transition">Langganan & Suplai Kafe</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-xs font-bold text-white uppercase tracking-wider mb-4 font-serif">Produk Dairy</h4>
+                    <ul class="space-y-2.5">
+                        <li><a href="detail.html" class="hover:text-sky-300 transition">Susu Murni Plain 1L</a></li>
+                        <li><a href="detail.html" class="hover:text-sky-300 transition">Susu Cokelat Swiss 1L</a></li>
+                        <li><a href="katalog.html" class="hover:text-sky-300 transition">Greek Yogurt Kental 500g</a></li>
+                        <li><a href="katalog.html" class="hover:text-sky-300 transition">Keju Mozzarella Fresh</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-xs font-bold text-white uppercase tracking-wider mb-4 font-serif">Homestead & Depot</h4>
+                    <p class="text-xs text-stone-400 leading-relaxed mb-3">
+                        Kawasan Peternakan Lembah Susu, Jl. Panorama Dataran Tinggi No. 12, Lembang, Kab. Bandung Barat, Jawa Barat 40391.
+                    </p>
+                    <p class="text-xs text-sky-300 font-bold mb-1"><i class="fa-solid fa-phone mr-1.5"></i> +62 812-3456-7890</p>
+                    <p class="text-xs text-stone-400"><i class="fa-solid fa-envelope mr-1.5"></i> order@lembahsusu.com</p>
+                </div>
+            </div>
+            <div class="pt-8 flex flex-col sm:flex-row items-center justify-between gap-4 text-[11px] text-stone-500">
+                <p>&copy; 2026 LEMBAH SUSU HOMESTEAD. All rights reserved.</p>
+                <div class="flex items-center gap-4">
+                    <span>100% Fresh Whole Milk</span>
+                    <span>•</span>
+                    <span>LTLT 72°C Pasteurization</span>
+                    <span>•</span>
+                    <span>Botol Kaca Higienis</span>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- 8. FLOATING WHATSAPP BUTTON (bottom-24) -->
+    <div class="fixed bottom-24 right-5 z-40">
+        <a href="https://wa.me/6281234567890?text=Halo%20Admin%20Lembah%20Susu%20Homestead,%20saya%20ingin%20tanya%20profil%20peternakan." 
+           target="_blank" 
+           aria-label="Chat WhatsApp Lembah Susu Homestead"
+           class="group flex items-center gap-3 bg-gradient-to-r from-dairy-sky to-sky-700 hover:from-sky-600 hover:to-sky-800 text-white px-4 py-3.5 rounded-full shadow-2xl transition-all transform hover:scale-105 border-2 border-white/80">
+            <i class="fa-brands fa-whatsapp text-2xl animate-pulse"></i>
+            <span class="text-xs font-bold tracking-wide pr-1 hidden sm:inline">Pesan Susu Segar WA</span>
+        </a>
+    </div>
+
+    <!-- 9. STICKY DEMO & SALES BAR (fixed bottom-4) -->
+    <div class="fixed bottom-4 left-4 right-4 z-50 max-w-5xl mx-auto">
+      <div class="bg-dairy-browndark/95 backdrop-blur-md text-white px-4 sm:px-6 py-3.5 rounded-2xl shadow-2xl border border-amber-900/60 flex flex-col md:flex-row items-center justify-between gap-3">
+        <div class="flex items-center gap-3 text-left w-full md:w-auto">
+          <div class="w-9 h-9 rounded-xl bg-sky-500/20 border border-sky-400/40 flex items-center justify-center shrink-0">
+            <i class="fa-solid fa-bottle-water text-sky-400 text-sm"></i>
+          </div>
+          <div>
+            <div class="text-xs md:text-sm font-bold text-stone-100 flex items-center gap-2">
+              <span>Lentera Pasar Demo</span>
+              <span class="text-[10px] px-2 py-0.5 rounded bg-sky-500/20 text-sky-300 font-bold">Tentang Peternakan Susu</span>
+            </div>
+            <p class="text-[11px] text-stone-400 hidden sm:block">Desain Pure Dairy Homestead untuk agrobisnis peternakan sapi perah, yogurt, & keju lokal.</p>
+          </div>
+        </div>
+        <div class="flex items-center gap-3 w-full md:w-auto justify-end">
+          <a href="https://wa.me/6281234567890?text=Halo%20Tim%20Lentera%20Pasar,%20saya%20tertarik%20menggunakan%20template%20website%20Susu%20Murni%20ini." 
+             target="_blank"
+             class="w-full md:w-auto inline-flex items-center justify-center gap-2 bg-gradient-to-r from-dairy-sky to-sky-700 hover:from-sky-600 hover:to-sky-800 text-white text-xs md:text-sm font-bold px-5 py-2.5 rounded-xl shadow-lg transition-all hover:scale-105 shrink-0">
+            <span>Gunakan Template Ini</span>
+            <i class="fa-solid fa-arrow-right text-xs"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <!-- SCRIPT MOBILE MENU -->
+    <script>
+        const mobileMenuBtn = document.getElementById('mobileMenuBtn');
+        const mobileMenu = document.getElementById('mobileMenu');
+        const menuIcon = document.getElementById('menuIcon');
+
+        mobileMenuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+            if (mobileMenu.classList.contains('hidden')) {
+                menuIcon.classList.remove('fa-xmark');
+                menuIcon.classList.add('fa-bars');
+            } else {
+                menuIcon.classList.remove('fa-bars');
+                menuIcon.classList.add('fa-xmark');
+            }
+        });
+    </script>
+</body>
+</html>
