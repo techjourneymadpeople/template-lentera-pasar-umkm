@@ -1,0 +1,797 @@
+<!DOCTYPE html>
+<html lang="id" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Katalog Mahakarya Wastra Nusantara // DANISWARA ATELIER — Batik Tulis, Cap & Tenun</title>
+    <meta name="description" content="Jelajahi galeri kain tradisional adiluhung: Batik tulis canting tangan eksklusif, batik cap katun halus, selendang tenun ikat sutra, dan kain lurik klasik bergaransi asli.">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;600;700;800;900&family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,600;1,700&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome 6 -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        daniswara: {
+                            soga: '#3B2219',
+                            sogadark: '#26140E',
+                            sogasoft: '#F7EFEA',
+                            indigo: '#152238',
+                            indigosoft: '#E9EEF5',
+                            parchment: '#FDF9F3',
+                            parchmentsoft: '#F4ECE0',
+                            gold: '#C5A059',
+                            golddark: '#A6823C',
+                            goldlight: '#EED9A7',
+                            border: '#DFD1BD',
+                            charcoal: '#1A1412'
+                        }
+                    },
+                    fontFamily: {
+                        sans: ['"Plus Jakarta Sans"', 'sans-serif'],
+                        serif: ['"Cormorant Garamond"', 'serif'],
+                        cinzel: ['"Cinzel"', 'serif'],
+                        mono: ['"Space Grotesk"', 'monospace']
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        .no-scrollbar::-webkit-scrollbar { display: none; }
+        .no-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
+
+        .btn-royal {
+            transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+        }
+        .btn-royal:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 14px 28px -8px rgba(197, 160, 89, 0.4);
+        }
+
+        .product-card {
+            transition: all 0.35s ease;
+        }
+        .product-card:hover {
+            transform: translateY(-4px);
+        }
+    </style>
+</head>
+<body class="bg-daniswara-parchment text-daniswara-charcoal font-sans antialiased selection:bg-daniswara-gold selection:text-daniswara-soga">
+
+    <!-- 1. TOP BAR -->
+    <div class="bg-daniswara-soga text-daniswara-goldlight text-xs py-2 px-4 font-mono border-b border-daniswara-gold/30">
+        <div class="max-w-7xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-2 text-center sm:text-left">
+            <div class="flex items-center gap-2">
+                <span class="px-2 py-0.5 bg-daniswara-gold text-daniswara-soga text-[10px] uppercase font-cinzel font-bold rounded">LIMITED EDITIONS</span>
+                <span class="text-white/95">Setiap Kain Batik Tulis Dibuat Hanya 1 Lembar di Dunia (One of a Kind)</span>
+            </div>
+            <div class="text-xs">
+                <span>Konsultasi Kurator Batik: <a href="https://wa.me/6281234567890" target="_blank" class="text-daniswara-gold hover:underline font-bold">+62 812-3456-7890</a></span>
+            </div>
+        </div>
+    </div>
+
+    <!-- 2. NAVBAR -->
+    <header class="sticky top-0 z-40 bg-daniswara-parchment/95 backdrop-blur-md border-b border-daniswara-border transition-all">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-20 sm:h-24">
+                
+                <!-- Logo -->
+                <a href="index.html" class="flex items-center gap-3.5 group">
+                    <div class="w-12 h-12 bg-daniswara-soga border border-daniswara-gold text-daniswara-gold flex items-center justify-center text-xl font-serif rounded-2xl shadow-md group-hover:bg-daniswara-indigo transition">
+                        <i class="fa-solid fa-feather-pointed"></i>
+                    </div>
+                    <div class="flex flex-col">
+                        <span class="text-2xl sm:text-3xl font-cinzel font-black tracking-wider text-daniswara-soga uppercase leading-none">
+                            DANISWARA<span class="text-daniswara-gold">.</span>
+                        </span>
+                        <span class="text-[9px] font-mono tracking-[0.28em] text-daniswara-golddark uppercase mt-1 font-bold">
+                            ROYAL HERITAGE ATELIER
+                        </span>
+                    </div>
+                </a>
+
+                <!-- Desktop Navigation Links -->
+                <nav class="hidden lg:flex items-center gap-8 text-xs font-bold tracking-wider uppercase text-daniswara-soga/80 font-mono">
+                    <a href="index.html" class="hover:text-daniswara-gold transition">Beranda</a>
+                    <a href="katalog.html" class="text-daniswara-soga border-b-2 border-daniswara-gold pb-1 font-bold">Katalog Mahakarya</a>
+                    <a href="detail.html" class="hover:text-daniswara-gold transition">Detail Batik Parang</a>
+                    <a href="tentang.html" class="hover:text-daniswara-gold transition">Warisan Pembatik Sepuh</a>
+                    <a href="artikel.html" class="hover:text-daniswara-gold transition">Filosofi & Rawat Lerak</a>
+                    <a href="kontak.html" class="hover:text-daniswara-gold transition">Galeri & Seragam Adat</a>
+                </nav>
+
+                <!-- Actions -->
+                <div class="hidden sm:flex items-center gap-3 font-mono">
+                    <a href="index.html#filosofiSection" class="inline-flex items-center gap-2 px-3.5 py-2.5 bg-white border border-daniswara-border hover:border-daniswara-gold text-xs font-bold text-daniswara-soga rounded-xl transition shadow-xs">
+                        <i class="fa-solid fa-scroll text-daniswara-gold"></i>
+                        <span>Makna Motif</span>
+                    </a>
+                    <a href="https://wa.me/6281234567890?text=Halo%20Atelier%20Daniswara,%20saya%20tertarik%20dengan%20katalog%20kain." target="_blank" class="inline-flex items-center gap-2 bg-daniswara-soga hover:bg-daniswara-sogadark text-daniswara-goldlight text-xs font-bold tracking-wider px-5 py-2.5 rounded-xl border border-daniswara-gold/40 transition-all shadow-md font-cinzel btn-royal">
+                        <i class="fa-brands fa-whatsapp text-sm text-green-400"></i>
+                        <span>Konsultasi WA</span>
+                    </a>
+                </div>
+
+                <!-- Mobile Hamburger Button -->
+                <button id="mobileMenuBtn" class="lg:hidden p-2.5 text-daniswara-soga hover:text-daniswara-gold focus:outline-none" aria-label="Toggle Menu">
+                    <i id="menuIcon" class="fa-solid fa-bars text-xl"></i>
+                </button>
+            </div>
+        </div>
+
+        <!-- Mobile Drawer -->
+        <div id="mobileMenu" class="hidden lg:hidden bg-white border-b border-daniswara-border px-5 py-5 space-y-3 font-mono shadow-xl">
+            <a href="index.html" class="block text-xs font-bold uppercase tracking-wider text-daniswara-soga hover:text-daniswara-gold py-2 border-b border-daniswara-border">Beranda Utama</a>
+            <a href="katalog.html" class="block text-xs font-bold uppercase tracking-wider text-daniswara-gold py-2 border-b border-daniswara-border">Katalog Batik Tulis, Cap & Tenun</a>
+            <a href="detail.html" class="block text-xs font-bold uppercase tracking-wider text-daniswara-soga hover:text-daniswara-gold py-2 border-b border-daniswara-border">Detail Batik Parang Rusak</a>
+            <a href="tentang.html" class="block text-xs font-bold uppercase tracking-wider text-daniswara-soga hover:text-daniswara-gold py-2 border-b border-daniswara-border">Maestro Pembatik Sepuh</a>
+            <a href="artikel.html" class="block text-xs font-bold uppercase tracking-wider text-daniswara-soga hover:text-daniswara-gold py-2 border-b border-daniswara-border">Filosofi & Rawat Lerak</a>
+            <a href="kontak.html" class="block text-xs font-bold uppercase tracking-wider text-daniswara-soga hover:text-daniswara-gold py-2">Galeri & Seragam</a>
+            <div class="pt-3">
+                <a href="https://wa.me/6281234567890?text=Halo%20Daniswara." target="_blank" class="w-full py-3 bg-daniswara-soga text-daniswara-goldlight rounded-xl text-xs font-bold uppercase tracking-wider text-center flex items-center justify-center gap-2 font-cinzel border border-daniswara-gold">
+                    <i class="fa-brands fa-whatsapp text-green-300"></i> WhatsApp Fast Response
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- 3. KATALOG HEADER BANNER -->
+    <section class="py-12 sm:py-16 border-b border-daniswara-border bg-daniswara-parchmentsoft relative">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex flex-col md:flex-row md:items-end justify-between gap-6">
+                <div class="space-y-2">
+                    <div class="flex items-center gap-2 text-xs font-mono text-daniswara-gold uppercase font-bold">
+                        <a href="index.html" class="hover:underline">Beranda</a>
+                        <span>/</span>
+                        <span>Galeri Wastra Nusantara</span>
+                    </div>
+                    <h1 class="text-3xl sm:text-4xl lg:text-5xl font-cinzel font-black text-daniswara-soga">
+                        Koleksi Kain Pusaka & Adat
+                    </h1>
+                    <p class="text-sm sm:text-base text-daniswara-soga/75 font-serif max-w-2xl">
+                        Dibuat dengan teknik canting tangan lilin malam, cap tembaga presisi, dan tenun pakan ATBM. Menggunakan bahan dasar primissima halus dan sutra baron yang sejuk berwibawa.
+                    </p>
+                </div>
+
+                <!-- Quick Highlights -->
+                <div class="flex flex-wrap gap-2 font-mono text-xs shrink-0">
+                    <span class="px-3 py-1.5 bg-white border border-daniswara-border rounded-xl text-daniswara-soga flex items-center gap-1.5">
+                        <i class="fa-solid fa-check text-daniswara-gold"></i> Bukan Printing Pabrik
+                    </span>
+                    <span class="px-3 py-1.5 bg-white border border-daniswara-border rounded-xl text-daniswara-soga flex items-center gap-1.5">
+                        <i class="fa-solid fa-check text-daniswara-gold"></i> Tembus 2 Sisi Kain
+                    </span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 4. FILTER BAR & SORTING CONTROLS -->
+    <section class="sticky top-20 sm:top-24 z-30 bg-white/95 backdrop-blur-md border-b border-daniswara-border py-4">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex flex-col lg:flex-row items-stretch lg:items-center justify-between gap-4">
+                
+                <!-- Category Tabs -->
+                <div class="flex items-center gap-2 overflow-x-auto no-scrollbar pb-1 lg:pb-0 font-mono text-xs">
+                    <button onclick="filterCategory('all')" id="tab-all" class="cat-tab px-4 py-2 rounded-xl bg-daniswara-soga text-daniswara-goldlight font-bold whitespace-nowrap transition font-cinzel border border-daniswara-gold/30">
+                        Semua Wastra (10)
+                    </button>
+                    <button onclick="filterCategory('tulis')" id="tab-tulis" class="cat-tab px-4 py-2 rounded-xl bg-daniswara-parchmentsoft border border-daniswara-border text-daniswara-soga hover:border-daniswara-gold font-bold whitespace-nowrap transition font-cinzel">
+                        Batik Tulis Sutra & Katun (4)
+                    </button>
+                    <button onclick="filterCategory('cap')" id="tab-cap" class="cat-tab px-4 py-2 rounded-xl bg-daniswara-parchmentsoft border border-daniswara-border text-daniswara-soga hover:border-daniswara-gold font-bold whitespace-nowrap transition font-cinzel">
+                        Batik Cap Katun Halus (2)
+                    </button>
+                    <button onclick="filterCategory('tenun')" id="tab-tenun" class="cat-tab px-4 py-2 rounded-xl bg-daniswara-parchmentsoft border border-daniswara-border text-daniswara-soga hover:border-daniswara-gold font-bold whitespace-nowrap transition font-cinzel">
+                        Selendang Tenun Ikat (2)
+                    </button>
+                    <button onclick="filterCategory('lurik')" id="tab-lurik" class="cat-tab px-4 py-2 rounded-xl bg-daniswara-parchmentsoft border border-daniswara-border text-daniswara-soga hover:border-daniswara-gold font-bold whitespace-nowrap transition font-cinzel">
+                        Lurik Prasojo Klasik (2)
+                    </button>
+                </div>
+
+                <!-- Search & Sort Controls -->
+                <div class="flex items-center gap-3 font-mono text-xs">
+                    <div class="relative flex-1 sm:w-64">
+                        <input type="text" id="searchInput" onkeyup="searchProducts()" placeholder="Cari nama motif / bahan..." class="w-full pl-9 pr-3 py-2 bg-daniswara-parchmentsoft border border-daniswara-border rounded-xl text-xs focus:outline-none focus:border-daniswara-gold">
+                        <i class="fa-solid fa-magnifying-glass absolute left-3 top-2.5 text-daniswara-soga/40"></i>
+                    </div>
+
+                    <select id="sortSelect" onchange="sortProducts()" class="bg-daniswara-parchmentsoft border border-daniswara-border rounded-xl px-3 py-2 text-xs focus:outline-none focus:border-daniswara-gold font-mono">
+                        <option value="featured">Paling Populer</option>
+                        <option value="price-low">Harga: Rendah ke Tinggi</option>
+                        <option value="price-high">Harga: Tinggi ke Rendah</option>
+                    </select>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- 5. PRODUCT GRID -->
+    <section class="py-12 sm:py-16 bg-white min-h-[600px]">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            
+            <div id="productGrid" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
+                
+                <!-- 1. Batik Tulis Parang Barong Sutra -->
+                <div class="product-card bg-daniswara-parchment rounded-3xl border border-daniswara-border overflow-hidden flex flex-col group" data-category="tulis" data-price="2850000" data-name="Batik Tulis Parang Rusak Barong Sutra Baron Soga">
+                    <div class="relative overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1607604276583-eef5d076aa5f?q=80&w=500&auto=format&fit=crop" alt="Parang Barong Sutra" class="w-full h-64 object-cover group-hover:scale-105 transition duration-500">
+                        <div class="absolute top-3 left-3 bg-daniswara-soga text-daniswara-goldlight text-[10px] font-cinzel font-bold uppercase px-2.5 py-1 rounded shadow border border-daniswara-gold/40">
+                            100% Tulis Canting
+                        </div>
+                        <div class="absolute bottom-3 right-3 bg-white/90 backdrop-blur-sm text-daniswara-soga text-[10px] font-mono font-bold px-2 py-0.5 rounded border border-daniswara-border">
+                            2.60 x 1.15 M
+                        </div>
+                    </div>
+                    <div class="p-5 flex-1 flex flex-col justify-between space-y-3">
+                        <div>
+                            <span class="text-[11px] font-mono text-daniswara-gold font-bold block">Sutra Baron • Soga Kayu Tingi</span>
+                            <a href="detail.html" class="font-cinzel font-bold text-lg text-daniswara-soga hover:text-daniswara-gold transition leading-snug block">
+                                Parang Rusak Barong Sutra
+                            </a>
+                            <p class="text-xs text-daniswara-soga/70 mt-1 line-clamp-2 font-serif text-sm">
+                                Simbol kekuatan kepemimpinan berwibawa di atas sutra tenun baron bertatah rona cokelat soga matang.
+                            </p>
+                        </div>
+                        <div class="pt-3 border-t border-daniswara-border flex items-center justify-between font-mono">
+                            <div>
+                                <span class="text-[10px] text-daniswara-soga/50 uppercase block">1 Lembar Kain</span>
+                                <span class="text-sm font-bold text-daniswara-soga">Rp 2.850.000</span>
+                            </div>
+                            <div class="flex items-center gap-1.5">
+                                <a href="detail.html" class="px-3 py-1.5 bg-white border border-daniswara-border hover:border-daniswara-gold text-daniswara-soga rounded-xl text-xs font-bold transition">
+                                    Detail
+                                </a>
+                                <a href="https://wa.me/6281234567890?text=Halo%20Daniswara,%20saya%20tertarik%20dengan%20kain%20Batik%20Tulis%20Parang%20Barong." target="_blank" class="px-3 py-1.5 bg-daniswara-soga hover:bg-daniswara-sogadark text-daniswara-goldlight rounded-xl text-xs font-bold transition">
+                                    <i class="fa-brands fa-whatsapp"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 2. Batik Tulis Megamendung Sapta Warna Indigo -->
+                <div class="product-card bg-daniswara-parchment rounded-3xl border border-daniswara-border overflow-hidden flex flex-col group" data-category="tulis" data-price="2150000" data-name="Batik Tulis Megamendung Sapta Warna Indigofera Cirebon">
+                    <div class="relative overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1584100936595-c0654b55a2e2?q=80&w=500&auto=format&fit=crop" alt="Megamendung Indigo" class="w-full h-64 object-cover group-hover:scale-105 transition duration-500">
+                        <div class="absolute top-3 left-3 bg-daniswara-indigo text-daniswara-goldlight text-[10px] font-cinzel font-bold uppercase px-2.5 py-1 rounded shadow border border-daniswara-gold/40">
+                            Indigofera Natural
+                        </div>
+                        <div class="absolute bottom-3 right-3 bg-white/90 backdrop-blur-sm text-daniswara-soga text-[10px] font-mono font-bold px-2 py-0.5 rounded border border-daniswara-border">
+                            2.50 x 1.15 M
+                        </div>
+                    </div>
+                    <div class="p-5 flex-1 flex flex-col justify-between space-y-3">
+                        <div>
+                            <span class="text-[11px] font-mono text-daniswara-gold font-bold block">Katun Primissima • 7 Gradasi</span>
+                            <a href="detail.html" class="font-cinzel font-bold text-lg text-daniswara-soga hover:text-daniswara-gold transition leading-snug block">
+                                Megamendung Sapta Warna
+                            </a>
+                            <p class="text-xs text-daniswara-soga/70 mt-1 line-clamp-2 font-serif text-sm">
+                                Motif mega awan khas pesisir Cirebon dengan gradasi biru indigo pembawa ketenangan dan kesejukan batin.
+                            </p>
+                        </div>
+                        <div class="pt-3 border-t border-daniswara-border flex items-center justify-between font-mono">
+                            <div>
+                                <span class="text-[10px] text-daniswara-soga/50 uppercase block">1 Lembar Kain</span>
+                                <span class="text-sm font-bold text-daniswara-soga">Rp 2.150.000</span>
+                            </div>
+                            <div class="flex items-center gap-1.5">
+                                <a href="detail.html" class="px-3 py-1.5 bg-white border border-daniswara-border hover:border-daniswara-gold text-daniswara-soga rounded-xl text-xs font-bold transition">
+                                    Detail
+                                </a>
+                                <a href="https://wa.me/6281234567890?text=Halo%20Daniswara,%20saya%20tertarik%20dengan%20Batik%20Megamendung%20Indigo." target="_blank" class="px-3 py-1.5 bg-daniswara-soga hover:bg-daniswara-sogadark text-daniswara-goldlight rounded-xl text-xs font-bold transition">
+                                    <i class="fa-brands fa-whatsapp"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 3. Batik Tulis Truntum Pengantin Sri Narendra -->
+                <div class="product-card bg-daniswara-parchment rounded-3xl border border-daniswara-border overflow-hidden flex flex-col group" data-category="tulis" data-price="2450000" data-name="Batik Tulis Truntum Pengantin Sri Narendra Soga">
+                    <div class="relative overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1579656381226-5fc0f0100c3b?q=80&w=500&auto=format&fit=crop" alt="Truntum Sri Narendra" class="w-full h-64 object-cover group-hover:scale-105 transition duration-500">
+                        <div class="absolute top-3 left-3 bg-amber-900 text-white text-[10px] font-cinzel font-bold uppercase px-2.5 py-1 rounded shadow border border-daniswara-gold/40">
+                            Pernikahan Adat
+                        </div>
+                        <div class="absolute bottom-3 right-3 bg-white/90 backdrop-blur-sm text-daniswara-soga text-[10px] font-mono font-bold px-2 py-0.5 rounded border border-daniswara-border">
+                            2.50 x 1.15 M
+                        </div>
+                    </div>
+                    <div class="p-5 flex-1 flex flex-col justify-between space-y-3">
+                        <div>
+                            <span class="text-[11px] font-mono text-daniswara-gold font-bold block">Katun Primissima Gamelan • Soga Alami</span>
+                            <a href="detail.html" class="font-cinzel font-bold text-lg text-daniswara-soga hover:text-daniswara-gold transition leading-snug block">
+                                Truntum Sri Narendra
+                            </a>
+                            <p class="text-xs text-daniswara-soga/70 mt-1 line-clamp-2 font-serif text-sm">
+                                Motif taburan bunga melati bintang malam simbol cinta abadi, biasa dikenakan orang tua pengantin dalam adat Jawa.
+                            </p>
+                        </div>
+                        <div class="pt-3 border-t border-daniswara-border flex items-center justify-between font-mono">
+                            <div>
+                                <span class="text-[10px] text-daniswara-soga/50 uppercase block">1 Lembar Kain</span>
+                                <span class="text-sm font-bold text-daniswara-soga">Rp 2.450.000</span>
+                            </div>
+                            <div class="flex items-center gap-1.5">
+                                <a href="detail.html" class="px-3 py-1.5 bg-white border border-daniswara-border hover:border-daniswara-gold text-daniswara-soga rounded-xl text-xs font-bold transition">
+                                    Detail
+                                </a>
+                                <a href="https://wa.me/6281234567890?text=Halo%20Daniswara,%20saya%20tertarik%20dengan%20Batik%20Truntum%20Pengantin." target="_blank" class="px-3 py-1.5 bg-daniswara-soga hover:bg-daniswara-sogadark text-daniswara-goldlight rounded-xl text-xs font-bold transition">
+                                    <i class="fa-brands fa-whatsapp"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 4. Batik Tulis Kawung Picis Prabu -->
+                <div class="product-card bg-daniswara-parchment rounded-3xl border border-daniswara-border overflow-hidden flex flex-col group" data-category="tulis" data-price="1950000" data-name="Batik Tulis Kawung Picis Prabu Soga Klasik">
+                    <div class="relative overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1555041469-a586c61ea9bc?q=80&w=500&auto=format&fit=crop" alt="Kawung Picis Prabu" class="w-full h-64 object-cover group-hover:scale-105 transition duration-500">
+                        <div class="absolute top-3 left-3 bg-daniswara-soga text-daniswara-goldlight text-[10px] font-cinzel font-bold uppercase px-2.5 py-1 rounded shadow border border-daniswara-gold/40">
+                            Geometris Klasik
+                        </div>
+                        <div class="absolute bottom-3 right-3 bg-white/90 backdrop-blur-sm text-daniswara-soga text-[10px] font-mono font-bold px-2 py-0.5 rounded border border-daniswara-border">
+                            2.50 x 1.15 M
+                        </div>
+                    </div>
+                    <div class="p-5 flex-1 flex flex-col justify-between space-y-3">
+                        <div>
+                            <span class="text-[11px] font-mono text-daniswara-gold font-bold block">Katun Primissima • Isen Cecek Halus</span>
+                            <a href="detail.html" class="font-cinzel font-bold text-lg text-daniswara-soga hover:text-daniswara-gold transition leading-snug block">
+                                Kawung Picis Prabu
+                            </a>
+                            <p class="text-xs text-daniswara-soga/70 mt-1 line-clamp-2 font-serif text-sm">
+                                Motif empat kelopak simetris lambang kesucian hati, keadilan moral, dan kebijaksanaan hidup.
+                            </p>
+                        </div>
+                        <div class="pt-3 border-t border-daniswara-border flex items-center justify-between font-mono">
+                            <div>
+                                <span class="text-[10px] text-daniswara-soga/50 uppercase block">1 Lembar Kain</span>
+                                <span class="text-sm font-bold text-daniswara-soga">Rp 1.950.000</span>
+                            </div>
+                            <div class="flex items-center gap-1.5">
+                                <a href="detail.html" class="px-3 py-1.5 bg-white border border-daniswara-border hover:border-daniswara-gold text-daniswara-soga rounded-xl text-xs font-bold transition">
+                                    Detail
+                                </a>
+                                <a href="https://wa.me/6281234567890?text=Halo%20Daniswara,%20saya%20tertarik%20dengan%20Batik%20Kawung%20Picis." target="_blank" class="px-3 py-1.5 bg-daniswara-soga hover:bg-daniswara-sogadark text-daniswara-goldlight rounded-xl text-xs font-bold transition">
+                                    <i class="fa-brands fa-whatsapp"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 5. Batik Cap Halus Sekar Jagad Solo -->
+                <div class="product-card bg-daniswara-parchment rounded-3xl border border-daniswara-border overflow-hidden flex flex-col group" data-category="cap" data-price="420000" data-name="Batik Cap Halus Sekar Jagad Solo Katun Primissima">
+                    <div class="relative overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1528458876861-544fd1761a91?q=80&w=500&auto=format&fit=crop" alt="Batik Cap Sekar Jagad" class="w-full h-64 object-cover group-hover:scale-105 transition duration-500">
+                        <div class="absolute top-3 left-3 bg-emerald-800 text-white text-[10px] font-cinzel font-bold uppercase px-2.5 py-1 rounded shadow">
+                            Cap Tembaga Halus
+                        </div>
+                        <div class="absolute bottom-3 right-3 bg-white/90 backdrop-blur-sm text-daniswara-soga text-[10px] font-mono font-bold px-2 py-0.5 rounded border border-daniswara-border">
+                            2.20 x 1.15 M
+                        </div>
+                    </div>
+                    <div class="p-5 flex-1 flex flex-col justify-between space-y-3">
+                        <div>
+                            <span class="text-[11px] font-mono text-emerald-800 font-bold block">Katun Primissima • Soga Cokelat</span>
+                            <a href="detail.html" class="font-cinzel font-bold text-lg text-daniswara-soga hover:text-daniswara-gold transition leading-snug block">
+                                Batik Cap Sekar Jagad Solo
+                            </a>
+                            <p class="text-xs text-daniswara-soga/70 mt-1 line-clamp-2 font-serif text-sm">
+                                Gabungan ragam motif pulau-pulau Nusantara yang melambangkan keindahan keanekaragaman dan keharmonisan.
+                            </p>
+                        </div>
+                        <div class="pt-3 border-t border-daniswara-border flex items-center justify-between font-mono">
+                            <div>
+                                <span class="text-[10px] text-daniswara-soga/50 uppercase block">Bahan Kemeja / Rok</span>
+                                <span class="text-sm font-bold text-daniswara-soga">Rp 420.000</span>
+                            </div>
+                            <div class="flex items-center gap-1.5">
+                                <a href="detail.html" class="px-3 py-1.5 bg-white border border-daniswara-border hover:border-daniswara-gold text-daniswara-soga rounded-xl text-xs font-bold transition">
+                                    Detail
+                                </a>
+                                <a href="https://wa.me/6281234567890?text=Halo%20Daniswara,%20saya%20tertarik%20dengan%20Batik%20Cap%20Sekar%20Jagad." target="_blank" class="px-3 py-1.5 bg-daniswara-soga hover:bg-daniswara-sogadark text-daniswara-goldlight rounded-xl text-xs font-bold transition">
+                                    <i class="fa-brands fa-whatsapp"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 6. Batik Cap Sidomukti Keraton -->
+                <div class="product-card bg-daniswara-parchment rounded-3xl border border-daniswara-border overflow-hidden flex flex-col group" data-category="cap" data-price="450000" data-name="Batik Cap Sidomukti Keraton Katun Primissima">
+                    <div class="relative overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1544457070-4cd773b4d71e?q=80&w=500&auto=format&fit=crop" alt="Batik Cap Sidomukti" class="w-full h-64 object-cover group-hover:scale-105 transition duration-500">
+                        <div class="absolute top-3 left-3 bg-emerald-800 text-white text-[10px] font-cinzel font-bold uppercase px-2.5 py-1 rounded shadow">
+                            Cap Tembaga Halus
+                        </div>
+                        <div class="absolute bottom-3 right-3 bg-white/90 backdrop-blur-sm text-daniswara-soga text-[10px] font-mono font-bold px-2 py-0.5 rounded border border-daniswara-border">
+                            2.20 x 1.15 M
+                        </div>
+                    </div>
+                    <div class="p-5 flex-1 flex flex-col justify-between space-y-3">
+                        <div>
+                            <span class="text-[11px] font-mono text-emerald-800 font-bold block">Katun Dobby Bertekstur • Soga Emas</span>
+                            <a href="detail.html" class="font-cinzel font-bold text-lg text-daniswara-soga hover:text-daniswara-gold transition leading-snug block">
+                                Batik Cap Sidomukti Keraton
+                            </a>
+                            <p class="text-xs text-daniswara-soga/70 mt-1 line-clamp-2 font-serif text-sm">
+                                Doa agar sang pemakai senantiasa mencapai kemuliaan hidup <em>(mukti)</em>, rezeki melimpah, dan ketenteraman.
+                            </p>
+                        </div>
+                        <div class="pt-3 border-t border-daniswara-border flex items-center justify-between font-mono">
+                            <div>
+                                <span class="text-[10px] text-daniswara-soga/50 uppercase block">Bahan Kemeja / Rok</span>
+                                <span class="text-sm font-bold text-daniswara-soga">Rp 450.000</span>
+                            </div>
+                            <div class="flex items-center gap-1.5">
+                                <a href="detail.html" class="px-3 py-1.5 bg-white border border-daniswara-border hover:border-daniswara-gold text-daniswara-soga rounded-xl text-xs font-bold transition">
+                                    Detail
+                                </a>
+                                <a href="https://wa.me/6281234567890?text=Halo%20Daniswara,%20saya%20tertarik%20dengan%20Batik%20Cap%20Sidomukti." target="_blank" class="px-3 py-1.5 bg-daniswara-soga hover:bg-daniswara-sogadark text-daniswara-goldlight rounded-xl text-xs font-bold transition">
+                                    <i class="fa-brands fa-whatsapp"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 7. Selendang Tenun Ikat Troso Sutra -->
+                <div class="product-card bg-daniswara-parchment rounded-3xl border border-daniswara-border overflow-hidden flex flex-col group" data-category="tenun" data-price="850000" data-name="Selendang Tenun Ikat Troso Sutra Jepara ATBM">
+                    <div class="relative overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1544457070-4cd773b4d71e?q=80&w=500&auto=format&fit=crop" alt="Selendang Tenun Ikat" class="w-full h-64 object-cover group-hover:scale-105 transition duration-500">
+                        <div class="absolute top-3 left-3 bg-amber-900 text-white text-[10px] font-cinzel font-bold uppercase px-2.5 py-1 rounded shadow">
+                            Tenun ATBM Asli
+                        </div>
+                        <div class="absolute bottom-3 right-3 bg-white/90 backdrop-blur-sm text-daniswara-soga text-[10px] font-mono font-bold px-2 py-0.5 rounded border border-daniswara-border">
+                            2.10 x 0.60 M
+                        </div>
+                    </div>
+                    <div class="p-5 flex-1 flex flex-col justify-between space-y-3">
+                        <div>
+                            <span class="text-[11px] font-mono text-amber-700 font-bold block">Sutra Pakan • Pewarna Alami</span>
+                            <a href="detail.html" class="font-cinzel font-bold text-lg text-daniswara-soga hover:text-daniswara-gold transition leading-snug block">
+                                Selendang Tenun Ikat Troso
+                            </a>
+                            <p class="text-xs text-daniswara-soga/70 mt-1 line-clamp-2 font-serif text-sm">
+                                Selendang bahu sutra tenun ikat motif geometris etnik dengan rumbai tassel rapi penambah pesona kebaya.
+                            </p>
+                        </div>
+                        <div class="pt-3 border-t border-daniswara-border flex items-center justify-between font-mono">
+                            <div>
+                                <span class="text-[10px] text-daniswara-soga/50 uppercase block">Selendang Sutra</span>
+                                <span class="text-sm font-bold text-daniswara-soga">Rp 850.000</span>
+                            </div>
+                            <div class="flex items-center gap-1.5">
+                                <a href="detail.html" class="px-3 py-1.5 bg-white border border-daniswara-border hover:border-daniswara-gold text-daniswara-soga rounded-xl text-xs font-bold transition">
+                                    Detail
+                                </a>
+                                <a href="https://wa.me/6281234567890?text=Halo%20Daniswara,%20saya%20tertarik%20dengan%20Selendang%20Tenun%20Troso." target="_blank" class="px-3 py-1.5 bg-daniswara-soga hover:bg-daniswara-sogadark text-daniswara-goldlight rounded-xl text-xs font-bold transition">
+                                    <i class="fa-brands fa-whatsapp"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 8. Sarung Tenun Ikat Sumba Barat ATBM -->
+                <div class="product-card bg-daniswara-parchment rounded-3xl border border-daniswara-border overflow-hidden flex flex-col group" data-category="tenun" data-price="1650000" data-name="Sarung Tenun Ikat Sumba Barat Motif Kuda ATBM">
+                    <div class="relative overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1607604276583-eef5d076aa5f?q=80&w=500&auto=format&fit=crop" alt="Sarung Tenun Sumba" class="w-full h-64 object-cover group-hover:scale-105 transition duration-500">
+                        <div class="absolute top-3 left-3 bg-amber-900 text-white text-[10px] font-cinzel font-bold uppercase px-2.5 py-1 rounded shadow">
+                            Tenun Ikat NTT
+                        </div>
+                        <div class="absolute bottom-3 right-3 bg-white/90 backdrop-blur-sm text-daniswara-soga text-[10px] font-mono font-bold px-2 py-0.5 rounded border border-daniswara-border">
+                            2.40 x 1.10 M
+                        </div>
+                    </div>
+                    <div class="p-5 flex-1 flex flex-col justify-between space-y-3">
+                        <div>
+                            <span class="text-[11px] font-mono text-amber-700 font-bold block">Katun Pintal Tangan • Indigo & Akar Mengkudu</span>
+                            <a href="detail.html" class="font-cinzel font-bold text-lg text-daniswara-soga hover:text-daniswara-gold transition leading-snug block">
+                                Sarung Tenun Ikat Sumba Motif Kuda
+                            </a>
+                            <p class="text-xs text-daniswara-soga/70 mt-1 line-clamp-2 font-serif text-sm">
+                                Kain tenun ikat tebal motif kuda kambera dan burung kakatua warisan adat Sumba berpewarna alami.
+                            </p>
+                        </div>
+                        <div class="pt-3 border-t border-daniswara-border flex items-center justify-between font-mono">
+                            <div>
+                                <span class="text-[10px] text-daniswara-soga/50 uppercase block">1 Sarung Tenun</span>
+                                <span class="text-sm font-bold text-daniswara-soga">Rp 1.650.000</span>
+                            </div>
+                            <div class="flex items-center gap-1.5">
+                                <a href="detail.html" class="px-3 py-1.5 bg-white border border-daniswara-border hover:border-daniswara-gold text-daniswara-soga rounded-xl text-xs font-bold transition">
+                                    Detail
+                                </a>
+                                <a href="https://wa.me/6281234567890?text=Halo%20Daniswara,%20saya%20tertarik%20dengan%20Tenun%20Ikat%20Sumba." target="_blank" class="px-3 py-1.5 bg-daniswara-soga hover:bg-daniswara-sogadark text-daniswara-goldlight rounded-xl text-xs font-bold transition">
+                                    <i class="fa-brands fa-whatsapp"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 9. Kain Lurik Prasojo Klaten Motif Sapit Urang -->
+                <div class="product-card bg-daniswara-parchment rounded-3xl border border-daniswara-border overflow-hidden flex flex-col group" data-category="lurik" data-price="275000" data-name="Kain Lurik Prasojo Klaten Motif Sapit Urang ATBM">
+                    <div class="relative overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1528458876861-544fd1761a91?q=80&w=500&auto=format&fit=crop" alt="Kain Lurik Sapit Urang" class="w-full h-64 object-cover group-hover:scale-105 transition duration-500">
+                        <div class="absolute top-3 left-3 bg-daniswara-indigo text-daniswara-goldlight text-[10px] font-cinzel font-bold uppercase px-2.5 py-1 rounded shadow">
+                            Lurik Tenun ATBM
+                        </div>
+                        <div class="absolute bottom-3 right-3 bg-white/90 backdrop-blur-sm text-daniswara-soga text-[10px] font-mono font-bold px-2 py-0.5 rounded border border-daniswara-border">
+                            2.50 x 1.05 M
+                        </div>
+                    </div>
+                    <div class="p-5 flex-1 flex flex-col justify-between space-y-3">
+                        <div>
+                            <span class="text-[11px] font-mono text-daniswara-indigo font-bold block">100% Katun Tenun • Garis Klasik</span>
+                            <a href="detail.html" class="font-cinzel font-bold text-lg text-daniswara-soga hover:text-daniswara-gold transition leading-snug block">
+                                Lurik Klaten Motif Sapit Urang
+                            </a>
+                            <p class="text-xs text-daniswara-soga/70 mt-1 line-clamp-2 font-serif text-sm">
+                                Kain lurik garis vertikal tegas bernuansa hitam-abu arang untuk surjan pria atau blazer modern.
+                            </p>
+                        </div>
+                        <div class="pt-3 border-t border-daniswara-border flex items-center justify-between font-mono">
+                            <div>
+                                <span class="text-[10px] text-daniswara-soga/50 uppercase block">Bahan Surjan / Kemeja</span>
+                                <span class="text-sm font-bold text-daniswara-soga">Rp 275.000</span>
+                            </div>
+                            <div class="flex items-center gap-1.5">
+                                <a href="detail.html" class="px-3 py-1.5 bg-white border border-daniswara-border hover:border-daniswara-gold text-daniswara-soga rounded-xl text-xs font-bold transition">
+                                    Detail
+                                </a>
+                                <a href="https://wa.me/6281234567890?text=Halo%20Daniswara,%20saya%20tertarik%20dengan%20Kain%20Lurik%20Klaten." target="_blank" class="px-3 py-1.5 bg-daniswara-soga hover:bg-daniswara-sogadark text-daniswara-goldlight rounded-xl text-xs font-bold transition">
+                                    <i class="fa-brands fa-whatsapp"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 10. Kain Lurik Telupat Yogyakarta -->
+                <div class="product-card bg-daniswara-parchment rounded-3xl border border-daniswara-border overflow-hidden flex flex-col group" data-category="lurik" data-price="290000" data-name="Kain Lurik Telupat Yogyakarta Katun ATBM">
+                    <div class="relative overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1544816155-12df9643f363?q=80&w=500&auto=format&fit=crop" alt="Lurik Telupat" class="w-full h-64 object-cover group-hover:scale-105 transition duration-500">
+                        <div class="absolute top-3 left-3 bg-daniswara-soga text-daniswara-goldlight text-[10px] font-cinzel font-bold uppercase px-2.5 py-1 rounded shadow">
+                            Lurik Tenun ATBM
+                        </div>
+                        <div class="absolute bottom-3 right-3 bg-white/90 backdrop-blur-sm text-daniswara-soga text-[10px] font-mono font-bold px-2 py-0.5 rounded border border-daniswara-border">
+                            2.50 x 1.05 M
+                        </div>
+                    </div>
+                    <div class="p-5 flex-1 flex flex-col justify-between space-y-3">
+                        <div>
+                            <span class="text-[11px] font-mono text-daniswara-gold font-bold block">Katun Halus Dingin • Warna Marun Soga</span>
+                            <a href="detail.html" class="font-cinzel font-bold text-lg text-daniswara-soga hover:text-daniswara-gold transition leading-snug block">
+                                Lurik Tradisional Telupat Yogyakarta
+                            </a>
+                            <p class="text-xs text-daniswara-soga/70 mt-1 line-clamp-2 font-serif text-sm">
+                                Motif garis tiga-empat (telu-papat) filosofi keseimbangan empat pilar hidup rukun bermasyarakat.
+                            </p>
+                        </div>
+                        <div class="pt-3 border-t border-daniswara-border flex items-center justify-between font-mono">
+                            <div>
+                                <span class="text-[10px] text-daniswara-soga/50 uppercase block">Bahan Busana Adat</span>
+                                <span class="text-sm font-bold text-daniswara-soga">Rp 290.000</span>
+                            </div>
+                            <div class="flex items-center gap-1.5">
+                                <a href="detail.html" class="px-3 py-1.5 bg-white border border-daniswara-border hover:border-daniswara-gold text-daniswara-soga rounded-xl text-xs font-bold transition">
+                                    Detail
+                                </a>
+                                <a href="https://wa.me/6281234567890?text=Halo%20Daniswara,%20saya%20tertarik%20dengan%20Lurik%20Telupat." target="_blank" class="px-3 py-1.5 bg-daniswara-soga hover:bg-daniswara-sogadark text-daniswara-goldlight rounded-xl text-xs font-bold transition">
+                                    <i class="fa-brands fa-whatsapp"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- Empty Search State -->
+            <div id="noResults" class="hidden py-16 text-center space-y-3 font-mono">
+                <i class="fa-solid fa-scroll text-4xl text-daniswara-soga/30"></i>
+                <p class="text-sm font-bold text-daniswara-soga font-cinzel">Mahakarya wastra tidak ditemukan</p>
+                <p class="text-xs text-daniswara-soga/60">Coba ubah kata kunci pencarian nama motif atau pilih kategori lainnya.</p>
+                <button onclick="filterCategory('all')" class="mt-2 px-4 py-2 bg-daniswara-soga text-daniswara-goldlight text-xs font-bold rounded-xl font-cinzel">
+                    Tampilkan Semua Kain
+                </button>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- 6. FOOTER -->
+    <footer class="bg-daniswara-sogadark text-daniswara-goldlight py-16 border-t border-daniswara-gold/20 font-sans">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-10 mb-12">
+                <div class="lg:col-span-2 space-y-4">
+                    <a href="index.html" class="flex items-center gap-3">
+                        <div class="w-10 h-10 bg-daniswara-soga border border-daniswara-gold text-daniswara-gold flex items-center justify-center text-lg font-serif rounded-lg">
+                            <i class="fa-solid fa-feather-pointed"></i>
+                        </div>
+                        <span class="text-2xl font-cinzel font-black tracking-wider text-white uppercase">
+                            DANISWARA<span class="text-daniswara-gold">.</span>
+                        </span>
+                    </a>
+                    <p class="text-xs text-daniswara-goldlight/75 leading-relaxed font-serif max-w-sm">
+                        Atelier kriya kain tradisional Nusantara. Menjaga nyala api warisan adiluhung batik tulis canting tangan, tenun ikat sutra, dan lurik klasik bergaransi 100% otentik.
+                    </p>
+                </div>
+                <div class="space-y-3 font-mono">
+                    <h5 class="text-xs font-bold text-white uppercase tracking-wider font-cinzel">Kategori Wastra</h5>
+                    <ul class="space-y-2 text-xs text-daniswara-goldlight/70">
+                        <li><a href="katalog.html" class="hover:text-daniswara-gold transition">Batik Tulis Sutra</a></li>
+                        <li><a href="katalog.html" class="hover:text-daniswara-gold transition">Batik Cap Katun</a></li>
+                        <li><a href="katalog.html" class="hover:text-daniswara-gold transition">Selendang Tenun Ikat</a></li>
+                        <li><a href="katalog.html" class="hover:text-daniswara-gold transition">Lurik Tenun ATBM</a></li>
+                    </ul>
+                </div>
+                <div class="space-y-3 font-mono">
+                    <h5 class="text-xs font-bold text-white uppercase tracking-wider font-cinzel">Navigasi</h5>
+                    <ul class="space-y-2 text-xs text-daniswara-goldlight/70">
+                        <li><a href="index.html" class="hover:text-daniswara-gold transition">Beranda</a></li>
+                        <li><a href="katalog.html" class="hover:text-daniswara-gold transition">Katalog Mahakarya</a></li>
+                        <li><a href="tentang.html" class="hover:text-daniswara-gold transition">Maestro Pembatik</a></li>
+                        <li><a href="kontak.html" class="hover:text-daniswara-gold transition">Galeri & Kontak</a></li>
+                    </ul>
+                </div>
+                <div class="space-y-3 font-mono text-xs">
+                    <h5 class="text-xs font-bold text-white uppercase tracking-wider font-cinzel">WhatsApp Kurator</h5>
+                    <p class="text-daniswara-goldlight/70">Konsultasi motif pusaka & seragam adat:</p>
+                    <p class="text-daniswara-gold font-bold text-sm">+62 812-3456-7890</p>
+                </div>
+            </div>
+            <div class="pt-8 border-t border-white/10 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs font-mono text-daniswara-goldlight/50">
+                <p>&copy; 2026 DANISWARA ROYAL HERITAGE ATELIER. All rights reserved.</p>
+                <p>Template UMKM Kriya Batik & Wastra by Lentera Pasar</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- 7. FLOATING WHATSAPP -->
+    <div class="fixed bottom-24 right-4 sm:right-6 z-40">
+        <a href="https://wa.me/6281234567890?text=Halo%20Daniswara,%20saya%20tertarik%20dengan%20koleksi%20kain%20di%20katalog." 
+           target="_blank" 
+           class="flex items-center gap-2.5 bg-emerald-600 hover:bg-emerald-700 text-white px-4 py-3 rounded-full shadow-2xl transition-all duration-300 hover:scale-105 font-mono text-xs font-bold border-2 border-daniswara-gold">
+            <i class="fa-brands fa-whatsapp text-xl"></i>
+            <span class="hidden sm:inline">Kurator WhatsApp</span>
+        </a>
+    </div>
+
+    <!-- 8. LENTERA PASAR STICKY DEMO BAR -->
+    <div class="fixed bottom-4 left-4 right-4 z-50 max-w-5xl mx-auto">
+      <div class="bg-slate-900/95 backdrop-blur-md text-white px-4 py-3 rounded-2xl shadow-2xl border border-slate-700/80 flex flex-col md:flex-row items-center justify-between gap-3">
+        <div class="flex items-center gap-3">
+          <div class="w-8 h-8 rounded-lg bg-amber-600/30 border border-amber-500/50 flex items-center justify-center shrink-0">
+            <svg class="w-4 h-4 text-amber-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z" /></svg>
+          </div>
+          <div>
+            <div class="text-xs md:text-sm font-bold text-slate-100 flex items-center gap-2">
+              <span>Lentera Pasar Demo</span>
+              <span class="text-[10px] px-1.5 py-0.5 rounded bg-amber-500/20 text-amber-300 font-mono">Katalog Batik & Wastra</span>
+            </div>
+            <p class="text-[11px] text-slate-400 hidden sm:block">Filter kategori real-time, pencarian motif, dan konsultasi kain eksklusif via WhatsApp.</p>
+          </div>
+        </div>
+
+        <div class="flex items-center gap-3 w-full md:w-auto justify-end">
+          <a href="https://wa.me/6281234567890?text=Halo%20Tim%20Lentera%20Pasar,%20saya%20tertarik%20menggunakan%20template%20website%20Batik%20Heritage%20Atelier%20ini." 
+             target="_blank"
+             class="w-full md:w-auto inline-flex items-center justify-center gap-2 bg-gradient-to-r from-amber-600 to-amber-800 hover:from-amber-500 hover:to-amber-700 text-white text-xs md:text-sm font-bold px-5 py-2.5 rounded-xl shadow-lg transition-all hover:scale-105 shrink-0 font-serif">
+            <span>Gunakan Template Ini</span>
+            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3" /></svg>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <!-- SCRIPT FILTER & SORT -->
+    <script>
+        let currentCategory = 'all';
+
+        function filterCategory(cat) {
+            currentCategory = cat;
+            document.querySelectorAll('.cat-tab').forEach(btn => {
+                btn.classList.remove('bg-daniswara-soga', 'text-daniswara-goldlight', 'border-daniswara-gold/30');
+                btn.classList.add('bg-daniswara-parchmentsoft', 'border', 'border-daniswara-border', 'text-daniswara-soga');
+            });
+            const activeBtn = document.getElementById(`tab-${cat}`);
+            if (activeBtn) {
+                activeBtn.classList.remove('bg-daniswara-parchmentsoft', 'border', 'border-daniswara-border', 'text-daniswara-soga');
+                activeBtn.classList.add('bg-daniswara-soga', 'text-daniswara-goldlight', 'border-daniswara-gold/30');
+            }
+
+            applyFilters();
+        }
+
+        function searchProducts() {
+            applyFilters();
+        }
+
+        function applyFilters() {
+            const query = document.getElementById('searchInput').value.toLowerCase();
+            const cards = document.querySelectorAll('.product-card');
+            let visibleCount = 0;
+
+            cards.forEach(card => {
+                const cardCat = card.getAttribute('data-category');
+                const cardName = card.getAttribute('data-name').toLowerCase();
+
+                const matchesCat = (currentCategory === 'all' || cardCat === currentCategory);
+                const matchesSearch = cardName.includes(query);
+
+                if (matchesCat && matchesSearch) {
+                    card.style.display = 'flex';
+                    visibleCount++;
+                } else {
+                    card.style.display = 'none';
+                }
+            });
+
+            const noResults = document.getElementById('noResults');
+            if (visibleCount === 0) {
+                noResults.classList.remove('hidden');
+            } else {
+                noResults.classList.add('hidden');
+            }
+        }
+
+        function sortProducts() {
+            const sortVal = document.getElementById('sortSelect').value;
+            const grid = document.getElementById('productGrid');
+            const cards = Array.from(grid.querySelectorAll('.product-card'));
+
+            cards.sort((a, b) => {
+                const priceA = parseInt(a.getAttribute('data-price'));
+                const priceB = parseInt(b.getAttribute('data-price'));
+
+                if (sortVal === 'price-low') {
+                    return priceA - priceB;
+                } else if (sortVal === 'price-high') {
+                    return priceB - priceA;
+                } else {
+                    return 0;
+                }
+            });
+
+            cards.forEach(card => grid.appendChild(card));
+        }
+
+        // Mobile menu toggle
+        const mobileMenuBtn = document.getElementById('mobileMenuBtn');
+        const mobileMenu = document.getElementById('mobileMenu');
+        const menuIcon = document.getElementById('menuIcon');
+
+        mobileMenuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+            if (mobileMenu.classList.contains('hidden')) {
+                menuIcon.classList.remove('fa-xmark');
+                menuIcon.classList.add('fa-bars');
+            } else {
+                menuIcon.classList.remove('fa-bars');
+                menuIcon.classList.add('fa-xmark');
+            }
+        });
+    </script>
+</body>
+</html>
