@@ -1,0 +1,471 @@
+<!DOCTYPE html>
+<html lang="id" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kemitraan Petani & Dry Mill Lab // NUSANTARA ORIGIN ESTATE</title>
+    <meta name="description" content="Mengenal Nusantara Origin Estate: Kemitraan 450+ petani kopi dataran tinggi Gayo, Puntang, Ijen, Kerinci, pengeringan solar dome, dan sortasi defect SCA.">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700;800;900&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Playfair+Display:ital,wght@0,600;0,700;0,800;1,600&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome 6 -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        estate: {
+                            jute: '#3B2A1D',
+                            jutedark: '#271B12',
+                            jutelight: '#543D2B',
+                            pine: '#1B4332',
+                            pinedark: '#081C15',
+                            pinelight: '#2D6A4F',
+                            gold: '#C59B27',
+                            goldlight: '#E6C45E',
+                            parchment: '#F7F3EB',
+                            parchmentdark: '#EFE8DC',
+                            border: '#D9CEBF',
+                            charcoal: '#1A1613'
+                        }
+                    },
+                    fontFamily: {
+                        sans: ['"Plus Jakarta Sans"', 'sans-serif'],
+                        serif: ['"Playfair Display"', 'serif'],
+                        cinzel: ['"Cinzel"', 'serif']
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        .no-scrollbar::-webkit-scrollbar { display: none; }
+        .no-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
+
+        .origin-hero-bg {
+            background: linear-gradient(180deg, #ECE5D8 0%, #F7F3EB 100%);
+        }
+    </style>
+</head>
+<body class="bg-estate-parchment text-estate-charcoal font-sans antialiased selection:bg-estate-pine selection:text-white">
+
+    <!-- 1. TOP ANNOUNCEMENT BAR -->
+    <div class="bg-estate-jute text-amber-100 text-xs py-2.5 px-4 font-sans font-medium border-b border-amber-950/40">
+        <div class="max-w-7xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-2 text-center sm:text-left">
+            <div class="flex items-center justify-center gap-2">
+                <span class="px-2 py-0.5 bg-estate-pine text-white text-[10px] uppercase font-bold tracking-wider rounded-md shadow-xs flex items-center gap-1">
+                    <i class="fa-solid fa-handshake-simple text-emerald-200"></i> FAIR TRADE ORIGIN
+                </span>
+                <span class="text-white/95 font-medium">Kemitraan 450+ Petani Kopi Dataran Tinggi • Fasilitas Wet Mill & Solar Dome Terpadu</span>
+            </div>
+            <div class="flex items-center gap-4 text-xs">
+                <a href="katalog.html" class="text-amber-300 hover:underline font-bold transition flex items-center gap-1">
+                    Katalog Green Beans <i class="fa-solid fa-arrow-right text-[10px]"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- 2. NAVBAR -->
+    <header class="sticky top-0 z-40 bg-white/95 backdrop-blur-md border-b border-estate-border transition-all shadow-xs">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-20 sm:h-24">
+                
+                <!-- Logo -->
+                <a href="index.html" class="flex items-center gap-3.5 group">
+                    <div class="w-12 h-12 bg-gradient-to-br from-estate-jute to-estate-pine text-white flex items-center justify-center text-2xl font-bold rounded-2xl shadow-md group-hover:scale-105 transition">
+                        <i class="fa-solid fa-mountain"></i>
+                    </div>
+                    <div class="flex flex-col">
+                        <span class="text-2xl sm:text-3xl font-extrabold tracking-tight text-estate-jute uppercase leading-none font-serif">
+                            NUSANTARA ORIGIN<span class="text-estate-gold">.</span>
+                        </span>
+                        <span class="text-[9px] tracking-[0.28em] text-estate-pine uppercase mt-1 font-bold">
+                            HIGHLAND BEANS & TEA ESTATE
+                        </span>
+                    </div>
+                </a>
+
+                <!-- Desktop Navigation Links -->
+                <nav class="hidden lg:flex items-center gap-7 text-xs font-bold tracking-wider uppercase text-slate-700 font-sans">
+                    <a href="index.html" class="hover:text-estate-pine transition">Beranda</a>
+                    <a href="katalog.html" class="hover:text-estate-pine transition">Katalog Green Beans & Teh</a>
+                    <a href="detail.html" class="hover:text-estate-pine transition">Detail Cupping Gayo</a>
+                    <a href="tentang.html" class="text-estate-pine border-b-2 border-estate-pine pb-1 font-bold">Kemitraan Petani & Dry Mill</a>
+                    <a href="artikel.html" class="hover:text-estate-pine transition">Proses Pasca-Panen</a>
+                    <a href="kontak.html" class="hover:text-estate-pine transition">Gudang & Sample Roastery</a>
+                </nav>
+
+                <!-- Actions -->
+                <div class="hidden sm:flex items-center gap-3">
+                    <a href="https://wa.me/6281234567890?text=Halo%20Admin%20Nusantara%20Origin,%20saya%20ingin%20tanya%20profil%20perkebunan." 
+                       target="_blank"
+                       class="inline-flex items-center gap-2 px-4 py-2.5 bg-estate-pine hover:bg-estate-pinedark text-xs font-bold text-white rounded-xl transition shadow-md hover:shadow-lg">
+                        <i class="fa-brands fa-whatsapp text-base"></i>
+                        <span>Hubungi Origin WA</span>
+                    </a>
+                </div>
+
+                <!-- Mobile Menu Button -->
+                <div class="flex lg:hidden items-center gap-2">
+                    <a href="https://wa.me/6281234567890" target="_blank" class="p-2.5 bg-emerald-100 text-emerald-800 rounded-xl text-sm">
+                        <i class="fa-brands fa-whatsapp"></i>
+                    </a>
+                    <button id="mobileMenuBtn" class="p-2.5 text-slate-700 hover:text-estate-pine focus:outline-hidden rounded-xl bg-amber-50">
+                        <i id="menuIcon" class="fa-solid fa-bars text-xl"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Mobile Dropdown Menu -->
+        <div id="mobileMenu" class="hidden lg:hidden border-t border-estate-border bg-white/98 px-6 py-5 shadow-xl">
+            <div class="flex flex-col gap-4 text-sm font-bold uppercase text-slate-700">
+                <a href="index.html" class="hover:text-estate-pine transition flex items-center justify-between">
+                    <span>Beranda</span>
+                    <i class="fa-solid fa-chevron-right text-xs"></i>
+                </a>
+                <a href="katalog.html" class="hover:text-estate-pine transition flex items-center justify-between">
+                    <span>Katalog Green Beans & Teh Artisan</span>
+                    <i class="fa-solid fa-chevron-right text-xs"></i>
+                </a>
+                <a href="detail.html" class="hover:text-estate-pine transition flex items-center justify-between">
+                    <span>Detail Cupping Notes & Moisture</span>
+                    <i class="fa-solid fa-chevron-right text-xs"></i>
+                </a>
+                <a href="tentang.html" class="text-estate-pine flex items-center justify-between">
+                    <span>Kemitraan Petani & Wet Mill Dome</span>
+                    <i class="fa-solid fa-chevron-right text-xs"></i>
+                </a>
+                <a href="artikel.html" class="hover:text-estate-pine transition flex items-center justify-between">
+                    <span>Panduan Proses Pasca-Panen Kopi</span>
+                    <i class="fa-solid fa-chevron-right text-xs"></i>
+                </a>
+                <a href="kontak.html" class="hover:text-estate-pine transition flex items-center justify-between">
+                    <span>Gudang Dry Mill & Request Sample</span>
+                    <i class="fa-solid fa-chevron-right text-xs"></i>
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- 3. HERO ABOUT SECTION -->
+    <section class="py-14 md:py-20 origin-hero-bg border-b border-estate-border">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 items-center">
+                
+                <div class="lg:col-span-7 space-y-5">
+                    <span class="px-3.5 py-1 rounded-full bg-emerald-100 text-estate-pine text-xs font-bold uppercase tracking-wider border border-emerald-300">
+                        DIRECT HIGHLAND SOURCING ETHICS
+                    </span>
+                    <h1 class="text-3xl sm:text-5xl font-extrabold text-estate-jute font-serif leading-[1.15]">
+                        Kesejahteraan Petani, <br>
+                        <span class="text-transparent bg-clip-text bg-gradient-to-r from-estate-pine via-emerald-800 to-estate-jute">
+                            Presisi Green Beans Specialty
+                        </span>
+                    </h1>
+                    <p class="text-slate-700 text-sm sm:text-base leading-relaxed max-w-2xl">
+                        <strong>NUSANTARA ORIGIN ESTATE</strong> beroperasi sebagai jembatan langsung antara 450+ keluarga petani kopi di lereng pegunungan Gayo, Puntang, Ijen, Kerinci, dan Toraja dengan para roastery kopi di seluruh nusantara dan mancanegara. Kami membangun stasiun pemrosesan basah (*wet mill*) terpusat, pengeringan rumah kaca *solar dome*, dan fasilitas *dry mill* modern untuk memastikan konsistensi kadar air 11.5% dan defect minim di bawah 3%.
+                    </p>
+                    <div class="flex flex-wrap items-center gap-4 pt-2">
+                        <div class="flex items-center gap-2 text-xs font-bold text-slate-800 bg-white px-4 py-2 rounded-xl border border-estate-border shadow-xs">
+                            <i class="fa-solid fa-handshake-angle text-emerald-700"></i> Fair Trade Premium Price
+                        </div>
+                        <div class="flex items-center gap-2 text-xs font-bold text-slate-800 bg-white px-4 py-2 rounded-xl border border-estate-border shadow-xs">
+                            <i class="fa-solid fa-sun-plant-wilt text-amber-700"></i> Solar Dome African Bed Drying
+                        </div>
+                    </div>
+                </div>
+
+                <div class="lg:col-span-5 relative">
+                    <div class="rounded-3xl overflow-hidden shadow-2xl border-4 border-white bg-slate-100">
+                        <img src="https://images.unsplash.com/photo-1576092768241-dec231879fc3?q=80&w=1000&auto=format&fit=crop" 
+                             alt="Kebun Kopi Petani Binaan Nusantara Origin" 
+                             class="w-full h-96 object-cover transform hover:scale-105 transition-all duration-700">
+                    </div>
+                    <div class="absolute -bottom-4 -left-4 bg-estate-jute text-white p-4 rounded-2xl shadow-xl border border-amber-950 font-serif">
+                        <p class="text-xl font-black text-amber-300">450+ Petani</p>
+                        <p class="text-[11px] text-amber-100 font-sans">5 Origin Utama Nusantara</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- 4. KEY METRICS -->
+    <section class="py-12 bg-white border-b border-estate-border">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-2 lg:grid-cols-4 gap-6 text-center">
+                <div class="p-6 rounded-2xl bg-estate-parchment border border-estate-border">
+                    <p class="text-3xl sm:text-4xl font-extrabold text-estate-pine font-serif">1.600 m</p>
+                    <p class="text-xs text-slate-600 font-bold uppercase mt-1">Rata-Rata Ketinggian Kebun</p>
+                </div>
+                <div class="p-6 rounded-2xl bg-estate-parchment border border-estate-border">
+                    <p class="text-3xl sm:text-4xl font-extrabold text-estate-jute font-serif">120 Ton</p>
+                    <p class="text-xs text-slate-600 font-bold uppercase mt-1">Kapasitas Panen / Musim</p>
+                </div>
+                <div class="p-6 rounded-2xl bg-estate-parchment border border-estate-border">
+                    <p class="text-3xl sm:text-4xl font-extrabold text-estate-gold font-serif">< 2%</p>
+                    <p class="text-xs text-slate-600 font-bold uppercase mt-1">Defect Tally Grade 1</p>
+                </div>
+                <div class="p-6 rounded-2xl bg-estate-parchment border border-estate-border">
+                    <p class="text-3xl sm:text-4xl font-extrabold text-slate-900 font-serif">86.5+</p>
+                    <p class="text-xs text-slate-600 font-bold uppercase mt-1">Rata-Rata Cupping Score</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 5. 4 PILAR STANDAR PENGOLAHAN & MUTU -->
+    <section class="py-16 md:py-20 bg-estate-parchment">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-2xl mx-auto mb-14">
+                <span class="px-3 py-1 bg-amber-100 text-estate-jute text-xs font-bold uppercase rounded-md tracking-wider border border-amber-300">
+                    OUR POST-HARVEST STANDARDS
+                </span>
+                <h2 class="text-2xl sm:text-4xl font-extrabold text-estate-jute font-serif mt-3 mb-3">
+                    4 Pilar Mutu Nusantara Origin Estate
+                </h2>
+                <p class="text-slate-600 text-sm">
+                    Proses terintegrasi dari pemetikan ceri merah di pohon hingga penutupan karung goni GrainPro.
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                
+                <!-- Pillar 1 -->
+                <div class="bg-white rounded-3xl p-8 border border-estate-border shadow-xs flex items-start gap-5">
+                    <div class="w-14 h-14 rounded-2xl bg-estate-pine text-white flex items-center justify-center text-2xl shrink-0 shadow-xs">
+                        <i class="fa-solid fa-tree"></i>
+                    </div>
+                    <div class="space-y-2">
+                        <h3 class="text-lg font-bold text-slate-900 font-serif">1. 100% Petik Merah (Ripe Cherry Selection)</h3>
+                        <p class="text-xs text-slate-600 leading-relaxed">
+                            Petani binaan kami hanya memetik ceri kopi yang matang sempurna dengan kadar gula brix di atas 20°Bx. Dilakukan proses perambangan air (*floating tank*) untuk memisahkan ceri kosong/cacat sebelum masuk mesin depulper.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Pillar 2 -->
+                <div class="bg-white rounded-3xl p-8 border border-estate-border shadow-xs flex items-start gap-5">
+                    <div class="w-14 h-14 rounded-2xl bg-estate-jute text-white flex items-center justify-center text-2xl shrink-0 shadow-xs">
+                        <i class="fa-solid fa-sun"></i>
+                    </div>
+                    <div class="space-y-2">
+                        <h3 class="text-lg font-bold text-slate-900 font-serif">2. Pengeringan Rumah Kaca Solar Dome (African Bed)</h3>
+                        <p class="text-xs text-slate-600 leading-relaxed">
+                            Biji kopi dikeringkan di atas meja anyaman berjarak dari tanah (*raised African beds*) di dalam kubah pelindung UV. Suhu dan aliran udara dikontrol agar kadar air turun perlahan tanpa terkena kontaminasi debu atau air hujan.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Pillar 3 -->
+                <div class="bg-white rounded-3xl p-8 border border-estate-border shadow-xs flex items-start gap-5">
+                    <div class="w-14 h-14 rounded-2xl bg-estate-gold text-white flex items-center justify-center text-2xl shrink-0 shadow-xs">
+                        <i class="fa-solid fa-filter"></i>
+                    </div>
+                    <div class="space-y-2">
+                        <h3 class="text-lg font-bold text-slate-900 font-serif">3. Sortasi Ganda Gravity Sorter & Hand Pick</h3>
+                        <p class="text-xs text-slate-600 leading-relaxed">
+                            Biji tanduk yang telah digiling kering (*hulling*) disortir berdasarkan kerapatan berat jenis oleh mesin gravity separator, kemudian disortir ulang secara manual oleh tim wanita penyortir untuk membuang biji hitam, berlubang, atau pecah.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Pillar 4 -->
+                <div class="bg-white rounded-3xl p-8 border border-estate-border shadow-xs flex items-start gap-5">
+                    <div class="w-14 h-14 rounded-2xl bg-stone-800 text-white flex items-center justify-center text-2xl shrink-0 shadow-xs">
+                        <i class="fa-solid fa-box-archive"></i>
+                    </div>
+                    <div class="space-y-2">
+                        <h3 class="text-lg font-bold text-slate-900 font-serif">4. Pengemasan Hermetis GrainPro & Uji Laboratorium</h3>
+                        <p class="text-xs text-slate-600 leading-relaxed">
+                            Setelah lolos uji kadar air 11.5% dan water activity 0.58 aW di laboratorium cupping, biji langsung dimasukkan ke kantong plastik kedap udara GrainPro dan dijahit rapat dalam karung goni serat alami tebal.
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- 6. PROFIL TIM AGRONOMIS & Q-GRADER -->
+    <section class="py-16 md:py-20 bg-white border-t border-estate-border">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-2xl mx-auto mb-14">
+                <span class="px-3 py-1 bg-amber-100 text-estate-jute text-xs font-bold uppercase rounded-md tracking-wider border border-amber-300">
+                    OUR COFFEE & TEA SPECIALISTS
+                </span>
+                <h2 class="text-2xl sm:text-4xl font-extrabold text-estate-jute font-serif mt-3 mb-3">
+                    Sosok di Balik Presisi Nusantara Origin
+                </h2>
+                <p class="text-slate-600 text-sm">
+                    Dedikasi agronomis perkebunan, Q-Grader bersertifikat internasional, dan koordinator petani.
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                
+                <!-- Person 1 -->
+                <div class="bg-estate-parchment rounded-3xl p-6 border border-estate-border text-center flex flex-col items-center">
+                    <div class="w-24 h-24 rounded-full bg-amber-200 text-estate-jute flex items-center justify-center text-4xl mb-4 border-2 border-amber-400">
+                        👨‍🌾
+                    </div>
+                    <h3 class="text-base font-bold text-slate-900 font-serif">Ir. Surya Danumegara</h3>
+                    <p class="text-xs font-semibold text-estate-pine mt-0.5">Founder & Coffee Agronomist</p>
+                    <p class="text-xs text-slate-600 mt-3 leading-relaxed">
+                        "Kopi yang luar biasa lahir dari tanah yang sehat dan tangan petani yang dihargai dengan adil. Kami menjaga rantai pasok ini dengan penuh integritas."
+                    </p>
+                </div>
+
+                <!-- Person 2 -->
+                <div class="bg-estate-parchment rounded-3xl p-6 border border-estate-border text-center flex flex-col items-center">
+                    <div class="w-24 h-24 rounded-full bg-emerald-200 text-emerald-900 flex items-center justify-center text-4xl mb-4 border-2 border-emerald-400">
+                        ☕
+                    </div>
+                    <h3 class="text-base font-bold text-slate-900 font-serif">Bagas Wicaksono, Q-Grader</h3>
+                    <p class="text-xs font-semibold text-emerald-800 mt-0.5">Head of Quality Control & Sensory Lab</p>
+                    <p class="text-xs text-slate-600 mt-3 leading-relaxed">
+                        "Setiap lot panen melewati kalibrasi cupping protokol SCA minimal 3 kali untuk memastikan catatan rasa dan skor yang tercantum di lembar uji benar-benar akurat."
+                    </p>
+                </div>
+
+                <!-- Person 3 -->
+                <div class="bg-estate-parchment rounded-3xl p-6 border border-estate-border text-center flex flex-col items-center">
+                    <div class="w-24 h-24 rounded-full bg-amber-100 text-amber-900 flex items-center justify-center text-4xl mb-4 border-2 border-amber-300">
+                        👩‍💼
+                    </div>
+                    <h3 class="text-base font-bold text-slate-900 font-serif">Siti Nurhaliza</h3>
+                    <p class="text-xs font-semibold text-estate-jute mt-0.5">Farmer Relations & Fair Trade Coordinator</p>
+                    <p class="text-xs text-slate-600 mt-3 leading-relaxed">
+                        "Mendampingi kelompok tani kopi dan teh di pelosok pegunungan, memastikan mereka mendapatkan pelatihan pasca-panen terbaik dan kepastian pembelian harga premium."
+                    </p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- 7. FOOTER -->
+    <footer class="bg-estate-jutedark text-stone-300 text-xs pt-16 pb-36 border-t border-amber-950 font-sans">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-10 pb-12 border-b border-amber-950/60">
+                <div class="lg:col-span-2 space-y-4">
+                    <a href="index.html" class="flex items-center gap-3">
+                        <div class="w-10 h-10 bg-gradient-to-br from-estate-jute to-estate-pine text-white flex items-center justify-center text-xl font-bold rounded-xl">
+                            <i class="fa-solid fa-mountain"></i>
+                        </div>
+                        <span class="text-2xl font-extrabold text-white tracking-tight font-serif">
+                            NUSANTARA ORIGIN<span class="text-estate-gold">.</span>
+                        </span>
+                    </a>
+                    <p class="text-xs text-stone-400 leading-relaxed max-w-sm">
+                        Trading post bahan mentah biji kopi specialty (green coffee beans) dan daun teh perkebunan dataran tinggi. Kemitraan petani hulu, proses pasca-panen terstandar, dan kemasan karung goni GrainPro kedap udara.
+                    </p>
+                </div>
+                <div>
+                    <h4 class="text-xs font-bold text-white uppercase tracking-wider mb-4 font-serif">Navigasi Halaman</h4>
+                    <ul class="space-y-2.5">
+                        <li><a href="index.html" class="hover:text-amber-400 transition">Beranda Utama</a></li>
+                        <li><a href="katalog.html" class="hover:text-amber-400 transition">Katalog Green Beans</a></li>
+                        <li><a href="detail.html" class="hover:text-amber-400 transition">Detail Cupping Notes</a></li>
+                        <li><a href="tentang.html" class="hover:text-amber-400 transition">Kemitraan Petani & Dry Mill</a></li>
+                        <li><a href="artikel.html" class="hover:text-amber-400 transition">Proses Pasca-Panen</a></li>
+                        <li><a href="kontak.html" class="hover:text-amber-400 transition">Gudang & Sample Roastery</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-xs font-bold text-white uppercase tracking-wider mb-4 font-serif">Origin Unggulan</h4>
+                    <ul class="space-y-2.5">
+                        <li><a href="detail.html" class="hover:text-amber-400 transition">Arabika Gayo Washed (86.5 SCA)</a></li>
+                        <li><a href="detail.html" class="hover:text-amber-400 transition">Java Puntang Honey (87.0 SCA)</a></li>
+                        <li><a href="katalog.html" class="hover:text-amber-400 transition">Ijen Raung Natural (85.5 SCA)</a></li>
+                        <li><a href="katalog.html" class="hover:text-amber-400 transition">Silver Needle White Tea</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-xs font-bold text-white uppercase tracking-wider mb-4 font-serif">Dry Mill & Lab</h4>
+                    <p class="text-xs text-stone-400 leading-relaxed mb-3">
+                        Kawasan Industri Agrobisnis Kopi, Jl. Terroir Raya No. 45, Soreang, Kab. Bandung, Jawa Barat 40911.
+                    </p>
+                    <p class="text-xs text-amber-400 font-bold mb-1"><i class="fa-solid fa-phone mr-1.5"></i> +62 812-3456-7890</p>
+                    <p class="text-xs text-stone-400"><i class="fa-solid fa-envelope mr-1.5"></i> origin@nusantaraorigin.com</p>
+                </div>
+            </div>
+            <div class="pt-8 flex flex-col sm:flex-row items-center justify-between gap-4 text-[11px] text-stone-500">
+                <p>&copy; 2026 NUSANTARA ORIGIN ESTATE. All rights reserved.</p>
+                <div class="flex items-center gap-4">
+                    <span>SCA Specialty Grade 1</span>
+                    <span>•</span>
+                    <span>Moisture 11.5%</span>
+                    <span>•</span>
+                    <span>GrainPro Hermetic Packaging</span>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- 8. FLOATING WHATSAPP BUTTON (bottom-24) -->
+    <div class="fixed bottom-24 right-5 z-40">
+        <a href="https://wa.me/6281234567890?text=Halo%20Admin%20Nusantara%20Origin,%20saya%20ingin%20tanya%20profil%20perkebunan." 
+           target="_blank" 
+           aria-label="Chat WhatsApp Nusantara Origin Estate"
+           class="group flex items-center gap-3 bg-gradient-to-r from-estate-pine to-emerald-800 hover:from-emerald-700 hover:to-emerald-900 text-white px-4 py-3.5 rounded-full shadow-2xl transition-all transform hover:scale-105 border-2 border-white/80">
+            <i class="fa-brands fa-whatsapp text-2xl animate-pulse"></i>
+            <span class="text-xs font-bold tracking-wide pr-1 hidden sm:inline">Pesan Green Beans WA</span>
+        </a>
+    </div>
+
+    <!-- 9. STICKY DEMO & SALES BAR (fixed bottom-4) -->
+    <div class="fixed bottom-4 left-4 right-4 z-50 max-w-5xl mx-auto">
+      <div class="bg-estate-jutedark/95 backdrop-blur-md text-white px-4 sm:px-6 py-3.5 rounded-2xl shadow-2xl border border-amber-900/60 flex flex-col md:flex-row items-center justify-between gap-3">
+        <div class="flex items-center gap-3 text-left w-full md:w-auto">
+          <div class="w-9 h-9 rounded-xl bg-emerald-500/20 border border-emerald-400/40 flex items-center justify-center shrink-0">
+            <i class="fa-solid fa-mountain text-emerald-400 text-sm"></i>
+          </div>
+          <div>
+            <div class="text-xs md:text-sm font-bold text-stone-100 flex items-center gap-2">
+              <span>Lentera Pasar Demo</span>
+              <span class="text-[10px] px-2 py-0.5 rounded bg-emerald-500/20 text-emerald-300 font-bold">Tentang Kemitraan Petani & Dry Mill</span>
+            </div>
+            <p class="text-[11px] text-stone-400 hidden sm:block">Desain Highland Estate & Origin Trading Post untuk agrobisnis biji kopi mentah & teh artisan.</p>
+          </div>
+        </div>
+        <div class="flex items-center gap-3 w-full md:w-auto justify-end">
+          <a href="https://wa.me/6281234567890?text=Halo%20Tim%20Lentera%20Pasar,%20saya%20tertarik%20menggunakan%20template%20website%20Kopi%20dan%20Teh%20ini." 
+             target="_blank"
+             class="w-full md:w-auto inline-flex items-center justify-center gap-2 bg-gradient-to-r from-estate-pine to-emerald-700 hover:from-emerald-600 hover:to-emerald-800 text-white text-xs md:text-sm font-bold px-5 py-2.5 rounded-xl shadow-lg transition-all hover:scale-105 shrink-0">
+            <span>Gunakan Template Ini</span>
+            <i class="fa-solid fa-arrow-right text-xs"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <!-- SCRIPT MOBILE MENU -->
+    <script>
+        const mobileMenuBtn = document.getElementById('mobileMenuBtn');
+        const mobileMenu = document.getElementById('mobileMenu');
+        const menuIcon = document.getElementById('menuIcon');
+
+        mobileMenuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+            if (mobileMenu.classList.contains('hidden')) {
+                menuIcon.classList.remove('fa-xmark');
+                menuIcon.classList.add('fa-bars');
+            } else {
+                menuIcon.classList.remove('fa-bars');
+                menuIcon.classList.add('fa-xmark');
+            }
+        });
+    </script>
+</body>
+</html>
