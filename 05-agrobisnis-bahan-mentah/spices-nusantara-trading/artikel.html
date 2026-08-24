@@ -1,0 +1,513 @@
+<!DOCTYPE html>
+<html lang="id" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edukasi Rempah & Minyak Atsiri // SWARNA REMPAH</title>
+    <meta name="description" content="Edukasi rempah Nusantara: Khasiat eugenol minyak atsiri cengkeh, tips menyimpan rempah kering agar awet 24 bulan, dan perbedaan Cassia vs Ceylon.">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,600;0,700;1,600;1,700&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Playfair+Display:ital,wght@0,600;0,700;0,800;1,600&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome 6 -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        spice: {
+                            amber: '#2C1810',
+                            amberdark: '#1B0E09',
+                            amberlight: '#422519',
+                            cinnamon: '#9A3412',
+                            cinnamondark: '#7C2D12',
+                            cinnamonlight: '#C2410C',
+                            gold: '#D97706',
+                            goldlight: '#F59E0B',
+                            parchment: '#F9F6F0',
+                            parchmentdark: '#F0EAE1',
+                            border: '#E5DAC8',
+                            charcoal: '#1A1614'
+                        }
+                    },
+                    fontFamily: {
+                        sans: ['"Plus Jakarta Sans"', 'sans-serif'],
+                        serif: ['"Playfair Display"', 'serif'],
+                        cormorant: ['"Cormorant Garamond"', 'serif']
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        .no-scrollbar::-webkit-scrollbar { display: none; }
+        .no-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
+
+        .spice-card {
+            transition: all 0.35s cubic-bezier(0.16, 1, 0.3, 1);
+        }
+        .spice-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 20px 35px -10px rgba(44, 24, 16, 0.14);
+        }
+    </style>
+</head>
+<body class="bg-spice-parchment text-spice-charcoal font-sans antialiased selection:bg-spice-cinnamon selection:text-white">
+
+    <!-- 1. TOP ANNOUNCEMENT BAR -->
+    <div class="bg-spice-amber text-amber-100 text-xs py-2.5 px-4 font-sans font-medium border-b border-amber-950/40">
+        <div class="max-w-7xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-2 text-center sm:text-left">
+            <div class="flex items-center justify-center gap-2">
+                <span class="px-2 py-0.5 bg-spice-cinnamon text-white text-[10px] uppercase font-bold tracking-wider rounded-md shadow-xs flex items-center gap-1">
+                    <i class="fa-solid fa-book-open text-amber-200"></i> EDUKASI BOTANI & FITOKIMIA
+                </span>
+                <span class="text-white/95 font-medium">Panduan Minyak Atsiri Cengkeh, Simpan Rempah Gudang, & Sains Herbal Tradisional</span>
+            </div>
+            <div class="flex items-center gap-4 text-xs">
+                <a href="katalog.html" class="text-amber-300 hover:underline font-bold transition flex items-center gap-1">
+                    Pesan Rempah Kering <i class="fa-solid fa-arrow-right text-[10px]"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- 2. NAVBAR -->
+    <header class="sticky top-0 z-40 bg-white/95 backdrop-blur-md border-b border-spice-border transition-all shadow-xs">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-20 sm:h-24">
+                
+                <!-- Logo -->
+                <a href="index.html" class="flex items-center gap-3.5 group">
+                    <div class="w-12 h-12 bg-gradient-to-br from-spice-amber to-spice-cinnamon text-white flex items-center justify-center text-2xl font-bold rounded-2xl shadow-md group-hover:scale-105 transition">
+                        <i class="fa-solid fa-gem"></i>
+                    </div>
+                    <div class="flex flex-col">
+                        <span class="text-2xl sm:text-3xl font-extrabold tracking-tight text-spice-amber uppercase leading-none font-serif">
+                            SWARNA REMPAH<span class="text-spice-gold">.</span>
+                        </span>
+                        <span class="text-[9px] tracking-[0.28em] text-spice-cinnamon uppercase mt-1 font-bold">
+                            SPICE ISLAND TRADING POST
+                        </span>
+                    </div>
+                </a>
+
+                <!-- Desktop Navigation Links -->
+                <nav class="hidden lg:flex items-center gap-7 text-xs font-bold tracking-wider uppercase text-slate-700 font-sans">
+                    <a href="index.html" class="hover:text-spice-cinnamon transition">Beranda</a>
+                    <a href="katalog.html" class="hover:text-spice-cinnamon transition">Katalog Rempah & Simplisia</a>
+                    <a href="detail.html" class="hover:text-spice-cinnamon transition">Detail Cengkeh Lalpari</a>
+                    <a href="tentang.html" class="hover:text-spice-cinnamon transition">Jalur Rempah & Petani Lokal</a>
+                    <a href="artikel.html" class="text-spice-cinnamon border-b-2 border-spice-cinnamon pb-1 font-bold">Khasiat Minyak Atsiri</a>
+                    <a href="kontak.html" class="hover:text-spice-cinnamon transition">Gudang & Pasokan Industri</a>
+                </nav>
+
+                <!-- Actions -->
+                <div class="hidden sm:flex items-center gap-3">
+                    <a href="https://wa.me/6281234567890?text=Halo%20Admin%20Swarna%20Rempah,%20saya%20ingin%20tanya%20seputar%20rempah." 
+                       target="_blank"
+                       class="inline-flex items-center gap-2 px-4 py-2.5 bg-spice-cinnamon hover:bg-spice-cinnamondark text-xs font-bold text-white rounded-xl transition shadow-md hover:shadow-lg">
+                        <i class="fa-brands fa-whatsapp text-base"></i>
+                        <span>Order Rempah WA</span>
+                    </a>
+                </div>
+
+                <!-- Mobile Menu Button -->
+                <div class="flex lg:hidden items-center gap-2">
+                    <a href="https://wa.me/6281234567890" target="_blank" class="p-2.5 bg-amber-100 text-amber-900 rounded-xl text-sm">
+                        <i class="fa-brands fa-whatsapp"></i>
+                    </a>
+                    <button id="mobileMenuBtn" class="p-2.5 text-slate-700 hover:text-spice-cinnamon focus:outline-hidden rounded-xl bg-amber-50">
+                        <i id="menuIcon" class="fa-solid fa-bars text-xl"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Mobile Dropdown Menu -->
+        <div id="mobileMenu" class="hidden lg:hidden border-t border-spice-border bg-white/98 px-6 py-5 shadow-xl">
+            <div class="flex flex-col gap-4 text-sm font-bold uppercase text-slate-700">
+                <a href="index.html" class="hover:text-spice-cinnamon transition flex items-center justify-between">
+                    <span>Beranda</span>
+                    <i class="fa-solid fa-chevron-right text-xs"></i>
+                </a>
+                <a href="katalog.html" class="hover:text-spice-cinnamon transition flex items-center justify-between">
+                    <span>Katalog Rempah & Simplisia Herbal</span>
+                    <i class="fa-solid fa-chevron-right text-xs"></i>
+                </a>
+                <a href="detail.html" class="hover:text-spice-cinnamon transition flex items-center justify-between">
+                    <span>Detail Kadar Minyak Atsiri & Air</span>
+                    <i class="fa-solid fa-chevron-right text-xs"></i>
+                </a>
+                <a href="tentang.html" class="hover:text-spice-cinnamon transition flex items-center justify-between">
+                    <span>Sejarah Jalur Rempah & Jaminan Mutu</span>
+                    <i class="fa-solid fa-chevron-right text-xs"></i>
+                </a>
+                <a href="artikel.html" class="text-spice-cinnamon flex items-center justify-between">
+                    <span>Khasiat Eugenol Cengkeh & Simpan Rempah</span>
+                    <i class="fa-solid fa-chevron-right text-xs"></i>
+                </a>
+                <a href="kontak.html" class="hover:text-spice-cinnamon transition flex items-center justify-between">
+                    <span>Gudang Rempah & Pasokan Industri</span>
+                    <i class="fa-solid fa-chevron-right text-xs"></i>
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- 3. PAGE BANNER -->
+    <section class="py-12 bg-gradient-to-b from-amber-100/60 to-spice-parchment border-b border-spice-border">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="max-w-3xl">
+                <span class="px-3 py-1 bg-amber-100 text-spice-amber text-xs font-bold uppercase rounded-md tracking-wider">
+                    BOTANICAL SCIENCE & SPICE PRESERVATION
+                </span>
+                <h1 class="text-3xl sm:text-5xl font-extrabold text-spice-amber font-serif mt-3 mb-3 leading-tight">
+                    Edukasi Rempah & Wawasan Etnobotani
+                </h1>
+                <p class="text-slate-600 text-sm sm:text-base leading-relaxed">
+                    Pelajari keajaiban senyawa aktif eugenol pada cengkeh Maluku, cara menyimpan rempah kering agar tahan hingga 24 bulan tanpa berkurang aromanya, dan perbedaan ilmiah antara Kayu Manis Cassia vs Ceylon.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- 4. FEATURED ARTICLE 1: KHASIAT MINYAK ATSIRI CENGKEH -->
+    <section class="py-12 md:py-16 bg-white border-b border-spice-border">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="bg-spice-parchment rounded-3xl p-6 sm:p-10 border-2 border-spice-border shadow-md grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
+                
+                <div class="lg:col-span-6 space-y-4">
+                    <div class="flex items-center gap-2">
+                        <span class="px-3 py-0.5 bg-spice-cinnamon text-white text-[10px] font-black uppercase rounded-md">
+                            FITOKIMIA HERBAL
+                        </span>
+                        <span class="text-xs text-slate-500">4 Menit Baca • Disusun oleh Ahli Farmasi</span>
+                    </div>
+                    
+                    <h2 class="text-2xl sm:text-3xl font-extrabold text-spice-amber font-serif leading-snug">
+                        Keajaiban Senyawa Eugenol pada Cengkeh: Dari Antiseptik Alami Hingga Pengawet Organik
+                    </h2>
+
+                    <p class="text-xs sm:text-sm text-slate-600 leading-relaxed">
+                        Minyak atsiri yang terkandung di dalam kuncup bunga cengkeh (kadar > 18%) didominasi oleh senyawa aktif <em>eugenol</em> (80-85%) yang memiliki ragam manfaat farmakologis luar biasa:
+                    </p>
+
+                    <div class="space-y-2.5 pt-2 text-xs text-slate-700">
+                        <div class="flex items-start gap-2.5">
+                            <span class="w-5 h-5 rounded-full bg-amber-100 text-spice-cinnamon flex items-center justify-center font-bold shrink-0">1</span>
+                            <div><strong>Antibakteri & Antijamur Spektrum Luas:</strong> Menghambat pertumbuhan bakteri patogen (seperti E. coli & Salmonella) serta mencegah spora jamur pada makanan olahan.</div>
+                        </div>
+                        <div class="flex items-start gap-2.5">
+                            <span class="w-5 h-5 rounded-full bg-amber-100 text-spice-cinnamon flex items-center justify-center font-bold shrink-0">2</span>
+                            <div><strong>Analgesik Alami (Pereda Nyeri Gigi):</strong> Eugenol bekerja sebagai anestesi lokal ringan yang telah digunakan sejak ratusan tahun untuk meredakan sakit gigi dan radang gusi.</div>
+                        </div>
+                        <div class="flex items-start gap-2.5">
+                            <span class="w-5 h-5 rounded-full bg-amber-100 text-spice-cinnamon flex items-center justify-center font-bold shrink-0">3</span>
+                            <div><strong>Antioksidan Penstabil Lemak:</strong> Menahan oksidasi lipid pada masakan bersantan tebal (seperti rendang dan kari) sehingga masakan awet berhari-hari tanpa basi.</div>
+                        </div>
+                        <div class="flex items-start gap-2.5">
+                            <span class="w-5 h-5 rounded-full bg-amber-100 text-spice-cinnamon flex items-center justify-center font-bold shrink-0">4</span>
+                            <div><strong>Efek Termogenik Hangat:</strong> Meningkatkan sirkulasi darah kapiler dan menghangatkan rongga dada pada formula jamu tolak angin tradisional.</div>
+                        </div>
+                    </div>
+
+                    <div class="pt-3">
+                        <a href="katalog.html" class="inline-flex items-center gap-2 px-5 py-3 bg-spice-cinnamon hover:bg-spice-cinnamondark text-white font-bold text-xs rounded-xl shadow-md transition">
+                            <span>Pesan Cengkeh Lalpari Super</span>
+                            <i class="fa-solid fa-arrow-right text-xs"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="lg:col-span-6">
+                    <div class="rounded-2xl overflow-hidden shadow-md border-2 border-white bg-amber-50">
+                        <img src="https://images.unsplash.com/photo-1596040033229-a9821ebd058d?q=80&w=800&auto=format&fit=crop" 
+                             alt="Minyak Atsiri Bunga Cengkeh" 
+                             class="w-full h-80 object-cover transform hover:scale-105 transition-all duration-700">
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- 5. FEATURED ARTICLE 2: TIPS SIMPAN REMPAH GUDANG -->
+    <section class="py-14 bg-white border-b border-spice-border">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 space-y-8">
+            
+            <div class="text-center space-y-2">
+                <span class="px-3 py-1 bg-amber-100 text-amber-900 text-xs font-bold uppercase rounded-md tracking-wider">
+                    PANDUAN GUDANG & DAPUR
+                </span>
+                <h3 class="text-2xl sm:text-3xl font-extrabold text-spice-amber font-serif">
+                    3 Trik Menyimpan Rempah Kering Agar Tetap Harum Semerbak & Bebas Kutu
+                </h3>
+                <p class="text-slate-600 text-xs sm:text-sm">
+                    Kualitas rempah kering sangat dipengaruhi oleh cara penyimpanan. Lakukan langkah ini agar aroma atsiri tidak menguap:
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                
+                <div class="bg-spice-parchment rounded-3xl p-6 border border-spice-border shadow-xs flex flex-col justify-between">
+                    <div>
+                        <div class="w-10 h-10 rounded-xl bg-spice-cinnamon text-white flex items-center justify-center font-black text-sm mb-4">
+                            1
+                        </div>
+                        <h4 class="font-bold text-sm text-slate-900 font-serif">Wadah Kedap Udara (Airtight)</h4>
+                        <p class="text-xs text-slate-600 mt-2 leading-relaxed">
+                            Minyak atsiri rempah bersifat mudah menguap (*volatile*). Selalu gunakan toples kaca bersegel silikon atau karung goni berlapis plastik polietilen tebal di dalam.
+                        </p>
+                    </div>
+                    <div class="mt-4 pt-3 border-t border-spice-border text-[11px] text-amber-900 font-semibold">
+                        🔒 Mencegah Penguapan Minyak
+                    </div>
+                </div>
+
+                <div class="bg-spice-parchment rounded-3xl p-6 border border-spice-border shadow-xs flex flex-col justify-between">
+                    <div>
+                        <div class="w-10 h-10 rounded-xl bg-spice-amber text-white flex items-center justify-center font-black text-sm mb-4">
+                            2
+                        </div>
+                        <h4 class="font-bold text-sm text-slate-900 font-serif">Jauhkan dari Panas Kompor & Sinar UV</h4>
+                        <p class="text-xs text-slate-600 mt-2 leading-relaxed">
+                            Simpan di tempat gelap yang sejuk dan kering (suhu 22°C – 26°C). Paparan panas kompor langsung mempercepat oksidasi dan memudarkan warna alami rempah.
+                        </p>
+                    </div>
+                    <div class="mt-4 pt-3 border-t border-spice-border text-[11px] text-spice-amber font-semibold">
+                        🌑 Tempat Gelap & Sejuk
+                    </div>
+                </div>
+
+                <div class="bg-spice-parchment rounded-3xl p-6 border border-spice-border shadow-xs flex flex-col justify-between">
+                    <div>
+                        <div class="w-10 h-10 rounded-xl bg-spice-gold text-white flex items-center justify-center font-black text-sm mb-4">
+                            3
+                        </div>
+                        <h4 class="font-bold text-sm text-slate-900 font-serif">Giling Sesaat Sebelum Dimasak</h4>
+                        <p class="text-xs text-slate-600 mt-2 leading-relaxed">
+                            Untuk rempah biji seperti lada, ketumbar, dan kapulaga, simpanlah dalam bentuk butiran utuh. Giling atau haluskan hanya saat hendak dimasukkan ke dalam masakan.
+                        </p>
+                    </div>
+                    <div class="mt-4 pt-3 border-t border-spice-border text-[11px] text-amber-900 font-semibold">
+                        ⚡ Aroma 3x Lebih Kuat
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+    <!-- 6. KNOWLEDGE ARTICLES GRID -->
+    <section class="py-14 md:py-20 bg-spice-parchment">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-2xl mx-auto mb-12">
+                <span class="px-3 py-1 bg-amber-100 text-spice-amber text-xs font-bold uppercase rounded-md tracking-wider">
+                    ARTIKEL & PENGETAHUAN BOTANI
+                </span>
+                <h2 class="text-2xl sm:text-4xl font-extrabold text-spice-amber font-serif mt-2 mb-2">
+                    Fakta Ilmiah Rempah Indonesia
+                </h2>
+                <p class="text-slate-600 text-xs sm:text-sm">
+                    Edukasi cerdas memilih bahan baku rempah dan simplisia berkualitas tinggi.
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                
+                <!-- Article 1 -->
+                <div class="spice-card bg-white rounded-3xl border border-spice-border overflow-hidden flex flex-col justify-between shadow-xs">
+                    <div class="h-48 overflow-hidden bg-amber-50">
+                        <img src="https://images.unsplash.com/photo-1509358271058-acd22cc93898?q=80&w=600&auto=format&fit=crop" 
+                             alt="Kayu Manis Cassia vs Ceylon" class="w-full h-full object-cover">
+                    </div>
+                    <div class="p-6 flex-1 flex flex-col justify-between">
+                        <div>
+                            <span class="text-[10px] bg-rose-100 text-rose-800 px-2 py-0.5 rounded font-bold uppercase">Kayu Manis</span>
+                            <h3 class="text-base font-bold text-slate-900 font-serif mt-2">
+                                Kayu Manis Cassia Kerinci vs Ceylon: Mana yang Lebih Cocok untuk Bisnis Anda?
+                            </h3>
+                            <p class="text-xs text-slate-600 mt-2 leading-relaxed">
+                                Cassia Kerinci memiliki kulit batang lebih tebal dengan rasa manis pedas tajam yang tahan proses pemanasan lama masakan rendang dan bakery.
+                            </p>
+                        </div>
+                        <div class="mt-4 pt-3 border-t border-spice-border flex items-center justify-between text-xs">
+                            <span class="text-slate-400">4 Menit Baca</span>
+                            <a href="katalog.html" class="font-bold text-spice-cinnamon hover:underline">Pesan Cassia &rarr;</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Article 2 -->
+                <div class="spice-card bg-white rounded-3xl border border-spice-border overflow-hidden flex flex-col justify-between shadow-xs">
+                    <div class="h-48 overflow-hidden bg-amber-50">
+                        <img src="https://images.unsplash.com/photo-1596040033229-a9821ebd058d?q=80&w=600&auto=format&fit=crop" 
+                             alt="Kadar Air Rempah Kering" class="w-full h-full object-cover">
+                    </div>
+                    <div class="p-6 flex-1 flex flex-col justify-between">
+                        <div>
+                            <span class="text-[10px] bg-amber-100 text-amber-900 px-2 py-0.5 rounded font-bold uppercase">Standar Ekspor</span>
+                            <h3 class="text-base font-bold text-slate-900 font-serif mt-2">
+                                Mengapa Kadar Air < 12% Menjadi Syarat Wajib Ekspor Rempah?
+                            </h3>
+                            <p class="text-xs text-slate-600 mt-2 leading-relaxed">
+                                Kelembapan di atas 12% adalah zona kritis tumbuhnya jamur penghasil racun aflatoksin dan pemicu fermentasi yang merusak aroma khas minyak atsiri.
+                            </p>
+                        </div>
+                        <div class="mt-4 pt-3 border-t border-spice-border flex items-center justify-between text-xs">
+                            <span class="text-slate-400">3 Menit Baca</span>
+                            <a href="detail.html" class="font-bold text-spice-cinnamon hover:underline">Baca Selengkapnya &rarr;</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Article 3 -->
+                <div class="spice-card bg-white rounded-3xl border border-spice-border overflow-hidden flex flex-col justify-between shadow-xs">
+                    <div class="h-48 overflow-hidden bg-rose-50">
+                        <img src="https://images.unsplash.com/photo-1615485290382-441e4d049cb5?q=80&w=600&auto=format&fit=crop" 
+                             alt="Jahe Merah vs Emprit vs Gajah" class="w-full h-full object-cover">
+                    </div>
+                    <div class="p-6 flex-1 flex flex-col justify-between">
+                        <div>
+                            <span class="text-[10px] bg-emerald-100 text-emerald-800 px-2 py-0.5 rounded font-bold uppercase">Simplisia Herbal</span>
+                            <h3 class="text-base font-bold text-slate-900 font-serif mt-2">
+                                Perbedaan Jahe Merah, Jahe Emprit, dan Jahe Gajah untuk Jamu
+                            </h3>
+                            <p class="text-xs text-slate-600 mt-2 leading-relaxed">
+                                Jahe merah memiliki kadar minyak atsiri dan senyawa pedas gingerol tertinggi, menjadikannya pilihan mutlak untuk sediaan jamu imunitas dan obat herbal.
+                            </p>
+                        </div>
+                        <div class="mt-4 pt-3 border-t border-spice-border flex items-center justify-between text-xs">
+                            <span class="text-slate-400">5 Menit Baca</span>
+                            <a href="katalog.html" class="font-bold text-spice-cinnamon hover:underline">Pesan Jahe Merah &rarr;</a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- 7. FOOTER -->
+    <footer class="bg-spice-amberdark text-stone-300 text-xs pt-16 pb-36 border-t border-amber-950 font-sans">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-10 pb-12 border-b border-amber-950/60">
+                <div class="lg:col-span-2 space-y-4">
+                    <a href="index.html" class="flex items-center gap-3">
+                        <div class="w-10 h-10 bg-gradient-to-br from-spice-amber to-spice-cinnamon text-white flex items-center justify-center text-xl font-bold rounded-xl">
+                            <i class="fa-solid fa-gem"></i>
+                        </div>
+                        <span class="text-2xl font-extrabold text-white tracking-tight font-serif">
+                            SWARNA REMPAH<span class="text-spice-gold">.</span>
+                        </span>
+                    </a>
+                    <p class="text-xs text-stone-400 leading-relaxed max-w-sm">
+                        Pusat perdagangan bahan mentah rempah kering dan simplisia herbal Nusantara. Cengkeh Maluku, Kayu Manis Kerinci, Kapulaga Jawa, dan Jahe Merah berkualitas grade super dengan kadar air terkontrol untuk industri jamu, ekstraksi atsiri, dan kuliner.
+                    </p>
+                </div>
+                <div>
+                    <h4 class="text-xs font-bold text-white uppercase tracking-wider mb-4 font-serif">Navigasi Halaman</h4>
+                    <ul class="space-y-2.5">
+                        <li><a href="index.html" class="hover:text-amber-400 transition">Beranda Utama</a></li>
+                        <li><a href="katalog.html" class="hover:text-amber-400 transition">Katalog Rempah & Simplisia</a></li>
+                        <li><a href="detail.html" class="hover:text-amber-400 transition">Detail Cengkeh Lalpari</a></li>
+                        <li><a href="tentang.html" class="hover:text-amber-400 transition">Jalur Rempah & Mutu Petani</a></li>
+                        <li><a href="artikel.html" class="hover:text-amber-400 transition">Khasiat Minyak Atsiri</a></li>
+                        <li><a href="kontak.html" class="hover:text-amber-400 transition">Gudang & Pasokan Industri</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-xs font-bold text-white uppercase tracking-wider mb-4 font-serif">Rempah Unggulan</h4>
+                    <ul class="space-y-2.5">
+                        <li><a href="detail.html" class="hover:text-amber-400 transition">Cengkeh Lalpari Super Maluku</a></li>
+                        <li><a href="detail.html" class="hover:text-amber-400 transition">Kayu Manis Kerinci Stick AA</a></li>
+                        <li><a href="katalog.html" class="hover:text-amber-400 transition">Kapulaga Putih Kering Jawa</a></li>
+                        <li><a href="katalog.html" class="hover:text-amber-400 transition">Jahe Merah Simplisia Kering</a></li>
+                        <li><a href="katalog.html" class="hover:text-amber-400 transition">Bunga Lawang / Star Anise</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-xs font-bold text-white uppercase tracking-wider mb-4 font-serif">Gudang & Ekspedisi</h4>
+                    <p class="text-xs text-stone-400 leading-relaxed mb-3">
+                        Kawasan Pergudangan Rempah Nusantara, Jl. Cengkeh Raya No. 88, Pelabuhan Tanjung Perak, Surabaya, Jawa Timur 60165.
+                    </p>
+                    <p class="text-xs text-amber-400 font-bold mb-1"><i class="fa-solid fa-phone mr-1.5"></i> +62 812-3456-7890</p>
+                    <p class="text-xs text-stone-400"><i class="fa-solid fa-envelope mr-1.5"></i> order@swarnarempah.com</p>
+                </div>
+            </div>
+            <div class="pt-8 flex flex-col sm:flex-row items-center justify-between gap-4 text-[11px] text-stone-500">
+                <p>&copy; 2026 SWARNA REMPAH NUSANTARA. All rights reserved.</p>
+                <div class="flex items-center gap-4">
+                    <span>100% Rempah Murni</span>
+                    <span>•</span>
+                    <span>Moisture < 12%</span>
+                    <span>•</span>
+                    <span>High Essential Oil Content</span>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- 8. FLOATING WHATSAPP BUTTON (bottom-24) -->
+    <div class="fixed bottom-24 right-5 z-40">
+        <a href="https://wa.me/6281234567890?text=Halo%20Admin%20Swarna%20Rempah,%20saya%20ingin%20tanya%20seputar%20rempah." 
+           target="_blank" 
+           aria-label="Chat WhatsApp Swarna Rempah Nusantara"
+           class="group flex items-center gap-3 bg-gradient-to-r from-spice-cinnamon to-amber-700 hover:from-amber-600 hover:to-amber-800 text-white px-4 py-3.5 rounded-full shadow-2xl transition-all transform hover:scale-105 border-2 border-white/80">
+            <i class="fa-brands fa-whatsapp text-2xl animate-pulse"></i>
+            <span class="text-xs font-bold tracking-wide pr-1 hidden sm:inline">Pesan Rempah WA</span>
+        </a>
+    </div>
+
+    <!-- 9. STICKY DEMO & SALES BAR (fixed bottom-4) -->
+    <div class="fixed bottom-4 left-4 right-4 z-50 max-w-5xl mx-auto">
+      <div class="bg-spice-amberdark/95 backdrop-blur-md text-white px-4 sm:px-6 py-3.5 rounded-2xl shadow-2xl border border-amber-900/60 flex flex-col md:flex-row items-center justify-between gap-3">
+        <div class="flex items-center gap-3 text-left w-full md:w-auto">
+          <div class="w-9 h-9 rounded-xl bg-amber-500/20 border border-amber-400/40 flex items-center justify-center shrink-0">
+            <i class="fa-solid fa-gem text-amber-400 text-sm"></i>
+          </div>
+          <div>
+            <div class="text-xs md:text-sm font-bold text-stone-100 flex items-center gap-2">
+              <span>Lentera Pasar Demo</span>
+              <span class="text-[10px] px-2 py-0.5 rounded bg-amber-500/20 text-amber-300 font-bold">Artikel & Edukasi Rempah</span>
+            </div>
+            <p class="text-[11px] text-stone-400 hidden sm:block">Desain Nusantara Spice Trading Post untuk agrobisnis rempah kering, simplisia jamu, & bumbu horeka.</p>
+          </div>
+        </div>
+        <div class="flex items-center gap-3 w-full md:w-auto justify-end">
+          <a href="https://wa.me/6281234567890?text=Halo%20Tim%20Lentera%20Pasar,%20saya%20tertarik%20menggunakan%20template%20website%20Rempah%20Nusantara%20ini." 
+             target="_blank"
+             class="w-full md:w-auto inline-flex items-center justify-center gap-2 bg-gradient-to-r from-spice-cinnamon to-amber-700 hover:from-amber-600 hover:to-amber-800 text-white text-xs md:text-sm font-bold px-5 py-2.5 rounded-xl shadow-lg transition-all hover:scale-105 shrink-0">
+            <span>Gunakan Template Ini</span>
+            <i class="fa-solid fa-arrow-right text-xs"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <!-- SCRIPT MOBILE MENU -->
+    <script>
+        const mobileMenuBtn = document.getElementById('mobileMenuBtn');
+        const mobileMenu = document.getElementById('mobileMenu');
+        const menuIcon = document.getElementById('menuIcon');
+
+        mobileMenuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+            if (mobileMenu.classList.contains('hidden')) {
+                menuIcon.classList.remove('fa-xmark');
+                menuIcon.classList.add('fa-bars');
+            } else {
+                menuIcon.classList.remove('fa-bars');
+                menuIcon.classList.add('fa-xmark');
+            }
+        });
+    </script>
+</body>
+</html>
