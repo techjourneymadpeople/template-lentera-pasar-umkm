@@ -1,0 +1,908 @@
+<!DOCTYPE html>
+<html lang="id" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AURELIA // Luxury Rigid Box Manufacturer & Bespoke Packaging Atelier</title>
+    <meta name="description" content="Spesialis pembuatan hardbox mewah custom untuk kosmetik, skincare, parfum, hampers eksklusif, dan jam tangan. Greyboard 2-3mm, foil emas, dan busa EVA presisi.">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;600;700;800;900&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome 6 -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        lux: {
+                            obsidian: '#0F1012',
+                            dark: '#141518',
+                            charcoal: '#1C1D21',
+                            card: '#22242A',
+                            border: '#2D2E35',
+                            gold: '#D4AF37',
+                            goldlight: '#F3E5AB',
+                            golddark: '#AA820A',
+                            goldborder: '#3E3420',
+                            alabaster: '#F9F9F8',
+                            cream: '#F4F1EA'
+                        }
+                    },
+                    fontFamily: {
+                        serif: ['"Cinzel"', 'serif'],
+                        sans: ['"Plus Jakarta Sans"', 'sans-serif']
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        .no-scrollbar::-webkit-scrollbar { display: none; }
+        .no-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
+
+        .gold-gradient-text {
+            background: linear-gradient(135deg, #F3E5AB 0%, #D4AF37 50%, #AA820A 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .gold-border-gradient {
+            border-image: linear-gradient(to bottom right, #D4AF37, #3E3420) 1;
+        }
+
+        .lux-card {
+            transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+        }
+        .lux-card:hover {
+            transform: translateY(-6px);
+            box-shadow: 0 20px 40px -10px rgba(212, 175, 55, 0.15);
+            border-color: #D4AF37;
+        }
+    </style>
+</head>
+<body class="bg-lux-obsidian text-slate-100 font-sans antialiased selection:bg-lux-gold selection:text-black">
+
+    <!-- 1. TOP LUXURY ANNOUNCEMENT BAR -->
+    <div class="bg-lux-dark text-slate-300 text-xs py-2.5 px-4 font-sans font-medium border-b border-lux-goldborder">
+        <div class="max-w-7xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-2 text-center sm:text-left">
+            <div class="flex items-center justify-center gap-2">
+                <span class="px-2 py-0.5 bg-lux-gold text-black text-[10px] uppercase font-bold tracking-widest rounded-xs shadow-xs flex items-center gap-1 font-serif">
+                    <i class="fa-solid fa-gem text-xs"></i> HAUTE-COUTURE RIGID BOX
+                </span>
+                <span class="text-slate-200 font-medium">Spesialis Fabrikasi Hardbox Mewah Custom • Rangka Greyboard No. 30/40 Tebal 2-3mm • Hot Stamping Foil Emas</span>
+            </div>
+            <div class="flex items-center gap-4 text-xs">
+                <span class="hidden md:inline text-slate-400 font-serif">V-Groove 90° Seamless Corner</span>
+                <span class="hidden md:inline text-lux-gold">•</span>
+                <a href="https://wa.me/6281234567890?text=Halo%20Atelier%20Aurelia,%20saya%20tertarik%20konsultasi%20hardbox%20mewah%20custom." target="_blank" class="text-lux-gold hover:underline font-bold transition flex items-center gap-1">
+                    Request Purwarupa Dummy Sample <i class="fa-solid fa-arrow-right text-[10px]"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- 2. NAVBAR HAUTE-COUTURE -->
+    <header class="sticky top-0 z-40 bg-lux-obsidian/95 backdrop-blur-md border-b border-lux-border transition-all shadow-md">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-20 sm:h-24">
+                
+                <!-- Logo Atelier -->
+                <a href="index.html" class="flex items-center gap-3.5 group">
+                    <div class="w-12 h-12 bg-gradient-to-br from-lux-gold to-lux-charcoal text-black flex items-center justify-center text-xl font-bold rounded-xl shadow-lg group-hover:scale-105 transition border border-lux-gold/30">
+                        <i class="fa-solid fa-crown text-lux-obsidian"></i>
+                    </div>
+                    <div class="flex flex-col">
+                        <span class="text-2xl sm:text-3xl font-serif font-black tracking-wider uppercase text-white leading-none">
+                            AURELIA<span class="text-lux-gold">.</span>
+                        </span>
+                        <span class="text-[9px] tracking-[0.3em] text-lux-gold font-bold uppercase mt-1 font-sans">
+                            BESPOKE LUXURY RIGID BOX
+                        </span>
+                    </div>
+                </a>
+
+                <!-- Desktop Navigation Links -->
+                <nav class="hidden lg:flex items-center gap-7 text-xs font-bold tracking-widest uppercase text-slate-300 font-sans">
+                    <a href="index.html" class="text-lux-gold border-b border-lux-gold pb-1 font-bold">Beranda</a>
+                    <a href="katalog.html" class="hover:text-lux-gold transition">Koleksi Hardbox</a>
+                    <a href="detail.html" class="hover:text-lux-gold transition">Spesifikasi Greyboard & Busa</a>
+                    <a href="tentang.html" class="hover:text-lux-gold transition">Studio Atelier</a>
+                    <a href="artikel.html" class="hover:text-lux-gold transition">Panduan Desain & Foil</a>
+                    <a href="kontak.html" class="hover:text-lux-gold transition">Showroom & Purwarupa</a>
+                </nav>
+
+                <!-- Actions -->
+                <div class="hidden sm:flex items-center gap-3">
+                    <a href="https://wa.me/6281234567890?text=Halo%20Aurelia,%20saya%20ingin%20konsultasi%20hardbox%20skincare%20dan%20parfum." 
+                       target="_blank"
+                       class="inline-flex items-center gap-2 px-5 py-2.5 bg-gradient-to-r from-lux-gold to-lux-golddark hover:brightness-110 text-xs font-bold text-black rounded-xl transition shadow-md hover:shadow-lg font-sans uppercase tracking-wider">
+                        <i class="fa-brands fa-whatsapp text-base"></i>
+                        <span>Bespoke Concierge WA</span>
+                    </a>
+                </div>
+
+                <!-- Mobile Menu Button -->
+                <div class="flex lg:hidden items-center gap-2">
+                    <a href="https://wa.me/6281234567890" target="_blank" class="p-2.5 bg-lux-card text-lux-gold rounded-xl text-sm border border-lux-border">
+                        <i class="fa-brands fa-whatsapp"></i>
+                    </a>
+                    <button id="mobileMenuBtn" class="p-2.5 text-slate-300 hover:text-lux-gold focus:outline-hidden rounded-xl bg-lux-card border border-lux-border">
+                        <i id="menuIcon" class="fa-solid fa-bars text-xl"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Mobile Dropdown Menu -->
+        <div id="mobileMenu" class="hidden lg:hidden border-t border-lux-border bg-lux-obsidian px-6 py-5 shadow-2xl">
+            <div class="flex flex-col gap-4 text-sm font-bold uppercase tracking-wider text-slate-300">
+                <a href="index.html" class="text-lux-gold flex items-center justify-between">
+                    <span>Beranda Atelier</span>
+                    <i class="fa-solid fa-chevron-right text-xs"></i>
+                </a>
+                <a href="katalog.html" class="hover:text-lux-gold transition flex items-center justify-between">
+                    <span>Koleksi Hardbox Mewah</span>
+                    <i class="fa-solid fa-chevron-right text-xs"></i>
+                </a>
+                <a href="detail.html" class="hover:text-lux-gold transition flex items-center justify-between">
+                    <span>Detail Greyboard & Busa EVA</span>
+                    <i class="fa-solid fa-chevron-right text-xs"></i>
+                </a>
+                <a href="tentang.html" class="hover:text-lux-gold transition flex items-center justify-between">
+                    <span>Studio Fabrikasi & Presisi 90°</span>
+                    <i class="fa-solid fa-chevron-right text-xs"></i>
+                </a>
+                <a href="artikel.html" class="hover:text-lux-gold transition flex items-center justify-between">
+                    <span>Tips Hardbox Skincare & Foil</span>
+                    <i class="fa-solid fa-chevron-right text-xs"></i>
+                </a>
+                <a href="kontak.html" class="hover:text-lux-gold transition flex items-center justify-between">
+                    <span>Showroom & Purwarupa Mockup</span>
+                    <i class="fa-solid fa-chevron-right text-xs"></i>
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- 3. ULTRA-LUXURY STRUCTURAL HERO -->
+    <section class="relative pt-12 pb-20 md:pt-20 md:pb-28 bg-gradient-to-b from-lux-obsidian via-lux-dark to-lux-charcoal text-white border-b border-lux-goldborder overflow-hidden">
+        
+        <!-- Background Ambient Glow -->
+        <div class="absolute top-1/4 left-1/2 -translate-x-1/2 w-96 h-96 bg-lux-gold/10 rounded-full blur-3xl pointer-events-none"></div>
+
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-14 items-center">
+                
+                <!-- Left Content -->
+                <div class="lg:col-span-7 flex flex-col items-start text-left">
+                    
+                    <!-- Tag Badge -->
+                    <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-lux-card border border-lux-gold/40 text-lux-gold text-xs font-bold uppercase tracking-widest mb-6 font-serif shadow-sm">
+                        <i class="fa-solid fa-crown text-lux-goldlight"></i>
+                        <span>Engineered Prestige • Bespoke Rigid Boxes</span>
+                    </div>
+
+                    <h1 class="text-3xl sm:text-5xl lg:text-6xl font-serif font-black tracking-wide leading-[1.12] mb-6">
+                        Mahakarya Kemasan Eksklusif untuk <br>
+                        <span class="gold-gradient-text">
+                            Brand Mewah & Haute-Couture.
+                        </span>
+                    </h1>
+
+                    <p class="text-slate-300 text-sm sm:text-base lg:text-lg leading-relaxed mb-8 max-w-2xl font-sans font-light">
+                        Atelier manufaktur hardbox dan rigid box kustom berpresisi tinggi untuk brand kosmetik, skincare, parfum artisan, perhiasan, dan hampers korporat. Dirancang dengan rangka <strong class="text-white font-semibold">Greyboard No. 30/40 tebal 2–3mm</strong> dengan potongan V-Groove sudut siku 90° sempurna, magnet neodymium tersembunyi yang menutup rapat dengan bunyi 'klik' memuaskan, dan sentuhan *Hot Stamping Foil* emas yang berkilau.
+                    </p>
+
+                    <!-- CTA Action Buttons -->
+                    <div class="w-full flex flex-col sm:flex-row items-stretch sm:items-center gap-4 mb-10">
+                        <a href="katalog.html" class="inline-flex items-center justify-center gap-3 px-8 py-4 bg-gradient-to-r from-lux-gold to-lux-golddark hover:brightness-110 text-black font-bold text-xs uppercase tracking-widest rounded-xl shadow-xl transition-all transform hover:-translate-y-0.5 text-center font-serif">
+                            <span>Jelajahi Koleksi Hardbox</span>
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </a>
+                        <a href="kontak.html" class="inline-flex items-center justify-center gap-2 px-6 py-4 bg-lux-card hover:bg-lux-border text-slate-200 border border-lux-border font-bold text-xs uppercase tracking-wider rounded-xl shadow-xs transition-all text-center">
+                            <i class="fa-solid fa-cube text-lux-gold"></i>
+                            <span>Buat Purwarupa Dummy Box</span>
+                        </a>
+                    </div>
+
+                    <!-- Mini Tech Specs Strip -->
+                    <div class="w-full grid grid-cols-3 gap-4 sm:gap-6 pt-6 border-t border-lux-border text-center sm:text-left">
+                        <div class="flex flex-col">
+                            <span class="text-xl sm:text-2xl font-serif font-black text-lux-gold">2.0 – 3.0mm</span>
+                            <span class="text-[10px] text-slate-400 uppercase tracking-widest">Ketebalan Greyboard</span>
+                        </div>
+                        <div class="flex flex-col border-x border-lux-border px-3 sm:px-4">
+                            <span class="text-xl sm:text-2xl font-serif font-black text-white">90° V-Groove</span>
+                            <span class="text-[10px] text-slate-400 uppercase tracking-widest">Sudut Siku Presisi</span>
+                        </div>
+                        <div class="flex flex-col">
+                            <span class="text-xl sm:text-2xl font-serif font-black text-lux-goldlight">Neodymium</span>
+                            <span class="text-[10px] text-slate-400 uppercase tracking-widest">Magnet Klip Rapat</span>
+                        </div>
+                    </div>
+
+                </div>
+
+                <!-- Right Visual Showcase -->
+                <div class="lg:col-span-5 relative">
+                    <div class="relative mx-auto max-w-md lg:max-w-none">
+                        
+                        <!-- Main Hero Image Container -->
+                        <div class="relative rounded-2xl overflow-hidden shadow-2xl border-2 border-lux-gold/40 bg-lux-dark">
+                            <img src="https://images.unsplash.com/photo-1549465220-1a8b9238cd48?q=80&w=1000&auto=format&fit=crop" 
+                                 alt="Luxury Rigid Box Matte Black dengan Foil Emas dan Inset Busa EVA Parfum" 
+                                 class="w-full h-96 sm:h-[460px] object-cover object-center transform hover:scale-105 transition-all duration-700">
+                            
+                            <!-- Bottom Badge inside Photo -->
+                            <div class="absolute bottom-4 left-4 right-4 bg-lux-obsidian/90 backdrop-blur-md p-4 rounded-xl text-white border border-lux-goldborder">
+                                <div class="flex items-center justify-between">
+                                    <div>
+                                        <p class="text-[10px] text-lux-gold font-bold uppercase tracking-widest font-serif">Bespoke Structure</p>
+                                        <h3 class="text-base font-serif font-bold text-white">Magnetic Book Box + EVA Foam</h3>
+                                    </div>
+                                    <span class="px-2.5 py-1 bg-lux-gold text-black text-xs font-serif font-bold rounded-md flex items-center gap-1 shadow-xs">
+                                        <i class="fa-solid fa-gem text-[10px]"></i> Handcrafted
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Floating Flap Magnet (Top Right) -->
+                        <div class="absolute -top-4 -right-3 sm:-right-6 bg-lux-card text-white p-3.5 sm:p-4 rounded-xl shadow-2xl border border-lux-gold/50 flex items-center gap-3">
+                            <div class="w-11 h-11 rounded-lg bg-lux-gold text-black flex items-center justify-center text-xl shadow-sm">
+                                <i class="fa-solid fa-magnet"></i>
+                            </div>
+                            <div>
+                                <p class="text-xs font-serif font-bold text-white">Magnetic Flap Closure</p>
+                                <p class="text-[11px] text-lux-gold font-semibold flex items-center gap-1">
+                                    <i class="fa-solid fa-circle-check text-[10px]"></i> Klik Kunci Sempurna
+                                </p>
+                            </div>
+                        </div>
+
+                        <!-- Floating Foil Stamping (Bottom Left) -->
+                        <div class="absolute -bottom-5 -left-3 sm:-left-6 bg-lux-card text-white p-3.5 rounded-xl shadow-2xl border border-lux-gold/50 flex items-center gap-3">
+                            <div class="w-10 h-10 rounded-lg bg-lux-dark text-lux-gold flex items-center justify-center text-lg border border-lux-gold/30">
+                                <i class="fa-solid fa-wand-magic-sparkles"></i>
+                            </div>
+                            <div>
+                                <p class="text-xs font-serif font-bold text-white">Hot Foil Stamping 3D</p>
+                                <p class="text-[11px] text-slate-400">Kilau Emas & Rose Gold Mewah</p>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- 4. BESPOKE LUXURY VALUE STRIP -->
+    <section class="py-14 bg-lux-dark border-b border-lux-border">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+                
+                <!-- Item 1 -->
+                <div class="p-6 rounded-2xl bg-lux-card border border-lux-border hover:border-lux-gold transition-all flex flex-col justify-between">
+                    <div>
+                        <div class="w-12 h-12 rounded-xl bg-lux-gold/10 border border-lux-gold/30 text-lux-gold flex items-center justify-center text-xl mb-4">
+                            <i class="fa-solid fa-ruler-combined"></i>
+                        </div>
+                        <h3 class="text-base font-serif font-bold text-white mb-2">Presisi Sudut 90° V-Groove</h3>
+                        <p class="text-xs text-slate-400 leading-relaxed font-light">
+                            Teknik pemotongan alur V pada greyboard menghasilkan tekukan sudut siku 90 derajat yang tajam sempurna, kokoh, dan bebas gelembung kerut kertas.
+                        </p>
+                    </div>
+                    <div class="mt-4 pt-3 border-t border-lux-border text-[11px] font-bold text-lux-gold">
+                        📐 Zero-Wrinkle Perfection
+                    </div>
+                </div>
+
+                <!-- Item 2 -->
+                <div class="p-6 rounded-2xl bg-lux-card border border-lux-border hover:border-lux-gold transition-all flex flex-col justify-between">
+                    <div>
+                        <div class="w-12 h-12 rounded-xl bg-lux-gold/10 border border-lux-gold/30 text-lux-gold flex items-center justify-center text-xl mb-4">
+                            <i class="fa-solid fa-shapes"></i>
+                        </div>
+                        <h3 class="text-base font-serif font-bold text-white mb-2">Custom Die-Cut Busa EVA</h3>
+                        <p class="text-xs text-slate-400 leading-relaxed font-light">
+                            Inset busa spons EVA padat yang dipotong presisi menggunakan mesin laser CNC sesuai lekuk botol parfum, serum, jar krim, atau perhiasan mewah Anda.
+                        </p>
+                    </div>
+                    <div class="mt-4 pt-3 border-t border-lux-border text-[11px] font-bold text-lux-goldlight">
+                        🧴 Anti-Guncang & Pas Presisi
+                    </div>
+                </div>
+
+                <!-- Item 3 -->
+                <div class="p-6 rounded-2xl bg-lux-card border border-lux-border hover:border-lux-gold transition-all flex flex-col justify-between">
+                    <div>
+                        <div class="w-12 h-12 rounded-xl bg-lux-gold/10 border border-lux-gold/30 text-lux-gold flex items-center justify-center text-xl mb-4">
+                            <i class="fa-solid fa-scroll"></i>
+                        </div>
+                        <h3 class="text-base font-serif font-bold text-white mb-2">Kertas Fancy Paper & Velvet</h3>
+                        <p class="text-xs text-slate-400 leading-relaxed font-light">
+                            Pilihan kertas pelapis cover eksklusif: Fancy paper import bertekstur kulit jeruk, linen lembut, lapisan soft-touch doff, hingga kain beludru velvet royal.
+                        </p>
+                    </div>
+                    <div class="mt-4 pt-3 border-t border-lux-border text-[11px] font-bold text-white">
+                        ✨ Sensasi Sentuhan Premium
+                    </div>
+                </div>
+
+                <!-- Item 4 -->
+                <div class="p-6 rounded-2xl bg-lux-card border border-lux-border hover:border-lux-gold transition-all flex flex-col justify-between">
+                    <div>
+                        <div class="w-12 h-12 rounded-xl bg-lux-gold/10 border border-lux-gold/30 text-lux-gold flex items-center justify-center text-xl mb-4">
+                            <i class="fa-solid fa-cubes"></i>
+                        </div>
+                        <h3 class="text-base font-serif font-bold text-white mb-2">Purwarupa Dummy 1-On-1</h3>
+                        <p class="text-xs text-slate-400 leading-relaxed font-light">
+                            Kami membuatkan sampel dummy fisik 1 unit untuk Anda uji langsung memasukkan botol dan merasakan kekuatan magnet sebelum memulai produksi massal.
+                        </p>
+                    </div>
+                    <div class="mt-4 pt-3 border-t border-lux-border text-[11px] font-bold text-lux-gold">
+                        📦 Garansi Presisi Ukuran
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- 5. SECTION KHUSUS: STRUCTURAL BOX ARCHITECTURE -->
+    <section class="py-16 md:py-24 bg-lux-obsidian border-b border-lux-goldborder">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <span class="px-3 py-1 bg-lux-card text-lux-gold text-xs font-bold uppercase rounded-md tracking-widest border border-lux-gold/40 font-serif">
+                    STRUCTURAL BOX ARCHITECTURE & MECHANISM
+                </span>
+                <h2 class="text-3xl sm:text-4xl font-serif font-black text-white mt-3 mb-3">
+                    Pilihan Model Struktur & Mekanisme Bukaan Hardbox
+                </h2>
+                <p class="text-slate-400 text-sm font-light">
+                    Kombinasi konstruksi arsitektural greyboard kokoh dengan mekanisme bukaan yang memberikan pengalaman *unboxing* berkesan mewah.
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+                
+                <!-- Architecture 1: Magnetic Book Box -->
+                <div class="bg-lux-card rounded-2xl p-6 border border-lux-border hover:border-lux-gold transition-all flex flex-col justify-between">
+                    <div>
+                        <div class="h-44 rounded-xl overflow-hidden bg-lux-dark mb-4 border border-lux-border">
+                            <img src="https://images.unsplash.com/photo-1549465220-1a8b9238cd48?q=80&w=500&auto=format&fit=crop" 
+                                 alt="Magnetic Book Box Hardbox" class="w-full h-full object-cover">
+                        </div>
+                        <h3 class="font-serif font-bold text-base text-white">1. Magnetic Book Closure</h3>
+                        <p class="text-xs text-slate-400 mt-2 leading-relaxed font-light">
+                            Model buku lipat dengan magnet neodymium tersembunyi. Tipe paling favorit untuk paket serum skincare, parfum, dan gift set.
+                        </p>
+                    </div>
+                    <div class="mt-4 pt-3 border-t border-lux-border text-[11px] text-lux-gold font-serif">
+                        ⭐️ Paling Laris untuk Skincare
+                    </div>
+                </div>
+
+                <!-- Architecture 2: Lift-Off Lid (2-Piece) -->
+                <div class="bg-lux-card rounded-2xl p-6 border border-lux-border hover:border-lux-gold transition-all flex flex-col justify-between">
+                    <div>
+                        <div class="h-44 rounded-xl overflow-hidden bg-lux-dark mb-4 border border-lux-border">
+                            <img src="https://images.unsplash.com/photo-1549465220-1a8b9238cd48?q=80&w=500&auto=format&fit=crop" 
+                                 alt="Lift-Off Lid 2-Piece Hardbox" class="w-full h-full object-cover">
+                        </div>
+                        <h3 class="font-serif font-bold text-base text-white">2. Lift-Off Lid (Top & Bottom)</h3>
+                        <p class="text-xs text-slate-400 mt-2 leading-relaxed font-light">
+                            Konstruksi klasik 2 bagian (tutup atas dan wadah bawah) dengan efek hisapan udara (*slow vacuum release*) saat dibuka perlahan.
+                        </p>
+                    </div>
+                    <div class="mt-4 pt-3 border-t border-lux-border text-[11px] text-white font-serif">
+                        ⌚ Ideal untuk Jam Tangan & Hampers
+                    </div>
+                </div>
+
+                <!-- Architecture 3: Drawer Sliding Matchbox -->
+                <div class="bg-lux-card rounded-2xl p-6 border border-lux-border hover:border-lux-gold transition-all flex flex-col justify-between">
+                    <div>
+                        <div class="h-44 rounded-xl overflow-hidden bg-lux-dark mb-4 border border-lux-border">
+                            <img src="https://images.unsplash.com/photo-1549465220-1a8b9238cd48?q=80&w=500&auto=format&fit=crop" 
+                                 alt="Drawer Sliding Matchbox" class="w-full h-full object-cover">
+                        </div>
+                        <h3 class="font-serif font-bold text-base text-white">3. Drawer Sliding Box</h3>
+                        <p class="text-xs text-slate-400 mt-2 leading-relaxed font-light">
+                            Model laci geser dengan pita penarik satin (*ribbon pull*). Memberikan kesan elegan untuk perhiasan emas, scarf sutra, dan lipstik.
+                        </p>
+                    </div>
+                    <div class="mt-4 pt-3 border-t border-lux-border text-[11px] text-lux-gold font-serif">
+                        💍 Eksklusif untuk Perhiasan
+                    </div>
+                </div>
+
+                <!-- Architecture 4: Cylindrical Rigid Tube -->
+                <div class="bg-lux-card rounded-2xl p-6 border border-lux-border hover:border-lux-gold transition-all flex flex-col justify-between">
+                    <div>
+                        <div class="h-44 rounded-xl overflow-hidden bg-lux-dark mb-4 border border-lux-border">
+                            <img src="https://images.unsplash.com/photo-1549465220-1a8b9238cd48?q=80&w=500&auto=format&fit=crop" 
+                                 alt="Cylindrical Rigid Tube Box" class="w-full h-full object-cover">
+                        </div>
+                        <h3 class="font-serif font-bold text-base text-white">4. Cylindrical Tube Box</h3>
+                        <p class="text-xs text-slate-400 mt-2 leading-relaxed font-light">
+                            Bentuk tabung silinder karton tebal spiral-wound dengan penutup presisi. Sangat estetik untuk reed diffuser, botol anggur, dan lilin aromaterapi.
+                        </p>
+                    </div>
+                    <div class="mt-4 pt-3 border-t border-lux-border text-[11px] text-lux-goldlight font-serif">
+                        🕯️ Silinder Lilin & Reed Diffuser
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+    <!-- 6. PRODUK UNGGULAN (Grid 3 Kolom Card Hardbox Mewah dengan Rincian Struktur & Foil) -->
+    <section class="py-16 md:py-24 bg-lux-dark">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            
+            <div class="flex flex-col md:flex-row md:items-end justify-between mb-14 gap-4">
+                <div>
+                    <span class="px-3 py-1 bg-lux-card text-lux-gold text-xs font-bold uppercase rounded-md tracking-widest border border-lux-gold/40 font-serif">
+                        BESPOKE MASTERPIECES COLLECTION
+                    </span>
+                    <h2 class="text-2xl sm:text-4xl font-serif font-black text-white mt-2">
+                        Koleksi Hardbox Mewah Terfavorit
+                    </h2>
+                    <p class="text-slate-400 text-sm mt-1 font-light">
+                        Dibuat khusus (*custom-made*) mengikuti dimensi botol produk dan warna tema identitas brand Anda.
+                    </p>
+                </div>
+                <a href="katalog.html" class="inline-flex items-center gap-2 text-xs font-bold text-lux-gold hover:underline uppercase tracking-widest font-serif">
+                    Lihat Seluruh Koleksi Hardbox <i class="fa-solid fa-arrow-right"></i>
+                </a>
+            </div>
+
+            <!-- Products Grid 3 Col -->
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                
+                <!-- Product Card 1: Magnetic Book Skincare Box (Matte Black & Gold) -->
+                <div class="lux-card bg-lux-card rounded-2xl border border-lux-border overflow-hidden flex flex-col justify-between shadow-lg">
+                    <div>
+                        <div class="relative h-64 bg-lux-obsidian overflow-hidden">
+                            <img src="https://images.unsplash.com/photo-1549465220-1a8b9238cd48?q=80&w=800&auto=format&fit=crop" 
+                                 alt="Magnetic Book Skincare Box" 
+                                 class="w-full h-full object-cover transform hover:scale-105 transition-all duration-700">
+                            <div class="absolute top-3 left-3">
+                                <span class="bg-lux-gold text-black text-[10px] font-serif font-bold px-2.5 py-1 rounded-sm shadow-xs uppercase tracking-wider">
+                                    Greyboard 2.5mm
+                                </span>
+                            </div>
+                            <div class="absolute top-3 right-3 bg-lux-obsidian/90 text-lux-gold text-[10px] font-bold px-2.5 py-1 rounded-sm border border-lux-gold/40">
+                                Magnetic Flap
+                            </div>
+                        </div>
+                        <div class="p-6">
+                            <h3 class="text-lg font-serif font-bold text-white">Magnetic Skincare Package Box</h3>
+                            <p class="text-xs text-slate-400 mt-2 leading-relaxed font-light">
+                                Hardbox hitam doff dengan magnet tersembunyi, inset busa EVA lapis kain beludru untuk paket serum, toner, dan krim wajah eksklusif.
+                            </p>
+                            
+                            <!-- B2B Luxury Specs Table -->
+                            <div class="mt-4 bg-lux-obsidian p-3 rounded-xl border border-lux-border text-xs space-y-1.5 font-sans">
+                                <div class="flex items-center justify-between text-slate-300">
+                                    <span>Material Rangka:</span>
+                                    <strong class="text-white">Greyboard No. 40 (2.5mm)</strong>
+                                </div>
+                                <div class="flex items-center justify-between text-slate-300">
+                                    <span>Finishing Cover:</span>
+                                    <strong class="text-lux-gold">Soft Touch + Hot Foil Emas</strong>
+                                </div>
+                                <div class="flex items-center justify-between text-slate-300">
+                                    <span>Inset Dalam:</span>
+                                    <strong class="text-slate-200">Laser Cut Black EVA Foam</strong>
+                                </div>
+                                <div class="flex items-center justify-between text-lux-gold font-serif font-bold pt-1 border-t border-lux-border">
+                                    <span>Estimasi Tier ≥ 1.000 Pcs:</span>
+                                    <span>Rp 18.500 / box</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="p-6 pt-0">
+                        <div class="pt-3 border-t border-lux-border">
+                            <a href="detail.html" class="block w-full py-3 bg-gradient-to-r from-lux-gold to-lux-golddark hover:brightness-110 text-black text-center text-xs font-serif font-bold rounded-xl transition uppercase tracking-wider">
+                                Spesifikasi & Order Purwarupa
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product Card 2: Luxury Perfume Box Velvet & Gold -->
+                <div class="lux-card bg-lux-card rounded-2xl border border-lux-border overflow-hidden flex flex-col justify-between shadow-lg">
+                    <div>
+                        <div class="relative h-64 bg-lux-obsidian overflow-hidden">
+                            <img src="https://images.unsplash.com/photo-1549465220-1a8b9238cd48?q=80&w=800&auto=format&fit=crop" 
+                                 alt="Luxury Perfume Rigid Box" 
+                                 class="w-full h-full object-cover transform hover:scale-105 transition-all duration-700">
+                            <div class="absolute top-3 left-3">
+                                <span class="bg-lux-gold text-black text-[10px] font-serif font-bold px-2.5 py-1 rounded-sm shadow-xs uppercase tracking-wider">
+                                    Greyboard 3.0mm
+                                </span>
+                            </div>
+                            <div class="absolute top-3 right-3 bg-lux-obsidian/90 text-lux-gold text-[10px] font-bold px-2.5 py-1 rounded-sm border border-lux-gold/40">
+                                Top-Bottom Lid
+                            </div>
+                        </div>
+                        <div class="p-6">
+                            <h3 class="text-lg font-serif font-bold text-white">Haute Perfume Coffret Box</h3>
+                            <p class="text-xs text-slate-400 mt-2 leading-relaxed font-light">
+                                Kotak parfum tutup lepas dengan busa bantal berbalut kain satin mengkilap. Menopang botol kaca parfum 50ml / 100ml dengan sangat kokoh.
+                            </p>
+                            
+                            <!-- B2B Luxury Specs Table -->
+                            <div class="mt-4 bg-lux-obsidian p-3 rounded-xl border border-lux-border text-xs space-y-1.5 font-sans">
+                                <div class="flex items-center justify-between text-slate-300">
+                                    <span>Material Rangka:</span>
+                                    <strong class="text-white">Heavy Greyboard 3.0mm</strong>
+                                </div>
+                                <div class="flex items-center justify-between text-slate-300">
+                                    <span>Pelapis Luar:</span>
+                                    <strong class="text-lux-gold">Fancy Linen Textured Paper</strong>
+                                </div>
+                                <div class="flex items-center justify-between text-slate-300">
+                                    <span>Inset Dalam:</span>
+                                    <strong class="text-slate-200">Satin Cushion + EVA Cavity</strong>
+                                </div>
+                                <div class="flex items-center justify-between text-lux-gold font-serif font-bold pt-1 border-t border-lux-border">
+                                    <span>Estimasi Tier ≥ 1.000 Pcs:</span>
+                                    <span>Rp 22.000 / box</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="p-6 pt-0">
+                        <div class="pt-3 border-t border-lux-border">
+                            <a href="detail.html" class="block w-full py-3 bg-gradient-to-r from-lux-gold to-lux-golddark hover:brightness-110 text-black text-center text-xs font-serif font-bold rounded-xl transition uppercase tracking-wider">
+                                Spesifikasi & Order Purwarupa
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product Card 3: Drawer Sliding Jewelry & Watch Box -->
+                <div class="lux-card bg-lux-card rounded-2xl border border-lux-border overflow-hidden flex flex-col justify-between shadow-lg">
+                    <div>
+                        <div class="relative h-64 bg-lux-obsidian overflow-hidden">
+                            <img src="https://images.unsplash.com/photo-1549465220-1a8b9238cd48?q=80&w=800&auto=format&fit=crop" 
+                                 alt="Drawer Sliding Watch & Jewelry Box" 
+                                 class="w-full h-full object-cover transform hover:scale-105 transition-all duration-700">
+                            <div class="absolute top-3 left-3">
+                                <span class="bg-lux-gold text-black text-[10px] font-serif font-bold px-2.5 py-1 rounded-sm shadow-xs uppercase tracking-wider">
+                                    Greyboard 2.0mm
+                                </span>
+                            </div>
+                            <div class="absolute top-3 right-3 bg-lux-obsidian/90 text-lux-gold text-[10px] font-bold px-2.5 py-1 rounded-sm border border-lux-gold/40">
+                                Sliding Matchbox
+                            </div>
+                        </div>
+                        <div class="p-6">
+                            <h3 class="text-lg font-serif font-bold text-white">Drawer Sliding Jewelry Box</h3>
+                            <p class="text-xs text-slate-400 mt-2 leading-relaxed font-light">
+                                Box laci tarik elegan dengan tarikan pita satin emas. Sangat digemari untuk perhiasan berlian, jam tangan, dan bros eksklusif.
+                            </p>
+                            
+                            <!-- B2B Luxury Specs Table -->
+                            <div class="mt-4 bg-lux-obsidian p-3 rounded-xl border border-lux-border text-xs space-y-1.5 font-sans">
+                                <div class="flex items-center justify-between text-slate-300">
+                                    <span>Material Rangka:</span>
+                                    <strong class="text-white">Greyboard No. 30 (2.0mm)</strong>
+                                </div>
+                                <div class="flex items-center justify-between text-slate-300">
+                                    <span>Aksen Tambahan:</span>
+                                    <strong class="text-lux-gold">Gold Ribbon Pull + Deboss</strong>
+                                </div>
+                                <div class="flex items-center justify-between text-slate-300">
+                                    <span>Inset Dalam:</span>
+                                    <strong class="text-slate-200">Velvet Foam with Ring Slit</strong>
+                                </div>
+                                <div class="flex items-center justify-between text-lux-gold font-serif font-bold pt-1 border-t border-lux-border">
+                                    <span>Estimasi Tier ≥ 1.000 Pcs:</span>
+                                    <span>Rp 14.500 / box</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="p-6 pt-0">
+                        <div class="pt-3 border-t border-lux-border">
+                            <a href="detail.html" class="block w-full py-3 bg-gradient-to-r from-lux-gold to-lux-golddark hover:brightness-110 text-black text-center text-xs font-serif font-bold rounded-xl transition uppercase tracking-wider">
+                                Spesifikasi & Order Purwarupa
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- 7. TESTIMONIALS B2B (Brand Founder Skincare Viral, Parfum Mewah, & Jam Tangan) -->
+    <section class="py-16 md:py-24 bg-lux-obsidian border-t border-lux-goldborder">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-2xl mx-auto mb-14">
+                <span class="px-3 py-1 bg-lux-card text-lux-gold text-xs font-bold uppercase tracking-widest rounded-md border border-lux-gold/40 font-serif">
+                    PATRON TESTIMONIALS & LUXURY PARTNERS
+                </span>
+                <h2 class="text-3xl sm:text-4xl font-serif font-black text-white mt-3 mb-3">
+                    Dipercaya Brand Mewah & Haute-Parfumerie
+                </h2>
+                <p class="text-slate-400 text-sm font-light">
+                    Kualitas hardbox yang mendongkrak nilai jual produk dan memperkuat citra kemewahan di mata konsumen premium.
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                
+                <!-- Review 1 -->
+                <div class="p-6 rounded-2xl bg-lux-card border border-lux-border shadow-md flex flex-col justify-between">
+                    <div>
+                        <div class="flex items-center text-lux-gold gap-1 text-xs mb-3">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <span class="text-slate-400 font-serif ml-1 text-[11px]">(Cosmeceutical Brand Jakarta)</span>
+                        </div>
+                        <p class="text-xs text-slate-300 leading-relaxed italic mb-4 font-light">
+                            "Presisi sudut siku 90 derajat hardbox Aurelia benar-benar sempurna tanpa ada gelembung lem sama sekali. Magnetnya mengunci sangat mantap dan foil emasnya tebal mengkilap. Paket skincare bundle kami sukses terjual 10.000 paket dalam waktu 3 minggu."
+                        </p>
+                    </div>
+                    <div class="flex items-center gap-3 pt-4 border-t border-lux-border">
+                        <div class="w-10 h-10 rounded-xl bg-lux-gold text-black font-bold flex items-center justify-center text-sm font-serif">
+                            CL
+                        </div>
+                        <div>
+                            <h4 class="text-xs font-serif font-bold text-white">Clara Laurentia</h4>
+                            <p class="text-[10px] text-lux-gold font-sans">Founder & CEO - Luxury Skincare Clinic</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Review 2 -->
+                <div class="p-6 rounded-2xl bg-lux-card border border-lux-border shadow-md flex flex-col justify-between">
+                    <div>
+                        <div class="flex items-center text-lux-gold gap-1 text-xs mb-3">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <span class="text-slate-400 font-serif ml-1 text-[11px]">(Artisan Perfumery Bali)</span>
+                        </div>
+                        <p class="text-xs text-slate-300 leading-relaxed italic mb-4 font-light">
+                            "Botol parfum kristal kami memiliki lekukan khusus. Tim atelier Aurelia membuatkan laser cut busa EVA yang memegang leher botol dengan sangat presisi. Botol sama sekali tidak bergeser saat pengiriman kargo udara."
+                        </p>
+                    </div>
+                    <div class="flex items-center gap-3 pt-4 border-t border-lux-border">
+                        <div class="w-10 h-10 rounded-xl bg-lux-obsidian border border-lux-gold/40 text-lux-gold font-bold flex items-center justify-center text-sm font-serif">
+                            MA
+                        </div>
+                        <div>
+                            <h4 class="text-xs font-serif font-bold text-white">Michael Arifin</h4>
+                            <p class="text-[10px] text-lux-gold font-sans">Master Perfumer - Niche Fragrance House</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Review 3 -->
+                <div class="p-6 rounded-2xl bg-lux-card border border-lux-border shadow-md flex flex-col justify-between">
+                    <div>
+                        <div class="flex items-center text-lux-gold gap-1 text-xs mb-3">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <span class="text-slate-400 font-serif ml-1 text-[11px]">(Corporate Hampers Surabaya)</span>
+                        </div>
+                        <p class="text-xs text-slate-400 font-serif ml-1 text-[11px]">(Corporate Hampers Surabaya)</span>
+                        </div>
+                        <p class="text-xs text-slate-300 leading-relaxed italic mb-4 font-light">
+                            "Layanan purwarupa dummy 1 unit dari Aurelia sangat membantu kami mempresentasikan konsep hampers Idul Fitri & Imlek ke direksi bank nasional. Kualitas pengerjaan konsisten dari sampel hingga order 5.000 box."
+                        </p>
+                    </div>
+                    <div class="flex items-center gap-3 pt-4 border-t border-lux-border">
+                        <div class="w-10 h-10 rounded-xl bg-lux-golddark text-white font-bold flex items-center justify-center text-sm font-serif">
+                            ST
+                        </div>
+                        <div>
+                            <h4 class="text-xs font-serif font-bold text-white">Stella Tanuwidjaja</h4>
+                            <p class="text-[10px] text-lux-gold font-sans">Managing Director - Bespoke Gift Atelier</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- 8. CALL TO ACTION BANNER -->
+    <section class="py-16 bg-gradient-to-r from-lux-dark via-lux-charcoal to-lux-dark text-white relative overflow-hidden border-t border-lux-goldborder">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <div class="flex flex-col lg:flex-row items-center justify-between gap-8 text-center lg:text-left">
+                <div>
+                    <span class="px-3 py-1 bg-lux-gold text-black text-[10px] font-serif font-bold uppercase rounded-md tracking-widest">
+                        PURWARUPA DUMMY & KONSULTASI STRUKTURAL
+                    </span>
+                    <h2 class="text-2xl sm:text-4xl font-serif font-black mt-3 mb-2">
+                        Wujudkan Kemasan Hardbox Impian untuk Produk Unggulan Anda
+                    </h2>
+                    <p class="text-slate-300 text-sm max-w-xl font-light">
+                        Kirimkan sampel botol atau dimensi produk Anda. Tim arsitek kemasan kami akan membuatkan dummy purwarupa fisik 1 unit untuk Anda uji langsung sebelum produksi massal.
+                    </p>
+                </div>
+                <div class="flex flex-col sm:flex-row gap-4 w-full sm:w-auto">
+                    <a href="https://wa.me/6281234567890?text=Halo%20Atelier%20Aurelia,%20saya%20ingin%20konsultasi%20pembuatan%20purwarupa%20dummy%20hardbox." 
+                       target="_blank"
+                       class="inline-flex items-center justify-center gap-2.5 px-8 py-4 bg-gradient-to-r from-lux-gold to-lux-golddark hover:brightness-110 text-black font-serif font-bold text-xs uppercase tracking-widest rounded-xl shadow-xl transition transform hover:scale-105">
+                        <i class="fa-brands fa-whatsapp text-base"></i>
+                        <span>Konsultasi Concierge WA</span>
+                    </a>
+                    <a href="kontak.html" 
+                       class="inline-flex items-center justify-center gap-2 px-6 py-4 bg-lux-card hover:bg-lux-border text-white font-bold text-xs uppercase tracking-wider rounded-xl border border-lux-border transition">
+                        <span>Showroom & Lokasi Atelier</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 9. FOOTER HAUTE-COUTURE LUXURY -->
+    <footer class="bg-lux-obsidian text-slate-400 text-xs pt-16 pb-36 border-t border-lux-border font-sans">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-10 pb-12 border-b border-lux-border">
+                
+                <!-- Col 1: Brand & Bio -->
+                <div class="lg:col-span-2 space-y-4">
+                    <a href="index.html" class="flex items-center gap-3">
+                        <div class="w-10 h-10 bg-gradient-to-br from-lux-gold to-lux-charcoal text-black flex items-center justify-center text-xl font-bold rounded-xl border border-lux-gold/30">
+                            <i class="fa-solid fa-crown text-lux-obsidian"></i>
+                        </div>
+                        <span class="text-2xl font-serif font-black text-white tracking-wider">
+                            AURELIA<span class="text-lux-gold">.</span>
+                        </span>
+                    </a>
+                    <p class="text-xs text-slate-400 leading-relaxed max-w-sm font-light">
+                        PT Aurelia Kreasi Kemas Pratama — Atelier manufaktur hardbox mewah, rigid box kustom, dan kemasan kosmetik/parfum berpresisi tinggi. Menghadirkan kemewahan struktural untuk brand prestige di seluruh Indonesia.
+                    </p>
+                </div>
+
+                <!-- Col 2: Navigasi Cepat -->
+                <div>
+                    <h4 class="text-xs font-serif font-bold text-lux-gold uppercase tracking-widest mb-4">Navigasi Halaman</h4>
+                    <ul class="space-y-2.5 font-light">
+                        <li><a href="index.html" class="hover:text-lux-gold transition">Beranda Atelier</a></li>
+                        <li><a href="katalog.html" class="hover:text-lux-gold transition">Koleksi Hardbox</a></li>
+                        <li><a href="detail.html" class="hover:text-lux-gold transition">Spesifikasi Greyboard & Busa</a></li>
+                        <li><a href="tentang.html" class="hover:text-lux-gold transition">Studio Fabrikasi 90°</a></li>
+                        <li><a href="artikel.html" class="hover:text-lux-gold transition">Panduan Desain & Foil</a></li>
+                        <li><a href="kontak.html" class="hover:text-lux-gold transition">Showroom & Purwarupa</a></li>
+                    </ul>
+                </div>
+
+                <!-- Col 3: Kategori Hardbox -->
+                <div>
+                    <h4 class="text-xs font-serif font-bold text-lux-gold uppercase tracking-widest mb-4">Koleksi Struktur</h4>
+                    <ul class="space-y-2.5 font-light">
+                        <li><a href="detail.html" class="hover:text-lux-gold transition">Magnetic Book Box</a></li>
+                        <li><a href="katalog.html" class="hover:text-lux-gold transition">Lift-Off Lid Perfume Box</a></li>
+                        <li><a href="katalog.html" class="hover:text-lux-gold transition">Drawer Sliding Jewelry Box</a></li>
+                        <li><a href="katalog.html" class="hover:text-lux-gold transition">Cylindrical Rigid Tube</a></li>
+                        <li><a href="kontak.html" class="hover:text-lux-gold transition">Bespoke Hampers Korporat</a></li>
+                    </ul>
+                </div>
+
+                <!-- Col 4: Showroom & Kontak -->
+                <div>
+                    <h4 class="text-xs font-serif font-bold text-lux-gold uppercase tracking-widest mb-4">Atelier & Showroom</h4>
+                    <p class="text-xs text-slate-400 leading-relaxed mb-3 font-light">
+                        Plaza Kemasan Eksklusif, Jl. Boulevard Barat Raya Blok LC No. 8, Kelapa Gading, Jakarta Utara 14240.
+                    </p>
+                    <p class="text-xs text-lux-gold font-bold mb-1 font-serif"><i class="fa-solid fa-phone mr-1.5"></i> +62 21-4585-7890 / 0812-3456-7890</p>
+                    <p class="text-xs text-slate-400 font-light"><i class="fa-solid fa-envelope mr-1.5"></i> concierge@aureliarigidbox.co.id</p>
+                </div>
+
+            </div>
+
+            <div class="pt-8 flex flex-col sm:flex-row items-center justify-between gap-4 text-[11px] text-slate-500 font-light">
+                <p>&copy; 2026 PT AURELIA KREASI KEMAS PRATAMA. All rights reserved.</p>
+                <div class="flex items-center gap-4 font-serif">
+                    <span>90° V-Groove Precision</span>
+                    <span>•</span>
+                    <span>Imported Fancy Paper</span>
+                    <span>•</span>
+                    <span>Neodymium Magnetic Closure</span>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- 10. FLOATING WHATSAPP BUTTON (bottom-24) -->
+    <div class="fixed bottom-24 right-5 z-40">
+        <a href="https://wa.me/6281234567890?text=Halo%20Atelier%20Aurelia,%20saya%20ingin%20tanya%20pembuatan%20hardbox%20mewah." 
+           target="_blank" 
+           aria-label="Chat WhatsApp Concierge Aurelia Rigid Box"
+           class="group flex items-center gap-3 bg-lux-dark hover:bg-lux-card text-white px-4 py-3.5 rounded-full shadow-2xl transition-all transform hover:scale-105 border-2 border-lux-gold">
+            <i class="fa-brands fa-whatsapp text-2xl text-emerald-400 animate-pulse"></i>
+            <span class="text-xs font-serif font-bold tracking-wider pr-1 hidden sm:inline text-lux-gold">Bespoke Concierge WA</span>
+        </a>
+    </div>
+
+    <!-- 11. STICKY DEMO & SALES BAR (fixed bottom-4) -->
+    <div class="fixed bottom-4 left-4 right-4 z-50 max-w-5xl mx-auto">
+      <div class="bg-lux-dark/95 backdrop-blur-md text-white px-4 sm:px-6 py-3.5 rounded-2xl shadow-2xl border border-lux-gold/40 flex flex-col md:flex-row items-center justify-between gap-3">
+        
+        <div class="flex items-center gap-3 text-left w-full md:w-auto">
+          <div class="w-9 h-9 rounded-xl bg-lux-gold/20 border border-lux-gold/40 flex items-center justify-center shrink-0">
+            <i class="fa-solid fa-crown text-lux-gold text-sm"></i>
+          </div>
+          <div>
+            <div class="text-xs md:text-sm font-serif font-bold text-white flex items-center gap-2">
+              <span>Lentera Pasar Demo</span>
+              <span class="text-[10px] px-2 py-0.5 rounded bg-lux-gold/20 text-lux-gold font-bold font-sans">Luxury Rigid Box Atelier</span>
+            </div>
+            <p class="text-[11px] text-slate-400 hidden sm:block font-light">Desain Luxury Packaging Suite untuk produsen hardbox mewah, box kosmetik, botol parfum, perhiasan & hampers.</p>
+          </div>
+        </div>
+
+        <div class="flex items-center gap-3 w-full md:w-auto justify-end">
+          <div class="hidden lg:flex items-center gap-4 text-xs text-slate-400 border-r border-lux-border pr-4 font-serif">
+            <div class="flex items-center gap-1 text-lux-gold">
+              <i class="fa-solid fa-gem text-xs"></i>
+              <span>V-Groove 90°</span>
+            </div>
+            <span class="text-slate-600">•</span>
+            <div class="flex items-center gap-1 text-lux-gold">
+              <i class="fa-solid fa-gem text-xs"></i>
+              <span>Hot Stamping Foil</span>
+            </div>
+          </div>
+
+          <a href="https://wa.me/6281234567890?text=Halo%20Tim%20Lentera%20Pasar,%20saya%20tertarik%20menggunakan%20template%20website%20Hardbox%20Mewah%20ini." 
+             target="_blank"
+             class="w-full md:w-auto inline-flex items-center justify-center gap-2 bg-gradient-to-r from-lux-gold to-lux-golddark hover:brightness-110 text-black text-xs md:text-sm font-serif font-bold px-5 py-2.5 rounded-xl shadow-lg transition-all hover:scale-105 shrink-0 uppercase tracking-wider">
+            <span>Gunakan Template Ini</span>
+            <i class="fa-solid fa-arrow-right text-xs"></i>
+          </a>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- SCRIPT MOBILE MENU -->
+    <script>
+        const mobileMenuBtn = document.getElementById('mobileMenuBtn');
+        const mobileMenu = document.getElementById('mobileMenu');
+        const menuIcon = document.getElementById('menuIcon');
+
+        mobileMenuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+            if (mobileMenu.classList.contains('hidden')) {
+                menuIcon.classList.remove('fa-xmark');
+                menuIcon.classList.add('fa-bars');
+            } else {
+                menuIcon.classList.remove('fa-bars');
+                menuIcon.classList.add('fa-xmark');
+            }
+        });
+    </script>
+</body>
+</html>
