@@ -1,0 +1,776 @@
+<!DOCTYPE html>
+<html lang="id" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VERDANT // Kebun Sayur Hidroponik Segar & Bebas Pestisida</title>
+    <meta name="description" content="Kebun hidroponik modern greenhouse: Selada Romaine, Kale Curly, Pakcoy renyah dipanen subuh hari H, bebas 100% pestisida kimia, dan langganan sayur mingguan keluarga.">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome 6 -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        verdant: {
+                            green: '#16A34A',
+                            greendark: '#15803D',
+                            deep: '#14532D',
+                            forest: '#052E16',
+                            mint: '#F0FDF4',
+                            mintsoft: '#DCFCE7',
+                            border: '#BBF7D0',
+                            charcoal: '#0F172A',
+                            gold: '#EAB308'
+                        }
+                    },
+                    fontFamily: {
+                        sans: ['"Plus Jakarta Sans"', 'sans-serif'],
+                        mono: ['"Space Grotesk"', 'monospace']
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        .no-scrollbar::-webkit-scrollbar { display: none; }
+        .no-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
+
+        .greenhouse-glow {
+            background: radial-gradient(circle at 50% 10%, rgba(220, 252, 231, 0.7) 0%, rgba(255, 255, 255, 1) 70%);
+        }
+
+        .btn-verdant {
+            transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+        }
+        .btn-verdant:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 12px 24px -6px rgba(22, 163, 74, 0.35);
+        }
+
+        .veggie-card {
+            transition: all 0.35s ease;
+        }
+        .veggie-card:hover {
+            transform: translateY(-4px);
+        }
+    </style>
+</head>
+<body class="bg-white text-verdant-charcoal font-sans antialiased selection:bg-verdant-green selection:text-white">
+
+    <!-- 1. TOP ANNOUNCEMENT BAR -->
+    <div class="bg-verdant-deep text-white text-xs py-2 px-4 font-mono font-medium border-b border-verdant-green/40">
+        <div class="max-w-7xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-2 text-center sm:text-left">
+            <div class="flex items-center justify-center gap-2">
+                <span class="px-2 py-0.5 bg-emerald-400 text-verdant-deep text-[10px] uppercase font-mono font-bold tracking-wider rounded">
+                    DIPETIK SUBUH HARI INI
+                </span>
+                <span class="text-white/95">Garansi Sayur Ganti Baru Jika Layu / Cacat Sampai di Rumah Anda</span>
+            </div>
+            <div class="flex items-center gap-4 text-xs font-mono">
+                <span class="hidden md:inline text-emerald-200">Kirim Bersama Akar Basah (Tahan 7-10 Hari)</span>
+                <span class="hidden md:inline text-white/30">•</span>
+                <a href="katalog.html" class="text-emerald-300 hover:underline font-bold transition">Jadwal Panen Pagi &rarr;</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- 2. NAVBAR -->
+    <header class="sticky top-0 z-40 bg-white/95 backdrop-blur-md border-b border-slate-100 transition-all shadow-xs">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-20 sm:h-24">
+                
+                <!-- Logo -->
+                <a href="index.html" class="flex items-center gap-3.5 group">
+                    <div class="w-12 h-12 bg-verdant-green text-white flex items-center justify-center text-xl font-bold rounded-2xl shadow-md group-hover:bg-verdant-greendark transition">
+                        <i class="fa-solid fa-leaf"></i>
+                    </div>
+                    <div class="flex flex-col">
+                        <span class="text-2xl sm:text-3xl font-extrabold tracking-tight text-verdant-deep uppercase leading-none font-mono">
+                            VERDANT<span class="text-verdant-green">.</span>
+                        </span>
+                        <span class="text-[9px] font-mono tracking-[0.28em] text-verdant-green uppercase mt-1 font-bold">
+                            CLEAN HYDROPONIC FARM
+                        </span>
+                    </div>
+                </a>
+
+                <!-- Desktop Navigation Links -->
+                <nav class="hidden lg:flex items-center gap-8 text-xs font-bold tracking-wider uppercase text-verdant-charcoal/80 font-mono">
+                    <a href="index.html" class="text-verdant-green border-b-2 border-verdant-green pb-1 font-bold">Beranda</a>
+                    <a href="katalog.html" class="hover:text-verdant-green transition">Sayur & Farm Box</a>
+                    <a href="detail.html" class="hover:text-verdant-green transition">Detail Selada Romaine</a>
+                    <a href="tentang.html" class="hover:text-verdant-green transition">Greenhouse & Air Bersih</a>
+                    <a href="artikel.html" class="hover:text-verdant-green transition">Tips Kesegaran & Resep</a>
+                    <a href="kontak.html" class="hover:text-verdant-green transition">Kebun & Supply Resto</a>
+                </nav>
+
+                <!-- Actions -->
+                <div class="hidden sm:flex items-center gap-3 font-mono">
+                    <a href="#harvestSection" class="inline-flex items-center gap-2 px-3.5 py-2.5 bg-verdant-mint border border-verdant-border hover:border-verdant-green text-xs font-bold text-verdant-deep rounded-xl transition shadow-xs">
+                        <i class="fa-solid fa-seedling text-verdant-green"></i>
+                        <span>Panen Hari Ini</span>
+                    </a>
+                    <a href="https://wa.me/6281234567890?text=Halo%20Verdant%20Farm,%20saya%20ingin%20pesan%20sayur%20hidroponik%20panen%20pagi." target="_blank" class="inline-flex items-center gap-2 bg-verdant-green hover:bg-verdant-greendark text-white text-xs font-bold tracking-wider px-5 py-2.5 rounded-xl border border-verdant-green/40 transition-all shadow-md font-mono btn-verdant">
+                        <i class="fa-brands fa-whatsapp text-sm text-white"></i>
+                        <span>Order via WA</span>
+                    </a>
+                </div>
+
+                <!-- Mobile Hamburger Button -->
+                <button id="mobileMenuBtn" class="lg:hidden p-2.5 text-verdant-charcoal hover:text-verdant-green focus:outline-none" aria-label="Toggle Menu">
+                    <i id="menuIcon" class="fa-solid fa-bars text-xl"></i>
+                </button>
+            </div>
+        </div>
+
+        <!-- Mobile Drawer -->
+        <div id="mobileMenu" class="hidden lg:hidden bg-white border-b border-verdant-border px-5 py-5 space-y-3 font-mono shadow-xl">
+            <a href="index.html" class="block text-xs font-bold uppercase tracking-wider text-verdant-green py-2 border-b border-slate-100">Beranda Utama</a>
+            <a href="katalog.html" class="block text-xs font-bold uppercase tracking-wider text-verdant-charcoal hover:text-verdant-green py-2 border-b border-slate-100">Sayuran Daun & Farm Box</a>
+            <a href="detail.html" class="block text-xs font-bold uppercase tracking-wider text-verdant-charcoal hover:text-verdant-green py-2 border-b border-slate-100">Detail Selada Romaine</a>
+            <a href="tentang.html" class="block text-xs font-bold uppercase tracking-wider text-verdant-charcoal hover:text-verdant-green py-2 border-b border-slate-100">Teknologi Greenhouse</a>
+            <a href="artikel.html" class="block text-xs font-bold uppercase tracking-wider text-verdant-charcoal hover:text-verdant-green py-2 border-b border-slate-100">Tips Simpan Sayur 10 Hari</a>
+            <a href="kontak.html" class="block text-xs font-bold uppercase tracking-wider text-verdant-charcoal hover:text-verdant-green py-2">Kebun & Supply Restoran</a>
+            <div class="pt-3">
+                <a href="https://wa.me/6281234567890?text=Halo%20Verdant%20Farm." target="_blank" class="w-full py-3 bg-verdant-green text-white rounded-xl text-xs font-bold uppercase tracking-wider text-center flex items-center justify-center gap-2 font-mono shadow-md">
+                    <i class="fa-brands fa-whatsapp"></i> WhatsApp Fast Response
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- 3. ULTRA-FRESH GREENHOUSE HERO SECTION -->
+    <section class="greenhouse-glow py-14 sm:py-22 lg:py-26 border-b border-slate-100 relative overflow-hidden">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+                
+                <!-- Left Content: Crisp, Clean & Farm-to-Table -->
+                <div class="lg:col-span-7 space-y-6">
+                    <div class="inline-flex items-center gap-2.5 px-4 py-1.5 bg-white border border-verdant-border rounded-full text-xs font-mono text-verdant-deep shadow-xs">
+                        <span class="w-2 h-2 rounded-full bg-verdant-green animate-pulse"></span>
+                        <span class="font-bold tracking-wide">100% Bebas Pestisida Kimia • Panen Pukul 05.00 WIB</span>
+                    </div>
+
+                    <h1 class="text-4xl sm:text-5xl lg:text-6xl font-extrabold text-verdant-forest leading-[1.15] tracking-tight">
+                        Crisp, Clean & <span class="text-verdant-green underline decoration-emerald-200">Harvested Daily</span> for Your Family.
+                    </h1>
+
+                    <p class="text-base sm:text-lg text-verdant-charcoal/80 leading-relaxed max-w-2xl font-sans">
+                        Nikmati sensasi selada renyah manis dan sayuran hijau berdaun tebal yang ditanam di dalam greenhouse tertutup higienis. Menggunakan sistem aliran nutrisi air murni (NFT Hydroponics) tanpa tanah dan tanpa residu racun kimia, siap diantar ke meja makan Anda hanya beberapa jam setelah dipetik.
+                    </p>
+
+                    <!-- Feature Badges -->
+                    <div class="grid grid-cols-2 sm:grid-cols-3 gap-3 pt-2 font-mono text-xs">
+                        <div class="flex items-center gap-2.5 bg-white p-3.5 rounded-2xl border border-verdant-border shadow-xs">
+                            <i class="fa-solid fa-shield-virus text-verdant-green text-sm"></i>
+                            <div>
+                                <p class="font-bold text-verdant-deep">0% Pestisida Kimia</p>
+                                <p class="text-[10px] text-verdant-charcoal/60">Uji Lab Bersih Berkala</p>
+                            </div>
+                        </div>
+                        <div class="flex items-center gap-2.5 bg-white p-3.5 rounded-2xl border border-verdant-border shadow-xs">
+                            <i class="fa-solid fa-droplet text-sky-500 text-sm"></i>
+                            <div>
+                                <p class="font-bold text-verdant-deep">Root-On Packaging</p>
+                                <p class="text-[10px] text-verdant-charcoal/60">Akar Basah Lebih Awet</p>
+                            </div>
+                        </div>
+                        <div class="flex items-center gap-2.5 bg-white p-3.5 rounded-2xl border border-verdant-border shadow-xs col-span-2 sm:col-span-1">
+                            <i class="fa-solid fa-truck-fast text-amber-500 text-sm"></i>
+                            <div>
+                                <p class="font-bold text-verdant-deep">Same-Day Delivery</p>
+                                <p class="text-[10px] text-verdant-charcoal/60">Tiba Sebelum Siang</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Call To Action Group -->
+                    <div class="flex flex-col sm:flex-row items-stretch sm:items-center gap-4 pt-3 font-mono">
+                        <a href="katalog.html" class="inline-flex items-center justify-center gap-3 px-8 py-4 bg-verdant-green hover:bg-verdant-greendark text-white text-xs sm:text-sm font-bold tracking-wider uppercase rounded-xl transition-all shadow-xl font-mono btn-verdant">
+                            <span>Pilih Sayuran Segar</span>
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </a>
+                        <a href="detail.html" class="inline-flex items-center justify-center gap-2.5 px-6 py-4 bg-white hover:bg-verdant-mint border border-slate-200 text-verdant-deep text-xs sm:text-sm font-bold tracking-wider uppercase rounded-xl transition shadow-xs">
+                            <i class="fa-solid fa-basket-shopping text-verdant-green"></i>
+                            <span>Detail Selada Romaine</span>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Right Visual: Modern Greenhouse Staging with Hydroponic Pipes & Water Dew -->
+                <div class="lg:col-span-5 relative">
+                    <div class="relative rounded-3xl overflow-hidden border-4 border-white shadow-2xl bg-verdant-deep group">
+                        <img src="https://images.unsplash.com/photo-1540420773420-3366772f4999?q=80&w=1000&auto=format&fit=crop" 
+                             alt="Kebun Selada Romaine Hidroponik Segar Hijau Mengkilap dengan Embun Air" 
+                             class="w-full h-[480px] object-cover group-hover:scale-105 transition-transform duration-700">
+                        
+                        <div class="absolute inset-0 bg-gradient-to-t from-verdant-forest/85 via-transparent to-transparent"></div>
+                        
+                        <!-- Floating Harvest Status Bar -->
+                        <div class="absolute bottom-5 left-5 right-5 p-4 bg-white/95 backdrop-blur-md rounded-2xl border border-verdant-border shadow-lg">
+                            <div class="flex items-center justify-between">
+                                <div class="space-y-0.5">
+                                    <span class="text-[10px] font-mono font-bold tracking-wider uppercase text-verdant-green">Status Kebun Pagi Ini</span>
+                                    <h2 class="text-base font-bold text-verdant-forest">Selada Romaine & Butterhead Siap Petik</h2>
+                                    <p class="text-xs text-verdant-charcoal/70 font-mono">Brix Kemanisan Tinggi • Tekstur Extra Crunchy</p>
+                                </div>
+                                <span class="text-xs font-mono font-bold px-3 py-1.5 bg-verdant-mint text-verdant-deep rounded-lg border border-verdant-border">
+                                    Rp 15.000 / 250g
+                                </span>
+                            </div>
+                        </div>
+
+                        <!-- Top Right Badge -->
+                        <div class="absolute top-4 right-4 bg-verdant-deep/90 backdrop-blur-sm text-emerald-200 px-3.5 py-1.5 rounded-full text-[10px] font-mono font-bold tracking-wider uppercase flex items-center gap-1.5 shadow-md border border-verdant-green/40">
+                            <i class="fa-solid fa-leaf text-verdant-green"></i>
+                            <span>NFT Pipe System</span>
+                        </div>
+                    </div>
+
+                    <!-- Floating Mini Card: Freshness Gauge -->
+                    <div class="hidden sm:flex absolute -bottom-6 -left-6 bg-white p-4 rounded-2xl border border-verdant-border shadow-xl items-center gap-3.5 max-w-[260px]">
+                        <div class="w-12 h-12 rounded-xl bg-emerald-100 text-verdant-green flex items-center justify-center text-xl shrink-0">
+                            <i class="fa-solid fa-clock-rotate-left"></i>
+                        </div>
+                        <div class="space-y-0.5 font-mono">
+                            <p class="text-[10px] uppercase font-bold text-verdant-green">Kesegaran Terjaga</p>
+                            <p class="text-xs font-bold text-verdant-deep">Panen Hari H Langsung Kirim</p>
+                            <p class="text-[10px] text-verdant-charcoal/60">Tahan 10 Hari di Chiller</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- 4. GREENHOUSE VALUE STRIP -->
+    <section class="py-9 bg-verdant-mint border-b border-verdant-border">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-6 text-center sm:text-left">
+                
+                <div class="flex flex-col sm:flex-row items-center sm:items-start gap-3.5">
+                    <div class="w-12 h-12 rounded-2xl bg-white text-verdant-green flex items-center justify-center text-xl shrink-0 border border-verdant-border">
+                        <i class="fa-solid fa-water"></i>
+                    </div>
+                    <div>
+                        <h4 class="font-bold text-sm text-verdant-deep">Air Baku RO Bersih</h4>
+                        <p class="text-xs text-verdant-charcoal/70 font-sans mt-0.5">Filtrasi Reverse Osmosis bebas bakteri E.coli dan logam berat berbahaya.</p>
+                    </div>
+                </div>
+
+                <div class="flex flex-col sm:flex-row items-center sm:items-start gap-3.5">
+                    <div class="w-12 h-12 rounded-2xl bg-white text-verdant-green flex items-center justify-center text-xl shrink-0 border border-verdant-border">
+                        <i class="fa-solid fa-bug-slash"></i>
+                    </div>
+                    <div>
+                        <h4 class="font-bold text-sm text-verdant-deep">100% Tanpa Pestisida</h4>
+                        <p class="text-xs text-verdant-charcoal/70 font-sans mt-0.5">Greenhouse tertutup insect net rapat melindungi sayur dari ulat secara alami.</p>
+                    </div>
+                </div>
+
+                <div class="flex flex-col sm:flex-row items-center sm:items-start gap-3.5">
+                    <div class="w-12 h-12 rounded-2xl bg-white text-verdant-green flex items-center justify-center text-xl shrink-0 border border-verdant-border">
+                        <i class="fa-solid fa-box-open"></i>
+                    </div>
+                    <div>
+                        <h4 class="font-bold text-sm text-verdant-deep">Food-Grade Pouch</h4>
+                        <p class="text-xs text-verdant-charcoal/70 font-sans mt-0.5">Kemasan berventilasi udara khusus menjaga kelembapan daun tanpa membusuk.</p>
+                    </div>
+                </div>
+
+                <div class="flex flex-col sm:flex-row items-center sm:items-start gap-3.5">
+                    <div class="w-12 h-12 rounded-2xl bg-white text-verdant-green flex items-center justify-center text-xl shrink-0 border border-verdant-border">
+                        <i class="fa-solid fa-calendar-check"></i>
+                    </div>
+                    <div>
+                        <h4 class="font-bold text-sm text-verdant-deep">Langganan Farm Box</h4>
+                        <p class="text-xs text-verdant-charcoal/70 font-sans mt-0.5">Paket sayur mingguan keluarga diantar rutin tiap Selasa & Jumat pagi.</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- 5. SECTION KHUSUS: "TODAY'S HARVEST BOARD" -->
+    <section id="harvestSection" class="py-16 sm:py-24 border-b border-slate-100 bg-white relative">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            
+            <div class="text-center max-w-3xl mx-auto mb-14 space-y-3">
+                <span class="px-3.5 py-1 bg-verdant-mint border border-verdant-border text-verdant-green font-mono text-[11px] font-bold uppercase tracking-widest rounded-full">
+                    Live Farm Harvest Schedule
+                </span>
+                <h2 class="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-verdant-forest">
+                    Papan Panen Pagi Ini
+                </h2>
+                <p class="text-sm sm:text-base text-verdant-charcoal/75 font-sans">
+                    Sayuran di bawah ini sedang dalam masa petik optimal hari ini. Pesan sekarang untuk jadwal antar kurir pagi hari:
+                </p>
+            </div>
+
+            <!-- Harvest Board Cards (4 Columns) -->
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+                
+                <!-- 1. Selada Romaine -->
+                <div class="veggie-card bg-verdant-mint rounded-3xl border border-verdant-border overflow-hidden flex flex-col justify-between group shadow-sm">
+                    <div class="relative overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1540420773420-3366772f4999?q=80&w=500&auto=format&fit=crop" alt="Selada Romaine Hidroponik" class="w-full h-56 object-cover group-hover:scale-105 transition duration-500">
+                        <div class="absolute top-3 left-3 bg-verdant-green text-white text-[10px] font-mono font-bold uppercase px-2.5 py-1 rounded shadow">
+                            Siap Petik Pagi Ini
+                        </div>
+                        <div class="absolute bottom-3 right-3 bg-white/90 backdrop-blur-sm text-verdant-deep text-[10px] font-mono font-bold px-2 py-0.5 rounded border border-verdant-border">
+                            Crispness: 10/10
+                        </div>
+                    </div>
+                    <div class="p-5 flex-1 flex flex-col justify-between space-y-3">
+                        <div>
+                            <span class="text-[11px] font-mono text-verdant-green font-bold block">Cocok Untuk: Caesar Salad & Wrap</span>
+                            <a href="detail.html" class="font-bold text-xl text-verdant-deep hover:text-verdant-green transition leading-snug block">
+                                Selada Romaine Hydroponic
+                            </a>
+                            <p class="text-xs text-verdant-charcoal/70 mt-1 line-clamp-2 font-sans">
+                                Daun tegak berurat tebal dengan rasa manis segar tanpa getir, renyah sempurna untuk salad sayur.
+                            </p>
+                        </div>
+                        <div class="pt-3 border-t border-verdant-border flex items-center justify-between font-mono">
+                            <div>
+                                <span class="text-[10px] text-verdant-charcoal/50 uppercase block">Pack 250 Gram</span>
+                                <span class="text-sm font-bold text-verdant-deep">Rp 15.000</span>
+                            </div>
+                            <a href="detail.html" class="px-3.5 py-1.5 bg-verdant-green hover:bg-verdant-greendark text-white rounded-xl text-xs font-bold transition font-mono">
+                                Detail & Pesan
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 2. Selada Butterhead -->
+                <div class="veggie-card bg-verdant-mint rounded-3xl border border-verdant-border overflow-hidden flex flex-col justify-between group shadow-sm">
+                    <div class="relative overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1556801712-76c8eb07bbc9?q=80&w=500&auto=format&fit=crop" alt="Selada Butterhead Hidroponik" class="w-full h-56 object-cover group-hover:scale-105 transition duration-500">
+                        <div class="absolute top-3 left-3 bg-verdant-green text-white text-[10px] font-mono font-bold uppercase px-2.5 py-1 rounded shadow">
+                            Siap Petik Pagi Ini
+                        </div>
+                        <div class="absolute bottom-3 right-3 bg-white/90 backdrop-blur-sm text-verdant-deep text-[10px] font-mono font-bold px-2 py-0.5 rounded border border-verdant-border">
+                            Crispness: 9/10
+                        </div>
+                    </div>
+                    <div class="p-5 flex-1 flex flex-col justify-between space-y-3">
+                        <div>
+                            <span class="text-[11px] font-mono text-verdant-green font-bold block">Cocok Untuk: Burger & Korean BBQ</span>
+                            <a href="detail.html" class="font-bold text-xl text-verdant-deep hover:text-verdant-green transition leading-snug block">
+                                Butterhead Lettuce
+                            </a>
+                            <p class="text-xs text-verdant-charcoal/70 mt-1 line-clamp-2 font-sans">
+                                Daun melengkung lembut menyerupai kelopak bunga mawar dengan tekstur *buttery* lembut lumer di lidah.
+                            </p>
+                        </div>
+                        <div class="pt-3 border-t border-verdant-border flex items-center justify-between font-mono">
+                            <div>
+                                <span class="text-[10px] text-verdant-charcoal/50 uppercase block">Pack 250 Gram</span>
+                                <span class="text-sm font-bold text-verdant-deep">Rp 16.000</span>
+                            </div>
+                            <a href="detail.html" class="px-3.5 py-1.5 bg-verdant-green hover:bg-verdant-greendark text-white rounded-xl text-xs font-bold transition font-mono">
+                                Detail & Pesan
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 3. Kale Curly Superfood -->
+                <div class="veggie-card bg-verdant-mint rounded-3xl border border-verdant-border overflow-hidden flex flex-col justify-between group shadow-sm">
+                    <div class="relative overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1524179091875-bf99a9a6af57?q=80&w=500&auto=format&fit=crop" alt="Kale Curly Hidroponik" class="w-full h-56 object-cover group-hover:scale-105 transition duration-500">
+                        <div class="absolute top-3 left-3 bg-verdant-deep text-white text-[10px] font-mono font-bold uppercase px-2.5 py-1 rounded shadow">
+                            Superfood
+                        </div>
+                        <div class="absolute bottom-3 right-3 bg-white/90 backdrop-blur-sm text-verdant-deep text-[10px] font-mono font-bold px-2 py-0.5 rounded border border-verdant-border">
+                            Crispness: 9.5/10
+                        </div>
+                    </div>
+                    <div class="p-5 flex-1 flex flex-col justify-between space-y-3">
+                        <div>
+                            <span class="text-[11px] font-mono text-verdant-green font-bold block">Cocok Untuk: Green Smoothie & Chips</span>
+                            <a href="detail.html" class="font-bold text-xl text-verdant-deep hover:text-verdant-green transition leading-snug block">
+                                Kale Curly Superfood
+                            </a>
+                            <p class="text-xs text-verdant-charcoal/70 mt-1 line-clamp-2 font-sans">
+                                Ratu sayuran hijau kaya antioksidan, vitamin C, dan zat besi tinggi, tidak pahit saat di-blender menjadi jus.
+                            </p>
+                        </div>
+                        <div class="pt-3 border-t border-verdant-border flex items-center justify-between font-mono">
+                            <div>
+                                <span class="text-[10px] text-verdant-charcoal/50 uppercase block">Pack 200 Gram</span>
+                                <span class="text-sm font-bold text-verdant-deep">Rp 18.000</span>
+                            </div>
+                            <a href="detail.html" class="px-3.5 py-1.5 bg-verdant-green hover:bg-verdant-greendark text-white rounded-xl text-xs font-bold transition font-mono">
+                                Detail & Pesan
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 4. Pakcoy Mini Hydroponic -->
+                <div class="veggie-card bg-verdant-mint rounded-3xl border border-verdant-border overflow-hidden flex flex-col justify-between group shadow-sm">
+                    <div class="relative overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1598170845058-32b9d6a5c317?q=80&w=500&auto=format&fit=crop" alt="Pakcoy Mini Hidroponik" class="w-full h-56 object-cover group-hover:scale-105 transition duration-500">
+                        <div class="absolute top-3 left-3 bg-verdant-green text-white text-[10px] font-mono font-bold uppercase px-2.5 py-1 rounded shadow">
+                            Siap Petik Pagi Ini
+                        </div>
+                        <div class="absolute bottom-3 right-3 bg-white/90 backdrop-blur-sm text-verdant-deep text-[10px] font-mono font-bold px-2 py-0.5 rounded border border-verdant-border">
+                            Crispness: 10/10
+                        </div>
+                    </div>
+                    <div class="p-5 flex-1 flex flex-col justify-between space-y-3">
+                        <div>
+                            <span class="text-[11px] font-mono text-verdant-green font-bold block">Cocok Untuk: Tumis Bawang Putih & Mie</span>
+                            <a href="detail.html" class="font-bold text-xl text-verdant-deep hover:text-verdant-green transition leading-snug block">
+                                Pakcoy Mini Hydroponic
+                            </a>
+                            <p class="text-xs text-verdant-charcoal/70 mt-1 line-clamp-2 font-sans">
+                                Batang putih tebal renyah dan daun hijau pekat bersih bebas tanah, manis alami saat ditumis cepat.
+                            </p>
+                        </div>
+                        <div class="pt-3 border-t border-verdant-border flex items-center justify-between font-mono">
+                            <div>
+                                <span class="text-[10px] text-verdant-charcoal/50 uppercase block">Pack 500 Gram</span>
+                                <span class="text-sm font-bold text-verdant-deep">Rp 12.000</span>
+                            </div>
+                            <a href="detail.html" class="px-3.5 py-1.5 bg-verdant-green hover:bg-verdant-greendark text-white rounded-xl text-xs font-bold transition font-mono">
+                                Detail & Pesan
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+    <!-- 6. SECTION PAKET LANGGANAN FARM BOX MINGGUAN -->
+    <section class="py-16 sm:py-24 border-b border-slate-100 bg-verdant-mint">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+                
+                <div class="lg:col-span-6 space-y-6">
+                    <span class="text-xs font-mono font-bold uppercase tracking-widest text-verdant-green">
+                        Weekly Farm Box Subscription
+                    </span>
+                    <h2 class="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-verdant-forest leading-tight">
+                        Langganan Sayur Segar Mingguan Bebas Ribet.
+                    </h2>
+                    <p class="text-base text-verdant-charcoal/80 font-sans leading-relaxed">
+                        Tak perlu lagi belanja subuh ke pasar atau khawatir stok sayur kulkas membusuk. Paket **Verdant Family Farm Box** mengantarkan aneka kombinasi selada salad, sayur tumis, dan sayur jus pilihan langsung dari kebun ke depan pintu rumah Anda 1x atau 2x seminggu.
+                    </p>
+
+                    <div class="space-y-3 pt-2 font-mono text-xs">
+                        <div class="flex items-center gap-3 p-3 bg-white rounded-xl border border-verdant-border">
+                            <i class="fa-solid fa-check text-verdant-green font-bold"></i>
+                            <span class="text-verdant-charcoal"><strong>Isi Variatif:</strong> 5-7 jenis sayuran segar berbeda tiap minggu (Total 2.5 kg).</span>
+                        </div>
+                        <div class="flex items-center gap-3 p-3 bg-white rounded-xl border border-verdant-border">
+                            <i class="fa-solid fa-check text-verdant-green font-bold"></i>
+                            <span class="text-verdant-charcoal"><strong>Bebas Ongkir & Ganti Jadwal:</strong> Bisa dijeda kapan saja jika Anda sedang keluar kota.</span>
+                        </div>
+                    </div>
+
+                    <div class="pt-2">
+                        <a href="https://wa.me/6281234567890?text=Halo%20Verdant,%20saya%20tertarik%20paket%20langganan%20Farm%20Box%20mingguan." target="_blank" class="inline-flex items-center gap-2 px-6 py-3.5 bg-verdant-green hover:bg-verdant-greendark text-white font-mono text-xs font-bold uppercase tracking-wider rounded-xl transition shadow btn-verdant">
+                            <span>Daftar Langganan Farm Box</span>
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="lg:col-span-6">
+                    <div class="bg-white p-8 rounded-3xl border border-verdant-border shadow-xl space-y-6">
+                        <div class="flex items-center justify-between border-b border-slate-100 pb-4">
+                            <div>
+                                <span class="text-[10px] font-mono font-bold uppercase text-verdant-green">Paket Paling Populer</span>
+                                <h3 class="text-2xl font-bold text-verdant-forest">Family Fresh Farm Box</h3>
+                            </div>
+                            <div class="text-right font-mono">
+                                <span class="text-2xl font-extrabold text-verdant-green">Rp 120.000</span>
+                                <span class="text-[10px] text-verdant-charcoal/60 block">/ Minggu (Isi 2.5 kg)</span>
+                            </div>
+                        </div>
+
+                        <ul class="space-y-2.5 font-mono text-xs text-verdant-charcoal/80">
+                            <li class="flex items-center gap-2"><i class="fa-solid fa-circle-check text-verdant-green"></i> 500g Selada Romaine / Butterhead</li>
+                            <li class="flex items-center gap-2"><i class="fa-solid fa-circle-check text-verdant-green"></i> 500g Pakcoy Mini Hydroponic</li>
+                            <li class="flex items-center gap-2"><i class="fa-solid fa-circle-check text-verdant-green"></i> 250g Kale Curly Superfood</li>
+                            <li class="flex items-center gap-2"><i class="fa-solid fa-circle-check text-verdant-green"></i> 500g Bayam Jepang Horenzo</li>
+                            <li class="flex items-center gap-2"><i class="fa-solid fa-circle-check text-verdant-green"></i> 250g Tomat Cherry Merah Manis</li>
+                            <li class="flex items-center gap-2"><i class="fa-solid fa-circle-check text-verdant-green"></i> Free 1 Botol Salad Dressing Homemade</li>
+                        </ul>
+
+                        <div class="pt-2">
+                            <a href="https://wa.me/6281234567890?text=Halo%20Verdant,%20saya%20mau%20coba%201%20minggu%20Family%20Fresh%20Farm%20Box." target="_blank" class="w-full py-3.5 bg-verdant-deep hover:bg-verdant-forest text-white text-xs font-bold uppercase tracking-wider rounded-xl transition shadow flex items-center justify-center gap-2 font-mono">
+                                <i class="fa-brands fa-whatsapp text-emerald-300"></i>
+                                <span>Pesan 1 Box Uji Coba</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- 7. TESTIMONIALS: HEALTHY MOMS, SALAD CHEFS & JUICE LOVERS -->
+    <section class="py-16 sm:py-24 border-b border-slate-100 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            
+            <div class="text-center max-w-2xl mx-auto mb-14 space-y-2">
+                <span class="text-xs font-mono font-bold uppercase tracking-widest text-verdant-green">
+                    Cerita Pelanggan Kebun
+                </span>
+                <h2 class="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-verdant-forest">
+                    Renyah & Segar yang Terbukti Nyata
+                </h2>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                
+                <!-- Testi 1 -->
+                <div class="bg-verdant-mint p-8 rounded-3xl border border-verdant-border flex flex-col justify-between space-y-6">
+                    <div class="space-y-3">
+                        <div class="flex text-amber-500 text-xs gap-1">
+                            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                        </div>
+                        <p class="text-sm text-verdant-charcoal/80 italic leading-relaxed font-sans">
+                            "Sudah langganan Farm Box 4 bulan. Seladanya beneran renyah kriuk dan akarnya masih basah pas sampai rumah. Disimpan di kulkas seminggu masih segar banget kayak baru dipetik!"
+                        </p>
+                    </div>
+                    <div class="flex items-center gap-3.5 pt-4 border-t border-verdant-border font-mono">
+                        <div class="w-10 h-10 rounded-full bg-verdant-green text-white flex items-center justify-center font-bold text-xs">
+                            DR
+                        </div>
+                        <div>
+                            <p class="text-xs font-bold text-verdant-deep">dr. Ratna Kartika</p>
+                            <p class="text-[10px] text-verdant-charcoal/60">Ibu Rumah Tangga & Dokter Umum, Sleman</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Testi 2 -->
+                <div class="bg-verdant-mint p-8 rounded-3xl border border-verdant-border flex flex-col justify-between space-y-6">
+                    <div class="space-y-3">
+                        <div class="flex text-amber-500 text-xs gap-1">
+                            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                        </div>
+                        <p class="text-sm text-verdant-charcoal/80 italic leading-relaxed font-sans">
+                            "Restoran kami menggunakan supply Selada Romaine dan Kale Curly dari Verdant sebanyak 30kg per minggu. Ukuran daun konsisten, bersih tanpa lumpur, dan customer salad kami selalu puas."
+                        </p>
+                    </div>
+                    <div class="flex items-center gap-3.5 pt-4 border-t border-verdant-border font-mono">
+                        <div class="w-10 h-10 rounded-full bg-verdant-deep text-white flex items-center justify-center font-bold text-xs">
+                            CA
+                        </div>
+                        <div>
+                            <p class="text-xs font-bold text-verdant-deep">Chef Adrian</p>
+                            <p class="text-[10px] text-verdant-charcoal/60">Head Chef Greenery Salad Bar, Yogyakarta</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Testi 3 -->
+                <div class="bg-verdant-mint p-8 rounded-3xl border border-verdant-border flex flex-col justify-between space-y-6">
+                    <div class="space-y-3">
+                        <div class="flex text-amber-500 text-xs gap-1">
+                            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                        </div>
+                        <p class="text-sm text-verdant-charcoal/80 italic leading-relaxed font-sans">
+                            "Saya rutin bikin green juice setiap pagi. Kale dari Verdant rasanya tidak getir dan baunya segar rumput embun. Senang banget tahu sayurnya 100% bebas residu semprotan pestisida kimia."
+                        </p>
+                    </div>
+                    <div class="flex items-center gap-3.5 pt-4 border-t border-verdant-border font-mono">
+                        <div class="w-10 h-10 rounded-full bg-verdant-green text-white flex items-center justify-center font-bold text-xs">
+                            ML
+                        </div>
+                        <div>
+                            <p class="text-xs font-bold text-verdant-deep">Maya Lestari</p>
+                            <p class="text-[10px] text-verdant-charcoal/60">Penggemar Healthy Green Juice, Bantul</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+    <!-- 8. B2B RESTAURANT SUPPLY BANNER -->
+    <section class="py-14 bg-verdant-forest text-white relative overflow-hidden border-t border-verdant-green/30">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative">
+            <div class="flex flex-col lg:flex-row items-center justify-between gap-8 text-center lg:text-left">
+                <div class="space-y-2 max-w-2xl">
+                    <span class="text-[11px] font-mono uppercase tracking-widest text-emerald-300 font-bold">Layanan Kontrak Supply Resto & Kafe</span>
+                    <h3 class="text-2xl sm:text-3xl font-extrabold text-white">Butuh Pasokan Rutin Sayur Hidroponik Skala 10 - 100+ kg / Hari?</h3>
+                    <p class="text-xs sm:text-sm text-emerald-100/80 font-sans">
+                        Dapatkan harga khusus grosir resto (*B2B Wholesale Rate*), jaminan pasokan stabil sepanjang tahun, dan jadwal pengiriman subuh terjadwal.
+                    </p>
+                </div>
+                <div class="flex flex-col sm:flex-row items-center gap-3 font-mono shrink-0">
+                    <a href="kontak.html" class="px-6 py-3.5 bg-white hover:bg-emerald-50 text-verdant-forest text-xs font-bold uppercase tracking-wider rounded-xl transition shadow font-mono">
+                        Katalog B2B Resto
+                    </a>
+                    <a href="https://wa.me/6281234567890?text=Halo%20Verdant,%20saya%20tertarik%20konsultasi%20pasokan%20sayur%20resto." target="_blank" class="px-6 py-3.5 bg-verdant-green hover:bg-verdant-greendark text-white text-xs font-bold uppercase tracking-wider rounded-xl transition shadow flex items-center gap-2 font-mono">
+                        <i class="fa-brands fa-whatsapp text-sm"></i>
+                        <span>Diskusi via WhatsApp</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 9. FOOTER -->
+    <footer class="bg-slate-950 text-slate-300 py-16 border-t border-white/10 font-sans">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-10 mb-12">
+                
+                <!-- Brand Bio -->
+                <div class="lg:col-span-2 space-y-4">
+                    <a href="index.html" class="flex items-center gap-3">
+                        <div class="w-10 h-10 bg-verdant-green text-white flex items-center justify-center text-lg font-bold rounded-lg">
+                            <i class="fa-solid fa-leaf"></i>
+                        </div>
+                        <span class="text-2xl font-bold tracking-tight text-white uppercase font-mono">
+                            VERDANT<span class="text-verdant-green">.</span>
+                        </span>
+                    </a>
+                    <p class="text-xs text-slate-400 leading-relaxed max-w-sm font-sans">
+                        Kebun sayur hidroponik modern greenhouse: Selada Romaine, Kale Curly, Pakcoy, dan bayam Jepang renyah dipanen subuh hari H pengiriman, 100% bebas pestisida kimia.
+                    </p>
+                </div>
+
+                <!-- Product Categories -->
+                <div class="space-y-3 font-mono">
+                    <h5 class="text-xs font-bold text-white uppercase tracking-wider">Kategori Sayur</h5>
+                    <ul class="space-y-2 text-xs text-slate-400">
+                        <li><a href="katalog.html" class="hover:text-emerald-300 transition">Salad Greens (Selada)</a></li>
+                        <li><a href="katalog.html" class="hover:text-emerald-300 transition">Kale & Superfood</a></li>
+                        <li><a href="katalog.html" class="hover:text-emerald-300 transition">Sayuran Tumis & Masak</a></li>
+                        <li><a href="katalog.html" class="hover:text-emerald-300 transition">Farm Box Mingguan</a></li>
+                    </ul>
+                </div>
+
+                <!-- Navigation Links -->
+                <div class="space-y-3 font-mono">
+                    <h5 class="text-xs font-bold text-white uppercase tracking-wider">Navigasi</h5>
+                    <ul class="space-y-2 text-xs text-slate-400">
+                        <li><a href="index.html" class="hover:text-emerald-300 transition">Beranda</a></li>
+                        <li><a href="katalog.html" class="hover:text-emerald-300 transition">Katalog Panen</a></li>
+                        <li><a href="tentang.html" class="hover:text-emerald-300 transition">Teknologi Kebun</a></li>
+                        <li><a href="kontak.html" class="hover:text-emerald-300 transition">Supply Restoran</a></li>
+                    </ul>
+                </div>
+
+                <!-- Farm Address -->
+                <div class="space-y-3 font-mono text-xs">
+                    <h5 class="text-xs font-bold text-white uppercase tracking-wider">Kebun Greenhouse</h5>
+                    <p class="text-slate-400 leading-relaxed font-sans">
+                        Jl. Kaliurang KM 12.5, Ngaglik, Sleman, D.I. Yogyakarta (Terbuka untuk Kunjungan Wisata Petik Sayur)
+                    </p>
+                    <p class="text-slate-400 font-mono">
+                        Panen Setiap Hari: 05:00 - 16:00 WIB
+                    </p>
+                    <p class="text-emerald-400 font-bold">
+                        WhatsApp: +62 812-3456-7890
+                    </p>
+                </div>
+
+            </div>
+
+            <div class="pt-8 border-t border-white/10 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs font-mono text-slate-500">
+                <p>&copy; 2026 VERDANT CLEAN HYDROPONIC FARM. All rights reserved.</p>
+                <p>Template UMKM Agrobisnis Sayur Hidroponik by Lentera Pasar</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- 10. FLOATING WHATSAPP BUTTON (bottom-24) -->
+    <div class="fixed bottom-24 right-4 sm:right-6 z-40">
+        <a href="https://wa.me/6281234567890?text=Halo%20Verdant%20Farm,%20saya%20ingin%20tanya%20stok%20panen%20sayur%20pagi%20ini." 
+           target="_blank" 
+           aria-label="Chat WhatsApp Kebun"
+           class="flex items-center gap-2.5 bg-emerald-600 hover:bg-emerald-700 text-white px-4 py-3 rounded-full shadow-2xl transition-all duration-300 hover:scale-105 group font-mono text-xs font-bold border-2 border-emerald-300">
+            <i class="fa-brands fa-whatsapp text-xl text-white group-hover:rotate-12 transition-transform"></i>
+            <span class="hidden sm:inline">Pesan Panen Subuh</span>
+        </a>
+    </div>
+
+    <!-- 11. LENTERA PASAR STICKY DEMO & SALES BAR (fixed bottom-4) -->
+    <div class="fixed bottom-4 left-4 right-4 z-50 max-w-5xl mx-auto">
+      <div class="bg-slate-900/95 backdrop-blur-md text-white px-4 py-3 rounded-2xl shadow-2xl border border-slate-700/80 flex flex-col md:flex-row items-center justify-between gap-3">
+        
+        <div class="flex items-center gap-3">
+          <div class="w-8 h-8 rounded-lg bg-emerald-600/30 border border-emerald-500/50 flex items-center justify-center shrink-0">
+            <svg class="w-4 h-4 text-emerald-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z" /></svg>
+          </div>
+          <div>
+            <div class="text-xs md:text-sm font-bold text-slate-100 flex items-center gap-2">
+              <span>Lentera Pasar Demo</span>
+              <span class="text-[10px] px-1.5 py-0.5 rounded bg-emerald-500/20 text-emerald-300 font-mono">Template Sayur Hidroponik & Farm Box</span>
+            </div>
+            <p class="text-[11px] text-slate-400 hidden sm:block">Desain modern greenhouse segar untuk agrobisnis sayur, farm box mingguan, dan kontrak pasokan resto.</p>
+          </div>
+        </div>
+
+        <div class="flex items-center gap-3 w-full md:w-auto justify-end">
+          <div class="hidden lg:flex items-center gap-4 text-xs font-mono text-slate-400 border-r border-slate-700 pr-4">
+            <div class="flex items-center gap-1 text-slate-200">
+              <svg class="w-4 h-4 text-emerald-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" /></svg>
+              <span>0% Pestisida</span>
+            </div>
+            <span class="text-slate-600">•</span>
+            <div class="flex items-center gap-1 text-slate-200">
+              <svg class="w-4 h-4 text-emerald-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" /></svg>
+              <span>Langganan Farm Box</span>
+            </div>
+          </div>
+
+          <a href="https://wa.me/6281234567890?text=Halo%20Tim%20Lentera%20Pasar,%20saya%20tertarik%20menggunakan%20template%20website%20Hidroponik%20ini." 
+             target="_blank"
+             class="w-full md:w-auto inline-flex items-center justify-center gap-2 bg-gradient-to-r from-emerald-600 to-emerald-800 hover:from-emerald-500 hover:to-emerald-700 text-white text-xs md:text-sm font-bold px-5 py-2.5 rounded-xl shadow-lg transition-all hover:scale-105 shrink-0 font-sans">
+            <span>Gunakan Template Ini</span>
+            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3" />
+            </svg>
+          </a>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- SCRIPT MOBILE MENU -->
+    <script>
+        const mobileMenuBtn = document.getElementById('mobileMenuBtn');
+        const mobileMenu = document.getElementById('mobileMenu');
+        const menuIcon = document.getElementById('menuIcon');
+
+        mobileMenuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+            if (mobileMenu.classList.contains('hidden')) {
+                menuIcon.classList.remove('fa-xmark');
+                menuIcon.classList.add('fa-bars');
+            } else {
+                menuIcon.classList.remove('fa-bars');
+                menuIcon.classList.add('fa-xmark');
+            }
+        });
+    </script>
+</body>
+</html>
