@@ -1,0 +1,849 @@
+<!DOCTYPE html>
+<html lang="id" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CALISTA // Bespoke Hampers & Luxury Gift Box Atelier</title>
+    <meta name="description" content="Studio kurasi kado & hampers eksklusif: Hampers Lebaran hari raya, bridesmaid proposal box, kado ulang tahun premium, dan souvenir perusahaan custom logo.">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,500;1,600;1,700&family=Plus+Jakarta+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome 6 -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        calista: {
+                            cream: '#FAF7F0',
+                            creamsoft: '#F3EDE2',
+                            border: '#E5DDD0',
+                            emerald: '#1B4332',
+                            emeralddark: '#081C15',
+                            emeraldsoft: '#E8F1EC',
+                            burgundy: '#6B2D5C',
+                            gold: '#D4AF37',
+                            goldlight: '#F3E5AB',
+                            charcoal: '#261D17'
+                        }
+                    },
+                    fontFamily: {
+                        sans: ['"Plus Jakarta Sans"', 'sans-serif'],
+                        serif: ['"Playfair Display"', 'serif'],
+                        mono: ['"Space Grotesk"', 'monospace']
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        .no-scrollbar::-webkit-scrollbar { display: none; }
+        .no-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
+
+        .luxury-champagne-bg {
+            background: radial-gradient(circle at 50% 15%, rgba(243, 237, 226, 0.9) 0%, rgba(250, 247, 240, 1) 75%);
+        }
+
+        .btn-luxury {
+            transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+        }
+        .btn-luxury:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 12px 24px -6px rgba(27, 67, 50, 0.35);
+        }
+
+        .hampers-card {
+            transition: all 0.35s ease;
+        }
+        .hampers-card:hover {
+            transform: translateY(-4px);
+        }
+    </style>
+</head>
+<body class="bg-calista-cream text-calista-charcoal font-sans antialiased selection:bg-calista-emerald selection:text-white">
+
+    <!-- 1. TOP ANNOUNCEMENT BAR -->
+    <div class="bg-calista-emeralddark text-calista-cream text-xs py-2.5 px-4 font-mono font-medium border-b border-calista-gold/30">
+        <div class="max-w-7xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-2 text-center sm:text-left">
+            <div class="flex items-center justify-center gap-2">
+                <span class="px-2 py-0.5 bg-calista-gold text-calista-emeralddark text-[10px] uppercase font-mono font-bold tracking-wider rounded">
+                    BESPOKE GIFT CURATION
+                </span>
+                <span class="text-white/95">Menerima Pemesanan Satuan (Personal Gift) Hingga Ribuan Paket Corporate Hampers Perusahaan</span>
+            </div>
+            <div class="flex items-center gap-4 text-xs font-mono">
+                <span class="hidden md:inline text-amber-200">Include Pita Satin & Kartu Ucapan Wax Seal Asli</span>
+                <span class="hidden md:inline text-white/30">•</span>
+                <a href="katalog.html" class="text-amber-300 hover:underline font-bold transition">Katalog Hampers &rarr;</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- 2. NAVBAR -->
+    <header class="sticky top-0 z-40 bg-calista-cream/95 backdrop-blur-md border-b border-calista-border transition-all">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-20 sm:h-24">
+                
+                <!-- Logo -->
+                <a href="index.html" class="flex items-center gap-3.5 group">
+                    <div class="w-12 h-12 bg-calista-emerald border border-calista-gold/40 text-amber-200 flex items-center justify-center text-xl font-serif rounded-2xl shadow-md group-hover:bg-calista-emeralddark transition">
+                        <i class="fa-solid fa-gift"></i>
+                    </div>
+                    <div class="flex flex-col">
+                        <span class="text-2xl sm:text-3xl font-serif font-bold tracking-tight text-calista-emerald uppercase leading-none">
+                            CALISTA<span class="text-calista-gold">.</span>
+                        </span>
+                        <span class="text-[9px] font-mono tracking-[0.28em] text-calista-emerald/70 uppercase mt-1 font-bold">
+                            BESPOKE GIFT & HAMPERS
+                        </span>
+                    </div>
+                </a>
+
+                <!-- Desktop Navigation Links -->
+                <nav class="hidden lg:flex items-center gap-8 text-xs font-bold tracking-wider uppercase text-calista-charcoal/80 font-mono">
+                    <a href="index.html" class="text-calista-emerald border-b-2 border-calista-emerald pb-1 font-bold">Beranda</a>
+                    <a href="katalog.html" class="hover:text-calista-emerald transition">Koleksi Hampers</a>
+                    <a href="detail.html" class="hover:text-calista-emerald transition">Detail Serenity Box</a>
+                    <a href="tentang.html" class="hover:text-calista-emerald transition">Filosofi Kurasi Kado</a>
+                    <a href="artikel.html" class="hover:text-calista-emerald transition">Ide Hadiah & Momen</a>
+                    <a href="kontak.html" class="hover:text-calista-emerald transition">Studio & Corporate Gift</a>
+                </nav>
+
+                <!-- Actions -->
+                <div class="hidden sm:flex items-center gap-3 font-mono">
+                    <a href="#momentSection" class="inline-flex items-center gap-2 px-3.5 py-2.5 bg-white border border-calista-border hover:border-calista-emerald text-xs font-bold text-calista-charcoal rounded-xl transition shadow-xs">
+                        <i class="fa-solid fa-calendar-check text-calista-emerald"></i>
+                        <span>Pilihan Momen</span>
+                    </a>
+                    <a href="https://wa.me/6281234567890?text=Halo%20Calista%20Gift%20Studio,%20saya%20tertarik%20dengan%20koleksi%20hampers%20kalian." target="_blank" class="inline-flex items-center gap-2 bg-calista-emerald hover:bg-calista-emeralddark text-calista-cream text-xs font-bold tracking-wider px-5 py-2.5 rounded-xl border border-calista-gold/40 transition-all shadow-md font-mono btn-luxury">
+                        <i class="fa-brands fa-whatsapp text-sm text-green-300"></i>
+                        <span>Order via WA</span>
+                    </a>
+                </div>
+
+                <!-- Mobile Hamburger Button -->
+                <button id="mobileMenuBtn" class="lg:hidden p-2.5 text-calista-charcoal hover:text-calista-emerald focus:outline-none" aria-label="Toggle Menu">
+                    <i id="menuIcon" class="fa-solid fa-bars text-xl"></i>
+                </button>
+            </div>
+        </div>
+
+        <!-- Mobile Drawer -->
+        <div id="mobileMenu" class="hidden lg:hidden bg-white border-b border-calista-border px-5 py-5 space-y-3 font-mono shadow-xl">
+            <a href="index.html" class="block text-xs font-bold uppercase tracking-wider text-calista-emerald py-2 border-b border-calista-border">Beranda Utama</a>
+            <a href="katalog.html" class="block text-xs font-bold uppercase tracking-wider text-calista-charcoal hover:text-calista-emerald py-2 border-b border-calista-border">Koleksi Hampers & Gift Box</a>
+            <a href="detail.html" class="block text-xs font-bold uppercase tracking-wider text-calista-charcoal hover:text-calista-emerald py-2 border-b border-calista-border">Detail Serenity Wellness Box</a>
+            <a href="tentang.html" class="block text-xs font-bold uppercase tracking-wider text-calista-charcoal hover:text-calista-emerald py-2 border-b border-calista-border">Filosofi Kurasi Kado</a>
+            <a href="artikel.html" class="block text-xs font-bold uppercase tracking-wider text-calista-charcoal hover:text-calista-emerald py-2 border-b border-calista-border">Ide Hadiah Lebaran & Kantor</a>
+            <a href="kontak.html" class="block text-xs font-bold uppercase tracking-wider text-calista-charcoal hover:text-calista-emerald py-2">Studio & Hampers Corporate</a>
+            <div class="pt-3">
+                <a href="https://wa.me/6281234567890?text=Halo%20Calista%20Studio." target="_blank" class="w-full py-3 bg-calista-emerald text-calista-cream rounded-xl text-xs font-bold uppercase tracking-wider text-center flex items-center justify-center gap-2 font-mono border border-calista-gold">
+                    <i class="fa-brands fa-whatsapp text-green-300"></i> WhatsApp Fast Response
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- 3. LUXURY BESPOKE GIFT HERO SECTION -->
+    <section class="luxury-champagne-bg py-14 sm:py-22 lg:py-26 border-b border-calista-border relative overflow-hidden">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+                
+                <!-- Left Content: Elegan & Meaningful Gift Headline -->
+                <div class="lg:col-span-7 space-y-6">
+                    <div class="inline-flex items-center gap-2.5 px-4 py-1.5 bg-white/90 border border-calista-border rounded-full text-xs font-mono text-calista-emerald shadow-xs">
+                        <span class="w-2 h-2 rounded-full bg-calista-gold animate-pulse"></span>
+                        <span class="font-bold tracking-wide">Hand-Tied with Satin Ribbon & Wax Seal Stamp</span>
+                    </div>
+
+                    <h1 class="text-4xl sm:text-5xl lg:text-6xl font-serif font-bold text-calista-emeralddark leading-[1.15]">
+                        Thoughtfully Curated for <span class="italic text-calista-emerald font-normal">Every Special Moment</span>.
+                    </h1>
+
+                    <p class="text-base sm:text-lg text-calista-charcoal/80 leading-relaxed max-w-2xl font-sans">
+                        Hadiah terbaik bukan sekadar barang di dalam kotak, melainkan rasa hangat dan perhatian yang tersampaikan saat pertama kali pita sutra dibuka. Kami mengurasi produk kriya lokal premium, lilin wangi kedelai, teh artisan, dan cangkir keramik buatan tangan dalam balutan kotak hardbox mewah.
+                    </p>
+
+                    <!-- Feature Strips -->
+                    <div class="grid grid-cols-2 sm:grid-cols-3 gap-3 pt-2 font-mono text-xs">
+                        <div class="flex items-center gap-2.5 bg-white/90 p-3.5 rounded-2xl border border-calista-border shadow-xs">
+                            <i class="fa-solid fa-box text-calista-emerald text-sm"></i>
+                            <div>
+                                <p class="font-bold text-calista-emeralddark">Hardbox Tebal Kokoh</p>
+                                <p class="text-[10px] text-calista-charcoal/60">Kualitas Ekspor Magnetik</p>
+                            </div>
+                        </div>
+                        <div class="flex items-center gap-2.5 bg-white/90 p-3.5 rounded-2xl border border-calista-border shadow-xs">
+                            <i class="fa-solid fa-stamp text-amber-600 text-sm"></i>
+                            <div>
+                                <p class="font-bold text-calista-emeralddark">Segel Lilin Wax Seal</p>
+                                <p class="text-[10px] text-calista-charcoal/60">Sentuhan Mewah Vintage</p>
+                            </div>
+                        </div>
+                        <div class="flex items-center gap-2.5 bg-white/90 p-3.5 rounded-2xl border border-calista-border shadow-xs col-span-2 sm:col-span-1">
+                            <i class="fa-solid fa-truck-shield text-calista-emerald text-sm"></i>
+                            <div>
+                                <p class="font-bold text-calista-emeralddark">Anti-Penyok Garansi</p>
+                                <p class="text-[10px] text-calista-charcoal/60">Double Bubble Wrap</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Call To Action Group -->
+                    <div class="flex flex-col sm:flex-row items-stretch sm:items-center gap-4 pt-3 font-mono">
+                        <a href="katalog.html" class="inline-flex items-center justify-center gap-3 px-8 py-4 bg-calista-emerald hover:bg-calista-emeralddark text-calista-cream text-xs sm:text-sm font-bold tracking-wider uppercase rounded-xl transition-all shadow-xl font-mono border border-calista-gold/40 btn-luxury">
+                            <span>Pilih Paket Hampers</span>
+                            <i class="fa-solid fa-arrow-right text-amber-200"></i>
+                        </a>
+                        <a href="detail.html" class="inline-flex items-center justify-center gap-2.5 px-6 py-4 bg-white hover:bg-calista-cream border border-calista-border text-calista-charcoal text-xs sm:text-sm font-bold tracking-wider uppercase rounded-xl transition shadow-xs">
+                            <i class="fa-solid fa-gift text-calista-gold"></i>
+                            <span>Detail Serenity Box</span>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Right Visual: Open Luxury Hardbox with Ribbon & Wax Seal -->
+                <div class="lg:col-span-5 relative">
+                    <div class="relative rounded-3xl overflow-hidden border-4 border-white shadow-2xl bg-calista-emeralddark group">
+                        <img src="https://images.unsplash.com/photo-1549465220-1a8b9238cd48?q=80&w=1000&auto=format&fit=crop" 
+                             alt="Kotak Kado Hampers Mewah Hardbox Emerald Terbuka Berisi Cangkir dan Lilin" 
+                             class="w-full h-[480px] object-cover group-hover:scale-105 transition-transform duration-700">
+                        
+                        <div class="absolute inset-0 bg-gradient-to-t from-calista-emeralddark/85 via-transparent to-transparent"></div>
+                        
+                        <!-- Floating Staging Badge -->
+                        <div class="absolute bottom-5 left-5 right-5 p-4 bg-white/95 backdrop-blur-md rounded-2xl border border-calista-border shadow-lg">
+                            <div class="flex items-center justify-between">
+                                <div class="space-y-0.5">
+                                    <span class="text-[10px] font-mono font-bold tracking-wider uppercase text-calista-gold">Signature Curated Box</span>
+                                    <h2 class="text-base font-serif font-bold text-calista-emeralddark">The Serenity Wellness Gift Set</h2>
+                                    <p class="text-xs text-calista-charcoal/70 font-mono">Cangkir Keramik • Lilin Kedelai • Teh Herbal • Wax Seal Card</p>
+                                </div>
+                                <span class="text-xs font-mono font-bold px-3 py-1.5 bg-emerald-100 text-emerald-950 rounded-lg border border-emerald-300">
+                                    Rp 265.000
+                                </span>
+                            </div>
+                        </div>
+
+                        <!-- Top Right Badge -->
+                        <div class="absolute top-4 right-4 bg-calista-emeralddark/90 backdrop-blur-sm text-amber-200 px-3.5 py-1.5 rounded-full text-[10px] font-mono font-bold tracking-wider uppercase flex items-center gap-1.5 shadow-md border border-calista-gold/40">
+                            <i class="fa-solid fa-crown text-calista-gold"></i>
+                            <span>Premium Satin Bow</span>
+                        </div>
+                    </div>
+
+                    <!-- Floating Mini Card: Wax Seal Swatch -->
+                    <div class="hidden sm:flex absolute -bottom-6 -left-6 bg-white p-4 rounded-2xl border border-calista-border shadow-xl items-center gap-3.5 max-w-[260px]">
+                        <div class="w-12 h-12 rounded-xl bg-amber-100 text-amber-800 flex items-center justify-center text-xl shrink-0">
+                            <i class="fa-solid fa-stamp"></i>
+                        </div>
+                        <div class="space-y-0.5 font-mono">
+                            <p class="text-[10px] uppercase font-bold text-calista-gold">Wax Seal Stamp</p>
+                            <p class="text-xs font-bold text-calista-emeralddark">Lilin Segel Emas</p>
+                            <p class="text-[10px] text-calista-charcoal/60">Pesan Kaligrafi Personal</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- 4. BESPOKE GIFT VALUE STRIP -->
+    <section class="py-9 bg-white border-b border-calista-border">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-6 text-center sm:text-left">
+                
+                <div class="flex flex-col sm:flex-row items-center sm:items-start gap-3.5">
+                    <div class="w-12 h-12 rounded-2xl bg-emerald-50 text-calista-emerald flex items-center justify-center text-xl shrink-0 border border-calista-border">
+                        <i class="fa-solid fa-box-open"></i>
+                    </div>
+                    <div>
+                        <h4 class="font-serif font-bold text-sm text-calista-emeralddark">Hardbox Kualitas Ekspor</h4>
+                        <p class="text-xs text-calista-charcoal/70 font-sans mt-0.5">Dinding box tebal 3mm kokoh dengan penutup magnetik atau box kayu pinus slider.</p>
+                    </div>
+                </div>
+
+                <div class="flex flex-col sm:flex-row items-center sm:items-start gap-3.5">
+                    <div class="w-12 h-12 rounded-2xl bg-amber-50 text-amber-800 flex items-center justify-center text-xl shrink-0 border border-calista-border">
+                        <i class="fa-solid fa-envelope-open-text"></i>
+                    </div>
+                    <div>
+                        <h4 class="font-serif font-bold text-sm text-calista-emeralddark">Kartu Wax Seal Eksklusif</h4>
+                        <p class="text-xs text-calista-charcoal/70 font-sans mt-0.5">Setiap kartu ucapan disegel lilin malam asli dengan stempel monogram vintage elegan.</p>
+                    </div>
+                </div>
+
+                <div class="flex flex-col sm:flex-row items-center sm:items-start gap-3.5">
+                    <div class="w-12 h-12 rounded-2xl bg-purple-50 text-purple-900 flex items-center justify-center text-xl shrink-0 border border-calista-border">
+                        <i class="fa-solid fa-hand-holding-heart"></i>
+                    </div>
+                    <div>
+                        <h4 class="font-serif font-bold text-sm text-calista-emeralddark">Kurasi Kriya Lokal</h4>
+                        <p class="text-xs text-calista-charcoal/70 font-sans mt-0.5">Bekerjasama dengan pengrajin lokal untuk keramik, lilin aromaterapi, dan teh artisan.</p>
+                    </div>
+                </div>
+
+                <div class="flex flex-col sm:flex-row items-center sm:items-start gap-3.5">
+                    <div class="w-12 h-12 rounded-2xl bg-slate-100 text-slate-800 flex items-center justify-center text-xl shrink-0 border border-calista-border">
+                        <i class="fa-solid fa-shield-halved"></i>
+                    </div>
+                    <div>
+                        <h4 class="font-serif font-bold text-sm text-calista-emeralddark">Kirim Aman ke Seluruh RI</h4>
+                        <p class="text-xs text-calista-charcoal/70 font-sans mt-0.5">Kardus luar dobel tebal & bubble wrap berlapis memastikan paket tiba dalam kondisi prima.</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- 5. SECTION KHUSUS: "KURASI KADO SESUAI MOMEN" -->
+    <section id="momentSection" class="py-16 sm:py-24 border-b border-calista-border bg-calista-creamsoft relative">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            
+            <div class="text-center max-w-3xl mx-auto mb-14 space-y-3">
+                <span class="px-3.5 py-1 bg-white border border-calista-border text-calista-emerald font-mono text-[11px] font-bold uppercase tracking-widest rounded-full">
+                    A Curated Box for Every Milestone
+                </span>
+                <h2 class="text-3xl sm:text-4xl lg:text-5xl font-serif font-bold text-calista-emeralddark">
+                    Kurasi Kado Sesuai Momen Berharga
+                </h2>
+                <p class="text-sm sm:text-base text-calista-charcoal/75 font-sans">
+                    Temukan paket hadiah yang dirancang khusus untuk mewakili ketulusan hati Anda pada setiap perayaan spesial:
+                </p>
+            </div>
+
+            <!-- Moment Grid (4 Cards) -->
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+                
+                <!-- Moment 1: Festive Hari Raya -->
+                <div class="bg-white p-6 rounded-3xl border border-calista-border shadow-sm flex flex-col justify-between space-y-4 hover:border-calista-emerald transition">
+                    <div class="space-y-3">
+                        <div class="w-12 h-12 rounded-2xl bg-emerald-100 text-calista-emerald flex items-center justify-center text-xl">
+                            <i class="fa-solid fa-moon"></i>
+                        </div>
+                        <h3 class="font-serif font-bold text-xl text-calista-emeralddark">Festive Hari Raya (Idul Fitri / Natal)</h3>
+                        <p class="text-xs text-calista-charcoal/75 leading-relaxed font-sans">
+                            Koleksi hampers Idul Fitri & Natal berhias anyaman besek bambu modern, toples cookies artisan, madu murni, dan sendok kayu.
+                        </p>
+                        <div class="pt-2 border-t border-calista-border font-mono text-[11px] text-calista-emerald space-y-1">
+                            <p><strong>Pilihan Box:</strong> Hardbox Emerald / Besek Bambu</p>
+                            <p><strong>Tema Warna:</strong> Royal Emerald & Foil Gold</p>
+                        </div>
+                    </div>
+                    <a href="katalog.html" class="inline-flex items-center gap-1.5 text-xs font-mono font-bold text-calista-emerald hover:underline pt-2">
+                        <span>Pilih Hampers Hari Raya &rarr;</span>
+                    </a>
+                </div>
+
+                <!-- Moment 2: Wedding & Bridesmaid Proposal -->
+                <div class="bg-white p-6 rounded-3xl border border-calista-border shadow-sm flex flex-col justify-between space-y-4 hover:border-calista-emerald transition">
+                    <div class="space-y-3">
+                        <div class="w-12 h-12 rounded-2xl bg-rose-100 text-rose-900 flex items-center justify-center text-xl">
+                            <i class="fa-solid fa-heart"></i>
+                        </div>
+                        <h3 class="font-serif font-bold text-xl text-calista-emeralddark">Bridesmaid & Wedding Box</h3>
+                        <p class="text-xs text-calista-charcoal/75 leading-relaxed font-sans">
+                            Kotak kado kustom nama sahabat untuk bridesmaid proposal berisi kimono satin, parfum roll-on, lilin kedelai, dan kartu ucapan.
+                        </p>
+                        <div class="pt-2 border-t border-calista-border font-mono text-[11px] text-calista-emerald space-y-1">
+                            <p><strong>Pilihan Box:</strong> Magnetic Hardbox Custom Nama</p>
+                            <p><strong>Tema Warna:</strong> Dusty Rose & Champagne</p>
+                        </div>
+                    </div>
+                    <a href="katalog.html" class="inline-flex items-center gap-1.5 text-xs font-mono font-bold text-calista-emerald hover:underline pt-2">
+                        <span>Pilih Bridesmaid Box &rarr;</span>
+                    </a>
+                </div>
+
+                <!-- Moment 3: Corporate Client Appreciation -->
+                <div class="bg-white p-6 rounded-3xl border border-calista-border shadow-sm flex flex-col justify-between space-y-4 hover:border-calista-emerald transition">
+                    <div class="space-y-3">
+                        <div class="w-12 h-12 rounded-2xl bg-slate-800 text-amber-300 flex items-center justify-center text-xl">
+                            <i class="fa-solid fa-briefcase"></i>
+                        </div>
+                        <h3 class="font-serif font-bold text-xl text-calista-emeralddark">Corporate Appreciation Box</h3>
+                        <p class="text-xs text-calista-charcoal/75 leading-relaxed font-sans">
+                            Paket cendera mata eksklusif untuk klien VIP dan rekanan bisnis dengan logo perusahaan di gravir pada tumbler dan kotak kayu.
+                        </p>
+                        <div class="pt-2 border-t border-calista-border font-mono text-[11px] text-calista-emerald space-y-1">
+                            <p><strong>Pilihan Box:</strong> Box Kayu Pinus Slider Akrilik</p>
+                            <p><strong>Tema Warna:</strong> Executive Black & Gold</p>
+                        </div>
+                    </div>
+                    <a href="katalog.html" class="inline-flex items-center gap-1.5 text-xs font-mono font-bold text-calista-emerald hover:underline pt-2">
+                        <span>Pilih Corporate Box &rarr;</span>
+                    </a>
+                </div>
+
+                <!-- Moment 4: Birthday & Self-Care Wellness -->
+                <div class="bg-white p-6 rounded-3xl border border-calista-border shadow-sm flex flex-col justify-between space-y-4 hover:border-calista-emerald transition">
+                    <div class="space-y-3">
+                        <div class="w-12 h-12 rounded-2xl bg-purple-100 text-purple-900 flex items-center justify-center text-xl">
+                            <i class="fa-solid fa-spa"></i>
+                        </div>
+                        <h3 class="font-serif font-bold text-xl text-calista-emeralddark">Birthday & Self-Care Gift</h3>
+                        <p class="text-xs text-calista-charcoal/75 leading-relaxed font-sans">
+                            Kado ulang tahun berisi paket relaksasi tubuh: Bath salts organik, sabun mandi botanikal, lilin lavender, dan cokelat artisan.
+                        </p>
+                        <div class="pt-2 border-t border-calista-border font-mono text-[11px] text-calista-emerald space-y-1">
+                            <p><strong>Pilihan Box:</strong> Hardbox Velvet Burgundy</p>
+                            <p><strong>Tema Warna:</strong> Lavender & Muted Burgundy</p>
+                        </div>
+                    </div>
+                    <a href="detail.html" class="inline-flex items-center gap-1.5 text-xs font-mono font-bold text-calista-emerald hover:underline pt-2">
+                        <span>Pilih Self-Care Box &rarr;</span>
+                    </a>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+    <!-- 6. PRODUK UNGGULAN: 3-COLUMN LUXURY HAMPERS SHOWCASE -->
+    <section class="py-16 sm:py-24 border-b border-calista-border bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            
+            <div class="flex flex-col md:flex-row md:items-end justify-between mb-12 gap-4">
+                <div>
+                    <span class="text-xs font-mono font-bold uppercase tracking-widest text-calista-gold">
+                        Signature Gift Sets
+                    </span>
+                    <h2 class="text-3xl sm:text-4xl lg:text-5xl font-serif font-bold text-calista-emeralddark mt-1">
+                        Paket Hampers Terfavorit
+                    </h2>
+                </div>
+                <div class="flex items-center gap-2">
+                    <a href="katalog.html" class="inline-flex items-center gap-2 text-xs font-mono font-bold uppercase tracking-wider text-calista-emeralddark hover:text-calista-gold transition border-b border-calista-gold pb-1">
+                        <span>Lihat Seluruh Koleksi (10+)</span>
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </a>
+                </div>
+            </div>
+
+            <!-- 3 Column Grid -->
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                
+                <!-- Card 1: The Serenity Wellness Gift Set -->
+                <div class="hampers-card bg-calista-cream rounded-3xl border border-calista-border overflow-hidden flex flex-col group shadow-sm">
+                    <div class="relative overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1549465220-1a8b9238cd48?q=80&w=600&auto=format&fit=crop" 
+                             alt="The Serenity Wellness Gift Set" 
+                             class="w-full h-72 object-cover group-hover:scale-105 transition duration-500">
+                        <div class="absolute top-3 left-3 bg-calista-emerald text-white text-[10px] font-mono font-bold uppercase px-2.5 py-1 rounded shadow">
+                            Best Seller Box
+                        </div>
+                        <div class="absolute bottom-3 right-3 bg-white/90 backdrop-blur-sm text-calista-charcoal text-[10px] font-mono font-bold px-2 py-0.5 rounded border border-calista-border">
+                            Hardbox 24x24cm • Pita Emas
+                        </div>
+                    </div>
+                    <div class="p-6 flex-1 flex flex-col justify-between space-y-4">
+                        <div>
+                            <span class="text-[11px] font-mono text-calista-gold font-bold block">Wellness & Relax • Cangkir Keramik</span>
+                            <a href="detail.html" class="font-serif font-bold text-2xl text-calista-emeralddark hover:text-calista-gold transition leading-snug block">
+                                The Serenity Wellness Box
+                            </a>
+                            <p class="text-xs text-calista-charcoal/70 mt-1.5 font-sans leading-relaxed">
+                                Cangkir keramik handmade, lilin aromaterapi soy wax lavender, teh chamomile artisan, madu hutan murni, dan kartu ucapan wax seal.
+                            </p>
+                        </div>
+                        <div class="pt-4 border-t border-calista-border flex items-center justify-between font-mono">
+                            <div>
+                                <span class="text-[10px] text-calista-charcoal/50 uppercase block">Termasuk Kartu Wax Seal</span>
+                                <span class="text-base font-bold text-calista-emeralddark font-serif">Rp 265.000</span>
+                            </div>
+                            <a href="detail.html" class="px-4 py-2 bg-calista-emerald hover:bg-calista-emeralddark text-white rounded-xl text-xs font-bold transition font-mono">
+                                Detail Paket
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 2: Royal Mubarak Festive Hampers (Hari Raya) -->
+                <div class="hampers-card bg-calista-cream rounded-3xl border border-calista-border overflow-hidden flex flex-col group shadow-sm">
+                    <div class="relative overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1513519245088-0e12902e5a38?q=80&w=600&auto=format&fit=crop" 
+                             alt="Royal Mubarak Festive Hampers" 
+                             class="w-full h-72 object-cover group-hover:scale-105 transition duration-500">
+                        <div class="absolute top-3 left-3 bg-amber-800 text-white text-[10px] font-mono font-bold uppercase px-2.5 py-1 rounded shadow">
+                            Festive Hari Raya
+                        </div>
+                        <div class="absolute bottom-3 right-3 bg-white/90 backdrop-blur-sm text-calista-charcoal text-[10px] font-mono font-bold px-2 py-0.5 rounded border border-calista-border">
+                            Hardbox Large 30x25cm
+                        </div>
+                    </div>
+                    <div class="p-6 flex-1 flex flex-col justify-between space-y-4">
+                        <div>
+                            <span class="text-[11px] font-mono text-calista-gold font-bold block">Kue Kering Artisan • Reed Diffuser</span>
+                            <a href="detail.html" class="font-serif font-bold text-2xl text-calista-emeralddark hover:text-calista-gold transition leading-snug block">
+                                Royal Mubarak Festive Box
+                            </a>
+                            <p class="text-xs text-calista-charcoal/70 mt-1.5 font-sans leading-relaxed">
+                                2 jar cookies artisan butter, reed diffuser aroma oud sandalwood 100ml, sajadah travel sutra Turki, dan kurma ajwa premium.
+                            </p>
+                        </div>
+                        <div class="pt-4 border-t border-calista-border flex items-center justify-between font-mono">
+                            <div>
+                                <span class="text-[10px] text-calista-charcoal/50 uppercase block">Free Hangtag Lebaran</span>
+                                <span class="text-base font-bold text-calista-emeralddark font-serif">Rp 385.000</span>
+                            </div>
+                            <a href="detail.html" class="px-4 py-2 bg-calista-emerald hover:bg-calista-emeralddark text-white rounded-xl text-xs font-bold transition font-mono">
+                                Detail Paket
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 3: Executive Wooden Keepsake (Corporate Gift) -->
+                <div class="hampers-card bg-calista-cream rounded-3xl border border-calista-border overflow-hidden flex flex-col group shadow-sm">
+                    <div class="relative overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1544816155-12df9643f363?q=80&w=600&auto=format&fit=crop" 
+                             alt="Executive Wooden Keepsake Box" 
+                             class="w-full h-72 object-cover group-hover:scale-105 transition duration-500">
+                        <div class="absolute top-3 left-3 bg-calista-emeralddark text-amber-200 text-[10px] font-mono font-bold uppercase px-2.5 py-1 rounded shadow">
+                            Corporate VIP
+                        </div>
+                        <div class="absolute bottom-3 right-3 bg-white/90 backdrop-blur-sm text-calista-charcoal text-[10px] font-mono font-bold px-2 py-0.5 rounded border border-calista-border">
+                            Box Kayu Pinus Slider
+                        </div>
+                    </div>
+                    <div class="p-6 flex-1 flex flex-col justify-between space-y-4">
+                        <div>
+                            <span class="text-[11px] font-mono text-calista-gold font-bold block">Tumbler Grafir Logo • Kopi Robusta</span>
+                            <a href="detail.html" class="font-serif font-bold text-2xl text-calista-emeralddark hover:text-calista-gold transition leading-snug block">
+                                Executive Wooden Gift Box
+                            </a>
+                            <p class="text-xs text-calista-charcoal/70 mt-1.5 font-sans leading-relaxed">
+                                Box kayu pinus dengan tutup akrilik grafir nama, tumbler stainless steel suhu, biji kopi arabika single origin, dan coaster kayu jati.
+                            </p>
+                        </div>
+                        <div class="pt-4 border-t border-calista-border flex items-center justify-between font-mono">
+                            <div>
+                                <span class="text-[10px] text-calista-charcoal/50 uppercase block">Bisa Grafir Logo Perusahaan</span>
+                                <span class="text-base font-bold text-calista-emeralddark font-serif">Rp 340.000</span>
+                            </div>
+                            <a href="detail.html" class="px-4 py-2 bg-calista-emerald hover:bg-calista-emeralddark text-white rounded-xl text-xs font-bold transition font-mono">
+                                Detail Paket
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+    <!-- 7. SECTION THE CURATION CRAFT -->
+    <section class="py-16 sm:py-24 border-b border-calista-border bg-calista-cream">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+                
+                <div class="lg:col-span-6 space-y-6">
+                    <span class="text-xs font-mono font-bold uppercase tracking-widest text-calista-gold">
+                        The Art of Gift Curation
+                    </span>
+                    <h2 class="text-3xl sm:text-4xl lg:text-5xl font-serif font-bold text-calista-emeralddark leading-tight">
+                        Mengubah Benda Sederhana Menjadi Kisah Penuh Makna.
+                    </h2>
+                    <p class="text-base text-calista-charcoal/80 font-sans leading-relaxed">
+                        Kami tidak sekadar memasukkan barang acak ke dalam kardus. Setiap kotak dirancang dengan pertimbangan estetika warna yang selaras, aroma yang menenangkan saat kotak dibuka, dan tekstur yang menyenangkan saat disentuh.
+                    </p>
+                    <p class="text-base text-calista-charcoal/80 font-sans leading-relaxed">
+                        Dari pemilihan ketebalan karton hardbox, kertas serut (*shredded paper*) ramah lingkungan, pita satin sutra yang diikat tangan presisi, hingga stempel segel lilin leleh bertanda tangan.
+                    </p>
+
+                    <div class="space-y-3 pt-2 font-mono text-xs">
+                        <div class="flex items-center gap-3 p-3 bg-white rounded-xl border border-calista-border">
+                            <i class="fa-solid fa-check text-green-600 font-bold"></i>
+                            <span class="text-calista-charcoal"><strong>Stempel Wax Seal Asli:</strong> Lilin fleksibel anti-pecah dalam pengiriman pos.</span>
+                        </div>
+                        <div class="flex items-center gap-3 p-3 bg-white rounded-xl border border-calista-border">
+                            <i class="fa-solid fa-check text-green-600 font-bold"></i>
+                            <span class="text-calista-charcoal"><strong>Custom Desain Perusahaan:</strong> Pilihan kustomisasi kartu dan sleeve box corporate.</span>
+                        </div>
+                    </div>
+
+                    <div class="pt-2">
+                        <a href="tentang.html" class="inline-flex items-center gap-2 text-xs font-mono font-bold uppercase tracking-wider text-calista-emerald hover:text-calista-gold transition border-b-2 border-calista-gold pb-1">
+                            <span>Pelajari Cerita Studio & Mitra Pengrajin</span>
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="lg:col-span-6 grid grid-cols-2 gap-4">
+                    <img src="https://images.unsplash.com/photo-1549465220-1a8b9238cd48?q=80&w=600&auto=format&fit=crop" 
+                         alt="Proses Menghias Kotak Kado dengan Pita Emas" 
+                         class="w-full h-72 object-cover rounded-3xl border border-calista-border shadow-md">
+                    <img src="https://images.unsplash.com/photo-1513519245088-0e12902e5a38?q=80&w=600&auto=format&fit=crop" 
+                         alt="Penyegelan Lilin Wax Seal pada Kartu Ucapan" 
+                         class="w-full h-72 object-cover rounded-3xl border border-calista-border shadow-md mt-6">
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- 8. TESTIMONIALS: CORPORATE HR, BRIDES & PERSONAL GIFTERS -->
+    <section class="py-16 sm:py-24 border-b border-calista-border bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            
+            <div class="text-center max-w-2xl mx-auto mb-14 space-y-2">
+                <span class="text-xs font-mono font-bold uppercase tracking-widest text-calista-gold">
+                    Kepercayaan Klien & Cerita Penerima
+                </span>
+                <h2 class="text-3xl sm:text-4xl lg:text-5xl font-serif font-bold text-calista-emeralddark">
+                    Hadiah yang Menyampaikan Rasa Terima Kasih
+                </h2>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                
+                <!-- Testi 1 -->
+                <div class="bg-calista-cream p-8 rounded-3xl border border-calista-border flex flex-col justify-between space-y-6">
+                    <div class="space-y-3">
+                        <div class="flex text-amber-500 text-xs gap-1">
+                            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                        </div>
+                        <p class="text-sm text-calista-charcoal/80 italic leading-relaxed font-sans">
+                            "Perusahaan kami memesan 120 paket hampers akhir tahun untuk klien VIP. Respon dari seluruh mitra sangat luar biasa! Hardbox emerald-nya kokoh, grafir logo rapi, dan segel wax seal-nya memberi kesan sangat prestisius."
+                        </p>
+                    </div>
+                    <div class="flex items-center gap-3.5 pt-4 border-t border-calista-border font-mono">
+                        <div class="w-10 h-10 rounded-full bg-calista-emerald text-amber-200 flex items-center justify-center font-bold text-xs">
+                            AW
+                        </div>
+                        <div>
+                            <p class="text-xs font-bold text-calista-emeralddark">Andini Wardhani</p>
+                            <p class="text-[10px] text-calista-charcoal/60">Head of Corporate Comms, Jakarta</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Testi 2 -->
+                <div class="bg-calista-cream p-8 rounded-3xl border border-calista-border flex flex-col justify-between space-y-6">
+                    <div class="space-y-3">
+                        <div class="flex text-amber-500 text-xs gap-1">
+                            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                        </div>
+                        <p class="text-sm text-calista-charcoal/80 italic leading-relaxed font-sans">
+                            "Pesan 8 set Bridesmaid Proposal Box untuk sahabat-sahabat terdekat. Pas paket sampai di rumah mereka masing-masing, semua langsung posting unboxing di IG Story! Wangi lilinnya semerbak dan kimono satinnya mewah."
+                        </p>
+                    </div>
+                    <div class="flex items-center gap-3.5 pt-4 border-t border-calista-border font-mono">
+                        <div class="w-10 h-10 rounded-full bg-calista-burgundy text-white flex items-center justify-center font-bold text-xs">
+                            VS
+                        </div>
+                        <div>
+                            <p class="text-xs font-bold text-calista-emeralddark">Vania Sasmita</p>
+                            <p class="text-[10px] text-calista-charcoal/60">Bride, Wedding in Yogyakarta</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Testi 3 -->
+                <div class="bg-calista-cream p-8 rounded-3xl border border-calista-border flex flex-col justify-between space-y-6">
+                    <div class="space-y-3">
+                        <div class="flex text-amber-500 text-xs gap-1">
+                            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                        </div>
+                        <p class="text-sm text-calista-charcoal/80 italic leading-relaxed font-sans">
+                            "Beli satuan The Serenity Wellness Box buat kado ulang tahun ibu di luar kota. Pengirimannya cepat, packing dobel bubble wrap sangat tebal sehingga cangkir keramik sampai tanpa cacat. Ibu saya senang sekali!"
+                        </p>
+                    </div>
+                    <div class="flex items-center gap-3.5 pt-4 border-t border-calista-border font-mono">
+                        <div class="w-10 h-10 rounded-full bg-calista-emerald text-amber-200 flex items-center justify-center font-bold text-xs">
+                            BP
+                        </div>
+                        <div>
+                            <p class="text-xs font-bold text-calista-emeralddark">Bagus Prasetyo</p>
+                            <p class="text-[10px] text-calista-charcoal/60">Personal Customer, Surabaya</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+    <!-- 9. CORPORATE & BULK ORDERS BANNER -->
+    <section class="py-14 bg-calista-emeralddark text-calista-cream relative overflow-hidden border-t border-calista-gold/30">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative">
+            <div class="flex flex-col lg:flex-row items-center justify-between gap-8 text-center lg:text-left">
+                <div class="space-y-2 max-w-2xl">
+                    <span class="text-[11px] font-mono uppercase tracking-widest text-amber-300 font-bold">Layanan Pengadaan Hampers Perusahaan</span>
+                    <h3 class="text-2xl sm:text-3xl font-serif font-bold text-white">Butuh Pengadaan 50 Hingga 1.000+ Paket Hampers Kantor?</h3>
+                    <p class="text-xs sm:text-sm text-calista-cream/80 font-sans">
+                        Dapatkan penawaran harga khusus (*B2B Corporate Rate*), opsi custom logo timbul foil emas, dan pengiriman terjadwal langsung ke alamat masing-masing karyawan/klien.
+                    </p>
+                </div>
+                <div class="flex flex-col sm:flex-row items-center gap-3 font-mono shrink-0">
+                    <a href="kontak.html" class="px-6 py-3.5 bg-white hover:bg-calista-cream text-calista-emeralddark text-xs font-bold uppercase tracking-wider rounded-xl transition shadow font-mono">
+                        Request Proposal B2B
+                    </a>
+                    <a href="https://wa.me/6281234567890?text=Halo%20Calista,%20saya%20tertarik%20konsultasi%20pengadaan%20hampers%20perusahaan." target="_blank" class="px-6 py-3.5 bg-calista-gold hover:bg-amber-600 text-calista-emeralddark text-xs font-bold uppercase tracking-wider rounded-xl transition shadow flex items-center gap-2 font-mono">
+                        <i class="fa-brands fa-whatsapp text-sm"></i>
+                        <span>Diskusi via WhatsApp</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 10. FOOTER -->
+    <footer class="bg-calista-emeralddark text-calista-cream py-16 border-t border-calista-gold/20 font-sans">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-10 mb-12">
+                
+                <!-- Brand Bio -->
+                <div class="lg:col-span-2 space-y-4">
+                    <a href="index.html" class="flex items-center gap-3">
+                        <div class="w-10 h-10 bg-calista-emerald border border-calista-gold/40 text-amber-200 flex items-center justify-center text-lg font-serif rounded-lg">
+                            <i class="fa-solid fa-gift"></i>
+                        </div>
+                        <span class="text-2xl font-serif font-bold tracking-tight text-white uppercase">
+                            CALISTA<span class="text-calista-gold">.</span>
+                        </span>
+                    </a>
+                    <p class="text-xs text-calista-cream/75 leading-relaxed max-w-sm font-sans">
+                        Studio kurasi kado & hampers eksklusif: Festive hampers Lebaran/Natal, bridesmaid proposal box, kado ulang tahun premium, dan souvenir pengadaan perusahaan.
+                    </p>
+                    <div class="flex items-center gap-3 pt-2">
+                        <a href="#" class="w-8 h-8 rounded-full bg-white/10 hover:bg-calista-gold hover:text-calista-emeralddark text-white flex items-center justify-center text-xs transition"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="#" class="w-8 h-8 rounded-full bg-white/10 hover:bg-calista-gold hover:text-calista-emeralddark text-white flex items-center justify-center text-xs transition"><i class="fa-brands fa-tiktok"></i></a>
+                        <a href="#" class="w-8 h-8 rounded-full bg-white/10 hover:bg-calista-gold hover:text-calista-emeralddark text-white flex items-center justify-center text-xs transition"><i class="fa-brands fa-pinterest"></i></a>
+                        <a href="#" class="w-8 h-8 rounded-full bg-white/10 hover:bg-calista-gold hover:text-calista-emeralddark text-white flex items-center justify-center text-xs transition"><i class="fa-brands fa-whatsapp"></i></a>
+                    </div>
+                </div>
+
+                <!-- Navigation Links -->
+                <div class="space-y-3 font-mono">
+                    <h5 class="text-xs font-bold text-white uppercase tracking-wider">Koleksi Hampers</h5>
+                    <ul class="space-y-2 text-xs text-calista-cream/70">
+                        <li><a href="katalog.html" class="hover:text-amber-300 transition">Hampers Hari Raya</a></li>
+                        <li><a href="katalog.html" class="hover:text-amber-300 transition">Bridesmaid Proposal Box</a></li>
+                        <li><a href="katalog.html" class="hover:text-amber-300 transition">Corporate Appreciation</a></li>
+                        <li><a href="katalog.html" class="hover:text-amber-300 transition">Birthday & Self-Care</a></li>
+                    </ul>
+                </div>
+
+                <!-- Quick Menu -->
+                <div class="space-y-3 font-mono">
+                    <h5 class="text-xs font-bold text-white uppercase tracking-wider">Halaman</h5>
+                    <ul class="space-y-2 text-xs text-calista-cream/70">
+                        <li><a href="index.html" class="hover:text-amber-300 transition">Beranda</a></li>
+                        <li><a href="katalog.html" class="hover:text-amber-300 transition">Katalog Hadiah</a></li>
+                        <li><a href="detail.html" class="hover:text-amber-300 transition">Detail Serenity Box</a></li>
+                        <li><a href="tentang.html" class="hover:text-amber-300 transition">Filosofi Kurasi</a></li>
+                        <li><a href="artikel.html" class="hover:text-amber-300 transition">Ide Hadiah</a></li>
+                        <li><a href="kontak.html" class="hover:text-amber-300 transition">Studio & Kontak</a></li>
+                    </ul>
+                </div>
+
+                <!-- Studio Address -->
+                <div class="space-y-3 font-mono text-xs">
+                    <h5 class="text-xs font-bold text-white uppercase tracking-wider">Studio & Workshop</h5>
+                    <p class="text-calista-cream/70 leading-relaxed font-sans">
+                        Jl. Demangan Baru No. 18, Caturtunggal, Depok, Sleman, D.I. Yogyakarta 55281
+                    </p>
+                    <p class="text-calista-cream/70 font-mono">
+                        Buka: Senin - Sabtu (09:00 - 17:30 WIB)
+                    </p>
+                    <p class="text-amber-300 font-bold">
+                        WhatsApp: +62 812-3456-7890
+                    </p>
+                </div>
+
+            </div>
+
+            <div class="pt-8 border-t border-white/10 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs font-mono text-calista-cream/50">
+                <p>&copy; 2026 CALISTA BESPOKE GIFT & HAMPERS ATELIER. All rights reserved.</p>
+                <p>Template UMKM Kriya Hampers & Souvenir by Lentera Pasar</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- 11. FLOATING WHATSAPP BUTTON (bottom-24) -->
+    <div class="fixed bottom-24 right-4 sm:right-6 z-40">
+        <a href="https://wa.me/6281234567890?text=Halo%20Calista%20Gift%20Studio,%20saya%20tertarik%20dengan%20koleksi%20hampers%20kalian." 
+           target="_blank" 
+           aria-label="Chat WhatsApp Studio"
+           class="flex items-center gap-2.5 bg-emerald-600 hover:bg-emerald-700 text-white px-4 py-3 rounded-full shadow-2xl transition-all duration-300 hover:scale-105 group font-mono text-xs font-bold border-2 border-amber-300">
+            <i class="fa-brands fa-whatsapp text-xl text-white group-hover:rotate-12 transition-transform"></i>
+            <span class="hidden sm:inline">WhatsApp Studio</span>
+        </a>
+    </div>
+
+    <!-- 12. LENTERA PASAR STICKY DEMO & SALES BAR (fixed bottom-4) -->
+    <div class="fixed bottom-4 left-4 right-4 z-50 max-w-5xl mx-auto">
+      <div class="bg-slate-900/95 backdrop-blur-md text-white px-4 py-3 rounded-2xl shadow-2xl border border-slate-700/80 flex flex-col md:flex-row items-center justify-between gap-3">
+        
+        <div class="flex items-center gap-3">
+          <div class="w-8 h-8 rounded-lg bg-amber-600/30 border border-amber-500/50 flex items-center justify-center shrink-0">
+            <svg class="w-4 h-4 text-amber-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z" /></svg>
+          </div>
+          <div>
+            <div class="text-xs md:text-sm font-bold text-slate-100 flex items-center gap-2">
+              <span>Lentera Pasar Demo</span>
+              <span class="text-[10px] px-1.5 py-0.5 rounded bg-amber-500/20 text-amber-300 font-mono">Template Hampers & Souvenir Kado</span>
+            </div>
+            <p class="text-[11px] text-slate-400 hidden sm:block">Template website mewah & berkelas untuk bisnis kriya hampers hari raya, bridesmaid box, dan corporate gift.</p>
+          </div>
+        </div>
+
+        <div class="flex items-center gap-3 w-full md:w-auto justify-end">
+          <div class="hidden lg:flex items-center gap-4 text-xs font-mono text-slate-400 border-r border-slate-700 pr-4">
+            <div class="flex items-center gap-1 text-slate-200">
+              <svg class="w-4 h-4 text-amber-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" /></svg>
+              <span>Include Wax Seal</span>
+            </div>
+            <span class="text-slate-600">•</span>
+            <div class="flex items-center gap-1 text-slate-200">
+              <svg class="w-4 h-4 text-emerald-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" /></svg>
+              <span>Satuan & Partai B2B</span>
+            </div>
+          </div>
+
+          <a href="https://wa.me/6281234567890?text=Halo%20Tim%20Lentera%20Pasar,%20saya%20tertarik%20menggunakan%20template%20website%20Hampers%20ini%20lengkap%20dengan%20Admin%20Panel%20dan%20Jasa%20Iklannya." 
+             target="_blank"
+             class="w-full md:w-auto inline-flex items-center justify-center gap-2 bg-gradient-to-r from-amber-600 to-amber-800 hover:from-amber-500 hover:to-amber-700 text-white text-xs md:text-sm font-bold px-5 py-2.5 rounded-xl shadow-lg transition-all hover:scale-105 shrink-0 font-serif">
+            <span>Gunakan Template Ini</span>
+            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3" />
+            </svg>
+          </a>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- SCRIPT MOBILE MENU -->
+    <script>
+        const mobileMenuBtn = document.getElementById('mobileMenuBtn');
+        const mobileMenu = document.getElementById('mobileMenu');
+        const menuIcon = document.getElementById('menuIcon');
+
+        mobileMenuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+            if (mobileMenu.classList.contains('hidden')) {
+                menuIcon.classList.remove('fa-xmark');
+                menuIcon.classList.add('fa-bars');
+            } else {
+                menuIcon.classList.remove('fa-bars');
+                menuIcon.classList.add('fa-xmark');
+            }
+        });
+    </script>
+</body>
+</html>
