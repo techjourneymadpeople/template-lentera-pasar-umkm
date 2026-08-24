@@ -1,0 +1,853 @@
+<!DOCTYPE html>
+<html lang="id" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RIMBA MADU SANCTUARY // Wild Forest Apiary & Pure Raw Honey</title>
+    <meta name="description" content="Pemasok madu mentah murni hutan liar (pure raw honey) unpasteurized: Madu Pohon Sialang Apis Dorsata, Madu Randu, Madu Klanceng Trigona, dan Sarang Madu Asli.">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,600;0,700;1,600;1,700&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Playfair+Display:ital,wght@0,600;0,700;0,800;1,600&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome 6 -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        honey: {
+                            amber: '#D97706',
+                            amberdark: '#B45309',
+                            amberlight: '#F59E0B',
+                            gold: '#CA8A04',
+                            bark: '#1E140C',
+                            barkdark: '#120B06',
+                            barklight: '#352115',
+                            cream: '#FEFCE8',
+                            creamborder: '#FEF08A',
+                            pollen: '#FDE047',
+                            charcoal: '#1C1917'
+                        }
+                    },
+                    fontFamily: {
+                        sans: ['"Plus Jakarta Sans"', 'sans-serif'],
+                        serif: ['"Playfair Display"', 'serif'],
+                        cormorant: ['"Cormorant Garamond"', 'serif']
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        .no-scrollbar::-webkit-scrollbar { display: none; }
+        .no-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
+
+        .honey-hero-bg {
+            background: linear-gradient(180deg, #FEF9C3 0%, #FEFCE8 100%);
+        }
+
+        .honey-card {
+            transition: all 0.35s cubic-bezier(0.16, 1, 0.3, 1);
+        }
+        .honey-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 20px 35px -10px rgba(217, 119, 6, 0.18);
+        }
+    </style>
+</head>
+<body class="bg-honey-cream text-honey-charcoal font-sans antialiased selection:bg-honey-amber selection:text-white">
+
+    <!-- 1. TOP ANNOUNCEMENT BAR -->
+    <div class="bg-honey-bark text-amber-100 text-xs py-2.5 px-4 font-sans font-medium border-b border-amber-950/40">
+        <div class="max-w-7xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-2 text-center sm:text-left">
+            <div class="flex items-center justify-center gap-2">
+                <span class="px-2 py-0.5 bg-honey-amber text-white text-[10px] uppercase font-bold tracking-wider rounded-md shadow-xs flex items-center gap-1">
+                    <i class="fa-solid fa-shield-heart text-amber-200"></i> RAW & UNPASTEURIZED
+                </span>
+                <span class="text-white/95 font-medium">100% Madu Mentah Murni Hutan Liar • Garansi Uang Kembali 200% Jika Terbukti Oplosan</span>
+            </div>
+            <div class="flex items-center gap-4 text-xs">
+                <span class="hidden md:inline text-amber-200/90"><i class="fa-solid fa-flask-vial mr-1 text-amber-400"></i> Enzim Diastase Aktif > 8.5 DN</span>
+                <span class="hidden md:inline text-amber-500/50">•</span>
+                <a href="https://wa.me/6281234567890?text=Halo%20Admin%20Rimba%20Madu,%20saya%20ingin%20pesan%20madu%20murni%20asli." target="_blank" class="text-amber-300 hover:underline font-bold transition flex items-center gap-1">
+                    Pesan Madu WA <i class="fa-solid fa-arrow-right text-[10px]"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- 2. NAVBAR -->
+    <header class="sticky top-0 z-40 bg-white/95 backdrop-blur-md border-b border-honey-creamborder transition-all shadow-xs">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-20 sm:h-24">
+                
+                <!-- Logo -->
+                <a href="index.html" class="flex items-center gap-3.5 group">
+                    <div class="w-12 h-12 bg-gradient-to-br from-honey-amber to-honey-bark text-white flex items-center justify-center text-2xl font-bold rounded-2xl shadow-md group-hover:scale-105 transition">
+                        <i class="fa-solid fa-cubes-stacked text-amber-300"></i>
+                    </div>
+                    <div class="flex flex-col">
+                        <span class="text-2xl sm:text-3xl font-extrabold tracking-tight text-honey-bark uppercase leading-none font-serif">
+                            RIMBA MADU<span class="text-honey-amber">.</span>
+                        </span>
+                        <span class="text-[9px] tracking-[0.28em] text-honey-amber uppercase mt-1 font-bold">
+                            WILD APIARY & RAW HONEY
+                        </span>
+                    </div>
+                </a>
+
+                <!-- Desktop Navigation Links -->
+                <nav class="hidden lg:flex items-center gap-7 text-xs font-bold tracking-wider uppercase text-slate-700 font-sans">
+                    <a href="index.html" class="text-honey-amber border-b-2 border-honey-amber pb-1 font-bold">Beranda</a>
+                    <a href="katalog.html" class="hover:text-honey-amber transition">Katalog Madu & Sarang</a>
+                    <a href="detail.html" class="hover:text-honey-amber transition">Detail Madu Sialang</a>
+                    <a href="tentang.html" class="hover:text-honey-amber transition">Pemanen Pohon Sialang</a>
+                    <a href="artikel.html" class="hover:text-honey-amber transition">Tes Kemurnian Madu</a>
+                    <a href="kontak.html" class="hover:text-honey-amber transition">Sanctuary & Jerigen Curah</a>
+                </nav>
+
+                <!-- Actions -->
+                <div class="hidden sm:flex items-center gap-3">
+                    <a href="https://wa.me/6281234567890?text=Halo%20Admin%20Rimba%20Madu,%20saya%20ingin%20tanya%20stok%20madu%20mentah." 
+                       target="_blank"
+                       class="inline-flex items-center gap-2 px-4 py-2.5 bg-honey-amber hover:bg-honey-amberdark text-xs font-bold text-white rounded-xl transition shadow-md hover:shadow-lg">
+                        <i class="fa-brands fa-whatsapp text-base"></i>
+                        <span>Order Madu Segar WA</span>
+                    </a>
+                </div>
+
+                <!-- Mobile Menu Button -->
+                <div class="flex lg:hidden items-center gap-2">
+                    <a href="https://wa.me/6281234567890" target="_blank" class="p-2.5 bg-amber-100 text-amber-900 rounded-xl text-sm">
+                        <i class="fa-brands fa-whatsapp"></i>
+                    </a>
+                    <button id="mobileMenuBtn" class="p-2.5 text-slate-700 hover:text-honey-amber focus:outline-hidden rounded-xl bg-amber-50">
+                        <i id="menuIcon" class="fa-solid fa-bars text-xl"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Mobile Dropdown Menu -->
+        <div id="mobileMenu" class="hidden lg:hidden border-t border-honey-creamborder bg-white/98 px-6 py-5 shadow-xl">
+            <div class="flex flex-col gap-4 text-sm font-bold uppercase text-slate-700">
+                <a href="index.html" class="text-honey-amber flex items-center justify-between">
+                    <span>Beranda</span>
+                    <i class="fa-solid fa-chevron-right text-xs"></i>
+                </a>
+                <a href="katalog.html" class="hover:text-honey-amber transition flex items-center justify-between">
+                    <span>Katalog Madu Hutan & Sarang Asli</span>
+                    <i class="fa-solid fa-chevron-right text-xs"></i>
+                </a>
+                <a href="detail.html" class="hover:text-honey-amber transition flex items-center justify-between">
+                    <span>Detail Enzim Diastase & Nektar</span>
+                    <i class="fa-solid fa-chevron-right text-xs"></i>
+                </a>
+                <a href="tentang.html" class="hover:text-honey-amber transition flex items-center justify-between">
+                    <span>Pemanen Madu Hutan Sialang Riau</span>
+                    <i class="fa-solid fa-chevron-right text-xs"></i>
+                </a>
+                <a href="artikel.html" class="hover:text-honey-amber transition flex items-center justify-between">
+                    <span>Uji Keaslian Madu & Khasiat Klanceng</span>
+                    <i class="fa-solid fa-chevron-right text-xs"></i>
+                </a>
+                <a href="kontak.html" class="hover:text-honey-amber transition flex items-center justify-between">
+                    <span>Sanctuary Lebah & Pasokan Jerigen</span>
+                    <i class="fa-solid fa-chevron-right text-xs"></i>
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- 3. HERO SECTION (Wild Canopy Honey Hero) -->
+    <section class="relative pt-8 pb-16 md:pt-14 md:pb-24 honey-hero-bg border-b border-honey-creamborder overflow-hidden">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-12 items-center">
+                
+                <!-- Left Content -->
+                <div class="lg:col-span-7 flex flex-col items-start text-left">
+                    
+                    <!-- Tag Badge -->
+                    <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-amber-200/80 border border-amber-400 text-honey-bark text-xs font-bold uppercase tracking-wider mb-5 shadow-xs">
+                        <i class="fa-solid fa-seedling text-honey-amber"></i>
+                        <span>100% Raw Unheated • Live Enzymes Inside</span>
+                    </div>
+
+                    <h1 class="text-3xl sm:text-5xl lg:text-6xl font-extrabold text-honey-bark tracking-tight leading-[1.15] mb-5 font-serif">
+                        Pure Raw Liquid Gold <br>
+                        <span class="text-transparent bg-clip-text bg-gradient-to-r from-honey-amber via-amber-600 to-yellow-600">
+                            from Wild Forest Canopies.
+                        </span>
+                    </h1>
+
+                    <p class="text-slate-700 text-sm sm:text-base lg:text-lg leading-relaxed mb-8 max-w-2xl font-sans">
+                        Madu mentah murni alami hasil panen sarang lebah raksasa (<em>Apis dorsata</em>) di puncak pohon Sialang pedalaman hutan tropis dan madu nektar bunga perkebunan. Dipanen tanpa proses pemanasan (<em>unheated/unpasteurized</em>) sehingga <strong class="text-honey-bark">enzim diastase, antibakteri alami inhibin, bee pollen, dan propolis tetap hidup utuh</strong>.
+                    </p>
+
+                    <!-- CTA Action Buttons -->
+                    <div class="w-full flex flex-col sm:flex-row items-stretch sm:items-center gap-4 mb-8">
+                        <a href="katalog.html" class="inline-flex items-center justify-center gap-3 px-7 py-4 bg-honey-amber hover:bg-honey-amberdark text-white font-bold text-xs uppercase tracking-wider rounded-2xl shadow-xl transition-all transform hover:-translate-y-0.5 text-center">
+                            <span>Koleksi Madu & Sarang</span>
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </a>
+                        <a href="detail.html" class="inline-flex items-center justify-center gap-2 px-6 py-4 bg-white hover:bg-amber-50 text-honey-bark border border-honey-creamborder font-bold text-xs rounded-2xl shadow-xs transition-all text-center">
+                            <i class="fa-solid fa-certificate text-honey-amber"></i>
+                            <span>Cek Enzim Diastase & Uji Lab</span>
+                        </a>
+                    </div>
+
+                    <!-- Mini Value Metrics Strip -->
+                    <div class="w-full grid grid-cols-3 gap-3 sm:gap-6 pt-6 border-t border-amber-200">
+                        <div class="flex flex-col">
+                            <span class="text-xl sm:text-2xl font-black text-honey-amber font-serif">> 8.5 DN</span>
+                            <span class="text-[11px] sm:text-xs text-slate-600 font-semibold uppercase">Diastase Enzyme Active</span>
+                        </div>
+                        <div class="flex flex-col border-x border-amber-200 px-2 sm:px-4">
+                            <span class="text-xl sm:text-2xl font-black text-yellow-700 font-serif">< 19.5%</span>
+                            <span class="text-[11px] sm:text-xs text-slate-600 font-semibold uppercase">Kadar Air Alami</span>
+                        </div>
+                        <div class="flex flex-col">
+                            <span class="text-xl sm:text-2xl font-black text-honey-bark font-serif">0% Gula</span>
+                            <span class="text-[11px] sm:text-xs text-slate-600 font-semibold uppercase">Bebas Sirup Sintetis</span>
+                        </div>
+                    </div>
+
+                </div>
+
+                <!-- Right Visual Showcase -->
+                <div class="lg:col-span-5 relative">
+                    <div class="relative mx-auto max-w-md lg:max-w-none">
+                        
+                        <!-- Main Hero Image Container -->
+                        <div class="relative rounded-3xl overflow-hidden shadow-2xl border-4 border-white bg-amber-50">
+                            <img src="https://images.unsplash.com/photo-1587049352846-4a222e784d38?q=80&w=1000&auto=format&fit=crop" 
+                                 alt="Madu Mentah Murni Menetes dari Sendok Madu Kayu dengan Sarang Lebah" 
+                                 class="w-full h-96 sm:h-[440px] object-cover object-center transform hover:scale-105 transition-all duration-700">
+                            
+                            <!-- Overlay Gradient -->
+                            <div class="absolute inset-0 bg-gradient-to-t from-black/75 via-black/20 to-transparent"></div>
+                            
+                            <!-- Bottom Badge inside Photo -->
+                            <div class="absolute bottom-4 left-4 right-4 text-white">
+                                <div class="flex items-center justify-between">
+                                    <div>
+                                        <p class="text-xs text-amber-300 font-bold uppercase tracking-wider">Madu Hutan Sialang Riau</p>
+                                        <h3 class="text-lg font-bold font-serif">Apis Dorsata Wild Honeycomb</h3>
+                                    </div>
+                                    <span class="px-2.5 py-1 bg-amber-800/90 backdrop-blur-sm text-white text-xs font-bold rounded-lg flex items-center gap-1 shadow-xs">
+                                        <i class="fa-solid fa-star text-[10px] text-amber-300"></i> Raw Unheated
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Floating Live Bubble Badge (Top Right) -->
+                        <div class="absolute -top-4 -right-3 sm:-right-6 bg-white/95 backdrop-blur-md p-3 sm:p-4 rounded-2xl shadow-2xl border border-honey-creamborder flex items-center gap-3.5">
+                            <div class="w-12 h-12 rounded-xl bg-honey-amber text-white flex flex-col items-center justify-center font-bold leading-none shadow-md">
+                                <i class="fa-solid fa-sparkles text-lg"></i>
+                                <span class="text-[8px] uppercase tracking-tighter mt-0.5">ENZIM HIDUP</span>
+                            </div>
+                            <div>
+                                <p class="text-xs font-bold text-slate-900">Bebas Pemanasan Oven</p>
+                                <p class="text-[11px] text-honey-amber font-semibold flex items-center gap-1">
+                                    <i class="fa-solid fa-circle-check text-[10px]"></i> Kaya Nutrisi & Probiotik
+                                </p>
+                            </div>
+                        </div>
+
+                        <!-- Floating Garansi Keaslian (Bottom Left) -->
+                        <div class="absolute -bottom-5 -left-3 sm:-left-6 bg-white/95 backdrop-blur-md p-3.5 rounded-2xl shadow-2xl border border-honey-creamborder flex items-center gap-3">
+                            <div class="w-10 h-10 rounded-xl bg-amber-100 text-honey-amber flex items-center justify-center text-lg">
+                                <i class="fa-solid fa-award"></i>
+                            </div>
+                            <div>
+                                <p class="text-xs font-bold text-slate-900">Garansi Asli 200%</p>
+                                <p class="text-[11px] text-slate-500">Uji Lab Karbohidrat Murni</p>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- 4. VALUE STRIP (Keunggulan Rimba Madu Sanctuary) -->
+    <section class="py-12 bg-white border-b border-honey-creamborder">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+                
+                <!-- Item 1 -->
+                <div class="p-6 rounded-2xl bg-honey-cream border border-honey-creamborder hover:border-honey-amber transition-all flex flex-col">
+                    <div class="w-12 h-12 rounded-xl bg-honey-amber text-white flex items-center justify-center text-xl mb-4 shadow-xs">
+                        <i class="fa-solid fa-temperature-arrow-down"></i>
+                    </div>
+                    <h3 class="text-base font-bold text-slate-900 font-serif mb-1.5">Unpasteurized (Tanpa Dimasak)</h3>
+                    <p class="text-xs text-slate-600 leading-relaxed">
+                        Madu tidak melewati proses pasteurisasi suhu tinggi yang mematikan enzim dan merusak aroma alami nektar bunga hutan.
+                    </p>
+                </div>
+
+                <!-- Item 2 -->
+                <div class="p-6 rounded-2xl bg-honey-cream border border-honey-creamborder hover:border-honey-amber transition-all flex flex-col">
+                    <div class="w-12 h-12 rounded-xl bg-honey-bark text-white flex items-center justify-center text-xl mb-4 shadow-xs">
+                        <i class="fa-solid fa-tree"></i>
+                    </div>
+                    <h3 class="text-base font-bold text-slate-900 font-serif mb-1.5">Panen Lestari Berkelanjutan</h3>
+                    <p class="text-xs text-slate-600 leading-relaxed">
+                        Pemanenan sarang lebah dilakukan secara lestari tanpa membakar sarang anak lebah, menjaga regenerasi koloni di habitat aslinya.
+                    </p>
+                </div>
+
+                <!-- Item 3 -->
+                <div class="p-6 rounded-2xl bg-honey-cream border border-honey-creamborder hover:border-honey-amber transition-all flex flex-col">
+                    <div class="w-12 h-12 rounded-xl bg-yellow-600 text-white flex items-center justify-center text-xl mb-4 shadow-xs">
+                        <i class="fa-solid fa-flask"></i>
+                    </div>
+                    <h3 class="text-base font-bold text-slate-900 font-serif mb-1.5">Enzim Diastase Aktif Tinggi</h3>
+                    <p class="text-xs text-slate-600 leading-relaxed">
+                        Kadar enzim diastase teruji laboratorium di atas 8.5 DN (jauh melampaui standar SNI minimal 3 DN), bukti madu segar belum rusak.
+                    </p>
+                </div>
+
+                <!-- Item 4 -->
+                <div class="p-6 rounded-2xl bg-honey-cream border border-honey-creamborder hover:border-honey-amber transition-all flex flex-col">
+                    <div class="w-12 h-12 rounded-xl bg-stone-800 text-white flex items-center justify-center text-xl mb-4 shadow-xs">
+                        <i class="fa-solid fa-bottle-droplet"></i>
+                    </div>
+                    <h3 class="text-base font-bold text-slate-900 font-serif mb-1.5">Kemasan Botol Kaca Higienis</h3>
+                    <p class="text-xs text-slate-600 leading-relaxed">
+                        Dikemas dalam botol kaca steril berpenutup kedap udara yang tidak bereaksi dengan keasaman alami madu murni.
+                    </p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- 5. SECTION KHUSUS: THE NECTAR & HONEY CHARACTERISTICS -->
+    <section class="py-16 md:py-20 bg-honey-cream border-b border-honey-creamborder">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            
+            <div class="text-center max-w-2xl mx-auto mb-14">
+                <span class="px-3.5 py-1 rounded-full bg-amber-200 text-honey-bark text-xs font-bold uppercase tracking-wider border border-amber-400">
+                    THE NECTAR & HONEY CHARACTERISTICS
+                </span>
+                <h2 class="text-3xl sm:text-4xl font-extrabold text-honey-bark font-serif mt-3 mb-3">
+                    Karakteristik Madu Berdasarkan Sumber Nektar
+                </h2>
+                <p class="text-slate-600 text-sm">
+                    Setiap jenis madu murni memiliki warna, kekentalan, aroma, dan khasiat khas yang dipengaruhi oleh vegetasi bunga yang dihisap lebah.
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                
+                <!-- Nectar 1: Madu Hutan Sialang -->
+                <div class="bg-white rounded-3xl p-8 border border-honey-creamborder shadow-xs flex flex-col justify-between honey-card">
+                    <div>
+                        <div class="flex items-center justify-between">
+                            <span class="px-2.5 py-0.5 bg-amber-100 text-amber-900 font-bold text-[10px] uppercase rounded">
+                                Apis Dorsata (Hutan Liar)
+                            </span>
+                            <span class="text-xs font-black text-honey-amber"><i class="fa-solid fa-fire text-[10px]"></i> Imunitas Kuat</span>
+                        </div>
+                        <h3 class="text-xl font-bold text-slate-900 font-serif mt-4">Madu Hutan Sialang Riau</h3>
+                        <p class="text-xs text-slate-500 font-semibold mt-0.5">Nektar: Multiflora Pohon Hutan Hujan</p>
+                        <p class="text-xs text-slate-600 mt-3 leading-relaxed">
+                            Warna cokelat tua kemerahan pekat. Rasa manis legit dengan nuansa hangat rempah herbal kayu hutan. Sangat kaya antibakteri alami untuk pemulihan stamina dan batuk pilek.
+                        </p>
+                        <div class="mt-4 pt-3 border-t border-slate-100 text-xs text-amber-900 font-semibold">
+                            🍯 Rasa: Manis Legit Pekat • Sedikit Bergas Alami
+                        </div>
+                    </div>
+                    <div class="mt-6 pt-4 border-t border-honey-creamborder flex items-center justify-between">
+                        <span class="text-base font-black text-honey-amber">Rp 125.000 <span class="text-[10px] text-slate-500 font-normal">/ Jar 650g</span></span>
+                        <a href="detail.html" class="text-xs font-bold text-honey-bark hover:underline">Detail Madu &rarr;</a>
+                    </div>
+                </div>
+
+                <!-- Nectar 2: Madu Nektar Bunga Randu -->
+                <div class="bg-white rounded-3xl p-8 border border-honey-creamborder shadow-xs flex flex-col justify-between honey-card">
+                    <div>
+                        <div class="flex items-center justify-between">
+                            <span class="px-2.5 py-0.5 bg-yellow-100 text-yellow-900 font-bold text-[10px] uppercase rounded">
+                                Apis Mellifera (Ternak Bunga)
+                            </span>
+                            <span class="text-xs font-black text-yellow-600"><i class="fa-solid fa-heart text-[10px]"></i> Ramah Anak</span>
+                        </div>
+                        <h3 class="text-xl font-bold text-slate-900 font-serif mt-4">Madu Nektar Bunga Randu</h3>
+                        <p class="text-xs text-slate-500 font-semibold mt-0.5">Nektar: Bunga Pohon Randu (Kapuk)</p>
+                        <p class="text-xs text-slate-600 mt-3 leading-relaxed">
+                            Warna kuning keemasan jernih berkilau. Rasa manis lembut segar dengan aftertaste asam tipis yang sangat disukai anak-anak. Efektif untuk nafsu makan dan sariawan.
+                        </p>
+                        <div class="mt-4 pt-3 border-t border-slate-100 text-xs text-yellow-800 font-semibold">
+                            🍯 Rasa: Manis Lembut Floral • Asam Segar Tipis
+                        </div>
+                    </div>
+                    <div class="mt-6 pt-4 border-t border-honey-creamborder flex items-center justify-between">
+                        <span class="text-base font-black text-honey-amber">Rp 95.000 <span class="text-[10px] text-slate-500 font-normal">/ Jar 650g</span></span>
+                        <a href="katalog.html" class="text-xs font-bold text-honey-bark hover:underline">Detail Madu &rarr;</a>
+                    </div>
+                </div>
+
+                <!-- Nectar 3: Madu Klanceng / Trigona -->
+                <div class="bg-white rounded-3xl p-8 border border-honey-creamborder shadow-xs flex flex-col justify-between honey-card">
+                    <div>
+                        <div class="flex items-center justify-between">
+                            <span class="px-2.5 py-0.5 bg-rose-100 text-rose-900 font-bold text-[10px] uppercase rounded">
+                                Trigona / Stingless Bee
+                            </span>
+                            <span class="text-xs font-black text-rose-700"><i class="fa-solid fa-shield-virus text-[10px]"></i> Propolis 4x Lipat</span>
+                        </div>
+                        <h3 class="text-xl font-bold text-slate-900 font-serif mt-4">Madu Klanceng Trigona Asli</h3>
+                        <p class="text-xs text-slate-500 font-semibold mt-0.5">Lebah Tak Bersengat (Stingless Bee)</p>
+                        <p class="text-xs text-slate-600 mt-3 leading-relaxed">
+                            Karakter tekstur lebih encer alami dengan rasa asam-manis sitrun yang segar. Kandungan senyawa propolis dan asam fenolat 4x lebih tinggi untuk terapi maag/lambung dan diabetes.
+                        </p>
+                        <div class="mt-4 pt-3 border-t border-slate-100 text-xs text-rose-900 font-semibold">
+                            🍯 Rasa: Asam Manis Unik • Kaya Propolis
+                        </div>
+                    </div>
+                    <div class="mt-6 pt-4 border-t border-honey-creamborder flex items-center justify-between">
+                        <span class="text-base font-black text-honey-amber">Rp 160.000 <span class="text-[10px] text-slate-500 font-normal">/ Jar 350g</span></span>
+                        <a href="katalog.html" class="text-xs font-bold text-honey-bark hover:underline">Detail Madu &rarr;</a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- 6. PRODUK UNGGULAN (Grid 3 Kolom Card Madu & Sarang) -->
+    <section class="py-16 md:py-24 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            
+            <div class="flex flex-col md:flex-row md:items-end justify-between mb-12 gap-4">
+                <div>
+                    <span class="px-3 py-1 bg-amber-100 text-honey-bark text-xs font-bold uppercase rounded-md tracking-wider font-sans">
+                        PILIHAN MADU MENTAH & BEE PRODUCTS
+                    </span>
+                    <h2 class="text-2xl sm:text-4xl font-extrabold text-honey-bark font-serif mt-2">
+                        Koleksi Madu Murni Terbaik dari Sarang
+                    </h2>
+                    <p class="text-slate-600 text-sm mt-1">
+                        Dikemas dalam botol kaca steril berembos segel asli untuk menjaga keaslian enzim.
+                    </p>
+                </div>
+                <a href="katalog.html" class="inline-flex items-center gap-2 text-xs font-bold text-honey-amber hover:underline uppercase tracking-wider">
+                    Lihat Seluruh Katalog <i class="fa-solid fa-arrow-right"></i>
+                </a>
+            </div>
+
+            <!-- Products Grid 3 Col -->
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                
+                <!-- Product Card 1: Madu Hutan Sialang Riau -->
+                <div class="honey-card bg-honey-cream rounded-3xl border border-honey-creamborder overflow-hidden flex flex-col justify-between shadow-md">
+                    <div class="relative h-64 bg-amber-50 overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1587049352846-4a222e784d38?q=80&w=800&auto=format&fit=crop" 
+                             alt="Madu Hutan Sialang Riau Murni" 
+                             class="w-full h-full object-cover transform hover:scale-105 transition-all duration-500">
+                        <div class="absolute top-3 left-3">
+                            <span class="bg-honey-bark text-white text-[10px] font-bold px-2.5 py-1 rounded-md shadow-xs">
+                                Apis Dorsata Hutan Liar
+                            </span>
+                        </div>
+                        <div class="absolute top-3 right-3 bg-white/95 text-slate-800 text-[10px] font-bold px-2 py-0.5 rounded shadow-xs">
+                            Botol Kaca 650g
+                        </div>
+                    </div>
+                    <div class="p-6 flex-1 flex flex-col justify-between">
+                        <div>
+                            <div class="flex items-center justify-between text-xs text-slate-500 mb-1">
+                                <span>Diastase: <strong>> 9.2 DN</strong> | Air: <strong>19.2%</strong></span>
+                                <span class="text-amber-600 font-bold"><i class="fa-solid fa-star text-amber-400"></i> 4.9 (520+)</span>
+                            </div>
+                            <h3 class="text-xl font-bold text-slate-900 font-serif">Madu Hutan Sialang Riau Murni</h3>
+                            <p class="text-xs text-slate-600 mt-2 leading-relaxed">
+                                Madu mentah pohon Sialang tanpa pemanasan. Kental kecokelatan beraroma kayu hutan tropis, berbusa gas halus alami tanda madu hidup.
+                            </p>
+                            <div class="mt-4 pt-3 border-t border-honey-creamborder grid grid-cols-2 gap-2 text-[11px] text-slate-700">
+                                <div class="flex items-center gap-1.5"><i class="fa-solid fa-shield-heart text-amber-600"></i> 100% Unheated</div>
+                                <div class="flex items-center gap-1.5"><i class="fa-solid fa-bottle-water text-honey-bark"></i> Jar Kaca Segel</div>
+                            </div>
+                        </div>
+                        <div class="mt-6 pt-4 border-t border-honey-creamborder flex items-center justify-between">
+                            <div>
+                                <span class="text-[10px] text-slate-400 uppercase">Harga Jar 650g</span>
+                                <p class="text-lg font-black text-honey-amber">Rp 125.000</p>
+                            </div>
+                            <a href="detail.html" class="px-4 py-2.5 bg-honey-amber hover:bg-honey-amberdark text-white text-xs font-bold rounded-xl shadow-xs transition">
+                                Detail Madu
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product Card 2: Fresh Honeycomb Sarang Potong -->
+                <div class="honey-card bg-honey-cream rounded-3xl border border-honey-creamborder overflow-hidden flex flex-col justify-between shadow-md">
+                    <div class="relative h-64 bg-amber-50 overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1558642452-9d2a7deb7f62?q=80&w=800&auto=format&fit=crop" 
+                             alt="Fresh Honeycomb Sarang Lebah Potong" 
+                             class="w-full h-full object-cover transform hover:scale-105 transition-all duration-500">
+                        <div class="absolute top-3 left-3">
+                            <span class="bg-yellow-600 text-white text-[10px] font-bold px-2.5 py-1 rounded-md shadow-xs">
+                                100% Sarang Asli Alami
+                            </span>
+                        </div>
+                        <div class="absolute top-3 right-3 bg-white/95 text-slate-800 text-[10px] font-bold px-2 py-0.5 rounded shadow-xs">
+                            Box Mika 250g
+                        </div>
+                    </div>
+                    <div class="p-6 flex-1 flex flex-col justify-between">
+                        <div>
+                            <div class="flex items-center justify-between text-xs text-slate-500 mb-1">
+                                <span>Kondisi: <strong>Madu Melimpah Tertutup Lilin</strong></span>
+                                <span class="text-amber-600 font-bold"><i class="fa-solid fa-crown text-amber-400"></i> Grade Super</span>
+                            </div>
+                            <h3 class="text-xl font-bold text-slate-900 font-serif">Fresh Honeycomb Sarang Lebah</h3>
+                            <p class="text-xs text-slate-600 mt-2 leading-relaxed">
+                                Potongan sarang lebah asli penuh madu murni yang masih tertutup segel lilin lebah (beeswax). Nikmat dikunyah langsung laksana permen alami berkhasiat.
+                            </p>
+                            <div class="mt-4 pt-3 border-t border-honey-creamborder grid grid-cols-2 gap-2 text-[11px] text-slate-700">
+                                <div class="flex items-center gap-1.5"><i class="fa-solid fa-cubes text-yellow-700"></i> Lilin Lembut Bersih</div>
+                                <div class="flex items-center gap-1.5"><i class="fa-solid fa-box text-honey-bark"></i> Vacuum Box Safe</div>
+                            </div>
+                        </div>
+                        <div class="mt-6 pt-4 border-t border-honey-creamborder flex items-center justify-between">
+                            <div>
+                                <span class="text-[10px] text-slate-400 uppercase">Harga Box 250g</span>
+                                <p class="text-lg font-black text-honey-amber">Rp 85.000</p>
+                            </div>
+                            <a href="detail.html" class="px-4 py-2.5 bg-yellow-600 hover:bg-yellow-700 text-white text-xs font-bold rounded-xl shadow-xs transition">
+                                Detail Sarang
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product Card 3: Bee Pollen Super Hutan -->
+                <div class="honey-card bg-honey-cream rounded-3xl border border-honey-creamborder overflow-hidden flex flex-col justify-between shadow-md">
+                    <div class="relative h-64 bg-amber-50 overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1587049352846-4a222e784d38?q=80&w=800&auto=format&fit=crop" 
+                             alt="Bee Pollen Butiran Sari Bunga Hutan" 
+                             class="w-full h-full object-cover transform hover:scale-105 transition-all duration-500">
+                        <div class="absolute top-3 left-3">
+                            <span class="bg-amber-800 text-white text-[10px] font-bold px-2.5 py-1 rounded-md shadow-xs">
+                                Superfood Butiran Emas
+                            </span>
+                        </div>
+                        <div class="absolute top-3 right-3 bg-white/95 text-slate-800 text-[10px] font-bold px-2 py-0.5 rounded shadow-xs">
+                            Jar Kaca 200g
+                        </div>
+                    </div>
+                    <div class="p-6 flex-1 flex flex-col justify-between">
+                        <div>
+                            <div class="flex items-center justify-between text-xs text-slate-500 mb-1">
+                                <span>Kandungan: <strong>Asam Amino Lengkap</strong></span>
+                                <span class="text-amber-600 font-bold"><i class="fa-solid fa-heart-pulse text-amber-500"></i> Multivitamin</span>
+                            </div>
+                            <h3 class="text-xl font-bold text-slate-900 font-serif">Bee Pollen Super Butiran Emas</h3>
+                            <p class="text-xs text-slate-600 mt-2 leading-relaxed">
+                                Butiran serbuk sari bunga alami yang dikumpulkan kaki lebah. Kaya akan 22 jenis asam amino esensial, vitamin B-kompleks, dan protein nabati tinggi untuk stamina atlet & lansia.
+                            </p>
+                            <div class="mt-4 pt-3 border-t border-honey-creamborder grid grid-cols-2 gap-2 text-[11px] text-slate-700">
+                                <div class="flex items-center gap-1.5"><i class="fa-solid fa-bolt text-amber-600"></i> Energi Booster Alami</div>
+                                <div class="flex items-center gap-1.5"><i class="fa-solid fa-leaf text-emerald-700"></i> 100% Organik Murni</div>
+                            </div>
+                        </div>
+                        <div class="mt-6 pt-4 border-t border-honey-creamborder flex items-center justify-between">
+                            <div>
+                                <span class="text-[10px] text-slate-400 uppercase">Harga Jar 200g</span>
+                                <p class="text-lg font-black text-honey-amber">Rp 110.000</p>
+                            </div>
+                            <a href="detail.html" class="px-4 py-2.5 bg-amber-800 hover:bg-amber-900 text-white text-xs font-bold rounded-xl shadow-xs transition">
+                                Detail Pollen
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- 7. TESTIMONIALS (Review Konsumen Daya Tahan Tubuh, Terapi Lambung, & Pegiat Hidup Sehat) -->
+    <section class="py-16 md:py-24 bg-honey-cream border-t border-honey-creamborder">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-2xl mx-auto mb-14">
+                <span class="px-3 py-1 bg-amber-200 text-honey-bark text-xs font-bold uppercase tracking-wider rounded-md border border-amber-400">
+                    PENGALAMAN KEMURNIAN MADU NYATA
+                </span>
+                <h2 class="text-3xl sm:text-4xl font-extrabold text-honey-bark font-serif mt-3 mb-3">
+                    Cerita Sehat Sahabat Rimba Madu
+                </h2>
+                <p class="text-slate-600 text-sm">
+                    Khasiat nyata madu mentah unpasteurized bagi daya tahan tubuh keluarga dan pemulihan kesehatan alami.
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                
+                <!-- Review 1 -->
+                <div class="p-6 rounded-3xl bg-white border border-honey-creamborder shadow-md flex flex-col justify-between">
+                    <div>
+                        <div class="flex items-center text-amber-500 gap-1 text-xs mb-3">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <span class="text-slate-400 font-bold ml-1 text-[11px]">(Ibu Rumah Tangga - Bandung)</span>
+                        </div>
+                        <p class="text-xs text-slate-700 leading-relaxed italic mb-4">
+                            "Anak-anak saya rutin minum Madu Randu dan sesekali mengunyah Honeycomb sarang madunya. Alhamdulillah musim pancaroba tahun ini tidak gampang tertular batuk pilek di sekolah. Rasanya manis segar tidak bikin serak di tenggorokan, benar-benar madu asli tanpa sirup gula!"
+                        </p>
+                    </div>
+                    <div class="flex items-center gap-3 pt-4 border-t border-slate-100">
+                        <div class="w-10 h-10 rounded-full bg-honey-amber text-white font-bold flex items-center justify-center text-sm font-serif">
+                            NW
+                        </div>
+                        <div>
+                            <h4 class="text-xs font-bold text-slate-900">Nurul Widyastuti</h4>
+                            <p class="text-[10px] text-slate-500">Ibu dari 3 Anak - Bandung</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Review 2 -->
+                <div class="p-6 rounded-3xl bg-white border border-honey-creamborder shadow-md flex flex-col justify-between">
+                    <div>
+                        <div class="flex items-center text-amber-500 gap-1 text-xs mb-3">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <span class="text-slate-400 font-bold ml-1 text-[11px]">(Penyintas GERD / Asam Lambung)</span>
+                        </div>
+                        <p class="text-xs text-slate-700 leading-relaxed italic mb-4">
+                            "Saya mengonsumsi Madu Klanceng Trigona 1 sendok setiap bangun tidur subuh. Rasa asam manisnya justru sangat nyaman di lambung yang perih akibat maag kronis. Propolis alaminya ampuh meredakan begah dan mual. Sekarang sudah lepas dari obat kimia lambung."
+                        </p>
+                    </div>
+                    <div class="flex items-center gap-3 pt-4 border-t border-slate-100">
+                        <div class="w-10 h-10 rounded-full bg-honey-bark text-white font-bold flex items-center justify-center text-sm font-serif">
+                            BH
+                        </div>
+                        <div>
+                            <h4 class="text-xs font-bold text-slate-900">Bambang Hariyadi</h4>
+                            <p class="text-[10px] text-slate-500">Karyawan Swasta - Jakarta Selatan</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Review 3 -->
+                <div class="p-6 rounded-3xl bg-white border border-honey-creamborder shadow-md flex flex-col justify-between">
+                    <div>
+                        <div class="flex items-center text-amber-500 gap-1 text-xs mb-3">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <span class="text-slate-400 font-bold ml-1 text-[11px]">(Holistic Health Practitioner)</span>
+                        </div>
+                        <p class="text-xs text-slate-700 leading-relaxed italic mb-4">
+                            "Sebagai praktisi terapi herbal alami, parameter terpenting saya adalah diastase enzyme dan unheated process. Rimba Madu memenuhi semua kriteria madu mentah hidup: ada lapisan busa gas mikro, aroma floral tajam, dan tidak menyebabkan lonjakan gula darah drastis."
+                        </p>
+                    </div>
+                    <div class="flex items-center gap-3 pt-4 border-t border-slate-100">
+                        <div class="w-10 h-10 rounded-full bg-yellow-600 text-white font-bold flex items-center justify-center text-sm font-serif">
+                            SK
+                        </div>
+                        <div>
+                            <h4 class="text-xs font-bold text-slate-900">dr. Sinta Kusumawardhani</h4>
+                            <p class="text-[10px] text-slate-500">Praktisi Kesehatan Holistik - Yogyakarta</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- 8. CALL TO ACTION BANNER -->
+    <section class="py-16 bg-gradient-to-r from-honey-barkdark via-honey-bark to-stone-900 text-white relative overflow-hidden border-t border-amber-950/40">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <div class="flex flex-col lg:flex-row items-center justify-between gap-8 text-center lg:text-left">
+                <div>
+                    <span class="px-3.5 py-1 bg-amber-900/70 text-amber-300 text-xs font-bold uppercase rounded-md tracking-wider border border-amber-500/40">
+                        PASOKAN CURAH JERIGEN 5KG – 30KG
+                    </span>
+                    <h2 class="text-2xl sm:text-4xl font-extrabold font-serif mt-3 mb-2">
+                        Butuh Pasokan Madu Curah untuk Industri Herbal & Jamu?
+                    </h2>
+                    <p class="text-amber-100/80 text-sm max-w-xl">
+                        Dapatkan harga grosir jerigen curah, uji laboratorium enzim diastase & kadar air resmi per lot panen, serta jaminan pasokan madu murni berkelanjutan sepanjang tahun.
+                    </p>
+                </div>
+                <div class="flex flex-col sm:flex-row gap-4 w-full sm:w-auto">
+                    <a href="https://wa.me/6281234567890?text=Halo%20Admin%20Rimba%20Madu,%20saya%20tertarik%20dengan%20pasokan%20madu%20jerigen%20curah." 
+                       target="_blank"
+                       class="inline-flex items-center justify-center gap-2.5 px-8 py-4 bg-honey-amber hover:bg-honey-amberdark text-white font-bold text-xs uppercase tracking-wider rounded-2xl shadow-xl transition transform hover:scale-105">
+                        <i class="fa-brands fa-whatsapp text-base"></i>
+                        <span>Order Jerigen Curah WA</span>
+                    </a>
+                    <a href="katalog.html" 
+                       class="inline-flex items-center justify-center gap-2 px-6 py-4 bg-white/10 hover:bg-white/20 text-white font-bold text-xs rounded-2xl border border-white/20 transition">
+                        <span>Lihat Semua Madu</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 9. FOOTER -->
+    <footer class="bg-honey-barkdark text-stone-300 text-xs pt-16 pb-36 border-t border-amber-950 font-sans">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-10 pb-12 border-b border-amber-950/60">
+                
+                <!-- Col 1: Brand & Bio -->
+                <div class="lg:col-span-2 space-y-4">
+                    <a href="index.html" class="flex items-center gap-3">
+                        <div class="w-10 h-10 bg-gradient-to-br from-honey-amber to-honey-bark text-white flex items-center justify-center text-xl font-bold rounded-xl">
+                            <i class="fa-solid fa-cubes-stacked text-amber-300"></i>
+                        </div>
+                        <span class="text-2xl font-extrabold text-white tracking-tight font-serif">
+                            RIMBA MADU<span class="text-honey-amber">.</span>
+                        </span>
+                    </a>
+                    <p class="text-xs text-stone-400 leading-relaxed max-w-sm">
+                        Sanctuary pemanenan dan distribusi madu mentah murni hutan liar (pure raw honey) unpasteurized. Menjaga kelestarian lebah hutan Sialang Apis dorsata dan menghadirkan madu berenzim hidup murni ke meja makan keluarga Indonesia.
+                    </p>
+                </div>
+
+                <!-- Col 2: Navigasi Cepat -->
+                <div>
+                    <h4 class="text-xs font-bold text-white uppercase tracking-wider mb-4 font-serif">Navigasi Halaman</h4>
+                    <ul class="space-y-2.5">
+                        <li><a href="index.html" class="hover:text-amber-400 transition">Beranda Utama</a></li>
+                        <li><a href="katalog.html" class="hover:text-amber-400 transition">Katalog Madu & Sarang</a></li>
+                        <li><a href="detail.html" class="hover:text-amber-400 transition">Detail Madu Sialang</a></li>
+                        <li><a href="tentang.html" class="hover:text-amber-400 transition">Pemanen Pohon Sialang</a></li>
+                        <li><a href="artikel.html" class="hover:text-amber-400 transition">Tes Kemurnian Madu</a></li>
+                        <li><a href="kontak.html" class="hover:text-amber-400 transition">Sanctuary & Jerigen Curah</a></li>
+                    </ul>
+                </div>
+
+                <!-- Col 3: Produk Madu Unggulan -->
+                <div>
+                    <h4 class="text-xs font-bold text-white uppercase tracking-wider mb-4 font-serif">Madu Unggulan</h4>
+                    <ul class="space-y-2.5">
+                        <li><a href="detail.html" class="hover:text-amber-400 transition">Madu Hutan Sialang Riau (Apis Dorsata)</a></li>
+                        <li><a href="detail.html" class="hover:text-amber-400 transition">Madu Bunga Randu Murni 650g</a></li>
+                        <li><a href="katalog.html" class="hover:text-amber-400 transition">Madu Klanceng Trigona Propolis</a></li>
+                        <li><a href="katalog.html" class="hover:text-amber-400 transition">Fresh Honeycomb Sarang Potong</a></li>
+                        <li><a href="katalog.html" class="hover:text-amber-400 transition">Bee Pollen Butiran Super 200g</a></li>
+                    </ul>
+                </div>
+
+                <!-- Col 4: Rumah Madu & Kontak -->
+                <div>
+                    <h4 class="text-xs font-bold text-white uppercase tracking-wider mb-4 font-serif">Rumah Madu Sanctuary</h4>
+                    <p class="text-xs text-stone-400 leading-relaxed mb-3">
+                        Kawasan Pelestarian Lebah Hutan, Jl. Rimba Lestari No. 18, Kampar, Riau 28457 / Depot Distribusi: Jl. Cempaka Putih No. 42, Jakarta Pusat.
+                    </p>
+                    <p class="text-xs text-amber-400 font-bold mb-1"><i class="fa-solid fa-phone mr-1.5"></i> +62 812-3456-7890</p>
+                    <p class="text-xs text-stone-400"><i class="fa-solid fa-envelope mr-1.5"></i> order@rimbamadu.com</p>
+                </div>
+
+            </div>
+
+            <div class="pt-8 flex flex-col sm:flex-row items-center justify-between gap-4 text-[11px] text-stone-500">
+                <p>&copy; 2026 RIMBA MADU SANCTUARY. All rights reserved.</p>
+                <div class="flex items-center gap-4">
+                    <span>100% Pure Raw Honey</span>
+                    <span>•</span>
+                    <span>Diastase Enzyme > 8.5 DN</span>
+                    <span>•</span>
+                    <span>Unheated & Unpasteurized</span>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- 10. FLOATING WHATSAPP BUTTON (bottom-24) -->
+    <div class="fixed bottom-24 right-5 z-40">
+        <a href="https://wa.me/6281234567890?text=Halo%20Admin%20Rimba%20Madu,%20saya%20ingin%20tanya%20stok%20madu%20murni." 
+           target="_blank" 
+           aria-label="Chat WhatsApp Rimba Madu Sanctuary"
+           class="group flex items-center gap-3 bg-gradient-to-r from-honey-amber to-amber-700 hover:from-amber-600 hover:to-amber-800 text-white px-4 py-3.5 rounded-full shadow-2xl transition-all transform hover:scale-105 border-2 border-white/80">
+            <i class="fa-brands fa-whatsapp text-2xl animate-pulse"></i>
+            <span class="text-xs font-bold tracking-wide pr-1 hidden sm:inline">Pesan Madu Segar WA</span>
+        </a>
+    </div>
+
+    <!-- 11. STICKY DEMO & SALES BAR (fixed bottom-4) -->
+    <div class="fixed bottom-4 left-4 right-4 z-50 max-w-5xl mx-auto">
+      <div class="bg-honey-barkdark/95 backdrop-blur-md text-white px-4 sm:px-6 py-3.5 rounded-2xl shadow-2xl border border-amber-900/60 flex flex-col md:flex-row items-center justify-between gap-3">
+        
+        <div class="flex items-center gap-3 text-left w-full md:w-auto">
+          <div class="w-9 h-9 rounded-xl bg-amber-500/20 border border-amber-400/40 flex items-center justify-center shrink-0">
+            <i class="fa-solid fa-cubes-stacked text-amber-400 text-sm"></i>
+          </div>
+          <div>
+            <div class="text-xs md:text-sm font-bold text-stone-100 flex items-center gap-2">
+              <span>Lentera Pasar Demo</span>
+              <span class="text-[10px] px-2 py-0.5 rounded bg-amber-500/20 text-amber-300 font-bold">Template Madu Hutan Murni</span>
+            </div>
+            <p class="text-[11px] text-stone-400 hidden sm:block">Desain Wild Forest Apiary & Raw Honey Sanctuary untuk madu hutan mentah, sarang, & bee pollen.</p>
+          </div>
+        </div>
+
+        <div class="flex items-center gap-3 w-full md:w-auto justify-end">
+          <div class="hidden lg:flex items-center gap-4 text-xs text-stone-400 border-r border-stone-700 pr-4">
+            <div class="flex items-center gap-1 text-stone-200">
+              <i class="fa-solid fa-check text-amber-400 text-xs"></i>
+              <span>Diastase > 8.5 DN</span>
+            </div>
+            <span class="text-stone-600">•</span>
+            <div class="flex items-center gap-1 text-stone-200">
+              <i class="fa-solid fa-check text-amber-400 text-xs"></i>
+              <span>Unpasteurized</span>
+            </div>
+          </div>
+
+          <a href="https://wa.me/6281234567890?text=Halo%20Tim%20Lentera%20Pasar,%20saya%20tertarik%20menggunakan%20template%20website%20Madu%20Murni%20ini." 
+             target="_blank"
+             class="w-full md:w-auto inline-flex items-center justify-center gap-2 bg-gradient-to-r from-honey-amber to-amber-700 hover:from-amber-600 hover:to-amber-800 text-white text-xs md:text-sm font-bold px-5 py-2.5 rounded-xl shadow-lg transition-all hover:scale-105 shrink-0">
+            <span>Gunakan Template Ini</span>
+            <i class="fa-solid fa-arrow-right text-xs"></i>
+          </a>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- SCRIPT MOBILE MENU -->
+    <script>
+        const mobileMenuBtn = document.getElementById('mobileMenuBtn');
+        const mobileMenu = document.getElementById('mobileMenu');
+        const menuIcon = document.getElementById('menuIcon');
+
+        mobileMenuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+            if (mobileMenu.classList.contains('hidden')) {
+                menuIcon.classList.remove('fa-xmark');
+                menuIcon.classList.add('fa-bars');
+            } else {
+                menuIcon.classList.remove('fa-bars');
+                menuIcon.classList.add('fa-xmark');
+            }
+        });
+    </script>
+</body>
+</html>
