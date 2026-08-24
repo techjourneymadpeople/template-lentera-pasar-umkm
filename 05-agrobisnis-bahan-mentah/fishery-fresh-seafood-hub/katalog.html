@@ -1,0 +1,928 @@
+<!DOCTYPE html>
+<html lang="id" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Katalog Seafood, Udang Tambak & Ikan Segar // DERMAGA SAMUDRA</title>
+    <meta name="description" content="Katalog udang vaname size 20-50, ikan laut pancingan berinsang merah, ikan tawar hidup, cumi segar, dan salmon/tuna fillet dingin 0°C-2°C bebas formalin.">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome 6 -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        nautical: {
+                            navy: '#0F172A',
+                            navydark: '#0B1120',
+                            slate: '#1E293B',
+                            ocean: '#0284C7',
+                            oceandark: '#0369A1',
+                            cyan: '#38BDF8',
+                            ice: '#E0F2FE',
+                            iceborder: '#BAE6FD',
+                            coral: '#EF4444',
+                            seafoam: '#10B981',
+                            sand: '#F8FAFC'
+                        }
+                    },
+                    fontFamily: {
+                        sans: ['"Plus Jakarta Sans"', 'sans-serif'],
+                        mono: ['"Space Grotesk"', 'sans-serif']
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        .no-scrollbar::-webkit-scrollbar { display: none; }
+        .no-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
+
+        .seafood-card {
+            transition: all 0.35s cubic-bezier(0.16, 1, 0.3, 1);
+        }
+        .seafood-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 20px 35px -10px rgba(2, 132, 199, 0.25);
+        }
+    </style>
+</head>
+<body class="bg-nautical-navy text-slate-100 font-sans antialiased selection:bg-nautical-ocean selection:text-white">
+
+    <!-- 1. TOP ANNOUNCEMENT BAR -->
+    <div class="bg-nautical-navydark text-sky-200 text-xs py-2.5 px-4 font-mono font-medium border-b border-slate-800">
+        <div class="max-w-7xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-2 text-center sm:text-left">
+            <div class="flex items-center justify-center gap-2">
+                <span class="px-2 py-0.5 bg-nautical-ocean text-white text-[10px] uppercase font-bold tracking-wider rounded-md shadow-xs flex items-center gap-1">
+                    <i class="fa-solid fa-snowflake text-sky-200"></i> COLD-CHAIN 0°C - 2°C
+                </span>
+                <span class="text-white/95 font-sans font-medium">Bongkar Muat Kapal Subuh 04.00 WIB • 100% Uji Formalin Negatif</span>
+            </div>
+            <div class="flex items-center gap-4 text-xs font-sans">
+                <span class="hidden md:inline text-sky-300"><i class="fa-solid fa-box-tissue mr-1"></i> Kemasan Box Styrofoam + Es Tebal</span>
+                <span class="hidden md:inline text-slate-600">•</span>
+                <a href="https://wa.me/6281234567890?text=Halo%20Admin%20Dermaga%20Samudra,%20saya%20ingin%20tanya%20stok%20katalog." target="_blank" class="text-nautical-cyan hover:underline font-bold transition flex items-center gap-1 font-mono">
+                    Fast Order WA <i class="fa-solid fa-arrow-right text-[10px]"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- 2. NAVBAR -->
+    <header class="sticky top-0 z-40 bg-nautical-navy/95 backdrop-blur-md border-b border-slate-800 transition-all shadow-md">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-20 sm:h-24">
+                
+                <!-- Logo -->
+                <a href="index.html" class="flex items-center gap-3.5 group">
+                    <div class="w-12 h-12 bg-gradient-to-br from-nautical-ocean to-cyan-500 text-white flex items-center justify-center text-2xl font-bold rounded-2xl shadow-lg group-hover:scale-105 transition">
+                        <i class="fa-solid fa-anchor"></i>
+                    </div>
+                    <div class="flex flex-col">
+                        <span class="text-2xl sm:text-3xl font-extrabold tracking-tight text-white uppercase leading-none font-mono">
+                            SAMUDRA<span class="text-nautical-cyan">.</span>
+                        </span>
+                        <span class="text-[9px] tracking-[0.28em] text-nautical-cyan uppercase mt-1 font-bold">
+                            COLD-CHAIN FISHERY HUB
+                        </span>
+                    </div>
+                </a>
+
+                <!-- Desktop Navigation Links -->
+                <nav class="hidden lg:flex items-center gap-7 text-xs font-bold tracking-wider uppercase text-slate-300 font-sans">
+                    <a href="index.html" class="hover:text-nautical-cyan transition">Beranda</a>
+                    <a href="katalog.html" class="text-nautical-cyan border-b-2 border-nautical-cyan pb-1 font-bold">Katalog Seafood</a>
+                    <a href="detail.html" class="hover:text-nautical-cyan transition">Detail Udang Vaname</a>
+                    <a href="tentang.html" class="hover:text-nautical-cyan transition">Dermaga & Nelayan</a>
+                    <a href="artikel.html" class="hover:text-nautical-cyan transition">Tips Memilih Ikan</a>
+                    <a href="kontak.html" class="hover:text-nautical-cyan transition">Pasokan Resto & Hotel</a>
+                </nav>
+
+                <!-- Actions -->
+                <div class="hidden sm:flex items-center gap-3">
+                    <a href="https://wa.me/6281234567890?text=Halo%20Admin%20Dermaga%20Samudra,%20saya%20ingin%20memesan%20seafood%20dari%20katalog." 
+                       target="_blank"
+                       class="inline-flex items-center gap-2 px-4 py-2.5 bg-gradient-to-r from-nautical-ocean to-cyan-600 hover:from-sky-500 hover:to-cyan-500 text-xs font-bold text-white rounded-xl transition shadow-md hover:shadow-lg font-mono">
+                        <i class="fa-brands fa-whatsapp text-base"></i>
+                        <span>Order Seafood WA</span>
+                    </a>
+                </div>
+
+                <!-- Mobile Menu Button -->
+                <div class="flex lg:hidden items-center gap-2">
+                    <a href="https://wa.me/6281234567890" target="_blank" class="p-2.5 bg-sky-900/60 text-sky-300 rounded-xl text-sm border border-sky-700/50">
+                        <i class="fa-brands fa-whatsapp"></i>
+                    </a>
+                    <button id="mobileMenuBtn" class="p-2.5 text-slate-300 hover:text-white focus:outline-hidden rounded-xl bg-slate-800 border border-slate-700">
+                        <i id="menuIcon" class="fa-solid fa-bars text-xl"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Mobile Dropdown Menu -->
+        <div id="mobileMenu" class="hidden lg:hidden border-t border-slate-800 bg-nautical-navydark/98 px-6 py-5 shadow-2xl">
+            <div class="flex flex-col gap-4 text-sm font-bold uppercase text-slate-300">
+                <a href="index.html" class="hover:text-nautical-cyan transition flex items-center justify-between">
+                    <span>Beranda</span>
+                    <i class="fa-solid fa-chevron-right text-xs"></i>
+                </a>
+                <a href="katalog.html" class="text-nautical-cyan flex items-center justify-between">
+                    <span>Katalog Seafood & Ikan</span>
+                    <i class="fa-solid fa-chevron-right text-xs"></i>
+                </a>
+                <a href="detail.html" class="hover:text-nautical-cyan transition flex items-center justify-between">
+                    <span>Detail Produk & Sizing Udang</span>
+                    <i class="fa-solid fa-chevron-right text-xs"></i>
+                </a>
+                <a href="tentang.html" class="hover:text-nautical-cyan transition flex items-center justify-between">
+                    <span>Kemitraan Nelayan & Cold-Chain</span>
+                    <i class="fa-solid fa-chevron-right text-xs"></i>
+                </a>
+                <a href="artikel.html" class="hover:text-nautical-cyan transition flex items-center justify-between">
+                    <span>Tips Ciri Ikan Segar & Olahan</span>
+                    <i class="fa-solid fa-chevron-right text-xs"></i>
+                </a>
+                <a href="kontak.html" class="hover:text-nautical-cyan transition flex items-center justify-between">
+                    <span>Pasokan Resto & Depo Cold Storage</span>
+                    <i class="fa-solid fa-chevron-right text-xs"></i>
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- 3. PAGE BANNER & BREADCRUMBS -->
+    <section class="pt-8 pb-10 bg-gradient-to-b from-nautical-navydark to-nautical-navy border-b border-slate-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            
+            <nav class="flex items-center gap-2 text-xs text-slate-400 mb-4 font-mono">
+                <a href="index.html" class="hover:text-nautical-cyan transition">Beranda</a>
+                <i class="fa-solid fa-chevron-right text-[10px] text-slate-600"></i>
+                <span class="text-nautical-cyan font-bold">Katalog Seafood & Ikan Segar</span>
+            </nav>
+
+            <div class="flex flex-col md:flex-row md:items-end justify-between gap-6">
+                <div>
+                    <span class="px-3 py-1 bg-sky-950 text-nautical-cyan text-xs font-bold uppercase rounded-md tracking-wider border border-sky-700/50 font-mono">
+                        HASIL TANGKAPAN KAPAL & TAMBAK MODERN
+                    </span>
+                    <h1 class="text-3xl sm:text-5xl font-extrabold text-white font-mono mt-2">
+                        Katalog Ikan, Udang & Seafood Segar
+                    </h1>
+                    <p class="text-slate-300 text-sm sm:text-base mt-2 max-w-2xl font-sans">
+                        Pilihan udang vaname tambak size 20-50, ikan laut segar pancingan, ikan air tawar hidup beroksigen, serta salmon & tuna loin kualitas ekspor.
+                    </p>
+                </div>
+
+                <div class="flex items-center gap-3">
+                    <div class="bg-nautical-slate p-3.5 rounded-2xl border border-slate-800 shadow-xs flex items-center gap-3">
+                        <div class="w-10 h-10 rounded-xl bg-sky-950 text-nautical-cyan flex items-center justify-center text-lg border border-sky-700/40">
+                            <i class="fa-solid fa-snowflake"></i>
+                        </div>
+                        <div class="font-mono">
+                            <p class="text-xs font-bold text-white">Suhu Rantai Dingin</p>
+                            <p class="text-[11px] text-emerald-400 font-semibold">0°C - 2°C Es Basah</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- 4. FILTER TABS & SEARCH -->
+    <section class="py-6 bg-nautical-slate border-b border-slate-800 sticky top-20 sm:top-24 z-30 shadow-md">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex flex-col lg:flex-row lg:items-center justify-between gap-4">
+                
+                <!-- Category Buttons -->
+                <div class="flex items-center gap-2 overflow-x-auto no-scrollbar pb-1 lg:pb-0 font-mono">
+                    <button onclick="filterSeafood('all')" id="btn-all" class="cat-btn px-4 py-2 rounded-xl text-xs font-bold transition bg-nautical-ocean text-white shadow-xs shrink-0">
+                        Semua Seafood (12)
+                    </button>
+                    <button onclick="filterSeafood('udang')" id="btn-udang" class="cat-btn px-4 py-2 rounded-xl text-xs font-bold transition bg-nautical-navy text-slate-300 hover:bg-slate-800 shrink-0 border border-slate-800">
+                        Udang Tambak Vaname/Windu (3)
+                    </button>
+                    <button onclick="filterSeafood('laut')" id="btn-laut" class="cat-btn px-4 py-2 rounded-xl text-xs font-bold transition bg-nautical-navy text-slate-300 hover:bg-slate-800 shrink-0 border border-slate-800">
+                        Ikan Laut Segar Tangkapan (3)
+                    </button>
+                    <button onclick="filterSeafood('tawar')" id="btn-tawar" class="cat-btn px-4 py-2 rounded-xl text-xs font-bold transition bg-nautical-navy text-slate-300 hover:bg-slate-800 shrink-0 border border-slate-800">
+                        Ikan Air Tawar Hidup (3)
+                    </button>
+                    <button onclick="filterSeafood('fillet')" id="btn-fillet" class="cat-btn px-4 py-2 rounded-xl text-xs font-bold transition bg-nautical-navy text-slate-300 hover:bg-slate-800 shrink-0 border border-slate-800">
+                        Cumi, Gurita & Fillet (3)
+                    </button>
+                </div>
+
+                <!-- Search -->
+                <div class="flex items-center gap-3 font-sans">
+                    <div class="relative flex-1 sm:w-64">
+                        <i class="fa-solid fa-magnifying-glass absolute left-3.5 top-1/2 -translate-y-1/2 text-slate-400 text-xs"></i>
+                        <input type="text" id="searchInput" onkeyup="searchSeafood()" placeholder="Cari vaname, kakap, nila, tuna..." 
+                               class="w-full pl-9 pr-3.5 py-2 text-xs bg-nautical-navy border border-slate-700 text-white rounded-xl focus:outline-hidden focus:border-nautical-cyan transition placeholder:text-slate-500 font-mono">
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- 5. PRODUCTS GRID SECTION -->
+    <section class="py-12 md:py-16 bg-nautical-navy">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            
+            <div id="seafoodGrid" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
+                
+                <!-- Product 1: Udang Vaname Super Size 30 -->
+                <div class="product-item seafood-card bg-nautical-slate rounded-3xl border border-slate-800 shadow-lg overflow-hidden flex flex-col justify-between" data-category="udang" data-name="udang vaname super size 30 tambak tuban fresh ice">
+                    <div class="relative h-56 bg-slate-900 overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1559737558-2f5a35f4523b?q=80&w=600&auto=format&fit=crop" 
+                             alt="Udang Vaname Super Size 30" class="w-full h-full object-cover transform hover:scale-105 transition-all duration-500">
+                        <div class="absolute top-3 left-3">
+                            <span class="bg-nautical-ocean text-white text-[10px] font-bold px-2.5 py-1 rounded-md shadow-xs font-mono">
+                                Size 30 (28-32 ekor/kg)
+                            </span>
+                        </div>
+                        <div class="absolute top-3 right-3 bg-slate-900/90 text-sky-300 text-[10px] font-bold px-2 py-0.5 rounded shadow-xs font-mono border border-sky-800">
+                            Es Basah 0°C
+                        </div>
+                    </div>
+                    <div class="p-5 flex-1 flex flex-col justify-between">
+                        <div>
+                            <div class="flex items-center justify-between text-xs text-slate-400 mb-1 font-mono">
+                                <span>Asal: <strong>Tambak Tuban</strong></span>
+                                <span class="text-amber-400 font-bold"><i class="fa-solid fa-star text-amber-400"></i> 4.9 (620+)</span>
+                            </div>
+                            <h3 class="text-base font-bold text-white font-mono">Udang Vaname Super (Size 30)</h3>
+                            <p class="text-xs text-slate-400 mt-1.5 leading-relaxed font-sans">
+                                Daging manis kenyal, kulit mengkilap tidak lembek, kepala utuh kuat.
+                            </p>
+                            <div class="mt-3 pt-2.5 border-t border-slate-800 text-[11px] text-slate-300 flex items-center justify-between font-mono">
+                                <span><i class="fa-solid fa-circle-check text-emerald-400"></i> 0% Formalin</span>
+                                <span class="text-sky-300 font-bold">Best Seller</span>
+                            </div>
+                        </div>
+                        <div class="mt-5 pt-3 border-t border-slate-800 flex items-center justify-between">
+                            <div>
+                                <span class="text-[10px] text-slate-400 uppercase font-mono">Harga / Kg</span>
+                                <p class="text-base font-black text-nautical-cyan font-mono">Rp 88.000</p>
+                            </div>
+                            <a href="detail.html" class="px-3.5 py-2 bg-nautical-ocean hover:bg-sky-500 text-white text-xs font-bold rounded-xl shadow-xs transition font-mono">
+                                Detail & Order
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product 2: Udang Vaname Jumbo Ekspor Size 20 -->
+                <div class="product-item seafood-card bg-nautical-slate rounded-3xl border border-slate-800 shadow-lg overflow-hidden flex flex-col justify-between" data-category="udang" data-name="udang vaname jumbo ekspor size 20 banyuwangi udang bakar madu">
+                    <div class="relative h-56 bg-slate-900 overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1559737558-2f5a35f4523b?q=80&w=600&auto=format&fit=crop" 
+                             alt="Udang Vaname Jumbo Ekspor Size 20" class="w-full h-full object-cover transform hover:scale-105 transition-all duration-500">
+                        <div class="absolute top-3 left-3">
+                            <span class="bg-sky-600 text-white text-[10px] font-bold px-2.5 py-1 rounded-md shadow-xs font-mono">
+                                Size 20 (18-22 ekor/kg)
+                            </span>
+                        </div>
+                        <div class="absolute top-3 right-3 bg-slate-900/90 text-amber-300 text-[10px] font-bold px-2 py-0.5 rounded shadow-xs font-mono border border-amber-800">
+                            Jumbo Ekspor
+                        </div>
+                    </div>
+                    <div class="p-5 flex-1 flex flex-col justify-between">
+                        <div>
+                            <div class="flex items-center justify-between text-xs text-slate-400 mb-1 font-mono">
+                                <span>Asal: <strong>Banyuwangi</strong></span>
+                                <span class="text-amber-400 font-bold"><i class="fa-solid fa-star text-amber-400"></i> 5.0 (340+)</span>
+                            </div>
+                            <h3 class="text-base font-bold text-white font-mono">Udang Vaname Jumbo (Size 20)</h3>
+                            <p class="text-xs text-slate-400 mt-1.5 leading-relaxed font-sans">
+                                Ukuran ekstra besar tebal berdaging, sangat memukau untuk sajian udang bakar madu hotel.
+                            </p>
+                            <div class="mt-3 pt-2.5 border-t border-slate-800 text-[11px] text-slate-300 flex items-center justify-between font-mono">
+                                <span><i class="fa-solid fa-fire text-amber-400"></i> Daging Tebal</span>
+                                <span class="text-emerald-400 font-bold">Grade Super</span>
+                            </div>
+                        </div>
+                        <div class="mt-5 pt-3 border-t border-slate-800 flex items-center justify-between">
+                            <div>
+                                <span class="text-[10px] text-slate-400 uppercase font-mono">Harga / Kg</span>
+                                <p class="text-base font-black text-nautical-cyan font-mono">Rp 115.000</p>
+                            </div>
+                            <a href="detail.html" class="px-3.5 py-2 bg-nautical-ocean hover:bg-sky-500 text-white text-xs font-bold rounded-xl shadow-xs transition font-mono">
+                                Detail & Order
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product 3: Udang Windu Laut Segar Size 25 -->
+                <div class="product-item seafood-card bg-nautical-slate rounded-3xl border border-slate-800 shadow-lg overflow-hidden flex flex-col justify-between" data-category="udang" data-name="udang windu tiger prawn laut segar size 25 selat madura">
+                    <div class="relative h-56 bg-slate-900 overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1559737558-2f5a35f4523b?q=80&w=600&auto=format&fit=crop" 
+                             alt="Udang Windu Tiger Prawn Laut Segar" class="w-full h-full object-cover transform hover:scale-105 transition-all duration-500">
+                        <div class="absolute top-3 left-3">
+                            <span class="bg-amber-600 text-white text-[10px] font-bold px-2.5 py-1 rounded-md shadow-xs font-mono">
+                                Tiger Prawn Size 25
+                            </span>
+                        </div>
+                    </div>
+                    <div class="p-5 flex-1 flex flex-col justify-between">
+                        <div>
+                            <div class="flex items-center justify-between text-xs text-slate-400 mb-1 font-mono">
+                                <span>Asal: <strong>Selat Madura</strong></span>
+                                <span class="text-amber-400 font-bold"><i class="fa-solid fa-star text-amber-400"></i> 4.9 (290+)</span>
+                            </div>
+                            <h3 class="text-base font-bold text-white font-mono">Udang Windu Laut Segar</h3>
+                            <p class="text-xs text-slate-400 mt-1.5 leading-relaxed font-sans">
+                                Motif loreng hitam kehijauan alami, tekstur serat daging padat gurih khas tangkapan laut dalam.
+                            </p>
+                            <div class="mt-3 pt-2.5 border-t border-slate-800 text-[11px] text-slate-300 flex items-center justify-between font-mono">
+                                <span><i class="fa-solid fa-water text-cyan-400"></i> Liar Tangkapan</span>
+                                <span class="text-amber-300 font-bold">Rasa Gurih</span>
+                            </div>
+                        </div>
+                        <div class="mt-5 pt-3 border-t border-slate-800 flex items-center justify-between">
+                            <div>
+                                <span class="text-[10px] text-slate-400 uppercase font-mono">Harga / Kg</span>
+                                <p class="text-base font-black text-nautical-cyan font-mono">Rp 135.000</p>
+                            </div>
+                            <a href="detail.html" class="px-3.5 py-2 bg-nautical-ocean hover:bg-sky-500 text-white text-xs font-bold rounded-xl shadow-xs transition font-mono">
+                                Detail & Order
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product 4: Ikan Kakap Merah Tangkapan Laut -->
+                <div class="product-item seafood-card bg-nautical-slate rounded-3xl border border-slate-800 shadow-lg overflow-hidden flex flex-col justify-between" data-category="laut" data-name="ikan kakap merah segar laut jawa pancingan sup gulai">
+                    <div class="relative h-56 bg-slate-900 overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1534939561126-855b8675edd7?q=80&w=600&auto=format&fit=crop" 
+                             alt="Ikan Kakap Merah Segar Laut Jawa" class="w-full h-full object-cover transform hover:scale-105 transition-all duration-500">
+                        <div class="absolute top-3 left-3">
+                            <span class="bg-rose-600 text-white text-[10px] font-bold px-2.5 py-1 rounded-md shadow-xs font-mono">
+                                700g - 1kg / Ekor
+                            </span>
+                        </div>
+                    </div>
+                    <div class="p-5 flex-1 flex flex-col justify-between">
+                        <div>
+                            <div class="flex items-center justify-between text-xs text-slate-400 mb-1 font-mono">
+                                <span>Asal: <strong>Laut Jawa</strong></span>
+                                <span class="text-amber-400 font-bold"><i class="fa-solid fa-star text-amber-400"></i> 4.9 (410+)</span>
+                            </div>
+                            <h3 class="text-base font-bold text-white font-mono">Ikan Kakap Merah Segar</h3>
+                            <p class="text-xs text-slate-400 mt-1.5 leading-relaxed font-sans">
+                                Mata jernih cembung, insang merah segar, daging lembut padat tidak berlemak.
+                            </p>
+                            <div class="mt-3 pt-2.5 border-t border-slate-800 text-[11px] text-slate-300 flex items-center justify-between font-mono">
+                                <span><i class="fa-solid fa-utensils text-rose-400"></i> Free Bersih Sisik</span>
+                                <span class="text-emerald-400 font-bold">Grade A</span>
+                            </div>
+                        </div>
+                        <div class="mt-5 pt-3 border-t border-slate-800 flex items-center justify-between">
+                            <div>
+                                <span class="text-[10px] text-slate-400 uppercase font-mono">Harga / Kg</span>
+                                <p class="text-base font-black text-nautical-cyan font-mono">Rp 95.000</p>
+                            </div>
+                            <a href="detail.html" class="px-3.5 py-2 bg-nautical-ocean hover:bg-sky-500 text-white text-xs font-bold rounded-xl shadow-xs transition font-mono">
+                                Detail & Order
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product 5: Ikan Tenggiri Bulat Segar -->
+                <div class="product-item seafood-card bg-nautical-slate rounded-3xl border border-slate-800 shadow-lg overflow-hidden flex flex-col justify-between" data-category="laut" data-name="ikan tenggiri bulat segar pempek siomay batagor 1.5kg">
+                    <div class="relative h-56 bg-slate-900 overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1534939561126-855b8675edd7?q=80&w=600&auto=format&fit=crop" 
+                             alt="Ikan Tenggiri Bulat Segar" class="w-full h-full object-cover transform hover:scale-105 transition-all duration-500">
+                        <div class="absolute top-3 left-3">
+                            <span class="bg-blue-600 text-white text-[10px] font-bold px-2.5 py-1 rounded-md shadow-xs font-mono">
+                                1.2 - 2 kg / Ekor
+                            </span>
+                        </div>
+                    </div>
+                    <div class="p-5 flex-1 flex flex-col justify-between">
+                        <div>
+                            <div class="flex items-center justify-between text-xs text-slate-400 mb-1 font-mono">
+                                <span>Asal: <strong>Selat Karimata</strong></span>
+                                <span class="text-amber-400 font-bold"><i class="fa-solid fa-star text-amber-400"></i> 4.9 (480+)</span>
+                            </div>
+                            <h3 class="text-base font-bold text-white font-mono">Ikan Tenggiri Bulat Segar</h3>
+                            <p class="text-xs text-slate-400 mt-1.5 leading-relaxed font-sans">
+                                Bahan baku utama pempek palembang & siomay. Daging pulen kenyal mengikat adonan kalis.
+                            </p>
+                            <div class="mt-3 pt-2.5 border-t border-slate-800 text-[11px] text-slate-300 flex items-center justify-between font-mono">
+                                <span><i class="fa-solid fa-fish text-sky-400"></i> Daging Pulen</span>
+                                <span class="text-sky-300 font-bold">Pilihan Pabrik Pempek</span>
+                            </div>
+                        </div>
+                        <div class="mt-5 pt-3 border-t border-slate-800 flex items-center justify-between">
+                            <div>
+                                <span class="text-[10px] text-slate-400 uppercase font-mono">Harga / Kg</span>
+                                <p class="text-base font-black text-nautical-cyan font-mono">Rp 85.000</p>
+                            </div>
+                            <a href="detail.html" class="px-3.5 py-2 bg-nautical-ocean hover:bg-sky-500 text-white text-xs font-bold rounded-xl shadow-xs transition font-mono">
+                                Detail & Order
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product 6: Ikan Kembung Banjar Segar -->
+                <div class="product-item seafood-card bg-nautical-slate rounded-3xl border border-slate-800 shadow-lg overflow-hidden flex flex-col justify-between" data-category="laut" data-name="ikan kembung banjar segar laut pancing goreng balado">
+                    <div class="relative h-56 bg-slate-900 overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1534939561126-855b8675edd7?q=80&w=600&auto=format&fit=crop" 
+                             alt="Ikan Kembung Banjar Segar" class="w-full h-full object-cover transform hover:scale-105 transition-all duration-500">
+                        <div class="absolute top-3 left-3">
+                            <span class="bg-teal-600 text-white text-[10px] font-bold px-2.5 py-1 rounded-md shadow-xs font-mono">
+                                6-8 Ekor / Kg
+                            </span>
+                        </div>
+                    </div>
+                    <div class="p-5 flex-1 flex flex-col justify-between">
+                        <div>
+                            <div class="flex items-center justify-between text-xs text-slate-400 mb-1 font-mono">
+                                <span>Asal: <strong>Laut Jawa</strong></span>
+                                <span class="text-amber-400 font-bold"><i class="fa-solid fa-star text-amber-400"></i> 4.8 (370+)</span>
+                            </div>
+                            <h3 class="text-base font-bold text-white font-mono">Ikan Kembung Banjar Segar</h3>
+                            <p class="text-xs text-slate-400 mt-1.5 leading-relaxed font-sans">
+                                Kaya asam lemak Omega-3 melimpah, daging gurih sangat pas untuk kembung bakar sambal dabu-dabu.
+                            </p>
+                            <div class="mt-3 pt-2.5 border-t border-slate-800 text-[11px] text-slate-300 flex items-center justify-between font-mono">
+                                <span><i class="fa-solid fa-heart-pulse text-rose-400"></i> High Omega-3</span>
+                                <span class="text-emerald-400 font-bold">Hemat Bergizi</span>
+                            </div>
+                        </div>
+                        <div class="mt-5 pt-3 border-t border-slate-800 flex items-center justify-between">
+                            <div>
+                                <span class="text-[10px] text-slate-400 uppercase font-mono">Harga / Kg</span>
+                                <p class="text-base font-black text-nautical-cyan font-mono">Rp 45.000</p>
+                            </div>
+                            <a href="detail.html" class="px-3.5 py-2 bg-nautical-ocean hover:bg-sky-500 text-white text-xs font-bold rounded-xl shadow-xs transition font-mono">
+                                Detail & Order
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product 7: Ikan Nila Merah Hidup Beroksigen -->
+                <div class="product-item seafood-card bg-nautical-slate rounded-3xl border border-slate-800 shadow-lg overflow-hidden flex flex-col justify-between" data-category="tawar" data-name="ikan nila merah hidup air mengalir waduk cirata beroksigen">
+                    <div class="relative h-56 bg-slate-900 overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1544551763-46a013bb70d5?q=80&w=600&auto=format&fit=crop" 
+                             alt="Ikan Nila Merah Hidup Air Mengalir" class="w-full h-full object-cover transform hover:scale-105 transition-all duration-500">
+                        <div class="absolute top-3 left-3">
+                            <span class="bg-emerald-600 text-white text-[10px] font-bold px-2.5 py-1 rounded-md shadow-xs font-mono">
+                                Hidup Beroksigen
+                            </span>
+                        </div>
+                    </div>
+                    <div class="p-5 flex-1 flex flex-col justify-between">
+                        <div>
+                            <div class="flex items-center justify-between text-xs text-slate-400 mb-1 font-mono">
+                                <span>Asal: <strong>Waduk Cirata</strong></span>
+                                <span class="text-amber-400 font-bold"><i class="fa-solid fa-star text-amber-400"></i> 5.0 (520+)</span>
+                            </div>
+                            <h3 class="text-base font-bold text-white font-mono">Ikan Nila Merah Hidup</h3>
+                            <p class="text-xs text-slate-400 mt-1.5 leading-relaxed font-sans">
+                                Dibesarkan di keramba arus deras sehingga daging kenyal padat tanpa aroma lumpur/tanah.
+                            </p>
+                            <div class="mt-3 pt-2.5 border-t border-slate-800 text-[11px] text-slate-300 flex items-center justify-between font-mono">
+                                <span><i class="fa-solid fa-water text-cyan-400"></i> Air Mengalir</span>
+                                <span class="text-emerald-400 font-bold">3-4 Ekor/Kg</span>
+                            </div>
+                        </div>
+                        <div class="mt-5 pt-3 border-t border-slate-800 flex items-center justify-between">
+                            <div>
+                                <span class="text-[10px] text-slate-400 uppercase font-mono">Harga / Kg Hidup</span>
+                                <p class="text-base font-black text-emerald-400 font-mono">Rp 38.000</p>
+                            </div>
+                            <a href="detail.html" class="px-3.5 py-2 bg-emerald-600 hover:bg-emerald-500 text-white text-xs font-bold rounded-xl shadow-xs transition font-mono">
+                                Detail & Order
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product 8: Ikan Gurame Segar Hidup Kolam -->
+                <div class="product-item seafood-card bg-nautical-slate rounded-3xl border border-slate-800 shadow-lg overflow-hidden flex flex-col justify-between" data-category="tawar" data-name="ikan gurame segar hidup kolam 500g 700g gurame terbang bakar">
+                    <div class="relative h-56 bg-slate-900 overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1544551763-46a013bb70d5?q=80&w=600&auto=format&fit=crop" 
+                             alt="Ikan Gurame Segar Hidup Kolam" class="w-full h-full object-cover transform hover:scale-105 transition-all duration-500">
+                        <div class="absolute top-3 left-3">
+                            <span class="bg-emerald-700 text-white text-[10px] font-bold px-2.5 py-1 rounded-md shadow-xs font-mono">
+                                500g - 700g / Ekor
+                            </span>
+                        </div>
+                    </div>
+                    <div class="p-5 flex-1 flex flex-col justify-between">
+                        <div>
+                            <div class="flex items-center justify-between text-xs text-slate-400 mb-1 font-mono">
+                                <span>Asal: <strong>Tulungagung</strong></span>
+                                <span class="text-amber-400 font-bold"><i class="fa-solid fa-star text-amber-400"></i> 4.9 (430+)</span>
+                            </div>
+                            <h3 class="text-base font-bold text-white font-mono">Ikan Gurame Hidup Pilihan</h3>
+                            <p class="text-xs text-slate-400 mt-1.5 leading-relaxed font-sans">
+                                Ukuran pas porsi satu piring meja restoran. Daging tebal tidak mudah hancur saat digoreng terbang.
+                            </p>
+                            <div class="mt-3 pt-2.5 border-t border-slate-800 text-[11px] text-slate-300 flex items-center justify-between font-mono">
+                                <span><i class="fa-solid fa-utensils text-amber-400"></i> Gurame Terbang</span>
+                                <span class="text-emerald-400 font-bold">Bisa Fillet/Bersih</span>
+                            </div>
+                        </div>
+                        <div class="mt-5 pt-3 border-t border-slate-800 flex items-center justify-between">
+                            <div>
+                                <span class="text-[10px] text-slate-400 uppercase font-mono">Harga / Kg Hidup</span>
+                                <p class="text-base font-black text-emerald-400 font-mono">Rp 52.000</p>
+                            </div>
+                            <a href="detail.html" class="px-3.5 py-2 bg-emerald-600 hover:bg-emerald-500 text-white text-xs font-bold rounded-xl shadow-xs transition font-mono">
+                                Detail & Order
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product 9: Ikan Lele Sangkuriang Hidup -->
+                <div class="product-item seafood-card bg-nautical-slate rounded-3xl border border-slate-800 shadow-lg overflow-hidden flex flex-col justify-between" data-category="tawar" data-name="ikan lele sangkuriang hidup bioflok pakan pelet 6 8 ekor">
+                    <div class="relative h-56 bg-slate-900 overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1544551763-46a013bb70d5?q=80&w=600&auto=format&fit=crop" 
+                             alt="Ikan Lele Sangkuriang Hidup Bioflok" class="w-full h-full object-cover transform hover:scale-105 transition-all duration-500">
+                        <div class="absolute top-3 left-3">
+                            <span class="bg-slate-700 text-white text-[10px] font-bold px-2.5 py-1 rounded-md shadow-xs font-mono">
+                                6-8 Ekor / Kg
+                            </span>
+                        </div>
+                    </div>
+                    <div class="p-5 flex-1 flex flex-col justify-between">
+                        <div>
+                            <div class="flex items-center justify-between text-xs text-slate-400 mb-1 font-mono">
+                                <span>Asal: <strong>Bioflok Sukabumi</strong></span>
+                                <span class="text-amber-400 font-bold"><i class="fa-solid fa-star text-amber-400"></i> 4.8 (390+)</span>
+                            </div>
+                            <h3 class="text-base font-bold text-white font-mono">Ikan Lele Sangkuriang Bioflok</h3>
+                            <p class="text-xs text-slate-400 mt-1.5 leading-relaxed font-sans">
+                                Budidaya air bersih dengan pakan pelet berprotein tinggi, daging gurih bersih bebas aroma selokan.
+                            </p>
+                            <div class="mt-3 pt-2.5 border-t border-slate-800 text-[11px] text-slate-300 flex items-center justify-between font-mono">
+                                <span><i class="fa-solid fa-circle-check text-emerald-400"></i> Pakan Bersih</span>
+                                <span class="text-slate-300 font-bold">Pecel Lele Resto</span>
+                            </div>
+                        </div>
+                        <div class="mt-5 pt-3 border-t border-slate-800 flex items-center justify-between">
+                            <div>
+                                <span class="text-[10px] text-slate-400 uppercase font-mono">Harga / Kg Hidup</span>
+                                <p class="text-base font-black text-nautical-cyan font-mono">Rp 27.000</p>
+                            </div>
+                            <a href="detail.html" class="px-3.5 py-2 bg-slate-700 hover:bg-slate-600 text-white text-xs font-bold rounded-xl shadow-xs transition font-mono">
+                                Detail & Order
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product 10: Cumi-Cumi Sero Segar Laut -->
+                <div class="product-item seafood-card bg-nautical-slate rounded-3xl border border-slate-800 shadow-lg overflow-hidden flex flex-col justify-between" data-category="fillet" data-name="cumi cumi sero segar laut cumi tube putih calamari 10 15 cm">
+                    <div class="relative h-56 bg-slate-900 overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1559737558-2f5a35f4523b?q=80&w=600&auto=format&fit=crop" 
+                             alt="Cumi-Cumi Sero Segar Laut" class="w-full h-full object-cover transform hover:scale-105 transition-all duration-500">
+                        <div class="absolute top-3 left-3">
+                            <span class="bg-indigo-600 text-white text-[10px] font-bold px-2.5 py-1 rounded-md shadow-xs font-mono">
+                                Cumi Tube 10-15 cm
+                            </span>
+                        </div>
+                    </div>
+                    <div class="p-5 flex-1 flex flex-col justify-between">
+                        <div>
+                            <div class="flex items-center justify-between text-xs text-slate-400 mb-1 font-mono">
+                                <span>Asal: <strong>Perairan Rembang</strong></span>
+                                <span class="text-amber-400 font-bold"><i class="fa-solid fa-star text-amber-400"></i> 4.9 (510+)</span>
+                            </div>
+                            <h3 class="text-base font-bold text-white font-mono">Cumi-Cumi Sero Segar Laut</h3>
+                            <p class="text-xs text-slate-400 mt-1.5 leading-relaxed font-sans">
+                                Kulit bertotol ungu segar alami tanpa pemutih hidrogen peroksida, daging tebal kenyal untuk calamari ring.
+                            </p>
+                            <div class="mt-3 pt-2.5 border-t border-slate-800 text-[11px] text-slate-300 flex items-center justify-between font-mono">
+                                <span><i class="fa-solid fa-ban text-rose-400"></i> Tanpa Pemutih</span>
+                                <span class="text-indigo-300 font-bold">Daging Kenyal</span>
+                            </div>
+                        </div>
+                        <div class="mt-5 pt-3 border-t border-slate-800 flex items-center justify-between">
+                            <div>
+                                <span class="text-[10px] text-slate-400 uppercase font-mono">Harga / Kg</span>
+                                <p class="text-base font-black text-nautical-cyan font-mono">Rp 92.000</p>
+                            </div>
+                            <a href="detail.html" class="px-3.5 py-2 bg-nautical-ocean hover:bg-sky-500 text-white text-xs font-bold rounded-xl shadow-xs transition font-mono">
+                                Detail & Order
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product 11: Fillet Ikan Salmon Norwegia Fresh Chilled -->
+                <div class="product-item seafood-card bg-nautical-slate rounded-3xl border border-slate-800 shadow-lg overflow-hidden flex flex-col justify-between" data-category="fillet" data-name="fillet ikan salmon norwegia fresh chilled sashimi portion 1kg">
+                    <div class="relative h-56 bg-slate-900 overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1534939561126-855b8675edd7?q=80&w=600&auto=format&fit=crop" 
+                             alt="Fillet Ikan Salmon Norwegia Fresh Chilled" class="w-full h-full object-cover transform hover:scale-105 transition-all duration-500">
+                        <div class="absolute top-3 left-3">
+                            <span class="bg-rose-500 text-white text-[10px] font-bold px-2.5 py-1 rounded-md shadow-xs font-mono">
+                                Sashimi Grade • Chilled
+                            </span>
+                        </div>
+                    </div>
+                    <div class="p-5 flex-1 flex flex-col justify-between">
+                        <div>
+                            <div class="flex items-center justify-between text-xs text-slate-400 mb-1 font-mono">
+                                <span>Asal: <strong>Atlantic Norway</strong></span>
+                                <span class="text-amber-400 font-bold"><i class="fa-solid fa-star text-amber-400"></i> 5.0 (680+)</span>
+                            </div>
+                            <h3 class="text-base font-bold text-white font-mono">Salmon Fillet Norwegia (Chilled)</h3>
+                            <p class="text-xs text-slate-400 mt-1.5 leading-relaxed font-sans">
+                                Daging oranye cerah bergaris lemak putih marbling halus, aman disantap mentah sashimi & pan-seared steak.
+                            </p>
+                            <div class="mt-3 pt-2.5 border-t border-slate-800 text-[11px] text-slate-300 flex items-center justify-between font-mono">
+                                <span><i class="fa-solid fa-snowflake text-sky-400"></i> Air Freight Chilled</span>
+                                <span class="text-rose-300 font-bold">100% Original</span>
+                            </div>
+                        </div>
+                        <div class="mt-5 pt-3 border-t border-slate-800 flex items-center justify-between">
+                            <div>
+                                <span class="text-[10px] text-slate-400 uppercase font-mono">Harga / Kg</span>
+                                <p class="text-base font-black text-rose-400 font-mono">Rp 280.000</p>
+                            </div>
+                            <a href="detail.html" class="px-3.5 py-2 bg-rose-600 hover:bg-rose-500 text-white text-xs font-bold rounded-xl shadow-xs transition font-mono">
+                                Detail & Order
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product 12: Tuna Loin Yellowfin Sashimi Grade -->
+                <div class="product-item seafood-card bg-nautical-slate rounded-3xl border border-slate-800 shadow-lg overflow-hidden flex flex-col justify-between" data-category="fillet" data-name="tuna loin yellowfin sashimi grade vacuum pack 500g laut banda">
+                    <div class="relative h-56 bg-slate-900 overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1534939561126-855b8675edd7?q=80&w=600&auto=format&fit=crop" 
+                             alt="Tuna Loin Yellowfin Sashimi Grade" class="w-full h-full object-cover transform hover:scale-105 transition-all duration-500">
+                        <div class="absolute top-3 left-3">
+                            <span class="bg-red-700 text-white text-[10px] font-bold px-2.5 py-1 rounded-md shadow-xs font-mono">
+                                Yellowfin Tuna Loin
+                            </span>
+                        </div>
+                    </div>
+                    <div class="p-5 flex-1 flex flex-col justify-between">
+                        <div>
+                            <div class="flex items-center justify-between text-xs text-slate-400 mb-1 font-mono">
+                                <span>Asal: <strong>Laut Banda</strong></span>
+                                <span class="text-amber-400 font-bold"><i class="fa-solid fa-star text-amber-400"></i> 4.9 (440+)</span>
+                            </div>
+                            <h3 class="text-base font-bold text-white font-mono">Tuna Loin Yellowfin (500g)</h3>
+                            <p class="text-xs text-slate-400 mt-1.5 leading-relaxed font-sans">
+                                Daging merah marun padat bebas tulang dan kulit, siap potong sashimi atau dipanggang steak tender juicy.
+                            </p>
+                            <div class="mt-3 pt-2.5 border-t border-slate-800 text-[11px] text-slate-300 flex items-center justify-between font-mono">
+                                <span><i class="fa-solid fa-box-tissue text-red-400"></i> Vacuum Sealed</span>
+                                <span class="text-red-300 font-bold">500g Pack</span>
+                            </div>
+                        </div>
+                        <div class="mt-5 pt-3 border-t border-slate-800 flex items-center justify-between">
+                            <div>
+                                <span class="text-[10px] text-slate-400 uppercase font-mono">Harga / Pack 500g</span>
+                                <p class="text-base font-black text-red-400 font-mono">Rp 75.000</p>
+                            </div>
+                            <a href="detail.html" class="px-3.5 py-2 bg-red-700 hover:bg-red-600 text-white text-xs font-bold rounded-xl shadow-xs transition font-mono">
+                                Detail & Order
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- No results message -->
+            <div id="noResults" class="hidden py-16 text-center">
+                <div class="w-16 h-16 rounded-full bg-slate-800 text-nautical-cyan flex items-center justify-center mx-auto text-2xl mb-3 border border-slate-700">
+                    <i class="fa-solid fa-fish"></i>
+                </div>
+                <h3 class="text-lg font-bold text-white font-mono">Seafood Tidak Ditemukan</h3>
+                <p class="text-xs text-slate-400 mt-1 font-sans">Coba gunakan kata kunci lain seperti 'vaname', 'kakap', atau 'nila'.</p>
+                <button onclick="resetSeafoodFilter()" class="mt-4 px-5 py-2.5 bg-nautical-ocean text-white font-bold text-xs rounded-xl hover:bg-sky-500 transition font-mono">
+                    Tampilkan Semua Seafood
+                </button>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- 6. B2B WHOLESALE SUPPLY BANNER -->
+    <section class="py-14 bg-nautical-slate border-t border-slate-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="bg-gradient-to-r from-nautical-navydark via-slate-900 to-sky-950 rounded-3xl p-8 sm:p-12 text-white flex flex-col lg:flex-row items-center justify-between gap-8 shadow-2xl border border-slate-700">
+                <div class="space-y-3 max-w-2xl text-center lg:text-left">
+                    <span class="px-3 py-1 bg-sky-500/20 text-nautical-cyan text-[10px] font-extrabold uppercase tracking-wider rounded-md font-mono border border-sky-400/30">
+                        KONTRAK PASOKAN 50 KG - 1 TON / HARI
+                    </span>
+                    <h2 class="text-2xl sm:text-3xl font-extrabold font-mono leading-tight">
+                        Punya Resto Seafood, Hotel, atau Usaha Frozen Food?
+                    </h2>
+                    <p class="text-slate-300 text-xs sm:text-sm leading-relaxed font-sans">
+                        Dapatkan harga kontrak dermaga langsung dari palka nelayan, jaminan ukuran konsisten (*grading scale* presisi), pengiriman armada thermoking berjadwal, dan fasilitas invoice pembayaran tempo.
+                    </p>
+                </div>
+                <div class="flex flex-col sm:flex-row gap-3.5 w-full lg:w-auto shrink-0 font-mono">
+                    <a href="https://wa.me/6281234567890?text=Halo%20Tim%20B2B%20Dermaga%20Samudra,%20saya%20tertarik%20dengan%20kontrak%20pasokan%20grosir%20seafood." 
+                       target="_blank"
+                       class="inline-flex items-center justify-center gap-2.5 px-6 py-4 bg-nautical-ocean hover:bg-sky-500 text-white font-bold text-xs uppercase tracking-wider rounded-2xl shadow-lg transition text-center">
+                        <i class="fa-brands fa-whatsapp text-base"></i>
+                        <span>Konsultasi Pasokan B2B</span>
+                    </a>
+                    <a href="kontak.html" 
+                       class="inline-flex items-center justify-center gap-2 px-5 py-4 bg-slate-800 hover:bg-slate-700 text-white font-bold text-xs rounded-2xl border border-slate-700 transition text-center font-sans">
+                        <span>Info Depo & Armada</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 7. FOOTER -->
+    <footer class="bg-nautical-navydark text-slate-400 text-xs pt-16 pb-36 border-t border-slate-800 font-sans">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-10 pb-12 border-b border-slate-800">
+                <div class="lg:col-span-2 space-y-4">
+                    <a href="index.html" class="flex items-center gap-3">
+                        <div class="w-10 h-10 bg-gradient-to-br from-nautical-ocean to-cyan-500 text-white flex items-center justify-center text-xl font-bold rounded-xl">
+                            <i class="fa-solid fa-anchor"></i>
+                        </div>
+                        <span class="text-2xl font-extrabold text-white tracking-tight font-mono">
+                            SAMUDRA<span class="text-nautical-cyan">.</span>
+                        </span>
+                    </a>
+                    <p class="text-xs text-slate-400 leading-relaxed max-w-sm">
+                        Terminal perikanan modern terpadu. Memasok udang tambak vaname, ikan laut segar pancingan, ikan air tawar hidup beroksigen, dan seafood fillet dingin bersertifikasi bebas formalin.
+                    </p>
+                </div>
+                <div>
+                    <h4 class="text-xs font-bold text-white uppercase tracking-wider mb-4 font-mono">Navigasi Halaman</h4>
+                    <ul class="space-y-2.5">
+                        <li><a href="index.html" class="hover:text-nautical-cyan transition">Beranda Utama</a></li>
+                        <li><a href="katalog.html" class="hover:text-nautical-cyan transition">Katalog Seafood</a></li>
+                        <li><a href="detail.html" class="hover:text-nautical-cyan transition">Detail Udang Vaname</a></li>
+                        <li><a href="tentang.html" class="hover:text-nautical-cyan transition">Dermaga & Nelayan</a></li>
+                        <li><a href="artikel.html" class="hover:text-nautical-cyan transition">Tips Memilih Ikan</a></li>
+                        <li><a href="kontak.html" class="hover:text-nautical-cyan transition">Pasokan Resto & Depo</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-xs font-bold text-white uppercase tracking-wider mb-4 font-mono">Koleksi Seafood</h4>
+                    <ul class="space-y-2.5">
+                        <li><a href="detail.html" class="hover:text-nautical-cyan transition">Udang Vaname Size 30</a></li>
+                        <li><a href="detail.html" class="hover:text-nautical-cyan transition">Ikan Kakap Merah Segar</a></li>
+                        <li><a href="detail.html" class="hover:text-nautical-cyan transition">Ikan Nila Merah Hidup</a></li>
+                        <li><a href="katalog.html" class="hover:text-nautical-cyan transition">Cumi Sero Segar Laut</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-xs font-bold text-white uppercase tracking-wider mb-4 font-mono">Depo Cold Storage</h4>
+                    <p class="text-xs text-slate-400 leading-relaxed mb-3">
+                        Kawasan Pelabuhan Perikanan Samudera, Jl. Dermaga Bahari No. 12, Tanjung Mas, Semarang 50174.
+                    </p>
+                    <p class="text-xs text-nautical-cyan font-bold mb-1 font-mono"><i class="fa-solid fa-phone mr-1.5"></i> +62 812-3456-7890</p>
+                    <p class="text-xs text-slate-400"><i class="fa-solid fa-envelope mr-1.5"></i> order@dermagasamudra.com</p>
+                </div>
+            </div>
+            <div class="pt-8 flex flex-col sm:flex-row items-center justify-between gap-4 text-[11px] text-slate-500 font-mono">
+                <p>&copy; 2026 DERMAGA SAMUDRA Cold-Chain Fishery Hub. All rights reserved.</p>
+                <div class="flex items-center gap-4">
+                    <span>100% Bebas Formalin</span>
+                    <span>•</span>
+                    <span>Cold Chain 0°C - 2°C</span>
+                    <span>•</span>
+                    <span>Ikan Hidup Beroksigen</span>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- 8. FLOATING WHATSAPP BUTTON (bottom-24) -->
+    <div class="fixed bottom-24 right-5 z-40">
+        <a href="https://wa.me/6281234567890?text=Halo%20Admin%20Dermaga%20Samudra,%20saya%20ingin%20tanya%20stok%20katalog." 
+           target="_blank" 
+           aria-label="Chat WhatsApp Dermaga Samudra"
+           class="group flex items-center gap-3 bg-gradient-to-r from-nautical-ocean to-cyan-600 hover:from-sky-500 hover:to-cyan-500 text-white px-4 py-3.5 rounded-full shadow-2xl transition-all transform hover:scale-105 border-2 border-white/80">
+            <i class="fa-brands fa-whatsapp text-2xl animate-pulse"></i>
+            <span class="text-xs font-bold tracking-wide pr-1 hidden sm:inline font-mono">Pesan Seafood Segar</span>
+        </a>
+    </div>
+
+    <!-- 9. STICKY DEMO & SALES BAR (fixed bottom-4) -->
+    <div class="fixed bottom-4 left-4 right-4 z-50 max-w-5xl mx-auto">
+      <div class="bg-slate-900/95 backdrop-blur-md text-white px-4 sm:px-6 py-3.5 rounded-2xl shadow-2xl border border-slate-700 flex flex-col md:flex-row items-center justify-between gap-3">
+        <div class="flex items-center gap-3 text-left w-full md:w-auto">
+          <div class="w-9 h-9 rounded-xl bg-sky-500/20 border border-sky-400/40 flex items-center justify-center shrink-0">
+            <i class="fa-solid fa-anchor text-nautical-cyan text-sm"></i>
+          </div>
+          <div>
+            <div class="text-xs md:text-sm font-bold text-slate-100 flex items-center gap-2">
+              <span>Lentera Pasar Demo</span>
+              <span class="text-[10px] px-2 py-0.5 rounded bg-sky-500/20 text-sky-300 font-bold font-mono">Katalog Seafood & Ikan</span>
+            </div>
+            <p class="text-[11px] text-slate-400 hidden sm:block font-sans">Desain Cold-Chain Maritime untuk agrobisnis perikanan, udang tambak vaname, & pasokan resto seafood.</p>
+          </div>
+        </div>
+        <div class="flex items-center gap-3 w-full md:w-auto justify-end">
+          <a href="https://wa.me/6281234567890?text=Halo%20Tim%20Lentera%20Pasar,%20saya%20tertarik%20menggunakan%20template%20website%20Seafood%20ini." 
+             target="_blank"
+             class="w-full md:w-auto inline-flex items-center justify-center gap-2 bg-gradient-to-r from-nautical-ocean to-cyan-600 hover:from-sky-500 hover:to-cyan-500 text-white text-xs md:text-sm font-bold px-5 py-2.5 rounded-xl shadow-lg transition-all hover:scale-105 shrink-0 font-mono">
+            <span>Gunakan Template Ini</span>
+            <i class="fa-solid fa-arrow-right text-xs"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <!-- JAVASCRIPT FILTER & SEARCH -->
+    <script>
+        const mobileMenuBtn = document.getElementById('mobileMenuBtn');
+        const mobileMenu = document.getElementById('mobileMenu');
+        const menuIcon = document.getElementById('menuIcon');
+
+        mobileMenuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+            if (mobileMenu.classList.contains('hidden')) {
+                menuIcon.classList.remove('fa-xmark');
+                menuIcon.classList.add('fa-bars');
+            } else {
+                menuIcon.classList.remove('fa-bars');
+                menuIcon.classList.add('fa-xmark');
+            }
+        });
+
+        function filterSeafood(cat) {
+            const items = document.querySelectorAll('.product-item');
+            const buttons = document.querySelectorAll('.cat-btn');
+
+            buttons.forEach(b => {
+                b.className = "cat-btn px-4 py-2 rounded-xl text-xs font-bold transition bg-nautical-navy text-slate-300 hover:bg-slate-800 shrink-0 border border-slate-800";
+            });
+            const activeBtn = document.getElementById(`btn-${cat}`);
+            if (activeBtn) {
+                activeBtn.className = "cat-btn px-4 py-2 rounded-xl text-xs font-bold transition bg-nautical-ocean text-white shadow-xs shrink-0";
+            }
+
+            let count = 0;
+            items.forEach(item => {
+                const itemCat = item.getAttribute('data-category');
+                if (cat === 'all' || itemCat === cat) {
+                    item.classList.remove('hidden');
+                    count++;
+                } else {
+                    item.classList.add('hidden');
+                }
+            });
+
+            const noResults = document.getElementById('noResults');
+            if (count === 0) {
+                noResults.classList.remove('hidden');
+            } else {
+                noResults.classList.add('hidden');
+            }
+        }
+
+        function searchSeafood() {
+            const query = document.getElementById('searchInput').value.toLowerCase();
+            const items = document.querySelectorAll('.product-item');
+            let count = 0;
+
+            items.forEach(item => {
+                const name = item.getAttribute('data-name').toLowerCase();
+                if (name.includes(query)) {
+                    item.classList.remove('hidden');
+                    count++;
+                } else {
+                    item.classList.add('hidden');
+                }
+            });
+
+            const noResults = document.getElementById('noResults');
+            if (count === 0) {
+                noResults.classList.remove('hidden');
+            } else {
+                noResults.classList.add('hidden');
+            }
+        }
+
+        function resetSeafoodFilter() {
+            document.getElementById('searchInput').value = '';
+            filterSeafood('all');
+        }
+    </script>
+</body>
+</html>
