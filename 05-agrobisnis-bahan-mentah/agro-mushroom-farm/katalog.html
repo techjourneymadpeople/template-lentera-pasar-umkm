@@ -1,0 +1,931 @@
+<!DOCTYPE html>
+<html lang="id" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Katalog Jamur Segar & Bibit Baglog // KUMBUNG MESTIKA</title>
+    <meta name="description" content="Pilihan jamur tiram putih grade A, jamur tiram cokelat, jamur kuping hitam, jamur kancing, dan bibit baglog siap tumbuh panen dari kumbung bersuhu sejuk.">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome 6 -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        kumbung: {
+                            oyster: '#F9F7F3',
+                            mist: '#F1ECE3',
+                            border: '#DFD9CE',
+                            taupe: '#4A3B32',
+                            taupedark: '#382C25',
+                            taupelight: '#665347',
+                            moss: '#3D6E50',
+                            mossdark: '#2F563E',
+                            mosslight: '#EBF3EE',
+                            charcoal: '#26211E'
+                        }
+                    },
+                    fontFamily: {
+                        sans: ['"Plus Jakarta Sans"', 'sans-serif'],
+                        mono: ['"Space Grotesk"', 'sans-serif']
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        .no-scrollbar::-webkit-scrollbar { display: none; }
+        .no-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
+
+        .fungi-card {
+            transition: all 0.35s cubic-bezier(0.16, 1, 0.3, 1);
+        }
+        .fungi-card:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 20px 30px -10px rgba(74, 59, 50, 0.14);
+        }
+    </style>
+</head>
+<body class="bg-kumbung-oyster text-kumbung-charcoal font-sans antialiased selection:bg-kumbung-moss selection:text-white">
+
+    <!-- 1. TOP ANNOUNCEMENT BAR -->
+    <div class="bg-kumbung-taupe text-amber-100 text-xs py-2.5 px-4 font-sans font-medium shadow-inner">
+        <div class="max-w-7xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-2 text-center sm:text-left">
+            <div class="flex items-center justify-center gap-2">
+                <span class="px-2 py-0.5 bg-kumbung-moss text-white text-[10px] uppercase font-bold tracking-wider rounded-md shadow-xs flex items-center gap-1">
+                    <i class="fa-solid fa-cloud-rain text-emerald-200"></i> PETIK SUBUH
+                </span>
+                <span class="text-white/95 font-medium">Hasil Panen Segar Hari Ini • Payung Tebal Kadar Air Rendah Siap Kirim</span>
+            </div>
+            <div class="flex items-center gap-4 text-xs">
+                <a href="https://wa.me/6281234567890?text=Halo%20Admin%20Kumbung%20Mestika,%20saya%20ingin%20tanya%20stok%20katalog%20jamur." target="_blank" class="text-amber-300 hover:underline font-bold transition flex items-center gap-1">
+                    Fast Order WA <i class="fa-solid fa-arrow-right text-[10px]"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- 2. NAVBAR -->
+    <header class="sticky top-0 z-40 bg-white/95 backdrop-blur-md border-b border-kumbung-border transition-all shadow-xs">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-20 sm:h-24">
+                
+                <!-- Logo -->
+                <a href="index.html" class="flex items-center gap-3.5 group">
+                    <div class="w-12 h-12 bg-gradient-to-br from-kumbung-taupe to-kumbung-moss text-white flex items-center justify-center text-2xl font-bold rounded-2xl shadow-md group-hover:scale-105 transition">
+                        <i class="fa-solid fa-cubes-stacked"></i>
+                    </div>
+                    <div class="flex flex-col">
+                        <span class="text-2xl sm:text-3xl font-extrabold tracking-tight text-kumbung-taupe uppercase leading-none font-mono">
+                            MESTIKA<span class="text-kumbung-moss">.</span>
+                        </span>
+                        <span class="text-[9px] tracking-[0.28em] text-kumbung-moss uppercase mt-1 font-bold">
+                            MISTY FUNGI CULTIVATION
+                        </span>
+                    </div>
+                </a>
+
+                <!-- Desktop Navigation Links -->
+                <nav class="hidden lg:flex items-center gap-7 text-xs font-bold tracking-wider uppercase text-slate-700 font-sans">
+                    <a href="index.html" class="hover:text-kumbung-moss transition">Beranda</a>
+                    <a href="katalog.html" class="text-kumbung-moss border-b-2 border-kumbung-moss pb-1 font-bold">Koleksi Jamur</a>
+                    <a href="detail.html" class="hover:text-kumbung-moss transition">Detail Tiram Putih</a>
+                    <a href="tentang.html" class="hover:text-kumbung-moss transition">Kumbung & Media Baglog</a>
+                    <a href="artikel.html" class="hover:text-kumbung-moss transition">Tips Rawat & Olahan</a>
+                    <a href="kontak.html" class="hover:text-kumbung-moss transition">Lumbung & Pasokan Resto</a>
+                </nav>
+
+                <!-- Actions -->
+                <div class="hidden sm:flex items-center gap-3">
+                    <a href="https://wa.me/6281234567890?text=Halo%20Admin%20Kumbung%20Mestika,%20saya%20ingin%20memesan%20jamur%20dari%20katalog." 
+                       target="_blank"
+                       class="inline-flex items-center gap-2 px-4 py-2.5 bg-kumbung-moss hover:bg-kumbung-mossdark text-xs font-bold text-white rounded-xl transition shadow-md hover:shadow-lg">
+                        <i class="fa-brands fa-whatsapp text-base"></i>
+                        <span>Order Jamur WA</span>
+                    </a>
+                </div>
+
+                <!-- Mobile Menu Button -->
+                <div class="flex lg:hidden items-center gap-2">
+                    <a href="https://wa.me/6281234567890" target="_blank" class="p-2.5 bg-emerald-100 text-emerald-800 rounded-xl text-sm">
+                        <i class="fa-brands fa-whatsapp"></i>
+                    </a>
+                    <button id="mobileMenuBtn" class="p-2.5 text-slate-700 hover:text-kumbung-moss focus:outline-hidden rounded-xl bg-amber-50">
+                        <i id="menuIcon" class="fa-solid fa-bars text-xl"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Mobile Dropdown Menu -->
+        <div id="mobileMenu" class="hidden lg:hidden border-t border-kumbung-border bg-white/98 px-6 py-5 shadow-xl">
+            <div class="flex flex-col gap-4 text-sm font-bold uppercase text-slate-700">
+                <a href="index.html" class="hover:text-kumbung-moss transition flex items-center justify-between">
+                    <span>Beranda</span>
+                    <i class="fa-solid fa-chevron-right text-xs"></i>
+                </a>
+                <a href="katalog.html" class="text-kumbung-moss flex items-center justify-between">
+                    <span>Koleksi Jamur Segar</span>
+                    <i class="fa-solid fa-chevron-right text-xs"></i>
+                </a>
+                <a href="detail.html" class="hover:text-kumbung-moss transition flex items-center justify-between">
+                    <span>Detail Produk & Mutu Payung</span>
+                    <i class="fa-solid fa-chevron-right text-xs"></i>
+                </a>
+                <a href="tentang.html" class="hover:text-kumbung-moss transition flex items-center justify-between">
+                    <span>Kumbung & Sistem Kelembapan</span>
+                    <i class="fa-solid fa-chevron-right text-xs"></i>
+                </a>
+                <a href="artikel.html" class="hover:text-kumbung-moss transition flex items-center justify-between">
+                    <span>Panduan Baglog & Resep Crispy</span>
+                    <i class="fa-solid fa-chevron-right text-xs"></i>
+                </a>
+                <a href="kontak.html" class="hover:text-kumbung-moss transition flex items-center justify-between">
+                    <span>Pemesanan & Pasokan Grosir</span>
+                    <i class="fa-solid fa-chevron-right text-xs"></i>
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- 3. PAGE BANNER & BREADCRUMBS -->
+    <section class="pt-8 pb-10 bg-gradient-to-b from-emerald-50/50 to-kumbung-oyster border-b border-kumbung-border">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            
+            <nav class="flex items-center gap-2 text-xs text-slate-500 mb-4">
+                <a href="index.html" class="hover:text-kumbung-moss transition">Beranda</a>
+                <i class="fa-solid fa-chevron-right text-[10px] text-slate-400"></i>
+                <span class="text-kumbung-taupe font-bold">Koleksi Jamur Segar & Baglog</span>
+            </nav>
+
+            <div class="flex flex-col md:flex-row md:items-end justify-between gap-6">
+                <div>
+                    <span class="px-3 py-1 bg-emerald-100 text-kumbung-moss text-xs font-bold uppercase rounded-md tracking-wider">
+                        PANEN SUBUR & BIBIT UNGGUL
+                    </span>
+                    <h1 class="text-3xl sm:text-5xl font-extrabold text-kumbung-taupe font-mono mt-2">
+                        Koleksi Jamur Budidaya & Baglog
+                    </h1>
+                    <p class="text-slate-600 text-sm sm:text-base mt-2 max-w-2xl">
+                        Semua jamur dipetik tepat saat payung mekar sempurna, disortir bebas kotoran akar, dan dikemas rapi dalam pack mika atau keranjang berventilasi.
+                    </p>
+                </div>
+
+                <div class="flex items-center gap-3">
+                    <div class="bg-white p-3.5 rounded-2xl border border-kumbung-border shadow-xs flex items-center gap-3">
+                        <div class="w-10 h-10 rounded-xl bg-emerald-100 text-emerald-800 flex items-center justify-center text-lg">
+                            <i class="fa-solid fa-shield-halved"></i>
+                        </div>
+                        <div>
+                            <p class="text-xs font-bold text-slate-900">0% Formalin</p>
+                            <p class="text-[11px] text-slate-500">Uji Mutu Pangan Berkala</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- 4. FILTER TABS & SEARCH -->
+    <section class="py-6 bg-white border-b border-kumbung-border sticky top-20 sm:top-24 z-30 shadow-xs">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex flex-col lg:flex-row lg:items-center justify-between gap-4">
+                
+                <!-- Category Buttons -->
+                <div class="flex items-center gap-2 overflow-x-auto no-scrollbar pb-1 lg:pb-0">
+                    <button onclick="filterFungi('all')" id="btn-all" class="cat-btn px-4 py-2 rounded-xl text-xs font-bold transition bg-kumbung-moss text-white shadow-xs shrink-0">
+                        Semua Jamur & Bibit (12)
+                    </button>
+                    <button onclick="filterFungi('tiram-putih')" id="btn-tiram-putih" class="cat-btn px-4 py-2 rounded-xl text-xs font-bold transition bg-amber-50 text-slate-700 hover:bg-amber-100 shrink-0">
+                        Tiram Putih Segar (3)
+                    </button>
+                    <button onclick="filterFungi('tiram-eksotis')" id="btn-tiram-eksotis" class="cat-btn px-4 py-2 rounded-xl text-xs font-bold transition bg-amber-50 text-slate-700 hover:bg-amber-100 shrink-0">
+                        Tiram Cokelat & Eksotis (3)
+                    </button>
+                    <button onclick="filterFungi('kuping-kancing')" id="btn-kuping-kancing" class="cat-btn px-4 py-2 rounded-xl text-xs font-bold transition bg-amber-50 text-slate-700 hover:bg-amber-100 shrink-0">
+                        Jamur Kuping & Kancing (3)
+                    </button>
+                    <button onclick="filterFungi('baglog')" id="btn-baglog" class="cat-btn px-4 py-2 rounded-xl text-xs font-bold transition bg-amber-50 text-slate-700 hover:bg-amber-100 shrink-0">
+                        Bibit & Baglog (3)
+                    </button>
+                </div>
+
+                <!-- Search -->
+                <div class="flex items-center gap-3">
+                    <div class="relative flex-1 sm:w-64">
+                        <i class="fa-solid fa-magnifying-glass absolute left-3.5 top-1/2 -translate-y-1/2 text-slate-400 text-xs"></i>
+                        <input type="text" id="searchInput" onkeyup="searchFungi()" placeholder="Cari jamur tiram, kuping, baglog..." 
+                               class="w-full pl-9 pr-3.5 py-2 text-xs bg-slate-50 border border-slate-200 rounded-xl focus:outline-hidden focus:border-kumbung-moss focus:bg-white transition">
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- 5. PRODUCTS GRID SECTION -->
+    <section class="py-12 md:py-16">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            
+            <div id="fungiGrid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                
+                <!-- Product 1: Tiram Putih Super -->
+                <div class="product-item fungi-card bg-white rounded-3xl border border-kumbung-border shadow-xs overflow-hidden flex flex-col justify-between" data-category="tiram-putih" data-name="jamur tiram putih super grade a petik subuh">
+                    <div class="relative h-60 bg-slate-100 overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1543881477-8495632a52df?q=80&w=800&auto=format&fit=crop" 
+                             alt="Jamur Tiram Putih Super Grade A" class="w-full h-full object-cover transform hover:scale-105 transition-all duration-500">
+                        <div class="absolute top-3 left-3">
+                            <span class="bg-kumbung-moss text-white text-[10px] font-bold px-2.5 py-1 rounded-md shadow-xs">
+                                Grade A Petik Subuh
+                            </span>
+                        </div>
+                        <div class="absolute top-3 right-3 bg-white/95 text-slate-800 text-[10px] font-bold px-2 py-0.5 rounded shadow-xs">
+                            Pack 500g
+                        </div>
+                    </div>
+                    <div class="p-6 flex-1 flex flex-col justify-between">
+                        <div>
+                            <div class="flex items-center justify-between text-xs text-slate-500 mb-1">
+                                <span>Pilihan: <strong>Mika 500g / Keranjang 5kg</strong></span>
+                                <span class="text-amber-600 font-bold"><i class="fa-solid fa-star text-amber-400"></i> 4.9 (480+ ulasan)</span>
+                            </div>
+                            <h3 class="text-xl font-bold text-slate-900 font-mono">Jamur Tiram Putih Super</h3>
+                            <p class="text-xs text-slate-600 mt-2 leading-relaxed">
+                                Payung jamur putih bersih mengembang tebal, batang kokoh kenyal, kadar air rendah sangat garing saat dibuat jamur crispy.
+                            </p>
+                            <div class="mt-4 pt-3 border-t border-kumbung-border grid grid-cols-2 gap-2 text-[11px] text-slate-700">
+                                <div class="flex items-center gap-1.5"><i class="fa-solid fa-circle-check text-emerald-600"></i> Bebas Formalin</div>
+                                <div class="flex items-center gap-1.5"><i class="fa-solid fa-box text-kumbung-taupe"></i> Pack Mika Rapi</div>
+                            </div>
+                        </div>
+                        <div class="mt-6 pt-4 border-t border-kumbung-border flex items-center justify-between">
+                            <div>
+                                <span class="text-[10px] text-slate-400 uppercase">Mulai Dari</span>
+                                <p class="text-lg font-black text-kumbung-moss font-mono">Rp 12.000 <span class="text-xs font-normal text-slate-500">/ 500g</span></p>
+                            </div>
+                            <a href="detail.html" class="px-4 py-2.5 bg-kumbung-moss hover:bg-kumbung-mossdark text-white text-xs font-bold rounded-xl transition shadow-xs">
+                                Detail & Order
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product 2: Tiram Putih Curah Grosir -->
+                <div class="product-item fungi-card bg-white rounded-3xl border border-kumbung-border shadow-xs overflow-hidden flex flex-col justify-between" data-category="tiram-putih" data-name="jamur tiram putih curah grosir keranjang kontainer pabrik crispy pasar">
+                    <div class="relative h-60 bg-amber-50 overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1543881477-8495632a52df?q=80&w=800&auto=format&fit=crop" 
+                             alt="Jamur Tiram Putih Curah Keranjang" class="w-full h-full object-cover transform hover:scale-105 transition-all duration-500">
+                        <div class="absolute top-3 left-3">
+                            <span class="bg-amber-600 text-white text-[10px] font-bold px-2.5 py-1 rounded-md shadow-xs">
+                                Grosir 10kg Kontainer
+                            </span>
+                        </div>
+                    </div>
+                    <div class="p-6 flex-1 flex flex-col justify-between">
+                        <div>
+                            <div class="flex items-center justify-between text-xs text-slate-500 mb-1">
+                                <span>Kemasan: <strong>Keranjang Kontainer 10kg</strong></span>
+                                <span class="text-amber-600 font-bold"><i class="fa-solid fa-star text-amber-400"></i> 5.0 (230+ keranjang)</span>
+                            </div>
+                            <h3 class="text-xl font-bold text-slate-900 font-mono">Tiram Putih Curah Grosir Pabrik</h3>
+                            <p class="text-xs text-slate-600 mt-2 leading-relaxed">
+                                Pasokan harian partai besar untuk pedagang pasar induk dan industri keripik jamur crispy. Dipetik subuh jam 05.00 WIB.
+                            </p>
+                            <div class="mt-4 pt-3 border-t border-kumbung-border grid grid-cols-2 gap-2 text-[11px] text-slate-700">
+                                <div class="flex items-center gap-1.5"><i class="fa-solid fa-truck text-kumbung-moss"></i> Kirim Subuh Rutin</div>
+                                <div class="flex items-center gap-1.5"><i class="fa-solid fa-tags text-amber-600"></i> Harga Petani Langsung</div>
+                            </div>
+                        </div>
+                        <div class="mt-6 pt-4 border-t border-kumbung-border flex items-center justify-between">
+                            <div>
+                                <span class="text-[10px] text-slate-400 uppercase">Harga Keranjang 10kg</span>
+                                <p class="text-lg font-black text-kumbung-moss font-mono">Rp 160.000</p>
+                            </div>
+                            <a href="detail.html" class="px-4 py-2.5 bg-kumbung-moss hover:bg-kumbung-mossdark text-white text-xs font-bold rounded-xl transition shadow-xs">
+                                Detail & Order
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product 3: Tiram Putih Kuncup Mini -->
+                <div class="product-item fungi-card bg-white rounded-3xl border border-kumbung-border shadow-xs overflow-hidden flex flex-col justify-between" data-category="tiram-putih" data-name="jamur tiram putih kuncup mini baby oyster">
+                    <div class="relative h-60 bg-slate-100 overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1543881477-8495632a52df?q=80&w=800&auto=format&fit=crop" 
+                             alt="Jamur Tiram Putih Kuncup Mini" class="w-full h-full object-cover transform hover:scale-105 transition-all duration-500">
+                        <div class="absolute top-3 left-3">
+                            <span class="bg-emerald-700 text-white text-[10px] font-bold px-2.5 py-1 rounded-md shadow-xs">
+                                Baby Oyster Gurih
+                            </span>
+                        </div>
+                    </div>
+                    <div class="p-6 flex-1 flex flex-col justify-between">
+                        <div>
+                            <div class="flex items-center justify-between text-xs text-slate-500 mb-1">
+                                <span>Pilihan: <strong>Mika 250g / 500g</strong></span>
+                                <span class="text-amber-600 font-bold"><i class="fa-solid fa-star text-amber-400"></i> 4.8 (190+ ulasan)</span>
+                            </div>
+                            <h3 class="text-xl font-bold text-slate-900 font-mono">Tiram Putih Kuncup Mini (Baby)</h3>
+                            <p class="text-xs text-slate-600 mt-2 leading-relaxed">
+                                Jamur tiram muda seukuran satu gigitan, sangat renyah dan kenyal manis untuk menu tumis jamur saus tiram & sup jagung.
+                            </p>
+                            <div class="mt-4 pt-3 border-t border-kumbung-border grid grid-cols-2 gap-2 text-[11px] text-slate-700">
+                                <div class="flex items-center gap-1.5"><i class="fa-solid fa-utensils text-amber-600"></i> Bite-Size</div>
+                                <div class="flex items-center gap-1.5"><i class="fa-solid fa-leaf text-emerald-600"></i> Sangat Manis</div>
+                            </div>
+                        </div>
+                        <div class="mt-6 pt-4 border-t border-kumbung-border flex items-center justify-between">
+                            <div>
+                                <span class="text-[10px] text-slate-400 uppercase">Harga Pack 250g</span>
+                                <p class="text-lg font-black text-kumbung-moss font-mono">Rp 8.000</p>
+                            </div>
+                            <a href="detail.html" class="px-4 py-2.5 bg-kumbung-moss hover:bg-kumbung-mossdark text-white text-xs font-bold rounded-xl transition shadow-xs">
+                                Detail & Order
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product 4: Jamur Tiram Cokelat -->
+                <div class="product-item fungi-card bg-white rounded-3xl border border-kumbung-border shadow-xs overflow-hidden flex flex-col justify-between" data-category="tiram-eksotis" data-name="jamur tiram cokelat brown oyster organik daging tebal">
+                    <div class="relative h-60 bg-amber-50 overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1504674900247-0877df9cc836?q=80&w=800&auto=format&fit=crop" 
+                             alt="Jamur Tiram Cokelat Brown Oyster" class="w-full h-full object-cover transform hover:scale-105 transition-all duration-500">
+                        <div class="absolute top-3 left-3">
+                            <span class="bg-kumbung-taupe text-white text-[10px] font-bold px-2.5 py-1 rounded-md shadow-xs">
+                                Serat Padat Mirip Daging
+                            </span>
+                        </div>
+                    </div>
+                    <div class="p-6 flex-1 flex flex-col justify-between">
+                        <div>
+                            <div class="flex items-center justify-between text-xs text-slate-500 mb-1">
+                                <span>Pilihan: <strong>Mika 250g / 500g</strong></span>
+                                <span class="text-amber-600 font-bold"><i class="fa-solid fa-star text-amber-400"></i> 4.9 (260+ ulasan)</span>
+                            </div>
+                            <h3 class="text-xl font-bold text-slate-900 font-mono">Jamur Tiram Cokelat (Brown)</h3>
+                            <p class="text-xs text-slate-600 mt-2 leading-relaxed">
+                                Payung berwarna cokelat keabuan dengan aroma jamur yang lebih gurih pekat dan tekstur serat lebih kenyal menyerupai daging sapi.
+                            </p>
+                            <div class="mt-4 pt-3 border-t border-kumbung-border grid grid-cols-2 gap-2 text-[11px] text-slate-700">
+                                <div class="flex items-center gap-1.5"><i class="fa-solid fa-utensils text-amber-600"></i> Cocok Steak Nabati</div>
+                                <div class="flex items-center gap-1.5"><i class="fa-solid fa-shield text-emerald-600"></i> Organik Murni</div>
+                            </div>
+                        </div>
+                        <div class="mt-6 pt-4 border-t border-kumbung-border flex items-center justify-between">
+                            <div>
+                                <span class="text-[10px] text-slate-400 uppercase">Harga Pack 500g</span>
+                                <p class="text-lg font-black text-kumbung-moss font-mono">Rp 15.000</p>
+                            </div>
+                            <a href="detail.html" class="px-4 py-2.5 bg-kumbung-moss hover:bg-kumbung-mossdark text-white text-xs font-bold rounded-xl transition shadow-xs">
+                                Detail & Order
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product 5: Jamur Tiram Emas Kuning -->
+                <div class="product-item fungi-card bg-white rounded-3xl border border-kumbung-border shadow-xs overflow-hidden flex flex-col justify-between" data-category="tiram-eksotis" data-name="jamur tiram kuning emas golden oyster eksotis aromatik">
+                    <div class="relative h-60 bg-amber-100 overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1543881477-8495632a52df?q=80&w=800&auto=format&fit=crop" 
+                             alt="Jamur Tiram Emas Golden Oyster" class="w-full h-full object-cover transform hover:scale-105 transition-all duration-500">
+                        <div class="absolute top-3 left-3">
+                            <span class="bg-amber-500 text-slate-900 text-[10px] font-black px-2.5 py-1 rounded-md shadow-xs">
+                                Varietas Eksotis
+                            </span>
+                        </div>
+                    </div>
+                    <div class="p-6 flex-1 flex flex-col justify-between">
+                        <div>
+                            <div class="flex items-center justify-between text-xs text-slate-500 mb-1">
+                                <span>Pilihan: <strong>Mika 250g</strong></span>
+                                <span class="text-amber-600 font-bold"><i class="fa-solid fa-star text-amber-400"></i> 4.8 (110+ ulasan)</span>
+                            </div>
+                            <h3 class="text-xl font-bold text-slate-900 font-mono">Jamur Tiram Emas (Golden Oyster)</h3>
+                            <p class="text-xs text-slate-600 mt-2 leading-relaxed">
+                                Warna kuning cerah memikat dengan aroma kacang mente panggang saat ditumis, mempercantik plating masakan hotel & restoran.
+                            </p>
+                            <div class="mt-4 pt-3 border-t border-kumbung-border grid grid-cols-2 gap-2 text-[11px] text-slate-700">
+                                <div class="flex items-center gap-1.5"><i class="fa-solid fa-bowl-rice text-amber-600"></i> Nutty Flavor</div>
+                                <div class="flex items-center gap-1.5"><i class="fa-solid fa-camera text-slate-600"></i> Estetik Plating</div>
+                            </div>
+                        </div>
+                        <div class="mt-6 pt-4 border-t border-kumbung-border flex items-center justify-between">
+                            <div>
+                                <span class="text-[10px] text-slate-400 uppercase">Harga Pack 250g</span>
+                                <p class="text-lg font-black text-kumbung-moss font-mono">Rp 14.000</p>
+                            </div>
+                            <a href="detail.html" class="px-4 py-2.5 bg-kumbung-moss hover:bg-kumbung-mossdark text-white text-xs font-bold rounded-xl transition shadow-xs">
+                                Detail & Order
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product 6: Jamur Tiram Merah Muda -->
+                <div class="product-item fungi-card bg-white rounded-3xl border border-kumbung-border shadow-xs overflow-hidden flex flex-col justify-between" data-category="tiram-eksotis" data-name="jamur tiram merah muda pink oyster antioksidan">
+                    <div class="relative h-60 bg-red-50 overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1504674900247-0877df9cc836?q=80&w=800&auto=format&fit=crop" 
+                             alt="Jamur Tiram Merah Muda Pink Oyster" class="w-full h-full object-cover transform hover:scale-105 transition-all duration-500">
+                        <div class="absolute top-3 left-3">
+                            <span class="bg-rose-700 text-white text-[10px] font-bold px-2.5 py-1 rounded-md shadow-xs">
+                                Pink Flaming Oyster
+                            </span>
+                        </div>
+                    </div>
+                    <div class="p-6 flex-1 flex flex-col justify-between">
+                        <div>
+                            <div class="flex items-center justify-between text-xs text-slate-500 mb-1">
+                                <span>Pilihan: <strong>Mika 250g</strong></span>
+                                <span class="text-amber-600 font-bold"><i class="fa-solid fa-star text-amber-400"></i> 4.9 (85+ ulasan)</span>
+                            </div>
+                            <h3 class="text-xl font-bold text-slate-900 font-mono">Jamur Tiram Pink (Flaming)</h3>
+                            <p class="text-xs text-slate-600 mt-2 leading-relaxed">
+                                Kelopak merah muda cerah dengan cita rasa mirip daging bacon/seafood saat dipanggang, kaya pigmen likopen antioksidan.
+                            </p>
+                            <div class="mt-4 pt-3 border-t border-kumbung-border grid grid-cols-2 gap-2 text-[11px] text-slate-700">
+                                <div class="flex items-center gap-1.5"><i class="fa-solid fa-heart text-rose-600"></i> Kaya Likopen</div>
+                                <div class="flex items-center gap-1.5"><i class="fa-solid fa-fire text-amber-600"></i> Cocok Grilled</div>
+                            </div>
+                        </div>
+                        <div class="mt-6 pt-4 border-t border-kumbung-border flex items-center justify-between">
+                            <div>
+                                <span class="text-[10px] text-slate-400 uppercase">Harga Pack 250g</span>
+                                <p class="text-lg font-black text-kumbung-moss font-mono">Rp 15.000</p>
+                            </div>
+                            <a href="detail.html" class="px-4 py-2.5 bg-kumbung-moss hover:bg-kumbung-mossdark text-white text-xs font-bold rounded-xl transition shadow-xs">
+                                Detail & Order
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product 7: Jamur Kuping Hitam Segar -->
+                <div class="product-item fungi-card bg-white rounded-3xl border border-kumbung-border shadow-xs overflow-hidden flex flex-col justify-between" data-category="kuping-kancing" data-name="jamur kuping hitam basah segar kenyal renyah">
+                    <div class="relative h-60 bg-stone-100 overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1543881477-8495632a52df?q=80&w=800&auto=format&fit=crop" 
+                             alt="Jamur Kuping Hitam Segar" class="w-full h-full object-cover transform hover:scale-105 transition-all duration-500">
+                        <div class="absolute top-3 left-3">
+                            <span class="bg-stone-900 text-white text-[10px] font-bold px-2.5 py-1 rounded-md shadow-xs">
+                                Kenyal Renyah Alami
+                            </span>
+                        </div>
+                    </div>
+                    <div class="p-6 flex-1 flex flex-col justify-between">
+                        <div>
+                            <div class="flex items-center justify-between text-xs text-slate-500 mb-1">
+                                <span>Pilihan: <strong>Pack 500g / Keranjang 5kg</strong></span>
+                                <span class="text-amber-600 font-bold"><i class="fa-solid fa-star text-amber-400"></i> 4.9 (320+ ulasan)</span>
+                            </div>
+                            <h3 class="text-xl font-bold text-slate-900 font-mono">Jamur Kuping Hitam Segar</h3>
+                            <p class="text-xs text-slate-600 mt-2 leading-relaxed">
+                                Lembaran jamur kuping hitam mengkilap yang kenyal kriuk saat digigit, sangat cocok untuk isian tekwan, sup kimlo, capcay, dan mie ayam.
+                            </p>
+                            <div class="mt-4 pt-3 border-t border-kumbung-border grid grid-cols-2 gap-2 text-[11px] text-slate-700">
+                                <div class="flex items-center gap-1.5"><i class="fa-solid fa-utensils text-stone-700"></i> Tekstur Crunchy</div>
+                                <div class="flex items-center gap-1.5"><i class="fa-solid fa-droplet text-red-600"></i> Melancarkan Darah</div>
+                            </div>
+                        </div>
+                        <div class="mt-6 pt-4 border-t border-kumbung-border flex items-center justify-between">
+                            <div>
+                                <span class="text-[10px] text-slate-400 uppercase">Harga Pack 500g</span>
+                                <p class="text-lg font-black text-kumbung-moss font-mono">Rp 16.000</p>
+                            </div>
+                            <a href="detail.html" class="px-4 py-2.5 bg-kumbung-moss hover:bg-kumbung-mossdark text-white text-xs font-bold rounded-xl transition shadow-xs">
+                                Detail & Order
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product 8: Jamur Kuping Kering Ekspor -->
+                <div class="product-item fungi-card bg-white rounded-3xl border border-kumbung-border shadow-xs overflow-hidden flex flex-col justify-between" data-category="kuping-kancing" data-name="jamur kuping hitam kering ekspor mengembang">
+                    <div class="relative h-60 bg-stone-100 overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1543881477-8495632a52df?q=80&w=800&auto=format&fit=crop" 
+                             alt="Jamur Kuping Kering Ekspor" class="w-full h-full object-cover transform hover:scale-105 transition-all duration-500">
+                        <div class="absolute top-3 left-3">
+                            <span class="bg-stone-800 text-white text-[10px] font-bold px-2.5 py-1 rounded-md shadow-xs">
+                                Kering Awet 1 Tahun
+                            </span>
+                        </div>
+                    </div>
+                    <div class="p-6 flex-1 flex flex-col justify-between">
+                        <div>
+                            <div class="flex items-center justify-between text-xs text-slate-500 mb-1">
+                                <span>Pilihan: <strong>Pack 250g / 500g</strong></span>
+                                <span class="text-amber-600 font-bold"><i class="fa-solid fa-star text-amber-400"></i> 4.9 (210+ ulasan)</span>
+                            </div>
+                            <h3 class="text-xl font-bold text-slate-900 font-mono">Jamur Kuping Hitam Kering</h3>
+                            <p class="text-xs text-slate-600 mt-2 leading-relaxed">
+                                Dikeringkan higienis dengan oven dehidrator tanpa sinar matahari terbuka, mengembang mekar 5x lipat saat direndam air hangat 15 menit.
+                            </p>
+                            <div class="mt-4 pt-3 border-t border-kumbung-border grid grid-cols-2 gap-2 text-[11px] text-slate-700">
+                                <div class="flex items-center gap-1.5"><i class="fa-solid fa-expand text-indigo-600"></i> Mekar 5x Lipat</div>
+                                <div class="flex items-center gap-1.5"><i class="fa-solid fa-box text-kumbung-taupe"></i> Tahan Simpan Lama</div>
+                            </div>
+                        </div>
+                        <div class="mt-6 pt-4 border-t border-kumbung-border flex items-center justify-between">
+                            <div>
+                                <span class="text-[10px] text-slate-400 uppercase">Harga Pack 250g</span>
+                                <p class="text-lg font-black text-kumbung-moss font-mono">Rp 22.000</p>
+                            </div>
+                            <a href="detail.html" class="px-4 py-2.5 bg-kumbung-moss hover:bg-kumbung-mossdark text-white text-xs font-bold rounded-xl transition shadow-xs">
+                                Detail & Order
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product 9: Jamur Kancing Putih (Champignon) -->
+                <div class="product-item fungi-card bg-white rounded-3xl border border-kumbung-border shadow-xs overflow-hidden flex flex-col justify-between" data-category="kuping-kancing" data-name="jamur kancing putih segar champignon mushroom">
+                    <div class="relative h-60 bg-amber-50 overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1504674900247-0877df9cc836?q=80&w=800&auto=format&fit=crop" 
+                             alt="Jamur Kancing Champignon Segar" class="w-full h-full object-cover transform hover:scale-105 transition-all duration-500">
+                        <div class="absolute top-3 left-3">
+                            <span class="bg-amber-700 text-white text-[10px] font-bold px-2.5 py-1 rounded-md shadow-xs">
+                                Champignon Bulat Padat
+                            </span>
+                        </div>
+                    </div>
+                    <div class="p-6 flex-1 flex flex-col justify-between">
+                        <div>
+                            <div class="flex items-center justify-between text-xs text-slate-500 mb-1">
+                                <span>Pilihan: <strong>Pack 250g / 500g</strong></span>
+                                <span class="text-amber-600 font-bold"><i class="fa-solid fa-star text-amber-400"></i> 4.8 (140+ ulasan)</span>
+                            </div>
+                            <h3 class="text-xl font-bold text-slate-900 font-mono">Jamur Kancing (Champignon)</h3>
+                            <p class="text-xs text-slate-600 mt-2 leading-relaxed">
+                                Bentuk bulat mulus berdaging tebal juicy, sangat digemari untuk campuran pasta carbonara, pizza topping, dan saus jamur steak.
+                            </p>
+                            <div class="mt-4 pt-3 border-t border-kumbung-border grid grid-cols-2 gap-2 text-[11px] text-slate-700">
+                                <div class="flex items-center gap-1.5"><i class="fa-solid fa-pizza-slice text-amber-600"></i> Topping Pasta & Pizza</div>
+                                <div class="flex items-center gap-1.5"><i class="fa-solid fa-shield text-emerald-600"></i> Segar Bersih</div>
+                            </div>
+                        </div>
+                        <div class="mt-6 pt-4 border-t border-kumbung-border flex items-center justify-between">
+                            <div>
+                                <span class="text-[10px] text-slate-400 uppercase">Harga Pack 250g</span>
+                                <p class="text-lg font-black text-kumbung-moss font-mono">Rp 18.000</p>
+                            </div>
+                            <a href="detail.html" class="px-4 py-2.5 bg-kumbung-moss hover:bg-kumbung-mossdark text-white text-xs font-bold rounded-xl transition shadow-xs">
+                                Detail & Order
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product 10: Baglog Jamur Tiram Putih -->
+                <div class="product-item fungi-card bg-white rounded-3xl border-2 border-kumbung-moss/70 shadow-xs overflow-hidden flex flex-col justify-between" data-category="baglog" data-name="baglog jamur tiram putih siap panen miselium tebal serbuk sengon">
+                    <div class="relative h-60 bg-slate-100 overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1543881477-8495632a52df?q=80&w=800&auto=format&fit=crop" 
+                             alt="Baglog Jamur Tiram Siap Panen" class="w-full h-full object-cover transform hover:scale-105 transition-all duration-500">
+                        <div class="absolute top-3 left-3">
+                            <span class="bg-amber-600 text-white text-[10px] font-bold px-2.5 py-1 rounded-md shadow-xs">
+                                Miselium Putih 100%
+                            </span>
+                        </div>
+                        <div class="absolute top-3 right-3 bg-white/95 text-slate-800 text-[10px] font-bold px-2 py-0.5 rounded shadow-xs">
+                            1.2 kg / Baglog
+                        </div>
+                    </div>
+                    <div class="p-6 flex-1 flex flex-col justify-between">
+                        <div>
+                            <div class="flex items-center justify-between text-xs text-slate-500 mb-1">
+                                <span>Satuan: <strong>1 Baglog (Bobot 1.2kg)</strong></span>
+                                <span class="text-amber-600 font-bold"><i class="fa-solid fa-star text-amber-400"></i> 5.0 (610+ terjual)</span>
+                            </div>
+                            <h3 class="text-xl font-bold text-slate-900 font-mono">Baglog Jamur Tiram Siap Tumbuh</h3>
+                            <p class="text-xs text-slate-600 mt-2 leading-relaxed">
+                                Media serbuk kayu sengon steril berbobot 1.2kg dengan miselium putih tebal merata. Siap panen 4-6 kali petik dalam 3-4 bulan ke depan.
+                            </p>
+                            <div class="mt-4 pt-3 border-t border-kumbung-border grid grid-cols-2 gap-2 text-[11px] text-slate-700">
+                                <div class="flex items-center gap-1.5"><i class="fa-solid fa-clock text-blue-500"></i> Tumbuh 3-7 Hari</div>
+                                <div class="flex items-center gap-1.5"><i class="fa-solid fa-book text-amber-600"></i> Panduan Perawatan</div>
+                            </div>
+                        </div>
+                        <div class="mt-6 pt-4 border-t border-kumbung-border flex items-center justify-between">
+                            <div>
+                                <span class="text-[10px] text-slate-400 uppercase">Harga Satuan</span>
+                                <p class="text-lg font-black text-kumbung-moss font-mono">Rp 4.500</p>
+                            </div>
+                            <a href="detail.html" class="px-4 py-2.5 bg-kumbung-taupe hover:bg-kumbung-taupedark text-white text-xs font-bold rounded-xl transition shadow-xs">
+                                Detail & Order
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product 11: Paket Edukasi Mini Kumbung Box 5 Baglog -->
+                <div class="product-item fungi-card bg-white rounded-3xl border-2 border-amber-400 shadow-md overflow-hidden flex flex-col justify-between" data-category="baglog" data-name="paket edukasi mini kumbung box 5 baglog sprayer buku panduan">
+                    <div class="relative h-60 bg-amber-50 overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1543881477-8495632a52df?q=80&w=800&auto=format&fit=crop" 
+                             alt="Paket Edukasi Mini Kumbung 5 Baglog" class="w-full h-full object-cover transform hover:scale-105 transition-all duration-500">
+                        <div class="absolute top-3 left-3">
+                            <span class="bg-amber-500 text-slate-950 text-[10px] font-black px-2.5 py-1 rounded-md shadow-xs">
+                                BEST SELLER RUMAHAN
+                            </span>
+                        </div>
+                        <div class="absolute top-3 right-3 bg-red-600 text-white text-[10px] font-bold px-2 py-0.5 rounded shadow-xs">
+                            Free Botol Sprayer
+                        </div>
+                    </div>
+                    <div class="p-6 flex-1 flex flex-col justify-between">
+                        <div>
+                            <div class="flex items-center justify-between text-xs text-slate-500 mb-1">
+                                <span>Paket: <strong>Box Kardus + 5 Baglog + Sprayer</strong></span>
+                                <span class="text-amber-600 font-bold"><i class="fa-solid fa-star text-amber-400"></i> 5.0 (420+ paket)</span>
+                            </div>
+                            <h3 class="text-xl font-bold text-slate-900 font-mono">Paket Mini Kumbung Edukasi (5 Baglog)</h3>
+                            <p class="text-xs text-slate-600 mt-2 leading-relaxed">
+                                Box kemasan khusus siap taruh di teras/dapur, lengkap dengan 5 baglog siap panen, botol semprotan mikro, dan lembar log observasi sains anak.
+                            </p>
+                            <div class="mt-4 pt-3 border-t border-kumbung-border grid grid-cols-2 gap-2 text-[11px] text-slate-700">
+                                <div class="flex items-center gap-1.5"><i class="fa-solid fa-spray-can text-blue-500"></i> Include Sprayer</div>
+                                <div class="flex items-center gap-1.5"><i class="fa-solid fa-gift text-red-500"></i> Cocok Hadiah Sains</div>
+                            </div>
+                        </div>
+                        <div class="mt-6 pt-4 border-t border-kumbung-border flex items-center justify-between">
+                            <div>
+                                <span class="text-[10px] text-slate-400 uppercase">Harga Paket Lengkap</span>
+                                <p class="text-lg font-black text-kumbung-moss font-mono">Rp 38.000</p>
+                            </div>
+                            <a href="detail.html" class="px-4 py-2.5 bg-gradient-to-r from-amber-600 to-kumbung-taupe hover:from-amber-700 hover:to-kumbung-taupedark text-white text-xs font-bold rounded-xl transition shadow-xs">
+                                Pesan Paket
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product 12: Bibit Jamur F2 Indukan Unggul -->
+                <div class="product-item fungi-card bg-white rounded-3xl border border-kumbung-border shadow-xs overflow-hidden flex flex-col justify-between" data-category="baglog" data-name="bibit jamur tiram f2 botol kaca indukan unggul">
+                    <div class="relative h-60 bg-emerald-50 overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1543881477-8495632a52df?q=80&w=800&auto=format&fit=crop" 
+                             alt="Bibit Jamur Tiram F2 Botol Kaca" class="w-full h-full object-cover transform hover:scale-105 transition-all duration-500">
+                        <div class="absolute top-3 left-3">
+                            <span class="bg-emerald-800 text-white text-[10px] font-bold px-2.5 py-1 rounded-md shadow-xs">
+                                Bibit F2 Murni
+                            </span>
+                        </div>
+                    </div>
+                    <div class="p-6 flex-1 flex flex-col justify-between">
+                        <div>
+                            <div class="flex items-center justify-between text-xs text-slate-500 mb-1">
+                                <span>Kemasan: <strong>Botol Kaca Steril 500ml</strong></span>
+                                <span class="text-amber-600 font-bold"><i class="fa-solid fa-star text-amber-400"></i> 4.9 (130+ botol)</span>
+                            </div>
+                            <h3 class="text-xl font-bold text-slate-900 font-mono">Bibit Jamur F2 Indukan Unggul</h3>
+                            <p class="text-xs text-slate-600 mt-2 leading-relaxed">
+                                Bibit turunan kedua dengan media biji jagung/sorghum steril, menghasilkan miselium agresif cepat merambat untuk inokulasi 40-50 baglog.
+                            </p>
+                            <div class="mt-4 pt-3 border-t border-kumbung-border grid grid-cols-2 gap-2 text-[11px] text-slate-700">
+                                <div class="flex items-center gap-1.5"><i class="fa-solid fa-vial text-emerald-600"></i> Media Biji Jagung</div>
+                                <div class="flex items-center gap-1.5"><i class="fa-solid fa-cubes text-kumbung-taupe"></i> Inokulasi 50 Baglog</div>
+                            </div>
+                        </div>
+                        <div class="mt-6 pt-4 border-t border-kumbung-border flex items-center justify-between">
+                            <div>
+                                <span class="text-[10px] text-slate-400 uppercase">Harga Botol 500ml</span>
+                                <p class="text-lg font-black text-kumbung-moss font-mono">Rp 15.000</p>
+                            </div>
+                            <a href="detail.html" class="px-4 py-2.5 bg-kumbung-taupe hover:bg-kumbung-taupedark text-white text-xs font-bold rounded-xl transition shadow-xs">
+                                Detail & Order
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- No results -->
+            <div id="noResults" class="hidden py-16 text-center">
+                <div class="w-16 h-16 rounded-full bg-emerald-100 text-kumbung-moss flex items-center justify-center mx-auto text-2xl mb-3">
+                    <i class="fa-solid fa-cubes-stacked"></i>
+                </div>
+                <h3 class="text-lg font-bold text-slate-900 font-mono">Produk Jamur Tidak Ditemukan</h3>
+                <p class="text-xs text-slate-500 mt-1">Coba gunakan kata kunci lain atau hubungi admin kumbung kami.</p>
+                <button onclick="resetFungiFilter()" class="mt-4 px-5 py-2.5 bg-kumbung-moss text-white font-bold text-xs rounded-xl hover:bg-kumbung-mossdark transition">
+                    Tampilkan Semua Jamur
+                </button>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- 6. B2B / PASOKAN RESTO BANNER -->
+    <section class="py-14 bg-kumbung-mist border-t border-kumbung-border">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="bg-gradient-to-r from-kumbung-taupe via-kumbung-taupedark to-stone-900 rounded-3xl p-8 sm:p-12 text-white flex flex-col lg:flex-row items-center justify-between gap-8 shadow-xl">
+                <div class="space-y-3 max-w-2xl text-center lg:text-left">
+                    <span class="px-3 py-1 bg-emerald-400 text-slate-950 text-[10px] font-extrabold uppercase tracking-wider rounded-md">
+                        KONTRAK PASOKAN 20KG - 100KG / HARI
+                    </span>
+                    <h2 class="text-2xl sm:text-3xl font-extrabold font-mono leading-tight">
+                        Butuh Pasokan Jamur Tiram Segar Rutin untuk Resto, Katering, atau Pabrik Keripik?
+                    </h2>
+                    <p class="text-slate-300 text-xs sm:text-sm leading-relaxed">
+                        Dapatkan harga kontrak grosir langsung dari petani kumbung, jaminan petik subuh jam 05.00 WIB, akar sudah bersih disortir, dan pengiriman tepat waktu setiap pagi.
+                    </p>
+                </div>
+                <div class="flex flex-col sm:flex-row gap-3.5 w-full lg:w-auto shrink-0">
+                    <a href="https://wa.me/6281234567890?text=Halo%20Tim%20B2B%20Kumbung%20Mestika,%20saya%20tertarik%20dengan%20pasokan%20grosir%20jamur%20tiram%20segar." 
+                       target="_blank"
+                       class="inline-flex items-center justify-center gap-2.5 px-6 py-4 bg-kumbung-moss hover:bg-emerald-600 text-white font-bold text-xs uppercase tracking-wider rounded-2xl shadow-lg transition text-center">
+                        <i class="fa-brands fa-whatsapp text-base"></i>
+                        <span>Konsultasi Pasokan B2B</span>
+                    </a>
+                    <a href="kontak.html" 
+                       class="inline-flex items-center justify-center gap-2 px-5 py-4 bg-white/10 hover:bg-white/20 text-white font-bold text-xs rounded-2xl border border-white/20 transition text-center">
+                        <span>Info Lokasi Kumbung</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 7. FOOTER -->
+    <footer class="bg-stone-900 text-stone-400 text-xs pt-16 pb-36 border-t border-stone-800 font-sans">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-10 pb-12 border-b border-stone-800">
+                <div class="lg:col-span-2 space-y-4">
+                    <a href="index.html" class="flex items-center gap-3">
+                        <div class="w-10 h-10 bg-gradient-to-br from-kumbung-taupe to-kumbung-moss text-white flex items-center justify-center text-xl font-bold rounded-xl">
+                            <i class="fa-solid fa-cubes-stacked"></i>
+                        </div>
+                        <span class="text-2xl font-extrabold text-white tracking-tight font-mono">
+                            MESTIKA<span class="text-kumbung-moss">.</span>
+                        </span>
+                    </a>
+                    <p class="text-xs text-stone-400 leading-relaxed max-w-sm">
+                        Budidaya jamur tiram putih & cokelat segar dengan sistem kelembapan kabut mikro alami. Memproduksi jamur konsumsi bersih petik subuh dan bibit baglog media serbuk kayu sengon steril.
+                    </p>
+                </div>
+                <div>
+                    <h4 class="text-xs font-bold text-white uppercase tracking-wider mb-4">Navigasi Halaman</h4>
+                    <ul class="space-y-2.5">
+                        <li><a href="index.html" class="hover:text-emerald-400 transition">Beranda Utama</a></li>
+                        <li><a href="katalog.html" class="hover:text-emerald-400 transition">Koleksi Jamur Segar</a></li>
+                        <li><a href="detail.html" class="hover:text-emerald-400 transition">Detail Tiram Putih</a></li>
+                        <li><a href="tentang.html" class="hover:text-emerald-400 transition">Kumbung & Baglog</a></li>
+                        <li><a href="artikel.html" class="hover:text-emerald-400 transition">Tips & Resep Olahan</a></li>
+                        <li><a href="kontak.html" class="hover:text-emerald-400 transition">Pemesanan & Pasokan</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-xs font-bold text-white uppercase tracking-wider mb-4">Koleksi Jamur</h4>
+                    <ul class="space-y-2.5">
+                        <li><a href="detail.html" class="hover:text-emerald-400 transition">Jamur Tiram Putih Segar</a></li>
+                        <li><a href="detail.html" class="hover:text-emerald-400 transition">Jamur Tiram Cokelat Daging</a></li>
+                        <li><a href="detail.html" class="hover:text-emerald-400 transition">Baglog Siap Panen Rumahan</a></li>
+                        <li><a href="katalog.html" class="hover:text-emerald-400 transition">Jamur Kuping Hitam Segar</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-xs font-bold text-white uppercase tracking-wider mb-4">Pusat Budidaya Kumbung</h4>
+                    <p class="text-xs text-stone-400 leading-relaxed mb-3">
+                        Kawasan Sentra Jamur Tiram Lereng Gunung Ungaran, Bandungan - Jawa Tengah, Indonesia.
+                    </p>
+                    <p class="text-xs text-emerald-400 font-bold mb-1"><i class="fa-solid fa-phone mr-1.5"></i> +62 812-3456-7890</p>
+                    <p class="text-xs text-stone-400"><i class="fa-solid fa-envelope mr-1.5"></i> order@kumbungmestika.com</p>
+                </div>
+            </div>
+            <div class="pt-8 flex flex-col sm:flex-row items-center justify-between gap-4 text-[11px] text-stone-500">
+                <p>&copy; 2026 KUMBUNG MESTIKA Misty Fungi Farm. All rights reserved.</p>
+                <div class="flex items-center gap-4">
+                    <span>100% Organik Bebas Formalin</span>
+                    <span>•</span>
+                    <span>Payung Tebal Kadar Air Rendah</span>
+                    <span>•</span>
+                    <span>Bibit Baglog Unggul</span>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- 8. FLOATING WHATSAPP BUTTON (bottom-24) -->
+    <div class="fixed bottom-24 right-5 z-40">
+        <a href="https://wa.me/6281234567890?text=Halo%20Admin%20Kumbung%20Mestika,%20saya%20ingin%20tanya%20stok%20katalog%20jamur%20segar." 
+           target="_blank" 
+           aria-label="Chat WhatsApp Kumbung Mestika"
+           class="group flex items-center gap-3 bg-gradient-to-r from-emerald-600 to-emerald-700 hover:from-emerald-700 hover:to-emerald-800 text-white px-4 py-3.5 rounded-full shadow-2xl transition-all transform hover:scale-105 border-2 border-white">
+            <i class="fa-brands fa-whatsapp text-2xl animate-pulse"></i>
+            <span class="text-xs font-bold tracking-wide pr-1 hidden sm:inline">Pesan Jamur Tiram WA</span>
+        </a>
+    </div>
+
+    <!-- 9. STICKY DEMO & SALES BAR (fixed bottom-4) -->
+    <div class="fixed bottom-4 left-4 right-4 z-50 max-w-5xl mx-auto">
+      <div class="bg-stone-900/95 backdrop-blur-md text-white px-4 sm:px-6 py-3.5 rounded-2xl shadow-2xl border border-stone-700 flex flex-col md:flex-row items-center justify-between gap-3">
+        <div class="flex items-center gap-3 text-left w-full md:w-auto">
+          <div class="w-9 h-9 rounded-xl bg-emerald-500/20 border border-emerald-400/40 flex items-center justify-center shrink-0">
+            <i class="fa-solid fa-cubes-stacked text-emerald-400 text-sm"></i>
+          </div>
+          <div>
+            <div class="text-xs md:text-sm font-bold text-stone-100 flex items-center gap-2">
+              <span>Lentera Pasar Demo</span>
+              <span class="text-[10px] px-2 py-0.5 rounded bg-emerald-500/20 text-emerald-300 font-bold">Katalog Jamur Segar & Baglog</span>
+            </div>
+            <p class="text-[11px] text-stone-400 hidden sm:block">Desain Misty Kumbung Farm sejuk untuk agrobisnis jamur tiram, bibit baglog, & pasokan industri crispy.</p>
+          </div>
+        </div>
+        <div class="flex items-center gap-3 w-full md:w-auto justify-end">
+          <a href="https://wa.me/6281234567890?text=Halo%20Tim%20Lentera%20Pasar,%20saya%20tertarik%20menggunakan%20template%20website%20Jamur%20Tiram%20ini." 
+             target="_blank"
+             class="w-full md:w-auto inline-flex items-center justify-center gap-2 bg-gradient-to-r from-emerald-600 to-kumbung-moss hover:from-emerald-500 hover:to-emerald-800 text-white text-xs md:text-sm font-bold px-5 py-2.5 rounded-xl shadow-lg transition-all hover:scale-105 shrink-0">
+            <span>Gunakan Template Ini</span>
+            <i class="fa-solid fa-arrow-right text-xs"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <!-- JAVASCRIPT FILTER & SEARCH -->
+    <script>
+        // Mobile Menu Toggle
+        const mobileMenuBtn = document.getElementById('mobileMenuBtn');
+        const mobileMenu = document.getElementById('mobileMenu');
+        const menuIcon = document.getElementById('menuIcon');
+
+        mobileMenuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+            if (mobileMenu.classList.contains('hidden')) {
+                menuIcon.classList.remove('fa-xmark');
+                menuIcon.classList.add('fa-bars');
+            } else {
+                menuIcon.classList.remove('fa-bars');
+                menuIcon.classList.add('fa-xmark');
+            }
+        });
+
+        // Filter Fungi Categories
+        function filterFungi(cat) {
+            const items = document.querySelectorAll('.product-item');
+            const buttons = document.querySelectorAll('.cat-btn');
+
+            buttons.forEach(b => {
+                b.className = "cat-btn px-4 py-2 rounded-xl text-xs font-bold transition bg-amber-50 text-slate-700 hover:bg-amber-100 shrink-0";
+            });
+            const activeBtn = document.getElementById(`btn-${cat}`);
+            if (activeBtn) {
+                activeBtn.className = "cat-btn px-4 py-2 rounded-xl text-xs font-bold transition bg-kumbung-moss text-white shadow-xs shrink-0";
+            }
+
+            let count = 0;
+            items.forEach(item => {
+                const itemCat = item.getAttribute('data-category');
+                if (cat === 'all' || itemCat === cat) {
+                    item.classList.remove('hidden');
+                    count++;
+                } else {
+                    item.classList.add('hidden');
+                }
+            });
+
+            const noResults = document.getElementById('noResults');
+            if (count === 0) {
+                noResults.classList.remove('hidden');
+            } else {
+                noResults.classList.add('hidden');
+            }
+        }
+
+        // Search Fungi
+        function searchFungi() {
+            const query = document.getElementById('searchInput').value.toLowerCase();
+            const items = document.querySelectorAll('.product-item');
+            let count = 0;
+
+            items.forEach(item => {
+                const name = item.getAttribute('data-name').toLowerCase();
+                if (name.includes(query)) {
+                    item.classList.remove('hidden');
+                    count++;
+                } else {
+                    item.classList.add('hidden');
+                }
+            });
+
+            const noResults = document.getElementById('noResults');
+            if (count === 0) {
+                noResults.classList.remove('hidden');
+            } else {
+                noResults.classList.add('hidden');
+            }
+        }
+
+        function resetFungiFilter() {
+            document.getElementById('searchInput').value = '';
+            filterFungi('all');
+        }
+    </script>
+</body>
+</html>

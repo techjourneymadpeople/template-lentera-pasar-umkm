@@ -1,0 +1,508 @@
+<!DOCTYPE html>
+<html lang="id" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tips Rawat Baglog & Resep Jamur Crispy // KUMBUNG MESTIKA</title>
+    <meta name="description" content="Edukasi jamur tiram: Cara merawat baglog jamur di rumah agar cepat tumbuh mekar, resep jamur crispy renyah seharian, dan manfaat kesehatan beta-glukan.">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome 6 -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        kumbung: {
+                            oyster: '#F9F7F3',
+                            mist: '#F1ECE3',
+                            border: '#DFD9CE',
+                            taupe: '#4A3B32',
+                            taupedark: '#382C25',
+                            taupelight: '#665347',
+                            moss: '#3D6E50',
+                            mossdark: '#2F563E',
+                            mosslight: '#EBF3EE',
+                            charcoal: '#26211E'
+                        }
+                    },
+                    fontFamily: {
+                        sans: ['"Plus Jakarta Sans"', 'sans-serif'],
+                        mono: ['"Space Grotesk"', 'sans-serif']
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        .no-scrollbar::-webkit-scrollbar { display: none; }
+        .no-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
+
+        .fungi-card {
+            transition: all 0.35s cubic-bezier(0.16, 1, 0.3, 1);
+        }
+        .fungi-card:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 20px 30px -10px rgba(74, 59, 50, 0.14);
+        }
+    </style>
+</head>
+<body class="bg-kumbung-oyster text-kumbung-charcoal font-sans antialiased selection:bg-kumbung-moss selection:text-white">
+
+    <!-- 1. TOP ANNOUNCEMENT BAR -->
+    <div class="bg-kumbung-taupe text-amber-100 text-xs py-2.5 px-4 font-sans font-medium shadow-inner">
+        <div class="max-w-7xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-2 text-center sm:text-left">
+            <div class="flex items-center justify-center gap-2">
+                <span class="px-2 py-0.5 bg-kumbung-moss text-white text-[10px] uppercase font-bold tracking-wider rounded-md shadow-xs flex items-center gap-1">
+                    <i class="fa-solid fa-book-open text-emerald-200"></i> PANDUAN MIKOLOGI
+                </span>
+                <span class="text-white/95 font-medium">Tips Budidaya Rumahan, Resep Olahan Jamur, & Info Gizi Beta-Glukan</span>
+            </div>
+            <div class="flex items-center gap-4 text-xs">
+                <a href="katalog.html" class="text-amber-300 hover:underline font-bold transition flex items-center gap-1">
+                    Pesan Jamur & Baglog <i class="fa-solid fa-arrow-right text-[10px]"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- 2. NAVBAR -->
+    <header class="sticky top-0 z-40 bg-white/95 backdrop-blur-md border-b border-kumbung-border transition-all shadow-xs">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-20 sm:h-24">
+                
+                <!-- Logo -->
+                <a href="index.html" class="flex items-center gap-3.5 group">
+                    <div class="w-12 h-12 bg-gradient-to-br from-kumbung-taupe to-kumbung-moss text-white flex items-center justify-center text-2xl font-bold rounded-2xl shadow-md group-hover:scale-105 transition">
+                        <i class="fa-solid fa-cubes-stacked"></i>
+                    </div>
+                    <div class="flex flex-col">
+                        <span class="text-2xl sm:text-3xl font-extrabold tracking-tight text-kumbung-taupe uppercase leading-none font-mono">
+                            MESTIKA<span class="text-kumbung-moss">.</span>
+                        </span>
+                        <span class="text-[9px] tracking-[0.28em] text-kumbung-moss uppercase mt-1 font-bold">
+                            MISTY FUNGI CULTIVATION
+                        </span>
+                    </div>
+                </a>
+
+                <!-- Desktop Navigation Links -->
+                <nav class="hidden lg:flex items-center gap-7 text-xs font-bold tracking-wider uppercase text-slate-700 font-sans">
+                    <a href="index.html" class="hover:text-kumbung-moss transition">Beranda</a>
+                    <a href="katalog.html" class="hover:text-kumbung-moss transition">Koleksi Jamur</a>
+                    <a href="detail.html" class="hover:text-kumbung-moss transition">Detail Tiram Putih</a>
+                    <a href="tentang.html" class="hover:text-kumbung-moss transition">Kumbung & Media Baglog</a>
+                    <a href="artikel.html" class="text-kumbung-moss border-b-2 border-kumbung-moss pb-1 font-bold">Tips Rawat & Olahan</a>
+                    <a href="kontak.html" class="hover:text-kumbung-moss transition">Lumbung & Pasokan Resto</a>
+                </nav>
+
+                <!-- Actions -->
+                <div class="hidden sm:flex items-center gap-3">
+                    <a href="https://wa.me/6281234567890?text=Halo%20Admin%20Kumbung%20Mestika,%20saya%20ingin%20tanya%20tips%20baglog%20jamur." 
+                       target="_blank"
+                       class="inline-flex items-center gap-2 px-4 py-2.5 bg-kumbung-moss hover:bg-kumbung-mossdark text-xs font-bold text-white rounded-xl transition shadow-md hover:shadow-lg">
+                        <i class="fa-brands fa-whatsapp text-base"></i>
+                        <span>Pesan Jamur WA</span>
+                    </a>
+                </div>
+
+                <!-- Mobile Menu Button -->
+                <div class="flex lg:hidden items-center gap-2">
+                    <a href="https://wa.me/6281234567890" target="_blank" class="p-2.5 bg-emerald-100 text-emerald-800 rounded-xl text-sm">
+                        <i class="fa-brands fa-whatsapp"></i>
+                    </a>
+                    <button id="mobileMenuBtn" class="p-2.5 text-slate-700 hover:text-kumbung-moss focus:outline-hidden rounded-xl bg-amber-50">
+                        <i id="menuIcon" class="fa-solid fa-bars text-xl"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Mobile Dropdown Menu -->
+        <div id="mobileMenu" class="hidden lg:hidden border-t border-kumbung-border bg-white/98 px-6 py-5 shadow-xl">
+            <div class="flex flex-col gap-4 text-sm font-bold uppercase text-slate-700">
+                <a href="index.html" class="hover:text-kumbung-moss transition flex items-center justify-between">
+                    <span>Beranda</span>
+                    <i class="fa-solid fa-chevron-right text-xs"></i>
+                </a>
+                <a href="katalog.html" class="hover:text-kumbung-moss transition flex items-center justify-between">
+                    <span>Koleksi Jamur Segar</span>
+                    <i class="fa-solid fa-chevron-right text-xs"></i>
+                </a>
+                <a href="detail.html" class="hover:text-kumbung-moss transition flex items-center justify-between">
+                    <span>Detail Produk & Mutu Payung</span>
+                    <i class="fa-solid fa-chevron-right text-xs"></i>
+                </a>
+                <a href="tentang.html" class="hover:text-kumbung-moss transition flex items-center justify-between">
+                    <span>Kumbung & Sistem Kelembapan</span>
+                    <i class="fa-solid fa-chevron-right text-xs"></i>
+                </a>
+                <a href="artikel.html" class="text-kumbung-moss flex items-center justify-between">
+                    <span>Panduan Baglog & Resep Crispy</span>
+                    <i class="fa-solid fa-chevron-right text-xs"></i>
+                </a>
+                <a href="kontak.html" class="hover:text-kumbung-moss transition flex items-center justify-between">
+                    <span>Pemesanan & Pasokan Grosir</span>
+                    <i class="fa-solid fa-chevron-right text-xs"></i>
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- 3. PAGE BANNER -->
+    <section class="py-12 bg-gradient-to-b from-emerald-50/60 to-kumbung-oyster border-b border-kumbung-border">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="max-w-3xl">
+                <span class="px-3 py-1 bg-emerald-100 text-kumbung-moss text-xs font-bold uppercase rounded-md tracking-wider">
+                    CULINARY & HOME CULTIVATION GUIDE
+                </span>
+                <h1 class="text-3xl sm:text-5xl font-extrabold text-kumbung-taupe font-mono mt-3 mb-3 leading-tight">
+                    Panduan Baglog & Resep Olahan Jamur
+                </h1>
+                <p class="text-slate-600 text-sm sm:text-base leading-relaxed">
+                    Pelajari trik membuat jamur crispy renyah tahan seharian, cara merawat baglog jamur tiram di rumah untuk panen berulang kali, dan manfaat nutrisi beta-glukan untuk kesehatan keluarga.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- 4. FEATURED ARTICLE 1: RESEP JAMUR CRISPY -->
+    <section class="py-12 md:py-16 bg-white border-b border-kumbung-border">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="bg-kumbung-oyster rounded-3xl p-6 sm:p-10 border-2 border-amber-300 shadow-md grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
+                
+                <div class="lg:col-span-6 space-y-4">
+                    <div class="flex items-center gap-2">
+                        <span class="px-3 py-0.5 bg-amber-600 text-white text-[10px] font-black uppercase rounded-md">
+                            RESEP & KULINER
+                        </span>
+                        <span class="text-xs text-slate-500">5 Menit Baca • Trik Dapur Pedagang</span>
+                    </div>
+                    
+                    <h2 class="text-2xl sm:text-3xl font-extrabold text-slate-900 font-mono leading-snug">
+                        Rahasia Jamur Crispy Renyah Seharian: Trik Tepung Kering & Pengurangan Kadar Air
+                    </h2>
+
+                    <p class="text-xs sm:text-sm text-slate-600 leading-relaxed">
+                        Seringkali jamur goreng cepat lembek atau berminyak setelah 1 jam? Kuncinya bukan hanya pada adonan tepung, melainkan pada <strong>kondisi kadar air jamur</strong> sebelum masuk ke wajan penggorengan.
+                    </p>
+
+                    <div class="space-y-2 pt-2 text-xs text-slate-700 font-medium">
+                        <div class="flex items-center gap-2">
+                            <i class="fa-solid fa-check text-emerald-600"></i>
+                            <span><strong>Peras Perlahan:</strong> Setelah disuwir, peras ringan jamur dengan kain bersih hingga airnya berkurang.</span>
+                        </div>
+                        <div class="flex items-center gap-2">
+                            <i class="fa-solid fa-check text-emerald-600"></i>
+                            <span><strong>Kombinasi Maizena & Baking Powder:</strong> Campuran 70% terigu protein sedang + 30% maizena + 1/2 sdt baking powder.</span>
+                        </div>
+                        <div class="flex items-center gap-2">
+                            <i class="fa-solid fa-check text-emerald-600"></i>
+                            <span><strong>Deep Frying 170°C:</strong> Goreng di minyak panas banyak hingga buih mengecil dan tiriskan di rak kawat (jangan di atas tisu).</span>
+                        </div>
+                    </div>
+
+                    <div class="pt-3">
+                        <a href="katalog.html" class="inline-flex items-center gap-2 px-5 py-3 bg-amber-600 hover:bg-amber-700 text-white font-bold text-xs rounded-xl shadow-md transition">
+                            <span>Pesan Jamur Tiram Segar Rendah Air</span>
+                            <i class="fa-solid fa-arrow-right text-xs"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="lg:col-span-6">
+                    <div class="rounded-2xl overflow-hidden shadow-md border-2 border-white bg-amber-50">
+                        <img src="https://images.unsplash.com/photo-1504674900247-0877df9cc836?q=80&w=800&auto=format&fit=crop" 
+                             alt="Jamur Crispy Renyah Keemasan" 
+                             class="w-full h-80 object-cover transform hover:scale-105 transition-all duration-700">
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- 5. STEP-BY-STEP BAGLOG HOME CARE GUIDE -->
+    <section class="py-14 bg-kumbung-mist border-b border-kumbung-border">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 space-y-8">
+            
+            <div class="text-center space-y-2">
+                <span class="px-3 py-1 bg-emerald-100 text-kumbung-moss text-xs font-bold uppercase rounded-md tracking-wider">
+                    PANDUAN BUDIDAYA RUMAHAN
+                </span>
+                <h3 class="text-2xl sm:text-3xl font-extrabold text-kumbung-taupe font-mono">
+                    4 Langkah Mudah Merawat Baglog Jamur di Teras Rumah
+                </h3>
+                <p class="text-slate-600 text-xs sm:text-sm">
+                    Tanpa perlu lahan luas, Anda bisa memanen jamur tiram segar mandiri untuk edukasi keluarga:
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                
+                <div class="bg-white rounded-3xl p-6 border border-kumbung-border shadow-xs flex items-start gap-4">
+                    <div class="w-10 h-10 rounded-xl bg-kumbung-moss text-white flex items-center justify-center font-black text-sm shrink-0 font-mono">
+                        1
+                    </div>
+                    <div>
+                        <h4 class="font-bold text-sm text-slate-900 font-mono">Letakkan di Tempat Teduh & Lembap</h4>
+                        <p class="text-xs text-slate-600 mt-1.5 leading-relaxed">
+                            Taruh baglog di teras belakang, bawah wastafel, atau dekat kamar mandi yang terhindar dari paparan sinar matahari langsung dan hembusan angin kencang.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="bg-white rounded-3xl p-6 border border-kumbung-border shadow-xs flex items-start gap-4">
+                    <div class="w-10 h-10 rounded-xl bg-kumbung-moss text-white flex items-center justify-center font-black text-sm shrink-0 font-mono">
+                        2
+                    </div>
+                    <div>
+                        <h4 class="font-bold text-sm text-slate-900 font-mono">Buka Tutup Cincin / Sayat Plastik</h4>
+                        <p class="text-xs text-slate-600 mt-1.5 leading-relaxed">
+                            Buka tutup kapas cincin baglog atau buat sayatan menyilang 'X' selebar 3 cm di plastik bagian atas sebagai jalan keluarnya tudung jamur.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="bg-white rounded-3xl p-6 border border-kumbung-border shadow-xs flex items-start gap-4">
+                    <div class="w-10 h-10 rounded-xl bg-kumbung-moss text-white flex items-center justify-center font-black text-sm shrink-0 font-mono">
+                        3
+                    </div>
+                    <div>
+                        <h4 class="font-bold text-sm text-slate-900 font-mono">Semprot Kabut Air Bersih 2x Sehari</h4>
+                        <p class="text-xs text-slate-600 mt-1.5 leading-relaxed">
+                            Gunakan botol sprayer halus. Semprotkan ke udara sekitar baglog dan lantai (jangan menyemprot langsung ke lubang media dengan tekanan keras).
+                        </p>
+                    </div>
+                </div>
+
+                <div class="bg-white rounded-3xl p-6 border border-kumbung-border shadow-xs flex items-start gap-4">
+                    <div class="w-10 h-10 rounded-xl bg-kumbung-moss text-white flex items-center justify-center font-black text-sm shrink-0 font-mono">
+                        4
+                    </div>
+                    <div>
+                        <h4 class="font-bold text-sm text-slate-900 font-mono">Petik Saat Payung Kuncup Mekar</h4>
+                        <p class="text-xs text-slate-600 mt-1.5 leading-relaxed">
+                            Dalam 3-7 hari jamur akan mekar. Petik dengan cara mencabut perlahan hingga ke pangkal akar. Bersihkan sisa media dan baglog akan tumbuh lagi dalam 10-14 hari.
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+    <!-- 6. KNOWLEDGE ARTICLES GRID -->
+    <section class="py-14 md:py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-2xl mx-auto mb-12">
+                <span class="px-3 py-1 bg-amber-100 text-kumbung-taupe text-xs font-bold uppercase rounded-md tracking-wider">
+                    ARTIKEL & NUTRISI PANGAN
+                </span>
+                <h2 class="text-2xl sm:text-4xl font-extrabold text-kumbung-taupe font-mono mt-2 mb-2">
+                    Wawasan Kesehatan dari Dunia Fungi
+                </h2>
+                <p class="text-slate-600 text-xs sm:text-sm">
+                    Ketahui manfaat luar biasa jamur tiram untuk pola makan sehat rendah lemak.
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                
+                <!-- Article 1 -->
+                <div class="fungi-card bg-kumbung-oyster rounded-3xl border border-kumbung-border overflow-hidden flex flex-col justify-between">
+                    <div class="h-48 overflow-hidden bg-amber-50">
+                        <img src="https://images.unsplash.com/photo-1543881477-8495632a52df?q=80&w=600&auto=format&fit=crop" 
+                             alt="Beta Glukan Jamur Tiram" class="w-full h-full object-cover">
+                    </div>
+                    <div class="p-6 flex-1 flex flex-col justify-between">
+                        <div>
+                            <span class="text-[10px] bg-emerald-700 text-white px-2 py-0.5 rounded font-bold uppercase">Kesehatan Jantung</span>
+                            <h3 class="text-base font-bold text-slate-900 font-mono mt-2">
+                                Khasiat Beta-Glukan Jamur Tiram: Menurunkan Kolesterol & Menjaga Imunitas
+                            </h3>
+                            <p class="text-xs text-slate-600 mt-2 leading-relaxed">
+                                Senyawa serat larut beta-glukan dalam jamur tiram terbukti mengikat kolesterol LDL dalam saluran cerna dan meningkatkan aktivitas sel darah putih.
+                            </p>
+                        </div>
+                        <div class="mt-4 pt-3 border-t border-kumbung-border flex items-center justify-between text-xs">
+                            <span class="text-slate-400">4 Menit Baca</span>
+                            <a href="katalog.html" class="font-bold text-kumbung-moss hover:underline">Pesan Jamur &rarr;</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Article 2 -->
+                <div class="fungi-card bg-kumbung-oyster rounded-3xl border border-kumbung-border overflow-hidden flex flex-col justify-between">
+                    <div class="h-48 overflow-hidden bg-amber-50">
+                        <img src="https://images.unsplash.com/photo-1504674900247-0877df9cc836?q=80&w=600&auto=format&fit=crop" 
+                             alt="Jamur Tiram Cokelat vs Putih" class="w-full h-full object-cover">
+                    </div>
+                    <div class="p-6 flex-1 flex flex-col justify-between">
+                        <div>
+                            <span class="text-[10px] bg-amber-800 text-white px-2 py-0.5 rounded font-bold uppercase">Panduan Memasak</span>
+                            <h3 class="text-base font-bold text-slate-900 font-mono mt-2">
+                                Tiram Putih vs Tiram Cokelat: Mana yang Lebih Cocok untuk Masakan Anda?
+                            </h3>
+                            <p class="text-xs text-slate-600 mt-2 leading-relaxed">
+                                Tiram putih unggul untuk gorengan crispy dan sup, sedangkan tiram cokelat memiliki serat lebih kenyal yang sangat nikmat untuk steak & sate nabati.
+                            </p>
+                        </div>
+                        <div class="mt-4 pt-3 border-t border-kumbung-border flex items-center justify-between text-xs">
+                            <span class="text-slate-400">5 Menit Baca</span>
+                            <a href="detail.html" class="font-bold text-kumbung-moss hover:underline">Cek Varietas &rarr;</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Article 3 -->
+                <div class="fungi-card bg-kumbung-oyster rounded-3xl border border-kumbung-border overflow-hidden flex flex-col justify-between">
+                    <div class="h-48 overflow-hidden bg-slate-100">
+                        <img src="https://images.unsplash.com/photo-1543881477-8495632a52df?q=80&w=600&auto=format&fit=crop" 
+                             alt="Penyimpanan Jamur di Kulkas" class="w-full h-full object-cover">
+                    </div>
+                    <div class="p-6 flex-1 flex flex-col justify-between">
+                        <div>
+                            <span class="text-[10px] bg-blue-700 text-white px-2 py-0.5 rounded font-bold uppercase">Tips Dapur</span>
+                            <h3 class="text-base font-bold text-slate-900 font-mono mt-2">
+                                Cara Menyimpan Jamur Tiram Agar Tetap Kesat & Tidak Berlendir di Kulkas
+                            </h3>
+                            <p class="text-xs text-slate-600 mt-2 leading-relaxed">
+                                Hindari kantong plastik kedap udara. Bungkus jamur tiram yang belum dicuci menggunakan kertas buram atau paper bag untuk menyerap uap air.
+                            </p>
+                        </div>
+                        <div class="mt-4 pt-3 border-t border-kumbung-border flex items-center justify-between text-xs">
+                            <span class="text-slate-400">3 Menit Baca</span>
+                            <a href="detail.html" class="font-bold text-kumbung-moss hover:underline">Baca Selengkapnya &rarr;</a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- 7. FOOTER -->
+    <footer class="bg-stone-900 text-stone-400 text-xs pt-16 pb-36 border-t border-stone-800 font-sans">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-10 pb-12 border-b border-stone-800">
+                <div class="lg:col-span-2 space-y-4">
+                    <a href="index.html" class="flex items-center gap-3">
+                        <div class="w-10 h-10 bg-gradient-to-br from-kumbung-taupe to-kumbung-moss text-white flex items-center justify-center text-xl font-bold rounded-xl">
+                            <i class="fa-solid fa-cubes-stacked"></i>
+                        </div>
+                        <span class="text-2xl font-extrabold text-white tracking-tight font-mono">
+                            MESTIKA<span class="text-kumbung-moss">.</span>
+                        </span>
+                    </a>
+                    <p class="text-xs text-stone-400 leading-relaxed max-w-sm">
+                        Budidaya jamur tiram putih & cokelat segar dengan sistem kelembapan kabut mikro alami. Memproduksi jamur konsumsi bersih petik subuh dan bibit baglog media serbuk kayu sengon steril.
+                    </p>
+                </div>
+                <div>
+                    <h4 class="text-xs font-bold text-white uppercase tracking-wider mb-4">Navigasi Halaman</h4>
+                    <ul class="space-y-2.5">
+                        <li><a href="index.html" class="hover:text-emerald-400 transition">Beranda Utama</a></li>
+                        <li><a href="katalog.html" class="hover:text-emerald-400 transition">Koleksi Jamur Segar</a></li>
+                        <li><a href="detail.html" class="hover:text-emerald-400 transition">Detail Tiram Putih</a></li>
+                        <li><a href="tentang.html" class="hover:text-emerald-400 transition">Kumbung & Baglog</a></li>
+                        <li><a href="artikel.html" class="hover:text-emerald-400 transition">Tips & Resep Olahan</a></li>
+                        <li><a href="kontak.html" class="hover:text-emerald-400 transition">Pemesanan & Pasokan</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-xs font-bold text-white uppercase tracking-wider mb-4">Koleksi Jamur</h4>
+                    <ul class="space-y-2.5">
+                        <li><a href="detail.html" class="hover:text-emerald-400 transition">Jamur Tiram Putih Segar</a></li>
+                        <li><a href="detail.html" class="hover:text-emerald-400 transition">Jamur Tiram Cokelat Daging</a></li>
+                        <li><a href="detail.html" class="hover:text-emerald-400 transition">Baglog Siap Panen Rumahan</a></li>
+                        <li><a href="katalog.html" class="hover:text-emerald-400 transition">Jamur Kuping Hitam Segar</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-xs font-bold text-white uppercase tracking-wider mb-4">Pusat Budidaya Kumbung</h4>
+                    <p class="text-xs text-stone-400 leading-relaxed mb-3">
+                        Kawasan Sentra Jamur Tiram Lereng Gunung Ungaran, Bandungan - Jawa Tengah, Indonesia.
+                    </p>
+                    <p class="text-xs text-emerald-400 font-bold mb-1"><i class="fa-solid fa-phone mr-1.5"></i> +62 812-3456-7890</p>
+                    <p class="text-xs text-stone-400"><i class="fa-solid fa-envelope mr-1.5"></i> order@kumbungmestika.com</p>
+                </div>
+            </div>
+            <div class="pt-8 flex flex-col sm:flex-row items-center justify-between gap-4 text-[11px] text-stone-500">
+                <p>&copy; 2026 KUMBUNG MESTIKA Misty Fungi Farm. All rights reserved.</p>
+                <div class="flex items-center gap-4">
+                    <span>100% Organik Bebas Formalin</span>
+                    <span>•</span>
+                    <span>Payung Tebal Kadar Air Rendah</span>
+                    <span>•</span>
+                    <span>Bibit Baglog Unggul</span>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- 8. FLOATING WHATSAPP BUTTON (bottom-24) -->
+    <div class="fixed bottom-24 right-5 z-40">
+        <a href="https://wa.me/6281234567890?text=Halo%20Admin%20Kumbung%20Mestika,%20saya%20ingin%20tanya%20tips%20baglog%20jamur." 
+           target="_blank" 
+           aria-label="Chat WhatsApp Kumbung Mestika"
+           class="group flex items-center gap-3 bg-gradient-to-r from-emerald-600 to-emerald-700 hover:from-emerald-700 hover:to-emerald-800 text-white px-4 py-3.5 rounded-full shadow-2xl transition-all transform hover:scale-105 border-2 border-white">
+            <i class="fa-brands fa-whatsapp text-2xl animate-pulse"></i>
+            <span class="text-xs font-bold tracking-wide pr-1 hidden sm:inline">Pesan Jamur Tiram WA</span>
+        </a>
+    </div>
+
+    <!-- 9. STICKY DEMO & SALES BAR (fixed bottom-4) -->
+    <div class="fixed bottom-4 left-4 right-4 z-50 max-w-5xl mx-auto">
+      <div class="bg-stone-900/95 backdrop-blur-md text-white px-4 sm:px-6 py-3.5 rounded-2xl shadow-2xl border border-stone-700 flex flex-col md:flex-row items-center justify-between gap-3">
+        <div class="flex items-center gap-3 text-left w-full md:w-auto">
+          <div class="w-9 h-9 rounded-xl bg-emerald-500/20 border border-emerald-400/40 flex items-center justify-center shrink-0">
+            <i class="fa-solid fa-cubes-stacked text-emerald-400 text-sm"></i>
+          </div>
+          <div>
+            <div class="text-xs md:text-sm font-bold text-stone-100 flex items-center gap-2">
+              <span>Lentera Pasar Demo</span>
+              <span class="text-[10px] px-2 py-0.5 rounded bg-emerald-500/20 text-emerald-300 font-bold">Artikel & Panduan Baglog</span>
+            </div>
+            <p class="text-[11px] text-stone-400 hidden sm:block">Desain Misty Kumbung Farm sejuk untuk agrobisnis jamur tiram, bibit baglog, & pasokan industri crispy.</p>
+          </div>
+        </div>
+        <div class="flex items-center gap-3 w-full md:w-auto justify-end">
+          <a href="https://wa.me/6281234567890?text=Halo%20Tim%20Lentera%20Pasar,%20saya%20tertarik%20menggunakan%20template%20website%20Jamur%20Tiram%20ini." 
+             target="_blank"
+             class="w-full md:w-auto inline-flex items-center justify-center gap-2 bg-gradient-to-r from-emerald-600 to-kumbung-moss hover:from-emerald-500 hover:to-emerald-800 text-white text-xs md:text-sm font-bold px-5 py-2.5 rounded-xl shadow-lg transition-all hover:scale-105 shrink-0">
+            <span>Gunakan Template Ini</span>
+            <i class="fa-solid fa-arrow-right text-xs"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <!-- SCRIPT MOBILE MENU -->
+    <script>
+        const mobileMenuBtn = document.getElementById('mobileMenuBtn');
+        const mobileMenu = document.getElementById('mobileMenu');
+        const menuIcon = document.getElementById('menuIcon');
+
+        mobileMenuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+            if (mobileMenu.classList.contains('hidden')) {
+                menuIcon.classList.remove('fa-xmark');
+                menuIcon.classList.add('fa-bars');
+            } else {
+                menuIcon.classList.remove('fa-bars');
+                menuIcon.classList.add('fa-xmark');
+            }
+        });
+    </script>
+</body>
+</html>

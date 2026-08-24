@@ -1,0 +1,468 @@
+<!DOCTYPE html>
+<html lang="id" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kumbung & Sistem Budidaya Jamur // KUMBUNG MESTIKA</title>
+    <meta name="description" content="Mengenal rumah budidaya jamur (kumbung) Mestika di lereng Gunung Ungaran: Pengaturan kelembapan uap kabut mikro alami, media serbuk sengon steril, dan bibit miselium unggul.">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome 6 -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        kumbung: {
+                            oyster: '#F9F7F3',
+                            mist: '#F1ECE3',
+                            border: '#DFD9CE',
+                            taupe: '#4A3B32',
+                            taupedark: '#382C25',
+                            taupelight: '#665347',
+                            moss: '#3D6E50',
+                            mossdark: '#2F563E',
+                            mosslight: '#EBF3EE',
+                            charcoal: '#26211E'
+                        }
+                    },
+                    fontFamily: {
+                        sans: ['"Plus Jakarta Sans"', 'sans-serif'],
+                        mono: ['"Space Grotesk"', 'sans-serif']
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        .no-scrollbar::-webkit-scrollbar { display: none; }
+        .no-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
+
+        .kumbung-hero-bg {
+            background: linear-gradient(180deg, #F1ECE3 0%, #F9F7F3 100%);
+        }
+    </style>
+</head>
+<body class="bg-kumbung-oyster text-kumbung-charcoal font-sans antialiased selection:bg-kumbung-moss selection:text-white">
+
+    <!-- 1. TOP ANNOUNCEMENT BAR -->
+    <div class="bg-kumbung-taupe text-amber-100 text-xs py-2.5 px-4 font-sans font-medium shadow-inner">
+        <div class="max-w-7xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-2 text-center sm:text-left">
+            <div class="flex items-center justify-center gap-2">
+                <span class="px-2 py-0.5 bg-kumbung-moss text-white text-[10px] uppercase font-bold tracking-wider rounded-md shadow-xs flex items-center gap-1">
+                    <i class="fa-solid fa-seedling text-emerald-200"></i> DEDIKASI KUMBUNG ALAMI
+                </span>
+                <span class="text-white/95 font-medium">Budidaya Jamur Sejuk Lereng Gunung Ungaran • Media Serbuk Kayu Sengon Steril</span>
+            </div>
+            <div class="flex items-center gap-4 text-xs">
+                <a href="katalog.html" class="text-amber-300 hover:underline font-bold transition flex items-center gap-1">
+                    Lihat Hasil Panen <i class="fa-solid fa-arrow-right text-[10px]"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- 2. NAVBAR -->
+    <header class="sticky top-0 z-40 bg-white/95 backdrop-blur-md border-b border-kumbung-border transition-all shadow-xs">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-20 sm:h-24">
+                
+                <!-- Logo -->
+                <a href="index.html" class="flex items-center gap-3.5 group">
+                    <div class="w-12 h-12 bg-gradient-to-br from-kumbung-taupe to-kumbung-moss text-white flex items-center justify-center text-2xl font-bold rounded-2xl shadow-md group-hover:scale-105 transition">
+                        <i class="fa-solid fa-cubes-stacked"></i>
+                    </div>
+                    <div class="flex flex-col">
+                        <span class="text-2xl sm:text-3xl font-extrabold tracking-tight text-kumbung-taupe uppercase leading-none font-mono">
+                            MESTIKA<span class="text-kumbung-moss">.</span>
+                        </span>
+                        <span class="text-[9px] tracking-[0.28em] text-kumbung-moss uppercase mt-1 font-bold">
+                            MISTY FUNGI CULTIVATION
+                        </span>
+                    </div>
+                </a>
+
+                <!-- Desktop Navigation Links -->
+                <nav class="hidden lg:flex items-center gap-7 text-xs font-bold tracking-wider uppercase text-slate-700 font-sans">
+                    <a href="index.html" class="hover:text-kumbung-moss transition">Beranda</a>
+                    <a href="katalog.html" class="hover:text-kumbung-moss transition">Koleksi Jamur</a>
+                    <a href="detail.html" class="hover:text-kumbung-moss transition">Detail Tiram Putih</a>
+                    <a href="tentang.html" class="text-kumbung-moss border-b-2 border-kumbung-moss pb-1 font-bold">Kumbung & Media Baglog</a>
+                    <a href="artikel.html" class="hover:text-kumbung-moss transition">Tips Rawat & Olahan</a>
+                    <a href="kontak.html" class="hover:text-kumbung-moss transition">Lumbung & Pasokan Resto</a>
+                </nav>
+
+                <!-- Actions -->
+                <div class="hidden sm:flex items-center gap-3">
+                    <a href="https://wa.me/6281234567890?text=Halo%20Admin%20Kumbung%20Mestika,%20saya%20ingin%20tanya%20profil%20budidaya%20jamur." 
+                       target="_blank"
+                       class="inline-flex items-center gap-2 px-4 py-2.5 bg-kumbung-moss hover:bg-kumbung-mossdark text-xs font-bold text-white rounded-xl transition shadow-md hover:shadow-lg">
+                        <i class="fa-brands fa-whatsapp text-base"></i>
+                        <span>Hubungi Kebun WA</span>
+                    </a>
+                </div>
+
+                <!-- Mobile Menu Button -->
+                <div class="flex lg:hidden items-center gap-2">
+                    <a href="https://wa.me/6281234567890" target="_blank" class="p-2.5 bg-emerald-100 text-emerald-800 rounded-xl text-sm">
+                        <i class="fa-brands fa-whatsapp"></i>
+                    </a>
+                    <button id="mobileMenuBtn" class="p-2.5 text-slate-700 hover:text-kumbung-moss focus:outline-hidden rounded-xl bg-amber-50">
+                        <i id="menuIcon" class="fa-solid fa-bars text-xl"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Mobile Dropdown Menu -->
+        <div id="mobileMenu" class="hidden lg:hidden border-t border-kumbung-border bg-white/98 px-6 py-5 shadow-xl">
+            <div class="flex flex-col gap-4 text-sm font-bold uppercase text-slate-700">
+                <a href="index.html" class="hover:text-kumbung-moss transition flex items-center justify-between">
+                    <span>Beranda</span>
+                    <i class="fa-solid fa-chevron-right text-xs"></i>
+                </a>
+                <a href="katalog.html" class="hover:text-kumbung-moss transition flex items-center justify-between">
+                    <span>Koleksi Jamur Segar</span>
+                    <i class="fa-solid fa-chevron-right text-xs"></i>
+                </a>
+                <a href="detail.html" class="hover:text-kumbung-moss transition flex items-center justify-between">
+                    <span>Detail Produk & Mutu Payung</span>
+                    <i class="fa-solid fa-chevron-right text-xs"></i>
+                </a>
+                <a href="tentang.html" class="text-kumbung-moss flex items-center justify-between">
+                    <span>Kumbung & Sistem Kelembapan</span>
+                    <i class="fa-solid fa-chevron-right text-xs"></i>
+                </a>
+                <a href="artikel.html" class="hover:text-kumbung-moss transition flex items-center justify-between">
+                    <span>Panduan Baglog & Resep Crispy</span>
+                    <i class="fa-solid fa-chevron-right text-xs"></i>
+                </a>
+                <a href="kontak.html" class="hover:text-kumbung-moss transition flex items-center justify-between">
+                    <span>Pemesanan & Pasokan Grosir</span>
+                    <i class="fa-solid fa-chevron-right text-xs"></i>
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- 3. HERO ABOUT SECTION -->
+    <section class="py-14 md:py-20 kumbung-hero-bg border-b border-kumbung-border">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 items-center">
+                
+                <div class="lg:col-span-7 space-y-5">
+                    <span class="px-3.5 py-1 rounded-full bg-emerald-100 text-kumbung-moss text-xs font-bold uppercase tracking-wider">
+                        OUR CULTIVATION PHILOSOPHY
+                    </span>
+                    <h1 class="text-3xl sm:text-5xl font-extrabold text-kumbung-taupe font-mono leading-[1.15]">
+                        Seni Merawat Kumbung Sejuk & <br>
+                        <span class="text-transparent bg-clip-text bg-gradient-to-r from-kumbung-moss via-emerald-700 to-kumbung-taupe">
+                            Kemurnian Media Jamur Tiram
+                        </span>
+                    </h1>
+                    <p class="text-slate-600 text-sm sm:text-base leading-relaxed max-w-2xl">
+                        <strong>KUMBUNG MESTIKA</strong> berakar dari kecintaan pada bioteknologi mikologi alami. Berlokasi di lereng sejuk Gunung Ungaran pada ketinggian 750 mdpl, kami mengombinasikan iklim mikro pegunungan dengan teknologi sterilisasi modern untuk menghasilkan jamur tiram bertekstur tebal, kenyal, dan bebas residu pestisida kimia.
+                    </p>
+                    <div class="flex flex-wrap items-center gap-4 pt-2">
+                        <div class="flex items-center gap-2 text-xs font-bold text-slate-800 bg-white px-4 py-2 rounded-xl border border-kumbung-border shadow-xs">
+                            <i class="fa-solid fa-temperature-half text-blue-500"></i> Suhu Kumbung 20°C - 24°C
+                        </div>
+                        <div class="flex items-center gap-2 text-xs font-bold text-slate-800 bg-white px-4 py-2 rounded-xl border border-kumbung-border shadow-xs">
+                            <i class="fa-solid fa-tree text-emerald-600"></i> Serbuk Sengon Steril Autoclave
+                        </div>
+                    </div>
+                </div>
+
+                <div class="lg:col-span-5 relative">
+                    <div class="rounded-3xl overflow-hidden shadow-2xl border-4 border-white bg-slate-100">
+                        <img src="https://images.unsplash.com/photo-1543881477-8495632a52df?q=80&w=1000&auto=format&fit=crop" 
+                             alt="Kumbung Jamur Tiram Sejuk Lembap" 
+                             class="w-full h-96 object-cover transform hover:scale-105 transition-all duration-700">
+                    </div>
+                    <div class="absolute -bottom-4 -left-4 bg-kumbung-taupe text-white p-4 rounded-2xl shadow-xl border border-amber-900">
+                        <p class="text-xl font-black text-amber-300 font-mono">12 Kumbung</p>
+                        <p class="text-[11px] text-amber-100">60.000+ Populasi Baglog</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- 4. KEY METRICS -->
+    <section class="py-12 bg-white border-b border-kumbung-border">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-2 lg:grid-cols-4 gap-6 text-center">
+                <div class="p-6 rounded-2xl bg-kumbung-oyster border border-kumbung-border">
+                    <p class="text-3xl sm:text-4xl font-extrabold text-kumbung-taupe font-mono">12 Unit</p>
+                    <p class="text-xs text-slate-600 font-bold uppercase mt-1">Rumah Kumbung Sejuk</p>
+                </div>
+                <div class="p-6 rounded-2xl bg-kumbung-oyster border border-kumbung-border">
+                    <p class="text-3xl sm:text-4xl font-extrabold text-kumbung-moss font-mono">500+ kg</p>
+                    <p class="text-xs text-slate-600 font-bold uppercase mt-1">Petik Subuh Harian</p>
+                </div>
+                <div class="p-6 rounded-2xl bg-kumbung-oyster border border-kumbung-border">
+                    <p class="text-3xl sm:text-4xl font-extrabold text-amber-700 font-mono">0% Kimia</p>
+                    <p class="text-xs text-slate-600 font-bold uppercase mt-1">Bebas Formalin & Pestisida</p>
+                </div>
+                <div class="p-6 rounded-2xl bg-kumbung-oyster border border-kumbung-border">
+                    <p class="text-3xl sm:text-4xl font-extrabold text-slate-900 font-mono">45 Mitra</p>
+                    <p class="text-xs text-slate-600 font-bold uppercase mt-1">Petani Binaan Baglog</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 5. 4 PILAR BUDIDAYA KUMBUNG MESTIKA -->
+    <section class="py-16 md:py-20 bg-kumbung-oyster">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-2xl mx-auto mb-14">
+                <span class="px-3 py-1 bg-emerald-100 text-kumbung-moss text-xs font-bold uppercase rounded-md tracking-wider">
+                    OUR STANDARD PROCESS
+                </span>
+                <h2 class="text-2xl sm:text-4xl font-extrabold text-kumbung-taupe font-mono mt-3 mb-3">
+                    4 Pilar Kualitas Budidaya Kumbung Mestika
+                </h2>
+                <p class="text-slate-600 text-sm">
+                    Dari pemilihan serbuk kayu hingga pemetikan subuh yang presisi untuk mempertahankan kesegaran.
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                
+                <!-- Pillar 1 -->
+                <div class="bg-white rounded-3xl p-8 border border-kumbung-border shadow-xs flex items-start gap-5">
+                    <div class="w-14 h-14 rounded-2xl bg-kumbung-moss text-white flex items-center justify-center text-2xl shrink-0 shadow-xs">
+                        <i class="fa-solid fa-cloud-rain"></i>
+                    </div>
+                    <div class="space-y-2">
+                        <h3 class="text-lg font-bold text-slate-900 font-mono">1. Sistem Kabut Mikro (Micro-Mist Fogger)</h3>
+                        <p class="text-xs text-slate-600 leading-relaxed">
+                            Nozzle pengkabut berukuran 5 mikron menyebarkan partikel air halus ke udara kumbung, menjaga kelembapan 85-90% tanpa menimbulkan tetesan air berat yang membuat tudung jamur menjadi becek atau cepat busuk.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Pillar 2 -->
+                <div class="bg-white rounded-3xl p-8 border border-kumbung-border shadow-xs flex items-start gap-5">
+                    <div class="w-14 h-14 rounded-2xl bg-kumbung-taupe text-white flex items-center justify-center text-2xl shrink-0 shadow-xs">
+                        <i class="fa-solid fa-tree"></i>
+                    </div>
+                    <div class="space-y-2">
+                        <h3 class="text-lg font-bold text-slate-900 font-mono">2. Media Serbuk Kayu Sengon Pilihan</h3>
+                        <p class="text-xs text-slate-600 leading-relaxed">
+                            Kami hanya menggunakan serbuk gergaji kayu sengon lunak yang telah diayak bersih. Bebas getah damar kayu keras, diperkaya nutrisi dedak bekatul padi organik dan kalsium karbonat (kapur dolomit) untuk ketebalan payung.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Pillar 3 -->
+                <div class="bg-white rounded-3xl p-8 border border-kumbung-border shadow-xs flex items-start gap-5">
+                    <div class="w-14 h-14 rounded-2xl bg-amber-700 text-white flex items-center justify-center text-2xl shrink-0 shadow-xs">
+                        <i class="fa-solid fa-temperature-high"></i>
+                    </div>
+                    <div class="space-y-2">
+                        <h3 class="text-lg font-bold text-slate-900 font-mono">3. Pasteurisasi Uap Steam Panas 100°C</h3>
+                        <p class="text-xs text-slate-600 leading-relaxed">
+                            Baglog dimasukkan ke dalam steamer boiler khusus selama 8-10 jam hingga suhu inti mencapai 100°C untuk mematikan seluruh spora jamur liar dan bakteri pengganggu, menghasilkan media steril bebas kapang hijau.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Pillar 4 -->
+                <div class="bg-white rounded-3xl p-8 border border-kumbung-border shadow-xs flex items-start gap-5">
+                    <div class="w-14 h-14 rounded-2xl bg-slate-900 text-white flex items-center justify-center text-2xl shrink-0 shadow-xs">
+                        <i class="fa-solid fa-flask-vial"></i>
+                    </div>
+                    <div class="space-y-2">
+                        <h3 class="text-lg font-bold text-slate-900 font-mono">4. Ruang Inokulasi Bibit Bertekanan Positif</h3>
+                        <p class="text-xs text-slate-600 leading-relaxed">
+                            Pemberian bibit F2/F3 indukan murni dilakukan di ruang steril berlampu UV dan HEPA filter laminar flow, memastikan miselium putih merambat agresif tanpa kontaminasi udara luar.
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- 6. PROFIL PRAKTISI MIKOLOGI -->
+    <section class="py-16 md:py-20 bg-white border-t border-kumbung-border">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-2xl mx-auto mb-14">
+                <span class="px-3 py-1 bg-amber-100 text-kumbung-taupe text-xs font-bold uppercase rounded-md tracking-wider">
+                    OUR MUSHROOM GROWERS
+                </span>
+                <h2 class="text-2xl sm:text-4xl font-extrabold text-kumbung-taupe font-mono mt-3 mb-3">
+                    Sosok di Balik Kebun Kumbung Mestika
+                </h2>
+                <p class="text-slate-600 text-sm">
+                    Dedikasi belasan tahun merawat siklus jamur tiram nusantara.
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                
+                <!-- Person 1 -->
+                <div class="bg-kumbung-oyster rounded-3xl p-6 border border-kumbung-border text-center flex flex-col items-center">
+                    <div class="w-24 h-24 rounded-full bg-emerald-200 text-emerald-900 flex items-center justify-center text-4xl mb-4 border-2 border-emerald-400">
+                        👨‍🌾
+                    </div>
+                    <h3 class="text-base font-bold text-slate-900 font-mono">Joko Subroto</h3>
+                    <p class="text-xs font-semibold text-kumbung-moss mt-0.5">Pendiri & Master Grower</p>
+                    <p class="text-xs text-slate-600 mt-3 leading-relaxed">
+                        "Jamur tiram adalah anugerah pangan yang luar biasa. Jika kita menjaga kebersihan kumbung dan kelembapan kabutnya, jamur akan tumbuh tebal dengan rasa manis gurih alami tanpa perlu kimia sama sekali."
+                    </p>
+                </div>
+
+                <!-- Person 2 -->
+                <div class="bg-kumbung-oyster rounded-3xl p-6 border border-kumbung-border text-center flex flex-col items-center">
+                    <div class="w-24 h-24 rounded-full bg-blue-200 text-blue-900 flex items-center justify-center text-4xl mb-4 border-2 border-blue-400">
+                        👩‍🔬
+                    </div>
+                    <h3 class="text-base font-bold text-slate-900 font-mono">Ratih Prabandari, S.Si</h3>
+                    <p class="text-xs font-semibold text-blue-800 mt-0.5">Mikrobiolog Kultur Bibit</p>
+                    <p class="text-xs text-slate-600 mt-3 leading-relaxed">
+                        "Kami membiakkan bibit jamur F1 hingga F2 secara terisolasi di laboratorium, memastikan benang miselium memiliki daya tumbuh serempak dan daya tahan tinggi terhadap penyakit jamur liar."
+                    </p>
+                </div>
+
+                <!-- Person 3 -->
+                <div class="bg-kumbung-oyster rounded-3xl p-6 border border-kumbung-border text-center flex flex-col items-center">
+                    <div class="w-24 h-24 rounded-full bg-amber-200 text-amber-900 flex items-center justify-center text-4xl mb-4 border-2 border-amber-400">
+                        👨‍🌾
+                    </div>
+                    <h3 class="text-base font-bold text-slate-900 font-mono">Bambang Irawan</h3>
+                    <p class="text-xs font-semibold text-amber-800 mt-0.5">Supervisor Panen Petik Subuh</p>
+                    <p class="text-xs text-slate-600 mt-3 leading-relaxed">
+                        "Setiap subuh jam 5 kami menyortir payung jamur satu per satu. Yang dikirim ke resto dan pedagang hanya jamur dengan ketebalan standar grade A dan akar yang sudah terpotong bersih."
+                    </p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- 7. FOOTER -->
+    <footer class="bg-stone-900 text-stone-400 text-xs pt-16 pb-36 border-t border-stone-800 font-sans">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-10 pb-12 border-b border-stone-800">
+                <div class="lg:col-span-2 space-y-4">
+                    <a href="index.html" class="flex items-center gap-3">
+                        <div class="w-10 h-10 bg-gradient-to-br from-kumbung-taupe to-kumbung-moss text-white flex items-center justify-center text-xl font-bold rounded-xl">
+                            <i class="fa-solid fa-cubes-stacked"></i>
+                        </div>
+                        <span class="text-2xl font-extrabold text-white tracking-tight font-mono">
+                            MESTIKA<span class="text-kumbung-moss">.</span>
+                        </span>
+                    </a>
+                    <p class="text-xs text-stone-400 leading-relaxed max-w-sm">
+                        Budidaya jamur tiram putih & cokelat segar dengan sistem kelembapan kabut mikro alami. Memproduksi jamur konsumsi bersih petik subuh dan bibit baglog media serbuk kayu sengon steril.
+                    </p>
+                </div>
+                <div>
+                    <h4 class="text-xs font-bold text-white uppercase tracking-wider mb-4">Navigasi Halaman</h4>
+                    <ul class="space-y-2.5">
+                        <li><a href="index.html" class="hover:text-emerald-400 transition">Beranda Utama</a></li>
+                        <li><a href="katalog.html" class="hover:text-emerald-400 transition">Koleksi Jamur Segar</a></li>
+                        <li><a href="detail.html" class="hover:text-emerald-400 transition">Detail Tiram Putih</a></li>
+                        <li><a href="tentang.html" class="hover:text-emerald-400 transition">Kumbung & Baglog</a></li>
+                        <li><a href="artikel.html" class="hover:text-emerald-400 transition">Tips & Resep Olahan</a></li>
+                        <li><a href="kontak.html" class="hover:text-emerald-400 transition">Pemesanan & Pasokan</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-xs font-bold text-white uppercase tracking-wider mb-4">Koleksi Jamur</h4>
+                    <ul class="space-y-2.5">
+                        <li><a href="detail.html" class="hover:text-emerald-400 transition">Jamur Tiram Putih Segar</a></li>
+                        <li><a href="detail.html" class="hover:text-emerald-400 transition">Jamur Tiram Cokelat Daging</a></li>
+                        <li><a href="detail.html" class="hover:text-emerald-400 transition">Baglog Siap Panen Rumahan</a></li>
+                        <li><a href="katalog.html" class="hover:text-emerald-400 transition">Jamur Kuping Hitam Segar</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-xs font-bold text-white uppercase tracking-wider mb-4">Pusat Budidaya Kumbung</h4>
+                    <p class="text-xs text-stone-400 leading-relaxed mb-3">
+                        Kawasan Sentra Jamur Tiram Lereng Gunung Ungaran, Bandungan - Jawa Tengah, Indonesia.
+                    </p>
+                    <p class="text-xs text-emerald-400 font-bold mb-1"><i class="fa-solid fa-phone mr-1.5"></i> +62 812-3456-7890</p>
+                    <p class="text-xs text-stone-400"><i class="fa-solid fa-envelope mr-1.5"></i> order@kumbungmestika.com</p>
+                </div>
+            </div>
+            <div class="pt-8 flex flex-col sm:flex-row items-center justify-between gap-4 text-[11px] text-stone-500">
+                <p>&copy; 2026 KUMBUNG MESTIKA Misty Fungi Farm. All rights reserved.</p>
+                <div class="flex items-center gap-4">
+                    <span>100% Organik Bebas Formalin</span>
+                    <span>•</span>
+                    <span>Payung Tebal Kadar Air Rendah</span>
+                    <span>•</span>
+                    <span>Bibit Baglog Unggul</span>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- 8. FLOATING WHATSAPP BUTTON (bottom-24) -->
+    <div class="fixed bottom-24 right-5 z-40">
+        <a href="https://wa.me/6281234567890?text=Halo%20Admin%20Kumbung%20Mestika,%20saya%20ingin%20tanya%20profil%20budidaya%20jamur." 
+           target="_blank" 
+           aria-label="Chat WhatsApp Kumbung Mestika"
+           class="group flex items-center gap-3 bg-gradient-to-r from-emerald-600 to-emerald-700 hover:from-emerald-700 hover:to-emerald-800 text-white px-4 py-3.5 rounded-full shadow-2xl transition-all transform hover:scale-105 border-2 border-white">
+            <i class="fa-brands fa-whatsapp text-2xl animate-pulse"></i>
+            <span class="text-xs font-bold tracking-wide pr-1 hidden sm:inline">Pesan Jamur Tiram WA</span>
+        </a>
+    </div>
+
+    <!-- 9. STICKY DEMO & SALES BAR (fixed bottom-4) -->
+    <div class="fixed bottom-4 left-4 right-4 z-50 max-w-5xl mx-auto">
+      <div class="bg-stone-900/95 backdrop-blur-md text-white px-4 sm:px-6 py-3.5 rounded-2xl shadow-2xl border border-stone-700 flex flex-col md:flex-row items-center justify-between gap-3">
+        <div class="flex items-center gap-3 text-left w-full md:w-auto">
+          <div class="w-9 h-9 rounded-xl bg-emerald-500/20 border border-emerald-400/40 flex items-center justify-center shrink-0">
+            <i class="fa-solid fa-cubes-stacked text-emerald-400 text-sm"></i>
+          </div>
+          <div>
+            <div class="text-xs md:text-sm font-bold text-stone-100 flex items-center gap-2">
+              <span>Lentera Pasar Demo</span>
+              <span class="text-[10px] px-2 py-0.5 rounded bg-emerald-500/20 text-emerald-300 font-bold">Tentang Budidaya Kumbung</span>
+            </div>
+            <p class="text-[11px] text-stone-400 hidden sm:block">Desain Misty Kumbung Farm sejuk untuk agrobisnis jamur tiram, bibit baglog, & pasokan industri crispy.</p>
+          </div>
+        </div>
+        <div class="flex items-center gap-3 w-full md:w-auto justify-end">
+          <a href="https://wa.me/6281234567890?text=Halo%20Tim%20Lentera%20Pasar,%20saya%20tertarik%20menggunakan%20template%20website%20Jamur%20Tiram%20ini." 
+             target="_blank"
+             class="w-full md:w-auto inline-flex items-center justify-center gap-2 bg-gradient-to-r from-emerald-600 to-kumbung-moss hover:from-emerald-500 hover:to-emerald-800 text-white text-xs md:text-sm font-bold px-5 py-2.5 rounded-xl shadow-lg transition-all hover:scale-105 shrink-0">
+            <span>Gunakan Template Ini</span>
+            <i class="fa-solid fa-arrow-right text-xs"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <!-- SCRIPT MOBILE MENU -->
+    <script>
+        const mobileMenuBtn = document.getElementById('mobileMenuBtn');
+        const mobileMenu = document.getElementById('mobileMenu');
+        const menuIcon = document.getElementById('menuIcon');
+
+        mobileMenuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+            if (mobileMenu.classList.contains('hidden')) {
+                menuIcon.classList.remove('fa-xmark');
+                menuIcon.classList.add('fa-bars');
+            } else {
+                menuIcon.classList.remove('fa-bars');
+                menuIcon.classList.add('fa-xmark');
+            }
+        });
+    </script>
+</body>
+</html>
