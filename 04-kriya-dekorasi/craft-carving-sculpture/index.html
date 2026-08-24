@@ -1,0 +1,849 @@
+<!DOCTYPE html>
+<html lang="id" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ARTHAPATI // Master Sculpture, Wood Carving & Stone Relief Atelier</title>
+    <meta name="description" content="Studio seni pahat & ukir adiluhung: Mahakarya patung kayu jati solid, panel relief dinding batu paras Jogja, andesit candi, dan ornamen bambu bernilai estetika arsitektur tinggi.">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;600;700;800;900&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome 6 -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        arthapati: {
+                            basalt: '#1F2421',
+                            basaltdark: '#141815',
+                            basaltsoft: '#E8ECE9',
+                            teak: '#8B5E3C',
+                            teakdark: '#684328',
+                            teaksoft: '#F4ECE4',
+                            sandstone: '#F4EFE6',
+                            sandstonesoft: '#EAE2D3',
+                            border: '#D3C7B6',
+                            gold: '#C9A96E',
+                            golddark: '#A68446',
+                            charcoal: '#181C1A'
+                        }
+                    },
+                    fontFamily: {
+                        sans: ['"Plus Jakarta Sans"', 'sans-serif'],
+                        cinzel: ['"Cinzel"', 'serif'],
+                        mono: ['"Space Grotesk"', 'monospace']
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        .no-scrollbar::-webkit-scrollbar { display: none; }
+        .no-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
+
+        .sculpture-bg-pattern {
+            background-image: radial-gradient(#D3C7B6 0.75px, transparent 0.75px), radial-gradient(#D3C7B6 0.75px, #F4EFE6 0.75px);
+            background-size: 24px 24px;
+            background-position: 0 0, 12px 12px;
+        }
+
+        .btn-sculpt {
+            transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+        }
+        .btn-sculpt:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 14px 28px -8px rgba(139, 94, 60, 0.4);
+        }
+
+        .sculpture-card {
+            transition: all 0.35s ease;
+        }
+        .sculpture-card:hover {
+            transform: translateY(-5px);
+        }
+    </style>
+</head>
+<body class="bg-arthapati-sandstone text-arthapati-charcoal font-sans antialiased selection:bg-arthapati-teak selection:text-white">
+
+    <!-- 1. TOP ANNOUNCEMENT BAR -->
+    <div class="bg-arthapati-basaltdark text-arthapati-sandstone text-xs py-2.5 px-4 font-mono font-medium border-b border-arthapati-gold/30">
+        <div class="max-w-7xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-2 text-center sm:text-left">
+            <div class="flex items-center justify-center gap-2">
+                <span class="px-2 py-0.5 bg-arthapati-gold text-arthapati-basaltdark text-[10px] uppercase font-cinzel font-bold tracking-wider rounded">
+                    100% HAND-CARVED ART
+                </span>
+                <span class="text-white/95">Karya Seni Pahatan Asli Seniman Lokal • Pengiriman Aman Menggunakan Packing Peti Kayu Palet</span>
+            </div>
+            <div class="flex items-center gap-4 text-xs font-mono">
+                <span class="hidden md:inline text-arthapati-gold">Batu Paras Asli & Kayu Jati Solid TPK</span>
+                <span class="hidden md:inline text-white/30">•</span>
+                <a href="katalog.html" class="text-amber-300 hover:underline font-bold transition">Katalog Mahakarya &rarr;</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- 2. NAVBAR -->
+    <header class="sticky top-0 z-40 bg-arthapati-sandstone/95 backdrop-blur-md border-b border-arthapati-border transition-all">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-20 sm:h-24">
+                
+                <!-- Logo -->
+                <a href="index.html" class="flex items-center gap-3.5 group">
+                    <div class="w-12 h-12 bg-arthapati-basalt border border-arthapati-gold text-arthapati-gold flex items-center justify-center text-xl font-serif rounded-2xl shadow-md group-hover:bg-arthapati-teak transition">
+                        <i class="fa-solid fa-mountain-sun"></i>
+                    </div>
+                    <div class="flex flex-col">
+                        <span class="text-2xl sm:text-3xl font-cinzel font-black tracking-wider text-arthapati-basaltdark uppercase leading-none">
+                            ARTHAPATI<span class="text-arthapati-gold">.</span>
+                        </span>
+                        <span class="text-[9px] font-mono tracking-[0.28em] text-arthapati-teak uppercase mt-1 font-bold">
+                            SCULPTURE & STONE ATELIER
+                        </span>
+                    </div>
+                </a>
+
+                <!-- Desktop Navigation Links -->
+                <nav class="hidden lg:flex items-center gap-8 text-xs font-bold tracking-wider uppercase text-arthapati-charcoal/80 font-mono">
+                    <a href="index.html" class="text-arthapati-teak border-b-2 border-arthapati-teak pb-1 font-bold">Beranda</a>
+                    <a href="katalog.html" class="hover:text-arthapati-teak transition">Katalog Patung & Relief</a>
+                    <a href="detail.html" class="hover:text-arthapati-teak transition">Detail Patung Garuda Jati</a>
+                    <a href="tentang.html" class="hover:text-arthapati-teak transition">Maestro Pemahat</a>
+                    <a href="artikel.html" class="hover:text-arthapati-teak transition">Rawat Kayu & Pasang Relief</a>
+                    <a href="kontak.html" class="hover:text-arthapati-teak transition">Galeri & Kustom Villa</a>
+                </nav>
+
+                <!-- Actions -->
+                <div class="hidden sm:flex items-center gap-3 font-mono">
+                    <a href="#materialSection" class="inline-flex items-center gap-2 px-3.5 py-2.5 bg-white border border-arthapati-border hover:border-arthapati-teak text-xs font-bold text-arthapati-charcoal rounded-xl transition shadow-xs">
+                        <i class="fa-solid fa-gem text-arthapati-teak"></i>
+                        <span>Pilihan Media</span>
+                    </a>
+                    <a href="https://wa.me/6281234567890?text=Halo%20Atelier%20Arthapati,%20saya%20tertarik%20dengan%20koleksi%20patung%20dan%20relief%20pahat." target="_blank" class="inline-flex items-center gap-2 bg-arthapati-basalt hover:bg-arthapati-basaltdark text-arthapati-sandstone text-xs font-bold tracking-wider px-5 py-2.5 rounded-xl border border-arthapati-gold/40 transition-all shadow-md font-cinzel btn-sculpt">
+                        <i class="fa-brands fa-whatsapp text-sm text-green-400"></i>
+                        <span>Konsultasi Karya</span>
+                    </a>
+                </div>
+
+                <!-- Mobile Hamburger Button -->
+                <button id="mobileMenuBtn" class="lg:hidden p-2.5 text-arthapati-charcoal hover:text-arthapati-teak focus:outline-none" aria-label="Toggle Menu">
+                    <i id="menuIcon" class="fa-solid fa-bars text-xl"></i>
+                </button>
+            </div>
+        </div>
+
+        <!-- Mobile Drawer -->
+        <div id="mobileMenu" class="hidden lg:hidden bg-white border-b border-arthapati-border px-5 py-5 space-y-3 font-mono shadow-xl">
+            <a href="index.html" class="block text-xs font-bold uppercase tracking-wider text-arthapati-teak py-2 border-b border-arthapati-border">Beranda Utama</a>
+            <a href="katalog.html" class="block text-xs font-bold uppercase tracking-wider text-arthapati-charcoal hover:text-arthapati-teak py-2 border-b border-arthapati-border">Katalog Patung Kayu & Relief Batu</a>
+            <a href="detail.html" class="block text-xs font-bold uppercase tracking-wider text-arthapati-charcoal hover:text-arthapati-teak py-2 border-b border-arthapati-border">Detail Patung Garuda Jati</a>
+            <a href="tentang.html" class="block text-xs font-bold uppercase tracking-wider text-arthapati-charcoal hover:text-arthapati-teak py-2 border-b border-arthapati-border">Maestro Pemahat Tradisional</a>
+            <a href="artikel.html" class="block text-xs font-bold uppercase tracking-wider text-arthapati-charcoal hover:text-arthapati-teak py-2 border-b border-arthapati-border">Tips Perawatan & Instalasi</a>
+            <a href="kontak.html" class="block text-xs font-bold uppercase tracking-wider text-arthapati-charcoal hover:text-arthapati-teak py-2">Galeri & Relief Rumah</a>
+            <div class="pt-3">
+                <a href="https://wa.me/6281234567890?text=Halo%20Arthapati." target="_blank" class="w-full py-3 bg-arthapati-basalt text-arthapati-sandstone rounded-xl text-xs font-bold uppercase tracking-wider text-center flex items-center justify-center gap-2 font-cinzel border border-arthapati-gold">
+                    <i class="fa-brands fa-whatsapp text-green-300"></i> WhatsApp Fast Response
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- 3. DRAMATIC SCULPTURAL HERO SECTION -->
+    <section class="py-14 sm:py-22 lg:py-26 border-b border-arthapati-border bg-gradient-to-b from-arthapati-sandstonesoft via-arthapati-sandstone to-arthapati-sandstonesoft relative overflow-hidden">
+        <!-- Background pattern -->
+        <div class="absolute inset-0 sculpture-bg-pattern opacity-30 pointer-events-none"></div>
+
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+                
+                <!-- Left Content: Majestic Headline & Values -->
+                <div class="lg:col-span-7 space-y-6">
+                    <div class="inline-flex items-center gap-2.5 px-4 py-1.5 bg-white/90 border border-arthapati-border rounded-full text-xs font-mono text-arthapati-basaltdark shadow-xs">
+                        <span class="w-2 h-2 rounded-full bg-arthapati-gold animate-pulse"></span>
+                        <span class="font-bold tracking-wide">Timeless 3D Sculptures & Architectural Reliefs</span>
+                    </div>
+
+                    <h1 class="text-4xl sm:text-5xl lg:text-6xl font-cinzel font-black text-arthapati-basaltdark leading-[1.12] tracking-tight">
+                        Sculpted by <span class="italic text-arthapati-teak font-bold">Master Hands</span>, Rooted in Earth.
+                    </h1>
+
+                    <p class="text-base sm:text-lg text-arthapati-charcoal/80 leading-relaxed max-w-2xl font-sans">
+                        Karya seni pahatan tiga dimensi dan panel relief dinding bernilai arsitektural tinggi. Diciptakan dengan ketajaman tatah manual para maestro pemahat tradisional dari bahan batu paras Jogja asli, andesit candi, kayu jati tua, dan bambu petung pilihan.
+                    </p>
+
+                    <!-- Feature Attribute Strips -->
+                    <div class="grid grid-cols-2 sm:grid-cols-3 gap-3 pt-2 font-mono text-xs">
+                        <div class="flex items-center gap-2.5 bg-white/90 p-3.5 rounded-2xl border border-arthapati-border">
+                            <i class="fa-solid fa-hammer text-arthapati-teak text-sm"></i>
+                            <div>
+                                <p class="font-bold text-arthapati-basaltdark">Pahat Manual 100%</p>
+                                <p class="text-[10px] text-arthapati-charcoal/60">Tekstur Pahat Tajam Asli</p>
+                            </div>
+                        </div>
+                        <div class="flex items-center gap-2.5 bg-white/90 p-3.5 rounded-2xl border border-arthapati-border">
+                            <i class="fa-solid fa-tree text-arthapati-golddark text-sm"></i>
+                            <div>
+                                <p class="font-bold text-arthapati-basaltdark">Kayu Jati Solid TPK</p>
+                                <p class="text-[10px] text-arthapati-charcoal/60">Tahan Rayap & Puluhan Tahun</p>
+                            </div>
+                        </div>
+                        <div class="flex items-center gap-2.5 bg-white/90 p-3.5 rounded-2xl border border-arthapati-border col-span-2 sm:col-span-1">
+                            <i class="fa-solid fa-box text-arthapati-teak text-sm"></i>
+                            <div>
+                                <p class="font-bold text-arthapati-basaltdark">Peti Kayu Palet</p>
+                                <p class="text-[10px] text-arthapati-charcoal/60">Garansi Kirim Utuh 100%</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Call To Action Group -->
+                    <div class="flex flex-col sm:flex-row items-stretch sm:items-center gap-4 pt-3 font-mono">
+                        <a href="katalog.html" class="inline-flex items-center justify-center gap-3 px-8 py-4 bg-arthapati-basalt hover:bg-arthapati-basaltdark text-arthapati-sandstone text-xs sm:text-sm font-bold tracking-wider uppercase rounded-xl transition-all shadow-xl font-cinzel border border-arthapati-gold/40 btn-sculpt">
+                            <span>Jelajahi Galeri Patung</span>
+                            <i class="fa-solid fa-arrow-right text-arthapati-gold"></i>
+                        </a>
+                        <a href="https://wa.me/6281234567890?text=Halo%20Arthapati,%20saya%20ingin%20konsultasi%20pembuatan%20relief%20batu%20untuk%20dinding%20rumah." target="_blank" class="inline-flex items-center justify-center gap-2.5 px-6 py-4 bg-white hover:bg-arthapati-sandstone border border-arthapati-border text-arthapati-charcoal text-xs sm:text-sm font-bold tracking-wider uppercase rounded-xl transition shadow-xs">
+                            <i class="fa-brands fa-whatsapp text-green-600 text-base"></i>
+                            <span>Konsultasi Relief Dinding</span>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Right Visual: Dramatic Light Sculpture Staging -->
+                <div class="lg:col-span-5 relative">
+                    <div class="relative rounded-3xl overflow-hidden border-4 border-white shadow-2xl bg-arthapati-basaltdark group">
+                        <img src="https://images.unsplash.com/photo-1544816155-12df9643f363?q=80&w=1000&auto=format&fit=crop" 
+                             alt="Patung Ukir Kayu Jati Tiga Dimensi Karya Maestro" 
+                             class="w-full h-[480px] object-cover group-hover:scale-105 transition-transform duration-700">
+                        
+                        <div class="absolute inset-0 bg-gradient-to-t from-arthapati-basaltdark/90 via-transparent to-transparent"></div>
+                        
+                        <!-- Floating Staging Badge -->
+                        <div class="absolute bottom-5 left-5 right-5 p-4 bg-white/95 backdrop-blur-md rounded-2xl border border-arthapati-border shadow-lg">
+                            <div class="flex items-center justify-between">
+                                <div class="space-y-0.5">
+                                    <span class="text-[10px] font-mono font-bold tracking-wider uppercase text-arthapati-teak">Masterpiece Sculpture</span>
+                                    <h2 class="text-base font-cinzel font-bold text-arthapati-basaltdark">Garuda Wisnu Kencana Jati Solid</h2>
+                                    <p class="text-xs text-arthapati-charcoal/70 font-mono">Tinggi 85cm • Berat 18kg • Kayu Jati Tua TPK</p>
+                                </div>
+                                <span class="text-xs font-mono font-bold px-3 py-1.5 bg-arthapati-teaksoft text-arthapati-teakdark rounded-lg border border-arthapati-teak/30">
+                                    Rp 4.750.000
+                                </span>
+                            </div>
+                        </div>
+
+                        <!-- Top Right Badge -->
+                        <div class="absolute top-4 right-4 bg-arthapati-basaltdark/90 backdrop-blur-sm text-arthapati-gold px-3.5 py-1.5 rounded-full text-[10px] font-cinzel font-bold tracking-wider uppercase flex items-center gap-1.5 shadow-md border border-arthapati-gold/40">
+                            <i class="fa-solid fa-crown text-amber-300"></i>
+                            <span>100% Hand-Carved</span>
+                        </div>
+                    </div>
+
+                    <!-- Floating Mini Card: Chisel Detail Swatch -->
+                    <div class="hidden sm:flex absolute -bottom-6 -left-6 bg-white p-4 rounded-2xl border border-arthapati-border shadow-xl items-center gap-3.5 max-w-[260px]">
+                        <img src="https://images.unsplash.com/photo-1595991209266-5ff5a3a2f008?q=80&w=300&auto=format&fit=crop" 
+                             alt="Detail tekstur pahat batu alam" 
+                             class="w-12 h-12 rounded-xl object-cover border border-arthapati-border">
+                        <div class="space-y-0.5 font-mono">
+                            <p class="text-[10px] uppercase font-bold text-arthapati-teak">Batu Paras Jogja</p>
+                            <p class="text-xs font-bold text-arthapati-basaltdark">Relief 3D Tebal 5cm</p>
+                            <p class="text-[10px] text-arthapati-charcoal/60">Bukan Cetakan Semen</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- 4. CRAFTSMANSHIP VALUE STRIP -->
+    <section class="py-9 bg-white border-b border-arthapati-border">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-6 text-center sm:text-left">
+                
+                <div class="flex flex-col sm:flex-row items-center sm:items-start gap-3.5">
+                    <div class="w-12 h-12 rounded-2xl bg-arthapati-teaksoft text-arthapati-teak flex items-center justify-center text-xl shrink-0 border border-arthapati-border">
+                        <i class="fa-solid fa-pen-ruler"></i>
+                    </div>
+                    <div>
+                        <h4 class="font-cinzel font-bold text-sm text-arthapati-basaltdark">Pahat Manual Tradisional</h4>
+                        <p class="text-xs text-arthapati-charcoal/70 font-sans mt-0.5">Dikerjakan dengan set pisau tatah ukir presisi tanpa bantuan mesin cetak otomatis.</p>
+                    </div>
+                </div>
+
+                <div class="flex flex-col sm:flex-row items-center sm:items-start gap-3.5">
+                    <div class="w-12 h-12 rounded-2xl bg-amber-50 text-amber-900 flex items-center justify-center text-xl shrink-0 border border-arthapati-border">
+                        <i class="fa-solid fa-tree"></i>
+                    </div>
+                    <div>
+                        <h4 class="font-cinzel font-bold text-sm text-arthapati-basaltdark">Kayu Jati Solid TPK</h4>
+                        <p class="text-xs text-arthapati-charcoal/70 font-sans mt-0.5">Bahan kayu jati perhutani tua berkadar air rendah, tahan cuaca outdoor dan antirayap.</p>
+                    </div>
+                </div>
+
+                <div class="flex flex-col sm:flex-row items-center sm:items-start gap-3.5">
+                    <div class="w-12 h-12 rounded-2xl bg-slate-100 text-slate-800 flex items-center justify-center text-xl shrink-0 border border-arthapati-border">
+                        <i class="fa-solid fa-cubes"></i>
+                    </div>
+                    <div>
+                        <h4 class="font-cinzel font-bold text-sm text-arthapati-basaltdark">Batu Alam Asli Gunung</h4>
+                        <p class="text-xs text-arthapati-charcoal/70 font-sans mt-0.5">Batu paras Gunungkidul & andesit lava Merapi asli, bukan cetakan cor semen imitasi.</p>
+                    </div>
+                </div>
+
+                <div class="flex flex-col sm:flex-row items-center sm:items-start gap-3.5">
+                    <div class="w-12 h-12 rounded-2xl bg-emerald-50 text-emerald-900 flex items-center justify-center text-xl shrink-0 border border-arthapati-border">
+                        <i class="fa-solid fa-truck-ramp-box"></i>
+                    </div>
+                    <div>
+                        <h4 class="font-cinzel font-bold text-sm text-arthapati-basaltdark">Packing Palet & Asuransi</h4>
+                        <p class="text-xs text-arthapati-charcoal/70 font-sans mt-0.5">Setiap karya dikirim dengan peti kayu rapat, lapisan foam tebal, dan jaminan ganti baru.</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- 5. SECTION KHUSUS: PILIHAN MEDIA PAHATAN ALAMI -->
+    <section id="materialSection" class="py-16 sm:py-24 border-b border-arthapati-border bg-arthapati-sandstonesoft relative">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            
+            <div class="text-center max-w-3xl mx-auto mb-14 space-y-3">
+                <span class="px-3.5 py-1 bg-white border border-arthapati-border text-arthapati-teak font-mono text-[11px] font-bold uppercase tracking-widest rounded-full">
+                    Organic Mediums of Sculpture
+                </span>
+                <h2 class="text-3xl sm:text-4xl lg:text-5xl font-cinzel font-bold text-arthapati-basaltdark">
+                    Karakter Tiga Media Pahatan Alami
+                </h2>
+                <p class="text-sm sm:text-base text-arthapati-charcoal/75 font-sans">
+                    Setiap bahan baku memiliki jiwa, kepadatan serat, dan perlakuan khusus agar menghasilkan bayangan cahaya relief yang hidup di dinding rumah Anda.
+                </p>
+            </div>
+
+            <!-- Media Comparison Grid -->
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                
+                <!-- Media 1: Kayu Jati TPK -->
+                <div class="bg-white rounded-3xl border border-arthapati-border overflow-hidden p-6 shadow-sm flex flex-col justify-between space-y-5">
+                    <div class="space-y-4">
+                        <div class="h-44 rounded-2xl bg-[#684328] text-white flex flex-col items-center justify-center p-4 text-center relative overflow-hidden">
+                            <i class="fa-solid fa-tree text-4xl text-amber-200/40 mb-2"></i>
+                            <span class="text-xl font-cinzel font-bold">Kayu Jati Solid TPK</span>
+                            <span class="text-xs font-mono text-amber-200 mt-1">Urat Kayu Alami Berkarakter</span>
+                        </div>
+                        <h3 class="font-cinzel font-bold text-xl text-arthapati-basaltdark">
+                            Pahatan Kayu Jati Klasik
+                        </h3>
+                        <p class="text-xs text-arthapati-charcoal/75 leading-relaxed font-sans">
+                            Kekuatan serat padat dengan minyak alami yang menangkal rayap. Cocok untuk patung 3D ruang tamu, ornamen meja kerja, dan ukiran bernilai warisan pusaka.
+                        </p>
+                    </div>
+                    <div class="pt-3 border-t border-arthapati-border font-mono text-xs text-arthapati-charcoal/70 space-y-1">
+                        <p><strong>Finishing:</strong> Natural Wax / Doff Satin</p>
+                        <p><strong>Ketahanan:</strong> Lebih dari 50 Tahun</p>
+                    </div>
+                </div>
+
+                <!-- Media 2: Batu Paras Putih Jogja -->
+                <div class="bg-white rounded-3xl border border-arthapati-border overflow-hidden p-6 shadow-sm flex flex-col justify-between space-y-5">
+                    <div class="space-y-4">
+                        <div class="h-44 rounded-2xl bg-[#D3C7B6] text-arthapati-basaltdark flex flex-col items-center justify-center p-4 text-center relative overflow-hidden">
+                            <i class="fa-solid fa-mountain text-4xl text-black/10 mb-2"></i>
+                            <span class="text-xl font-cinzel font-bold">Batu Paras Putih Jogja</span>
+                            <span class="text-xs font-mono text-arthapati-teak mt-1">Tekstur Halus Berpori Lembut</span>
+                        </div>
+                        <h3 class="font-cinzel font-bold text-xl text-arthapati-basaltdark">
+                            Relief Dinding Batu Paras
+                        </h3>
+                        <p class="text-xs text-arthapati-charcoal/75 leading-relaxed font-sans">
+                            Batu kapur sedimentasi alam yang mudah dipahat dengan kedalaman relief 3-5 cm. Menghadirkan kesan sejuk, elegan, dan mewah pada dinding fasad villa atau taman air.
+                        </p>
+                    </div>
+                    <div class="pt-3 border-t border-arthapati-border font-mono text-xs text-arthapati-charcoal/70 space-y-1">
+                        <p><strong>Finishing:</strong> Clear Coating Anti-Lumut</p>
+                        <p><strong>Aplikasi:</strong> Dinding Fasad, Taman, & Kamar Mandi</p>
+                    </div>
+                </div>
+
+                <!-- Media 3: Bambu Petung Tua -->
+                <div class="bg-white rounded-3xl border border-arthapati-border overflow-hidden p-6 shadow-sm flex flex-col justify-between space-y-5">
+                    <div class="space-y-4">
+                        <div class="h-44 rounded-2xl bg-[#8B5E3C] text-white flex flex-col items-center justify-center p-4 text-center relative overflow-hidden">
+                            <i class="fa-solid fa-bars-staggered text-4xl text-white/20 mb-2"></i>
+                            <span class="text-xl font-cinzel font-bold">Bambu Petung & Akar</span>
+                            <span class="text-xs font-mono text-amber-200 mt-1">Eksotisme Serat Bambu Raksasa</span>
+                        </div>
+                        <h3 class="font-cinzel font-bold text-xl text-arthapati-basaltdark">
+                            Kriya Bambu Artistik
+                        </h3>
+                        <p class="text-xs text-arthapati-charcoal/75 leading-relaxed font-sans">
+                            Pemanfaatan ruas bambu petung tua dan bonggol akar bambu yang diawetkan dengan proses perebusan alami. Melahirkan bentuk figuratif organik yang unik dan ramah lingkungan.
+                        </p>
+                    </div>
+                    <div class="pt-3 border-t border-arthapati-border font-mono text-xs text-arthapati-charcoal/70 space-y-1">
+                        <p><strong>Treatment:</strong> Rendaman Air Garam & Boraks Alami</p>
+                        <p><strong>Karakter:</strong> Ringan & Estetik Etnik</p>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+    <!-- 6. PRODUK UNGGULAN: 3-COLUMN MASTERPIECE SHOWCASE -->
+    <section class="py-16 sm:py-24 border-b border-arthapati-border bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            
+            <div class="flex flex-col md:flex-row md:items-end justify-between mb-12 gap-4">
+                <div>
+                    <span class="text-xs font-mono font-bold uppercase tracking-widest text-arthapati-teak">
+                        Curated Sculptural Artworks
+                    </span>
+                    <h2 class="text-3xl sm:text-4xl lg:text-5xl font-cinzel font-bold text-arthapati-basaltdark mt-1">
+                        Karya Pahat & Relief Pilihan
+                    </h2>
+                </div>
+                <div class="flex items-center gap-2">
+                    <a href="katalog.html" class="inline-flex items-center gap-2 text-xs font-mono font-bold uppercase tracking-wider text-arthapati-charcoal hover:text-arthapati-teak transition border-b border-arthapati-teak pb-1">
+                        <span>Lihat Seluruh Koleksi (12+)</span>
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </a>
+                </div>
+            </div>
+
+            <!-- 3 Column Grid -->
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                
+                <!-- Card 1: Patung Garuda Wisnu Kencana Jati -->
+                <div class="sculpture-card bg-arthapati-sandstone rounded-3xl border border-arthapati-border overflow-hidden flex flex-col group">
+                    <div class="relative overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1544816155-12df9643f363?q=80&w=600&auto=format&fit=crop" 
+                             alt="Patung Garuda Wisnu Kencana Kayu Jati" 
+                             class="w-full h-80 object-cover group-hover:scale-105 transition-transform duration-500">
+                        <div class="absolute top-3.5 left-3.5 bg-arthapati-basalt text-arthapati-sandstone text-[10px] font-cinzel font-bold uppercase px-3 py-1 rounded-md shadow border border-arthapati-gold/40">
+                            Kayu Jati Solid
+                        </div>
+                        <div class="absolute bottom-3.5 right-3.5 bg-white/90 backdrop-blur-sm text-arthapati-charcoal text-[10px] font-mono font-bold px-2.5 py-0.5 rounded border border-arthapati-border">
+                            Tinggi 85cm • 18kg
+                        </div>
+                    </div>
+                    <div class="p-6 flex-1 flex flex-col justify-between space-y-4">
+                        <div>
+                            <div class="flex items-center justify-between text-xs font-mono text-arthapati-charcoal/60 mb-1">
+                                <span>3D Full Round Sculpture</span>
+                                <span class="text-amber-500 font-bold"><i class="fa-solid fa-star"></i> 5.0</span>
+                            </div>
+                            <a href="detail.html" class="block font-cinzel font-bold text-xl text-arthapati-basaltdark hover:text-arthapati-teak transition leading-snug">
+                                Garuda Wisnu Kencana Jati Solid
+                            </a>
+                            <p class="text-xs text-arthapati-charcoal/75 mt-1.5 leading-relaxed font-sans">
+                                Pahatan detail kepakan sayap garuda dan mahkota dewa dengan lekukan pisau tatah halus setebal 4cm.
+                            </p>
+                        </div>
+                        <div class="pt-4 border-t border-arthapati-border flex items-center justify-between font-mono">
+                            <div>
+                                <span class="text-[10px] text-arthapati-charcoal/50 uppercase block">Packing Peti Kayu</span>
+                                <span class="text-base font-bold text-arthapati-basaltdark">Rp 4.750.000</span>
+                            </div>
+                            <a href="detail.html" class="px-4 py-2 bg-arthapati-teak hover:bg-arthapati-teakdark text-white rounded-xl text-xs font-cinzel font-bold transition">
+                                Detail &rarr;
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 2: Relief Dinding Teratai Lotus Batu Paras -->
+                <div class="sculpture-card bg-arthapati-sandstone rounded-3xl border border-arthapati-border overflow-hidden flex flex-col group">
+                    <div class="relative overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1595991209266-5ff5a3a2f008?q=80&w=600&auto=format&fit=crop" 
+                             alt="Panel Relief Dinding Batu Paras Teratai" 
+                             class="w-full h-80 object-cover group-hover:scale-105 transition-transform duration-500">
+                        <div class="absolute top-3.5 left-3.5 bg-arthapati-teak text-white text-[10px] font-cinzel font-bold uppercase px-3 py-1 rounded-md shadow">
+                            Batu Paras Jogja
+                        </div>
+                        <div class="absolute bottom-3.5 right-3.5 bg-white/90 backdrop-blur-sm text-arthapati-charcoal text-[10px] font-mono font-bold px-2.5 py-0.5 rounded border border-arthapati-border">
+                            100 x 50 cm • Tebal 5cm
+                        </div>
+                    </div>
+                    <div class="p-6 flex-1 flex flex-col justify-between space-y-4">
+                        <div>
+                            <div class="flex items-center justify-between text-xs font-mono text-arthapati-charcoal/60 mb-1">
+                                <span>Relief Dinding 3D Timbul</span>
+                                <span class="text-amber-500 font-bold"><i class="fa-solid fa-star"></i> 4.9</span>
+                            </div>
+                            <a href="detail.html" class="block font-cinzel font-bold text-xl text-arthapati-basaltdark hover:text-arthapati-teak transition leading-snug">
+                                Relief Dinding Bunga Teratai Lotus
+                            </a>
+                            <p class="text-xs text-arthapati-charcoal/75 mt-1.5 leading-relaxed font-sans">
+                                Panel relief batu kapur putih Jogja dengan lapisan pelindung antilumut untuk dinding kolam atau fasad depan.
+                            </p>
+                        </div>
+                        <div class="pt-4 border-t border-arthapati-border flex items-center justify-between font-mono">
+                            <div>
+                                <span class="text-[10px] text-arthapati-charcoal/50 uppercase block">Coating Antilumut</span>
+                                <span class="text-base font-bold text-arthapati-basaltdark">Rp 1.850.000</span>
+                            </div>
+                            <a href="detail.html" class="px-4 py-2 bg-arthapati-teak hover:bg-arthapati-teakdark text-white rounded-xl text-xs font-cinzel font-bold transition">
+                                Detail &rarr;
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 3: Patung Abstrak Daun Melengkung Kayu Suar -->
+                <div class="sculpture-card bg-arthapati-sandstone rounded-3xl border border-arthapati-border overflow-hidden flex flex-col group">
+                    <div class="relative overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1513519245088-0e12902e5a38?q=80&w=600&auto=format&fit=crop" 
+                             alt="Patung Abstrak Modern Kayu Suar" 
+                             class="w-full h-80 object-cover group-hover:scale-105 transition-transform duration-500">
+                        <div class="absolute top-3.5 left-3.5 bg-amber-900 text-white text-[10px] font-cinzel font-bold uppercase px-3 py-1 rounded-md shadow">
+                            Modern Minimalist
+                        </div>
+                        <div class="absolute bottom-3.5 right-3.5 bg-white/90 backdrop-blur-sm text-arthapati-charcoal text-[10px] font-mono font-bold px-2.5 py-0.5 rounded border border-arthapati-border">
+                            Tinggi 60cm • 6.5kg
+                        </div>
+                    </div>
+                    <div class="p-6 flex-1 flex flex-col justify-between space-y-4">
+                        <div>
+                            <div class="flex items-center justify-between text-xs font-mono text-arthapati-charcoal/60 mb-1">
+                                <span>Kayu Suar Solid Utuh</span>
+                                <span class="text-amber-500 font-bold"><i class="fa-solid fa-star"></i> 5.0</span>
+                            </div>
+                            <a href="detail.html" class="block font-cinzel font-bold text-xl text-arthapati-basaltdark hover:text-arthapati-teak transition leading-snug">
+                                Sculptural Leaf "Nirvana Form"
+                            </a>
+                            <p class="text-xs text-arthapati-charcoal/75 mt-1.5 leading-relaxed font-sans">
+                                Patung seni kontemporer bentuk spiral meliuk anggun di atas tatakan kayu hitam doff untuk interior foyer mewah.
+                            </p>
+                        </div>
+                        <div class="pt-4 border-t border-arthapati-border flex items-center justify-between font-mono">
+                            <div>
+                                <span class="text-[10px] text-arthapati-charcoal/50 uppercase block">Finishing Doff Natural</span>
+                                <span class="text-base font-bold text-arthapati-basaltdark">Rp 1.450.000</span>
+                            </div>
+                            <a href="detail.html" class="px-4 py-2 bg-arthapati-teak hover:bg-arthapati-teakdark text-white rounded-xl text-xs font-cinzel font-bold transition">
+                                Detail &rarr;
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+    <!-- 7. SECTION THE MASTER CARVERS HERITAGE -->
+    <section class="py-16 sm:py-24 border-b border-arthapati-border bg-arthapati-sandstonesoft">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+                
+                <div class="lg:col-span-6 space-y-6">
+                    <span class="text-xs font-mono font-bold uppercase tracking-widest text-arthapati-teak">
+                        Warisan Keahlian Turun-Temurun
+                    </span>
+                    <h2 class="text-3xl sm:text-4xl lg:text-5xl font-cinzel font-bold text-arthapati-basaltdark leading-tight">
+                        Ratusan Pukulan Tatah, Satu Jiwa dalam Setiap Karya.
+                    </h2>
+                    <p class="text-base text-arthapati-charcoal/80 font-sans leading-relaxed">
+                        Di atelier ARTHAPATI, memahat bukan sekadar membentuk material, melainkan dialog hening antara pemahat dan batu atau kayu yang sedang dibentuk. Dibutuhkan waktu <strong>2 hingga 4 minggu</strong> untuk memahat selembar panel relief dinding berdimensi satu meter.
+                    </p>
+                    <p class="text-base text-arthapati-charcoal/80 font-sans leading-relaxed">
+                        Kami memberdayakan lebih dari 25 seniman pemahat senior di sentra ukir Gunungkidul dan Jepara, menjaga kelestarian ragam hias relief tradisional Nusantara agar tetap hidup menghiasi arsitektur modern.
+                    </p>
+
+                    <div class="space-y-3 pt-2 font-mono text-xs">
+                        <div class="flex items-center gap-3 p-3 bg-white rounded-xl border border-arthapati-border">
+                            <i class="fa-solid fa-check text-green-600 font-bold"></i>
+                            <span class="text-arthapati-charcoal"><strong>Kedalaman Relief Asli:</strong> Lekukan timbul 3-6 cm memberikan bayangan dramatis saat tersorot lampu sorot spotlight.</span>
+                        </div>
+                        <div class="flex items-center gap-3 p-3 bg-white rounded-xl border border-arthapati-border">
+                            <i class="fa-solid fa-check text-green-600 font-bold"></i>
+                            <span class="text-arthapati-charcoal"><strong>Custom Desain Arsitektur:</strong> Melayani pesanan ukuran khusus untuk dinding villa, hotel, dan gerbang gapura.</span>
+                        </div>
+                    </div>
+
+                    <div class="pt-2">
+                        <a href="tentang.html" class="inline-flex items-center gap-2 text-xs font-mono font-bold uppercase tracking-wider text-arthapati-charcoal hover:text-arthapati-teak transition border-b-2 border-arthapati-teak pb-1">
+                            <span>Kenali Komunitas Pemahat Kami</span>
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="lg:col-span-6 grid grid-cols-2 gap-4">
+                    <img src="https://images.unsplash.com/photo-1544457070-4cd773b4d71e?q=80&w=600&auto=format&fit=crop" 
+                         alt="Proses Pemahatan Batu Relief Dinding" 
+                         class="w-full h-72 object-cover rounded-3xl border border-arthapati-border shadow-md">
+                    <img src="https://images.unsplash.com/photo-1595991209266-5ff5a3a2f008?q=80&w=600&auto=format&fit=crop" 
+                         alt="Peralatan Tatah Pisau Pahat Kayu" 
+                         class="w-full h-72 object-cover rounded-3xl border border-arthapati-border shadow-md mt-6">
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- 8. TESTIMONIALS: ARCHITECTS, VILLA OWNERS & COLLECTORS -->
+    <section class="py-16 sm:py-24 border-b border-arthapati-border bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            
+            <div class="text-center max-w-2xl mx-auto mb-14 space-y-2">
+                <span class="text-xs font-mono font-bold uppercase tracking-widest text-arthapati-teak">
+                    Apresiasi Penggiat Arsitektur & Seni
+                </span>
+                <h2 class="text-3xl sm:text-4xl lg:text-5xl font-cinzel font-bold text-arthapati-basaltdark">
+                    Dipercaya untuk Proyek Villa & Hunian Mewah
+                </h2>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                
+                <!-- Testi 1 -->
+                <div class="bg-arthapati-sandstone p-8 rounded-3xl border border-arthapati-border flex flex-col justify-between space-y-6">
+                    <div class="space-y-3">
+                        <div class="flex text-amber-500 text-xs gap-1">
+                            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                        </div>
+                        <p class="text-sm text-arthapati-charcoal/80 italic leading-relaxed font-sans">
+                            "Pesan 4 panel relief batu paras Jogja motif lotus ukuran 2x1 meter untuk dinding kolam renang villa kami di Ubud. Kedalaman pahatannya luar biasa, saat malam disorot lampu warm-white bayangannya sangat teatrikal!"
+                        </p>
+                    </div>
+                    <div class="flex items-center gap-3.5 pt-4 border-t border-arthapati-border font-mono">
+                        <div class="w-10 h-10 rounded-full bg-arthapati-basalt text-arthapati-gold flex items-center justify-center font-bold text-xs font-cinzel">
+                            WS
+                        </div>
+                        <div>
+                            <p class="text-xs font-bold text-arthapati-basaltdark">Wayan Sudarma</p>
+                            <p class="text-[10px] text-arthapati-charcoal/60">Villa Owner & Developer, Bali</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Testi 2 -->
+                <div class="bg-arthapati-sandstone p-8 rounded-3xl border border-arthapati-border flex flex-col justify-between space-y-6">
+                    <div class="space-y-3">
+                        <div class="flex text-amber-500 text-xs gap-1">
+                            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                        </div>
+                        <p class="text-sm text-arthapati-charcoal/80 italic leading-relaxed font-sans">
+                            "Patung Garuda Wisnu Kencana kayu jati solid tiba di Jakarta dalam kondisi sangat mulus berkat packing peti kayu palet berlapis foam tebal. Kualitas serat kayu jati TPK-nya benar-benar padat dan berat."
+                        </p>
+                    </div>
+                    <div class="flex items-center gap-3.5 pt-4 border-t border-arthapati-border font-mono">
+                        <div class="w-10 h-10 rounded-full bg-arthapati-teak text-white flex items-center justify-center font-bold text-xs font-cinzel">
+                            IP
+                        </div>
+                        <div>
+                            <p class="text-xs font-bold text-arthapati-basaltdark">Ir. Prasetyo Hadi</p>
+                            <p class="text-[10px] text-arthapati-charcoal/60">Principal Architect, Jakarta</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Testi 3 -->
+                <div class="bg-arthapati-sandstone p-8 rounded-3xl border border-arthapati-border flex flex-col justify-between space-y-6">
+                    <div class="space-y-3">
+                        <div class="flex text-amber-500 text-xs gap-1">
+                            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                        </div>
+                        <p class="text-sm text-arthapati-charcoal/80 italic leading-relaxed font-sans">
+                            "Plakat ukiran batu andesit candi dengan logo instansi kami dikerjakan sangat presisi. Memberikan kesan kokoh dan berwibawa sebagai cendera mata tamu kehormatan internasional."
+                        </p>
+                    </div>
+                    <div class="flex items-center gap-3.5 pt-4 border-t border-arthapati-border font-mono">
+                        <div class="w-10 h-10 rounded-full bg-arthapati-basalt text-arthapati-gold flex items-center justify-center font-bold text-xs font-cinzel">
+                            AK
+                        </div>
+                        <div>
+                            <p class="text-xs font-bold text-arthapati-basaltdark">Anindita Kusuma</p>
+                            <p class="text-[10px] text-arthapati-charcoal/60">Corporate Secretary, Surabaya</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+    <!-- 9. BESPOKE VILLA RELIEF BANNER -->
+    <section class="py-14 bg-arthapati-basaltdark text-arthapati-sandstone relative overflow-hidden border-t border-arthapati-gold/30">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative">
+            <div class="flex flex-col lg:flex-row items-center justify-between gap-8 text-center lg:text-left">
+                <div class="space-y-2 max-w-2xl">
+                    <span class="text-[11px] font-mono uppercase tracking-widest text-arthapati-gold font-bold">Layanan Kustom Arsitektur Dinding</span>
+                    <h3 class="text-2xl sm:text-3xl font-cinzel font-bold text-white">Rencanakan Relief Dinding Ukuran Khusus untuk Villa & Hunian Anda</h3>
+                    <p class="text-xs sm:text-sm text-arthapati-sandstone/80 font-sans">
+                        Kirimkan denah arsitektur dan sketsa motif yang diinginkan. Tim maestro pemahat kami siap membuatkan simulasi 3D relief dan penawaran spesifikasi teknis instalasi.
+                    </p>
+                </div>
+                <div class="flex flex-col sm:flex-row items-center gap-3 font-mono shrink-0">
+                    <a href="kontak.html" class="px-6 py-3.5 bg-white hover:bg-arthapati-sandstone text-arthapati-basaltdark text-xs font-bold uppercase tracking-wider rounded-xl transition shadow font-cinzel">
+                        Konsultasi Desain Dinding
+                    </a>
+                    <a href="https://wa.me/6281234567890?text=Halo%20Arthapati,%20saya%20mau%20konsultasi%20pesanan%20kustom%20relief%20batu." target="_blank" class="px-6 py-3.5 bg-arthapati-teak hover:bg-arthapati-teakdark text-white text-xs font-bold uppercase tracking-wider rounded-xl transition shadow flex items-center gap-2 font-cinzel">
+                        <i class="fa-brands fa-whatsapp text-sm"></i>
+                        <span>Diskusi via WhatsApp</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 10. FOOTER -->
+    <footer class="bg-arthapati-basaltdark text-arthapati-sandstone py-16 border-t border-arthapati-gold/20 font-sans">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-10 mb-12">
+                
+                <!-- Brand Bio -->
+                <div class="lg:col-span-2 space-y-4">
+                    <a href="index.html" class="flex items-center gap-3">
+                        <div class="w-10 h-10 bg-arthapati-basalt border border-arthapati-gold text-arthapati-gold flex items-center justify-center text-lg font-serif rounded-lg">
+                            <i class="fa-solid fa-mountain-sun"></i>
+                        </div>
+                        <span class="text-2xl font-cinzel font-black tracking-wider text-white uppercase">
+                            ARTHAPATI<span class="text-arthapati-gold">.</span>
+                        </span>
+                    </a>
+                    <p class="text-xs text-arthapati-sandstone/75 leading-relaxed max-w-sm font-sans">
+                        Atelier kriya seni pahat batu alam, patung kayu jati solid, dan dekorasi relief arsitektural. Diciptakan dengan presisi tatah manual para maestro pemahat tradisional Nusantara.
+                    </p>
+                    <div class="flex items-center gap-3 pt-2">
+                        <a href="#" class="w-8 h-8 rounded-full bg-white/10 hover:bg-arthapati-gold hover:text-arthapati-basaltdark text-white flex items-center justify-center text-xs transition"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="#" class="w-8 h-8 rounded-full bg-white/10 hover:bg-arthapati-gold hover:text-arthapati-basaltdark text-white flex items-center justify-center text-xs transition"><i class="fa-brands fa-tiktok"></i></a>
+                        <a href="#" class="w-8 h-8 rounded-full bg-white/10 hover:bg-arthapati-gold hover:text-arthapati-basaltdark text-white flex items-center justify-center text-xs transition"><i class="fa-brands fa-pinterest"></i></a>
+                        <a href="#" class="w-8 h-8 rounded-full bg-white/10 hover:bg-arthapati-gold hover:text-arthapati-basaltdark text-white flex items-center justify-center text-xs transition"><i class="fa-brands fa-whatsapp"></i></a>
+                    </div>
+                </div>
+
+                <!-- Navigation Links -->
+                <div class="space-y-3 font-mono">
+                    <h5 class="text-xs font-bold text-white uppercase tracking-wider font-cinzel">Koleksi Seni</h5>
+                    <ul class="space-y-2 text-xs text-arthapati-sandstone/70">
+                        <li><a href="katalog.html" class="hover:text-amber-300 transition">Patung Kayu Jati Solid</a></li>
+                        <li><a href="katalog.html" class="hover:text-amber-300 transition">Panel Relief Batu Paras</a></li>
+                        <li><a href="katalog.html" class="hover:text-amber-300 transition">Arca Batu Andesit Candi</a></li>
+                        <li><a href="katalog.html" class="hover:text-amber-300 transition">Ornamen Partisi Bambu</a></li>
+                        <li><a href="katalog.html" class="hover:text-amber-300 transition">Plakat Ukir Batu Alam</a></li>
+                    </ul>
+                </div>
+
+                <!-- Quick Menu -->
+                <div class="space-y-3 font-mono">
+                    <h5 class="text-xs font-bold text-white uppercase tracking-wider font-cinzel">Halaman</h5>
+                    <ul class="space-y-2 text-xs text-arthapati-sandstone/70">
+                        <li><a href="index.html" class="hover:text-amber-300 transition">Beranda</a></li>
+                        <li><a href="katalog.html" class="hover:text-amber-300 transition">Katalog Mahakarya</a></li>
+                        <li><a href="detail.html" class="hover:text-amber-300 transition">Detail Patung Garuda</a></li>
+                        <li><a href="tentang.html" class="hover:text-amber-300 transition">Maestro Pemahat</a></li>
+                        <li><a href="artikel.html" class="hover:text-amber-300 transition">Tips Pasang & Rawat</a></li>
+                        <li><a href="kontak.html" class="hover:text-amber-300 transition">Galeri & Kontak</a></li>
+                    </ul>
+                </div>
+
+                <!-- Studio Address -->
+                <div class="space-y-3 font-mono text-xs">
+                    <h5 class="text-xs font-bold text-white uppercase tracking-wider font-cinzel">Galeri & Studio Pahat</h5>
+                    <p class="text-arthapati-sandstone/70 leading-relaxed font-sans">
+                        Jl. Wonosari Km 14.5, Piyungan, Bantul, D.I. Yogyakarta 55792 (Sentra Kriya Pahat Batu & Kayu)
+                    </p>
+                    <p class="text-arthapati-sandstone/70 font-mono">
+                        Buka: Setiap Hari (08:30 - 17:00 WIB)
+                    </p>
+                    <p class="text-amber-300 font-bold">
+                        WhatsApp: +62 812-3456-7890
+                    </p>
+                </div>
+
+            </div>
+
+            <div class="pt-8 border-t border-white/10 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs font-mono text-arthapati-sandstone/50">
+                <p>&copy; 2026 ARTHAPATI SCULPTURE & STONE ATELIER. All rights reserved.</p>
+                <p>Template UMKM Kriya Seni Pahat & Patung by Lentera Pasar</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- 11. FLOATING WHATSAPP BUTTON (bottom-24) -->
+    <div class="fixed bottom-24 right-4 sm:right-6 z-40">
+        <a href="https://wa.me/6281234567890?text=Halo%20Atelier%20Arthapati,%20saya%20tertarik%20dengan%20koleksi%20patung%20dan%20relief%20pahat." 
+           target="_blank" 
+           aria-label="Chat WhatsApp Studio"
+           class="flex items-center gap-2.5 bg-emerald-600 hover:bg-emerald-700 text-white px-4 py-3 rounded-full shadow-2xl transition-all duration-300 hover:scale-105 group font-mono text-xs font-bold border-2 border-arthapati-gold">
+            <i class="fa-brands fa-whatsapp text-xl text-white group-hover:rotate-12 transition-transform"></i>
+            <span class="hidden sm:inline">WhatsApp Studio</span>
+        </a>
+    </div>
+
+    <!-- 12. LENTERA PASAR STICKY DEMO & SALES BAR (fixed bottom-4) -->
+    <div class="fixed bottom-4 left-4 right-4 z-50 max-w-5xl mx-auto">
+      <div class="bg-slate-900/95 backdrop-blur-md text-white px-4 py-3 rounded-2xl shadow-2xl border border-slate-700/80 flex flex-col md:flex-row items-center justify-between gap-3">
+        
+        <div class="flex items-center gap-3">
+          <div class="w-8 h-8 rounded-lg bg-amber-600/30 border border-amber-500/50 flex items-center justify-center shrink-0">
+            <svg class="w-4 h-4 text-amber-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z" /></svg>
+          </div>
+          <div>
+            <div class="text-xs md:text-sm font-bold text-slate-100 flex items-center gap-2">
+              <span>Lentera Pasar Demo</span>
+              <span class="text-[10px] px-1.5 py-0.5 rounded bg-amber-500/20 text-amber-300 font-mono">Template Seni Ukir & Patung</span>
+            </div>
+            <p class="text-[11px] text-slate-400 hidden sm:block">Template website megah untuk sanggar seni pahat kayu jati, relief batu paras, dan patung dekorasi villa.</p>
+          </div>
+        </div>
+
+        <div class="flex items-center gap-3 w-full md:w-auto justify-end">
+          <div class="hidden lg:flex items-center gap-4 text-xs font-mono text-slate-400 border-r border-slate-700 pr-4">
+            <div class="flex items-center gap-1 text-slate-200">
+              <svg class="w-4 h-4 text-amber-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" /></svg>
+              <span>100% Pahat Manual</span>
+            </div>
+            <span class="text-slate-600">•</span>
+            <div class="flex items-center gap-1 text-slate-200">
+              <svg class="w-4 h-4 text-emerald-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" /></svg>
+              <span>Peti Kayu Palet</span>
+            </div>
+          </div>
+
+          <a href="https://wa.me/6281234567890?text=Halo%20Tim%20Lentera%20Pasar,%20saya%20tertarik%20menggunakan%20template%20website%20Seni%20Ukir%20Patung%20ini%20lengkap%20dengan%20Admin%20Panel%20dan%20Jasa%20Iklannya." 
+             target="_blank"
+             class="w-full md:w-auto inline-flex items-center justify-center gap-2 bg-gradient-to-r from-amber-600 to-amber-800 hover:from-amber-500 hover:to-amber-700 text-white text-xs md:text-sm font-bold px-5 py-2.5 rounded-xl shadow-lg transition-all hover:scale-105 shrink-0 font-serif">
+            <span>Gunakan Template Ini</span>
+            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3" />
+            </svg>
+          </a>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- SCRIPT MOBILE MENU -->
+    <script>
+        const mobileMenuBtn = document.getElementById('mobileMenuBtn');
+        const mobileMenu = document.getElementById('mobileMenu');
+        const menuIcon = document.getElementById('menuIcon');
+
+        mobileMenuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+            if (mobileMenu.classList.contains('hidden')) {
+                menuIcon.classList.remove('fa-xmark');
+                menuIcon.classList.add('fa-bars');
+            } else {
+                menuIcon.classList.remove('fa-bars');
+                menuIcon.classList.add('fa-xmark');
+            }
+        });
+    </script>
+</body>
+</html>
