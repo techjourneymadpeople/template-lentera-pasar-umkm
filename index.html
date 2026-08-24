@@ -4,1133 +4,907 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Katalog Showcase Template UMKM — Lentera Pasar</title>
+    <title>Lentera Pasar — Katalog Template Website UMKM Multi-Halaman Siap Pakai</title>
     <meta name="description"
-        content="Showcase resmi 24+ template website multi-page UMKM Lentera Pasar siap pakai untuk 6 bidang industri.">
+        content="Tingkatkan omzet dan kredibilitas bisnis Anda dengan template website multi-halaman siap pakai khusus UMKM. Live preview iframe langsung, cepat, dan direct WhatsApp order.">
 
     <!-- Tailwind CSS CDN -->
     <script src="https://cdn.tailwindcss.com"></script>
-    <!-- Google Fonts: Plus Jakarta Sans -->
+    <!-- Google Fonts: Plus Jakarta Sans & Playfair Display -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap"
+    <link
+        href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Playfair+Display:ital,wght@0,600;0,700;1,600&display=swap"
         rel="stylesheet">
     <!-- Lucide Icons CDN -->
     <script src="https://unpkg.com/lucide@latest"></script>
-
     <script>
         tailwind.config = {
             theme: {
                 extend: {
                     fontFamily: {
                         sans: ['"Plus Jakarta Sans"', 'sans-serif'],
+                        serif: ['"Playfair Display"', 'serif'],
                     },
                     colors: {
                         brand: {
-                            50: '#FBF8F3',
-                            100: '#F4ECE0',
+                            50: '#FFFDF9',
+                            100: '#FDF6E9',
                             500: '#D97706',
                             600: '#B45309',
-                            900: '#1E1B18',
+                            700: '#92400E',
+                            900: '#1A1612',
                         }
                     }
                 }
             }
         }
     </script>
+    <style>
+        /* Iframe Mini-Desktop Preview scaling */
+        .preview-viewport {
+            width: 1280px;
+            height: 800px;
+            transform: scale(0.24);
+            transform-origin: 0 0;
+            pointer-events: none;
+            user-select: none;
+            border: 0;
+        }
+        @media (min-width: 640px) {
+            .preview-viewport {
+                transform: scale(0.26);
+            }
+        }
+        @media (min-width: 1024px) {
+            .preview-viewport {
+                transform: scale(0.22);
+            }
+        }
+        @media (min-width: 1280px) {
+            .preview-viewport {
+                transform: scale(0.245);
+            }
+        }
+    </style>
 </head>
 
 <body
-    class="bg-[#F8F9FA] text-slate-900 font-sans antialiased min-h-screen flex flex-col selection:bg-amber-500 selection:text-white">
+    class="bg-[#FBFBFC] text-slate-900 font-sans antialiased min-h-screen flex flex-col selection:bg-amber-500 selection:text-white">
 
-    <!-- TOP ANNOUNCEMENT BAR -->
-    <div class="bg-slate-900 text-slate-300 text-xs py-2 px-4 border-b border-slate-800">
+    <!-- TOP VALUE BAR -->
+    <div class="bg-slate-950 text-slate-300 text-xs py-2.5 px-4 border-b border-slate-800">
         <div class="max-w-7xl mx-auto flex flex-wrap justify-between items-center gap-2">
             <div class="flex items-center gap-2">
-                <span class="inline-block w-2 h-2 rounded-full bg-emerald-400 animate-pulse"></span>
-                <span>Lentera Pasar Design System — <strong>Kompilasi Seluruh Template Bidang 01 s/d 06</strong></span>
+                <span class="flex h-2 w-2 relative">
+                    <span
+                        class="animate-ping absolute inline-flex h-full w-full rounded-full bg-amber-400 opacity-75"></span>
+                    <span class="relative inline-flex rounded-full h-2 w-2 bg-amber-500"></span>
+                </span>
+                <span class="font-medium text-slate-200">Katalog Resmi Lentera Pasar: <strong>Solusi Website UMKM Multi-Page Tanpa Biaya Langganan</strong></span>
             </div>
-            <div class="flex items-center gap-4 text-slate-400">
-                <span class="flex items-center gap-1"><i data-lucide="layers" class="w-3.5 h-3.5"></i> Multi-Page
-                    Architecture</span>
-                <span class="flex items-center gap-1"><i data-lucide="smartphone" class="w-3.5 h-3.5"></i>
-                    Mobile-Optimized</span>
+            <div class="flex items-center gap-4 text-slate-400 text-[11px] sm:text-xs">
+                <span class="flex items-center gap-1"><i data-lucide="zap" class="w-3.5 h-3.5 text-amber-400"></i>
+                    Live Iframe Preview</span>
+                <span class="flex items-center gap-1"><i data-lucide="message-circle"
+                        class="w-3.5 h-3.5 text-emerald-400"></i> Direct WhatsApp Order</span>
             </div>
         </div>
     </div>
 
-    <!-- MAIN HEADER -->
-    <header class="bg-white/90 backdrop-blur-md sticky top-0 z-40 border-b border-slate-200">
+    <!-- STICKY NAVBAR -->
+    <header class="bg-white/95 backdrop-blur-md sticky top-0 z-40 border-b border-slate-200/80 shadow-xs">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
             <div class="flex items-center gap-3">
                 <div
-                    class="w-10 h-10 rounded-xl bg-amber-500 text-slate-950 flex items-center justify-center font-black text-xl shadow-md shadow-amber-500/20">
+                    class="w-11 h-11 rounded-xl bg-gradient-to-br from-amber-500 to-amber-600 text-slate-950 flex items-center justify-center font-black text-2xl shadow-md shadow-amber-500/20">
                     L
                 </div>
                 <div>
-                    <h1 class="text-lg font-bold text-slate-900 tracking-tight leading-none">Lentera Pasar</h1>
-                    <p class="text-xs text-slate-500 mt-1 font-medium">Showcase & Review Portal Template UMKM</p>
+                    <span class="text-xs font-bold uppercase tracking-wider text-amber-600">Digitalisasi Bisnis</span>
+                    <h1 class="text-xl font-extrabold text-slate-900 tracking-tight leading-none">Lentera Pasar</h1>
                 </div>
             </div>
 
-            <!-- Quick Search Bar -->
-            <div class="relative max-w-xs w-full hidden sm:block">
-                <i data-lucide="search" class="w-4 h-4 text-slate-400 absolute left-3.5 top-1/2 -translate-y-1/2"></i>
-                <input type="text" id="searchInput" placeholder="Cari nama template / niche..."
-                    class="w-full pl-10 pr-4 py-2 text-sm bg-slate-100 border border-slate-200 rounded-full focus:outline-none focus:border-amber-500 focus:bg-white transition-all">
+            <!-- Quick Search Bar & Direct CTA WhatsApp -->
+            <div class="flex items-center gap-3">
+                <div class="relative max-w-xs w-full hidden md:block">
+                    <i data-lucide="search" class="w-4 h-4 text-slate-400 absolute left-3.5 top-1/2 -translate-y-1/2"></i>
+                    <input type="text" id="searchInput" placeholder="Cari template / niche..."
+                        class="w-full pl-10 pr-4 py-2 text-xs bg-slate-100 border border-slate-200 rounded-full focus:outline-none focus:border-amber-500 focus:bg-white transition-all">
+                </div>
+                <a href="https://wa.me/6281234567890?text=Halo%20Admin%20Lentera%20Pasar,%20saya%20tertarik%20untuk%20membuat%20website%20UMKM%20dari%20katalog%20template."
+                    target="_blank" rel="noopener noreferrer"
+                    class="inline-flex items-center gap-2 px-5 py-2.5 rounded-full bg-emerald-600 hover:bg-emerald-700 text-white text-xs sm:text-sm font-bold shadow-md shadow-emerald-600/20 transition-all hover:scale-[1.02] active:scale-[0.98]">
+                    <i data-lucide="message-circle" class="w-4 h-4"></i> Konsultasi WA Gratis
+                </a>
             </div>
         </div>
     </header>
 
-    <!-- HERO SECTION -->
-    <section class="bg-gradient-to-b from-white to-[#F8F9FA] py-12 px-4 sm:px-6 lg:px-8 border-b border-slate-200">
+    <!-- HERO PERSUASIF -->
+    <section
+        class="relative overflow-hidden bg-gradient-to-b from-white via-[#FDFBF7] to-[#FBFBFC] pt-14 pb-20 px-4 sm:px-6 lg:px-8 border-b border-slate-200">
         <div class="max-w-4xl mx-auto text-center">
-            <span
-                class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-semibold bg-amber-100 text-amber-900 mb-4 border border-amber-200">
-                <i data-lucide="sparkles" class="w-3.5 h-3.5 text-amber-600"></i> Ekosistem 24 Template UMKM
-            </span>
-            <h2 class="text-3xl sm:text-4xl md:text-5xl font-extrabold text-slate-900 tracking-tight leading-tight">
-                Eksplorasi Seluruh Desain Template <br class="hidden sm:inline"> Berdasarkan Bidang Industri
+            <div
+                class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full text-xs font-bold bg-amber-50 text-amber-800 border border-amber-200 shadow-2xs mb-6">
+                <i data-lucide="shield-check" class="w-4 h-4 text-amber-600"></i> Stop Buang Waktu & Biaya Bikin Website Rumit
+            </div>
+
+            <h2 class="text-3xl sm:text-5xl lg:text-6xl font-extrabold text-slate-950 tracking-tight leading-[1.15]">
+                Tingkatkan Level Bisnis Anda dengan Website yang <span
+                    class="text-transparent bg-clip-text bg-gradient-to-r from-amber-600 to-amber-500 font-serif italic">Siap
+                    Menghasilkan Order</span>
             </h2>
-            <p class="mt-4 text-slate-600 text-sm sm:text-base max-w-2xl mx-auto leading-relaxed">
-                Setiap template dibuat dengan arsitektur visual khusus (Anti-Bento & Anti-Monoton), struktur
-                multi-halaman lengkap (<code
-                    class="bg-slate-200 px-1.5 py-0.5 rounded text-xs text-slate-800">index</code>, <code
-                    class="bg-slate-200 px-1.5 py-0.5 rounded text-xs text-slate-800">katalog</code>, <code
-                    class="bg-slate-200 px-1.5 py-0.5 rounded text-xs text-slate-800">detail</code>, <code
-                    class="bg-slate-200 px-1.5 py-0.5 rounded text-xs text-slate-800">tentang</code>, <code
-                    class="bg-slate-200 px-1.5 py-0.5 rounded text-xs text-slate-800">kontak</code>), serta Sticky Demo
-                Bar bawaan.
+
+            <p class="mt-6 text-slate-600 text-base sm:text-lg leading-relaxed max-w-2xl mx-auto">
+                Koleksi <strong>73 template website multi-halaman</strong> dengan live preview render langsung dari file template aslinya.
+                <strong>Bukan template pasaran, tanpa biaya bulanan</strong>, dan langsung terhubung ke WhatsApp bisnis Anda.
             </p>
 
-            <!-- Category Filter Pills -->
-            <div class="mt-8 flex flex-wrap justify-center gap-2" id="filterContainer">
-                <button onclick="filterTemplates('all')"
-                    class="filter-btn active px-4 py-2 rounded-full text-xs sm:text-sm font-semibold transition-all bg-slate-900 text-white shadow-sm"
-                    data-category="all">
-                    Semua Template (<span id="count-all">24</span>)
-                </button>
-                <button onclick="filterTemplates('01-fnb-kuliner')"
-                    class="filter-btn px-4 py-2 rounded-full text-xs sm:text-sm font-semibold bg-white text-slate-700 border border-slate-200 hover:border-amber-500 transition-all"
-                    data-category="01-fnb-kuliner">
-                    🍔 01. F&B / Kuliner
-                </button>
-                <button onclick="filterTemplates('02-fashion-skincare')"
-                    class="filter-btn px-4 py-2 rounded-full text-xs sm:text-sm font-semibold bg-white text-slate-700 border border-slate-200 hover:border-amber-500 transition-all"
-                    data-category="02-fashion-skincare">
-                    👗 02. Fashion & Skincare
-                </button>
-                <button onclick="filterTemplates('03-ritel-gadget-hobi')"
-                    class="filter-btn px-4 py-2 rounded-full text-xs sm:text-sm font-semibold bg-white text-slate-700 border border-slate-200 hover:border-amber-500 transition-all"
-                    data-category="03-ritel-gadget-hobi">
-                    📱 03. Ritel & Gadget
-                </button>
-                <button onclick="filterTemplates('04-kriya-dekorasi')"
-                    class="filter-btn px-4 py-2 rounded-full text-xs sm:text-sm font-semibold bg-white text-slate-700 border border-slate-200 hover:border-amber-500 transition-all"
-                    data-category="04-kriya-dekorasi">
-                    🏺 04. Kriya & Dekorasi
-                </button>
-                <button onclick="filterTemplates('05-agrobisnis-bahan-mentah')"
-                    class="filter-btn px-4 py-2 rounded-full text-xs sm:text-sm font-semibold bg-white text-slate-700 border border-slate-200 hover:border-amber-500 transition-all"
-                    data-category="05-agrobisnis-bahan-mentah">
-                    🌾 05. Agrobisnis
-                </button>
-                <button onclick="filterTemplates('06-supplier-grosir-b2b')"
-                    class="filter-btn px-4 py-2 rounded-full text-xs sm:text-sm font-semibold bg-white text-slate-700 border border-slate-200 hover:border-amber-500 transition-all"
-                    data-category="06-supplier-grosir-b2b">
-                    📦 06. Supplier & B2B
-                </button>
+            <!-- Trust Badges -->
+            <div class="mt-8 grid grid-cols-2 sm:grid-cols-3 gap-3 max-w-xl mx-auto text-left">
+                <div class="bg-white p-3.5 rounded-xl border border-slate-200 flex items-center gap-2.5 shadow-2xs">
+                    <div
+                        class="w-8 h-8 rounded-lg bg-emerald-100 text-emerald-700 flex items-center justify-center shrink-0">
+                        <i data-lucide="check" class="w-4 h-4"></i>
+                    </div>
+                    <div>
+                        <p class="text-xs font-bold text-slate-900 leading-tight">5-6 Halaman Inti</p>
+                        <p class="text-[11px] text-slate-500">Lengkap & Siap Pakai</p>
+                    </div>
+                </div>
+
+                <div class="bg-white p-3.5 rounded-xl border border-slate-200 flex items-center gap-2.5 shadow-2xs">
+                    <div
+                        class="w-8 h-8 rounded-lg bg-amber-100 text-amber-700 flex items-center justify-center shrink-0">
+                        <i data-lucide="monitor" class="w-4 h-4"></i>
+                    </div>
+                    <div>
+                        <p class="text-xs font-bold text-slate-900 leading-tight">Live Iframe Preview</p>
+                        <p class="text-[11px] text-slate-500">Tampilan Web Asli</p>
+                    </div>
+                </div>
+
+                <div
+                    class="col-span-2 sm:col-span-1 bg-white p-3.5 rounded-xl border border-slate-200 flex items-center gap-2.5 shadow-2xs">
+                    <div class="w-8 h-8 rounded-lg bg-blue-100 text-blue-700 flex items-center justify-center shrink-0">
+                        <i data-lucide="smartphone" class="w-4 h-4"></i>
+                    </div>
+                    <div>
+                        <p class="text-xs font-bold text-slate-900 leading-tight">WhatsApp Ready</p>
+                        <p class="text-[11px] text-slate-500">Closing Lebih Cepat</p>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
 
-    <!-- TEMPLATE SHOWCASE GRID -->
-    <main class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 flex-1">
-        <div id="templateGrid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-
-            <!-- ================= BIDANG 01: F&B KULINER ================= -->
-            <!-- Item 1.1 -->
-            <article
-                class="template-card bg-white rounded-2xl border border-slate-200 overflow-hidden hover:shadow-xl hover:-translate-y-1 transition-all flex flex-col"
-                data-category="01-fnb-kuliner" data-tags="bakery pastry roti croissant sarapan kue">
-                <div
-                    class="h-44 bg-gradient-to-tr from-[#5C3D2E] to-[#C59B27] p-6 text-white flex flex-col justify-between relative">
-                    <span
-                        class="inline-block px-2.5 py-1 rounded-md text-[11px] font-bold bg-white/20 backdrop-blur-md w-max">Bidang
-                        01 — F&B Group C</span>
-                    <div>
-                        <h3 class="font-serif text-xl font-bold">Artisan Bakery & Pastry</h3>
-                        <p class="text-xs text-amber-100 mt-1">Warm French Morning & Fresh Oven Schedule</p>
-                    </div>
-                </div>
-                <div class="p-5 flex-1 flex flex-col justify-between">
-                    <div>
-                        <p class="text-xs text-slate-600 line-clamp-2 leading-relaxed">
-                            Desain hangat bergaya French Bakery dengan jam panggangan subuh, tekstur flaky, & varian
-                            selai artisan.
-                        </p>
-                        <div class="mt-3 flex flex-wrap gap-1.5">
-                            <span class="text-[10px] bg-slate-100 text-slate-600 px-2 py-0.5 rounded">Warm
-                                Palette</span>
-                            <span class="text-[10px] bg-slate-100 text-slate-600 px-2 py-0.5 rounded">Fresh
-                                Schedule</span>
-                        </div>
-                    </div>
-                    <div class="mt-5 pt-4 border-t border-slate-100 flex items-center justify-between">
-                        <span class="text-xs font-mono text-slate-400">fnb-bakery-artisan</span>
-                        <a href="01-fnb-kuliner/fnb-bakery-artisan/index.html"
-                            class="inline-flex items-center gap-1.5 px-3.5 py-1.5 rounded-lg bg-slate-900 hover:bg-amber-600 text-white text-xs font-semibold transition-colors">
-                            Lihat Demo <i data-lucide="arrow-up-right" class="w-3.5 h-3.5"></i>
-                        </a>
-                    </div>
-                </div>
-            </article>
-
-            <!-- Item 1.2 -->
-            <article
-                class="template-card bg-white rounded-2xl border border-slate-200 overflow-hidden hover:shadow-xl hover:-translate-y-1 transition-all flex flex-col"
-                data-category="01-fnb-kuliner" data-tags="cake tart ulang tahun wedding custom luxury slice">
-                <div
-                    class="h-44 bg-gradient-to-tr from-[#2D1527] to-[#8C4A5A] p-6 text-white flex flex-col justify-between relative">
-                    <span
-                        class="inline-block px-2.5 py-1 rounded-md text-[11px] font-bold bg-white/20 backdrop-blur-md w-max">Bidang
-                        01 — F&B Group C</span>
-                    <div>
-                        <h3 class="font-serif text-xl font-bold">Cake & Celebration Studio</h3>
-                        <p class="text-xs text-rose-100 mt-1">Luxury Editorial Magazine & Custom Tart</p>
-                    </div>
-                </div>
-                <div class="p-5 flex-1 flex flex-col justify-between">
-                    <div>
-                        <p class="text-xs text-slate-600 line-clamp-2 leading-relaxed">
-                            Lookbook mewah untuk pemesanan kue tart ulang tahun, diameter kustom, base cake, & dekorasi
-                            pesta.
-                        </p>
-                        <div class="mt-3 flex flex-wrap gap-1.5">
-                            <span class="text-[10px] bg-slate-100 text-slate-600 px-2 py-0.5 rounded">Editorial
-                                Lookbook</span>
-                            <span class="text-[10px] bg-slate-100 text-slate-600 px-2 py-0.5 rounded">Custom
-                                Order</span>
-                        </div>
-                    </div>
-                    <div class="mt-5 pt-4 border-t border-slate-100 flex items-center justify-between">
-                        <span class="text-xs font-mono text-slate-400">fnb-cake-celebration</span>
-                        <a href="01-fnb-kuliner/fnb-cake-celebration/index.html"
-                            class="inline-flex items-center gap-1.5 px-3.5 py-1.5 rounded-lg bg-slate-900 hover:bg-amber-600 text-white text-xs font-semibold transition-colors">
-                            Lihat Demo <i data-lucide="arrow-up-right" class="w-3.5 h-3.5"></i>
-                        </a>
-                    </div>
-                </div>
-            </article>
-
-            <!-- Item 1.3 -->
-            <article
-                class="template-card bg-white rounded-2xl border border-slate-200 overflow-hidden hover:shadow-xl hover:-translate-y-1 transition-all flex flex-col"
-                data-category="01-fnb-kuliner" data-tags="makanan sehat salad cold-pressed diet organik kalori">
-                <div
-                    class="h-44 bg-gradient-to-tr from-[#1E3A2F] to-[#2E5A44] p-6 text-white flex flex-col justify-between relative">
-                    <span
-                        class="inline-block px-2.5 py-1 rounded-md text-[11px] font-bold bg-white/20 backdrop-blur-md w-max">Bidang
-                        01 — F&B Group C</span>
-                    <div>
-                        <h3 class="font-sans text-xl font-bold">Healthy Diet & Organik</h3>
-                        <p class="text-xs text-emerald-200 mt-1">Clean Scandinavian & Bio-Nutri Hub</p>
-                    </div>
-                </div>
-                <div class="p-5 flex-1 flex flex-col justify-between">
-                    <div>
-                        <p class="text-xs text-slate-600 line-clamp-2 leading-relaxed">
-                            Layout bersih dengan data kalori (Kcal), makronutrisi lengkap, serta langganan salad &
-                            cold-pressed mingguan.
-                        </p>
-                        <div class="mt-3 flex flex-wrap gap-1.5">
-                            <span class="text-[10px] bg-slate-100 text-slate-600 px-2 py-0.5 rounded">Calorie
-                                Tracker</span>
-                            <span
-                                class="text-[10px] bg-slate-100 text-slate-600 px-2 py-0.5 rounded">Subscription</span>
-                        </div>
-                    </div>
-                    <div class="mt-5 pt-4 border-t border-slate-100 flex items-center justify-between">
-                        <span class="text-xs font-mono text-slate-400">fnb-healthy-diet</span>
-                        <a href="01-fnb-kuliner/fnb-healthy-diet/index.html"
-                            class="inline-flex items-center gap-1.5 px-3.5 py-1.5 rounded-lg bg-slate-900 hover:bg-amber-600 text-white text-xs font-semibold transition-colors">
-                            Lihat Demo <i data-lucide="arrow-up-right" class="w-3.5 h-3.5"></i>
-                        </a>
-                    </div>
-                </div>
-            </article>
-
-            <!-- Item 1.4 -->
-            <article
-                class="template-card bg-white rounded-2xl border border-slate-200 overflow-hidden hover:shadow-xl hover:-translate-y-1 transition-all flex flex-col"
-                data-category="01-fnb-kuliner"
-                data-tags="jajanan pasar kue basah tampah tradisional snack box catering">
-                <div
-                    class="h-44 bg-gradient-to-tr from-[#2D4B39] to-[#8C5D35] p-6 text-white flex flex-col justify-between relative">
-                    <span
-                        class="inline-block px-2.5 py-1 rounded-md text-[11px] font-bold bg-white/20 backdrop-blur-md w-max">Bidang
-                        01 — F&B Group C</span>
-                    <div>
-                        <h3 class="font-serif text-xl font-bold">Kue Tampah & Jajanan Pasar</h3>
-                        <p class="text-xs text-amber-100 mt-1">Indonesian Heritage Craft & Festive Tampah</p>
-                    </div>
-                </div>
-                <div class="p-5 flex-1 flex flex-col justify-between">
-                    <div>
-                        <p class="text-xs text-slate-600 line-clamp-2 leading-relaxed">
-                            Nuansa daun pisang & anyaman bambu hangat untuk pesanan kue basah subuh, hantaran, & arisan.
-                        </p>
-                        <div class="mt-3 flex flex-wrap gap-1.5">
-                            <span class="text-[10px] bg-slate-100 text-slate-600 px-2 py-0.5 rounded">Heritage
-                                Vibe</span>
-                            <span class="text-[10px] bg-slate-100 text-slate-600 px-2 py-0.5 rounded">Tampah
-                                Builder</span>
-                        </div>
-                    </div>
-                    <div class="mt-5 pt-4 border-t border-slate-100 flex items-center justify-between">
-                        <span class="text-xs font-mono text-slate-400">fnb-tradisional-tampah</span>
-                        <a href="01-fnb-kuliner/fnb-tradisional-tampah/index.html"
-                            class="inline-flex items-center gap-1.5 px-3.5 py-1.5 rounded-lg bg-slate-900 hover:bg-amber-600 text-white text-xs font-semibold transition-colors">
-                            Lihat Demo <i data-lucide="arrow-up-right" class="w-3.5 h-3.5"></i>
-                        </a>
-                    </div>
-                </div>
-            </article>
-
-            <!-- ================= BIDANG 02: FASHION & SKINCARE ================= -->
-            <!-- Item 2.1 -->
-            <article
-                class="template-card bg-white rounded-2xl border border-slate-200 overflow-hidden hover:shadow-xl hover:-translate-y-1 transition-all flex flex-col"
-                data-category="02-fashion-skincare" data-tags="pakaian kasual baju kaos kemeja celana minimalis ootd">
-                <div
-                    class="h-44 bg-gradient-to-tr from-[#1A1A1A] to-[#4A4A4A] p-6 text-white flex flex-col justify-between relative">
-                    <span
-                        class="inline-block px-2.5 py-1 rounded-md text-[11px] font-bold bg-white/20 backdrop-blur-md w-max">Bidang
-                        02 — Fashion Group A</span>
-                    <div>
-                        <h3 class="font-sans text-xl font-bold">Pakaian Kasual Modern</h3>
-                        <p class="text-xs text-slate-300 mt-1">Clean Contemporary Studio (3:4 Ratio)</p>
-                    </div>
-                </div>
-                <div class="p-5 flex-1 flex flex-col justify-between">
-                    <div>
-                        <p class="text-xs text-slate-600 line-clamp-2 leading-relaxed">
-                            Tampilan minimalis ala Zara/Uniqlo dengan swatch warna interaktif, size chart pop-up, &
-                            lookbook OOTD.
-                        </p>
-                        <div class="mt-3 flex flex-wrap gap-1.5">
-                            <span class="text-[10px] bg-slate-100 text-slate-600 px-2 py-0.5 rounded">Minimalist</span>
-                            <span class="text-[10px] bg-slate-100 text-slate-600 px-2 py-0.5 rounded">Color
-                                Swatches</span>
-                        </div>
-                    </div>
-                    <div class="mt-5 pt-4 border-t border-slate-100 flex items-center justify-between">
-                        <span class="text-xs font-mono text-slate-400">fashion-casual-minimal</span>
-                        <a href="02-fashion-skincare/fashion-casual-minimal/index.html"
-                            class="inline-flex items-center gap-1.5 px-3.5 py-1.5 rounded-lg bg-slate-900 hover:bg-amber-600 text-white text-xs font-semibold transition-colors">
-                            Lihat Demo <i data-lucide="arrow-up-right" class="w-3.5 h-3.5"></i>
-                        </a>
-                    </div>
-                </div>
-            </article>
-
-            <!-- Item 2.2 -->
-            <article
-                class="template-card bg-white rounded-2xl border border-slate-200 overflow-hidden hover:shadow-xl hover:-translate-y-1 transition-all flex flex-col"
-                data-category="02-fashion-skincare" data-tags="skincare serum toner klinik bpom dokter kulit lab">
-                <div
-                    class="h-44 bg-gradient-to-tr from-[#0F172A] to-[#0284C7] p-6 text-white flex flex-col justify-between relative">
-                    <span
-                        class="inline-block px-2.5 py-1 rounded-md text-[11px] font-bold bg-white/20 backdrop-blur-md w-max">Bidang
-                        02 — Fashion Group B</span>
-                    <div>
-                        <h3 class="font-sans text-xl font-bold">Clinical Derm Skincare</h3>
-                        <p class="text-xs text-cyan-200 mt-1">Clinical Lab Data Grid & Routine Builder</p>
-                    </div>
-                </div>
-                <div class="p-5 flex-1 flex flex-col justify-between">
-                    <div>
-                        <p class="text-xs text-slate-600 line-clamp-2 leading-relaxed">
-                            Arsitektur lab medis modern dengan tabel konsentrasi bahan aktif %, nomor BPOM, & 3-step
-                            routine.
-                        </p>
-                        <div class="mt-3 flex flex-wrap gap-1.5">
-                            <span class="text-[10px] bg-slate-100 text-slate-600 px-2 py-0.5 rounded">Clinical
-                                Specs</span>
-                            <span class="text-[10px] bg-slate-100 text-slate-600 px-2 py-0.5 rounded">Routine
-                                Builder</span>
-                        </div>
-                    </div>
-                    <div class="mt-5 pt-4 border-t border-slate-100 flex items-center justify-between">
-                        <span class="text-xs font-mono text-slate-400">skincare-clinical-lab</span>
-                        <a href="02-fashion-skincare/skincare-clinical-lab/index.html"
-                            class="inline-flex items-center gap-1.5 px-3.5 py-1.5 rounded-lg bg-slate-900 hover:bg-amber-600 text-white text-xs font-semibold transition-colors">
-                            Lihat Demo <i data-lucide="arrow-up-right" class="w-3.5 h-3.5"></i>
-                        </a>
-                    </div>
-                </div>
-            </article>
-
-            <!-- Item 2.3 -->
-            <article
-                class="template-card bg-white rounded-2xl border border-slate-200 overflow-hidden hover:shadow-xl hover:-translate-y-1 transition-all flex flex-col"
-                data-category="02-fashion-skincare" data-tags="parfum wewangian edp extrait body mist aroma luxury">
-                <div
-                    class="h-44 bg-gradient-to-tr from-[#0A0A0A] to-[#3E2723] p-6 text-white flex flex-col justify-between relative">
-                    <span
-                        class="inline-block px-2.5 py-1 rounded-md text-[11px] font-bold bg-white/20 backdrop-blur-md w-max">Bidang
-                        02 — Fashion Group B</span>
-                    <div>
-                        <h3 class="font-serif text-xl font-bold">Luxury Perfume Atelier</h3>
-                        <p class="text-xs text-amber-200 mt-1">Dark Sensory & Fragrance Pyramid</p>
-                    </div>
-                </div>
-                <div class="p-5 flex-1 flex flex-col justify-between">
-                    <div>
-                        <p class="text-xs text-slate-600 line-clamp-2 leading-relaxed">
-                            Kanvas hitam mewah puitis dengan visual piramida aroma (Top/Heart/Base) & indikator
-                            ketahanan jam.
-                        </p>
-                        <div class="mt-3 flex flex-wrap gap-1.5">
-                            <span class="text-[10px] bg-slate-100 text-slate-600 px-2 py-0.5 rounded">Dark Luxury</span>
-                            <span class="text-[10px] bg-slate-100 text-slate-600 px-2 py-0.5 rounded">Scent
-                                Pyramid</span>
-                        </div>
-                    </div>
-                    <div class="mt-5 pt-4 border-t border-slate-100 flex items-center justify-between">
-                        <span class="text-xs font-mono text-slate-400">perfume-luxury-atelier</span>
-                        <a href="02-fashion-skincare/perfume-luxury-atelier/index.html"
-                            class="inline-flex items-center gap-1.5 px-3.5 py-1.5 rounded-lg bg-slate-900 hover:bg-amber-600 text-white text-xs font-semibold transition-colors">
-                            Lihat Demo <i data-lucide="arrow-up-right" class="w-3.5 h-3.5"></i>
-                        </a>
-                    </div>
-                </div>
-            </article>
-
-            <!-- Item 2.4 -->
-            <article
-                class="template-card bg-white rounded-2xl border border-slate-200 overflow-hidden hover:shadow-xl hover:-translate-y-1 transition-all flex flex-col"
-                data-category="02-fashion-skincare" data-tags="sepatu sneakers sandal loafers streetwear insole kaki">
-                <div
-                    class="h-44 bg-gradient-to-tr from-[#18181B] to-[#EA580C] p-6 text-white flex flex-col justify-between relative">
-                    <span
-                        class="inline-block px-2.5 py-1 rounded-md text-[11px] font-bold bg-white/20 backdrop-blur-md w-max">Bidang
-                        02 — Fashion Group C</span>
-                    <div>
-                        <h3 class="font-sans text-xl font-bold">Urban Footwear Vault</h3>
-                        <p class="text-xs text-orange-200 mt-1">Streetwear Sneaker Angles & Insole Guide</p>
-                    </div>
-                </div>
-                <div class="p-5 flex-1 flex flex-col justify-between">
-                    <div>
-                        <p class="text-xs text-slate-600 line-clamp-2 leading-relaxed">
-                            Fokus pada profil sepatu sudut 45°, panduan insole centimeter, dan material sol karet
-                            anti-licin.
-                        </p>
-                        <div class="mt-3 flex flex-wrap gap-1.5">
-                            <span class="text-[10px] bg-slate-100 text-slate-600 px-2 py-0.5 rounded">High
-                                Contrast</span>
-                            <span class="text-[10px] bg-slate-100 text-slate-600 px-2 py-0.5 rounded">Insole
-                                Matrix</span>
-                        </div>
-                    </div>
-                    <div class="mt-5 pt-4 border-t border-slate-100 flex items-center justify-between">
-                        <span class="text-xs font-mono text-slate-400">footwear-sneakers-street</span>
-                        <a href="02-fashion-skincare/footwear-sneakers-street/index.html"
-                            class="inline-flex items-center gap-1.5 px-3.5 py-1.5 rounded-lg bg-slate-900 hover:bg-amber-600 text-white text-xs font-semibold transition-colors">
-                            Lihat Demo <i data-lucide="arrow-up-right" class="w-3.5 h-3.5"></i>
-                        </a>
-                    </div>
-                </div>
-            </article>
-
-            <!-- ================= BIDANG 03: RITEL & GADGET ================= -->
-            <!-- Item 3.1 -->
-            <article
-                class="template-card bg-white rounded-2xl border border-slate-200 overflow-hidden hover:shadow-xl hover:-translate-y-1 transition-all flex flex-col"
-                data-category="03-ritel-gadget-hobi"
-                data-tags="gadget hp charger tws casing powerbank fast charging gan">
-                <div
-                    class="h-44 bg-gradient-to-tr from-[#090D16] to-[#06B6D4] p-6 text-white flex flex-col justify-between relative">
-                    <span
-                        class="inline-block px-2.5 py-1 rounded-md text-[11px] font-bold bg-white/20 backdrop-blur-md w-max">Bidang
-                        03 — Ritel Group A</span>
-                    <div>
-                        <h3 class="font-sans text-xl font-bold">Mobile Tech & Gadgets</h3>
-                        <p class="text-xs text-cyan-200 mt-1">Cyber Neon Terminal & Device Matcher</p>
-                    </div>
-                </div>
-                <div class="p-5 flex-1 flex flex-col justify-between">
-                    <div>
-                        <p class="text-xs text-slate-600 line-clamp-2 leading-relaxed">
-                            Layout bernuansa gawai futuristik dengan badge wattase GaN 65W & matrix kompatibilitas
-                            ponsel.
-                        </p>
-                        <div class="mt-3 flex flex-wrap gap-1.5">
-                            <span class="text-[10px] bg-slate-100 text-slate-600 px-2 py-0.5 rounded">Cyber
-                                Terminal</span>
-                            <span class="text-[10px] bg-slate-100 text-slate-600 px-2 py-0.5 rounded">Wattage
-                                Badges</span>
-                        </div>
-                    </div>
-                    <div class="mt-5 pt-4 border-t border-slate-100 flex items-center justify-between">
-                        <span class="text-xs font-mono text-slate-400">gadget-mobile-tech</span>
-                        <a href="03-ritel-gadget-hobi/gadget-mobile-tech/index.html"
-                            class="inline-flex items-center gap-1.5 px-3.5 py-1.5 rounded-lg bg-slate-900 hover:bg-amber-600 text-white text-xs font-semibold transition-colors">
-                            Lihat Demo <i data-lucide="arrow-up-right" class="w-3.5 h-3.5"></i>
-                        </a>
-                    </div>
-                </div>
-            </article>
-
-            <!-- Item 3.2 -->
-            <article
-                class="template-card bg-white rounded-2xl border border-slate-200 overflow-hidden hover:shadow-xl hover:-translate-y-1 transition-all flex flex-col"
-                data-category="03-ritel-gadget-hobi" data-tags="camping outdoor tenda gunung carrier hiking survival">
-                <div
-                    class="h-44 bg-gradient-to-tr from-[#1C2826] to-[#F97316] p-6 text-white flex flex-col justify-between relative">
-                    <span
-                        class="inline-block px-2.5 py-1 rounded-md text-[11px] font-bold bg-white/20 backdrop-blur-md w-max">Bidang
-                        03 — Ritel Group B</span>
-                    <div>
-                        <h3 class="font-sans text-xl font-bold">Outdoor & Expedition</h3>
-                        <p class="text-xs text-orange-200 mt-1">Rugged Field Journal & Waterproof Specs</p>
-                    </div>
-                </div>
-                <div class="p-5 flex-1 flex flex-col justify-between">
-                    <div>
-                        <p class="text-xs text-slate-600 line-clamp-2 leading-relaxed">
-                            Jurnal ekspedisi alam bebas dengan kalkulator kapasitas tenda, checklist naik gunung, &
-                            rating PU 3000mm.
-                        </p>
-                        <div class="mt-3 flex flex-wrap gap-1.5">
-                            <span class="text-[10px] bg-slate-100 text-slate-600 px-2 py-0.5 rounded">Rugged
-                                Journal</span>
-                            <span class="text-[10px] bg-slate-100 text-slate-600 px-2 py-0.5 rounded">Gear
-                                Checklist</span>
-                        </div>
-                    </div>
-                    <div class="mt-5 pt-4 border-t border-slate-100 flex items-center justify-between">
-                        <span class="text-xs font-mono text-slate-400">outdoor-camping-expedition</span>
-                        <a href="03-ritel-gadget-hobi/outdoor-camping-expedition/index.html"
-                            class="inline-flex items-center gap-1.5 px-3.5 py-1.5 rounded-lg bg-slate-900 hover:bg-amber-600 text-white text-xs font-semibold transition-colors">
-                            Lihat Demo <i data-lucide="arrow-up-right" class="w-3.5 h-3.5"></i>
-                        </a>
-                    </div>
-                </div>
-            </article>
-
-            <!-- Item 3.3 -->
-            <article
-                class="template-card bg-white rounded-2xl border border-slate-200 overflow-hidden hover:shadow-xl hover:-translate-y-1 transition-all flex flex-col"
-                data-category="03-ritel-gadget-hobi" data-tags="pet supplies kucing anjing makanan pakan pasir anabul">
-                <div
-                    class="h-44 bg-gradient-to-tr from-[#43281C] to-[#F97316] p-6 text-white flex flex-col justify-between relative">
-                    <span
-                        class="inline-block px-2.5 py-1 rounded-md text-[11px] font-bold bg-white/20 backdrop-blur-md w-max">Bidang
-                        03 — Ritel Group C</span>
-                    <div>
-                        <h3 class="font-sans text-xl font-bold">Pet Care & Supplies</h3>
-                        <p class="text-xs text-amber-200 mt-1">Playful Pet Haven & Nutrition Board</p>
-                    </div>
-                </div>
-                <div class="p-5 flex-1 flex flex-col justify-between">
-                    <div>
-                        <p class="text-xs text-slate-600 line-clamp-2 leading-relaxed">
-                            Desain ramah anabul dengan filter fase usia hewan (Kitten/Adult) & spesifikasi nutrisi
-                            pakan.
-                        </p>
-                        <div class="mt-3 flex flex-wrap gap-1.5">
-                            <span class="text-[10px] bg-slate-100 text-slate-600 px-2 py-0.5 rounded">Pet Haven</span>
-                            <span class="text-[10px] bg-slate-100 text-slate-600 px-2 py-0.5 rounded">Life-Stage
-                                Filter</span>
-                        </div>
-                    </div>
-                    <div class="mt-5 pt-4 border-t border-slate-100 flex items-center justify-between">
-                        <span class="text-xs font-mono text-slate-400">pet-care-haven</span>
-                        <a href="03-ritel-gadget-hobi/pet-care-haven/index.html"
-                            class="inline-flex items-center gap-1.5 px-3.5 py-1.5 rounded-lg bg-slate-900 hover:bg-amber-600 text-white text-xs font-semibold transition-colors">
-                            Lihat Demo <i data-lucide="arrow-up-right" class="w-3.5 h-3.5"></i>
-                        </a>
-                    </div>
-                </div>
-            </article>
-
-            <!-- Item 3.4 -->
-            <article
-                class="template-card bg-white rounded-2xl border border-slate-200 overflow-hidden hover:shadow-xl hover:-translate-y-1 transition-all flex flex-col"
-                data-category="03-ritel-gadget-hobi" data-tags="tanaman hias pot bunga kebun monstera greenhouse">
-                <div
-                    class="h-44 bg-gradient-to-tr from-[#1E3A2F] to-[#C86D51] p-6 text-white flex flex-col justify-between relative">
-                    <span
-                        class="inline-block px-2.5 py-1 rounded-md text-[11px] font-bold bg-white/20 backdrop-blur-md w-max">Bidang
-                        03 — Ritel Group C</span>
-                    <div>
-                        <h3 class="font-serif text-xl font-bold">Botanical Greenhouse</h3>
-                        <p class="text-xs text-emerald-200 mt-1">Plant Care Matrix & Sunlight Scale</p>
-                    </div>
-                </div>
-                <div class="p-5 flex-1 flex flex-col justify-between">
-                    <div>
-                        <p class="text-xs text-slate-600 line-clamp-2 leading-relaxed">
-                            Nuansa asri kebun greenhouse dengan panduan kebutuhan cahaya matahari & jadwal siram air.
-                        </p>
-                        <div class="mt-3 flex flex-wrap gap-1.5">
-                            <span class="text-[10px] bg-slate-100 text-slate-600 px-2 py-0.5 rounded">Plant Care
-                                Scale</span>
-                            <span class="text-[10px] bg-slate-100 text-slate-600 px-2 py-0.5 rounded">Urban
-                                Jungle</span>
-                        </div>
-                    </div>
-                    <div class="mt-5 pt-4 border-t border-slate-100 flex items-center justify-between">
-                        <span class="text-xs font-mono text-slate-400">plants-botanical-greenhouse</span>
-                        <a href="03-ritel-gadget-hobi/plants-botanical-greenhouse/index.html"
-                            class="inline-flex items-center gap-1.5 px-3.5 py-1.5 rounded-lg bg-slate-900 hover:bg-amber-600 text-white text-xs font-semibold transition-colors">
-                            Lihat Demo <i data-lucide="arrow-up-right" class="w-3.5 h-3.5"></i>
-                        </a>
-                    </div>
-                </div>
-            </article>
-
-            <!-- ================= BIDANG 04: KRIYA & DEKORASI ================= -->
-            <!-- Item 4.1 -->
-            <article
-                class="template-card bg-white rounded-2xl border border-slate-200 overflow-hidden hover:shadow-xl hover:-translate-y-1 transition-all flex flex-col"
-                data-category="04-kriya-dekorasi"
-                data-tags="furnitur mebel kayu jati solid japandi minimalis meja kursi">
-                <div
-                    class="h-44 bg-gradient-to-tr from-[#2E1F16] to-[#8C5D35] p-6 text-white flex flex-col justify-between relative">
-                    <span
-                        class="inline-block px-2.5 py-1 rounded-md text-[11px] font-bold bg-white/20 backdrop-blur-md w-max">Bidang
-                        04 — Kriya Group A</span>
-                    <div>
-                        <h3 class="font-serif text-xl font-bold">Solid Teak Furniture</h3>
-                        <p class="text-xs text-amber-200 mt-1">Architectural Japandi & Wood Specs</p>
-                    </div>
-                </div>
-                <div class="p-5 flex-1 flex flex-col justify-between">
-                    <div>
-                        <p class="text-xs text-slate-600 line-clamp-2 leading-relaxed">
-                            Arsitektur Japandi elegan dengan penekanan pada serat urat kayu jati tua, finishing matte, &
-                            custom denah.
-                        </p>
-                        <div class="mt-3 flex flex-wrap gap-1.5">
-                            <span class="text-[10px] bg-slate-100 text-slate-600 px-2 py-0.5 rounded">Solid Teak</span>
-                            <span class="text-[10px] bg-slate-100 text-slate-600 px-2 py-0.5 rounded">Custom Size</span>
-                        </div>
-                    </div>
-                    <div class="mt-5 pt-4 border-t border-slate-100 flex items-center justify-between">
-                        <span class="text-xs font-mono text-slate-400">furniture-teak-artisan</span>
-                        <a href="04-kriya-dekorasi/furniture-teak-artisan/index.html"
-                            class="inline-flex items-center gap-1.5 px-3.5 py-1.5 rounded-lg bg-slate-900 hover:bg-amber-600 text-white text-xs font-semibold transition-colors">
-                            Lihat Demo <i data-lucide="arrow-up-right" class="w-3.5 h-3.5"></i>
-                        </a>
-                    </div>
-                </div>
-            </article>
-
-            <!-- Item 4.2 -->
-            <article
-                class="template-card bg-white rounded-2xl border border-slate-200 overflow-hidden hover:shadow-xl hover:-translate-y-1 transition-all flex flex-col"
-                data-category="04-kriya-dekorasi" data-tags="batik tulis tenun ikat kain nusantara lurik canting">
-                <div
-                    class="h-44 bg-gradient-to-tr from-[#152238] to-[#3B2219] p-6 text-white flex flex-col justify-between relative">
-                    <span
-                        class="inline-block px-2.5 py-1 rounded-md text-[11px] font-bold bg-white/20 backdrop-blur-md w-max">Bidang
-                        04 — Kriya Group B</span>
-                    <div>
-                        <h3 class="font-serif text-xl font-bold">Heritage Batik & Weave</h3>
-                        <p class="text-xs text-amber-300 mt-1">Royal Atelier & Motif Philosophy</p>
-                    </div>
-                </div>
-                <div class="p-5 flex-1 flex flex-col justify-between">
-                    <div>
-                        <p class="text-xs text-slate-600 line-clamp-2 leading-relaxed">
-                            Nuansa adiluhung Nusantara dengan kartu filosofi motif batik tulis canting & kain tenun
-                            ATBM.
-                        </p>
-                        <div class="mt-3 flex flex-wrap gap-1.5">
-                            <span class="text-[10px] bg-slate-100 text-slate-600 px-2 py-0.5 rounded">Royal
-                                Heritage</span>
-                            <span class="text-[10px] bg-slate-100 text-slate-600 px-2 py-0.5 rounded">Motif
-                                Philosophy</span>
-                        </div>
-                    </div>
-                    <div class="mt-5 pt-4 border-t border-slate-100 flex items-center justify-between">
-                        <span class="text-xs font-mono text-slate-400">batik-heritage-atelier</span>
-                        <a href="04-kriya-dekorasi/batik-heritage-atelier/index.html"
-                            class="inline-flex items-center gap-1.5 px-3.5 py-1.5 rounded-lg bg-slate-900 hover:bg-amber-600 text-white text-xs font-semibold transition-colors">
-                            Lihat Demo <i data-lucide="arrow-up-right" class="w-3.5 h-3.5"></i>
-                        </a>
-                    </div>
-                </div>
-            </article>
-
-            <!-- Item 4.3 -->
-            <article
-                class="template-card bg-white rounded-2xl border border-slate-200 overflow-hidden hover:shadow-xl hover:-translate-y-1 transition-all flex flex-col"
-                data-category="04-kriya-dekorasi"
-                data-tags="lilin aromaterapi scented candle reed diffuser wangi relaksasi">
-                <div
-                    class="h-44 bg-gradient-to-tr from-[#422C1D] to-[#D97706] p-6 text-white flex flex-col justify-between relative">
-                    <span
-                        class="inline-block px-2.5 py-1 rounded-md text-[11px] font-bold bg-white/20 backdrop-blur-md w-max">Bidang
-                        04 — Kriya Group C</span>
-                    <div>
-                        <h3 class="font-serif text-xl font-bold">Scent Candle Sanctuary</h3>
-                        <p class="text-xs text-amber-200 mt-1">Warm Ambient & Burn Time Specs</p>
-                    </div>
-                </div>
-                <div class="p-5 flex-1 flex flex-col justify-between">
-                    <div>
-                        <p class="text-xs text-slate-600 line-clamp-2 leading-relaxed">
-                            Tata letak hangat menenangkan dengan spesifikasi jam bakar soy wax & piramida aroma
-                            terapeutik.
-                        </p>
-                        <div class="mt-3 flex flex-wrap gap-1.5">
-                            <span class="text-[10px] bg-slate-100 text-slate-600 px-2 py-0.5 rounded">Ambient
-                                Glow</span>
-                            <span class="text-[10px] bg-slate-100 text-slate-600 px-2 py-0.5 rounded">Burn Hours</span>
-                        </div>
-                    </div>
-                    <div class="mt-5 pt-4 border-t border-slate-100 flex items-center justify-between">
-                        <span class="text-xs font-mono text-slate-400">scent-candle-sanctuary</span>
-                        <a href="04-kriya-dekorasi/scent-candle-sanctuary/index.html"
-                            class="inline-flex items-center gap-1.5 px-3.5 py-1.5 rounded-lg bg-slate-900 hover:bg-amber-600 text-white text-xs font-semibold transition-colors">
-                            Lihat Demo <i data-lucide="arrow-up-right" class="w-3.5 h-3.5"></i>
-                        </a>
-                    </div>
-                </div>
-            </article>
-
-            <!-- Item 4.4 -->
-            <article
-                class="template-card bg-white rounded-2xl border border-slate-200 overflow-hidden hover:shadow-xl hover:-translate-y-1 transition-all flex flex-col"
-                data-category="04-kriya-dekorasi"
-                data-tags="hampers kado souvenir gift box hardbox corporate bridesmaid">
-                <div
-                    class="h-44 bg-gradient-to-tr from-[#1B4332] to-[#6B2D5C] p-6 text-white flex flex-col justify-between relative">
-                    <span
-                        class="inline-block px-2.5 py-1 rounded-md text-[11px] font-bold bg-white/20 backdrop-blur-md w-max">Bidang
-                        04 — Kriya Group C</span>
-                    <div>
-                        <h3 class="font-serif text-xl font-bold">Bespoke Gift & Hampers</h3>
-                        <p class="text-xs text-rose-200 mt-1">Festive Box Studio & Wax Seal Detail</p>
-                    </div>
-                </div>
-                <div class="p-5 flex-1 flex flex-col justify-between">
-                    <div>
-                        <p class="text-xs text-slate-600 line-clamp-2 leading-relaxed">
-                            Kurasi bingkisan hari raya & perusahaan dengan kustomisasi kartu lilin malam wax seal &
-                            hardbox mewah.
-                        </p>
-                        <div class="mt-3 flex flex-wrap gap-1.5">
-                            <span class="text-[10px] bg-slate-100 text-slate-600 px-2 py-0.5 rounded">Bespoke
-                                Curation</span>
-                            <span class="text-[10px] bg-slate-100 text-slate-600 px-2 py-0.5 rounded">Wax Seal
-                                Stamp</span>
-                        </div>
-                    </div>
-                    <div class="mt-5 pt-4 border-t border-slate-100 flex items-center justify-between">
-                        <span class="text-xs font-mono text-slate-400">custom-hampers-curation</span>
-                        <a href="04-kriya-dekorasi/custom-hampers-curation/index.html"
-                            class="inline-flex items-center gap-1.5 px-3.5 py-1.5 rounded-lg bg-slate-900 hover:bg-amber-600 text-white text-xs font-semibold transition-colors">
-                            Lihat Demo <i data-lucide="arrow-up-right" class="w-3.5 h-3.5"></i>
-                        </a>
-                    </div>
-                </div>
-            </article>
-
-            <!-- ================= BIDANG 05: AGROBISNIS ================= -->
-            <!-- Item 5.1 -->
-            <article
-                class="template-card bg-white rounded-2xl border border-slate-200 overflow-hidden hover:shadow-xl hover:-translate-y-1 transition-all flex flex-col"
-                data-category="05-agrobisnis-bahan-mentah"
-                data-tags="sayur hidroponik kebun panen sayuran organik pack">
-                <div
-                    class="h-44 bg-gradient-to-tr from-[#14532D] to-[#16A34A] p-6 text-white flex flex-col justify-between relative">
-                    <span
-                        class="inline-block px-2.5 py-1 rounded-md text-[11px] font-bold bg-white/20 backdrop-blur-md w-max">Bidang
-                        05 — Agrobisnis Group A</span>
-                    <div>
-                        <h3 class="font-sans text-xl font-bold">Sayur Hidroponik Fresh</h3>
-                        <p class="text-xs text-emerald-100 mt-1">Clean Greenhouse & Harvest Schedule</p>
-                    </div>
-                </div>
-                <div class="p-5 flex-1 flex flex-col justify-between">
-                    <div>
-                        <p class="text-xs text-slate-600 line-clamp-2 leading-relaxed">
-                            Jadwal panen subuh, jaminan bebas pestisida kimia 100%, serta langganan farm box mingguan.
-                        </p>
-                        <div class="mt-3 flex flex-wrap gap-1.5">
-                            <span
-                                class="text-[10px] bg-slate-100 text-slate-600 px-2 py-0.5 rounded">Pesticide-Free</span>
-                            <span class="text-[10px] bg-slate-100 text-slate-600 px-2 py-0.5 rounded">Harvest
-                                Board</span>
-                        </div>
-                    </div>
-                    <div class="mt-5 pt-4 border-t border-slate-100 flex items-center justify-between">
-                        <span class="text-xs font-mono text-slate-400">agro-hydroponic-fresh</span>
-                        <a href="05-agrobisnis-bahan-mentah/agro-hydroponic-fresh/index.html"
-                            class="inline-flex items-center gap-1.5 px-3.5 py-1.5 rounded-lg bg-slate-900 hover:bg-amber-600 text-white text-xs font-semibold transition-colors">
-                            Lihat Demo <i data-lucide="arrow-up-right" class="w-3.5 h-3.5"></i>
-                        </a>
-                    </div>
-                </div>
-            </article>
-
-            <!-- Item 5.2 -->
-            <article
-                class="template-card bg-white rounded-2xl border border-slate-200 overflow-hidden hover:shadow-xl hover:-translate-y-1 transition-all flex flex-col"
-                data-category="05-agrobisnis-bahan-mentah"
-                data-tags="ikan udang seafood nelayan tambak rantai dingin cold chain">
-                <div
-                    class="h-44 bg-gradient-to-tr from-[#0F172A] to-[#0284C7] p-6 text-white flex flex-col justify-between relative">
-                    <span
-                        class="inline-block px-2.5 py-1 rounded-md text-[11px] font-bold bg-white/20 backdrop-blur-md w-max">Bidang
-                        05 — Agrobisnis Group B</span>
-                    <div>
-                        <h3 class="font-sans text-xl font-bold">Fresh Seafood & Fishery Hub</h3>
-                        <p class="text-xs text-cyan-200 mt-1">Cold-Chain Terminal & Sizing Scale</p>
-                    </div>
-                </div>
-                <div class="p-5 flex-1 flex flex-col justify-between">
-                    <div>
-                        <p class="text-xs text-slate-600 line-clamp-2 leading-relaxed">
-                            Pengiriman rantai dingin es 0°C, asal tangkapan nelayan, uji bebas formalin, & suplai resto
-                            seafood.
-                        </p>
-                        <div class="mt-3 flex flex-wrap gap-1.5">
-                            <span class="text-[10px] bg-slate-100 text-slate-600 px-2 py-0.5 rounded">0°C Cold
-                                Chain</span>
-                            <span class="text-[10px] bg-slate-100 text-slate-600 px-2 py-0.5 rounded">Size
-                                Grading</span>
-                        </div>
-                    </div>
-                    <div class="mt-5 pt-4 border-t border-slate-100 flex items-center justify-between">
-                        <span class="text-xs font-mono text-slate-400">fishery-fresh-seafood-hub</span>
-                        <a href="05-agrobisnis-bahan-mentah/fishery-fresh-seafood-hub/index.html"
-                            class="inline-flex items-center gap-1.5 px-3.5 py-1.5 rounded-lg bg-slate-900 hover:bg-amber-600 text-white text-xs font-semibold transition-colors">
-                            Lihat Demo <i data-lucide="arrow-up-right" class="w-3.5 h-3.5"></i>
-                        </a>
-                    </div>
-                </div>
-            </article>
-
-            <!-- Item 5.3 -->
-            <article
-                class="template-card bg-white rounded-2xl border border-slate-200 overflow-hidden hover:shadow-xl hover:-translate-y-1 transition-all flex flex-col"
-                data-category="05-agrobisnis-bahan-mentah"
-                data-tags="green beans kopi teh perkebunan mentah goni masl cupping">
-                <div
-                    class="h-44 bg-gradient-to-tr from-[#3B2A1D] to-[#1B4332] p-6 text-white flex flex-col justify-between relative">
-                    <span
-                        class="inline-block px-2.5 py-1 rounded-md text-[11px] font-bold bg-white/20 backdrop-blur-md w-max">Bidang
-                        05 — Agrobisnis Group C</span>
-                    <div>
-                        <h3 class="font-serif text-xl font-bold">Coffee & Tea Estate</h3>
-                        <p class="text-xs text-amber-200 mt-1">Highland Terroir & Cupping Score</p>
-                    </div>
-                </div>
-                <div class="p-5 flex-1 flex flex-col justify-between">
-                    <div>
-                        <p class="text-xs text-slate-600 line-clamp-2 leading-relaxed">
-                            Spesifikasi ketinggian MDPL, proses pasca-panen, kadar air %, dan penjualan karungan
-                            GrainPro untuk roastery.
-                        </p>
-                        <div class="mt-3 flex flex-wrap gap-1.5">
-                            <span class="text-[10px] bg-slate-100 text-slate-600 px-2 py-0.5 rounded">SCA
-                                Specialty</span>
-                            <span class="text-[10px] bg-slate-100 text-slate-600 px-2 py-0.5 rounded">Altitude
-                                Specs</span>
-                        </div>
-                    </div>
-                    <div class="mt-5 pt-4 border-t border-slate-100 flex items-center justify-between">
-                        <span class="text-xs font-mono text-slate-400">plantation-coffee-tea-estate</span>
-                        <a href="05-agrobisnis-bahan-mentah/plantation-coffee-tea-estate/index.html"
-                            class="inline-flex items-center gap-1.5 px-3.5 py-1.5 rounded-lg bg-slate-900 hover:bg-amber-600 text-white text-xs font-semibold transition-colors">
-                            Lihat Demo <i data-lucide="arrow-up-right" class="w-3.5 h-3.5"></i>
-                        </a>
-                    </div>
-                </div>
-            </article>
-
-            <!-- Item 5.4 -->
-            <article
-                class="template-card bg-white rounded-2xl border border-slate-200 overflow-hidden hover:shadow-xl hover:-translate-y-1 transition-all flex flex-col"
-                data-category="05-agrobisnis-bahan-mentah"
-                data-tags="madu hutan murni lebah bee pollen raw honey nektar">
-                <div
-                    class="h-44 bg-gradient-to-tr from-[#1E140C] to-[#D97706] p-6 text-white flex flex-col justify-between relative">
-                    <span
-                        class="inline-block px-2.5 py-1 rounded-md text-[11px] font-bold bg-white/20 backdrop-blur-md w-max">Bidang
-                        05 — Agrobisnis Group C</span>
-                    <div>
-                        <h3 class="font-serif text-xl font-bold">Wild Forest Raw Honey</h3>
-                        <p class="text-xs text-amber-200 mt-1">Wild Apiary & Active Diastase Specs</p>
-                    </div>
-                </div>
-                <div class="p-5 flex-1 flex flex-col justify-between">
-                    <div>
-                        <p class="text-xs text-slate-600 line-clamp-2 leading-relaxed">
-                            Madu hutan liar mentah tanpa pasteurisasi dengan uji enzim diastase & sumber nektar pohon
-                            sialang.
-                        </p>
-                        <div class="mt-3 flex flex-wrap gap-1.5">
-                            <span class="text-[10px] bg-slate-100 text-slate-600 px-2 py-0.5 rounded">Raw
-                                Unheated</span>
-                            <span class="text-[10px] bg-slate-100 text-slate-600 px-2 py-0.5 rounded">Wild Apiary</span>
-                        </div>
-                    </div>
-                    <div class="mt-5 pt-4 border-t border-slate-100 flex items-center justify-between">
-                        <span class="text-xs font-mono text-slate-400">raw-honey-wild-apiary</span>
-                        <a href="05-agrobisnis-bahan-mentah/raw-honey-wild-apiary/index.html"
-                            class="inline-flex items-center gap-1.5 px-3.5 py-1.5 rounded-lg bg-slate-900 hover:bg-amber-600 text-white text-xs font-semibold transition-colors">
-                            Lihat Demo <i data-lucide="arrow-up-right" class="w-3.5 h-3.5"></i>
-                        </a>
-                    </div>
-                </div>
-            </article>
-
-            <!-- ================= BIDANG 06: SUPPLIER & GROSIR B2B ================= -->
-            <!-- Item 6.1 -->
-            <article
-                class="template-card bg-white rounded-2xl border border-slate-200 overflow-hidden hover:shadow-xl hover:-translate-y-1 transition-all flex flex-col"
-                data-category="06-supplier-grosir-b2b"
-                data-tags="kardus box pabrik packaging corrugated pengiriman ekspedisi b2b">
-                <div
-                    class="h-44 bg-gradient-to-tr from-[#1E242B] to-[#8D5B36] p-6 text-white flex flex-col justify-between relative">
-                    <span
-                        class="inline-block px-2.5 py-1 rounded-md text-[11px] font-bold bg-white/20 backdrop-blur-md w-max">Bidang
-                        06 — Supplier B2B Group A</span>
-                    <div>
-                        <h3 class="font-sans text-xl font-bold">Corrugated Box Factory</h3>
-                        <p class="text-xs text-amber-200 mt-1">Industrial Spec-Sheet & Flute Profile</p>
-                    </div>
-                </div>
-                <div class="p-5 flex-1 flex flex-col justify-between">
-                    <div>
-                        <p class="text-xs text-slate-600 line-clamp-2 leading-relaxed">
-                            Tabel ketebalan gelombang kardus (B/C/E Flute), bursting strength, & kalkulator tier harga
-                            volume MOQ.
-                        </p>
-                        <div class="mt-3 flex flex-wrap gap-1.5">
-                            <span class="text-[10px] bg-slate-100 text-slate-600 px-2 py-0.5 rounded">Flute Specs</span>
-                            <span class="text-[10px] bg-slate-100 text-slate-600 px-2 py-0.5 rounded">MOQ Tier</span>
-                        </div>
-                    </div>
-                    <div class="mt-5 pt-4 border-t border-slate-100 flex items-center justify-between">
-                        <span class="text-xs font-mono text-slate-400">packaging-corrugated-box-factory</span>
-                        <a href="06-supplier-grosir-b2b/packaging-corrugated-box-factory/index.html"
-                            class="inline-flex items-center gap-1.5 px-3.5 py-1.5 rounded-lg bg-slate-900 hover:bg-amber-600 text-white text-xs font-semibold transition-colors">
-                            Lihat Demo <i data-lucide="arrow-up-right" class="w-3.5 h-3.5"></i>
-                        </a>
-                    </div>
-                </div>
-            </article>
-
-            <!-- Item 6.2 -->
-            <article
-                class="template-card bg-white rounded-2xl border border-slate-200 overflow-hidden hover:shadow-xl hover:-translate-y-1 transition-all flex flex-col"
-                data-category="06-supplier-grosir-b2b"
-                data-tags="seragam kerja kantor kemeja pdh konveksi garmen bordir">
-                <div
-                    class="h-44 bg-gradient-to-tr from-[#0F172A] to-[#2563EB] p-6 text-white flex flex-col justify-between relative">
-                    <span
-                        class="inline-block px-2.5 py-1 rounded-md text-[11px] font-bold bg-white/20 backdrop-blur-md w-max">Bidang
-                        06 — Supplier B2B Group B</span>
-                    <div>
-                        <h3 class="font-sans text-xl font-bold">Corporate Apparel & Uniform</h3>
-                        <p class="text-xs text-blue-200 mt-1">Tailored Workwear & Japan Drill Swatch</p>
-                    </div>
-                </div>
-                <div class="p-5 flex-1 flex flex-col justify-between">
-                    <div>
-                        <p class="text-xs text-slate-600 line-clamp-2 leading-relaxed">
-                            Standar bahan kain drill, bordir komputer presisi, form request sample fitting, & penawaran
-                            resmi (Quotation).
-                        </p>
-                        <div class="mt-3 flex flex-wrap gap-1.5">
-                            <span class="text-[10px] bg-slate-100 text-slate-600 px-2 py-0.5 rounded">Corporate
-                                B2B</span>
-                            <span class="text-[10px] bg-slate-100 text-slate-600 px-2 py-0.5 rounded">Fabric
-                                Swatch</span>
-                        </div>
-                    </div>
-                    <div class="mt-5 pt-4 border-t border-slate-100 flex items-center justify-between">
-                        <span class="text-xs font-mono text-slate-400">garment-corporate-uniform</span>
-                        <a href="06-supplier-grosir-b2b/garment-corporate-uniform/index.html"
-                            class="inline-flex items-center gap-1.5 px-3.5 py-1.5 rounded-lg bg-slate-900 hover:bg-amber-600 text-white text-xs font-semibold transition-colors">
-                            Lihat Demo <i data-lucide="arrow-up-right" class="w-3.5 h-3.5"></i>
-                        </a>
-                    </div>
-                </div>
-            </article>
-
-            <!-- Item 6.3 -->
-            <article
-                class="template-card bg-white rounded-2xl border border-slate-200 overflow-hidden hover:shadow-xl hover:-translate-y-1 transition-all flex flex-col"
-                data-category="06-supplier-grosir-b2b"
-                data-tags="sembako grosir gula minyak terigu beras komoditas truk sak">
-                <div
-                    class="h-44 bg-gradient-to-tr from-[#0C1524] to-[#D97706] p-6 text-white flex flex-col justify-between relative">
-                    <span
-                        class="inline-block px-2.5 py-1 rounded-md text-[11px] font-bold bg-white/20 backdrop-blur-md w-max">Bidang
-                        06 — Supplier B2B Group C</span>
-                    <div>
-                        <h3 class="font-sans text-xl font-bold">Wholesale Sembako Depot</h3>
-                        <p class="text-xs text-amber-200 mt-1">Commodity Logistics & Daily Price Board</p>
-                    </div>
-                </div>
-                <div class="p-5 flex-1 flex flex-col justify-between">
-                    <div>
-                        <p class="text-xs text-slate-600 line-clamp-2 leading-relaxed">
-                            Distribusi tonase sembako pabrik, live price board harian, satuan sak 50kg, & kemitraan agen
-                            toko.
-                        </p>
-                        <div class="mt-3 flex flex-wrap gap-1.5">
-                            <span class="text-[10px] bg-slate-100 text-slate-600 px-2 py-0.5 rounded">Bulk Tonase</span>
-                            <span class="text-[10px] bg-slate-100 text-slate-600 px-2 py-0.5 rounded">Daily Price
-                                Board</span>
-                        </div>
-                    </div>
-                    <div class="mt-5 pt-4 border-t border-slate-100 flex items-center justify-between">
-                        <span class="text-xs font-mono text-slate-400">wholesale-sembako-commodity-hub</span>
-                        <a href="06-supplier-grosir-b2b/wholesale-sembako-commodity-hub/index.html"
-                            class="inline-flex items-center gap-1.5 px-3.5 py-1.5 rounded-lg bg-slate-900 hover:bg-amber-600 text-white text-xs font-semibold transition-colors">
-                            Lihat Demo <i data-lucide="arrow-up-right" class="w-3.5 h-3.5"></i>
-                        </a>
-                    </div>
-                </div>
-            </article>
-
-            <!-- Item 6.4 -->
-            <article
-                class="template-card bg-white rounded-2xl border border-slate-200 overflow-hidden hover:shadow-xl hover:-translate-y-1 transition-all flex flex-col"
-                data-category="06-supplier-grosir-b2b"
-                data-tags="bahan kimia pembersih laundry hotel sabun jerigen drum horeka">
-                <div
-                    class="h-44 bg-gradient-to-tr from-[#0B132B] to-[#0284C7] p-6 text-white flex flex-col justify-between relative">
-                    <span
-                        class="inline-block px-2.5 py-1 rounded-md text-[11px] font-bold bg-white/20 backdrop-blur-md w-max">Bidang
-                        06 — Supplier B2B Group C</span>
-                    <div>
-                        <h3 class="font-sans text-xl font-bold">Industrial Cleaning Chemicals</h3>
-                        <p class="text-xs text-cyan-200 mt-1">Hygiene Terminal & Dilution Calculator</p>
-                    </div>
-                </div>
-                <div class="p-5 flex-1 flex flex-col justify-between">
-                    <div>
-                        <p class="text-xs text-slate-600 line-clamp-2 leading-relaxed">
-                            Konsentrat pembersih hemat biaya untuk hotel/laundry dengan kalkulator rasio pengenceran &
-                            dokumen MSDS.
-                        </p>
-                        <div class="mt-3 flex flex-wrap gap-1.5">
-                            <span class="text-[10px] bg-slate-100 text-slate-600 px-2 py-0.5 rounded">Dilution
-                                Calculator</span>
-                            <span class="text-[10px] bg-slate-100 text-slate-600 px-2 py-0.5 rounded">MSDS &
-                                Kemenkes</span>
-                        </div>
-                    </div>
-                    <div class="mt-5 pt-4 border-t border-slate-100 flex items-center justify-between">
-                        <span class="text-xs font-mono text-slate-400">chemical-industrial-cleaning-hygiene</span>
-                        <a href="06-supplier-grosir-b2b/chemical-industrial-cleaning-hygiene/index.html"
-                            class="inline-flex items-center gap-1.5 px-3.5 py-1.5 rounded-lg bg-slate-900 hover:bg-amber-600 text-white text-xs font-semibold transition-colors">
-                            Lihat Demo <i data-lucide="arrow-up-right" class="w-3.5 h-3.5"></i>
-                        </a>
-                    </div>
-                </div>
-            </article>
-
+    <!-- STEP 1: PILIH DARI 6 BIDANG UMKM -->
+    <section id="bidang-section" class="py-16 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto w-full">
+        <div class="text-center max-w-2xl mx-auto mb-12">
+            <span class="text-xs font-extrabold uppercase tracking-widest text-amber-600">Langkah 1</span>
+            <h3 class="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight mt-1">
+                Pilih Bidang Bisnis Anda
+            </h3>
+            <p class="text-slate-600 text-sm mt-2">
+                Klik salah satu bidang di bawah ini untuk langsung membuka katalog template yang sesuai dengan industri Anda.
+            </p>
         </div>
 
-        <!-- Empty State if search yields no result -->
-        <div id="emptyState" class="hidden py-16 text-center">
-            <i data-lucide="search-x" class="w-12 h-12 mx-auto text-slate-400"></i>
-            <h4 class="mt-4 text-lg font-bold text-slate-800">Tidak ada template yang cocok</h4>
-            <p class="text-sm text-slate-500 mt-1">Coba gunakan kata kunci pencarian atau pilih kategori lain.</p>
+        <!-- 6 Grid Bidang Utama -->
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+
+            <!-- Card Bidang 01 -->
+            <button onclick="selectBidang('01-fnb-kuliner')"
+                class="bidang-card group text-left bg-white p-6 rounded-2xl border-2 border-slate-200/80 hover:border-amber-500 hover:shadow-xl transition-all duration-300 relative overflow-hidden"
+                data-target="01-fnb-kuliner">
+                <div
+                    class="w-12 h-12 rounded-xl bg-orange-100 text-orange-600 flex items-center justify-center mb-4 group-hover:scale-110 transition-transform">
+                    <i data-lucide="utensils" class="w-6 h-6"></i>
+                </div>
+                <span class="text-[11px] font-bold uppercase tracking-wider text-slate-400">Bidang 01</span>
+                <h4 class="text-lg font-bold text-slate-900 group-hover:text-amber-600 transition-colors mt-0.5">
+                    Kuliner, Bakery & Minuman</h4>
+                <p class="text-xs text-slate-500 mt-2 leading-relaxed">
+                    Rice bowl, frozen food, snack keripik, sambal uleg, coffee roastery, catering bento, gelato, bakery, cake, & tampah.
+                </p>
+                <div
+                    class="mt-4 pt-3 border-t border-slate-100 flex items-center justify-between text-xs font-bold text-amber-600">
+                    <span>Lihat 12 Template (Group A, B, C)</span>
+                    <i data-lucide="arrow-right" class="w-4 h-4 group-hover:translate-x-1 transition-transform"></i>
+                </div>
+            </button>
+
+            <!-- Card Bidang 02 -->
+            <button onclick="selectBidang('02-fashion-skincare')"
+                class="bidang-card group text-left bg-white p-6 rounded-2xl border-2 border-slate-200/80 hover:border-amber-500 hover:shadow-xl transition-all duration-300 relative overflow-hidden"
+                data-target="02-fashion-skincare">
+                <div
+                    class="w-12 h-12 rounded-xl bg-rose-100 text-rose-600 flex items-center justify-center mb-4 group-hover:scale-110 transition-transform">
+                    <i data-lucide="sparkles" class="w-6 h-6"></i>
+                </div>
+                <span class="text-[11px] font-bold uppercase tracking-wider text-slate-400">Bidang 02</span>
+                <h4 class="text-lg font-bold text-slate-900 group-hover:text-amber-600 transition-colors mt-0.5">
+                    Fashion, Skincare & Beauty</h4>
+                <p class="text-xs text-slate-500 mt-2 leading-relaxed">
+                    Apparel kasual, modest wear, baju anak, activewear, loungewear, derm lab, makeup glam, parfum, sneakers, & tas kulit.
+                </p>
+                <div
+                    class="mt-4 pt-3 border-t border-slate-100 flex items-center justify-between text-xs font-bold text-amber-600">
+                    <span>Lihat 13 Template (Group A, B, C)</span>
+                    <i data-lucide="arrow-right" class="w-4 h-4 group-hover:translate-x-1 transition-transform"></i>
+                </div>
+            </button>
+
+            <!-- Card Bidang 03 -->
+            <button onclick="selectBidang('03-ritel-gadget-hobi')"
+                class="bidang-card group text-left bg-white p-6 rounded-2xl border-2 border-slate-200/80 hover:border-amber-500 hover:shadow-xl transition-all duration-300 relative overflow-hidden"
+                data-target="03-ritel-gadget-hobi">
+                <div
+                    class="w-12 h-12 rounded-xl bg-cyan-100 text-cyan-600 flex items-center justify-center mb-4 group-hover:scale-110 transition-transform">
+                    <i data-lucide="smartphone" class="w-6 h-6"></i>
+                </div>
+                <span class="text-[11px] font-bold uppercase tracking-wider text-slate-400">Bidang 03</span>
+                <h4 class="text-lg font-bold text-slate-900 group-hover:text-amber-600 transition-colors mt-0.5">Ritel,
+                    Gadget & Outdoor</h4>
+                <p class="text-xs text-slate-500 mt-2 leading-relaxed">
+                    Aksesoris HP, gaming keyboard, perkakas bor, aksesoris motor, tenda camping, fitness, pet care, & greenhouse nursery.
+                </p>
+                <div
+                    class="mt-4 pt-3 border-t border-slate-100 flex items-center justify-between text-xs font-bold text-amber-600">
+                    <span>Lihat 12 Template (Group A, B, C)</span>
+                    <i data-lucide="arrow-right" class="w-4 h-4 group-hover:translate-x-1 transition-transform"></i>
+                </div>
+            </button>
+
+            <!-- Card Bidang 04 -->
+            <button onclick="selectBidang('04-kriya-dekorasi')"
+                class="bidang-card group text-left bg-white p-6 rounded-2xl border-2 border-slate-200/80 hover:border-amber-500 hover:shadow-xl transition-all duration-300 relative overflow-hidden"
+                data-target="04-kriya-dekorasi">
+                <div
+                    class="w-12 h-12 rounded-xl bg-amber-100 text-amber-700 flex items-center justify-center mb-4 group-hover:scale-110 transition-transform">
+                    <i data-lucide="hammer" class="w-6 h-6"></i>
+                </div>
+                <span class="text-[11px] font-bold uppercase tracking-wider text-slate-400">Bidang 04</span>
+                <h4 class="text-lg font-bold text-slate-900 group-hover:text-amber-600 transition-colors mt-0.5">Kriya,
+                    Mebel & Dekorasi</h4>
+                <p class="text-xs text-slate-500 mt-2 leading-relaxed">
+                    Furnitur jati solid, keramik pottery, anyaman serat rotan, batik tulis canting, lilin aromaterapi, & hampers kurasi.
+                </p>
+                <div
+                    class="mt-4 pt-3 border-t border-slate-100 flex items-center justify-between text-xs font-bold text-amber-600">
+                    <span>Lihat 12 Template (Group A, B, C)</span>
+                    <i data-lucide="arrow-right" class="w-4 h-4 group-hover:translate-x-1 transition-transform"></i>
+                </div>
+            </button>
+
+            <!-- Card Bidang 05 -->
+            <button onclick="selectBidang('05-agrobisnis-bahan-mentah')"
+                class="bidang-card group text-left bg-white p-6 rounded-2xl border-2 border-slate-200/80 hover:border-amber-500 hover:shadow-xl transition-all duration-300 relative overflow-hidden"
+                data-target="05-agrobisnis-bahan-mentah">
+                <div
+                    class="w-12 h-12 rounded-xl bg-emerald-100 text-emerald-700 flex items-center justify-center mb-4 group-hover:scale-110 transition-transform">
+                    <i data-lucide="sprout" class="w-6 h-6"></i>
+                </div>
+                <span class="text-[11px] font-bold uppercase tracking-wider text-slate-400">Bidang 05</span>
+                <h4 class="text-lg font-bold text-slate-900 group-hover:text-amber-600 transition-colors mt-0.5">
+                    Agrobisnis & Hasil Alam</h4>
+                <p class="text-xs text-slate-500 mt-2 leading-relaxed">
+                    Sayur hidroponik, buah kebun, beras organik, jamur tiram, telur omega, seafood rantai dingin, green coffee, & madu sialang.
+                </p>
+                <div
+                    class="mt-4 pt-3 border-t border-slate-100 flex items-center justify-between text-xs font-bold text-amber-600">
+                    <span>Lihat 12 Template (Group A, B, C)</span>
+                    <i data-lucide="arrow-right" class="w-4 h-4 group-hover:translate-x-1 transition-transform"></i>
+                </div>
+            </button>
+
+            <!-- Card Bidang 06 -->
+            <button onclick="selectBidang('06-supplier-grosir-b2b')"
+                class="bidang-card group text-left bg-white p-6 rounded-2xl border-2 border-slate-200/80 hover:border-amber-500 hover:shadow-xl transition-all duration-300 relative overflow-hidden"
+                data-target="06-supplier-grosir-b2b">
+                <div
+                    class="w-12 h-12 rounded-xl bg-indigo-100 text-indigo-700 flex items-center justify-center mb-4 group-hover:scale-110 transition-transform">
+                    <i data-lucide="truck" class="w-6 h-6"></i>
+                </div>
+                <span class="text-[11px] font-bold uppercase tracking-wider text-slate-400">Bidang 06</span>
+                <h4 class="text-lg font-bold text-slate-900 group-hover:text-amber-600 transition-colors mt-0.5">
+                    Supplier, Grosir & B2B</h4>
+                <p class="text-xs text-slate-500 mt-2 leading-relaxed">
+                    Pabrik kardus corrugated, standing pouch, wearpack K3, kain rollan, distributor sembako, sabun industri, & biji plastik.
+                </p>
+                <div
+                    class="mt-4 pt-3 border-t border-slate-100 flex items-center justify-between text-xs font-bold text-amber-600">
+                    <span>Lihat 12 Template (Group A, B, C)</span>
+                    <i data-lucide="arrow-right" class="w-4 h-4 group-hover:translate-x-1 transition-transform"></i>
+                </div>
+            </button>
+
         </div>
-    </main>
+    </section>
+
+    <!-- STEP 2: SHOWCASE DENGAN PEMISAH GROUP -->
+    <section id="showcase-section" class="bg-slate-50/50 py-16 px-4 sm:px-6 lg:px-8 border-t border-slate-200">
+        <div class="max-w-7xl mx-auto">
+
+            <!-- Section Control Header -->
+            <div class="flex flex-col md:flex-row md:items-end justify-between gap-4 pb-8 border-b border-slate-200">
+                <div>
+                    <span class="text-xs font-extrabold uppercase tracking-widest text-amber-600">Langkah 2</span>
+                    <h3 class="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight mt-1">
+                        Koleksi Template <span id="currentBidangTitle" class="text-amber-600">Semua Industri</span>
+                    </h3>
+                    <p class="text-xs sm:text-sm text-slate-500 mt-1">Preview langsung tampilan web asli di dalam kartu. Klik "Buka Demo" untuk membuka website penuh di tab baru.</p>
+                </div>
+
+                <!-- Filter Pill Button Group -->
+                <div class="flex flex-wrap gap-2">
+                    <button onclick="selectBidang('all')"
+                        class="filter-pill-btn active px-3.5 py-1.5 rounded-full text-xs font-bold bg-slate-900 text-white transition-all shadow-xs"
+                        data-filter="all">
+                        Semua (73)
+                    </button>
+                    <button onclick="selectBidang('01-fnb-kuliner')"
+                        class="filter-pill-btn px-3.5 py-1.5 rounded-full text-xs font-bold bg-white text-slate-700 border border-slate-200 hover:border-amber-500 transition-all"
+                        data-filter="01-fnb-kuliner">
+                        01. F&B
+                    </button>
+                    <button onclick="selectBidang('02-fashion-skincare')"
+                        class="filter-pill-btn px-3.5 py-1.5 rounded-full text-xs font-bold bg-white text-slate-700 border border-slate-200 hover:border-amber-500 transition-all"
+                        data-filter="02-fashion-skincare">
+                        02. Fashion
+                    </button>
+                    <button onclick="selectBidang('03-ritel-gadget-hobi')"
+                        class="filter-pill-btn px-3.5 py-1.5 rounded-full text-xs font-bold bg-white text-slate-700 border border-slate-200 hover:border-amber-500 transition-all"
+                        data-filter="03-ritel-gadget-hobi">
+                        03. Ritel
+                    </button>
+                    <button onclick="selectBidang('04-kriya-dekorasi')"
+                        class="filter-pill-btn px-3.5 py-1.5 rounded-full text-xs font-bold bg-white text-slate-700 border border-slate-200 hover:border-amber-500 transition-all"
+                        data-filter="04-kriya-dekorasi">
+                        04. Kriya
+                    </button>
+                    <button onclick="selectBidang('05-agrobisnis-bahan-mentah')"
+                        class="filter-pill-btn px-3.5 py-1.5 rounded-full text-xs font-bold bg-white text-slate-700 border border-slate-200 hover:border-amber-500 transition-all"
+                        data-filter="05-agrobisnis-bahan-mentah">
+                        05. Agrobisnis
+                    </button>
+                    <button onclick="selectBidang('06-supplier-grosir-b2b')"
+                        class="filter-pill-btn px-3.5 py-1.5 rounded-full text-xs font-bold bg-white text-slate-700 border border-slate-200 hover:border-amber-500 transition-all"
+                        data-filter="06-supplier-grosir-b2b">
+                        06. B2B
+                    </button>
+                </div>
+            </div>
+
+            <!-- DYNAMIC TEMPLATE SHOWCASE CONTAINER -->
+            <div id="showcaseContainer" class="mt-10 space-y-16">
+                <!-- Rendered dynamically by JavaScript with iframe previews -->
+            </div>
+
+            <!-- No Results Message -->
+            <div id="noResults" class="hidden py-16 text-center">
+                <div class="w-16 h-16 rounded-full bg-slate-100 text-slate-400 flex items-center justify-center mx-auto text-2xl mb-3">
+                    <i data-lucide="search-x" class="w-8 h-8"></i>
+                </div>
+                <h4 class="text-base font-bold text-slate-800">Template Tidak Ditemukan</h4>
+                <p class="text-xs text-slate-500 mt-1">Coba gunakan kata kunci lain seperti 'bakery', 'kopi', 'seragam', 'kardus', 'seafood', atau 'plastik'.</p>
+                <button onclick="resetSearch()" class="mt-4 px-4 py-2 bg-amber-500 hover:bg-amber-600 text-white font-bold text-xs rounded-full transition-all">
+                    Tampilkan Semua Template
+                </button>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- CLOSING VALUE & CTA SECTION (WHATSAPP ONLY) -->
+    <section class="py-20 bg-slate-900 text-white px-4 sm:px-6 lg:px-8 border-t border-slate-800 relative overflow-hidden">
+        <div class="max-w-4xl mx-auto text-center relative z-10">
+            <span class="px-3.5 py-1 rounded-full text-xs font-bold bg-amber-500/20 text-amber-400 border border-amber-500/30">
+                🚀 Siap Online Hari Ini
+            </span>
+            <h3 class="text-3xl sm:text-4xl lg:text-5xl font-black mt-4 tracking-tight leading-tight">
+                Mulai Digitalisasi Bisnis UMKM Anda Sekarang
+            </h3>
+            <p class="text-slate-400 text-sm sm:text-base mt-4 max-w-xl mx-auto leading-relaxed">
+                Pilih template yang paling cocok dengan karakter brand Anda, sesuaikan konten dan foto produk, dan langsung terima pesanan masuk ke WhatsApp.
+            </p>
+            <div class="mt-8 flex justify-center">
+                <a href="https://wa.me/6281234567890?text=Halo%20Admin%20Lentera%20Pasar,%20saya%20ingin%20konsultasi%20pembuatan%20website%20UMKM."
+                    target="_blank" rel="noopener noreferrer"
+                    class="inline-flex items-center justify-center gap-2.5 px-8 py-4 rounded-full bg-emerald-500 hover:bg-emerald-600 text-slate-950 font-black text-sm tracking-wide shadow-xl shadow-emerald-500/20 transition-all hover:scale-105 active:scale-95">
+                    <i data-lucide="message-circle" class="w-5 h-5"></i>
+                    <span>Konsultasi Pembuatan Website via WhatsApp</span>
+                </a>
+            </div>
+        </div>
+    </section>
 
     <!-- FOOTER -->
-    <footer class="bg-white border-t border-slate-200 py-8 px-4 sm:px-6 lg:px-8 mt-auto">
-        <div
-            class="max-w-7xl mx-auto flex flex-col sm:flex-row justify-between items-center gap-4 text-xs text-slate-500">
-            <div class="flex items-center gap-2">
-                <span class="font-bold text-slate-900">Lentera Pasar UMKM</span>
-                <span>•</span>
-                <span>Generated by Antigravity Frontend Engine</span>
+    <footer class="bg-slate-950 text-slate-500 text-xs py-10 px-4 sm:px-6 lg:px-8 border-t border-slate-900">
+        <div class="max-w-7xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-4 text-center sm:text-left">
+            <div class="flex items-center gap-2 text-slate-300 font-bold">
+                <div class="w-6 h-6 rounded-md bg-amber-500 text-slate-950 flex items-center justify-center font-black text-xs">L</div>
+                <span>Lentera Pasar UMKM Design System</span>
             </div>
-            <p>© 2026 Lentera Pasar. Template bebas digunakan dan dimodifikasi untuk digitalisasi UMKM.</p>
+            <p>&copy; 2026 PT Lentera Pasar Digital Nusantara. Seluruh Hak Cipta Dilindungi.</p>
         </div>
     </footer>
 
-    <!-- JAVASCRIPT: FILTER & SEARCH INTERACTION -->
+    <!-- FLOATING WHATSAPP BUTTON -->
+    <div class="fixed bottom-6 right-6 z-50">
+        <a href="https://wa.me/6281234567890?text=Halo%20Lentera%20Pasar,%20saya%20ingin%20tanya%20seputar%20katalog%20template%20website%20UMKM."
+            target="_blank" rel="noopener noreferrer"
+            class="flex items-center gap-2.5 bg-emerald-600 hover:bg-emerald-500 text-white px-5 py-3.5 rounded-full shadow-2xl transition-all hover:scale-105 active:scale-95 border-2 border-white/20">
+            <i data-lucide="message-circle" class="w-5 h-5"></i>
+            <span class="text-xs font-bold hidden sm:inline">Hubungi Admin WA</span>
+        </a>
+    </div>
+
+    <!-- JAVASCRIPT DATA & LOGIC -->
     <script>
-        // Initialize Lucide Icons
-        lucide.createIcons();
+        // Master Data 73 Template
+        const catalogData = [
+            {
+                id: '01-fnb-kuliner',
+                bidangNumber: '01',
+                bidangTitle: 'Bidang F&B / Kuliner',
+                bidangDesc: 'Karakter hangat, menggugah selera, reservasi meja, & jadwal panggangan.',
+                badgeColor: 'bg-orange-100 text-orange-600',
+                groups: [
+                    {
+                        name: 'Group A — Makanan Siap Saji & Olahan Ringan',
+                        borderColor: 'border-orange-500',
+                        bgColor: 'bg-orange-50/50',
+                        textColor: 'text-orange-800',
+                        items: [
+                            { slug: 'fnb-ricebowl-pop', path: '01-fnb-kuliner/fnb-ricebowl-pop/index.html', title: 'Makanan Berat & Rice Bowl', brand: 'Mangkok Juara', groupTag: 'Group A — Rice Bowl', tagColor: 'bg-orange-500', desc: 'Pop Japanese street style dengan menu paket hemat, add-on topping, & order WA instan.', keywords: 'rice bowl makanan berat jepang dine in takeaway' },
+                            { slug: 'fnb-frozen-clean', path: '01-fnb-kuliner/fnb-frozen-clean/index.html', title: 'Frozen Food & Dimsum', brand: 'BekuRasa', groupTag: 'Group A — Frozen Food', tagColor: 'bg-sky-500', desc: 'Kemasan vakum steril higienis, sertifikasi halal BPOM, & panduan masak praktis 5 menit.', keywords: 'frozen food dimsum beku nugget bakso siap masak' },
+                            { slug: 'fnb-snack-crunchy', path: '01-fnb-kuliner/fnb-snack-crunchy/index.html', title: 'Snack Kering & Keripik', brand: 'KriukNusantara', groupTag: 'Group A — Snack Keripik', tagColor: 'bg-amber-500 text-slate-950', desc: 'Camilan renyah nusantara dengan paket bundling oleh-oleh & kemasan ziplock kedap udara.', keywords: 'snack kering keripik oleh oleh renyah basreng' },
+                            { slug: 'fnb-sambal-nusantara', path: '01-fnb-kuliner/fnb-sambal-nusantara/index.html', title: 'Sambal & Bumbu Masak', brand: 'UlegJuara', groupTag: 'Group A — Sambal Botol', tagColor: 'bg-red-600', desc: 'Sambal uleg botol kaca aneka level pedas, minyak rempah alami, & bumbu praktis dapur.', keywords: 'sambal kemasan botol bumbu masak nusantara uleg pedas' }
+                        ]
+                    },
+                    {
+                        name: 'Group B — Minuman, Kopi & Minuman Sehat',
+                        borderColor: 'border-amber-600',
+                        bgColor: 'bg-amber-50/50',
+                        textColor: 'text-amber-900',
+                        items: [
+                            { slug: 'fnb-coffee-dark', path: '01-fnb-kuliner/fnb-coffee-dark/index.html', title: 'Coffee Shop & Roastery', brand: 'Obsidian Coffee', groupTag: 'Group B — Coffee Roastery', tagColor: 'bg-slate-800 text-amber-400', desc: 'Specialty single origin, tasting notes aroma piramida, & beans segar sangrai lokal.', keywords: 'kopi coffee shop cafe roastery beans espresso manual brew' },
+                            { slug: 'fnb-catering-clean', path: '01-fnb-kuliner/fnb-catering-clean/index.html', title: 'Katering Harian & Bento', brand: 'Sedap Laras', groupTag: 'Group B — Catering', tagColor: 'bg-emerald-600', desc: 'Paket makan siang kantor, bento syukuran, & langganan mingguan bernutrisi seimbang.', keywords: 'katering harian bento makan siang kantor diet langganan' },
+                            { slug: 'fnb-dessert-pastel', path: '01-fnb-kuliner/fnb-dessert-pastel/index.html', title: 'Dessert, Es Krim & Gelato', brand: 'Gelato Velveto', groupTag: 'Group B — Gelato & Dessert', tagColor: 'bg-pink-500', desc: 'Gelato artisan susu murni Italia dengan cone waffle renyah & aneka rasa buah segar.', keywords: 'dessert es krim gelato manis pastel cone waffle' },
+                            { slug: 'fnb-meat-butcher', path: '01-fnb-kuliner/fnb-meat-butcher/index.html', title: 'Daging Olahan & BBQ Grill', brand: 'WagyuPrime Butcher', groupTag: 'Group B — Butcher & BBQ', tagColor: 'bg-red-700', desc: 'Potongan steak premium wagyu/sirloin, bumbu marinasi BBQ, & seafood siap bakar.', keywords: 'daging butcher steak wagyu bbq grill potongan olahan' }
+                        ]
+                    },
+                    {
+                        name: 'Group C — Roti, Kue & Makanan Khusus',
+                        borderColor: 'border-amber-500',
+                        bgColor: 'bg-amber-50/50',
+                        textColor: 'text-amber-700',
+                        items: [
+                            { slug: 'fnb-bakery-artisan', path: '01-fnb-kuliner/fnb-bakery-artisan/index.html', title: 'Bakery, Roti & Pastry', brand: 'Le Pain Artisan', groupTag: 'Group C — Bakery', tagColor: 'bg-amber-700', desc: 'Warm French Bakery dengan jadwal panggangan subuh & sourdough ragi alami.', keywords: 'bakery artisan roti pastry sourdough croissant oven' },
+                            { slug: 'fnb-cake-celebration', path: '01-fnb-kuliner/fnb-cake-celebration/index.html', title: 'Cake & Celebration', brand: "L'Amour Patisserie", groupTag: 'Group C — Cake & Tart', tagColor: 'bg-pink-700', desc: 'Editorial boutique untuk custom kue ulang tahun, layer rasa, & diameter tart mewah.', keywords: 'cake tart kue ulang tahun pernikahan pesta patisserie' },
+                            { slug: 'fnb-healthy-diet', path: '01-fnb-kuliner/fnb-healthy-diet/index.html', title: 'Makanan Sehat & Diet', brand: 'Nourish Botanica', groupTag: 'Group C — Healthy Diet', tagColor: 'bg-emerald-700', desc: 'Clean Scandinavian dengan rincian kalori macro & langganan salad mingguan.', keywords: 'makanan sehat diet kalori salad organik vegan clean eating' },
+                            { slug: 'fnb-tradisional-tampah', path: '01-fnb-kuliner/fnb-tradisional-tampah/index.html', title: 'Jajanan Pasar Tampah', brand: 'Tampah Nyai Warisan', groupTag: 'Group C — Tampah Basah', tagColor: 'bg-emerald-800', desc: 'Nuansa anyaman bambu & daun pisang untuk hantaran syukuran dan pesta nusantara.', keywords: 'jajanan pasar kue tampah basah tradisional hantaran syukuran' }
+                        ]
+                    }
+                ]
+            },
+            {
+                id: '02-fashion-skincare',
+                bidangNumber: '02',
+                bidangTitle: 'Bidang Fashion & Skincare',
+                bidangDesc: 'Visual rasio 3:4, data klinis formula, aroma pyramid, & size chart.',
+                badgeColor: 'bg-rose-100 text-rose-600',
+                groups: [
+                    {
+                        name: 'Group A — Busana & Apparel',
+                        borderColor: 'border-rose-500',
+                        bgColor: 'bg-rose-50/50',
+                        textColor: 'text-rose-800',
+                        items: [
+                            { slug: 'fashion-casual-minimal', path: '02-fashion-skincare/fashion-casual-minimal/index.html', title: 'Pakaian Kasual Studio', brand: 'ATELIER NORD', groupTag: 'Group A — Casual', tagColor: 'bg-slate-800', desc: 'Rasio foto 3:4 vertikal, swatch warna interaktif & size chart pop-up.', keywords: 'fashion casual minimal pakaian kasual baju kaos celana pria wanita' },
+                            { slug: 'fashion-modest-editorial', path: '02-fashion-skincare/fashion-modest-editorial/index.html', title: 'Modest Wear & Hijab', brand: 'ZAYRA Modest', groupTag: 'Group A — Modest', tagColor: 'bg-stone-700 text-amber-200', desc: "Editorial anggun syar'i dengan kain flowy jatuh, serat adem, & lookbook harian.", keywords: 'fashion modest editorial hijab gamis muslimah sarimbit syari' },
+                            { slug: 'fashion-kids-pastel', path: '02-fashion-skincare/fashion-kids-pastel/index.html', title: 'Pakaian Anak & Bayi', brand: 'Little Blossom', groupTag: 'Group A — Kids', tagColor: 'bg-pink-400', desc: 'Bahan katun combed 100% hypoallergenic lembut dengan palet warna pastel ceria.', keywords: 'fashion kids pastel pakaian anak baju bayi balita sni' },
+                            { slug: 'fashion-activewear-kinetic', path: '02-fashion-skincare/fashion-activewear-kinetic/index.html', title: 'Pakaian Olahraga Active', brand: 'KINETIC Performance', groupTag: 'Group A — Activewear', tagColor: 'bg-cyan-600', desc: 'Teknologi dry-fit kompresi elastis 4-way stretch untuk gym, yoga, & running.', keywords: 'fashion activewear kinetic pakaian olahraga gym lari yoga dry fit' },
+                            { slug: 'fashion-loungewear-cozy', path: '02-fashion-skincare/fashion-loungewear-cozy/index.html', title: 'Loungewear & Piyama', brand: 'COZY HAVEN Silk', groupTag: 'Group A — Loungewear', tagColor: 'bg-stone-500', desc: 'Sentuhan sutra rayon lembut untuk kenyamanan relaksasi santai di dalam rumah.', keywords: 'fashion loungewear cozy piyama sleepwear daster sutra' }
+                        ]
+                    },
+                    {
+                        name: 'Group B — Perawatan Kulit, Kosmetik & Spa',
+                        borderColor: 'border-pink-500',
+                        bgColor: 'bg-pink-50/50',
+                        textColor: 'text-pink-800',
+                        items: [
+                            { slug: 'skincare-clinical-lab', path: '02-fashion-skincare/skincare-clinical-lab/index.html', title: 'Clinical Skincare Lab', brand: 'DERMACEUTICAL Lab', groupTag: 'Group B — Derm Lab', tagColor: 'bg-cyan-700', desc: 'Tabel konsentrasi bahan aktif %, registrasi BPOM & 3-step routine perawatan kulit.', keywords: 'skincare clinical lab serum wajah bpom toner pelembab jerawat glowing' },
+                            { slug: 'makeup-glam-studio', path: '02-fashion-skincare/makeup-glam-studio/index.html', title: 'Makeup & Cosmetic Studio', brand: 'LUMINOUS Glam Studio', groupTag: 'Group B — Makeup', tagColor: 'bg-pink-600', desc: 'Shade matcher bibir & kulit wajah, pigmentasi tahan lama 16 jam, & hasil glamor.', keywords: 'makeup glam studio kosmetik lipstik cushion foundation eyeshadow beauty' },
+                            { slug: 'perfume-luxury-atelier', path: '02-fashion-skincare/perfume-luxury-atelier/index.html', title: 'Luxury Perfume Atelier', brand: 'NOCTURNE Parfums', groupTag: 'Group B — Luxury EDP', tagColor: 'bg-amber-900 text-amber-300', desc: 'Kanvas gelap eksklusif dengan piramida aroma (top, heart, base notes) & daya tahan.', keywords: 'perfume luxury atelier parfum wangi edp extrait aroma piramida tahan lama' },
+                            { slug: 'bodycare-botanical-spa', path: '02-fashion-skincare/bodycare-botanical-spa/index.html', title: 'Botanical Soap & Spa', brand: 'BOTANICA Rituals', groupTag: 'Group B — Spa', tagColor: 'bg-emerald-700', desc: 'Sabun batang cold-process alami minyak nabati, lulur organik, & aromaterapi.', keywords: 'bodycare botanical spa sabun mandi lulur organik minyak atsiri' }
+                        ]
+                    },
+                    {
+                        name: 'Group C — Alas Kaki, Tas & Pelengkap Gaya',
+                        borderColor: 'border-fuchsia-500',
+                        bgColor: 'bg-fuchsia-50/50',
+                        textColor: 'text-fuchsia-800',
+                        items: [
+                            { slug: 'footwear-sneakers-street', path: '02-fashion-skincare/footwear-sneakers-street/index.html', title: 'Urban Footwear Vault', brand: 'KICKS VAULT Co.', groupTag: 'Group C — Sneakers', tagColor: 'bg-neutral-900 text-orange-400', desc: 'Profil sudut sepatu 45°, insole guide cm, & sol vulkanisir anti-slip tangguh.', keywords: 'footwear sneakers street sepatu kets slip on sandal streetwear' },
+                            { slug: 'bags-leather-atelier', path: '02-fashion-skincare/bags-leather-atelier/index.html', title: 'Tas Kulit & Backpack', brand: 'HERITAGE HIDE Leather', groupTag: 'Group C — Bags', tagColor: 'bg-amber-800', desc: 'Kulit sapi crazy horse & kanvas water-repellent dengan kompartemen laptop.', keywords: 'bags leather atelier tas ransel laptop dompet kulit kanvas' },
+                            { slug: 'accessories-modern-optics', path: '02-fashion-skincare/accessories-modern-optics/index.html', title: 'Kacamata & Aksesoris', brand: 'LUMEN Optics & Accs', groupTag: 'Group C — Optics', tagColor: 'bg-sky-700', desc: 'Lensa anti-radiasi blueray, frame titanium ultra ringan, & panduan bentuk wajah.', keywords: 'accessories modern optics kacamata frame lensa sabuk jam topi' },
+                            { slug: 'jewelry-timepiece-luxury', path: '02-fashion-skincare/jewelry-timepiece-luxury/index.html', title: 'Jam Tangan & Jewelry', brand: 'AURELIA Fine Jewelry', groupTag: 'Group C — Jewelry', tagColor: 'bg-amber-800 text-yellow-300', desc: 'Presisi movement otomatis, emas kadar 18K/24K, & sertifikat keaslian batu mulia.', keywords: 'jewelry timepiece luxury jam tangan perhiasan cincin emas berlian safir' }
+                        ]
+                    }
+                ]
+            },
+            {
+                id: '03-ritel-gadget-hobi',
+                bidangNumber: '03',
+                bidangTitle: 'Bidang Ritel, Gadget & Hobi',
+                bidangDesc: 'Karakter teknis gawai, outdoor survival, hobi musik, anabul, & tanaman.',
+                badgeColor: 'bg-cyan-100 text-cyan-600',
+                groups: [
+                    {
+                        name: 'Group A — Elektronik, Gadget & Perkakas',
+                        borderColor: 'border-cyan-500',
+                        bgColor: 'bg-cyan-50/50',
+                        textColor: 'text-cyan-800',
+                        items: [
+                            { slug: 'gadget-mobile-tech', path: '03-ritel-gadget-hobi/gadget-mobile-tech/index.html', title: 'Mobile Tech & Gadget', brand: 'NEXUS Mobile Tech', groupTag: 'Group A — Cyber Tech', tagColor: 'bg-cyan-600', desc: 'Output wattase GaN 65W & matrix kompatibilitas ponsel pintar anti-panas.', keywords: 'gadget mobile tech aksesoris hp charger kabel powerbank tws gan 65w' },
+                            { slug: 'gaming-peripherals-studio', path: '03-ritel-gadget-hobi/gaming-peripherals-studio/index.html', title: 'Gaming & Desk Setup', brand: 'APEX GEAR Studio', groupTag: 'Group A — Gaming', tagColor: 'bg-indigo-600', desc: 'Switch mekanikal hot-swappable, polling rate 8000Hz, & visual RGB futuristik.', keywords: 'gaming peripherals studio keyboard mouse mekanikal rgb deskmat' },
+                            { slug: 'tools-hardware-pro', path: '03-ritel-gadget-hobi/tools-hardware-pro/index.html', title: 'Perkakas Rumah & Bor', brand: 'TITAN WORKPRO', groupTag: 'Group A — Tools', tagColor: 'bg-amber-600', desc: 'Kekuatan torsi brushless 20V, ketahanan industri heavy-duty, & garansi resmi 2 tahun.', keywords: 'tools hardware pro perkakas bor cordless kunci pas pertukangan' },
+                            { slug: 'moto-garage-accessories', path: '03-ritel-gadget-hobi/moto-garage-accessories/index.html', title: 'Aksesoris Motor & Garage', brand: 'APEX MOTO GARAGE', groupTag: 'Group A — Moto Garage', tagColor: 'bg-red-600', desc: 'Perlindungan helm standar DOT/SNI, paddock stand, & part modifikasi touring.', keywords: 'moto garage accessories helm motor holder knalpot touring' }
+                        ]
+                    },
+                    {
+                        name: 'Group B — Olahraga, Outdoor, Musik & Koleksi',
+                        borderColor: 'border-teal-500',
+                        bgColor: 'bg-teal-50/50',
+                        textColor: 'text-teal-800',
+                        items: [
+                            { slug: 'outdoor-camping-expedition', path: '03-ritel-gadget-hobi/outdoor-camping-expedition/index.html', title: 'Outdoor & Camping', brand: 'TERRA EXPEDITION', groupTag: 'Group B — Outdoor', tagColor: 'bg-amber-600', desc: 'Jurnal ekspedisi, checklist naik gunung & rating waterproof tenda PU 3000mm.', keywords: 'outdoor camping expedition tenda naik gunung carrier sleeping bag' },
+                            { slug: 'fitness-gym-gear', path: '03-ritel-gadget-hobi/fitness-gym-gear/index.html', title: 'Alat Fitness & Gym', brand: 'IRONFIT ATHLETICS', groupTag: 'Group B — Fitness', tagColor: 'bg-blue-600', desc: 'Dumbell set komersial, resistance band anti-putus, & panduan workout rumahan.', keywords: 'fitness gym gear dumbell treadmill matras yoga dumbbell olahraga' },
+                            { slug: 'hobby-collector-vault', path: '03-ritel-gadget-hobi/hobby-collector-vault/index.html', title: 'Mainan Koleksi & Model Kit', brand: 'VALKYRIE HOBBY VAULT', groupTag: 'Group B — Collector', tagColor: 'bg-purple-600', desc: 'Skala presisi 1:144, keaslian original lisensi Jepang, & sistem pre-order aman.', keywords: 'hobby collector vault gundam action figure nendoroid gunpla model kit' },
+                            { slug: 'music-audio-studio', path: '03-ritel-gadget-hobi/music-audio-studio/index.html', title: 'Alat Musik & Audio Studio', brand: 'SONIC WAVE Audio', groupTag: 'Group B — Music', tagColor: 'bg-stone-800', desc: 'Kayu gitar resonansi solid spruce, kabel noiseless tembaga murni, & audio interface.', keywords: 'music audio studio gitar akustik keyboard mikrofon headphone audio' }
+                        ]
+                    },
+                    {
+                        name: 'Group C — Kebutuhan Rumah Tangga, Hijau & Montessori',
+                        borderColor: 'border-sky-500',
+                        bgColor: 'bg-sky-50/50',
+                        textColor: 'text-sky-800',
+                        items: [
+                            { slug: 'pet-care-haven', path: '03-ritel-gadget-hobi/pet-care-haven/index.html', title: 'Pet Care Haven', brand: 'FURRY HAVEN PETS', groupTag: 'Group C — Anabul', tagColor: 'bg-orange-600', desc: 'Filter fase usia kucing/anjing, formula grain-free & guaranteed nutrition data.', keywords: 'pet care haven pakan kucing anjing anabul pasir kandang' },
+                            { slug: 'plants-botanical-greenhouse', path: '03-ritel-gadget-hobi/plants-botanical-greenhouse/index.html', title: 'Botanical Greenhouse', brand: 'TERRA BOTANICA', groupTag: 'Group C — Nursery', tagColor: 'bg-emerald-700', desc: 'Indikator kebutuhan sinar matahari, jadwal siram & pot terakota estetik.', keywords: 'plants botanical greenhouse tanaman hias pot siram monstera terakota' },
+                            { slug: 'stationery-aesthetic-desk', path: '03-ritel-gadget-hobi/stationery-aesthetic-desk/index.html', title: 'Jurnal & Aesthetic Desk', brand: 'PAPYRUS STUDIO', groupTag: 'Group C — Stationery', tagColor: 'bg-stone-700', desc: 'Kertas 100gsm anti-tembus tinta fountain pen & planner bullet journal rapi.', keywords: 'stationery aesthetic desk jurnal buku diary pulpen alat tulis binder' },
+                            { slug: 'baby-montessori-play', path: '03-ritel-gadget-hobi/baby-montessori-play/index.html', title: 'Mainan Kayu Montessori', brand: 'LITTLE ROOTS Montessori', groupTag: 'Group C — Montessori', tagColor: 'bg-amber-700', desc: 'Cat non-toxic water-based food contact & kayu pinus halus tanpa sudut tajam.', keywords: 'baby montessori play mainan kayu edukatif balok teether bayi anak' }
+                        ]
+                    }
+                ]
+            },
+            {
+                id: '04-kriya-dekorasi',
+                bidangNumber: '04',
+                bidangTitle: 'Bidang Kriya & Dekorasi',
+                bidangDesc: 'Karakter hangat kayu solid, keramik seni, kain warisan, & kurasi gift box.',
+                badgeColor: 'bg-amber-100 text-amber-700',
+                groups: [
+                    {
+                        name: 'Group A — Furnitur, Keramik & Ruang Interior',
+                        borderColor: 'border-amber-600',
+                        bgColor: 'bg-amber-50/50',
+                        textColor: 'text-amber-900',
+                        items: [
+                            { slug: 'furniture-teak-artisan', path: '04-kriya-dekorasi/furniture-teak-artisan/index.html', title: 'Furnitur Kayu Jati Solid', brand: 'KAYU JATI STUDIO', groupTag: 'Group A — Teak Wood', tagColor: 'bg-amber-900 text-amber-200', desc: 'Urat kayu jati Perhutani legal wood bersertifikat SVLK & sambungan purus presisi.', keywords: 'furniture teak artisan mebel jati jepara meja kursi kayu solid japandi' },
+                            { slug: 'ceramics-clay-pottery', path: '04-kriya-dekorasi/ceramics-clay-pottery/index.html', title: 'Keramik & Pottery', brand: 'TERRA KILN Studio', groupTag: 'Group A — Pottery', tagColor: 'bg-amber-700', desc: 'Bakaran kiln 1250°C food grade, glasir unik reaktif, & bentuk organik stoneware.', keywords: 'ceramics clay pottery keramik piring cangkir gerabah tableware' },
+                            { slug: 'wall-decor-bohemian', path: '04-kriya-dekorasi/wall-decor-bohemian/index.html', title: 'Hiasan Dinding Makrame', brand: 'BOHO VIBE Home', groupTag: 'Group A — Wall Decor', tagColor: 'bg-yellow-700', desc: 'Simpul makrame katun alami, cermin berbingkai rotan, & aksen dinding bohemian.', keywords: 'wall decor bohemian makrame hiasan dinding cermin anyaman boho' },
+                            { slug: 'home-textiles-cushion', path: '04-kriya-dekorasi/home-textiles-cushion/index.html', title: 'Bantal Sofa & Karpet Tenun', brand: 'NORDIC TEXTILES', groupTag: 'Group A — Textiles', tagColor: 'bg-stone-700', desc: 'Kain tenun bertekstur, sarung bantal linen estetik, & karpet lantai bernuansa hangat.', keywords: 'home textiles cushion bantal sofa karpet tenun selimut nordic' }
+                        ]
+                    },
+                    {
+                        name: 'Group B — Kerajinan Alami, Batik & Kriya Tradisi',
+                        borderColor: 'border-yellow-600',
+                        bgColor: 'bg-yellow-50/50',
+                        textColor: 'text-yellow-900',
+                        items: [
+                            { slug: 'craft-natural-fiber', path: '04-kriya-dekorasi/craft-natural-fiber/index.html', title: 'Anyaman Rotan & Serat', brand: 'SERAT ALAM ATELIER', groupTag: 'Group B — Natural Fiber', tagColor: 'bg-amber-800', desc: 'Keranjang serbaguna serat pelepah pisang & rotan alami dengan finishing anti-jamur.', keywords: 'craft natural fiber anyaman rotan enceng gondok keranjang serat alam' },
+                            { slug: 'batik-heritage-atelier', path: '04-kriya-dekorasi/batik-heritage-atelier/index.html', title: 'Batik Tulis & Tenun', brand: 'BATIK PUSAKA INDONESIA', groupTag: 'Group B — Batik Heritage', tagColor: 'bg-indigo-900 text-amber-200', desc: 'Canting malam tembaga tradisional, pewarna alami indigo, & narasi filosofi motif.', keywords: 'batik heritage atelier batik tulis canting tenun ikat songket pusaka' },
+                            { slug: 'craft-leather-workshop', path: '04-kriya-dekorasi/craft-leather-workshop/index.html', title: 'Kerajinan Kulit Asli', brand: 'SADDLE CRAFT Studio', groupTag: 'Group B — Leather Craft', tagColor: 'bg-amber-900', desc: 'Jahit tangan hand-stitched benang wax, custom ukir inisial grafir, & patina menawan.', keywords: 'craft leather workshop kerajinan kulit asli dompet gantungan kunci handmade' },
+                            { slug: 'craft-carving-sculpture', path: '04-kriya-dekorasi/craft-carving-sculpture/index.html', title: 'Seni Ukir & Pahat', brand: 'SENI UKIR NUSANTARA', groupTag: 'Group B — Sculpture', tagColor: 'bg-zinc-800', desc: 'Karya pahat detail tinggi dari seniman lokal untuk galeri seni & hiasan lobi hotel.', keywords: 'craft carving sculpture seni ukir kayu patung pahat batu alam' }
+                        ]
+                    },
+                    {
+                        name: 'Group C — Hadiah, Lilin & Seni Suvenir',
+                        borderColor: 'border-amber-500',
+                        bgColor: 'bg-amber-50/50',
+                        textColor: 'text-amber-800',
+                        items: [
+                            { slug: 'scent-candle-sanctuary', path: '04-kriya-dekorasi/scent-candle-sanctuary/index.html', title: 'Lilin Aromaterapi', brand: 'LUMINA AROMA Sanctuary', groupTag: 'Group C — Scent Candle', tagColor: 'bg-amber-700', desc: '100% natural soy wax dengan sumbu kayu berderik (crackling wood wick) & minyak atsiri.', keywords: 'scent candle sanctuary lilin aromaterapi soy wax diffuser wangi relaksasi' },
+                            { slug: 'floral-preserved-keepsake', path: '04-kriya-dekorasi/floral-preserved-keepsake/index.html', title: 'Bunga Kering & Mahar', brand: 'ETERNAL BLOOM Studio', groupTag: 'Group C — Preserved Floral', tagColor: 'bg-rose-700', desc: 'Frame mahar pernikahan 3D bunga abadi terpreservasi tahan hingga bertahun-tahun.', keywords: 'floral preserved keepsake bunga kering frame mahar kado pigura abadi' },
+                            { slug: 'resin-terrazzo-studio', path: '04-kriya-dekorasi/resin-terrazzo-studio/index.html', title: 'Resin Art & Terrazzo', brand: 'TERRAZZO & CO Craft', groupTag: 'Group C — Resin & Terrazzo', tagColor: 'bg-cyan-700', desc: 'Coaster tatakan gelas marmer terrazzo & nampan perhiasan resin epoksi tahan panas.', keywords: 'resin terrazzo studio coaster nampan tatakan gelas resin art terrazzo' },
+                            { slug: 'custom-hampers-curation', path: '04-kriya-dekorasi/custom-hampers-curation/index.html', title: 'Hampers & Gift Box', brand: 'HAMPERS KASIH Curation', groupTag: 'Group C — Hampers', tagColor: 'bg-emerald-800 text-amber-200', desc: 'Kurasi suvenir hari raya eksklusif, pita satin, custom kartu ucapan, & boks premium.', keywords: 'custom hampers curation gift box kado hari raya lebaran natal suvenir' }
+                        ]
+                    }
+                ]
+            },
+            {
+                id: '05-agrobisnis-bahan-mentah',
+                bidangNumber: '05',
+                bidangTitle: 'Bidang Agrobisnis & Bahan Mentah',
+                bidangDesc: 'Karakter segar panen kebun, rantai dingin perikanan, ternak halal, & komoditas ekspor.',
+                badgeColor: 'bg-emerald-100 text-emerald-700',
+                groups: [
+                    {
+                        name: 'Group A — Hasil Tani Segar & Padi Organik',
+                        borderColor: 'border-emerald-500',
+                        bgColor: 'bg-emerald-50/50',
+                        textColor: 'text-emerald-800',
+                        items: [
+                            { slug: 'agro-hydroponic-fresh', path: '05-agrobisnis-bahan-mentah/agro-hydroponic-fresh/index.html', title: 'Sayur Hidroponik Kebun', brand: 'HIJAU LESTARI Hydroponic', groupTag: 'Group A — Hydroponic', tagColor: 'bg-emerald-600', desc: 'Panen segar subuh bebas pestisida kimia sintetis, renyah higienis untuk pasokan resto.', keywords: 'agro hydroponic fresh sayur hidroponik selada kangkung bayam kebun organik' },
+                            { slug: 'agro-orchard-fruit', path: '05-agrobisnis-bahan-mentah/agro-orchard-fruit/index.html', title: 'Buah Petik Kebun', brand: 'AGRO KEBUN SEGAR', groupTag: 'Group A — Orchard', tagColor: 'bg-amber-600', desc: 'Kadar manis brix terverifikasi, matang pohon alami, & kemasan boks krat kirim cepat.', keywords: 'agro orchard fruit buah petik kebun mangga melon alpukat jeruk segar' },
+                            { slug: 'agro-organic-rice', path: '05-agrobisnis-bahan-mentah/agro-organic-rice/index.html', title: 'Beras Organik & Padi Pulen', brand: 'PADI MAKMUR Organik', groupTag: 'Group A — Organic Rice', tagColor: 'bg-lime-700', desc: 'Beras mentik wangi & merah pecah kulit bersertifikat organik kemasan vakum sak.', keywords: 'agro organic rice beras organik padi pandan wangi pulen karung mentik wangi' },
+                            { slug: 'agro-mushroom-farm', path: '05-agrobisnis-bahan-mentah/agro-mushroom-farm/index.html', title: 'Jamur Tiram & Baglog', brand: 'JAMUR TIRAM NUSANTARA', groupTag: 'Group A — Mushroom', tagColor: 'bg-stone-600', desc: 'Kumbung lembab steril, panen jamur tiram putih mekar segar & bibit baglog siap tumbuh.', keywords: 'agro mushroom farm jamur tiram segar baglog jamur kuping bibit kumbung' }
+                        ]
+                    },
+                    {
+                        name: 'Group B — Peternakan, Unggas, Perikanan & Susu Segar',
+                        borderColor: 'border-teal-600',
+                        bgColor: 'bg-teal-50/50',
+                        textColor: 'text-teal-900',
+                        items: [
+                            { slug: 'poultry-fresh-egg-farm', path: '05-agrobisnis-bahan-mentah/poultry-fresh-egg-farm/index.html', title: 'Telur Segar Farm & Omega', brand: 'FARM TELUR SEGAR', groupTag: 'Group B — Poultry', tagColor: 'bg-amber-600', desc: 'Telur ayam omega-3 kuning oranye pekat, cangkang tebal bersih, & tier harga krat ikat.', keywords: 'poultry fresh egg farm telur omega 3 kampung bebek ayam ras segar peternakan' },
+                            { slug: 'fishery-fresh-seafood-hub', path: '05-agrobisnis-bahan-mentah/fishery-fresh-seafood-hub/index.html', title: 'Fresh Seafood & Perikanan', brand: 'SAMUDRA JAYA Seafood', groupTag: 'Group B — Seafood Hub', tagColor: 'bg-sky-700', desc: 'Rantai dingin coolbox 0-4°C, tangkapan kapal nelayan harian tanpa bahan pengawet.', keywords: 'fishery fresh seafood hub ikan laut udang cumi kepiting nelayan rantai dingin' },
+                            { slug: 'livestock-fresh-meat-ranch', path: '05-agrobisnis-bahan-mentah/livestock-fresh-meat-ranch/index.html', title: 'Daging Sapi Halal Peternakan', brand: 'BERKAH RANCH Nusantara', groupTag: 'Group B — Livestock Meat', tagColor: 'bg-red-800', desc: 'Sertifikat RPH halal MUI, variasi potongan tenderloin/sirloin/iga, & daging segar dingin.', keywords: 'livestock fresh meat ranch daging sapi halal kambing rph potongan peternakan' },
+                            { slug: 'dairy-raw-milk-homestead', path: '05-agrobisnis-bahan-mentah/dairy-raw-milk-homestead/index.html', title: 'Susu Sapi Murni Peternakan', brand: 'HOMESTEAD MILK Farm', groupTag: 'Group B — Dairy Homestead', tagColor: 'bg-sky-600', desc: 'Susu perah murni pasteurisasi rendah suhu (LTLT) rasa gurih alami berlemak tanpa aditif.', keywords: 'dairy raw milk homestead susu sapi murni perah pasteurisasi liter peternakan' }
+                        ]
+                    },
+                    {
+                        name: 'Group C — Perkebunan, Rempah Nusantara & Pupuk Organik',
+                        borderColor: 'border-green-600',
+                        bgColor: 'bg-green-50/50',
+                        textColor: 'text-green-900',
+                        items: [
+                            { slug: 'plantation-coffee-tea-estate', path: '05-agrobisnis-bahan-mentah/plantation-coffee-tea-estate/index.html', title: 'Green Coffee Beans & Teh', brand: 'NUSANTARA ESTATE Plantation', groupTag: 'Group C — Estate Coffee', tagColor: 'bg-amber-900 text-amber-200', desc: 'Biji mentah arabika/robusta single origin kadar air 11-12% & daun teh grade pekoe karungan.', keywords: 'plantation coffee tea estate green beans biji kopi mentah daun teh ekspor perkebunan' },
+                            { slug: 'spices-nusantara-trading', path: '05-agrobisnis-bahan-mentah/spices-nusantara-trading/index.html', title: 'Rempah Kering Nusantara', brand: 'REMPAH PUSAKA Nusantara', groupTag: 'Group C — Spices', tagColor: 'bg-red-900 text-amber-300', desc: 'Cengkeh Maluku, pala Banda, kapulaga, & kayu manis kering oven mutu standar ekspor.', keywords: 'spices nusantara trading rempah kapulaga cengkeh pala lada kayu manis ekspor' },
+                            { slug: 'raw-honey-wild-apiary', path: '05-agrobisnis-bahan-mentah/raw-honey-wild-apiary/index.html', title: 'Madu Hutan Liar Sialang', brand: 'MADU SIALANG RIMBA', groupTag: 'Group C — Wild Honey', tagColor: 'bg-amber-600 text-slate-950', desc: 'Madu mentah unpasteurized lebah Apis Dorsata pohon sialang Riau dengan enzim diastase aktif.', keywords: 'raw honey wild apiary madu hutan sialang lebah trigona murni mentah raw honey' },
+                            { slug: 'agro-nursery-organic-fertilizer', path: '05-agrobisnis-bahan-mentah/agro-nursery-organic-fertilizer/index.html', title: 'Bibit Tanaman & Pupuk Kompos', brand: 'AGRO NURSERY & KOMPOS', groupTag: 'Group C — Fertilizer', tagColor: 'bg-green-700', desc: 'Pupuk kandang fermentasi matang tinggi hara C/N rasio stabil & bibit sambung pucuk unggul.', keywords: 'agro nursery organic fertilizer bibit buah pupuk kandang kompos organik' }
+                        ]
+                    }
+                ]
+            },
+            {
+                id: '06-supplier-grosir-b2b',
+                bidangNumber: '06',
+                bidangTitle: 'Bidang Supplier, Grosir & Industri B2B',
+                bidangDesc: 'Karakter pabrik kemasan, garment koveksi, komoditas tonase, kimia, & resin polimer.',
+                badgeColor: 'bg-indigo-100 text-indigo-700',
+                groups: [
+                    {
+                        name: 'Group A — Pabrik Kemasan & Kardus Box',
+                        borderColor: 'border-indigo-500',
+                        bgColor: 'bg-indigo-50/50',
+                        textColor: 'text-indigo-800',
+                        items: [
+                            { slug: 'packaging-corrugated-box-factory', path: '06-supplier-grosir-b2b/packaging-corrugated-box-factory/index.html', title: 'Pabrik Kardus Corrugated', brand: 'PT KARTONINDO PRIMA', groupTag: 'Group A — Corrugated Box', tagColor: 'bg-amber-800', desc: 'Flute tipe B/C/E/Double Wall dengan uji Bursting Strength & kalkulator box dinamis.', keywords: 'packaging corrugated box factory pabrik kardus karton bflute box custom' },
+                            { slug: 'packaging-food-standing-pouch', path: '06-supplier-grosir-b2b/packaging-food-standing-pouch/index.html', title: 'Standing Pouch Kemasan', brand: 'PT FLEXI PACK NUSANTARA', groupTag: 'Group A — Standing Pouch', tagColor: 'bg-blue-600', desc: 'Aluminium foil barrier oksigen tinggi, zipper kedap udara, & cetak rotogravure full color.', keywords: 'packaging food standing pouch zipper alufoil kemasan snack cetak' },
+                            { slug: 'packaging-luxury-rigid-box', path: '06-supplier-grosir-b2b/packaging-luxury-rigid-box/index.html', title: 'Rigid Hardbox Mewah', brand: 'LUXE BOX ATELIER', groupTag: 'Group A — Rigid Box', tagColor: 'bg-slate-800 text-amber-300', desc: 'Greyboard tebal no. 30/40, foil stamping emas, busa cetak EVA, & magnetic flap box.', keywords: 'packaging luxury rigid box hardbox boks mewah gift skincare kemasan' },
+                            { slug: 'packaging-eco-kraft-paperbag', path: '06-supplier-grosir-b2b/packaging-eco-kraft-paperbag/index.html', title: 'Paper Bag Kraft Eco', brand: 'ECO KRAFT BAG INDONESIA', groupTag: 'Group A — Paperbag', tagColor: 'bg-amber-800 text-amber-200', desc: 'Kertas kraft cokelat/putih gramasi 150-200 gsm dengan tali kur kuat ramah lingkungan.', keywords: 'packaging eco kraft paperbag kantong kertas sablon ramah lingkungan' }
+                        ]
+                    },
+                    {
+                        name: 'Group B — Konveksi Seragam, Garmen & Tekstil Industri',
+                        borderColor: 'border-purple-600',
+                        bgColor: 'bg-purple-50/50',
+                        textColor: 'text-purple-900',
+                        items: [
+                            { slug: 'garment-corporate-uniform', path: '06-supplier-grosir-b2b/garment-corporate-uniform/index.html', title: 'Konveksi Seragam Kerja', brand: 'PT GARMINDO SERAGAM', groupTag: 'Group B — Uniform', tagColor: 'bg-blue-700', desc: 'Bahan drill American/Japan/Taipan, bordir komputer tajam, & jahitan rapi kuat.', keywords: 'garment corporate uniform konveksi seragam kerja kemeja pdh kantor drill' },
+                            { slug: 'garment-safety-wearpack-k3', path: '06-supplier-grosir-b2b/garment-safety-wearpack-k3/index.html', title: 'Wearpack K3 Safety', brand: 'SAFETYPRO WEARPACK K3', groupTag: 'Group B — Safety K3', tagColor: 'bg-orange-600', desc: 'Scotlite reflektif 3M nyala terang, kain flame-retardant tahan percikan api & sertifikasi K3.', keywords: 'garment safety wearpack k3 tambang scotlite coverall keselamatan kerja' },
+                            { slug: 'garment-promo-apparel-screenprint', path: '06-supplier-grosir-b2b/garment-promo-apparel-screenprint/index.html', title: 'Kaos Promosi & Sablon', brand: 'PROMO TEES APPAREL', groupTag: 'Group B — Promo Apparel', tagColor: 'bg-red-600', desc: 'Sablon plastisol/DTF presisi tinggi, bahan katun combed 24s/30s adem, & kapasitas 10.000 pcs/bulan.', keywords: 'garment promo apparel screenprint sablon kaos event gathering dtf' },
+                            { slug: 'textile-wholesale-fabric-rolls', path: '06-supplier-grosir-b2b/textile-wholesale-fabric-rolls/index.html', title: 'Grosir Kain Roll Tekstil', brand: 'PT MAKMUR TEKSTIL INDONESIA', groupTag: 'Group B — Fabric Rolls', tagColor: 'bg-blue-900 text-blue-200', desc: 'Penyedia kain katun, rayon, scuba, & crinkle per roll yard/kg dengan kalkulator roll dinamis.', keywords: 'textile wholesale fabric rolls grosir kain roll gulungan pabrik katun combed' }
+                        ]
+                    },
+                    {
+                        name: 'Group C — Distributor Sembako Tonase, Bahan Pangan, Kimia & Biji Plastik',
+                        borderColor: 'border-blue-600',
+                        bgColor: 'bg-blue-50/50',
+                        textColor: 'text-blue-900',
+                        items: [
+                            { slug: 'wholesale-sembako-commodity-hub', path: '06-supplier-grosir-b2b/wholesale-sembako-commodity-hub/index.html', title: 'Grosir Sembako Tonase', brand: 'PT PANGAN NUSANTARA JAYA', groupTag: 'Group C — Sembako Hub', tagColor: 'bg-emerald-800', desc: 'Distribusi tonase sembako gula sak 50kg, minyak karton, & armada truk pabrik Fuso.', keywords: 'wholesale sembako commodity hub grosir gula minyak terigu sak 50kg tonase distributor' },
+                            { slug: 'food-ingredients-bakery-raw-materials', path: '06-supplier-grosir-b2b/food-ingredients-bakery-raw-materials/index.html', title: 'Bahan Baku Pangan & Bakery', brand: 'BAKERY INGREDIENTS HUB', groupTag: 'Group C — Food Ingredients', tagColor: 'bg-sky-800', desc: 'Margarin pail 15kg, ragi instan karton, perisa industri dengan dokumen COA & BPOM resmi.', keywords: 'food ingredients bakery raw materials bahan kue margarin pail ragi perisa coa' },
+                            { slug: 'chemical-industrial-cleaning-hygiene', path: '06-supplier-grosir-b2b/chemical-industrial-cleaning-hygiene/index.html', title: 'Kimia Pembersih Industri', brand: 'PT HYGIENE PRO NUSANTARA', groupTag: 'Group C — Hygiene Chemical', tagColor: 'bg-cyan-800', desc: 'Konsentrat pembersih hotel/laundry jerigen 20L dengan kalkulator rasio pengenceran & MSDS.', keywords: 'chemical industrial cleaning hygiene sabun cuci deterjen jerigen 20L msds kemenkes konsentrat' },
+                            { slug: 'polymer-resin-plastic-pellets', path: '06-supplier-grosir-b2b/polymer-resin-plastic-pellets/index.html', title: 'Biji Plastik & Masterbatch', brand: 'POLYTAMA POLYMER TECH', groupTag: 'Group C — Polymer Resin', tagColor: 'bg-slate-900 text-sky-400 border border-sky-400/40', desc: 'Resin murni virgin prime PP/HDPE/LDPE/ABS sak 25kg dengan data Melt Flow Index (MFI) teruji.', keywords: 'polymer resin plastic pellets biji plastik pp hdpe ldpe abs masterbatch sak 25kg mfi virgin' }
+                        ]
+                    }
+                ]
+            }
+        ];
 
-        // Filter by Category
-        function filterTemplates(category) {
-            const cards = document.querySelectorAll('.template-card');
-            const buttons = document.querySelectorAll('.filter-btn');
+        // Render Function with Live Iframe Previews
+        function renderShowcase() {
+            const container = document.getElementById('showcaseContainer');
+            if (!container) return;
 
-            // Update button active state
-            buttons.forEach(btn => {
-                if (btn.getAttribute('data-category') === category) {
-                    btn.classList.add('bg-slate-900', 'text-white');
-                    btn.classList.remove('bg-white', 'text-slate-700');
-                } else {
-                    btn.classList.remove('bg-slate-900', 'text-white');
-                    btn.classList.add('bg-white', 'text-slate-700');
-                }
+            let html = '';
+
+            catalogData.forEach(bidang => {
+                html += `
+                <div class="bidang-group-block" data-bidang="${bidang.id}">
+                    <div class="flex items-center gap-3 mb-6">
+                        <span class="w-8 h-8 rounded-lg ${bidang.badgeColor} flex items-center justify-center font-bold text-sm">${bidang.bidangNumber}</span>
+                        <div>
+                            <h4 class="text-xl font-bold text-slate-900">${bidang.bidangTitle}</h4>
+                            <p class="text-xs text-slate-500">${bidang.bidangDesc}</p>
+                        </div>
+                    </div>
+                `;
+
+                bidang.groups.forEach(grp => {
+                    html += `
+                    <div class="border-l-4 ${grp.borderColor} pl-4 py-1.5 mb-4 ${grp.bgColor} rounded-r-xl">
+                        <span class="text-xs font-extrabold uppercase tracking-wider ${grp.textColor}">${grp.name}</span>
+                    </div>
+                    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-5 mb-10">
+                    `;
+
+                    grp.items.forEach(item => {
+                        html += `
+                        <div class="template-item bg-white rounded-xl border border-slate-200/80 overflow-hidden shadow-xs hover:shadow-xl hover:border-amber-400 transition-all duration-300 flex flex-col justify-between group" data-name="${item.keywords.toLowerCase()} ${item.title.toLowerCase()} ${item.slug}">
+                            <!-- Iframe Live Preview Container -->
+                            <div class="relative w-full h-44 overflow-hidden bg-slate-900 border-b border-slate-100">
+                                <iframe src="${item.path}" loading="lazy" scrolling="no" class="preview-viewport" tabindex="-1"></iframe>
+                                <!-- Clickable Overlay -->
+                                <a href="${item.path}" target="_blank" rel="noopener noreferrer" class="absolute inset-0 bg-transparent flex items-end p-2.5 bg-gradient-to-t from-slate-950/80 via-transparent to-transparent group-hover:from-slate-950/90 transition-all">
+                                    <div class="flex items-center justify-between w-full">
+                                        <span class="text-[10px] ${item.tagColor} font-bold px-2 py-0.5 rounded shadow-sm">${item.groupTag}</span>
+                                        <span class="text-[10px] bg-white/20 text-white px-2 py-0.5 rounded opacity-0 group-hover:opacity-100 transition-opacity flex items-center gap-1 font-bold">
+                                            Buka <i data-lucide="external-link" class="w-3 h-3"></i>
+                                        </span>
+                                    </div>
+                                </a>
+                            </div>
+
+                            <!-- Card Body -->
+                            <div class="p-4 flex-1 flex flex-col justify-between">
+                                <div>
+                                    <div class="flex items-center justify-between gap-1 mb-1">
+                                        <h5 class="font-bold text-sm text-slate-900 leading-tight group-hover:text-amber-600 transition-colors">${item.title}</h5>
+                                    </div>
+                                    <p class="text-[11px] font-medium text-slate-400 mb-2">${item.brand}</p>
+                                    <p class="text-xs text-slate-600 line-clamp-2 leading-relaxed">${item.desc}</p>
+                                </div>
+                                <div class="mt-4 pt-3 border-t border-slate-100 flex items-center justify-between">
+                                    <span class="text-[10px] font-mono text-slate-400 truncate max-w-[120px]">${item.slug}</span>
+                                    <a href="${item.path}" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-amber-50 hover:bg-amber-100 text-amber-700 hover:text-amber-800 text-xs font-bold transition-colors">
+                                        Buka Demo <i data-lucide="external-link" class="w-3.5 h-3.5"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        `;
+                    });
+
+                    html += `</div>`;
+                });
+
+                html += `</div>`;
             });
 
-            let visibleCount = 0;
-
-            cards.forEach(card => {
-                const cardCategory = card.getAttribute('data-category');
-                if (category === 'all' || cardCategory === category) {
-                    card.classList.remove('hidden');
-                    visibleCount++;
-                } else {
-                    card.classList.add('hidden');
-                }
-            });
-
-            checkEmptyState(visibleCount);
+            container.innerHTML = html;
+            lucide.createIcons();
         }
 
-        // Live Search Functionality
-        const searchInput = document.getElementById('searchInput');
-        searchInput.addEventListener('input', function (e) {
-            const query = e.target.value.toLowerCase().trim();
-            const cards = document.querySelectorAll('.template-card');
-            let visibleCount = 0;
+        // Initialize Render on Load
+        document.addEventListener('DOMContentLoaded', () => {
+            renderShowcase();
+        });
 
-            cards.forEach(card => {
-                const title = card.querySelector('h3').innerText.toLowerCase();
-                const desc = card.querySelector('p').innerText.toLowerCase();
-                const tags = card.getAttribute('data-tags') ? card.getAttribute('data-tags').toLowerCase() : '';
+        // Data Judul Bidang
+        const bidangTitles = {
+            'all': 'Semua Industri',
+            '01-fnb-kuliner': '01. F&B / Kuliner (12 Template)',
+            '02-fashion-skincare': '02. Fashion & Skincare (13 Template)',
+            '03-ritel-gadget-hobi': '03. Ritel, Gadget & Hobi (12 Template)',
+            '04-kriya-dekorasi': '04. Kriya, Mebel & Dekorasi (12 Template)',
+            '05-agrobisnis-bahan-mentah': '05. Agrobisnis & Bahan Mentah (12 Template)',
+            '06-supplier-grosir-b2b': '06. Supplier, Grosir & B2B (12 Template)'
+        };
 
-                if (title.includes(query) || desc.includes(query) || tags.includes(query)) {
-                    card.classList.remove('hidden');
-                    visibleCount++;
+        // Fungsi Filter Bidang
+        function selectBidang(bidangId) {
+            // Update Title
+            document.getElementById('currentBidangTitle').innerText = bidangTitles[bidangId] || 'Semua Industri';
+
+            // Update Pill Buttons Style
+            document.querySelectorAll('.filter-pill-btn').forEach(btn => {
+                const target = btn.getAttribute('data-filter');
+                if (target === bidangId) {
+                    btn.className = "filter-pill-btn active px-3.5 py-1.5 rounded-full text-xs font-bold bg-slate-900 text-white transition-all shadow-xs";
                 } else {
-                    card.classList.add('hidden');
+                    btn.className = "filter-pill-btn px-3.5 py-1.5 rounded-full text-xs font-bold bg-white text-slate-700 border border-slate-200 hover:border-amber-500 transition-all";
                 }
             });
 
-            checkEmptyState(visibleCount);
-        });
+            // Tampilkan / Sembunyikan Bidang Group Blocks
+            const groupBlocks = document.querySelectorAll('.bidang-group-block');
+            groupBlocks.forEach(block => {
+                const blockBidang = block.getAttribute('data-bidang');
+                if (bidangId === 'all' || blockBidang === bidangId) {
+                    block.classList.remove('hidden');
+                } else {
+                    block.classList.add('hidden');
+                }
+            });
 
-        function checkEmptyState(count) {
-            const emptyState = document.getElementById('emptyState');
-            if (count === 0) {
-                emptyState.classList.remove('hidden');
-            } else {
-                emptyState.classList.add('hidden');
+            // Reset search input jika sedang memfilter
+            const searchInput = document.getElementById('searchInput');
+            if (searchInput) searchInput.value = '';
+            document.querySelectorAll('.template-item').forEach(item => item.classList.remove('hidden'));
+            document.getElementById('noResults').classList.add('hidden');
+
+            // Scroll halus ke showcase section jika dari klik kartu bidang
+            if (bidangId !== 'all') {
+                const showcaseSec = document.getElementById('showcase-section');
+                if (showcaseSec) {
+                    showcaseSec.scrollIntoView({ behavior: 'smooth' });
+                }
             }
+        }
+
+        // Live Search Handler
+        const searchInput = document.getElementById('searchInput');
+        if (searchInput) {
+            searchInput.addEventListener('input', function(e) {
+                const query = e.target.value.toLowerCase().trim();
+                const templateItems = document.querySelectorAll('.template-item');
+                const groupBlocks = document.querySelectorAll('.bidang-group-block');
+                let totalVisible = 0;
+
+                if (query === '') {
+                    // Reset to current active filter
+                    const activePill = document.querySelector('.filter-pill-btn.active');
+                    const activeFilter = activePill ? activePill.getAttribute('data-filter') : 'all';
+                    selectBidang(activeFilter);
+                    return;
+                }
+
+                // Show all blocks to search across everything
+                groupBlocks.forEach(block => block.classList.remove('hidden'));
+
+                templateItems.forEach(item => {
+                    const name = item.getAttribute('data-name') || '';
+                    const title = item.querySelector('h5')?.innerText.toLowerCase() || '';
+                    const desc = item.querySelector('p')?.innerText.toLowerCase() || '';
+
+                    if (name.includes(query) || title.includes(query) || desc.includes(query)) {
+                        item.classList.remove('hidden');
+                        totalVisible++;
+                    } else {
+                        item.classList.add('hidden');
+                    }
+                });
+
+                // Hide empty group blocks during search
+                groupBlocks.forEach(block => {
+                    const visibleInBlock = block.querySelectorAll('.template-item:not(.hidden)').length;
+                    if (visibleInBlock === 0) {
+                        block.classList.add('hidden');
+                    } else {
+                        block.classList.remove('hidden');
+                    }
+                });
+
+                const noResults = document.getElementById('noResults');
+                if (totalVisible === 0) {
+                    noResults.classList.remove('hidden');
+                } else {
+                    noResults.classList.add('hidden');
+                }
+            });
+        }
+
+        function resetSearch() {
+            if (searchInput) searchInput.value = '';
+            selectBidang('all');
         }
     </script>
 </body>
