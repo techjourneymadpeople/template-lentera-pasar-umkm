@@ -1,0 +1,1242 @@
+<!DOCTYPE html>
+<html lang="id" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ORCHARDIA // Buah Segar Petik Kebun Matang Pohon & Uji Brix Manis</title>
+    <meta name="description" content="Perkebunan buah premium matang pohon: Mangga Harum Manis, Melon Golden Inthanon, Alpukat Mentega Miki, & Jeruk Madu. Garansi manis teruji Brix Meter dan kemasan dus anti-penyok.">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome 6 -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        orchard: {
+                            gold: '#F59E0B',
+                            amber: '#D97706',
+                            orange: '#EA580C',
+                            sun: '#FBBF24',
+                            leaf: '#15803D',
+                            leafdark: '#14532D',
+                            emerald: '#16A34A',
+                            softvanilla: '#FFFBEB',
+                            cream: '#FEF3C7',
+                            border: '#FDE68A',
+                            charcoal: '#1E293B',
+                            lightbg: '#FFFDF7'
+                        }
+                    },
+                    fontFamily: {
+                        sans: ['"Plus Jakarta Sans"', 'sans-serif'],
+                        display: ['"Outfit"', 'sans-serif']
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        .no-scrollbar::-webkit-scrollbar { display: none; }
+        .no-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
+
+        .sun-glow {
+            background: radial-gradient(circle at 50% 20%, rgba(254, 243, 199, 0.8) 0%, rgba(255, 253, 247, 1) 75%);
+        }
+
+        .orchard-card {
+            transition: all 0.35s cubic-bezier(0.16, 1, 0.3, 1);
+        }
+        .orchard-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 20px 30px -10px rgba(217, 119, 6, 0.18);
+        }
+
+        .brix-badge {
+            background: linear-gradient(135deg, #F59E0B 0%, #EA580C 100%);
+        }
+
+        .leaf-badge {
+            background: linear-gradient(135deg, #15803D 0%, #14532D 100%);
+        }
+    </style>
+</head>
+<body class="bg-orchard-lightbg text-orchard-charcoal font-sans antialiased selection:bg-orchard-gold selection:text-white">
+
+    <!-- 1. TOP ANNOUNCEMENT BAR -->
+    <div class="bg-gradient-to-r from-orchard-leafdark via-orchard-leaf to-orchard-amber text-white text-xs py-2.5 px-4 font-sans font-medium shadow-inner">
+        <div class="max-w-7xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-2 text-center sm:text-left">
+            <div class="flex items-center justify-center gap-2">
+                <span class="px-2 py-0.5 bg-orchard-sun text-orchard-charcoal text-[10px] uppercase font-bold tracking-wider rounded-md shadow-xs flex items-center gap-1">
+                    <i class="fa-solid fa-sun text-orchard-orange"></i> 100% MATANG POHON
+                </span>
+                <span class="text-white/95 font-medium">Garansi Manis & Segar • Diganti 100% Jika Diterima Busuk atau Mentah</span>
+            </div>
+            <div class="flex items-center gap-4 text-xs">
+                <span class="hidden md:inline text-amber-200"><i class="fa-solid fa-truck-fast mr-1"></i> Kirim Ekspedisi Dus Foam Net Anti-Penyok</span>
+                <span class="hidden md:inline text-white/30">•</span>
+                <a href="katalog.html" class="text-orchard-sun hover:underline font-bold transition flex items-center gap-1">
+                    Lihat Hasil Panen Hari Ini <i class="fa-solid fa-arrow-right text-[10px]"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- 2. NAVBAR -->
+    <header class="sticky top-0 z-40 bg-white/95 backdrop-blur-md border-b border-amber-100/80 transition-all shadow-xs">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-20 sm:h-24">
+                
+                <!-- Logo -->
+                <a href="index.html" class="flex items-center gap-3.5 group">
+                    <div class="w-12 h-12 bg-gradient-to-br from-amber-400 to-orange-500 text-white flex items-center justify-center text-2xl font-bold rounded-2xl shadow-md group-hover:scale-105 transition">
+                        <i class="fa-solid fa-apple-whole"></i>
+                    </div>
+                    <div class="flex flex-col">
+                        <span class="text-2xl sm:text-3xl font-extrabold tracking-tight text-orchard-leafdark uppercase leading-none font-display">
+                            ORCHARDIA<span class="text-orchard-gold">.</span>
+                        </span>
+                        <span class="text-[10px] tracking-[0.25em] text-orchard-amber uppercase mt-1 font-bold">
+                            SUN-RIPENED FRUIT ESTATE
+                        </span>
+                    </div>
+                </a>
+
+                <!-- Desktop Navigation Links -->
+                <nav class="hidden lg:flex items-center gap-7 text-xs font-bold tracking-wide uppercase text-slate-700 font-sans">
+                    <a href="index.html" class="text-orchard-orange border-b-2 border-orchard-orange pb-1 font-bold">Beranda</a>
+                    <a href="katalog.html" class="hover:text-orchard-orange transition">Katalog Buah</a>
+                    <a href="detail.html" class="hover:text-orchard-orange transition">Detail & Uji Brix</a>
+                    <a href="tentang.html" class="hover:text-orchard-orange transition">Kebun & Standar Mutu</a>
+                    <a href="artikel.html" class="hover:text-orchard-orange transition">Tips Memeram</a>
+                    <a href="kontak.html" class="hover:text-orchard-orange transition">Order Dus & Hampers</a>
+                </nav>
+
+                <!-- Actions -->
+                <div class="hidden sm:flex items-center gap-3">
+                    <div class="hidden xl:flex flex-col text-right">
+                        <span class="text-[10px] font-bold uppercase text-emerald-700 bg-emerald-50 px-2 py-0.5 rounded-full border border-emerald-200">
+                            🟢 Panen Aktif: Harum Manis & Melon
+                        </span>
+                        <span class="text-xs text-slate-500 font-medium mt-0.5">Petik Subuh Jam 05:30</span>
+                    </div>
+                    <a href="https://wa.me/6281234567890?text=Halo%20Admin%20Orchardia,%20saya%20ingin%20pesan%20dus%20buah%20segar%20matang%20pohon." 
+                       target="_blank"
+                       class="inline-flex items-center gap-2 px-4 py-2.5 bg-gradient-to-r from-orchard-leaf to-orchard-leafdark hover:from-emerald-700 hover:to-emerald-900 text-xs font-bold text-white rounded-xl transition shadow-md hover:shadow-lg">
+                        <i class="fa-brands fa-whatsapp text-base"></i>
+                        <span>Order Dus Buah WA</span>
+                    </a>
+                </div>
+
+                <!-- Mobile Menu Button -->
+                <div class="flex lg:hidden items-center gap-2">
+                    <a href="https://wa.me/6281234567890" target="_blank" class="p-2.5 bg-emerald-100 text-emerald-800 rounded-xl text-sm">
+                        <i class="fa-brands fa-whatsapp"></i>
+                    </a>
+                    <button id="mobileMenuBtn" class="p-2.5 text-slate-700 hover:text-orchard-orange focus:outline-hidden rounded-xl bg-amber-50">
+                        <i id="menuIcon" class="fa-solid fa-bars text-xl"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Mobile Dropdown Menu -->
+        <div id="mobileMenu" class="hidden lg:hidden border-t border-amber-100 bg-white/98 px-6 py-5 shadow-xl">
+            <div class="flex flex-col gap-4 text-sm font-bold uppercase text-slate-700">
+                <a href="index.html" class="text-orchard-orange flex items-center justify-between">
+                    <span>Beranda</span>
+                    <i class="fa-solid fa-chevron-right text-xs"></i>
+                </a>
+                <a href="katalog.html" class="hover:text-orchard-orange transition flex items-center justify-between">
+                    <span>Katalog Buah Segar</span>
+                    <i class="fa-solid fa-chevron-right text-xs"></i>
+                </a>
+                <a href="detail.html" class="hover:text-orchard-orange transition flex items-center justify-between">
+                    <span>Detail Produk & Uji Brix</span>
+                    <i class="fa-solid fa-chevron-right text-xs"></i>
+                </a>
+                <a href="tentang.html" class="hover:text-orchard-orange transition flex items-center justify-between">
+                    <span>Tentang Kebun Buah</span>
+                    <i class="fa-solid fa-chevron-right text-xs"></i>
+                </a>
+                <a href="artikel.html" class="hover:text-orchard-orange transition flex items-center justify-between">
+                    <span>Tips & Khasiat Buah</span>
+                    <i class="fa-solid fa-chevron-right text-xs"></i>
+                </a>
+                <a href="kontak.html" class="hover:text-orchard-orange transition flex items-center justify-between">
+                    <span>Pemesanan & Pasokan Grosir</span>
+                    <i class="fa-solid fa-chevron-right text-xs"></i>
+                </a>
+                <div class="pt-3 border-t border-amber-100">
+                    <a href="https://wa.me/6281234567890?text=Halo%20Admin%20Orchardia,%20saya%20ingin%20konsultasi%20paket%20buah." target="_blank"
+                       class="w-full flex items-center justify-center gap-2 bg-gradient-to-r from-orchard-gold to-orchard-orange text-white py-3 rounded-xl font-bold shadow-md">
+                        <i class="fa-brands fa-whatsapp text-lg"></i>
+                        <span>Chat Admin Kebun (Fast Response)</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- 3. HERO SECTION (Sun-Ripened Orchard & Vibrant Harvest) -->
+    <section class="relative pt-8 pb-16 md:pt-14 md:pb-24 sun-glow overflow-hidden">
+        <!-- Background decorative fruit shapes -->
+        <div class="absolute top-10 right-10 w-96 h-96 bg-amber-200/40 rounded-full blur-3xl pointer-events-none -z-10"></div>
+        <div class="absolute bottom-5 left-5 w-80 h-80 bg-emerald-200/30 rounded-full blur-3xl pointer-events-none -z-10"></div>
+
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-12 items-center">
+                
+                <!-- Left Content -->
+                <div class="lg:col-span-7 flex flex-col items-start text-left">
+                    
+                    <!-- Tag Badge -->
+                    <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-amber-100/90 border border-amber-300 text-orchard-amber text-xs font-bold uppercase tracking-wider mb-5 shadow-xs">
+                        <i class="fa-solid fa-certificate text-orchard-orange"></i>
+                        <span>Estate Harvested • Tanpa Karbit Kimia</span>
+                    </div>
+
+                    <h1 class="text-3xl sm:text-5xl lg:text-6xl font-extrabold text-orchard-leafdark tracking-tight leading-[1.15] font-display mb-5">
+                        Taste the Real <br>
+                        <span class="text-transparent bg-clip-text bg-gradient-to-r from-orchard-gold via-amber-600 to-orchard-orange">
+                            Sun-Ripened Sweetness
+                        </span>
+                    </h1>
+
+                    <p class="text-slate-600 text-sm sm:text-base lg:text-lg leading-relaxed mb-8 max-w-2xl">
+                        Sensasi rasa manis legit alami dari buah yang dibiarkan <strong class="text-slate-800">matang sempurna di pohon</strong> di bawah sinar matahari tropis Nusantara. Disortir dengan uji kadar kemanisan <strong class="text-orchard-amber">Brix Scale (°Bx)</strong> dan dikirim dengan dus anti-benturan.
+                    </p>
+
+                    <!-- Brix Meter Mini Card & CTA Action Buttons -->
+                    <div class="w-full flex flex-col sm:flex-row items-stretch sm:items-center gap-4 mb-8">
+                        <a href="katalog.html" class="inline-flex items-center justify-center gap-3 px-7 py-4 bg-gradient-to-r from-orchard-amber via-orchard-gold to-orchard-orange hover:from-amber-600 hover:to-orange-600 text-white font-bold text-sm uppercase tracking-wider rounded-2xl shadow-lg hover:shadow-xl transition-all transform hover:-translate-y-0.5 text-center">
+                            <span>Pilih Buah Panen Hari Ini</span>
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </a>
+                        <a href="detail.html" class="inline-flex items-center justify-center gap-2 px-6 py-4 bg-white hover:bg-amber-50 text-orchard-leafdark border-2 border-amber-200 hover:border-amber-400 font-bold text-sm rounded-2xl shadow-xs transition-all text-center">
+                            <i class="fa-solid fa-droplet text-orchard-orange"></i>
+                            <span>Cek Uji Kadar Manis Brix</span>
+                        </a>
+                    </div>
+
+                    <!-- Mini Value Metrics Strip -->
+                    <div class="w-full grid grid-cols-3 gap-3 sm:gap-6 pt-6 border-t border-amber-200/70">
+                        <div class="flex flex-col">
+                            <span class="text-xl sm:text-2xl font-black text-orchard-orange font-display">14° - 16.5°</span>
+                            <span class="text-[11px] sm:text-xs text-slate-500 font-semibold uppercase">Rata-rata Brix Manis</span>
+                        </div>
+                        <div class="flex flex-col border-x border-amber-200/80 px-2 sm:px-4">
+                            <span class="text-xl sm:text-2xl font-black text-orchard-leaf font-display">Grade Super</span>
+                            <span class="text-[11px] sm:text-xs text-slate-500 font-semibold uppercase">1kg Isi 2-3 Jumbo</span>
+                        </div>
+                        <div class="flex flex-col">
+                            <span class="text-xl sm:text-2xl font-black text-slate-800 font-display">100% Aman</span>
+                            <span class="text-[11px] sm:text-xs text-slate-500 font-semibold uppercase">Dus Foam Net Busa</span>
+                        </div>
+                    </div>
+
+                </div>
+
+                <!-- Right Visual Showcase (Sun-Ripened Orchard Style) -->
+                <div class="lg:col-span-5 relative">
+                    <div class="relative mx-auto max-w-md lg:max-w-none">
+                        
+                        <!-- Main Hero Image Container -->
+                        <div class="relative rounded-3xl overflow-hidden shadow-2xl border-4 border-white bg-amber-100">
+                            <img src="https://images.unsplash.com/photo-1553279768-865429fa0078?q=80&w=1000&auto=format&fit=crop" 
+                                 alt="Mangga Harum Manis Matang Pohon Berwarna Kuning Emas" 
+                                 class="w-full h-96 sm:h-[440px] object-cover object-center transform hover:scale-105 transition-all duration-700">
+                            
+                            <!-- Overlay Gradient -->
+                            <div class="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent"></div>
+                            
+                            <!-- Bottom Badge inside Photo -->
+                            <div class="absolute bottom-4 left-4 right-4 text-white">
+                                <div class="flex items-center justify-between">
+                                    <div>
+                                        <p class="text-xs text-amber-300 font-bold uppercase tracking-wider">Panen Pagi Ini • Kebun Pasuruan</p>
+                                        <h3 class="text-lg font-bold font-display">Mangga Harum Manis Super Gold</h3>
+                                    </div>
+                                    <span class="px-2.5 py-1 bg-emerald-500/90 backdrop-blur-sm text-white text-xs font-bold rounded-lg flex items-center gap-1 shadow-xs">
+                                        <i class="fa-solid fa-star text-yellow-300 text-[10px]"></i> Grade Super A
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Floating Floating Sweetness Badge (Top Right) -->
+                        <div class="absolute -top-4 -right-3 sm:-right-6 bg-white p-3 sm:p-4 rounded-2xl shadow-xl border border-amber-200 flex items-center gap-3.5 animate-bounce-slow">
+                            <div class="w-12 h-12 rounded-xl brix-badge text-white flex flex-col items-center justify-center font-display font-extrabold leading-none shadow-md">
+                                <span class="text-base">15.8°</span>
+                                <span class="text-[9px] uppercase tracking-tighter">BRIX</span>
+                            </div>
+                            <div>
+                                <p class="text-xs font-bold text-slate-800">Manis Alami Tropis</p>
+                                <p class="text-[11px] text-emerald-600 font-semibold flex items-center gap-1">
+                                    <i class="fa-solid fa-circle-check text-[10px]"></i> Lolos Uji Refraktometer
+                                </p>
+                            </div>
+                        </div>
+
+                        <!-- Floating Package Protection Box (Bottom Left) -->
+                        <div class="absolute -bottom-5 -left-3 sm:-left-6 bg-white p-3.5 rounded-2xl shadow-xl border border-amber-200 flex items-center gap-3">
+                            <div class="w-10 h-10 rounded-xl bg-amber-50 text-orchard-orange flex items-center justify-center text-lg border border-amber-200">
+                                <i class="fa-solid fa-box-open"></i>
+                            </div>
+                            <div>
+                                <p class="text-xs font-bold text-slate-800">Dus Corrugated + Foam Net</p>
+                                <p class="text-[11px] text-slate-500">Anti-Penyok Selama Pengiriman</p>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- 4. VALUE PILLARS STRIP (Keunggulan Buah Orchardia) -->
+    <section class="py-12 bg-white border-y border-amber-100">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+                
+                <!-- Item 1 -->
+                <div class="p-6 rounded-2xl bg-orchard-softvanilla border border-amber-200/80 hover:border-amber-400 transition-all flex flex-col">
+                    <div class="w-12 h-12 rounded-xl bg-amber-500 text-white flex items-center justify-center text-xl mb-4 shadow-xs">
+                        <i class="fa-solid fa-tree"></i>
+                    </div>
+                    <h3 class="text-base font-bold text-slate-900 font-display mb-1.5">100% Matang di Pohon</h3>
+                    <p class="text-xs text-slate-600 leading-relaxed">
+                        Dipetik saat akumulasi fruktosa alami buah mencapai titik optimal di dahan, tanpa disuntik zat kimia pematang atau karbit.
+                    </p>
+                </div>
+
+                <!-- Item 2 -->
+                <div class="p-6 rounded-2xl bg-orchard-softvanilla border border-amber-200/80 hover:border-amber-400 transition-all flex flex-col">
+                    <div class="w-12 h-12 rounded-xl bg-orange-500 text-white flex items-center justify-center text-xl mb-4 shadow-xs">
+                        <i class="fa-solid fa-flask"></i>
+                    </div>
+                    <h3 class="text-base font-bold text-slate-900 font-display mb-1.5">Standar Brix Scale (°Bx)</h3>
+                    <p class="text-xs text-slate-600 leading-relaxed">
+                        Setiap varietas buah diuji secara acak memakai Optical Brix Refractometer untuk memastikan tingkat kemanisan konsisten 14°+ °Bx.
+                    </p>
+                </div>
+
+                <!-- Item 3 -->
+                <div class="p-6 rounded-2xl bg-orchard-softvanilla border border-amber-200/80 hover:border-amber-400 transition-all flex flex-col">
+                    <div class="w-12 h-12 rounded-xl bg-emerald-600 text-white flex items-center justify-center text-xl mb-4 shadow-xs">
+                        <i class="fa-solid fa-shield-halved"></i>
+                    </div>
+                    <h3 class="text-base font-bold text-slate-900 font-display mb-1.5">Dus Foam Net Anti-Penyok</h3>
+                    <p class="text-xs text-slate-600 leading-relaxed">
+                        Setiap butir buah dibungkus jaring busa tebal (fruit netting) dalam box kardus double-wall kokoh, siap kirim luar pulau dengan aman.
+                    </p>
+                </div>
+
+                <!-- Item 4 -->
+                <div class="p-6 rounded-2xl bg-orchard-softvanilla border border-amber-200/80 hover:border-amber-400 transition-all flex flex-col">
+                    <div class="w-12 h-12 rounded-xl bg-yellow-500 text-white flex items-center justify-center text-xl mb-4 shadow-xs">
+                        <i class="fa-solid fa-hand-holding-heart"></i>
+                    </div>
+                    <h3 class="text-base font-bold text-slate-900 font-display mb-1.5">Garansi Ganti Baru</h3>
+                    <p class="text-xs text-slate-600 leading-relaxed">
+                        Jika ada buah yang busuk, asam berlebih, atau cacat saat unboxing, kirimkan bukti video dan kami langsung kirimkan penggantinya.
+                    </p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- 5. SEASONAL FRUIT CALENDAR SECTION -->
+    <section class="py-16 md:py-20 bg-gradient-to-b from-amber-50/50 to-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            
+            <!-- Section Header -->
+            <div class="flex flex-col md:flex-row md:items-end justify-between mb-12 gap-4">
+                <div>
+                    <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-emerald-100 text-emerald-800 text-xs font-bold uppercase tracking-wider mb-2">
+                        <i class="fa-solid fa-calendar-days"></i> Kalender Panen Raya Kebun
+                    </div>
+                    <h2 class="text-2xl sm:text-4xl font-extrabold text-orchard-leafdark font-display">
+                        Jadwal Musim Buah Tropis Nusantara
+                    </h2>
+                    <p class="text-slate-600 text-sm mt-1 max-w-xl">
+                        Ketahui kapan buah favoritmu mencapai puncak rasa manis terlezatnya langsung dari kebun mitra Orchardia.
+                    </p>
+                </div>
+                <a href="katalog.html" class="inline-flex items-center gap-2 text-xs font-bold text-orchard-orange hover:text-amber-700 transition uppercase tracking-wider">
+                    Lihat Semua Jadwal Panen <i class="fa-solid fa-arrow-right"></i>
+                </a>
+            </div>
+
+            <!-- Calendar Cards -->
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+                
+                <!-- Card 1: Mangga -->
+                <div class="bg-white rounded-3xl p-6 border-2 border-amber-200 shadow-xs relative overflow-hidden flex flex-col justify-between">
+                    <div class="absolute top-0 right-0 bg-gradient-to-l from-amber-500 to-orange-500 text-white text-[10px] font-bold px-3 py-1 rounded-bl-xl uppercase tracking-wider">
+                        SEDANG PANEN RAYA
+                    </div>
+                    <div>
+                        <div class="w-12 h-12 rounded-2xl bg-amber-100 text-amber-600 flex items-center justify-center text-2xl mb-4">
+                            🥭
+                        </div>
+                        <h3 class="text-lg font-bold text-slate-900 font-display">Mangga Harum Manis & Gedong Gincu</h3>
+                        <p class="text-xs text-slate-500 mt-1 mb-3">Musim Puncak: <strong class="text-slate-800">September – Januari</strong></p>
+                        <div class="space-y-1.5 text-xs text-slate-600">
+                            <p class="flex items-center gap-2"><i class="fa-solid fa-check text-emerald-600"></i> Kadar Manis: 15° - 16.5° Bx</p>
+                            <p class="flex items-center gap-2"><i class="fa-solid fa-check text-emerald-600"></i> Daging tebal, aroma harum pekat</p>
+                        </div>
+                    </div>
+                    <div class="mt-6 pt-4 border-t border-slate-100 flex items-center justify-between">
+                        <span class="text-xs font-bold text-emerald-600 flex items-center gap-1">
+                            <span class="w-2 h-2 rounded-full bg-emerald-500 animate-pulse"></span> Stok Melimpah
+                        </span>
+                        <a href="detail.html" class="text-xs font-bold text-orchard-amber hover:underline">Pesan Dus &rarr;</a>
+                    </div>
+                </div>
+
+                <!-- Card 2: Melon Inthanon -->
+                <div class="bg-white rounded-3xl p-6 border border-emerald-200 shadow-xs relative overflow-hidden flex flex-col justify-between">
+                    <div class="absolute top-0 right-0 bg-emerald-600 text-white text-[10px] font-bold px-3 py-1 rounded-bl-xl uppercase tracking-wider">
+                        GREENHOUSE RUNNING
+                    </div>
+                    <div>
+                        <div class="w-12 h-12 rounded-2xl bg-emerald-100 text-emerald-700 flex items-center justify-center text-2xl mb-4">
+                            🍈
+                        </div>
+                        <h3 class="text-lg font-bold text-slate-900 font-display">Melon Golden Inthanon & Hamigua</h3>
+                        <p class="text-xs text-slate-500 mt-1 mb-3">Musim Puncak: <strong class="text-slate-800">Tiap Bulan (Greenhouse)</strong></p>
+                        <div class="space-y-1.5 text-xs text-slate-600">
+                            <p class="flex items-center gap-2"><i class="fa-solid fa-check text-emerald-600"></i> Kadar Manis: 14° - 15.5° Bx</p>
+                            <p class="flex items-center gap-2"><i class="fa-solid fa-check text-emerald-600"></i> Tekstur renyah *crunchy & juicy*</p>
+                        </div>
+                    </div>
+                    <div class="mt-6 pt-4 border-t border-slate-100 flex items-center justify-between">
+                        <span class="text-xs font-bold text-emerald-600 flex items-center gap-1">
+                            <span class="w-2 h-2 rounded-full bg-emerald-500 animate-pulse"></span> Panen Tiap Minggu
+                        </span>
+                        <a href="katalog.html" class="text-xs font-bold text-orchard-leaf hover:underline">Pesan Dus &rarr;</a>
+                    </div>
+                </div>
+
+                <!-- Card 3: Alpukat Mentega Miki -->
+                <div class="bg-white rounded-3xl p-6 border border-slate-200 shadow-xs relative overflow-hidden flex flex-col justify-between">
+                    <div class="absolute top-0 right-0 bg-amber-600 text-white text-[10px] font-bold px-3 py-1 rounded-bl-xl uppercase tracking-wider">
+                        PANEN TERATUR
+                    </div>
+                    <div>
+                        <div class="w-12 h-12 rounded-2xl bg-lime-100 text-lime-700 flex items-center justify-center text-2xl mb-4">
+                            🥑
+                        </div>
+                        <h3 class="text-lg font-bold text-slate-900 font-display">Alpukat Mentega Miki & Kendil</h3>
+                        <p class="text-xs text-slate-500 mt-1 mb-3">Musim Puncak: <strong class="text-slate-800">Maret – Oktober</strong></p>
+                        <div class="space-y-1.5 text-xs text-slate-600">
+                            <p class="flex items-center gap-2"><i class="fa-solid fa-check text-emerald-600"></i> Tekstur legit mentega tanpa serat</p>
+                            <p class="flex items-center gap-2"><i class="fa-solid fa-check text-emerald-600"></i> Bobot 500g - 800g per butir</p>
+                        </div>
+                    </div>
+                    <div class="mt-6 pt-4 border-t border-slate-100 flex items-center justify-between">
+                        <span class="text-xs font-bold text-amber-600 flex items-center gap-1">
+                            <span class="w-2 h-2 rounded-full bg-amber-500"></span> Siap Kirim Mengkal
+                        </span>
+                        <a href="katalog.html" class="text-xs font-bold text-orchard-leaf hover:underline">Pesan Dus &rarr;</a>
+                    </div>
+                </div>
+
+                <!-- Card 4: Jeruk Madu -->
+                <div class="bg-white rounded-3xl p-6 border border-slate-200 shadow-xs relative overflow-hidden flex flex-col justify-between">
+                    <div class="absolute top-0 right-0 bg-slate-700 text-white text-[10px] font-bold px-3 py-1 rounded-bl-xl uppercase tracking-wider">
+                        MULAI PETIK
+                    </div>
+                    <div>
+                        <div class="w-12 h-12 rounded-2xl bg-orange-100 text-orange-600 flex items-center justify-center text-2xl mb-4">
+                            🍊
+                        </div>
+                        <h3 class="text-lg font-bold text-slate-900 font-display">Jeruk Madu Siam & Keprok Batu</h3>
+                        <p class="text-xs text-slate-500 mt-1 mb-3">Musim Puncak: <strong class="text-slate-800">Mei – November</strong></p>
+                        <div class="space-y-1.5 text-xs text-slate-600">
+                            <p class="flex items-center gap-2"><i class="fa-solid fa-check text-emerald-600"></i> Kadar Manis: 13° - 14.5° Bx</p>
+                            <p class="flex items-center gap-2"><i class="fa-solid fa-check text-emerald-600"></i> Bulir air melimpah, rasa manis segar</p>
+                        </div>
+                    </div>
+                    <div class="mt-6 pt-4 border-t border-slate-100 flex items-center justify-between">
+                        <span class="text-xs font-bold text-emerald-600 flex items-center gap-1">
+                            <span class="w-2 h-2 rounded-full bg-emerald-500"></span> Tersedia Dus 5kg
+                        </span>
+                        <a href="katalog.html" class="text-xs font-bold text-orchard-orange hover:underline">Pesan Dus &rarr;</a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- 6. BRIX SCALE SWEETNESS GUIDE (Edukasi Tingkat Kemanisan Buah) -->
+    <section class="py-14 bg-orchard-leafdark text-white relative overflow-hidden">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
+                
+                <div class="lg:col-span-5">
+                    <span class="px-3 py-1 bg-amber-400 text-slate-900 text-xs font-bold uppercase rounded-md tracking-wider">
+                        REFRACTOMETER TESTED
+                    </span>
+                    <h2 class="text-2xl sm:text-4xl font-extrabold font-display mt-3 mb-4 leading-tight">
+                        Bagaimana Kami Menjamin Tingkat Kemanisan (°Bx)?
+                    </h2>
+                    <p class="text-slate-300 text-xs sm:text-sm leading-relaxed mb-6">
+                        Derajat Brix (°Bx) adalah satuan ilmiah internasional untuk mengukur persentase konsentrasi gula alami buah. Kami memastikan hanya buah yang memenuhi standar manis minimal yang masuk ke dalam kemasan dus Anda.
+                    </p>
+                    <div class="flex items-center gap-4 text-xs font-bold text-amber-300">
+                        <span class="flex items-center gap-1.5"><i class="fa-solid fa-check-circle text-amber-400"></i> Tanpa Karbit</span>
+                        <span class="flex items-center gap-1.5"><i class="fa-solid fa-check-circle text-amber-400"></i> 100% Gula Alami Buah</span>
+                    </div>
+                </div>
+
+                <div class="lg:col-span-7">
+                    <div class="space-y-4">
+                        
+                        <!-- Level 1 -->
+                        <div class="bg-white/10 backdrop-blur-md rounded-2xl p-4 sm:p-5 border border-white/15 flex items-center justify-between gap-4">
+                            <div class="flex items-center gap-3">
+                                <div class="w-12 h-12 rounded-xl bg-amber-500/30 text-amber-300 flex items-center justify-center font-black text-lg">
+                                    10-12°
+                                </div>
+                                <div>
+                                    <h4 class="font-bold text-sm text-white">Segar Lembut (Mild Sweet)</h4>
+                                    <p class="text-xs text-slate-300">Jambu Kristal, Jeruk Lemon Madu, Pepaya Segar</p>
+                                </div>
+                            </div>
+                            <span class="text-xs bg-slate-800/60 px-3 py-1 rounded-full text-slate-300 hidden sm:inline">Fresh & Crisp</span>
+                        </div>
+
+                        <!-- Level 2 -->
+                        <div class="bg-white/15 backdrop-blur-md rounded-2xl p-4 sm:p-5 border border-amber-400/40 flex items-center justify-between gap-4">
+                            <div class="flex items-center gap-3">
+                                <div class="w-12 h-12 rounded-xl bg-amber-500 text-slate-900 flex items-center justify-center font-black text-lg">
+                                    13-15°
+                                </div>
+                                <div>
+                                    <h4 class="font-bold text-sm text-amber-300">Manis Legit Premium (High Sweetness)</h4>
+                                    <p class="text-xs text-slate-200">Melon Inthanon, Jeruk Madu Keprok, Lengkeng Super</p>
+                                </div>
+                            </div>
+                            <span class="text-xs bg-amber-400/20 text-amber-300 px-3 py-1 rounded-full font-bold hidden sm:inline">Standar Orchardia</span>
+                        </div>
+
+                        <!-- Level 3 -->
+                        <div class="bg-gradient-to-r from-amber-500/30 to-orange-500/30 backdrop-blur-md rounded-2xl p-4 sm:p-5 border-2 border-amber-400 flex items-center justify-between gap-4 shadow-lg">
+                            <div class="flex items-center gap-3">
+                                <div class="w-12 h-12 rounded-xl bg-gradient-to-r from-amber-400 to-orange-500 text-slate-900 flex items-center justify-center font-black text-lg shadow-md">
+                                    16°+
+                                </div>
+                                <div>
+                                    <h4 class="font-bold text-sm text-white">Super Sweet Estate Reserve (°Bx Puncak)</h4>
+                                    <p class="text-xs text-amber-200 font-medium">Mangga Harum Manis Pohon Tua, Semangka Golden, Kurma Tropis</p>
+                                </div>
+                            </div>
+                            <span class="text-xs bg-orange-500 text-white px-3 py-1 rounded-full font-bold shadow-xs">Super Grade</span>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- 7. PRODUK UNGGULAN (Grid 3 Kolom Card Buah Segar & Dus Hampers) -->
+    <section class="py-16 md:py-24 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            
+            <div class="text-center max-w-2xl mx-auto mb-14">
+                <span class="px-3.5 py-1 rounded-full bg-amber-100 text-orchard-amber text-xs font-bold uppercase tracking-wider">
+                    PILIHAN TERLARIS BULAN INI
+                </span>
+                <h2 class="text-3xl sm:text-4xl font-extrabold text-orchard-leafdark font-display mt-3 mb-3">
+                    Buah Segar Dus & Hampers Eksklusif
+                </h2>
+                <p class="text-slate-600 text-sm">
+                    Tersedia kemasan dus tebal 2kg, 3kg, 5kg, dan hampers eksklusif siap antar untuk konsumsi sehat keluarga maupun hadiah istimewa.
+                </p>
+            </div>
+
+            <!-- Products Grid -->
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                
+                <!-- Product Card 1: Mangga Harum Manis -->
+                <div class="orchard-card bg-white rounded-3xl border border-amber-200/90 shadow-xs overflow-hidden flex flex-col">
+                    <div class="relative h-64 overflow-hidden bg-amber-50">
+                        <img src="https://images.unsplash.com/photo-1553279768-865429fa0078?q=80&w=800&auto=format&fit=crop" 
+                             alt="Mangga Harum Manis Matang Pohon Dus" 
+                             class="w-full h-full object-cover transform hover:scale-105 transition-all duration-500">
+                        <!-- Badges -->
+                        <div class="absolute top-3 left-3 flex flex-col gap-1.5">
+                            <span class="brix-badge text-white text-[11px] font-extrabold px-2.5 py-1 rounded-lg shadow-xs flex items-center gap-1">
+                                <i class="fa-solid fa-droplet text-yellow-200"></i> 15.8° Bx Sweet
+                            </span>
+                            <span class="bg-white/95 text-slate-800 text-[10px] font-bold px-2 py-0.5 rounded-md shadow-xs">
+                                Grade Super (1kg isi 2-3)
+                            </span>
+                        </div>
+                        <div class="absolute top-3 right-3 bg-emerald-600 text-white text-[10px] font-bold px-2.5 py-1 rounded-full uppercase">
+                            Matang Pohon
+                        </div>
+                    </div>
+                    
+                    <div class="p-6 flex-1 flex flex-col justify-between">
+                        <div>
+                            <div class="flex items-center justify-between text-xs text-slate-500 mb-1">
+                                <span>Pilihan Kemasan: <strong>Dus 2kg / 5kg</strong></span>
+                                <span class="text-amber-600 font-bold"><i class="fa-solid fa-star text-amber-400"></i> 4.9 (420+ dus)</span>
+                            </div>
+                            <h3 class="text-xl font-bold text-slate-900 font-display">Mangga Harum Manis Pasuruan</h3>
+                            <p class="text-xs text-slate-600 mt-2 leading-relaxed">
+                                Daging buah kuning keemasan, manis pekat beraroma khas, bebas serat kasar, dipetik saat pangkal buah sudah melekuk bulat.
+                            </p>
+
+                            <!-- Mini specs -->
+                            <div class="mt-4 pt-3 border-t border-amber-100 grid grid-cols-2 gap-2 text-[11px] text-slate-700">
+                                <div class="flex items-center gap-1.5"><i class="fa-solid fa-box text-amber-500"></i> Dus Double Wall</div>
+                                <div class="flex items-center gap-1.5"><i class="fa-solid fa-shield text-emerald-600"></i> Net Jaring Busa</div>
+                            </div>
+                        </div>
+
+                        <div class="mt-6 pt-4 border-t border-amber-100 flex items-center justify-between">
+                            <div>
+                                <span class="text-[10px] text-slate-400 uppercase font-semibold">Mulai Dari</span>
+                                <p class="text-lg font-black text-orchard-leafdark font-display">Rp 65.000 <span class="text-xs font-normal text-slate-500">/ dus 2kg</span></p>
+                            </div>
+                            <a href="detail.html" class="px-4 py-2.5 bg-gradient-to-r from-orchard-amber to-orchard-gold hover:from-amber-600 hover:to-orange-500 text-white text-xs font-bold rounded-xl shadow-md transition">
+                                Detail & Order
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product Card 2: Melon Inthanon -->
+                <div class="orchard-card bg-white rounded-3xl border border-amber-200/90 shadow-xs overflow-hidden flex flex-col">
+                    <div class="relative h-64 overflow-hidden bg-emerald-50">
+                        <img src="https://images.unsplash.com/photo-1598170845058-32b9d6a5da37?q=80&w=800&auto=format&fit=crop" 
+                             alt="Melon Golden Inthanon Hidroponik Greenhouse" 
+                             class="w-full h-full object-cover transform hover:scale-105 transition-all duration-500">
+                        <!-- Badges -->
+                        <div class="absolute top-3 left-3 flex flex-col gap-1.5">
+                            <span class="brix-badge text-white text-[11px] font-extrabold px-2.5 py-1 rounded-lg shadow-xs flex items-center gap-1">
+                                <i class="fa-solid fa-droplet text-yellow-200"></i> 14.8° Bx Sweet
+                            </span>
+                            <span class="bg-white/95 text-slate-800 text-[10px] font-bold px-2 py-0.5 rounded-md shadow-xs">
+                                Netting Emas Sempurna
+                            </span>
+                        </div>
+                        <div class="absolute top-3 right-3 bg-emerald-600 text-white text-[10px] font-bold px-2.5 py-1 rounded-full uppercase">
+                            Greenhouse
+                        </div>
+                    </div>
+                    
+                    <div class="p-6 flex-1 flex flex-col justify-between">
+                        <div>
+                            <div class="flex items-center justify-between text-xs text-slate-500 mb-1">
+                                <span>Kemasan: <strong>Box Handle Isi 2 Buah</strong></span>
+                                <span class="text-amber-600 font-bold"><i class="fa-solid fa-star text-amber-400"></i> 5.0 (310+ box)</span>
+                            </div>
+                            <h3 class="text-xl font-bold text-slate-900 font-display">Melon Golden Inthanon Hydro</h3>
+                            <p class="text-xs text-slate-600 mt-2 leading-relaxed">
+                                Kulit kuning keemasan dengan jaring tebal rapi, daging hijau muda super berair (*juicy*), wangi floral segar dengan rasa manis renyah.
+                            </p>
+
+                            <!-- Mini specs -->
+                            <div class="mt-4 pt-3 border-t border-amber-100 grid grid-cols-2 gap-2 text-[11px] text-slate-700">
+                                <div class="flex items-center gap-1.5"><i class="fa-solid fa-weight-scale text-amber-500"></i> 1.5 - 1.8 kg / buah</div>
+                                <div class="flex items-center gap-1.5"><i class="fa-solid fa-gift text-emerald-600"></i> Box Hadiah Handle</div>
+                            </div>
+                        </div>
+
+                        <div class="mt-6 pt-4 border-t border-amber-100 flex items-center justify-between">
+                            <div>
+                                <span class="text-[10px] text-slate-400 uppercase font-semibold">Harga Box Eksklusif</span>
+                                <p class="text-lg font-black text-orchard-leafdark font-display">Rp 95.000 <span class="text-xs font-normal text-slate-500">/ box (2 buah)</span></p>
+                            </div>
+                            <a href="detail.html" class="px-4 py-2.5 bg-gradient-to-r from-orchard-amber to-orchard-gold hover:from-amber-600 hover:to-orange-500 text-white text-xs font-bold rounded-xl shadow-md transition">
+                                Detail & Order
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product Card 3: Alpukat Mentega Miki -->
+                <div class="orchard-card bg-white rounded-3xl border border-amber-200/90 shadow-xs overflow-hidden flex flex-col">
+                    <div class="relative h-64 overflow-hidden bg-lime-50">
+                        <img src="https://images.unsplash.com/photo-1523049673857-eb18f1d7b578?q=80&w=800&auto=format&fit=crop" 
+                             alt="Alpukat Mentega Miki Jumbo Legit Tanpa Serat" 
+                             class="w-full h-full object-cover transform hover:scale-105 transition-all duration-500">
+                        <!-- Badges -->
+                        <div class="absolute top-3 left-3 flex flex-col gap-1.5">
+                            <span class="bg-lime-700 text-white text-[11px] font-extrabold px-2.5 py-1 rounded-lg shadow-xs flex items-center gap-1">
+                                <i class="fa-solid fa-cubes-stacked"></i> Pulen Mentega
+                            </span>
+                            <span class="bg-white/95 text-slate-800 text-[10px] font-bold px-2 py-0.5 rounded-md shadow-xs">
+                                0% Serat Pahit
+                            </span>
+                        </div>
+                        <div class="absolute top-3 right-3 bg-amber-600 text-white text-[10px] font-bold px-2.5 py-1 rounded-full uppercase">
+                            Siap Peram
+                        </div>
+                    </div>
+                    
+                    <div class="p-6 flex-1 flex flex-col justify-between">
+                        <div>
+                            <div class="flex items-center justify-between text-xs text-slate-500 mb-1">
+                                <span>Pilihan: <strong>Dus 3kg (Isi 6-7 Buah)</strong></span>
+                                <span class="text-amber-600 font-bold"><i class="fa-solid fa-star text-amber-400"></i> 4.9 (580+ dus)</span>
+                            </div>
+                            <h3 class="text-xl font-bold text-slate-900 font-display">Alpukat Mentega Miki Super</h3>
+                            <p class="text-xs text-slate-600 mt-2 leading-relaxed">
+                                Daging buah tebal berwarna kuning mentega, gurih legit tanpa serat benang, mudah dikupas kulitnya saat matang sempurna.
+                            </p>
+
+                            <!-- Mini specs -->
+                            <div class="mt-4 pt-3 border-t border-amber-100 grid grid-cols-2 gap-2 text-[11px] text-slate-700">
+                                <div class="flex items-center gap-1.5"><i class="fa-solid fa-seedling text-lime-600"></i> Biji Kecil Pipih</div>
+                                <div class="flex items-center gap-1.5"><i class="fa-solid fa-circle-info text-amber-500"></i> Free Panduan Peram</div>
+                            </div>
+                        </div>
+
+                        <div class="mt-6 pt-4 border-t border-amber-100 flex items-center justify-between">
+                            <div>
+                                <span class="text-[10px] text-slate-400 uppercase font-semibold">Harga Dus 3kg</span>
+                                <p class="text-lg font-black text-orchard-leafdark font-display">Rp 88.000 <span class="text-xs font-normal text-slate-500">/ dus</span></p>
+                            </div>
+                            <a href="detail.html" class="px-4 py-2.5 bg-gradient-to-r from-orchard-amber to-orchard-gold hover:from-amber-600 hover:to-orange-500 text-white text-xs font-bold rounded-xl shadow-md transition">
+                                Detail & Order
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product Card 4: Jeruk Madu Pontianak -->
+                <div class="orchard-card bg-white rounded-3xl border border-amber-200/90 shadow-xs overflow-hidden flex flex-col">
+                    <div class="relative h-64 overflow-hidden bg-orange-50">
+                        <img src="https://images.unsplash.com/photo-1611080626919-7cf5a9dbab5b?q=80&w=800&auto=format&fit=crop" 
+                             alt="Jeruk Madu Siam Segar Berair" 
+                             class="w-full h-full object-cover transform hover:scale-105 transition-all duration-500">
+                        <!-- Badges -->
+                        <div class="absolute top-3 left-3 flex flex-col gap-1.5">
+                            <span class="brix-badge text-white text-[11px] font-extrabold px-2.5 py-1 rounded-lg shadow-xs flex items-center gap-1">
+                                <i class="fa-solid fa-droplet text-yellow-200"></i> 14.2° Bx Sweet
+                            </span>
+                        </div>
+                        <div class="absolute top-3 right-3 bg-orange-600 text-white text-[10px] font-bold px-2.5 py-1 rounded-full uppercase">
+                            Juicy Manis
+                        </div>
+                    </div>
+                    
+                    <div class="p-6 flex-1 flex flex-col justify-between">
+                        <div>
+                            <div class="flex items-center justify-between text-xs text-slate-500 mb-1">
+                                <span>Pilihan: <strong>Dus 5kg / 10kg Kargo</strong></span>
+                                <span class="text-amber-600 font-bold"><i class="fa-solid fa-star text-amber-400"></i> 4.8 (290+ dus)</span>
+                            </div>
+                            <h3 class="text-xl font-bold text-slate-900 font-display">Jeruk Madu Siam Pontianak</h3>
+                            <p class="text-xs text-slate-600 mt-2 leading-relaxed">
+                                Kulit tipis mudah dikupas, bulir sari buah melimpah tanpa biji berlebih, manis segar kaya vitamin C alami untuk booster imun harian.
+                            </p>
+
+                            <!-- Mini specs -->
+                            <div class="mt-4 pt-3 border-t border-amber-100 grid grid-cols-2 gap-2 text-[11px] text-slate-700">
+                                <div class="flex items-center gap-1.5"><i class="fa-solid fa-heart-pulse text-red-500"></i> 100% Kaya Vitamin C</div>
+                                <div class="flex items-center gap-1.5"><i class="fa-solid fa-boxes-stacked text-amber-500"></i> Ready Dus 5kg</div>
+                            </div>
+                        </div>
+
+                        <div class="mt-6 pt-4 border-t border-amber-100 flex items-center justify-between">
+                            <div>
+                                <span class="text-[10px] text-slate-400 uppercase font-semibold">Harga Dus 5kg</span>
+                                <p class="text-lg font-black text-orchard-leafdark font-display">Rp 75.000 <span class="text-xs font-normal text-slate-500">/ dus</span></p>
+                            </div>
+                            <a href="detail.html" class="px-4 py-2.5 bg-gradient-to-r from-orchard-amber to-orchard-gold hover:from-amber-600 hover:to-orange-500 text-white text-xs font-bold rounded-xl shadow-md transition">
+                                Detail & Order
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product Card 5: Parsel Dus Hampers Buah Premium -->
+                <div class="orchard-card bg-white rounded-3xl border-2 border-amber-400 shadow-md overflow-hidden flex flex-col">
+                    <div class="relative h-64 overflow-hidden bg-amber-100">
+                        <img src="https://images.unsplash.com/photo-1610832958506-aa56368176cf?q=80&w=800&auto=format&fit=crop" 
+                             alt="Dus Hampers Buah Segar Premium Pita Emas" 
+                             class="w-full h-full object-cover transform hover:scale-105 transition-all duration-500">
+                        <!-- Badges -->
+                        <div class="absolute top-3 left-3 flex flex-col gap-1.5">
+                            <span class="bg-amber-500 text-slate-900 text-[11px] font-black px-2.5 py-1 rounded-lg shadow-xs flex items-center gap-1">
+                                <i class="fa-solid fa-gift"></i> BEST SELLER GIFT
+                            </span>
+                        </div>
+                        <div class="absolute top-3 right-3 bg-red-600 text-white text-[10px] font-bold px-2.5 py-1 rounded-full uppercase">
+                            Free Kartu Ucapan
+                        </div>
+                    </div>
+                    
+                    <div class="p-6 flex-1 flex flex-col justify-between">
+                        <div>
+                            <div class="flex items-center justify-between text-xs text-slate-500 mb-1">
+                                <span>Kombinasi: <strong>Melon + Mangga + Jeruk + Apel</strong></span>
+                                <span class="text-amber-600 font-bold"><i class="fa-solid fa-star text-amber-400"></i> 5.0 (640+ parsel)</span>
+                            </div>
+                            <h3 class="text-xl font-bold text-slate-900 font-display">Hampers Orchard Royal Gold</h3>
+                            <p class="text-xs text-slate-600 mt-2 leading-relaxed">
+                                Paket hantaran buah segar dalam keranjang anyam premium/dus eksklusif berpita satin emas, higienis & mewah untuk hantaran kerabat.
+                            </p>
+
+                            <!-- Mini specs -->
+                            <div class="mt-4 pt-3 border-t border-amber-100 grid grid-cols-2 gap-2 text-[11px] text-slate-700">
+                                <div class="flex items-center gap-1.5"><i class="fa-solid fa-envelope text-amber-500"></i> Free Custom Card</div>
+                                <div class="flex items-center gap-1.5"><i class="fa-solid fa-truck text-emerald-600"></i> Kurir Instan Aman</div>
+                            </div>
+                        </div>
+
+                        <div class="mt-6 pt-4 border-t border-amber-100 flex items-center justify-between">
+                            <div>
+                                <span class="text-[10px] text-slate-400 uppercase font-semibold">Harga Paket Hampers</span>
+                                <p class="text-lg font-black text-orchard-leafdark font-display">Rp 220.000 <span class="text-xs font-normal text-slate-500">/ paket</span></p>
+                            </div>
+                            <a href="detail.html" class="px-4 py-2.5 bg-gradient-to-r from-orchard-amber to-orchard-orange hover:from-amber-600 hover:to-orange-600 text-white text-xs font-bold rounded-xl shadow-md transition">
+                                Pesan Hampers
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product Card 6: Jambu Kristal Sun-Crisp -->
+                <div class="orchard-card bg-white rounded-3xl border border-amber-200/90 shadow-xs overflow-hidden flex flex-col">
+                    <div class="relative h-64 overflow-hidden bg-emerald-50">
+                        <img src="https://images.unsplash.com/photo-1536511135899-738c6426d400?q=80&w=800&auto=format&fit=crop" 
+                             alt="Jambu Kristal Renyah Tanpa Biji Dus" 
+                             class="w-full h-full object-cover transform hover:scale-105 transition-all duration-500">
+                        <!-- Badges -->
+                        <div class="absolute top-3 left-3 flex flex-col gap-1.5">
+                            <span class="brix-badge text-white text-[11px] font-extrabold px-2.5 py-1 rounded-lg shadow-xs flex items-center gap-1">
+                                <i class="fa-solid fa-droplet text-yellow-200"></i> 12.5° Bx Sweet
+                            </span>
+                        </div>
+                        <div class="absolute top-3 right-3 bg-emerald-700 text-white text-[10px] font-bold px-2.5 py-1 rounded-full uppercase">
+                            Tanpa Biji (Seedless)
+                        </div>
+                    </div>
+                    
+                    <div class="p-6 flex-1 flex flex-col justify-between">
+                        <div>
+                            <div class="flex items-center justify-between text-xs text-slate-500 mb-1">
+                                <span>Pilihan: <strong>Dus 3kg (Free Bumbu Rujak)</strong></span>
+                                <span class="text-amber-600 font-bold"><i class="fa-solid fa-star text-amber-400"></i> 4.9 (180+ dus)</span>
+                            </div>
+                            <h3 class="text-xl font-bold text-slate-900 font-display">Jambu Kristal Sun-Crisp Super</h3>
+                            <p class="text-xs text-slate-600 mt-2 leading-relaxed">
+                                Daging tebal super renyah mirip buah pir, hampir tanpa biji di tengahnya, manis segar dingin sangat cocok untuk camilan sehat.
+                            </p>
+
+                            <!-- Mini specs -->
+                            <div class="mt-4 pt-3 border-t border-amber-100 grid grid-cols-2 gap-2 text-[11px] text-slate-700">
+                                <div class="flex items-center gap-1.5"><i class="fa-solid fa-pepper-hot text-red-500"></i> Bonus Bumbu Rujak</div>
+                                <div class="flex items-center gap-1.5"><i class="fa-solid fa-leaf text-emerald-600"></i> Dipetik Pagi Hari</div>
+                            </div>
+                        </div>
+
+                        <div class="mt-6 pt-4 border-t border-amber-100 flex items-center justify-between">
+                            <div>
+                                <span class="text-[10px] text-slate-400 uppercase font-semibold">Harga Dus 3kg</span>
+                                <p class="text-lg font-black text-orchard-leafdark font-display">Rp 55.000 <span class="text-xs font-normal text-slate-500">/ dus</span></p>
+                            </div>
+                            <a href="detail.html" class="px-4 py-2.5 bg-gradient-to-r from-orchard-amber to-orchard-gold hover:from-amber-600 hover:to-orange-500 text-white text-xs font-bold rounded-xl shadow-md transition">
+                                Detail & Order
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- View All CTA -->
+            <div class="mt-12 text-center">
+                <a href="katalog.html" class="inline-flex items-center gap-3 px-8 py-4 bg-orchard-softvanilla hover:bg-amber-100 text-orchard-leafdark border-2 border-amber-300 font-bold text-sm rounded-2xl transition shadow-xs">
+                    <i class="fa-solid fa-basket-shopping text-orchard-orange"></i>
+                    <span>Lihat Seluruh Katalog Buah Segar & Pasokan Grosir</span>
+                    <i class="fa-solid fa-arrow-right text-xs"></i>
+                </a>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- 8. PACKAGING & SHIPPING SAFETY (Kemasan Dus Anti-Penyok) -->
+    <section class="py-16 bg-orchard-softvanilla border-y border-amber-200/80">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 items-center">
+                
+                <div class="lg:col-span-6">
+                    <span class="px-3 py-1 bg-amber-200 text-slate-800 text-xs font-bold uppercase rounded-md tracking-wider">
+                        ANTI-DAMAGE PACKAGING SYSTEM
+                    </span>
+                    <h2 class="text-2xl sm:text-4xl font-extrabold text-orchard-leafdark font-display mt-3 mb-4">
+                        Proteksi Berlapis Agar Buah Tiba Mulus Tanpa Memar
+                    </h2>
+                    <p class="text-slate-600 text-sm leading-relaxed mb-6">
+                        Buah matang pohon memiliki tekstur yang rentan terhadap guncangan logistik. Kami mendesain standar pengemasan khusus yang telah teruji mengarungi ribuan kilometer pengiriman antar pulau.
+                    </p>
+
+                    <div class="space-y-4">
+                        <div class="flex items-start gap-3.5">
+                            <div class="w-8 h-8 rounded-lg bg-amber-500 text-white flex items-center justify-center font-bold text-sm shrink-0 mt-0.5">1</div>
+                            <div>
+                                <h4 class="text-sm font-bold text-slate-900">Individual Thick Fruit Netting</h4>
+                                <p class="text-xs text-slate-600">Setiap butir buah diselubungi jaring foam lembut tebal untuk mencegah gesekan antar kulit buah.</p>
+                            </div>
+                        </div>
+
+                        <div class="flex items-start gap-3.5">
+                            <div class="w-8 h-8 rounded-lg bg-amber-500 text-white flex items-center justify-center font-bold text-sm shrink-0 mt-0.5">2</div>
+                            <div>
+                                <h4 class="text-sm font-bold text-slate-900">Heavy-Duty Double Wall Corrugated Box</h4>
+                                <p class="text-xs text-slate-600">Kardus tebal tahan tumpuk dengan lubang ventilasi udara mikro agar buah tetap bernapas segar.</p>
+                            </div>
+                        </div>
+
+                        <div class="flex items-start gap-3.5">
+                            <div class="w-8 h-8 rounded-lg bg-amber-500 text-white flex items-center justify-center font-bold text-sm shrink-0 mt-0.5">3</div>
+                            <div>
+                                <h4 class="text-sm font-bold text-slate-900">Seal Segel Garansi & Stiker Fragile Buah Segar</h4>
+                                <p class="text-xs text-slate-600">Dus disegel pita penjamin keaslian dan instruksi penanganan khusus untuk kurir ekspedisi.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="lg:col-span-6">
+                    <div class="bg-white rounded-3xl p-6 sm:p-8 border-2 border-amber-300 shadow-xl relative">
+                        <div class="flex items-center gap-3 mb-6 pb-4 border-b border-amber-100">
+                            <div class="w-10 h-10 rounded-xl bg-emerald-100 text-emerald-700 flex items-center justify-center text-xl">
+                                <i class="fa-solid fa-shield-check"></i>
+                            </div>
+                            <div>
+                                <h3 class="font-bold text-slate-900 font-display">Prosedur Klaim Garansi 100%</h3>
+                                <p class="text-xs text-slate-500">Kenyamanan dan kepuasan Anda adalah prioritas nomor 1 kami</p>
+                            </div>
+                        </div>
+
+                        <ul class="space-y-3 text-xs text-slate-700">
+                            <li class="flex items-center gap-2">
+                                <i class="fa-solid fa-check text-emerald-600 font-bold"></i>
+                                <span>Cukup videokan unboxing saat paket dus buah pertama kali dibuka.</span>
+                            </li>
+                            <li class="flex items-center gap-2">
+                                <i class="fa-solid fa-check text-emerald-600 font-bold"></i>
+                                <span>Kirimkan ke WhatsApp Customer Care kami dalam 1x24 jam setelah paket sampai.</span>
+                            </li>
+                            <li class="flex items-center gap-2">
+                                <i class="fa-solid fa-check text-emerald-600 font-bold"></i>
+                                <span>Buah pengganti langsung kami kirimkan gratis di kloter panen berikutnya atau refund dana.</span>
+                            </li>
+                        </ul>
+
+                        <div class="mt-6 p-4 rounded-2xl bg-amber-50 border border-amber-200 text-center">
+                            <p class="text-xs font-bold text-orchard-leafdark">
+                                "99.4% Pelanggan Puas & Menikmati Buah Manis Utuh Sampai Meja Makan"
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- 9. TESTIMONIALS (Ulasan Pelanggan Setia) -->
+    <section class="py-16 md:py-24 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-2xl mx-auto mb-14">
+                <span class="px-3 py-1 rounded-full bg-emerald-100 text-emerald-800 text-xs font-bold uppercase tracking-wider">
+                    BUKTI KEPUASAN PELANGGAN
+                </span>
+                <h2 class="text-3xl sm:text-4xl font-extrabold text-orchard-leafdark font-display mt-3 mb-3">
+                    Cerita Mereka yang Menikmati Manisnya Orchardia
+                </h2>
+                <p class="text-slate-600 text-sm">
+                    Dari penikmat buah keluarga, pengirim hampers silaturahmi, hingga cafe & kedai jus artisan ternama.
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                
+                <!-- Review 1 -->
+                <div class="p-6 rounded-3xl bg-orchard-softvanilla border border-amber-200/80 flex flex-col justify-between">
+                    <div>
+                        <div class="flex items-center text-amber-400 gap-1 text-xs mb-3">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <span class="text-slate-400 font-bold ml-1 text-[11px]">(Kadar 16° Bx Terasa!)</span>
+                        </div>
+                        <p class="text-xs text-slate-700 leading-relaxed italic mb-4">
+                            "Mangga Harum Manisnya juara banget! Beda jauh sama beli di pinggir jalan yang sering berasa karbitan. Ini manisnya legit alami, dagingnya lembut pulen sampai ke dekat bijinya. Dusnya rapi banget gak ada satupun yang memar."
+                        </p>
+                    </div>
+                    <div class="flex items-center gap-3 pt-4 border-t border-amber-200/60">
+                        <div class="w-10 h-10 rounded-full bg-amber-400 text-slate-900 font-bold flex items-center justify-center text-sm">
+                            DW
+                        </div>
+                        <div>
+                            <h4 class="text-xs font-bold text-slate-900">dr. Dian Wulandari</h4>
+                            <p class="text-[10px] text-slate-500">Pelanggan Dus Mingguan - Jakarta Selatan</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Review 2 -->
+                <div class="p-6 rounded-3xl bg-orchard-softvanilla border border-amber-200/80 flex flex-col justify-between">
+                    <div>
+                        <div class="flex items-center text-amber-400 gap-1 text-xs mb-3">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <span class="text-slate-400 font-bold ml-1 text-[11px]">(Melon Inthanon Box)</span>
+                        </div>
+                        <p class="text-xs text-slate-700 leading-relaxed italic mb-4">
+                            "Order Box Melon Inthanon untuk parcel mertua. Packing box handlenya estetik dan mewah sekali. Mertua puji melonnya super manis dan harum wangi banget waktu dibelah. Pasti bakal langganan terus tiap musim!"
+                        </p>
+                    </div>
+                    <div class="flex items-center gap-3 pt-4 border-t border-amber-200/60">
+                        <div class="w-10 h-10 rounded-full bg-emerald-500 text-white font-bold flex items-center justify-center text-sm">
+                            RH
+                        </div>
+                        <div>
+                            <h4 class="text-xs font-bold text-slate-900">Reza Hendrawan</h4>
+                            <p class="text-[10px] text-slate-500">Customer Hampers Eksklusif - Surabaya</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Review 3 -->
+                <div class="p-6 rounded-3xl bg-orchard-softvanilla border border-amber-200/80 flex flex-col justify-between">
+                    <div>
+                        <div class="flex items-center text-amber-400 gap-1 text-xs mb-3">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <span class="text-slate-400 font-bold ml-1 text-[11px]">(Alpukat Miki 3kg)</span>
+                        </div>
+                        <p class="text-xs text-slate-700 leading-relaxed italic mb-4">
+                            "Alpukat menteganya luar biasa! Dagingnya tebal kuning mentega tanpa serat benang sedikitpun. Kami pakai untuk menu avocado toast & cold-pressed juice di cafe kami. Kualitas grade konsisten!"
+                        </p>
+                    </div>
+                    <div class="flex items-center gap-3 pt-4 border-t border-amber-200/60">
+                        <div class="w-10 h-10 rounded-full bg-orange-500 text-white font-bold flex items-center justify-center text-sm">
+                            FS
+                        </div>
+                        <div>
+                            <h4 class="text-xs font-bold text-slate-900">Fiona Sandra</h4>
+                            <p class="text-[10px] text-slate-500">Owner Botanica Healthy Bar - Bandung</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- 10. CALL TO ACTION BANNER -->
+    <section class="py-16 bg-gradient-to-r from-amber-500 via-orange-500 to-amber-600 text-white relative overflow-hidden">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <div class="flex flex-col lg:flex-row items-center justify-between gap-8 text-center lg:text-left">
+                <div>
+                    <span class="px-3.5 py-1 bg-white/20 backdrop-blur-xs text-white text-xs font-bold uppercase rounded-md tracking-wider">
+                        PESAN DUS SEGAR LANGSUNG PETIK
+                    </span>
+                    <h2 class="text-2xl sm:text-4xl font-extrabold font-display mt-3 mb-2">
+                        Siap Menikmati Buah Manis Alami Matang Pohon?
+                    </h2>
+                    <p class="text-amber-100 text-sm max-w-xl">
+                        Konsultasikan stok panen hari ini, pilih tingkat kematangan sesuai tujuan kirim, dan dapatkan garansi penggantian penuh.
+                    </p>
+                </div>
+                <div class="flex flex-col sm:flex-row gap-4 w-full sm:w-auto">
+                    <a href="https://wa.me/6281234567890?text=Halo%20Admin%20Orchardia,%20saya%20ingin%20memesan%20dus%20buah%20segar." 
+                       target="_blank"
+                       class="inline-flex items-center justify-center gap-2.5 px-8 py-4 bg-slate-900 hover:bg-slate-800 text-white font-bold text-sm uppercase tracking-wider rounded-2xl shadow-xl transition transform hover:scale-105">
+                        <i class="fa-brands fa-whatsapp text-lg text-emerald-400"></i>
+                        <span>Order via WhatsApp Sekarang</span>
+                    </a>
+                    <a href="katalog.html" 
+                       class="inline-flex items-center justify-center gap-2 px-6 py-4 bg-white/20 hover:bg-white/30 backdrop-blur-md text-white font-bold text-sm rounded-2xl border border-white/40 transition">
+                        <span>Lihat Katalog Buah</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 11. FOOTER -->
+    <footer class="bg-slate-900 text-slate-400 text-xs pt-16 pb-36 border-t border-slate-800 font-sans">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-10 pb-12 border-b border-slate-800">
+                
+                <!-- Col 1: Brand & Bio -->
+                <div class="lg:col-span-2 space-y-4">
+                    <a href="index.html" class="flex items-center gap-3">
+                        <div class="w-10 h-10 bg-gradient-to-br from-amber-400 to-orange-500 text-white flex items-center justify-center text-xl font-bold rounded-xl">
+                            <i class="fa-solid fa-apple-whole"></i>
+                        </div>
+                        <span class="text-2xl font-extrabold text-white tracking-tight font-display">
+                            ORCHARDIA<span class="text-amber-400">.</span>
+                        </span>
+                    </a>
+                    <p class="text-xs text-slate-400 leading-relaxed max-w-sm">
+                        Perkebunan buah tropis nusantara terpadu berbasis kematangan pohon alami. Menyediakan mangga harum manis, melon hidroponik, alpukat mentega miki, dan jeruk madu dengan garansi uji Brix meter.
+                    </p>
+                    <div class="flex items-center gap-3 pt-2 text-slate-300">
+                        <a href="#" class="w-8 h-8 rounded-lg bg-slate-800 flex items-center justify-center hover:bg-amber-500 hover:text-slate-900 transition"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="#" class="w-8 h-8 rounded-lg bg-slate-800 flex items-center justify-center hover:bg-amber-500 hover:text-slate-900 transition"><i class="fa-brands fa-tiktok"></i></a>
+                        <a href="#" class="w-8 h-8 rounded-lg bg-slate-800 flex items-center justify-center hover:bg-amber-500 hover:text-slate-900 transition"><i class="fa-brands fa-youtube"></i></a>
+                        <a href="#" class="w-8 h-8 rounded-lg bg-slate-800 flex items-center justify-center hover:bg-amber-500 hover:text-slate-900 transition"><i class="fa-brands fa-whatsapp"></i></a>
+                    </div>
+                </div>
+
+                <!-- Col 2: Navigasi Cepat -->
+                <div>
+                    <h4 class="text-xs font-bold text-white uppercase tracking-wider mb-4">Navigasi Halaman</h4>
+                    <ul class="space-y-2.5">
+                        <li><a href="index.html" class="hover:text-amber-400 transition">Beranda Utama</a></li>
+                        <li><a href="katalog.html" class="hover:text-amber-400 transition">Katalog Buah Segar</a></li>
+                        <li><a href="detail.html" class="hover:text-amber-400 transition">Detail Produk & Brix</a></li>
+                        <li><a href="tentang.html" class="hover:text-amber-400 transition">Kebun & Mitra Petani</a></li>
+                        <li><a href="artikel.html" class="hover:text-amber-400 transition">Tips & Khasiat Buah</a></li>
+                        <li><a href="kontak.html" class="hover:text-amber-400 transition">Pemesanan & Pasokan</a></li>
+                    </ul>
+                </div>
+
+                <!-- Col 3: Ragam Buah -->
+                <div>
+                    <h4 class="text-xs font-bold text-white uppercase tracking-wider mb-4">Pilihan Buah Utama</h4>
+                    <ul class="space-y-2.5">
+                        <li><a href="detail.html" class="hover:text-amber-400 transition">Mangga Harum Manis Super</a></li>
+                        <li><a href="detail.html" class="hover:text-amber-400 transition">Melon Golden Inthanon</a></li>
+                        <li><a href="detail.html" class="hover:text-amber-400 transition">Alpukat Mentega Miki Jumbo</a></li>
+                        <li><a href="detail.html" class="hover:text-amber-400 transition">Jeruk Madu Siam Pontianak</a></li>
+                        <li><a href="katalog.html" class="hover:text-amber-400 transition">Paket Hampers Dus Pita Emas</a></li>
+                        <li><a href="katalog.html" class="hover:text-amber-400 transition">Pasokan Grosir Toko Buah</a></li>
+                    </ul>
+                </div>
+
+                <!-- Col 4: Lokasi & Kontak -->
+                <div>
+                    <h4 class="text-xs font-bold text-white uppercase tracking-wider mb-4">Pusat Kebun & Kontak</h4>
+                    <p class="text-xs text-slate-400 leading-relaxed mb-3">
+                        Kawasan Agrowisata Buah Pasuruan & Malang Raya, Jawa Timur - Indonesia.
+                    </p>
+                    <p class="text-xs text-amber-400 font-bold mb-1"><i class="fa-solid fa-phone mr-1.5"></i> +62 812-3456-7890</p>
+                    <p class="text-xs text-slate-400"><i class="fa-solid fa-envelope mr-1.5"></i> order@orchardia-fruit.com</p>
+                    <p class="text-[11px] text-slate-500 mt-2">Jam Buka Petik: 06:00 - 17:00 WIB</p>
+                </div>
+
+            </div>
+
+            <div class="pt-8 flex flex-col sm:flex-row items-center justify-between gap-4 text-[11px] text-slate-500">
+                <p>&copy; 2026 ORCHARDIA Sun-Ripened Fruit Estate. All rights reserved.</p>
+                <div class="flex items-center gap-4">
+                    <span>100% Buah Matang Pohon</span>
+                    <span>•</span>
+                    <span>Uji Refraktometer Brix</span>
+                    <span>•</span>
+                    <span>Dus Anti-Penyok</span>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- 12. FLOATING WHATSAPP BUTTON (bottom-24) -->
+    <div class="fixed bottom-24 right-5 z-40">
+        <a href="https://wa.me/6281234567890?text=Halo%20Admin%20Orchardia,%20saya%20ingin%20tanya%20stok%20buah%20panen%20hari%20ini." 
+           target="_blank" 
+           aria-label="Chat WhatsApp Kebun Orchardia"
+           class="group flex items-center gap-3 bg-gradient-to-r from-emerald-500 to-emerald-600 hover:from-emerald-600 hover:to-emerald-700 text-white px-4 py-3.5 rounded-full shadow-2xl transition-all transform hover:scale-105 border-2 border-white">
+            <i class="fa-brands fa-whatsapp text-2xl animate-pulse"></i>
+            <span class="text-xs font-bold tracking-wide pr-1 hidden sm:inline">Pesan Dus Buah WA</span>
+        </a>
+    </div>
+
+    <!-- 13. STICKY DEMO & SALES BAR (fixed bottom-4) -->
+    <div class="fixed bottom-4 left-4 right-4 z-50 max-w-5xl mx-auto">
+      <div class="bg-slate-900/95 backdrop-blur-md text-white px-4 sm:px-6 py-3.5 rounded-2xl shadow-2xl border border-slate-700/80 flex flex-col md:flex-row items-center justify-between gap-3">
+        
+        <div class="flex items-center gap-3 text-left w-full md:w-auto">
+          <div class="w-9 h-9 rounded-xl bg-amber-500/20 border border-amber-400/40 flex items-center justify-center shrink-0">
+            <i class="fa-solid fa-sun text-amber-400 text-sm"></i>
+          </div>
+          <div>
+            <div class="text-xs md:text-sm font-bold text-slate-100 flex items-center gap-2">
+              <span>Lentera Pasar Demo</span>
+              <span class="text-[10px] px-2 py-0.5 rounded bg-amber-500/20 text-amber-300 font-bold">Template Kebun Buah & Hampers</span>
+            </div>
+            <p class="text-[11px] text-slate-400 hidden sm:block">Desain Sun-Ripened Orchard cerah untuk kebun buah, uji kemanisan Brix, & hampers dus anti-penyok.</p>
+          </div>
+        </div>
+
+        <div class="flex items-center gap-3 w-full md:w-auto justify-end">
+          <div class="hidden lg:flex items-center gap-4 text-xs text-slate-400 border-r border-slate-700 pr-4 font-sans">
+            <div class="flex items-center gap-1 text-slate-200">
+              <i class="fa-solid fa-check text-amber-400 text-xs"></i>
+              <span>Brix Indicator</span>
+            </div>
+            <span class="text-slate-600">•</span>
+            <div class="flex items-center gap-1 text-slate-200">
+              <i class="fa-solid fa-check text-amber-400 text-xs"></i>
+              <span>Dus Anti-Penyok</span>
+            </div>
+          </div>
+
+          <a href="https://wa.me/6281234567890?text=Halo%20Tim%20Lentera%20Pasar,%20saya%20tertarik%20menggunakan%20template%20website%20Kebun%20Buah%20Orchard%20ini." 
+             target="_blank"
+             class="w-full md:w-auto inline-flex items-center justify-center gap-2 bg-gradient-to-r from-amber-500 to-orange-500 hover:from-amber-600 hover:to-orange-600 text-white text-xs md:text-sm font-bold px-5 py-2.5 rounded-xl shadow-lg transition-all hover:scale-105 shrink-0">
+            <span>Gunakan Template Ini</span>
+            <i class="fa-solid fa-arrow-right text-xs"></i>
+          </a>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- SCRIPT MOBILE MENU -->
+    <script>
+        const mobileMenuBtn = document.getElementById('mobileMenuBtn');
+        const mobileMenu = document.getElementById('mobileMenu');
+        const menuIcon = document.getElementById('menuIcon');
+
+        mobileMenuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+            if (mobileMenu.classList.contains('hidden')) {
+                menuIcon.classList.remove('fa-xmark');
+                menuIcon.classList.add('fa-bars');
+            } else {
+                menuIcon.classList.remove('fa-bars');
+                menuIcon.classList.add('fa-xmark');
+            }
+        });
+    </script>
+</body>
+</html>

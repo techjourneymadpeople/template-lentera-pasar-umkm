@@ -1,0 +1,469 @@
+<!DOCTYPE html>
+<html lang="id" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tentang Kebun & Standar Mutu // ORCHARDIA Sun-Ripened Fruit</title>
+    <meta name="description" content="Kisah perkebunan buah tropis matang pohon Orchardia: Kemitraan petani ahli, uji refraktometer Brix ilmiah, dan komitmen 100% bebas karbit kimia.">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome 6 -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        orchard: {
+                            gold: '#F59E0B',
+                            amber: '#D97706',
+                            orange: '#EA580C',
+                            sun: '#FBBF24',
+                            leaf: '#15803D',
+                            leafdark: '#14532D',
+                            emerald: '#16A34A',
+                            softvanilla: '#FFFBEB',
+                            cream: '#FEF3C7',
+                            border: '#FDE68A',
+                            charcoal: '#1E293B',
+                            lightbg: '#FFFDF7'
+                        }
+                    },
+                    fontFamily: {
+                        sans: ['"Plus Jakarta Sans"', 'sans-serif'],
+                        display: ['"Outfit"', 'sans-serif']
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        .no-scrollbar::-webkit-scrollbar { display: none; }
+        .no-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
+
+        .sun-glow {
+            background: radial-gradient(circle at 50% 20%, rgba(254, 243, 199, 0.8) 0%, rgba(255, 253, 247, 1) 75%);
+        }
+    </style>
+</head>
+<body class="bg-orchard-lightbg text-orchard-charcoal font-sans antialiased selection:bg-orchard-gold selection:text-white">
+
+    <!-- 1. TOP ANNOUNCEMENT BAR -->
+    <div class="bg-gradient-to-r from-orchard-leafdark via-orchard-leaf to-orchard-amber text-white text-xs py-2.5 px-4 font-sans font-medium shadow-inner">
+        <div class="max-w-7xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-2 text-center sm:text-left">
+            <div class="flex items-center justify-center gap-2">
+                <span class="px-2 py-0.5 bg-orchard-sun text-orchard-charcoal text-[10px] uppercase font-bold tracking-wider rounded-md shadow-xs flex items-center gap-1">
+                    <i class="fa-solid fa-sun text-orchard-orange"></i> 100% MATANG POHON
+                </span>
+                <span class="text-white/95 font-medium">Dedikasi Perkebunan Berkelanjutan • Kemitraan Adil dengan 80+ Petani Nusantara</span>
+            </div>
+            <div class="flex items-center gap-4 text-xs">
+                <a href="katalog.html" class="text-orchard-sun hover:underline font-bold transition flex items-center gap-1">
+                    Lihat Hasil Panen <i class="fa-solid fa-arrow-right text-[10px]"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- 2. NAVBAR -->
+    <header class="sticky top-0 z-40 bg-white/95 backdrop-blur-md border-b border-amber-100/80 transition-all shadow-xs">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-20 sm:h-24">
+                
+                <!-- Logo -->
+                <a href="index.html" class="flex items-center gap-3.5 group">
+                    <div class="w-12 h-12 bg-gradient-to-br from-amber-400 to-orange-500 text-white flex items-center justify-center text-2xl font-bold rounded-2xl shadow-md group-hover:scale-105 transition">
+                        <i class="fa-solid fa-apple-whole"></i>
+                    </div>
+                    <div class="flex flex-col">
+                        <span class="text-2xl sm:text-3xl font-extrabold tracking-tight text-orchard-leafdark uppercase leading-none font-display">
+                            ORCHARDIA<span class="text-orchard-gold">.</span>
+                        </span>
+                        <span class="text-[10px] tracking-[0.25em] text-orchard-amber uppercase mt-1 font-bold">
+                            SUN-RIPENED FRUIT ESTATE
+                        </span>
+                    </div>
+                </a>
+
+                <!-- Desktop Navigation Links -->
+                <nav class="hidden lg:flex items-center gap-7 text-xs font-bold tracking-wide uppercase text-slate-700 font-sans">
+                    <a href="index.html" class="hover:text-orchard-orange transition">Beranda</a>
+                    <a href="katalog.html" class="hover:text-orchard-orange transition">Katalog Buah</a>
+                    <a href="detail.html" class="hover:text-orchard-orange transition">Detail & Uji Brix</a>
+                    <a href="tentang.html" class="text-orchard-orange border-b-2 border-orchard-orange pb-1 font-bold">Kebun & Standar Mutu</a>
+                    <a href="artikel.html" class="hover:text-orchard-orange transition">Tips Memeram</a>
+                    <a href="kontak.html" class="hover:text-orchard-orange transition">Order Dus & Hampers</a>
+                </nav>
+
+                <!-- Actions -->
+                <div class="hidden sm:flex items-center gap-3">
+                    <a href="https://wa.me/6281234567890?text=Halo%20Admin%20Orchardia,%20saya%20ingin%20tanya%20profil%20kebun%20dan%20pasokan." 
+                       target="_blank"
+                       class="inline-flex items-center gap-2 px-4 py-2.5 bg-gradient-to-r from-orchard-leaf to-orchard-leafdark hover:from-emerald-700 hover:to-emerald-900 text-xs font-bold text-white rounded-xl transition shadow-md hover:shadow-lg">
+                        <i class="fa-brands fa-whatsapp text-base"></i>
+                        <span>Hubungi Kebun WA</span>
+                    </a>
+                </div>
+
+                <!-- Mobile Menu Button -->
+                <div class="flex lg:hidden items-center gap-2">
+                    <a href="https://wa.me/6281234567890" target="_blank" class="p-2.5 bg-emerald-100 text-emerald-800 rounded-xl text-sm">
+                        <i class="fa-brands fa-whatsapp"></i>
+                    </a>
+                    <button id="mobileMenuBtn" class="p-2.5 text-slate-700 hover:text-orchard-orange focus:outline-hidden rounded-xl bg-amber-50">
+                        <i id="menuIcon" class="fa-solid fa-bars text-xl"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Mobile Dropdown Menu -->
+        <div id="mobileMenu" class="hidden lg:hidden border-t border-amber-100 bg-white/98 px-6 py-5 shadow-xl">
+            <div class="flex flex-col gap-4 text-sm font-bold uppercase text-slate-700">
+                <a href="index.html" class="hover:text-orchard-orange transition flex items-center justify-between">
+                    <span>Beranda</span>
+                    <i class="fa-solid fa-chevron-right text-xs"></i>
+                </a>
+                <a href="katalog.html" class="hover:text-orchard-orange transition flex items-center justify-between">
+                    <span>Katalog Buah Segar</span>
+                    <i class="fa-solid fa-chevron-right text-xs"></i>
+                </a>
+                <a href="detail.html" class="hover:text-orchard-orange transition flex items-center justify-between">
+                    <span>Detail Produk & Uji Brix</span>
+                    <i class="fa-solid fa-chevron-right text-xs"></i>
+                </a>
+                <a href="tentang.html" class="text-orchard-orange flex items-center justify-between">
+                    <span>Tentang Kebun Buah</span>
+                    <i class="fa-solid fa-chevron-right text-xs"></i>
+                </a>
+                <a href="artikel.html" class="hover:text-orchard-orange transition flex items-center justify-between">
+                    <span>Tips & Khasiat Buah</span>
+                    <i class="fa-solid fa-chevron-right text-xs"></i>
+                </a>
+                <a href="kontak.html" class="hover:text-orchard-orange transition flex items-center justify-between">
+                    <span>Pemesanan & Pasokan Grosir</span>
+                    <i class="fa-solid fa-chevron-right text-xs"></i>
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- 3. HERO ABOUT SECTION -->
+    <section class="py-14 md:py-20 sun-glow relative overflow-hidden">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 items-center">
+                
+                <div class="lg:col-span-7 space-y-5">
+                    <span class="px-3.5 py-1 rounded-full bg-amber-200/90 text-orchard-leafdark text-xs font-bold uppercase tracking-wider">
+                        OUR ESTATE PHILOSOPHY
+                    </span>
+                    <h1 class="text-3xl sm:text-5xl font-extrabold text-orchard-leafdark font-display leading-[1.15]">
+                        Mengembalikan Hakikat <br>
+                        <span class="text-transparent bg-clip-text bg-gradient-to-r from-orchard-amber to-orchard-orange">
+                            Rasa Manis Asli Petik Pohon
+                        </span>
+                    </h1>
+                    <p class="text-slate-600 text-sm sm:text-base leading-relaxed max-w-2xl">
+                        Di era rantai pasok modern, buah sering dipetik saat masih mentah dan dipaksa matang menggunakan karbit gas kimia di gudang penyimpanan. <strong>ORCHARDIA</strong> hadir dengan prinsip berbeda: membiarkan buah menyerap sinar matahari tropis hingga titik fruktosa maksimal di dahan pohon, lalu mengujinya dengan standar ilmiah refraktometer Brix.
+                    </p>
+                    <div class="flex flex-wrap items-center gap-4 pt-2">
+                        <div class="flex items-center gap-2 text-xs font-bold text-slate-800 bg-white px-4 py-2 rounded-xl border border-amber-200 shadow-xs">
+                            <i class="fa-solid fa-circle-check text-emerald-600"></i> Bebas Gas Karbit Kimiawi
+                        </div>
+                        <div class="flex items-center gap-2 text-xs font-bold text-slate-800 bg-white px-4 py-2 rounded-xl border border-amber-200 shadow-xs">
+                            <i class="fa-solid fa-circle-check text-emerald-600"></i> Uji Brix Refraktometer Terstandar
+                        </div>
+                    </div>
+                </div>
+
+                <div class="lg:col-span-5 relative">
+                    <div class="rounded-3xl overflow-hidden shadow-2xl border-4 border-white bg-amber-100">
+                        <img src="https://images.unsplash.com/photo-1591073113125-e46713c829ed?q=80&w=1000&auto=format&fit=crop" 
+                             alt="Kebun Buah Mangga dan Petani Petik Pohon" 
+                             class="w-full h-96 object-cover transform hover:scale-105 transition-all duration-700">
+                    </div>
+                    <div class="absolute -bottom-4 -left-4 bg-slate-900 text-white p-4 rounded-2xl shadow-xl border border-slate-700">
+                        <p class="text-xl font-black text-amber-400 font-display">100% Organik & Alami</p>
+                        <p class="text-[11px] text-slate-300">Pohon Dewasa Berumur >10 Tahun</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- 4. KEY METRICS STRIP -->
+    <section class="py-12 bg-white border-y border-amber-100">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-2 lg:grid-cols-4 gap-6 text-center">
+                <div class="p-6 rounded-2xl bg-orchard-softvanilla border border-amber-200">
+                    <p class="text-3xl sm:text-4xl font-extrabold text-orchard-leafdark font-display">120+ Ha</p>
+                    <p class="text-xs text-slate-500 font-bold uppercase mt-1">Kebun Buah Nusantara Terkelola</p>
+                </div>
+                <div class="p-6 rounded-2xl bg-orchard-softvanilla border border-amber-200">
+                    <p class="text-3xl sm:text-4xl font-extrabold text-orchard-amber font-display">15.8° Bx</p>
+                    <p class="text-xs text-slate-500 font-bold uppercase mt-1">Rata-Rata Derajat Manis Puncak</p>
+                </div>
+                <div class="p-6 rounded-2xl bg-orchard-softvanilla border border-amber-200">
+                    <p class="text-3xl sm:text-4xl font-extrabold text-emerald-700 font-display">85+ Petani</p>
+                    <p class="text-xs text-slate-500 font-bold uppercase mt-1">Mitra Binaan Lokal Sejahtera</p>
+                </div>
+                <div class="p-6 rounded-2xl bg-orchard-softvanilla border border-amber-200">
+                    <p class="text-3xl sm:text-4xl font-extrabold text-slate-900 font-display">99.4%</p>
+                    <p class="text-xs text-slate-500 font-bold uppercase mt-1">Kepuasan Buah Utuh Tiba</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 5. 4 PILAR STANDAR MUTU ORCHARDIA -->
+    <section class="py-16 md:py-20 bg-orchard-lightbg">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-2xl mx-auto mb-14">
+                <span class="px-3 py-1 bg-emerald-100 text-emerald-800 text-xs font-bold uppercase rounded-md tracking-wider">
+                    OUR 4 PILLARS OF QUALITY
+                </span>
+                <h2 class="text-2xl sm:text-4xl font-extrabold text-orchard-leafdark font-display mt-3 mb-3">
+                    Standar Perkebunan & QC Berkelanjutan
+                </h2>
+                <p class="text-slate-600 text-sm">
+                    Dari pemeliharaan tanah subur vulkanik hingga proses penyortiran di meja grading estate.
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                
+                <!-- Pillar 1 -->
+                <div class="bg-white rounded-3xl p-8 border border-amber-200 shadow-sm flex items-start gap-5">
+                    <div class="w-14 h-14 rounded-2xl bg-amber-500 text-white flex items-center justify-center text-2xl shrink-0 shadow-xs">
+                        <i class="fa-solid fa-tree"></i>
+                    </div>
+                    <div class="space-y-2">
+                        <h3 class="text-lg font-bold text-slate-900 font-display">1. Pohon Matang Alami Tanpa Karbit</h3>
+                        <p class="text-xs text-slate-600 leading-relaxed">
+                            Kami menolak praktik percepatan kematangan paksa dengan kalsium karbida (karbit) atau ethephon berlebih yang merusak profil rasa alami dan memicu bau gas kimiawi. Buah kami matang murni karena fisiologi fotosintesis pohon.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Pillar 2 -->
+                <div class="bg-white rounded-3xl p-8 border border-amber-200 shadow-sm flex items-start gap-5">
+                    <div class="w-14 h-14 rounded-2xl bg-orange-500 text-white flex items-center justify-center text-2xl shrink-0 shadow-xs">
+                        <i class="fa-solid fa-flask"></i>
+                    </div>
+                    <div class="space-y-2">
+                        <h3 class="text-lg font-bold text-slate-900 font-display">2. Sampling Refraktometer Digital (Brix Scale)</h3>
+                        <p class="text-xs text-slate-600 leading-relaxed">
+                            Bukan sekadar menebak kematangan dari warna kulit luar. Kami menggunakan refraktometer optik untuk memastikan kadar gula alami terlarut berada di atas ambang batas 14° - 16.5° Brix sebelum dinyatakan layak kirim.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Pillar 3 -->
+                <div class="bg-white rounded-3xl p-8 border border-amber-200 shadow-sm flex items-start gap-5">
+                    <div class="w-14 h-14 rounded-2xl bg-emerald-600 text-white flex items-center justify-center text-2xl shrink-0 shadow-xs">
+                        <i class="fa-solid fa-boxes-packing"></i>
+                    </div>
+                    <div class="space-y-2">
+                        <h3 class="text-lg font-bold text-slate-900 font-display">3. Kemasan Anti-Damage Double Wall</h3>
+                        <p class="text-xs text-slate-600 leading-relaxed">
+                            Setiap buah dibungkus busa jaring tebal dan dipartisi dalam kardus double wall 5 lapis. Desain ini meredam getaran logistik ekspedisi sehingga buah sampai di meja makan Anda dalam kondisi mulus tanpa memar.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Pillar 4 -->
+                <div class="bg-white rounded-3xl p-8 border border-amber-200 shadow-sm flex items-start gap-5">
+                    <div class="w-14 h-14 rounded-2xl bg-yellow-500 text-slate-900 flex items-center justify-center text-2xl shrink-0 shadow-xs">
+                        <i class="fa-solid fa-handshake-angle"></i>
+                    </div>
+                    <div class="space-y-2">
+                        <h3 class="text-lg font-bold text-slate-900 font-display">4. Kemitraan Petani Adil & Berkelanjutan</h3>
+                        <p class="text-xs text-slate-600 leading-relaxed">
+                            Kami membeli hasil panen petani mitra binaan dengan harga 25-40% di atas harga tengkulak pasar, memberikan kepastian pendapatan dan memotivasi petani untuk menjaga pohon buah tua mereka tetap terawat.
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- 6. TIM PETANI & AGRONOMIST AHLI -->
+    <section class="py-16 md:py-20 bg-white border-t border-amber-100">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-2xl mx-auto mb-14">
+                <span class="px-3 py-1 bg-amber-100 text-orchard-amber text-xs font-bold uppercase rounded-md tracking-wider">
+                    PEOPLE BEHIND THE HARVEST
+                </span>
+                <h2 class="text-2xl sm:text-4xl font-extrabold text-orchard-leafdark font-display mt-3 mb-3">
+                    Sosok Ahli di Balik Manisnya Orchardia
+                </h2>
+                <p class="text-slate-600 text-sm">
+                    Dedikasi puluhan tahun merawat tanah dan pohon buah tropis nusantara dengan sepenuh hati.
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                
+                <!-- Person 1 -->
+                <div class="bg-orchard-softvanilla rounded-3xl p-6 border border-amber-200 text-center flex flex-col items-center">
+                    <div class="w-24 h-24 rounded-full bg-amber-200 text-amber-800 flex items-center justify-center text-4xl mb-4 border-2 border-amber-400">
+                        👨‍🌾
+                    </div>
+                    <h3 class="text-base font-bold text-slate-900 font-display">Pak Subandi</h3>
+                    <p class="text-xs font-semibold text-orchard-amber mt-0.5">Master Kebun Mangga Pasuruan</p>
+                    <p class="text-xs text-slate-600 mt-3 leading-relaxed">
+                        "Saya sudah merawat pohon mangga harum manis lebih dari 28 tahun. Kuncinya adalah sabar menunggu hingga getah di dahan matang alami."
+                    </p>
+                </div>
+
+                <!-- Person 2 -->
+                <div class="bg-orchard-softvanilla rounded-3xl p-6 border border-amber-200 text-center flex flex-col items-center">
+                    <div class="w-24 h-24 rounded-full bg-emerald-200 text-emerald-800 flex items-center justify-center text-4xl mb-4 border-2 border-emerald-400">
+                        👩‍🔬
+                    </div>
+                    <h3 class="text-base font-bold text-slate-900 font-display">Ratna Kusuma, S.P.</h3>
+                    <p class="text-xs font-semibold text-emerald-700 mt-0.5">Agronomist Greenhouse Melon</p>
+                    <p class="text-xs text-slate-600 mt-3 leading-relaxed">
+                        "Nutrisi hidroponik terukur dan sirkulasi udara greenhouse modern menghasilkan jaring netting melon Inthanon yang sempurna dan renyah manis."
+                    </p>
+                </div>
+
+                <!-- Person 3 -->
+                <div class="bg-orchard-softvanilla rounded-3xl p-6 border border-amber-200 text-center flex flex-col items-center">
+                    <div class="w-24 h-24 rounded-full bg-lime-200 text-lime-800 flex items-center justify-center text-4xl mb-4 border-2 border-lime-400">
+                        👨‍🌾
+                    </div>
+                    <h3 class="text-base font-bold text-slate-900 font-display">Pak Ketut Sudarta</h3>
+                    <p class="text-xs font-semibold text-lime-800 mt-0.5">Spesialis Alpukat & Sitrus Dataran Tinggi</p>
+                    <p class="text-xs text-slate-600 mt-3 leading-relaxed">
+                        "Alpukat Miki kami dibudidayakan di tanah gembur lereng pegunungan tanpa pestisida berbahaya, menghasilkan daging tebal pulen mentega."
+                    </p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- 7. FOOTER -->
+    <footer class="bg-slate-900 text-slate-400 text-xs pt-16 pb-36 border-t border-slate-800 font-sans">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-10 pb-12 border-b border-slate-800">
+                <div class="lg:col-span-2 space-y-4">
+                    <a href="index.html" class="flex items-center gap-3">
+                        <div class="w-10 h-10 bg-gradient-to-br from-amber-400 to-orange-500 text-white flex items-center justify-center text-xl font-bold rounded-xl">
+                            <i class="fa-solid fa-apple-whole"></i>
+                        </div>
+                        <span class="text-2xl font-extrabold text-white tracking-tight font-display">
+                            ORCHARDIA<span class="text-amber-400">.</span>
+                        </span>
+                    </a>
+                    <p class="text-xs text-slate-400 leading-relaxed max-w-sm">
+                        Perkebunan buah tropis nusantara matang pohon. Setiap butir buah terjamin kemanisannya dengan uji Brix refraktometer dan kemasan dus anti-penyok.
+                    </p>
+                </div>
+                <div>
+                    <h4 class="text-xs font-bold text-white uppercase tracking-wider mb-4">Navigasi Halaman</h4>
+                    <ul class="space-y-2.5">
+                        <li><a href="index.html" class="hover:text-amber-400 transition">Beranda Utama</a></li>
+                        <li><a href="katalog.html" class="hover:text-amber-400 transition">Katalog Buah Segar</a></li>
+                        <li><a href="detail.html" class="hover:text-amber-400 transition">Detail Produk & Brix</a></li>
+                        <li><a href="tentang.html" class="hover:text-amber-400 transition">Kebun & Mitra Petani</a></li>
+                        <li><a href="artikel.html" class="hover:text-amber-400 transition">Tips & Khasiat Buah</a></li>
+                        <li><a href="kontak.html" class="hover:text-amber-400 transition">Pemesanan & Pasokan</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-xs font-bold text-white uppercase tracking-wider mb-4">Pilihan Buah Utama</h4>
+                    <ul class="space-y-2.5">
+                        <li><a href="detail.html" class="hover:text-amber-400 transition">Mangga Harum Manis Super</a></li>
+                        <li><a href="detail.html" class="hover:text-amber-400 transition">Melon Golden Inthanon</a></li>
+                        <li><a href="detail.html" class="hover:text-amber-400 transition">Alpukat Mentega Miki Jumbo</a></li>
+                        <li><a href="detail.html" class="hover:text-amber-400 transition">Jeruk Madu Siam Pontianak</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-xs font-bold text-white uppercase tracking-wider mb-4">Pusat Kebun & Kontak</h4>
+                    <p class="text-xs text-slate-400 leading-relaxed mb-3">
+                        Kawasan Agrowisata Buah Pasuruan & Malang Raya, Jawa Timur - Indonesia.
+                    </p>
+                    <p class="text-xs text-amber-400 font-bold mb-1"><i class="fa-solid fa-phone mr-1.5"></i> +62 812-3456-7890</p>
+                    <p class="text-xs text-slate-400"><i class="fa-solid fa-envelope mr-1.5"></i> order@orchardia-fruit.com</p>
+                </div>
+            </div>
+            <div class="pt-8 flex flex-col sm:flex-row items-center justify-between gap-4 text-[11px] text-slate-500">
+                <p>&copy; 2026 ORCHARDIA Sun-Ripened Fruit Estate. All rights reserved.</p>
+                <div class="flex items-center gap-4">
+                    <span>100% Buah Matang Pohon</span>
+                    <span>•</span>
+                    <span>Uji Refraktometer Brix</span>
+                    <span>•</span>
+                    <span>Dus Anti-Penyok</span>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- 8. FLOATING WHATSAPP BUTTON (bottom-24) -->
+    <div class="fixed bottom-24 right-5 z-40">
+        <a href="https://wa.me/6281234567890?text=Halo%20Admin%20Orchardia,%20saya%20ingin%20tanya%20profil%20kebun%20dan%20panen." 
+           target="_blank" 
+           aria-label="Chat WhatsApp Kebun Orchardia"
+           class="group flex items-center gap-3 bg-gradient-to-r from-emerald-500 to-emerald-600 hover:from-emerald-600 hover:to-emerald-700 text-white px-4 py-3.5 rounded-full shadow-2xl transition-all transform hover:scale-105 border-2 border-white">
+            <i class="fa-brands fa-whatsapp text-2xl animate-pulse"></i>
+            <span class="text-xs font-bold tracking-wide pr-1 hidden sm:inline">Pesan Dus Buah WA</span>
+        </a>
+    </div>
+
+    <!-- 9. STICKY DEMO & SALES BAR (fixed bottom-4) -->
+    <div class="fixed bottom-4 left-4 right-4 z-50 max-w-5xl mx-auto">
+      <div class="bg-slate-900/95 backdrop-blur-md text-white px-4 sm:px-6 py-3.5 rounded-2xl shadow-2xl border border-slate-700/80 flex flex-col md:flex-row items-center justify-between gap-3">
+        <div class="flex items-center gap-3 text-left w-full md:w-auto">
+          <div class="w-9 h-9 rounded-xl bg-amber-500/20 border border-amber-400/40 flex items-center justify-center shrink-0">
+            <i class="fa-solid fa-sun text-amber-400 text-sm"></i>
+          </div>
+          <div>
+            <div class="text-xs md:text-sm font-bold text-slate-100 flex items-center gap-2">
+              <span>Lentera Pasar Demo</span>
+              <span class="text-[10px] px-2 py-0.5 rounded bg-amber-500/20 text-amber-300 font-bold">Tentang Kebun & Standar Mutu</span>
+            </div>
+            <p class="text-[11px] text-slate-400 hidden sm:block">Desain Sun-Ripened Orchard cerah untuk kebun buah, uji kemanisan Brix, & hampers dus anti-penyok.</p>
+          </div>
+        </div>
+        <div class="flex items-center gap-3 w-full md:w-auto justify-end">
+          <a href="https://wa.me/6281234567890?text=Halo%20Tim%20Lentera%20Pasar,%20saya%20tertarik%20menggunakan%20template%20website%20Kebun%20Buah%20Orchard%20ini." 
+             target="_blank"
+             class="w-full md:w-auto inline-flex items-center justify-center gap-2 bg-gradient-to-r from-amber-500 to-orange-500 hover:from-amber-600 hover:to-orange-600 text-white text-xs md:text-sm font-bold px-5 py-2.5 rounded-xl shadow-lg transition-all hover:scale-105 shrink-0">
+            <span>Gunakan Template Ini</span>
+            <i class="fa-solid fa-arrow-right text-xs"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <script>
+        const mobileMenuBtn = document.getElementById('mobileMenuBtn');
+        const mobileMenu = document.getElementById('mobileMenu');
+        const menuIcon = document.getElementById('menuIcon');
+
+        mobileMenuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+            if (mobileMenu.classList.contains('hidden')) {
+                menuIcon.classList.remove('fa-xmark');
+                menuIcon.classList.add('fa-bars');
+            } else {
+                menuIcon.classList.remove('fa-bars');
+                menuIcon.classList.add('fa-xmark');
+            }
+        });
+    </script>
+</body>
+</html>
