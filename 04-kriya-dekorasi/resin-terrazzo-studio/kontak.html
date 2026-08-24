@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="id" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kontak Studio, Souvenir Kafe & Workshop DIY // AURELIA</title>
+    <meta name="description" content="Hubungi studio AURELIA di Sleman Yogyakarta untuk pemesanan souvenir kafe custom logo, souvenir pernikahan coaster resin, dan pendaftaran kelas workshop resin DIY.">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome 6 -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        aurelia: {
+                            white: '#FFFFFF',
+                            soft: '#F8F9FA',
+                            border: '#E9ECEF',
+                            ocean: '#0077B6',
+                            oceandeep: '#023E8A',
+                            oceansoft: '#E0F2FE',
+                            coral: '#E76F51',
+                            peach: '#F4A261',
+                            coralsoft: '#FFEDD5',
+                            gold: '#D97706',
+                            slate: '#0F172A',
+                            charcoal: '#1E293B'
+                        }
+                    },
+                    fontFamily: {
+                        sans: ['"Plus Jakarta Sans"', 'sans-serif'],
+                        mono: ['"Space Grotesk"', 'monospace']
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        .no-scrollbar::-webkit-scrollbar { display: none; }
+        .no-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
+
+        .btn-atelier {
+            transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+        }
+        .btn-atelier:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 12px 24px -6px rgba(0, 119, 182, 0.35);
+        }
+    </style>
+</head>
+<body class="bg-aurelia-soft text-aurelia-charcoal font-sans antialiased selection:bg-aurelia-ocean selection:text-white">
+
+    <!-- 1. TOP BAR -->
+    <div class="bg-aurelia-slate text-aurelia-soft text-xs py-2 px-4 font-mono border-b border-aurelia-ocean/30">
+        <div class="max-w-7xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-2 text-center sm:text-left">
+            <div class="flex items-center gap-2">
+                <span class="px-2 py-0.5 bg-aurelia-coral text-white text-[10px] uppercase font-mono font-bold rounded">STUDIO SLEMAN YOGYAKARTA</span>
+                <span class="text-white/95">Buka Selasa - Minggu (10:00 - 18:00 WIB) • Layanan Konsultasi Custom Logo Kafe</span>
+            </div>
+            <div class="text-xs">
+                <span>WhatsApp Studio: <a href="https://wa.me/6281234567890" target="_blank" class="text-sky-300 hover:underline font-bold">+62 812-3456-7890</a></span>
+            </div>
+        </div>
+    </div>
+
+    <!-- 2. NAVBAR -->
+    <header class="sticky top-0 z-40 bg-white/95 backdrop-blur-md border-b border-aurelia-border transition-all">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-20 sm:h-24">
+                
+                <!-- Logo -->
+                <a href="index.html" class="flex items-center gap-3.5 group">
+                    <div class="w-12 h-12 bg-aurelia-ocean text-white flex items-center justify-center text-xl font-bold rounded-2xl shadow-md group-hover:bg-aurelia-oceandeep transition">
+                        <i class="fa-solid fa-water"></i>
+                    </div>
+                    <div class="flex flex-col">
+                        <span class="text-2xl sm:text-3xl font-extrabold tracking-tight text-aurelia-slate uppercase leading-none font-mono">
+                            AURELIA<span class="text-aurelia-coral">.</span>
+                        </span>
+                        <span class="text-[9px] font-mono tracking-[0.28em] text-aurelia-ocean uppercase mt-1 font-bold">
+                            RESIN & TERRAZZO ATELIER
+                        </span>
+                    </div>
+                </a>
+
+                <!-- Desktop Navigation Links -->
+                <nav class="hidden lg:flex items-center gap-8 text-xs font-bold tracking-wider uppercase text-aurelia-charcoal/80 font-mono">
+                    <a href="index.html" class="hover:text-aurelia-ocean transition">Beranda</a>
+                    <a href="katalog.html" class="hover:text-aurelia-ocean transition">Koleksi Coaster & Tray</a>
+                    <a href="detail.html" class="hover:text-aurelia-ocean transition">Detail Ocean Coaster</a>
+                    <a href="tentang.html" class="hover:text-aurelia-ocean transition">Teknik Resin & Jesmonite</a>
+                    <a href="artikel.html" class="hover:text-aurelia-ocean transition">Perawatan & Tips</a>
+                    <a href="kontak.html" class="text-aurelia-ocean border-b-2 border-aurelia-ocean pb-1 font-bold">Studio & Workshop</a>
+                </nav>
+
+                <!-- Actions -->
+                <div class="hidden sm:flex items-center gap-3 font-mono">
+                    <a href="https://wa.me/6281234567890?text=Halo%20Aurelia,%20saya%20mau%20konsultasi%20pemesanan%20coaster%20resin." target="_blank" class="inline-flex items-center gap-2 bg-aurelia-slate hover:bg-black text-white text-xs font-bold tracking-wider px-5 py-2.5 rounded-xl border border-aurelia-ocean/40 transition-all shadow-md font-mono btn-atelier">
+                        <i class="fa-brands fa-whatsapp text-sm text-green-400"></i>
+                        <span>Chat WhatsApp</span>
+                    </a>
+                </div>
+
+                <!-- Mobile Hamburger Button -->
+                <button id="mobileMenuBtn" class="lg:hidden p-2.5 text-aurelia-charcoal hover:text-aurelia-ocean focus:outline-none" aria-label="Toggle Menu">
+                    <i id="menuIcon" class="fa-solid fa-bars text-xl"></i>
+                </button>
+            </div>
+        </div>
+
+        <!-- Mobile Drawer -->
+        <div id="mobileMenu" class="hidden lg:hidden bg-white border-b border-aurelia-border px-5 py-5 space-y-3 font-mono shadow-xl">
+            <a href="index.html" class="block text-xs font-bold uppercase tracking-wider text-aurelia-charcoal hover:text-aurelia-ocean py-2 border-b border-aurelia-border">Beranda Utama</a>
+            <a href="katalog.html" class="block text-xs font-bold uppercase tracking-wider text-aurelia-charcoal hover:text-aurelia-ocean py-2 border-b border-aurelia-border">Koleksi Coaster & Tray</a>
+            <a href="detail.html" class="block text-xs font-bold uppercase tracking-wider text-aurelia-charcoal hover:text-aurelia-ocean py-2 border-b border-aurelia-border">Detail Ocean Wave Coaster</a>
+            <a href="tentang.html" class="block text-xs font-bold uppercase tracking-wider text-aurelia-charcoal hover:text-aurelia-ocean py-2 border-b border-aurelia-border">Teknik Resin & Jesmonite</a>
+            <a href="artikel.html" class="block text-xs font-bold uppercase tracking-wider text-aurelia-charcoal hover:text-aurelia-ocean py-2 border-b border-aurelia-border">Tips Merawat Coaster</a>
+            <a href="kontak.html" class="block text-xs font-bold uppercase tracking-wider text-aurelia-ocean py-2">Studio & Workshop DIY</a>
+            <div class="pt-3">
+                <a href="https://wa.me/6281234567890?text=Halo%20Aurelia%20Studio." target="_blank" class="w-full py-3 bg-aurelia-slate text-white rounded-xl text-xs font-bold uppercase tracking-wider text-center flex items-center justify-center gap-2 font-mono border border-aurelia-ocean">
+                    <i class="fa-brands fa-whatsapp text-green-400"></i> WhatsApp Fast Response
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- 3. KONTAK HEADER -->
+    <section class="py-12 sm:py-16 border-b border-aurelia-border bg-white relative">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="max-w-3xl space-y-3">
+                <div class="flex items-center gap-2 text-xs font-mono text-aurelia-ocean uppercase font-bold">
+                    <a href="index.html" class="hover:underline">Beranda</a>
+                    <span>/</span>
+                    <span>Studio Resin & Pemesanan Souvenir Kafe</span>
+                </div>
+                <h1 class="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-aurelia-slate tracking-tight">
+                    Hubungi Studio & Pesanan Khusus
+                </h1>
+                <p class="text-sm sm:text-base text-aurelia-charcoal/75 font-sans leading-relaxed">
+                    Ingin memesan coaster resin bertuliskan logo kafe Anda, merancang souvenir pernikahan custom warna, atau mendaftar sesi kelas workshop DIY resin art di studio kami?
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- 4. CONTACT FORM & STUDIO INFO GRID -->
+    <section class="py-12 sm:py-20 bg-aurelia-soft border-b border-aurelia-border">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12">
+                
+                <!-- Left Column: Interactive Form (7 Cols) -->
+                <div class="lg:col-span-7 bg-white p-6 sm:p-10 rounded-3xl border border-aurelia-border shadow-sm">
+                    <div class="mb-6 space-y-1">
+                        <span class="text-xs font-mono font-bold uppercase tracking-widest text-aurelia-ocean">
+                            Formulir Penawaran & Souvenir
+                        </span>
+                        <h2 class="text-2xl font-bold text-aurelia-slate">
+                            Konsultasi Custom Coaster & Workshop
+                        </h2>
+                    </div>
+
+                    <form id="contactForm" onsubmit="handleContactSubmit(event)" class="space-y-4 font-mono text-xs">
+                        <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                            <div>
+                                <label class="block font-bold text-aurelia-slate mb-1 uppercase">Nama Pemesan *</label>
+                                <input type="text" id="senderName" required placeholder="Contoh: Dimas Bagaskara" class="w-full px-4 py-3 bg-aurelia-soft border border-aurelia-border rounded-xl focus:outline-none focus:border-aurelia-ocean">
+                            </div>
+                            <div>
+                                <label class="block font-bold text-aurelia-slate mb-1 uppercase">Nomor WhatsApp *</label>
+                                <input type="tel" id="senderPhone" required placeholder="Contoh: 081234567890" class="w-full px-4 py-3 bg-aurelia-soft border border-aurelia-border rounded-xl focus:outline-none focus:border-aurelia-ocean">
+                            </div>
+                        </div>
+
+                        <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                            <div>
+                                <label class="block font-bold text-aurelia-slate mb-1 uppercase">Jenis Pesanan / Kebutuhan *</label>
+                                <select id="inquiryType" class="w-full px-4 py-3 bg-aurelia-soft border border-aurelia-border rounded-xl focus:outline-none focus:border-aurelia-ocean font-mono">
+                                    <option value="souvenir-cafe">Souvenir / Coaster Logo Kafe & Resto (50 - 500+ pcs)</option>
+                                    <option value="souvenir-wedding">Souvenir Pernikahan Custom Inisial & Box</option>
+                                    <option value="custom-clock">Jam Dinding Resin Ukuran Besar (D.40cm - 60cm)</option>
+                                    <option value="workshop-diy">Pendaftaran Kelas Workshop DIY Resin di Studio</option>
+                                    <option value="satuan-kado">Pembelian Satuan / Kado Teman Pindah Rumah</option>
+                                </select>
+                            </div>
+                            <div>
+                                <label class="block font-bold text-aurelia-slate mb-1 uppercase">Kota Pengiriman</label>
+                                <input type="text" id="senderCity" placeholder="Contoh: Yogyakarta / Jakarta / Bali" class="w-full px-4 py-3 bg-aurelia-soft border border-aurelia-border rounded-xl focus:outline-none focus:border-aurelia-ocean">
+                            </div>
+                        </div>
+
+                        <div>
+                            <label class="block font-bold text-aurelia-slate mb-1 uppercase">Rincian Jumlah / Bentuk Coaster / Tanggal Kebutuhan</label>
+                            <textarea id="senderMsg" rows="4" placeholder="Sebutkan estimasi jumlah unit (misal: 100 pcs coaster bulat), corak yang diinginkan (Ocean Deep Blue/Terrazzo), dan kebutuhan logo/nama..." class="w-full px-4 py-3 bg-aurelia-soft border border-aurelia-border rounded-xl focus:outline-none focus:border-aurelia-ocean font-sans text-xs"></textarea>
+                        </div>
+
+                        <button type="submit" class="w-full py-4 bg-aurelia-slate hover:bg-black text-white font-mono text-xs font-bold uppercase tracking-wider rounded-xl transition shadow-md flex items-center justify-center gap-2 border border-aurelia-ocean/40 btn-atelier">
+                            <i class="fa-brands fa-whatsapp text-base text-green-400"></i>
+                            <span>Kirim Rincian ke WhatsApp Studio AURELIA</span>
+                        </button>
+                    </form>
+                </div>
+
+                <!-- Right Column: Studio Info & Hours (5 Cols) -->
+                <div class="lg:col-span-5 space-y-6">
+                    
+                    <!-- Studio Info Card -->
+                    <div class="bg-white p-6 sm:p-8 rounded-3xl border border-aurelia-border shadow-sm space-y-4">
+                        <div class="flex items-center gap-3">
+                            <div class="w-11 h-11 rounded-2xl bg-sky-100 text-aurelia-ocean flex items-center justify-center text-lg border border-aurelia-border">
+                                <i class="fa-solid fa-store"></i>
+                            </div>
+                            <div>
+                                <h3 class="font-bold text-xl text-aurelia-slate">Studio & Galeri Fisik</h3>
+                                <p class="text-xs font-mono text-aurelia-charcoal/60">Sleman, D.I. Yogyakarta</p>
+                            </div>
+                        </div>
+                        <p class="text-xs text-aurelia-charcoal/75 leading-relaxed font-sans">
+                            Jl. Seturan Raya No. 45, Caturtunggal, Depok, Kabupaten Sleman, D.I. Yogyakarta 55281 (Dekat Kawasan Kampus UPN & YKPN)
+                        </p>
+                        <div class="pt-2 border-t border-aurelia-border text-xs font-mono space-y-1 text-aurelia-charcoal/70">
+                            <p><i class="fa-solid fa-clock text-aurelia-ocean mr-1.5"></i> Selasa - Minggu: 10:00 - 18:00 WIB (Senin Tutup)</p>
+                            <p><i class="fa-solid fa-hands-holding-circle text-aurelia-coral mr-1.5"></i> Workshop DIY Resin & Terrazzo Setiap Hari Sabtu & Minggu</p>
+                        </div>
+                    </div>
+
+                    <!-- Direct Contacts -->
+                    <div class="bg-white p-6 sm:p-8 rounded-3xl border border-aurelia-border shadow-sm space-y-3 font-mono text-xs">
+                        <h4 class="font-bold uppercase tracking-wider text-aurelia-slate mb-2">Kontak Resmi Studio:</h4>
+                        
+                        <a href="https://wa.me/6281234567890" target="_blank" class="flex items-center justify-between p-3 rounded-xl bg-aurelia-soft border border-aurelia-border hover:border-aurelia-ocean transition">
+                            <div class="flex items-center gap-2.5">
+                                <i class="fa-brands fa-whatsapp text-green-600 text-base"></i>
+                                <span class="font-bold text-aurelia-slate">WhatsApp Fast Response</span>
+                            </div>
+                            <span class="text-aurelia-ocean font-bold">+62 812-3456-7890 &rarr;</span>
+                        </a>
+
+                        <a href="mailto:order@aureliastudio.com" class="flex items-center justify-between p-3 rounded-xl bg-aurelia-soft border border-aurelia-border hover:border-aurelia-ocean transition">
+                            <div class="flex items-center gap-2.5">
+                                <i class="fa-solid fa-envelope text-aurelia-charcoal text-sm"></i>
+                                <span class="font-bold text-aurelia-slate">Email B2B & Souvenir Kafe</span>
+                            </div>
+                            <span class="text-aurelia-ocean font-bold">b2b@aurelia.id &rarr;</span>
+                        </a>
+                    </div>
+
+                    <!-- Map Container Preview -->
+                    <div class="rounded-3xl overflow-hidden border border-aurelia-border shadow-sm bg-white p-4 text-center font-mono text-xs">
+                        <div class="w-full h-40 bg-slate-200 rounded-2xl flex flex-col items-center justify-center text-aurelia-charcoal/60 relative overflow-hidden">
+                            <i class="fa-solid fa-map-location-dot text-3xl text-aurelia-ocean mb-2"></i>
+                            <span class="font-bold text-aurelia-slate">Google Maps Studio Seturan</span>
+                            <span class="text-[10px] text-aurelia-charcoal/60">Akses mudah & parkir mobil nyaman</span>
+                        </div>
+                        <a href="https://maps.google.com" target="_blank" class="mt-3 inline-flex items-center gap-2 text-xs font-bold text-aurelia-ocean hover:text-aurelia-slate underline">
+                            <span>Buka di Google Maps Navigasi</span>
+                            <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                        </a>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- 5. FOOTER -->
+    <footer class="bg-slate-950 text-slate-300 py-16 border-t border-white/10 font-sans">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-10 mb-12">
+                <div class="lg:col-span-2 space-y-4">
+                    <a href="index.html" class="flex items-center gap-3">
+                        <div class="w-10 h-10 bg-aurelia-ocean text-white flex items-center justify-center text-lg font-bold rounded-lg">
+                            <i class="fa-solid fa-water"></i>
+                        </div>
+                        <span class="text-2xl font-bold tracking-tight text-white uppercase font-mono">
+                            AURELIA<span class="text-aurelia-coral">.</span>
+                        </span>
+                    </a>
+                    <p class="text-xs text-slate-400 leading-relaxed max-w-sm font-sans">
+                        Studio kriya kontemporer resin art & terrazzo Jesmonite: Coaster tatakan gelas tahan panas 80°C, trinket tray estetik, jam dinding ombak laut 3D, dan souvenir pernikahan handmade.
+                    </p>
+                </div>
+                <div class="space-y-3 font-mono">
+                    <h5 class="text-xs font-bold text-white uppercase tracking-wider">Koleksi Karya</h5>
+                    <ul class="space-y-2 text-xs text-slate-400">
+                        <li><a href="katalog.html" class="hover:text-sky-300 transition">Ocean Wave Coaster</a></li>
+                        <li><a href="katalog.html" class="hover:text-sky-300 transition">Terrazzo Trinket Tray</a></li>
+                        <li><a href="katalog.html" class="hover:text-sky-300 transition">Jam Dinding Ombak Laut</a></li>
+                        <li><a href="katalog.html" class="hover:text-sky-300 transition">Bookmark & Keychain</a></li>
+                    </ul>
+                </div>
+                <div class="space-y-3 font-mono">
+                    <h5 class="text-xs font-bold text-white uppercase tracking-wider">Halaman</h5>
+                    <ul class="space-y-2 text-xs text-slate-400">
+                        <li><a href="index.html" class="hover:text-sky-300 transition">Beranda</a></li>
+                        <li><a href="katalog.html" class="hover:text-sky-300 transition">Katalog Produk</a></li>
+                        <li><a href="detail.html" class="hover:text-sky-300 transition">Detail Coaster</a></li>
+                        <li><a href="tentang.html" class="hover:text-sky-300 transition">Teknik Resin</a></li>
+                    </ul>
+                </div>
+                <div class="space-y-3 font-mono text-xs">
+                    <h5 class="text-xs font-bold text-white uppercase tracking-wider">Studio & Workshop</h5>
+                    <p class="text-slate-400">Sleman, D.I. Yogyakarta</p>
+                    <p class="text-sky-300 font-bold">+62 812-3456-7890</p>
+                </div>
+            </div>
+            <div class="pt-8 border-t border-white/10 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs font-mono text-slate-500">
+                <p>&copy; 2026 AURELIA RESIN & TERRAZZO ATELIER. All rights reserved.</p>
+                <p>Template UMKM Kriya Resin Art & Coaster by Lentera Pasar</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- 6. FLOATING WHATSAPP -->
+    <div class="fixed bottom-24 right-4 sm:right-6 z-40">
+        <a href="https://wa.me/6281234567890?text=Halo%20Aurelia,%20saya%20ingin%20tanya%20tentang%20pesanan%20souvenir%20coaster%20kafe." 
+           target="_blank" 
+           class="flex items-center gap-2.5 bg-emerald-600 hover:bg-emerald-700 text-white px-4 py-3 rounded-full shadow-2xl transition-all duration-300 hover:scale-105 font-mono text-xs font-bold border-2 border-sky-300">
+            <i class="fa-brands fa-whatsapp text-xl"></i>
+            <span class="hidden sm:inline">WhatsApp Studio</span>
+        </a>
+    </div>
+
+    <!-- 7. LENTERA PASAR STICKY DEMO BAR -->
+    <div class="fixed bottom-4 left-4 right-4 z-50 max-w-5xl mx-auto">
+      <div class="bg-slate-900/95 backdrop-blur-md text-white px-4 py-3 rounded-2xl shadow-2xl border border-slate-700/80 flex flex-col md:flex-row items-center justify-between gap-3">
+        <div class="flex items-center gap-3">
+          <div class="w-8 h-8 rounded-lg bg-amber-600/30 border border-amber-500/50 flex items-center justify-center shrink-0">
+            <svg class="w-4 h-4 text-amber-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z" /></svg>
+          </div>
+          <div>
+            <div class="text-xs md:text-sm font-bold text-slate-100 flex items-center gap-2">
+              <span>Lentera Pasar Demo</span>
+              <span class="text-[10px] px-1.5 py-0.5 rounded bg-amber-500/20 text-amber-300 font-mono">Kontak & Form Souvenir Kafe</span>
+            </div>
+            <p class="text-[11px] text-slate-400 hidden sm:block">Formulir konsultasi pesanan souvenir logo kafe dan pendaftaran kelas workshop resin DIY.</p>
+          </div>
+        </div>
+
+        <div class="flex items-center gap-3 w-full md:w-auto justify-end">
+          <a href="https://wa.me/6281234567890?text=Halo%20Tim%20Lentera%20Pasar,%20saya%20tertarik%20menggunakan%20template%20website%20Resin%20Art%20ini." 
+             target="_blank"
+             class="w-full md:w-auto inline-flex items-center justify-center gap-2 bg-gradient-to-r from-amber-600 to-amber-800 hover:from-amber-500 hover:to-amber-700 text-white text-xs md:text-sm font-bold px-5 py-2.5 rounded-xl shadow-lg transition-all hover:scale-105 shrink-0 font-sans">
+            <span>Gunakan Template Ini</span>
+            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3" /></svg>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <!-- SCRIPT FORM SUBMISSION & MOBILE MENU -->
+    <script>
+        function handleContactSubmit(e) {
+            e.preventDefault();
+            const name = document.getElementById('senderName').value;
+            const phone = document.getElementById('senderPhone').value;
+            const type = document.getElementById('inquiryType').value;
+            const city = document.getElementById('senderCity').value;
+            const msg = document.getElementById('senderMsg').value;
+
+            const waText = `Halo Studio Aurelia Resin Atelier,\nSaya ingin mengirimkan formulir konsultasi/pesanan dari website:\n- Nama: ${name}\n- WhatsApp: ${phone}\n- Kebutuhan: ${type}\n- Kota Kirim: ${city}\n- Rincian Pesanan: ${msg}\nMohon info penawaran harga dan estimasi waktu pengerjaan. Terima kasih.`;
+
+            window.open(`https://wa.me/6281234567890?text=${encodeURIComponent(waText)}`, '_blank');
+        }
+
+        // Mobile menu toggle
+        const mobileMenuBtn = document.getElementById('mobileMenuBtn');
+        const mobileMenu = document.getElementById('mobileMenu');
+        const menuIcon = document.getElementById('menuIcon');
+
+        mobileMenuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+            if (mobileMenu.classList.contains('hidden')) {
+                menuIcon.classList.remove('fa-xmark');
+                menuIcon.classList.add('fa-bars');
+            } else {
+                menuIcon.classList.remove('fa-bars');
+                menuIcon.classList.add('fa-xmark');
+            }
+        });
+    </script>
+</body>
+</html>

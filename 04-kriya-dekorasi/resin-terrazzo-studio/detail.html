@@ -1,0 +1,585 @@
+<!DOCTYPE html>
+<html lang="id" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pacific Ocean 3D Wave Coaster Set // AURELIA RESIN ATELIER</title>
+    <meta name="description" content="Detail tatakan gelas coaster resin ombak laut 3D: Tahan panas cangkir kopi 80°C, formula anti-kuning UV resistant, bahan resin food-grade, dan kaki silikon anti-slip.">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome 6 -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        aurelia: {
+                            white: '#FFFFFF',
+                            soft: '#F8F9FA',
+                            border: '#E9ECEF',
+                            ocean: '#0077B6',
+                            oceandeep: '#023E8A',
+                            oceansoft: '#E0F2FE',
+                            coral: '#E76F51',
+                            peach: '#F4A261',
+                            coralsoft: '#FFEDD5',
+                            gold: '#D97706',
+                            slate: '#0F172A',
+                            charcoal: '#1E293B'
+                        }
+                    },
+                    fontFamily: {
+                        sans: ['"Plus Jakarta Sans"', 'sans-serif'],
+                        mono: ['"Space Grotesk"', 'monospace']
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        .no-scrollbar::-webkit-scrollbar { display: none; }
+        .no-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
+
+        .btn-atelier {
+            transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+        }
+        .btn-atelier:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 12px 24px -6px rgba(0, 119, 182, 0.35);
+        }
+    </style>
+</head>
+<body class="bg-aurelia-soft text-aurelia-charcoal font-sans antialiased selection:bg-aurelia-ocean selection:text-white">
+
+    <!-- 1. TOP BAR -->
+    <div class="bg-aurelia-slate text-aurelia-soft text-xs py-2 px-4 font-mono border-b border-aurelia-ocean/30">
+        <div class="max-w-7xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-2 text-center sm:text-left">
+            <div class="flex items-center gap-2">
+                <span class="px-2 py-0.5 bg-aurelia-coral text-white text-[10px] uppercase font-mono font-bold rounded">100% GARANSI AMAN</span>
+                <span class="text-white/95">Garansi Tahan Panas 80°C • Jika Rusak / Cacat Pabrik Diganti Baru Tanpa Biaya Tambahan</span>
+            </div>
+            <div class="text-xs">
+                <span>Konsultasi Custom: <a href="https://wa.me/6281234567890" target="_blank" class="text-sky-300 hover:underline font-bold">+62 812-3456-7890</a></span>
+            </div>
+        </div>
+    </div>
+
+    <!-- 2. NAVBAR -->
+    <header class="sticky top-0 z-40 bg-white/95 backdrop-blur-md border-b border-aurelia-border transition-all">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-20 sm:h-24">
+                
+                <!-- Logo -->
+                <a href="index.html" class="flex items-center gap-3.5 group">
+                    <div class="w-12 h-12 bg-aurelia-ocean text-white flex items-center justify-center text-xl font-bold rounded-2xl shadow-md group-hover:bg-aurelia-oceandeep transition">
+                        <i class="fa-solid fa-water"></i>
+                    </div>
+                    <div class="flex flex-col">
+                        <span class="text-2xl sm:text-3xl font-extrabold tracking-tight text-aurelia-slate uppercase leading-none font-mono">
+                            AURELIA<span class="text-aurelia-coral">.</span>
+                        </span>
+                        <span class="text-[9px] font-mono tracking-[0.28em] text-aurelia-ocean uppercase mt-1 font-bold">
+                            RESIN & TERRAZZO ATELIER
+                        </span>
+                    </div>
+                </a>
+
+                <!-- Desktop Navigation Links -->
+                <nav class="hidden lg:flex items-center gap-8 text-xs font-bold tracking-wider uppercase text-aurelia-charcoal/80 font-mono">
+                    <a href="index.html" class="hover:text-aurelia-ocean transition">Beranda</a>
+                    <a href="katalog.html" class="hover:text-aurelia-ocean transition">Koleksi Coaster & Tray</a>
+                    <a href="detail.html" class="text-aurelia-ocean border-b-2 border-aurelia-ocean pb-1 font-bold">Detail Ocean Coaster</a>
+                    <a href="tentang.html" class="hover:text-aurelia-ocean transition">Teknik Resin & Jesmonite</a>
+                    <a href="artikel.html" class="hover:text-aurelia-ocean transition">Perawatan & Tips</a>
+                    <a href="kontak.html" class="hover:text-aurelia-ocean transition">Studio & Workshop</a>
+                </nav>
+
+                <!-- Actions -->
+                <div class="hidden sm:flex items-center gap-3 font-mono">
+                    <a href="katalog.html" class="inline-flex items-center gap-2 px-3.5 py-2.5 bg-aurelia-soft border border-aurelia-border hover:border-aurelia-ocean text-xs font-bold text-aurelia-slate rounded-xl transition shadow-xs">
+                        <i class="fa-solid fa-arrow-left text-aurelia-ocean"></i>
+                        <span>Katalog Karya</span>
+                    </a>
+                    <a href="https://wa.me/6281234567890?text=Halo%20Aurelia,%20saya%20tertarik%20dengan%20Pacific%20Ocean%20Coaster%20Set." target="_blank" class="inline-flex items-center gap-2 bg-aurelia-slate hover:bg-black text-white text-xs font-bold tracking-wider px-5 py-2.5 rounded-xl border border-aurelia-ocean/40 transition-all shadow-md font-mono btn-atelier">
+                        <i class="fa-brands fa-whatsapp text-sm text-green-400"></i>
+                        <span>Order via WA</span>
+                    </a>
+                </div>
+
+                <!-- Mobile Hamburger Button -->
+                <button id="mobileMenuBtn" class="lg:hidden p-2.5 text-aurelia-charcoal hover:text-aurelia-ocean focus:outline-none" aria-label="Toggle Menu">
+                    <i id="menuIcon" class="fa-solid fa-bars text-xl"></i>
+                </button>
+            </div>
+        </div>
+
+        <!-- Mobile Drawer -->
+        <div id="mobileMenu" class="hidden lg:hidden bg-white border-b border-aurelia-border px-5 py-5 space-y-3 font-mono shadow-xl">
+            <a href="index.html" class="block text-xs font-bold uppercase tracking-wider text-aurelia-charcoal hover:text-aurelia-ocean py-2 border-b border-aurelia-border">Beranda Utama</a>
+            <a href="katalog.html" class="block text-xs font-bold uppercase tracking-wider text-aurelia-charcoal hover:text-aurelia-ocean py-2 border-b border-aurelia-border">Koleksi Coaster & Tray</a>
+            <a href="detail.html" class="block text-xs font-bold uppercase tracking-wider text-aurelia-ocean py-2 border-b border-aurelia-border">Detail Ocean Wave Coaster</a>
+            <a href="tentang.html" class="block text-xs font-bold uppercase tracking-wider text-aurelia-charcoal hover:text-aurelia-ocean py-2 border-b border-aurelia-border">Teknik Resin & Jesmonite</a>
+            <a href="artikel.html" class="block text-xs font-bold uppercase tracking-wider text-aurelia-charcoal hover:text-aurelia-ocean py-2 border-b border-aurelia-border">Tips Merawat Coaster</a>
+            <a href="kontak.html" class="block text-xs font-bold uppercase tracking-wider text-aurelia-charcoal hover:text-aurelia-ocean py-2">Studio & Workshop DIY</a>
+            <div class="pt-3">
+                <a href="https://wa.me/6281234567890?text=Halo%20Aurelia%20Studio." target="_blank" class="w-full py-3 bg-aurelia-slate text-white rounded-xl text-xs font-bold uppercase tracking-wider text-center flex items-center justify-center gap-2 font-mono border border-aurelia-ocean">
+                    <i class="fa-brands fa-whatsapp text-green-400"></i> WhatsApp Fast Response
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- 3. PRODUCT DETAIL MAIN SECTION -->
+    <section class="py-10 sm:py-16">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            
+            <!-- Breadcrumbs -->
+            <nav class="flex items-center gap-2 text-xs font-mono text-aurelia-charcoal/60 mb-8">
+                <a href="index.html" class="hover:text-aurelia-ocean">Beranda</a>
+                <span>/</span>
+                <a href="katalog.html" class="hover:text-aurelia-ocean">Coaster Tatakan Gelas</a>
+                <span>/</span>
+                <span class="text-aurelia-slate font-bold">Pacific Ocean 3D Wave Coaster Set</span>
+            </nav>
+
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-12 items-start">
+                
+                <!-- Left Column: Gallery & Macro Swatches (6 Cols) -->
+                <div class="lg:col-span-6 space-y-4">
+                    <!-- Main Gallery Image Container -->
+                    <div class="relative bg-slate-900 rounded-3xl border border-aurelia-border overflow-hidden shadow-2xl group">
+                        <img id="mainProductImg" 
+                             src="https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?q=80&w=1000&auto=format&fit=crop" 
+                             alt="Coaster Resin Ombak Laut 3D" 
+                             class="w-full h-[440px] sm:h-[500px] object-cover transition-transform duration-500">
+                        
+                        <div class="absolute top-4 left-4 bg-aurelia-ocean/90 text-white text-xs font-mono font-bold uppercase px-3 py-1.5 rounded-lg shadow border border-aurelia-ocean/40">
+                            Ultra-Clear Optical Glass Resin
+                        </div>
+                        <div class="absolute bottom-4 right-4 bg-white/90 backdrop-blur-md px-3 py-1.5 rounded-lg border border-aurelia-border text-xs font-mono text-aurelia-slate font-bold flex items-center gap-1.5">
+                            <i class="fa-solid fa-magnifying-glass-plus text-aurelia-ocean"></i>
+                            <span id="galleryCaption">Makro Detail: Efek Deburan Ombak Laut 3D & Kayu Jati</span>
+                        </div>
+                    </div>
+
+                    <!-- Gallery Thumbnails (4 Views) -->
+                    <div class="grid grid-cols-4 gap-3">
+                        <button onclick="changeGalleryImage('https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?q=80&w=1000&auto=format&fit=crop', 'Makro Detail: Efek Deburan Ombak Laut 3D & Kayu Jati', this)" class="thumb-btn border-2 border-aurelia-ocean rounded-2xl overflow-hidden shadow-xs">
+                            <img src="https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?q=80&w=250&auto=format&fit=crop" alt="Wave Detail" class="w-full h-20 sm:h-24 object-cover">
+                        </button>
+                        <button onclick="changeGalleryImage('https://images.unsplash.com/photo-1514432324607-a09d9b4aefdd?q=80&w=1000&auto=format&fit=crop', 'Uji Coba Cangkir Kopi Panas 80°C (Heat-Resistant)', this)" class="thumb-btn border border-aurelia-border hover:border-aurelia-ocean rounded-2xl overflow-hidden shadow-xs">
+                            <img src="https://images.unsplash.com/photo-1514432324607-a09d9b4aefdd?q=80&w=250&auto=format&fit=crop" alt="Coffee Cup Test" class="w-full h-20 sm:h-24 object-cover">
+                        </button>
+                        <button onclick="changeGalleryImage('https://images.unsplash.com/photo-1579783902614-a3fb3927b675?q=80&w=1000&auto=format&fit=crop', 'Bagian Bawah dengan Karet Bumper Anti-Slip Silikon', this)" class="thumb-btn border border-aurelia-border hover:border-aurelia-ocean rounded-2xl overflow-hidden shadow-xs">
+                            <img src="https://images.unsplash.com/photo-1579783902614-a3fb3927b675?q=80&w=250&auto=format&fit=crop" alt="Anti-Slip Bottom" class="w-full h-20 sm:h-24 object-cover">
+                        </button>
+                        <button onclick="changeGalleryImage('https://images.unsplash.com/photo-1549465220-1a8b9238cd48?q=80&w=1000&auto=format&fit=crop', 'Kemasan Kado Hardbox Eksklusif dengan Pita Satin', this)" class="thumb-btn border border-aurelia-border hover:border-aurelia-ocean rounded-2xl overflow-hidden shadow-xs">
+                            <img src="https://images.unsplash.com/photo-1549465220-1a8b9238cd48?q=80&w=250&auto=format&fit=crop" alt="Gift Packaging" class="w-full h-20 sm:h-24 object-cover">
+                        </button>
+                    </div>
+
+                    <!-- Material Composition & Dimensions Specs -->
+                    <div class="bg-white p-5 rounded-2xl border border-aurelia-border space-y-3 font-mono text-xs">
+                        <div class="flex items-center gap-2 font-bold text-aurelia-slate uppercase tracking-wider">
+                            <i class="fa-solid fa-circle-info text-aurelia-ocean"></i>
+                            <span>Spesifikasi Material & Ketahanan:</span>
+                        </div>
+                        <ul class="space-y-1.5 text-aurelia-charcoal/75 list-disc pl-4 font-sans text-xs">
+                            <li><strong>Material Resin:</strong> Epoxy Resin Food-Grade Anti-UV (Formula Khusus Bebas Menguning).</li>
+                            <li><strong>Kayu Dasar:</strong> Kayu Jati / Pinus Solid dengan Finishing Natural Oil anti-air.</li>
+                            <li><strong>Ketahanan Panas:</strong> Mampu menahan suhu dasar cangkir hingga 80°C tanpa berbekas.</li>
+                            <li><strong>Ketebalan:</strong> 1.0 - 1.2 cm (Kokoh, padat, dan stabil saat ditaruh cangkir).</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Right Column: Interactive Configuration & Order Box (6 Cols) -->
+                <div class="lg:col-span-6 bg-white p-6 sm:p-8 rounded-3xl border border-aurelia-border shadow-xl space-y-6">
+                    
+                    <!-- Header Info -->
+                    <div>
+                        <div class="flex items-center justify-between gap-2 mb-2">
+                            <span class="px-2.5 py-0.5 bg-sky-100 text-sky-900 text-xs font-mono font-bold rounded-md border border-sky-300">
+                                SIGNATURE BEST SELLER COASTER
+                            </span>
+                            <div class="flex items-center gap-1 text-amber-500 text-xs font-mono font-bold">
+                                <i class="fa-solid fa-star"></i>
+                                <span>4.9 (530+ Ulasan Terverifikasi)</span>
+                            </div>
+                        </div>
+
+                        <h1 class="text-2xl sm:text-3xl lg:text-4xl font-extrabold text-aurelia-slate tracking-tight">
+                            Pacific Ocean 3D Wave Coaster Set
+                        </h1>
+                        <p class="text-sm text-aurelia-charcoal/75 mt-2 leading-relaxed font-sans">
+                            Set 4 tatakan gelas resin handmade bertema deburan ombak laut toska dengan buih putih 3D realistis dan dasar kayu jati alami.
+                        </p>
+                    </div>
+
+                    <!-- Price Display -->
+                    <div class="bg-aurelia-soft p-4 rounded-2xl border border-aurelia-border flex items-center justify-between font-mono">
+                        <div>
+                            <span class="text-[11px] text-aurelia-charcoal/60 uppercase block">Total Nilai Pesanan:</span>
+                            <span id="displayPrice" class="text-2xl sm:text-3xl font-extrabold text-aurelia-slate">Rp 145.000</span>
+                        </div>
+                        <span class="px-3 py-1 bg-green-100 text-green-800 text-xs font-bold rounded-lg flex items-center gap-1.5 border border-green-300">
+                            <span class="w-2 h-2 rounded-full bg-green-600 animate-pulse"></span>
+                            Ready Stock Siap Kirim
+                        </span>
+                    </div>
+
+                    <!-- Interactive Config 1: Pilihan Bentuk Coaster -->
+                    <div>
+                        <label class="block font-mono text-xs uppercase font-bold text-aurelia-slate mb-2.5">
+                            1. Pilihan Bentuk & Format Set:
+                        </label>
+                        <div class="grid grid-cols-1 sm:grid-cols-3 gap-2.5 font-mono text-xs">
+                            <label onclick="selectShape('Bulat D.10cm (Isi 4 Pcs)', 145000, this)" class="shape-option flex flex-col p-3 rounded-2xl border-2 border-aurelia-ocean bg-sky-50/70 cursor-pointer transition text-center">
+                                <input type="radio" name="shapeOpt" checked class="sr-only">
+                                <span class="font-bold text-aurelia-slate">Bulat D.10cm</span>
+                                <span class="text-[10px] text-aurelia-charcoal/70 font-sans mt-0.5">Isi 4 Coaster</span>
+                                <span class="text-xs font-bold text-aurelia-ocean mt-1">Rp 145.000</span>
+                            </label>
+
+                            <label onclick="selectShape('Heksagon 10.5cm (Isi 4 Pcs)', 155000, this)" class="shape-option flex flex-col p-3 rounded-2xl border border-aurelia-border bg-white cursor-pointer hover:border-aurelia-ocean transition text-center">
+                                <input type="radio" name="shapeOpt" class="sr-only">
+                                <span class="font-bold text-aurelia-slate">Heksagon 10.5cm</span>
+                                <span class="text-[10px] text-aurelia-charcoal/70 font-sans mt-0.5">Isi 4 Coaster</span>
+                                <span class="text-xs font-bold text-aurelia-ocean mt-1">Rp 155.000</span>
+                            </label>
+
+                            <label onclick="selectShape('Combo Tray + 2 Coaster', 195000, this)" class="shape-option flex flex-col p-3 rounded-2xl border border-aurelia-border bg-white cursor-pointer hover:border-aurelia-ocean transition text-center">
+                                <input type="radio" name="shapeOpt" class="sr-only">
+                                <span class="font-bold text-aurelia-slate">Combo Tray + 2</span>
+                                <span class="text-[10px] text-aurelia-charcoal/70 font-sans mt-0.5">1 Nampan + 2 Coaster</span>
+                                <span class="text-xs font-bold text-aurelia-ocean mt-1">Rp 195.000</span>
+                            </label>
+                        </div>
+                    </div>
+
+                    <!-- Interactive Config 2: Pilihan Warna Efek Ombak -->
+                    <div>
+                        <label class="block font-mono text-xs uppercase font-bold text-aurelia-slate mb-2">
+                            2. Pilihan Varian Corak Ombak:
+                        </label>
+                        <div class="grid grid-cols-2 sm:grid-cols-4 gap-2 font-mono text-xs">
+                            <label onclick="selectWaveColor('Pacific Deep Blue (Toska)', this)" class="wave-option flex items-center justify-center gap-2 p-2.5 rounded-xl border-2 border-aurelia-ocean bg-sky-50/70 cursor-pointer transition">
+                                <span class="w-3.5 h-3.5 rounded-full bg-sky-500"></span>
+                                <span class="font-bold text-aurelia-slate">Pacific</span>
+                            </label>
+                            <label onclick="selectWaveColor('Emerald Gold Coast (Hijau Emas)', this)" class="wave-option flex items-center justify-center gap-2 p-2.5 rounded-xl border border-aurelia-border bg-white cursor-pointer hover:border-aurelia-ocean transition">
+                                <span class="w-3.5 h-3.5 rounded-full bg-emerald-600"></span>
+                                <span class="font-bold text-aurelia-slate">Emerald</span>
+                            </label>
+                            <label onclick="selectWaveColor('Sunset Coral Pink (Pink Senja)', this)" class="wave-option flex items-center justify-center gap-2 p-2.5 rounded-xl border border-aurelia-border bg-white cursor-pointer hover:border-aurelia-ocean transition">
+                                <span class="w-3.5 h-3.5 rounded-full bg-rose-400"></span>
+                                <span class="font-bold text-aurelia-slate">Sunset</span>
+                            </label>
+                            <label onclick="selectWaveColor('Midnight Obsidian Black (Hitam Emas)', this)" class="wave-option flex items-center justify-center gap-2 p-2.5 rounded-xl border border-aurelia-border bg-white cursor-pointer hover:border-aurelia-ocean transition">
+                                <span class="w-3.5 h-3.5 rounded-full bg-slate-900 border border-amber-400"></span>
+                                <span class="font-bold text-aurelia-slate">Midnight</span>
+                            </label>
+                        </div>
+                    </div>
+
+                    <!-- Interactive Config 3: Custom Grafir Inisial / Logo -->
+                    <div class="space-y-3 p-4 bg-aurelia-soft rounded-2xl border border-aurelia-border font-mono text-xs">
+                        <label class="block font-bold text-aurelia-slate uppercase">
+                            3. Kustom Grafir Inisial Nama / Logo Kafe:
+                        </label>
+                        <input type="text" id="customEngraving" onkeyup="recalculate()" placeholder="Tuliskan inisial nama / nama kafe yang ingin digrafir..." class="w-full px-3.5 py-2.5 bg-white border border-aurelia-border rounded-xl text-xs focus:outline-none focus:border-aurelia-ocean">
+                        <div class="flex items-center gap-2 text-[11px] text-aurelia-charcoal/70">
+                            <i class="fa-solid fa-wand-magic-sparkles text-aurelia-coral"></i>
+                            <span>Bebas custom nama grafir laser pada bagian kayu atau cetak logo di dalam resin.</span>
+                        </div>
+                    </div>
+
+                    <!-- Interactive Config 4: Opsi Addon Aksesori -->
+                    <div>
+                        <label class="block font-mono text-xs uppercase font-bold text-aurelia-slate mb-2">
+                            4. Tambahan Aksesori & Gift Package:
+                        </label>
+                        <div class="space-y-2 font-mono text-xs">
+                            <label onclick="toggleAddon('holder', 35000, this)" class="addon-option flex items-center justify-between p-3 rounded-xl border border-aurelia-border bg-white cursor-pointer hover:border-aurelia-ocean transition">
+                                <div class="flex items-center gap-3">
+                                    <input type="checkbox" id="addonHolder" class="accent-aurelia-ocean rounded">
+                                    <span>+ Rak Holder Kayu Solid Khusus Coaster (Muat 4-6 Coaster)</span>
+                                </div>
+                                <span class="font-bold text-aurelia-slate">+Rp 35.000</span>
+                            </label>
+
+                            <label onclick="toggleAddon('cup', 45000, this)" class="addon-option flex items-center justify-between p-3 rounded-xl border border-aurelia-border bg-white cursor-pointer hover:border-aurelia-ocean transition">
+                                <div class="flex items-center gap-3">
+                                    <input type="checkbox" id="addonCup" class="accent-aurelia-ocean rounded">
+                                    <span>+ Cangkir Kopi Kaca Estetik Double-Wall 250ml Anti-Panas</span>
+                                </div>
+                                <span class="font-bold text-aurelia-slate">+Rp 45.000</span>
+                            </label>
+                        </div>
+                    </div>
+
+                    <!-- Total Bayar & Actions -->
+                    <div class="pt-4 border-t border-aurelia-border flex items-center justify-between gap-4 font-mono">
+                        <div>
+                            <span class="text-[10px] text-aurelia-charcoal/60 uppercase block">Total Nilai Pesanan:</span>
+                            <span id="grandTotal" class="text-2xl sm:text-3xl font-extrabold text-aurelia-slate">Rp 145.000</span>
+                        </div>
+                    </div>
+
+                    <!-- Action Buttons -->
+                    <div class="space-y-2.5 font-mono">
+                        <a id="mainWaOrderBtn" 
+                           href="https://wa.me/6281234567890?text=Halo%20Aurelia%20Studio,%20saya%20ingin%20memesan%20Pacific%20Ocean%20Coaster%20Set%20(Bentuk:%20Bulat%20D.10cm,%20Warna:%20Pacific%20Deep%20Blue,%20Total:%20Rp%20145.000)." 
+                           target="_blank" 
+                           class="w-full inline-flex items-center justify-center gap-3 py-4 bg-aurelia-slate hover:bg-black text-white text-xs sm:text-sm font-bold tracking-wider uppercase rounded-xl transition shadow-xl font-mono border border-aurelia-ocean/40 btn-atelier">
+                            <i class="fa-brands fa-whatsapp text-lg text-green-400"></i>
+                            <span>Pesan via WhatsApp Fast Response</span>
+                        </a>
+
+                        <div class="grid grid-cols-2 gap-2.5">
+                            <a href="https://shopee.co.id" target="_blank" class="inline-flex items-center justify-center gap-2 py-3 bg-[#EE4D2D]/10 hover:bg-[#EE4D2D]/20 text-[#EE4D2D] border border-[#EE4D2D]/30 rounded-xl text-xs font-bold transition font-mono">
+                                <i class="fa-solid fa-bag-shopping"></i>
+                                <span>Shopee Official</span>
+                            </a>
+                            <a href="https://tokopedia.com" target="_blank" class="inline-flex items-center justify-center gap-2 py-3 bg-[#03AC0E]/10 hover:bg-[#03AC0E]/20 text-[#03AC0E] border border-[#03AC0E]/30 rounded-xl text-xs font-bold transition font-mono">
+                                <i class="fa-solid fa-store"></i>
+                                <span>Tokopedia Official</span>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Trust Guarantees -->
+                    <div class="grid grid-cols-3 gap-2 pt-2 border-t border-aurelia-border text-center font-mono text-[10px] text-aurelia-charcoal/70">
+                        <div><i class="fa-solid fa-fire text-aurelia-coral mb-1 block"></i> Tahan Suhu 80°C</div>
+                        <div><i class="fa-solid fa-shield-halved text-aurelia-ocean mb-1 block"></i> Food-Grade Non-Toxic</div>
+                        <div><i class="fa-solid fa-box text-aurelia-slate mb-1 block"></i> Busa Tebal Anti-Pecah</div>
+                    </div>
+
+                </div>
+
+            </div>
+
+            <!-- Matching Pairing Suggestion -->
+            <div class="mt-16 bg-white rounded-3xl border border-aurelia-border p-6 sm:p-8 shadow-sm">
+                <div class="flex flex-col md:flex-row items-center justify-between gap-6">
+                    <div class="flex items-center gap-4">
+                        <img src="https://images.unsplash.com/photo-1513519245088-0e12902e5a38?q=80&w=300&auto=format&fit=crop" 
+                             alt="Ocean Tide Resin Wall Clock" 
+                             class="w-20 h-20 sm:w-24 sm:h-24 rounded-2xl object-cover border border-aurelia-border shrink-0">
+                        <div>
+                            <span class="text-[10px] font-mono font-bold uppercase tracking-wider text-aurelia-ocean">Padanan Dekorasi Ruangan Serasi</span>
+                            <h4 class="font-bold text-xl text-aurelia-slate">Ocean Tide Resin Wall Clock (D.30cm)</h4>
+                            <p class="text-xs text-aurelia-charcoal/70 font-sans mt-0.5">Jam dinding resin ombak laut toska dengan mesin hening tanpa suara detak.</p>
+                        </div>
+                    </div>
+                    <div class="flex items-center gap-4 font-mono shrink-0">
+                        <div class="text-right">
+                            <span class="text-[10px] text-aurelia-charcoal/60 block">Harga Jam Dinding:</span>
+                            <span class="font-bold text-aurelia-slate text-lg">Rp 320.000</span>
+                        </div>
+                        <a href="https://wa.me/6281234567890?text=Halo%20Aurelia,%20saya%20tertarik%20paket%20Coaster%20Set%20plus%20Jam%20Dinding%20Ocean%20Tide." target="_blank" class="px-5 py-3 bg-aurelia-slate hover:bg-black text-white text-xs font-bold uppercase rounded-xl transition shadow font-mono border border-aurelia-ocean/40">
+                            Pesan Paket Bundling
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- 4. FOOTER -->
+    <footer class="bg-slate-950 text-slate-300 py-16 border-t border-white/10 font-sans">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-10 mb-12">
+                <div class="lg:col-span-2 space-y-4">
+                    <a href="index.html" class="flex items-center gap-3">
+                        <div class="w-10 h-10 bg-aurelia-ocean text-white flex items-center justify-center text-lg font-bold rounded-lg">
+                            <i class="fa-solid fa-water"></i>
+                        </div>
+                        <span class="text-2xl font-bold tracking-tight text-white uppercase font-mono">
+                            AURELIA<span class="text-aurelia-coral">.</span>
+                        </span>
+                    </a>
+                    <p class="text-xs text-slate-400 leading-relaxed max-w-sm font-sans">
+                        Studio kriya kontemporer resin art & terrazzo Jesmonite: Coaster tatakan gelas tahan panas 80°C, trinket tray estetik, jam dinding ombak laut 3D, dan souvenir pernikahan handmade.
+                    </p>
+                </div>
+                <div class="space-y-3 font-mono">
+                    <h5 class="text-xs font-bold text-white uppercase tracking-wider">Koleksi Karya</h5>
+                    <ul class="space-y-2 text-xs text-slate-400">
+                        <li><a href="katalog.html" class="hover:text-sky-300 transition">Ocean Wave Coaster</a></li>
+                        <li><a href="katalog.html" class="hover:text-sky-300 transition">Terrazzo Trinket Tray</a></li>
+                        <li><a href="katalog.html" class="hover:text-sky-300 transition">Jam Dinding Ombak Laut</a></li>
+                        <li><a href="katalog.html" class="hover:text-sky-300 transition">Bookmark & Keychain</a></li>
+                    </ul>
+                </div>
+                <div class="space-y-3 font-mono">
+                    <h5 class="text-xs font-bold text-white uppercase tracking-wider">Halaman</h5>
+                    <ul class="space-y-2 text-xs text-slate-400">
+                        <li><a href="index.html" class="hover:text-sky-300 transition">Beranda</a></li>
+                        <li><a href="katalog.html" class="hover:text-sky-300 transition">Katalog Produk</a></li>
+                        <li><a href="tentang.html" class="hover:text-sky-300 transition">Teknik Resin</a></li>
+                        <li><a href="kontak.html" class="hover:text-sky-300 transition">Studio & Kontak</a></li>
+                    </ul>
+                </div>
+                <div class="space-y-3 font-mono text-xs">
+                    <h5 class="text-xs font-bold text-white uppercase tracking-wider">Studio & Workshop</h5>
+                    <p class="text-slate-400">Sleman, D.I. Yogyakarta</p>
+                    <p class="text-sky-300 font-bold">+62 812-3456-7890</p>
+                </div>
+            </div>
+            <div class="pt-8 border-t border-white/10 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs font-mono text-slate-500">
+                <p>&copy; 2026 AURELIA RESIN & TERRAZZO ATELIER. All rights reserved.</p>
+                <p>Template UMKM Kriya Resin Art & Coaster by Lentera Pasar</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- 5. FLOATING WHATSAPP -->
+    <div class="fixed bottom-24 right-4 sm:right-6 z-40">
+        <a id="floatingWaBtn" href="https://wa.me/6281234567890?text=Halo%20Aurelia,%20saya%20ingin%20tanya%20detail%20Pacific%20Ocean%20Coaster%20Set." 
+           target="_blank" 
+           class="flex items-center gap-2.5 bg-emerald-600 hover:bg-emerald-700 text-white px-4 py-3 rounded-full shadow-2xl transition-all duration-300 hover:scale-105 font-mono text-xs font-bold border-2 border-sky-300">
+            <i class="fa-brands fa-whatsapp text-xl"></i>
+            <span class="hidden sm:inline">WhatsApp Studio</span>
+        </a>
+    </div>
+
+    <!-- 6. LENTERA PASAR STICKY DEMO BAR -->
+    <div class="fixed bottom-4 left-4 right-4 z-50 max-w-5xl mx-auto">
+      <div class="bg-slate-900/95 backdrop-blur-md text-white px-4 py-3 rounded-2xl shadow-2xl border border-slate-700/80 flex flex-col md:flex-row items-center justify-between gap-3">
+        <div class="flex items-center gap-3">
+          <div class="w-8 h-8 rounded-lg bg-amber-600/30 border border-amber-500/50 flex items-center justify-center shrink-0">
+            <svg class="w-4 h-4 text-amber-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z" /></svg>
+          </div>
+          <div>
+            <div class="text-xs md:text-sm font-bold text-slate-100 flex items-center gap-2">
+              <span>Lentera Pasar Demo</span>
+              <span class="text-[10px] px-1.5 py-0.5 rounded bg-amber-500/20 text-amber-300 font-mono">Detail Coaster Resin Ombak</span>
+            </div>
+            <p class="text-[11px] text-slate-400 hidden sm:block">Kalkulator bentuk coaster (bulat/heksagon/tray), varian corak ombak, custom nama grafir, dan order WA.</p>
+          </div>
+        </div>
+
+        <div class="flex items-center gap-3 w-full md:w-auto justify-end">
+          <a href="https://wa.me/6281234567890?text=Halo%20Tim%20Lentera%20Pasar,%20saya%20tertarik%20menggunakan%20template%20website%20Resin%20Art%20ini." 
+             target="_blank"
+             class="w-full md:w-auto inline-flex items-center justify-center gap-2 bg-gradient-to-r from-amber-600 to-amber-800 hover:from-amber-500 hover:to-amber-700 text-white text-xs md:text-sm font-bold px-5 py-2.5 rounded-xl shadow-lg transition-all hover:scale-105 shrink-0 font-sans">
+            <span>Gunakan Template Ini</span>
+            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3" /></svg>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <!-- SCRIPT DETAIL PRODUCT CALCULATION & GALLERY -->
+    <script>
+        let currentShapeName = 'Bulat D.10cm (Isi 4 Pcs)';
+        let currentShapePrice = 145000;
+        let currentWaveColor = 'Pacific Deep Blue (Toska)';
+        
+        let addonHolderPrice = 0;
+        let addonCupPrice = 0;
+
+        function changeGalleryImage(url, caption, btn) {
+            document.getElementById('mainProductImg').src = url;
+            document.getElementById('galleryCaption').innerText = caption;
+            
+            document.querySelectorAll('.thumb-btn').forEach(b => {
+                b.classList.remove('border-2', 'border-aurelia-ocean');
+                b.classList.add('border', 'border-aurelia-border');
+            });
+            btn.classList.remove('border', 'border-aurelia-border');
+            btn.classList.add('border-2', 'border-aurelia-ocean');
+        }
+
+        function selectShape(name, price, labelEl) {
+            currentShapeName = name;
+            currentShapePrice = price;
+
+            document.querySelectorAll('.shape-option').forEach(el => {
+                el.classList.remove('border-2', 'border-aurelia-ocean', 'bg-sky-50/70');
+                el.classList.add('border', 'border-aurelia-border', 'bg-white');
+            });
+            labelEl.classList.remove('border', 'border-aurelia-border', 'bg-white');
+            labelEl.classList.add('border-2', 'border-aurelia-ocean', 'bg-sky-50/70');
+
+            recalculate();
+        }
+
+        function selectWaveColor(name, labelEl) {
+            currentWaveColor = name;
+
+            document.querySelectorAll('.wave-option').forEach(el => {
+                el.classList.remove('border-2', 'border-aurelia-ocean', 'bg-sky-50/70');
+                el.classList.add('border', 'border-aurelia-border', 'bg-white');
+            });
+            labelEl.classList.remove('border', 'border-aurelia-border', 'bg-white');
+            labelEl.classList.add('border-2', 'border-aurelia-ocean', 'bg-sky-50/70');
+
+            recalculate();
+        }
+
+        function toggleAddon(type, price, labelEl) {
+            const checkbox = labelEl.querySelector('input[type="checkbox"]');
+            setTimeout(() => {
+                if (type === 'holder') {
+                    addonHolderPrice = checkbox.checked ? price : 0;
+                } else if (type === 'cup') {
+                    addonCupPrice = checkbox.checked ? price : 0;
+                }
+                recalculate();
+            }, 10);
+        }
+
+        function formatRupiah(number) {
+            return 'Rp ' + number.toLocaleString('id-ID');
+        }
+
+        function recalculate() {
+            const total = currentShapePrice + addonHolderPrice + addonCupPrice;
+            const customEngraving = document.getElementById('customEngraving').value;
+
+            document.getElementById('displayPrice').innerText = formatRupiah(total);
+            document.getElementById('grandTotal').innerText = formatRupiah(total);
+
+            // Addons string
+            let addonsNote = [];
+            if (addonHolderPrice > 0) addonsNote.push('Rak Holder Kayu (+35rb)');
+            if (addonCupPrice > 0) addonsNote.push('Cangkir Kaca Double-Wall (+45rb)');
+            const addonsText = addonsNote.length > 0 ? addonsNote.join(', ') : 'Tidak Ada';
+
+            // Update WA message
+            const waMsg = `Halo Aurelia Studio, saya ingin memesan Pacific Ocean 3D Wave Coaster Set:\n- Bentuk/Set: ${currentShapeName}\n- Corak Ombak: ${currentWaveColor}\n- Grafir Nama: ${customEngraving ? customEngraving : 'Tanpa Grafir'}\n- Tambahan: ${addonsText}\n- Total Nilai: ${formatRupiah(total)}\nMohon info ketersediaan stok dan rekening studio. Terima kasih!`;
+            
+            const waUrl = `https://wa.me/6281234567890?text=${encodeURIComponent(waMsg)}`;
+            document.getElementById('mainWaOrderBtn').href = waUrl;
+            document.getElementById('floatingWaBtn').href = waUrl;
+        }
+
+        // Mobile menu toggle
+        const mobileMenuBtn = document.getElementById('mobileMenuBtn');
+        const mobileMenu = document.getElementById('mobileMenu');
+        const menuIcon = document.getElementById('menuIcon');
+
+        mobileMenuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+            if (mobileMenu.classList.contains('hidden')) {
+                menuIcon.classList.remove('fa-xmark');
+                menuIcon.classList.add('fa-bars');
+            } else {
+                menuIcon.classList.remove('fa-bars');
+                menuIcon.classList.add('fa-xmark');
+            }
+        });
+    </script>
+</body>
+</html>

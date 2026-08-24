@@ -1,0 +1,791 @@
+<!DOCTYPE html>
+<html lang="id" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Katalog Coaster Resin, Trinket Tray Terrazzo & Jam Dinding // AURELIA</title>
+    <meta name="description" content="Koleksi lengkap kerajinan resin art & terrazzo: Coaster tatakan gelas cangkir kopi panas, nampan oval perhiasan jesmonite, dan jam dinding ombak laut 3D.">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome 6 -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        aurelia: {
+                            white: '#FFFFFF',
+                            soft: '#F8F9FA',
+                            border: '#E9ECEF',
+                            ocean: '#0077B6',
+                            oceandeep: '#023E8A',
+                            oceansoft: '#E0F2FE',
+                            coral: '#E76F51',
+                            peach: '#F4A261',
+                            coralsoft: '#FFEDD5',
+                            gold: '#D97706',
+                            slate: '#0F172A',
+                            charcoal: '#1E293B'
+                        }
+                    },
+                    fontFamily: {
+                        sans: ['"Plus Jakarta Sans"', 'sans-serif'],
+                        mono: ['"Space Grotesk"', 'monospace']
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        .no-scrollbar::-webkit-scrollbar { display: none; }
+        .no-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
+
+        .btn-atelier {
+            transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+        }
+        .btn-atelier:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 12px 24px -6px rgba(0, 119, 182, 0.35);
+        }
+
+        .product-card {
+            transition: all 0.35s ease;
+        }
+        .product-card:hover {
+            transform: translateY(-4px);
+        }
+    </style>
+</head>
+<body class="bg-aurelia-soft text-aurelia-charcoal font-sans antialiased selection:bg-aurelia-ocean selection:text-white">
+
+    <!-- 1. TOP BAR -->
+    <div class="bg-aurelia-slate text-aurelia-soft text-xs py-2 px-4 font-mono border-b border-aurelia-ocean/30">
+        <div class="max-w-7xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-2 text-center sm:text-left">
+            <div class="flex items-center gap-2">
+                <span class="px-2 py-0.5 bg-aurelia-coral text-white text-[10px] uppercase font-mono font-bold rounded">PENGIRIMAN AMAN BERGARANSI</span>
+                <span class="text-white/95">Setiap Paket Coaster & Jam Dinding Dilapisi Busa Tebal & Box Hadiah Eksklusif</span>
+            </div>
+            <div class="text-xs">
+                <span>WhatsApp Studio: <a href="https://wa.me/6281234567890" target="_blank" class="text-sky-300 hover:underline font-bold">+62 812-3456-7890</a></span>
+            </div>
+        </div>
+    </div>
+
+    <!-- 2. NAVBAR -->
+    <header class="sticky top-0 z-40 bg-white/95 backdrop-blur-md border-b border-aurelia-border transition-all">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-20 sm:h-24">
+                
+                <!-- Logo -->
+                <a href="index.html" class="flex items-center gap-3.5 group">
+                    <div class="w-12 h-12 bg-aurelia-ocean text-white flex items-center justify-center text-xl font-bold rounded-2xl shadow-md group-hover:bg-aurelia-oceandeep transition">
+                        <i class="fa-solid fa-water"></i>
+                    </div>
+                    <div class="flex flex-col">
+                        <span class="text-2xl sm:text-3xl font-extrabold tracking-tight text-aurelia-slate uppercase leading-none font-mono">
+                            AURELIA<span class="text-aurelia-coral">.</span>
+                        </span>
+                        <span class="text-[9px] font-mono tracking-[0.28em] text-aurelia-ocean uppercase mt-1 font-bold">
+                            RESIN & TERRAZZO ATELIER
+                        </span>
+                    </div>
+                </a>
+
+                <!-- Desktop Navigation Links -->
+                <nav class="hidden lg:flex items-center gap-8 text-xs font-bold tracking-wider uppercase text-aurelia-charcoal/80 font-mono">
+                    <a href="index.html" class="hover:text-aurelia-ocean transition">Beranda</a>
+                    <a href="katalog.html" class="text-aurelia-ocean border-b-2 border-aurelia-ocean pb-1 font-bold">Koleksi Coaster & Tray</a>
+                    <a href="detail.html" class="hover:text-aurelia-ocean transition">Detail Ocean Coaster</a>
+                    <a href="tentang.html" class="hover:text-aurelia-ocean transition">Teknik Resin & Jesmonite</a>
+                    <a href="artikel.html" class="hover:text-aurelia-ocean transition">Perawatan & Tips</a>
+                    <a href="kontak.html" class="hover:text-aurelia-ocean transition">Studio & Workshop</a>
+                </nav>
+
+                <!-- Actions -->
+                <div class="hidden sm:flex items-center gap-3 font-mono">
+                    <a href="https://wa.me/6281234567890?text=Halo%20Aurelia%20Studio,%20saya%20tertarik%20dengan%20katalog%20karya%20resin." target="_blank" class="inline-flex items-center gap-2 bg-aurelia-slate hover:bg-black text-white text-xs font-bold tracking-wider px-5 py-2.5 rounded-xl border border-aurelia-ocean/40 transition-all shadow-md font-mono btn-atelier">
+                        <i class="fa-brands fa-whatsapp text-sm text-green-400"></i>
+                        <span>Order via WA</span>
+                    </a>
+                </div>
+
+                <!-- Mobile Hamburger Button -->
+                <button id="mobileMenuBtn" class="lg:hidden p-2.5 text-aurelia-charcoal hover:text-aurelia-ocean focus:outline-none" aria-label="Toggle Menu">
+                    <i id="menuIcon" class="fa-solid fa-bars text-xl"></i>
+                </button>
+            </div>
+        </div>
+
+        <!-- Mobile Drawer -->
+        <div id="mobileMenu" class="hidden lg:hidden bg-white border-b border-aurelia-border px-5 py-5 space-y-3 font-mono shadow-xl">
+            <a href="index.html" class="block text-xs font-bold uppercase tracking-wider text-aurelia-charcoal hover:text-aurelia-ocean py-2 border-b border-aurelia-border">Beranda Utama</a>
+            <a href="katalog.html" class="block text-xs font-bold uppercase tracking-wider text-aurelia-ocean py-2 border-b border-aurelia-border">Koleksi Coaster & Tray</a>
+            <a href="detail.html" class="block text-xs font-bold uppercase tracking-wider text-aurelia-charcoal hover:text-aurelia-ocean py-2 border-b border-aurelia-border">Detail Ocean Wave Coaster</a>
+            <a href="tentang.html" class="block text-xs font-bold uppercase tracking-wider text-aurelia-charcoal hover:text-aurelia-ocean py-2 border-b border-aurelia-border">Teknik Resin & Jesmonite</a>
+            <a href="artikel.html" class="block text-xs font-bold uppercase tracking-wider text-aurelia-charcoal hover:text-aurelia-ocean py-2 border-b border-aurelia-border">Tips Merawat Coaster</a>
+            <a href="kontak.html" class="block text-xs font-bold uppercase tracking-wider text-aurelia-charcoal hover:text-aurelia-ocean py-2">Studio & Workshop DIY</a>
+            <div class="pt-3">
+                <a href="https://wa.me/6281234567890?text=Halo%20Aurelia%20Studio." target="_blank" class="w-full py-3 bg-aurelia-slate text-white rounded-xl text-xs font-bold uppercase tracking-wider text-center flex items-center justify-center gap-2 font-mono border border-aurelia-ocean">
+                    <i class="fa-brands fa-whatsapp text-green-400"></i> WhatsApp Fast Response
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- 3. KATALOG HEADER BANNER -->
+    <section class="py-12 sm:py-16 border-b border-aurelia-border bg-white relative">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex flex-col md:flex-row md:items-end justify-between gap-6">
+                <div class="space-y-2">
+                    <div class="flex items-center gap-2 text-xs font-mono text-aurelia-ocean uppercase font-bold">
+                        <a href="index.html" class="hover:underline">Beranda</a>
+                        <span>/</span>
+                        <span>Galeri Coaster, Tray & Jam Dinding</span>
+                    </div>
+                    <h1 class="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-aurelia-slate tracking-tight">
+                        Katalog Karya Resin & Terrazzo
+                    </h1>
+                    <p class="text-sm sm:text-base text-aurelia-charcoal/75 font-sans max-w-2xl">
+                        Koleksi tatakan cangkir coaster anti-panas 80°C, nampan perhiasan Jesmonite terrazzo ramah lingkungan, jam dinding ombak pantai, dan pembatas buku resin bening.
+                    </p>
+                </div>
+
+                <!-- Quick Highlights -->
+                <div class="flex flex-wrap gap-2 font-mono text-xs shrink-0">
+                    <span class="px-3 py-1.5 bg-aurelia-soft border border-aurelia-border rounded-xl text-aurelia-slate flex items-center gap-1.5">
+                        <i class="fa-solid fa-check text-green-600"></i> Anti-Kuning UV
+                    </span>
+                    <span class="px-3 py-1.5 bg-aurelia-soft border border-aurelia-border rounded-xl text-aurelia-slate flex items-center gap-1.5">
+                        <i class="fa-solid fa-check text-green-600"></i> Heat Resistant 80°C
+                    </span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 4. FILTER BAR & SORTING CONTROLS -->
+    <section class="sticky top-20 sm:top-24 z-30 bg-white/95 backdrop-blur-md border-b border-aurelia-border py-4">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex flex-col lg:flex-row items-stretch lg:items-center justify-between gap-4">
+                
+                <!-- Category Tabs -->
+                <div class="flex items-center gap-2 overflow-x-auto no-scrollbar pb-1 lg:pb-0 font-mono text-xs">
+                    <button onclick="filterCategory('all')" id="tab-all" class="cat-tab px-4 py-2 rounded-xl bg-aurelia-ocean text-white font-bold whitespace-nowrap transition font-mono border border-aurelia-ocean/40">
+                        Semua Karya (10)
+                    </button>
+                    <button onclick="filterCategory('coaster')" id="tab-coaster" class="cat-tab px-4 py-2 rounded-xl bg-aurelia-soft border border-aurelia-border text-aurelia-charcoal hover:border-aurelia-ocean font-bold whitespace-nowrap transition font-mono">
+                        Coaster Tatakan Gelas (4)
+                    </button>
+                    <button onclick="filterCategory('tray')" id="tab-tray" class="cat-tab px-4 py-2 rounded-xl bg-aurelia-soft border border-aurelia-border text-aurelia-charcoal hover:border-aurelia-ocean font-bold whitespace-nowrap transition font-mono">
+                        Trinket Tray Terrazzo (3)
+                    </button>
+                    <button onclick="filterCategory('clock')" id="tab-clock" class="cat-tab px-4 py-2 rounded-xl bg-aurelia-soft border border-aurelia-border text-aurelia-charcoal hover:border-aurelia-ocean font-bold whitespace-nowrap transition font-mono">
+                        Jam Dinding Ombak (2)
+                    </button>
+                    <button onclick="filterCategory('accessory')" id="tab-accessory" class="cat-tab px-4 py-2 rounded-xl bg-aurelia-soft border border-aurelia-border text-aurelia-charcoal hover:border-aurelia-ocean font-bold whitespace-nowrap transition font-mono">
+                        Bookmark & Keychain (1)
+                    </button>
+                </div>
+
+                <!-- Search & Sort Controls -->
+                <div class="flex items-center gap-3 font-mono text-xs">
+                    <div class="relative flex-1 sm:w-64">
+                        <input type="text" id="searchInput" onkeyup="searchProducts()" placeholder="Cari karya / ombak / tray..." class="w-full pl-9 pr-3 py-2 bg-aurelia-soft border border-aurelia-border rounded-xl text-xs focus:outline-none focus:border-aurelia-ocean">
+                        <i class="fa-solid fa-magnifying-glass absolute left-3 top-2.5 text-aurelia-charcoal/40"></i>
+                    </div>
+
+                    <select id="sortSelect" onchange="sortProducts()" class="bg-aurelia-soft border border-aurelia-border rounded-xl px-3 py-2 text-xs focus:outline-none focus:border-aurelia-ocean font-mono">
+                        <option value="featured">Paling Populer</option>
+                        <option value="price-low">Harga: Rendah ke Tinggi</option>
+                        <option value="price-high">Harga: Tinggi ke Rendah</option>
+                    </select>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- 5. PRODUCT GRID -->
+    <section class="py-12 sm:py-16 bg-white min-h-[600px]">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            
+            <div id="productGrid" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
+                
+                <!-- 1. Pacific Deep Blue Ocean Coaster Set -->
+                <div class="product-card bg-aurelia-soft rounded-3xl border border-aurelia-border overflow-hidden flex flex-col group" data-category="coaster" data-price="145000" data-name="Coaster Resin Ombak Laut Pacific Deep Blue Set Tatakan Gelas">
+                    <div class="relative overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?q=80&w=500&auto=format&fit=crop" alt="Pacific Ocean Coaster" class="w-full h-64 object-cover group-hover:scale-105 transition duration-500">
+                        <div class="absolute top-3 left-3 bg-aurelia-ocean text-white text-[10px] font-mono font-bold uppercase px-2.5 py-1 rounded shadow">
+                            Coaster Ombak
+                        </div>
+                        <div class="absolute bottom-3 right-3 bg-white/90 backdrop-blur-sm text-aurelia-slate text-[10px] font-mono font-bold px-2 py-0.5 rounded border border-aurelia-border">
+                            D.10cm • Isi 4 Pcs
+                        </div>
+                    </div>
+                    <div class="p-5 flex-1 flex flex-col justify-between space-y-3">
+                        <div>
+                            <span class="text-[11px] font-mono text-aurelia-ocean font-bold block">Tahan Panas 80°C • Busa Ombak 3D</span>
+                            <a href="detail.html" class="font-bold text-xl text-aurelia-slate hover:text-aurelia-ocean transition leading-snug block">
+                                Pacific Ocean Coaster Set
+                            </a>
+                            <p class="text-xs text-aurelia-charcoal/70 mt-1 line-clamp-2 font-sans">
+                                Set 4 tatakan gelas resin efek ombak laut biru toska berbusa putih dengan dasar kayu jati solid.
+                            </p>
+                        </div>
+                        <div class="pt-3 border-t border-aurelia-border flex items-center justify-between font-mono">
+                            <div>
+                                <span class="text-[10px] text-aurelia-charcoal/50 uppercase block">Set Isi 4 Coaster</span>
+                                <span class="text-sm font-bold text-aurelia-slate">Rp 145.000</span>
+                            </div>
+                            <div class="flex items-center gap-1.5">
+                                <a href="detail.html" class="px-3 py-1.5 bg-white border border-aurelia-border hover:border-aurelia-ocean text-aurelia-slate rounded-xl text-xs font-bold transition font-mono">
+                                    Detail
+                                </a>
+                                <a href="https://wa.me/6281234567890?text=Halo%20Aurelia,%20saya%20tertarik%20dengan%20Pacific%20Ocean%20Coaster%20Set." target="_blank" class="px-3 py-1.5 bg-aurelia-ocean hover:bg-aurelia-oceandeep text-white rounded-xl text-xs font-bold transition">
+                                    <i class="fa-brands fa-whatsapp"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 2. Emerald Geode 24K Gold Flake Coaster -->
+                <div class="product-card bg-aurelia-soft rounded-3xl border border-aurelia-border overflow-hidden flex flex-col group" data-category="coaster" data-price="155000" data-name="Coaster Geode Emerald Zamrud Serpihan Emas 24K Gold Flakes">
+                    <div class="relative overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1579783902614-a3fb3927b675?q=80&w=500&auto=format&fit=crop" alt="Emerald Geode Coaster" class="w-full h-64 object-cover group-hover:scale-105 transition duration-500">
+                        <div class="absolute top-3 left-3 bg-emerald-800 text-white text-[10px] font-mono font-bold uppercase px-2.5 py-1 rounded shadow">
+                            Geode Gilded
+                        </div>
+                        <div class="absolute bottom-3 right-3 bg-white/90 backdrop-blur-sm text-aurelia-slate text-[10px] font-mono font-bold px-2 py-0.5 rounded border border-aurelia-border">
+                            D.10.5cm • Isi 4 Pcs
+                        </div>
+                    </div>
+                    <div class="p-5 flex-1 flex flex-col justify-between space-y-3">
+                        <div>
+                            <span class="text-[11px] font-mono text-emerald-700 font-bold block">Tepian Emas Metalik 24K</span>
+                            <a href="detail.html" class="font-bold text-xl text-aurelia-slate hover:text-aurelia-ocean transition leading-snug block">
+                                Emerald Geode Coaster Set
+                            </a>
+                            <p class="text-xs text-aurelia-charcoal/70 mt-1 line-clamp-2 font-sans">
+                                Set 4 coaster bentuk batu geode alami warna hijau zamrud berkilau dengan taburan serpihan emas 24K.
+                            </p>
+                        </div>
+                        <div class="pt-3 border-t border-aurelia-border flex items-center justify-between font-mono">
+                            <div>
+                                <span class="text-[10px] text-aurelia-charcoal/50 uppercase block">Set Isi 4 Coaster</span>
+                                <span class="text-sm font-bold text-aurelia-slate">Rp 155.000</span>
+                            </div>
+                            <div class="flex items-center gap-1.5">
+                                <a href="detail.html" class="px-3 py-1.5 bg-white border border-aurelia-border hover:border-aurelia-ocean text-aurelia-slate rounded-xl text-xs font-bold transition font-mono">
+                                    Detail
+                                </a>
+                                <a href="https://wa.me/6281234567890?text=Halo%20Aurelia,%20saya%20tertarik%20dengan%20Emerald%20Geode%20Coaster%20Set." target="_blank" class="px-3 py-1.5 bg-aurelia-ocean hover:bg-aurelia-oceandeep text-white rounded-xl text-xs font-bold transition">
+                                    <i class="fa-brands fa-whatsapp"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 3. Black Marble Gold Vein Coaster Set -->
+                <div class="product-card bg-aurelia-soft rounded-3xl border border-aurelia-border overflow-hidden flex flex-col group" data-category="coaster" data-price="135000" data-name="Coaster Marmer Hitam Emas Black Marble Gold Resin Coaster">
+                    <div class="relative overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1544816155-12df9643f363?q=80&w=500&auto=format&fit=crop" alt="Black Marble Coaster" class="w-full h-64 object-cover group-hover:scale-105 transition duration-500">
+                        <div class="absolute top-3 left-3 bg-slate-900 text-amber-300 text-[10px] font-mono font-bold uppercase px-2.5 py-1 rounded shadow">
+                            Obsidian Gold
+                        </div>
+                        <div class="absolute bottom-3 right-3 bg-white/90 backdrop-blur-sm text-aurelia-slate text-[10px] font-mono font-bold px-2 py-0.5 rounded border border-aurelia-border">
+                            Heksagon 10cm • 4 Pcs
+                        </div>
+                    </div>
+                    <div class="p-5 flex-1 flex flex-col justify-between space-y-3">
+                        <div>
+                            <span class="text-[11px] font-mono text-slate-700 font-bold block">Urat Emas Metalik • Kaki Karet</span>
+                            <a href="detail.html" class="font-bold text-xl text-aurelia-slate hover:text-aurelia-ocean transition leading-snug block">
+                                Black Marble Coaster Set
+                            </a>
+                            <p class="text-xs text-aurelia-charcoal/70 mt-1 line-clamp-2 font-sans">
+                                Coaster heksagon marmer hitam pekat dengan aksen urat emas elegan untuk meja kopi modern & minimalis.
+                            </p>
+                        </div>
+                        <div class="pt-3 border-t border-aurelia-border flex items-center justify-between font-mono">
+                            <div>
+                                <span class="text-[10px] text-aurelia-charcoal/50 uppercase block">Set Isi 4 Coaster</span>
+                                <span class="text-sm font-bold text-aurelia-slate">Rp 135.000</span>
+                            </div>
+                            <div class="flex items-center gap-1.5">
+                                <a href="detail.html" class="px-3 py-1.5 bg-white border border-aurelia-border hover:border-aurelia-ocean text-aurelia-slate rounded-xl text-xs font-bold transition font-mono">
+                                    Detail
+                                </a>
+                                <a href="https://wa.me/6281234567890?text=Halo%20Aurelia,%20saya%20tertarik%20dengan%20Black%20Marble%20Coaster." target="_blank" class="px-3 py-1.5 bg-aurelia-ocean hover:bg-aurelia-oceandeep text-white rounded-xl text-xs font-bold transition">
+                                    <i class="fa-brands fa-whatsapp"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 4. Terrazzo Round Coaster Duo (Pastel Chips) -->
+                <div class="product-card bg-aurelia-soft rounded-3xl border border-aurelia-border overflow-hidden flex flex-col group" data-category="coaster" data-price="75000" data-name="Coaster Terrazzo Jesmonite Pastel Confetti Bulat Tatakan Cangkir">
+                    <div class="relative overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1590402494682-cd3fb53b1f70?q=80&w=500&auto=format&fit=crop" alt="Terrazzo Coaster" class="w-full h-64 object-cover group-hover:scale-105 transition duration-500">
+                        <div class="absolute top-3 left-3 bg-aurelia-coral text-white text-[10px] font-mono font-bold uppercase px-2.5 py-1 rounded shadow">
+                            Jesmonite Coaster
+                        </div>
+                        <div class="absolute bottom-3 right-3 bg-white/90 backdrop-blur-sm text-aurelia-slate text-[10px] font-mono font-bold px-2 py-0.5 rounded border border-aurelia-border">
+                            D.9.5cm • Isi 2 Pcs
+                        </div>
+                    </div>
+                    <div class="p-5 flex-1 flex flex-col justify-between space-y-3">
+                        <div>
+                            <span class="text-[11px] font-mono text-aurelia-coral font-bold block">Serpihan Batu Terrazzo Asli</span>
+                            <a href="detail.html" class="font-bold text-xl text-aurelia-slate hover:text-aurelia-ocean transition leading-snug block">
+                                Pastel Terrazzo Coaster Duo
+                            </a>
+                            <p class="text-xs text-aurelia-charcoal/70 mt-1 line-clamp-2 font-sans">
+                                Pasangan 2 tatakan gelas terrazzo komposit mineral Jesmonite AC100 dengan serpihan warna pastel manis.
+                            </p>
+                        </div>
+                        <div class="pt-3 border-t border-aurelia-border flex items-center justify-between font-mono">
+                            <div>
+                                <span class="text-[10px] text-aurelia-charcoal/50 uppercase block">Set Isi 2 Coaster</span>
+                                <span class="text-sm font-bold text-aurelia-slate">Rp 75.000</span>
+                            </div>
+                            <div class="flex items-center gap-1.5">
+                                <a href="detail.html" class="px-3 py-1.5 bg-white border border-aurelia-border hover:border-aurelia-ocean text-aurelia-slate rounded-xl text-xs font-bold transition font-mono">
+                                    Detail
+                                </a>
+                                <a href="https://wa.me/6281234567890?text=Halo%20Aurelia,%20saya%20tertarik%20dengan%20Pastel%20Terrazzo%20Coaster." target="_blank" class="px-3 py-1.5 bg-aurelia-ocean hover:bg-aurelia-oceandeep text-white rounded-xl text-xs font-bold transition">
+                                    <i class="fa-brands fa-whatsapp"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 5. Oval Pastel Terrazzo Trinket Tray -->
+                <div class="product-card bg-aurelia-soft rounded-3xl border border-aurelia-border overflow-hidden flex flex-col group" data-category="tray" data-price="85000" data-name="Nampan Oval Terrazzo Trinket Tray Wadah Perhiasan Kunci">
+                    <div class="relative overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1590402494682-cd3fb53b1f70?q=80&w=500&auto=format&fit=crop" alt="Oval Terrazzo Tray" class="w-full h-64 object-cover group-hover:scale-105 transition duration-500">
+                        <div class="absolute top-3 left-3 bg-aurelia-coral text-white text-[10px] font-mono font-bold uppercase px-2.5 py-1 rounded shadow">
+                            Best Seller Tray
+                        </div>
+                        <div class="absolute bottom-3 right-3 bg-white/90 backdrop-blur-sm text-aurelia-slate text-[10px] font-mono font-bold px-2 py-0.5 rounded border border-aurelia-border">
+                            18x9.5 cm • Eco-Resin
+                        </div>
+                    </div>
+                    <div class="p-5 flex-1 flex flex-col justify-between space-y-3">
+                        <div>
+                            <span class="text-[11px] font-mono text-aurelia-coral font-bold block">Wadah Perhiasan & Meja Rias</span>
+                            <a href="detail.html" class="font-bold text-xl text-aurelia-slate hover:text-aurelia-ocean transition leading-snug block">
+                                Oval Terrazzo Trinket Tray
+                            </a>
+                            <p class="text-xs text-aurelia-charcoal/70 mt-1 line-clamp-2 font-sans">
+                                Nampan oval serbaguna untuk meletakkan parfum, jam tangan, cincin, lilin wangi, dan kunci di meja depan.
+                            </p>
+                        </div>
+                        <div class="pt-3 border-t border-aurelia-border flex items-center justify-between font-mono">
+                            <div>
+                                <span class="text-[10px] text-aurelia-charcoal/50 uppercase block">Silky Matte Finish</span>
+                                <span class="text-sm font-bold text-aurelia-slate">Rp 85.000</span>
+                            </div>
+                            <div class="flex items-center gap-1.5">
+                                <a href="detail.html" class="px-3 py-1.5 bg-white border border-aurelia-border hover:border-aurelia-ocean text-aurelia-slate rounded-xl text-xs font-bold transition font-mono">
+                                    Detail
+                                </a>
+                                <a href="https://wa.me/6281234567890?text=Halo%20Aurelia,%20saya%20tertarik%20dengan%20Oval%20Terrazzo%20Trinket%20Tray." target="_blank" class="px-3 py-1.5 bg-aurelia-ocean hover:bg-aurelia-oceandeep text-white rounded-xl text-xs font-bold transition">
+                                    <i class="fa-brands fa-whatsapp"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 6. Arch Terrazzo Vanity Tray (Bentuk Kubah Lengkung) -->
+                <div class="product-card bg-aurelia-soft rounded-3xl border border-aurelia-border overflow-hidden flex flex-col group" data-category="tray" data-price="95000" data-name="Nampan Arch Terrazzo Bentuk Lengkung Kubah Vanity Tray">
+                    <div class="relative overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1549465220-1a8b9238cd48?q=80&w=500&auto=format&fit=crop" alt="Arch Vanity Tray" class="w-full h-64 object-cover group-hover:scale-105 transition duration-500">
+                        <div class="absolute top-3 left-3 bg-amber-800 text-white text-[10px] font-mono font-bold uppercase px-2.5 py-1 rounded shadow">
+                            Arch Minimalist
+                        </div>
+                        <div class="absolute bottom-3 right-3 bg-white/90 backdrop-blur-sm text-aurelia-slate text-[10px] font-mono font-bold px-2 py-0.5 rounded border border-aurelia-border">
+                            20x12 cm • Jesmonite
+                        </div>
+                    </div>
+                    <div class="p-5 flex-1 flex flex-col justify-between space-y-3">
+                        <div>
+                            <span class="text-[11px] font-mono text-amber-800 font-bold block">Desain Arch Arsitektural</span>
+                            <a href="detail.html" class="font-bold text-xl text-aurelia-slate hover:text-aurelia-ocean transition leading-snug block">
+                                Arch Terrazzo Vanity Tray
+                            </a>
+                            <p class="text-xs text-aurelia-charcoal/70 mt-1 line-clamp-2 font-sans">
+                                Nampan estetik bentuk lengkung kubah ala interior Mediterania dengan taburan terrazzo hitam dan terracotta.
+                            </p>
+                        </div>
+                        <div class="pt-3 border-t border-aurelia-border flex items-center justify-between font-mono">
+                            <div>
+                                <span class="text-[10px] text-aurelia-charcoal/50 uppercase block">Silky Matte Finish</span>
+                                <span class="text-sm font-bold text-aurelia-slate">Rp 95.000</span>
+                            </div>
+                            <div class="flex items-center gap-1.5">
+                                <a href="detail.html" class="px-3 py-1.5 bg-white border border-aurelia-border hover:border-aurelia-ocean text-aurelia-slate rounded-xl text-xs font-bold transition font-mono">
+                                    Detail
+                                </a>
+                                <a href="https://wa.me/6281234567890?text=Halo%20Aurelia,%20saya%20tertarik%20dengan%20Arch%20Terrazzo%20Vanity%20Tray." target="_blank" class="px-3 py-1.5 bg-aurelia-ocean hover:bg-aurelia-oceandeep text-white rounded-xl text-xs font-bold transition">
+                                    <i class="fa-brands fa-whatsapp"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 7. Ocean Resin Wooden Serving Tray (Nampan Kayu Jati Ombak) -->
+                <div class="product-card bg-aurelia-soft rounded-3xl border border-aurelia-border overflow-hidden flex flex-col group" data-category="tray" data-price="210000" data-name="Nampan Kayu Jati Resin Ombak Laut Ocean Wooden Serving Tray">
+                    <div class="relative overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?q=80&w=500&auto=format&fit=crop" alt="Ocean Wooden Tray" class="w-full h-64 object-cover group-hover:scale-105 transition duration-500">
+                        <div class="absolute top-3 left-3 bg-aurelia-ocean text-white text-[10px] font-mono font-bold uppercase px-2.5 py-1 rounded shadow">
+                            Teak & Resin
+                        </div>
+                        <div class="absolute bottom-3 right-3 bg-white/90 backdrop-blur-sm text-aurelia-slate text-[10px] font-mono font-bold px-2 py-0.5 rounded border border-aurelia-border">
+                            30x15 cm • Kayu Jati
+                        </div>
+                    </div>
+                    <div class="p-5 flex-1 flex flex-col justify-between space-y-3">
+                        <div>
+                            <span class="text-[11px] font-mono text-aurelia-ocean font-bold block">Kayu Jati Solid • Resin Ombak 3D</span>
+                            <a href="detail.html" class="font-bold text-xl text-aurelia-slate hover:text-aurelia-ocean transition leading-snug block">
+                                Ocean Wooden Serving Tray
+                            </a>
+                            <p class="text-xs text-aurelia-charcoal/70 mt-1 line-clamp-2 font-sans">
+                                Nampan saji kayu jati solid berpadu aksen resin seni ombak pantai toska untuk menyajikan kopi dan camilan kue.
+                            </p>
+                        </div>
+                        <div class="pt-3 border-t border-aurelia-border flex items-center justify-between font-mono">
+                            <div>
+                                <span class="text-[10px] text-aurelia-charcoal/50 uppercase block">Food-Safe Finish</span>
+                                <span class="text-sm font-bold text-aurelia-slate">Rp 210.000</span>
+                            </div>
+                            <div class="flex items-center gap-1.5">
+                                <a href="detail.html" class="px-3 py-1.5 bg-white border border-aurelia-border hover:border-aurelia-ocean text-aurelia-slate rounded-xl text-xs font-bold transition font-mono">
+                                    Detail
+                                </a>
+                                <a href="https://wa.me/6281234567890?text=Halo%20Aurelia,%20saya%20tertarik%20dengan%20Ocean%20Wooden%20Serving%20Tray." target="_blank" class="px-3 py-1.5 bg-aurelia-ocean hover:bg-aurelia-oceandeep text-white rounded-xl text-xs font-bold transition">
+                                    <i class="fa-brands fa-whatsapp"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 8. Ocean Tide 3D Resin Wall Clock (D.30cm) -->
+                <div class="product-card bg-aurelia-soft rounded-3xl border border-aurelia-border overflow-hidden flex flex-col group" data-category="clock" data-price="320000" data-name="Jam Dinding Resin Seni Ombak Laut 3D Ocean Tide Wall Clock 30cm">
+                    <div class="relative overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1513519245088-0e12902e5a38?q=80&w=500&auto=format&fit=crop" alt="Jam Dinding Ombak 30cm" class="w-full h-64 object-cover group-hover:scale-105 transition duration-500">
+                        <div class="absolute top-3 left-3 bg-aurelia-oceandeep text-white text-[10px] font-mono font-bold uppercase px-2.5 py-1 rounded shadow">
+                            Wall Clock 30cm
+                        </div>
+                        <div class="absolute bottom-3 right-3 bg-white/90 backdrop-blur-sm text-aurelia-slate text-[10px] font-mono font-bold px-2 py-0.5 rounded border border-aurelia-border">
+                            D.30cm • Mesin Sweep
+                        </div>
+                    </div>
+                    <div class="p-5 flex-1 flex flex-col justify-between space-y-3">
+                        <div>
+                            <span class="text-[11px] font-mono text-aurelia-ocean font-bold block">Mesin Hening Tanpa Detak • Kayu Solid</span>
+                            <a href="detail.html" class="font-bold text-xl text-aurelia-slate hover:text-aurelia-ocean transition leading-snug block">
+                                Ocean Tide Wall Clock (30cm)
+                            </a>
+                            <p class="text-xs text-aurelia-charcoal/70 mt-1 line-clamp-2 font-sans">
+                                Jam dinding resin seni ombak laut gradasi biru tua toska dengan jarum jam warna emas metalik dan angka timbul.
+                            </p>
+                        </div>
+                        <div class="pt-3 border-t border-aurelia-border flex items-center justify-between font-mono">
+                            <div>
+                                <span class="text-[10px] text-aurelia-charcoal/50 uppercase block">Free Baterai AA</span>
+                                <span class="text-sm font-bold text-aurelia-slate">Rp 320.000</span>
+                            </div>
+                            <div class="flex items-center gap-1.5">
+                                <a href="detail.html" class="px-3 py-1.5 bg-white border border-aurelia-border hover:border-aurelia-ocean text-aurelia-slate rounded-xl text-xs font-bold transition font-mono">
+                                    Detail
+                                </a>
+                                <a href="https://wa.me/6281234567890?text=Halo%20Aurelia,%20saya%20tertarik%20dengan%20Ocean%20Tide%20Clock%2030cm." target="_blank" class="px-3 py-1.5 bg-aurelia-ocean hover:bg-aurelia-oceandeep text-white rounded-xl text-xs font-bold transition">
+                                    <i class="fa-brands fa-whatsapp"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 9. Grand Caribbean Resin Wall Clock (D.40cm) -->
+                <div class="product-card bg-aurelia-soft rounded-3xl border border-aurelia-border overflow-hidden flex flex-col group" data-category="clock" data-price="490000" data-name="Jam Dinding Besar Resin Ombak Laut Grand Caribbean Wall Clock 40cm">
+                    <div class="relative overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1518895949257-7621c3c786d7?q=80&w=500&auto=format&fit=crop" alt="Jam Dinding Grand 40cm" class="w-full h-64 object-cover group-hover:scale-105 transition duration-500">
+                        <div class="absolute top-3 left-3 bg-aurelia-slate text-sky-300 text-[10px] font-mono font-bold uppercase px-2.5 py-1 rounded shadow">
+                            Grand Clock 40cm
+                        </div>
+                        <div class="absolute bottom-3 right-3 bg-white/90 backdrop-blur-sm text-aurelia-slate text-[10px] font-mono font-bold px-2 py-0.5 rounded border border-aurelia-border">
+                            D.40cm • 4 Lapis Ombak
+                        </div>
+                    </div>
+                    <div class="p-5 flex-1 flex flex-col justify-between space-y-3">
+                        <div>
+                            <span class="text-[11px] font-mono text-aurelia-ocean font-bold block">4 Lapisan Resin • Pasir Pantai Asli</span>
+                            <a href="detail.html" class="font-bold text-xl text-aurelia-slate hover:text-aurelia-ocean transition leading-snug block">
+                                Grand Caribbean Clock (40cm)
+                            </a>
+                            <p class="text-xs text-aurelia-charcoal/70 mt-1 line-clamp-2 font-sans">
+                                Jam dinding ukuran besar diameter 40cm untuk ruang tamu atau lobi kafe dengan efek ombak karibia 4 lapis resin tebal.
+                            </p>
+                        </div>
+                        <div class="pt-3 border-t border-aurelia-border flex items-center justify-between font-mono">
+                            <div>
+                                <span class="text-[10px] text-aurelia-charcoal/50 uppercase block">Packing Kayu Ekspedisi</span>
+                                <span class="text-sm font-bold text-aurelia-slate">Rp 490.000</span>
+                            </div>
+                            <div class="flex items-center gap-1.5">
+                                <a href="detail.html" class="px-3 py-1.5 bg-white border border-aurelia-border hover:border-aurelia-ocean text-aurelia-slate rounded-xl text-xs font-bold transition font-mono">
+                                    Detail
+                                </a>
+                                <a href="https://wa.me/6281234567890?text=Halo%20Aurelia,%20saya%20tertarik%20dengan%20Grand%20Caribbean%20Clock%2040cm." target="_blank" class="px-3 py-1.5 bg-aurelia-ocean hover:bg-aurelia-oceandeep text-white rounded-xl text-xs font-bold transition">
+                                    <i class="fa-brands fa-whatsapp"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 10. Pressed Flower Resin Bookmark & Keychain Set -->
+                <div class="product-card bg-aurelia-soft rounded-3xl border border-aurelia-border overflow-hidden flex flex-col group" data-category="accessory" data-price="45000" data-name="Pembatas Buku Resin Bunga Kering Pressed Flower Bookmark Gantungan Kunci">
+                    <div class="relative overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1563245372-f21724e3856d?q=80&w=500&auto=format&fit=crop" alt="Resin Bookmark" class="w-full h-64 object-cover group-hover:scale-105 transition duration-500">
+                        <div class="absolute top-3 left-3 bg-purple-900 text-white text-[10px] font-mono font-bold uppercase px-2.5 py-1 rounded shadow">
+                            Aksesori Kado
+                        </div>
+                        <div class="absolute bottom-3 right-3 bg-white/90 backdrop-blur-sm text-aurelia-slate text-[10px] font-mono font-bold px-2 py-0.5 rounded border border-aurelia-border">
+                            14x2.5 cm • Rumbai Emas
+                        </div>
+                    </div>
+                    <div class="p-5 flex-1 flex flex-col justify-between space-y-3">
+                        <div>
+                            <span class="text-[11px] font-mono text-purple-800 font-bold block">Bunga Asli Preserved • Rumbai Sutra</span>
+                            <a href="detail.html" class="font-bold text-xl text-aurelia-slate hover:text-aurelia-ocean transition leading-snug block">
+                                Floral Resin Bookmark & Keychain
+                            </a>
+                            <p class="text-xs text-aurelia-charcoal/70 mt-1 line-clamp-2 font-sans">
+                                Pembatas buku resin ultra bening berisi bunga liar asli yang diawetkan dan serpihan foil emas dengan rumbai sutra.
+                            </p>
+                        </div>
+                        <div class="pt-3 border-t border-aurelia-border flex items-center justify-between font-mono">
+                            <div>
+                                <span class="text-[10px] text-aurelia-charcoal/50 uppercase block">Pilihan Souvenir Murah</span>
+                                <span class="text-sm font-bold text-aurelia-slate">Rp 45.000</span>
+                            </div>
+                            <div class="flex items-center gap-1.5">
+                                <a href="detail.html" class="px-3 py-1.5 bg-white border border-aurelia-border hover:border-aurelia-ocean text-aurelia-slate rounded-xl text-xs font-bold transition font-mono">
+                                    Detail
+                                </a>
+                                <a href="https://wa.me/6281234567890?text=Halo%20Aurelia,%20saya%20tertarik%20dengan%20Floral%20Resin%20Bookmark." target="_blank" class="px-3 py-1.5 bg-aurelia-ocean hover:bg-aurelia-oceandeep text-white rounded-xl text-xs font-bold transition">
+                                    <i class="fa-brands fa-whatsapp"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- Empty Search State -->
+            <div id="noResults" class="hidden py-16 text-center space-y-3 font-mono">
+                <i class="fa-solid fa-water text-4xl text-aurelia-charcoal/30"></i>
+                <p class="text-sm font-bold text-aurelia-slate">Karya resin atau terrazzo yang dicari tidak ditemukan</p>
+                <p class="text-xs text-aurelia-charcoal/60">Coba ubah kata kunci pencarian atau pilih kategori lainnya.</p>
+                <button onclick="filterCategory('all')" class="mt-2 px-4 py-2 bg-aurelia-ocean text-white text-xs font-bold rounded-xl font-mono">
+                    Tampilkan Semua Karya
+                </button>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- 6. FOOTER -->
+    <footer class="bg-slate-950 text-slate-300 py-16 border-t border-white/10 font-sans">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-10 mb-12">
+                <div class="lg:col-span-2 space-y-4">
+                    <a href="index.html" class="flex items-center gap-3">
+                        <div class="w-10 h-10 bg-aurelia-ocean text-white flex items-center justify-center text-lg font-bold rounded-lg">
+                            <i class="fa-solid fa-water"></i>
+                        </div>
+                        <span class="text-2xl font-bold tracking-tight text-white uppercase font-mono">
+                            AURELIA<span class="text-aurelia-coral">.</span>
+                        </span>
+                    </a>
+                    <p class="text-xs text-slate-400 leading-relaxed max-w-sm font-sans">
+                        Studio kriya kontemporer resin art & terrazzo Jesmonite: Coaster tatakan gelas tahan panas 80°C, trinket tray estetik, jam dinding ombak laut 3D, dan souvenir pernikahan handmade.
+                    </p>
+                </div>
+                <div class="space-y-3 font-mono">
+                    <h5 class="text-xs font-bold text-white uppercase tracking-wider">Kategori Karya</h5>
+                    <ul class="space-y-2 text-xs text-slate-400">
+                        <li><a href="katalog.html" class="hover:text-sky-300 transition">Ocean Wave Coaster</a></li>
+                        <li><a href="katalog.html" class="hover:text-sky-300 transition">Terrazzo Trinket Tray</a></li>
+                        <li><a href="katalog.html" class="hover:text-sky-300 transition">Jam Dinding Ombak Laut</a></li>
+                        <li><a href="katalog.html" class="hover:text-sky-300 transition">Bookmark & Keychain</a></li>
+                    </ul>
+                </div>
+                <div class="space-y-3 font-mono">
+                    <h5 class="text-xs font-bold text-white uppercase tracking-wider">Navigasi</h5>
+                    <ul class="space-y-2 text-xs text-slate-400">
+                        <li><a href="index.html" class="hover:text-sky-300 transition">Beranda</a></li>
+                        <li><a href="katalog.html" class="hover:text-sky-300 transition">Katalog Produk</a></li>
+                        <li><a href="tentang.html" class="hover:text-sky-300 transition">Teknik Resin</a></li>
+                        <li><a href="kontak.html" class="hover:text-sky-300 transition">Studio & Kontak</a></li>
+                    </ul>
+                </div>
+                <div class="space-y-3 font-mono text-xs">
+                    <h5 class="text-xs font-bold text-white uppercase tracking-wider">WhatsApp Fast Order</h5>
+                    <p class="text-slate-400">Konsultasi custom souvenir & warna:</p>
+                    <p class="text-sky-300 font-bold text-sm">+62 812-3456-7890</p>
+                </div>
+            </div>
+            <div class="pt-8 border-t border-white/10 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs font-mono text-slate-500">
+                <p>&copy; 2026 AURELIA RESIN & TERRAZZO ATELIER. All rights reserved.</p>
+                <p>Template UMKM Kriya Resin Art & Coaster by Lentera Pasar</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- 7. FLOATING WHATSAPP -->
+    <div class="fixed bottom-24 right-4 sm:right-6 z-40">
+        <a href="https://wa.me/6281234567890?text=Halo%20Aurelia,%20saya%20tertarik%20dengan%20katalog%20karya%20resin." 
+           target="_blank" 
+           class="flex items-center gap-2.5 bg-emerald-600 hover:bg-emerald-700 text-white px-4 py-3 rounded-full shadow-2xl transition-all duration-300 hover:scale-105 font-mono text-xs font-bold border-2 border-sky-300">
+            <i class="fa-brands fa-whatsapp text-xl"></i>
+            <span class="hidden sm:inline">WhatsApp Studio</span>
+        </a>
+    </div>
+
+    <!-- 8. LENTERA PASAR STICKY DEMO BAR -->
+    <div class="fixed bottom-4 left-4 right-4 z-50 max-w-5xl mx-auto">
+      <div class="bg-slate-900/95 backdrop-blur-md text-white px-4 py-3 rounded-2xl shadow-2xl border border-slate-700/80 flex flex-col md:flex-row items-center justify-between gap-3">
+        <div class="flex items-center gap-3">
+          <div class="w-8 h-8 rounded-lg bg-amber-600/30 border border-amber-500/50 flex items-center justify-center shrink-0">
+            <svg class="w-4 h-4 text-amber-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z" /></svg>
+          </div>
+          <div>
+            <div class="text-xs md:text-sm font-bold text-slate-100 flex items-center gap-2">
+              <span>Lentera Pasar Demo</span>
+              <span class="text-[10px] px-1.5 py-0.5 rounded bg-amber-500/20 text-amber-300 font-mono">Katalog Resin Art & Terrazzo</span>
+            </div>
+            <p class="text-[11px] text-slate-400 hidden sm:block">Filter kategori real-time, pencarian karya coaster/tray/jam dinding, dan order WhatsApp instan.</p>
+          </div>
+        </div>
+
+        <div class="flex items-center gap-3 w-full md:w-auto justify-end">
+          <a href="https://wa.me/6281234567890?text=Halo%20Tim%20Lentera%20Pasar,%20saya%20tertarik%20menggunakan%20template%20website%20Resin%20Art%20ini." 
+             target="_blank"
+             class="w-full md:w-auto inline-flex items-center justify-center gap-2 bg-gradient-to-r from-amber-600 to-amber-800 hover:from-amber-500 hover:to-amber-700 text-white text-xs md:text-sm font-bold px-5 py-2.5 rounded-xl shadow-lg transition-all hover:scale-105 shrink-0 font-sans">
+            <span>Gunakan Template Ini</span>
+            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3" /></svg>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <!-- SCRIPT FILTER & SORT -->
+    <script>
+        let currentCategory = 'all';
+
+        function filterCategory(cat) {
+            currentCategory = cat;
+            document.querySelectorAll('.cat-tab').forEach(btn => {
+                btn.classList.remove('bg-aurelia-ocean', 'text-white', 'border-aurelia-ocean/40');
+                btn.classList.add('bg-aurelia-soft', 'border', 'border-aurelia-border', 'text-aurelia-charcoal');
+            });
+            const activeBtn = document.getElementById(`tab-${cat}`);
+            if (activeBtn) {
+                activeBtn.classList.remove('bg-aurelia-soft', 'border', 'border-aurelia-border', 'text-aurelia-charcoal');
+                activeBtn.classList.add('bg-aurelia-ocean', 'text-white', 'border-aurelia-ocean/40');
+            }
+
+            applyFilters();
+        }
+
+        function searchProducts() {
+            applyFilters();
+        }
+
+        function applyFilters() {
+            const query = document.getElementById('searchInput').value.toLowerCase();
+            const cards = document.querySelectorAll('.product-card');
+            let visibleCount = 0;
+
+            cards.forEach(card => {
+                const cardCat = card.getAttribute('data-category');
+                const cardName = card.getAttribute('data-name').toLowerCase();
+
+                const matchesCat = (currentCategory === 'all' || cardCat === currentCategory);
+                const matchesSearch = cardName.includes(query);
+
+                if (matchesCat && matchesSearch) {
+                    card.style.display = 'flex';
+                    visibleCount++;
+                } else {
+                    card.style.display = 'none';
+                }
+            });
+
+            const noResults = document.getElementById('noResults');
+            if (visibleCount === 0) {
+                noResults.classList.remove('hidden');
+            } else {
+                noResults.classList.add('hidden');
+            }
+        }
+
+        function sortProducts() {
+            const sortVal = document.getElementById('sortSelect').value;
+            const grid = document.getElementById('productGrid');
+            const cards = Array.from(grid.querySelectorAll('.product-card'));
+
+            cards.sort((a, b) => {
+                const priceA = parseInt(a.getAttribute('data-price'));
+                const priceB = parseInt(b.getAttribute('data-price'));
+
+                if (sortVal === 'price-low') {
+                    return priceA - priceB;
+                } else if (sortVal === 'price-high') {
+                    return priceB - priceA;
+                } else {
+                    return 0;
+                }
+            });
+
+            cards.forEach(card => grid.appendChild(card));
+        }
+
+        // Mobile menu toggle
+        const mobileMenuBtn = document.getElementById('mobileMenuBtn');
+        const mobileMenu = document.getElementById('mobileMenu');
+        const menuIcon = document.getElementById('menuIcon');
+
+        mobileMenuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+            if (mobileMenu.classList.contains('hidden')) {
+                menuIcon.classList.remove('fa-xmark');
+                menuIcon.classList.add('fa-bars');
+            } else {
+                menuIcon.classList.remove('fa-bars');
+                menuIcon.classList.add('fa-xmark');
+            }
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,445 @@
+<!DOCTYPE html>
+<html lang="id" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jurnal Resin & Panduan Merawat Coaster Mengkilap // AURELIA</title>
+    <meta name="description" content="Edukasi kriya resin: Cara merawat coaster resin agar tetap mengkilap bebas goresan, mengenal bahan Jesmonite eco-terrazzo, dan ide dekorasi meja kopi.">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome 6 -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        aurelia: {
+                            white: '#FFFFFF',
+                            soft: '#F8F9FA',
+                            border: '#E9ECEF',
+                            ocean: '#0077B6',
+                            oceandeep: '#023E8A',
+                            oceansoft: '#E0F2FE',
+                            coral: '#E76F51',
+                            peach: '#F4A261',
+                            coralsoft: '#FFEDD5',
+                            gold: '#D97706',
+                            slate: '#0F172A',
+                            charcoal: '#1E293B'
+                        }
+                    },
+                    fontFamily: {
+                        sans: ['"Plus Jakarta Sans"', 'sans-serif'],
+                        mono: ['"Space Grotesk"', 'monospace']
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        .no-scrollbar::-webkit-scrollbar { display: none; }
+        .no-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
+
+        .btn-atelier {
+            transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+        }
+        .btn-atelier:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 12px 24px -6px rgba(0, 119, 182, 0.35);
+        }
+
+        .article-card {
+            transition: all 0.35s ease;
+        }
+        .article-card:hover {
+            transform: translateY(-4px);
+        }
+    </style>
+</head>
+<body class="bg-aurelia-soft text-aurelia-charcoal font-sans antialiased selection:bg-aurelia-ocean selection:text-white">
+
+    <!-- 1. TOP BAR -->
+    <div class="bg-aurelia-slate text-aurelia-soft text-xs py-2 px-4 font-mono border-b border-aurelia-ocean/30">
+        <div class="max-w-7xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-2 text-center sm:text-left">
+            <div class="flex items-center gap-2">
+                <span class="px-2 py-0.5 bg-aurelia-coral text-white text-[10px] uppercase font-mono font-bold rounded">RESIN & TERRAZZO JOURNAL</span>
+                <span class="text-white/95">Edukasi Perawatan Coaster Mengkilap & Inspirasi Dekorasi Meja Kafe Modern</span>
+            </div>
+            <div class="text-xs">
+                <span>Katalog Produk: <a href="katalog.html" class="text-sky-300 hover:underline font-bold">Lihat Koleksi Karya &rarr;</a></span>
+            </div>
+        </div>
+    </div>
+
+    <!-- 2. NAVBAR -->
+    <header class="sticky top-0 z-40 bg-white/95 backdrop-blur-md border-b border-aurelia-border transition-all">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-20 sm:h-24">
+                
+                <!-- Logo -->
+                <a href="index.html" class="flex items-center gap-3.5 group">
+                    <div class="w-12 h-12 bg-aurelia-ocean text-white flex items-center justify-center text-xl font-bold rounded-2xl shadow-md group-hover:bg-aurelia-oceandeep transition">
+                        <i class="fa-solid fa-water"></i>
+                    </div>
+                    <div class="flex flex-col">
+                        <span class="text-2xl sm:text-3xl font-extrabold tracking-tight text-aurelia-slate uppercase leading-none font-mono">
+                            AURELIA<span class="text-aurelia-coral">.</span>
+                        </span>
+                        <span class="text-[9px] font-mono tracking-[0.28em] text-aurelia-ocean uppercase mt-1 font-bold">
+                            RESIN & TERRAZZO ATELIER
+                        </span>
+                    </div>
+                </a>
+
+                <!-- Desktop Navigation Links -->
+                <nav class="hidden lg:flex items-center gap-8 text-xs font-bold tracking-wider uppercase text-aurelia-charcoal/80 font-mono">
+                    <a href="index.html" class="hover:text-aurelia-ocean transition">Beranda</a>
+                    <a href="katalog.html" class="hover:text-aurelia-ocean transition">Koleksi Coaster & Tray</a>
+                    <a href="detail.html" class="hover:text-aurelia-ocean transition">Detail Ocean Coaster</a>
+                    <a href="tentang.html" class="hover:text-aurelia-ocean transition">Teknik Resin & Jesmonite</a>
+                    <a href="artikel.html" class="text-aurelia-ocean border-b-2 border-aurelia-ocean pb-1 font-bold">Perawatan & Tips</a>
+                    <a href="kontak.html" class="hover:text-aurelia-ocean transition">Studio & Workshop</a>
+                </nav>
+
+                <!-- Actions -->
+                <div class="hidden sm:flex items-center gap-3 font-mono">
+                    <a href="katalog.html" class="inline-flex items-center gap-2 px-3.5 py-2.5 bg-aurelia-soft border border-aurelia-border hover:border-aurelia-ocean text-xs font-bold text-aurelia-slate rounded-xl transition shadow-xs">
+                        <i class="fa-solid fa-palette text-aurelia-ocean"></i>
+                        <span>Koleksi Resin</span>
+                    </a>
+                    <a href="https://wa.me/6281234567890?text=Halo%20Aurelia,%20saya%20tertarik%20tanya%20tips%20perawatan%20coaster." target="_blank" class="inline-flex items-center gap-2 bg-aurelia-slate hover:bg-black text-white text-xs font-bold tracking-wider px-5 py-2.5 rounded-xl border border-aurelia-ocean/40 transition-all shadow-md font-mono btn-atelier">
+                        <i class="fa-brands fa-whatsapp text-sm text-green-400"></i>
+                        <span>Order via WA</span>
+                    </a>
+                </div>
+
+                <!-- Mobile Hamburger Button -->
+                <button id="mobileMenuBtn" class="lg:hidden p-2.5 text-aurelia-charcoal hover:text-aurelia-ocean focus:outline-none" aria-label="Toggle Menu">
+                    <i id="menuIcon" class="fa-solid fa-bars text-xl"></i>
+                </button>
+            </div>
+        </div>
+
+        <!-- Mobile Drawer -->
+        <div id="mobileMenu" class="hidden lg:hidden bg-white border-b border-aurelia-border px-5 py-5 space-y-3 font-mono shadow-xl">
+            <a href="index.html" class="block text-xs font-bold uppercase tracking-wider text-aurelia-charcoal hover:text-aurelia-ocean py-2 border-b border-aurelia-border">Beranda Utama</a>
+            <a href="katalog.html" class="block text-xs font-bold uppercase tracking-wider text-aurelia-charcoal hover:text-aurelia-ocean py-2 border-b border-aurelia-border">Koleksi Coaster & Tray</a>
+            <a href="detail.html" class="block text-xs font-bold uppercase tracking-wider text-aurelia-charcoal hover:text-aurelia-ocean py-2 border-b border-aurelia-border">Detail Ocean Wave Coaster</a>
+            <a href="tentang.html" class="block text-xs font-bold uppercase tracking-wider text-aurelia-charcoal hover:text-aurelia-ocean py-2 border-b border-aurelia-border">Teknik Resin & Jesmonite</a>
+            <a href="artikel.html" class="block text-xs font-bold uppercase tracking-wider text-aurelia-ocean py-2 border-b border-aurelia-border">Tips Merawat Coaster</a>
+            <a href="kontak.html" class="block text-xs font-bold uppercase tracking-wider text-aurelia-charcoal hover:text-aurelia-ocean py-2">Studio & Workshop DIY</a>
+            <div class="pt-3">
+                <a href="https://wa.me/6281234567890?text=Halo%20Aurelia." target="_blank" class="w-full py-3 bg-aurelia-slate text-white rounded-xl text-xs font-bold uppercase tracking-wider text-center flex items-center justify-center gap-2 font-mono border border-aurelia-ocean">
+                    <i class="fa-brands fa-whatsapp text-green-400"></i> WhatsApp Fast Response
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- 3. ARTIKEL HEADER -->
+    <section class="py-12 sm:py-16 border-b border-aurelia-border bg-white relative">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="max-w-3xl space-y-3">
+                <div class="flex items-center gap-2 text-xs font-mono text-aurelia-ocean uppercase font-bold">
+                    <a href="index.html" class="hover:underline">Beranda</a>
+                    <span>/</span>
+                    <span>Jurnal Resin & Panduan Perawatan</span>
+                </div>
+                <h1 class="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-aurelia-slate tracking-tight">
+                    Jurnal Resin & Seni Dekorasi Meja
+                </h1>
+                <p class="text-sm sm:text-base text-aurelia-charcoal/75 font-sans leading-relaxed">
+                    Panduan praktis menjaga kilau resin tetap mengkilap bebas baret, mengenal karakteristik komposit Jesmonite terrazzo ramah lingkungan, dan tips penataan nampan meja kopi.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- 4. FEATURED MAIN ARTICLE -->
+    <section class="py-12 sm:py-16 bg-aurelia-soft border-b border-aurelia-border">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            
+            <div class="bg-white rounded-3xl border border-aurelia-border overflow-hidden shadow-lg grid grid-cols-1 lg:grid-cols-12 items-center">
+                
+                <div class="lg:col-span-6 h-full">
+                    <img src="https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?q=80&w=1000&auto=format&fit=crop" 
+                         alt="Panduan Merawat Coaster Resin" 
+                         class="w-full h-72 sm:h-96 lg:h-full object-cover">
+                </div>
+
+                <div class="lg:col-span-6 p-6 sm:p-10 space-y-4">
+                    <div class="flex items-center gap-2 text-xs font-mono">
+                        <span class="px-2.5 py-1 bg-aurelia-ocean text-white font-bold uppercase rounded font-mono">Resin Care Guide</span>
+                        <span class="text-aurelia-charcoal/60">3 Menit Baca</span>
+                    </div>
+
+                    <h2 class="text-2xl sm:text-3xl font-extrabold text-aurelia-slate leading-tight">
+                        Cara Mudah Merawat Coaster Resin Agar Tetap Mengkilap Seperti Kaca Bebas Goresan Halus.
+                    </h2>
+
+                    <p class="text-xs sm:text-sm text-aurelia-charcoal/75 leading-relaxed font-sans">
+                        Resin memiliki ketahanan yang luar biasa, namun penggunaan spons kawat kasar atau cairan kimia abrasif dapat memudarkan kilau cerminnya. Simak panduan perawatan harian yang tepat.
+                    </p>
+
+                    <div class="pt-2 font-mono flex items-center justify-between">
+                        <button onclick="toggleArticleDetail('article1')" class="inline-flex items-center gap-2 text-xs font-bold text-aurelia-ocean hover:text-aurelia-slate transition border-b-2 border-aurelia-ocean pb-0.5">
+                            <span>Baca 4 Langkah Perawatan Selengkapnya</span>
+                            <i class="fa-solid fa-arrow-down"></i>
+                        </button>
+                        <span class="text-xs text-aurelia-charcoal/50">Diperbarui: Agustus 2026</span>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- Expandable Article 1 Body -->
+            <div id="article1" class="hidden mt-6 bg-white p-6 sm:p-10 rounded-3xl border border-aurelia-border shadow-sm space-y-4 font-sans text-sm text-aurelia-charcoal/80 leading-relaxed">
+                <h3 class="font-bold text-xl text-aurelia-slate font-sans">4 Aturan Emas Merawat Coaster Resin:</h3>
+                <ol class="list-decimal pl-5 space-y-2 font-sans">
+                    <li><strong>Gunakan Kain Microfiber Lembut:</strong> Bersihkan tumpahan kopi atau teh cukup dengan menyeka menggunakan kain microfiber basah dan sabun cuci piring lembut. Jangan gunakan sabut kawat cuci piring.</li>
+                    <li><strong>Bukan untuk Piring Panas Oven (Maks. 80°C):</strong> Coaster resin sangat aman untuk cangkir kopi panas atau cangkir teh mendidih (hingga 80°C), tetapi jangan ditaruh wajan panas yang baru saja diangkat dari atas kompor gas.</li>
+                    <li><strong>Hindari Cairan Aseton / Alkohol Konsentrasi Tinggi:</strong> Cairan pembersih cat kuku (aseton) dapat merusak kilau resin. Gunakan air hangat dan lap basah biasa.</li>
+                    <li><strong>Oleskan Sedikit Minyak Kelapa / Wax untuk Mengembalikan Kilau:</strong> Jika setelah pemakaian bertahun-tahun permukaannya terlihat kusam karena debu mikro, usapkan setetes baby oil atau mineral oil lalu gosok melingkar dengan lap bersih.</li>
+                </ol>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- 5. 3-COLUMN ARTICLES GRID -->
+    <section class="py-16 sm:py-20 bg-white border-b border-aurelia-border">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            
+            <div class="text-center max-w-2xl mx-auto mb-12 space-y-2">
+                <span class="text-xs font-mono font-bold uppercase tracking-widest text-aurelia-ocean">
+                    Artisanal Knowledge
+                </span>
+                <h2 class="text-3xl sm:text-4xl font-extrabold text-aurelia-slate">
+                    Artikel & Edukasi Kriya Meja
+                </h2>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                
+                <!-- Article 2 -->
+                <div class="article-card bg-aurelia-soft rounded-3xl border border-aurelia-border overflow-hidden flex flex-col justify-between shadow-sm">
+                    <div>
+                        <img src="https://images.unsplash.com/photo-1590402494682-cd3fb53b1f70?q=80&w=600&auto=format&fit=crop" 
+                             alt="Mengenal Jesmonite Terrazzo" 
+                             class="w-full h-52 object-cover">
+                        <div class="p-6 space-y-3">
+                            <span class="text-[10px] font-mono font-bold uppercase px-2.5 py-1 bg-orange-100 text-aurelia-coral rounded">
+                                Eco Material
+                            </span>
+                            <h3 class="font-bold text-xl text-aurelia-slate leading-snug">
+                                Mengenal Jesmonite AC100: Material Komposit Ramah Lingkungan Bebas Emisi Kimia VOC
+                            </h3>
+                            <p class="text-xs text-aurelia-charcoal/70 leading-relaxed font-sans line-clamp-3">
+                                Mengapa desainer interior di seluruh dunia mulai beralih ke Jesmonite sebagai alternatif semen terrazzo yang ringan dan aman bagi bumi.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="px-6 pb-6 pt-2 font-mono text-xs flex items-center justify-between border-t border-aurelia-border">
+                        <a href="tentang.html" class="font-bold text-aurelia-ocean hover:text-aurelia-slate transition">
+                            Baca Riset Bahan &rarr;
+                        </a>
+                        <span class="text-aurelia-charcoal/50 text-[11px]">4 Menit</span>
+                    </div>
+                </div>
+
+                <!-- Article 3 -->
+                <div class="article-card bg-aurelia-soft rounded-3xl border border-aurelia-border overflow-hidden flex flex-col justify-between shadow-sm">
+                    <div>
+                        <img src="https://images.unsplash.com/photo-1549465220-1a8b9238cd48?q=80&w=600&auto=format&fit=crop" 
+                             alt="Ide Styling Trinket Tray" 
+                             class="w-full h-52 object-cover">
+                        <div class="p-6 space-y-3">
+                            <span class="text-[10px] font-mono font-bold uppercase px-2.5 py-1 bg-sky-100 text-aurelia-ocean rounded">
+                                Home Decor Styling
+                            </span>
+                            <h3 class="font-bold text-xl text-aurelia-slate leading-snug">
+                                5 Ide Menata Nampan Trinket Tray Terrazzo di Meja Rias dan Meja Kerja Kantor
+                            </h3>
+                            <p class="text-xs text-aurelia-charcoal/70 leading-relaxed font-sans line-clamp-3">
+                                Inspirasi dekorasi praktis untuk merapikan parfum harian, cincin emas, kacamata baca, dan lilin aromaterapi agar terlihat estetik di foto.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="px-6 pb-6 pt-2 font-mono text-xs flex items-center justify-between border-t border-aurelia-border">
+                        <a href="katalog.html" class="font-bold text-aurelia-ocean hover:text-aurelia-slate transition">
+                            Lihat Nampan &rarr;
+                        </a>
+                        <span class="text-aurelia-charcoal/50 text-[11px]">3 Menit</span>
+                    </div>
+                </div>
+
+                <!-- Article 4 -->
+                <div class="article-card bg-aurelia-soft rounded-3xl border border-aurelia-border overflow-hidden flex flex-col justify-between shadow-sm">
+                    <div>
+                        <img src="https://images.unsplash.com/photo-1514432324607-a09d9b4aefdd?q=80&w=600&auto=format&fit=crop" 
+                             alt="Coaster untuk Coffee Shop" 
+                             class="w-full h-52 object-cover">
+                        <div class="p-6 space-y-3">
+                            <span class="text-[10px] font-mono font-bold uppercase px-2.5 py-1 bg-emerald-100 text-emerald-800 rounded">
+                                Cafe Business
+                            </span>
+                            <h3 class="font-bold text-xl text-aurelia-slate leading-snug">
+                                Mengapa Coaster Resin Ombak Laut Menjadi Senjata Branding Viral Bagi Coffee Shop
+                            </h3>
+                            <p class="text-xs text-aurelia-charcoal/70 leading-relaxed font-sans line-clamp-3">
+                                Cara coaster unik memicu pelanggan kafe membuat konten Instagram Story secara sukarela dan memperkuat identitas visual tempat ngopi Anda.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="px-6 pb-6 pt-2 font-mono text-xs flex items-center justify-between border-t border-aurelia-border">
+                        <a href="detail.html" class="font-bold text-aurelia-ocean hover:text-aurelia-slate transition">
+                            Pesan Custom Kafe &rarr;
+                        </a>
+                        <span class="text-aurelia-charcoal/50 text-[11px]">3 Menit</span>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+    <!-- 6. NEWSLETTER & RESIN ART LOOKBOOK SIGNUP -->
+    <section class="py-14 bg-aurelia-soft border-b border-aurelia-border">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center space-y-4">
+            <span class="text-xs font-mono font-bold uppercase tracking-widest text-aurelia-ocean">
+                Unduh Lookbook Desain Meja
+            </span>
+            <h3 class="text-2xl sm:text-3xl font-extrabold text-aurelia-slate">
+                Dapatkan PDF "Contemporary Table Art: Resin & Terrazzo Lookbook 2026"
+            </h3>
+            <p class="text-xs sm:text-sm text-aurelia-charcoal/75 max-w-xl mx-auto font-sans">
+                Kirim nomor WhatsApp atau Email Anda untuk menerima katalog lengkap palet warna kustom, pricelist souvenir kafe, dan jadwal kelas workshop resin terbaru.
+            </p>
+            <div class="max-w-md mx-auto flex items-center gap-2 pt-2 font-mono">
+                <input type="text" placeholder="Masukkan No. WhatsApp / Email..." class="flex-1 px-4 py-3 bg-white border border-aurelia-border rounded-xl text-xs focus:outline-none focus:border-aurelia-ocean">
+                <a href="https://wa.me/6281234567890?text=Halo%20Aurelia,%20saya%20ingin%20unduh%20PDF%20Resin%20Lookbook." target="_blank" class="px-5 py-3 bg-aurelia-slate hover:bg-black text-white rounded-xl text-xs font-bold uppercase shrink-0 transition font-mono border border-aurelia-ocean/40">
+                    Unduh
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- 7. FOOTER -->
+    <footer class="bg-slate-950 text-slate-300 py-16 border-t border-white/10 font-sans">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-10 mb-12">
+                <div class="lg:col-span-2 space-y-4">
+                    <a href="index.html" class="flex items-center gap-3">
+                        <div class="w-10 h-10 bg-aurelia-ocean text-white flex items-center justify-center text-lg font-bold rounded-lg">
+                            <i class="fa-solid fa-water"></i>
+                        </div>
+                        <span class="text-2xl font-bold tracking-tight text-white uppercase font-mono">
+                            AURELIA<span class="text-aurelia-coral">.</span>
+                        </span>
+                    </a>
+                    <p class="text-xs text-slate-400 leading-relaxed max-w-sm font-sans">
+                        Studio kriya kontemporer resin art & terrazzo Jesmonite: Coaster tatakan gelas tahan panas 80°C, trinket tray estetik, jam dinding ombak laut 3D, dan souvenir pernikahan handmade.
+                    </p>
+                </div>
+                <div class="space-y-3 font-mono">
+                    <h5 class="text-xs font-bold text-white uppercase tracking-wider">Koleksi Karya</h5>
+                    <ul class="space-y-2 text-xs text-slate-400">
+                        <li><a href="katalog.html" class="hover:text-sky-300 transition">Ocean Wave Coaster</a></li>
+                        <li><a href="katalog.html" class="hover:text-sky-300 transition">Terrazzo Trinket Tray</a></li>
+                        <li><a href="katalog.html" class="hover:text-sky-300 transition">Jam Dinding Ombak Laut</a></li>
+                        <li><a href="katalog.html" class="hover:text-sky-300 transition">Bookmark & Keychain</a></li>
+                    </ul>
+                </div>
+                <div class="space-y-3 font-mono">
+                    <h5 class="text-xs font-bold text-white uppercase tracking-wider">Halaman</h5>
+                    <ul class="space-y-2 text-xs text-slate-400">
+                        <li><a href="index.html" class="hover:text-sky-300 transition">Beranda</a></li>
+                        <li><a href="katalog.html" class="hover:text-sky-300 transition">Katalog Produk</a></li>
+                        <li><a href="detail.html" class="hover:text-sky-300 transition">Detail Coaster</a></li>
+                        <li><a href="tentang.html" class="hover:text-sky-300 transition">Teknik Resin</a></li>
+                    </ul>
+                </div>
+                <div class="space-y-3 font-mono text-xs">
+                    <h5 class="text-xs font-bold text-white uppercase tracking-wider">Studio & Workshop</h5>
+                    <p class="text-slate-400">Sleman, D.I. Yogyakarta</p>
+                    <p class="text-sky-300 font-bold">+62 812-3456-7890</p>
+                </div>
+            </div>
+            <div class="pt-8 border-t border-white/10 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs font-mono text-slate-500">
+                <p>&copy; 2026 AURELIA RESIN & TERRAZZO ATELIER. All rights reserved.</p>
+                <p>Template UMKM Kriya Resin Art & Coaster by Lentera Pasar</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- 8. FLOATING WHATSAPP -->
+    <div class="fixed bottom-24 right-4 sm:right-6 z-40">
+        <a href="https://wa.me/6281234567890?text=Halo%20Aurelia,%20saya%20ingin%20tanya%20tips%20merawat%20coaster." 
+           target="_blank" 
+           class="flex items-center gap-2.5 bg-emerald-600 hover:bg-emerald-700 text-white px-4 py-3 rounded-full shadow-2xl transition-all duration-300 hover:scale-105 font-mono text-xs font-bold border-2 border-sky-300">
+            <i class="fa-brands fa-whatsapp text-xl"></i>
+            <span class="hidden sm:inline">Tanya di WhatsApp</span>
+        </a>
+    </div>
+
+    <!-- 9. LENTERA PASAR STICKY DEMO BAR -->
+    <div class="fixed bottom-4 left-4 right-4 z-50 max-w-5xl mx-auto">
+      <div class="bg-slate-900/95 backdrop-blur-md text-white px-4 py-3 rounded-2xl shadow-2xl border border-slate-700/80 flex flex-col md:flex-row items-center justify-between gap-3">
+        <div class="flex items-center gap-3">
+          <div class="w-8 h-8 rounded-lg bg-amber-600/30 border border-amber-500/50 flex items-center justify-center shrink-0">
+            <svg class="w-4 h-4 text-amber-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z" /></svg>
+          </div>
+          <div>
+            <div class="text-xs md:text-sm font-bold text-slate-100 flex items-center gap-2">
+              <span>Lentera Pasar Demo</span>
+              <span class="text-[10px] px-1.5 py-0.5 rounded bg-amber-500/20 text-amber-300 font-mono">Artikel & Tips Resin Art</span>
+            </div>
+            <p class="text-[11px] text-slate-400 hidden sm:block">Konten edukasi 4 aturan merawat coaster resin mengkilap dan pengenalan Jesmonite eco-terrazzo.</p>
+          </div>
+        </div>
+
+        <div class="flex items-center gap-3 w-full md:w-auto justify-end">
+          <a href="https://wa.me/6281234567890?text=Halo%20Tim%20Lentera%20Pasar,%20saya%20tertarik%20menggunakan%20template%20website%20Resin%20Art%20ini." 
+             target="_blank"
+             class="w-full md:w-auto inline-flex items-center justify-center gap-2 bg-gradient-to-r from-amber-600 to-amber-800 hover:from-amber-500 hover:to-amber-700 text-white text-xs md:text-sm font-bold px-5 py-2.5 rounded-xl shadow-lg transition-all hover:scale-105 shrink-0 font-sans">
+            <span>Gunakan Template Ini</span>
+            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3" /></svg>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <!-- SCRIPT EXPAND ARTICLE & MOBILE MENU -->
+    <script>
+        function toggleArticleDetail(id) {
+            const el = document.getElementById(id);
+            el.classList.toggle('hidden');
+        }
+
+        // Mobile menu toggle
+        const mobileMenuBtn = document.getElementById('mobileMenuBtn');
+        const mobileMenu = document.getElementById('mobileMenu');
+        const menuIcon = document.getElementById('menuIcon');
+
+        mobileMenuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+            if (mobileMenu.classList.contains('hidden')) {
+                menuIcon.classList.remove('fa-xmark');
+                menuIcon.classList.add('fa-bars');
+            } else {
+                menuIcon.classList.remove('fa-bars');
+                menuIcon.classList.add('fa-xmark');
+            }
+        });
+    </script>
+</body>
+</html>
