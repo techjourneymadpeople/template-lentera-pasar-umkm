@@ -1,0 +1,517 @@
+<!DOCTYPE html>
+<html lang="id" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Panduan Bahan Seragam & Japan Drill // VERITAS</title>
+    <meta name="description" content="Edukasi garmen korporat: Perbedaan Nagata Japan Drill vs American Drill vs Taipan Tropical, standar jahitan rantai 3 jarum, dan size chart seragam kantor.">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome 6 -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        corp: {
+                            navy: '#0F172A',
+                            navylight: '#1E293B',
+                            navydark: '#0A0F1D',
+                            blue: '#2563EB',
+                            bluedark: '#1D4ED8',
+                            bluebg: '#EFF6FF',
+                            blueborder: '#93C5FD',
+                            slate: '#334155',
+                            border: '#E2E8F0',
+                            graybg: '#F8FAFC',
+                            softgray: '#F1F5F9'
+                        }
+                    },
+                    fontFamily: {
+                        sans: ['"Plus Jakarta Sans"', 'sans-serif'],
+                        tech: ['"Inter"', 'sans-serif']
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        .no-scrollbar::-webkit-scrollbar { display: none; }
+        .no-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
+
+        .corp-card {
+            transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+        }
+        .corp-card:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 20px 35px -10px rgba(15, 23, 42, 0.12);
+            border-color: #2563EB;
+        }
+    </style>
+</head>
+<body class="bg-corp-graybg text-slate-800 font-sans antialiased selection:bg-corp-blue selection:text-white">
+
+    <!-- 1. TOP ANNOUNCEMENT BAR -->
+    <div class="bg-corp-navy text-slate-200 text-xs py-2.5 px-4 font-sans font-medium border-b border-corp-navylight">
+        <div class="max-w-7xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-2 text-center sm:text-left">
+            <div class="flex items-center justify-center gap-2">
+                <span class="px-2 py-0.5 bg-corp-blue text-white text-[10px] uppercase font-bold tracking-wider rounded-md shadow-xs flex items-center gap-1 font-tech">
+                    <i class="fa-solid fa-book-open"></i> CORPORATE APPAREL JOURNAL
+                </span>
+                <span class="text-slate-100 font-medium">Panduan Memilih Bahan Seragam Kerja • Analisis Japan Drill vs American Drill vs Tropical</span>
+            </div>
+            <div class="flex items-center gap-4 text-xs font-tech">
+                <a href="katalog.html" class="text-blue-400 hover:underline font-bold transition flex items-center gap-1">
+                    Katalog Seragam <i class="fa-solid fa-arrow-right text-[10px]"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- 2. NAVBAR -->
+    <header class="sticky top-0 z-40 bg-white/98 backdrop-blur-md border-b border-corp-border transition-all shadow-xs">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-20 sm:h-24">
+                
+                <!-- Logo -->
+                <a href="index.html" class="flex items-center gap-3.5 group">
+                    <div class="w-12 h-12 bg-gradient-to-br from-corp-navy to-corp-blue text-white flex items-center justify-center text-2xl font-bold rounded-xl shadow-md group-hover:scale-105 transition">
+                        <i class="fa-solid fa-vest-patches text-blue-300"></i>
+                    </div>
+                    <div class="flex flex-col">
+                        <span class="text-2xl sm:text-3xl font-extrabold tracking-tight text-corp-navy uppercase leading-none font-sans">
+                            VERITAS<span class="text-corp-blue">.</span>
+                        </span>
+                        <span class="text-[9px] tracking-[0.25em] text-corp-blue font-bold uppercase mt-1 font-tech">
+                            CORPORATE APPAREL STUDIO
+                        </span>
+                    </div>
+                </a>
+
+                <!-- Desktop Navigation Links -->
+                <nav class="hidden lg:flex items-center gap-7 text-xs font-bold tracking-wider uppercase text-slate-700 font-sans">
+                    <a href="index.html" class="hover:text-corp-blue transition">Beranda</a>
+                    <a href="katalog.html" class="hover:text-corp-blue transition">Katalog Seragam</a>
+                    <a href="detail.html" class="hover:text-corp-blue transition">Detail Drill & Bordir</a>
+                    <a href="tentang.html" class="hover:text-corp-blue transition">Fasilitas Garmen</a>
+                    <a href="artikel.html" class="text-corp-blue border-b-2 border-corp-blue pb-1 font-bold">Panduan Bahan Kain</a>
+                    <a href="kontak.html" class="hover:text-corp-blue transition">Fitting Sample & Quotation</a>
+                </nav>
+
+                <!-- Actions -->
+                <div class="hidden sm:flex items-center gap-3">
+                    <a href="https://wa.me/6281234567890?text=Halo%20Veritas,%20saya%20ingin%20tanya%20seputar%20artikel%20bahan%20seragam." 
+                       target="_blank"
+                       class="inline-flex items-center gap-2 px-4 py-2.5 bg-corp-navy hover:bg-corp-blue text-xs font-bold text-white rounded-xl transition shadow-md hover:shadow-lg font-tech">
+                        <i class="fa-brands fa-whatsapp text-emerald-400 text-base"></i>
+                        <span>Sales Procurement WA</span>
+                    </a>
+                </div>
+
+                <!-- Mobile Menu Button -->
+                <div class="flex lg:hidden items-center gap-2">
+                    <a href="https://wa.me/6281234567890" target="_blank" class="p-2.5 bg-corp-bluebg text-corp-blue rounded-xl text-sm">
+                        <i class="fa-brands fa-whatsapp"></i>
+                    </a>
+                    <button id="mobileMenuBtn" class="p-2.5 text-slate-700 hover:text-corp-navy focus:outline-hidden rounded-xl bg-slate-100">
+                        <i id="menuIcon" class="fa-solid fa-bars text-xl"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Mobile Dropdown Menu -->
+        <div id="mobileMenu" class="hidden lg:hidden border-t border-corp-border bg-white px-6 py-5 shadow-xl">
+            <div class="flex flex-col gap-4 text-sm font-bold uppercase text-slate-700">
+                <a href="index.html" class="hover:text-corp-blue transition flex items-center justify-between">
+                    <span>Beranda Utama</span>
+                    <i class="fa-solid fa-chevron-right text-xs"></i>
+                </a>
+                <a href="katalog.html" class="hover:text-corp-blue transition flex items-center justify-between">
+                    <span>Katalog Seragam Kantor & PDH</span>
+                    <i class="fa-solid fa-chevron-right text-xs"></i>
+                </a>
+                <a href="detail.html" class="hover:text-corp-blue transition flex items-center justify-between">
+                    <span>Detail Bahan Drill & Size Chart</span>
+                    <i class="fa-solid fa-chevron-right text-xs"></i>
+                </a>
+                <a href="tentang.html" class="hover:text-corp-blue transition flex items-center justify-between">
+                    <span>Kapasitas Pabrik & Mesin Bordir</span>
+                    <i class="fa-solid fa-chevron-right text-xs"></i>
+                </a>
+                <a href="artikel.html" class="text-corp-blue flex items-center justify-between">
+                    <span>Panduan Bahan Japan vs American Drill</span>
+                    <i class="fa-solid fa-chevron-right text-xs"></i>
+                </a>
+                <a href="kontak.html" class="hover:text-corp-blue transition flex items-center justify-between">
+                    <span>Fitting Sample & Quotation RFQ</span>
+                    <i class="fa-solid fa-chevron-right text-xs"></i>
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- 3. PAGE BANNER -->
+    <section class="py-12 bg-white border-b border-corp-border">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="max-w-3xl">
+                <span class="px-3 py-1 bg-corp-bluebg text-corp-blue text-xs font-bold uppercase rounded-md tracking-wider font-tech border border-corp-blueborder">
+                    KNOWLEDGE HUB & GARMENT ENGINEERING
+                </span>
+                <h1 class="text-3xl sm:text-5xl font-extrabold text-corp-navy font-sans mt-3 mb-3 leading-tight">
+                    Panduan Bahan Seragam & Standard Mutu Garmen
+                </h1>
+                <p class="text-slate-600 text-sm sm:text-base leading-relaxed">
+                    Edukasi komprehensif untuk divisi HRD & Procurement: Cara membedakan serat kain drill, standar ketahanan jahitan tiga jarum, dan panduan menentukan size chart massal karyawan.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- 4. FEATURED ARTICLE 1: PERBEDAAN JAPAN DRILL VS AMERICAN DRILL -->
+    <section class="py-12 md:py-16 bg-corp-graybg border-b border-corp-border">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="bg-white rounded-2xl p-6 sm:p-10 border border-corp-border shadow-md grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
+                
+                <div class="lg:col-span-6 space-y-4 font-sans">
+                    <div class="flex items-center gap-2 font-tech">
+                        <span class="px-2.5 py-0.5 bg-corp-blue text-white text-[10px] font-bold uppercase rounded-md">
+                            FABRIC COMPARISON
+                        </span>
+                        <span class="text-xs text-slate-400">4 Menit Baca • Oleh Master Pattern Maker Veritas</span>
+                    </div>
+                    
+                    <h2 class="text-2xl sm:text-3xl font-extrabold text-corp-navy leading-snug">
+                        Nagata Japan Drill vs American Drill 1919 vs Taipan Tropical: Mana yang Paling Tepat untuk Kantor Anda?
+                    </h2>
+
+                    <p class="text-xs sm:text-sm text-slate-600 leading-relaxed">
+                        Memilih bahan kain kemeja kantor yang keliru bisa membuat karyawan cepat gerah, seragam mudah luntur, atau kaku seperti papan. Berikut perbandingan karakteristik teknisnya:
+                    </p>
+
+                    <div class="space-y-2.5 pt-2 text-xs text-slate-700 font-tech">
+                        <div class="flex items-start gap-2.5">
+                            <span class="w-5 h-5 rounded-full bg-corp-navy text-white flex items-center justify-center font-bold shrink-0 text-[11px]">1</span>
+                            <div><strong class="text-slate-900">Nagata Japan Drill (Katun 70%):</strong> Kandungan katun tertinggi dengan serat miring rapat (*twill*). Paling adem, menyerap keringat maksimal, dan memiliki ketahanan luntur terbaik. Standar emas kemeja PDH/PDL kantor modern.</div>
+                        </div>
+                        <div class="flex items-start gap-2.5">
+                            <span class="w-5 h-5 rounded-full bg-corp-blue text-white flex items-center justify-center font-bold shrink-0 text-[11px]">2</span>
+                            <div><strong class="text-slate-900">American Drill 1919 (Katun 50% / Poly 50%):</strong> Karakter kain lebih tegap dan kaku dengan harga ekonomis. Cocok untuk seragam staf pabrik, wearpack bengkel, atau rompi proyek lapangan.</div>
+                        </div>
+                        <div class="flex items-start gap-2.5">
+                            <span class="w-5 h-5 rounded-full bg-blue-800 text-white flex items-center justify-center font-bold shrink-0 text-[11px]">3</span>
+                            <div><strong class="text-slate-900">Taipan Tropical (Anti-Wrinkle):</strong> Tenun polos tanpa garis twill, tekstur permukaan sangat licin, halus, dan jatuh elegan. Sangat digemari perbankan, instansi BUMN, dan seragam eksekutif hotel.</div>
+                        </div>
+                    </div>
+
+                    <div class="pt-3 font-tech">
+                        <a href="katalog.html" class="inline-flex items-center gap-2 px-5 py-3 bg-corp-navy hover:bg-corp-blue text-white font-bold text-xs uppercase tracking-wider rounded-xl shadow-md transition">
+                            <span>Lihat Koleksi Kemeja Drill</span>
+                            <i class="fa-solid fa-arrow-right text-xs"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="lg:col-span-6">
+                    <div class="rounded-xl overflow-hidden shadow-xl border-2 border-corp-border bg-slate-100">
+                        <img src="https://images.unsplash.com/photo-1600880292203-757bb62b4baf?q=80&w=800&auto=format&fit=crop" 
+                             alt="Perbandingan Bahan Japan Drill dan Taipan Tropical" 
+                             class="w-full h-80 object-cover transform hover:scale-105 transition-all duration-700">
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- 5. FEATURED ARTICLE 2: JAHITAN TIGA JARUM & BARTACK -->
+    <section class="py-14 bg-white border-b border-corp-border">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 space-y-8 font-sans">
+            
+            <div class="text-center space-y-2">
+                <span class="px-3 py-1 bg-corp-bluebg text-corp-blue text-xs font-bold uppercase rounded-md tracking-wider font-tech border border-corp-blueborder">
+                    GARMENT CONSTRUCTION STANDARDS
+                </span>
+                <h3 class="text-2xl sm:text-3xl font-extrabold text-corp-navy">
+                    Standar Jahitan Rantai 3 Jarum & Bartack Pengunci: Mengapa Seragam Murahan Cepat Robek?
+                </h3>
+                <p class="text-slate-600 text-xs sm:text-sm">
+                    Rahasia di balik ketahanan seragam kerja yang tetap utuh selama 2–3 tahun pemakaian aktif sehari-hari.
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6 font-tech">
+                
+                <div class="bg-corp-graybg rounded-2xl p-6 border border-corp-border shadow-xs flex flex-col justify-between">
+                    <div>
+                        <div class="w-10 h-10 rounded-xl bg-corp-navy text-white flex items-center justify-center font-black text-sm mb-4">
+                            1
+                        </div>
+                        <h4 class="font-bold text-sm text-slate-900 font-sans">Jahitan Rantai 3 Jarum</h4>
+                        <p class="text-xs text-slate-600 mt-2 leading-relaxed font-sans">
+                            Tiga baris jahitan elastis paralel yang mengunci lingkar ketiak dan sisi badan, menahan tarikan kuat saat meregangkan tangan atau mengangkat beban.
+                        </p>
+                    </div>
+                    <div class="mt-4 pt-3 border-t border-corp-border text-[11px] text-corp-blue font-bold">
+                        🛡️ Anti-Robek Lingkar Ketiak
+                    </div>
+                </div>
+
+                <div class="bg-corp-graybg rounded-2xl p-6 border-2 border-corp-blue shadow-xs flex flex-col justify-between relative">
+                    <div class="absolute -top-2.5 right-3 bg-corp-blue text-white text-[9px] font-bold px-2 py-0.5 rounded uppercase">
+                        Kerapian Saku
+                    </div>
+                    <div>
+                        <div class="w-10 h-10 rounded-xl bg-corp-blue text-white flex items-center justify-center font-black text-sm mb-4">
+                            2
+                        </div>
+                        <h4 class="font-bold text-sm text-slate-900 font-sans">Bartack Pengunci Sudut Saku</h4>
+                        <p class="text-xs text-slate-600 mt-2 leading-relaxed font-sans">
+                            Jahitan zigzag padat khusus di kedua ujung bibir saku dada, mencegah jahitan terlepas saat saku sering dijejali pulpen, ID card, atau handphone.
+                        </p>
+                    </div>
+                    <div class="mt-4 pt-3 border-t border-corp-border text-[11px] text-corp-navy font-bold">
+                        📌 Pengunci Sudut Ekstra Kuat
+                    </div>
+                </div>
+
+                <div class="bg-corp-graybg rounded-2xl p-6 border border-corp-border shadow-xs flex flex-col justify-between">
+                    <div>
+                        <div class="w-10 h-10 rounded-xl bg-slate-800 text-white flex items-center justify-center font-black text-sm mb-4">
+                            3
+                        </div>
+                        <h4 class="font-bold text-sm text-slate-900 font-sans">Kerah Bertulang Kaku Rapi</h4>
+                        <p class="text-xs text-slate-600 mt-2 leading-relaxed font-sans">
+                            Lapisan kain keras interlining berkualitas di dalam daun kerah dan manset tangan, menjaga kerah tetap tegap rapi dan tidak melipat lemas setelah dicuci.
+                        </p>
+                    </div>
+                    <div class="mt-4 pt-3 border-t border-corp-border text-[11px] text-emerald-600 font-bold">
+                        👔 Bentuk Kerah Tegap Sempurna
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+    <!-- 6. KNOWLEDGE ARTICLES GRID -->
+    <section class="py-14 md:py-20 bg-corp-graybg">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-2xl mx-auto mb-12">
+                <span class="px-3 py-1 bg-corp-bluebg text-corp-blue text-xs font-bold uppercase rounded-md tracking-wider font-tech border border-corp-blueborder">
+                    TECHNICAL APPAREL ARTICLES
+                </span>
+                <h2 class="text-2xl sm:text-4xl font-extrabold text-corp-navy font-sans mt-2 mb-2">
+                    Artikel & Panduan Pengadaan Seragam
+                </h2>
+                <p class="text-slate-600 text-xs sm:text-sm">
+                    Wawasan praktis seputar size chart karyawan, bordir komputer Tajima, dan SOP tender B2B.
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                
+                <!-- Article 1 -->
+                <div class="corp-card bg-white rounded-2xl border border-corp-border overflow-hidden flex flex-col justify-between shadow-xs">
+                    <div class="h-48 overflow-hidden bg-slate-100">
+                        <img src="https://images.unsplash.com/photo-1578587018452-892bacefd3f2?q=80&w=600&auto=format&fit=crop" 
+                             alt="Bordir Komputer Tajima Kerapatan Tinggi" class="w-full h-full object-cover">
+                    </div>
+                    <div class="p-6 flex-1 flex flex-col justify-between">
+                        <div>
+                            <span class="text-[10px] bg-corp-graybg text-corp-navy font-bold px-2 py-0.5 rounded font-tech uppercase">Branding Logo</span>
+                            <h3 class="text-base font-bold text-slate-900 font-sans mt-2">
+                                Bordir Komputer Tajima vs Sablon DTF: Mana yang Lebih Tahan Cuci Mesin Industri?
+                            </h3>
+                            <p class="text-xs text-slate-600 mt-2 leading-relaxed">
+                                Bordir komputer dengan benang rayon mengkilap menjamin logo perusahaan tidak terkelupas atau retak meski dicuci ratusan kali di laundry.
+                            </p>
+                        </div>
+                        <div class="mt-4 pt-3 border-t border-slate-100 flex items-center justify-between text-xs font-tech">
+                            <span class="text-slate-400 text-[11px]">3 Menit Baca</span>
+                            <a href="katalog.html" class="font-bold text-corp-blue hover:underline">Lihat Koleksi &rarr;</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Article 2 -->
+                <div class="corp-card bg-white rounded-2xl border border-corp-border overflow-hidden flex flex-col justify-between shadow-xs">
+                    <div class="h-48 overflow-hidden bg-slate-100">
+                        <img src="https://images.unsplash.com/photo-1594938298603-c8148c4dae35?q=80&w=600&auto=format&fit=crop" 
+                             alt="Panduan Size Chart Karyawan" class="w-full h-full object-cover">
+                    </div>
+                    <div class="p-6 flex-1 flex flex-col justify-between">
+                        <div>
+                            <span class="text-[10px] bg-corp-bluebg text-corp-blue font-bold px-2 py-0.5 rounded font-tech uppercase">Size Measurement</span>
+                            <h3 class="text-base font-bold text-slate-900 font-sans mt-2">
+                                Panduan Menentukan Size Chart Massal: Hindari Retur Salah Ukuran Pengadaan 500+ Stel
+                            </h3>
+                            <p class="text-xs text-slate-600 mt-2 leading-relaxed">
+                                Strategi pembagian sampel fitting fisik dan toleransi ukuran lebar dada 1–2 cm agar 100% karyawan pas tanpa perlu permak lagi.
+                            </p>
+                        </div>
+                        <div class="mt-4 pt-3 border-t border-slate-100 flex items-center justify-between text-xs font-tech">
+                            <span class="text-slate-400 text-[11px]">4 Menit Baca</span>
+                            <a href="detail.html" class="font-bold text-corp-blue hover:underline">Lihat Size Chart &rarr;</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Article 3 -->
+                <div class="corp-card bg-white rounded-2xl border border-corp-border overflow-hidden flex flex-col justify-between shadow-xs">
+                    <div class="h-48 overflow-hidden bg-slate-100">
+                        <img src="https://images.unsplash.com/photo-1581655353564-df123a1eb820?q=80&w=600&auto=format&fit=crop" 
+                             alt="SOP Pengadaan Tender Seragam B2B" class="w-full h-full object-cover">
+                    </div>
+                    <div class="p-6 flex-1 flex flex-col justify-between">
+                        <div>
+                            <span class="text-[10px] bg-emerald-100 text-emerald-900 font-bold px-2 py-0.5 rounded font-tech uppercase">Procurement SOP</span>
+                            <h3 class="text-base font-bold text-slate-900 font-sans mt-2">
+                                SOP Pengadaan Seragam Kantor BUMN & Swasta: Dari Approval Sample Hingga Faktur Pajak
+                            </h3>
+                            <p class="text-xs text-slate-600 mt-2 leading-relaxed">
+                                Tahapan legalitas tender pengadaan pakaian dinas harian (PDH) mulai dari dokumen LPSE, garansi mutu, hingga penyelesaian SPK resmi.
+                            </p>
+                        </div>
+                        <div class="mt-4 pt-3 border-t border-slate-100 flex items-center justify-between text-xs font-tech">
+                            <span class="text-slate-400 text-[11px]">5 Menit Baca</span>
+                            <a href="kontak.html" class="font-bold text-corp-blue hover:underline">Minta Dokumen RFQ &rarr;</a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- 7. FOOTER CORPORATE GARMENT -->
+    <footer class="bg-corp-navydark text-slate-400 text-xs pt-16 pb-36 border-t border-corp-navylight font-sans">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-10 pb-12 border-b border-corp-navylight">
+                
+                <div class="lg:col-span-2 space-y-4">
+                    <a href="index.html" class="flex items-center gap-3">
+                        <div class="w-10 h-10 bg-gradient-to-br from-corp-navy to-corp-blue text-white flex items-center justify-center text-xl font-bold rounded-xl">
+                            <i class="fa-solid fa-vest-patches text-blue-300"></i>
+                        </div>
+                        <span class="text-2xl font-extrabold text-white tracking-tight font-sans">
+                            VERITAS<span class="text-corp-blue">.</span>
+                        </span>
+                    </a>
+                    <p class="text-xs text-slate-300 leading-relaxed max-w-sm">
+                        PT Veritas Busana Korporat Mandiri — Studio garmen dan vendor konveksi terintegrasi untuk seragam kerja kantor B2B, kemeja PDH/PDL, kaos polo shirt bordir komputer, rompi proyek, dan jaket kantor instansi se-Indonesia.
+                    </p>
+                </div>
+
+                <div>
+                    <h4 class="text-xs font-bold text-white uppercase tracking-wider mb-4 font-tech">Navigasi Halaman</h4>
+                    <ul class="space-y-2.5 font-tech">
+                        <li><a href="index.html" class="hover:text-blue-300 transition">Beranda Utama</a></li>
+                        <li><a href="katalog.html" class="hover:text-blue-300 transition">Katalog Seragam</a></li>
+                        <li><a href="detail.html" class="hover:text-blue-300 transition">Detail Drill & Bordir</a></li>
+                        <li><a href="tentang.html" class="hover:text-blue-300 transition">Fasilitas Garmen</a></li>
+                        <li><a href="artikel.html" class="hover:text-blue-300 transition">Panduan Bahan Kain</a></li>
+                        <li><a href="kontak.html" class="hover:text-blue-300 transition">Fitting Sample & RFQ</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h4 class="text-xs font-bold text-white uppercase tracking-wider mb-4 font-tech">Kategori Produk</h4>
+                    <ul class="space-y-2.5 font-tech">
+                        <li><a href="detail.html" class="hover:text-blue-300 transition">Kemeja PDH Kantor Drill</a></li>
+                        <li><a href="katalog.html" class="hover:text-blue-300 transition">Kemeja PDL Tactical Ripstop</a></li>
+                        <li><a href="katalog.html" class="hover:text-blue-300 transition">Kaos Polo Shirt Bordir CVC</a></li>
+                        <li><a href="katalog.html" class="hover:text-blue-300 transition">Rompi Kerja Multi-Pocket</a></li>
+                        <li><a href="kontak.html" class="hover:text-blue-300 transition">Blazer Seragam Instansi</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h4 class="text-xs font-bold text-white uppercase tracking-wider mb-4 font-tech">Kantor & Workshop</h4>
+                    <p class="text-xs text-slate-300 leading-relaxed mb-3 font-tech">
+                        Sentra Garmen Presisi, Jl. TB Simatupang No. 88A, Pasar Minggu, Jakarta Selatan 12520.
+                    </p>
+                    <p class="text-xs text-blue-300 font-bold mb-1 font-tech"><i class="fa-solid fa-phone mr-1.5"></i> +62 21-7883-7890 / 0812-3456-7890</p>
+                    <p class="text-xs text-slate-300 font-tech"><i class="fa-solid fa-envelope mr-1.5"></i> procurement@veritasuniform.co.id</p>
+                </div>
+
+            </div>
+
+            <div class="pt-8 flex flex-col sm:flex-row items-center justify-between gap-4 text-[11px] text-slate-400 font-tech">
+                <p>&copy; 2026 PT VERITAS BUSANA KORPORAT MANDIRI. All rights reserved.</p>
+                <div class="flex items-center gap-4">
+                    <span>Japan Drill 100% Original</span>
+                    <span>•</span>
+                    <span>Tajima High-Density Embroidery</span>
+                    <span>•</span>
+                    <span>Direct Factory B2B Price</span>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- 8. FLOATING WHATSAPP BUTTON (bottom-24) -->
+    <div class="fixed bottom-24 right-5 z-40">
+        <a href="https://wa.me/6281234567890?text=Halo%20Veritas,%20saya%20ingin%20tanya%20seputar%20artikel%20bahan%20seragam." 
+           target="_blank" 
+           aria-label="Chat WhatsApp Sales Veritas Uniform"
+           class="group flex items-center gap-3 bg-corp-navy hover:bg-corp-blue text-white px-4 py-3.5 rounded-full shadow-2xl transition-all transform hover:scale-105 border-2 border-blue-400">
+            <i class="fa-brands fa-whatsapp text-2xl text-emerald-400 animate-pulse"></i>
+            <span class="text-xs font-bold tracking-wide pr-1 hidden sm:inline font-tech">Sales Procurement WA</span>
+        </a>
+    </div>
+
+    <!-- 9. STICKY DEMO & SALES BAR (fixed bottom-4) -->
+    <div class="fixed bottom-4 left-4 right-4 z-50 max-w-5xl mx-auto">
+      <div class="bg-corp-navy/95 backdrop-blur-md text-white px-4 sm:px-6 py-3.5 rounded-2xl shadow-2xl border border-corp-navylight flex flex-col md:flex-row items-center justify-between gap-3">
+        <div class="flex items-center gap-3 text-left w-full md:w-auto">
+          <div class="w-9 h-9 rounded-xl bg-corp-blue/20 border border-corp-blue/40 flex items-center justify-center shrink-0">
+            <i class="fa-solid fa-vest-patches text-blue-400 text-sm"></i>
+          </div>
+          <div>
+            <div class="text-xs md:text-sm font-bold text-white flex items-center gap-2 font-sans">
+              <span>Lentera Pasar Demo</span>
+              <span class="text-[10px] px-2 py-0.5 rounded bg-corp-blue/30 text-blue-300 font-bold font-tech">Panduan Seragam Kerja B2B</span>
+            </div>
+            <p class="text-[11px] text-slate-300 hidden sm:block">Desain Corporate Apparel Studio untuk pabrik konveksi seragam kemeja kantor PDH/PDL, polo bordir & wearpack.</p>
+          </div>
+        </div>
+        <div class="flex items-center gap-3 w-full md:w-auto justify-end">
+          <a href="https://wa.me/6281234567890?text=Halo%20Tim%20Lentera%20Pasar,%20saya%20tertarik%20menggunakan%20template%20website%20Konveksi%20Seragam%20Kerja%20ini." 
+             target="_blank"
+             class="w-full md:w-auto inline-flex items-center justify-center gap-2 bg-corp-blue hover:bg-corp-bluedark text-white text-xs md:text-sm font-bold px-5 py-2.5 rounded-xl shadow-lg transition-all hover:scale-105 shrink-0 font-tech">
+            <span>Gunakan Template Ini</span>
+            <i class="fa-solid fa-arrow-right text-xs"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <!-- SCRIPT MOBILE MENU -->
+    <script>
+        const mobileMenuBtn = document.getElementById('mobileMenuBtn');
+        const mobileMenu = document.getElementById('mobileMenu');
+        const menuIcon = document.getElementById('menuIcon');
+
+        mobileMenuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+            if (mobileMenu.classList.contains('hidden')) {
+                menuIcon.classList.remove('fa-xmark');
+                menuIcon.classList.add('fa-bars');
+            } else {
+                menuIcon.classList.remove('fa-bars');
+                menuIcon.classList.add('fa-xmark');
+            }
+        });
+    </script>
+</body>
+</html>
