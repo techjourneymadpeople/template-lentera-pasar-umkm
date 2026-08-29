@@ -1,0 +1,958 @@
+<!DOCTYPE html>
+<html lang="id" class="scroll-smooth">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Katalog Template Website UMKM — Lentera Pasar | Etalase Publik Modern</title>
+    <meta name="description"
+        content="Katalog resmi 73+ template website multi-halaman siap pakai untuk 6 sektor bisnis UMKM Indonesia. Lengkap dengan nominal harga, demo interaktif, dan alur pemesanan langsung terhubung ke WhatsApp.">
+    <meta name="keywords"
+        content="Katalog Template Website UMKM, Template Website Bisnis, Website WhatsApp, Jual Template Website, Lentera Pasar">
+
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="Katalog 73+ Template Website UMKM — Lentera Pasar">
+    <meta property="og:description"
+        content="Temukan template website multi-halaman berkarakter untuk bisnis Anda. Dilengkapi demo langsung, rincian harga, dan fitur checkout WhatsApp.">
+    <meta property="og:type" content="website">
+
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Fonts: Plus Jakarta Sans & Playfair Display -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Playfair+Display:ital,wght@0,600;0,700;1,600&display=swap"
+        rel="stylesheet">
+    <!-- Lucide Icons CDN -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['"Plus Jakarta Sans"', 'sans-serif'],
+                        serif: ['"Playfair Display"', 'serif'],
+                    },
+                    colors: {
+                        brand: {
+                            50: '#FFFDF7',
+                            100: '#FEF8E7',
+                            200: '#FCEBC4',
+                            300: '#FAD99B',
+                            400: '#F5BE58',
+                            500: '#E69D1E',
+                            600: '#C97B10',
+                            700: '#9E5B0D',
+                            800: '#7B4511',
+                            900: '#422206',
+                            950: '#1E0E02',
+                        },
+                        night: {
+                            800: '#151C2C',
+                            900: '#0C111D',
+                            950: '#070A12',
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        .hero-pattern {
+            background-color: #0c111d;
+            background-image: radial-gradient(rgba(230, 157, 30, 0.12) 1px, transparent 1px), radial-gradient(rgba(255, 255, 255, 0.04) 1px, #0c111d 1px);
+            background-size: 28px 28px;
+            background-position: 0 0, 14px 14px;
+        }
+
+        .card-preview-frame {
+            position: relative;
+            background: #0f172a;
+            border-bottom: 1px solid rgba(226, 232, 240, 0.8);
+            overflow: hidden;
+        }
+
+        .browser-mockup-bar {
+            background: #1e293b;
+            border-bottom: 1px solid #334155;
+        }
+
+        .template-card {
+            transition: all 0.28s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+
+        .template-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 20px 30px -10px rgba(15, 23, 42, 0.12), 0 10px 15px -5px rgba(230, 157, 30, 0.1);
+        }
+
+        .scrollbar-none::-webkit-scrollbar {
+            display: none;
+        }
+        .scrollbar-none {
+            -ms-overflow-style: none;
+            scrollbar-width: none;
+        }
+
+        /* Custom scrollbar */
+        ::-webkit-scrollbar {
+            width: 8px;
+            height: 8px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #f1f5f9;
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #cbd5e1;
+            border-radius: 9999px;
+        }
+        ::-webkit-scrollbar-thumb:hover {
+            background: #94a3b8;
+        }
+    </style>
+</head>
+
+<body class="bg-[#F8F9FA] text-slate-800 font-sans antialiased min-h-screen flex flex-col selection:bg-brand-500 selection:text-white">
+
+    <!-- 1. TOP BAR -->
+    <div class="bg-night-950 text-slate-300 text-xs py-2.5 px-4 border-b border-slate-800 sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto flex flex-wrap justify-between items-center gap-3">
+            <div class="flex items-center gap-2.5">
+                <span class="flex h-2 w-2 relative">
+                    <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-brand-400 opacity-75"></span>
+                    <span class="relative inline-flex rounded-full h-2 w-2 bg-brand-500"></span>
+                </span>
+                <span class="font-medium tracking-wide text-slate-200">
+                    Katalog Resmi Template Website UMKM Lentera Pasar &bull; <span class="text-brand-300">73+ Desain Multi-Halaman</span>
+                </span>
+            </div>
+            <div class="flex items-center gap-4 text-slate-400 text-[11px] sm:text-xs">
+                <a href="index.html" class="inline-flex items-center gap-1 text-slate-300 hover:text-white transition-colors">
+                    <i data-lucide="arrow-left" class="w-3.5 h-3.5"></i> Kembali ke Beranda
+                </a>
+                <span class="text-slate-600">&bull;</span>
+                <a href="https://wa.me/628979060191?text=Halo%20Admin%20Lentera%20Pasar,%20saya%20tertarik%20dengan%20katalog%20template%20website%20UMKM."
+                    target="_blank"
+                    class="inline-flex items-center gap-1 text-emerald-400 hover:text-emerald-300 font-semibold transition-colors">
+                    <i data-lucide="message-circle" class="w-3.5 h-3.5"></i> Hubungi Konsultan
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- 2. MAIN HEADER -->
+    <header class="bg-white/95 backdrop-blur-md border-b border-slate-200 sticky top-[37px] z-40 shadow-xs">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between gap-4">
+            <!-- Brand Identity -->
+            <a href="index.html" class="flex items-center gap-3.5 group">
+                <div class="w-11 h-11 rounded-2xl bg-gradient-to-br from-brand-400 to-brand-600 text-white flex items-center justify-center font-bold shadow-md shadow-brand-500/20 group-hover:scale-105 transition-transform">
+                    <i data-lucide="flame" class="w-6 h-6 text-white"></i>
+                </div>
+                <div>
+                    <span class="font-serif font-bold text-xl tracking-tight text-slate-900 group-hover:text-brand-600 transition-colors flex items-center gap-1.5">
+                        Lentera Pasar
+                        <span class="text-[10px] uppercase font-sans tracking-widest font-extrabold bg-brand-100 text-brand-700 px-2 py-0.5 rounded-full border border-brand-200">Katalog</span>
+                    </span>
+                    <p class="text-xs text-slate-500 font-medium">Showcase Template Website UMKM</p>
+                </div>
+            </a>
+
+            <!-- Global Search Input in Header -->
+            <div class="flex-1 max-w-md hidden md:block">
+                <div class="relative">
+                    <i data-lucide="search" class="w-4 h-4 text-slate-400 absolute left-3.5 top-1/2 -translate-y-1/2"></i>
+                    <input type="text" id="headerSearchInput"
+                        placeholder="Cari template, nama niche, atau kata kunci (contoh: kopi, batik, burger)..."
+                        class="w-full pl-10 pr-9 py-2 bg-slate-50 border border-slate-200 rounded-xl text-sm focus:outline-none focus:border-brand-500 focus:bg-white focus:ring-2 focus:ring-brand-500/20 transition-all placeholder:text-slate-400">
+                    <button id="headerClearSearchBtn"
+                        class="hidden absolute right-3 top-1/2 -translate-y-1/2 text-slate-400 hover:text-slate-600 text-xs bg-slate-200 hover:bg-slate-300 rounded-full w-4 h-4 flex items-center justify-center">
+                        &times;
+                    </button>
+                </div>
+            </div>
+
+            <!-- Action Buttons -->
+            <div class="flex items-center gap-3">
+                <a href="index.html#bidang-section"
+                    class="hidden lg:inline-flex items-center gap-1.5 text-xs font-semibold text-slate-700 hover:text-brand-600 px-3.5 py-2 rounded-lg hover:bg-slate-50 transition-colors">
+                    <i data-lucide="grid" class="w-4 h-4"></i> 6 Sektor Industri
+                </a>
+                <a href="https://wa.me/628979060191?text=Halo%20Admin%20Lentera%20Pasar,%20saya%20ingin%20konsultasi%20pemesanan%20template%20website%20UMKM."
+                    target="_blank"
+                    class="inline-flex items-center gap-2 bg-emerald-600 hover:bg-emerald-700 text-white text-xs sm:text-sm font-semibold px-4 sm:px-5 py-2.5 rounded-xl shadow-md shadow-emerald-600/20 hover:shadow-lg transition-all transform hover:-translate-y-0.5">
+                    <i data-lucide="message-circle" class="w-4 h-4"></i>
+                    <span>Konsultasi WhatsApp</span>
+                </a>
+            </div>
+        </div>
+
+        <!-- Mobile Search Bar -->
+        <div class="px-4 pb-3 md:hidden">
+            <div class="relative">
+                <i data-lucide="search" class="w-4 h-4 text-slate-400 absolute left-3 top-1/2 -translate-y-1/2"></i>
+                <input type="text" id="mobileSearchInput" placeholder="Cari template, produk, niche..."
+                    class="w-full pl-9 pr-8 py-2 bg-slate-50 border border-slate-200 rounded-lg text-xs focus:outline-none focus:border-brand-500 focus:bg-white transition-all">
+                <button id="mobileClearSearchBtn"
+                    class="hidden absolute right-2.5 top-1/2 -translate-y-1/2 text-slate-400 hover:text-slate-600 text-xs bg-slate-200 rounded-full w-4 h-4 flex items-center justify-center">
+                    &times;
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- 3. BREADCRUMB & HERO BANNER KATALOG -->
+    <section class="hero-pattern text-white py-12 px-4 sm:px-6 lg:px-8 border-b border-slate-800">
+        <div class="max-w-7xl mx-auto">
+            <!-- Breadcrumbs -->
+            <nav class="flex items-center gap-2 text-xs text-slate-400 mb-6 font-medium">
+                <a href="index.html" class="hover:text-white transition-colors flex items-center gap-1">
+                    <i data-lucide="home" class="w-3.5 h-3.5"></i> Beranda
+                </a>
+                <i data-lucide="chevron-right" class="w-3.5 h-3.5 text-slate-600"></i>
+                <span class="text-brand-400 font-semibold">Katalog Template Website</span>
+            </nav>
+
+            <div class="flex flex-col lg:flex-row lg:items-end justify-between gap-6">
+                <div class="max-w-3xl">
+                    <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-brand-500/15 border border-brand-400/30 text-brand-300 text-xs font-semibold uppercase tracking-wider mb-4">
+                        <i data-lucide="sparkles" class="w-3.5 h-3.5 text-brand-400"></i>
+                        Koleksi Lengkap Siap Pakai
+                    </div>
+                    <h1 class="text-2xl sm:text-4xl lg:text-5xl font-serif font-bold text-white tracking-tight leading-tight mb-4">
+                        Katalog Template Website UMKM &bull; <span class="bg-gradient-to-r from-amber-300 via-brand-300 to-amber-100 bg-clip-text text-transparent italic">Terintegrasi WhatsApp</span>
+                    </h1>
+                    <p class="text-slate-300 text-sm sm:text-base leading-relaxed">
+                        Pilih dari <strong>73 template multi-halaman</strong> yang dirancang dengan selera visual tinggi, navigasi kilat, dan tombol checkout langsung ke WhatsApp bisnis Anda. Lengkap dengan nominal harga dan preview demo langsung.
+                    </p>
+                </div>
+
+                <!-- Info Pill Badges -->
+                <div class="flex flex-wrap gap-3">
+                    <div class="bg-slate-900/90 border border-slate-700/80 rounded-xl px-4 py-3 text-center min-w-[120px]">
+                        <span class="block text-2xl font-bold text-brand-400 font-mono" id="totalTemplatesBadge">73</span>
+                        <span class="text-[11px] text-slate-400 font-medium">Template Aktif</span>
+                    </div>
+                    <div class="bg-slate-900/90 border border-slate-700/80 rounded-xl px-4 py-3 text-center min-w-[120px]">
+                        <span class="block text-2xl font-bold text-emerald-400 font-mono">6</span>
+                        <span class="text-[11px] text-slate-400 font-medium">Pilar Industri</span>
+                    </div>
+                    <div class="bg-slate-900/90 border border-slate-700/80 rounded-xl px-4 py-3 text-center min-w-[120px]">
+                        <span class="block text-2xl font-bold text-amber-400 font-mono">100%</span>
+                        <span class="text-[11px] text-slate-400 font-medium">WhatsApp Ready</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 4. STICKY FILTER CONTROLS & SECTOR TABS -->
+    <div class="sticky top-[117px] z-30 bg-white border-b border-slate-200 shadow-xs">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-3.5">
+            <!-- Sektor Filter Pills (Scrollable) -->
+            <div class="flex items-center gap-2 overflow-x-auto pb-1 scrollbar-none" id="bidangFilterTabs">
+                <button onclick="setBidangFilter('all')" data-filter="all"
+                    class="tab-btn active px-4 py-2 rounded-xl text-xs font-bold transition-all whitespace-nowrap bg-slate-900 text-white shadow-xs flex items-center gap-1.5">
+                    <i data-lucide="layout-grid" class="w-3.5 h-3.5"></i>
+                    <span>Semua Sektor (73)</span>
+                </button>
+                <button onclick="setBidangFilter('01-fnb-kuliner')" data-filter="01-fnb-kuliner"
+                    class="tab-btn px-4 py-2 rounded-xl text-xs font-medium transition-all whitespace-nowrap bg-slate-100 text-slate-700 hover:bg-amber-50 hover:text-amber-700 hover:border-amber-300 border border-transparent flex items-center gap-1.5">
+                    <i data-lucide="utensils" class="w-3.5 h-3.5 text-amber-600"></i>
+                    <span>01. Kuliner & F&B (12)</span>
+                </button>
+                <button onclick="setBidangFilter('02-fashion-skincare')" data-filter="02-fashion-skincare"
+                    class="tab-btn px-4 py-2 rounded-xl text-xs font-medium transition-all whitespace-nowrap bg-slate-100 text-slate-700 hover:bg-pink-50 hover:text-pink-700 hover:border-pink-300 border border-transparent flex items-center gap-1.5">
+                    <i data-lucide="sparkle" class="w-3.5 h-3.5 text-pink-600"></i>
+                    <span>02. Fashion & Beauty (13)</span>
+                </button>
+                <button onclick="setBidangFilter('03-ritel-gadget-hobi')" data-filter="03-ritel-gadget-hobi"
+                    class="tab-btn px-4 py-2 rounded-xl text-xs font-medium transition-all whitespace-nowrap bg-slate-100 text-slate-700 hover:bg-indigo-50 hover:text-indigo-700 hover:border-indigo-300 border border-transparent flex items-center gap-1.5">
+                    <i data-lucide="gamepad-2" class="w-3.5 h-3.5 text-indigo-600"></i>
+                    <span>03. Ritel & Hobi (12)</span>
+                </button>
+                <button onclick="setBidangFilter('04-kriya-dekorasi')" data-filter="04-kriya-dekorasi"
+                    class="tab-btn px-4 py-2 rounded-xl text-xs font-medium transition-all whitespace-nowrap bg-slate-100 text-slate-700 hover:bg-emerald-50 hover:text-emerald-800 hover:border-emerald-300 border border-transparent flex items-center gap-1.5">
+                    <i data-lucide="gem" class="w-3.5 h-3.5 text-emerald-600"></i>
+                    <span>04. Kriya & Dekorasi (12)</span>
+                </button>
+                <button onclick="setBidangFilter('05-agrobisnis-bahan-mentah')" data-filter="05-agrobisnis-bahan-mentah"
+                    class="tab-btn px-4 py-2 rounded-xl text-xs font-medium transition-all whitespace-nowrap bg-slate-100 text-slate-700 hover:bg-lime-50 hover:text-lime-800 hover:border-lime-300 border border-transparent flex items-center gap-1.5">
+                    <i data-lucide="sprout" class="w-3.5 h-3.5 text-lime-600"></i>
+                    <span>05. Agrobisnis & Alam (12)</span>
+                </button>
+                <button onclick="setBidangFilter('06-supplier-grosir-b2b')" data-filter="06-supplier-grosir-b2b"
+                    class="tab-btn px-4 py-2 rounded-xl text-xs font-medium transition-all whitespace-nowrap bg-slate-100 text-slate-700 hover:bg-slate-200 hover:text-slate-900 hover:border-slate-400 border border-transparent flex items-center gap-1.5">
+                    <i data-lucide="factory" class="w-3.5 h-3.5 text-slate-700"></i>
+                    <span>06. Supplier & B2B (12)</span>
+                </button>
+            </div>
+
+            <!-- Sub Filter: Group & Sort & Search Counter -->
+            <div class="mt-3 pt-3 border-t border-slate-100 flex flex-wrap items-center justify-between gap-3 text-xs">
+                <!-- Group Filters -->
+                <div class="flex items-center gap-2">
+                    <span class="text-slate-500 font-medium">Tipe / Group:</span>
+                    <button onclick="setGroupFilter('all')" data-group="all"
+                        class="group-btn active px-2.5 py-1 rounded-lg font-bold bg-slate-200 text-slate-800">Semua</button>
+                    <button onclick="setGroupFilter('Group A')" data-group="Group A"
+                        class="group-btn px-2.5 py-1 rounded-lg font-medium text-slate-600 hover:bg-slate-100">Group A</button>
+                    <button onclick="setGroupFilter('Group B')" data-group="Group B"
+                        class="group-btn px-2.5 py-1 rounded-lg font-medium text-slate-600 hover:bg-slate-100">Group B</button>
+                    <button onclick="setGroupFilter('Group C')" data-group="Group C"
+                        class="group-btn px-2.5 py-1 rounded-lg font-medium text-slate-600 hover:bg-slate-100">Group C</button>
+                </div>
+
+                <!-- Sort & Counter Status -->
+                <div class="flex items-center gap-4">
+                    <div class="flex items-center gap-1.5 text-slate-500">
+                        <span>Urutkan:</span>
+                        <select id="sortSelect" onchange="handleSortChange(this.value)"
+                            class="bg-slate-50 border border-slate-200 rounded-lg px-2 py-1 text-slate-700 focus:outline-none focus:border-brand-500 font-medium">
+                            <option value="default">Rekomendasi / Sektor</option>
+                            <option value="name-asc">Nama Template (A-Z)</option>
+                            <option value="name-desc">Nama Template (Z-A)</option>
+                            <option value="price-asc">Harga Terendah</option>
+                            <option value="price-desc">Harga Tertinggi</option>
+                        </select>
+                    </div>
+
+                    <div class="text-slate-500 font-semibold flex items-center gap-1.5 bg-slate-50 border border-slate-200 px-3 py-1 rounded-lg">
+                        <span class="w-2 h-2 rounded-full bg-emerald-500"></span>
+                        <span id="resultsCount">Menampilkan 73 template</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 5. MAIN TEMPLATE SHOWCASE GRID (ALA GOOMSITE) -->
+    <main class="flex-1 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10 w-full">
+
+        <!-- Dynamic Bidang Information Banner (Shown when a specific bidang is selected) -->
+        <div id="bidangBanner" class="hidden mb-8 rounded-2xl p-6 sm:p-8 border transition-all">
+            <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-4">
+                <div>
+                    <div id="bidangBannerBadge" class="inline-flex items-center gap-1.5 text-xs font-extrabold px-3 py-1 rounded-md mb-2 font-mono"></div>
+                    <h2 id="bidangBannerTitle" class="text-2xl sm:text-3xl font-serif font-bold text-slate-900"></h2>
+                    <p id="bidangBannerDesc" class="text-xs sm:text-sm text-slate-600 mt-1 max-w-3xl leading-relaxed"></p>
+                </div>
+                <div class="text-right whitespace-nowrap">
+                    <span id="bidangBannerCount" class="text-xs font-bold bg-white px-3.5 py-1.5 rounded-xl border shadow-xs inline-block"></span>
+                </div>
+            </div>
+        </div>
+
+        <!-- Template Cards Grid Container -->
+        <div id="templatesGrid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-7">
+            <!-- Dynamic JavaScript Rendered Cards -->
+        </div>
+
+        <!-- No Results Fallback State -->
+        <div id="noResultsState" class="hidden text-center py-20 bg-white rounded-3xl border border-slate-200 p-8">
+            <div class="w-16 h-16 bg-brand-50 text-brand-600 rounded-2xl flex items-center justify-center mx-auto mb-4 border border-brand-200">
+                <i data-lucide="search-x" class="w-8 h-8"></i>
+            </div>
+            <h3 class="text-lg font-bold text-slate-900 mb-2">Template Tidak Ditemukan</h3>
+            <p class="text-sm text-slate-500 max-w-md mx-auto mb-6">
+                Tidak ada template yang cocok dengan kriteria filter atau kata kunci pencarian Anda. Silakan reset filter untuk melihat seluruh koleksi.
+            </p>
+            <button onclick="resetAllFilters()"
+                class="bg-slate-900 hover:bg-brand-600 text-white text-xs font-semibold px-5 py-2.5 rounded-xl inline-flex items-center gap-2 transition-colors">
+                <i data-lucide="rotate-ccw" class="w-4 h-4"></i>
+                <span>Reset Semua Filter</span>
+            </button>
+        </div>
+
+    </main>
+
+    <!-- 6. QUICK VIEW / SPECIFICATION MODAL (ALA GOOMSITE) -->
+    <div id="templateDetailModal" class="fixed inset-0 z-50 bg-slate-950/70 backdrop-blur-sm hidden flex items-center justify-center p-4">
+        <div class="bg-white rounded-3xl max-w-2xl w-full max-h-[90vh] overflow-y-auto shadow-2xl border border-slate-200 transition-all transform animate-in fade-in zoom-in-95">
+            <!-- Modal Header -->
+            <div class="sticky top-0 bg-white/95 backdrop-blur-md border-b border-slate-200 p-5 sm:p-6 flex items-center justify-between z-10">
+                <div class="flex items-center gap-3">
+                    <div id="modalBidangIcon" class="w-10 h-10 rounded-xl bg-brand-500/15 text-brand-600 flex items-center justify-center font-bold">
+                        <i data-lucide="layout" class="w-5 h-5"></i>
+                    </div>
+                    <div>
+                        <span id="modalBidangTag" class="text-[10px] font-bold uppercase tracking-wider text-brand-600 bg-brand-50 px-2 py-0.5 rounded border border-brand-200"></span>
+                        <h3 id="modalTitle" class="text-lg font-bold text-slate-900"></h3>
+                    </div>
+                </div>
+                <button onclick="closeDetailModal()" class="w-9 h-9 rounded-full bg-slate-100 hover:bg-slate-200 text-slate-500 hover:text-slate-800 flex items-center justify-center transition-colors">
+                    <i data-lucide="x" class="w-5 h-5"></i>
+                </button>
+            </div>
+
+            <!-- Modal Content -->
+            <div class="p-6 space-y-6">
+                <!-- Preview Visual Frame inside Modal -->
+                <div class="rounded-2xl border border-slate-200 overflow-hidden shadow-xs">
+                    <div class="browser-mockup-bar px-4 py-2.5 flex items-center justify-between">
+                        <div class="flex items-center gap-1.5">
+                            <span class="w-2.5 h-2.5 rounded-full bg-rose-500"></span>
+                            <span class="w-2.5 h-2.5 rounded-full bg-amber-400"></span>
+                            <span class="w-2.5 h-2.5 rounded-full bg-emerald-500"></span>
+                        </div>
+                        <span id="modalMockupUrl" class="text-[11px] font-mono text-slate-400 truncate max-w-[280px]"></span>
+                        <span class="text-[10px] text-slate-400 uppercase font-semibold">Demo Ready</span>
+                    </div>
+                    <div id="modalPreviewBanner" class="p-6 text-white bg-gradient-to-br from-slate-800 to-slate-900 flex flex-col justify-between min-h-[140px]">
+                        <div>
+                            <span id="modalNiche" class="text-xs opacity-90 block mb-1"></span>
+                            <h4 id="modalHeading" class="text-xl font-bold"></h4>
+                        </div>
+                        <p id="modalDesc" class="text-xs text-slate-300 leading-relaxed mt-2"></p>
+                    </div>
+                </div>
+
+                <!-- Pricing & License Packages Table ala Goomsite -->
+                <div class="border border-slate-200 rounded-2xl p-5 bg-slate-50/50">
+                    <h4 class="font-bold text-sm text-slate-900 mb-3 flex items-center gap-2">
+                        <i data-lucide="tag" class="w-4 h-4 text-brand-600"></i> Pilihan Paket Pembelian
+                    </h4>
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
+                        <!-- Paket Template Only -->
+                        <div class="bg-white border-2 border-brand-500/80 rounded-xl p-4 relative shadow-sm">
+                            <div class="flex items-center justify-between mb-1">
+                                <span class="text-xs font-bold text-slate-900">Lisensi Siap Pakai</span>
+                                <span class="text-[10px] bg-emerald-100 text-emerald-800 font-bold px-2 py-0.5 rounded">Hemat 50%</span>
+                            </div>
+                            <div class="flex items-baseline gap-1.5 my-2">
+                                <span class="text-lg font-extrabold text-brand-600 font-mono">Rp 149.000</span>
+                                <span class="text-xs text-slate-400 line-through">Rp 299.000</span>
+                            </div>
+                            <ul class="text-[11px] text-slate-600 space-y-1 my-3">
+                                <li class="flex items-center gap-1.5"><i data-lucide="check" class="w-3.5 h-3.5 text-emerald-600"></i> File Lengkap (HTML5, Tailwind, JS)</li>
+                                <li class="flex items-center gap-1.5"><i data-lucide="check" class="w-3.5 h-3.5 text-emerald-600"></i> 5 Halaman Siap Pakai</li>
+                                <li class="flex items-center gap-1.5"><i data-lucide="check" class="w-3.5 h-3.5 text-emerald-600"></i> Integrasi WhatsApp Otomatis</li>
+                                <li class="flex items-center gap-1.5"><i data-lucide="check" class="w-3.5 h-3.5 text-emerald-600"></i> Panduan Edit Mandiri</li>
+                            </ul>
+                            <a id="modalBuyTemplateOnlyBtn" href="#" target="_blank"
+                                class="w-full bg-brand-500 hover:bg-brand-600 text-slate-950 font-bold text-xs py-2 px-3 rounded-lg inline-flex items-center justify-center gap-1.5 transition-colors">
+                                <i data-lucide="shopping-bag" class="w-3.5 h-3.5"></i> Pesan Template Ini
+                            </a>
+                        </div>
+
+                        <!-- Paket Full Setup & Domain -->
+                        <div class="bg-white border border-slate-200 rounded-xl p-4 hover:border-slate-400 transition-all shadow-sm">
+                            <div class="flex items-center justify-between mb-1">
+                                <span class="text-xs font-bold text-slate-900">Siap Terima Beres</span>
+                                <span class="text-[10px] bg-brand-100 text-brand-800 font-bold px-2 py-0.5 rounded">All-In-One</span>
+                            </div>
+                            <div class="flex items-baseline gap-1.5 my-2">
+                                <span class="text-lg font-extrabold text-slate-900 font-mono">Rp 499.000</span>
+                                <span class="text-xs text-slate-400 line-through">Rp 899.000</span>
+                            </div>
+                            <ul class="text-[11px] text-slate-600 space-y-1 my-3">
+                                <li class="flex items-center gap-1.5"><i data-lucide="check" class="w-3.5 h-3.5 text-emerald-600"></i> Semua Fitur Template Siap Pakai</li>
+                                <li class="flex items-center gap-1.5"><i data-lucide="check" class="w-3.5 h-3.5 text-emerald-600"></i> Domain .com / .id (1 Tahun)</li>
+                                <li class="flex items-center gap-1.5"><i data-lucide="check" class="w-3.5 h-3.5 text-emerald-600"></i> Setup Produk & No. WhatsApp Anda</li>
+                                <li class="flex items-center gap-1.5"><i data-lucide="check" class="w-3.5 h-3.5 text-emerald-600"></i> Siap Tayang Tanpa Repot Koding</li>
+                            </ul>
+                            <a id="modalBuyFullSetupBtn" href="#" target="_blank"
+                                class="w-full bg-slate-900 hover:bg-slate-800 text-white font-bold text-xs py-2 px-3 rounded-lg inline-flex items-center justify-center gap-1.5 transition-colors">
+                                <i data-lucide="zap" class="w-3.5 h-3.5 text-amber-400"></i> Pesan Siap Beres
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Package & Technical Features Checklist ala Goomsite -->
+                <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                    <div class="bg-slate-50 p-4 rounded-xl border border-slate-200">
+                        <h5 class="text-xs font-bold text-slate-900 mb-2 uppercase tracking-wide flex items-center gap-1.5">
+                            <i data-lucide="folder-archive" class="w-4 h-4 text-brand-600"></i> Isi Paket File
+                        </h5>
+                        <ul class="text-xs text-slate-600 space-y-1.5">
+                            <li>&bull; <strong class="text-slate-800">index.html</strong> (Beranda Showroom)</li>
+                            <li>&bull; <strong class="text-slate-800">katalog.html</strong> (Daftar Menu / Produk)</li>
+                            <li>&bull; <strong class="text-slate-800">detail.html</strong> (Halaman Detail & Varian)</li>
+                            <li>&bull; <strong class="text-slate-800">tentang.html & kontak.html</strong></li>
+                            <li>&bull; <strong class="text-slate-800">artikel.html</strong> (Edu-Marketing)</li>
+                            <li>&bull; Asset Gambar & Font Terintegrasi</li>
+                        </ul>
+                    </div>
+
+                    <div class="bg-slate-50 p-4 rounded-xl border border-slate-200">
+                        <h5 class="text-xs font-bold text-slate-900 mb-2 uppercase tracking-wide flex items-center gap-1.5">
+                            <i data-lucide="cpu" class="w-4 h-4 text-emerald-600"></i> Spesifikasi Teknis
+                        </h5>
+                        <ul class="text-xs text-slate-600 space-y-1.5">
+                            <li>&bull; Keranjang WhatsApp Tanpa Server Backend</li>
+                            <li>&bull; Desain Responsif Mobile, Tablet & Desktop</li>
+                            <li>&bull; Struktur Tag SEO & Open Graph Lengkap</li>
+                            <li>&bull; Ringan & Cepat Dimuat (< 1 detik)</li>
+                            <li>&bull; Siap Pasang Pixel Meta Ads & TikTok</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Modal Footer -->
+            <div class="bg-slate-50 border-t border-slate-200 p-4 px-6 flex items-center justify-between">
+                <a id="modalLiveDemoBtn" href="#" target="_blank"
+                    class="inline-flex items-center gap-1.5 text-xs font-bold text-slate-700 hover:text-brand-600 px-4 py-2 rounded-xl bg-white border border-slate-200 hover:border-brand-400 transition-all shadow-xs">
+                    <i data-lucide="external-link" class="w-4 h-4"></i> Buka Live Demo di Tab Baru
+                </a>
+                <button onclick="closeDetailModal()" class="text-xs font-semibold text-slate-500 hover:text-slate-800 px-4 py-2">
+                    Tutup
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- 7. FOOTER -->
+    <footer class="bg-night-950 text-slate-400 text-xs py-12 px-4 sm:px-6 lg:px-8 border-t border-slate-800 mt-auto">
+        <div class="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center gap-6">
+            <div class="flex items-center gap-3">
+                <div class="w-9 h-9 rounded-xl bg-brand-500 text-night-950 flex items-center justify-center font-bold">
+                    <i data-lucide="flame" class="w-5 h-5"></i>
+                </div>
+                <div>
+                    <span class="font-serif font-bold text-white text-base">Lentera Pasar</span>
+                    <p class="text-slate-400 text-xs">Katalog 73+ Template Website UMKM Modern Terintegrasi WhatsApp</p>
+                </div>
+            </div>
+            <div class="flex flex-wrap items-center justify-center gap-6 text-slate-400 text-xs">
+                <a href="index.html" class="hover:text-brand-400 transition-colors">Beranda</a>
+                <a href="katalog.html" class="hover:text-brand-400 text-white font-semibold transition-colors">Semua Template</a>
+                <a href="index.html#bidang-section" class="hover:text-brand-400 transition-colors">6 Bidang Industri</a>
+                <a href="https://wa.me/628979060191?text=Halo%20Admin%20Lentera%20Pasar,%20saya%20ingin%20konsultasi%20pembuatan%20website." target="_blank" class="hover:text-emerald-400 font-semibold transition-colors flex items-center gap-1">
+                    <i data-lucide="message-circle" class="w-3.5 h-3.5"></i> WhatsApp Konsultan
+                </a>
+            </div>
+        </div>
+        <div class="max-w-7xl mx-auto mt-8 pt-6 border-t border-slate-800/80 text-center text-slate-400 text-[11px]">
+            &copy; 2026 Lentera Pasar &bull; Seluruh Hak Cipta Dilindungi &bull; Digitalisasi Bisnis & Ekosistem UMKM Indonesia.
+        </div>
+    </footer>
+
+    <!-- Load Templates Master Data -->
+    <script src="js/templates-data.js"></script>
+
+    <!-- Interactive Catalogue Logic -->
+    <script>
+        // State Management
+        let currentBidang = 'all';
+        let currentGroup = 'all';
+        let currentSort = 'default';
+        let searchQuery = '';
+
+        // DOM Elements
+        const templatesGrid = document.getElementById('templatesGrid');
+        const resultsCountElem = document.getElementById('resultsCount');
+        const noResultsState = document.getElementById('noResultsState');
+        const headerSearchInput = document.getElementById('headerSearchInput');
+        const mobileSearchInput = document.getElementById('mobileSearchInput');
+        const headerClearSearchBtn = document.getElementById('headerClearSearchBtn');
+        const mobileClearSearchBtn = document.getElementById('mobileClearSearchBtn');
+        const bidangBanner = document.getElementById('bidangBanner');
+        const bidangBannerBadge = document.getElementById('bidangBannerBadge');
+        const bidangBannerTitle = document.getElementById('bidangBannerTitle');
+        const bidangBannerDesc = document.getElementById('bidangBannerDesc');
+        const bidangBannerCount = document.getElementById('bidangBannerCount');
+
+        // Color Gradient Helpers per Bidang
+        const BIDANG_THEMES = {
+            '01-fnb-kuliner': {
+                gradient: 'from-amber-500 via-orange-500 to-amber-700',
+                lightBg: 'from-amber-50 to-orange-50',
+                border: 'border-amber-200',
+                text: 'text-amber-800',
+                badgeBg: 'bg-amber-100 text-amber-800 border-amber-200',
+                buttonHover: 'hover:bg-amber-600',
+                tagClass: 'bg-amber-50 text-amber-700 border-amber-200'
+            },
+            '02-fashion-skincare': {
+                gradient: 'from-pink-500 via-rose-500 to-slate-800',
+                lightBg: 'from-pink-50 to-rose-50',
+                border: 'border-pink-200',
+                text: 'text-pink-800',
+                badgeBg: 'bg-pink-100 text-pink-800 border-pink-200',
+                buttonHover: 'hover:bg-pink-600',
+                tagClass: 'bg-pink-50 text-pink-700 border-pink-200'
+            },
+            '03-ritel-gadget-hobi': {
+                gradient: 'from-indigo-600 via-blue-600 to-slate-900',
+                lightBg: 'from-indigo-50 to-blue-50',
+                border: 'border-indigo-200',
+                text: 'text-indigo-800',
+                badgeBg: 'bg-indigo-100 text-indigo-800 border-indigo-200',
+                buttonHover: 'hover:bg-indigo-600',
+                tagClass: 'bg-indigo-50 text-indigo-700 border-indigo-200'
+            },
+            '04-kriya-dekorasi': {
+                gradient: 'from-emerald-600 via-teal-700 to-slate-900',
+                lightBg: 'from-emerald-50 to-teal-50',
+                border: 'border-emerald-200',
+                text: 'text-emerald-800',
+                badgeBg: 'bg-emerald-100 text-emerald-800 border-emerald-200',
+                buttonHover: 'hover:bg-emerald-700',
+                tagClass: 'bg-emerald-50 text-emerald-700 border-emerald-200'
+            },
+            '05-agrobisnis-bahan-mentah': {
+                gradient: 'from-lime-600 via-green-700 to-slate-900',
+                lightBg: 'from-lime-50 to-green-50',
+                border: 'border-lime-200',
+                text: 'text-lime-800',
+                badgeBg: 'bg-lime-100 text-lime-800 border-lime-200',
+                buttonHover: 'hover:bg-green-700',
+                tagClass: 'bg-lime-50 text-lime-700 border-lime-200'
+            },
+            '06-supplier-grosir-b2b': {
+                gradient: 'from-slate-700 via-slate-800 to-slate-950',
+                lightBg: 'from-slate-100 to-slate-200',
+                border: 'border-slate-300',
+                text: 'text-slate-800',
+                badgeBg: 'bg-slate-200 text-slate-800 border-slate-300',
+                buttonHover: 'hover:bg-slate-800',
+                tagClass: 'bg-slate-100 text-slate-700 border-slate-300'
+            }
+        };
+
+        // Format Currency IDR
+        function formatRupiah(num) {
+            return new Intl.NumberFormat('id-ID', { style: 'currency', currency: 'IDR', maximumFractionDigits: 0 }).format(num);
+        }
+
+        // Initialize URL parameters
+        function initFromUrl() {
+            const urlParams = new URLSearchParams(window.location.search);
+            const bidangParam = urlParams.get('bidang');
+            const searchParam = urlParams.get('q');
+            const groupParam = urlParams.get('group');
+
+            if (bidangParam && BIDANG_INFO[bidangParam]) {
+                currentBidang = bidangParam;
+            }
+            if (searchParam) {
+                searchQuery = searchParam;
+                if (headerSearchInput) headerSearchInput.value = searchQuery;
+                if (mobileSearchInput) mobileSearchInput.value = searchQuery;
+            }
+            if (groupParam) {
+                currentGroup = groupParam;
+            }
+
+            updateFilterUI();
+            renderTemplates();
+        }
+
+        // Update UI Tab Active States
+        function updateFilterUI() {
+            // Sektor Tabs
+            document.querySelectorAll('#bidangFilterTabs button').forEach(btn => {
+                const filter = btn.getAttribute('data-filter');
+                if (filter === currentBidang) {
+                    btn.className = "tab-btn active px-4 py-2 rounded-xl text-xs font-bold transition-all whitespace-nowrap bg-slate-900 text-white shadow-xs flex items-center gap-1.5";
+                } else {
+                    btn.className = "tab-btn px-4 py-2 rounded-xl text-xs font-medium transition-all whitespace-nowrap bg-slate-100 text-slate-700 hover:bg-slate-200 border border-transparent flex items-center gap-1.5";
+                }
+            });
+
+            // Group Buttons
+            document.querySelectorAll('.group-btn').forEach(btn => {
+                const grp = btn.getAttribute('data-group');
+                if (grp === currentGroup) {
+                    btn.className = "group-btn active px-2.5 py-1 rounded-lg font-bold bg-slate-900 text-white";
+                } else {
+                    btn.className = "group-btn px-2.5 py-1 rounded-lg font-medium text-slate-600 hover:bg-slate-100";
+                }
+            });
+
+            // Update Bidang Banner
+            if (currentBidang !== 'all' && BIDANG_INFO[currentBidang]) {
+                const info = BIDANG_INFO[currentBidang];
+                const theme = BIDANG_THEMES[currentBidang];
+                bidangBanner.className = `mb-8 rounded-2xl p-6 sm:p-8 border bg-gradient-to-r ${theme.lightBg} ${theme.border} shadow-xs block`;
+                bidangBannerBadge.className = `inline-flex items-center gap-1.5 text-xs font-extrabold px-3 py-1 rounded-md mb-2 font-mono ${theme.badgeBg}`;
+                bidangBannerBadge.textContent = `BIDANG ${info.no} • ${info.name.toUpperCase()}`;
+                bidangBannerTitle.textContent = info.fullName;
+                bidangBannerDesc.textContent = info.description;
+                bidangBannerCount.className = `text-xs font-bold ${theme.text} bg-white px-3.5 py-1.5 rounded-xl border ${theme.border} shadow-xs inline-block`;
+                bidangBannerCount.textContent = `Koleksi Lengkap ${info.name}`;
+            } else {
+                bidangBanner.className = 'hidden';
+            }
+        }
+
+        // Set Sektor Filter
+        function setBidangFilter(bidangId) {
+            currentBidang = bidangId;
+            updateUrlParams();
+            updateFilterUI();
+            renderTemplates();
+        }
+
+        // Set Group Filter
+        function setGroupFilter(groupId) {
+            currentGroup = groupId;
+            updateUrlParams();
+            updateFilterUI();
+            renderTemplates();
+        }
+
+        // Sort Handler
+        function handleSortChange(sortVal) {
+            currentSort = sortVal;
+            renderTemplates();
+        }
+
+        // Update URL without page reload
+        function updateUrlParams() {
+            const url = new URL(window.location);
+            if (currentBidang !== 'all') {
+                url.searchParams.set('bidang', currentBidang);
+            } else {
+                url.searchParams.delete('bidang');
+            }
+            if (searchQuery.trim()) {
+                url.searchParams.set('q', searchQuery.trim());
+            } else {
+                url.searchParams.delete('q');
+            }
+            if (currentGroup !== 'all') {
+                url.searchParams.set('group', currentGroup);
+            } else {
+                url.searchParams.delete('group');
+            }
+            window.history.replaceState({}, '', url);
+        }
+
+        // Render Templates Grid
+        function renderTemplates() {
+            if (!window.TEMPLATES_DATA) return;
+
+            const q = searchQuery.trim().toLowerCase();
+
+            // Filter logic
+            let filtered = window.TEMPLATES_DATA.filter(item => {
+                const matchBidang = (currentBidang === 'all' || item.bidang === currentBidang);
+                const matchGroup = (currentGroup === 'all' || item.group === currentGroup);
+                const matchSearch = (q === '' ||
+                    item.title.toLowerCase().includes(q) ||
+                    item.niche.toLowerCase().includes(q) ||
+                    item.description.toLowerCase().includes(q) ||
+                    item.folder.toLowerCase().includes(q) ||
+                    (item.tags && item.tags.toLowerCase().includes(q)));
+
+                return matchBidang && matchGroup && matchSearch;
+            });
+
+            // Sort logic
+            if (currentSort === 'name-asc') {
+                filtered.sort((a, b) => a.title.localeCompare(b.title));
+            } else if (currentSort === 'name-desc') {
+                filtered.sort((a, b) => b.title.localeCompare(a.title));
+            } else if (currentSort === 'price-asc') {
+                filtered.sort((a, b) => a.price - b.price);
+            } else if (currentSort === 'price-desc') {
+                filtered.sort((a, b) => b.price - a.price);
+            }
+
+            // Update Counter
+            resultsCountElem.textContent = `Menampilkan ${filtered.length} template`;
+
+            if (filtered.length === 0) {
+                templatesGrid.innerHTML = '';
+                noResultsState.classList.remove('hidden');
+                return;
+            }
+
+            noResultsState.classList.add('hidden');
+
+            // Render Cards (Goomsite-Style)
+            let html = '';
+            filtered.forEach(tpl => {
+                const info = BIDANG_INFO[tpl.bidang] || {};
+                const theme = BIDANG_THEMES[tpl.bidang] || BIDANG_THEMES['01-fnb-kuliner'];
+                const waMessage = encodeURIComponent(`Halo Admin Lentera Pasar, saya ingin memesan template website *${tpl.title}* (${tpl.folder}) seharga ${formatRupiah(tpl.price)}. Mohon info langkah selanjutnya.`);
+                const waLink = `https://wa.me/628979060191?text=${waMessage}`;
+
+                html += `
+                <div class="template-card bg-white rounded-3xl border border-slate-200 overflow-hidden shadow-xs flex flex-col justify-between" id="card-${tpl.id}">
+                    <!-- Card Top: Mockup Browser Preview ala Goomsite -->
+                    <div>
+                        <div class="card-preview-frame">
+                            <!-- Mockup Browser Top Header Bar -->
+                            <div class="browser-mockup-bar px-3.5 py-2 flex items-center justify-between text-slate-400">
+                                <div class="flex items-center gap-1.5">
+                                    <span class="w-2 h-2 rounded-full bg-rose-500/80"></span>
+                                    <span class="w-2 h-2 rounded-full bg-amber-400/80"></span>
+                                    <span class="w-2 h-2 rounded-full bg-emerald-500/80"></span>
+                                </div>
+                                <div class="text-[10px] font-mono text-slate-300 bg-slate-900/90 px-3 py-0.5 rounded-full border border-slate-700/60 truncate max-w-[180px]">
+                                    ${tpl.folder}.lenterapasar.id
+                                </div>
+                                <span class="text-[9px] font-bold uppercase tracking-wider text-brand-400">Live</span>
+                            </div>
+
+                            <!-- Mockup Content Banner Visual -->
+                            <div class="h-40 bg-gradient-to-br ${theme.gradient} p-5 text-white flex flex-col justify-between relative overflow-hidden group">
+                                <div class="absolute -right-6 -bottom-6 w-28 h-28 bg-white/10 rounded-full blur-xl pointer-events-none group-hover:scale-150 transition-transform"></div>
+                                
+                                <div class="flex items-center justify-between z-10">
+                                    <span class="text-[10px] font-extrabold uppercase tracking-wider bg-black/40 backdrop-blur-md px-2.5 py-1 rounded-md border border-white/10">
+                                        ${tpl.group} &bull; ${info.name || 'UMKM'}
+                                    </span>
+                                    <span class="text-[10px] font-semibold bg-emerald-500/90 text-white px-2 py-0.5 rounded-full backdrop-blur-sm shadow-xs flex items-center gap-1">
+                                        <i data-lucide="check" class="w-3 h-3"></i> WA Ready
+                                    </span>
+                                </div>
+
+                                <div class="z-10">
+                                    <span class="text-xs text-white/80 font-medium block">${tpl.niche}</span>
+                                    <h3 class="font-bold text-xl text-white tracking-tight drop-shadow-xs">${tpl.title}</h3>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Card Body: Description, Badges & Price Tag -->
+                        <div class="p-5">
+                            <div class="flex items-center justify-between gap-2 mb-2.5">
+                                <div class="flex items-center gap-1.5 text-xs font-bold ${theme.text}">
+                                    <i data-lucide="${info.icon || 'layers'}" class="w-3.5 h-3.5"></i>
+                                    <span>${tpl.folder}</span>
+                                </div>
+                                <span class="text-[10px] font-bold text-slate-500 bg-slate-100 px-2 py-0.5 rounded border border-slate-200">
+                                    Multi-Halaman
+                                </span>
+                            </div>
+
+                            <p class="text-xs text-slate-600 leading-relaxed line-clamp-2 mb-4">
+                                ${tpl.description}
+                            </p>
+
+                            <!-- Features List Bullets ala Goomsite -->
+                            <div class="grid grid-cols-2 gap-1.5 text-[11px] text-slate-600 mb-4 bg-slate-50 p-2.5 rounded-xl border border-slate-100">
+                                <span class="flex items-center gap-1"><i data-lucide="check" class="w-3 h-3 text-emerald-600"></i> Checkout WA</span>
+                                <span class="flex items-center gap-1"><i data-lucide="check" class="w-3 h-3 text-emerald-600"></i> 5 Halaman Aktif</span>
+                                <span class="flex items-center gap-1"><i data-lucide="check" class="w-3 h-3 text-emerald-600"></i> Mobile Responsive</span>
+                                <span class="flex items-center gap-1"><i data-lucide="check" class="w-3 h-3 text-emerald-600"></i> Siap Pasang Iklan</span>
+                            </div>
+
+                            <!-- Price Tag Display ala Goomsite -->
+                            <div class="pt-3 border-t border-slate-100 flex items-center justify-between">
+                                <div>
+                                    <span class="text-[10px] text-slate-400 block font-medium">Harga Lisensi Template</span>
+                                    <div class="flex items-baseline gap-1.5">
+                                        <span class="text-base font-extrabold text-slate-900 font-mono">${formatRupiah(tpl.price)}</span>
+                                        <span class="text-[11px] text-slate-400 line-through">${formatRupiah(tpl.originalPrice)}</span>
+                                    </div>
+                                </div>
+                                <button onclick="openDetailModal('${tpl.id}')"
+                                    class="text-xs font-semibold text-brand-700 hover:text-brand-800 bg-brand-50 hover:bg-brand-100 px-2.5 py-1.5 rounded-lg border border-brand-200 transition-colors inline-flex items-center gap-1">
+                                    <i data-lucide="info" class="w-3.5 h-3.5"></i> Detail Paket
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Card Footer: Action Buttons (Demo & Pesan WA) -->
+                    <div class="p-5 pt-0 grid grid-cols-2 gap-2">
+                        <a href="${tpl.demoUrl}" target="_blank"
+                            class="w-full bg-slate-900 hover:bg-slate-800 text-white text-xs font-bold py-2.5 px-3 rounded-xl inline-flex items-center justify-center gap-1.5 transition-all shadow-xs group/btn">
+                            <span>Live Demo</span>
+                            <i data-lucide="external-link" class="w-3.5 h-3.5 group-hover/btn:translate-x-0.5 transition-transform"></i>
+                        </a>
+                        <a href="${waLink}" target="_blank"
+                            class="w-full bg-emerald-600 hover:bg-emerald-700 text-white text-xs font-bold py-2.5 px-3 rounded-xl inline-flex items-center justify-center gap-1.5 transition-all shadow-xs hover:shadow-md">
+                            <i data-lucide="message-circle" class="w-3.5 h-3.5"></i>
+                            <span>Pesan WA</span>
+                        </a>
+                    </div>
+                </div>
+                `;
+            });
+
+            templatesGrid.innerHTML = html;
+            lucide.createIcons();
+        }
+
+        // Modal Quick-View Logic (Goomsite-Style)
+        function openDetailModal(templateId) {
+            const tpl = window.TEMPLATES_DATA.find(item => item.id === templateId);
+            if (!tpl) return;
+
+            const info = BIDANG_INFO[tpl.bidang] || {};
+            const theme = BIDANG_THEMES[tpl.bidang] || BIDANG_THEMES['01-fnb-kuliner'];
+
+            document.getElementById('modalTitle').textContent = tpl.title;
+            document.getElementById('modalBidangTag').textContent = `${tpl.group} • ${info.name || 'UMKM'}`;
+            document.getElementById('modalMockupUrl').textContent = `https://${tpl.folder}.lenterapasar.id/`;
+            document.getElementById('modalNiche').textContent = tpl.niche;
+            document.getElementById('modalHeading').textContent = tpl.title;
+            document.getElementById('modalDesc').textContent = tpl.description;
+            document.getElementById('modalPreviewBanner').className = `p-6 text-white bg-gradient-to-br ${theme.gradient} flex flex-col justify-between min-h-[140px]`;
+
+            // Setup WhatsApp links for modal
+            const waTemplateOnly = encodeURIComponent(`Halo Admin Lentera Pasar, saya ingin memesan Paket Lisensi Template *${tpl.title}* (${tpl.folder}) seharga ${formatRupiah(tpl.price)}. Mohon info instruksi pembayarannya.`);
+            const waFullSetup = encodeURIComponent(`Halo Admin Lentera Pasar, saya ingin memesan Paket Terima Beres (Website + Domain + Setup WA) untuk template *${tpl.title}* (${tpl.folder}) seharga Rp 499.000. Mohon dibantu prosesnya.`);
+
+            document.getElementById('modalBuyTemplateOnlyBtn').href = `https://wa.me/628979060191?text=${waTemplateOnly}`;
+            document.getElementById('modalBuyFullSetupBtn').href = `https://wa.me/628979060191?text=${waFullSetup}`;
+            document.getElementById('modalLiveDemoBtn').href = tpl.demoUrl;
+
+            document.getElementById('templateDetailModal').classList.remove('hidden');
+            lucide.createIcons();
+        }
+
+        function closeDetailModal() {
+            document.getElementById('templateDetailModal').classList.add('hidden');
+        }
+
+        // Search Handlers
+        function handleSearch(val) {
+            searchQuery = val;
+            if (headerSearchInput && headerSearchInput.value !== val) headerSearchInput.value = val;
+            if (mobileSearchInput && mobileSearchInput.value !== val) mobileSearchInput.value = val;
+
+            if (headerClearSearchBtn) headerClearSearchBtn.classList.toggle('hidden', val.length === 0);
+            if (mobileClearSearchBtn) mobileClearSearchBtn.classList.toggle('hidden', val.length === 0);
+
+            updateUrlParams();
+            renderTemplates();
+        }
+
+        if (headerSearchInput) {
+            headerSearchInput.addEventListener('input', (e) => handleSearch(e.target.value));
+        }
+        if (mobileSearchInput) {
+            mobileSearchInput.addEventListener('input', (e) => handleSearch(e.target.value));
+        }
+
+        if (headerClearSearchBtn) {
+            headerClearSearchBtn.addEventListener('click', () => handleSearch(''));
+        }
+        if (mobileClearSearchBtn) {
+            mobileClearSearchBtn.addEventListener('click', () => handleSearch(''));
+        }
+
+        // Reset All Filters
+        function resetAllFilters() {
+            currentBidang = 'all';
+            currentGroup = 'all';
+            currentSort = 'default';
+            handleSearch('');
+            updateFilterUI();
+            renderTemplates();
+        }
+
+        // Close modal when clicked outside
+        window.addEventListener('click', (e) => {
+            const modal = document.getElementById('templateDetailModal');
+            if (e.target === modal) {
+                closeDetailModal();
+            }
+        });
+
+        // Initialize on DOM load
+        document.addEventListener('DOMContentLoaded', () => {
+            initFromUrl();
+        });
+    </script>
+</body>
+
+</html>
