@@ -4,71 +4,71 @@
  */
 
 const BIDANG_INFO = {
-  '01-fnb-kuliner': {
-    id: '01-fnb-kuliner',
-    no: '01',
-    name: 'Kuliner & F&B',
-    fullName: 'F&B / Kuliner & Restoran',
-    icon: 'utensils',
-    color: 'amber',
-    badgeClass: 'bg-amber-100 text-amber-800 border-amber-200',
-    themeGradient: 'from-amber-500 to-orange-500',
-    description: 'Solusi website kuliner modern mulai dari ricebowl, coffee shop, katering higienis, frozen food hingga kuliner tradisional dengan pemesanan langsung ke WhatsApp dapur Anda.'
+  "01-fnb-kuliner": {
+    "id": "01-fnb-kuliner",
+    "no": "01",
+    "name": "Kuliner & F&B",
+    "fullName": "F&B / Kuliner & Restoran",
+    "icon": "utensils",
+    "color": "amber",
+    "badgeClass": "bg-amber-100 text-amber-800 border-amber-200",
+    "themeGradient": "from-amber-500 to-orange-500",
+    "description": "Solusi website kuliner modern mulai dari ricebowl, coffee shop, katering higienis, frozen food hingga kuliner tradisional dengan pemesanan langsung ke WhatsApp dapur Anda."
   },
-  '02-fashion-skincare': {
-    id: '02-fashion-skincare',
-    no: '02',
-    name: 'Fashion & Beauty',
-    fullName: 'Fashion, Beauty & Skincare',
-    icon: 'sparkle',
-    color: 'pink',
-    badgeClass: 'bg-pink-100 text-pink-800 border-pink-200',
-    themeGradient: 'from-pink-500 to-rose-500',
-    description: 'Etalase visual mewah untuk modest fashion, brand streetwear, klinik kecantikan & skincare, parfum artisan, dan perhiasan berkelas.'
+  "02-fashion-skincare": {
+    "id": "02-fashion-skincare",
+    "no": "02",
+    "name": "Fashion & Beauty",
+    "fullName": "Fashion, Beauty & Skincare",
+    "icon": "sparkle",
+    "color": "pink",
+    "badgeClass": "bg-pink-100 text-pink-800 border-pink-200",
+    "themeGradient": "from-pink-500 to-rose-500",
+    "description": "Etalase visual mewah untuk modest fashion, brand streetwear, klinik kecantikan & skincare, parfum artisan, dan perhiasan berkelas."
   },
-  '03-ritel-gadget-hobi': {
-    id: '03-ritel-gadget-hobi',
-    no: '03',
-    name: 'Ritel & Hobi',
-    fullName: 'Ritel, Gadget & Hobi',
-    icon: 'gamepad-2',
-    color: 'indigo',
-    badgeClass: 'bg-indigo-100 text-indigo-800 border-indigo-200',
-    themeGradient: 'from-indigo-500 to-blue-600',
-    description: 'Toko online dinamis untuk gadget smartphone, gaming peripheral, perlengkapan outdoor, hobi diecast, dan kebutuhan harian.'
+  "03-ritel-gadget-hobi": {
+    "id": "03-ritel-gadget-hobi",
+    "no": "03",
+    "name": "Ritel & Hobi",
+    "fullName": "Ritel, Gadget & Hobi",
+    "icon": "gamepad-2",
+    "color": "indigo",
+    "badgeClass": "bg-indigo-100 text-indigo-800 border-indigo-200",
+    "themeGradient": "from-indigo-500 to-blue-600",
+    "description": "Toko online dinamis untuk gadget smartphone, gaming peripheral, perlengkapan outdoor, hobi diecast, dan kebutuhan harian."
   },
-  '04-kriya-dekorasi': {
-    id: '04-kriya-dekorasi',
-    no: '04',
-    name: 'Kriya & Dekorasi',
-    fullName: 'Kriya, Furnitur & Dekorasi',
-    icon: 'gem',
-    color: 'emerald',
-    badgeClass: 'bg-emerald-100 text-emerald-800 border-emerald-200',
-    themeGradient: 'from-emerald-600 to-teal-700',
-    description: 'Galeri karya furnitur kayu solid, seni keramik tembikar, batik heritage, lilin aromaterapi, dan dekorasi estetik rumah.'
+  "04-kriya-dekorasi": {
+    "id": "04-kriya-dekorasi",
+    "no": "04",
+    "name": "Kriya & Dekorasi",
+    "fullName": "Kriya, Furnitur & Dekorasi",
+    "icon": "gem",
+    "color": "emerald",
+    "badgeClass": "bg-emerald-100 text-emerald-800 border-emerald-200",
+    "themeGradient": "from-emerald-600 to-teal-700",
+    "description": "Galeri karya furnitur kayu solid, seni keramik tembikar, batik heritage, lilin aromaterapi, dan dekorasi estetik rumah."
   },
-  '05-agrobisnis-bahan-mentah': {
-    id: '05-agrobisnis-bahan-mentah',
-    no: '05',
-    name: 'Agrobisnis & Alam',
-    fullName: 'Agrobisnis & Hasil Alam',
-    icon: 'sprout',
-    color: 'lime',
-    badgeClass: 'bg-lime-100 text-lime-800 border-lime-200',
-    themeGradient: 'from-lime-600 to-green-700',
-    description: 'Etalase komoditas sayur hidroponik, beras organik, hasil laut segar, bibit tanaman unggul, dan madu hutan murni nusantara.'
+  "05-agrobisnis-bahan-mentah": {
+    "id": "05-agrobisnis-bahan-mentah",
+    "no": "05",
+    "name": "Agrobisnis & Alam",
+    "fullName": "Agrobisnis & Hasil Alam",
+    "icon": "sprout",
+    "color": "lime",
+    "badgeClass": "bg-lime-100 text-lime-800 border-lime-200",
+    "themeGradient": "from-lime-600 to-green-700",
+    "description": "Etalase komoditas sayur hidroponik, beras organik, hasil laut segar, bibit tanaman unggul, dan madu hutan murni nusantara."
   },
-  '06-supplier-grosir-b2b': {
-    id: '06-supplier-grosir-b2b',
-    no: '06',
-    name: 'Supplier & B2B',
-    fullName: 'Supplier, Grosir & B2B',
-    icon: 'factory',
-    color: 'slate',
-    badgeClass: 'bg-slate-200 text-slate-800 border-slate-300',
-    themeGradient: 'from-slate-700 to-slate-900',
-    description: 'Portal profesional pabrik kemasan box & pouch, konveksi seragam, distributor sembako, dan supplier bahan baku industri skala besar.'
+  "06-supplier-grosir-b2b": {
+    "id": "06-supplier-grosir-b2b",
+    "no": "06",
+    "name": "Supplier & B2B",
+    "fullName": "Supplier, Grosir & B2B",
+    "icon": "factory",
+    "color": "slate",
+    "badgeClass": "bg-slate-200 text-slate-800 border-slate-300",
+    "themeGradient": "from-slate-700 to-slate-900",
+    "description": "Portal profesional pabrik kemasan box & pouch, konveksi seragam, distributor sembako, dan supplier bahan baku industri skala besar."
   }
 };
 
@@ -242,12 +242,12 @@ const TEMPLATES_DATA = [
     "badgeFeatures": []
   },
   {
-    "id": "02-fashion-skincare/fashion-casual-minimal",
+    "id": "fashion-casual-minimal",
     "title": "Casual Minimal",
     "niche": "Casual Minimal",
     "bidang": "02-fashion-skincare",
     "group": "Group A",
-    "folder": "02-fashion-skincare/fashion-casual-minimal",
+    "folder": "fashion-casual-minimal",
     "demoUrl": "./02-fashion-skincare/fashion-casual-minimal/index.html",
     "description": "",
     "price": 149000,
@@ -256,12 +256,12 @@ const TEMPLATES_DATA = [
     "badgeFeatures": []
   },
   {
-    "id": "02-fashion-skincare/fashion-modest-editorial",
+    "id": "fashion-modest-editorial",
     "title": "Modest Editorial",
     "niche": "Modest Editorial",
     "bidang": "02-fashion-skincare",
     "group": "Group A",
-    "folder": "02-fashion-skincare/fashion-modest-editorial",
+    "folder": "fashion-modest-editorial",
     "demoUrl": "./02-fashion-skincare/fashion-modest-editorial/index.html",
     "description": "",
     "price": 149000,
@@ -270,12 +270,12 @@ const TEMPLATES_DATA = [
     "badgeFeatures": []
   },
   {
-    "id": "02-fashion-skincare/fashion-kids-pastel",
+    "id": "fashion-kids-pastel",
     "title": "Kids Pastel",
     "niche": "Kids Pastel",
     "bidang": "02-fashion-skincare",
     "group": "Group A",
-    "folder": "02-fashion-skincare/fashion-kids-pastel",
+    "folder": "fashion-kids-pastel",
     "demoUrl": "./02-fashion-skincare/fashion-kids-pastel/index.html",
     "description": "",
     "price": 149000,
@@ -284,12 +284,12 @@ const TEMPLATES_DATA = [
     "badgeFeatures": []
   },
   {
-    "id": "02-fashion-skincare/fashion-activewear-kinetic",
+    "id": "fashion-activewear-kinetic",
     "title": "Activewear Kinetic",
     "niche": "Activewear Kinetic",
     "bidang": "02-fashion-skincare",
     "group": "Group A",
-    "folder": "02-fashion-skincare/fashion-activewear-kinetic",
+    "folder": "fashion-activewear-kinetic",
     "demoUrl": "./02-fashion-skincare/fashion-activewear-kinetic/index.html",
     "description": "",
     "price": 149000,
@@ -298,12 +298,12 @@ const TEMPLATES_DATA = [
     "badgeFeatures": []
   },
   {
-    "id": "02-fashion-skincare/fashion-loungewear-cozy",
+    "id": "fashion-loungewear-cozy",
     "title": "Loungewear Cozy",
     "niche": "Loungewear Cozy",
     "bidang": "02-fashion-skincare",
     "group": "Group A",
-    "folder": "02-fashion-skincare/fashion-loungewear-cozy",
+    "folder": "fashion-loungewear-cozy",
     "demoUrl": "./02-fashion-skincare/fashion-loungewear-cozy/index.html",
     "description": "",
     "price": 149000,
@@ -312,12 +312,12 @@ const TEMPLATES_DATA = [
     "badgeFeatures": []
   },
   {
-    "id": "02-fashion-skincare/skincare-clinical-lab",
+    "id": "skincare-clinical-lab",
     "title": "Clinical Lab Skincare",
     "niche": "Clinical Lab Skincare",
     "bidang": "02-fashion-skincare",
     "group": "Group B",
-    "folder": "02-fashion-skincare/skincare-clinical-lab",
+    "folder": "skincare-clinical-lab",
     "demoUrl": "./02-fashion-skincare/skincare-clinical-lab/index.html",
     "description": "Desain klinis terpercaya, edukasi kandungan bahan aktif serum & konsultasi masalah kulit ke WhatsApp.",
     "price": 149000,
@@ -326,12 +326,12 @@ const TEMPLATES_DATA = [
     "badgeFeatures": []
   },
   {
-    "id": "02-fashion-skincare/makeup-glam-studio",
+    "id": "makeup-glam-studio",
     "title": "Makeup Glam Studio",
     "niche": "Makeup Glam Studio",
     "bidang": "02-fashion-skincare",
     "group": "Group B",
-    "folder": "02-fashion-skincare/makeup-glam-studio",
+    "folder": "makeup-glam-studio",
     "demoUrl": "./02-fashion-skincare/makeup-glam-studio/index.html",
     "description": "Shade picker interaktif, katalog kosmetik glamor, & video swatch bibir yang memikat calon pembeli.",
     "price": 149000,
@@ -340,12 +340,12 @@ const TEMPLATES_DATA = [
     "badgeFeatures": []
   },
   {
-    "id": "02-fashion-skincare/perfume-luxury-atelier",
+    "id": "perfume-luxury-atelier",
     "title": "Perfume Luxury Atelier",
     "niche": "Perfume Luxury Atelier",
     "bidang": "02-fashion-skincare",
     "group": "Group B",
-    "folder": "02-fashion-skincare/perfume-luxury-atelier",
+    "folder": "perfume-luxury-atelier",
     "demoUrl": "./02-fashion-skincare/perfume-luxury-atelier/index.html",
     "description": "Atmosfer kemewahan wangi, piramida notes aroma (top, heart, base) & kurasi decant tester kit.",
     "price": 149000,
@@ -354,12 +354,12 @@ const TEMPLATES_DATA = [
     "badgeFeatures": []
   },
   {
-    "id": "02-fashion-skincare/bodycare-botanical-spa",
+    "id": "bodycare-botanical-spa",
     "title": "Botanical Spa Bodycare",
     "niche": "Botanical Spa Bodycare",
     "bidang": "02-fashion-skincare",
     "group": "Group B",
-    "folder": "02-fashion-skincare/bodycare-botanical-spa",
+    "folder": "bodycare-botanical-spa",
     "demoUrl": "./02-fashion-skincare/bodycare-botanical-spa/index.html",
     "description": "Nuansa relaksasi alami menenangkan, formulasi herbal organik & paket perawatan tubuh spa di rumah.",
     "price": 149000,
@@ -368,12 +368,12 @@ const TEMPLATES_DATA = [
     "badgeFeatures": []
   },
   {
-    "id": "02-fashion-skincare/footwear-sneakers-street",
+    "id": "footwear-sneakers-street",
     "title": "Sneakers Street",
     "niche": "Sneakers Street",
     "bidang": "02-fashion-skincare",
     "group": "Group C",
-    "folder": "02-fashion-skincare/footwear-sneakers-street",
+    "folder": "footwear-sneakers-street",
     "demoUrl": "./02-fashion-skincare/footwear-sneakers-street/index.html",
     "description": "Gaya jalanan maskulin edgy, showcase drop rilis terbatas, & panduan ukuran sol kaki presisi.",
     "price": 149000,
@@ -382,12 +382,12 @@ const TEMPLATES_DATA = [
     "badgeFeatures": []
   },
   {
-    "id": "02-fashion-skincare/bags-leather-atelier",
+    "id": "bags-leather-atelier",
     "title": "Leather Bags Atelier",
     "niche": "Leather Bags Atelier",
     "bidang": "02-fashion-skincare",
     "group": "Group C",
-    "folder": "02-fashion-skincare/bags-leather-atelier",
+    "folder": "bags-leather-atelier",
     "demoUrl": "./02-fashion-skincare/bags-leather-atelier/index.html",
     "description": "Sentuhan artisan kulit sapi asli, showcase kekuatan jahitan, serta kompartemen tas fungsional.",
     "price": 149000,
@@ -396,12 +396,12 @@ const TEMPLATES_DATA = [
     "badgeFeatures": []
   },
   {
-    "id": "02-fashion-skincare/accessories-modern-optics",
+    "id": "accessories-modern-optics",
     "title": "Modern Optics Eyewear",
     "niche": "Modern Optics Eyewear",
     "bidang": "02-fashion-skincare",
     "group": "Group C",
-    "folder": "02-fashion-skincare/accessories-modern-optics",
+    "folder": "accessories-modern-optics",
     "demoUrl": "./02-fashion-skincare/accessories-modern-optics/index.html",
     "description": "Koleksi frame kacamata kekinian, panduan bentuk wajah, & form pemesanan resep lensa kustom.",
     "price": 149000,
@@ -410,12 +410,12 @@ const TEMPLATES_DATA = [
     "badgeFeatures": []
   },
   {
-    "id": "02-fashion-skincare/jewelry-timepiece-luxury",
+    "id": "jewelry-timepiece-luxury",
     "title": "Jewelry & Timepiece",
     "niche": "Jewelry & Timepiece",
     "bidang": "02-fashion-skincare",
     "group": "Group C",
-    "folder": "02-fashion-skincare/jewelry-timepiece-luxury",
+    "folder": "jewelry-timepiece-luxury",
     "demoUrl": "./02-fashion-skincare/jewelry-timepiece-luxury/index.html",
     "description": "Tampilan eksklusif berkilau, sertifikat keaslian karat emas, & layanan konsultasi custom cincin nikah.",
     "price": 149000,
@@ -424,12 +424,12 @@ const TEMPLATES_DATA = [
     "badgeFeatures": []
   },
   {
-    "id": "03-ritel-gadget-hobi/gadget-mobile-tech",
+    "id": "gadget-mobile-tech",
     "title": "Mobile Tech Gadget",
     "niche": "Mobile Tech Gadget",
     "bidang": "03-ritel-gadget-hobi",
     "group": "Group A",
-    "folder": "03-ritel-gadget-hobi/gadget-mobile-tech",
+    "folder": "gadget-mobile-tech",
     "demoUrl": "./03-ritel-gadget-hobi/gadget-mobile-tech/index.html",
     "description": "Layout komparasi spesifikasi chipset & kamera, status garansi resmi, serta paket aksesoris bundling.",
     "price": 149000,
@@ -438,12 +438,12 @@ const TEMPLATES_DATA = [
     "badgeFeatures": []
   },
   {
-    "id": "03-ritel-gadget-hobi/gaming-peripherals-studio",
+    "id": "gaming-peripherals-studio",
     "title": "Gaming Peripherals Studio",
     "niche": "Gaming Peripherals Studio",
     "bidang": "03-ritel-gadget-hobi",
     "group": "Group A",
-    "folder": "03-ritel-gadget-hobi/gaming-peripherals-studio",
+    "folder": "gaming-peripherals-studio",
     "demoUrl": "./03-ritel-gadget-hobi/gaming-peripherals-studio/index.html",
     "description": "Cyberpunk dark aesthetic, rincian switch mechanical keyboard, & polling rate mouse esports.",
     "price": 149000,
@@ -452,12 +452,12 @@ const TEMPLATES_DATA = [
     "badgeFeatures": []
   },
   {
-    "id": "03-ritel-gadget-hobi/tools-hardware-pro",
+    "id": "tools-hardware-pro",
     "title": "Tools & Hardware Pro",
     "niche": "Tools & Hardware Pro",
     "bidang": "03-ritel-gadget-hobi",
     "group": "Group A",
-    "folder": "03-ritel-gadget-hobi/tools-hardware-pro",
+    "folder": "tools-hardware-pro",
     "demoUrl": "./03-ritel-gadget-hobi/tools-hardware-pro/index.html",
     "description": "Tangguh industrial, spesifikasi torsi bor & voltase baterai, serta ketersediaan suku cadang servis.",
     "price": 149000,
@@ -466,12 +466,12 @@ const TEMPLATES_DATA = [
     "badgeFeatures": []
   },
   {
-    "id": "03-ritel-gadget-hobi/moto-garage-accessories",
+    "id": "moto-garage-accessories",
     "title": "Moto Garage Accessories",
     "niche": "Moto Garage Accessories",
     "bidang": "03-ritel-gadget-hobi",
     "group": "Group A",
-    "folder": "03-ritel-gadget-hobi/moto-garage-accessories",
+    "folder": "moto-garage-accessories",
     "demoUrl": "./03-ritel-gadget-hobi/moto-garage-accessories/index.html",
     "description": "Gaya bengkel modern bertenaga, filter kecocokan tipe motor & katalog helm/part touring.",
     "price": 149000,
@@ -480,12 +480,12 @@ const TEMPLATES_DATA = [
     "badgeFeatures": []
   },
   {
-    "id": "03-ritel-gadget-hobi/outdoor-camping-expedition",
+    "id": "outdoor-camping-expedition",
     "title": "Outdoor Camping Expedition",
     "niche": "Outdoor Camping Expedition",
     "bidang": "03-ritel-gadget-hobi",
     "group": "Group B",
-    "folder": "03-ritel-gadget-hobi/outdoor-camping-expedition",
+    "folder": "outdoor-camping-expedition",
     "demoUrl": "./03-ritel-gadget-hobi/outdoor-camping-expedition/index.html",
     "description": "Nuansa alam petualang tangguh, checklist peralatan mendaki, & persewaan/pembelian tenda via WA.",
     "price": 149000,
@@ -494,12 +494,12 @@ const TEMPLATES_DATA = [
     "badgeFeatures": []
   },
   {
-    "id": "03-ritel-gadget-hobi/fitness-gym-gear",
+    "id": "fitness-gym-gear",
     "title": "Fitness & Gym Gear",
     "niche": "Fitness & Gym Gear",
     "bidang": "03-ritel-gadget-hobi",
     "group": "Group B",
-    "folder": "03-ritel-gadget-hobi/fitness-gym-gear",
+    "folder": "fitness-gym-gear",
     "demoUrl": "./03-ritel-gadget-hobi/fitness-gym-gear/index.html",
     "description": "Desain bersemangat tinggi, pilihan beban alat gym, serta panduan nutrisi suplemen pembentuk tubuh.",
     "price": 149000,
@@ -508,12 +508,12 @@ const TEMPLATES_DATA = [
     "badgeFeatures": []
   },
   {
-    "id": "03-ritel-gadget-hobi/hobby-collector-vault",
+    "id": "hobby-collector-vault",
     "title": "Hobby Collector Vault",
     "niche": "Hobby Collector Vault",
     "bidang": "03-ritel-gadget-hobi",
     "group": "Group B",
-    "folder": "03-ritel-gadget-hobi/hobby-collector-vault",
+    "folder": "hobby-collector-vault",
     "demoUrl": "./03-ritel-gadget-hobi/hobby-collector-vault/index.html",
     "description": "Etalase rilis edisi terbatas, grading kondisi kartu/figur, serta sistem PO slot rilis Jepang.",
     "price": 149000,
@@ -522,12 +522,12 @@ const TEMPLATES_DATA = [
     "badgeFeatures": []
   },
   {
-    "id": "03-ritel-gadget-hobi/music-audio-studio",
+    "id": "music-audio-studio",
     "title": "Music & Audio Studio",
     "niche": "Music & Audio Studio",
     "bidang": "03-ritel-gadget-hobi",
     "group": "Group B",
-    "folder": "03-ritel-gadget-hobi/music-audio-studio",
+    "folder": "music-audio-studio",
     "demoUrl": "./03-ritel-gadget-hobi/music-audio-studio/index.html",
     "description": "Spesifikasi frekuensi audio Hi-Fi, instrumen musik akustik/elektrik, & konsultasi setup rekaman.",
     "price": 149000,
@@ -536,12 +536,12 @@ const TEMPLATES_DATA = [
     "badgeFeatures": []
   },
   {
-    "id": "03-ritel-gadget-hobi/pet-care-haven",
+    "id": "pet-care-haven",
     "title": "Pet Care Haven",
     "niche": "Pet Care Haven",
     "bidang": "03-ritel-gadget-hobi",
     "group": "Group C",
-    "folder": "03-ritel-gadget-hobi/pet-care-haven",
+    "folder": "pet-care-haven",
     "demoUrl": "./03-ritel-gadget-hobi/pet-care-haven/index.html",
     "description": "Visual ramah hewan kesayangan, pemesanan pakan harian & booking jadwal grooming/vaksinasi.",
     "price": 149000,
@@ -550,12 +550,12 @@ const TEMPLATES_DATA = [
     "badgeFeatures": []
   },
   {
-    "id": "03-ritel-gadget-hobi/plants-botanical-greenhouse",
+    "id": "plants-botanical-greenhouse",
     "title": "Botanical Greenhouse",
     "niche": "Botanical Greenhouse",
     "bidang": "03-ritel-gadget-hobi",
     "group": "Group C",
-    "folder": "03-ritel-gadget-hobi/plants-botanical-greenhouse",
+    "folder": "plants-botanical-greenhouse",
     "demoUrl": "./03-ritel-gadget-hobi/plants-botanical-greenhouse/index.html",
     "description": "Lush tropical green, indikator kebutuhan air & cahaya tiap varietas, serta pot terakota estetik.",
     "price": 149000,
@@ -564,12 +564,12 @@ const TEMPLATES_DATA = [
     "badgeFeatures": []
   },
   {
-    "id": "03-ritel-gadget-hobi/stationery-aesthetic-desk",
+    "id": "stationery-aesthetic-desk",
     "title": "Stationery Desk Aesthetic",
     "niche": "Stationery Desk Aesthetic",
     "bidang": "03-ritel-gadget-hobi",
     "group": "Group C",
-    "folder": "03-ritel-gadget-hobi/stationery-aesthetic-desk",
+    "folder": "stationery-aesthetic-desk",
     "demoUrl": "./03-ritel-gadget-hobi/stationery-aesthetic-desk/index.html",
     "description": "Inspirasi journaling pastel, katalog pena kaligrafi, binder organizer, & perlengkapan meja produktif.",
     "price": 149000,
@@ -578,12 +578,12 @@ const TEMPLATES_DATA = [
     "badgeFeatures": []
   },
   {
-    "id": "03-ritel-gadget-hobi/baby-montessori-play",
+    "id": "baby-montessori-play",
     "title": "Baby Montessori Play",
     "niche": "Baby Montessori Play",
     "bidang": "03-ritel-gadget-hobi",
     "group": "Group C",
-    "folder": "03-ritel-gadget-hobi/baby-montessori-play",
+    "folder": "baby-montessori-play",
     "demoUrl": "./03-ritel-gadget-hobi/baby-montessori-play/index.html",
     "description": "Mainan kayu non-toxic berstandar keamanan anak, panduan stimulasi motorik usia, & paket hadiah edukatif.",
     "price": 149000,
@@ -592,12 +592,12 @@ const TEMPLATES_DATA = [
     "badgeFeatures": []
   },
   {
-    "id": "04-kriya-dekorasi/furniture-teak-artisan",
+    "id": "furniture-teak-artisan",
     "title": "Teak Artisan Furniture",
     "niche": "Teak Artisan Furniture",
     "bidang": "04-kriya-dekorasi",
     "group": "Group A",
-    "folder": "04-kriya-dekorasi/furniture-teak-artisan",
+    "folder": "furniture-teak-artisan",
     "demoUrl": "./04-kriya-dekorasi/furniture-teak-artisan/index.html",
     "description": "Serat kayu jati solid elegan, garansi kekuatan lintas generasi, & custom ukuran pesanan interior.",
     "price": 149000,
@@ -606,12 +606,12 @@ const TEMPLATES_DATA = [
     "badgeFeatures": []
   },
   {
-    "id": "04-kriya-dekorasi/ceramics-clay-pottery",
+    "id": "ceramics-clay-pottery",
     "title": "Clay & Ceramics Pottery",
     "niche": "Clay & Ceramics Pottery",
     "bidang": "04-kriya-dekorasi",
     "group": "Group A",
-    "folder": "04-kriya-dekorasi/ceramics-clay-pottery",
+    "folder": "ceramics-clay-pottery",
     "demoUrl": "./04-kriya-dekorasi/ceramics-clay-pottery/index.html",
     "description": "Tekstur tanah liat alami buatan tangan, keunikan motif glasir tiap produk, & workshop tembikar.",
     "price": 149000,
@@ -620,12 +620,12 @@ const TEMPLATES_DATA = [
     "badgeFeatures": []
   },
   {
-    "id": "04-kriya-dekorasi/wall-decor-bohemian",
+    "id": "wall-decor-bohemian",
     "title": "Wall Decor Bohemian",
     "niche": "Wall Decor Bohemian",
     "bidang": "04-kriya-dekorasi",
     "group": "Group A",
-    "folder": "04-kriya-dekorasi/wall-decor-bohemian",
+    "folder": "wall-decor-bohemian",
     "demoUrl": "./04-kriya-dekorasi/wall-decor-bohemian/index.html",
     "description": "Makrame rajut & lukisan kanvas estetik, inspirasi tata ruang sudut estetik, serta paket instalasi dinding.",
     "price": 149000,
@@ -634,12 +634,12 @@ const TEMPLATES_DATA = [
     "badgeFeatures": []
   },
   {
-    "id": "04-kriya-dekorasi/home-textiles-cushion",
+    "id": "home-textiles-cushion",
     "title": "Home Textiles Cushion",
     "niche": "Home Textiles Cushion",
     "bidang": "04-kriya-dekorasi",
     "group": "Group A",
-    "folder": "04-kriya-dekorasi/home-textiles-cushion",
+    "folder": "home-textiles-cushion",
     "demoUrl": "./04-kriya-dekorasi/home-textiles-cushion/index.html",
     "description": "Kelembutan serat linen & rajut tenun, ragam motif bantal kursi sofa, serta custom sarung bantal.",
     "price": 149000,
@@ -648,12 +648,12 @@ const TEMPLATES_DATA = [
     "badgeFeatures": []
   },
   {
-    "id": "04-kriya-dekorasi/craft-natural-fiber",
+    "id": "craft-natural-fiber",
     "title": "Natural Fiber Crafts",
     "niche": "Natural Fiber Crafts",
     "bidang": "04-kriya-dekorasi",
     "group": "Group B",
-    "folder": "04-kriya-dekorasi/craft-natural-fiber",
+    "folder": "craft-natural-fiber",
     "demoUrl": "./04-kriya-dekorasi/craft-natural-fiber/index.html",
     "description": "Kearifan anyaman rotan & eceng gondok ramah lingkungan, keranjang serbaguna & kap lampu estetik.",
     "price": 149000,
@@ -662,12 +662,12 @@ const TEMPLATES_DATA = [
     "badgeFeatures": []
   },
   {
-    "id": "04-kriya-dekorasi/batik-heritage-atelier",
+    "id": "batik-heritage-atelier",
     "title": "Batik Heritage Atelier",
     "niche": "Batik Heritage Atelier",
     "bidang": "04-kriya-dekorasi",
     "group": "Group B",
-    "folder": "04-kriya-dekorasi/batik-heritage-atelier",
+    "folder": "batik-heritage-atelier",
     "demoUrl": "./04-kriya-dekorasi/batik-heritage-atelier/index.html",
     "description": "Filosofi mendalam tiap motif batik tulis & tenun leluhur, pewarna alami, & kain sutra eksklusif bernilai seni.",
     "price": 149000,
@@ -676,12 +676,12 @@ const TEMPLATES_DATA = [
     "badgeFeatures": []
   },
   {
-    "id": "04-kriya-dekorasi/craft-leather-workshop",
+    "id": "craft-leather-workshop",
     "title": "Leather Craft Workshop",
     "niche": "Leather Craft Workshop",
     "bidang": "04-kriya-dekorasi",
     "group": "Group B",
-    "folder": "04-kriya-dekorasi/craft-leather-workshop",
+    "folder": "craft-leather-workshop",
     "demoUrl": "./04-kriya-dekorasi/craft-leather-workshop/index.html",
     "description": "Karakter patina kulit sapi eksklusif, opsi personalisasi inisial nama grafir, & dompet buatan tangan.",
     "price": 149000,
@@ -690,12 +690,12 @@ const TEMPLATES_DATA = [
     "badgeFeatures": []
   },
   {
-    "id": "04-kriya-dekorasi/craft-carving-sculpture",
+    "id": "craft-carving-sculpture",
     "title": "Carving & Sculpture",
     "niche": "Carving & Sculpture",
     "bidang": "04-kriya-dekorasi",
     "group": "Group B",
-    "folder": "04-kriya-dekorasi/craft-carving-sculpture",
+    "folder": "craft-carving-sculpture",
     "demoUrl": "./04-kriya-dekorasi/craft-carving-sculpture/index.html",
     "description": "Detail pahatan kayu mahakarya maestro, relief dekoratif bernilai seni tinggi, & sertifikat karya asli.",
     "price": 149000,
@@ -704,12 +704,12 @@ const TEMPLATES_DATA = [
     "badgeFeatures": []
   },
   {
-    "id": "04-kriya-dekorasi/scent-candle-sanctuary",
+    "id": "scent-candle-sanctuary",
     "title": "Scent Candle Sanctuary",
     "niche": "Scent Candle Sanctuary",
     "bidang": "04-kriya-dekorasi",
     "group": "Group C",
-    "folder": "04-kriya-dekorasi/scent-candle-sanctuary",
+    "folder": "scent-candle-sanctuary",
     "demoUrl": "./04-kriya-dekorasi/scent-candle-sanctuary/index.html",
     "description": "Suasana relaksasi damai, 100% natural soy wax & essential oil, serta reed diffuser aromatik ruangan.",
     "price": 149000,
@@ -718,12 +718,12 @@ const TEMPLATES_DATA = [
     "badgeFeatures": []
   },
   {
-    "id": "04-kriya-dekorasi/floral-preserved-keepsake",
+    "id": "floral-preserved-keepsake",
     "title": "Preserved Floral Keepsake",
     "niche": "Preserved Floral Keepsake",
     "bidang": "04-kriya-dekorasi",
     "group": "Group C",
-    "folder": "04-kriya-dekorasi/floral-preserved-keepsake",
+    "folder": "floral-preserved-keepsake",
     "demoUrl": "./04-kriya-dekorasi/floral-preserved-keepsake/index.html",
     "description": "Keindahan bunga abadi tahan bertahun-tahun, buket mahar wisuda & bingkai pigura kenangan momen spesial.",
     "price": 149000,
@@ -732,12 +732,12 @@ const TEMPLATES_DATA = [
     "badgeFeatures": []
   },
   {
-    "id": "04-kriya-dekorasi/resin-terrazzo-studio",
+    "id": "resin-terrazzo-studio",
     "title": "Resin & Terrazzo Studio",
     "niche": "Resin & Terrazzo Studio",
     "bidang": "04-kriya-dekorasi",
     "group": "Group C",
-    "folder": "04-kriya-dekorasi/resin-terrazzo-studio",
+    "folder": "resin-terrazzo-studio",
     "demoUrl": "./04-kriya-dekorasi/resin-terrazzo-studio/index.html",
     "description": "Corak abstrak terrazzo modern, tatakan coaster cangkir resin mengkilap, & pernak-pernik dekorasi meja.",
     "price": 149000,
@@ -746,12 +746,12 @@ const TEMPLATES_DATA = [
     "badgeFeatures": []
   },
   {
-    "id": "04-kriya-dekorasi/custom-hampers-curation",
+    "id": "custom-hampers-curation",
     "title": "Custom Hampers Curation",
     "niche": "Custom Hampers Curation",
     "bidang": "04-kriya-dekorasi",
     "group": "Group C",
-    "folder": "04-kriya-dekorasi/custom-hampers-curation",
+    "folder": "custom-hampers-curation",
     "demoUrl": "./04-kriya-dekorasi/custom-hampers-curation/index.html",
     "description": "Paket bingkisan kado perayaan mewah, personalisasi kartu ucapan, & kurasi souvenir corporate event.",
     "price": 149000,
@@ -760,12 +760,12 @@ const TEMPLATES_DATA = [
     "badgeFeatures": []
   },
   {
-    "id": "05-agrobisnis-bahan-mentah/agro-hydroponic-fresh",
+    "id": "agro-hydroponic-fresh",
     "title": "Hydroponic Fresh Farm",
     "niche": "Hydroponic Fresh Farm",
     "bidang": "05-agrobisnis-bahan-mentah",
     "group": "Group A",
-    "folder": "05-agrobisnis-bahan-mentah/agro-hydroponic-fresh",
+    "folder": "agro-hydroponic-fresh",
     "demoUrl": "./05-agrobisnis-bahan-mentah/agro-hydroponic-fresh/index.html",
     "description": "Jadwal petik panen harian, jaminan sayur segar tanpa pestisida kimiawi, & langganan box sayur mingguan.",
     "price": 149000,
@@ -774,12 +774,12 @@ const TEMPLATES_DATA = [
     "badgeFeatures": []
   },
   {
-    "id": "05-agrobisnis-bahan-mentah/agro-orchard-fruit",
+    "id": "agro-orchard-fruit",
     "title": "Orchard Fruit Garden",
     "niche": "Orchard Fruit Garden",
     "bidang": "05-agrobisnis-bahan-mentah",
     "group": "Group A",
-    "folder": "05-agrobisnis-bahan-mentah/agro-orchard-fruit",
+    "folder": "agro-orchard-fruit",
     "demoUrl": "./05-agrobisnis-bahan-mentah/agro-orchard-fruit/index.html",
     "description": "Tingkat kematangan manis alami pohon, sistem pemesanan per kilo / karton, & pengiriman langsung ke konsumen.",
     "price": 149000,
@@ -788,12 +788,12 @@ const TEMPLATES_DATA = [
     "badgeFeatures": []
   },
   {
-    "id": "05-agrobisnis-bahan-mentah/agro-organic-rice",
+    "id": "agro-organic-rice",
     "title": "Organic Rice Grain",
     "niche": "Organic Rice Grain",
     "bidang": "05-agrobisnis-bahan-mentah",
     "group": "Group A",
-    "folder": "05-agrobisnis-bahan-mentah/agro-organic-rice",
+    "folder": "agro-organic-rice",
     "demoUrl": "./05-agrobisnis-bahan-mentah/agro-organic-rice/index.html",
     "description": "Kualitas bulir beras pulen bersertifikat organik, beras merah & hitam diet, serta suplai karungan rumah tangga.",
     "price": 149000,
@@ -802,12 +802,12 @@ const TEMPLATES_DATA = [
     "badgeFeatures": []
   },
   {
-    "id": "05-agrobisnis-bahan-mentah/agro-mushroom-farm",
+    "id": "agro-mushroom-farm",
     "title": "Mushroom Cultivation Farm",
     "niche": "Mushroom Cultivation Farm",
     "bidang": "05-agrobisnis-bahan-mentah",
     "group": "Group A",
-    "folder": "05-agrobisnis-bahan-mentah/agro-mushroom-farm",
+    "folder": "agro-mushroom-farm",
     "demoUrl": "./05-agrobisnis-bahan-mentah/agro-mushroom-farm/index.html",
     "description": "Budidaya jamur tiram higienis terkontrol, pasokan jamur segar resto, & paket media tanam bibit baglog.",
     "price": 149000,
@@ -816,12 +816,12 @@ const TEMPLATES_DATA = [
     "badgeFeatures": []
   },
   {
-    "id": "05-agrobisnis-bahan-mentah/poultry-fresh-egg-farm",
+    "id": "poultry-fresh-egg-farm",
     "title": "Fresh Egg Poultry Farm",
     "niche": "Fresh Egg Poultry Farm",
     "bidang": "05-agrobisnis-bahan-mentah",
     "group": "Group B",
-    "folder": "05-agrobisnis-bahan-mentah/poultry-fresh-egg-farm",
+    "folder": "poultry-fresh-egg-farm",
     "demoUrl": "./05-agrobisnis-bahan-mentah/poultry-fresh-egg-farm/index.html",
     "description": "Sortir harian mutu Grade A, formulasi pakan herbal alami kaya omega 3, & pemesanan tray rak telur.",
     "price": 149000,
@@ -830,12 +830,12 @@ const TEMPLATES_DATA = [
     "badgeFeatures": []
   },
   {
-    "id": "05-agrobisnis-bahan-mentah/fishery-fresh-seafood-hub",
+    "id": "fishery-fresh-seafood-hub",
     "title": "Fishery Seafood Hub",
     "niche": "Fishery Seafood Hub",
     "bidang": "05-agrobisnis-bahan-mentah",
     "group": "Group B",
-    "folder": "05-agrobisnis-bahan-mentah/fishery-fresh-seafood-hub",
+    "folder": "fishery-fresh-seafood-hub",
     "demoUrl": "./05-agrobisnis-bahan-mentah/fishery-fresh-seafood-hub/index.html",
     "description": "Tangkapan kapal nelayan harian, rantai dingin es terjamin, & pasokan udang/ikan segar ke restoran.",
     "price": 149000,
@@ -844,12 +844,12 @@ const TEMPLATES_DATA = [
     "badgeFeatures": []
   },
   {
-    "id": "05-agrobisnis-bahan-mentah/livestock-fresh-meat-ranch",
+    "id": "livestock-fresh-meat-ranch",
     "title": "Livestock Ranch Meat",
     "niche": "Livestock Ranch Meat",
     "bidang": "05-agrobisnis-bahan-mentah",
     "group": "Group B",
-    "folder": "05-agrobisnis-bahan-mentah/livestock-fresh-meat-ranch",
+    "folder": "livestock-fresh-meat-ranch",
     "demoUrl": "./05-agrobisnis-bahan-mentah/livestock-fresh-meat-ranch/index.html",
     "description": "Peternakan sapi penggemukan pakan rumput alami, standar potong halal MUI, & pemesanan hewan qurban.",
     "price": 149000,
@@ -858,12 +858,12 @@ const TEMPLATES_DATA = [
     "badgeFeatures": []
   },
   {
-    "id": "05-agrobisnis-bahan-mentah/dairy-raw-milk-homestead",
+    "id": "dairy-raw-milk-homestead",
     "title": "Dairy Milk Homestead",
     "niche": "Dairy Milk Homestead",
     "bidang": "05-agrobisnis-bahan-mentah",
     "group": "Group B",
-    "folder": "05-agrobisnis-bahan-mentah/dairy-raw-milk-homestead",
+    "folder": "dairy-raw-milk-homestead",
     "demoUrl": "./05-agrobisnis-bahan-mentah/dairy-raw-milk-homestead/index.html",
     "description": "Susu murni perah sapi & kambing etawa harian, pasteurisasi higienis tanpa pengawet, & olahan yoghurt alami.",
     "price": 149000,
@@ -872,12 +872,12 @@ const TEMPLATES_DATA = [
     "badgeFeatures": []
   },
   {
-    "id": "05-agrobisnis-bahan-mentah/plantation-coffee-tea-estate",
+    "id": "plantation-coffee-tea-estate",
     "title": "Coffee & Tea Estate",
     "niche": "Coffee & Tea Estate",
     "bidang": "05-agrobisnis-bahan-mentah",
     "group": "Group C",
-    "folder": "05-agrobisnis-bahan-mentah/plantation-coffee-tea-estate",
+    "folder": "plantation-coffee-tea-estate",
     "demoUrl": "./05-agrobisnis-bahan-mentah/plantation-coffee-tea-estate/index.html",
     "description": "Ketinggian pegunungan sejuk nusantara, profil proses olah biji & teh pucuk daun, serta supply curah B2B.",
     "price": 149000,
@@ -886,12 +886,12 @@ const TEMPLATES_DATA = [
     "badgeFeatures": []
   },
   {
-    "id": "05-agrobisnis-bahan-mentah/spices-nusantara-trading",
+    "id": "spices-nusantara-trading",
     "title": "Spices Nusantara Trading",
     "niche": "Spices Nusantara Trading",
     "bidang": "05-agrobisnis-bahan-mentah",
     "group": "Group C",
-    "folder": "05-agrobisnis-bahan-mentah/spices-nusantara-trading",
+    "folder": "spices-nusantara-trading",
     "demoUrl": "./05-agrobisnis-bahan-mentah/spices-nusantara-trading/index.html",
     "description": "Kekayaan rempah-rempah kering asli, kemurnian aroma standar ekspor, & pasokan partai besar industri jamu.",
     "price": 149000,
@@ -900,12 +900,12 @@ const TEMPLATES_DATA = [
     "badgeFeatures": []
   },
   {
-    "id": "05-agrobisnis-bahan-mentah/raw-honey-wild-apiary",
+    "id": "raw-honey-wild-apiary",
     "title": "Raw Honey Wild Apiary",
     "niche": "Raw Honey Wild Apiary",
     "bidang": "05-agrobisnis-bahan-mentah",
     "group": "Group C",
-    "folder": "05-agrobisnis-bahan-mentah/raw-honey-wild-apiary",
+    "folder": "raw-honey-wild-apiary",
     "demoUrl": "./05-agrobisnis-bahan-mentah/raw-honey-wild-apiary/index.html",
     "description": "Madu mentah murni tanpa pasteurisasi perusak enzim, panen lestari hutan liar, & uji kemurnian laboratorium.",
     "price": 149000,
@@ -914,12 +914,12 @@ const TEMPLATES_DATA = [
     "badgeFeatures": []
   },
   {
-    "id": "05-agrobisnis-bahan-mentah/agro-nursery-organic-fertilizer",
+    "id": "agro-nursery-organic-fertilizer",
     "title": "Nursery & Organic Fertilizer",
     "niche": "Nursery & Organic Fertilizer",
     "bidang": "05-agrobisnis-bahan-mentah",
     "group": "Group C",
-    "folder": "05-agrobisnis-bahan-mentah/agro-nursery-organic-fertilizer",
+    "folder": "agro-nursery-organic-fertilizer",
     "demoUrl": "./05-agrobisnis-bahan-mentah/agro-nursery-organic-fertilizer/index.html",
     "description": "Kompos organik kaya mikroba penyubur tanah, bibit tanaman buah okulasi unggul, & media tanam siap pakai.",
     "price": 149000,
@@ -928,12 +928,12 @@ const TEMPLATES_DATA = [
     "badgeFeatures": []
   },
   {
-    "id": "06-supplier-grosir-b2b/packaging-corrugated-box-factory",
+    "id": "packaging-corrugated-box-factory",
     "title": "Corrugated Box Factory",
     "niche": "Corrugated Box Factory",
     "bidang": "06-supplier-grosir-b2b",
     "group": "Group A",
-    "folder": "06-supplier-grosir-b2b/packaging-corrugated-box-factory",
+    "folder": "packaging-corrugated-box-factory",
     "demoUrl": "./06-supplier-grosir-b2b/packaging-corrugated-box-factory/index.html",
     "description": "Kapasitas skala pabrik manufaktur, pilihan ketebalan flute (B/C/E), & form hitung custom cetak box.",
     "price": 149000,
@@ -942,12 +942,12 @@ const TEMPLATES_DATA = [
     "badgeFeatures": []
   },
   {
-    "id": "06-supplier-grosir-b2b/packaging-food-standing-pouch",
+    "id": "packaging-food-standing-pouch",
     "title": "Food Standing Pouch",
     "niche": "Food Standing Pouch",
     "bidang": "06-supplier-grosir-b2b",
     "group": "Group A",
-    "folder": "06-supplier-grosir-b2b/packaging-food-standing-pouch",
+    "folder": "packaging-food-standing-pouch",
     "demoUrl": "./06-supplier-grosir-b2b/packaging-food-standing-pouch/index.html",
     "description": "Spesifikasi food-grade barrier foil zipper, opsi printing rotogravure & digital printing full color.",
     "price": 149000,
@@ -956,12 +956,12 @@ const TEMPLATES_DATA = [
     "badgeFeatures": []
   },
   {
-    "id": "06-supplier-grosir-b2b/packaging-luxury-rigid-box",
+    "id": "packaging-luxury-rigid-box",
     "title": "Luxury Rigid Box",
     "niche": "Luxury Rigid Box",
     "bidang": "06-supplier-grosir-b2b",
     "group": "Group A",
-    "folder": "06-supplier-grosir-b2b/packaging-luxury-rigid-box",
+    "folder": "packaging-luxury-rigid-box",
     "demoUrl": "./06-supplier-grosir-b2b/packaging-luxury-rigid-box/index.html",
     "description": "Sentuhan magnetik mewah, finishing hotprint foil emas & emboss timbul untuk produk prestige & kado korporat.",
     "price": 149000,
@@ -970,12 +970,12 @@ const TEMPLATES_DATA = [
     "badgeFeatures": []
   },
   {
-    "id": "06-supplier-grosir-b2b/packaging-eco-kraft-paperbag",
+    "id": "packaging-eco-kraft-paperbag",
     "title": "Eco Kraft Paperbag",
     "niche": "Eco Kraft Paperbag",
     "bidang": "06-supplier-grosir-b2b",
     "group": "Group A",
-    "folder": "06-supplier-grosir-b2b/packaging-eco-kraft-paperbag",
+    "folder": "packaging-eco-kraft-paperbag",
     "demoUrl": "./06-supplier-grosir-b2b/packaging-eco-kraft-paperbag/index.html",
     "description": "Bahan daur ulang kraft kokoh ramah bumi, custom sablon brand toko ritel, & minimum order kuantiti transparan.",
     "price": 149000,
@@ -984,12 +984,12 @@ const TEMPLATES_DATA = [
     "badgeFeatures": []
   },
   {
-    "id": "06-supplier-grosir-b2b/garment-corporate-uniform",
+    "id": "garment-corporate-uniform",
     "title": "Corporate Uniform Garment",
     "niche": "Corporate Uniform Garment",
     "bidang": "06-supplier-grosir-b2b",
     "group": "Group B",
-    "folder": "06-supplier-grosir-b2b/garment-corporate-uniform",
+    "folder": "garment-corporate-uniform",
     "demoUrl": "./06-supplier-grosir-b2b/garment-corporate-uniform/index.html",
     "description": "Pilihan bahan kain drill premium (Japan / American), bordir komputer presisi, & kalkulator tender instansi.",
     "price": 149000,
@@ -998,12 +998,12 @@ const TEMPLATES_DATA = [
     "badgeFeatures": []
   },
   {
-    "id": "06-supplier-grosir-b2b/garment-safety-wearpack-k3",
+    "id": "garment-safety-wearpack-k3",
     "title": "Safety Wearpack K3",
     "niche": "Safety Wearpack K3",
     "bidang": "06-supplier-grosir-b2b",
     "group": "Group B",
-    "folder": "06-supplier-grosir-b2b/garment-safety-wearpack-k3",
+    "folder": "garment-safety-wearpack-k3",
     "demoUrl": "./06-supplier-grosir-b2b/garment-safety-wearpack-k3/index.html",
     "description": "Standar keselamatan kerja K3 tambang/migas, scotlite reflektor 3M terang, & material anti-flame/statis.",
     "price": 149000,
@@ -1012,12 +1012,12 @@ const TEMPLATES_DATA = [
     "badgeFeatures": []
   },
   {
-    "id": "06-supplier-grosir-b2b/garment-promo-apparel-screenprint",
+    "id": "garment-promo-apparel-screenprint",
     "title": "Promo Apparel & Screenprint",
     "niche": "Promo Apparel & Screenprint",
     "bidang": "06-supplier-grosir-b2b",
     "group": "Group B",
-    "folder": "06-supplier-grosir-b2b/garment-promo-apparel-screenprint",
+    "folder": "garment-promo-apparel-screenprint",
     "demoUrl": "./06-supplier-grosir-b2b/garment-promo-apparel-screenprint/index.html",
     "description": "Bahan katun combed 24s/30s adem, sablon plastisol/discharge awet, & pembuatan seragam event/merchandise.",
     "price": 149000,
@@ -1026,12 +1026,12 @@ const TEMPLATES_DATA = [
     "badgeFeatures": []
   },
   {
-    "id": "06-supplier-grosir-b2b/textile-wholesale-fabric-rolls",
+    "id": "textile-wholesale-fabric-rolls",
     "title": "Wholesale Fabric Rolls",
     "niche": "Wholesale Fabric Rolls",
     "bidang": "06-supplier-grosir-b2b",
     "group": "Group B",
-    "folder": "06-supplier-grosir-b2b/textile-wholesale-fabric-rolls",
+    "folder": "textile-wholesale-fabric-rolls",
     "demoUrl": "./06-supplier-grosir-b2b/textile-wholesale-fabric-rolls/index.html",
     "description": "Pasokan gulungan kain langsung dari pabrik tenun, variasi gramasi katun/rayon/polyester, & katalog swatch fisik.",
     "price": 149000,
@@ -1040,12 +1040,12 @@ const TEMPLATES_DATA = [
     "badgeFeatures": []
   },
   {
-    "id": "06-supplier-grosir-b2b/wholesale-sembako-commodity-hub",
+    "id": "wholesale-sembako-commodity-hub",
     "title": "Sembako Commodity Hub",
     "niche": "Sembako Commodity Hub",
     "bidang": "06-supplier-grosir-b2b",
     "group": "Group C",
-    "folder": "06-supplier-grosir-b2b/wholesale-sembako-commodity-hub",
+    "folder": "wholesale-sembako-commodity-hub",
     "demoUrl": "./06-supplier-grosir-b2b/wholesale-sembako-commodity-hub/index.html",
     "description": "Pasokan tonase komoditas bahan pokok stabil, harga grosir harian real-time, & rute distribusi toko kelontong.",
     "price": 149000,
@@ -1054,12 +1054,12 @@ const TEMPLATES_DATA = [
     "badgeFeatures": []
   },
   {
-    "id": "06-supplier-grosir-b2b/food-ingredients-bakery-raw-materials",
+    "id": "food-ingredients-bakery-raw-materials",
     "title": "Bakery Raw Ingredients",
     "niche": "Bakery Raw Ingredients",
     "bidang": "06-supplier-grosir-b2b",
     "group": "Group C",
-    "folder": "06-supplier-grosir-b2b/food-ingredients-bakery-raw-materials",
+    "folder": "food-ingredients-bakery-raw-materials",
     "demoUrl": "./06-supplier-grosir-b2b/food-ingredients-bakery-raw-materials/index.html",
     "description": "Bahan baku ragi instan, premiks kue, margarin industri & pasta perisa untuk kebutuhan pabrik roti/pastry.",
     "price": 149000,
@@ -1068,12 +1068,12 @@ const TEMPLATES_DATA = [
     "badgeFeatures": []
   },
   {
-    "id": "06-supplier-grosir-b2b/chemical-industrial-cleaning-hygiene",
+    "id": "chemical-industrial-cleaning-hygiene",
     "title": "Chemical & Hygiene Cleaning",
     "niche": "Chemical & Hygiene Cleaning",
     "bidang": "06-supplier-grosir-b2b",
     "group": "Group C",
-    "folder": "06-supplier-grosir-b2b/chemical-industrial-cleaning-hygiene",
+    "folder": "chemical-industrial-cleaning-hygiene",
     "demoUrl": "./06-supplier-grosir-b2b/chemical-industrial-cleaning-hygiene/index.html",
     "description": "Konsentrat cairan pembersih industri, disinfektan rumah sakit & sertifikasi izin edar Kemenkes lengkap.",
     "price": 149000,
@@ -1082,12 +1082,12 @@ const TEMPLATES_DATA = [
     "badgeFeatures": []
   },
   {
-    "id": "06-supplier-grosir-b2b/polymer-resin-plastic-pellets",
+    "id": "polymer-resin-plastic-pellets",
     "title": "Polymer & Plastic Pellets",
     "niche": "Polymer & Plastic Pellets",
     "bidang": "06-supplier-grosir-b2b",
     "group": "Group C",
-    "folder": "06-supplier-grosir-b2b/polymer-resin-plastic-pellets",
+    "folder": "polymer-resin-plastic-pellets",
     "demoUrl": "./06-supplier-grosir-b2b/polymer-resin-plastic-pellets/index.html",
     "description": "Grade virgin & daur ulang PP/HDPE/LDPE untuk proses injection & blowing molding manufaktur plastik.",
     "price": 149000,
